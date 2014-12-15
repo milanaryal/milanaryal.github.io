@@ -10,7 +10,7 @@
 	{% if page.title %}<meta content="article" property="og:type">{% else %}<meta content="blog" property="og:type">{% endif %}
 	{% if page.title %}<meta content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | truncatewords: 20 }}{% endif %}" name="description" property="og:description">{% else %}<meta content="{{ site.description }}" name="description" property="og:description">{% endif %}
 	{% if page.url %}<meta content="{{ site.url | replace:'index.html','' }}{{ page.url | replace:'index.html','' }}" property="og:url">{% endif %}
-	{% if page.image %}<meta content="{{ site.url }}{{ page.image }}" property="og:image">{% else %}<meta content="{{ site.url }}/assets/img/m-logo-blue500.png" property="og:image">{% endif %}
+	{% if page.image %}<meta content="{{ site.url }}{{ page.image }}" property="og:image">{% else %}<meta content="{{ site.url }}/assets/img/icon.png" property="og:image">{% endif %}
 	{% if page.date %}<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
 	<meta content="{{ site.url }}/about/" property="article:author">{% endif %}
 	<title>{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
