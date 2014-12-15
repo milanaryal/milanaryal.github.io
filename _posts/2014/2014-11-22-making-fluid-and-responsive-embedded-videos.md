@@ -10,7 +10,7 @@ A few HTML elements don't play nice with responsive layouts. One of these is the
 
 iFrames, contain external content which cannot really be measured from the parent page. The width and height settings are necessary to define the size of the iframe, as the content inside will not help shape it (like an image would). But setting a static width and height on an element poses a problem for any type of fluid/flexible design. If the parent area shrinks in width to be narrower than the video, the video will break out, not shrink to fit.
 
-In this post, I'll show you making embedded video responsive using CSS, so that content such as YouTube or Vimeo video resize with the browser's viewport. For those occasions when non-coders will be embedding video on your website and you don't want to rely on them adding extra markup, we'll also look at a solution that uses JavaScript instead of CSS.</p>
+In this post, I'll show you making embedded video responsive using CSS, so that content such as YouTube or Vimeo video resize with the browser's viewport. For those occasions when non-coders will be embedding video on your website and you don't want to rely on them adding extra markup, we'll also look at a solution that uses JavaScript instead of CSS.
 
 ### The markup for embedded video
 
