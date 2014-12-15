@@ -37,7 +37,7 @@ footer {
 
 p {
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	color: #515151;
 }
 
@@ -75,6 +75,8 @@ img {
 #post-info h1 {
 	font-weight: bold;
 	margin: 15px 0px;
+	
+	color: #fff;
 }
 
 #post-info h2 {
