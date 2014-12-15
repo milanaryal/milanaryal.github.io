@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="{% if page.image %}background-image: url({{ page.image }}{% else %}background-color: #e5e5e5{% endif %});{% if page.background_position %} background-position: {{ page.background_position }};{% endif %}height: 100%;">
+	{% if page.video %}
+		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+			{% if page.video_webm %}<source src="{{ page.video_webm }}" type="video/webm">{% endif %}
+			{% if page.video_ogv %}<source src="{{ page.video_ogv }}" type="video/ogg ogv">{% endif %}
+			{% if page.video_mp4 %}<source src="{{ page.video_mp4 }}" type="video/mp4">{% endif %}
+		</video>
+		{% if page.video_pattern %}<div id="bg-video-pattern"></div>{% endif %}
+	{% endif %}
+	{% include top.html %}
+	{{ content }}
+</header>

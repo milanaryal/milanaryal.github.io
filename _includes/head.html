@@ -1,0 +1,33 @@
+<head>
+	<link href="http://gmpg.org/xfn/11" rel="profile">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//www.google-analytics.com">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+ 	<meta content="{{ site.title }}" property="og:site_name">
+	{% if page.title %}<meta content="{{ page.title }}" property="og:title">{% else %}<meta content="{{ site.title }}" property="og:title">{% endif %}
+	{% if page.title %}<meta content="article" property="og:type">{% else %}<meta content="blog" property="og:type">{% endif %}
+	{% if page.title %}<meta content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | truncatewords: 20 }}{% endif %}" name="description" property="og:description">{% else %}<meta content="{{ site.description }}" name="description" property="og:description">{% endif %}
+	{% if page.url %}<meta content="{{ site.url | replace:'index.html','' }}{{ page.url | replace:'index.html','' }}" property="og:url">{% endif %}
+	{% if page.image %}<meta content="{{ site.url }}{{ page.image }}" property="og:image">{% else %}<meta content="{{ site.url }}/assets/img/m-logo-blue500.png" property="og:image">{% endif %}
+	{% if page.date %}<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+	<meta content="{{ site.url }}/about/" property="article:author">{% endif %}
+	<title>{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width: 1001px)" href="/assets/css/desktop.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 1000px)" href="/assets/css/mobile.css">
+	<link type="text/css" rel="stylesheet" href="/assets/css/genericons.css">
+	<link type="text/css" rel="stylesheet" href="/assets/css/syntax.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="alternate" type="application/rss+xml" title="Milan Aryal - Feed" href="/feed.xml">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@MilanAryal">
+	<meta name="author" content="Milan Aryal">
+	<link rel="author" href="//plus.google.com/+MilanAryal">
+	<meta property="fb:admins" content="100001982813077">
+</head>

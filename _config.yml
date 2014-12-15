@@ -1,0 +1,60 @@
+# Dependencies
+markdown:	redcarpet
+pygments:	true
+
+# Permalinks
+permalink:	/:year/:month/:title/
+
+# prevent jekyll publishing unwanted github files
+exclude: ['README.md', 'CNAME', 'package.json', 'node_modules', 'bower_components']
+
+# Setup
+title:		Milan Aryal
+tagline:	'blog'
+description:	'Things that came in my mind...'
+url:		http://milanaryal.com
+
+author:
+  name:		'Milan Aryal'
+  email:  'considermilan@gmail.com'
+  url:    https://google.com/+MilanAryal
+
+paginate:	5
+
+# Custom vars
+icon:   /assets/img/icon.png
+cover:  /assets/img/header-img.jpg
+
+social:
+  - icon:	twitter
+    url:	//twitter.com/MilanAryal
+    desc:	Follow me on Twitter
+
+  - icon:	github
+    url:	//github.com/MilanAryal
+    desc:	Fork me on GitHub
+
+  - icon:	google-plus
+    url:	//google.com/+MilanAryal
+    desc:	Add me on Google+
+    
+  - icon:	tumblr
+    url:	http://milanaryal.tumblr.com
+    desc:	Follow me on Tumblr
+
+  - icon:	rss
+    url:	http://milanaryal.com/feed.xml
+    desc:	Subscribe to my feed
+    
+menu:
+  - title:	Home
+    url:	/
+    
+  - title:	About
+    url:	/about
+    
+copyright:
+  author:	Milan Aryal
+  url:		http://milanaryal.com
+  type_title:	MIT licensed
+  type_url:	//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENCE

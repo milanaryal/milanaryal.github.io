@@ -1,0 +1,56 @@
+@import url(default.css);
+
+#post-info {
+	width: 700px;
+	left: 50%;
+	margin-left: -350px;
+	bottom: 100px;
+}
+
+#post-info h1 {
+	font-weight: bold;
+	font-size: 44px;
+	line-height: 44px;
+}
+
+#home-title {
+	width: 700px;
+	margin-left: -350px;
+}
+
+#article {
+	width: 700px;
+	padding: 50px 0px;
+	left: 50%;
+	margin-left: -350px;
+}
+
+#bg-video {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.menu {
+	position: fixed;
+}
+
+.menu-content {
+	position: fixed;
+}
+
+.pagination, #post-list {
+	width: 700px;
+	left: 50%;
+	margin-left: -350px;
+}
+
+.copyright {
+	right: 20px;
+}
