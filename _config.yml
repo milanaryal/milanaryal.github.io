@@ -34,7 +34,7 @@ social:
     url:	//github.com/MilanAryal
     desc:	Fork me on GitHub
 
-  - icon:	google-plus
+  - icon:	google-plus-alt
     url:	//google.com/+MilanAryal
     desc:	Add me on Google+
     
@@ -42,7 +42,7 @@ social:
     url:	http://milanaryal.tumblr.com
     desc:	Follow me on Tumblr
 
-  - icon:	rss
+  - icon:	feed
     url:	http://milanaryal.com/feed.xml
     desc:	Subscribe to my feed
     
