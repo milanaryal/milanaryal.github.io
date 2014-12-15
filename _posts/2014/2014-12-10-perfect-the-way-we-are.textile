@@ -2,7 +2,7 @@
 layout: post
 title: Perfect, the way we are
 date: 2014-12-10 10:24:41
-header-img: /assets/img/2014/20141210--girl-enjoying-view-in-adrspach-rocks.jpg
+image: /assets/img/2014/20141210--girl-enjoying-view-in-adrspach-rocks.jpg
 ---
 
 We have all heard that no two snowflakes are alike. Each snowflake takes the perfect form for the maximum efficiency and effectiveness for its journey. And while the universal force of gravity gives them a shared destination, the expansive space in the air gives each snowflake the opportunity to take their own path. They are on the same journey, but each takes a different path.

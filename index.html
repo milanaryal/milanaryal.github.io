@@ -13,9 +13,9 @@ layout: default
 <div id="post-list">
 	{% for post in paginator.posts %}
 		<div>
-			<span class="post-date">{{ post.date | date_to_long_string }}</span>
+			<span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
 			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			<p class="post-description">{{ post.content | strip_html | truncatewords: 50 }}</p>
+			<p class="post-description">{{ post.content | strip_html | truncatewords: 32 }}</p>
 		</div>
 		<br>
 	{% endfor %}
