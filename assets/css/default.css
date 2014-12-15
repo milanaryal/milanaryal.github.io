@@ -37,7 +37,7 @@ footer {
 
 p {
 	margin-top: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	color: #515151;
 }
 
@@ -181,6 +181,7 @@ img.site-icon-page {
 	-webkit-transition: 0.5s ease;
 	transition: 0.5s ease;
 }
+#article p{margin-bottom: 30px;}
 
 a.site-title:hover, .copyright a:hover {
 	text-decoration: underline;
