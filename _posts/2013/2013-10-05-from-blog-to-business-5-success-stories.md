@@ -35,4 +35,4 @@ date: 2013-10-05 13:59:33
 
  Culwell originally began blogging in college as part of a school assignment and later continued it as a hoppy. As a design professional, Culwell recommends taking a basic class to learn Photoshop or any design programme.
 
- "If you're looking to take blogging seriously, then invest some money into it," she says. She advises newbies and those looking to grow their presence to 'make connections' and 'find your niche'._ — USA Today_
+ "If you're looking to take blogging seriously, then invest some money into it," she says. She advises newbies and those looking to grow their presence to 'make connections' and 'find your niche'. _— USA Today_
