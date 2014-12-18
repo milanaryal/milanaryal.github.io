@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tips for starting a side business while working full time
-date: 2010-05-03 23:09:18
+date: 2010-05-03T23:09:18+05:45
 ---
 
 _It may be tempting to continue to spend money because it’s regularly coming in, but once you’re no longer an employee, you won’t have that income_

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Job-search myths debunked
-date: 2010-05-03 23:58:59
+date: 2010-05-03T23:58:59+05:45
 ---
 
 Myths that people believed about looking for a job are many and persistent. The most common ones are these:

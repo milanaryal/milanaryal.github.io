@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Career moves for older workers
-date: 2010-05-03 22:56:09
+date: 2010-05-03T22:56:09+05:45
 ---
 
 In today’s ever changing job market, not only have the types of jobs offered changed, but so have the individuals who make up the current workforce. Many older workers are opting to continue working instead of retiring. If you’re one of these seasoned professionals, how do you keep your edge and stay fresh and vibrant in today’s fast paced employment atmosphere?

@@ -2,7 +2,7 @@
 layout: post
 title: "Hello, world!"
 description: My first post.
-date:   2014-12-03 21:47:57
+date:   2014-12-03T21:47:57+05:45
 ---
 
 #### My first post.

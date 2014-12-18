@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to properly clean gadgets
-date: 2012-11-12 19:15:45
+date: 2012-11-12T19:15:45+05:45
 ---
 
 _Without ruining them in the process_

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What are you giving today?
-date: 2012-05-21 09:31:05
+date: 2012-05-21T09:31:05+05:45
 ---
 
 _**Excerpted from** a speech delivered by **John Brody** to the graduating class of **John Hopkins University** on May 26, 2005_

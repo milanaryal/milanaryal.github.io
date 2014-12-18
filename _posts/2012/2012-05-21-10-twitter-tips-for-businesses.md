@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 10 Twitter tips for businesses
-date: 2012-05-21 09:48:44
+date: 2012-05-21T09:48:44+05:45
 ---
 
 _Use the powerful social media as a tool for marketing and promotion_

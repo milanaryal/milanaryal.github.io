@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using social media to boost professional profile
-date: 2013-10-09 12:32:01
+date: 2013-10-09T12:32:01+05:45
 ---
 
  Whether you're actively job seeking or not, building your professional profile using social media will extend your professional reach beyond your immediate circle. This could increase the potential career opportunities coming your way.
@@ -10,6 +10,7 @@ date: 2013-10-09 12:32:01
 
 ### LinkedIn
  LinkedIn is relevant for all professionals, regardless of whether you work in business, the public sector, charities or the media. Even if your industry tends to recruit using job boards or personal recommendations, LinkedIn provides an easy way to keep in touch with your network and publish your expertise.
+
 * Describe yourself on LinkedIn in a way that's relevant to kind of role you're looking for next, rather than just reflecting where you've been. Focus on achievements — don't just list factual information about dates and duties.
 * Use relevant terminology and keywords so that when recruiters or potential employers search these terms, they'll find you.
 * Your profile is in the public domain so all factual information must be accurate. Prospective employers will check for discrepancies between your CV and LinkedIn profile.
@@ -22,6 +23,7 @@ date: 2013-10-09 12:32:01
 
 ### Twitter
  Use Twitter to interact with people or organisations you find interesting or useful. Twitter is more informal than LinkedIn but it's still a great opportunity to promote yourself to potential employers and business contacts.
+
 * As with LinkedIn, you can use Twitter as part of a personal PR campaign to remind people of your expertise, share successes and encourage people to look at your online CV or website.
 * You can follow companies or individuals that you'd like to work for and send them messages to start a dialogue.
 * Increasing numbers of jobs are posted via Twitter. You can apply to these directly or by following the link provided.
@@ -29,6 +31,7 @@ date: 2013-10-09 12:32:01
 
 ### Facebook
  This is increasingly being used by organisations to communicate with staff, customers and the wider public. Some companies are also using it to recruit and vet potential candidates. On Facebook, the boundaries between the personal and the professional can be very blureed, so make sure of what information about you can accessed and by whom.
+
 * Use Facebook to tell your friends and family exactly what you do for a living and ask them for information and advice about your career or job search.
 * Company pages on Facebook tend to be a great information resource for news, features and asking questions. Use this to find out more about companies you are interested in.
 

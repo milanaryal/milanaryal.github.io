@@ -3,7 +3,7 @@ layout: post
 title: Making fluid and responsive embedded videos
 description: This tutorial helps you to have fluid width embedded videos in your responsive web design.
 author: Milan Aryal
-date: 2014-11-22 19:32:39
+date: 2014-11-22T19:32:39+05:45
 ---
 
 A few HTML elements don't play nice with responsive layouts. One of these is the good ol' iframe, which you may need to use when embedding content from external sources such as YouTube and Vimeo videos.

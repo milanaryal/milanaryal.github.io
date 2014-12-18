@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perfect, the way we are
-date: 2014-12-10 10:24:41
+date: 2014-12-10T10:24:41+05:45
 image: /assets/img/2014/20141210--girl-enjoying-view-in-adrspach-rocks.jpg
 ---
 

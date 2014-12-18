@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Life’s beautiful, truly!
-date: 2014-01-10 09:36:13
+date: 2014-01-10T09:36:13+05:45
 ---
 
 _This story contains some ‘tips’ that may bring you a beautiful life. Read them, live by them more fully, and you will surely experience a beautiful life!_
@@ -58,7 +58,7 @@ Do the right thing!
 
 Call your family often.
 
-Each night before you go to bed complete the following statements: “I am thankful for …” — “Today I accomplished…”
+Each night before you go to bed complete the following statements: “I am thankful for …” — “Today I accomplished…”
 
 Remember that you are too blessed to be stressed.
 

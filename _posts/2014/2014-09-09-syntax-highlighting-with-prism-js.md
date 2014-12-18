@@ -3,7 +3,7 @@ layout: post
 title: Syntax highlighting with prism.js
 description: Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind.
 author: Milan Aryal
-date:   2014-09-09 13:28:25
+date:   2014-09-09T13:28:25+05:45
 ---
 
 Last time I was searching for a good syntax highlighter for beautifully viewing the code snippets on my blog post. Among different syntax highlighter I found out [PrismJS](http://prismjs.com) by [Lea Verou](http://lea.verou.me) is pretty awesome.

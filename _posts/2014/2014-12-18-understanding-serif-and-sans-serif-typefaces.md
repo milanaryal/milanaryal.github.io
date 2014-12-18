@@ -20,5 +20,5 @@ Here is a brief history of typography describing how it first came into being an
 <figure>
   <!-- Copy & Pasted from YouTube -->
   <iframe width="560" height="315" src="//www.youtube.com/embed/wOgIkxAfJsk?rel=0&amp;theme=light" frameborder="0" allowfullscreen></iframe>
-  <figcaption>Video: YouTube, <a href="http://www.forrestmedia.org" rel="nofollow" target="_blank">Forest Media</a></figcaption>
+  <figcaption>Video: YouTube, <a href="http://forrestmedia.org" rel="nofollow" target="_blank">Forest Media</a></figcaption>
 </figure>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tips to choose a unique, great username
-date: 2011-05-24 12:03:19
+date: 2011-05-24T12:03:19+05:45
 ---
 Whether you’re creating a brand or just in the mood to have a username that tons of other people don’t already have, it’s important to choose a unique and effective username.
 

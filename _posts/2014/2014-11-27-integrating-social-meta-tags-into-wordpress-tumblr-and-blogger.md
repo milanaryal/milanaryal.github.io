@@ -3,7 +3,7 @@ layout: post
 title: Integrating social meta tags into WordPress, Tumblr and Blogger
 description: Tips for integrating social meta tags  into popular CMS systems like WordPress, Tumblr and Blogger.
 author: Milan Aryal
-date: 2014-11-27 19:39:45
+date: 2014-11-27T19:39:45+05:45
 ---
 
 Social media meta tags make your content look better on social media. You can control how your post or update shows up in news feeds. And handsome social media updates make your content more appealing.
@@ -224,7 +224,8 @@ And place the following code before `</head>` section:
 	<meta content='article' property='og:type'/>
 	<meta content='YOUR_NAME_HERE' name='author' property='article:author'/>
 	<meta expr:content='data:blog.title' property='og:site_name'/>
-	<meta expr:content='data:blog.pageName' name='title' property='og:title'/>
+	<meta expr:content='data:blog.pageName' property='og:title'/>
+	<meta expr:content='data:blog.pageName' name='title'/>
 	<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
 
 		<b:if cond='data:blog.postImageUrl'>
@@ -233,9 +234,11 @@ And place the following code before `</head>` section:
 	   		<meta content='YOUR_LOGO_URL_HERE' property='og:image'/>
 		</b:if>
 		<b:if cond='data:blog.metaDescription'>
-	   		<meta expr:content='data:blog.metaDescription' name='description' property='og:description'/>
+	   		<meta expr:content='data:blog.metaDescription' property='og:description'/>
+			<meta expr:content='data:blog.metaDescription' name='description'/>
 	   		<b:else/>
-	   		<meta expr:content='data:blog.pageTitle' name='description' property='og:description'/>
+	   		<meta expr:content='data:blog.pageTitle' property='og:description'/>
+			<meta expr:content='data:blog.pageTitle' name='description'/>
 		</b:if> 
 
 	<b:else/>
@@ -245,7 +248,8 @@ And place the following code before `</head>` section:
 	<meta content='YOUR_LOGO_URL_HERE' property='og:image'/>
 		
 		<b:if cond='data:blog.metaDescription'>
-			<meta content='data:blog.metaDescription' name='description' property='og:description'/>
+			<meta content='data:blog.metaDescription' property='og:description'/>
+			<meta content='data:blog.metaDescription' name='description'/>
 			<meta content='YOUR_BLOG_KERYWORDS_HERE' name='keywords'/>
 		</b:if>
 
@@ -274,7 +278,7 @@ For Twitter card property also place the following before `</head>` section:
 			<meta content='750' name='twitter:image:height'/>
 	   		<b:else/>
 			<meta content='summary' name='twitter:card'/>
-	   		<meta content='http://4.bp.blogspot.com/-tqNA8nlfbuA/VGhRb8DDN7I/AAAAAAAAGnE/VQ6xEKJkmIU/s1600/m-logo-blue500.png' name='twitter:image'/>
+	   		<meta content='YOUR_LOGO_URL_HERE' name='twitter:image'/>
 		</b:if>
 		<b:if cond='data:blog.metaDescription'>
 	   		<meta expr:content='data:blog.metaDescription' name='twitter:description'/>

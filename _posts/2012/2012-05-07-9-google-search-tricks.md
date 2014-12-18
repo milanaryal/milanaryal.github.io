@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 9 Google search tricks
-date: 2012-05-07 05:51:59
+date: 2012-05-07T05:51:59+05:45
 ---
 
 _Use these cool shortcuts to find things better and faster_

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: From blog to business - 5 success stories
-date: 2013-10-05 13:59:33
+date: 2013-10-05T13:59:33+05:45
 ---
 
  From advertisements, sponsorships and brand collaborations to endorsement opportunities and even book deals — the world of blogging has turned hobbies into full-time careers.

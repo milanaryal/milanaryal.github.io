@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Best practices for Gmail
-date: 2012-11-05 19:12:49
+date: 2012-11-05T19:12:49+05:45
 ---
 
 _Understand its core features to keep communication organised and efficient_
