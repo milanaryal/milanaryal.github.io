@@ -11,7 +11,7 @@ exclude: ['README.md', 'CNAME', 'package.json', 'node_modules', 'bower_component
 # Setup
 title:		Milan Aryal
 tagline:	'blog'
-description:	'Things that came in my mind...'
+description:	'Making the web a better place.'
 url:		http://milanaryal.com
 
 author:
