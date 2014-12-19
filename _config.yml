@@ -22,8 +22,8 @@ author:
 paginate:	5
 
 # Custom vars
-icon:   /assets/img/icon.png
-cover:  /assets/img/header-img.jpg
+icon:   img/icon.png
+cover:  img/header-img.jpg
 
 social:
   - icon:	twitter
