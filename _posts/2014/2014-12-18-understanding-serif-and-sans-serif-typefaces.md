@@ -7,7 +7,7 @@ date: 2014-12-18T13:25:03+05:45
 Here’s a neat infographic that explains the differences between serif and sans serif typefaces/fonts. You’ll learn when to use one over the other as well as examples and web usages.
 
 <figure>
-  <img alt="The differences between serif and sans serif fonts." border="0" src="/assets/img/2014/20141218--serif-vs-sans-the-final-battle_infographic_w900.jpg">
+  <img alt="The differences between serif and sans serif fonts." border="0" src="img/2014/20141218--serif-vs-sans-the-final-battle_infographic_w900.jpg">
   <figcaption>For free fonts and dingbats, check <a href="http://www.urbanfonts.com" rel="nofollow" target="_blank">UrbanFonts.com</a></figcaption>
 </figure>
 
