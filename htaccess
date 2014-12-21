@@ -1,0 +1,12 @@
+---
+layout: none
+permalink: .htaccess
+---
+
+# Remove trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+# Redirect rule
+Redirect 301 /blog http://milanaryal.com
