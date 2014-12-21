@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Integrating social meta tags into WordPress, Tumblr and Blogger
-description: Tips for integrating social meta tags  into popular CMS systems like WordPress, Tumblr and Blogger.
+subtitle: Tips for integrating social meta tags  into popular CMS systems like WordPress, Tumblr and Blogger.
 author: Milan Aryal
 date: 2014-11-27T19:39:45+05:45
 ---

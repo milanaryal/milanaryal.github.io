@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syntax highlighting with prism.js
-description: Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind.
+subtitle: Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind.
 author: Milan Aryal
 date:   2014-09-09T13:28:25+05:45
 ---

@@ -14,8 +14,8 @@ article: true
 	{% include top.html %}
 	<div id="post-info">
 		<h1>{{ page.title }}</h1>
-		{% if page.quote %}
-			<h2>{{ page.quote }}</h2>
+		{% if page.subtitle %}
+			<h2>{{ page.subtitle }}</h2>
 		{% endif %}
 		<a class="site-title" href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon-small">{{ site.title }}</a> on {{ page.date | date: "%B %d, %Y" }}
 	</div>

@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Hello, world!"
-description: My first post.
+subtitle: My first post.
 date:   2014-12-03T21:47:57+05:45
 ---
-
-#### My first post.
 
 I finally migrated this site to [GitHub pages](//pages.github.com) using [Jekyll](//jekyllrb.com).
 

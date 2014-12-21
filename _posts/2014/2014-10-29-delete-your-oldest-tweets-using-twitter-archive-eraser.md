@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Delete your oldest tweets using Twitter Archive Eraser
-description: A simple application that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so.
+subtitle: A simple application that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so.
 author: Milan Aryal
 date: 2014-10-29T22:34:25+05:45
 ---
