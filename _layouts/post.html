@@ -4,7 +4,7 @@ article: true
 ---
 
 <header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-color:#000;height: 100%;">
-<div class="background-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %});{% if page.background_position %} background-position: {{ page.background_position }};{% endif %}height: 100%;opacity: 0.7;"></div>
+<div class="background-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %});{% if page.background_position %} background-position: {{ page.background_position }};{% endif %}height: 100%;opacity: 0.6;"></div>
 	{% if page.video %}
 		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
 			{% if page.video_webm %}<source src="{{ page.video_webm }}" type="video/webm">{% endif %}
