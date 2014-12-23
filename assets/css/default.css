@@ -16,7 +16,7 @@ header {
 	position: relative;
 }
 
-header, footer, background-image {
+header, footer, .background-image {
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
