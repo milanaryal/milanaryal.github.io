@@ -3,7 +3,7 @@ layout: default
 article: true
 ---
 
-<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-color:#000;height: 100%;">
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-color:#000; height: 100%;">
 <div class="background-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %});{% if page.background_position %} background-position: {{ page.background_position }};{% endif %}height: 100%;opacity: 0.6;"></div>
 	{% if page.video %}
 		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
@@ -28,7 +28,8 @@ article: true
 	{{ content }}
 </div>
 {% for post in site.related_posts limit:1 %}
-<footer class="{% if post.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %});{% if post.background_position %} background-position: {{ post.background_position }};{% endif %}height: 75%; min-height: 500px;">
+<footer class="{% if post.dark %}dark{% else %}clean{% endif %}" style="background-color:#000; height: 75%; min-height: 500px;">
+<div style="background-image: url({% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %});{% if post.background_position %} background-position: {{ post.background_position }};{% endif %}height: 75%; min-height: 500px; opacity: 0.5;"></div>
 	<div id="nav-icon" style="top: 25px;">
 		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-collapse"></span></a>
 	</div>
