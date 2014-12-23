@@ -84,7 +84,7 @@ img {
 	font-style: italic;
 	font-size: 24px;
 	line-height: 24px;
-	text-align: justify;
+	/* text-align: justify; */
 	font-weight: lighter;
 	margin: 15px 0px;
 }
