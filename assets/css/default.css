@@ -26,11 +26,11 @@ header, footer, .background-image {
 }
 
 .background-image {
-	-webkit-filter: blur(.01em);
-	-moz-filter: blur(.01em);
-	-o-filter: blur(.01em);
-	-ms-filter: blur(.01em);
-	filter: blur(.01em);
+	-webkit-filter: contrast(90%);
+	-moz-filter: contrast(90%);
+	-o-filter: contrast(90%);
+	-ms-filter: contrast(90%);
+	filter: contrast(90%);
 }
 
 header a, footer a {
