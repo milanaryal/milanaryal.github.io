@@ -48,16 +48,11 @@ First add following code in the `<head>` tag:
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
 {% endhighlight %}
 
-And place the following code before `</head>` section:
+And place the [following code](http://stackoverflow.com/questions/11493718/facebook-open-graph-protocol-on-tumblr) before `</head>` section:
 
 {% highlight html %}
 <!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
-        
-<meta name="text:Facebook ID" content="YOUR_FB_ID_HERE">
-{block:IfFacebookID}
-<meta property="fb:admins" content="{text:Facebook ID}">
-        
-    <meta property="og:site_name" content="{Title}"/>
+<meta property="og:site_name" content="{Title}"/>
 
 {block:PermalinkPage}
 
@@ -96,7 +91,7 @@ And place the following code before `</head>` section:
 
             {block:Chat}
                 <meta property="og:title" content="{PlaintextTitle}"/>
-                <meta property="og:description" content="{block:Lines}{block:Label}{Label}: {/block:Label}{Line} • {/block:Lines}"/>
+                <meta property="og:description" content="{block:Lines}{block:Label}{Label}: {/block:Label}{Line} &bull; {/block:Lines}"/>
                 <meta property="og:image" content="{PortraitURL-64}"/>
             {/block:Chat}
 
@@ -126,14 +121,14 @@ And place the following code before `</head>` section:
         <meta property="og:description" content="{MetaDescription}"/>
         <meta property="og:image" content="{PortraitURL-64}"/>
 {/block:IndexPage}
-        <!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
 {% endhighlight %}
 
-For Twitter card property also place the following code before </head> section:
+For Twitter card property also place the [following code](http://www.quora.com/Whats-the-best-way-to-implement-Twitter-Cards-on-a-Tumblr-blog) before </head> section:
 
 {% highlight html %}
 <!-- BEGIN TWITTER TAGS -->
-        {block:PermalinkPage}
+{block:PermalinkPage}
 
 <meta name="twitter:url" content="{Permalink}"/>
 <meta name="twitter:site" content="@YOUR_BLOG_TWITTER_USERNAME_HERE">
@@ -176,7 +171,7 @@ For Twitter card property also place the following code before </head> section:
             {block:Chat}
                 <meta name="twitter:card" content="summary">
                 <meta name="twitter:title" content="{PlaintextTitle}"/>
-                <meta name="twitter:description" content="{block:Lines}{block:Label}{Label}: {/block:Label}{Line} • {/block:Lines}"/>
+                <meta name="twitter:description" content="{block:Lines}{block:Label}{Label}: {/block:Label}{Line} &bull; {/block:Lines}"/>
                 <meta name="twitter:image" content="{PortraitURL-64}"/>
             {/block:Chat}
 
@@ -203,7 +198,7 @@ For Twitter card property also place the following code before </head> section:
         {/block:Posts}
 
 {/block:PermalinkPage}
-        <!-- END TWITTER TAGS -->
+<!-- END TWITTER TAGS -->
 {% endhighlight %}
 
 ### Blogger
