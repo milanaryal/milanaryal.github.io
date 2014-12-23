@@ -16,21 +16,34 @@ header {
 	position: relative;
 }
 
-header, footer, .background-image {
+header, footer {
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: scroll;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #191918;
+}
+.background-image {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	opacity: 0.6;
 }
 
-.background-image {
-	-webkit-filter: contrast(90%);
-	-moz-filter: contrast(90%);
-	-o-filter: contrast(90%);
-	-ms-filter: contrast(90%);
-	filter: contrast(90%);
+.background-image:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.44);
 }
 
 header a, footer a {
