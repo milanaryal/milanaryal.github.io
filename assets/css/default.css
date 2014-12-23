@@ -25,14 +25,6 @@ header, footer, .background-image {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.background-image {
-	-webkit-filter: blur(1px);
-	-moz-filter: blur(1px);
-	-o-filter: blur(1px);
-	-ms-filter: blur(1px);
-	filter: blur(1px);
-}
-
 header a, footer a {
 	transition-duration: .25s;
 	text-decoration: none;
