@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<header class="dark-background">
-<div class="background-image" style="height: 350px; background-image: url({{ site.cover }});"></div>
+<header class="clean" style="background-color: rgba(0,0,0,0.8);>
+<div class="background-image" style="background-image: url({{ site.cover }}); height: 350px; opacity: 0.6;"></div>
 	{% include top.html %}
 	<div id="home-title">
 		<a href="{{ site.url }}">
@@ -34,7 +34,7 @@ layout: default
 		{% endif %}
 	{% endif %}
 </nav>
-<footer class="dark-background">
-<div class="background-image" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;"></div>
+<footer class="clean" style="background-color: rgba(0,0,0,0.8);>
+<div class="background-image" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px; opacity: 0.6;"></div>
 	{% include copyright.html %}
 </footer>
