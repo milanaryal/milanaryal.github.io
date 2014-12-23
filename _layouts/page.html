@@ -2,22 +2,22 @@
 layout: default
 ---
 
-<header class="clean" style="height: 350px;">
-<div class="background-image" style="background-image: url({{ site.cover }}); height: 350px;"></div>
+<header class="clean" style="height:350px;">
+<div class="background-image" style="background-image:url({{ site.cover }}); height:350px;"></div>
 	{% include top.html %}
 	<div id="home-title">
 		<a href="{{ site.url }}">
 			<img src="{{ site.icon }}" class="site-icon-page">
 		</a>
 	</div>
-	<div id="post-info" style="bottom: 30px; text-align: center; line-height: 45px;">
+	<div id="post-info" style="bottom:30px; text-align:center; line-height:45px;">
 		<h1>{{ page.title }}</h1>
 	</div>
 </header>
 <div id="article">
 	{{ content }}
 </div>
-<footer class="clean" style="background-position: bottom; height: 60px;">
-<div class="background-image" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;"></div>
+<footer class="clean" style="background-position:bottom; height:60px;">
+<div class="background-image" style="background-image:url({{ site.cover }}); background-position:bottom; height:60px;"></div>
 	{% include copyright.html %}
 </footer>
