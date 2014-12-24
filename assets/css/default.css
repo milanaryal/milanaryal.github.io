@@ -295,12 +295,7 @@ pre code {
 	margin-bottom: 0;
 }
 
-.clean {
-	color: #eee;
-	background-color: #888;
-}
-
-.clean a {
+.clean, .clean a {
 	color: #eee;
 }
 
