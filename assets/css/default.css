@@ -84,24 +84,15 @@ img {
 #post-info h1 {
 	font-weight: bold;
 	margin: 15px 0px;
+	color: #fff;
 }
 
 #post-info h2 {
 	opacity: 0.75;
-	font-style: italic;
 	font-size: 24px;
 	line-height: 24px;
-	text-align: justify;
 	font-weight: lighter;
 	margin: 15px 0px;
-}
-
-#post-info h2:before {
-	content: "“";
-}
-
-#post-info h2:after {
-	content: "”";
 }
 
 #post-info h3 {
