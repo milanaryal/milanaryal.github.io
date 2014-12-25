@@ -486,6 +486,10 @@ pre code {
 	font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
+p.post-description {
+	margin: 0;
+}
+
 .post-date {
 	font-size: 12pt;
 	color: #999;
