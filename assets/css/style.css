@@ -504,7 +504,7 @@ figcaption {
 	line-height: 1.5em;
 }
 
-/* to make lines scroll instead of wrap */
+/*! to make lines scroll instead of wrap */
 
 .highlight pre code * {
   white-space: nowrap;
@@ -611,22 +611,28 @@ figcaption {
 }
 
 .genericon {
-	font-size: 16px;
-	vertical-align: top;
-	text-align: center;
-	-moz-transition: color .1s ease-in 0;
-	-webkit-transition: color .1s ease-in 0;
 	display: inline-block;
-	font-family: "Genericons";
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	line-height: 1;
-	text-decoration: inherit;
-	text-transform: none;
-	-moz-osx-font-smoothing: grayscale;
+	width: 16px;
+	height: 16px;
 	-webkit-font-smoothing: antialiased;
-	speak: none;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+	line-height: 1;
+	font-family: 'Genericons';
+	text-decoration: inherit;
+	font-weight: normal;
+	font-style: normal;
+	vertical-align: top;
+}
+
+/**
+ * IE7 and IE6 hacks
+ */
+
+.genericon {
+	*overflow: auto;
+	*zoom: 1;
+	*display: inline;
 }
 
 .genericon-404:before { content: "\f423"; }
