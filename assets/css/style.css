@@ -441,6 +441,7 @@ pre code {
 	color: inherit;
 	font-size: 14px;
 	position: absolute;
+	bottom: 10px;
 }
 
 .copyright a {
