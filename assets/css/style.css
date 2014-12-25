@@ -480,14 +480,12 @@ pre code {
 	text-decoration: none;
 }
 
-.post-description {
+.post-snippet {
 	color: #777;
 	font-size: 15pt;
 	font-family: "PT Serif", Georgia, "Times New Roman", serif;
-}
-
-p.post-description {
-	margin: 0;
+	
+	border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 
 .post-date {
