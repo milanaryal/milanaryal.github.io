@@ -440,8 +440,6 @@ pre code {
 .copyright {
 	color: inherit;
 	font-size: 14px;
-	text-transform: uppercase;
-	bottom: 10px;
 	position: absolute;
 }
 
@@ -627,9 +625,7 @@ figcaption {
 	vertical-align: top;
 }
 
-/**
- * IE7 and IE6 hacks
- */
+/* IE7 and IE6 hacks */
 
 .genericon {
 	*overflow: auto;
