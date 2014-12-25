@@ -3,7 +3,6 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//www.google-analytics.com">
-	<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	{% if page.title %}<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | truncatewords: 20 }}{% endif %}">{% else %}<meta name="description" content="{{ site.description }}">{% endif %}
  	<meta content="{{ site.title }}" property="og:site_name">
@@ -15,38 +14,35 @@
 	{% if page.date %}<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
 	<meta content="{{ site.url }}/about/" property="article:author">{% endif %}
 	<title>{% if page.title %}{{ page.title }} &mdash; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-	<base href="http://milanaryal.com/assets/">
+	<base href="http://milanaryal.com/">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" media="only screen and (min-width: 1001px)" href="css/desktop.css">
-	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 1000px)" href="css/mobile.css">
-	<link type="text/css" rel="stylesheet" href="css/genericons.css">
-	<link type="text/css" rel="stylesheet" href="css/syntax.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png">
-	<link rel="shortcut icon" href="img/icons/favicon.ico">
-	<link rel="icon" type="image/png" href="img/icons/favicon-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="img/icons/favicon-160x160.png" sizes="160x160">
-	<link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon-180x180.png">
+	<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+	<link rel="icon" type="image/png" href="/assets/img/icons/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/assets/img/icons/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="/assets/img/icons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/assets/img/icons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/assets/img/icons/favicon-32x32.png" sizes="32x32">
 	<meta name="application-name" content="Milan Aryal">
 	<meta name="msapplication-TileColor" content="#2196F3">
-	<meta name="msapplication-square70x70logo" content="img/icons/mstile-70x70.png">
-	<meta name="msapplication-square150x150logo" content="img/icons/mstile-150x150.png">
-	<meta name="msapplication-wide310x150logo" content="img/icons/mstile-310x150.png">
-	<meta name="msapplication-square310x310logo" content="img/icons/mstile-310x310.png">
+	<meta name="msapplication-square70x70logo" content="/assets/img/icons/mstile-70x70.png">
+	<meta name="msapplication-square150x150logo" content="/assets/img/icons/mstile-150x150.png">
+	<meta name="msapplication-wide310x150logo" content="/assets/img/icons/mstile-310x150.png">
+	<meta name="msapplication-square310x310logo" content="/assets/img/icons/mstile-310x310.png">
 	<meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=5; cycle=1">
 	<link rel="alternate" type="application/atom+xml" title="Milan Aryal - Feed" href="/feed.xml">
 	<meta name="twitter:card" content="summary">
