@@ -16,7 +16,7 @@ layout: default
 		<div>
 			<span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
 			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			<a class="post-snippet" href="{{ post.url }}">{{ post.content | strip_html | truncatewords: 32 }}</a>
+			<span class="post-snippet">{{ post.content | strip_html | truncatewords: 32 }}</span>
 		</div>
 		<br>
 	{% endfor %}
