@@ -484,6 +484,8 @@ pre code {
 	color: #777;
 	font-size: 15pt;
 	font-family: "PT Serif", Georgia, "Times New Roman", serif;
+	line-height: 1.4;
+	display: block;
 }
 
 .post-date {
