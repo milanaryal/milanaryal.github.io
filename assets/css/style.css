@@ -13,7 +13,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 header, footer , .background-image {
@@ -23,7 +23,7 @@ header, footer , .background-image {
 	background-position: center;
 	background-size: cover;
 	background-attachment: scroll;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #191918;
 }
 
@@ -388,7 +388,7 @@ pre code {
 	margin-top: 30px;
 	margin-bottom: 50px;
 	text-align: center;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -441,7 +441,7 @@ pre code {
 }
 
 #post-list {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	top: 50px;
 	padding-bottom: 80px;
 	font-weight: 400;
@@ -942,18 +942,57 @@ article {
 	}
 }
 
- /*! Mobile style - Landscape  */
- @media only screen and (max-width: 480px) {
- 
- #post-info h1 {
-	font-weight: bold;
-	font-size: 22px;
-	line-height: 22px;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+h1 {
+	font-size: 18px;
 }
 
- #post-info h2 {
-	font-weight: bold;
+h2 {
 	font-size: 14px;
-	line-height: 14px;
-	}
- }
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+h1 {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+h2 {
+	margin-top: 5px;
+	font-size: 10px;
+}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 14px;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+h1 {
+	margin-top: 30px;
+	font-size: 32px;
+}
+
+h2 {
+	margin-top: 25px;
+	font-size: 28px;
+}
+}
+
