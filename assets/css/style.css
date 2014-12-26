@@ -946,9 +946,15 @@ article {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+h1 {
+	margin-top: 20px;
+	font-size: 24px;
+}
 
-
-
+h2 {
+	margin-top: 15px;
+	font-size: 20px;
+}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -964,19 +970,17 @@ h2 {
 	font-size: 10px;
 }
 
-.post-list {
-	h1 {
+.post-list h1 {
 	font-size: 22px;
 		}
 
-	.post-date {
+.post-list .post-date {
 	font-size: 14px;
 		}
 
-	.post-snippet {
+.post-list .post-snippet {
 	font-size: 12px;
 		}
-	}
 }
 
 
@@ -991,17 +995,16 @@ h2 {
 	font-size: 12px;
 }
 
-.post-list {
-	h1 {
+.post-list h1 {
 	font-size: 18px;
 		}
 
-	.post-date {
+.post-list  .post-date {
 	font-size: 10px;
 		}
 
-	.post-snippet {
+.post-list .post-snippet {
 	font-size: 12px;
 		}
-	}
+
 }
