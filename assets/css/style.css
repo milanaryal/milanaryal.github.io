@@ -113,6 +113,8 @@ img.site-icon {
 	margin-top: -75px;
 	width: 150px;
 	height: 150px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 50%;
 	transition-duration: .25s;
 	opacity: .9;
@@ -128,6 +130,8 @@ img.site-icon:hover {
 img.site-icon-small {
 	width: 28px;
 	height: 28px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 50%;
 	vertical-align: middle;
 	margin-right: 10px;
@@ -138,6 +142,8 @@ img.site-icon-page {
 	height: 100px;
 	margin-left: -40px;
 	margin-top: -120px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 50%;
 	position: absolute;
 }
@@ -942,3 +948,19 @@ article {
 	float: left;
 	}
 }
+
+ /*! Mobile style - Landscape  */
+ @media only screen and (max-width: 480px) {
+ 
+ #post-info h1 {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 22px;
+}
+
+ #post-info h2 {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+	}
+ }
