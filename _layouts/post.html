@@ -3,7 +3,7 @@ layout: default
 article: true
 ---
 
-<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="{% if page.background_position %} background-position:{{ page.background_position }};{% endif %} height:100%;">
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="{% if page.background_position %} background-position:{{ page.background_position }};{% endif %} height:100%!important;">
 <div class="background-image" style="background-image:url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %}); {% if page.background_position %} background-position:{{ page.background_position }};{% endif %} height:100%;"></div>
 	{% if page.video %}
 		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
@@ -21,10 +21,10 @@ article: true
 		<a class="site-title" href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon-small">{{ site.title }}</a> on {{ page.date | date: "%B %d, %Y" }}
 	</div>
 	<div id="nav-icon" style="bottom:60px;">
-		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-expand"></span></a>
+		<a class="scroll" data-speed="1000" href="#top"><span class="genericon genericon-expand"></span></a>
 	</div>
 </header>
-<article id="article">
+<article id="top">
 	{{ content }}
 </article>
 {% for post in site.related_posts limit:1 %}
