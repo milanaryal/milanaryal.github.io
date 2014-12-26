@@ -952,15 +952,11 @@ article {
 }
  
 .post-inset h1 {
-	font-size: 20px;
+	font-size: 20px!important;
 }
 
 .post-snippet {
-	font-size: 12px;
-}
-
-#post-info {
-	font-size: 12px;
+	font-size: 15px;
 }
 
 #post-info h1 {
@@ -973,6 +969,10 @@ article {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 16px;
+}
+
+#post-info h3 {
+	font-size: 12px;
 }
 
 p {
