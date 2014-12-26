@@ -435,7 +435,6 @@ pre code {
 	color: inherit;
 	font-size: 14px;
 	position: absolute;
-	text-transform: uppercase;
 	bottom: 25px;
 }
 
@@ -948,26 +947,26 @@ article {
 /* iPhone ----------- */
  @media only screen and (max-width: 500px) {
  
-p {
-	font-size: 15px;
-}
- 
-.post-list h1 {
-	font-size: 18px;
-}
-
-.post-list  .post-date {
+.post-date {
 	font-size: 10px;
 }
+ 
+.post-inset h1 {
+	font-size: 20px;
+}
 
-.post-list .post-snippet {
+.post-snippet {
+	font-size: 12px;
+}
+
+#post-info {
 	font-size: 12px;
 }
 
 #post-info h1 {
 	font-weight: bold;
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 22px;
+	line-height: 22px;
 }
 
 #post-info h2 {
@@ -976,7 +975,12 @@ p {
 	line-height: 16px;
 }
 
-#post-info .site-title {
-	font-size: 10px;
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.pagination, .copyright {
+	font-size: 12px;
 	}
 }
