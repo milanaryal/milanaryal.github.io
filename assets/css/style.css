@@ -10,13 +10,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header, footer {
-	width: 100%;
-	position: relative;
-}
-
 header, footer , .background-image {
 	position: relative;
+	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -459,7 +455,7 @@ pre code {
 }
 
 #post-list a:hover {
-	color: #2a7ead;
+	color: none;
 	text-decoration: none;
 }
 
