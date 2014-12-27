@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="{% if page.image %}background-image:url({{ page.image }}{% else %}background-color:#e5e5e5{% endif %});{% if page.background_position %} background-position:{{ page.background_position }};{% endif %}height:100%;">
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}">
+<div class="background-image" style="background-image:url({{ site.cover }}); height:100%;"></div>
 	{% if page.video %}
 		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
 			{% if page.video_webm %}<source src="{{ page.video_webm }}" type="video/webm">{% endif %}
@@ -11,6 +12,7 @@ layout: default
 		</video>
 		{% if page.video_pattern %}<div id="bg-video-pattern"></div>{% endif %}
 	{% endif %}
-	{% include top.html %}
+
 	{{ content }}
+
 </header>
