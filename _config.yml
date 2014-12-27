@@ -1,17 +1,27 @@
+#Jekyll config file http://jekyllrb.com/docs/configuration/
+
 # Dependencies
 markdown:	redcarpet
 pygments:	true
 
-# Permalinks
+#build config
+# List of tz database time zones http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Kathmandu
+encoding: UTF-8
+
+#permalink structure, see http://jekyllrb.com/docs/permalinks/
 permalink:	/:year/:month/:title/
 
 # prevent jekyll publishing unwanted github files
-exclude: ['README.md', 'CNAME', 'package.json', 'node_modules', 'bower_components']
+exclude: ['README.md', 'LICENSE', 'CNAME', 'package.json', 'node_modules', 'bower_components']
 
 # Setup
+#title of site
 title:		Milan Aryal
 tagline:	'blog'
+#description of site
 description:	'Making the web a better place.'
+#URL of site, include http://, do not include a trailing slash
 url:		http://milanaryal.com
 
 author:
@@ -52,9 +62,9 @@ menu:
     
   - title:	About
     url:	/about
-	
+
   - title:	Archive
-	url:	/archive
+    url:	/archive
 
 copyright:
   author:	Milan Aryal

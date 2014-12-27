@@ -1,4 +1,8 @@
+# robotstxt.org/
+
 User-agent: *
 Disallow:
+
+Allow: /
 
 Sitemap: http://milanaryal.com/sitemap.xml

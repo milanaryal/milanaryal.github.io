@@ -51,3 +51,8 @@ Finally, the diary ended when it said, “today I will tell her I love her”. I
 ---
 
 _So the moral of the story, if you love someone, don’t wait till tomorrow to tell him/her. Maybe the next day will never come at all._
+
+<figure>
+  <iframe width="420" height="315" src="//www.youtube.com/embed/aPpeaETF1qE" frameborder="0" allowfullscreen></iframe>
+  <figcaption>Video: YouTube, <a href="http://youtu.be/aPpeaETF1qE">Lizz Wright</a></figcaption>
+</figure>
