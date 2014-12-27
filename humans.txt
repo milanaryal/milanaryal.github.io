@@ -5,7 +5,7 @@
 
     Name: Milan Aryal
     Role: Site admin
-    Twitter: http://twitter.com/MilanAryal
+    Twitter: @MilanAryal
 
 # THANKS
 
