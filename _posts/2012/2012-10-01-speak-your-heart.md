@@ -56,5 +56,5 @@ _So the moral of the story, if you love someone, don’t wait till tomorrow to t
 
 <figure>
   <iframe width="560" height="315" src="//www.youtube.com/embed/aPpeaETF1qE?rel=0&amp;theme=light"" frameborder="0" allowfullscreen></iframe>
-  <figcaption>Video: YouTube, <a href="http://youtu.be/aPpeaETF1qE">Lizz Wright</a></figcaption>
+  <figcaption>Music: YouTube, <a href="http://youtu.be/aPpeaETF1qE">Lizz Wright</a></figcaption>
 </figure>
