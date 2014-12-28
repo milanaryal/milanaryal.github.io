@@ -3,9 +3,6 @@
 # build config
 markdown: redcarpet
 pygments: true
-locale: en_US
-timezone: Asia/Kathmandu
-encoding: UTF-8
 
 # permalink structure, see http://jekyllrb.com/docs/permalinks/
 permalink: /:year/:month/:title/
@@ -61,6 +58,9 @@ menu:
 
   - title: About
     url: /about
+
+  - title: Archive
+    url: /archive
 
 copyright:
   author: Milan Aryal
