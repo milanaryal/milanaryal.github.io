@@ -957,7 +957,7 @@ article {
 }
 
 .post-snippet {
-	font-size: 14px;
+	font-size: 15px;
 }
 
 #post-info h1 {
@@ -983,5 +983,9 @@ p {
 
 .pagination, .copyright {
 	font-size: 12px;
+}
+
+#archive ul {
+	font-size: 15px;
 	}
 }
