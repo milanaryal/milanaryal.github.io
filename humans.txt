@@ -13,6 +13,7 @@
     Jekyll
     Bootstrap
     HTML5 Boilerplate
+    Google Fonts
     Font Awesome
 
 # TECHNOLOGY COLOPHON
