@@ -1,14 +1,9 @@
-# Jekyll config file http://jekyllrb.com/docs/configuration/
+# Dependencies
+markdown:	redcarpet
+pygments:	true
 
-# build config
-markdown: redcarpet
-pygments: true
-locale: en_US
-timezone: Asia/Kathmandu
-encoding: UTF-8
-
-# permalink structure, see http://jekyllrb.com/docs/permalinks/
-permalink: /:year/:month/:title/
+# Permalinks
+permalink:	/:year/:month/:title/
 
 # prevent jekyll publishing unwanted github files
 exclude: ['README.md', 'LICENSE', 'CNAME', 'package.json', 'node_modules', 'bower_components']
@@ -16,57 +11,55 @@ exclude: ['README.md', 'LICENSE', 'CNAME', 'package.json', 'node_modules', 'bowe
 include: ['.htaccess']
 
 # Setup
-title: Milan Aryal
-tagline: 'blog'
-description: 'Making the web a better place.'
-
-# URL of site, include http://, do not include a trailing slash
-url: http://milanaryal.com
+title:		Milan Aryal
+tagline:	'blog'
+description:	'Things that came in my mind...'
+url:		http://milanaryal.com
 
 author:
-  name: 'Milan Aryal'
-  email: 'considermilan@gmail.com'
-  url: https://google.com/+MilanAryal
+  name:		'Milan Aryal'
+  email:  'considermilan@gmail.com'
+  url:    https://google.com/+MilanAryal
 
-paginate: 5
+paginate:	5
 
 # Custom vars
-icon: /assets/img/icon.png
-cover: /assets/img/cover-img.jpg
+icon:   /assets/img/icon.png
+cover:  /assets/img/cover-img.jpg
 
 social:
-  - icon: twitter
-    url: //twitter.com/MilanAryal
-    desc: Follow me on Twitter
+  - icon:	twitter
+    url:	//twitter.com/MilanAryal
+    desc:	Follow me on Twitter
 
-  - icon: github
-    url: //github.com/MilanAryal
-    desc: Fork me on GitHub
+  - icon:	github
+    url:	//github.com/MilanAryal
+    desc:	Fork me on GitHub
 
-  - icon: googleplus-alt
-    url: //google.com/+MilanAryal
-    desc: Add me on Google+
+  - icon:	google-plus
+    url:	//google.com/+MilanAryal
+    desc:	Add me on Google+
     
-  - icon: tumblr
-    url: http://milanaryal.tumblr.com
-    desc: Follow me on Tumblr
+  - icon:	tumblr
+    url:	http://milanaryal.tumblr.com
+    desc:	Follow me on Tumblr
 
-  - icon: feed
-    url: http://milanaryal.com/feed.xml
-    desc: Subscribe to my feed
-
+  - icon:	rss
+    url:	http://milanaryal.com/feed.xml
+    desc:	Subscribe to my feed
+    
 menu:
-  - title: Home
-    url: /
-
-  - title: About
-    url: /about
+  - title:	Home
+    url:	/
+    
+  - title:	About
+    url:	/about
 
   - title: Archive
     url: /archive
 
 copyright:
-  author: Milan Aryal
-  url: http://milanaryal.com
-  type_title: MIT licensed
-  type_url: //github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE
+  author:	Milan Aryal
+  url:		http://milanaryal.com
+  type_title:	MIT licensed
+  type_url:	//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENCE
