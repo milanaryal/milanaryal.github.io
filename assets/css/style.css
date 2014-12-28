@@ -986,6 +986,13 @@ p {
 }
 
 #archive ul {
+	list-style-type: none;
 	font-size: 15px;
+	margin-left: 0;
+	margin-right: 0;
+	}
+	
+#archive ul li{
+	margin: 15px;
 	}
 }
