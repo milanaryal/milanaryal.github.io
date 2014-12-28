@@ -1,8 +1,8 @@
 # robotstxt.org/
+# Cooperating web crawlers and other web robots
 
 User-agent: *
 Disallow:
-
 Allow: /
 
 Sitemap: http://milanaryal.com/sitemap.xml
