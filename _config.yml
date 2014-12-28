@@ -8,7 +8,7 @@ timezone: Asia/Kathmandu
 encoding: UTF-8
 
 # permalink structure, see http://jekyllrb.com/docs/permalinks/
-permalink: /:year/:month/:title/
+permalink: /:year/:title/
 
 # prevent jekyll publishing unwanted github files
 exclude: ['README.md', 'LICENSE', 'CNAME', 'package.json', 'node_modules', 'bower_components']
