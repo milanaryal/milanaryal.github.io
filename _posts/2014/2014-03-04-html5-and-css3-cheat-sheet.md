@@ -7,7 +7,7 @@ date: 2014-03-04T05:29:59+05:45
 
 On the journey to learn coding for web development lots of changes happened. Developing New version of HTML5 and CSS3 is one of them. But back then those version were not completed neither accepted by major web browsers. Now things have changed and HTML5 and CSS3 accepted by all web browsers and versions and we all know that now using HTML is much more easy with lots of option.
 
-This is HTML5 and CSS3 **cheat sheet** for those who want to work with this latest script. This cheat sheet include a relative comparison between last version and new version of HTML5 and CSS3.
+This is **HTML5 and CSS3 cheat sheet** by Code School for those who want to work with this latest script. This cheat sheet include a relative comparison between last version and new version of HTML5 and CSS3.
 
 ### HTML5 cheat sheet
 
@@ -34,11 +34,11 @@ New CSS3 attributes with great examples and very easy to memorize.
   <figcaption>CSS3 cheat sheet</figcaption>
 </figure>
 
+_Creative common courtesy from codeschool.com_
+
 ---
 
 [**Download in PDF format**](/assets/pdf/2014/20140304--html5-and-css3-cheat-sheet.pdf)
-
-_Creative common courtesy from codeschool.com_
 
 ---
 
