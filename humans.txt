@@ -9,12 +9,11 @@
 
 # THANKS
 
-	GitHub
+    GitHub
     Jekyll
-	Bootstrap
-	HTML5 Boilerplate
-	Font Awesome
-	
+    Bootstrap
+    HTML5 Boilerplate
+    Font Awesome
 
 # TECHNOLOGY COLOPHON
 
