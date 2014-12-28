@@ -34,11 +34,11 @@ New CSS3 attributes with great examples and very easy to memorize.
   <figcaption>CSS3 cheat sheet</figcaption>
 </figure>
 
-_Creative common courtesy from codeschool.com_
-
 ---
 
 [**Download in PDF format**](/assets/pdf/2014/20140304--html5-and-css3-cheat-sheet.pdf)
+
+_Creative common courtesy from codeschool.com_
 
 ---
 
