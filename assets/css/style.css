@@ -985,14 +985,8 @@ p {
 	font-size: 12px;
 }
 
-#archive ul {
-	list-style-type: none;
-	font-size: 15px;
-	}
-	
 #archive ul li{
-	margin-bottom: 15px;
-	margin-left: 0 !important;
-	margin-right: 0 !important;
+	margin: 15px 0;
+	font-size: 15px;
 	}
 }
