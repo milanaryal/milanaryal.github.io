@@ -1,10 +1,7 @@
 # Jekyll config file http://jekyllrb.com/docs/configuration/
 
 # Handling Reading
-safe: false
-include: [".htaccess"]
 exclude: ["README.md", "LICENSE", "CNAME"]
-keep_files: [".git", ".svn"]
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 textile_ext: "textile"
@@ -15,51 +12,16 @@ gems: ["jekyll-mentions", "jemoji", "jekyll-redirect-from", "jekyll-sitemap"]
 # Conversion
 markdown: kramdown
 highlighter: pygments
-lsi: false
-excerpt_separator: "\n\n"
 
 # Serving
 baseurl: "" # does not include hostname
 
-# Backwards-compatibility
-relative_permalinks: false
-
 # Outputting
 permalink: /:year/:month/:title/
 paginate_path: /page:num
+paginate: 5
 timezone: Asia/Kathmandu
 locale: en_US
-
-# Markdown Processors
-maruku:
-  use_tex: false
-  use_divs: false
-  png_engine: blahtex
-  png_dir: images/latex
-  png_url: /images/latex
-  fenced_code_blocks: true
-
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: false
-
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_number_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
 
 # Setup
 title: Milan Aryal
@@ -72,8 +34,6 @@ author:
   name: 'Milan Aryal'
   email: 'considermilan@gmail.com'
   url: https://google.com/+MilanAryal
-
-paginate: 5
 
 # Custom vars
 icon: /assets/img/icon.png
