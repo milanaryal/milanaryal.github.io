@@ -7,20 +7,21 @@ locale: en_US
 timezone: Asia/Kathmandu
 encoding: UTF-8
 
+# gems (plugins)
 gems:
-  - jemoji
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
 
 # permalink structure, see http://jekyllrb.com/docs/permalinks/
 permalink: /:year/:month/:title/
 
 # prevent jekyll publishing unwanted github files
-exclude: ['README.md', 'LICENSE', 'CNAME', 'package.json', 'node_modules', 'bower_components']
-
-include: ['.htaccess']
+exclude: ['README.md', 'LICENSE', 'CNAME']
 
 # Setup
 title: Milan Aryal
-tagline: 'blog'
 description: 'Making the web a better place.'
 
 # URL of site, include http://, do not include a trailing slash
