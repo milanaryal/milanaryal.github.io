@@ -7,7 +7,7 @@ title: "About"
   Hi. I'm Milan Aryal, a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
 </div>
 
-### Let's be friends
+### Let's be friends :smile:
 
 * <i class="fa fa-twitter"></i> [Twitter](//twitter.com/MilanAryal)
 * <i class="fa fa-google-plus"></i> [Google+](//google.com/+MilanAryal)
