@@ -7,6 +7,9 @@ locale: en_US
 timezone: Asia/Kathmandu
 encoding: UTF-8
 
+gems:
+  - jemoji
+
 # permalink structure, see http://jekyllrb.com/docs/permalinks/
 permalink: /:year/:month/:title/
 
