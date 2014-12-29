@@ -2,6 +2,10 @@
 
 # build config
 markdown: redcarpet
+
+redcarpet:
+  extensions: ['smart']
+
 pygments: true
 locale: en_US
 timezone: Asia/Kathmandu
