@@ -1,7 +1,7 @@
 # Jekyll config file http://jekyllrb.com/docs/configuration/
 
 # build config
-markdown: redcarpet
+markdown: kramdown
 
 redcarpet:
   extensions: ['smart']
