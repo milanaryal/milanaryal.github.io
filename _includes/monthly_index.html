@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="monthly-archive">
+  <div>
+    <span class="title">Monthly archive for {{page.year}}/{{page.month}}</span>
+  </div>
+  <div>
+    <ul>
+	  {% for post in page.posts %}
+	    <li><a href="{{ post.url }}"><span>{{ post.title }}<span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

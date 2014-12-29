@@ -13,7 +13,6 @@ gems:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
-- ArchiveGenerator
 
 # permalink structure, see http://jekyllrb.com/docs/permalinks/
 permalink: /:year/:month/:title/

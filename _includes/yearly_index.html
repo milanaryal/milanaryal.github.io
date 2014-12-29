@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="yearly-archive">
+  <div>
+    <span class="title">Yearly archive for {{page.year}}</span>
+  </div>
+  <div>
+    <ul>
+	  {% for post in page.posts %}
+	    <li><a href="{{ post.url }}"><span>{{ post.title }}<span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
