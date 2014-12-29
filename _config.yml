@@ -23,6 +23,19 @@ paginate: 5
 timezone: Asia/Kathmandu
 locale: en_US
 
+# Plugin: jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+  layouts:
+    year: year_index
+    month: month_index
+  permalinks:
+    year: /:year/
+    month: /:year/:month/
+
 # Setup
 title: Milan Aryal
 description: 'Making the web a better place.'
