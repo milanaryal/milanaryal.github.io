@@ -6,10 +6,9 @@ layout: none
 # The humans responsible & technology colophon
 
 # TEAM
-    {% for contributor in site.github.contributors %}
-    Name: {{ contributor.login }}
-    Site: {{ contributor.html_url }}
-    {% endfor %}
+
+    {% for contributor in site.github.contributors %}Name: {{ contributor.login }}
+    Site: {{ contributor.html_url }}{% endfor %}
 
 # THANKS
 
@@ -27,7 +26,7 @@ layout: none
 	
 # SITE
 
-    Last update: {{ site.time | date:"%Y/%m/%d" }}
+    Last updated: {{ site.time | date:"%Y/%m/%d" }}
     Language: English / Nepali
     Doctype: HTML5
     IDE: Atom Editor, Sublime Text, Notepad++, GitHub, Photoshop, Illustrator
