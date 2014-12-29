@@ -25,7 +25,7 @@ baseurl: "" # does not include hostname
 relative_permalinks: false
 
 # Outputting
-permalink: date
+permalink: /:year/:month/:title/
 paginate_path: /page:num
 timezone: Asia/Kathmandu
 locale: en_US
