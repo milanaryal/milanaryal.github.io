@@ -7,6 +7,9 @@
     Role: Site admin
     Twitter: @MilanAryal
 
+    Name: Kshitiz Aryal
+    Twitter: @KshitizAryal
+
 # THANKS
 
     GitHub
@@ -19,7 +22,7 @@
 # TECHNOLOGY COLOPHON
 
     Standards: HTML5, CSS3
-    Components: Jekyll, Normalize.css, Font Awesome
+    Components: Jekyll, Normalize.css, Font Awesome, kramdown, maruku, rdiscount, redcarpet, RedCloth, liquid, pygments.rb, github-pages, ruby
 	
 # SITE
 
