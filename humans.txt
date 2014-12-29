@@ -3,12 +3,10 @@
 
 # TEAM
 
-    Name: Milan Aryal
-    Role: Site admin
-    Twitter: @MilanAryal
-
-    Name: Kshitiz Aryal
-    Twitter: @KshitizAryal
+    {% for contributor in site.github.contributors %}
+    Name: {{ contributor.login }}
+    Site: {{ contributor.html_url }}
+    {% endfor %}
 
 # THANKS
 
@@ -22,11 +20,11 @@
 # TECHNOLOGY COLOPHON
 
     Standards: HTML5, CSS3
-    Components: jekyll, jekyll-coffeescript, jekyll-sass-converter, kramdown, maruku, rdiscount, redcarpet, RedCloth, liquid, pygments.rb, jemoji, jekyll-mentions, jekyll-redirect-from, jekyll-sitemap, github-pages, ruby
+    Components: {% for dependency in site.github.versions %}{{ dependency[0] }}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}
 	
 # SITE
 
-    Last update: 2014-12-27T22:04:22+05:45
+    Last update: {{ site.time | date:"%Y/%m/%d" }}
     Language: English / Nepali
     Doctype: HTML5
     IDE: Atom Editor, Sublime Text, Notepad++, GitHub, Photoshop, Illustrator
