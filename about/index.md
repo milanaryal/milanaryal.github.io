@@ -1,6 +1,7 @@
 ---
 layout: "page"
 title: "About"
+redirect_from: "/p/about.html"
 ---
 
 <div class="message">

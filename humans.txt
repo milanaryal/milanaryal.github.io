@@ -26,7 +26,7 @@ layout: none
 	
 # SITE
 
-    Last updated: {{ site.time | date:"%Y/%m/%d" }}
+    Last updated: {{ site.time | date: '%Y/%m/%d' }}
     Language: English / Nepali
     Doctype: HTML5
     IDE: Atom Editor, Sublime Text, Notepad++, GitHub, Photoshop, Illustrator
