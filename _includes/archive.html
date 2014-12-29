@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div id="archive-nav">
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+  {% if year != nyear %}
+    <a {% if page.url contains year %}class="active"{% endif %} href="/{{year}}/">{{year}}</a>
+  {% endif %}
+{% endfor %}
+</div>
+
+<h1> Posts archive: {% if page.period["month"] != nil %} {{ page.period["month"] }} - {% endif %} {{page.period["year"]}} </h1><br>
+<ul style="list-style-type: none;">
+  {% for post in page.period_posts reversed %}
+    {% unless post.next %}
+        <h3>{{ post.date | date: '%Y %b' }}</h3>
+      {% else %}
+        {% capture currPostDate %}{{ post.date | date: '%Y %b' }}{% endcapture %}
+        {% capture nextPostDate %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
+        {% if currPostDate != nextPostDate %}
+          <h3>{{ post.date | date: '%Y %b' }}</h3>
+        {% endif %}
+      {% endunless %}
+
+    <li>{{ post.date | date: '%b %d' }} - <a href="{{post.url}}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
