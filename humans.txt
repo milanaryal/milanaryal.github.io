@@ -22,7 +22,7 @@
 # TECHNOLOGY COLOPHON
 
     Standards: HTML5, CSS3
-    Components: Jekyll, Normalize.css, Font Awesome, kramdown, maruku, rdiscount, redcarpet, RedCloth, liquid, pygments.rb, github-pages, ruby
+    Components: jekyll, jekyll-coffeescript, jekyll-sass-converter, kramdown, maruku, rdiscount, redcarpet, RedCloth, liquid, pygments.rb, jemoji, jekyll-mentions, jekyll-redirect-from, jekyll-sitemap, github-pages, ruby
 	
 # SITE
 
