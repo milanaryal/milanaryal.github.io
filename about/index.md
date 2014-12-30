@@ -4,7 +4,7 @@ title: "About"
 redirect_from: "/p/about.html"
 ---
 
-My name is Milan Aryal, a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
+My name is Milan Aryal and I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
 
 The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification. :blush:
 
@@ -18,8 +18,6 @@ The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic;
 * <i class="fa fa-instagram"></i> [Instagram](//instagram.com/milanaryal)
 * <i class="fa fa-pinterest"></i> [Pinterest](//pinterest.com/milanaryal)
 
----
-
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.
 
 Nothing brings me more pleasure than making something out of nothing. Even when the results are far from my ideal expectations, I find the whole ceremony of creativity completely enthralling.
@@ -32,7 +30,7 @@ In this site you'll find a recollection of thoughts and opinions based on my exp
 
 Initially this blog was established as a means to keep up with my own interest in the web, but with time and little efforts, this blog has evolved into something much more elaborate and meaningful.
 
-If you enjoy the content found here, you can grap your copy of the [<i class="fa fa-rss"></i> Feed](http://milanaryal.com/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site. :telephone_receiver:
+If you enjoy the content found here, you can grap your copy of the [<i class="fa fa-rss"></i> feed](http://milanaryal.com/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site. :telephone_receiver:
 
 ### Contact
 
