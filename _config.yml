@@ -1,6 +1,8 @@
 # Jekyll config file http://jekyllrb.com/docs/configuration/
 
 # Handling Reading
+safe: false
+include: ["_plugins"]
 exclude: ["README.md", "LICENSE", "CNAME"]
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
