@@ -22,17 +22,17 @@ According to Jekyll wiki,
 
 GitHub Pages uses the [following dependencies](//pages.github.com/versions/):
 
-{% for dependency in site.github.versions %}{{ dependency[0] }}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}
+- {% for dependency in site.github.versions %}{{ dependency[0] }}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}
 
 ### Who are using Jekyll?
 
 Here are some websites/blog that were created with Jekyll:
 
-* [Jekyll](http://jekyllrb.com/) *itself and most of the GitHub's subpages*
-* [HealthCare.gov](https://www.healthcare.gov/) *landing page and content subpages*
+* [Jekyll](http://jekyllrb.com/) - *itself and most of the GitHub's subpages*
+* [HealthCare.gov](https://www.healthcare.gov/) - *landing page and content subpages*
 * [Todd Motto](http://toddmotto.com/)
 * [CSS Wizardry](http://csswizardry.com/)
-* Some of the best projects blog like [Font Awesome](http://blog.fontawesome.io/), [Bootstrap Blog](http://blog.getbootstrap.com/)..
+* [Font Awesome Blog](http://blog.fontawesome.io/), [Bootstrap Blog](http://blog.getbootstrap.com/) ... and many other awesome projects and blogs (using Jekyll) are hosted on GitHub.
 
 ### Getting Started
 
@@ -53,9 +53,10 @@ Download and install GitHub app according to your OS:
 
 Download and setup a good themes from the following popular sites:
 
-* [Jekyll Themes](http://jekyllthemes.org/) - A Jekyll theme collection site
+* [Jekyll Themes](http://jekyllthemes.org/) - *A Jekyll theme collection site*
 * [Poole](http://getpoole.com/)
 * [Jekyll Now](http://www.jekyllnow.com/)
+* There're other many theme collection site for Jekyll.
 
 A basic Jekyll site usually looks something like this:
 
@@ -102,7 +103,9 @@ A basic Jekyll site usually looks something like this:
 
 #### Step 4
 
-Sync your themes with GitHub Windows or Mac client on GitHub Pages.
+* With the help of GutHub Windows/Mac client, clone your `username.github.io` and sync/push your theme.
+* Congratulation! You are done. 
+* Now after few minutes (less than 15 min) you'll see your changes at your `http://username.githun.io`.
 
 ### Setting up a custom domain with GitHub Pages
 
@@ -112,18 +115,22 @@ Follow the following process to setup custom domain name with your GitHub Pages.
 
 With your DNS provider, create A records that resolve to the following IP addresses:
 
++--------------+---------+----------------+
 | Domain       | Records | IP addresses   |
-|--------------|---------|----------------|
+|:------------:|:-------:|:--------------:|
 | example.com  | A       | 192.30.252.153 |
 | example.com  | A       | 192.30.252.154 |
++--------------+---------+----------------+
  
 #### Configuring a www subdomain
 
 Again add following CNAME record to your DNS provider:
  
++--------------+---------+--------------------+
 | Sub Domain   | Records | Addresses          |
-|--------------|---------|--------------------|
+|:------------:|:-------:|:------------------:|
 | www          | CNAME   | username.github.io |
++--------------+---------+--------------------+
 
 #### Create a CNAME file name
 
@@ -140,6 +147,23 @@ Now create a CNAME file name in your GitHub Pages with your desire redirect:
 ---
 layout: post
 title: Blogging Like a Hacker
+---
+{% endhighlight %}
+
+> Note: For the proper setup, don't use `tab` use space `instead`.
+
+Thanks to Liquid that you can add your desire front matter:
+
+{% highlight bash %}
+---
+layout:
+title:
+subtitle:
+date:
+author:
+categories:
+tags:
+image:
 ---
 {% endhighlight %}
 
