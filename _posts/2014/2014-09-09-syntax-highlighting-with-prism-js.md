@@ -68,7 +68,7 @@ If you don't like to upload the file and want to use Prism default theme then yo
 
 ### Using Prism
 
-First thing you have to escape HTML character ` < ` to ` &lt; ` and ` > ` to ` &gt; ` to highlight syntax with Prism. For Example:
+First thing you have to escape HTML character `<` to `&lt;` and `>` to `&gt;` to highlight syntax with Prism. For Example:
 
 {% highlight javascript %}
 &lt;pre&gt;
