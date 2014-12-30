@@ -4,7 +4,7 @@ title: "About"
 redirect_from: "/p/about.html"
 ---
 
-Hi. I'm Milan Aryal, :sunglasses: a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
+Hi. I'm Milan Aryal :sunglasses:, a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
 
 
 ### Let's be friends :smile:
@@ -16,6 +16,8 @@ Hi. I'm Milan Aryal, :sunglasses: a student living in Kathmandu, Nepal who loves
 * <i class="fa fa-tumblr"></i> [Tumblr](//milanaryal.tumblr.com)
 * <i class="fa fa-instagram"></i> [Instagram](//instagram.com/milanaryal)
 * <i class="fa fa-pinterest"></i> [Pinterest](//pinterest.com/milanaryal)
+
+---
 
 > The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification.
 
@@ -31,7 +33,7 @@ In this site you'll find a recollection of thoughts and opinions based on my exp
 
 Initially this blog was established as a means to keep up with my own interest in the web, but with time and little efforts, this blog has evolved into something much more elaborate and meaningful.
 
-If you enjoy the content found here, you can grap your copy of the [RSS Feed](http://milanaryal.com/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
+If you enjoy the content found here, you can grap your copy of the [RSS/Atom Feed](http://milanaryal.com/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
 ### Contact
 
