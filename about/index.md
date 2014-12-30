@@ -16,6 +16,7 @@ The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic;
 * <i class="fa fa-linkedin"></i> [LinkedIn](//linkedin.com/in/milanaryal)
 * <i class="fa fa-tumblr"></i> [Tumblr](//milanaryal.tumblr.com)
 * <i class="fa fa-instagram"></i> [Instagram](//instagram.com/milanaryal)
+* <i class="fa fa-vine"></i> [Vine](//vine.com/MilanAryal)
 * <i class="fa fa-pinterest"></i> [Pinterest](//pinterest.com/milanaryal)
 
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.
