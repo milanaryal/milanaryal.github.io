@@ -4,8 +4,9 @@ title: "About"
 redirect_from: "/p/about.html"
 ---
 
-Hi. I'm Milan Aryal :sunglasses:, a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
-
+<div class="message">
+Hi. I’m Milan Aryal :sunglasses:, a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
+</div>
 
 ### Let's be friends :smile:
 
