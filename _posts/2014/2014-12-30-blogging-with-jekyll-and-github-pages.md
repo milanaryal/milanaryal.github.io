@@ -18,7 +18,7 @@ Jekyll takes your content written in Markdown, passes it through your templates 
 
 According to Jekyll wiki,
 
-> "Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through [Markdown](http://daringfireball.net/projects/markdown/) (or [Textile](http://redcloth.org/textile)) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind [GitHub Pages](http://pages.github.com/), which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers **for free**."
+> "Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through [Markdown](http://daringfireball.net/projects/markdown/) (or [Textile](http://redcloth.org/textile)) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind [GitHub Pages](http://pages.github.com/), which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free."
 
 GitHub Pages uses the [following dependencies](//pages.github.com/versions/):
 
@@ -112,9 +112,8 @@ Follow the following process to setup custom domain name with your GitHub Pages.
 
 With your DNS provider, create A records that resolve to the following IP addresses:
 
- 
 | Domain       | Records | IP addresses   |
-|--------------|--------------------------
+|--------------|---------|----------------|
 | example.com  | A       | 192.30.252.153 |
 | example.com  | A       | 192.30.252.154 |
  
@@ -123,7 +122,7 @@ With your DNS provider, create A records that resolve to the following IP addres
 Again add following CNAME record to your DNS provider:
  
 | Sub Domain   | Records | Addresses          |
-|--------------|------------------------------|
+|--------------|---------|--------------------|
 | www          | CNAME   | username.github.io |
 
 #### Create a CNAME file name
