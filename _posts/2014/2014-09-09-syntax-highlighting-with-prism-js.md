@@ -62,6 +62,7 @@ If you don't like to upload the file and want to use Prism default theme then yo
 
 {% highlight html %}
 <link href="http://prismjs.com/themes/prism.css" rel="stylesheet" />
+
 <script src="http://prismjs.com/prism.js"></script>
 {% endhighlight %}
 
@@ -121,4 +122,4 @@ With Prism by help of these few easy steps you get a nice highlighted code snipp
 
 ---
 
-_This post has been imported from [here](//milanaryal.blogspot.com/2014/09/syntax-highlighter-prism.html)._
+_Originally I've written this post, [here](//milanaryal.blogspot.com/2014/09/syntax-highlighter-prism.html)._
