@@ -115,7 +115,6 @@ Follow the following process to setup custom domain name with your GitHub Pages.
 
 With your DNS provider, create A records that resolve to the following IP addresses:
 
-+--------------+---------+----------------+
 | Domain       | Records | IP addresses   |
 |:------------:|:-------:|:--------------:|
 | example.com  | A       | 192.30.252.153 |
@@ -126,7 +125,6 @@ With your DNS provider, create A records that resolve to the following IP addres
 
 Again add following CNAME record to your DNS provider:
  
-+--------------+---------+--------------------+
 | Sub Domain   | Records | Addresses          |
 |:------------:|:-------:|:------------------:|
 | www          | CNAME   | username.github.io |
