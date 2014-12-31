@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello, world!"
-subtitle: My first post.
+excerpt: My first post.
 date:   2014-12-03T21:47:57+05:45
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Making fluid and responsive embedded videos
-subtitle: This tutorial helps you to have fluid width embedded videos in your responsive web design.
+excerpt: This tutorial helps you to have fluid width embedded videos in your responsive web design.
 author: Milan Aryal
 date: 2014-11-22T19:32:39+05:45
 ---

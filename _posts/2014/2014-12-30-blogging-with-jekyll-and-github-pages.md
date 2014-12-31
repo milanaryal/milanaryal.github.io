@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blogging with Jekyll and GitHub Pages
-subtitle: Transform your plain text into static websites and blogs.
+excerpt: Transform your plain text into static websites and blogs.
 date: 2014-12-30T19:47:46+05:45
 image: /assets/img/2014/20141230--blogging-with-jekyll.jpg
 ---
@@ -161,6 +161,7 @@ author:
 categories:
 tags:
 image:
+excerpt:
 ---
 {% endhighlight %}
 
