@@ -36,7 +36,7 @@ Here are some websites/blog that were created with Jekyll:
 
 ### Getting Started
 
-If don't need to be a good coder to blog with Jekyll. Here are the simple steps to blog with Jekyll on GitHub Pages:
+You don't need to be a good coder to blog with Jekyll. Here are the simple steps to blog with Jekyll on GitHub Pages:
 
 #### Step 1
 
@@ -98,6 +98,7 @@ A basic Jekyll site usually looks something like this:
 │  ├─ _variables.scss
 │  └─ style.scss
 └── index.html
+└── 404.html # Custom 404 page
 └── sitemap.xml # Site map for the website
 {% endhighlight %}
 
@@ -130,7 +131,7 @@ Again add following CNAME record to your DNS provider:
 
 #### Create a CNAME file name
 
-Now create a CNAME file name in your GitHub Pages with your desire redirect:
+Now create a CNAME (with out any extention) file name in your GitHub Pages with your desire redirect:
 
 * If your CNAME file contains `example.com`, then `www.example.com` will redirect to `example.com`.
 * If your CNAME file contains `www.example.com`, then `example.com` will redirect to `www.example.com`.
@@ -148,7 +149,7 @@ title: Blogging Like a Hacker
 
 _Note: For the proper setup, don't use `tab` use `space` instead._
 
-Thanks to Liquid that you can add your desire front matter:
+Thanks to Liquid (Jekyll uses the Liquid templating language to process templates) that you can add your desire front matter:
 
 {% highlight bash %}
 ---
@@ -186,6 +187,6 @@ gems:
 - jekyll-sitemap
 {% endhighlight %}
 
-This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at `jekyllrb.com`.
+This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](http://jekyllrb.com/).
 
 Happy Jekyll'ing! :smile:
