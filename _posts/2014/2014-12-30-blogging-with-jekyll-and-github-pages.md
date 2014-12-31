@@ -146,7 +146,7 @@ title: Blogging Like a Hacker
 ---
 {% endhighlight %}
 
-> Note: For the proper setup, don't use `tab` use space `instead`.
+_Note: For the proper setup, don't use `tab` use `space` instead._
 
 Thanks to Liquid that you can add your desire front matter:
 
