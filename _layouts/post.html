@@ -24,7 +24,7 @@ article: true
 		<a class="scroll" data-speed="1000" href="#top"><span class="genericon genericon-expand"></span></a>
 	</div>
 </header>
-<article id="top">
+<article id="top" itemscope itemtype="http://schema.org/Article">
 	{{ content }}
 </article>
 {% for post in site.related_posts limit:1 %}
