@@ -51,7 +51,7 @@ social:
   - icon: googleplus-alt
     url: //google.com/+MilanAryal
     desc: Add me on Google+
-    
+
   - icon: tumblr
     url: http://milanaryal.tumblr.com
     desc: Follow me on Tumblr
@@ -68,7 +68,7 @@ menu:
     url: /about
 
   - title: Archive
-    url: /archive
+    url: /archives
 
 copyright:
   author: Milan Aryal
