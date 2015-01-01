@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello, world!"
-excerpt: My first post.
+excerpt: My first post on GitHub Pages with Jekyll.
 date:   2014-12-03T21:47:57+05:45
 ---
 

@@ -4,5 +4,6 @@
 User-agent: *
 Disallow:
 Allow: /
+Disallow: /404.html
 
 Sitemap: http://milanaryal.com/sitemap.xml

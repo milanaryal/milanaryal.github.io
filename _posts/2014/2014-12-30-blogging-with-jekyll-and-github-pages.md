@@ -28,8 +28,8 @@ GitHub Pages uses the [following dependencies](//pages.github.com/versions/):
 
 Here are some websites/blog that were created with Jekyll:
 
-* [Jekyll](http://jekyllrb.com/) - *itself and most of the GitHub's subpages*
-* [HealthCare.gov](https://www.healthcare.gov/) - *landing page and content subpages*
+* [Jekyll](http://jekyllrb.com/) - itself and most of the GitHub's subpages
+* [HealthCare.gov](https://www.healthcare.gov/) - landing page and content subpages
 * [Todd Motto](http://toddmotto.com/)
 * [CSS Wizardry](http://csswizardry.com/)
 * [Font Awesome Blog](http://blog.fontawesome.io/), [Bootstrap Blog](http://blog.getbootstrap.com/) ... and many other awesome projects and blogs (using Jekyll) are hosted on GitHub.
@@ -53,7 +53,7 @@ Download and install GitHub app according to your OS:
 
 Download and setup a good themes from the following popular sites:
 
-* [Jekyll Themes](http://jekyllthemes.org/) - *A Jekyll theme collection site*
+* [Jekyll Themes](http://jekyllthemes.org/) - a Jekyll theme collection site
 * [Poole](http://getpoole.com/)
 * [Jekyll Now](http://www.jekyllnow.com/)
 * There're other many theme collection site for Jekyll.
@@ -65,20 +65,20 @@ A basic Jekyll site usually looks something like this:
 ├── CNAME # Contains your custom domain name (optional)
 ├── _config.yml
 ├── _drafts # To preview your posts
-|   ├── begin-with-the-crazy-ideas.textile
-|   └── on-simplicity-in-technology.markdown
+│   ├── begin-with-the-crazy-ideas.textile
+│   └── on-simplicity-in-technology.markdown
 ├── _includes # Snippets of code that can be used throughout your templates
-|   ├── footer.html
-|   └── header.html
+│   ├── footer.html
+│   └── header.html
 ├── _layouts
-|   ├── default.html default.html # The main template. Includes <head>, <navigation>, <footer>, etc
-|   └── page.html # Static page layout
-|   └── post.html # Blog post layout
+│   ├── default.html default.html # The main template. Includes <head>, <navigation>, <footer>, etc
+│   └── page.html # Static page layout
+│   └── post.html # Blog post layout
 ├── _posts # All posts go in this directory!
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   └── 2009-04-26-barcamp-boston-4-roundup.textile
+│   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
+│   └── 2009-04-26-barcamp-boston-4-roundup.textile
 ├── _data
-|   └── members.yml
+│   └── members.yml
 ├── _site # After Jekyll builds the website, it puts the static HTML output here. This is what's served!
 │   ├── CNAME
 │   └── LICENSE
@@ -105,7 +105,7 @@ A basic Jekyll site usually looks something like this:
 #### Step 4
 
 * With the help of GutHub Windows/Mac client, clone your `username.github.io` and sync/push your theme.
-* Congratulation! You are done. 
+* Congratulation! You are done.
 * Now after few minutes (less than 15 min) you'll see your changes at your `http://username.githun.io`.
 
 ### Setting up a custom domain with GitHub Pages
@@ -124,7 +124,7 @@ With your DNS provider, create A records that resolve to the following IP addres
 #### Configuring a www subdomain
 
 Again add following CNAME record to your DNS provider:
- 
+
 | Sub Domain   | Records | Addresses          |
 |--------------|---------|--------------------|
 | www          | CNAME   | username.github.io |
@@ -165,7 +165,7 @@ excerpt:
 ---
 {% endhighlight %}
 
-Save the file under the format `2014-12-30-blogging-like-a-hacker.md` which is in YYY-MM-DD-blog-post-title.md
+Save the file under the format `2014-12-30-blogging-like-a-hacker.md` which is in `YYY-MM-DD-blog-post-title.md`.
 
 Now if you set your permalink as `/:year/:month/:title/` in `_config.yml` then above post will published as `example.com/2014/12/blogging-like-a-hacker/`.
 
