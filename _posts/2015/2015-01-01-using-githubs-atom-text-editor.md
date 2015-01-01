@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using GitHub's Atom text editor
+title: Using GitHub’s Atom text editor
 excerpt: A hackable text editor for the 21st Century
 date: 2015-01-01T15:22:14+05:45
 image: /assets/img/2015/atom-text-editor.png
