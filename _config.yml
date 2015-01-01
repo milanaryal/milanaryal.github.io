@@ -61,13 +61,13 @@ social:
     desc: Subscribe to my feed
 
 menu:
-  - title: Home
+  - title: Posts
     url: /
 
   - title: About
     url: /about
 
-  - title: Archive
+  - title: Archives
     url: /archives
 
 copyright:
