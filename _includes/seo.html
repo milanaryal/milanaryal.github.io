@@ -1,4 +1,4 @@
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"{% if page.url == "/404.html" %} data-proofer-ignore="true"{% endif %}>
     {% if page.title %}<meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 32 }}">{% else %}<meta name="description" content="{{ site.description }}">{% endif %}
     <meta content="{{ site.title }}" property="og:site_name">
     {% if page.title %}<meta content="{{ page.title }}" property="og:title">{% else %}<meta content="{{ site.title }}" property="og:title">{% endif %}
@@ -8,8 +8,10 @@
     {% if page.image %}<meta content="{{ site.url }}{{ page.image }}" property="og:image">{% else %}<meta content="{{ site.url }}/assets/img/icon.png" property="og:image">{% endif %}
     {% if page.date %}<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     <meta content="{{ site.url }}/about/" property="article:author">{% endif %}
+    <meta property="og:locale" content="en_us"/>
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@MilanAryal">
+    <meta property="twitter:creator" content="@MilanAryal" />
     <link rel="author" href="//plus.google.com/+MilanAryal">
     <meta property="fb:admins" content="100001982813077">
     <link rel="author" type="text/plain" href="{{ site.url }}/humans.txt" />
