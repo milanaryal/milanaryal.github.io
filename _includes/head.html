@@ -7,13 +7,13 @@
     <link rel="author" href="//plus.google.com/+MilanAryal">
     <link rel="image_src" href="{{ site.url }}/assets/img/icon.png">
     <meta name="description" content="{% if page.date %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}">
-    {{% if page.keywords == "true" %}}
+    {% if page.keywords == "true" %}
     <meta name="keywords" content="Milan Aryal, Asia, Kathmandu, Nepal, milanaryal.com, social media, tech, business, lifestyle, infographics, design, tips, tricks">
-    {{% endif %}}
+    {% endif %}
     <!-- for Facebook -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
     <meta property="og:image" content="{{ site.url }}/assets/img/icon.png"/>
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.author.web }}"/>
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
     <meta property="og:description" content="{% if page.date %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}"/>
     <meta property="og:locale" content="{{ site.locale }}"/>
     <meta property="fb:admins" content="{{ site.author.fb_account_id }}"/>
@@ -21,7 +21,7 @@
     <meta property="og:type" content="article"/>
     <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time"/>
     <meta content="{{ site.url }}/about/" property="article:author"/>
-    {{% else %}}
+    {% else %}
     <meta property="og:type" content="blog"/>
     {% endif %}
     <!-- for Twitter -->
@@ -31,7 +31,7 @@
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{% if page.date %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:image" content="{{ site.url }}/assets/img/icon.png">
-    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.author.web }}">
+    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="twitter:account_id" content="{{ site.author.tw_account_id }}">
     {% if page.robots %}
     <meta name="robots" content="{{ page.robots }}">
