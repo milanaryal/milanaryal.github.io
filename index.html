@@ -23,14 +23,14 @@ permalink: /
 </div>
 <nav class="pagination" role="navigation">
 	{% if paginator.next_page %}
-		<a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
+		<a class="newer-posts" href="{{ paginator.next_page_path }}">&larr; Older posts</a>
 	{% endif %}
 	<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 	{% if paginator.previous_page %}
 		{% if paginator.page == 2 %}
-			<a class="older-posts" href="{{ '/index.html' | prepend: site.url | replace: '//', '/' }}">Newer posts &rarr;</a>
+			<a class="older-posts" href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">Newer posts &rarr;</a>
 		{% else %}
-			<a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+			<a class="older-posts" href="{{ paginator.previous_page_path }}">Newer posts &rarr;</a>
 		{% endif %}
 	{% endif %}
 </nav>
