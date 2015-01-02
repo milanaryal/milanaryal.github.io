@@ -1,28 +1,37 @@
 ---
 layout: post
 title: Using GitHub's Atom text editor
-excerpt: A hackable text editor for the 21st Century
+excerpt: A hackable text editor for the 21st Century.
 date: 2015-01-01T15:22:14+05:45
-image: /assets/img/2015/atom-text-editor.png
+image: /assets/img/2015/20150101--atom-text-editor.png
 ---
 
 I always had been using simple text editor like Notepad++ and Sublime Text. I never really did like Dreamweaver. For me it was too complicated by trying to be everything. I truly believe in and appreciate simplicity. But days comes like where I have to work with other language like Markdown, Textile.. So, I was in search for another simple text editor so that I can easily work with those language.
 
-In search for a new alternative text editor for Notepad++, `alternativeto.net` provided me with options like Brackets, SciTE, Atom, Programmer's Notepad,.. There's a wide range of these and I tried Atom because it is a open source project by GitHub and I always been fan with the GitHub open project like Jekyll.
+In search for a new alternative text editor for Sublime Text, [alternativeto.net](http://alternativeto.net/software/sublime-text/) provided me with options like Brackets, SciTE, Atom, Programmer's Notepad,... There's a wide range of these and I tried Atom because I found it is a open source project by GitHub and I always been fan with the GitHub open project like Jekyll.
 
-I really impressed with the awesome [Atom text editor](https://atom.io/), a hackable text editor for the 21st Century.
+I really impressed with the awesome [Atom text editor](//atom.io/), a hackable text editor for the 21st Century.
 
 Github's Atom Text Editor, is really AWESOME! I'm a huge Notepad++ and Sublime Text fan, but I switch to Github Atom.
 
 ### Why Atom will be your favorite text editor!
 
+There are no lack of text editors, be it for Linux, Mac or Windows. However, the developers of Github feel that all the existing text editors are not up to their standard and decided to build their own text editor. As a result, Atom was born. Termed as "a hackable text editor for the 21st century," Atom comes with plenty of useful features not found in other text editors, and within the short time that it has been around, it has already won praises from many developers.
+
 Atom is written using Node.js, CoffeeScript, HTML and LESS. It's then wrapped in a WebKit wrapper, so it will be super-easy to make packages for. It's truly a great text editor.
 
 It's clear one of their primary goals is to cater to web developers, being that packages are web language based.
 
+According to Atom wiki,
+
+> A hackable text editor for the 21st Century.
+
+>At GitHub, we're building the text editor we've always wanted. A tool you can customize to do anything, but also use productively on the first day without ever touching a config file. Atom is modern, approachable, and [hackable to the core](//github.com/atom/atom). We can't wait to see what you build with it.
+
 ---
 
-There are some [arguments I found](http://stackoverflow.com/questions/22126078/what-is-the-difference-between-sublime-text-and-githubs-atom) which are really interesting to read:
+Sublime text is nice but
+here are some [arguments I found](http://stackoverflow.com/questions/22126078/what-is-the-difference-between-sublime-text-and-githubs-atom), why you should **switch to Atom text editor over Sublime text** which you might curious to know:
 
 ### What is the difference between Sublime text and Github's Atom?
 
@@ -32,11 +41,11 @@ Sublime is binary compiled for the platform. Its core is written in C/C++ and a 
 
 The "closed" part of Sublime includes the API and UI. Apart from skins/themes and colourisers, the API currently makes it difficult to modify other aspects of the UI. For example, Sublime plugins can't interact with the sidebar, control or draw on the editing area (except in some limited ways eg. in the gutter) or manipulate the statusbar beyond basic text. ~~Atom's "closed" part is unknown at the moment, but I get the sense it's smaller.~~ Atom has a richer API (though poorly documented at present) with the design goal of allowing greater control of its UI. Being closely coupled with webkit offers numerous capabilities for UI feature enhancements not presently possible with Sublime. However, Sublime's extensions perform closer to native, so those that perform compute-intensive, highly repetitive or complex text manipulations in large buffers are feasible in Sublime.
 
-~~Since more of Atom will be open,~~ Github open-sourced Atom on May 6th, 2014. (Atom is [MIT licensed](https://raw.githubusercontent.com/atom/atom/master/LICENSE.md) and the source is freely available from the [atom/atom repository](https://github.com/atom/atom).) As a result it's likely that support and pace of development will be rapid. By contrast, Sublime's development has slowed significantly of late - [but it's not dead](http://www.sublimetext.com/forum/viewtopic.php?f=2&t=15477&start=60#p58951). In particular there are a number of bugs, many quite trivial, that haven't been fixed by the developer. None are showstopping imo, but if you want something in rapid development with regular bugfixing and enhancements, Sublime will frustrate. That said, installable Atom packages for Windows and Linux are yet to be released and activity on the codebase seems to have cooled in the weeks before and since the announcement, according to Github's stats.
+~~Since more of Atom will be open,~~ Github open-sourced Atom on [May 6th, 2014](//github.com/blog/1831-atom-free-and-open-source-for-everyone). (Atom is [MIT licensed](https://raw.githubusercontent.com/atom/atom/master/LICENSE.md) and the source is freely available from the [atom/atom repository](https://github.com/atom/atom).) As a result it's likely that support and pace of development will be rapid. By contrast, Sublime's development has slowed significantly of late - [but it's not dead](http://www.sublimetext.com/forum/viewtopic.php?f=2&t=15477&start=60#p58951). In particular there are a number of bugs, many quite trivial, that haven't been fixed by the developer. None are showstopping imo, but if you want something in rapid development with regular bugfixing and enhancements, Sublime will frustrate. ~~That said, installable Atom packages for Windows and Linux are yet to be released and activity on the codebase seems to have cooled in the weeks before and since the announcement, according to Github's stats.~~ Now prebuilt versions of Atom are available for OS X 10.8 or later, Windows 7 & 8, RedHat Linux, and Ubuntu Linux.
 
 In terms of IDE functions, from a webdev perspective Atom will allow extensions to the point of approaching products like Webstorm, though none have appeared yet. It remains to be seen how Atom will perform with such "heavy" extensions, since the editor natively feels sluggish. Due to restrictions in the API and lack of underlying webkit, Sublime won't allow this level of UI customisation although the developer may extend the API to support such features in future. Again, Sublime's underlying performance allows for things that involve computational grunt; ST3's symbol indexing being an example that performs well even with big projects. And though Atom's UI is certainly modelled upon Sublime, some refinements are noticeably missing, such as Sublime's learning panels and tab-complete popups which weight the defaults in accordance with those you most use.
 
-I see these products as complementary. The fact that they share similar visuals and keystrokes just adds to the fact. There will be situations where the use of either has advantages. Presently, Sublime is a mature product with feature parity across all three platforms, and a rich set of plugins. ~~Atom is the new kid whose features will rapidly grow; it doesn't feel production ready just yet and there are concerns in the area of performance.~~ Now prebuilt versions of Atom are available for OS X 10.8 or later, Windows 7 & 8, RedHat Linux, and Ubuntu Linux.
+I see these products as complementary. The fact that they share similar visuals and keystrokes just adds to the fact. There will be situations where the use of either has advantages. Presently, Sublime is a mature product with feature parity across all three platforms, and a rich set of plugins. ~~Atom is the new kid whose features will rapidly grow; it doesn't feel production ready just yet and there are concerns in the area of performance.~~
 
 ---
 
@@ -63,3 +72,7 @@ I see these products as complementary. The fact that they share similar visuals 
 #### Can I use the themes, schemes and packages from Sublime as is, like Sublime could do with text mate.
 
 * The short answer is no, but because of Atom's hackability, it will be easy to retool packages from other editors to Atom.
+
+---
+
+More features on Atom are still coming and it is impressive. The fact that it is built on Web technologies makes it fully customizable and extensible. Modelling after Sublime Text’s look and feel is also a good idea, as it can reduce (or eliminate) any learning curve when switching from another text editor. I can definitely see it getting better in the future. If you have not tried it, do give it a try. I am sure you will love [Atom text editor](//atom.io/).

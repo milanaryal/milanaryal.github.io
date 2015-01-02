@@ -5,7 +5,7 @@ redirect_from: "/archive"
 ---
 
 <section id="archive">
-  <h3>This year's posts</h3>
+  <h3>This year’s posts</h3>
   {% for post in site.posts %}
     {% unless post.next %}
       <ul class="this">
@@ -18,7 +18,7 @@ redirect_from: "/archive"
         <ul class="past">
       {% endif %}
     {% endunless %}
-      <li><time>{{ post.date | date: '%b %d' }}</time> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><time>{{ post.date | date: '%b %d' }}</time> - <a href="{{ post.url }}">{{ post.title | markdownify | strip_html }}</a></li>
   {% endfor %}
   </ul>
 </section>
