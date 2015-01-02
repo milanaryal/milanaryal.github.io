@@ -1,4 +1,4 @@
-{% if page.url == "/" %}
+{% if page.url == "/index.html" %}
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <meta property='og:description' content="{{ site.description }}">
@@ -12,7 +12,7 @@
     <meta content="{{ page.title }}" property="og:title">
     <meta content="article" property="og:type">
     <meta content="{{ site.url }}/about/" property="article:author">
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    <meta content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" property="og:url">
 {% endif %}
     <meta content="{{ site.title }}" property="og:site_name">
 {% if page.image %}

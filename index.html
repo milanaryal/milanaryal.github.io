@@ -21,19 +21,19 @@ layout: default
 	{% endfor %}
 </div>
 <!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+<nav class="pagination" role="navigation">
+	{% if paginator.next_page %}
+	<a class="newer-posts" href="/page{{paginator.next_page}}/">&larr; Older posts</a>
+	{% endif %}
+	<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	{% if paginator.previous_page %}
+	{% if paginator.page == 2 %}
+	<a class="older-posts" href="/">Newer posts &rarr;</a>
+	{% else %}
+	<a class="older-posts" href="/page{{paginator.previous_page}}/">Newer posts &rarr;</a>
+	{% endif %}
+	{% endif %}
+</nav>
 <footer class="clean" style="background-position:bottom; height:60px;">
 <div class="background-image" style="background-image:url({{ site.cover }}); background-position:bottom; height:60px;"></div>
 	{% include copyright.html %}
