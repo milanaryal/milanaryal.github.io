@@ -6,7 +6,7 @@
     <!-- for Google -->
     <link rel="author" href="//plus.google.com/+MilanAryal">
     <link rel="image_src" href="{{ site.url }}/assets/img/icon.png">
-    <meta name="description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 15 }}{% else %}{{ site.description }}{% endif %}">
     {% if page.keywords == "true" %}
     <meta name="keywords" content="Milan Aryal, Asia, Kathmandu, Nepal, milanaryal.com, social media, tech, business, lifestyle, infographics, design, tips, tricks">
     {% endif %}
@@ -15,7 +15,7 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:image" content="{{ site.url }}/assets/img/icon.png">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 15 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:locale" content="{{ site.locale }}">
     <meta property="fb:admins" content="{{ site.author.fb_account_id }}">
     {% if page.date %}
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@{{ site.author.twitter }}">
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 15 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:image" content="{{ site.url }}/assets/img/icon.png">
     <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="twitter:account_id" content="{{ site.author.tw_account_id }}">
