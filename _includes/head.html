@@ -11,13 +11,19 @@
     <meta name="keywords" content="Milan Aryal, Asia, Kathmandu, Nepal, milanaryal.com, social media, tech, business, lifestyle, infographics, design, tips, tricks">
     {{% end.if %}}
     <!-- for Facebook -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ site.url }}/assets/img/icon.png">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.author.web }}">
-    <meta property="og:description" content="{% if page.date %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:locale" content="{{ site.locale }}">
-    <meta property="fb:admins" content="{{ site.author.fb_account_id }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+    <meta property="og:image" content="{{ site.url }}/assets/img/icon.png"/>
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.author.web }}"/>
+    <meta property="og:description" content="{% if page.date %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}"/>
+    <meta property="og:locale" content="{{ site.locale }}"/>
+    <meta property="fb:admins" content="{{ site.author.fb_account_id }}"/>
+    {% if page.date %}
+    <meta property="og:type" content="article"/>
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time"/>
+    <meta content="{{ site.url }}/about/" property="article:author"/>
+    {{% else %}}
+    <meta property="og:type" content="blog"/>
+    {% endif %}
     <!-- for Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.author.twitter }}">
