@@ -122,4 +122,4 @@ With Prism by help of these few easy steps you get a nice highlighted code snipp
 
 ---
 
-_Originally I've written this post, [here](//milanaryal.blogspot.com/2014/09/syntax-highlighter-prism.html)._
+*Originally I've written this post, [here](//milanaryal.blogspot.com/2014/09/syntax-highlighter-prism.html).*
