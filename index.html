@@ -28,7 +28,7 @@ permalink: /
 	<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 	{% if paginator.previous_page %}
 		{% if paginator.page == 2 %}
-			<a class="older-posts" href="/index.html">Newer posts &rarr;</a>
+			<a class="older-posts" href="{{ '/index.html' | prepend: site.url | replace: '//', '/' }}">Newer posts &rarr;</a>
 		{% else %}
 			<a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
 		{% endif %}
