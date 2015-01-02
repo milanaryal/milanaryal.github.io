@@ -52,7 +52,7 @@ The most popular (i.e., the most visited) websites have in common that they are 
 |Ask.com        |               |               |               |
 |---------------|---------------|---------------|---------------|
 |Wordpress.com  |JavaScript     |               |MySQL          |
-|---------------|---------------|---------------|---------------|
+
 
 */data on programming languages are based on:
 
