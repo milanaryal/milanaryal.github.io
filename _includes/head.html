@@ -3,7 +3,35 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
-    {% include seo.html %}
+    <!-- for Google -->
+    <link rel="author" href="//plus.google.com/+MilanAryal">
+    <link rel="image_src" href="{{ site.url }}/assets/img/icon.png">
+    <meta name="description" content="{% if page.date %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}">
+    {{% if page.url == site.url %}}
+    <meta name="keywords" content="Milan Aryal, Asia, Kathmandu, Nepal, milanaryal.com, social media, tech, business, lifestyle, infographics, design, tips, tricks">
+    {{% end.if %}}
+    <!-- for Facebook -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ site.url }}/assets/img/icon.png">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.author.web }}">
+    <meta property="og:description" content="{% if page.date %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:locale" content="{{ site.locale }}">
+    <meta property="fb:admins" content="{{ site.author.fb_account_id }}">
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ site.author.twitter }}">
+    <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.date %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/img/icon.png">
+    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.author.web }}">
+    <meta property="twitter:account_id" content="{{ site.author.tw_account_id }}">
+    {% if page.robots %}
+    <meta name="robots" content="{{ page.robots }}">
+    {% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <title>{% if page.title }{{ page.title}} &mdash; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <base href="http://milanaryal.com/">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True">
