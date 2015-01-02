@@ -8,7 +8,7 @@
 {% else %}
     <title>{{ page.title }} &mdash; {{ site.title }}</title>
     <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 32 }}">
-    <meta property='og:description' content="{{ page.excerpt | strip_html | truncatewords: 32 }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 32 }}">
     <meta content="{{ page.title }}" property="og:title">
     <meta content="article" property="og:type">
     <meta content="{{ site.url }}/about/" property="article:author">
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@MilanAryal">
     <meta name="twitter:creator" content="@MilanAryal">
     <link rel="author" href="//plus.google.com/+MilanAryal">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"{% if page.url == "/404.html" %} data-proofer-ignore="true"{% endif %}>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 {% if page.robots %}
     <meta name="robots" content="{{ page.robots }}">
 {% endif %}
