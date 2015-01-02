@@ -64,7 +64,7 @@ I see these products as complementary. The fact that they share similar visuals 
 
 * The short answer is yes, yes, and yes. The app is completely modular. Open source will give people the freedom to fill the gaps on several of these features.
 
-#### Has anyone using Sublime got a Beta invitation to point out the differences?
+#### Has anyone using Sublime point out the differences?
 
 * Advantages of Atom is entry-level hackability, since it's built on the same code that powers Web sites.
 * Advantages of Sublime Text is performance, as it doesn't need to run on top of Node.js, and it's a more mature product, about to reach a stable version
