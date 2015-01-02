@@ -6,7 +6,7 @@
     <!-- for Google -->
     <link rel="author" href="//plus.google.com/+MilanAryal">
     <link rel="image_src" href="{{ site.url }}/assets/img/icon.png">
-    <meta name="description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
     {% if page.keywords == "true" %}
     <meta name="keywords" content="Milan Aryal, Asia, Kathmandu, Nepal, milanaryal.com, social media, tech, business, lifestyle, infographics, design, tips, tricks">
     {% endif %}
@@ -15,7 +15,7 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:image" content="{{ site.url }}/assets/img/icon.png">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:locale" content="{{ site.locale }}">
     <meta property="fb:admins" content="{{ site.author.fb_account_id }}">
     {% if page.date %}
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@{{ site.author.twitter }}">
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 32 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:image" content="{{ site.url }}/assets/img/icon.png">
     <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="twitter:account_id" content="{{ site.author.tw_account_id }}">
@@ -70,5 +70,4 @@
     <meta name="msapplication-square310x310logo" content="/assets/img/icons/mstile-310x310.png">
     <meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=http://milanaryal.com/feed.xml&amp;id=5; cycle=1">
     <link rel="alternate" type="application/atom+xml" title="Milan Aryal - Feed" href="/feed.xml">
-    <meta name="p:domain_verify" content="597c1eacafaa593a7f688042c40d1608"/>
 </head>
