@@ -11,6 +11,7 @@
     <meta name="keywords" content="Milan Aryal, Asia, Kathmandu, Nepal, milanaryal.com, social media, tech, business, lifestyle, infographics, design, tips, tricks">
     {% endif %}
     <!-- for Facebook -->
+    <meta content="{{ site.title }}" property="og:site_name"/>
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
     <meta property="og:image" content="{{ site.url }}/assets/img/icon.png"/>
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
