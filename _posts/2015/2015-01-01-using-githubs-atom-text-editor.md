@@ -22,11 +22,13 @@ Atom is written using Node.js, CoffeeScript, HTML and LESS. It's then wrapped in
 
 It's clear one of their primary goals is to cater to web developers, being that packages are web language based.
 
+#### So actually, what is Atom text editor?
+
 According to Atom wiki,
 
 > A hackable text editor for the 21st Century.
 
->At GitHub, we're building the text editor we've always wanted. A tool you can customize to do anything, but also use productively on the first day without ever touching a config file. Atom is modern, approachable, and [hackable to the core](//github.com/atom/atom). We can't wait to see what you build with it.
+> At GitHub, we're building the text editor we've always wanted. A tool you can customize to do anything, but also use productively on the first day without ever touching a config file. Atom is modern, approachable, and [hackable to the core](//github.com/atom/atom). We can't wait to see what you build with it.
 
 ---
 
