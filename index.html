@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /
 ---
 
 <header class="clean" style="height: 350px;">
@@ -21,23 +20,17 @@ permalink: /
 		</div>
 	{% endfor %}
 </div>
-<!-- Pagination links -->
 <nav class="pagination" role="navigation">
-    {% if site.github.url %}
-      {% assign url_base = site.github.url %}
-    {% else %}
-      {% assign url_base = site.url %}
-    {% endif %}
 	{% if paginator.next_page %}
-	<a class="newer-posts" href="{{ url_base }}/page{{paginator.next_page}}/">&larr; Older posts</a>
+		<a class="newer-posts" href="/page{{paginator.next_page}}/">&larr; Older posts</a>
 	{% endif %}
 	<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 	{% if paginator.previous_page %}
-	{% if paginator.page == 2 %}
-	<a class="older-posts" href="{{ url_base }}/">Newer posts &rarr;</a>
-	{% else %}
-	<a class="older-posts" href="{{ url_base }}/page{{paginator.previous_page}}/">Newer posts &rarr;</a>
-	{% endif %}
+		{% if paginator.page == 2 %}
+			<a class="older-posts" href="/">Newer posts &rarr;</a>
+		{% else %}
+			<a class="older-posts" href="/page{{paginator.previous_page}}/">Newer posts &rarr;</a>
+		{% endif %}
 	{% endif %}
 </nav>
 <footer class="clean" style="background-position:bottom; height:60px;">
