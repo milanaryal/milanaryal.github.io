@@ -27,7 +27,7 @@ locale: en_US
 
 # Setup
 title: Milan Aryal
-description: 'Making the web a better place.'
+description: "Making the web a better place."
 
 # URL of site, include http://, do not include a trailing slash
 url: http://milanaryal.com
@@ -36,7 +36,7 @@ author:
   name: "Milan Aryal"
   email: "considermilan@gmail.com"
   url: "https://plus.google.com/+MilanAryal"
-  web: "http://milanaryal.com/""
+  web: "http://milanaryal.com/"
   twitter: "MilanAryal"
   tw_account_id: "313133078"
   fb_account_id: "100001982813077"
