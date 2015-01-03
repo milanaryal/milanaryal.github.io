@@ -14,7 +14,9 @@
     <meta content="{{ site.title }}" property="og:site_name">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:image" content="{{ site.url }}/assets/img/icon.png">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    {% if page.url %}
+    <meta property="og:url" content="{{ site.url | replace:'index.html','' }}{{ page.url | replace:'index.html','' }}">
+    {% endif %}
     <meta property="og:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:locale" content="{{ site.locale }}">
     <meta property="fb:admins" content="{{ site.author.fb_account_id }}">
