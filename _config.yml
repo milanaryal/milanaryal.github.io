@@ -30,7 +30,7 @@ url: http://milanaryal.com
 
 # Site settings
 title: Milan Aryal
-header-img: img/home-bg.jpg
+header-img: /img/home-bg.jpg
 email: considermilan@gmail.com
 description: "Making the web a better place."
 twitter_username: MilanAryal
