@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Using GitHub's Atom text editor
-excerpt: A hackable text editor for the 21st Century.
+subtitle: A hackable text editor for the 21st Century.
 date: 2015-01-01T15:22:14+05:45
-image: /assets/img/2015/20150101--atom-text-editor.png
+header-img: /assets/img/2015/20150101--atom-text-editor.png
 ---
 
 I always had been using simple text editor like Notepad++ and Sublime Text. I never really did like Dreamweaver. For me it was too complicated by trying to be everything. I truly believe in and appreciate simplicity. But days comes like where I have to work with other language like Markdown, Textile.. So, I was in search for another simple text editor so that I can easily work with those language.

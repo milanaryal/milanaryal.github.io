@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Speak your heart
-excerpt: That night was my big chance and all I did was just sit there…
-date: 2012-10-01T15:20:45
-image: /assets/img/2012/20121001--broken-heart.jpg
+title: "Speak your heart"
+subtitle: "That night was my big chance and all I did was just sit there…"
+date: "2012-10-01T15:20:45"
+header-img: "/assets/img/2012/20121001--broken-heart.jpg"
 ---
-
-_That night was my big chance and all I did was just sit there…_
 
 It all started when I was 16 years old. While I was playing outside, I met a boy. He was a boy who teased you and then you chased them and beat them up. After that first meeting in which I beat him up we kept on meeting and beating each other up at the fence.
 
@@ -52,7 +50,7 @@ Finally, the diary ended when it said, “today I will tell her I love her”. I
 
 ---
 
-_So the moral of the story, if you love someone, don’t wait till tomorrow to tell him/her. Maybe the next day will never come at all._
+*So the moral of the story, if you love someone, don’t wait till tomorrow to tell him/her. Maybe the next day will never come at all.*
 
 ---
 

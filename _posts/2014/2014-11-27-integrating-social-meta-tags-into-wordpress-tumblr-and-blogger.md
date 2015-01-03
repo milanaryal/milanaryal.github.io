@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Integrating social meta tags into WordPress, Tumblr and Blogger
-excerpt: Tips for integrating social meta tags  into popular CMS systems like WordPress, Tumblr and Blogger.
+subtitle: Tips for integrating social meta tags  into popular CMS systems like WordPress, Tumblr and Blogger.
 author: Milan Aryal
 date: 2014-11-27T19:39:45+05:45
 ---
@@ -234,14 +234,14 @@ And place the following code before `</head>` section:
 	   		<b:else/>
 	   		<meta expr:content='data:blog.pageTitle' property='og:description'/>
 			<meta expr:content='data:blog.pageTitle' name='description'/>
-		</b:if> 
+		</b:if>
 
 	<b:else/>
 	<meta content='blog' property='og:type'/>
 	<meta expr:content='data:blog.title' property='og:site_name'/>
 	<meta expr:content='data:blog.canonicalHomepageUrl' property='og:url'/>
 	<meta content='YOUR_LOGO_URL_HERE' property='og:image'/>
-		
+
 		<b:if cond='data:blog.metaDescription'>
 			<meta content='data:blog.metaDescription' property='og:description'/>
 			<meta content='data:blog.metaDescription' name='description'/>
@@ -249,7 +249,7 @@ And place the following code before `</head>` section:
 		</b:if>
 
 	</b:if>
-	<!-- You can replace following locale "British English" (en_GB) or Nepali (ne_NP) alternative with your own --> 
+	<!-- You can replace following locale "British English" (en_GB) or Nepali (ne_NP) alternative with your own -->
 	<meta content='en_US' property='og:locale'/>
 	<meta content='en_GB' property='og:locale:alternate'/>
 	<meta content='ne_NP' property='og:locale:alternate'/>
@@ -279,7 +279,7 @@ For Twitter card property also place the following before `</head>` section:
 	   		<meta expr:content='data:blog.metaDescription' name='twitter:description'/>
 	   		<b:else/>
 	   		<meta expr:content='data:blog.pageTitle' name='twitter:description'/>
-		</b:if> 
+		</b:if>
 
 	<b:else/>
 	<meta content='summary' name='twitter:card'/>
