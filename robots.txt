@@ -1,3 +1,7 @@
+---
+layout: none
+---
+
 # robotstxt.org/
 # Cooperating web crawlers and other web robots
 
