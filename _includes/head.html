@@ -5,7 +5,7 @@
     <link rel="dns-prefetch" href="//www.google-analytics.com">
     <!-- for Google -->
     <link rel="author" href="//plus.google.com/+MilanAryal">
-    <link rel="image_src" href="{{ site.url }}/img/icon.png">
+    <link rel="image_src" href="{{ site.url }}/assets/img/icon.png">
     <meta name="description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
     {% if page.keywords == "true" %}
     <meta name="keywords" content="Milan Aryal, Asia, Kathmandu, Nepal, milanaryal.com, social media, tech, business, lifestyle, infographics, design, tips, tricks">
@@ -13,8 +13,10 @@
     <!-- for Facebook -->
     <meta content="{{ site.title }}" property="og:site_name">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:image" content="{{ site.url }}/img/icon.png">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:image" content="{{ site.url }}/assets/img/icon.png">
+    {% if page.url %}
+    <meta property="og:url" content="{{ site.url | replace:'index.html','' }}{{ page.url }}">
+    {% endif %}
     <meta property="og:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:locale" content="{{ site.locale }}">
     <meta property="fb:admins" content="{{ site.author.fb_account_id }}">
