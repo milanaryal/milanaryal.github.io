@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<!--
-	   _____  .__.__                     _____                       .__
-	  /     \ |__|  | _____    ____     /  _  \_______ ___.__._____  |  |
-	 /  \ /  \|  |  | \__  \  /    \   /  /_\  \_  __ <   |  |\__  \ |  |
-	/    Y    \  |  |__/ __ \|   |  \ /    |    \  | \/\___  | / __ \|  |__
-	\____|__  /__|____(____  /___|  / \____|__  /__|   / ____|(____  /____/
-	        \/             \/     \/          \/       \/          \/
--->
-<html>
-    {% include head.html %}
+<html lang="en">
+
+{% include head.html %}
+
 <body>
 
-    <!-- content start -->
-    {{ content }}
-    <!-- content end -->
+    {% include nav.html %}
 
-    {% include scripts.html %}
-</html> <!-- Site Generated on {{ site.time }} | Revision {{ site.github.build_revision }} -->
+    {{ content }}
+
+    {% include footer.html %}
+
+</body>
+
+</html>

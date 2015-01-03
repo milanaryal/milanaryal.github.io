@@ -2,22 +2,28 @@
 layout: default
 ---
 
-<header class="clean" style="height:350px;">
-<div class="background-image" style="background-image:url({{ site.cover }}); height:350px;"></div>
-	{% include top.html %}
-	<div id="home-title">
-		<a href="{{ site.url }}">
-			<img src="{{ site.icon }}" class="site-icon-page">
-		</a>
-	</div>
-	<div id="post-info" style="bottom:30px; text-align:center; line-height:45px;">
-		<h1>{{ page.title }}</h1>
-	</div>
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <hr class="small">
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
-<article>
-	{{ content }}
-</article>
-<footer class="clean" style="background-position:bottom; height:60px;">
-<div class="background-image" style="background-image:url({{ site.cover }}); background-position:bottom; height:60px;"></div>
-	{% include copyright.html %}
-</footer>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			{{ content }}
+		</div>
+	</div>
+</div>
+
+<hr>

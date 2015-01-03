@@ -1,40 +1,36 @@
 ---
-layout: default
-keywords: true
+layout: page
+description: "One day I will find the words, and they will be simple."
 ---
 
-<header class="clean" style="height: 350px;">
-<div class="background-image" style="background-image:url({{ site.cover }}); height:350px;"></div>
-	{% include top.html %}
-	<div id="home-title">
-		<a href="{{ site.url }}">
-			<img src="{{ site.icon }}" class="site-icon">
-		</a>
-	</div>
-</header>
-<div id="post-list">
-	{% for post in paginator.posts %}
-		<div class="post-inset">
-			<span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			<a class="post-snippet" href="{{ post.url }}">{{ post.content | strip_html | truncatewords: 32 }}</a>
-		</div>
-	{% endfor %}
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
-<nav class="pagination" role="navigation">
-	{% if paginator.next_page %}
-		<a class="newer-posts" href="/page{{paginator.next_page}}/">&larr; Older posts</a>
-	{% endif %}
-	<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-	{% if paginator.previous_page %}
-		{% if paginator.page == 2 %}
-			<a class="older-posts" href="/">Newer posts &rarr;</a>
-		{% else %}
-			<a class="older-posts" href="/page{{paginator.previous_page}}/">Newer posts &rarr;</a>
-		{% endif %}
-	{% endif %}
-</nav>
-<footer class="clean" style="background-position:bottom; height:60px;">
-<div class="background-image" style="background-image:url({{ site.cover }}); background-position:bottom; height:60px;"></div>
-	{% include copyright.html %}
-</footer>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

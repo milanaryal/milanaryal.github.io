@@ -1,18 +1,16 @@
 # Jekyll config file http://jekyllrb.com/docs/configuration/
 
-# Handling Reading
-exclude: ["README.md", "LICENSE", "CNAME"]
+# Handling reading
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","LICENSE","CNAME"]
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 textile_ext: "textile"
 
 # Plugins
-gems: ["jekyll-mentions", "jemoji", "jekyll-redirect-from", "jekyll-sitemap"]
+gems: ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-sitemap"]
 
 # Conversion
-markdown: redcarpet
-redcarpet:
-  extensions: ["smart", "tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+markdown: kramdown
 highlighter: pygments
 
 # Outputting
@@ -22,59 +20,19 @@ paginate: 5
 timezone: Asia/Kathmandu
 locale: en_US
 
-# Setup
-title: Milan Aryal
-description: "Making the web a better place."
+# Serving
+baseurl: "" # does not include hostname
 
 # URL of site, include http://, do not include a trailing slash
 url: http://milanaryal.com
 
-author:
-  name: "Milan Aryal"
-  email: "considermilan@gmail.com"
-  url: "https://plus.google.com/+MilanAryal"
-  twitter: "MilanAryal"
-  tw_account_id: "313133078"
-  fb_account_id: "100001982813077"
-  ga_track_id: "UA-41571464-3"
-
-# Custom vars
-icon: /assets/img/icon.png
-cover: /assets/img/cover-img.jpg
-
-social:
-  - icon: twitter
-    url: //twitter.com/MilanAryal
-    desc: Follow me on Twitter
-
-  - icon: github
-    url: //github.com/MilanAryal
-    desc: Fork me on GitHub
-
-  - icon: googleplus-alt
-    url: //google.com/+MilanAryal
-    desc: Add me on Google+
-
-  - icon: tumblr
-    url: http://milanaryal.tumblr.com
-    desc: Follow me on Tumblr
-
-  - icon: feed
-    url: http://milanaryal.com/feed.xml
-    desc: Subscribe to my feed
-
-menu:
-  - title: Posts
-    url: /
-
-  - title: About
-    url: /about/
-
-  - title: Archives
-    url: /archives/
-
-copyright:
-  author: Milan Aryal
-  url: http://milanaryal.com/
-  type_title: MIT licensed
-  type_url: //github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE
+# Site settings
+title: Milan Aryal
+header-img: img/home-bg.jpg
+email: considermilan@gmail.com
+description: "Making the web a better place."
+twitter_username: MilanAryal
+github_username:  MilanAryal
+tumblr_username: milanaryal
+facebook_username:  considermilan
+ga_trackid: UA-41571464-3
