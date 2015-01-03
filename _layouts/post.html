@@ -14,9 +14,9 @@ article: true
 	{% endif %}
 	{% include top.html %}
 	<div id="post-info">
-		<h1>{{ page.title | markdownify | strip_html }}</h1>
+		<h1>{{ page.title }}</h1>
 		{% if page.subtitle %}
-			<h2>{{ page.subtitle | markdownify | strip_html }}</h2>
+			<h2>{{ page.subtitle }}</h2>
 		{% endif %}
 		<a class="site-title" href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon-small">{{ site.title }}</a> on {{ page.date | date: '%b %d, %Y' }}
 	</div>
@@ -36,9 +36,9 @@ article: true
 	<div id="post-info">
 		<h3>Featured post</h3>
 		<a href="{{ post.url }}">
-			<h1>{{ post.title | markdownify | strip_html }}</h1>
+			<h1>{{ post.title }}</h1>
 			{% if post.subtitle %}
-				<h2>{{ post.subtitle | markdownify | strip_html }}</h2>
+				<h2>{{ post.subtitle }}</h2>
 			{% endif %}
 		</a>
 	</div>
