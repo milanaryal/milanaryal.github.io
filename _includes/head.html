@@ -14,9 +14,7 @@
     <meta content="{{ site.title }}" property="og:site_name">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:image" content="{{ site.url }}/assets/img/icon.png">
-    {% if page.url %}
-    <meta property="og:url" content="{{ site.url | replace:'index.html','' }}{{ page.url }}">
-    {% endif %}
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:locale" content="{{ site.locale }}">
     <meta property="fb:admins" content="{{ site.author.fb_account_id }}">
@@ -34,7 +32,7 @@
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{% if page.title %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:image" content="{{ site.url }}/assets/img/icon.png">
-    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="twitter:account_id" content="{{ site.author.tw_account_id }}">
     {% if page.robots %}
     <meta name="robots" content="{{ page.robots }}">

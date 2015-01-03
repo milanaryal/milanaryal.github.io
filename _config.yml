@@ -15,9 +15,6 @@ redcarpet:
   extensions: ["smart", "tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
 highlighter: pygments
 
-# Serving
-baseurl: "" # does not include hostname
-
 # Outputting
 permalink: /:year/:month/:title/
 paginate_path: /page:num/
