@@ -608,13 +608,13 @@ a.pagination-item:hover {
   font-size: 100%;
   vertical-align: .2em;
 }
-a.icon-link {
-  text-decoration: none;
-  color: #313131;
-}
-a.icon-link :hover {
-  text-decoration: none;
-}
 .icon-link:before {
   content: "\e600";
+}
+a.icon-link {
+  text-decoration: none!important;
+  color: #313131!important;
+}
+a.icon-link :hover {
+  text-decoration: none!important;
 }
