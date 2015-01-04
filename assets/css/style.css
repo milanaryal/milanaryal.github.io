@@ -39,7 +39,7 @@ body {
 }
 
 html {
-  font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -72,7 +72,7 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
