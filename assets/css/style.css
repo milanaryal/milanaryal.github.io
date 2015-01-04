@@ -43,14 +43,13 @@ html {
   font-size: 16px;
   line-height: 1.5;
 }
-@media (max-width: 30em) {
+@media (min-width: 38em) {
   html {
     font-size: 20px;
   }
 }
 
 body {
-  padding: 2rem 1.5rem;
   color: #515151;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -58,8 +57,8 @@ body {
 }
 
 @media (min-width: 38em) {
-  body {
-    padding: 1rem 0rem;
+  html {
+    padding: 2rem 1.5rem;
   }
 }
 
