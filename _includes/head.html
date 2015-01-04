@@ -7,10 +7,12 @@
 
   <!-- meta description -->
   {% if page.excerpt %}
-  <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}" />
+  <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
   {% else %}
-  <meta name="description" content="{{ site.tagline }}" />
+  <meta name="description" content="{{ site.tagline }}">
   {% endif %}
+
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
 
   <link rel="author" href="//plus.google.com/+MilanAryal">
 
@@ -18,7 +20,7 @@
   <meta name="robots" content="{{ page.robots }}">
   {% endif %}
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
   <title>
     {% if page.title == "Home" %}
