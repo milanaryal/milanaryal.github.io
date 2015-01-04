@@ -26,3 +26,7 @@ ga_trackid:       UA-41571464-3
 # Custom vars
 github:
   repo:           https://github.com/MilanAryal/milanaryal.github.io
+
+menu:
+  - title:        About
+    url:          /about
