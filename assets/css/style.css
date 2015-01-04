@@ -605,16 +605,16 @@ a.pagination-item:hover {
   transition: color .16s linear;
 }
 .icon-link {
-  font-size: 100%;
+  font-size: 89%;
   vertical-align: .2em;
 }
 .icon-link:before {
   content: "\e600";
 }
-a.icon-link {
+a.anchor-link {
   text-decoration: none!important;
   color: #313131!important;
 }
-a.icon-link :hover {
+a.anchor-link :hover {
   text-decoration: none!important;
 }
