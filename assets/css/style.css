@@ -50,6 +50,7 @@ html {
 }
 
 body {
+  padding: 2rem 1.5rem;
   color: #515151;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -97,8 +98,7 @@ h4, h5, h6 {
 
 /* Body text */
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
 }
 
 strong {
