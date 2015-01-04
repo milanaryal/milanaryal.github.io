@@ -101,7 +101,7 @@ A more current solution is to use just a script -- such as [FluidVids.js](http:/
 1. [Download the script](http://github.com/toddmotto/fluidvids/archive/master.zip) (ZIP) from GitHub and upload it to your server with the same folder structure that the downloaded files come in. This will place the script itself in a folder named `dist`.
 2. Ensure you place the script before the closing `<body>` tag.
 
-{% highlight javascript %}
+{% highlight html %}
 <body>
   <!-- html above -->
   <script src="dist/fluidvids.js"></script>
@@ -113,7 +113,7 @@ A more current solution is to use just a script -- such as [FluidVids.js](http:/
 
 Pass in your configuration:
 
-{% highlight javascript %}
+{% highlight html %}
 // fluidvids module available
 <script>
   fluidvids.init({
