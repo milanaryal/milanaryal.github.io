@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML5 and CSS3 cheat sheet
-subtitle: HTML5 and CSS3 cheat sheet for those who want to work with this latest script.
+excerpt: HTML5 and CSS3 cheat sheet for those who want to work with this latest script.
 date: 2014-03-04T05:29:59+05:45
 ---
 

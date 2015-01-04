@@ -4,7 +4,7 @@ title: How to properly clean gadgets
 date: 2012-11-12T19:15:45+05:45
 ---
 
-_Without ruining them in the process_
+*Without ruining them in the process*
 
 No matter how clean a house you keep, computers and gadgets are bound to get a little dirty here and there. Here is how to clean them well:
 

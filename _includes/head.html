@@ -5,6 +5,21 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+  <!-- meta description -->
+  {% if page.excerpt %}
+  <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}" />
+  {% else %}
+  <meta name="description" content="{{ site.tagline }}" />
+  {% endif %}
+
+  <link rel="author" href="//plus.google.com/+MilanAryal">
+
+  {% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+  {% endif %}
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Blogging with Jekyll and GitHub Pages
-subtitle: Transform your plain text into static websites and blogs.
+excerpt: Transform your plain text into static websites and blogs.
 date: 2014-12-30T19:47:46+05:45
-header-img: /assets/img/2014/20141230--blogging-with-jekyll.jpg
+image: /assets/img/2014/20141230--blogging-with-jekyll.jpg
 ---
 
 I recently migrated my blog to [GitHub Pages](//pages.github.com) using an awesome open source project [Jekyll](http://jekyllrb.com). It's really fun blogging with Jekyll.

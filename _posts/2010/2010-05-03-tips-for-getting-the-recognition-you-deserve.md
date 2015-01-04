@@ -4,7 +4,7 @@ title: Tips for getting the recognition you deserve
 date: 2010-05-03T23:05:36+05:45
 ---
 
-_Employees who receive regular recognition are more productive, rate higher on consumer satisfaction surveys, have increased co-worker engagement, have better safety records and are less likely to leave the organization_
+*Employees who receive regular recognition are more productive, rate higher on consumer satisfaction surveys, have increased co-worker engagement, have better safety records and are less likely to leave the organization*
 
 Please, not another T-shirt!” “I resent the money that’s spent to purchase doodads. It could be spent much more wisely.”
 
@@ -34,7 +34,7 @@ Feeling like you’re still missing out on the recognition you merit at work? Fo
 
 <ol>
 <li><p>Publicly congratulate your co-workers for their accomplishments. Be sure to point out any accomplishments that might be a little off the manager’s radar, Ventrice suggests. By complimenting others, hopefully one or more of these people will mention your contributions, too. Even if they don’t, Ventrice says, praise them anyway - it will make it more palatable when you praise yourself.</p>
- 
+
 <p>“If it isn’t always about you, people will be more willing to see self-recognition in a positive light.”</p></li>
 
 <li><p>Tell your boss what you’ve accomplished. Be brief, to the point and do it privately, Ventrice says. Remember to share the credit.</p>

@@ -4,7 +4,7 @@ title: 10 Twitter tips for businesses
 date: 2012-05-21T09:48:44+05:45
 ---
 
-_Use the powerful social media as a tool for marketing and promotion_
+*Use the powerful social media as a tool for marketing and promotion*
 
 Twitter is a great social media marketing tool for business that can lead to more customers, an increase of profit, and long-term success. Businesses can use it to its full potential by applying the tips below:
 

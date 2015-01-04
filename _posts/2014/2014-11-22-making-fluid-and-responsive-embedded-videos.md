@@ -133,7 +133,7 @@ That's all you need to do to make videos resize on all devices that support Java
 
 {% highlight css %}
 iframe {
-    max-width: 100%; 
+    max-width: 100%;
 }
 {% endhighlight %}
 

@@ -4,7 +4,7 @@ title: What are you giving today?
 date: 2012-05-21T09:31:05+05:45
 ---
 
-_**Excerpted from** a speech delivered by **John Brody** to the graduating class of **John Hopkins University** on May 26, 2005_
+**Excerpted from** a speech delivered by **John Brody** to the graduating class of **John Hopkins University** on May 26, 2005
 
 There is a man who I’d like to tell you about. His name is Sandy Greenberg. Sandy was a very good student, but he came from a poor family. And so he went to Columbia University on a scholarship and there he met his roommate, who also was receiving financial aid.
 
