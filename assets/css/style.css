@@ -353,6 +353,7 @@ tbody tr:nth-child(odd) th {
 
 .post-body, .page-body {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  margin-top: 1rem;
 }
 
 /* Meta data line below post title */
