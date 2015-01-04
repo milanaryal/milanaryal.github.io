@@ -226,6 +226,11 @@ img {
   border-radius: 5px;
 }
 
+.emoji {
+  display: inline;
+  margin: 0;
+}
+
 figure {
   margin 0 0 1rem;
 }
