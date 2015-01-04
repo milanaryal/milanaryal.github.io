@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="container home">
+  <div class="row container">
+    <div class="small-12 columns">
+      <h1>Hi, I'm Jamie Collinson</h1>
+      <p>
+        <a href="mailto:jamiecollinson@gmail.com?subject=hi">Say hi via email</a> 
+        or find me online: {% include social.html %}
+      </p>
+      
+      <h2>My latest posts:</h2>
+      <ul>
+        {% for post in site.posts %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

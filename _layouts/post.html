@@ -2,49 +2,33 @@
 layout: default
 ---
 
-<!-- Post Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}{{ site.header-img }}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                </div>
-            </div>
-        </div>
+<header>
+  <div class="background-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.author.cover-image }}{% endif %});"></div>
+  <a class="home-icon" href="{{ site.baseurl }}"><i class="fa fa-home fa-lg"></i></a>
+  <div class="reading-time animated tada">
+    <p title="{{ content | number_of_words }} words">{% include reading_time.html %} read</p>
+  </div>
+  <div class="row container">
+    <div class="small-12 columns">
+      <h1 class="animated fadeInDown">{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <h2 class="animated fadeInUp">{{ page.subtitle }}</h2>
+      {% endif %}
+      <p class="animated fadeInLeft">
+        <a href="{{ site.baseurl }}"><img src="{% if page.author.pic %}{{ page.author.pic }}{% else %}{{ site.author.icon }}{% endif %}" class="author-icon"> {% if page.author %}{{ page.author }}{% else %}{% site.author.name %}{% endif %}</a> on {{ page.date | date: '%b %d, %Y' }}
+      </p>
     </div>
+  </div>
+  {% if page.coverAttribution %}
+    <p class="coverAttribution">Photo: {{ page.coverAttribution }}</p>
+  {% endif %}
 </header>
+<article itemscope itemtype="http://schema.org/Article">
+  <div class="row container">
+    <div class="small-12 columns">
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {{ content }}
 
-				{{ content }}
-
-                <hr>
-
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-            </div>
-        </div>
     </div>
-</article>
-
-<hr>
+  </div>
+<article>
