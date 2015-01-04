@@ -1,45 +1,22 @@
-# Jekyll config file http://jekyllrb.com/docs/configuration/
-
-# Handling reading
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","LICENSE","CNAME"]
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-textile_ext: "textile"
+# Permalinks
+permalink:        /:year/:month/:title/
+relative_permalinks: true
 
 # Plugins
-gems: ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-sitemap"]
+gems:            ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-sitemap"]
 
-# Conversion
-markdown: redcarpet
-redcarpet:
-  extensions: ["smart","tables","strikethrough"]
-highlighter: pygments
-
-# Outputting
-permalink: /:year/:month/:title/
-paginate_path: /page:num/
-paginate: 5
-timezone: Asia/Kathmandu
-locale: en_US
-
-# Serving
-baseurl: "/" # does not include hostname
-
-# URL of site, include http://, do not include a trailing slash
-url: http://milanaryal.com
-
-# Site settings
-title: Milan Aryal
-header-img: /img/home-bg.jpg
-email: considermilan@gmail.com
-description: "Making the web a better place."
-twitter_username: MilanAryal
-github_username:  MilanAryal
-tumblr_username: milanaryal
-facebook_username:  considermilan
-ga_trackid: UA-41571464-3
-
+# Setup
+title:            Milan Aryal
+tagline:          The Jekyll Butler
+url:              http://milanaryal.com
+paginate:         1
+baseurl:          /
 author:
-  name: Milan Aryal
-  icon: /assets/img/icon.png
-  cover-image: /assets/img/cover-img.jpg
+  name:           Milan Aryal
+  url:            https://twitter.com/MilanAryal
+  email:          considermilan@gmail.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/MilanAryal/milanaryal.github.io

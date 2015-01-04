@@ -2,33 +2,24 @@
 layout: default
 ---
 
-<header>
-  <div class="background-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.author.cover-image }}{% endif %});"></div>
-  <a class="home-icon" href="/"><i class="fa fa-home fa-lg"></i></a>
-  <div class="reading-time animated tada">
-    <p title="{{ content | number_of_words }} words">{% include reading_time.html %} read</p>
-  </div>
-  <div class="row container">
-    <div class="small-12 columns">
-      <h1 class="animated fadeInDown">{{ page.title }}</h1>
-      {% if page.subtitle %}
-        <h2 class="animated fadeInUp">{{ page.subtitle }}</h2>
-      {% endif %}
-      <p class="animated fadeInLeft">
-        <a href="/"><img src="{% if page.author.pic %}{{ page.author.pic }}{% else %}{{ site.author.icon }}{% endif %}" class="author-icon"> {% if page.author %}{{ page.author }}{% else %}{% site.author.name %}{% endif %}</a> on {{ page.date | date: '%b %d, %Y' }}
-      </p>
-    </div>
-  </div>
-  {% if page.coverAttribution %}
-    <p class="coverAttribution">Photo: {{ page.coverAttribution }}</p>
-  {% endif %}
-</header>
-<article itemscope itemtype="http://schema.org/Article">
-  <div class="row container">
-    <div class="small-12 columns">
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_string }}</time>
+  {{ content }}
+</article>
 
-      {{ content }}
-
-    </div>
-  </div>
-<article>
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</aside>

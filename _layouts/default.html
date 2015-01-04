@@ -1,60 +1,28 @@
----
-layout: default
----
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% include head.html %}
 
-  <!-- page title -->
-  {% if page.title %}
-    <title>{{ page.title }} - {{ site.title }}</title>
-  {% else %}
-    <title>{{ site.title }}</title>
-  {% endif %}
+  <body>
 
-  <!-- meta description -->
-  {% if page.layout == post %}
-    <meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ page.excerpt | strip_html }}{% endif %}">
-  {% else %}
-    <meta name="description" content="{{ site.description }}">
-  {% endif %}
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
+          <small>{{ site.tagline }}</small>
+        </h3>
+      </header>
 
-  <!-- meta robots -->
-  {% if page.robots %}
-   <meta name="robots" content="{{ page.robots }}">
-  {% endif %}
+      <main>
+        {{ content }}
+      </main>
 
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400,700' rel='stylesheet'>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/css/normalize.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/css/foundation.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
 
-  <link rel="stylesheet" href="/assets/css/styles.css">
-
-  <!-- G+ authorship -->
-  <link href="//plus.google.com/+MilanAryal" rel="author">
-</head>
-
-<body>
-
-  {{ content }}
-
-  <script>
-    /* GA tracking code */
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', '{{ site.ga_trackid }}', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-</body>
-
+  </body>
 </html>
