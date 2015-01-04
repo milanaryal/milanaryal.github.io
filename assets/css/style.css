@@ -411,6 +411,28 @@ tbody tr:nth-child(odd) th {
   letter-spacing: 0;
 }
 
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+}
+.nav li + li {
+  margin-left: .5rem;
+}
+
+@media (min-width: 34em) {
+  .masthead {
+    padding-top: 1rem;
+    text-align: right;
+  }
+  .masthead-title {
+    float: left;
+  }
+}
+
 
 /*
  * Posts and pages
