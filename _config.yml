@@ -5,9 +5,15 @@ relative_permalinks: true
 # Plugins
 gems:            ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-sitemap"]
 
-# Setup
+# Conversion
+markdown:         redcarpet
+redcarpet:
+  extensions:     ["smart","tables","strikethrough"]
+highlighter:      pygments
+
+# Site settings
 title:            Milan Aryal
-tagline:          One day I will find the words, and they will be simple.
+tagline:          "One day I will find the words, and they will be simple."
 url:              http://milanaryal.com
 paginate:         5
 baseurl:          /
@@ -15,8 +21,8 @@ author:
   name:           Milan Aryal
   url:            https://twitter.com/MilanAryal
   email:          considermilan@gmail.com
+ga_trackid:       UA-41571464-3
 
 # Custom vars
-version:          1.0.0
 github:
   repo:           https://github.com/MilanAryal/milanaryal.github.io

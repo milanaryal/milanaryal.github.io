@@ -1,4 +1,4 @@
-/*! 
+/*!
  * Milan Aryal
  * http://milanaryal.com
  * MIT licensed
@@ -39,7 +39,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -72,6 +72,7 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
@@ -225,6 +226,21 @@ img {
   border-radius: 5px;
 }
 
+figure {
+  margin 0 0 1rem;
+}
+
+figcaption {
+  font-style: italic;
+  font-weight: 400;
+  font-size: .875em;
+  color: #a8a8a8;
+  clear: left;
+  margin: .75em 0;
+  text-align: center;
+  line-height: 1.5em;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;
@@ -333,6 +349,10 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title {
   margin-top: 0;
+}
+
+.post-body, .page-body {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
 /* Meta data line below post title */
@@ -486,4 +506,3 @@ a.pagination-item:hover {
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
-
