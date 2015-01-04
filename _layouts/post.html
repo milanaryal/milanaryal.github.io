@@ -4,7 +4,7 @@ layout: default
 
 <header>
   <div class="background-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.author.cover-image }}{% endif %});"></div>
-  <a class="home-icon" href="{{ site.baseurl }}"><i class="fa fa-home fa-lg"></i></a>
+  <a class="home-icon" href="/"><i class="fa fa-home fa-lg"></i></a>
   <div class="reading-time animated tada">
     <p title="{{ content | number_of_words }} words">{% include reading_time.html %} read</p>
   </div>
@@ -15,7 +15,7 @@ layout: default
         <h2 class="animated fadeInUp">{{ page.subtitle }}</h2>
       {% endif %}
       <p class="animated fadeInLeft">
-        <a href="{{ site.baseurl }}"><img src="{% if page.author.pic %}{{ page.author.pic }}{% else %}{{ site.author.icon }}{% endif %}" class="author-icon"> {% if page.author %}{{ page.author }}{% else %}{% site.author.name %}{% endif %}</a> on {{ page.date | date: '%b %d, %Y' }}
+        <a href="/"><img src="{% if page.author.pic %}{{ page.author.pic }}{% else %}{{ site.author.icon }}{% endif %}" class="author-icon"> {% if page.author %}{{ page.author }}{% else %}{% site.author.name %}{% endif %}</a> on {{ page.date | date: '%b %d, %Y' }}
       </p>
     </div>
   </div>
