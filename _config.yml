@@ -8,7 +8,7 @@ gems:            ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-site
 # Conversion
 markdown:         redcarpet
 redcarpet:
-  extensions:     ["smart","tables","strikethrough"]
+  extensions:     ["smart","tables","strikethrough","with_toc_data"]
 highlighter:      pygments
 
 # Site settings
