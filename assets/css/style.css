@@ -605,7 +605,7 @@ a.pagination-item:hover {
   transition: color .16s linear;
 }
 .icon-link {
-  font-size: 89%;
+  font-size: 85%;
   vertical-align: .2em;
 }
 .icon-link:before {
@@ -617,4 +617,5 @@ a.anchor-link {
 }
 a.anchor-link :hover {
   text-decoration: none!important;
+  color: #268bd2;
 }
