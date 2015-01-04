@@ -608,10 +608,11 @@ a.pagination-item:hover {
   font-size: 100%;
   vertical-align: .2em;
 }
-.icon-link a {
+a.icon-link {
   text-decoration: none;
+  color: #313131;
 }
-.icon-link a:hover {
+a.icon-link :hover {
   text-decoration: none;
 }
 .icon-link:before {
