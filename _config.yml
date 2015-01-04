@@ -7,9 +7,9 @@ gems:            ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-site
 
 # Setup
 title:            Milan Aryal
-tagline:          The Jekyll Butler
+tagline:          One day I will find the words, and they will be simple.
 url:              http://milanaryal.com
-paginate:         1
+paginate:         5
 baseurl:          /
 author:
   name:           Milan Aryal
