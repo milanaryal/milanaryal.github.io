@@ -590,8 +590,14 @@ a.pagination-item:hover {
   left: -1.2em;
   opacity: 0;
   text-decoration: none;
-  font-size: 90%;
+  
+  
   vertical-align: 5em;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  
+  font-size: 90%;
 }
 *:hover > .header-link,
 .header-link:focus  {
