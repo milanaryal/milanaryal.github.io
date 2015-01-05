@@ -587,7 +587,7 @@ a.pagination-item:hover {
 */
 .header-link {
   position: absolute;
-  left: -0.5em;
+  left: -1.2em;
   opacity: 0;
   text-decoration: none;
   font-size: 90%;
