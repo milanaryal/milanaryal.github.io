@@ -586,10 +586,11 @@ a.pagination-item:hover {
 * Header Link placement and hover behavior.
 */
 .header-link {
-  position: relative;
-  left: 0.5em;
+  position: absolute;
+  left: -0.5em;
   opacity: 0;
-  font-size: 0.8em;
+  text-decoration: none;
+  font-size: 90%;
 }
 *:hover > .header-link,
 .header-link:focus  {
