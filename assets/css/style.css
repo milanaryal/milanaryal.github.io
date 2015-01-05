@@ -464,8 +464,9 @@ tbody tr:nth-child(odd) th {
 }
 
 .post-body, .page-body {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
   margin-top: 1rem;
+  display: block;
 }
 
 /* Meta data line below post title */
