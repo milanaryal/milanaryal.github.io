@@ -36,7 +36,11 @@ You can add/custumize this in the end of your site source code as following:
 Following is the generated example format:
 
 {% highlight ruby %}
-<!-- Proudly Hosted on GitHub | Generated {{ site.time }} | Revision {{ site.github.build_revision }} -->
+{% raw %}
+<!-- Proudly Hosted on GitHub | Generated 2015-01-05 18:06:54 +0545 | Revision 8b10cc6954163643f53d0b503888578e143d7e57 -->
+{% endraw %}
 {% endhighlight %}
+
+---
 
 Happy Jekyll'ing! :sunglasses:
