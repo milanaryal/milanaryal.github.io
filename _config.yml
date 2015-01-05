@@ -10,14 +10,13 @@ textile_ext:     "textile"
 gems:            ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-sitemap"]
 
 # Conversion
-markdown:         redcarpet
-redcarpet:
-  extensions:     ["smart","tables","strikethrough","with_toc_data"]
+markdown:         kramdown
 highlighter:      pygments
 
 # Outputting
 permalink:        /:year/:month/:title/
 relative_permalinks: true
+excerpt_separator: ""
 paginate_path:    /page:num/
 paginate:         5
 timezone:         Asia/Kathmandu
