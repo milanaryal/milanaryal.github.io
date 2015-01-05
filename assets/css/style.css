@@ -586,15 +586,10 @@ a.pagination-item:hover {
 * Header Link placement and hover behavior.
 */
 .header-link {
-  float: left;
-  width: 1em;
-  height: 1em;
-  margin-left: -1.2em;
+  position: relative;
+  left: 0.5em;
   opacity: 0;
-  text-align: center;
-}
-.post-body .header-link {
-  border-bottom: 0;
+  font-size: 0.8em;
 }
 *:hover > .header-link,
 .header-link:focus  {
@@ -603,10 +598,6 @@ a.pagination-item:hover {
   -moz-transition: color .16s linear;
   -o-transition: color .16s linear;
   transition: color .16s linear;
-}
-.fa-link {
-  font-size: 85%;
-  vertical-align: .2em;
 }
 
 a.header-link {
