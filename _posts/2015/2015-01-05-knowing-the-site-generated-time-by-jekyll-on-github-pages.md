@@ -11,9 +11,9 @@ I found the following tricks to do it.
 
 Here's the code:
 
-{% highlight ruby %}
+``` ruby 
 {{ site.time }}
-{% endhighlight %}
+```
 
 To know generated time according to your locale timezone you have to add your timezone in your `_config.yml`:
 
