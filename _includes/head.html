@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <!-- meta description -->
-  {% if page.excerpt %}
-  <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
-  {% else %}
+  {% if page.title == "Home" %}
   <meta name="description" content="{{ site.tagline }}">
+  {% else %}
+  <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
+  <meta name="keywords" content="Milan Aryal, milanaryal.com, Asia, Kathmandu, Nepal, web designer, web developer, blogger">
   {% endif %}
 
   <link rel="dns-prefetch" href="//www.google-analytics.com">
