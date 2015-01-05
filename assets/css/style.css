@@ -168,6 +168,11 @@ pre code {
   color: inherit;
   background-color: transparent;
 }
+@media (max-width: 30em) {
+  code {
+    word-break: break-word;
+  }
+}
 
 /* Pygments via Jekyll */
 .highlight {
@@ -454,6 +459,7 @@ margin: 0 auto;
 
 .page,
 .post {
+  position: relative;
   margin-bottom: 4em;
 }
 
@@ -472,6 +478,10 @@ margin: 0 auto;
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
   margin-top: 1rem;
   display: block;
+}
+
+.page-body > p:first-child {
+  font-size: 1.25rem;
 }
 
 /* Meta data line below post title */
