@@ -18,7 +18,6 @@ highlighter:     pygments
 # Outputting
 permalink:        /:year/:month/:title/
 relative_permalinks: true
-excerpt_separator: ""
 paginate_path:    /page:num/
 paginate:         5
 timezone:         Asia/Kathmandu
