@@ -1,6 +1,10 @@
-# Permalinks
-permalink:        /:year/:month/:title/
-relative_permalinks: true
+# Jekyll config file http://jekyllrb.com/docs/configuration/
+
+# Handling reading
+exclude:         ["README.md", "LICENSE", "CNAME"]
+encoding:        "utf-8"
+markdown_ext:    "markdown,mkdown,mkdn,mkd,md"
+textile_ext:     "textile"
 
 # Plugins
 gems:            ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-sitemap"]
@@ -11,12 +15,23 @@ redcarpet:
   extensions:     ["smart","tables","strikethrough","with_toc_data"]
 highlighter:      pygments
 
+# Outputting
+permalink:        /:year/:month/:title/
+relative_permalinks: true
+paginate_path:    /page:num/
+paginate:         5
+timezone:         Asia/Kathmandu
+locale:           en_US
+
+# Serving
+baseurl:          / # does not include hostname
+
+# URL of site, include http://, do not include a trailing slash
+url:              http://milanaryal.com
+
 # Site settings
 title:            Milan Aryal
 tagline:          "One day I will find the words, and they will be simple."
-url:              http://milanaryal.com
-paginate:         5
-baseurl:          /
 author:
   name:           Milan Aryal
   url:            https://twitter.com/MilanAryal
