@@ -5,7 +5,7 @@ date: 2015-01-05T17:08:17+05:45
 tags: jekyll, github pages
 ---
 
-If you are using Jekyll to generate your blog on GitHub pages, you might want too know the last extact site generated time as the Jekyll generate and keep the files on `_site`.
+If you are using Jekyll to generate your blog on GitHub Pages, you might want too know the last extact site generated time as the Jekyll generate and keep the files on `_site`.
 
 I found the following liquid tag to do it:
 
