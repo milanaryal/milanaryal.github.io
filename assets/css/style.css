@@ -376,14 +376,19 @@ tbody tr:nth-child(odd) th {
  * Center the page content.
  */
 
+/*
 .container {
   max-width: 38rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
-}
+}*/
 
+.container {
+max-width: 32rem;
+margin: 0 auto;
+}
 
 /*
  * Masthead
