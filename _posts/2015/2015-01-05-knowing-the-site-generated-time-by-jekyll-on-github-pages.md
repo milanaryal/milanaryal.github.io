@@ -11,26 +11,26 @@ I found the following tricks to do it.
 
 Here's the code:
 
-``` ruby 
+{% raw %}
 {{ site.time }}
-```
+{% endraw %}
 
 To know generated time according to your locale timezone you have to add your timezone in your `_config.yml`:
 
-{% highlight ruby %}
+{% raw %}
 timezone:    Asia/Kathmandu #Add your own locale timezone
-{% endhighlight %}
+{% endraw %}
 
 You can add/custumize this in the end of your site source code as following:
 
-{% highlight ruby %}
+{% raw %}
 <!-- Proudly Hosted on GitHub | Generated {{ site.time }} | Revision {{ site.github.build_revision }} -->
-{% endhighlight %}
+{% endraw %}
 
 Following is the generated example format:
 
-{% highlight html %}
+{% raw %}
 <!-- Proudly Hosted on GitHub | Generated 2015-01-05 15:53:08 +0545 | Revision e7a8fa260c4381526ecbbc12d5bbeb00f3077eeb -->
-{% endhighlight %}
+{% endraw %}
 
 Happy Jekyll'ing! :sunglasses:
