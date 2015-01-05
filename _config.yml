@@ -11,6 +11,7 @@ gems:            ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-site
 
 # Conversion
 markdown:         kramdown
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 highlighter:      pygments
 
 # Outputting
