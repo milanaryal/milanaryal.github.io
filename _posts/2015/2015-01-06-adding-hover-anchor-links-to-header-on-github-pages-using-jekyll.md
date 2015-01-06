@@ -12,9 +12,13 @@ So here's the alternative to do it which is lighter in code and doesn't require 
 
 ### Enabling header id on Jekyll with Markdown
 
-To use this feature you should enable header id on Jekyll blog:
+To use this feature you should enable header id on Jekyll blog.
 
-{% highlight ruby %}
+Like the following example, where `header-link-3` id is added to `h3` header:
+
+{% highlight html %}
+<h3 id=header-link-3>Header link 3</h3>
+{% endhighlight %}
 
 For `Redcarpet` markdown **enable the `with_toc_data` extension**:
 
