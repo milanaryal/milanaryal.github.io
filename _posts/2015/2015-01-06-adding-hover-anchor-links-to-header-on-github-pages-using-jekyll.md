@@ -160,6 +160,14 @@ After that add the following styles:
   -o-transition: color .16s linear;
   transition: color .16s linear;
 }
+
+a.header-link {
+  text-decoration: none;
+  color: #313131!important;
+}
+a.header-link :hover {
+  text-decoration: none;
+  color: #268bd2;
 {% endraw %}
 {% endhighlight %}
 
