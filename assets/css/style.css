@@ -586,6 +586,7 @@ a.pagination-item:hover {
 * Header Link placement and hover behavior.
 */
 .header-link {
+  display: inline-block;
   position: absolute;
   left: -1.2em;
   opacity: 0;
