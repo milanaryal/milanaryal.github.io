@@ -53,7 +53,7 @@ kramdown:
 
 Include the anchor.js file (or alternatively anchor.min.js) in your webpage.
 
-{% highlight html }
+{% highlight html %}
 {% raw %}
 <script src="anchor.js"></script>
 {% endraw %}
@@ -61,7 +61,7 @@ Include the anchor.js file (or alternatively anchor.min.js) in your webpage.
 
 For the default anchor link styling (demonstrated in the [demo](http://bryanbraun.github.io/anchorjs/)) you should also include anchor.css.
 
-{% highlight html }
+{% highlight html %}
 {% raw %}
 <link rel="stylesheet" href="anchor.css">
 {% endraw %}
@@ -71,7 +71,7 @@ For the default anchor link styling (demonstrated in the [demo](http://bryanbrau
 
 AnchorJS provides the addAnchors() method for adding anchors to the page. This method accepts a selector as a parameter in the form of a string. The selector can be used to target specific elements that you want to add anchors to. Here's an example.
 
-{% highlight javascript }
+{% highlight javascript %}
 {% raw %}
 /**
 * Example 1
