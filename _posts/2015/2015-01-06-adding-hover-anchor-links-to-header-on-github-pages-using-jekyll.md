@@ -99,7 +99,7 @@ Here's my own little custumization which works with Font Awesome:
 You can download [Font Awesome](http://fortawesome.github.io/Font-Awesome/) or simply include the following style sheet before the `</head>` tag to activate Font Awesome.
 
 {% highlight html %}
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 {% endhighlight %}
 
 Now add the following script before the `</body>` tag or where you might think it is suitable:
