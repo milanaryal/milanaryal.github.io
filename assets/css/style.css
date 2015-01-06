@@ -189,6 +189,7 @@ pre code {
 }
 .highlight pre {
   margin-bottom: 0;
+  border-radius: 4px;
 }
 
 /* to make lines scroll instead of wrap */
@@ -312,14 +313,14 @@ blockquote p:last-child {
 }
 
 img {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .emoji {
-  display: inline;
+  display: inline-block;
   margin: 0;
 }
 
