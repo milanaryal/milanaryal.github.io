@@ -8,7 +8,7 @@ I really like how a markdown file on GitHub hovering over a heading produces a v
 
 When you send someone one of the resulting anchor URLs, which includes the name of the linked heading, upon clicking the link, the user will automatically scroll to the desired part of the page, and thus be directed to the exact content you want them to see.
 
-So here's the alternative to do it which is lighter in code and doesn't require the hefty jQuery library:
+So here's the AnchorJS alternative to do it which is lighter in code and doesn't require the hefty jQuery library:
 
 ### Enabling header id on Jekyll with Markdown
 
