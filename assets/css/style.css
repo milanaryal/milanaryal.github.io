@@ -343,6 +343,11 @@ figcaption {
   line-height: 1.5em;
 }
 
+img, figure, iframe {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;
