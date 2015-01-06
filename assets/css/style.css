@@ -192,6 +192,10 @@ pre code {
   border-radius: 4px;
 }
 
+.highlight .hll {
+  border-radius: 4px;
+}
+
 /* to make lines scroll instead of wrap */
 /* from http://stackoverflow.com/a/23393920 */
 .highlight pre code * {
