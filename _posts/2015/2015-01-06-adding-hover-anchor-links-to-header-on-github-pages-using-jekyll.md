@@ -17,16 +17,20 @@ To use this feature you should enable header id on Jekyll blog.
 Like the following example, where `header-link-3` id is added to `h3` header:
 
 {% highlight html %}
+{% raw %}
 <h3 id=header-link-3>Header link 3</h3>
+{% endraw %}
 {% endhighlight %}
 
 For `Redcarpet` markdown **enable the `with_toc_data` extension**:
 
 {% highlight ruby %}
+{% raw %}
 # Conversion
 markdown:        redcarpet
 redcarpet:
   extensions:    ["with_toc_data"]
+{% endraw %}
 {% endhighlight %}
 
 For `Kramdown` markdown, it auto generate the header ids.
@@ -34,9 +38,11 @@ For `Kramdown` markdown, it auto generate the header ids.
 Only **make sure you have not disable the `auto_ids`**, like the following example:
 
 {% highlight ruby %}
+{% raw %}
 kramdown:
   # Disable auto-generated ID's for headings
   auto_ids: false
+{% endraw %}
 {% endhighlight %}
 
 ### AnchorJS
@@ -48,13 +54,17 @@ kramdown:
 Include the anchor.js file (or alternatively anchor.min.js) in your webpage.
 
 {% highlight html }
+{% raw %}
 <script src="anchor.js"></script>
+{% endraw %}
 {% endhighlight %}
 
 For the default anchor link styling (demonstrated in the [demo](http://bryanbraun.github.io/anchorjs/)) you should also include anchor.css.
 
 {% highlight html }
+{% raw %}
 <link rel="stylesheet" href="anchor.css">
+{% endraw %}
 {% endhighlight %}
 
 ### Using AnchorJS
@@ -62,6 +72,7 @@ For the default anchor link styling (demonstrated in the [demo](http://bryanbrau
 AnchorJS provides the addAnchors() method for adding anchors to the page. This method accepts a selector as a parameter in the form of a string. The selector can be used to target specific elements that you want to add anchors to. Here's an example.
 
 {% highlight javascript }
+{% raw %}
 /**
 * Example 1
 * Add anchors to all h1's on the page
@@ -86,6 +97,7 @@ addAnchors('#post h1, #post h2, #post h3');
 * which adds anchors to all headings.
 */
 addAnchors();
+{% endraw %}
 {% endhighlight %}
 
 That's it you're done. :smile:
@@ -99,12 +111,15 @@ Here's my own little custumization which works with Font Awesome:
 You can download [Font Awesome](http://fortawesome.github.io/Font-Awesome/) or simply include the following style sheet before the `</head>` tag to activate Font Awesome.
 
 {% highlight html %}
+{% raw %}
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+{% endraw %}
 {% endhighlight %}
 
 Now add the following script before the `</body>` tag or where you might think it is suitable:
 
 {% highlight javascript %}
+{% raw %}
 <script>
 
 // Header link script
@@ -115,6 +130,7 @@ var selector = '.post-body h2, .post-body h3, .post-body h4';
 addAnchors(selector);
 
 </script>
+{% endraw %}
 {% endhighlight %}
 
 *Note that I have edited class `header-link` in `// Header link script` and in `// Header link selector` added `.post-body h2, .post-body h3, .post-body h4` to activate header link only in between post body.*
@@ -122,6 +138,7 @@ addAnchors(selector);
 After that add the following styles:
 
 {% highlight css %}
+{% raw %}
 /**
 * Header Link placement and hover behavior.
 */
@@ -141,6 +158,7 @@ After that add the following styles:
   -o-transition: color .16s linear;
   transition: color .16s linear;
 }
+{% endraw %}
 {% endhighlight %}
 
 Now it's all done. :wink:
