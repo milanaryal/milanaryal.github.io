@@ -18,9 +18,11 @@ Like the following example, where `header-link-3` id is added to `h3` header:
 
 {% highlight html %}
 {% raw %}
-<h3 id=header-link-3>Header link 3</h3>
+<h3 id="header-link-3">Header link 3</h3>
 {% endraw %}
 {% endhighlight %}
+
+(By **manually adding ids like the above example** you can add hover anchor links for your site, if you're **not using Jekyll for your site or you don't want to enable** the following markdown extension on Jekyll.)
 
 For `Redcarpet` markdown **enable the `with_toc_data` extension**:
 
