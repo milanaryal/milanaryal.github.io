@@ -8,7 +8,7 @@
   <!-- meta description -->
   {% if page.title == "Home" %}
   <meta name="description" content="Helping to build a better web.">
-  <meta name="keywords" content="Milan Aryal, milanaryal.com, Asia, Kathmandu, Nepal, web designer, web developer, blogger">
+  <meta name="keywords" content="Milan Aryal, milanaryal.com, Asia, Kathmandu, Nepal, Nepali, web designer, web developer, blogger">
   {% else %}
   <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
   {% endif %}
@@ -34,9 +34,9 @@
   <base href="http://milanaryal.com/">
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|PT+Serif:400,700,400italic,700italic">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}feed.xml">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
 </head>
