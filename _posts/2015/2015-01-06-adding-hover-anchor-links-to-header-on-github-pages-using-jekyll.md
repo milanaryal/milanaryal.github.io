@@ -163,7 +163,7 @@ After that add the following styles:
 
 a.header-link {
   text-decoration: none;
-  color: #313131!important;
+  color: #313131;
 }
 a.header-link :hover {
   text-decoration: none;
