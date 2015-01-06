@@ -24,7 +24,7 @@ timezone:         Asia/Kathmandu
 locale:           en_US
 
 # Serving
-baseurl:          / # does not include hostname
+baseurl:          "" # does not include hostname
 
 # URL of site, include http://, do not include a trailing slash
 url:              http://milanaryal.com
