@@ -192,7 +192,6 @@ pre code {
   border-radius: 4px;
 }
 
-
 /* to make lines scroll instead of wrap */
 /* from http://stackoverflow.com/a/23393920 */
 .highlight pre code * {
@@ -200,7 +199,7 @@ pre code {
 }
 
 .highlight pre {
-  overflow: auto;       // this sets the scrolling
+  overflow: auto;         // this sets the scrolling
 }
 
 .highlight pre code {
