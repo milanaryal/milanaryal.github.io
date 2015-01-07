@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<div class="post">
+<article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: '%B %d, %Y' }}</time>
     <div class="share-button">
       <a class="twitter-share-button" href="https://twitter.com/share"
       data-dnt="true"
       data-size="large"
       data-count="none"
-      data-via="MilanAryal"
+      data-via="{{ site.author.tw_username }}"
       data-text="{{ page.title }}">
       Tweet
       </a>
@@ -18,9 +18,9 @@ layout: default
   <div class="post-body">
   {{ content }}
   </div>
-</div>
+</article>
 
-<div class="related">
+<aside class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
@@ -28,10 +28,10 @@ layout: default
         <h3>
           <a href="{{ post.url }}">
             {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
+            <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %d, %Y' }}</time></small>
           </a>
         </h3>
       </li>
     {% endfor %}
   </ul>
-</div>
+</aside>
