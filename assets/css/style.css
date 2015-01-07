@@ -431,6 +431,7 @@ tbody tr:nth-child(odd) th {
 .masthead-title h1 {
   display: inline;
   font-size: 1.25rem;
+  color: #505050;
 }
 .masthead-title h3 {
   display: inline;
@@ -478,7 +479,7 @@ tbody tr:nth-child(odd) th {
 }
 
 h3.post-title {
-  font-size: 1.75rem;
+  font-size: 1.85rem;
 }
 
 
