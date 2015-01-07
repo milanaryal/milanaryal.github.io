@@ -7,10 +7,10 @@
 
     <div class="container">
       <header class="masthead">
-        <h3 class="masthead-title">
-          <a href="/" title="Home">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
-        </h3>
+        <div class="masthead-title">
+          <a href="/" title="Home"><h1>{{ site.title }}</h1></a>
+          <h3>{{ site.tagline }}</h3>
+        </div>
         {% for item in site.menu %}
         <ul class="nav"><li><a href="{{ item.url }}">{{ item.title }}</a></li></ul>
         {% endfor %}
