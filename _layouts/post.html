@@ -7,11 +7,14 @@ layout: default
   <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date: '%b %d, %Y' }}</time>
     <div class="share-button">
       <a class="twitter-share-button" href="https://twitter.com/share"
+      data-dnt="true"
       data-size="large"
       data-count="none"
-      data-via="MilanAryal">
+      data-via="MilanAryal"
+      data-url="{{ page.url }}"
+      data-text="{{ page.title }}">
       Tweet
-    </a>
+      </a>
     </div>
   <div class="post-body">
   {{ content }}
