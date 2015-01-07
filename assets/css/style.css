@@ -489,6 +489,10 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
 }
 
+.share-button {
+  margin: .5rem 0 0;
+}
+
 .post-body, .page-body {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
   margin-top: 1rem;

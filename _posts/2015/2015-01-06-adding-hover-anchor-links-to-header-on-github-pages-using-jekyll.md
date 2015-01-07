@@ -53,7 +53,7 @@ kramdown:
 
 ### Including AnchorJS
 
-Include the `anchor.js` file (or alternatively anchor.min.js) in your webpage.
+Include the `anchor.js` file (or alternatively minified version `anchor.min.js`) in your webpage.
 
 {% highlight html %}
 {% raw %}
@@ -135,7 +135,7 @@ addAnchors(selector);
 {% endraw %}
 {% endhighlight %}
 
-*Note that I have edited calling class as `"header-link"` and `"fa fa-link"` to activate Font Awesome icon link in `// Header link script` and added class in `// Header link selector` as `.post-body h2, .post-body h3, .post-body h4` to activate header link only in between post body.*
+*Note that I have edited calling class as `header-link` and `fa fa-link` to activate Font Awesome icon link in `// Header link script` and added class in `// Header link selector` as `.post-body h2, .post-body h3, .post-body h4` to activate header link only in between post body.*
 
 After that add the following styles:
 
