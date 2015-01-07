@@ -813,5 +813,11 @@ a.header-link :hover {
 }
 
 .social-profile {
-  margin: .5rem 0 0;
+  margin: .5rem auto .5rem auto;
+}
+
+@media (max-width: 47em) {
+  .social-profile {
+  display: none;
+  }
 }
