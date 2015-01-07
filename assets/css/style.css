@@ -437,6 +437,15 @@ tbody tr:nth-child(odd) th {
   letter-spacing: 0;
 }
 
+.masthead:after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 1px;
+  margin: 3rem auto;
+  background-color: #eee;
+}
+
 .nav {
   padding-left: 0;
   margin-bottom: 0;
