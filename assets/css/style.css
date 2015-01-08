@@ -825,8 +825,8 @@ a.header-link :hover {
   }
   .sidebar-nav .sidebar-nav-item {
   display: inline-block;
-  padding-right: 1.25rem;
-  border-right: 1px solid #ccc;
+  padding: 0 1.25rem 0 1.25rem;
+  border-right: 1px solid rgba(255,255,255,.5);
   }
   .sidebar-nav .sidebar-nav-item:last-child {
   border-right: 0;
