@@ -823,7 +823,7 @@ a.header-link :hover {
   .social-profile, .copyright {
   display: none;
   }
-  nav a {
+  .sidebar-nav .sidebar-nav-item {
   display: inline;
   padding-right: 1.25rem;
   }
