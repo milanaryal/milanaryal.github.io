@@ -1,28 +1,28 @@
 <head>
-  <meta charset="utf-8">
-  <title>{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  {% if page.title == "Home" %}
-  <meta name="description" content="Helping to build a better web.">
-  <meta name="keywords" content="Milan Aryal, milanaryal.com, Asia, Kathmandu, Nepal, Nepali, web designer, web developer, blogger">
-  {% else %}
-  <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
-  {% endif %}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@{{ site.author.tw_username }}">
-  <meta name="twitter:creator" content="@{{ site.author.tw_username }}">
-  <meta name="twitter:title" content="{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.title == "Home" %}{{ site.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% endif %}">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.icon }}">
-  <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <link rel="dns-prefetch" href="//www.google-analytics.com">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="dns-prefetch" href="//platform.twitter.com">
-  <link rel="profile" href="http://gmpg.org/xfn/11">
-  <link rel="author" href="//plus.google.com/+MilanAryal">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} - Feed" href="/feed.xml">
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|PT+Serif:400,700,400italic,700italic|Abril+Fatface">
-</head>
+    <meta charset="utf-8">
+    <title>{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    {% if page.title == "Home" %}
+    <meta name="description" content="Helping to build a better web.">
+    <meta name="keywords" content="Milan Aryal, milanaryal.com, Asia, Kathmandu, Nepal, Nepali, web designer, web developer, blogger">
+    {% else %}
+    <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
+    {% endif %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ site.author.tw_username }}">
+    <meta name="twitter:creator" content="@{{ site.author.tw_username }}">
+    <meta name="twitter:title" content="{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.title == "Home" %}{{ site.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% endif %}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.icon }}">
+    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//platform.twitter.com">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="author" href="//plus.google.com/+MilanAryal">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }} - Feed" href="/feed.xml">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|PT+Serif:400,700,400italic,700italic">
+  </head>

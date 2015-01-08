@@ -600,7 +600,7 @@ a.pagination-item:hover {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2.25rem;
 }
 
@@ -750,6 +750,15 @@ a.sidebar-nav-item:focus {
 .theme-base-0d .content a,
 .theme-base-0d .related-posts li a:hover {
   color: #6a9fb5;
+}
+
+/* Flat Blue */
+.flat-blue .sidebar {
+  background-color: #3498DB;
+}
+.flat-blue .content a,
+.flat-blue .related-posts li a:hover {
+  color: #3498DB;
 }
 
 /* Magenta */
