@@ -820,7 +820,11 @@ a.header-link :hover {
 }
 
 @media (max-width: 48em) {
-  .social-profile {
+  .social-profile, .copyright {
   display: none;
+  }
+  nav a {
+  display: inline;
+  padding-right: 1.25rem;
   }
 }

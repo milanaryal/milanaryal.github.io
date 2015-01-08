@@ -175,7 +175,7 @@ Now it's all done. :wink:
 
 ---
 
-#### Further references:
+#### Further references
 
 * Ben Balter - [Header hover anchor links on GitHub Pages using Jekyll](http://ben.balter.com/2014/03/13/pages-anchor-links/)
 * Parker - [Header Anchor Links in Vanilla JavaScript for GitHub Pages and Jekyll](http://blog.parkermoore.de/2014/08/01/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/)
