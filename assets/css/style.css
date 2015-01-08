@@ -752,15 +752,6 @@ a.sidebar-nav-item:focus {
   color: #6a9fb5;
 }
 
-/* Flat Blue */
-.flat-blue .sidebar {
-  background-color: #03A9F4;
-}
-.flat-blue .content a,
-.flat-blue .related-posts li a:hover {
-  color: #03A9F4;
-}
-
 /* Magenta */
 .theme-base-0e .sidebar {
   background-color: #aa759f;
