@@ -2,7 +2,6 @@
 <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 <script type="text/javascript" src="/assets/js/fluidvids.min.js"></script>
 <script>
-
 // Fluidvids
 fluidvids.init({
   selector: ['iframe', 'object'], // runs querySelectorAll()
@@ -19,7 +18,6 @@ ga('create', '{{ site.ga_trackid }}', 'auto');
 ga('send', 'pageview');
 
 // Anchor
-var selector = '.post-body h3, .post-body h4';
+var selector = '.post-body h2, .post-body h3, .post-body h4';
 addAnchors(selector);
-
 </script>

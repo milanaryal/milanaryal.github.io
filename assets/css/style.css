@@ -1,7 +1,8 @@
 /*!
  * Milan Aryal
+ * Jekyll build for milanaryal.com
  * http://milanaryal.com
- * MIT licensed
+ * MIT licensed.
  */
 
 
@@ -599,7 +600,7 @@ a.pagination-item:hover {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Abril Fatface", serif;
   font-size: 2.25rem;
 }
 
