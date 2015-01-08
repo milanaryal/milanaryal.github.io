@@ -28,9 +28,9 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@{{ site.author.tw_username }}">
   <meta name="twitter:creator" content="@{{ site.author.tw_username }}">
-  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.title == "Home" %}{{ site.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% endif %}">
-  <meta name="twitter:image" content="{{ site.icon }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.icon }}">
   <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
   <title>
