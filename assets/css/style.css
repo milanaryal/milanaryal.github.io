@@ -824,7 +824,11 @@ a.header-link :hover {
   display: none;
   }
   .sidebar-nav .sidebar-nav-item {
-  display: inline;
+  display: inline-block;
   padding-right: 1.25rem;
+  border-right: 1px solid #ccc;
+  }
+  .sidebar-nav .sidebar-nav-item:last-child {
+  border-right: 0;
   }
 }
