@@ -754,11 +754,11 @@ a.sidebar-nav-item:focus {
 
 /* Flat Blue */
 .flat-blue .sidebar {
-  background-color: #3498DB;
+  background-color: #2196F3;
 }
 .flat-blue .content a,
 .flat-blue .related-posts li a:hover {
-  color: #3498DB;
+  color: #2196F3;
 }
 
 /* Magenta */
