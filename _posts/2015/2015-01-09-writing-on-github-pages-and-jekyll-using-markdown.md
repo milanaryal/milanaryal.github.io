@@ -4,15 +4,15 @@ title: Writing on GitHub Pages and Jekyll using Markdown
 date: 2015-01-09T15:04:14
 ---
 
-Readme file on GitHub uses GitHub flavored Markdown (GFM) and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub flavored Markdown, and other useful features like footnotes.
+Readme file on GitHub uses  GitHub flavored Markdown (GFM) and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub flavored Markdown, and other useful features like footnotes.
 
 File extention with .markdown, .mkdown, .mkdn, .mkd, .md are the supported Markdown document.
 
-### Enabling GitHub Flavored Markdown in Jekyll
+### Enabling GitHub flavored Markdown on Jekyll
 
 You can add several extensions in which you can configure to the behaviour like GitHub flavored Markdown, i.e. add this to your `_config.yml`:
 
-#### For `Redcarpet` Markdown
+#### For Redcarpet Markdown
 
 {% highlight ruby %}
 markdown: redcarpet
@@ -22,7 +22,7 @@ redcarpet:
 
 There're even more extensions for Redcarpet Markdown like "underline", "highlight", "quote", "footnote_ref"...
 
-#### For `Kramdown` Markdown
+#### For Kramdown Markdown
 
 {% highlight ruby %}
 markdown: kramdown
@@ -52,7 +52,7 @@ The most common formatting options have keyboard shortcuts to make them easier t
 |H2                  |`## Heading`
 |H3                  |`### Heading`
 
-If you add `underline` extension in `Redcarpet` Markdown you will have _underline_ feature with `_text_` (parse underscored emphasis as underlines. This is `_underlined_` but this is still `*italic*`).
+If you add underline extension on Redcarpet Markdown you will have _underline_ feature with `_text_` (parse underscored emphasis as underlines. This is `_underlined_` but this is still `*italic*`).
 
 ### Headers
 
@@ -103,7 +103,7 @@ Footnotes can be added to the body of your text using placeholders like this: {%
 
 Inline code can be added using single back-ticks E.g. {% raw %}``` `alert('Hello World')` ```{% endraw %}.
 
-For code blocks, if extensions enabled `Redcarpet` and  `Kramdown` supports both standard Markdown code blocks and the syntax from GitHub flavored Markdown (GFM). Standard Markdown works by indenting code lines with 4 spaces:
+For code blocks, if extensions enabled Redcarpet and Kramdown supports both standard Markdown code blocks and the syntax from GitHub flavored Markdown (GFM). Standard Markdown works by indenting code lines with 4 spaces:
 
 {% highlight html %}
 {% raw %}
