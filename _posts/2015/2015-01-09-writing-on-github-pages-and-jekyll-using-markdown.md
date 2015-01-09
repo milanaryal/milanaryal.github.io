@@ -156,10 +156,10 @@ from the text my post.
 
 ---
 
-Further references
+#### Further references
 
 * [Daring Fireball: Markdown Syntax Documentation](http://daringfireball.net/projects/markdown/syntax)
-* [Redcarpet](https://github.com/vmg/redcarpet) Markdown
-* [Kramdown](https://github.com/gettalong/kramdown) Markdown
+* [Redcarpet Markdown](https://github.com/vmg/redcarpet)
+* [Kramdown Markdown](https://github.com/gettalong/kramdown)
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
