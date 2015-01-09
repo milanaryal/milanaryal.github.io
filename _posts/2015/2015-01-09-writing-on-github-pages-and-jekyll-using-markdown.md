@@ -4,11 +4,13 @@ title: Writing on GitHub Pages and Jekyll using Markdown
 date: 2015-01-09T15:04:14
 ---
 
-Readme file on GitHub uses GitHub Flavored Markdown and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
+Readme file on GitHub uses GitHub flavored Markdown (GFM) and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub flavored Markdown, and other useful features like footnotes.
 
 ### Enabling GitHub Flavored Markdown in Jekyll
 
-**For `Redcarpet` markdown** in which you can configure to the behaviour like GitHub Flavored Markdown, i.e. add this to your `_config.yml`
+You can add several extensions in which you can configure to the behaviour like GitHub flavored Markdown, i.e. add this to your `_config.yml`:
+
+#### For `Redcarpet` Markdown
 
 {% highlight ruby %}
 markdown: redcarpet
@@ -16,9 +18,9 @@ redcarpet:
   extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 {% endhighlight %}
 
-Even more extensions for redcarpet markdown like "underline", "highlight", "quote", "footnote_ref"...
+There're even more extensions for Redcarpet Markdown like "underline", "highlight", "quote", "footnote_ref"...
 
-**For `Kramdown` markdown**
+#### For `Kramdown` Markdown
 
 {% highlight ruby %}
 markdown: kramdown
@@ -26,7 +28,7 @@ kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 {% endhighlight %}
 
-**Also on Gost blogging platform**, it support the following combination of standard Markdown and GitHub Flavored Markdown.
+**Also on Gost blogging platform**, it support the following combination of standard Markdown and GitHub flavored Markdown.
 
 > All HTML is valid Markdown. If you're stuck not able to format your content how you would like (for example using tables) you can always use [plain HTML](http://htmldog.com/guides/html/beginner/?__hstc=10303082.f33480622a9bdc4ffce7bcd81cc8cc49.1420789915940.1420789915940.1420789915940.1&__hssc=10303082.1.1420789915940&__hsfp=3394336207) instead of Markdown.
 
@@ -48,7 +50,7 @@ The most common formatting options have keyboard shortcuts to make them easier t
 |H2                  |`## Heading`
 |H3                  |`### Heading`
 
-If you add `underline` extension in `redcarpet` markdown you will have _underline_ feature with `_text_` (parse underscored emphasis as underlines. This is `_underlined_` but this is still `*italic*`).
+If you add `underline` extension in `Redcarpet` Markdown you will have _underline_ feature with `_text_` (parse underscored emphasis as underlines. This is `_underlined_` but this is still `*italic*`).
 
 ### Headers
 
@@ -99,7 +101,7 @@ Footnotes can be added to the body of your text using placeholders like this: {%
 
 Inline code can be added using single back-ticks E.g. {% raw %}``` `alert('Hello World')` ```{% endraw %}.
 
-For code blocks, if extensions enabled `redcarpet` and  `kramdown` supports both standard markdown code blocks and the syntax from GitHub Flavored Markdown (GFM). Standard markdown works by indenting code lines with 4 spaces:
+For code blocks, if extensions enabled `Redcarpet` and  `Kramdown` supports both standard Markdown code blocks and the syntax from GitHub flavored Markdown (GFM). Standard Markdown works by indenting code lines with 4 spaces:
 
 {% highlight html %}
 {% raw %}
@@ -122,7 +124,7 @@ GFM uses triple back-ticks ```
 
 ### Examples
 
-**Link Markdown Example**
+#### Link Markdown example
 
 {% highlight text %}
 {% raw %}
@@ -130,7 +132,7 @@ This is a paragraph that contains a [link to milanaryal.com](http://milanaryal.c
 {% endraw %}
 {% endhighlight %}
 
-**List Markdown Example**
+#### List Markdown example
 
 {% highlight text %}
 {% raw %}
@@ -142,7 +144,7 @@ This paragraph contains a list of items.
 {% endraw %}
 {% endhighlight %}
 
-**Quote Markdown Example**
+#### Quote Markdown example
 
 {% highlight text %}
 {% raw %}
