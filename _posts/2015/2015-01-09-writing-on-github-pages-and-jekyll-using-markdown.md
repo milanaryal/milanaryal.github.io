@@ -99,7 +99,7 @@ Footnotes can be added to the body of your text using placeholders like this: {%
 {% endraw %}
 {% endhighlight %}
 
-### Writing Code
+### Writing code
 
 Inline code can be added using single back-ticks E.g. {% raw %}``` `alert('Hello World')` ```{% endraw %}.
 
