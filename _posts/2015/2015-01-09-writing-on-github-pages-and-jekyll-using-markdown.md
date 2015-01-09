@@ -13,7 +13,7 @@ Readme file in GitHub uses GitHub Flavored Markdown and blogging platform like J
 {% highlight ruby %}
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 {% endhighlight %}
 
 **For `Kramdown` markdown**
