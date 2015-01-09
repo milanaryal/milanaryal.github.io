@@ -147,7 +147,7 @@ title: Blogging Like a Hacker
 ---
 {% endhighlight %}
 
-_Note: For the proper setup, don't use `tab` use `space` instead._
+*Note: For the proper setup, don't use `tab` use `space` instead.*
 
 Thanks to Liquid (Jekyll uses the Liquid templating language to process templates) that you can add your desire front matter:
 
