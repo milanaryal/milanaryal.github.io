@@ -4,7 +4,7 @@ title: Writing on GitHub Pages and Jekyll using Markdown
 date: 2015-01-09T15:04:14
 ---
 
-Readme file in GitHub uses GitHub Flavored Markdown and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts and a few of our own additions. Here's the version of markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
+Readme file on GitHub uses ==GitHub Flavored Markdown== and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
 
 ### Enabling GitHub Flavored Markdown in Jekyll
 
@@ -35,7 +35,7 @@ The most common formatting options have keyboard shortcuts to make them easier t
 |Result              |Markdown
 |--------------------|---------------------------------------
 |**Bold**            |```**text**```
-|*Emphasize*         |```*text*```
+|*Emphasize*         |```*text*```, ```_text_```
 |~~Strike-through~~  |```~~text~~```
 |[Link](#)           |```[title](http://)```
 |`Inline Code`       |``` `code` ```
@@ -45,6 +45,8 @@ The most common formatting options have keyboard shortcuts to make them easier t
 |H1                  |`# Heading`
 |H2                  |`## Heading`
 |H3                  |`### Heading`
+
+If you add `underline` extension in `redcarpet` markdown you will have _underline_ feature with `_text_` (parse underscored emphasis as underlines. This is `_underlined_` but this is still `*italic*`).
 
 ### Headers
 
