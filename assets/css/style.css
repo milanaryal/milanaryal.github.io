@@ -831,4 +831,7 @@ a.header-link :hover {
   .sidebar-nav .sidebar-nav-item:last-child {
   border-right: 0;
   }
+  .sidebar-about .lead {
+  font-size: 0.85rem;
+  }
 }
