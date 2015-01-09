@@ -4,7 +4,7 @@ title: Writing on GitHub Pages and Jekyll using Markdown
 date: 2015-01-09T15:04:14
 ---
 
-Readme file on GitHub uses ==GitHub Flavored Markdown== and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
+Readme file on GitHub uses GitHub Flavored Markdown and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
 
 ### Enabling GitHub Flavored Markdown in Jekyll
 
@@ -15,6 +15,8 @@ markdown: redcarpet
 redcarpet:
   extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 {% endhighlight %}
+
+Even more extensions for redcarpet markdown like "underline", "highlight", "quote", "footnote_ref"...
 
 **For `Kramdown` markdown**
 
@@ -35,7 +37,7 @@ The most common formatting options have keyboard shortcuts to make them easier t
 |Result              |Markdown
 |--------------------|---------------------------------------
 |**Bold**            |```**text**```
-|*Emphasize*         |```*text*```, ```_text_```
+|*Emphasize*         |```*text*```
 |~~Strike-through~~  |```~~text~~```
 |[Link](#)           |```[title](http://)```
 |`Inline Code`       |``` `code` ```
@@ -151,3 +153,13 @@ This paragraph has a quote
 from the text my post.
 {% endraw %}
 {% endhighlight %}
+
+---
+
+Further references
+
+* [Daring Fireball: Markdown Syntax Documentation](http://daringfireball.net/projects/markdown/syntax)
+* [Redcarpet](https://github.com/vmg/redcarpet) Markdown
+* [Kramdown](https://github.com/gettalong/kramdown) Markdown
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
