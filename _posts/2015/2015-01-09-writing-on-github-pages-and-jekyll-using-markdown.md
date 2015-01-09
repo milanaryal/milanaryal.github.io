@@ -166,4 +166,4 @@ from the text my post.
 * [Redcarpet Markdown](https://github.com/vmg/redcarpet)
 * [Kramdown Markdown](https://github.com/gettalong/kramdown)
 * [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
-* [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet){:rel=nofollow}
+* [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
