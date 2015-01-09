@@ -6,7 +6,7 @@ date: 2015-01-09T15:04:14
 
 Readme file in GitHub uses GitHub Flavored Markdown and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts and a few of our own additions. Here's the version of markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
 
-Enable GitHub Flavored Markdown in Jekyll
+### Enabling GitHub Flavored Markdown in Jekyll
 
 **For `Redcarpet` markdown** in which you can then configure to the behaviour you want, i.e. then add this to your `_config.yml`
 
@@ -28,25 +28,25 @@ kramdown:
 
 > All HTML is valid Markdown. If you're stuck not able to format your content how you would like (for example using tables) you can always use [plain HTML](http://htmldog.com/guides/html/beginner/?__hstc=10303082.f33480622a9bdc4ffce7bcd81cc8cc49.1420789915940.1420789915940.1420789915940.1&__hssc=10303082.1.1420789915940&__hsfp=3394336207) instead of Markdown.
 
-## Markdown style guide
+### Markdown style guide
 
 The most common formatting options have keyboard shortcuts to make them easier to add:
 
 |Result              |Markdown
 |--------------------|---------------------------------------
-|**Bold**            |{% raw %}**text**{% endraw %}
-|*Emphasize*         |{% raw %}*text*{% endraw %}
-|~~Strike-through~~  |{% raw %}~~text~~{% endraw %}
-|[Link](/#)          |{% raw %}[title](http://){% endraw %}
-|`Inline Code`       |{% raw %}`code`{% endraw %}
-|Image               |{% raw %}![alt](http://){% endraw %}
+|**Bold**            |{% raw %}```**text**```{% endraw %}
+|*Emphasize*         |{% raw %}```*text*```{% endraw %}
+|~~Strike-through~~  |{% raw %}```~~text~~```{% endraw %}
+|[Link](/#)          |{% raw %}```[title](http://)```{% endraw %}
+|`Inline Code`       |{% raw %}``` `code` ```{% endraw %}
+|Image               |{% raw %}```![alt](http://)```{% endraw %}
 |List                |{% raw %}* item{% endraw %}
 |Blockquote          |{% raw %}> quote{% endraw %}
 |H1                  |{% raw %}# Heading{% endraw %}
 |H2                  |{% raw %}## Heading{% endraw %}
 |H3                  |{% raw %}### Heading{% endraw %}
 
-## Headers
+### Headers
 
 Headers are set using a hash before the title. The number of hashes before the title text will determine the depth of the header. Header depths are from 1-6
 
@@ -59,7 +59,7 @@ Headers are set using a hash before the title. The number of hashes before the t
 * H6 : {% raw %}###### Header 6{% endraw %}
 {% endhighlight %}
 
-## Text Styling
+### Text Styling
 
 {% highlight text %}
 * Links : {% raw %}[Title](URL){% endraw %}
@@ -75,11 +75,11 @@ Headers are set using a hash before the title. The number of hashes before the t
 * Horizontal Rule (HR) : {% raw %}--------{% endraw %}
 {% endhighlight %}
 
-## Images
+### Images
 
 To insert an image into your post, you need to first type {% raw %}![](){% endraw %} into the Markdown editor panel and image link inbetween {% raw %}(){% endraw %}. To title your image, all you need to do is place the title text inbetween the square brackets, e.g; {% raw %}![This is a title](){% endraw %}.
 
-## Footnotes
+### Footnotes
 
 Footnotes can be added to the body of your text using placeholders like this: {% raw %}[^1]{% endraw %}. Alternatively you can use 'n' rather than numbers {% raw %}[^n]{% endraw %} so you don't have to worry about which number you are on. At the very end of your post, you can define your matching footnotes as shown below, URLs will be turned into links:
 
@@ -91,7 +91,7 @@ Footnotes can be added to the body of your text using placeholders like this: {%
 {% endraw %}
 {% endhighlight %}
 
-## Writing Code
+### Writing Code
 
 Inline code can be added using single back-ticks E.g. {% raw %}`alert('Hello World')`{% endraw %}.
 
@@ -116,13 +116,13 @@ GFM uses triple back-ticks ```
 {% endraw %}
 {% endhighlight %}
 
-## Examples
+### Examples
 
 **Link Markdown Example**
 
 {% highlight text %}
 {% raw %}
-This is a paragraph that contains a [link to ghost](http://milanaryal.com).
+This is a paragraph that contains a [link to milanaryal.com](http://milanaryal.com).
 {% endraw %}
 {% endhighlight %}
 
