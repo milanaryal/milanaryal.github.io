@@ -8,7 +8,7 @@ Readme file in GitHub uses GitHub Flavored Markdown and blogging platform like J
 
 ### Enabling GitHub Flavored Markdown in Jekyll
 
-**For `Redcarpet` markdown** in which you can then configure to the behaviour you want, i.e. then add this to your `_config.yml`
+**For `Redcarpet` markdown** in which you can configure to the behaviour like GitHub Flavored Markdown, i.e. add this to your `_config.yml`
 
 {% highlight ruby %}
 markdown: redcarpet
@@ -95,7 +95,7 @@ Footnotes can be added to the body of your text using placeholders like this: {%
 
 Inline code can be added using single back-ticks E.g. {% raw %}``` `alert('Hello World')` ```{% endraw %}.
 
-For code blocks, `redcarpet` and  `kramdown` supports both standard markdown code blocks and the syntax from GitHub Flavored Markdown (GFM). Standard markdown works by indenting code lines with 4 spaces:
+For code blocks, if extensions enabled `redcarpet` and  `kramdown` supports both standard markdown code blocks and the syntax from GitHub Flavored Markdown (GFM). Standard markdown works by indenting code lines with 4 spaces:
 
 {% highlight html %}
 {% raw %}
