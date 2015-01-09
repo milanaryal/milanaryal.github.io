@@ -67,7 +67,7 @@ Headers are set using a hash before the title. The number of hashes before the t
 * H6 : {% raw %}###### Header 6{% endraw %}
 {% endhighlight %}
 
-### Text Styling
+### Text styling
 
 {% highlight text %}
 * Links : {% raw %}[Title](URL){% endraw %}
@@ -162,8 +162,8 @@ from the text my post.
 
 #### Further references
 
-* [Daring Fireball: Markdown Syntax Documentation](http://daringfireball.net/projects/markdown/syntax)
+* [Daring Fireball: Markdown syntax documentation](http://daringfireball.net/projects/markdown/syntax)
 * [Redcarpet Markdown](https://github.com/vmg/redcarpet)
 * [Kramdown Markdown](https://github.com/gettalong/kramdown)
-* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
-* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+* [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
