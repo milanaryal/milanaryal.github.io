@@ -4,7 +4,7 @@ title: Writing on GitHub Pages and Jekyll using Markdown
 date: 2015-01-09T15:04:14
 ---
 
-Readme file on GitHub uses  GitHub flavored Markdown (GFM) and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub flavored Markdown, and other useful features like footnotes.
+Readme file on GitHub uses GitHub flavored Markdown (GFM) and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub flavored Markdown, and other useful features like footnotes.
 
 File extention with .markdown, .mkdown, .mkdn, .mkd, .md are the supported Markdown document.
 
