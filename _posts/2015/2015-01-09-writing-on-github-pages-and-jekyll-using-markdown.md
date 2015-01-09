@@ -37,7 +37,7 @@ The most common formatting options have keyboard shortcuts to make them easier t
 |**Bold**            |```**text**```
 |*Emphasize*         |```*text*```
 |~~Strike-through~~  |```~~text~~```
-|[Link](/#)          |```[title](http://)```
+|[Link](#)           |```[title](http://)```
 |`Inline Code`       |``` `code` ```
 |Image               |```![alt](http://)```
 |List                |`* item`
