@@ -1,0 +1,151 @@
+---
+layout: post
+title: Writing on GitHub Pages and Jekyll using Markdown
+date: 2015-01-09T15:04:14
+---
+
+Readme file in GitHub uses GitHub Flavored Markdown and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts and a few of our own additions. Here's the version of markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
+
+Enable GitHub Flavored Markdown in Jekyll
+
+**For `Redcarpet` markdown** in which you can then configure to the behaviour you want, i.e. then add this to your `_config.yml`
+
+{% highlight ruby %}
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+{% endhighlight %}
+
+**For `Kramdown` markdown**
+
+{% highlight ruby %}
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+{% endhighlight %}
+
+**Also on Gost blogging platform**, it support the following combination of standard Markdown and GitHub Flavored Markdown.
+
+> All HTML is valid Markdown. If you're stuck not able to format your content how you would like (for example using tables) you can always use [plain HTML](http://htmldog.com/guides/html/beginner/?__hstc=10303082.f33480622a9bdc4ffce7bcd81cc8cc49.1420789915940.1420789915940.1420789915940.1&__hssc=10303082.1.1420789915940&__hsfp=3394336207) instead of Markdown.
+
+## Markdown style guide
+
+The most common formatting options have keyboard shortcuts to make them easier to add:
+
+|Result              |Markdown
+|--------------------|---------------------------------------
+|**Bold**            |{% raw %}**text**{% endraw %}
+|*Emphasize*         |{% raw %}*text*{% endraw %}
+|~~Strike-through~~  |{% raw %}~~text~~{% endraw %}
+|[Link](/#)          |{% raw %}[title](http://){% endraw %}
+|`Inline Code`       |{% raw %}`code`{% endraw %}
+|Image               |{% raw %}![alt](http://){% endraw %}
+|List                |{% raw %}* item{% endraw %}
+|Blockquote          |{% raw %}> quote{% endraw %}
+|H1                  |{% raw %}# Heading{% endraw %}
+|H2                  |{% raw %}## Heading{% endraw %}
+|H3                  |{% raw %}### Heading{% endraw %}
+
+## Headers
+
+Headers are set using a hash before the title. The number of hashes before the title text will determine the depth of the header. Header depths are from 1-6
+
+{% highlight text %}
+* H1 : {% raw %}# Header 1{% endraw %}
+* H2 : {% raw %}## Header 2{% endraw %}
+* H3 : {% raw %}### Header 3{% endraw %}
+* H4 : {% raw %}#### Header 4{% endraw %}
+* H5 : {% raw %}##### Header 5{% endraw %}
+* H6 : {% raw %}###### Header 6{% endraw %}
+{% endhighlight %}
+
+## Text Styling
+
+{% highlight text %}
+* Links : {% raw %}[Title](URL){% endraw %}
+* Bold : {% raw %}**Bold**{% endraw %}
+* Italicize : {% raw %}*Italics*{% endraw %}
+* Strike-through : {% raw %}~~text~~{% endraw %}
+* Highlight : {% raw %}==text=={% endraw %}
+* Paragraphs : Line space between paragraphs
+* Line break : Add two spaces to the end of the line
+* Lists : {% raw %}* an asterisk for every new list item.{% endraw %}
+* Quotes : {% raw %}> Quote{% endraw %}
+* Inline Code : {% raw %}`alert('Hello World');`{% endraw %}
+* Horizontal Rule (HR) : {% raw %}--------{% endraw %}
+{% endhighlight %}
+
+## Images
+
+To insert an image into your post, you need to first type {% raw %}![](){% endraw %} into the Markdown editor panel and image link inbetween {% raw %}(){% endraw %}. To title your image, all you need to do is place the title text inbetween the square brackets, e.g; {% raw %}![This is a title](){% endraw %}.
+
+## Footnotes
+
+Footnotes can be added to the body of your text using placeholders like this: {% raw %}[^1]{% endraw %}. Alternatively you can use 'n' rather than numbers {% raw %}[^n]{% endraw %} so you don't have to worry about which number you are on. At the very end of your post, you can define your matching footnotes as shown below, URLs will be turned into links:
+
+{% highlight text %}
+{% raw %}
+[^1]: This is my first footnote
+[^n]: Visit http://milanaryal.com
+[^n]: A final footnote
+{% endraw %}
+{% endhighlight %}
+
+## Writing Code
+
+Inline code can be added using single back-ticks E.g. {% raw %}`alert('Hello World')`{% endraw %}.
+
+For code blocks, `redcarpet` and  `kramdown` supports both standard markdown code blocks and the syntax from GitHub Flavored Markdown (GFM). Standard markdown works by indenting code lines with 4 spaces:
+
+{% highlight html %}
+{% raw %}
+<header>
+        <h1>{{title}}</h1>
+    </header>
+GFM uses triple back-ticks ```
+{% endraw %}
+{% endhighlight %}
+
+{% highlight html %}
+{% raw %}
+```
+<header>
+    <h1>{{title}}</h1>
+</header>
+```
+{% endraw %}
+{% endhighlight %}
+
+## Examples
+
+**Link Markdown Example**
+
+{% highlight text %}
+{% raw %}
+This is a paragraph that contains a [link to ghost](http://milanaryal.com).
+{% endraw %}
+{% endhighlight %}
+
+**List Markdown Example**
+
+{% highlight text %}
+{% raw %}
+This paragraph contains a list of items.
+
+* Item 1
+* Item 2
+* Item three
+{% endraw %}
+{% endhighlight %}
+
+**Quote Markdown Example**
+
+{% highlight text %}
+{% raw %}
+This paragraph has a quote
+
+> That is pulled out like this
+
+from the text my post.
+{% endraw %}
+{% endhighlight %}
