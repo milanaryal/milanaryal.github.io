@@ -160,7 +160,7 @@ from the text my post.
 
 ---
 
-#### Further references
+### Further references
 
 * [Daring Fireball: Markdown syntax documentation](http://daringfireball.net/projects/markdown/syntax)
 * [Redcarpet Markdown](https://github.com/vmg/redcarpet)

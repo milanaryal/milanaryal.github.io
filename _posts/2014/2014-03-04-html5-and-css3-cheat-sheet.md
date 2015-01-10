@@ -42,7 +42,7 @@ New CSS3 attributes with great examples and very easy to memorize.
 
 ---
 
-### Further Resources
+### Further resources
 
 * Smashing Magazine - [HTML 5 Cheat Sheet (PDF)](http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/)
 * Smashing Magazine - [CSS3 Cheat Sheet (PDF)](http://www.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/)

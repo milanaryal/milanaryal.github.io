@@ -194,11 +194,6 @@ pre code {
   color: inherit;
   background-color: transparent;
 }
-@media (max-width: 30em) {
-  code {
-    word-break: break-word;
-  }
-}
 
 /* Pygments via Jekyll */
 .highlight {
