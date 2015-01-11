@@ -833,6 +833,24 @@ a.header-link :hover {
 }
 
 .post-edit-button {display:inline-block;vertical-align:top;}
-.post-edit {position:relative;display:inline-block;vertical-align:top;background:#f5f6f5;color:#444;padding:0 auto;border-radius:3px;font-size:14px;font-weight:900;height:30px}
+
+.post-edit {
+position: relative;
+display: inline-block;
+vertical-align:top;
+background-color: #eee;
+background-image: -webkit-linear-gradient(#fff,#dedede);
+background-image: linear-gradient(#fff,#dedede);
+border: #ccc solid 1px;
+border-radius: 3px;
+color: #333;
+font-weight: bold;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+cursor: pointer;
+height: 30px;
+padding: 2px 4px 0x 8px;
+overflow: hidden;
+}
+
 a.post-edit {text-decoration:none!important;color:#444!important}
 a.post-edit:hover {text-decoration:none!important;color:#6a9fb5!important}
