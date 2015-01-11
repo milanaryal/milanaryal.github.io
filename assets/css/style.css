@@ -844,11 +844,10 @@ background-image: linear-gradient(#fff,#dedede);
 border: #ccc solid 1px;
 border-radius: 3px;
 color: #333;
-font-weight: bold;
+font-weight: 900;
 text-shadow: 0 1px 0 rgba(255,255,255,.5);
 cursor: pointer;
 height: 30px;
-padding: 2px 4px 0x 8px;
 overflow: hidden;
 }
 
