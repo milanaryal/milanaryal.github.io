@@ -831,7 +831,6 @@ a.header-link :hover {
   }
 }
 
-.post-edit {position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:2px 8px 2px 25px;border-radius:3px;font-size:12px;font-weight:900;margin-bottom:40px}
-
-a.post-edit {text-decoration:none;color:#444}
+a.post-edit {color:#444}
 a.post-edit:hover {text-decoration:none;color:#444}
+.post-edit {position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:2px 8px 2px 25px;border-radius:3px;font-size:12px;font-weight:900;top:0px;}
