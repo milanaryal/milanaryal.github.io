@@ -831,6 +831,6 @@ a.header-link :hover {
   }
 }
 
-.post-edit {position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:2px 8px 2px 25px;border-radius:3px;font-size:12px;font-weight:900;margin-top:0!important;}
+.post-edit {position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:2px 8px 2px 25px;border-radius:3px;font-size:12px;font-weight:900;margin:0 0 25px 5px!important}
 a.post-edit {text-decoration:none!important;color:#444!important}
-a.post-edit:hover {text-decoration:none!important;color:#444!important}
+a.post-edit:hover {text-decoration:none!important;}
