@@ -831,7 +831,5 @@ a.header-link :hover {
   }
 }
 
-.social-profile a.post-edit {text-decoration: none;color:#444;}
-.social-profile a.post-edit:hover {text-decoration: none;color:#444;}
-.social-profile .post-edit {position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:0 0.5rem auto 1rem;border-radius:3px;font-size:12px;font-weight:900;}
+.social-profile .post-edit {position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:2px 8px 2px 25px;border-radius:3px;font-size:12px;font-weight:900;margin-bottom:5px;}
 
