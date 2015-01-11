@@ -831,6 +831,7 @@ a.header-link :hover {
   }
 }
 
-.post-edit {position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:2px 8px 2px 25px;border-radius:3px;font-size:12px;font-weight:900;margin-bottom:50px!important}
+.post-edit-button {margin-bottom:1rem}
+.post-edit {position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:2px 8px 2px 25px;border-radius:3px;font-size:12px;font-weight:900;}
 a.post-edit {text-decoration:none!important;color:#444!important}
 a.post-edit:hover {text-decoration:none!important;color:#6a9fb5!important}
