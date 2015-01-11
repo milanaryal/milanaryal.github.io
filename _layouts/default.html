@@ -3,16 +3,16 @@
 
 {% include head.html %}
 
-<body class="theme-base-0d">
+  <body class="theme-base-0d" itemscope itemtype="http://schema.org/Article">
 
   {% include sidebar.html %}
   
-  <div class="content container">
+  <main class="container content" role="main">
     {{ content }}
-  </div>
+  </main>
 
 {% include scripts.html %}
 
-</body>
+  </body>
 </html>
 <!-- Proudly Hosted on GitHub | Generated {{ site.time }} | Revision {{ site.github.build_revision }} -->
