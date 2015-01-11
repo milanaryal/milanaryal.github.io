@@ -781,6 +781,7 @@ a.sidebar-nav-item:focus {
 */
 .header-link {
   display: inline-block;
+  vertical-align: bottom;
   position: absolute;
   left: -1.2em;
   opacity: 0;
@@ -831,7 +832,7 @@ a.header-link :hover {
   }
 }
 
-.post-edit-button {vertical-align:top;display:inline-block}
+.post-edit-button {display:inline-block;vertical-align:top;height: 18px}
 .post-edit {position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:2px 8px 2px 25px;border-radius:3px;font-size:12px;font-weight:900;}
 a.post-edit {text-decoration:none!important;color:#444!important}
 a.post-edit:hover {text-decoration:none!important;color:#6a9fb5!important}
