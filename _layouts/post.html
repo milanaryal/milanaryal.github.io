@@ -28,8 +28,8 @@ layout: default
   </div>
     <hr>
       <div class="social">
-        <div class="fb-like" data-href="{{ page.url | replace:'index.html','' | prepend: site.url }}" data-layout="button" data-action="like" data-width="140" data-show-faces="false" data-share="true"></div>
-        <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="{{ page.url | replace:'index.html','' | prepend: site.url }}" data-via="{{ site.author.tw_username }} data-text="{{ page.title }}">Tweet</a></div>
+        <div class="fb-like" data-href="{{ page.url | replace:'index.html','' | prepend: site.url }}" data-send="false" data-layout="button" data-width="140" data-show-faces="false"></div>
+        <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="{{ page.url | replace:'index.html','' | prepend: site.url }}" data-via="{{ site.author.tw_username }}>Tweet</a></div>
         <div class="g-plusone" data-size="none" data-href="{{ page.url | replace:'index.html','' | prepend: site.url }}"></div>
         <div class="linkedin">
             <script type="IN/Share" data-url="{{ page.url | replace:'index.html','' | prepend: site.url }}" data-counter="none"></script>

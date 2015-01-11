@@ -854,7 +854,5 @@ a.header-link :hover {
 a.post-edit {text-decoration:none!important;color:#444!important}
 a.post-edit:hover {text-decoration:none!important;color:#444!important}
 
-.social {margin:0 auto 10px; width:325px}
+.social {margin:0 auto 10px; width:290px}
 .social > div {float:left; margin-right:15px}
-
-.fb-like {vertical-align: top!important;}
