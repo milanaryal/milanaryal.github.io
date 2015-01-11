@@ -14,7 +14,13 @@ layout: default
       data-text="{{ page.title }}">
       Tweet
       </a>
-    </div>
+	    {%if page.path %}
+        <a class="post-edit" href="//github.com/MilanAryal/milanaryal.github.io/blob/master/_posts/{{ page.path }}">
+          <i class="fa fa-github"></i>
+          Edit this page on GitHub
+        </a>
+        {% endif %}
+	  </div>
   <div class="post-body">
   {{ content }}
   </div>
