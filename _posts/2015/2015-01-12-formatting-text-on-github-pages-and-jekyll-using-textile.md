@@ -93,7 +93,8 @@ Do this:
 /* Code Block */
 #include <stdio.h>
 #include <stdlib.h>
-      int main()
+  int main()
+</code></pre>
 {% endraw %}
 {% endhighlight %}
 
