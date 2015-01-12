@@ -100,6 +100,6 @@ Do this:
 
 ---
 
-Further resources
+### Further resources
 
 * [Textile Reference Manual](http://redcloth.org/textile)
