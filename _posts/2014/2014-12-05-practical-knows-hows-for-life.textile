@@ -2,7 +2,7 @@
 layout: post
 title: "Practical knows-hows for life"
 excerpt: "Things I wish I'd know before I went out into the real world"
-date: 2014-12-05T20:21:09+05:45
+date: 2014-12-05 20:21:09 0545
 ---
 
 _Things I wish I'd know before I went out into the real world_
