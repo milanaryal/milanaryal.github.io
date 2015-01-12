@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-excerpt: "My name is Milan Aryal and I’m a student living in Kathmandu, Nepal who loves designing the web and listening music a lot."
+excerpt: "I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot."
 permalink: /about/
 ---
 
