@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Perfect, the way we are
+title: "Perfect, the way we are"
 date: 2014-12-10T10:24:41+05:45
-image: /assets/img/2014/20141210--girl-enjoying-view-in-adrspach-rocks.jpg
 ---
 
 We have all heard that no two snowflakes are alike. Each snowflake takes the perfect form for the maximum efficiency and effectiveness for its journey. And while the universal force of gravity gives them a shared destination, the expansive space in the air gives each snowflake the opportunity to take their own path. They are on the same journey, but each takes a different path.
@@ -15,4 +14,4 @@ At every given moment we are absolutely perfect for our journey. I'm not perfect
 
 Think of what understanding this great orchestration could mean for relationships. Imagine interacting with others knowing that they too each share this parallel with the snowflake. Like you, they are headed to the same place and no matter what they may appear like to you, they have taken the perfect form for their journey. How strong our relationships would be if we could see and respect that we all perfectly imperfect for our journey.
 
-_Abstract from the book: Life, the Truth, and Being Free_
+*Abstract from the book: Life, the Truth, and Being Free*

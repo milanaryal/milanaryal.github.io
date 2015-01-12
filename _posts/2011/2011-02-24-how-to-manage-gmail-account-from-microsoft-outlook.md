@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to manage Gmail account from Microsoft Outlook
+title: "How to manage Gmail account from Microsoft Outlook"
 date: 2011-02-24T15:06:36+05:45
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: My plans for today
-author: Steve Maraboli
+title: "My plans for today"
+author: "Steve Maraboli"
 date: 2012-08-20T09:25:48+05:45
 ---
 
@@ -39,4 +39,6 @@ What today will be like is up to me.
 
 I get to choose what kind of day I will have!
 
-_Written by Steve Maraboli_
+---
+
+*Written by Steve Maraboli*

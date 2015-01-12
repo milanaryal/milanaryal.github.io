@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting text on GitHub Pages and Jekyll using Textile
+title: "Formatting text on GitHub Pages and Jekyll using Textile"
 date: 2015-01-12T13:17:47+05:45
 ---
 

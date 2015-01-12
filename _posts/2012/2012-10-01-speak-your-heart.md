@@ -2,11 +2,12 @@
 layout: post
 title: "Speak your heart"
 excerpt: "That night was my big chance and all I did was just sit there…"
-date: "2012-10-01T15:20:45"
-image: "/assets/img/2012/20121001--broken-heart.jpg"
+date: 2012-10-01T15:20:45
 ---
 
 *That night was my big chance and all I did was just sit there…*
+
+---
 
 It all started when I was 16 years old. While I was playing outside, I met a boy. He was a boy who teased you and then you chased them and beat them up. After that first meeting in which I beat him up we kept on meeting and beating each other up at the fence.
 

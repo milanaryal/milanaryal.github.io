@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Integrating social meta tags into WordPress, Tumblr and Blogger
-excerpt: Tips for integrating social meta tags  into popular CMS systems like WordPress, Tumblr and Blogger.
-author: Milan Aryal
+title: "Integrating social meta tags into WordPress, Tumblr and Blogger"
+excerpt: "Tips for integrating social meta tags  into popular CMS systems like WordPress, Tumblr and Blogger."
 date: 2014-11-27T19:39:45+05:45
 ---
 
@@ -302,6 +301,8 @@ For Google+ and Facebook authorship include the following code before `</head>` 
 <link href='https://plus.google.com/YOUR_PAGE_ID_HERE/posts' rel='author'/>
 <link href='https://plus.google.com/YOUR_PAGE_ID_HERE' rel='publisher'/>
 {% endhighlight %}
+
+---
 
 ### Validating
 

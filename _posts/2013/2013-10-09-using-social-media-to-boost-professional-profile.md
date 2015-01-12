@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using social media to boost professional profile
+title: "Using social media to boost professional profile"
 date: 2013-10-09T12:32:01+05:45
 ---
 

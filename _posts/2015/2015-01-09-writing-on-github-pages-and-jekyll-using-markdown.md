@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing on GitHub Pages and Jekyll using Markdown
+title: "Writing on GitHub Pages and Jekyll using Markdown"
 date: 2015-01-09T15:04:14
 ---
 

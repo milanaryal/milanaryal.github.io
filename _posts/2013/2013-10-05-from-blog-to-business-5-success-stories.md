@@ -1,7 +1,7 @@
 ---
-layout: "post"
+layout: post
 title: "From blog to business: 5 success stories"
-date: "2013-10-05T13:59:33+05:45"
+date: 2013-10-05T13:59:33+05:45
 ---
 
  From advertisements, sponsorships and brand collaborations to endorsement opportunities and even book deals — the world of blogging has turned hobbies into full-time careers.
@@ -35,4 +35,4 @@ date: "2013-10-05T13:59:33+05:45"
 
  Culwell originally began blogging in college as part of a school assignment and later continued it as a hoppy. As a design professional, Culwell recommends taking a basic class to learn Photoshop or any design programme.
 
- "If you're looking to take blogging seriously, then invest some money into it," she says. She advises newbies and those looking to grow their presence to 'make connections' and 'find your niche'. _— USA Today_
+ "If you're looking to take blogging seriously, then invest some money into it," she says. She advises newbies and those looking to grow their presence to 'make connections' and 'find your niche'. *— USA Today*

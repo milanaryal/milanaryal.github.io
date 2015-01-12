@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Hello, world!"
-excerpt: My first post on GitHub Pages with Jekyll.
-date:   2014-12-03T21:47:57+05:45
+excerpt: "My first post on GitHub Pages with Jekyll."
+date: 2014-12-03T21:47:57+05:45
 ---
 
 I finally migrated this site to [GitHub pages](//pages.github.com) using [Jekyll](//jekyllrb.com).

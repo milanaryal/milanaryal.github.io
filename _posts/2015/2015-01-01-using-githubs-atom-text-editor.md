@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Using GitHub's Atom text editor
-excerpt: A hackable text editor for the 21st Century.
+title: "Using GitHub's Atom text editor"
+excerpt: "A hackable text editor for the 21st Century."
 date: 2015-01-01T15:22:14+05:45
-image: /assets/img/2015/20150101--atom-text-editor.png
 ---
 
 I always had been using simple text editor like Notepad++ and Sublime Text. I never really did like Dreamweaver. For me it was too complicated by trying to be everything. I truly believe in and appreciate simplicity. But days comes like where I have to work with other language like Markdown, Textile.. So, I was in search for another simple text editor so that I can easily work with those language.
 
 In search for a new alternative text editor for Sublime Text, [alternativeto.net](http://alternativeto.net/software/sublime-text/) provided me with options like Brackets, SciTE, Atom, Programmer's Notepad,... There's a wide range of these and I tried Atom because I found it is a open source project by GitHub and I always been fan with the GitHub open project like Jekyll.
 
-I really impressed with the awesome [Atom text editor](//atom.io/), a hackable text editor for the 21st Century.
+I really impressed with the awesome [Atom text editor](//atom.io), a hackable text editor for the 21st Century.
 
 Github's Atom Text Editor, is really AWESOME! I'm a huge Notepad++ and Sublime Text fan, but I switch to GitHub Atom.
 
@@ -79,4 +78,4 @@ I see these products as complementary. The fact that they share similar visuals 
 
 ---
 
-More features on Atom are still coming and it is impressive. The fact that it is built on Web technologies makes it fully customizable and extensible. Modelling after Sublime Text’s look and feel is also a good idea, as it can reduce (or eliminate) any learning curve when switching from another text editor. I can definitely see it getting better in the future. If you have not tried it, do give it a try. I am sure you will love [Atom text editor](//atom.io/).
+More features on Atom are still coming and it is impressive. The fact that it is built on Web technologies makes it fully customizable and extensible. Modelling after Sublime Text’s look and feel is also a good idea, as it can reduce (or eliminate) any learning curve when switching from another text editor. I can definitely see it getting better in the future. If you have not tried it, do give it a try. I am sure you will love [Atom text editor](//atom.io).

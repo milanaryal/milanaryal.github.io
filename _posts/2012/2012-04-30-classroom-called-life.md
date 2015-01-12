@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Classroom called life
+title: "Classroom called life"
 date: 2012-04-30T09:21:36+05:45
 ---
 
@@ -32,7 +32,7 @@ At 46 I learned children and grandparents are natural allies.
 
 At 47 I learned no matter what happens, or how bad it seems today, life does go on, and it will be better tomorrow.
 
-At 48 I learned singing _Amazing Grace_ can lift my spirits for hours.
+At 48 I learned singing *Amazing Grace* can lift my spirits for hours.
 
 At 49 I learned motel mattresses are better on the side away from the phone.
 
@@ -68,4 +68,4 @@ At 92 I learned you should pass this on to someone you care about. Sometimes the
 
 ---
 
-_This is a fantasy fiction story, if it meets with someone’s life then it will only be a coincidence._
+*This is a fantasy fiction story, if it meets with someone’s life then it will only be a coincidence.*

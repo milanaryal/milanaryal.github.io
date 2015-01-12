@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Tips for getting the recognition you deserve
+title: "Tips for getting the recognition you deserve"
 date: 2010-05-03T23:05:36+05:45
 ---
 
 *Employees who receive regular recognition are more productive, rate higher on consumer satisfaction surveys, have increased co-worker engagement, have better safety records and are less likely to leave the organization*
+
+---
 
 Please, not another T-shirt!” “I resent the money that’s spent to purchase doodads. It could be spent much more wisely.”
 

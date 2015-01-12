@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding serif and sans serif typefaces
+title: "Understanding serif and sans serif typefaces"
 date: 2014-12-18T13:25:03+05:45
 ---
 

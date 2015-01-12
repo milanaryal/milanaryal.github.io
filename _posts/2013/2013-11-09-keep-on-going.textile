@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Keep on going
+title: "Keep on going"
 date: 2013-11-09T10:38:27+05:45
 ---
 
 The current obstacles are the foundation of your future success. There are some persons who didn't give up no matter what. Thus, if you are failing, keep on going
+
+---
 
 **Albert Einstein, physicist:** Most of us take Einstein's name as synonymous with genius, but he didn't always show such promise. Einstein did not speak until he was four and did not read until he was seven, causing his teachers and parents to think he was mentally handicapped, show and anti-social. Eventually, he was expelled from school and was refused admittance to the Zurich Polytechnic School. It might have taken him a bit longer, but most people would agree that he caught on pretty well in the end, winning the Nobel Prize and changing the face of modern physics.
 

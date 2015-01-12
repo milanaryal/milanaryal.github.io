@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding hover anchor links to header on GitHub Pages using Jekyll
+title: "Adding hover anchor links to header on GitHub Pages using Jekyll"
 date: 2015-01-06T15:19:18+05:45
 ---
 

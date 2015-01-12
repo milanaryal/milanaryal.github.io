@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Tips for starting a side business while working full time
+title: "Tips for starting a side business while working full time"
 date: 2010-05-03T23:09:18+05:45
 ---
 
-_It may be tempting to continue to spend money because it’s regularly coming in, but once you’re no longer an employee, you won’t have that income_
+*It may be tempting to continue to spend money because it’s regularly coming in, but once you’re no longer an employee, you won’t have that income*
+
+---
 
 If you’re thinking about entrepreneurship, you’ve probably heard that you should start your business before you quit your day job.
 
@@ -15,6 +17,7 @@ How can you balance being an employee while you’re moonlighting?
 For one thing, you might not want your boss to know that you have something else on the side. You don’t want to appear to be expendable or less dedicated. Keep your business under wraps as much as possible. That also means you shouldn’t conduct your business at work, no matter how tempted you may be to bring your side business to your workplace. And with computer use monitoring becoming more pervasive in the workplace, you probably won’t have much privacy if you’re using company equipment for personal use.
 
 ### Moving from employee to entrepreneur
+
 If your goal is to leave your job and run your business, here are some steps you should follow.
 
 1. Pick a date for when you’d like to make the move into running your business full time. Be realistic when you look at the calendar. The date has to feel comfortable and be something that you think you can do.
@@ -28,6 +31,7 @@ If your goal is to leave your job and run your business, here are some steps you
 5. Get a plan together for what you want to accomplish in your business. Whether you use a business plan or a mission statement, have a clear idea of what your business is about and why you’re doing it. It’s not enough to go into business because you don’t want to work for someone else. Know what you’re getting into before you leave your day job.
 
 ### Keeping your side business on the side
+
 For some people, having a side business is part of a long-term plan, not an interim step. If you aren’t looking to leave your regular job, it’s less about growing your business than maintaining it. Here are some ways than to balance the moonlighting with the “daylighting.”
 
 1. Set boundaries. Your clients may want more of your time, but your priority is your day job. Let them know what your business hours are and stick to them. If you end up working long nights, you won’t have the energy to accomplish what’s required on your job. You don’t want to put your steady paycheck into jeopardy because you’re not getting things done.

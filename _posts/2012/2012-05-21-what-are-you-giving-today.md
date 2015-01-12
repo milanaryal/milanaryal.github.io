@@ -1,10 +1,12 @@
 ---
 layout: post
-title: What are you giving today?
+title: "What are you giving today?"
 date: 2012-05-21T09:31:05+05:45
 ---
 
 **Excerpted from** a speech delivered by **John Brody** to the graduating class of **John Hopkins University** on May 26, 2005
+
+---
 
 There is a man who I’d like to tell you about. His name is Sandy Greenberg. Sandy was a very good student, but he came from a poor family. And so he went to Columbia University on a scholarship and there he met his roommate, who also was receiving financial aid.
 
@@ -32,4 +34,4 @@ My hope today, as you commence to new beginnings, is you will always keep your e
 
 ---
 
-_Read the full May 26, 2005 speech delivered by John Brody, [here](http://www.jhu.edu/news/commence05/speeches/brody.html)._
+*Read the full May 26, 2005 speech delivered by John Brody, [here](http://www.jhu.edu/news/commence05/speeches/brody.html).*

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Job hunting techniques in the Twittersphere
+title: "Job hunting techniques in the Twittersphere"
 date: 2010-05-03T22:51:49+05:45
 ---
 
