@@ -9,62 +9,73 @@ Textile is a lightweight markup language. Textile converts its marked-up text in
 File extention with .textile is the valid Textile document.
 
 Header 1
+
 {% highlight text %}
-`h1. Header 1`
+h1. Header 1
 {% endhighlight %}
 
 Header 2
+
 {% highlight text %}
-`h2. Header 2`
+h2. Header 2
 {% endhighlight %}
 
 Header 3
+
 {% highlight text %}
-`h3. Header 3`
+h3. Header 3
 {% endhighlight %}
 
 This is *italicized*
+
 {% highlight text %}
-`This is _italicized_`
+This is _italicized_
 {% endhighlight %}
 
 This is **bold**
+
 {% highlight text %}
-This is `*bold*`
+This is *bold*
 {% endhighlight %}
 
 * Bulleted item 1
 * Bulleted item 2
+
 {% highlight text %}
-`* Bulleted item 1`
-`* Bulleted item 2`
+* Bulleted item 1
+* Bulleted item 2
 {% endhighlight %}
 
 1. Numbered item 1
 2. Numbered item 2
+
 {% highlight text %}
-`# Bulleted item 1`
-`# Bulleted item 2`
+# Bulleted item 1
+# Bulleted item 2
 {% endhighlight %}
 
 [text link](http://milanaryal.com.com)
+
 {% highlight text %}
-`"text link":http://milanaryal.com.com`
+"text link":http://milanaryal.com.com
 {% endhighlight %}
 
 *Embed an image:*
+
 {% highlight text %}
-`!http://www.example.com/image.png!`
+!http://www.example.com/image.png!
 {% endhighlight %}
 
 Blockquoted Text
+
 {% highlight text %}
-`bq. Blockquoted Text`
+bq. Blockquoted Text
 {% endhighlight %}
 
 *Embed Code:*
 
 To get this:
+
 {% highlight text %}
 {% raw %}
 /* Code Block */
@@ -75,6 +86,7 @@ To get this:
 {% endhighlight %}
 
 Do this:
+
 {% highlight text %}
 {% raw %}
 <pre><code>
