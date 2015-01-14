@@ -117,4 +117,4 @@ For JavaScript snippet define `class="language-javascript"`
 &lt;/code&gt;
 {% endhighlight %}
 
-With Prism by help of these few easy steps you get a nice highlighted code snippet, isn't it awesome? :smile:
+With Prism by help of these few easy steps you get a nice highlighted code snippet, isn't it awesome? :sunglasses:
