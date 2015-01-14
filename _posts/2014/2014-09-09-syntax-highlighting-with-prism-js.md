@@ -92,7 +92,7 @@ For example to show HTML snippet define `class="language-markup"`
 {% highlight html %}
 &lt;pre&gt;
 &lt;code class="language-markup"&gt;
-  <--! YOUR HTML CODE HERE -->
+    <!-- YOUR HTML CODE HERE -->
 &lt;pre&gt;
 &lt;/code&gt;
 {% endhighlight %}
@@ -112,7 +112,7 @@ For JavaScript snippet define `class="language-javascript"`
 {% highlight html %}
 &lt;pre&gt;
 &lt;code class="language-javascript"&gt;
-  // YOUR JAVASCRIPT CODE HERE
+    // YOUR JAVASCRIPT CODE HERE
 &lt;pre&gt;
 &lt;/code&gt;
 {% endhighlight %}
