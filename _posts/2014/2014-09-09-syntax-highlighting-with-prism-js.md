@@ -10,7 +10,7 @@ Last time I was searching for a good syntax highlighter for beautifully viewing 
 
 Yet not sure what I mean by a syntax highlighter or what it does? Here's an example of JavaScript snippet highlighted with syntax highlighter:
 
-{% highlight javascript %}
+{% highlight html %}
 <script language="javascript">
   var today= new Date()
 </script>
@@ -69,7 +69,7 @@ If you don't like to upload the file and want to use Prism default theme then yo
 
 First thing you have to escape HTML character `<` to `&lt;` and `>` to `&gt;` to highlight syntax with Prism. For Example:
 
-{% highlight javascript %}
+{% highlight html %}
 &lt;pre&gt;
 &lt;code class="language-javascript"&gt;
 &lt;script&gt;
@@ -109,7 +109,7 @@ For CSS snippet define `class="language-css"`
 
 For JavaScript snippet define `class="language-javascript"`
 
-{% highlight javascript %}
+{% highlight html %}
 &lt;pre&gt;
 &lt;code class="language-javascript"&gt;
   // YOUR JAVASCRIPT CODE HERE
@@ -118,7 +118,3 @@ For JavaScript snippet define `class="language-javascript"`
 {% endhighlight %}
 
 With Prism by help of these few easy steps you get a nice highlighted code snippet, isn't it awesome?
-
----
-
-*Originally I've written this post, [here](//milanaryal.blogspot.com/2014/09/syntax-highlighter-prism.html).*
