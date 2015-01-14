@@ -99,7 +99,7 @@ For example to show HTML snippet define `class="language-markup"`
 
 For CSS snippet define `class="language-css"`
 
-{% highlight css %}
+{% highlight html %}
 &lt;pre&gt;
 &lt;code class="language-css"&gt;
     /* YOUR CSS CODE HERE */
@@ -117,4 +117,4 @@ For JavaScript snippet define `class="language-javascript"`
 &lt;/code&gt;
 {% endhighlight %}
 
-With Prism by help of these few easy steps you get a nice highlighted code snippet, isn't it awesome?
+With Prism by help of these few easy steps you get a nice highlighted code snippet, isn't it awesome? :smile:
