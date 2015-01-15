@@ -717,7 +717,8 @@ a.header-link :hover {
   height: 28px;
   overflow: hidden;
 }
-a.post-meta-edit {text-decoration:none!important;color:#444!important}
-a.post-meta-edit:hover {text-decoration:none!important;color:#444!important}
+.post-meta-edit a{text-decoration:none!important;color:#444!important}
+.post-meta-edit a:hover {text-decoration:none!important;color:#444!important}
+.post-meta-social{display:inline-block}
 .social{padding:20px;background:#6a9fb5;margin:30px 0 50px}.social-button{display:inline-block;vertical-align:top;width:100px;height:20px}
 .fb_iframe_widget span{vertical-align:baseline!important}
