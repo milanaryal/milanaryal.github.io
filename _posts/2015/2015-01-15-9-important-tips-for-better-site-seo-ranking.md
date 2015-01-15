@@ -4,6 +4,14 @@ title: "9 important tips for better site SEO ranking"
 date: 2015-01-15T15:49:57+05:45
 ---
 
+Every website owner wants his site to get better online visibility but it isn't that easy to have in practical sense as it sounds. What do you think proves helpful in this goal of yours?
+
+Online advertising can be one way out but SEO is a more dependable tool for your purpose and you can't miss it out even when you have already made investment in advertising.
+
+If you have best search engine optimisation tips at your hand, your better visibility dream turns into a reality. And not just this, you get most targeted visitors to your site getting you better conversion.
+
+Here you have 9 best known SEO tips exclusively for you!
+
 ### 1. Canonicalisation (well-structured URLs or .htaccess)
 
 Try to structure your site in a way that is easy to follow and create subfolders for large category items. Also make sure your URLs are easily read and have a set structure, preferably one without ampersands and using full hyphenated words as the url e.g http://www.mattcutts.com/blog/seo-advice-url-canonicalization/ (Good post by the way!). This not only helps the spiders to know what the page is about but it also helps the user and is a lot easier to remember.
