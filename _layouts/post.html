@@ -43,7 +43,21 @@ layout: default
           <g:plusone size="medium"></g:plusone>
         </div>
       </div>
+	  <div class="disqus">
+        <div id="disqus_thread"></div>
+      </div>
 </article>
+
+    <script>
+      var disqus_url = {%if page.disqus %}'{{ page.disqus }}'{%else %}'http://milanaryal.com{{ page.url }}'{% endif %};
+      var disqus_title = '{{ page.title }}';
+      var disqus_shortname = 'milanaryal';
+      (function() {
+        var dsq = document.createElement('script');
+        dsq.async = dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        document.getElementsByTagName('head')[0].appendChild(dsq);
+      })();
+    </script>
 
 <aside class="related">
   <h2>Related Posts</h2>
