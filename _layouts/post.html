@@ -6,25 +6,25 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: '%B %d, %Y' }}</time>
   <div class="post-meta">
-	<div class="post-meta-edit">
-      {%if page.path %}
-      <a class="post-edit" href="//github.com/MilanAryal/milanaryal.github.io/blob/master/{{ page.path }}">
-        <i class="fa fa-github"></i>
-        Edit this page on GitHub
+      <div class="post-meta-edit">
+        {%if page.path %}
+        <a href="//github.com/MilanAryal/milanaryal.github.io/blob/master/{{ page.path }}">
+          <i class="fa fa-github"></i>
+          Edit this page on GitHub
+        </a>
+      </div>
+      <div class="post-meta-social">
+        {% endif %}
+        <a class="twitter-share-button" href="//twitter.com/share"
+          data-dnt="true"
+          data-size="large"
+          data-count="none"
+          data-via="{{ site.author.tw_username }}"
+          data-text="{{ page.title }}">
+          Tweet
       </a>
-	</div>
-	<div class="post-meta-social">
-      {% endif %}
-	  <a class="twitter-share-button" href="//twitter.com/share"
-      data-dnt="true"
-      data-size="large"
-      data-count="none"
-      data-via="{{ site.author.tw_username }}"
-      data-text="{{ page.title }}">
-      Tweet
-      </a>
-	</div>
-  </div>
+      </div>
+    </div>
   <div class="post-body">
   {{ content }}
     <hr>
