@@ -14,15 +14,15 @@ Here you have 9 best known SEO tips exclusively for you!
 
 ### 1. Canonicalisation (well-structured URLs or .htaccess)
 
-Try to structure your site in a way that is easy to follow and create subfolders for large category items. Also make sure your URLs are easily read and have a set structure, preferably one without ampersands and using full hyphenated words as the url e.g http://www.mattcutts.com/blog/seo-advice-url-canonicalization/ (Good post by the way!). This not only helps the spiders to know what the page is about but it also helps the user and is a lot easier to remember.
+Try to structure your site in a way that is easy to follow and create subfolders for large category items. Also make sure your URLs are easily read and have a set structure, preferably one without ampersands and using full hyphenated words as the URL e.g http://www.mattcutts.com/blog/seo-advice-url-canonicalization/ (Good post by the way!). This not only helps the spiders to know what the page is about but it also helps the user and is a lot easier to remember.
 
-It's very important that your site redirects from it's domain with or without "www". People can access your site using either the `http://yoursite.com` or `http://www.yoursite.com` however it is important that you choose which one of these versions you want to use as your main domain, otherwise Google sees this as two separate sites and hence, duplicate content. If you haven't set this already, search Google for "site:yoursite.com" and note which version of your domain appears most.
+It's very important that your site redirects from it's domain with or without "www". People can access your site using either the `http://yoursite.com` or `http://www.yoursite.com` however it is important that you choose which one of these versions you want to use as your main domain, otherwise Google sees this as two separate sites and hence, duplicate content. If you haven't set this already, search Google for `site:yoursite.com` and note which version of your domain appears most.
 
-You then need to create a 301 redirect to whichever domain is indexed most in the search result. You should also set your preferred domain in Google's webmaster tools to let Google know which one you prefer.
+You then need to create a 301 redirect to whichever domain is indexed most in the search result. You should also set your preferred domain in Google's Webmaster Tools to let Google know which one you prefer.
 
 ### 2. Sitemap and robots.txt
 
-A sitemap is needed in conjunction with your robots.txt file to initially submit your site to Google's webmaster tools. The robots.txt file basically tells the search bot which area of your site you regard most important and how often you would like to have it crawled.
+A sitemap is needed in conjunction with your robots.txt file to initially submit your site to Google's Webmaster Tools. The robots.txt file basically tells the search bot which area of your site you regard most important and how often you would like to have it crawled.
 
 ### 3. Page titles
 
@@ -47,14 +47,14 @@ If your business is targeting local customers you need to make sure Google knows
 
 <ol>
 <li>Have your full business address in html on the footer of every page.</li>
-<li>Upload a geositemap to Google's webmaster tools. </li>
+<li>Upload a geositemap to Google's Webmaster Tools.</li>
 <li>Mark up your site using microdata. Here's a handy tool to help you <a href="http://www.geositemapgenerator.com/input">create your geo markup</a>.</li>
 <li>Include your city name/location in your page titles. This is a proven factor in Google Places ranking.</li>
 </ol>
 
 ### 8. Use rich snippets (microdata)
 
-Although this will have no direct influence on your rankings, any microdata that appears beside your listing helps it to stand out from the rest, and this can only be a good thing, possibly more important than top ranking in fact. If you haven't already, use microdata to markup any testimonials or reviews that you have. If you are an e-commerce site mark up all your products and descriptions. Add authorship to your blog posts, etc. etc. Check out Schema.org for a more detailed explanation and here is a handy testing tool to check how it would appear as a search result... [structured data testing tool](http://www.google.com/webmasters/tools/richsnippets). Google is actively encouraging webmasters to incorporate microdata so if you haven't already, it's about time you did.
+Although this will have no direct influence on your rankings, any microdata that appears beside your listing helps it to stand out from the rest, and this can only be a good thing, possibly more important than top ranking in fact. If you haven't already, use microdata to markup any testimonials or reviews that you have. If you are an e-commerce site mark up all your products and descriptions. Add authorship to your blog posts, etc. etc. Check out Schema.org for a more detailed explanation and here is a handy testing tool to check how it would appear as a search result... [Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets). Google is actively encouraging webmasters to incorporate microdata so if you haven't already, it's about time you did.
 
 ### 9. Don't overdo it
 
