@@ -676,9 +676,6 @@ a.header-link :hover {
 }
 
 /* Social */
-.share-button {
-  margin: .5rem 0 0;
-}
 .social-profile {
   margin: .5rem auto .5rem auto;
 }
@@ -698,10 +695,13 @@ a.header-link :hover {
   font-size: 0.95rem;
   }
 }
-.post-edit {
+.post-meta {
+  margin: .5rem 0 0;
+}
+.post-meta-edit {
   position: relative;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   background-color: #eee;
   background-image: -webkit-linear-gradient(#fff,#dedede);
   background-image: linear-gradient(#fff,#dedede);
@@ -713,11 +713,11 @@ a.header-link :hover {
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
   cursor: pointer;
   padding: 4px 8px 2px 12px;
-  margin-left: 5px;
+  margin-right: 5px;
   height: 28px;
   overflow: hidden;
 }
-a.post-edit {text-decoration:none!important;color:#444!important}
-a.post-edit:hover {text-decoration:none!important;color:#444!important}
+a.post-meta-edit {text-decoration:none!important;color:#444!important}
+a.post-meta-edit:hover {text-decoration:none!important;color:#444!important}
 .social{padding:20px;background:#6a9fb5;margin:30px 0 50px}.social-button{display:inline-block;vertical-align:top;width:100px;height:20px}
 .fb_iframe_widget span{vertical-align:baseline!important}
