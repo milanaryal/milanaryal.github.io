@@ -22,7 +22,7 @@ You then need to create a 301 redirect to whichever domain is indexed most in th
 
 ### 2. Sitemap and robots.txt
 
-A sitemap is needed in conjunction with your robots.txt file to initially submit your site to Google's Webmaster Tools. The robots.txt file basically tells the search bot which area of your site you regard most important and how often you would like to have it crawled.
+A sitemap is needed in conjunction with your robots.txt file to initially submit your site to Google's webmaster tools. The robots.txt file basically tells the search bot which area of your site you regard most important and how often you would like to have it crawled.
 
 ### 3. Page titles
 
@@ -47,7 +47,7 @@ If your business is targeting local customers you need to make sure Google knows
 
 <ol>
 <li>Have your full business address in html on the footer of every page.</li>
-<li>Upload a geositemap to Google's Webmaster Tools. </li>
+<li>Upload a geositemap to Google's webmaster tools. </li>
 <li>Mark up your site using microdata. Here's a handy tool to help you <a href="http://www.geositemapgenerator.com/input">create your geo markup</a>.</li>
 <li>Include your city name/location in your page titles. This is a proven factor in Google Places ranking.</li>
 </ol>
