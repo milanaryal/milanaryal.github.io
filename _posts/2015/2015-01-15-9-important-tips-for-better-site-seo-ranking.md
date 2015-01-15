@@ -54,7 +54,7 @@ If your business is targeting local customers you need to make sure Google knows
 
 ### 8. Use rich snippets (microdata)
 
-Although this will have no direct influence on your rankings, any microdata that appears beside your listing helps it to stand out from the rest, and this can only be a good thing, possibly more important than top ranking in fact. If you haven't already, use microdata to markup any testimonials or reviews that you have. If you are an e-commerce site mark up all your products and descriptions. Add authorship to your blog posts, etc. etc. Check out Schema.org for a more detailed explanation and here is a handy testing tool to check how it would appear as a search result... [Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets). Google is actively encouraging webmasters to incorporate microdata so if you haven't already, it's about time you did.
+Although this will have no direct influence on your rankings, any microdata that appears beside your listing helps it to stand out from the rest, and this can only be a good thing, possibly more important than top ranking in fact. If you haven't already, use microdata to markup any testimonials or reviews that you have. If you are an e-commerce site mark up all your products and descriptions. Add authorship to your blog posts, etc. etc. Check out Schema.org for a more detailed explanation and here is a handy testing tool to check how it would appear as a search result...[structured data testing tool](http://www.google.com/webmasters/tools/richsnippets). Google is actively encouraging webmasters to incorporate microdata so if you haven't already, it's about time you did.
 
 ### 9. Don't overdo it
 
