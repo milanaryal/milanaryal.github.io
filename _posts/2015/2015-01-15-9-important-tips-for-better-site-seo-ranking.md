@@ -16,7 +16,7 @@ Here you have 9 best known SEO tips exclusively for you!
 
 Try to structure your site in a way that is easy to follow and create subfolders for large category items. Also make sure your URLs are easily read and have a set structure, preferably one without ampersands and using full hyphenated words as the url e.g http://www.mattcutts.com/blog/seo-advice-url-canonicalization/ (Good post by the way!). This not only helps the spiders to know what the page is about but it also helps the user and is a lot easier to remember.
 
-It's very important that your site redirects from it's domain with or without "www". People can access your site using either the http://yoursite.com or http://www.yoursite.com however it is important that you choose which one of these versions you want to use as your main domain, otherwise Google sees this as two separate sites and hence, duplicate content. If you haven't set this already, search Google for "site:yoursite.com" and note which version of your domain appears most.
+It's very important that your site redirects from it's domain with or without "www". People can access your site using either the `http://yoursite.com` or `http://www.yoursite.com` however it is important that you choose which one of these versions you want to use as your main domain, otherwise Google sees this as two separate sites and hence, duplicate content. If you haven't set this already, search Google for "site:yoursite.com" and note which version of your domain appears most.
 
 You then need to create a 301 redirect to whichever domain is indexed most in the search result. You should also set your preferred domain in Google's webmaster tools to let Google know which one you prefer.
 
