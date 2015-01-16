@@ -45,7 +45,7 @@ If you are using [Prose](https://github.com/prose/prose) to manage your content:
 
 {% highlight html %}
 {% raw %}
-<a href="http://prose.io/#{{site.repo}}/edit/{{site.branch}}/{{ page.path }}">
+<a href="http://prose.io/#{{ site.repo }}/edit/{{ site.branch }}/{{ page.path }}">
   Edit
 </a>
 {% endraw %}
