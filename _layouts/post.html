@@ -6,9 +6,16 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: '%B %d, %Y' }}</time>
   <div class="post--meta">
-      <div class="post--meta-edit">
+      <div class="post--meta-source">
         {%if page.path %}
         <a href="//github.com/MilanAryal/milanaryal.github.io/blob/master/{{ page.path }}">
+          <i class="fa fa-github"></i>
+          View source
+        </a>
+      </div>
+      <div class="post--meta-edit">
+        {%if page.path %}
+        <a href="//github.com/MilanAryal/milanaryal.github.io/edit/master/{{ page.path }}">
           <i class="fa fa-github"></i>
           Edit this page on GitHub
         </a>
@@ -28,7 +35,7 @@ layout: default
   <div class="post-body">
   {{ content }}
     <hr>
-  <p><em>This content is open source. Please <a href="//github.com/MilanAryal/milanaryal.github.io/blob/master/{{ page.path }}">help improve it</a>.</em></p>
+  <p><em>This content is open source. Please <a href="//github.com/MilanAryal/milanaryal.github.io/edit/master/{{ page.path }}">help improve it</a>.</em></p>
   </div>
       <div class="social">
         <div class="social--button">
