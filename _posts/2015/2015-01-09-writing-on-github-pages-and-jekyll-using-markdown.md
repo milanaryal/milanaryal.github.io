@@ -4,13 +4,13 @@ title: "Writing on GitHub Pages and Jekyll using Markdown"
 date: 2015-01-09T15:04:14
 ---
 
-Readme file on GitHub uses GitHub flavored Markdown (GFM) and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub flavored Markdown, and other useful features like footnotes.
+Readme file on GitHub uses GitHub Flavored Markdown (GFM) and blogging platform like Jekyll, Ghost.. blog posts are also written using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
 
 File extention with .markdown, .mkdown, .mkdn, .mkd, .md are the supported Markdown document.
 
-### Enabling GitHub flavored Markdown on Jekyll
+### Enabling GitHub Flavored Markdown on Jekyll
 
-You can add several extensions in which you can configure to the behaviour like GitHub flavored Markdown, i.e. add this to your `_config.yml`:
+You can add several extensions in which you can configure to the behaviour like GitHub Flavored Markdown, i.e. add this to your `_config.yml`:
 
 #### For Redcarpet Markdown
 
@@ -30,7 +30,7 @@ kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 {% endhighlight %}
 
-**Also on Gost blogging platform**, it support the following combination of standard Markdown and GitHub flavored Markdown.
+**Also on Gost blogging platform**, it support the following combination of standard Markdown and GitHub Flavored Markdown.
 
 > All HTML is valid Markdown. If you're stuck not able to format your content how you would like (for example using tables) you can always use [plain HTML](http://htmldog.com/guides/html/beginner/?__hstc=10303082.f33480622a9bdc4ffce7bcd81cc8cc49.1420789915940.1420789915940.1420789915940.1&__hssc=10303082.1.1420789915940&__hsfp=3394336207) instead of Markdown.
 
@@ -103,7 +103,7 @@ Footnotes can be added to the body of your text using placeholders like this: {%
 
 Inline code can be added using single back-ticks E.g. {% raw %}``` `alert('Hello World')` ```{% endraw %}.
 
-For code blocks, if extensions enabled Redcarpet and Kramdown supports both standard Markdown code blocks and the syntax from GitHub flavored Markdown (GFM). Standard Markdown works by indenting code lines with 4 spaces:
+For code blocks, if extensions enabled Redcarpet and Kramdown supports both standard Markdown code blocks and the syntax from GitHub Flavored Markdown (GFM). Standard Markdown works by indenting code lines with 4 spaces:
 
 {% highlight html %}
 {% raw %}
@@ -165,5 +165,5 @@ from the text my post.
 * [Daring Fireball: Markdown syntax documentation](http://daringfireball.net/projects/markdown/syntax)
 * [Redcarpet Markdown](https://github.com/vmg/redcarpet)
 * [Kramdown Markdown](https://github.com/gettalong/kramdown)
-* [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 * [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

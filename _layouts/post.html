@@ -5,15 +5,15 @@ layout: default
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: '%B %d, %Y' }}</time>
-  <div class="post-meta">
-      <div class="post-meta-edit">
+  <div class="post--meta">
+      <div class="post--meta-edit">
         {%if page.path %}
         <a href="//github.com/MilanAryal/milanaryal.github.io/blob/master/{{ page.path }}">
           <i class="fa fa-github"></i>
           Edit this page on GitHub
         </a>
       </div>
-      <div class="post-meta-social">
+      <div class="post--meta-social">
         {% endif %}
         <a class="twitter-share-button" href="//twitter.com/share"
           data-dnt="true"
@@ -31,15 +31,15 @@ layout: default
   <p><em>This content is open source. Please <a href="//github.com/MilanAryal/milanaryal.github.io/blob/master/{{ page.path }}">help improve it</a>.</em></p>
   </div>
       <div class="social">
-        <div class="social-button">
+        <div class="social--button">
           <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.author.tw_username }}">Tweet</a>
         </div>
-        <div class="social-button">
+        <div class="social--button">
           <div id="fb-root"></div>
           <div class="fb-like" data-send="false" data-layout="button_count"
           data-width="1" data-show-faces="false" data-action="like"></div>
         </div>
-        <div class="social-button">
+        <div class="social--button">
           <g:plusone size="medium"></g:plusone>
         </div>
       </div>
