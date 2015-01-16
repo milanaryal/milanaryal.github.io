@@ -8,7 +8,7 @@ You can have your GitHub documentation pages or Jekyll blog post with extra "Edi
 
 ### Edit on GitHub link
 
-If you're hosting the site on GitHub Pages, they inject the source repository into a variable called `{% raw %}{{ site.github.repository_url }}{% endraw %}` which you can use in combination with `{% raw %}{{ page.path }}{% endraw %}` to wire up the URL on `github.com`.
+If you're hosting the site on GitHub Pages using Jekyll, they inject the source repository into a variable called `{% raw %}{{ site.github.repository_url }}{% endraw %}` which you can use in combination with `{% raw %}{{ page.path }}{% endraw %}` to wire up the URL on `github.com`.
 
 Example: 
 {% highlight html %}
@@ -53,7 +53,7 @@ If you are using [Prose](https://github.com/prose/prose) to manage your content:
 
 ### View source link
 
-If you're hosting the site on GitHub Pages:
+If you're hosting the site on GitHub Pages using Jekyll:
 
 {% highlight html %}
 {% raw %}
@@ -77,8 +77,8 @@ For a collection document:
 
 {% highlight html %}
 {% raw %}
-<a href="{{ site.github.repository_url }}/blob/master//{{ page.relative_path }}">
-    View source
+<a href="{{ site.github.repository_url }}/blob/master/{{ page.relative_path }}">
+  View source
 </a>
 {% endraw %}
 {% endhighlight %}
