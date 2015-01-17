@@ -52,7 +52,7 @@ layout: default
 </article>
 
     <script>
-      var disqus_url = {%if page.disqus %}'{{ page.disqus }}'{%else %}'{{ site.url }}{{ page.url }}'{% endif %};
+      var disqus_url = {% if page.disqus %}'{{ page.disqus }}'{% else %}'{{ site.url }}{{ page.url }}'{% endif %};
       var disqus_title = '{{ page.title }}';
       var disqus_shortname = 'milanaryal';
       (function() {
