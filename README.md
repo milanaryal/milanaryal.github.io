@@ -1,14 +1,13 @@
-Milan Aryal website (milanaryal.com)
-====================
+# Milan Aryal website (milanaryal.com)
 
-The Jekyll build for [milanaryal.com](http://milanaryal.com)
+The Jekyll build for [milanaryal.com](http://milanaryal.com).
 
 Please learn, read, and use any code from this website. All content despite being hosted openly is subject to copyright of Milan Aryal.
 
 * Site: [milanaryal.com](http://milanaryal.com)
 * Twitter: [@MilanAryal](http://twitter.com/MilanAryal)
 
-## License
+### License
 
 #### The MIT License (MIT)
 
