@@ -79,7 +79,7 @@ You can add link of a source code of a post or doc on GitHub.
 
 ### View revision history link
 
-Like ways you can also add view revision history link which shows all the commitment of a post or doc.
+Like ways you can also add view revision history link which shows all the commitments of a post or doc.
 
 #### For a blog post
 
