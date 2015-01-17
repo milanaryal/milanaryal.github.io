@@ -12,7 +12,6 @@ If you're hosting the site on GitHub Pages using Jekyll, they inject the source 
 
 #### For a blog post
 
-Example: 
 {% highlight html %}
 {% raw %}
 <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
@@ -20,6 +19,8 @@ Example:
 </a>
 {% endraw %}
 {% endhighlight %}
+
+Example:
 
 {% highlight html %}
 {% raw %}
