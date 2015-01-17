@@ -7,7 +7,7 @@ Please learn, read, and use any code from this website. All content despite bein
 * Site: [milanaryal.com](http://milanaryal.com)
 * Twitter: [@MilanAryal](http://twitter.com/MilanAryal)
 
-### License
+## License
 
 #### The MIT License (MIT)
 
