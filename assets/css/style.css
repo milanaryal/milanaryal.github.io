@@ -47,6 +47,7 @@ body {
   color: #fff;
   text-shadow: none;
 }
+.clear:before,.clear:after{content:' ';display:table}.clear{*zoom:1}.clear:after{clear:both}
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
   color: #268bd2;
@@ -279,18 +280,6 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 /*
- * Container
- *
- * Center the page content.
- */
-.container {
-  max-width: 38rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
-  margin-left:  auto;
-  margin-right: auto;
-}
-/*
  * Masthead
  *
  * Super small header above the content for site name and short description.
@@ -481,24 +470,20 @@ a.sidebar-nav-item:focus {
     left:   1rem;
   }
 }
-/* Content
+/* Container
  *
  * Align the contents of the site above the proper threshold with some margin-fu
  * with a 25%-wide `.sidebar`.
  */
-.content {
-  padding-top:    4rem;
-  padding-bottom: 4rem;
-}
 @media (min-width: 48em) {
-  .content {
+  .container {
     max-width: 38rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }
 }
 @media (min-width: 64em) {
-  .content {
+  .container {
     margin-left: 22rem;
     margin-right: 4rem;
   }
@@ -513,13 +498,13 @@ a.sidebar-nav-item:focus {
     left: auto;
     right: 0;
   }
-  .layout-reverse .content {
+  .layout-reverse .container {
     margin-left: 2rem;
     margin-right: 20rem;
   }
 }
 @media (min-width: 64em) {
-  .layout-reverse .content {
+  .layout-reverse .container {
     margin-left: 4rem;
     margin-right: 22rem;
   }
