@@ -8,13 +8,13 @@ layout: default
   <div class="post--meta">
       {%if page.path %}
       <div class="post--meta-button">
-        <a href="//github.com/MilanAryal/milanaryal.github.io/blob/master/{{ page.path }}">
+        <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">
           <i class="fa fa-github"></i>
           View source
         </a>
       </div>
       <div class="post--meta-button">
-        <a href="//github.com/MilanAryal/milanaryal.github.io/edit/master/{{ page.path }}">
+        <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
           <i class="fa fa-github"></i>
           Edit this page on GitHub
         </a>
@@ -31,7 +31,7 @@ layout: default
   <div class="post-body">
   {{ content }}
     <hr>
-  <p><em>This content is open source. Please <a href="//github.com/MilanAryal/milanaryal.github.io/edit/master/{{ page.path }}">help improve it</a>.</em></p>
+  <p><em>This content is open source. Please <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">help improve it</a>.</em></p>
   </div>
       <div class="social">
         <div class="social--button">
@@ -52,7 +52,7 @@ layout: default
 </article>
 
     <script>
-      var disqus_url = {%if page.disqus %}'{{ page.disqus }}'{%else %}'http://milanaryal.com{{ page.url }}'{% endif %};
+      var disqus_url = {%if page.disqus %}'{{ page.disqus }}'{%else %}'{{ site.url }}{{ page.url }}'{% endif %};
       var disqus_title = '{{ page.title }}';
       var disqus_shortname = 'milanaryal';
       (function() {
