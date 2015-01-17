@@ -4,7 +4,7 @@ title: Adding "Edit on GitHub" links to GitHub Pages using Jekyll
 date: 2015-01-17T01:00:53+05:45
 ---
 
-You can have your GitHub documentation pages or Jekyll blog post with extra "Edit on GitHub", "View source" and even "View revision history" links. Here's how you can have those:
+If you're using Jekyll on GitHub Pages you can have your Jekyll blog posts or collection document pages with extra "Edit on GitHub", "View source" and even "View revision history" links. Here's how you can have those:
 
 ### Edit on GitHub link
 
@@ -55,9 +55,9 @@ If you are using [Prose](https://github.com/prose/prose) to manage your content:
 
 ### View source link
 
-You can add link of a source code of a post or docs on GitHub.
+You can add link of a source code of a post or doc on GitHub.
 
-### For a blog post
+#### For a blog post
 
 {% highlight html %}
 {% raw %}
@@ -79,7 +79,7 @@ You can add link of a source code of a post or docs on GitHub.
 
 ### View revision history link
 
-Like ways you can also add view revision history link which shows all the commitment of a post or docs.
+Like ways you can also add view revision history link which shows all the commitment of a post or doc.
 
 #### For a blog post
 
@@ -91,7 +91,7 @@ Like ways you can also add view revision history link which shows all the commit
 {% endraw %}
 {% endhighlight %}
 
-### For a collection document
+#### For a collection document
 
 {% highlight html %}
 {% raw %}
