@@ -337,7 +337,6 @@ tbody tr:nth-child(odd) th {
 }
 .post-body, .page-body {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
-  margin-top: 1rem;
   display: block;
 }
 .page-body > p:first-child {
@@ -628,4 +627,4 @@ a.post--header-link :hover {
   color: #268bd2;
 }
 /* Social */
-.sidebar--social-profile{margin:.5rem auto .5rem auto}@media(max-width:48em){.sidebar--social-profile,.sidebar--copyright{display:none}.sidebar-nav .sidebar-nav-item {display:inline-block;padding:0 1.25rem 0 1.25rem;border-right:1px solid rgba(255,255,255,.5)}.sidebar-nav .sidebar-nav-item:last-child{border-right:0}.sidebar-about .lead{font-size:0.95rem}}.post--meta{margin:.5rem 0 0}.post--meta-button {position:relative;display:inline-block;vertical-align:baseline;background-color:#eee;background-image:-webkit-linear-gradient(#fff,#dedede);background-image:linear-gradient(#fff,#dedede);border:#ccc solid 1px;border-radius:3px;color:#333;font-size:12px;font-weight:900;text-shadow:0 1px 0 rgba(255,255,255,.5);cursor:pointer;padding:4px 8px 2px 12px;margin-right:5px;height:28px;overflow:hidden}.post--meta-button a{text-decoration:none!important;color:#444!important}.post--meta-button a:hover{text-decoration:none!important;color:#444!important}.post--meta-social{display:inline-block}.social{padding:20px;background:#6a9fb5;margin:30px 0 50px}.social--button{display:inline-block;vertical-align:top;width:100px;height:20px}.fb_iframe_widget span{vertical-align:baseline!important}.disqus{margin:0 0 50px}
+.sidebar--social-profile{margin:.5rem auto .5rem auto}@media(max-width:48em){.sidebar--social-profile,.sidebar--copyright{display:none}.sidebar-nav .sidebar-nav-item {display:inline-block;padding:0 1.25rem 0 1.25rem;border-right:1px solid rgba(255,255,255,.5)}.sidebar-nav .sidebar-nav-item:last-child{border-right:0}.sidebar-about .lead{font-size:0.95rem}}.post--meta{margin:1rem 0 1rem}.post--meta-button {position:relative;display:inline-block;vertical-align:baseline;background-color:#eee;background-image:-webkit-linear-gradient(#fff,#dedede);background-image:linear-gradient(#fff,#dedede);border:#ccc solid 1px;border-radius:3px;color:#333;font-size:12px;font-weight:900;text-shadow:0 1px 0 rgba(255,255,255,.5);cursor:pointer;padding:4px 8px 2px 12px;margin-right:5px;height:28px;overflow:hidden}.post--meta-button a{text-decoration:none!important;color:#444!important}.post--meta-button a:hover{text-decoration:none!important;color:#444!important}.post--meta-social{display:inline-block}.social{padding:20px;background:#6a9fb5;margin:30px 0 50px}.social--button{display:inline-block;vertical-align:top;width:100px;height:20px}.fb_iframe_widget span{vertical-align:baseline!important}.disqus{margin:0 0 50px}

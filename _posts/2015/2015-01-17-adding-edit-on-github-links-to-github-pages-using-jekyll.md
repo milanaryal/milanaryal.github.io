@@ -32,7 +32,7 @@ Example:
 
 #### For a collection document
 
-For a collection document, you'll need to use `{% raw %}{{ page.relative_path }}{% endraw %}` instead of `{% raw %}{{ page.path }}{% endraw %}` to get the desired behavior, see http://jekyllrb.com/docs/collections/#documents:
+[For a collection document](http://jekyllrb.com/docs/collections/#documents), you'll need to use `{% raw %}{{ page.relative_path }}{% endraw %}` instead of `{% raw %}{{ page.path }}{% endraw %}` to get the desired behavior.
 
 {% highlight html %}
 {% raw %}
