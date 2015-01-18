@@ -43,7 +43,7 @@ body {
       -ms-text-size-adjust: 100%;
 }
 ::selection {
-  background: #6a9fb5;
+  background: #3498db;
   color: #fff;
   text-shadow: none;
 }
@@ -578,6 +578,14 @@ a.sidebar-nav-item:focus {
 .theme-base-0d .content a,
 .theme-base-0d .related-posts li a:hover {
   color: #6a9fb5;
+}
+/*! Blue - http://flatuicolors.com/ */
+.theme-base-blue .sidebar {
+  background-color: #3498db;
+}
+.theme-base-blue .content a,
+.theme-base-blue .related-posts li a:hover {
+  color: #3498db;
 }
 /* Magenta */
 .theme-base-0e .sidebar {
