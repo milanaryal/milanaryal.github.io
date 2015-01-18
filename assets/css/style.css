@@ -322,7 +322,7 @@ tbody tr:nth-child(odd) th {
  */
 .page,
 .post {
-
+  position: relative;
   margin-bottom: 4em;
 }
 /* Blog post or page title */
