@@ -28,7 +28,7 @@ There is two kinds of download app available:
 
 The application is the simplest possible, it works in 3 steps: authenticate Twitter; select which tweets you want to delete; erase them.
 
-#### Step 1
+###### Step 1
 
 In this step, you give Twitter Archive Eraser access to your twitter account so that it can delete the tweets you select. This works by providing a PIN number that twitter provides after the authentication.
 
@@ -36,7 +36,7 @@ Note: You need to accept sharing several statistics to use Twitter Archive Erase
 
 ![Step 1](http://1.bp.blogspot.com/-tGNrhkp6Uq0/VFEGlhTT19I/AAAAAAAAGWM/9J9XZU_GtHQ/s700/twitter-archive-eraser-screenshot-step1.png)
 
-#### Step 2
+###### Step 2
 
 After you download your Twitter archive (from  [`twitter.com/settings/account`](//twitter.com/settings/account) and you can load it directly as a zip file into Twitter Archive Eraser.
 
@@ -44,7 +44,7 @@ You can select which period of time you want to delete tweets from (grouped by m
 
 ![Step 2](http://4.bp.blogspot.com/-Acx_oLaeJGQ/VFEGxJ6J_7I/AAAAAAAAGWU/CR40d6ArpJ8/s700/twitter-archive-eraser-screenshot-step2.png)
 
-#### Step 3
+###### Step 3
 
 Once you have selected the months, you are now presented with all the tweets in this period of time. By default, all the tweets are marked for deletion, if you want to keep any specific tweets, just uncheck them as shown in the following picture.
 

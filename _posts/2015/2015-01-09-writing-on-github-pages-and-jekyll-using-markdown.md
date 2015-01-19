@@ -12,7 +12,7 @@ File extention with .markdown, .mkdown, .mkdn, .mkd, .md are the supported Markd
 
 You can add several extensions in which you can configure to the behaviour like GitHub Flavored Markdown, i.e. add this to your `_config.yml`:
 
-#### For Redcarpet Markdown
+###### For Redcarpet Markdown
 
 {% highlight ruby %}
 markdown: redcarpet
@@ -22,7 +22,7 @@ redcarpet:
 
 There're even more extensions for Redcarpet Markdown like "underline", "highlight", "quote", "footnote_ref"...
 
-#### For Kramdown Markdown
+###### For Kramdown Markdown
 
 {% highlight ruby %}
 markdown: kramdown
@@ -40,19 +40,19 @@ The most common formatting options have keyboard shortcuts to make them easier t
 
 |Result              |Markdown
 |--------------------|---------------------------------------
-|**Bold**            |```**text**```
-|*Emphasize*         |```*text*```
-|~~Strike-through~~  |```~~text~~```
-|[Link](#)           |```[title](http://)```
-|`Inline Code`       |``` `code` ```
-|Image               |```![alt](http://)```
+|**Bold**            |`**text**`
+|*Emphasize*         |`*text*`
+|~~Strike-through~~  |`~~text~~`
+|[Link](#)           |`[title](http://)`
+|`Inline Code`       |``code``
+|Image               |`![alt](http://)`
 |List                |`* item`
 |Blockquote          |`> quote`
 |H1                  |`# Heading`
 |H2                  |`## Heading`
 |H3                  |`### Heading`
 
-If you add underline extension on Redcarpet Markdown you will have _underline_ feature with `_text_` (parse underscored emphasis as underlines. This is `_underlined_` but this is still `*italic*`).
+If you add underline extension on Redcarpet Markdown you will have <u>underline</u> feature with `_text_` (parse underscored emphasis as underlines. This is `_underlined_` but this is still `*italic*`).
 
 ### Headers
 
@@ -85,11 +85,11 @@ Headers are set using a hash before the title. The number of hashes before the t
 
 ### Images
 
-To insert an image into your post, you need to first type {% raw %}`![]()`{% endraw %} into the Markdown editor panel and image link inbetween {% raw %}`()`{% endraw %}. To title your image, all you need to do is place the title text inbetween the square brackets, e.g; {% raw %}`![This is a title]()`{% endraw %}.
+To insert an image into your post, you need to first type `{% raw %}![](){% endraw %}` into the Markdown editor panel and image link inbetween `()`. To title your image, all you need to do is place the title text inbetween the square brackets, e.g; `{% raw %}![This is a title](){% endraw %}`.
 
 ### Footnotes
 
-Footnotes can be added to the body of your text using placeholders like this: {% raw %}`[^1]`{% endraw %}. Alternatively you can use 'n' rather than numbers {% raw %}`[^n]`{% endraw %} so you don't have to worry about which number you are on. At the very end of your post, you can define your matching footnotes as shown below, URLs will be turned into links:
+Footnotes can be added to the body of your text using placeholders like this: `{% raw %}[^1]{% endraw %}`. Alternatively you can use 'n' rather than numbers `{% raw %}[^n]{% endraw %}` so you don't have to worry about which number you are on. At the very end of your post, you can define your matching footnotes as shown below, URLs will be turned into links:
 
 {% highlight text %}
 {% raw %}
@@ -101,7 +101,7 @@ Footnotes can be added to the body of your text using placeholders like this: {%
 
 ### Writing code
 
-Inline code can be added using single back-ticks E.g. {% raw %}``` `alert('Hello World')` ```{% endraw %}.
+Inline code can be added using single back-ticks E.g. `alert('Hello World')`.
 
 For code blocks, if extensions enabled Redcarpet and Kramdown supports both standard Markdown code blocks and the syntax from GitHub Flavored Markdown (GFM). Standard Markdown works by indenting code lines with 4 spaces:
 
@@ -126,7 +126,7 @@ GFM uses triple back-ticks ```
 
 ### Examples
 
-#### Link Markdown example
+###### Link Markdown example
 
 {% highlight text %}
 {% raw %}
@@ -134,7 +134,7 @@ This is a paragraph that contains a [link to milanaryal.com](http://milanaryal.c
 {% endraw %}
 {% endhighlight %}
 
-#### List Markdown example
+###### List Markdown example
 
 {% highlight text %}
 {% raw %}
@@ -146,7 +146,7 @@ This paragraph contains a list of items.
 {% endraw %}
 {% endhighlight %}
 
-#### Quote Markdown example
+###### Quote Markdown example
 
 {% highlight text %}
 {% raw %}

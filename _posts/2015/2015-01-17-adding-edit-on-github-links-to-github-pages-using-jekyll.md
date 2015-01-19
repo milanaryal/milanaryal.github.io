@@ -10,7 +10,7 @@ If you're using Jekyll on GitHub Pages you can have your Jekyll blog posts or co
 
 If you're hosting the site on GitHub Pages using Jekyll, they inject the source repository into a variable called `{% raw %}{{ site.github.repository_url }}{% endraw %}` which you can use in combination with `{% raw %}{{ page.path }}{% endraw %}` to wire up the URL on `github.com`.
 
-#### For a blog post
+###### For a blog post
 
 {% highlight html %}
 {% raw %}
@@ -30,7 +30,7 @@ Example:
 {% endraw %}
 {% endhighlight %}
 
-#### For a collection document
+###### For a collection document
 
 [For a collection document](http://jekyllrb.com/docs/collections/#documents), you'll need to use `{% raw %}{{ page.relative_path }}{% endraw %}` instead of `{% raw %}{{ page.path }}{% endraw %}` to get the desired behavior.
 
@@ -42,7 +42,7 @@ Example:
 {% endraw %}
 {% endhighlight %}
 
-#### On Prose
+###### On Prose
 
 If you are using [Prose](https://github.com/prose/prose) to manage your content:
 
@@ -58,7 +58,7 @@ If you are using [Prose](https://github.com/prose/prose) to manage your content:
 
 You can add link of a source code of a post or doc on GitHub.
 
-#### For a blog post
+###### For a blog post
 
 {% highlight html %}
 {% raw %}
@@ -68,7 +68,7 @@ You can add link of a source code of a post or doc on GitHub.
 {% endraw %}
 {% endhighlight %}
 
-#### For a collection document
+###### For a collection document
 
 {% highlight html %}
 {% raw %}
@@ -82,7 +82,7 @@ You can add link of a source code of a post or doc on GitHub.
 
 Like ways you can also add view revision history link which shows all the commitments of a post or doc.
 
-#### For a blog post
+###### For a blog post
 
 {% highlight html %}
 {% raw %}
@@ -92,7 +92,7 @@ Like ways you can also add view revision history link which shows all the commit
 {% endraw %}
 {% endhighlight %}
 
-#### For a collection document
+###### For a collection document
 
 {% highlight html %}
 {% raw %}

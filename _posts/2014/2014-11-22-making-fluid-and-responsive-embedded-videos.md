@@ -89,11 +89,11 @@ The above technique is awesome, but it has several possible limitations:
 
 If either of these limitations apply to you, you might consider a JavaScript solution. Imagine this: when the page loads all videos are looked at and their aspect ratio is saved. Once right away, and whenever the window is resized, all the videos are resized to fill the available width and maintain their aspect ratio.
 
-### FitVids.js
+#### FitVids.js
 
 Until recently, most solutions were plugins, which are OK to an extent but can have performance issues. A popular plugin is [FitVids.js](http://fitvidsjs.com), developed by Chris Coyier and Paravel.
 
-### FluidVids.js
+#### FluidVids.js
 
 A more current solution is to use just a script -- such as [FluidVids.js](http://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/), developed by Todd Motto. FluidVids.js is simple to use and load faster:
 
