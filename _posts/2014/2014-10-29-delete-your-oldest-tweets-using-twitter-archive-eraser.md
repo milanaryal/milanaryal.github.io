@@ -17,7 +17,7 @@ Thus, a simple application called "[Twitter Archive Eraser](//martani.github.io/
 
 Download and setup the Twitter Archive Eraser app by visiting the link given below:
 
-<button><a href="//martani.github.io/Twitter-Archive-Eraser">Direct link</a></button>
+* [martani.github.io/Twitter-Archive-Eraser](//martani.github.io/Twitter-Archive-Eraser)
 
 There is two kinds of download app available:
 
@@ -38,7 +38,7 @@ Note: You need to accept sharing several statistics to use Twitter Archive Erase
 
 ###### Step 2
 
-After you download your Twitter archive (from  [`twitter.com/settings/account`](//twitter.com/settings/account) and you can load it directly as a zip file into Twitter Archive Eraser.
+After you download your Twitter archive (from  [twitter.com/settings/account](//twitter.com/settings/account) and you can load it directly as a zip file into Twitter Archive Eraser.
 
 You can select which period of time you want to delete tweets from (grouped by month).
 
@@ -69,7 +69,7 @@ Use the following filtering expressions to search for:
 * Tweets containing a number with 4 digits or more: `\d{4}`
 * Tweets containing the word 'hello': `hello`
 
-You can find the code of the application on github: [`github.com/martani/Twitter-Archive-Eraser`](//github.com/martani/Twitter-Archive-Eraser). Developer mentions that all the Twitter logic is done using the excellent [LinqToTwitter](http://linqtotwitter.codeplex.com) library.
+You can find the code of the application on github: [github.com/martani/Twitter-Archive-Eraser](//github.com/martani/Twitter-Archive-Eraser). Developer mentions that all the Twitter logic is done using the excellent [LinqToTwitter](http://linqtotwitter.codeplex.com) library.
 
 Sadly, this app works only with Windows OS and yet developer is not further planning to develop this app for any other OS like Mac or linux. But don't worry you can use apps like VMware or VirtualBox to switch to Windows and use the Windows apps.
 
