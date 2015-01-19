@@ -44,7 +44,7 @@ The most common formatting options have keyboard shortcuts to make them easier t
 |*Emphasize*         |`*text*`
 |~~Strike-through~~  |`~~text~~`
 |[Link](#)           |`[title](http://)`
-|`Inline Code`       |``code``
+|`Inline Code`       |`&#96;code&#96;`
 |Image               |`![alt](http://)`
 |List                |`* item`
 |Blockquote          |`> quote`
