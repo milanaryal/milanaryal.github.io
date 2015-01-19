@@ -342,7 +342,7 @@ h2.post-title {
   font-size: 0.85rem;
 }
 .post-body, .page-body {
-  font-family: "Droid Serif", Georgia, "Times New Roman", serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   display: block;
 }
 .page-body > p:first-child {
