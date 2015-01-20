@@ -43,7 +43,7 @@ body {
       -ms-text-size-adjust: 100%;
 }
 ::selection {
-  background: #2980b9;
+  background: #22A7F0;
   color: #fff;
   text-shadow: none;
 }
@@ -585,13 +585,13 @@ a.sidebar-nav-item:focus {
 .theme-base-0d .related-posts li a:hover {
   color: #6a9fb5;
 }
-/*! Blue - http://flatuicolors.com/ */
+/*! Flat Blue */
 .theme-base-blue .sidebar {
-  background-color: #2980b9;
+  background-color: #22A7F0;
 }
 .theme-base-blue .content a,
 .theme-base-blue .related-posts li a:hover {
-  color: #2980b9;
+  color: #22A7F0;
 }
 /* Magenta */
 .theme-base-0e .sidebar {
