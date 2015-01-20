@@ -587,11 +587,11 @@ a.sidebar-nav-item:focus {
 }
 /*! Flat Blue */
 .theme-base-blue .sidebar {
-  background-color: #2980b9;
+  background-color: #3BAFDA;
 }
 .theme-base-blue .content a,
 .theme-base-blue .related-posts li a:hover {
-  color: #2980b9;
+  color: #3BAFDA;
 }
 /* Magenta */
 .theme-base-0e .sidebar {
