@@ -43,7 +43,7 @@ body {
       -ms-text-size-adjust: 100%;
 }
 ::selection {
-  background: #2980b9;
+  background: #4FC1E9;
   color: #fff;
   text-shadow: none;
 }
@@ -587,11 +587,11 @@ a.sidebar-nav-item:focus {
 }
 /*! Flat Blue */
 .theme-base-blue .sidebar {
-  background-color: #3BAFDA;
+  background-color: #4FC1E9;
 }
 .theme-base-blue .content a,
 .theme-base-blue .related-posts li a:hover {
-  color: #3BAFDA;
+  color: #4FC1E9;
 }
 /* Magenta */
 .theme-base-0e .sidebar {
