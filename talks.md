@@ -1,6 +1,5 @@
 ---
 layout: null
-title: "Talks"
 permalink: /talks/
 ---
 
