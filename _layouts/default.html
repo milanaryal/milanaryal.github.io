@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.html %}
+  {% include head.html %}
 
-  <body class="theme-base-blue" itemscope itemtype="http://schema.org/Article">
+  <body itemscope itemtype="http://schema.org/Article">
 
-  {% include sidebar.html %}
-  
-  <main class="container content" role="main">
+    {% include nav.html %}
+
     {{ content }}
-  </main>
 
-{% include scripts.html %}
+    {% include footer.html %}
 
   </body>
 </html>

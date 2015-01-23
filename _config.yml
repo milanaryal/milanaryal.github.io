@@ -10,9 +10,7 @@ textile_ext:     "textile"
 gems:            ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-sitemap"]
 
 # Conversion
-markdown:        redcarpet
-redcarpet:
-  extensions:    ["smart","tables","no_intra_emphasis","fenced_code_blocks","autolink","strikethrough","superscript","with_toc_data","underline","highlight"]
+markdown:        kramdown
 highlighter:     pygments
 
 # Outputting
@@ -33,18 +31,18 @@ url:              http://milanaryal.com
 title:            Milan Aryal
 tagline:          "One day I will find the words, and they will be simple."
 description:      "Helping to build a better web."
+header-img:       "/assets/img/home-bg.jpg"
 author:
   name:           Milan Aryal
   url:            https://plus.google.com/MilanAryal
   email:          considermilan@gmail.com
-  tw_username:    MilanAryal
-icon:             /assets/img/m-icon-white-on-blue.png
+  twitter:        MilanAryal
+  googleplus:     MilanAryal
+  github:         MilanAryal
+  tumblr:         milanaryal
+icon:             "/assets/img/m-icon-white-on-blue.png"
 ga_trackid:       "UA-42092423-1"
 
 # Custom vars
 github:
   repo:           https://github.com/MilanAryal/milanaryal.github.io
-
-menu:
-  - title:        About
-    url:          /about/

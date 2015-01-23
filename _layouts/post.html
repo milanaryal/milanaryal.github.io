@@ -2,78 +2,49 @@
 layout: default
 ---
 
-<article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: '%B %d, %Y' }}</time>
-  <div class="post--meta">
-      {%if page.path %}
-      <div class="post--meta-button">
-        <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">
-          <i class="fa fa-github"></i>
-          View source
-        </a>
-      </div>
-      <div class="post--meta-button">
-        <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
-          <i class="fa fa-github"></i>
-          Edit this page on GitHub
-        </a>
-      </div>
-      <div class="post--meta-button">
-        <a href="{{ site.github.repository_url }}/commits/master/{{ page.path }}">
-          <i class="fa fa-github"></i>
-          View revision history
-        </a>
-      </div>
-      {% endif %}
-      </div>
+<!-- Post Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    <h2 class="subheading">{{ page.subtitle }}</h2>
+                    {% endif %}
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                </div>
+            </div>
+        </div>
     </div>
-  <div class="post-body">
-  {{ content }}
-  </div>
-    <hr>
-  <p><em>This content is open source. Please <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">help improve it</a>.</em></p>
-      <div class="social">
-        <div class="social--button">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.author.tw_username }}">Tweet</a>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				{{ content }}
+
+                <hr>
+
+                <ul class="pager">
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+
+            </div>
         </div>
-        <div class="social--button">
-          <div id="fb-root"></div>
-          <div class="fb-like" data-send="false" data-layout="button_count"
-          data-width="1" data-show-faces="false" data-action="like"></div>
-        </div>
-        <div class="social--button">
-          <g:plusone size="medium"></g:plusone>
-        </div>
-      </div>
-	  <div class="disqus">
-        <div id="disqus_thread"></div>
-      </div>
+    </div>
 </article>
 
-    <script>
-      var disqus_url = {% if page.disqus %}'{{ page.disqus }}'{% else %}'{{ site.url }}{{ page.url }}'{% endif %};
-      var disqus_title = '{{ page.title }}';
-      var disqus_shortname = 'milanaryal';
-      (function() {
-        var dsq = document.createElement('script');
-        dsq.async = dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        document.getElementsByTagName('head')[0].appendChild(dsq);
-      })();
-    </script>
-
-<aside class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
+<hr>

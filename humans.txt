@@ -18,6 +18,7 @@ layout: null
     HTML5 Boilerplate
     Google Fonts
     Font Awesome
+	Other great open source project helped me build this site.
 
 # TECHNOLOGY COLOPHON
 
@@ -26,7 +27,7 @@ layout: null
 
 # SITE
 
-    Last update: {{ site.time | date: '%Y/%m/%d' }}
+    Last updated: {{ site.time | date: '%Y/%m/%d' }}
     Language: English / Nepali
     Doctype: HTML5
     IDE: Atom Editor, Sublime Text, Notepad++, GitHub, Photoshop, Illustrator

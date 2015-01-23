@@ -1,28 +1,30 @@
-<head>
-  <meta charset="utf-8">
-  <title>{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  {% if page.title == "Home" %}
-  <meta name="description" content="Helping to build a better web.">
-  <meta name="keywords" content="Milan Aryal, milanaryal.com, Asia, Kathmandu, Nepal, Nepali, web designer, web developer, blogger">
-  {% else %}
-  <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
-  {% endif %}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@{{ site.author.tw_username }}">
-  <meta name="twitter:creator" content="@{{ site.author.tw_username }}">
-  <meta name="twitter:title" content="{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.title == "Home" %}{{ site.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% endif %}">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.icon }}">
-  <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <link rel="dns-prefetch" href="//www.google-analytics.com">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="profile" href="http://gmpg.org/xfn/11">
-  <link rel="author" href="//plus.google.com/+MilanAryal">
-  <link rel="image_src" href="{{ site.url }}{{ site.icon }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} - Feed" href="/feed.xml">
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|Lora:400,700,400italic,700italic">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.title == 'Home' %}{{ site.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% endif %}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ site.author.twitter }}">
+    <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+    <meta name="twitter:title" content="{% if page.title == 'Home' %}{{ site.title }}{% else %}{{ page.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.title == 'Home' %}{{ site.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% endif %}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.icon }}">
+    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+	{% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+    <title>{% if page.title == 'Home' %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="author" href="//plus.google.com/+{{ site.author.googleplus }}">
+	<link rel="image_src" href="{{ site.url }}{{ site.icon }}">
+	<link rel="alternate" type="application/atom+xml" title="{{ site.title }} - Feed" href="{{ '/feed.xml' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.min.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
