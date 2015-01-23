@@ -7,9 +7,7 @@ header-img: "/assets/img/home-bg.jpg"
 permalink: /about/
 ---
 
-<p class="message">
-  My name is Milan Aryal and I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
-</p>
+My name is Milan Aryal and I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
 
 The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification. :blush:
 
@@ -37,7 +35,7 @@ In this site you'll find a recollection of thoughts and opinions based on my exp
 
 Initially this blog was established as a means to keep up with my own interest in the web, but with time and little efforts, this blog has evolved into something much more elaborate and meaningful.
 
-If you enjoy the content found here, you can grap your copy of the <i class="fa fa-rss"> [</i> feed](http://milanaryal.com/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
+If you enjoy the content found here, you can grap your copy of the <i class="fa fa-rss"></i> [feed](http://milanaryal.com/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
 ### Contact
 

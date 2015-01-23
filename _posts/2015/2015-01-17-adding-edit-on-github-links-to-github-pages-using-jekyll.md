@@ -42,7 +42,7 @@ Example:
 {% endraw %}
 {% endhighlight %}
 
-###### On Prose
+#### On Prose
 
 If you are using [Prose](https://github.com/prose/prose) to manage your content:
 
