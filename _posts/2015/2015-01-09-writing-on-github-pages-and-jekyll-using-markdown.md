@@ -12,7 +12,7 @@ File extention with .markdown, .mkdown, .mkdn, .mkd, .md are the supported Markd
 
 You can add several extensions in which you can configure to the behaviour like GitHub Flavored Markdown, i.e. add this to your `_config.yml`:
 
-###### For Redcarpet Markdown
+#### For Redcarpet Markdown
 
 {% highlight ruby %}
 markdown: redcarpet
@@ -22,7 +22,7 @@ redcarpet:
 
 There're even more extensions for Redcarpet Markdown like "underline", "highlight", "quote", "footnote_ref"...
 
-###### For Kramdown Markdown
+#### For Kramdown Markdown
 
 {% highlight ruby %}
 markdown: kramdown
@@ -38,19 +38,19 @@ kramdown:
 
 The most common formatting options have keyboard shortcuts to make them easier to add:
 
-|Result              |Markdown
-|--------------------|---------------------------------------
-|**Bold**            |`**text**`
-|*Emphasize*         |`*text*`
-|~~Strike-through~~  |`~~text~~`
-|[Link](#)           |`[title](http://)`
-|`Inline Code`       |``` `code` ```
-|Image               |`![alt](http://)`
-|List                |`* item`
-|Blockquote          |`> quote`
-|H1                  |`# Heading`
-|H2                  |`## Heading`
-|H3                  |`### Heading`
+|Result                          |Markdown
+|--------------------------------|---------------------------------------
+|**Bold**                        |`**text**`
+|*Emphasize*                     |`*text*`
+|<strike>Strike-through</strike> |`~~text~~`
+|[Link](#)                       |`[title](http://)`
+|`Inline Code`                   |``` `code` ```
+|Image                           |`![alt](http://)`
+|List                            |`* item`
+|Blockquote                      |`> quote`
+|H1                              |`# Heading`
+|H2                              |`## Heading`
+|H3                              |`### Heading`
 
 If you add underline extension on Redcarpet Markdown you will have <u>underline</u> feature with `_text_` (parse underscored emphasis as underlines. This is `_underlined_` but this is still `*italic*`).
 
@@ -126,7 +126,7 @@ GFM uses triple back-ticks ```
 
 ### Examples
 
-###### Link Markdown example
+#### Link Markdown example
 
 {% highlight text %}
 {% raw %}
@@ -134,7 +134,7 @@ This is a paragraph that contains a [link to milanaryal.com](http://milanaryal.c
 {% endraw %}
 {% endhighlight %}
 
-###### List Markdown example
+#### List Markdown example
 
 {% highlight text %}
 {% raw %}
@@ -146,7 +146,7 @@ This paragraph contains a list of items.
 {% endraw %}
 {% endhighlight %}
 
-###### Quote Markdown example
+#### Quote Markdown example
 
 {% highlight text %}
 {% raw %}

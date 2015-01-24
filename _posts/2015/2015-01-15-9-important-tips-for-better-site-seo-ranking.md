@@ -48,7 +48,7 @@ If your business is targeting local customers you need to make sure Google knows
 <ol>
 <li>Have your full business address in html on the footer of every page.</li>
 <li>Upload a geositemap to Google's Webmaster Tools.</li>
-<li>Mark up your site using microdata. Here's a handy tool to help you <a href="http://www.geositemapgenerator.com/input">create your geo markup</a>.</li>
+<li>Mark up your site using microdata. Here's a handy tool to help you <a href="http://www.geositemapgenerator.com/input" rel="nofollow">create your geo markup</a>.</li>
 <li>Include your city name/location in your page titles. This is a proven factor in Google Places ranking.</li>
 </ol>
 

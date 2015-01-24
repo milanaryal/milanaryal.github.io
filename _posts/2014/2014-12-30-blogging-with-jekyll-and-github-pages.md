@@ -37,18 +37,18 @@ Here are some websites/blog that were created with Jekyll:
 
 You don't need to be a good coder to blog with Jekyll. Here are the simple steps to blog with Jekyll on GitHub Pages:
 
-###### Step 1
+#### Step 1
 
 Make [GitHub](//github.com) account and create repo `username.github.io`, remember your repo username must be match with GitHub account username.
 
-###### Step 2
+#### Step 2
 
 Download and install GitHub app according to your OS:
 
 * Mac - [mac.github.com](//mac.github.com)
 * Windows - [windows.github.com](//windows.github.com)
 
-###### Step 3
+#### Step 3
 
 Download and setup a good themes from the following popular sites:
 
@@ -102,7 +102,7 @@ A basic Jekyll site usually looks something like this:
 └── sitemap.xml # Site map for the website
 {% endhighlight %}
 
-###### Step 4
+#### Step 4
 
 * With the help of GutHub Windows/Mac client, clone your `username.github.io` and sync/push your theme.
 * Congratulation! You are done.

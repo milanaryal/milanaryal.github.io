@@ -21,7 +21,7 @@ Atom is written using Node.js, CoffeeScript, HTML and LESS. It's then wrapped in
 
 It's clear one of their primary goals is to cater to web developers, being that packages are web language based.
 
-###### So actually, what is Atom text editor?
+#### So actually, what is Atom text editor?
 
 According to Atom wiki,
 
@@ -36,7 +36,7 @@ According to Atom wiki,
 Sublime text is nice but
 here are some [arguments I found](http://stackoverflow.com/questions/22126078/what-is-the-difference-between-sublime-text-and-githubs-atom), why you should **switch to Atom text editor over Sublime text** which you might curious to know:
 
-###### What is the difference between Sublime text and Github's Atom?
+#### What is the difference between Sublime text and Github's Atom?
 
 In addition to the points from prior answers, it's worth clarifying the differences between these two products from the perspective of choices made in their development.
 
@@ -54,25 +54,25 @@ I see these products as complementary. The fact that they share similar visuals 
 
 ### Things on point
 
-###### How is Atom different from Sublime?
+#### How is Atom different from Sublime?
 
 * Atom is an open source text editor/IDE, built on JavaScript/HTML/CSS.
 * Sublime Text is a commercial product, built on C/C++.
 * Comparable to Atom is [Adobe Brackets](http://brackets.io/), another open source text editor/IDE built on JavaScript/HTML/CSS. Be minded that this makes Brackets more oriented towards Web development, specially in the front end.
 * Advantages of open source projects are faster rate of development and, of course, price.
 
-###### Does it include IDE features like build tools, function definition jumps, documentations, etc.?
+#### Does it include IDE features like build tools, function definition jumps, documentations, etc.?
 
 * The short answer is yes, yes, and yes. The app is completely modular. Open source will give people the freedom to fill the gaps on several of these features.
 
-###### Has anyone using Sublime point out the differences?
+#### Has anyone using Sublime point out the differences?
 
 * Advantages of Atom is entry-level hackability, since it's built on the same code that powers Web sites.
 * Advantages of Sublime Text is performance, as it doesn't need to run on top of Node.js, and it's a more mature product, about to reach a stable version
 * There are a long list of minor differences that can be included in the comments (I wish this markdown could be able to draw a table for comparisons, but that's another issue).
 * Because of Atom's rapid turnout, I am afraid some of differences I list here will become outdated over time.
 
-###### Can I use the themes, schemes and packages from Sublime as is, like Sublime could do with text mate?
+#### Can I use the themes, schemes and packages from Sublime as is, like Sublime could do with text mate?
 
 * The short answer is no, but because of Atom's hackability, it will be easy to retool packages from other editors to Atom.
 
