@@ -41,7 +41,6 @@ If you enjoy the content found here, you can grap your copy of the <i class="fa 
 
 If you have any questions, comments, or would just like to say hello, please don't hesitate to drop me a line on <i class="fa fa-envelope-o"></i> <a href="http://www.google.com/recaptcha/mailhide/d?k=01bN4PKtERxR0aeMR6mae2dw==&amp;c=CI3q6gqS8ml9GNRRqB549A0aadNxkjwONFjvlMYKApc=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501bN4PKtERxR0aeMR6mae2dw\75\75\46c\75CI3q6gqS8ml9GNRRqB549A0aadNxkjwONFjvlMYKApc\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">[show email]</a> or <i class="fa fa-twitter"></i> [tweet](//twitter.com/MilanAryal). I'll be sure to respond in a timely manner!
 
-### Licensing
+### License
 
-* Code licensed under [MIT License](//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE),
-* Documentation licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
+All code licensed under [MIT License](//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE) and documentation under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
