@@ -18,7 +18,7 @@ layout: null
     HTML5 Boilerplate
     Google Fonts
     Font Awesome
-	Other great open source project helped me build this site.
+    Other great open source project helped me build this site.
 
 # TECHNOLOGY COLOPHON
 
