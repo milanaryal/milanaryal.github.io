@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="description" content="{% if page.home == 'true' %}{{ site.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% endif %}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.author.twitter }}">
@@ -10,7 +10,7 @@
     <meta name="twitter:description" content="{% if page.home == 'true' %}{{ site.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 28 }}{% endif %}">
     <meta name="twitter:image" content="{{ site.url }}{{ site.icon }}">
     <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-	{% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     <title>{% if page.home == 'true' %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
