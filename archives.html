@@ -8,8 +8,7 @@ permalink: /archives/
 redirect_from: /archive/
 ---
 
-<section class="archives">
-<ul>
+<ul class="archives">
   {% for post in site.posts %}
 
     {% unless post.next %}
@@ -32,4 +31,3 @@ redirect_from: /archive/
     </li>
   {% endfor %}
 </ul>
-</section>
