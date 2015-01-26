@@ -16,15 +16,15 @@ The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic;
 Join me on the following networks and/or websites:
 
 <ul class="list-inline text-center">
-  <li><a rel="me" href="//twitter.com/MilanAryal"><i class="fa fa-twitter fa-stack-2x">&nbsp;</i><br>Twitter</a></li>
-  <li><a rel="me" href="//google.com/+MilanAryal"><i class="fa fa-google-plus fa-stack-2x">&nbsp;</i><br>Google+</a></li>
-  <li><a rel="me" href="//facebook.com/considermilan"><i class="fa fa-facebook fa-stack-2x">&nbsp;</i><br>Facebook</a></li>
-  <li><a rel="me" href="//github.com/MilanAryal"><i class="fa fa-github fa-stack-2x">&nbsp;</i><br>GitHub</a></li>
-  <li><a rel="me" href="//linkedin.com/in/MilanAryal"><i class="fa fa-linkedin fa-stack-2x">&nbsp;</i><br>LinkedIn</a></li>
-  <li><a rel="me" href="//milanaryal.tumblr.com"><i class="fa fa-tumblr fa-stack-2x">&nbsp;</i><br>Tumblr</a></li>
-  <li><a rel="me" href="//instagram.com/milanaryal"><i class="fa fa-instagram fa-stack-2x">&nbsp;</i><br>Instagram</a></li>
-  <li><a rel="me" href="//vine.com/MilanAryal"><i class="fa fa-vine fa-stack-2x">&nbsp;</i><br>Vine</a></li>
-  <li><a rel="me" href="//pinterest.com/milanaryal"><i class="fa fa-pinterest fa-stack-2x">&nbsp;</i><br>Pinterest</a></li>
+  <li><a rel="me" href="//twitter.com/MilanAryal"><i class="fa fa-twitter fa-stack-2x"></i><br>Twitter</a></li>
+  <li><a rel="me" href="//google.com/+MilanAryal"><i class="fa fa-google-plus fa-stack-2x"></i><br>Google+</a></li>
+  <li><a rel="me" href="//facebook.com/considermilan"><i class="fa fa-facebook fa-stack-2x"></i><br>Facebook</a></li>
+  <li><a rel="me" href="//github.com/MilanAryal"><i class="fa fa-github fa-stack-2x"></i><br>GitHub</a></li>
+  <li><a rel="me" href="//linkedin.com/in/MilanAryal"><i class="fa fa-linkedin fa-stack-2x"></i><br>LinkedIn</a></li>
+  <li><a rel="me" href="//milanaryal.tumblr.com"><i class="fa fa-tumblr fa-stack-2x"></i><br>Tumblr</a></li>
+  <li><a rel="me" href="//instagram.com/milanaryal"><i class="fa fa-instagram fa-stack-2x"></i><br>Instagram</a></li>
+  <li><a rel="me" href="//vine.com/MilanAryal"><i class="fa fa-vine fa-stack-2x"></i><br>Vine</a></li>
+  <li><a rel="me" href="//pinterest.com/milanaryal"><i class="fa fa-pinterest fa-stack-2x"></i><br>Pinterest</a></li>
 </ul>
 
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.
