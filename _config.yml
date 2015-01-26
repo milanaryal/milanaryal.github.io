@@ -1,7 +1,7 @@
 # Jekyll config file http://jekyllrb.com/docs/configuration/
 
 # Handling reading
-exclude:         ["README.md", "LICENSE", "CNAME"]
+exclude:         ["README.md","LICENSE","CNAME","Gemfile"]
 encoding:        "utf-8"
 markdown_ext:    "markdown,mkdown,mkdn,mkd,md"
 textile_ext:     "textile"
