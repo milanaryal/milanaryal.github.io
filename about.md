@@ -11,21 +11,75 @@ My name is Milan Aryal and I'm a student living in Kathmandu, Nepal who loves de
 
 The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification. :blush:
 
-### Let's be friends
+<h3 class="section-heading">Let's be friends</h3>
 
 Join me on the following networks and/or websites:
 
-<ul class="list-inline text-center">
-  <li><a rel="me" href="//twitter.com/MilanAryal"><i class="fa fa-twitter fa-stack-2x"></i><br>Twitter</a></li>
-  <li><a rel="me" href="//google.com/+MilanAryal"><i class="fa fa-google-plus fa-stack-2x"></i><br>Google+</a></li>
-  <li><a rel="me" href="//facebook.com/considermilan"><i class="fa fa-facebook fa-stack-2x"></i><br>Facebook</a></li>
-  <li><a rel="me" href="//github.com/MilanAryal"><i class="fa fa-github fa-stack-2x"></i><br>GitHub</a></li>
-  <li><a rel="me" href="//linkedin.com/in/MilanAryal"><i class="fa fa-linkedin fa-stack-2x"></i><br>LinkedIn</a></li>
-  <li><a rel="me" href="//milanaryal.tumblr.com"><i class="fa fa-tumblr fa-stack-2x"></i><br>Tumblr</a></li>
-  <li><a rel="me" href="//instagram.com/milanaryal"><i class="fa fa-instagram fa-stack-2x"></i><br>Instagram</a></li>
-  <li><a rel="me" href="//vine.com/MilanAryal"><i class="fa fa-vine fa-stack-2x"></i><br>Vine</a></li>
-  <li><a rel="me" href="//pinterest.com/milanaryal"><i class="fa fa-pinterest fa-stack-2x"></i><br>Pinterest</a></li>
-</ul>
+                <ul class="list-inline text-center">
+                    <li>
+                        <a rel="me" href="//twitter.com/MilanAryal">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-twitter fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a rel="me" href="//facebook.com/considermilan">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-facebook fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="me" href="//google.com/+MilanAryal">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-google-plus fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a rel="me" href="http://linkedin.com/in/MilanAryal">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-linkedin fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="me" href="//github.com/{{ site.author.github }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a rel="me" href="//pinterest.com/milanaryal">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-pinterest fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a rel="me" href="//instagram.com/milanaryal">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-instagram fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a rel="me" href="//vine.com/MilanAryal">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-vine fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a rel="me" href="//milanaryal.tumblr.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-tumblr fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
 
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.
 
@@ -39,10 +93,10 @@ Initially this blog was established as a means to keep up with my own interest i
 
 If you enjoy the content found here, you can grap your copy of the <i class="fa fa-rss"></i> [feed](http://milanaryal.com/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
-### Contact
+<h3 class="section-heading">Contact</h3>
 
 If you have any questions, comments, or would just like to say hello, please don't hesitate to drop me a line in <i class="fa fa-github"></i> [MilanAryal/feedback](https://github.com/MilanAryal/feedback), otherwise, feel free to e-mail me at <i class="fa fa-envelope-o"></i> <a href="http://www.google.com/recaptcha/mailhide/d?k=01bN4PKtERxR0aeMR6mae2dw==&amp;c=CI3q6gqS8ml9GNRRqB549A0aadNxkjwONFjvlMYKApc=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501bN4PKtERxR0aeMR6mae2dw\75\75\46c\75CI3q6gqS8ml9GNRRqB549A0aadNxkjwONFjvlMYKApc\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">[show email]</a> or <i class="fa fa-twitter"></i> [tweet](//twitter.com/MilanAryal). I'll be sure to respond in a timely manner!
 
-### License
+<h3 class="section-heading">License</h3>
 
 All code licensed under [MIT License](//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE) and documentation under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
