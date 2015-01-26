@@ -13,23 +13,25 @@ The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic;
 
 ### Let's be friends
 
-* <i class="fa fa-twitter"></i> [Twitter](//twitter.com/MilanAryal)
-* <i class="fa fa-google-plus"></i> [Google+](//google.com/+MilanAryal)
-* <i class="fa fa-facebook"></i> [Facebook](//facebook.com/considermilan)
-* <i class="fa fa-github"></i> [GitHub](//github.com/MilanAryal)
-* <i class="fa fa-linkedin"></i> [LinkedIn](//linkedin.com/in/milanaryal)
-* <i class="fa fa-tumblr"></i> [Tumblr](//milanaryal.tumblr.com)
-* <i class="fa fa-instagram"></i> [Instagram](//instagram.com/milanaryal)
-* <i class="fa fa-vine"></i> [Vine](//vine.com/MilanAryal)
-* <i class="fa fa-pinterest"></i> [Pinterest](//pinterest.com/milanaryal)
+Join me on the following networks and/or websites:
+
+<ul class="list-inline text-center">
+  <li><a rel="me" href="//twitter.com/MilanAryal"><i class="fa fa-twitter fa-stack-2x">&nbsp;</i><br>Twitter</a></li>
+  <li><a rel="me" href="//google.com/+MilanAryal"><i class="fa fa-google-plus fa-stack-2x">&nbsp;</i><br>Google+</a></li>
+  <li><a rel="me" href="//facebook.com/considermilan"><i class="fa fa-facebook fa-stack-2x">&nbsp;</i><br>Facebook</a></li>
+  <li><a rel="me" href="//github.com/MilanAryal"><i class="fa fa-github fa-stack-2x">&nbsp;</i><br>GitHub</a></li>
+  <li><a rel="me" href="//linkedin.com/in/MilanAryal"><i class="fa fa-linkedin fa-stack-2x">&nbsp;</i><br>LinkedIn</a></li>
+  <li><a rel="me" href="//milanaryal.tumblr.com"><i class="fa fa-tumblr fa-stack-2x">&nbsp;</i><br>Tumblr</a></li>
+  <li><a rel="me" href="//instagram.com/milanaryal"><i class="fa fa-instagram fa-stack-2x">&nbsp;</i><br>Instagram</a></li>
+  <li><a rel="me" href="//vine.com/MilanAryal"><i class="fa fa-vine fa-stack-2x">&nbsp;</i><br>Vine</a></li>
+  <li><a rel="me" href="//pinterest.com/milanaryal"><i class="fa fa-pinterest fa-stack-2x">&nbsp;</i><br>Pinterest</a></li>
+</ul>
 
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.
 
 Nothing brings me more pleasure than making something out of nothing. Even when the results are far from my ideal expectations, I find the whole ceremony of creativity completely enthralling.
 
 I'd like to think that I'm very happy person, but I find the art that strikes me truest is the sad, depressing sort, I love R&B/hip-hop music, post-apocalyptic fiction, and movie trailers that can make me squirt tears in under two minutes. Go figure. :wink:
-
----
 
 In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, business, or the blogosphere among other web culture topics.
 
