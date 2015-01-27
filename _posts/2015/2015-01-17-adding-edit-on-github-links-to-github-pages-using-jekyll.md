@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding "Edit on GitHub" links to GitHub Pages using Jekyll
+title: 'Adding "Edit on GitHub" links to GitHub Pages using Jekyll'
 date: 2015-01-17T01:00:53+05:45
 ---
 
