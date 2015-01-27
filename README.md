@@ -11,7 +11,7 @@ Please learn, read, and use any code from this website. All content despite bein
 
 #### The MIT License (MIT)
 
-Copyright (c) Milan Aryal
+Copyright (c) 2015 Milan Aryal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
