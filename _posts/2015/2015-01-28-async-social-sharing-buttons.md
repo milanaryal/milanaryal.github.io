@@ -51,7 +51,7 @@ First make sure you have [load recent jQuery library](https://developers.google.
 
 Just simple following code before `</body>` to load jQuery library:
 
-{% highlight javascript %}
+{% highlight html %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 {% endhighlight %}
 
