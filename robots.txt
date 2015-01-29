@@ -3,11 +3,8 @@ layout: null
 ---
 
 # robotstxt.org/
-# Cooperating web crawlers and other web robots
 
+# Allow crawling of all content
 User-agent: *
 Disallow:
-Allow: /
-Disallow: /404.html
-
-Sitemap: http://milanaryal.com/sitemap.xml
+sitemap: {{ site.url }}/sitemap.xml
