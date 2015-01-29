@@ -57,7 +57,7 @@ With [Thierry Koblenz's excellent technique](http://alistapart.com/article/creat
 <figure>
   <!-- Copy & Pasted from YouTube -->
   <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M?rel=0&amp;hd=1&amp;theme=light" frameborder="0" allowfullscreen></iframe>
-  <figcaption>Whatever YouTube iframe embed code you paste within the `.video-wrapper`, you'll see it presented in a fluid 16:9 box.</figcaption>
+  <figcaption>Whatever YouTube iframe embed code you paste within the <code>.video-wrapper</code>, you'll see it presented in a fluid 16:9 box.</figcaption>
 </figure>
 
 We can again look to Thierry's solution for adding additional CSS and imposing aspect ratio.

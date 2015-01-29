@@ -68,10 +68,4 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', '{{ site.ga_trackid }}', 'auto');
   ga('send', 'pageview');
-  
-  // Event tracking
-  var downloadLink = document.getElementById('btn');
-  addListener(downloadLink, 'click', function() {
-    ga('send', 'event', 'btn', 'click', 'post-content');
-  });
 </script>
