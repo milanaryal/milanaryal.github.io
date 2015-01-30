@@ -2,6 +2,7 @@
 layout: post
 title: "Pointers for group interviews"
 date: 2010-05-03T23:02:31+05:45
+redirect_from: "/2010/05/pointers-for-group-interviews/"
 ---
 
 Imagine showing up for a job interview only to discover four or more applicants waiting to speak with the hiring manager at the same time as you. It’s a predicament job seekers are more likely to face as companies streamline the recruitment process. Interviewing multiple candidates at once also provides employers the opportunity to observe how individuals behave when under pressure in a group setting.

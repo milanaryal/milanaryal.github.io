@@ -3,9 +3,10 @@ layout: post
 title: "Hello, world!"
 excerpt: "My first post on GitHub Pages with Jekyll."
 date: 2014-12-03T21:47:57+05:45
+redirect_from: "/2014/12/hello-world/"
 ---
 
-I finally migrated this site to [GitHub pages](//pages.github.com) using [Jekyll](//jekyllrb.com).
+I finally migrated this site to [GitHub Pages](//pages.github.com) using [Jekyll](//jekyllrb.com).
 
 > Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site generator". Example Jekyll websites.
 

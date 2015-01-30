@@ -14,7 +14,7 @@ markdown:        kramdown
 highlighter:     pygments
 
 # Outputting
-permalink:        /:year/:month/:title/
+permalink:        /:year/:title/
 relative_permalinks: true
 paginate_path:    /page:num/
 paginate:         5

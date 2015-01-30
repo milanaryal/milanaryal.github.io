@@ -3,9 +3,12 @@ layout: post
 title: "Blogging with Jekyll and GitHub Pages"
 excerpt: "Transform your plain text into static websites and blogs."
 date: 2014-12-30T19:47:46+05:45
+redirect_from: "/2014/12/blogging-with-jekyll-and-github-pages/"
 ---
 
-I recently migrated my blog to [GitHub Pages](//pages.github.com) using an awesome open source project [Jekyll](http://jekyllrb.com). It's really fun blogging with Jekyll.
+I recently migrated my blog to [GitHub Pages](//pages.github.com) using an awesome open source project [Jekyll](http://jekyllrb.com). It's really fun blogging with Jekyll. If you are not enjoying blogging with other CMS platform then you should really try Jekyll.
+
+After reading a lot of documentation, I found following quickest way to set up a Jekyll powered blog on GitHub Pages:
 
 ### Jekyll's simple purpose
 

@@ -2,6 +2,7 @@
 layout: post
 title: "How to properly clean gadgets"
 date: 2012-11-12T19:15:45+05:45
+redirect_from: "/2012/11/how-to-properly-clean-gadgets/"
 ---
 
 *Without ruining them in the process*

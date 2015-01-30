@@ -3,6 +3,7 @@ layout: post
 title: "Integrating social meta tags into WordPress, Tumblr and Blogger"
 excerpt: "Tips for integrating social meta tags  into popular CMS systems like WordPress, Tumblr and Blogger."
 date: 2014-11-27T19:39:45+05:45
+redirect_from: "/2014/11/integrating-social-meta-tags-into-wordpress-tumblr-and-blogger/"
 ---
 
 Social media meta tags make your content look better on social media. You can control how your post or update shows up in news feeds. And handsome social media updates make your content more appealing.

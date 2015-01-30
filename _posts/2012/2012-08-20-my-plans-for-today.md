@@ -3,6 +3,7 @@ layout: post
 title: "My plans for today"
 author: "Steve Maraboli"
 date: 2012-08-20T09:25:48+05:45
+redirect_from: "/2012/08/my-plans-for-today/"
 ---
 
 I woke up early today, excited over all I get to do before the clock strikes midnight.

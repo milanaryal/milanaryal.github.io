@@ -2,6 +2,7 @@
 layout: post
 title: "Programming languages used in most popular websites"
 date: 2015-01-02T22:16:12+05:45
+redirect_from: "/2015/01/programming-languages-used-in-most-popular-websites/"
 ---
 
 The most popular (i.e., the most visited) websites have in common that they are dynamic websites. Their development typically involves server side coding, client side coding and database technology. The programming languages applied to deliver similar dynamic web content however vary vastly between sites.

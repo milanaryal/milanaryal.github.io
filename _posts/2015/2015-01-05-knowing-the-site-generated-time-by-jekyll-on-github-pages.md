@@ -2,6 +2,7 @@
 layout: post
 title: "Knowing the site generated time by Jekyll on GitHub Pages"
 date: 2015-01-05T17:08:17+05:45
+redirect_from: "/2015/01/knowing-the-site-generated-time-by-jekyll-on-github-pages/"
 ---
 
 If you are using Jekyll to generate your blog on GitHub Pages, you might want too know the last exact site generated time as the Jekyll generate and keep the files on `_site`.

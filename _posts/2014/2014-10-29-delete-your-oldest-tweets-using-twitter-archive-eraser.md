@@ -3,6 +3,7 @@ layout: post
 title: "Delete your oldest tweets using Twitter Archive Eraser"
 excerpt: "A simple application that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so."
 date: 2014-10-29T22:34:25+05:45
+redirect_from: "/2014/10/delete-your-oldest-tweets-using-twitter-archive-eraser/"
 ---
 
 Looking for the awesome Twitter Archive Eraser?
@@ -17,14 +18,14 @@ Thus, a simple application called "[Twitter Archive Eraser](//martani.github.io/
 
 Download and setup the Twitter Archive Eraser app by visiting the link given below:
 
-<p><a class="btn btn-primary" href="//martani.github.io/Twitter-Archive-Eraser" onClick="ga('send', 'event', 'Click', 'Direct link', 'Direct link Twitter Archive Eraser');">Direct link →</a></p>
+<p><a class="btn btn-primary" href="//martani.github.io/Twitter-Archive-Eraser" onClick="ga('send', 'event', 'click', 'direct link', 'direct link twitter archive eraser');">Direct link →</a></p>
 
 There is two kinds of download app available:
 
 1. Standalone (portable) version: This version requires no installation and can be run directly.
 2. Installer version: The installer takes care of downloading the required libraries (.NET framework etc.), and installs the application to the start menu.
 
-### How to use "Twitter Archive Eraser"
+### How to use Twitter Archive Eraser
 
 The application is the simplest possible, it works in 3 steps: authenticate Twitter; select which tweets you want to delete; erase them.
 
@@ -73,7 +74,7 @@ You can find the code of the application on github: [github.com/martani/Twitter-
 
 Sadly, this app works only with Windows OS and yet developer is not further planning to develop this app for any other OS like Mac or linux. But don't worry you can use apps like VMware or VirtualBox to switch to Windows and use the Windows apps.
 
-### Video explaining how to use "Twitter Archive Eraser"
+### Video explaining how to use Twitter Archive Eraser
 
 <figure>
   <iframe width="560" height="315" src="http://www.youtube.com/embed/a01T_WPkQuU?rel=0&amp;theme=light" frameborder="0" allowfullscreen></iframe>

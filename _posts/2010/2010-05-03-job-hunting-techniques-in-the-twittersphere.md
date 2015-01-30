@@ -2,6 +2,7 @@
 layout: post
 title: "Job hunting techniques in the Twittersphere"
 date: 2010-05-03T22:51:49+05:45
+redirect_from: "/2010/05/job-hunting-techniques-in-the-twittersphere/"
 ---
 
 Gaining a great deal of support from career industry professionals, recruiters and human resource specialists worldwide, Twitter is revolutionizing how people hunt for jobs in today’s economy.

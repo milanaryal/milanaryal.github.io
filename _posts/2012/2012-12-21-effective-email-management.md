@@ -2,6 +2,7 @@
 layout: post
 title: "Effective email management"
 date: 2012-12-21T19:22:25+05:45
+redirect_from: "/2012/12/effective-email-management/"
 ---
 
 Those good old letter boxes are now on the verge of extinction! Email inboxes have taken charge, making letterboxes a nostalgic memory. Whether you like it or not, email has changed the way of communication to a great extent. Not only that, it has also made communication faster and less complicated, making it easier for people to stay in touch with each other sans the hassle of glue stamps and post-office visits. Emails have also made communication more regular and hence more specific than paper letters, however, there are instances when you get tired of managing your email account and the overflowing inbox. It is now well-known that unorganised email management decidedly affects productivity negatively. Being a little organised would help you minimise the time that you spend browsing your mails, making it easier for you to focus on your core job. Read the following section to better your email management skills.

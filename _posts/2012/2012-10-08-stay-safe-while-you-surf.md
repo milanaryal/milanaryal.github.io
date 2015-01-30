@@ -2,6 +2,7 @@
 layout: post
 title: "Stay safe while you surf"
 date: 2012-10-08T09:58:54+05:45
+redirect_from: "/2012/10/stay-safe-while-you-surf/"
 ---
 
 *7 tips to remain secure while using public Wi-Fi hotspots*

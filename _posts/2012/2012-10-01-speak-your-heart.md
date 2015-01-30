@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Speak your heart"
-excerpt: "That night was my big chance and all I did was just sit there…"
+excerpt: "That night was my big chance and all I did was just sit there..."
 date: 2012-10-01T15:20:45
+redirect_from: "/2012/10/speak-your-heart/"
 ---
 
 *That night was my big chance and all I did was just sit there…*
@@ -58,6 +59,6 @@ Finally, the diary ended when it said, “today I will tell her I love her”. I
 ---
 
 <figure>
-  <iframe width="560" height="315" src="//www.youtube.com/embed/aPpeaETF1qE?rel=0&amp;theme=light"" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/aPpeaETF1qE?rel=0&amp;theme=light" frameborder="0" allowfullscreen></iframe>
   <figcaption>Music: YouTube, <a href="http://youtu.be/aPpeaETF1qE">Lizz Wright</a></figcaption>
 </figure>

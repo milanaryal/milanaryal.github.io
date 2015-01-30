@@ -3,6 +3,7 @@ layout: post
 title: "Practical knows-hows for life"
 excerpt: "Things I wish I'd know before I went out into the real world"
 date: 2014-12-05T20:21:09+0545
+redirect_from: "/2014/12/practical-knows-hows-for-life/"
 ---
 
 _Things I wish I'd know before I went out into the real world_
