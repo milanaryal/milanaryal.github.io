@@ -16,7 +16,7 @@ description: "One day I will find the words, and they will be simple."
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }} &middot; <span title="{{ post.content | number_of_words }} words">{% include reading_time_paginator.html %} read</span></p>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }} &middot; <span title="{{ post.content | number_of_words }} words">{% include reading_time_paginator.html %} read</span></p>
 </div>
 <hr>
 {% endfor %}
