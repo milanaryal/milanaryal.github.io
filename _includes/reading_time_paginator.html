@@ -1,0 +1,30 @@
+{% comment %} 
+prints friendly human readable reading time 
+
+divided_by doesn't round, so assuming 180 WPM we use:
+<90  = 30 seconds
+<270 = 1 minute
+<450 = 2 minutes
+<630 = 3 minutes
+<810 = 4 minutes
+<990 = 5 minutes
+{% endcomment %}
+
+{% assign words = post.content | number_of_words %}
+{% if words <= 90 %}
+{% assign reading_time = "30 sec" %}
+{% elsif words < 270 %}
+{% assign reading_time = "1 min" %}
+{% elsif words < 450 %}
+{% assign reading_time = "2 min" %}
+{% elsif words < 630 %}
+{% assign reading_time = "3 min" %}
+{% elsif words < 810 %}
+{% assign reading_time = "4 min" %}
+{% elsif words < 990 %}
+{% assign reading_time = "5 min" %}
+{% else %}
+{% assign reading_time = words | divided_by:180 | append:" min" %}
+{% endif %}
+
+{{ reading_time }}
