@@ -44,7 +44,7 @@ Some of these services already (smartly) provide their scripts in an async fashi
 
 This will create a new script tag, add in the social media JavaScript in the src attribute and add the tag inside the head of the document.
 
-### Asynchronously loading social JavaScript with jQuery
+### Asynchronously loading social JavaScript using jQuery
 
 If you prefer to use jQuery when working with JavaScript, because it just makes things so much easier. [jQuery has a handy method called `getScript()`](http://api.jquery.com/jQuery.getScript/) which does the above but with fewer lines of code.
 
