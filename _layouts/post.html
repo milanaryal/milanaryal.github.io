@@ -12,7 +12,7 @@ layout: default
                     {% if page.subtitle %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% endif %}
-                    <span class="meta">{{ page.date | date: "%B %-d, %Y" }} &middot; <span title="{{ content | number_of_words }} words">{% include reading_time.html %} read</span></span>
+                    <span class="meta"><span data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date_to_rfc822 }}">{{ page.date | date: "%B %-d, %Y" }}</span> &middot; <span data-toggle="tooltip" data-placement="bottom" title="{{ content | number_of_words }} words">{% include reading_time.html %} read</span></span>
                 </div>
             </div>
         </div>
