@@ -79,7 +79,7 @@ Here's the Bootstrap CSS:
 .embed-responsive.embed-responsive-4by3 {
   padding-bottom: 75%;
 }
-{% highlight html %}
+{% endhighlight %}
 
 Rules are directly applied to `<iframe>`, `<embed>`, `<video>`, and `<object>` elements; optionally use an explicit descendant class `.embed-responsive-item` when you want to match the styling for other attributes.
 
