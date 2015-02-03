@@ -1,0 +1,27 @@
+/**
+ * Link placement and hover behavior.
+ */
+.header-link {
+  opacity: 0;
+  text-decoration: none;
+  font-size: 90%;
+  padding-left: 6px;
+}
+*:hover > .header-link,
+.header-link:focus  {
+  /* To fade links as they appear, change transition-property from 'color' to 'all' */
+  opacity: 1;
+  -webkit-transition: color .16s linear;
+  -moz-transition: color .16s linear;
+  -o-transition: color .16s linear;
+  transition: color .16s linear;
+}
+
+/**
+ * Reasonable default styles.
+ * Feel free to override or replace these with your own.
+ */
+.header-link:link    { color: #DFD487; }
+.header-link:visited { color: #DFD487; }
+.header-link:hover   { color: #EC7963;text-decoration: none; }
+.header-link:active  { color: #EC7963; }

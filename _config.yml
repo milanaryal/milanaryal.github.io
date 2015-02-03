@@ -45,3 +45,10 @@ ga_trackid:       "UA-42092423-1"
 # Custom vars
 github:
   repo:           https://github.com/MilanAryal/milanaryal.github.io
+  
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          /assets/_scss
+  style:            :compressed
