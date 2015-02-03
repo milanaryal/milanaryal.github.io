@@ -7,7 +7,7 @@ markdown_ext:    "markdown,mkdown,mkdn,mkd,md"
 textile_ext:     "textile"
 
 # Plugins
-gems:            ["jemoji","jekyll-redirect-from","jekyll-sitemap"]
+gems:            ["jekyll-mentions","jemoji","jekyll-redirect-from","jekyll-sitemap"]
 
 # Conversion
 markdown:        kramdown
@@ -29,7 +29,7 @@ url:              http://milanaryal.com
 
 # Site settings
 title:            Milan Aryal
-description:      "One day I will find the words, and they will be simple."
+description:      "Livin' on the edge of web standards."
 header-img:       "/assets/img/home-bg.jpg"
 author:
   name:           Milan Aryal
@@ -45,10 +45,3 @@ ga_trackid:       "UA-42092423-1"
 # Custom vars
 github:
   repo:           https://github.com/MilanAryal/milanaryal.github.io
-  
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:         _scss
-  style:            :compressed
