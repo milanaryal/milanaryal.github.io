@@ -101,8 +101,11 @@ When Bootstrap 3.2 came out, it came out with an additional helper class to make
 
 Notice how the `iframe` doesn't include `frameborder="0"`. This is because Bootstrap will actually normalize any ugly outlines for you with this helper class.
 
-<iframe height='350' scrolling='no' src='//codepen.io/MilanAryal/embed/myByRw/' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MilanAryal/pen/myByRw/'>myByRw</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
+<figure>
+  <iframe height='350' scrolling='no' src='//codepen.io/MilanAryal/embed/myByRw/' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MilanAryal/pen/myByRw/'>myByRw</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.
+  </iframe>
+    <figcaption>Responsive video embeds that maintain aspect ratio</figcaption>
+</figure>
 
 This method also works to have responsive `iframe` object for like SlideShare.
 
@@ -163,4 +166,4 @@ $(document).ready(function() {
 
 ---
 
-Hope that helps someone!
+Hope that helps someone! :thumbsup:
