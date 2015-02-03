@@ -50,5 +50,5 @@ github:
 #
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          assets/_scss
+  sass_dir:         _scss
   style:            :compressed
