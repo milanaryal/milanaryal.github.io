@@ -22,6 +22,8 @@ If you would still like to open external links in a new window, follow these ins
 <a href="http://milanaryal.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">This link will open in new window/tab</a>
 {% endhighlight %}
 
+---
+
 ## Open link in a new window using jQuery
 
 ### Using jQuery to open external links in a new browser tab
@@ -82,7 +84,6 @@ window.open( $(this).attr('href') );
 return false;
 });
 {% endhighlight %}
-
 
 #### Technique 6
 
@@ -177,9 +178,9 @@ a[target="_blank"]:after {
 {% endhighlight %}
 
 <figure>
-<p data-height="268" data-theme-id="0" data-slug-hash="WbZPrm" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/WbZPrm/'>External link indicator using Font Awesome</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-<figcaption>External link indicator using Font Awesome</figcaption>
+  <iframe height='350' scrolling='no' src='//codepen.io/MilanAryal/embed/WbZPrm/' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MilanAryal/pen/WbZPrm/'>External link indicator using Font Awesome</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.
+  </iframe>
+    <figcaption>External link indicator using Font Awesome</figcaption>
 <figure>
 
 #### Technique D
