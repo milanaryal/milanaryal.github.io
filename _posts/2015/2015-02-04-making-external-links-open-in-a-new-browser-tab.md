@@ -6,7 +6,7 @@ date: 2015-02-04T19:25:52+05:45
 
 Take note that according to most usability experts, opening links in a new browser tab is considered bad practice.
 
-If you would still like to open external links in a new window, follow these instructions:
+If you would still like to open external links in a new browser tab/window, follow these instructions:
 
 ## Open link in a new browser tab
 
@@ -146,9 +146,11 @@ $('a').filter(function() {
 
 ---
 
-### Adding external link indicator using CSS
+## Add external link indicator
 
 Indicating external links with different styles is good practice. This lets user to know the links will open in a new tab.
+
+### Adding external link indicator using CSS
 
 #### Technique A
 
@@ -181,9 +183,9 @@ a[target="_blank"]:after {
 }
 {% endhighlight %}
 
-### Technique D
+#### Technique D
 
-The previous selector relies on the target tag. This selector will find all links to domains other than your own and the Font Awesome external link `.fa-external-link` (<i class="fa fa-external-link">) indicator.
+The previous selector relies on the target tag. This selector will find all links to domains other than your own and the Font Awesome external link `.fa-external-link` <i class="fa fa-external-link"> indicator.
 
 {% highlight css %}
 a:not( [href*='yourdomain.com'] ):not( [href^='#'] ):not( [href^='/'] ):not( [href^=mailto] ):not( [href^=tel] ):not( [href^=callto]:not( [href^=skype] ):after {
@@ -234,7 +236,7 @@ a[href^="javascript:"]:after {
 
 ---
 
-## Opening all the links in a new browser tab
+## Open all the links in a new browser tab
 
 If you want open you all links in a new browser tab/window then use the following procedure:
 
