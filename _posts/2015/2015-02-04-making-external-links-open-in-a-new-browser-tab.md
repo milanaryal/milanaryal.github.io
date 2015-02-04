@@ -6,7 +6,7 @@ date: 2015-02-04T19:25:52+05:45
 
 Take note that according to most usability experts, opening links in a new browser tab is considered bad practice.
 
-If you would still like to open external links in a new browser tab/window, follow these instructions:
+If you would still like to open external links in a new browser tab/window, follow these instructions.
 
 ## Open link in a new browser tab
 
@@ -110,7 +110,7 @@ Target all the external link and add `.external` class so that you can add extra
 
 ### Targetting only external links using jQuery
 
-#### Technique 1
+#### Technique I
 
 {% highlight javascript %}
 $.expr[':'].external = function(obj) {
@@ -119,13 +119,13 @@ $.expr[':'].external = function(obj) {
 $('a:external').addClass('external');
 {% endhighlight %}
 
-#### Technique 2
+#### Technique II
 
 {% highlight javascript %}
 $('a:not([href^="http://your-website.com"]):not([href^="#"]):not([href^="/"])').addClass('external');
 {% endhighlight %}
 
-#### Technique 3
+#### Technique III
 
 {% highlight javascript %}
 $('a').each(function() {
@@ -136,7 +136,7 @@ $('a').each(function() {
 });
 {% endhighlight %}
 
-#### Technique 4
+#### Technique IV
 
 {% highlight javascript %}
 $('a').filter(function() {
@@ -200,7 +200,7 @@ a:not( [href*='yourdomain.com'] ):not( [href^='#'] ):not( [href^='/'] ):not( [hr
     <figcaption>External link indicator using Font Awesome</figcaption>
 </figure>
 
-#### Technique D
+#### Technique E
 
 With pure CSS you can achieve this by setting all links to have the external treatment and using the cascade w/ attribute selectors to target and unset your exclusions. This technique probably won’t work on all browsers (*ahem* oldIE), but it's handy when you don’t have complete control over how your markup is created—like in a CMS with inconsistant modules/plugins that write markup—where you have a mix of absolute and relative links and no way to apply an `class="external"`, `rel="external"`, `target="_blank"`, etc. and you don’t want to rely on JavaScript.
 
@@ -236,15 +236,15 @@ a[href^="javascript:"]:after {
 
 ---
 
-## Open all the links in a new browser tab
+## Open all links in a new browser tab
 
-If you want open you all links in a new browser tab/window then use the following procedure:
+If you want open you all links in a new browser tab/window then use these procedure.
 
 ### Using jQuery to open all links in a new browser tab
 
 In case if you like to make open all the links (including external and internal) in a new tab/window:
 
-#### Technique I
+#### Technique A1
 
 {% highlight javascript %}
 $(document).ready(function() {
@@ -252,7 +252,7 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-#### Technique II
+#### Technique B2
 
 {% highlight javascript %}
 $('a').click(function() {
@@ -260,7 +260,7 @@ $('a').click(function() {
 });
 {% endhighlight %}
 
-#### Technique III
+#### Technique C3
 
 The example below only targets links in a `#content` area. Scoping down like that might be a good idea in case your menus are dynamic and create full URLs.
 
