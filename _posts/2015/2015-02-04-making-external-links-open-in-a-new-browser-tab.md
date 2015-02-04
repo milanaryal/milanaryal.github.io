@@ -185,7 +185,7 @@ a[target="_blank"]:after {
 
 #### Technique D
 
-The previous selector relies on the target tag. This selector will find all links to domains other than your own and the Font Awesome external link `.fa-external-link` <i class="fa fa-external-link"> indicator.
+The previous selector relies on the target tag. This selector will find all links to domains other than your own and the Font Awesome external link `.fa-external-link` <i class="fa fa-external-link"></i> indicator.
 
 {% highlight css %}
 a:not( [href*='yourdomain.com'] ):not( [href^='#'] ):not( [href^='/'] ):not( [href^=mailto] ):not( [href^=tel] ):not( [href^=callto]:not( [href^=skype] ):after {
