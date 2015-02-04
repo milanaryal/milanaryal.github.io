@@ -10,6 +10,8 @@ If you would still like to open external links in a new window, follow these ins
 
 ## Open link in a new browser tab
 
+We can manually add following atrribute in a anchor tag to open all external links in a new browser tab:
+
 ### HTML attribute (valid in HTML5 now):
 
 {% highlight html %}
@@ -26,9 +28,9 @@ If you would still like to open external links in a new window, follow these ins
 
 ## Open link in a new browser tab using jQuery
 
-### Using jQuery to open external links in a new browser tab
-
 If you want to use jQuery to auto do the same above work for the external links then you can use following technique.
+
+### Using jQuery to open external links in a new browser tab
 
 There are a wide variety of different ways to only target external links:
 
@@ -75,18 +77,6 @@ $("a:not([href*=yourdomain.com])")
 
 #### Technique 5
 
-A slightly different version if you only want to target specific URLs (if you use the rel tag "external"):
-
-{% highlight javascript %}
-$('A[rel="external"]')
-.click( function() {
-window.open( $(this).attr('href') );
-return false;
-});
-{% endhighlight %}
-
-#### Technique 6
-
 {% highlight javascript %}
 $('a').each(function() {
    var a = new RegExp('/' + window.location.host + '/');
@@ -100,13 +90,25 @@ $('a').each(function() {
 });
 {% endhighlight %}
 
+#### Technique 6
+
+A slightly different version if you only want to target specific URLs (if you use the rel tag "external"):
+
+{% highlight javascript %}
+$('A[rel="external"]')
+.click( function() {
+window.open( $(this).attr('href') );
+return false;
+});
+{% endhighlight %}
+
 ---
 
 ## Target only external links
 
 Target all the external link and add `.external` class so that you can add extra CSS styles to them. 
 
-### Target only external links using jQuery
+### Targetting only external links using jQuery
 
 #### Technique 1
 
@@ -146,6 +148,8 @@ $('a').filter(function() {
 
 ### Adding external link indicator using CSS
 
+Indicating external links with different styles is good practice. This lets user to know the links will open in a new tab.
+
 #### Technique A
 
 The following CSS code will add simple text indication.
@@ -158,7 +162,7 @@ a[target="_blank"]:after {
 
 #### Technique B
 
-If you want an image to show after then use the following, replace IMAGEURL with the actual image URL.
+If you want an image to show after then use the following, replace `IMAGEURL` with the actual image URL.
 
 {% highlight css %}
 a[target="_blank"]:after {
@@ -172,6 +176,17 @@ If you have install Font Awesome use the following:
 
 {% highlight css %}
 a[target="_blank"]:after {
+    font-family: 'FontAwesome';
+    content: " \f08e";
+}
+{% endhighlight %}
+
+### Technique D
+
+The previous selector relies on the target tag. This selector will find all links to domains other than your own and the Font Awesome external link `.fa-external-link` (<i class="fa fa-external-link">) indicator.
+
+{% highlight css %}
+a:not( [href*='yourdomain.com'] ):not( [href^='#'] ):not( [href^='/'] ):not( [href^=mailto] ):not( [href^=tel] ):not( [href^=callto]:not( [href^=skype] ):after {
     font-family: 'FontAwesome';
     content: " \f08e";
 }
@@ -218,6 +233,10 @@ a[href^="javascript:"]:after {
 {% endhighlight %}
 
 ---
+
+## Opening all the links in a new browser tab
+
+If you want open you all links in a new browser tab/window then use the following procedure:
 
 ### Using jQuery to open all links in a new browser tab
 
