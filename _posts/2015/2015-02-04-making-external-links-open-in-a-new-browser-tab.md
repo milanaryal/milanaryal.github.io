@@ -8,23 +8,23 @@ Take note that according to most usability experts, opening links in a new brows
 
 If you would still like to open external links in a new window, follow these instructions:
 
-## Open link in a new window
+## Open link in a new browser tab
 
 ### HTML attribute (valid in HTML5 now):
 
 {% highlight html %}
-<a href="http://milanaryal.com" target="_blank">This link will open in new window/tab</a>
+<a href="http://milanaryal.com" target="_blank">This link will open in new a tab/window</a>
 {% endhighlight %}
 
 ### Inline JavaScript way:
 
 {% highlight html %}
-<a href="http://milanaryal.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">This link will open in new window/tab</a>
+<a href="http://milanaryal.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">This link will open in new tab/window</a>
 {% endhighlight %}
 
 ---
 
-## Open link in a new window using jQuery
+## Open link in a new browser tab using jQuery
 
 ### Using jQuery to open external links in a new browser tab
 
@@ -55,7 +55,7 @@ jQuery('a[href^="http"]').not('a[href^="http://your-website.com"]').attr('target
 
 {% highlight javascript %}
 jQuery('a').each(function() {
-    // Let's make external links open in a new window.
+    // Let's make external links open in a new tab or window.
     var href = jQuery(this).attr('href');
 
     if (typeof href != 'undefined' && href != "" && (href.indexOf('http://') != -1 || href.indexOf('https://') != -1) && href.indexOf(window.location.hostname) == -1) {
@@ -181,7 +181,7 @@ a[target="_blank"]:after {
   <iframe height='350' scrolling='no' src='//codepen.io/MilanAryal/embed/WbZPrm/' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MilanAryal/pen/WbZPrm/'>External link indicator using Font Awesome</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.
   </iframe>
     <figcaption>External link indicator using Font Awesome</figcaption>
-<figure>
+</figure>
 
 #### Technique D
 
