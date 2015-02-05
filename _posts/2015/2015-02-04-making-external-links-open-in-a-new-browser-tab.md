@@ -9,11 +9,11 @@ Take note that according to most usability experts, opening links in a new brows
 
 > Avoid spawning multiple browser windows if at all possible -- taking the "Back" button away from users can make their experience so painful that it usually far outweighs whatever benefit you're trying to provide. One common theory in favor of spawning the second window is that it keeps users from leaving your site, but ironically it may have just the opposite effect by preventing them from returning when they want to.
 >
-> <cite><a href="http://www.snyderconsulting.net/article_7tricks.htm#7">Second browser windows</a>, <em>Seven tricks that Web users don't know</em></cite>
+> <cite><a href="http://www.snyderconsulting.net/article_7tricks.htm#7">Second browser windows</a>, Seven tricks that Web users don't know</cite>
 
 If you would still like to open external links in a new browser tab/window, follow these instructions.
 
-### Table of contents
+## Table of contents
 
 * [Open link in a new browser tab](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#open-link-in-a-new-browser-tab)
 * [Open link in a new browser tab using jQuery](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#open-link-in-a-new-browser-tab-using-jquery)
