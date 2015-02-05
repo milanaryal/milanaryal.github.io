@@ -21,6 +21,8 @@ If you would still like to open external links in a new browser tab/window, foll
 * [Add external link indicator](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#add-external-link-indicator)
 * [Open all links in a new browser tab](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#add-external-link-indicator)
 
+---
+
 ## Open link in a new browser tab
 
 We can manually add following atrribute in a anchor tag to open all external links in a new browser tab:

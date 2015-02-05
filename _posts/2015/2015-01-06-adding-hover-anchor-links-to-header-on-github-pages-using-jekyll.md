@@ -18,9 +18,7 @@ To use this feature you should enable header id on Jekyll blog.
 Like the following example, where `header-link-3` id is added to `h3` header:
 
 {% highlight html %}
-{% raw %}
 <h3 id="header-link-3">Header link 3</h3>
-{% endraw %}
 {% endhighlight %}
 
 (By **manually adding ids like the above example** you can add hover anchor links for your site, if you're **not using Jekyll for your site or you don't want to enable** the following markdown extension on Jekyll.)
@@ -28,12 +26,10 @@ Like the following example, where `header-link-3` id is added to `h3` header:
 For `Redcarpet` markdown **enable the `with_toc_data` extension**:
 
 {% highlight ruby %}
-{% raw %}
 # Conversion
 markdown:        redcarpet
 redcarpet:
   extensions:    ["with_toc_data"]
-{% endraw %}
 {% endhighlight %}
 
 For `Kramdown` markdown, it auto generate the header ids.
@@ -41,11 +37,9 @@ For `Kramdown` markdown, it auto generate the header ids.
 Only **make sure you have not disable the `auto_ids`**, like the following example:
 
 {% highlight ruby %}
-{% raw %}
 kramdown:
   # Disable auto-generated ID's for headings
   auto_ids: false
-{% endraw %}
 {% endhighlight %}
 
 ### AnchorJS
@@ -57,17 +51,13 @@ kramdown:
 Include the `anchor.js` file (or alternatively minified version `anchor.min.js`) in your webpage.
 
 {% highlight html %}
-{% raw %}
 <script src="anchor.js"></script>
-{% endraw %}
 {% endhighlight %}
 
 For the default anchor link styling (demonstrated in the [demo](http://bryanbraun.github.io/anchorjs/)) you should also include `anchor.css`.
 
 {% highlight html %}
-{% raw %}
 <link rel="stylesheet" href="anchor.css">
-{% endraw %}
 {% endhighlight %}
 
 ### Using AnchorJS
@@ -75,7 +65,6 @@ For the default anchor link styling (demonstrated in the [demo](http://bryanbrau
 AnchorJS provides the addAnchors() method for adding anchors to the page. This method accepts a selector as a parameter in the form of a string. The selector can be used to target specific elements that you want to add anchors to. Here's an example.
 
 {% highlight javascript %}
-{% raw %}
 /**
 * Example 1
 * Add anchors to all h1's on the page
@@ -100,7 +89,6 @@ addAnchors('#post h1, #post h2, #post h3');
 * which adds anchors to all headings.
 */
 addAnchors();
-{% endraw %}
 {% endhighlight %}
 
 That's it you're done. :smile:
@@ -114,15 +102,12 @@ Here's my own little custumization which works with Font Awesome:
 You can download [Font Awesome](http://fortawesome.github.io/Font-Awesome/) or simply include the following style sheet before the `</head>` tag to activate Font Awesome.
 
 {% highlight html %}
-{% raw %}
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-{% endraw %}
 {% endhighlight %}
 
 Now add the following script before the `</body>` tag or where you might think it is suitable:
 
 {% highlight html %}
-{% raw %}
 <script>
 
 // Header link minified script
@@ -133,15 +118,15 @@ var selector = '.post-body h2, .post-body h3, .post-body h4';
 addAnchors(selector);
 
 </script>
-{% endraw %}
 {% endhighlight %}
 
 Note that I have edited calling class as `header-link` and `fa fa-link` to activate Font Awesome icon link in `// Header link script` and added class in `// Header link selector` as `.post-body h2, .post-body h3, .post-body h4` to activate header link only in between post body.
 
 After that add the following styles:
 
+#### Floating anchor icon left side
+
 {% highlight css %}
-{% raw %}
 /**
 * Header Link placement and hover behavior.
 */
@@ -169,7 +154,38 @@ a.header-link {
 a.header-link :hover {
   text-decoration: none;
   color: #268bd2;
-{% endraw %}
+{% endhighlight %}
+
+#### Floating anchor icon right side
+
+{% highlight css %}
+/**
+ * Link placement and hover behavior.
+ */
+.header-link {
+  opacity: 0;
+  text-decoration: none;
+  font-size: 90%;
+  padding-left: 6px;
+}
+*:hover > .header-link,
+.header-link:focus  {
+  /* To fade links as they appear, change transition-property from 'color' to 'all' */
+  opacity: 1;
+  -webkit-transition: color .16s linear;
+  -moz-transition: color .16s linear;
+  -o-transition: color .16s linear;
+  transition: color .16s linear;
+}
+
+/**
+ * Reasonable default styles.
+ * Feel free to override or replace these with your own.
+ */
+.header-link:link    { color: #DFD487; }
+.header-link:visited { color: #DFD487; }
+.header-link:hover   { color: #EC7963; }
+.header-link:active  { color: #EC7963; }
 {% endhighlight %}
 
 Now it's all done. :wink:
