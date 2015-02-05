@@ -1,12 +1,27 @@
 ---
 layout: post
-title: Making external links open in a new browser tab
+title: "Making external links open in a new browser tab"
 date: 2015-02-04T19:25:52+05:45
+excerpt: "Learn about best web practices and how to open new links in a new window."
 ---
 
 Take note that according to most usability experts, opening links in a new browser tab is considered bad practice.
 
+> Avoid spawning multiple browser windows if at all possible -- taking the "Back" button away from users can make their > experience so painful that it usually far outweighs whatever benefit you're trying to provide. One common theory in
+> favor of spawning the second window is that it keeps users from leaving your site, but ironically it may have just the
+> opposite effect by preventing them from returning when they want to.
+> <cite><a href="http://www.snyderconsulting.net/article_7tricks.htm#7">Second browser windows</a>, <em>Seven tricks
+> that Web users don't know</em></cite>
+
 If you would still like to open external links in a new browser tab/window, follow these instructions.
+
+### Table of contents
+
+* [Open link in a new browser tab](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#open-link-in-a-new-browser-tab)
+* [Open link in a new browser tab using jQuery](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#open-link-in-a-new-browser-tab-using-jquery)
+* [Target only external links](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#target-only-external-links)
+* [Add external link indicator](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#add-external-link-indicator)
+* [Open all links in a new browser tab](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#add-external-link-indicator)
 
 ## Open link in a new browser tab
 
@@ -106,7 +121,7 @@ return false;
 
 ## Target only external links
 
-Target all the external link and add `.external` class so that you can add extra CSS styles to them. 
+Target all the external link and add `.external` class so that you can add extra CSS styles to them.
 
 ### Targetting only external links using jQuery
 
@@ -206,12 +221,12 @@ With pure CSS you can achieve this by setting all links to have the external tre
 
 {% highlight css %}
 /* target all anchors with an href attribute */
-a[href] { 
-	display: inline-block; 
+a[href] {
+	display: inline-block;
 }
 
 /* do something special to indicate an external link */
-a[href]:after { 
+a[href]:after {
 	content: ">";
 }
 
