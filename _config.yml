@@ -30,7 +30,7 @@ url:                   http://milanaryal.com
 # Site settings
 title:                 Milan Aryal
 description:           "Livin' on the edge of web standards."
-header-img:            "/assets/img/home-bg.jpg"
+header_image:          "/assets/img/home-bg.jpg"
 author:
   name:                Milan Aryal
   url:                 https://plus.google.com/MilanAryal
@@ -42,7 +42,18 @@ author:
   fb_id:               100001982813077
 icon:                  "/assets/img/m-icon-white-on-blue.png"
 ga_trackid:            "UA-42092423-1"
+disqus_shortname:      milanaryal
 
 # Custom vars
 github:
   repo:                https://github.com/MilanAryal/milanaryal.github.io
+
+# Site content license ( CC BY 3.0 )
+content_license:
+  type_title:          Some rights reserved
+  type_url:            http://creativecommons.org/licenses/by/3.0/
+
+# Site code license ( MIT license )
+code_license:
+  type_title:          MIT license
+  type_url:            https//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE
