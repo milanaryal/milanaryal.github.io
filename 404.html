@@ -1,6 +1,7 @@
 ---
 layout: null
 header_image: "/assets/img/404-bg.jpg"
+robots: "noindex"
 ---
 
 <!DOCTYPE html>
@@ -10,7 +11,7 @@ header_image: "/assets/img/404-bg.jpg"
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page not found</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <meta name="robots" content="noindex">
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     <link rel="dns-prefetch" href="//www.google-analytics.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="stylesheet" href="/assets/css/style.min.css">
@@ -25,7 +26,7 @@ header_image: "/assets/img/404-bg.jpg"
 <body>
 
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('{% if header_image %}{{ page.header_image }}{% else %}{{ site.header_image }}{% endif %}')">
+<header class="intro-header" style="background-image: url('{% if page.header_image %}{{ page.header_image }}{% else %}{{ site.header_image }}{% endif %}')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
