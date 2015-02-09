@@ -22,6 +22,7 @@ Employee recognition - or lack thereof - is a problem that’s been around forev
 Employees who receive regular recognition are more productive, rate higher on consumer satisfaction surveys, have increased co-worker engagement, have better safety records and are less likely to leave the organization, according to a 2004 Gallup poll.
 
 ### Recognition that misses the mark
+
 Thirty-five percent of employees leave their companies because of a lack of recognition, according to a 2005 Salary.com survey. In fact, employees are even leaving because they simply aren’t receiving the kind of recognition they want.
 
 Employers often use awards, certificates, bonuses and prizes as their choice of recognition - but employees are looking for something more meaningful. While a tangible award is nice to have, more often than not, simple words of praise carry more weight.
@@ -33,6 +34,7 @@ While it’s not too much to expect some recognition - at least an acknowledgeme
 “If your boss knows what you prefer, you know what performance is required to receive that recognition, you perform to standards and you still don’t get recognized, you need to address this with your manager,” Ventrice says.
 
 ### Get what you deserve
+
 Feeling like you’re still missing out on the recognition you merit at work? Follow these seven tips to get the appreciation you deserve from your bosses and co-workers.
 
 <ol>
