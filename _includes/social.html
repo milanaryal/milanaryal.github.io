@@ -1,27 +1,27 @@
     <div class="social-container">
         <ul class="list-inline text-center text-muted">
             <li>
-                <a href="#" data-type="twitter" data-url="{{ page.url | prepend: site.url }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" data-via="{{ site.author.twitter }}" class="social" title="Tweet this post">
+                <a href="#" data-type="twitter" data-url="{{ page.url | prepend: site.url }}" data-title="{{ page.title }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" data-via="{{ site.author.twitter }}" class="social" title="Tweet it">
                     <span class="fa-stack fa-lg"><i class="fa fa-twitter fa-stack-1x"></i></span>
                 </a>
             </li>
             <li>
-                <a href="#" data-type="facebook" data-url="{{ page.url | prepend: site.url }}" data-title="{{ page.title }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" data-media="{% if page.image %}{{ page.image }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}" class="social" tittle="Share this post on Facebook">
+                <a href="#" data-type="facebook" data-url="{{ page.url | prepend: site.url }}" data-title="{{ page.title }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" data-media="{% if page.image %}{{ page.image }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}" class="social" title="Share on Facebook">
                     <span class="fa-stack fa-lg"><i class="fa fa-facebook fa-stack-1x"></i></span>
                 </a>
             </li>
             <li>
-                <a href="#" data-type="googleplus" data-url="{{ page.url | prepend: site.url }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" class="social" title="Share this post on Google+">
+                <a href="#" data-type="googleplus" data-url="{{ page.url | prepend: site.url }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" class="social" title="Share on Google+">
                     <span class="fa-stack fa-lg"><i class="fa fa-google-plus fa-stack-1x"></i></span>
                 </a>
             </li>
             <li>
-                <a href="#" data-type="pinterest" data-url="{{ page.url | prepend: site.url }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" data-media="{% if page.image %}{{ page.image }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}" class="social" title="Pin this post">
+                <a href="#" data-type="pinterest" data-url="{{ page.url | prepend: site.url }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" data-media="{% if page.image %}{{ page.image }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}" class="social" title="Pin it">
                     <span class="fa-stack fa-lg"><i class="fa fa-pinterest fa-stack-1x"></i></span>
                 </a>
             </li>
             <li>
-                <a href="#" data-type="linkedin" data-url="{{ page.url | prepend: site.url }}" data-title="{{ page.title }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" data-via="{{ site.author.linkedin }}" data-media="{% if page.image %}{{ page.image }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}" class="social" title="Share this post on LinkedIn">
+                <a href="#" data-type="linkedin" data-url="{{ page.url | prepend: site.url }}" data-title="{{ page.title }}" data-description="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" data-via="{{ site.author.linkedin }}" data-media="{% if page.image %}{{ page.image }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}" class="social" title="Share on LinkedIn">
                     <span class="fa-stack fa-lg"><i class="fa fa-linkedin fa-stack-1x"></i></span>
                 </a>
             </li>
