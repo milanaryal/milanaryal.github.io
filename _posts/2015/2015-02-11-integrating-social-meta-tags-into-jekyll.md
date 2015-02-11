@@ -83,12 +83,12 @@ Site `_config.yml` setting:
 
 {% highlight ruby %}
 description:    your site description
-author
+author:
   twitter:      username
   googleplus:   username
-  facebook
+  facebook:
     fb_id:      your facebook profile id
-	app_id:     your facebook app id
+    app_id:     your facebook app id
 icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
 {% endhighlight %}
 
@@ -97,9 +97,10 @@ Post front matter:
 {% highlight ruby %}
 ---
 layout: post
+title: "your post title"
 date: 2015-02-11T13:04:19+05:45 # XML Schema Date/Time
 image: your post image path # /assets/img/image.jpg
-excerpt: for meta description # Optional for overring content excerpt
+excerpt: "for meta description" # Optional for overring content excerpt
 ---
 {% endhighlight %}
 
