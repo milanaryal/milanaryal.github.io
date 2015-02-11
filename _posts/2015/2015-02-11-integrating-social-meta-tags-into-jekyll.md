@@ -17,9 +17,9 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}">
+<meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 
 {% if page.date %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
@@ -52,16 +52,18 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta name="twitter:creator" content="@{{ site.author.twitter }}">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}">
-<meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+<meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:site_name" content="{{ site.title }}">">
 {% endraw %}
 {% endhighlight %}
 
-## Integrating meta description into Jekyll
+## Optimizing for search engine into Jekyll
 
 {% highlight html %}
 {% raw %}
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 {% endraw %}
 {% endhighlight %}
 
@@ -71,6 +73,34 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 {% raw %}
 <link rel="author" href="//plus.google.com/+{{ site.author.googleplus }}">
 {% endraw %}
+{% endhighlight %}
+
+---
+
+Make sure you have the following `_config.yml` and post front matter setting to implement the above tags (or you can change according to your use):
+
+Site `_config.yml` setting:
+
+{% highlight ruby %}
+description:    your site description
+author
+  twitter:      username
+  googleplus:   username
+  facebook
+    fb_id:      your facebook profile id
+	app_id:     your facebook app id
+icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
+{% endhighlight %}
+
+Post front matter:
+
+{% highlight ruby %}
+---
+layout: post
+date: 2015-02-11T13:04:19+05:45 # XML Schema Date/Time
+image: your post image path # /assets/img/image.jpg
+excerpt: for meta description # Optional for overring content excerpt
+---
 {% endhighlight %}
 
 ---
