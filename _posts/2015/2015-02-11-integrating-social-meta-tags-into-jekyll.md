@@ -103,7 +103,7 @@ date:       2015-02-11T13:04:19+05:45 # XML Schema Date/Time
 image:      your post image path # /assets/img/image.jpg
 excerpt:    "for meta description" # Optional for overring content excerpt
 categories: your post categories # ["category1"] - best is to have one category in a post
-tags        your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
+tags:       your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
 ---
 {% endhighlight %}
 
