@@ -77,11 +77,16 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 
 ---
 
-Make sure you have the following `_config.yml` and post front matter setting to implement the above tags (or you can change according to your use):
+Make sure you have the following `_config.yml` and post front matter setting to implement the above social meta tags (or you can change according to your use):
 
 Site `_config.yml` setting:
 
 {% highlight ruby %}
+timezone:       your timezone # eg. Asia/Kathmandu
+locale:         your locale language # eg. en_us
+baseurl:        "/base" # does not include hostname
+url:            http://yoursitename.com # URL of site, include http://, do not include a trailing slash 
+
 title:          "your site title"
 description:    "your site description"
 author:
