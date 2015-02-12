@@ -38,8 +38,8 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
   {% endfor %}
 {% endif %}
 
-<meta property="fb:admins" content="{{ site.author.facebook.admins }}">
-<meta property="fb:app_id" content="{{ site.author.facebook.app_id }}">
+<meta property="fb:admins" content="{{ site.fb_admins }}">
+<meta property="fb:app_id" content="{{ site.fb_appid }}">
 {% endraw %}
 {% endhighlight %}
 
@@ -86,16 +86,14 @@ timezone:       your timezone # eg. Asia/Kathmandu
 locale:         your locale language # eg. en_us
 baseurl:        "/base" # does not include hostname
 url:            http://yoursitename.com # URL of site, include http://, do not include a trailing slash 
-
 title:          "your site title"
 description:    "your site description"
+icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
 author:
   twitter:      username
   googleplus:   username
-  facebook:
-    admins:     your facebook profile id
-    app_id:     your facebook app id
-icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
+fb_admins:      your facebook profile id
+fb_appid:       your facebook app id
 {% endhighlight %}
 
 Post front matter:
