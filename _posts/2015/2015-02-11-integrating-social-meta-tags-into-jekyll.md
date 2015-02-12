@@ -38,7 +38,7 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
   {% endfor %}
 {% endif %}
 
-<meta property="fb:admins" content="{{ site.author.facebook.fb_id }}">
+<meta property="fb:admins" content="{{ site.author.facebook.admins }}">
 <meta property="fb:app_id" content="{{ site.author.facebook.app_id }}">
 {% endraw %}
 {% endhighlight %}
@@ -93,7 +93,7 @@ author:
   twitter:      username
   googleplus:   username
   facebook:
-    fb_id:      your facebook profile id
+    admins:     your facebook profile id
     app_id:     your facebook app id
 icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
 {% endhighlight %}
