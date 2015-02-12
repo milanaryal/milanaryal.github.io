@@ -28,18 +28,18 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 
 {% if page.categories %}
   {% for category in page.categories limit:1 %}
-  <meta content="{{ category }}" property="article:section">
+  <meta property="article:section" content="{{ category }}">
   {% endfor %}
 {% endif %}
 
 {% if page.tags %}
   {% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag">
+  <meta property="article:tag" content="{{ tag }}">
   {% endfor %}
 {% endif %}
 
-<meta property="fb:admins" content="{{ site.author.fb_id }}">
-<meta property="fb:app_id" content="{{ site.author.app_id }}">
+<meta property="fb:admins" content="{{ site.author.facebook.fb_id }}">
+<meta property="fb:app_id" content="{{ site.author.facebook.app_id }}">
 {% endraw %}
 {% endhighlight %}
 
