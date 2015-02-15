@@ -15,11 +15,12 @@ permalink: /404.html
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     <link rel="dns-prefetch" href="//www.google-analytics.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css?v={{ site.github.build_revision }}">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->    
     <!--[if lt IE 9]>
-        <script src="/assets/js/jshtml5shiv.min.js"></script>
-        <script src="/assets/js/respond.min.js"></script>
+        <script src="/assets/js/jshtml5shiv.min.js?v={{ site.github.build_revision }}"></script>
+        <script src="/assets/js/respond.min.js?v={{ site.github.build_revision }}"></script>
     <![endif]-->
 </head>
 <body>
@@ -41,24 +42,46 @@ permalink: /404.html
 
 <!-- Main Content -->
 <div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-		
-		<!-- 404 page content -->
-		<p class="text-center">
-		<em>We may have misplaced that URL or it's pointing to something that doesn't exist.</em>
-		</p>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-		<p class="text-center">
-		<a href="/archives/">Check our archives</a> or <a href="/">Head back home</a> to try finding it again.
-		</p>
-		<!-- /404 page content -->
-		
-		</div>
-	</div>
+        <!-- 404 page content -->
+        <p class="text-center">
+        <em>We may have misplaced that URL or it's pointing to something that doesn't exist.</em>
+        </p>
+
+        <p class="text-center">
+        <a href="/archives/">Check our archives</a> or <a href="/">Head back home</a> to try finding it again.
+        </p>
+        <!-- /404 page content -->
+
+        </div>
+    </div>
 </div>
 
-<script src="/assets/js/scripts.min.js"></script>
+<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/scripts.min.js?v={{ site.github.build_revision }}"></script>
 <script>
   // AnalyticsJS
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
