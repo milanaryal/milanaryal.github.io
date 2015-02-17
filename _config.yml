@@ -17,6 +17,8 @@ gems:
 
 # Conversion
 markdown:              kramdown
+kramdown:
+  input:               GFM
 highlighter:           pygments
 
 # Outputting

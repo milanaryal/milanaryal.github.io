@@ -5,7 +5,7 @@ date: 2015-02-11T13:04:19+05:45
 excerpt: "A guide to adding social meta tags into Jekyll."
 ---
 
-Social media meta tags allows us to optimize for sharing Twitter, Facebook, Google+ and Pinerest by defining exactly how titles, descriptions, images and more appear in social streams. There're various ways but following social meta tags is the best method to integrating into Jekyll.
+~~Social media meta tags~~ allows us to optimize for sharing ==Twitter, Facebook, Google+ and Pinerest== by defining exactly how titles, descriptions, images and more appear in social streams. There're various ways but following social meta tags is the best method to integrating into Jekyll.
 
 A lot of these will even cross-share the tags. For example, Google+ will actually use Facebook's Open Graph tags if their available. All in all, the following code is a great start.
 
