@@ -16,7 +16,7 @@ permalink: /
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta"><time data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date_to_rfc822 }}">{{ post.date | date: "%B %-d, %Y" }}</time> &middot; <span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words }} words">{% include reading_time_paginator.html %} read</span></p>
+    <p class="post-meta"><time data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date_to_rfc822 }}">{{ post.date | date: "%B %-d, %Y" }}</time> &middot; <span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words }} words">{% include reading_time_paginator.html %}</span></p>
 </div>
 <hr>
 {% endfor %}
