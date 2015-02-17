@@ -16,7 +16,7 @@ permalink: /
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta"><time data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date_to_rfc822 }}">{{ post.date | date: "%B %-d, %Y" }}</time> &middot; <span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words }} words">{% include reading_time_paginator.html %}</span></p>
+    <p class="post-meta"><time data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date_to_rfc822 }}">{{ post.date | date: "%B %-d, %Y" }}</time> &middot; <span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words | append: ' words'}}">{% include reading_time_paginator.html %}</span></p>
 </div>
 <hr>
 {% endfor %}
@@ -26,12 +26,12 @@ permalink: /
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&larr; Newer Posts</a>
+        <a href="{{ paginator.previous_page_path | replace: '//', '/' }}"><i class="fa fa-angle-double-left"></i> Newer Posts</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Older Posts <i class="fa fa-angle-double-right"></a>
     </li>
     {% endif %}
 </ul>

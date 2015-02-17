@@ -12,7 +12,7 @@ layout: default
                     {% if page.subtitle %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% endif %}
-                    <div class="meta"><time data-toggle="tooltip" data-placement="bottom" title="{{ page.date | date_to_rfc822 }}">{{ page.date | date: "%B %-d, %Y" }}</time> &middot; <span data-toggle="tooltip" data-placement="bottom" title="{{ page.content | strip_html | number_of_words }} words">{% include reading_time.html %}</span></div>
+                    <div class="meta"><time data-toggle="tooltip" data-placement="bottom" title="{{ page.date | date_to_rfc822 }}">{{ page.date | date: "%B %-d, %Y" }}</time> &middot; <span data-toggle="tooltip" data-placement="bottom" title="{{ page.content | strip_html | number_of_words | append: ' words'}}">{% include reading_time.html %}</span></div>
                 </div>
             </div>
         </div>
@@ -36,12 +36,12 @@ layout: default
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                        <a href="{{ page.previous.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}"><i class="fa fa-angle-double-left"></i> Previous Post</a>
                     </li>
                     {% endif %}
                     {% if page.next.url %}
                     <li class="next">
-                        <a href="{{ page.next.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                        <a href="{{ page.next.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next Post <i class="fa fa-angle-double-right"></i></a>
                     </li>
                     {% endif %}
                 </ul>
