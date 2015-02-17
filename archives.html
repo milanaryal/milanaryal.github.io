@@ -21,13 +21,14 @@ permalink: /archives/
       {% endif %}
     {% endunless %}
 
-	<li class="row">
+    <li class="row">
         <div class="col-sm-9">
-			<a href="{{ post.url }}">{{ post.title }}</a></a>
+            <a href="{{ post.url }}">{{ post.title }}</a>
         </div>
         <div class="col-sm-3 text-muted">
-			<time>{{ post.date | date_to_string }}</time>
+            <time>{{ post.date | date_to_string }}</time>
         </div>
     </li>
+
   {% endfor %}
 </ul>
