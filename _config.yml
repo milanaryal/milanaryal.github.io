@@ -39,15 +39,15 @@ description:           "Livin' on the edge of web standards."
 icon:                  "/assets/img/m-icon-white-on-blue.png"
 header_image:          "/assets/img/home-bg.jpg"
 author:
-  - name:              Milan Aryal
-  - url:               https://plus.google.com/+MilanAryal
-  - email:             considermilan@gmail.com
-  - twitter:           MilanAryal
-  - googleplus:        MilanAryal
-  - github:            MilanAryal
-  - tumblr:            milanaryal
-  - linkedin:          MilanAryal
-  - facebook:          considermilan
+  name:                Milan Aryal
+  url:                 https://plus.google.com/+MilanAryal
+  email:               considermilan@gmail.com
+  twitter:             MilanAryal
+  googleplus:          MilanAryal
+  github:              MilanAryal
+  tumblr:              milanaryal
+  linkedin:            MilanAryal
+  facebook:            considermilan
 ga_trackid:            "UA-42092423-1"
 fb_admins:             100001982813077
 disqus_shortname:      milanaryal

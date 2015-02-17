@@ -1,8 +1,5 @@
-{% assign words = post.content | strip_html | number_of_words %}
-{% if words < 180 %}
-{% assign reading_time = "Less than a min" %}
-{% else %}
-{% assign reading_time = words | divided_by:180 | append:".0" | append:" min" %}
+{% assign reading_time = post.content | strip_html | number_of_words | append:'.0' | divided_by:180 %}
+{% if reading_time < 1 %}Less than a min read
+{% elsif reading_time > 1 and reading_time < 1.5 %}1 min read
+{% elsif reading_time > 1.5 %}<span class="time">{{ reading_time }}</span> min read
 {% endif %}
-
-<span class="reading-time">{{ reading_time }}</span>
