@@ -1,7 +1,7 @@
 ---
 title: "Implementing Medium inspired estimated reading time into Jekyll"
 date: 2015-02-19T22:26:57+05:45
-excerpt: "Estimate the reading time based on standard reading speed."
+excerpt: "Estimating the reading time for a article based on standard reading speed."
 ---
 
 [Medium](//medium.com/the-story/read-time-and-you-bc2048ab620c) a simple feature estimated reading time (ERT) is really great. When people see a headline that piques their interest --- and know in advance that it only takes a couple of minutes to read --- they're more likely to click the link.
