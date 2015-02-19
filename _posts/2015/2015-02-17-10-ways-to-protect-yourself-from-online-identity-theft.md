@@ -20,7 +20,7 @@ Use different level passwords. Use one password for your personal information; u
 
 #### Tip #4
 
-Use strong passwords. Don't use your birthdates, year you were married, or your children's birthdates. The best passwords are mnemonic phrases like my father ate three apples for breakfast. Take the first letter of each word and convert the number into numbers and you end up with `imfa3a4bi`.
+Use strong passwords. Don't use your birthdates, year you were married, or your children's birthdates. The best passwords are mnemonic phrases like "My father ate three apples for breakfast". Take the first letter of each word and convert the number into numbers and you end up with `mfa3a4b`.
 
 #### Tip #5
 
