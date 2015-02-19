@@ -7,3 +7,6 @@ title: "just uploaded testing post"
 {% highlight html %}
 <a href="{% raw %}({{ site.url }}){% endraw %}">Milan Aryal</a>
 {% endhighlight %}
+
+
+{{ content | number_of_words | append: ' words'}}
