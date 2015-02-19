@@ -54,7 +54,6 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 <meta name="twitter:url" content="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
-<meta property="og:site_name" content="{{ site.title }}">">
 {% endraw %}
 {% endhighlight %}
 
@@ -85,7 +84,7 @@ Site `_config.yml` setting:
 timezone:       your timezone # eg. Asia/Kathmandu
 locale:         your locale language # eg. en_us
 baseurl:        "/base" # does not include hostname
-url:            http://yoursitename.com # URL of site, include http://, do not include a trailing slash 
+url:            "http://yoursitename.com" # URL of site, include http://, do not include a trailing slash 
 title:          "your site title"
 description:    "your site description"
 icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
