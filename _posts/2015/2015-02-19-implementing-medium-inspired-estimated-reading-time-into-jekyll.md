@@ -39,9 +39,9 @@ A much faster way to get the estimated reading time of your article is to let a 
 
 ---
 
-## Implementing estimated reading time into Jekyll using Liquid tag
+## Implementing estimated reading time into Jekyll using Liquid tags
 
-With the help of Liquid tag we can have estimated reading time into Jekyll.
+With the help of Liquid tags we can have estimated reading time into Jekyll.
 
 Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension) of 180 words per minute (WPM) so here we divide the total content words with 180 (but you can have your own average WPM).
 
@@ -51,7 +51,7 @@ Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki
 
 {{ reading_time }} min read
 {% endif %}
-{% raw %}
+{% endraw %}
 {% endhighlight %}
 
 Due to the Jekyll depreciation of liquid rounding method ({% raw %}{{ reading_time | round }}{% endraw %}) we can not get the actual rounded value from the above method. Here we only get `1.6 = 1` or `2.4 = 2` value. 
@@ -60,7 +60,7 @@ Due to the Jekyll depreciation of liquid rounding method ({% raw %}{{ reading_ti
 
 To get the actual estimated rounded value in a whole number reading time we code more here.
 
-What some of the following Liquid tag(s) do for us:
+What some of the following Liquid tags do for us:
 
 * `content`: Your current post content on a page [^content]
 * `strip_html`: Remove all the HTML tags in a page content
@@ -76,7 +76,7 @@ What some of the following Liquid tag(s) do for us:
 {% elsif reading_time >= 0.5 and reading_time < 1.5 %}1 minute read
 {% elsif reading_time >= 1.5 %}<span class="reading-time">{{ reading_time }}</span> minutes read
 {% endif %}
-{% raw %}
+{% endraw %}
 {% endhighlight %}
 
 Here we get `1.67777` or 2.43333` so until the Jekyll implementation of Liquid rounding method for now we wrap the {% raw %}{{ reading_time }}{% endraw %} with the `.reading-time` class so that the following jQuery[^jquery] will help us to get the actual rounded value in a whole number.
