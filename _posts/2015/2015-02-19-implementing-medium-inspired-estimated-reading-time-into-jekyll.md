@@ -17,7 +17,7 @@ Research varies, but generally, the average adult reads 200-250 words in one min
 
 Convert words into minutes here, some decimals into seconds there, a little rounding at the end... and you can calculate estimated time to read manually.
 
-Here's how[^ertmath]:
+Here's how:[^ertmath]
 
 * Find your total word count. Let's say it's 938 words.
 * Divide your total word count by 200. You'll get a decimal number, in this case, 4.69.
@@ -62,7 +62,7 @@ To get the actual estimated rounded value in a whole number reading time we code
 
 What some of the following Liquid tags do for us:
 
-* `content`: Your current post content on a page[^content]
+* `content`: Your current post content on a page [^content]
 * `strip_html`: Remove all the HTML tags in a page content
 * `number_of_words`: Count all the words in a content
 * `append: '.0'`: Show all the decimal numbers
@@ -79,7 +79,7 @@ What some of the following Liquid tags do for us:
 {% endraw %}
 {% endhighlight %}
 
-Here we get 1.67777 or 2.43333 so until the Jekyll implementation of Liquid rounding method for now we wrap the `{% raw %}{{ reading_time }}{% endraw %}` with the `.reading-time` class so that the following jQuery[^jquery] will help us to get the actual rounded value in a whole number.
+Here we get 1.67777 or 2.43333 so until the Jekyll implementation of Liquid rounding method for now we wrap the `{% raw %}{{ reading_time }}{% endraw %}` with the `.reading-time` class so that the following jQuery will help us to get the actual rounded value in a whole number.[^jquery]
  
 {% highlight javascript %}
 // Reading time - jQuery script that rounds it to the nearest whole number
