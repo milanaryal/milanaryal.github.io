@@ -1,7 +1,7 @@
 ---
 title: "Implementing Medium inspired estimated reading time into Jekyll"
 date: 2015-02-19T22:26:57+05:45
-excerpt: "Estimate the reading time for you! The calculation based on standard reading speed."
+excerpt: "Estimate the reading time based on standard reading speed."
 ---
 
 [Medium](//medium.com/the-story/read-time-and-you-bc2048ab620c) a simple feature estimated reading time (ERT) is really great. When people see a headline that piques their interest --- and know in advance that it only takes a couple of minutes to read --- they're more likely to click the link.
@@ -57,7 +57,7 @@ Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki
 
 With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` so we can not get rounded value from the above technique. Here we only get 1.6 = 1 or 2.4 = 2 value. 
 
-### Estimated reading time in a rounded whole number into Jekyll
+### Estimated reading time to the rounded whole number into Jekyll
 
 To get estimated rounded value reading time to the nearest whole number we code more here.
 
