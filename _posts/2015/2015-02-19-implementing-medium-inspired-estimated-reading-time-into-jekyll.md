@@ -1,6 +1,7 @@
 ---
 title: "Implementing Medium inspired estimated reading time into Jekyll"
 date: 2015-02-19T22:26:57+05:45
+excerpt: "Estimate the reading time for you! The calculation based on standard reading speed."
 ---
 
 [Medium](//medium.com/the-story/read-time-and-you-bc2048ab620c) a simple feature estimated reading time (ERT) is really great. When people see a headline that piques their interest --- and know in advance that it only takes a couple of minutes to read --- they're more likely to click the link.
@@ -54,19 +55,19 @@ Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki
 {% endraw %}
 {% endhighlight %}
 
-Due to the Jekyll depreciation of liquid rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` we can not get the actual rounded value from the above method. Here we only get 1.6 = 1 or 2.4 = 2 value. 
+With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` so we can not get rounded value from the above technique. Here we only get 1.6 = 1 or 2.4 = 2 value. 
 
 ### Estimated reading time in a rounded whole number into Jekyll
 
-To get the actual estimated rounded value in a whole number reading time we code more here.
+To get estimated rounded value reading time to the nearest whole number we code more here.
 
 What some of the following Liquid tags do for us:
 
-* `content`: Your current post content on a page [^content]
-* `strip_html`: Remove all the HTML tags in a page content
-* `number_of_words`: Count all the words in a content
-* `append: '.0'`: Show all the decimal numbers
-* `divided_by: 180`: Divide the total content words by 180
+* `content`: Your current post content on a page.[^content]
+* `strip_html`: Remove all the HTML tags in a page content.
+* `number_of_words`: Count all the words in a content.
+* `append: '.0'`: Show all the decimal numbers.
+* `divided_by: 180`: Divide the total content words by 180.
 
 {% highlight text %}
 {% raw %}
@@ -79,7 +80,7 @@ What some of the following Liquid tags do for us:
 {% endraw %}
 {% endhighlight %}
 
-Here we get 1.67777 or 2.43333 so until the Jekyll implementation of Liquid rounding method for now we wrap the `{% raw %}{{ reading_time }}{% endraw %}` with the `.reading-time` class so that the following jQuery will help us to get the actual rounded value in a whole number.[^jquery]
+Here we get 1.67777 or 2.43333 so until the Jekyll implementation of Liquid rounding method for now we wrap the `{% raw %}{{ reading_time }}{% endraw %}` with the `.reading-time` class so that the following jQuery will help us to get the rounded value to the nearest whole number.[^jquery]
  
 {% highlight javascript %}
 // Reading time - jQuery script that rounds it to the nearest whole number
@@ -91,7 +92,7 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-Now with the help of above jQuery snippet we get the actual rounded value in a whole number 1.6777 = 2 or 2.43333 = 2. That's what we want to get.
+Now with the help of above jQuery snippet we get the actual rounded value to the nearest whole number 1.6777 = 2 or 2.43333 = 2. That's what we want to get.
 
 ---
 
