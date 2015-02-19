@@ -10,8 +10,8 @@ encoding:              "utf-8"
 
 # Plugins
 gems:                  
-  -                    jekyll-mentions
   -                    jemoji
+  -                    jekyll-mentions
   -                    jekyll-redirect-from
   -                    jekyll-sitemap
 
@@ -27,11 +27,8 @@ paginate:              5
 timezone:              Asia/Kathmandu
 locale:                en_us
 
-# Serving
-baseurl:               "" # does not include hostname
-
 # URL of site, include http://, do not include a trailing slash
-url:                   http://milanaryal.com
+url:                   "http://milanaryal.com"
 
 # Site settings
 title:                 Milan Aryal
@@ -40,8 +37,8 @@ icon:                  "/assets/img/m-icon-white-on-blue.png"
 header_image:          "/assets/img/home-bg.jpg"
 author:
   name:                Milan Aryal
-  url:                 https://plus.google.com/+MilanAryal
-  email:               considermilan@gmail.com
+  url:                 "https://plus.google.com/+MilanAryal"
+  email:               "considermilan@gmail.com"
   twitter:             MilanAryal
   googleplus:          MilanAryal
   github:              MilanAryal
@@ -51,3 +48,12 @@ author:
 ga_trackid:            "UA-42092423-1"
 fb_admins:             100001982813077
 disqus_shortname:      milanaryal
+
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
