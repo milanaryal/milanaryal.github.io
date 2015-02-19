@@ -54,7 +54,7 @@ Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki
 {% endraw %}
 {% endhighlight %}
 
-Due to the Jekyll depreciation of liquid rounding method ({% raw %}{{ reading_time | round }}{% endraw %}) we can not get the actual rounded value from the above method. Here we only get `1.6 = 1` or `2.4 = 2` value. 
+Due to the Jekyll depreciation of liquid rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` we can not get the actual rounded value from the above method. Here we only get 1.6 = 1 or 2.4 = 2 value. 
 
 ### Estimated reading time in a rounded whole number into Jekyll
 
@@ -68,7 +68,7 @@ What some of the following Liquid tags do for us:
 * `append: '.0'`: Show all the decimal numbers
 * `divided_by: 180`: Divide the total content words by 180
 
-{% highlight liquid %}
+{% highlight html %}
 {% raw %}
 {% assign reading_time = content | strip_html | number_of_words | append: '.0' | divided_by: 180 %}
 
@@ -79,7 +79,7 @@ What some of the following Liquid tags do for us:
 {% endraw %}
 {% endhighlight %}
 
-Here we get `1.67777` or 2.43333` so until the Jekyll implementation of Liquid rounding method for now we wrap the {% raw %}{{ reading_time }}{% endraw %} with the `.reading-time` class so that the following jQuery[^jquery] will help us to get the actual rounded value in a whole number.
+Here we get 1.67777 or 2.43333 so until the Jekyll implementation of Liquid rounding method for now we wrap the `{% raw %}{{ reading_time }}{% endraw %}` with the `.reading-time` class so that the following jQuery[^jquery] will help us to get the actual rounded value in a whole number.
  
 {% highlight javascript %}
 // Reading time - jQuery script that rounds it to the nearest whole number
@@ -91,12 +91,12 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-Now with the help of above jQuery snippet we get the actual rounded value in a whole number `1.6777 = 2 or 2.43333 = 2`. That's what we want to get.
+Now with the help of above jQuery snippet we get the actual rounded value in a whole number 1.6777 = 2 or 2.43333 = 2. That's what we want to get.
 
 ---
 
 [^ertmath]: Estimated reading time = Total content words / Average reading words per minute
 
-[^content]: If you're implementing estimated reading time in paginator i.e. {% raw %}{% for post in paginator.posts %}{% endraw %} condition you should change `content` to `post.content`. Also know that `page.content` tag will include your current post front matter `title` text.
+[^content]: If you're implementing estimated reading time in paginator i.e. `{% raw %}{% for post in paginator.posts %}{% endraw %}` condition you should change `content` to `post.content`. Also know that `page.content` tag will include your current post front matter `title` text.
 
 [^jquery]: Place the jQuery snippet below the jQuery loaded library otherwise it won't work!
