@@ -5,19 +5,19 @@ date: 2015-02-19T22:26:57+05:45
 
 [Medium](//medium.com/the-story/read-time-and-you-bc2048ab620c) a simple feature estimated reading time (ERT) is really great. When people see a headline that piques their interest --- and know in advance that it only takes a couple of minutes to read --- they're more likely to click the link.
 
-## How to calculate estimated reading time
+## Calculating estimated reading time
 
 There are plenty of [code snippets](https://github.com/search?q=reading+time) and [WordPress plugins](http://wordpress.org/search/reading+time) that will automatically calculate the estimated reading time of your articles.
 
 But what if you aren't a developer, or don't have access to one, and still want to test this on your website? You can calculate the estimated reading time yourself and simply add it to the top of your article.
 
-### Method 1: Do the math
+### Method 1: Doing the math
 
 Research varies, but generally, the average adult reads 200-250 words in one minute.
 
 Convert words into minutes here, some decimals into seconds there, a little rounding at the end... and you can calculate estimated time to read manually.
 
-Here's how:[^ertmath]
+Here's how[^ertmath]:
 
 * Find your total word count. Let's say it's 938 words.
 * Divide your total word count by 200. You'll get a decimal number, in this case, 4.69.
@@ -30,7 +30,7 @@ But that's really specific. Why not round that time to make things simpler for y
 
 Ta-da! That rounding makes your 938-word article a 5-minute read.
 
-### Method 2: Use an online calculator
+### Method 2: Using an online calculator
 
 A much faster way to get the estimated reading time of your article is to let a calculator do it.
 
@@ -45,7 +45,7 @@ With the help of Liquid tags we can have estimated reading time into Jekyll.
 
 Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension) of 180 words per minute (WPM) so here we divide the total content words with 180 (but you can have your own average WPM).
 
-{% highlight liquid %}
+{% highlight text %}
 {% raw %}
 {% assign reading_time = content | strip_html | number_of_words | divided_by: 180 %}
 
@@ -62,13 +62,13 @@ To get the actual estimated rounded value in a whole number reading time we code
 
 What some of the following Liquid tags do for us:
 
-* `content`: Your current post content on a page [^content]
+* `content`: Your current post content on a page[^content]
 * `strip_html`: Remove all the HTML tags in a page content
 * `number_of_words`: Count all the words in a content
 * `append: '.0'`: Show all the decimal numbers
 * `divided_by: 180`: Divide the total content words by 180
 
-{% highlight html %}
+{% highlight text %}
 {% raw %}
 {% assign reading_time = content | strip_html | number_of_words | append: '.0' | divided_by: 180 %}
 
