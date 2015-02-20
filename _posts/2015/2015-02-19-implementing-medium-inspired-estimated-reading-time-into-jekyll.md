@@ -57,7 +57,7 @@ Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki
 
 With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` so we can not get rounded value from the above technique. Here we only get 1.6 = 1 or 2.4 = 2 value. 
 
-### Estimated reading time to the rounded whole number into Jekyll
+### Estimating reading time to the rounded whole number into Jekyll
 
 To get estimated rounded value reading time to the nearest whole number we code more here.
 
@@ -93,6 +93,12 @@ $(document).ready(function() {
 {% endhighlight %}
 
 Now with the help of above jQuery snippet we get the actual rounded value to the nearest whole number 1.6777 = 2 or 2.43333 = 2. That's what we want to get.
+
+<figure>
+  <iframe height='350' scrolling='no' src='//codepen.io/MilanAryal/embed/zxWyvd/' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MilanAryal/pen/zxWyvd/'>Estimated reading time to the rounded whole number using jQuery</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.
+  </iframe>
+    <figcaption>Estimated rounded value reading time to the nearest whole number.</figcaption>
+</figure>
 
 ---
 
