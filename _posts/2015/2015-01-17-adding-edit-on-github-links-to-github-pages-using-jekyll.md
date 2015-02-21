@@ -15,7 +15,7 @@ If you're hosting the site on GitHub Pages using Jekyll, they inject the source 
 
 {% highlight html %}
 {% raw %}
-<a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">
+<a href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.path }}">
   Edit this page on GitHub
 </a>
 {% endraw %}
@@ -37,7 +37,7 @@ Example:
 
 {% highlight html %}
 {% raw %}
-<a href="{{ site.github.repository_url }}/edit/master/{{ page.relative_path }}">
+<a href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.relative_path }}">
   Edit this page on GitHub
 </a>
 {% endraw %}
@@ -63,7 +63,7 @@ You can add link of a source code of a post or doc on GitHub.
 
 {% highlight html %}
 {% raw %}
-<a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">
+<a href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.path }}">
   View source
 </a>
 {% endraw %}
@@ -73,7 +73,7 @@ You can add link of a source code of a post or doc on GitHub.
 
 {% highlight html %}
 {% raw %}
-<a href="{{ site.github.repository_url }}/blob/master/{{ page.relative_path }}">
+<a href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.relative_path }}">
   View source
 </a>
 {% endraw %}
@@ -87,7 +87,7 @@ Like ways you can also add view revision history link which shows all the commit
 
 {% highlight html %}
 {% raw %}
-<a href="{{ site.github.repository_url }}/commits/master/{{ page.path }}">
+<a href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.path }}">
   View revision history
 </a>
 {% endraw %}
@@ -97,7 +97,7 @@ Like ways you can also add view revision history link which shows all the commit
 
 {% highlight html %}
 {% raw %}
-<a href="{{ site.github.repository_url }}/commits/master/{{ page.relative_path }}">
+<a href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.relative_path }}">
   View revision history
 </a>
 {% endraw %}
