@@ -46,7 +46,7 @@ kramdown:
 
 [Download AnchorJS](//github.com/bryanbraun/anchorjs/archive/gh-pages.zip) which is written by Bryan Braun.
 
-<p><a class="btn btn-primary" href="//github.com/bryanbraun/anchorjs/" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');" title="AnchorJS GitHub repository">Direct link</a></p>
+<p><a class="btn btn-primary" href="//bryanbraun.github.io/anchorjs/" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">Direct link</a></p>
 
 ### Including AnchorJS
 
@@ -110,13 +110,13 @@ function addAnchors(selector) {
 
 {% endhighlight %}
 
+#### The CSS
+
 For the default anchor link styling (demonstrated in the [demo](http://bryanbraun.github.io/anchorjs/)) you should also include `anchor.css`.
 
 {% highlight html %}
 <link rel="stylesheet" href="anchor.css">
 {% endhighlight %}
-
-#### The CSS
 
 {% highlight css %}
 /**
@@ -267,7 +267,7 @@ function addAnchors(selector) {
   }
 };
 
-// Header link selector
+// Header link selector - Override or replace these with your own.
 addAnchors('.post-body h2, .post-body h3, .post-body h4');
 {% endhighlight %}
 
@@ -389,6 +389,6 @@ Now it's all done. :wink:
 
 ### Further references
 
+* Bryan Braun - [AnchorJS](//bryanbraun.github.io/anchorjs/)
 * Ben Balter - [Header hover anchor links on GitHub Pages using Jekyll](http://ben.balter.com/2014/03/13/pages-anchor-links/)
 * Parker Moore - Header Anchor Links in Vanilla JavaScript for GitHub Pages and Jekyll - [Blog 1](http://blog.parkermoore.de/2014/08/01/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/), [Blog 2](https://byparker.com/blog/2014/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/)
-* Bryan Braun - [AnchorJS](http://bryanbraun.github.io/anchorjs/)
