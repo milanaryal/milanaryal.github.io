@@ -18,7 +18,7 @@ Thus, a simple application called "[Twitter Archive Eraser](//martani.github.io/
 
 Download and setup the Twitter Archive Eraser app by visiting the link given below:
 
-<p><a class="btn btn-primary" href="//martani.github.io/Twitter-Archive-Eraser" onClick="ga('send', 'event', 'Click', 'Direct link', 'Direct link Twitter Archive Eraser');">Direct link →</a></p>
+<p><a class="btn btn-primary" href="//martani.github.io/Twitter-Archive-Eraser" onClick="ga('send', 'event', 'Click', 'Direct link', 'Twitter Archive Eraser');">Direct link →</a></p>
 
 There is two kinds of download app available:
 

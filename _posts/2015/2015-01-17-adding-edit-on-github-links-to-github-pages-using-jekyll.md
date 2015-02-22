@@ -21,11 +21,11 @@ If you're hosting the site on GitHub Pages using Jekyll, they inject the source 
 {% endraw %}
 {% endhighlight %}
 
-Example:
+Example for output URL of above input URL:
 
 {% highlight html %}
 {% raw %}
-<a href="//github.com/USERNAME/USERNAME.github.io/edit/master/{{ page.path }}">
+<a href="https://github.com/username/username.github.io/edit/master/_posts/yyyy-mm-dd-your-post-title.md">
   Edit this page on GitHub
 </a>
 {% endraw %}
