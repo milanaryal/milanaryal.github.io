@@ -23,8 +23,8 @@
     <meta property="article:author" content="{{ site.url }}/about/">{% endif %}
     <meta property="fb:admins" content="{{ site.fb_admins }}">
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">
-    {% elsif page.url == paginate_path %}<meta name="robots" content="noindex">{% endif %}
-    {% unless page.url == paginate_path %}<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">{% endunless %}
+    {% elsif page.url == site.paginate_path %}<meta name="robots" content="noindex">{% endif %}
+    {% unless page.url == site.paginate_path %}<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">{% endunless %}
     {% if page.next.url %}<link rel="next" href="{{ page.next.url | prepend: site.url }}" title="{{ page.next.title }}">{% endif %}
     {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | prepend: site.url }}" title="{{ page.previous.title}}">{% endif %}
     <link rel="dns-prefetch" href="//www.google-analytics.com">
