@@ -3,11 +3,16 @@
 
 {% include head.html %}
 
-<body itemscope itemtype="http://schema.org/Article">
+<body>
+<header>
 
 {% include nav.html %}
 
+</header>
+
+<main role="main">
     {{ content }}
+</main>
 
 {% include footer.html %}
 
