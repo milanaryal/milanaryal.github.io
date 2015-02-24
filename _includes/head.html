@@ -22,18 +22,8 @@
     {% if page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
     <meta property="article:author" content="{{ site.url }}/about/">{% endif %}
     <meta property="fb:admins" content="{{ site.fb_admins }}">
-    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">
-{% if paginator.total_pages > 1 %}
-    {% if paginator.previous_page %}
-        <meta name="robots" content="noindex">
-    {% endif %}
-    {% if paginator.next_page %}
-        <meta name="robots" content="noindex">
-     {% endif %}
-{% endif %}
-    {% if page.url == 'paginate_pageurl' %}<meta name="robots" content="noindex">{% endif %}
-    {% elsif page.url == site.paginate_path %}<meta name="robots" content="noindex">{% endif %}
-    {% unless page.url == site.paginate_path %}<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">{% endunless %}
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
     {% if page.next.url %}<link rel="next" href="{{ page.next.url | prepend: site.url }}" title="{{ page.next.title }}">{% endif %}
     {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | prepend: site.url }}" title="{{ page.previous.title}}">{% endif %}
     <link rel="dns-prefetch" href="//www.google-analytics.com">
