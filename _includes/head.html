@@ -25,13 +25,12 @@
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">
 {% if paginator.total_pages > 1 %}
     {% if paginator.previous_page %}
-        {{ assign paginate_pageurl = paginator.previous_page_path | replace: '//', '/' }}
+        <meta name="robots" content="noindex">
     {% endif %}
     {% if paginator.next_page %}
-        {{ assign paginate_pageurl = paginator.next_page_path | replace: '//', '/' }}
+        <meta name="robots" content="noindex">
      {% endif %}
 {% endif %}
-<link href="paginate_pageurl">
     {% if page.url == 'paginate_pageurl' %}<meta name="robots" content="noindex">{% endif %}
     {% elsif page.url == site.paginate_path %}<meta name="robots" content="noindex">{% endif %}
     {% unless page.url == site.paginate_path %}<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">{% endunless %}
