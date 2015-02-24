@@ -31,7 +31,8 @@
         {{ assign paginate_pageurl = paginator.next_page_path | replace: '//', '/' }}
      {% endif %}
 {% endif %}
-    {% if page.url == paginate_pageurl %}<meta name="robots" content="noindex">{% endif %}
+<link href="paginate_pageurl">
+    {% if page.url == 'paginate_pageurl' %}<meta name="robots" content="noindex">{% endif %}
     {% elsif page.url == site.paginate_path %}<meta name="robots" content="noindex">{% endif %}
     {% unless page.url == site.paginate_path %}<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">{% endunless %}
     {% if page.next.url %}<link rel="next" href="{{ page.next.url | prepend: site.url }}" title="{{ page.next.title }}">{% endif %}
