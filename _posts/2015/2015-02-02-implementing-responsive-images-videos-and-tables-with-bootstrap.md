@@ -8,7 +8,7 @@ If you're using [Bootstrap](http://getbootstrap.com/) to develop your site (and 
 
 Mostly everything in these posts are coming directly from the documentation itself. So hopefully some of these you immediately recognize and others you'll wonder how you missed that.
 
-## Responsive images with Bootstrap
+### Responsive images with Bootstrap
 
 Working with larger images may be a problem for smaller devices. Bootstrap uses a class of `.img-responsive` to make any image responsive:
 
@@ -26,7 +26,7 @@ This combination of `max-width: 100%` and `height: auto` will ensure the images 
 <img src="..." class="img-responsive" alt="Responsive image">
 {% endhighlight %}
 
-### Responsive images with Bootstrap using jQuery
+#### Responsive images with Bootstrap using jQuery
 
 Let suppose on your blog you have already posted 600+ posts and what if you want to add `.img-responsive` class in your every posts `img`, its very awful to open and add in your every posts that's why here we are using some jQuery code to add `.img-responsive` class in every old or new posts:
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-## Responsive videos with Bootstrap
+### Responsive videos with Bootstrap
 
 If you're hosting video yourself that means using `<video>` then adding `.img-responsive` class can make any video responsive:
 
@@ -44,7 +44,7 @@ If you're hosting video yourself that means using `<video>` then adding `.img-re
 <video src="..." class="img-responsive" controls></video>
 {% endhighlight %}
 
-### Responsive embed videos with Bootstrap
+#### Responsive embed videos with Bootstrap
 
 Last year I wrote about "[Making fluid and responsive embedded videos]({% post_url /2014/2014-11-22-making-fluid-and-responsive-embedded-videos %})" with different methods but now Bootstrap can do that with even easy methods.
 
@@ -83,7 +83,7 @@ Here's the Bootstrap CSS:
 
 Rules are directly applied to `<iframe>`, `<embed>`, `<video>`, and `<object>` elements; optionally use an explicit descendant class `.embed-responsive-item` when you want to match the styling for other attributes.
 
-### Responsive video embeds that maintain aspect ratio
+#### Responsive video embeds that maintain aspect ratio
 
 When Bootstrap 3.2 came out, it came out with an additional helper class to make it easier to make `iframes` (like YouTube embeds) responsive while maintaining a certain aspect ratio. It's extremely easy to use these, just add the following code to your markup:
 
@@ -109,7 +109,7 @@ Notice how the `iframe` doesn't include `frameborder="0"`. This is because Boots
 
 This method also works to have responsive `iframe` object for like SlideShare.
 
-### Responsive embed videos with Bootstrap using jQuery
+#### Responsive embed videos with Bootstrap using jQuery
 
 Here we're using jQuery method to add the necessary Bootstrap classes to have responsive embed YouTube and Vimeo videos:
 
@@ -122,7 +122,7 @@ $(document).ready(function () {
 });
 {% endhighlight %}
 
-## Responsive tables with Bootstrap
+### Responsive tables with Bootstrap
 
 Tables, used for displaying tabular data, are also responsive in Bootstrap.
 
@@ -153,7 +153,7 @@ Bootstrap has another class to remedy this: `.table-responsive`. Here's the CSS:
 
 These styles cause the table to become scrollable on the horizontal axis on smaller devices.
 
-### Responsive tables with Bootstrap using jQuery
+#### Responsive tables with Bootstrap using jQuery
 
 Here we're using jQuery method to add the necessary Bootstrap classes to have responsive tables:
 

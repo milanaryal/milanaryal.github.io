@@ -9,7 +9,7 @@ Social media meta tags allows us to optimize for sharing Twitter, Facebook, Goog
 
 A lot of these will even cross-share the tags. For example, Google+ will actually use Facebook's Open Graph tags if their available. All in all, the following code is a great start.
 
-## Integrating Open Graph into Jekyll
+### Integrating Open Graph into Jekyll
 
 {% highlight html %}
 {% raw %}
@@ -43,7 +43,7 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 {% endraw %}
 {% endhighlight %}
 
-## Integrating Twitter cards into Jekyll
+### Integrating Twitter cards into Jekyll
 
 {% highlight html %}
 {% raw %}
@@ -57,7 +57,7 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 {% endraw %}
 {% endhighlight %}
 
-## Optimizing for search engine into Jekyll
+### Optimizing for search engine into Jekyll
 
 {% highlight html %}
 {% raw %}
@@ -66,7 +66,7 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 {% endraw %}
 {% endhighlight %}
 
-## Integrating Google Author Rich Snippets into Jekyll
+### Integrating Google Author Rich Snippets into Jekyll
 
 {% highlight html %}
 {% raw %}

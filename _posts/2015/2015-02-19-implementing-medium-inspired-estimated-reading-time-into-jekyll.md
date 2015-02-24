@@ -6,13 +6,13 @@ excerpt: "Estimating the reading time for a article based on standard reading sp
 
 [Medium](//medium.com/the-story/read-time-and-you-bc2048ab620c) a simple feature estimated reading time (ERT) is really great. When people see a headline that piques their interest --- and know in advance that it only takes a couple of minutes to read --- they're more likely to click the link.
 
-## Calculating estimated reading time
+### Calculating estimated reading time
 
 There are plenty of [code snippets](https://github.com/search?q=reading+time) and [WordPress plugins](http://wordpress.org/search/reading+time) that will automatically calculate the estimated reading time of your articles.
 
 But what if you aren't a developer, or don't have access to one, and still want to test this on your website? You can calculate the estimated reading time yourself and simply add it to the top of your article.
 
-### Method 1: Doing the math
+#### Method 1: Doing the math
 
 Research varies, but generally, the average adult reads 200-250 words in one minute.
 
@@ -31,7 +31,7 @@ But that's really specific. Why not round that time to make things simpler for y
 
 Ta-da! That rounding makes your 938-word article a 5-minute read.
 
-### Method 2: Using an online calculator
+#### Method 2: Using an online calculator
 
 A much faster way to get the estimated reading time of your article is to let a calculator do it.
 
@@ -40,7 +40,7 @@ A much faster way to get the estimated reading time of your article is to let a 
 
 ---
 
-## Implementing estimated reading time into Jekyll using Liquid tags
+### Implementing estimated reading time into Jekyll using Liquid tags
 
 With the help of Liquid tags we can have estimated reading time into Jekyll.
 
@@ -57,7 +57,7 @@ Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki
 
 With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` so we can not get rounded value from the above technique. Here we only get 1.6 = 1 or 2.4 = 2 value. 
 
-### Estimating reading time to the rounded whole number into Jekyll
+#### Estimating reading time to the rounded whole number into Jekyll
 
 To get estimated rounded value reading time to the nearest whole number we code more here.
 
