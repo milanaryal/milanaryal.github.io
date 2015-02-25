@@ -2,7 +2,6 @@
 title: "21 inspirational quotes that never fail to inspire"
 date: 2015-02-25T12:58:08+05:45
 excerpt: "A compilation of 21 inspirational quotes by some famous people that never fail to inspire."
-header_image: "https://d262ilb51hltx0.cloudfront.net/max/1200/1*vLSx58T7P0W-RjGW1zi1DQ.jpeg"
 ---
 
 In daily life, we come across many words. Some words leave a lasting impression on our mind. Here is a compilation of 21 inspirational quotes by some famous people that never fail to inspire me or anyone, for that matter.
@@ -51,4 +50,4 @@ In daily life, we come across many words. Some words leave a lasting impression 
 
 ---
 
-*Also published at [medium.com/@MilanAryal](//medium.com/@MilanAryal/21-inspirational-quotes-that-never-fail-to-inspire-6349b03465e9) on February 25, 2015.*
+*Also published at [medium.com/&#64MilanAryal](//medium.com/@MilanAryal/21-inspirational-quotes-that-never-fail-to-inspire-6349b03465e9) on February 25, 2015.*
