@@ -6,9 +6,9 @@ excerpt: "A compilation of 21 inspirational quotes by some famous people that ne
 
 In daily life, we come across many words. Some words leave a lasting impression on our mind. Here is a compilation of 21 inspirational quotes by some famous people that never fail to inspire me or anyone, for that matter.
 
-1. "Whatever the mind of man can conceive and believe, it can achieve." *-- Napoleon Hill*
+1. "Whatever the mind of man can conceive and believe, it can achieve." *--- Napoleon Hill*
 
-2. "Twenty years from now you'll be more disappointed by the things that you didn't do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails. Explore, Dream, Discover." *-- Mark Twain*
+2. "Twenty years from now you'll be more disappointed by the things that you didn't do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails. Explore, Dream, Discover." *--- Mark Twain*
 
 3. "You can never cross the ocean until you have the courage to lose sight of the shore." *--- Christopher Columbus*
 
