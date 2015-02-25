@@ -50,4 +50,4 @@ In daily life, we come across many words. Some words leave a lasting impression 
 
 ---
 
-*Also published at [medium.com/&#64MilanAryal](//medium.com/@MilanAryal/21-inspirational-quotes-that-never-fail-to-inspire-6349b03465e9) on February 25, 2015.*
+<p class="text-center"><em>Also published at <a href="//medium.com/@MilanAryal/21-inspirational-quotes-that-never-fail-to-inspire-6349b03465e9">medium.com/&#64MilanAryal</a> on February 25, 2015.</em></p>
