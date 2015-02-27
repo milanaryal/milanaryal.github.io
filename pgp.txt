@@ -1,6 +1,6 @@
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: Keybase OpenPGP v2.0.8
-Comment: https://keybase.io/crypto
+Comment: https://keybase.io/milanaryal
 
 xsFNBFTwQdoBEAC+WPXDSwZcjo8GnZoRJWcPwh+8dTdp1OD3XgwKgL6zWNrBQMZQ
 +0Opjl63M6V161BlUgQlZDCxYsolTaRh+fcboTfBV9xSY7LxP1dnCyALnHKb8xwZ
