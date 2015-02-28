@@ -1,5 +1,6 @@
 ---
-permalink: "/keybase.txt"
+layout: nil
+permalink: /keybase.txt
 ---
 
 ==================================================================

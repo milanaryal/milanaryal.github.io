@@ -1,62 +1,62 @@
 <!-- Footer -->
 <footer class="content-info" role="contentinfo">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="/feed.xml">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% if site.author.twitter %}
-                    <li>
-                        <a rel="me" href="//twitter.com/{{ site.author.twitter }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.author.googleplus %}
-                    <li>
-                        <a rel="me" href="//google.com/+{{ site.author.googleplus }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.author.github %}
-                    <li>
-                        <a rel="me" href="//github.com/{{ site.author.github }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-					{% if site.author.tumblr %}
-                    <li>
-                        <a rel="me" href="http://{{ site.author.tumblr }}.tumblr.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-tumblr fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                </ul>
-                <span class="copyright text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Some rights reserved</a>.</span>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          <li>
+            <a href="/feed.xml">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% if site.author.twitter %}
+          <li>
+            <a rel="me" href="//twitter.com/{{ site.author.twitter }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.googleplus %}
+          <li>
+            <a rel="me" href="//google.com/+{{ site.author.googleplus }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.github %}
+          <li>
+            <a rel="me" href="//github.com/{{ site.author.github }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.tumblr %}
+          <li>
+            <a rel="me" href="http://{{ site.author.tumblr }}.tumblr.com">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-tumblr fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+        <span class="copyright text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Some rights reserved</a>.</span>
+      </div>
     </div>
+  </div>
 </footer>
 
 <!-- Scripts -->
