@@ -7,9 +7,9 @@ excerpt: "Learn about best web practices and how to open new links in a new wind
 
 Take note that according to most usability experts, opening links in a new browser tab is considered bad practice.
 
-> Avoid spawning multiple browser windows if at all possible -- taking the "Back" button away from users can make their experience so painful that it usually far outweighs whatever benefit you're trying to provide. One common theory in favor of spawning the second window is that it keeps users from leaving your site, but ironically it may have just the opposite effect by preventing them from returning when they want to.
+> Avoid spawning multiple browser windows if at all possible --- taking the "Back" button away from users can make their experience so painful that it usually far outweighs whatever benefit you're trying to provide. One common theory in favor of spawning the second window is that it keeps users from leaving your site, but ironically it may have just the opposite effect by preventing them from returning when they want to.
 >
-> <cite><a href="http://www.snyderconsulting.net/article_7tricks.htm#7">Second browser windows</a>, Seven tricks that Web users don't know</cite>
+> <cite><a rel="nofollow" href="http://www.snyderconsulting.net/article_7tricks.htm#7">Second browser windows</a>, Seven tricks that Web users don't know</cite>
 
 If you would still like to open external links in a new browser tab/window, follow these instructions.
 

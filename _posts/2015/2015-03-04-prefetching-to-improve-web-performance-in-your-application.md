@@ -1,5 +1,5 @@
 ---
-title: "Improving page performance with HTML5 prefetch"
+title: "Prefetching to improve web performance in your application"
 date: 2015-03-04T18:50:13+05:45
 excerpt: "Optimistically loading web resources ahead of time for better performance."
 ---
@@ -12,9 +12,9 @@ excerpt: "Optimistically loading web resources ahead of time for better performa
 
 "Prefetching" is simply loading a file before it's needed, to provide a fast and instant experience. You can decide on which content to prefetch by analysing your users behaviour, and try to predict which resources they will need ahead of time.
 
-### Browser cache
+### Browser cache isn't enough
 
-One might argue that "we already have browser cache!, we don't need prefetch!". But as Steve Souders points out in his great [prebrowsing](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/) article, browser cache offers no help in many situations:
+One might argue that "we already have browser cache!, we don't need prefetch!". But there are many situations when the cache offers no help: 
 
 > **first visit** --- The cache only comes into play on subsequent visits to a site. The first time you visit a site it hasn't had time to cache any resources.
 >
@@ -25,6 +25,8 @@ One might argue that "we already have browser cache!, we don't need prefetch!". 
 > **expired** --- [69% of resources don't have any caching headers or are cacheable for less than one day](http://httparchive.org/interesting.php#caching). If the user revisits these pages and the browser determines the resource is expired, an HTTP request is needed to check for updates. Even if the response indicates the cached resource is still valid, these network delays still make pages load more slowly, especially on mobile.
 >
 > **revved** --- Even if the website's resources are in the cache from a previous visit, the website might have changed and uses different resources.
+>
+> <cite><a rel="nofollow" href="http://www.stevesouders.com/blog/2013/11/07/prebrowsing/">Prebrowsing</a>, Steve Souders</cite>
 
 ### DNS prefetching
 
@@ -33,49 +35,59 @@ DNS is the protocol that converts human readable domains `http://www.google.com`
 To improve the speed of redirects, content authors can add the following tag to their page:
 
 {% highlight html %}
-  <link rel="dns-prefetch" href="//host_name_to_prefetch.com">
+<link rel="dns-prefetch" href="//host_name_to_prefetch.com">
 {% endhighlight %}
 
 For example to resolve Google Analytics and Google Fonts DNS:
 
 {% highlight html %}
-  <link rel="dns-prefetch" href="//www.google-analytics.com">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
 {% endhighlight %}
 
-### Link prefetch
+### Link prefetching
 
-Accoring to [MDN](//developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ) wiki,
-
-> Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch documents that the user might visit in the near future. A web page provides a set of prefetching hints to the browser, and after the browser is finished loading the page, it begins silently prefetching specified documents and stores them in its cache. When the user visits one of the prefetched documents, it can be served up quickly out of the browser's cache.
+Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch documents that the user might visit in the near future. A web page provides a set of prefetching hints to the browser, and after the browser is finished loading the page, it begins silently prefetching specified documents and stores them in its cache. When the user visits one of the prefetched documents, it can be served up quickly out of the browser's cache.
 
 Standard link prefetching (executed by most modern browsers):
 
 {% highlight html %}
-  <link rel="subresource" href="/css/style.css">
-  <link rel="prefetch" href="/js/scripts.js">
-  <link rel="prefetch" href="/img/big.jpeg">
+<link rel="prefetch" href="/css/style.css">
+<link rel="prefetch" href="/js/scripts.js">
+<link rel="prefetch" href="/img/big.jpeg">
 {% endhighlight %}
 
-### Pre-rendering
+### Prerendering
 
-*Prerendering*(https://developers.google.com/chrome/whitepapers/prerender) extends the concept of prefetching. Instead of just downloading the top-level resource, it does all of the work necessary to show the page to the user—without actually showing it until the user clicks. Prerendering behaves similarly to if a user middle-clicked on a link on a page (opening it in a background tab) and then later switched to that tab. However, in prerendering, that “background tab” is totally hidden from the user, and when the user clicks, its contents are seamlessly swapped into the same tab the user was viewing. From the user’s perspective, the page simply loads much faster than before.
+*Prerendering* extends the concept of prefetching. Instead of just downloading the top-level resource, it does all of the work necessary to show the page to the user—without actually showing it until the user clicks. Prerendering behaves similarly to if a user middle-clicked on a link on a page (opening it in a background tab) and then later switched to that tab. However, in prerendering, that “background tab” is totally hidden from the user, and when the user clicks, its contents are seamlessly swapped into the same tab the user was viewing. From the user’s perspective, the page simply loads much faster than before.
 
 You can trigger prerendering by inserting a link element with a rel of "prerender", for example:
 
 {% highlight html %}
-  <link rel="prerender" href="http://example.org/index.html">
+<link rel="prerender" href="http://example.org/index.html">
 {% endhighlight %}
+
+Situations in which prerendering is aborted:
+
+* The URL initiates a download
+* HTMLAudio or Video in the page
+* POST, PUT, and DELETE XMLHTTPRequests
+* HTTP Authentication
+* HTTPS pages
+* Pages that trigger the malware warning
+* Popup/window creation
+* Detection of high resource utilization
+* Developer Tools is open
 
 ### Inject prefetch hints at runtime
 
 You can trigger the prefetch hints when you predict that a user action will require the download of additional content:
 
 {% highlight javascript %}
-  var hint =document.createElement("link")
-  hint.setAttribute("rel","prerender")
-  hint.setAttribute("href","next-page.html")
-  document.getElementsByTagName("head")[0].appendChild(hint)
+var hint =document.createElement("link")
+hint.setAttribute("rel","prerender")
+hint.setAttribute("href","next-page.html")
+document.getElementsByTagName("head")[0].appendChild(hint)
 {% endhighlight %}
 
 ### Browser support
@@ -93,15 +105,14 @@ You can trigger the prefetch hints when you predict that a user action will requ
 
 There is currently no way to test for prefetch or pre-rendering, and having chrome devtools open will cancel the prefetch or prerender requests, to see if the assets you’re requesting are being downloaded, the only alternative i’ve found is to check the browsers cache, in Chrome you can go to `chrome://cache/` and in Firefox to `about:cache` and search for the files you are trying to prefetch. Chrome allows you to see if a page is being prerendered at `chrome://net-internals/#prerender`.
 
-
 ---
 
-### Further references
+### Further resources
 
-* Wikipedia - [Link prefetching](http://en.wikipedia.org/wiki/Link_prefetching)
-* The Chromium Projects - [DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching)
-* Google Developers - [Pre-Resolve DNS](https://developers.google.com/speed/pagespeed/service/PreResolveDns)
-* Google Developers - [Web Developer's Guide to Prerendering in Chrome](https://developers.google.com/chrome/whitepapers/prerender)
-* Mozilla Developer Network - [Link prefetching FAQ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)
-* Mozilla Developer Network - [Controlling DNS prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching)
-* W3C - [Resource hints](http://w3c.github.io/resource-hints/)
+* [Link prefetching](http://en.wikipedia.org/wiki/Link_prefetching) - Wikipedia
+* [DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching) - The Chromium Projects
+* [Pre-Resolve DNS](https://developers.google.com/speed/pagespeed/service/PreResolveDns) - Google Developers
+* [Web Developer's Guide to Prerendering in Chrome](https://developers.google.com/chrome/whitepapers/prerender) - Google Developers
+* [Link prefetching FAQ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ) - Mozilla Developer Network
+* [Controlling DNS prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching) - Mozilla Developer Network
+* [Resource hints](http://w3c.github.io/resource-hints/) - W3C
