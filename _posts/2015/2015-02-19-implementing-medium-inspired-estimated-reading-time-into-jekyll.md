@@ -51,7 +51,6 @@ Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki
 {% assign reading_time = content | strip_html | number_of_words | divided_by: 180 %}
 
 {{ reading_time }} min read
-{% endif %}
 {% endraw %}
 {% endhighlight %}
 
