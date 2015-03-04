@@ -1,20 +1,15 @@
 ---
-title: "Prefetching to improve web performance in your application"
+title: "Prebrowsing to improve web performance in your application"
 date: 2015-03-04T18:50:13+05:45
 excerpt: "Optimistically loading web resources ahead of time for better performance."
+redirect_from: "/2015/prefetching-to-improve-web-performance-in-your-application/"
 ---
 
-<figure>
-  <iframe src="//www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
-
-  <figcaption><strong><a href="//docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19">Preconnect, prefetch, prerender...</a></strong> from <strong><a href="//twitter.com/igrigorik">Ilya Grigorik</a></strong></figcaption>
-</figure>
-
-"Prefetching" is simply loading a file before it's needed, to provide a fast and instant experience. You can decide on which content to prefetch by analysing your users behaviour, and try to predict which resources they will need ahead of time.
+"Prebrowsing" (short for "predictive browsing" --- a word made by Steve Souders) is simply loading a file before browser needs it, to provide a fast and instant user experience. You can decide on which content to prefetch by analysing your users behaviour, and try to predict which resources they will need ahead of time.
 
 ### Browser cache isn't enough
 
-One might argue that "we already have browser cache!, we don't need prefetch!". But there are many situations when the cache offers no help: 
+One might argue that "we already have browser cache!, we don't need prefetch!". But Steve Souders points out in one of his [prebrowsing article](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/), browser cache offers no help in many situations:
 
 > **first visit** --- The cache only comes into play on subsequent visits to a site. The first time you visit a site it hasn't had time to cache any resources.
 >
@@ -25,8 +20,14 @@ One might argue that "we already have browser cache!, we don't need prefetch!". 
 > **expired** --- [69% of resources don't have any caching headers or are cacheable for less than one day](http://httparchive.org/interesting.php#caching). If the user revisits these pages and the browser determines the resource is expired, an HTTP request is needed to check for updates. Even if the response indicates the cached resource is still valid, these network delays still make pages load more slowly, especially on mobile.
 >
 > **revved** --- Even if the website's resources are in the cache from a previous visit, the website might have changed and uses different resources.
->
-> <cite><a rel="nofollow" href="http://www.stevesouders.com/blog/2013/11/07/prebrowsing/">Prebrowsing</a>, Steve Souders</cite>
+
+### The three big techniques
+
+Browsers can analyze patterns to predict where users are going to go next, and start DNS resolution and TCP handshakes as soon as users hover over links. But to get the most out of these improvements, we can enable prebrowsing on our web pages, with three techniques at our disposal:
+
+* DNS prefetching
+* Resource prefetching
+* Prerendering
 
 ### DNS prefetching
 
@@ -38,11 +39,19 @@ To improve the speed of redirects, content authors can add the following tag to 
 <link rel="dns-prefetch" href="//host_name_to_prefetch.com">
 {% endhighlight %}
 
-For example to resolve Google Analytics and Google Fonts DNS:
+For example:
 
 {% highlight html %}
-<link rel="dns-prefetch" href="//www.google-analytics.com">
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<html>
+  <head>
+    <link rel="dns-prefetch" href="//www.domain1.com">
+    <link rel="dns-prefetch" href="//www.domain2.com">
+  </head>
+  <body>
+    <img src="www.domain1.com/image1.jpeg">
+    <script src="www.domain2.com/script1.js">
+  </body>
+</html>
 {% endhighlight %}
 
 ### Link prefetching
@@ -101,9 +110,41 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 
 *Internet Explorer 9 supports DNS pre-fetching, but calls it prefetch. In Internet Explorer 10+, dns-prefetch and prefetch are equivalent, resulting in a DNS pre-fetch in both cases.*
 
-### How to test for prefetch
+---
 
-There is currently no way to test for prefetch or pre-rendering, and having chrome devtools open will cancel the prefetch or prerender requests, to see if the assets you’re requesting are being downloaded, the only alternative i’ve found is to check the browsers cache, in Chrome you can go to `chrome://cache/` and in Firefox to `about:cache` and search for the files you are trying to prefetch. Chrome allows you to see if a page is being prerendered at `chrome://net-internals/#prerender`.
+### Preconnect, prefetch, prerender... by Ilya Grigorik
+
+<figure>
+  <iframe src="//www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+
+  <figcaption><a href="//docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19">Preconnect, prefetch, prerender...</a> from <a href="//twitter.com/igrigorik">Ilya Grigorik</a>.</figcaption>
+</figure>
+
+---
+
+### Pre-browsing by Steve Souders
+
+<figure>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Msqs1jIzgo4?rel=0" frameborder="0" allowfullscreen></iframe>
+
+  <figcaption>Prebrowsing by Steve Souders at Velocity NY 2013</figcaption>
+</figure>
+
+<figure>
+  <iframe src="//www.slideshare.net/slideshow/embed_code/27665184" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+ <figcaption><a href="//www.slideshare.net/souders/prebrowsing-velocity-ny-2013">Prebrowsing - Velocity NY 2013</a> from <a href="//twitter.com/souders">Steve Souders</a>.</figcaption>
+</figure>
+
+{% comment %}
+<!--- ### Steve Souders | Pre-browsing | Fronteers 2013</a>
+
+<figure>
+  <iframe src="https://player.vimeo.com/video/77176315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+  <figcaption><a href="https://vimeo.com/77176315">Steve Souders | Pre-browsing | Fronteers 2013</a>.</figcaption>
+</figure> --->
+{% endcomment %}
 
 ---
 
@@ -115,4 +156,5 @@ There is currently no way to test for prefetch or pre-rendering, and having chro
 * [Web Developer's Guide to Prerendering in Chrome](https://developers.google.com/chrome/whitepapers/prerender) - Google Developers
 * [Link prefetching FAQ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ) - Mozilla Developer Network
 * [Controlling DNS prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching) - Mozilla Developer Network
+* [One Step Ahead: Improving Performance with Prebrowsing](http://alistapart.com/article/one-step-ahead-improving-performance-with-prebrowsing) - A List Apart
 * [Resource hints](http://w3c.github.io/resource-hints/) - W3C
