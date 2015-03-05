@@ -19,17 +19,15 @@ permalink: /archives/
       <h3 class="section-heading">{{ post.date | date: '%Y' }}</h3>
     {% endif %}
   {% endunless %}
-  <article class="archives-item">
-      <div class="col-sm-3">
-        <div class="archives-date text-muted">
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d' }}</time>
-        </div>
-	  </div>
-      <div class="col-sm-9">
-        <h4 class="archives-title">
+  <article>
+    <div class="row">
+      <h4 class="col-sm-9">
           <a href="{{ post.url }}">{{ post.title }}</a>
-        </h4>
-      </div>
+      </h4>
+      <div class="col-sm-3 text-muted">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d, %Y' }}</time>
+	  </div>
+    </div>
   </article>
 {% endfor %}
 </section>
