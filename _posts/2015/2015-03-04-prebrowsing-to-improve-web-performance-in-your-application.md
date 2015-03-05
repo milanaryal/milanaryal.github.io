@@ -117,7 +117,7 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 <figure>
   <iframe src="//www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
 
-  <figcaption><a href="//docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19">Preconnect, prefetch, prerender...</a> from <a href="//twitter.com/igrigorik">Ilya Grigorik</a>.</figcaption>
+  <figcaption>Slides: SlideShare, <a href="//docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19">Preconnect, prefetch, prerender...</a> from <a href="//twitter.com/igrigorik">Ilya Grigorik</a>.</figcaption>
 </figure>
 
 ---
@@ -127,13 +127,13 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 <figure>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/Msqs1jIzgo4?rel=0" frameborder="0" allowfullscreen></iframe>
 
-  <figcaption>Prebrowsing by Steve Souders at Velocity NY 2013</figcaption>
+  <figcaption>Video: YouTube, Prebrowsing by Steve Souders at Velocity NY 2013</figcaption>
 </figure>
 
 <figure>
   <iframe src="//www.slideshare.net/slideshow/embed_code/27665184" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
- <figcaption><a href="//www.slideshare.net/souders/prebrowsing-velocity-ny-2013">Prebrowsing - Velocity NY 2013</a> from <a href="//twitter.com/souders">Steve Souders</a>.</figcaption>
+ <figcaption>Slides: SlideShare, <a href="//www.slideshare.net/souders/prebrowsing-velocity-ny-2013">Prebrowsing - Velocity NY 2013</a> from <a href="//twitter.com/souders">Steve Souders</a>.</figcaption>
 </figure>
 
 {% comment %}
