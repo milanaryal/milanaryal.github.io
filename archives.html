@@ -8,6 +8,7 @@ redirect_from: /archive/
 permalink: /archives/
 ---
 
+<section class="archives">
 {% for post in site.posts %}
   {% unless post.next %}
     <h3 class="section-heading">{{ post.date | date: '%Y' }}</h3>
@@ -18,14 +19,13 @@ permalink: /archives/
       <h3 class="section-heading">{{ post.date | date: '%Y' }}</h3>
     {% endif %}
   {% endunless %}
-<ul class="archives">
-  <li class="row">
+  <div class="row">
     <div class="col-sm-9">
       <a href="{{ post.url }}">{{ post.title }}</a>
     </div>
     <div class="col-sm-3 text-muted">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
     </div>
-  </li>
-</ul>
+  </div>
 {% endfor %}
+</section>
