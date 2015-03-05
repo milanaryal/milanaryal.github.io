@@ -22,14 +22,14 @@ permalink: /archives/
   <article class="archives-item">
     <div class="row">
       <div class="col-sm-3">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          <span class="archives-date text-muted">{{ post.date | date: '%b %d' }}</span>
-        </time>
-      </div>
+        <div class="archives-date text-muted">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d' }}</time>
+        </div>
+	  </div>
       <div class="col-sm-9">
-        <a href="{{ post.url }}">
-          <h4 class="archives-title">{{ post.title }}</h4>
-        </a>
+        <h4 class="archives-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h4>
       </div>
     </div>
   </article>

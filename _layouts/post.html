@@ -21,9 +21,7 @@ layout: default
             <h2 class="subheading">{{ page.subtitle }}</h2>
             {% endif %}
             <div class="meta">
-              <time datetime="{{ page.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ page.date | date_to_rfc822 }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-              <span class="middot-divider"></span>
-              <span data-toggle="tooltip" data-placement="bottom" title="{{ content | strip_html | number_of_words | append: ' words'}}">{% include reading_time.html %}</span>
+              <time datetime="{{ page.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ page.date | date_to_rfc822 }}">{{ page.date | date: "%B %-d, %Y" }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ content | strip_html | number_of_words | append: ' words'}}">{% include reading_time.html %}</span>
             </div>
           </div>
         </div>
