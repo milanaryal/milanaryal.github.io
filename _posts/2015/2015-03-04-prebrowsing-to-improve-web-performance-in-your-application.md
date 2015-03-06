@@ -26,12 +26,12 @@ One might argue that "we already have browser cache!, we don't need prefetch!". 
 Browsers can analyze patterns to predict where users are going to go next, and start DNS resolution and TCP handshakes as soon as users hover over links. But to get the most out of these improvements, we can enable prebrowsing on our web pages, with three techniques at our disposal:
 
 * DNS prefetching
-* Resource prefetching
+* Link/resource prefetching
 * Prerendering
 
 ### DNS prefetching
 
-DNS is the protocol that converts human readable domains `http://www.google.com` into computer readable IPs `http://173.194.113.18` or `http://64.233.167.99`. DNS prefetching is an attempt to resolve domain names before a user tries to follow a link.
+DNS is the protocol that converts human readable domains `http://www.google.com` into computer readable IPs `http://173.194.113.18`, `http://64.233.167.99` and/or `http://www.smashingmagazine.com` to `http://80.72.139.101`. DNS prefetching is an attempt to resolve domain names before a user tries to follow a link.
 
 To improve the speed of redirects, content authors can add the following tag to their page:
 
@@ -103,7 +103,7 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 
 | Browser | dns-prefetch | subresource | prefetch | prerender |
 |---------|--------------|-------------|----------|-----------|
-| Firefox | 3.5+         | n/1         | 3.5+     | n/a       |
+| Firefox | 3.5+         | n/a         | 3.5+     | n/a       |
 | Chrome  | 1.0+         | 1.0+        | 1.0+     | 13+       |
 | Safari  | 5.01+        | n/a         | n/a      | n/a       |
 | IE      | 9+(prefetch) | n/a         | 10+      | 11+       |
@@ -150,6 +150,7 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 
 ### Further resources
 
+* [Prebrowsing](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/) - Steve Souders
 * [Link prefetching](http://en.wikipedia.org/wiki/Link_prefetching) - Wikipedia
 * [DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching) - The Chromium Projects
 * [Pre-Resolve DNS](https://developers.google.com/speed/pagespeed/service/PreResolveDns) - Google Developers
