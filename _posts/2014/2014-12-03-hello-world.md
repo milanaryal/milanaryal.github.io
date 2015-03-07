@@ -12,43 +12,18 @@ I've finally migrated this to [GitHub Pages](//pages.github.com) using an awesom
 
 > Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site generator".
 
-Over time, I grew to really dislike how heavy-weight other CMS platform is. I dislike how WYSIWYG editors make it really hard to see what HTML is being generated and tend to bloat the code that is produced. I found different CMS platform uses more and more plugins which make the site weight heavy and slow. In CMS platform, I was not able to do more of what I want to do.
+Over time, I grew to really dislike how heavy-weight other CMS platform is. I dislike how WYSIWYG editors make it really hard to see what HTML is being generated and tend to bloat the code that is produced. I found different CMS platform uses more and more plugins which make our site weight heavy and slow. In CMS platform, I was not able to do more of what I want to do.
 
-So when I came to learned about Jekyll, I found out that it is the great alternative. I like the idea that my entire blog is a set of static files. Besides its simplicity and light weighted, it makes backups so much easier and avoids most common security concerns caused by running dynamic websites. I could even write my post in [Markdown](//en.wikipedia.org/wiki/Markdown) or [Textile](//en.wikipedia.org/wiki/Textile_(markup_language)) which is the easiest way of writing post.
+So when I came to learned about Jekyll, I found out that it is the great alternative. I like the idea that my entire blog is a set of static files. Besides its simplicity and light weighted, it makes backups so much easier and avoids most common security concerns caused by running dynamic websites. I could even write my posts in [Markdown](//en.wikipedia.org/wiki/Markdown) or [Textile](//en.wikipedia.org/wiki/Textile_(markup_language)) which is the easiest way of writing blog posts.
 
-It is automatically transformed by Jekyll into a static site whenever I push this repository to GitHub.
-Now on my blog 
+I think this is the future of blogging with Jekyll which gives us great control to our static contents.
 
-I was tired of having my blog posts end up in a database off on some remote server. That is backwards. I’ve lost valuable posts that way. I want to author my posts locally in Textile or Markdown. My blog should be easily stylable and customizable any way I please. It should take care of creating a feed for me. And most of all, my site should be stored on GitHub so that I never lose data again.
+---
 
-I think this is the future of blogging in 21st century with Jekyll which gives great control of our contents.
+Why I'm using Jekyll and hosting this site on GitHub Pages?
 
-### Why I love Jekyll
+In Tom Preston-Werner words,
 
-#### Simplicity
-
-Jekyll strips everything down to the bare minimum, eliminating a lot of complexity:
-
-* No database
-Unlike WordPress and other content management systems (CMS), Jekyll doesn't have a database. All posts and pages are converted to static HTML prior to publication. This is great for loading speed because no database calls are made when a page is loaded.
-
-* No CMS
-Simply write all of your content in Markdown, and Jekyll will run it through templates to generate your static website. GitHub can serve as a CMS if needed because you can edit content on it.
-
-* Fast
-Jekyll is fast because, being stripped down and without a database, you're just serving up static pages. My base theme, Jekyll Now, makes only three HTTP requests --- including the profile picture and social icons!
-
-* Minimal
-Your Jekyll website will include absolutely no functionality or features that you aren’t using.
-
-#### Design control
-
-Spend less time wrestling with complex templates written by other people, and more time creating your own theme or customizing an uncomplicated base theme.
-
-#### Security
-
-The vast majority of vulnerabilities that affect platforms like WordPress don't exist because Jekyll has no CMS, database or PHP. So, you don’t have to spend as much time installing security updates.
-
-#### Convenient hosting
-
-Convenient if you already use GitHub, that is. GitHub Pages will build and host your Jekyll website at no charge, while simultaneously handling version control.
+> It is automatically transformed by Jekyll into a static site whenever I push this repository to GitHub.
+>
+> I was tired of having my blog posts end up in a database off on some remote server. That is backwards. I’ve lost valuable posts that way. I want to author my posts locally in Textile or Markdown. My blog should be easily stylable and customizable any way I please. It should take care of creating a feed for me. And most of all, my site should be stored on GitHub so that I never lose data again.
