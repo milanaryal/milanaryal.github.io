@@ -1,6 +1,6 @@
 ---
 title: "Why is responsive web design so important for your website?"
-date: 2015-09-22T11:06:34+05:45
+date: 2014-09-22T11:06:34+05:45
 excerpt: "Responsive design helps to ensure that the images, layout and content remain as usual in any device."
 redirect_from: ["/2014/09/responsive-website-design.html", "/2014/09/responsive-web-design-best-practices.html"]
 ---

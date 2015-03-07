@@ -31,8 +31,8 @@ In the current fast-paced world, customization is now a fundamental portion of v
 
 ### What your logo should be?
 
-<figure class="text-center">
-  <img src="http://1.bp.blogspot.com/-AxZrHF4G07Q/VBMTuhcmzWI/AAAAAAAAGKM/6bUJue1ehXE/s1600/logo-design-tips-for-dummies-what-your-logo-should-be.gif">
+<figure>
+  <img class="text-center" src="http://1.bp.blogspot.com/-AxZrHF4G07Q/VBMTuhcmzWI/AAAAAAAAGKM/6bUJue1ehXE/s1600/logo-design-tips-for-dummies-what-your-logo-should-be.gif">
   
   <figcaption>6 qualities that every good logo should possess</figcaption>
 <figure>
