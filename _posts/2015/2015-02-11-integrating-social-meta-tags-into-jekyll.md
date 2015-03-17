@@ -1,7 +1,7 @@
 ---
 title: "Integrating social meta tags into Jekyll"
 date: 2015-02-11T13:04:19+05:45
-date_modified: 2015-03-17T13:45:58+05:45
+date_modified: 2015-03-17T22:35:36+05:45
 excerpt: "A guide to adding social meta tags into Jekyll."
 ---
 
@@ -22,8 +22,8 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta property="og:locale" content="{{ site.locale }}">
 
 {% if page.date_modified %}
-  <meta property="article:modified_time" content="{{ page.date_modified | date_to_xmlschema }}
-{% endif %}">
+  <meta property="article:modified_time" content="{{ page.date_modified | date_to_xmlschema }}">
+{% endif %}
 
 {% if page.date %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
