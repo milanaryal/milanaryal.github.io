@@ -21,10 +21,13 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="{{ site.locale }}">
 
+{% if page.date_modified %}
+  <meta property="article:modified_time" content="{{ page.date_modified | date_to_xmlschema }}
+{% endif %}">
+
 {% if page.date %}
-  <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
-  <meta property="article:modified_time" content="{% if page.updated %}{{ page.date_modified | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
   {% for post in site.related_posts limit:3 %}
     <meta property="og:see_also" content="{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% endfor %}
