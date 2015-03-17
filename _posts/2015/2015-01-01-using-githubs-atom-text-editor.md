@@ -1,8 +1,7 @@
 ---
-layout: post
 title: "Using GitHub's Atom text editor"
-excerpt: "A hackable text editor for the 21st Century."
 date: 2015-01-01T15:22:14+05:45
+excerpt: "A hackable text editor for the 21st Century."
 redirect_from: "/2015/01/using-githubs-atom-text-editor/"
 ---
 

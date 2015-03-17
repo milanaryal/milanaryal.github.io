@@ -1,19 +1,24 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.html %}
-<body>
+  {% include head.html %}
 
-<header role="banner">
+  <body itemscope itemtype="http://schema.org/WebPage">
 
-{% include nav.html %}
-</header>
+    {% include header.html %}
 
-<main role="main">
-  {{ content }}
-</main>
+    <main role="main" itemprop="mainContentOfPage">
+      {{ content }}
+    </main>
 
-{% include footer.html %}
-</body>
+    {% include footer.html %}
+	
+    {% include scripts.html %}
+
+  </body>
+
 </html>
-<!-- Proudly hosted on GitHub | Generated {{ site.time }} | Revision {{ site.github.build_revision }} -->

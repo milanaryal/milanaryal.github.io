@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Async social sharing buttons"
 date: 2015-01-28T23:01:59+05:45
 excerpt: "Asynchronously loading social sharing buttons JavaScript to improve page speed of your site."

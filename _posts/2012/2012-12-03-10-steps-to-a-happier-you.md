@@ -1,8 +1,8 @@
 ---
-layout: post
-title: 10 steps to a happier you
+title: "10 steps to a happier you"
 date: 2012-12-03T16:42:21+05:45
 excerpt: "A spiritual teacher has suggested 10 simple steps that could lead you to a happier lifestyle."
+redirect_from: "/2012/12/10-steps-to-happier-you.html"
 ---
 
 Author of *The Human Being Of The Future* Daniele Boido believes that purging negative emotions and improving relationships could help us create a better and happier life
@@ -13,7 +13,7 @@ LONDON: A spiritual teacher has suggested 10 simple steps that could lead you to
 
 Daniele Boido, author of *The Human Being Of The Future*, said purging negative emotions and improving relationships could helps us create a better and happier life, the *Daily Express* reported.
 
-Here are his top tips on how to feel upbeat and fulfilled, as revealed by the *Daily Express*---
+Here are his top tips on how to feel upbeat and fulfilled, as revealed by the *Daily Express* ---
 
 ### 1. Understand spirituality
 
@@ -75,4 +75,4 @@ He suggests practicing this exercise: "Draw a large circle. Fill it with black p
 
 ### 10. Try to connect with nature
 
-"In the morning spend two to three minutes focusing on things such as water (rain), trees, flowers, grass or fruits. In the evening focus on inner qualities including love, peace, kindness and harmony. This will help you to create a stronger connection to these natural qualities and feel more in tune with nature," Boido says. *--- Agencies*
+"In the morning spend two to three minutes focusing on things such as water (rain), trees, flowers, grass or fruits. In the evening focus on inner qualities including love, peace, kindness and harmony. This will help you to create a stronger connection to these natural qualities and feel more in tune with nature," Boido says. --- *Agencies*

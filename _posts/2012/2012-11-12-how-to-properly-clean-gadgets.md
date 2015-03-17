@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to properly clean gadgets"
 date: 2012-11-12T19:15:45+05:45
-redirect_from: "/2012/11/how-to-properly-clean-gadgets/"
+redirect_from:
+  - "/2012/11/how-to-properly-clean-gadgets.html"
+  - "/2012/11/how-to-properly-clean-gadgets/"
 ---
 
 *Without ruining them in the process*
@@ -13,7 +14,7 @@ No matter how clean a house you keep, computers and gadgets are bound to get a l
 
 ### 1. Monitor: White vinegar
 
-LCD screens are pretty delicate, so do not press hard on them, because that can burn out the pixels. Instead, turn the monitor off (so you can better see the dirty spots), and grab a dry micro fibre cloth. Just gently wipe the screen. If the monitor is filthier, resist the urge to press hard and wet the cloth with a 50:50 mix of water and white vinegar. If possible, use distilled water instead of tab water. Do not use anything paper-based, like paper towel, Kleenex, or toilet paper, since they can scratch your monitor. Remember never to spray any liquid on the monitor itself—always spray it on the cloth first.
+LCD screens are pretty delicate, so do not press hard on them, because that can burn out the pixels. Instead, turn the monitor off (so you can better see the dirty spots), and grab a dry micro fibre cloth. Just gently wipe the screen. If the monitor is filthier, resist the urge to press hard and wet the cloth with a 50:50 mix of water and white vinegar. If possible, use distilled water instead of tab water. Do not use anything paper-based, like paper towel, Kleenex, or toilet paper, since they can scratch your monitor. Remember never to spray any liquid on the monitor itself --- always spray it on the cloth first.
 
 ### 2. Mouse: Water or alcohol
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Adding hover anchor links to header on GitHub Pages using Jekyll"
 date: 2015-01-06T15:19:18+05:45
 redirect_from: "/2015/01/adding-hover-anchor-links-to-header-on-github-pages-using-jekyll/"
@@ -271,18 +270,6 @@ function addAnchors(selector) {
 addAnchors('.post-body h2, .post-body h3, .post-body h4');
 {% endhighlight %}
 
-{% comment %}
-<!-- OLD CUSTOMIZATION <script>
-/*! AnchorJS - v0.1.0 - 2014-08-17 */
-function addAnchors(t){"use strict";if(t){if("string"!=typeof t)throw new Error("AnchorJS accepts only strings; you used a "+typeof t)}else t="h1, h2, h3, h4, h5, h6";for(var e=document.querySelectorAll(t),r=0;r<e.length;r++){var n;if(e[r].hasAttribute("id"))n=e[r].getAttribute("id");else{var s=document.body.textContent?"textContent":"innerText",o=e[r][s],a=o.replace(/\s+/g,"-").toLowerCase();e[r].setAttribute("id",a),n=a}var i='<a class="header-link" href="#'+n+'"><span class="fa fa-link"></span></a>';e[r].innerHTML+=i}}
-// Header link minified script
-function addAnchors(e){e=e||"h1, h2, h3, h4, h5, h6";var t=document.querySelectorAll(e);for(var n=0;n<t.length;n++){var r;if(t[n].hasAttribute("id")){r=t[n].getAttribute("id")}else{var i=document.body.textContent?"textContent":"innerText";var s=t[n][i];tidyText=s.replace(/\s+/g,"-").toLowerCase();t[n].setAttribute("id",tidyText);r=tidyText}var o='<a class="header-link" href="#'+r+'"><span class="fa fa-link"></span></a>';t[n].innerHTML=t[n].innerHTML+o}};
-// Header link selector
-var selector = '.post-body h2, .post-body h3, .post-body h4';
-addAnchors(selector);
-</script> -->
-{% endcomment %}
-
 Note that I have edited wrapping class as `header-link` and `fa fa-link` to activate Font Awesome icon link in `// Header link script` and added class in `// Header link selector` as `.post-body h2, .post-body h3, .post-body h4` to activate header link only in between post body (change according to your usage).
 
 After that add the following style:
@@ -319,37 +306,6 @@ After that add the following style:
 .header-link:hover   { color: #EC7963; }
 .header-link:active  { color: #EC7963; }
 {% endhighlight %}
-
-{% comment %}
-// OLD CUSTOMIZATION
-/**
-* Header Link placement and hover behavior.
-*/
-.header-link {
-  display: inline-block;
-  position: absolute;
-  left: -1.2em;
-  opacity: 0;
-  text-decoration: none;
-  font-size: 90%;
-}
-*:hover > .header-link,
-.header-link:focus  {
-  opacity: 1;
-  -webkit-transition: color .16s linear;
-  -moz-transition: color .16s linear;
-  -o-transition: color .16s linear;
-  transition: color .16s linear;
-}
-
-a.header-link {
-  text-decoration: none;
-  color: #313131;
-}
-a.header-link :hover {
-  text-decoration: none;
-  color: #268bd2;
-{% endcomment %}
 
 #### Floating anchor icon right side
 
@@ -389,6 +345,6 @@ Now it's all done. :wink:
 
 ### Further references
 
-* Bryan Braun - [AnchorJS](//bryanbraun.github.io/anchorjs/)
-* Ben Balter - [Header hover anchor links on GitHub Pages using Jekyll](http://ben.balter.com/2014/03/13/pages-anchor-links/)
-* Parker Moore - Header Anchor Links in Vanilla JavaScript for GitHub Pages and Jekyll - [Blog 1](http://blog.parkermoore.de/2014/08/01/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/), [Blog 2](https://byparker.com/blog/2014/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/)
+* [AnchorJS](//bryanbraun.github.io/anchorjs/) - Bryan Braun
+* [Header hover anchor links on GitHub Pages using Jekyll](http://ben.balter.com/2014/03/13/pages-anchor-links/) - Ben Balter
+* Header Anchor Links in Vanilla JavaScript for GitHub Pages and Jekyll: ([Blog 1](http://blog.parkermoore.de/2014/08/01/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/), [Blog 2](https://byparker.com/blog/2014/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/)) - Parker Moore

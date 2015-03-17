@@ -68,7 +68,7 @@ Standard link prefetching (executed by most modern browsers):
 
 ### Prerendering
 
-Prerendering extends the concept of prefetching. Instead of just downloading the top-level resource, it does all of the work necessary to show the page to the user—without actually showing it until the user clicks. Prerendering behaves similarly to if a user middle-clicked on a link on a page (opening it in a background tab) and then later switched to that tab. However, in prerendering, that “background tab” is totally hidden from the user, and when the user clicks, its contents are seamlessly swapped into the same tab the user was viewing. From the user’s perspective, the page simply loads much faster than before.
+Prerendering extends the concept of prefetching. Instead of just downloading the top-level resource, it does all of the work necessary to show the page to the user—without actually showing it until the user clicks. Prerendering behaves similarly to if a user middle-clicked on a link on a page (opening it in a background tab) and then later switched to that tab. However, in prerendering, that "background tab" is totally hidden from the user, and when the user clicks, its contents are seamlessly swapped into the same tab the user was viewing. From the user’s perspective, the page simply loads much faster than before.
 
 You can trigger prerendering by inserting a link element with a rel of "prerender", for example:
 

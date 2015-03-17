@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "Practical knows-hows for life"
-excerpt: "Things I wish I'd know before I went out into the real world"
 date: 2014-12-05T20:21:09+0545
-redirect_from: "/2014/12/practical-knows-hows-for-life/"
+excerpt: "Things I wish I'd know before I went out into the real world"
+redirect_from:
+  - "/2012/07/practical-know-hows-for-life.html"
+  - "/2014/12/practical-knows-hows-for-life/"
 ---
 
-_Things I wish I'd know before I went out into the real world_
+*Things I wish I'd know before I went out into the real world*
 
 ---
 
@@ -26,9 +27,9 @@ When you make a mistake, make amends immediately. It's easier to eat crow while 
 
 The only really good advice that I remember my mother ever gave me was "Go! You might meet somebody!"
 
-If she says that you are too good for him -- believe her.
+If she says that you are too good for him --- believe her.
 
-I've learned to pick my battles; I ask myself -- Will this matter one year from now? How about one month? One week? One day?
+I've learned to pick my battles; I ask myself --- Will this matter one year from now? How about one month? One week? One day?
 
 At hard times I ask myself, "How do I feel? What do I want?" I use it whenever I'm at loss for words or thoughts.
 

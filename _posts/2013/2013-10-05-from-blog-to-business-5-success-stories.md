@@ -1,8 +1,10 @@
 ---
-layout: post
 title: "From blog to business: 5 success stories"
 date: 2013-10-05T13:59:33+05:45
-redirect_from: "/2013/10/from-blog-to-business-5-success-stories/"
+excerpt: "The world of blogging has turned hobbies into full-time careers."
+redirect_from: 
+  - "/2013/10/from-blog-to-business-5-success-stories.html"
+  - "/2013/10/from-blog-to-business-5-success-stories/"
 ---
 
 From advertisements, sponsorships and brand collaborations to endorsement opportunities and even book deals --- the world of blogging has turned hobbies into full-time careers.
@@ -11,7 +13,7 @@ Here are five females who have turned their blogs into profitable, fulltime busi
 
 ### Jenni Radosevich: I Spy DIY
 
-After college, Jenni Radosevich relocated to New York and landed an internship with InStyle magazine. During her time at the publication, she pitched her editors the idea of a monthly style column and was given a shot at it. This allowed Radosevich and start her blog. During the same year, a publishing company approached her to write a book, _I SPY DIY Style_ and two years later, she had quit her job to focus full-time on blogging. She has been paid through her blog for brand partnership, advertisement, DIY services and more.
+After college, Jenni Radosevich relocated to New York and landed an internship with InStyle magazine. During her time at the publication, she pitched her editors the idea of a monthly style column and was given a shot at it. This allowed Radosevich and start her blog. During the same year, a publishing company approached her to write a book, *I SPY DIY Style* and two years later, she had quit her job to focus full-time on blogging. She has been paid through her blog for brand partnership, advertisement, DIY services and more.
 
 "Make sure you find a niche," she advises. "With a million blogs out there, you really need to differentiate yourself."
 
@@ -41,4 +43,4 @@ Blair Culwell, who has designed over 100 custom blogs, says, "Having a professio
 
 Culwell originally began blogging in college as part of a school assignment and later continued it as a hoppy. As a design professional, Culwell recommends taking a basic class to learn Photoshop or any design programme.
 
-"If you're looking to take blogging seriously, then invest some money into it," she says. She advises newbies and those looking to grow their presence to 'make connections' and 'find your niche'. *--- USA Today*
+"If you're looking to take blogging seriously, then invest some money into it," she says. She advises newbies and those looking to grow their presence to 'make connections' and 'find your niche'. --- *USA Today*

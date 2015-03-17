@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Integrating social meta tags into Jekyll"
 date: 2015-02-11T13:04:19+05:45
+date_modified: 2015-03-17T13:45:58+05:45
 excerpt: "A guide to adding social meta tags into Jekyll."
 ---
 
@@ -13,17 +13,21 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 
 {% highlight html %}
 {% raw %}
-<meta property="og:locale" content="{{ site.locale }}">
-<meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:url" content="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.locale }}">
 
 {% if page.date %}
+  <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
+  <meta property="article:modified_time" content="{% if page.updated %}{{ page.date_modified | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  <meta property="article:author" content="{{ site.url }}/about/">
+  {% for post in site.related_posts limit:3 %}
+    <meta property="og:see_also" content="{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% endfor %}
 {% endif %}
 
 {% if page.categories %}
@@ -53,7 +57,7 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
-<meta name="twitter:url" content="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+<meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 {% endraw %}
 {% endhighlight %}
 
@@ -62,15 +66,28 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 {% highlight html %}
 {% raw %}
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+
+{% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+{% endif %}
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+{% if page.next.url %}
+  <link rel="next" href="{{ page.next.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" title="{{ page.next.title }}">
+{% endif %}
+
+{% if page.previous.url %}
+  <link rel="prev" href="{{ page.previous.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" title="{{ page.previous.title }}">
+{% endif %}
 {% endraw %}
 {% endhighlight %}
 
-### Integrating Google Author Rich Snippets into Jekyll
+### Integrating Google+ Authorship into Jekyll
 
 {% highlight html %}
 {% raw %}
-<link rel="author" href="//plus.google.com/+{{ site.author.googleplus }}">
+<link rel="author" href="https://plus.google.com/+{{ site.author.googleplus }}">
 {% endraw %}
 {% endhighlight %}
 
@@ -89,6 +106,7 @@ title:          "your site title"
 description:    "your site description"
 icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
 author:
+  facebook:     username
   twitter:      username
   googleplus:   username
 fb_admins:      your facebook profile id
@@ -99,13 +117,14 @@ Post front matter:
 
 {% highlight ruby %}
 ---
-layout:     post
-title:      "your post title"
-date:       2015-02-11T13:04:19+05:45 # XML Schema Date/Time
-image:      your post image path # /assets/img/image.jpg
-excerpt:    "for meta description" # Optional for overring content excerpt
-categories: your post categories # ["category1"] - best is to have one category in a post
-tags:       your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
+layout:        post
+title:         "your post title"
+date:          2015-02-11T13:04:19+05:45 # XML Schema Date/Time
+date_modified: 2015-03-15T05:20:00+05:45 # last page modified date/time
+image:         your post image path # /assets/img/image.jpg
+excerpt:       "for meta description" # Optional for overring content excerpt
+categories:    your post categories # ["category1"] - best is to have one category in a post
+tags:          your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
 ---
 {% endhighlight %}
 

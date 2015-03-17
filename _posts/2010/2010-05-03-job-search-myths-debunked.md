@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Job-search myths debunked"
 date: 2010-05-03T23:58:59+05:45
-redirect_from: "/2010/05/job-search-myths-debunked/"
+redirect_from:
+  - "/2010/05/job-search-myths-debunked.html"
+  - "/2010/05/job-search-myths-debunked/"
 ---
 
 Myths that people believed about looking for a job are many and persistent. The most common ones are these:
@@ -41,7 +42,7 @@ This is absolutely ridiculous. In fact, during the summer, businesspeople are mo
 
 The most qualified candidate has the best shot at getting a job offer.
 
-Obviously, for most positions, a company needs someone with specific skills and experiences. It is also true that many companies still lean toward someone who has worked in the same industry. It is more likely that the individual who fits into the company culture is the one who will get the offer. This means that as a candidate you are accountable for finding out and understanding what the culture is — the values that shape the company, the way people communicate, and the kinds of people who are respected within the organization. You will not find this kind of information on a Web site or in an annual report. You will find it from talking to people: the company's employees, vendors and ex-employees.
+Obviously, for most positions, a company needs someone with specific skills and experiences. It is also true that many companies still lean toward someone who has worked in the same industry. It is more likely that the individual who fits into the company culture is the one who will get the offer. This means that as a candidate you are accountable for finding out and understanding what the culture is --- the values that shape the company, the way people communicate, and the kinds of people who are respected within the organization. You will not find this kind of information on a Web site or in an annual report. You will find it from talking to people: the company's employees, vendors and ex-employees.
 
 ### Myths #7
 

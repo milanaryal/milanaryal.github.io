@@ -5,9 +5,9 @@ permalink: /
 ---
 
 {% for post in paginator.posts %}
-<article class="post-preview">
-  <a href="{{ post.url }}">
-    <h2 class="post-title">
+<article class="post-preview" itemscope itemtype="http://schema.org/Article">
+  <a itemprop="url" href="{{ post.url }}">
+    <h2 class="post-title" itemprop="name">
       {{ post.title }}
     </h2>
     {% if post.subtitle %}
@@ -17,7 +17,7 @@ permalink: /
     {% endif %}
   </a>
   <div class="post-meta">
-    <time datetime="{{ post.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date_to_rfc822 }}">{{ post.date | date: "%B %-d, %Y" }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words | append: ' words'}}">{% include reading_time_paginator.html %}</span>
+    <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date_to_rfc822 }}">{{ post.date | date: '%B %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}</span>
   </div>
 </article>
 <hr>
@@ -25,16 +25,16 @@ permalink: /
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
-<nav>
+<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
   <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-      <a href="{{ paginator.previous_page_path | replace: '//', '/' }}"><i class="fa fa-angle-double-left"></i> Newer Posts</a>
+      <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' }}"><i class="fa fa-angle-double-left"></i> <span itemprop="name">Newer Posts</span></a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-      <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Older Posts <i class="fa fa-angle-double-right"></i></a>
+      <a itemprop="url" href="{{ paginator.next_page_path | replace:'//','/' }}"><span itemprop="name">Older Posts</span> <i class="fa fa-angle-double-right"></i></a>
     </li>
     {% endif %}
   </ul>

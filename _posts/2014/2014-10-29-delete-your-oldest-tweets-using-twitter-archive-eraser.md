@@ -1,9 +1,10 @@
 ---
-layout: post
 title: "Delete your oldest tweets using Twitter Archive Eraser"
-excerpt: "A simple application that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so."
 date: 2014-10-29T22:34:25+05:45
-redirect_from: "/2014/10/delete-your-oldest-tweets-using-twitter-archive-eraser/"
+excerpt: "A simple application that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so."
+redirect_from:
+  - "/2014/10/twitter-archive-eraser.html"
+  - "/2014/10/delete-your-oldest-tweets-using-twitter-archive-eraser/"
 ---
 
 Looking for the awesome Twitter Archive Eraser?

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Programming languages used in most popular websites"
 date: 2015-01-02T22:16:12+05:45
 redirect_from: "/2015/01/programming-languages-used-in-most-popular-websites/"

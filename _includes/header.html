@@ -1,0 +1,38 @@
+<!-- Header -->
+<header class="navbar navbar-default navbar-fixed-top header-navbar" role="banner" itemscope itemtype="http://schema.org/Person">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" itemprop="url" href="/"><span itemprop="name">{{ site.author.name }}</span></a>
+        <meta itemprop="description" content="{{ site.description }}">
+        <link itemprop="image" href="{{ site.icon | prepend: site.url }}">
+        {% if site.author_address %}<span class="hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <meta itemprop="streetAddress" content="{{ site.author_address.street }}">
+          <meta itemprop="addressLocality" content="{{ site.author_address.locality }}">
+          <meta itemprop="addressRegion" content="{{ site.author_address.region }}">
+          <meta itemprop="addressCountry" content="{{ site.author_address.country }}">
+          <meta itemprop="postalCode" content="{{ site.author_address.postcode }}">
+        </span><!-- /itemscope itemtype PostalAddress -->{% endif %}
+    </div><!-- /.navbar-header -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <nav class="navbar-collapse collapse header-navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a itemprop="url" href="/"><span itemprop="name">Home</span></a>
+        </li>
+        {% for page in site.pages %}{% if page.title %}
+        <li>
+          <a itemprop="url" href="{{ page.url }}"><span itemprop="name">{{ page.title }}</span></a>
+        </li>
+        {% endif %}{% endfor %}
+      </ul>
+    </nav><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</header>

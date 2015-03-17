@@ -1,6 +1,7 @@
 ---
 title: "Implementing Medium inspired estimated reading time into Jekyll"
 date: 2015-02-19T22:26:57+05:45
+date_modified: 2015-03-16T15:07:25+05:45
 excerpt: "Estimating the reading time for a article based on standard reading speed."
 ---
 
@@ -98,6 +99,28 @@ Now with the help of above jQuery snippet we get the actual rounded value to the
   </iframe>
     <figcaption>Estimated rounded value reading time to the nearest whole number.</figcaption>
 </figure>
+
+#### A Jekyll estimated reading time in pure Liquid
+
+If you don't want to use jQuery or any other techniques but only want to utilize pure Liquid tags then following codes will definitely help you to get estimated reading time into Jekyll.
+
+{% highlight text %}
+{% raw %}
+{% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
+
+{% if reading_time <= '1' %}{{ '1' | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}
+{% endraw %}
+{% endhighlight %}
+
+Also it can be done as below,
+
+{% highlight text %}
+{% raw %}
+{% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by:180 %}
+
+{% if reading_time <= '1' %}{{ '1' | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}
+{% endraw %}
+{% endhighlight %}
 
 ---
 

@@ -1,6 +1,5 @@
 ---
-layout: post
-title: 'Adding &quot;Edit on GitHub&quot; links to GitHub Pages using Jekyll'
+title: "Adding 'Edit on GitHub' links to GitHub Pages using Jekyll"
 date: 2015-01-17T01:00:53+05:45
 redirect_from: "/2015/01/adding-edit-on-github-links-to-github-pages-using-jekyll/"
 ---

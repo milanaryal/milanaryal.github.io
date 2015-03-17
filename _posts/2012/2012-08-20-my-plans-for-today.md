@@ -1,9 +1,10 @@
 ---
-layout: post
 title: "My plans for today"
-author: "Steve Maraboli"
 date: 2012-08-20T09:25:48+05:45
-redirect_from: "/2012/08/my-plans-for-today/"
+author: "Steve Maraboli"
+redirect_from:
+  - "/2012/09/my-plans-for-today.html"
+  - "/2012/08/my-plans-for-today/"
 ---
 
 I woke up early today, excited over all I get to do before the clock strikes midnight.
@@ -16,11 +17,11 @@ My job is to choose what kind of day I am going to have.
 
 Today I can complain because the weather is rainy or I can be thankful that the grass is getting watered for free.
 
-Today I can feel sad that I don’t have more money or I can be glad that my finances encourage me to plan my purchases wisely and guide me away from waste.
+Today I can feel sad that I don't have more money or I can be glad that my finances encourage me to plan my purchases wisely and guide me away from waste.
 
 Today I can grumble about my health or I can rejoice that I am alive.
 
-Today I can lament over all that my parents didn’t give me when I was growing up or I can feel grateful that they allowed me to born.
+Today I can lament over all that my parents didn't give me when I was growing up or I can feel grateful that they allowed me to born.
 
 Today I can cry because roses have thorns or I can celebrate that thorns have roses.
 

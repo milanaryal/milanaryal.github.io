@@ -1,12 +1,13 @@
 ---
-layout: null
-header_image: "/assets/img/404-bg.jpg"
-robots: "noindex"
+layout: compress
+featured_image: "/assets/img/404-bg.jpg"
+robots: "noindex, follow"
 permalink: /404.html
 ---
 
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,17 +18,18 @@ permalink: /404.html
     <link rel="dns-prefetch" href="//www.google-analytics.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="stylesheet" href="/assets/css/style.min.css?v={{ site.github.build_revision }}">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic|Lora:400,700,400italic,700italic">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->    
     <!--[if lt IE 9]>
         <script src="/assets/js/jshtml5shiv.min.js?v={{ site.github.build_revision }}"></script>
         <script src="/assets/js/respond.min.js?v={{ site.github.build_revision }}"></script>
     <![endif]-->
   </head>
+
   <body>
 
   <!-- Page header -->
-  <header class="intro-header" style="background-image: url('{% if page.header_image %}{{ page.header_image }}{% else %}{{ site.header_image }}{% endif %}')" role="banner">
+  <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')" role="banner">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -89,6 +91,7 @@ permalink: /404.html
   ga('send', 'pageview');
   </script>
   {% endif %}
+
   </body>
-</html>
-<!-- Proudly hosted on GitHub | Generated {{ site.time }} | Revision {{ site.github.build_revision }} -->
+
+</html> <!--# Generated {{ site.time | date_to_xmlschema }} | Revision {{ site.github.build_revision }} #-->

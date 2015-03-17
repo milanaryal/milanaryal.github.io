@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="content-info" role="contentinfo">
+<footer class="content-info" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -53,21 +53,8 @@
           </li>
           {% endif %}
         </ul>
-        <span class="copyright text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Some rights reserved</a>.</span>
+        <span class="copyright text-muted">&copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> <span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.title }}</span></span>. <a rel="license" itemprop="license" href="//creativecommons.org/licenses/by/3.0/">Some rights reserved</a>.</span>
       </div>
     </div>
   </div>
 </footer>
-
-<!-- Scripts -->
-<script src="/assets/js/scripts.min.js?v={{ site.github.build_revision }}"></script>
-{% if site.ga_trackid %}
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', '{{ site.ga_trackid }}', 'auto');
-  ga('send', 'pageview');
-</script>
-{% endif %}

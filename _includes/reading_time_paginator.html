@@ -1,5 +1,0 @@
-{% assign reading_time = post.content | strip_html | number_of_words | append: '.0' | divided_by: 180 %}
-{% if reading_time < 0.5 %}Less than a minute read
-{% elsif reading_time >= 0.5 and reading_time < 1.5 %}1 minute read
-{% elsif reading_time >= 1.5 %}<span class="reading-time">{{ reading_time }}</span> minutes read
-{% endif %}

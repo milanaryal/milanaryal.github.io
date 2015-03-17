@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Keep on going"
 date: 2013-11-09T10:38:27+05:45
-redirect_from: "/2013/11/keep-on-going/"
+redirect_from:
+  - "/2013/11/keep-on-going.html"
+  - "/2013/11/keep-on-going/"
 ---
 
 The current obstacles are the foundation of your future success. There are some persons who didn't give up no matter what. Thus, if you are failing, keep on going
@@ -15,7 +16,7 @@ Most of us take Einstein's name as synonymous with genius, but he didn't always 
 
 ### Walt Disney, founder of The Walt Disney Company
 
-Today Disney rakes in billions from merchandise, movies and theme parks around the world, but Walt Disney himself had a bit of rough start. He was fired by a newspaper editor because, “he lacked imagination and had no good ideas.” After that, Disney started a number of businesses that didn't last too long and ended with bankruptcy and failure. He kept plugging along, however, and eventually found a recipe for success that worked.
+Today Disney rakes in billions from merchandise, movies and theme parks around the world, but Walt Disney himself had a bit of rough start. He was fired by a newspaper editor because, "he lacked imagination and had no good ideas." After that, Disney started a number of businesses that didn't last too long and ended with bankruptcy and failure. He kept plugging along, however, and eventually found a recipe for success that worked.
 
 ### Isaac Newton, scientist
 
@@ -23,7 +24,7 @@ Newton was undoubtedly a genius when it came to math, but he had some failings e
 
 ### Thomas Edison, inventor
 
-In his early years, teachers told Edison he was “too stupid to learn anything.” Work was no better, as he was fired from his first two jobs for not being productive enough. Even as an inventor, Edison made 1,000 unsuccessful attempts at inventing the light bulb. Of course, all those unsuccessful attempts finally resulted in the design that worked.
+In his early years, teachers told Edison he was "too stupid to learn anything." Work was no better, as he was fired from his first two jobs for not being productive enough. Even as an inventor, Edison made 1,000 unsuccessful attempts at inventing the light bulb. Of course, all those unsuccessful attempts finally resulted in the design that worked.
 
 ### Henry Ford, founder of ford Motor
 
@@ -47,4 +48,4 @@ This Nobel Prize-winning, twice-elected Prime Minister of the UK wasn't always a
 
 ### Vincent Van Gogh, artist
 
-During his lifetime, Van Gogh sold only one painting, and this was to a friend and for a very small amount. While Van Gogh was never a success during his life, he plugged on with painting, sometimes starving to complete his over 800 known works. 
+During his lifetime, Van Gogh sold only one painting, and this was to a friend and for a very small amount. While Van Gogh was never a success during his life, he plugged on with painting, sometimes starving to complete his over 800 known works.

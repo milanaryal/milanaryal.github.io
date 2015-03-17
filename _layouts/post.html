@@ -2,26 +2,27 @@
 layout: default
 ---
 
-<article id="post{{ page.id | replace: '/', '-' }}" role="article" itemscope itemtype="http://schema.org/Article">
+<article id="post{{ page.id | replace:'/','-' }}" itemscope itemtype="http://schema.org/Article">
   <!-- Post header -->
-  <header class="intro-header" style="background-image: url('{% if page.header_image %}{{ page.header_image }}{% else %}{{ site.header_image }}{% endif %}')">
+  <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <div class="post-heading">
-            <h1 itemprop="name">{{ page.title }}</h1>
-            <meta itemprop="about" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
-            <meta itemprop="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
-            <meta itemprop="author" content="{{ site.author.name }}">
-            <meta itemprop="copyrightHolder" content="{{ site.author.name }}">
-            <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
-            <meta itemprop="datePublished" content="{{ page.date | date: '%F' }}">
-            <meta itemprop="discussionUrl" content="{{ page.url | prepend: site.url }}">
+            <h1 itemprop="name headline">{{ page.title }}</h1>
             {% if page.subtitle %}
             <h2 class="subheading">{{ page.subtitle }}</h2>
             {% endif %}
+            <link itemprop="url" href="{{ page.url | prepend: site.url }}">
+            <meta itemprop="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+            <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
+            <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="{{ site.author.name }}">
+            </span>
+            <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
+            {% if page.date_modified %}<meta itemprop="dateModified" content="{{ page.date_modified | date_to_xmlschema }}">{% endif %}
             <div class="meta">
-              <time datetime="{{ page.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ page.date | date_to_rfc822 }}">{{ page.date | date: "%B %-d, %Y" }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ content | strip_html | number_of_words | append: ' words'}}">{% include reading_time.html %}</span>
+              <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ page.date | date_to_rfc822 }}">{{ page.date | date: '%B %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}</span>
             </div>
           </div>
         </div>
@@ -35,30 +36,32 @@ layout: default
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-content" itemprop="articleBody">
           {{ content }}
-          </div>
-            <footer>
-              {% include social.html %}
+        </div>
+          <footer>
+            {% include social.html %}
             <hr>
-            <nav>
+            <nav itemprop="pagination">
               <ul class="pager">
                 {% if page.previous.url %}
                 <li class="previous">
-                  <a href="{{ page.previous.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}"><i class="fa fa-angle-double-left"></i> Previous Post</a>
+                  <a href="{{ page.previous.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}"><i class="fa fa-angle-double-left"></i> Previous Post</a>
                 </li>
                 {% endif %}
                 {% if page.next.url %}
                 <li class="next">
-                  <a href="{{ page.next.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next Post <i class="fa fa-angle-double-right"></i></a>
+                  <a href="{{ page.next.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next Post <i class="fa fa-angle-double-right"></i></a>
                 </li>
                 {% endif %}
               </ul>
             </nav>
-            {% unless page.comments == 'false' %}
-              {% include disqus.html %}
-            {% endunless %}
           </footer>
-        </div>
+        {% if site.disqus_shortname %}
+          {% unless page.comments == 'false' %}
+            {% include disqus.html %}
+          {% endunless %}
+        {% endif %}
       </div>
+    </div>
   </div>
 </article>
 

@@ -1,3 +1,8 @@
+---
+layout: null
+permalink: /pgp.txt
+---
+
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: Keybase OpenPGP v2.0.8
 Comment: https://keybase.io/milanaryal

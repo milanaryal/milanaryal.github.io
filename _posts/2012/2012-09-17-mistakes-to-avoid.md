@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Mistakes to avoid"
 date: 2012-09-17T16:46:59+04:45
+redirect_from: "/2012/11/mistakes-to-avoid.html"
 ---
 
 One of the hardest challenges we face in life is to live in our own skin --- to just be right here, right now, regardless of where we are. Too often we needlessly distract ourselves with anything and everything to keep us from being fully present in the current moment.
@@ -42,4 +42,4 @@ Don't be too hard on yourself. There are plenty of people willing to do that for
 
 ### 8. Waiting, and waiting some more
 
-Stop waiting for tomorrow; you will never get today back. It doesn't matter what you've done in the past. It doesn't matter how low or unworthy you feel right now. The simple fact that you're alive makes you worthy. Life is too short for excuses. Stop settling. Stop procrastinating step forward. If you are not sure exactly which way to go, it is always wise to follow your heart. *--- Agencies*
+Stop waiting for tomorrow; you will never get today back. It doesn't matter what you've done in the past. It doesn't matter how low or unworthy you feel right now. The simple fact that you're alive makes you worthy. Life is too short for excuses. Stop settling. Stop procrastinating step forward. If you are not sure exactly which way to go, it is always wise to follow your heart. --- *Agencies*

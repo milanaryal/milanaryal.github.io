@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Making external links open in a new browser tab"
 date: 2015-02-04T19:25:52+05:45
 excerpt: "Learn about best web practices and how to open new links in a new window."

@@ -1,8 +1,7 @@
 ---
-layout: post
 title: "Hello, world!"
-excerpt: "My first post on GitHub Pages using Jekyll."
 date: 2014-12-03T21:47:57+05:45
+excerpt: "My first post on GitHub Pages using Jekyll."
 redirect_from: "/2014/12/hello-world/"
 ---
 
@@ -26,4 +25,4 @@ In Tom Preston-Werner words,
 
 > It is automatically transformed by Jekyll into a static site whenever I push this repository to GitHub.
 >
-> I was tired of having my blog posts end up in a database off on some remote server. That is backwards. I’ve lost valuable posts that way. I want to author my posts locally in Textile or Markdown. My blog should be easily stylable and customizable any way I please. It should take care of creating a feed for me. And most of all, my site should be stored on GitHub so that I never lose data again.
+> I was tired of having my blog posts end up in a database off on some remote server. That is backwards. I've lost valuable posts that way. I want to author my posts locally in Textile or Markdown. My blog should be easily stylable and customizable any way I please. It should take care of creating a feed for me. And most of all, my site should be stored on GitHub so that I never lose data again.

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "9 important tips for better site SEO ranking"
 date: 2015-01-15T15:49:57+05:45
 redirect_from: "/2015/01/9-important-tips-for-better-site-seo-ranking/"
@@ -15,7 +14,7 @@ Here you have 9 best known SEO tips exclusively for you!
 
 ### 1. Canonicalisation (well-structured URLs or .htaccess)
 
-Try to structure your site in a way that is easy to follow and create subfolders for large category items. Also make sure your URLs are easily read and have a set structure, preferably one without ampersands and using full hyphenated words as the URL e.g http://www.mattcutts.com/blog/seo-advice-url-canonicalization/ (Good post by the way!). This not only helps the spiders to know what the page is about but it also helps the user and is a lot easier to remember.
+Try to structure your site in a way that is easy to follow and create subfolders for large category items. Also make sure your URLs are easily read and have a set structure, preferably one without ampersands and using full hyphenated words as the URL e.g `http://www.mattcutts.com/blog/seo-advice-url-canonicalization/` (Good post by the way!). This not only helps the spiders to know what the page is about but it also helps the user and is a lot easier to remember.
 
 It's very important that your site redirects from it's domain with or without "www". People can access your site using either the `http://yoursite.com` or `http://www.yoursite.com` however it is important that you choose which one of these versions you want to use as your main domain, otherwise Google sees this as two separate sites and hence, duplicate content. If you haven't set this already, search Google for `site:yoursite.com` and note which version of your domain appears most.
 
@@ -49,7 +48,7 @@ If your business is targeting local customers you need to make sure Google knows
 <ol>
 <li>Have your full business address in html on the footer of every page.</li>
 <li>Upload a geositemap to Google's Webmaster Tools.</li>
-<li>Mark up your site using microdata. Here's a handy tool to help you <a href="http://www.geositemapgenerator.com/input" rel="nofollow">create your geo markup</a>.</li>
+<li>Mark up your site using microdata. Here's a handy tool to help you <a rel="nofollow" href="http://www.geositemapgenerator.com/input">create your geo markup</a>.</li>
 <li>Include your city name/location in your page titles. This is a proven factor in Google Places ranking.</li>
 </ol>
 

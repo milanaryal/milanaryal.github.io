@@ -2,6 +2,7 @@
 _gh_pages
 _site
 _drafts
+.sass-cache
 .ruby-version
 
 # Numerous always-ignore extensions

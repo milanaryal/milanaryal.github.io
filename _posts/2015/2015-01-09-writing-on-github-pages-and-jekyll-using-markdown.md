@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Writing on GitHub Pages and Jekyll using Markdown"
 date: 2015-01-09T15:04:14
 redirect_from: "/2015/01/writing-on-github-pages-and-jekyll-using-markdown/"

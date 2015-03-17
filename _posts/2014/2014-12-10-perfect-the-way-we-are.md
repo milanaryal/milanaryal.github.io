@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Perfect, the way we are"
 date: 2014-12-10T10:24:41+05:45
-redirect_from: "/2014/12/perfect-the-way-we-are/"
+redirect_from:
+  - "/2012/12/perfect-way-we-are.html"
+  - "/2014/12/perfect-the-way-we-are/"
 ---
 
 We have all heard that no two snowflakes are alike. Each snowflake takes the perfect form for the maximum efficiency and effectiveness for its journey. And while the universal force of gravity gives them a shared destination, the expansive space in the air gives each snowflake the opportunity to take their own path. They are on the same journey, but each takes a different path.
@@ -17,4 +18,4 @@ Think of what understanding this great orchestration could mean for relationship
 
 ---
 
-_Abstract from the book: Life, the Truth, and Being Free_
+*Abstract from the book: Life, the Truth, and Being Free*

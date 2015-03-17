@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Using social media to boost professional profile"
 date: 2013-10-09T12:32:01+05:45
-redirect_from: "/2013/10/using-social-media-to-boost-professional-profile/"
+redirect_from:
+  - "/2013/10/social-media-professional-profile.html"
+  - "/2013/10/using-social-media-to-boost-professional-profile/"
 ---
 
 Whether you're actively job seeking or not, building your professional profile using social media will extend your professional reach beyond your immediate circle. This could increase the potential career opportunities coming your way.
@@ -43,4 +44,4 @@ This is increasingly being used by organisations to communicate with staff, cust
 
 Many professional institutes, educational establisments and media organisations provide an array of online communities for niche audiences to exchange information, advice and opinions. You can also use YouTube to upload video content or produce a blog to share your commentary on hot topics.
 
-Keep an eye on developments as this is a very fast-moving area and new social media applications, such as Google+, are likely to grow in importance. *--- The Guardian*
+Keep an eye on developments as this is a very fast-moving area and new social media applications, such as Google+, are likely to grow in importance. --- *The Guardian*

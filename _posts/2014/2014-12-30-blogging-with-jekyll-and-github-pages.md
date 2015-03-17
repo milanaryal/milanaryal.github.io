@@ -1,8 +1,7 @@
 ---
-layout: post
 title: "Blogging with Jekyll and GitHub Pages"
-excerpt: "Transform your plain text into static websites and blogs."
 date: 2014-12-30T19:47:46+05:45
+excerpt: "Transform your plain text into static websites and blogs."
 redirect_from: "/2014/12/blogging-with-jekyll-and-github-pages/"
 ---
 
@@ -14,17 +13,17 @@ After reading a lot of documentation, I found following quickest way to set up a
 
 Tom Preston-Werner created Jekyll to enable people to blog using a simple static HTML website, with all of the content hosted and version-controlled on GitHub. The goal was to eliminate the complexity of other blogging platforms by creating a workflow that allows you to [blog like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html).
 
-Jekyll takes your content written in Markdown, passes it through your templates and spits it out as a complete static website, ready to be served. GitHub Pages conveniently serves the website directly from your GitHub repository so that you don’t have to deal with any hosting.
+Jekyll takes your content written in Markdown, passes it through your templates and spits it out as a complete static website, ready to be served. GitHub Pages conveniently serves the website directly from your GitHub repository so that you don't have to deal with any hosting.
 
 ### So what is Jekyll, exactly?
 
 According to Jekyll wiki,
 
-> Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through [Markdown](http://daringfireball.net/projects/markdown/) (or [Textile](http://redcloth.org/textile)) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind [GitHub Pages](http://pages.github.com/), which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
+> Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through [Markdown](http://daringfireball.net/projects/markdown/) (or [Textile](http://redcloth.org/textile)) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind [GitHub Pages](http://pages.github.com/), which means you can use Jekyll to host your project's page, blog, or website from GitHub's servers for free.
 
 GitHub Pages uses the [following dependencies](//pages.github.com/versions/):
 
-- {% for dependency in site.github.versions %}{{ dependency[0] }}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}
+- jekyll, jekyll-coffeescript, jekyll-sass-converter, kramdown, maruku, rdiscount, redcarpet, RedCloth, liquid, pygments.rb, jemoji, jekyll-mentions, jekyll-redirect-from, jekyll-sitemap, github-pages, ruby
 
 ### Who are using Jekyll?
 

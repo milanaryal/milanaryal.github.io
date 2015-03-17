@@ -3,12 +3,12 @@ layout: page
 title: Archives
 description: "A year wise archive collection."
 excerpt: "A year wise archive collection for Milan Aryal"
-header_image: "/assets/img/archives-bg.jpg"
+featured_image: "/assets/img/archives-bg.jpg"
 redirect_from: /archive/
 permalink: /archives/
 ---
 
-<section class="archives">
+<div class="archives">
 {% for post in site.posts %}
   {% unless post.next %}
     <h3 class="section-heading">{{ post.date | date: '%Y' }}</h3>
@@ -19,13 +19,15 @@ permalink: /archives/
       <h3 class="section-heading">{{ post.date | date: '%Y' }}</h3>
     {% endif %}
   {% endunless %}
-  <ul class="row">
-    <li class="col-sm-9">
-      <a href="{{ post.url }}">{{ post.title }}</a></a>
-    </li>
-    <li class="col-sm-3 text-muted">
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-    </li>
-  </ul>
+  <article itemscope itemtype="http://schema.org/Article">
+    <ul class="row">
+      <li class="col-sm-9">
+        <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a>
+      </li>
+      <li class="col-sm-3 text-muted">
+        <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+      </li>
+    </ul>
+  </article>
 {% endfor %}
-</section>
+</div>
