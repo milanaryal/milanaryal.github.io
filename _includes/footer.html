@@ -22,9 +22,9 @@
             </a>
           </li>
           {% endif %}
-          {% if site.author.googleplus %}
+          {% if site.author.google_plus %}
           <li>
-            <a rel="me" href="//google.com/+{{ site.author.googleplus }}">
+            <a rel="me" href="//google.com/+{{ site.author.google_plus }}">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -53,7 +53,7 @@
           </li>
           {% endif %}
         </ul>
-        <span class="copyright text-muted">&copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> <span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.title }}</span></span>. <a rel="license" itemprop="license" href="//creativecommons.org/licenses/by/3.0/">Some rights reserved</a>.</span>
+        <span class="copyright text-muted">&copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> {% if site.author.name %}<span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.author.name }}</span></span>{% else %}{{ site.title }}{% endif %}. <a rel="license" itemprop="license" href="//creativecommons.org/licenses/by/3.0/">Some rights reserved</a>.</span>
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 
+  <!-- Basic page needs -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -31,21 +32,21 @@
   <!-- SEO -->
   {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  {% if page.next.url %}<link rel="next" href="{{ page.next.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.next.title }}">{% endif %}
-  {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.previous.title }}">{% endif %}
+  {% if page.next.url %}<link rel="next" title="{{ page.next.title }}" href="{{ page.next.url | replace:'index.html','' | prepend: site.url }}">{% endif %}
+  {% if page.previous.url %}<link rel="prev" title="{{ page.previous.title }}" href="{{ page.previous.url | replace:'index.html','' | prepend: site.url }}">{% endif %}
 
   <!-- DNS prefetch -->
   <link rel="dns-prefetch" href="//www.google-analytics.com">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
   <!-- Google+ Authorship -->
-  <link rel="author" href="https://plus.google.com/+{{ site.author.googleplus }}">
+  <link rel="author" href="https://plus.google.com/+{{ site.author.google_plus }}">
 
   <!-- Profile for XFN -->
   <link rel="profile" href="http://gmpg.org/xfn/11">
 
   <!-- Feed -->
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} - Atom Feed" href="{{ '/feed.xml' | prepend: site.url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} - Feed" href="{{ '/feed.xml' | prepend: site.url }}">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/style.min.css?v={{ site.github.build_revision }}">

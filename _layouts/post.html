@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article id="post{{ page.id | replace:'/','-' }}" itemscope itemtype="http://schema.org/Article">
+<article id="{% if page.path %}{{ page.path | split:'/' | last | remove:'.md' }}{% else %}{{ page.id | replace:'/','-' | remove_first:'-' }}{% endif %}" itemscope itemtype="http://schema.org/Article">
   <!-- Post header -->
   <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')">
     <div class="container">
@@ -17,7 +17,7 @@ layout: default
             <meta itemprop="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
             <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
             <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Person">
-              <meta itemprop="name" content="{{ site.author.name }}">
+              <meta itemprop="name" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %}">
             </span>
             <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
             {% if page.date_modified %}<meta itemprop="dateModified" content="{{ page.date_modified | date_to_xmlschema }}">{% endif %}
