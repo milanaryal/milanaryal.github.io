@@ -1,5 +1,5 @@
 <!-- Header -->
-<header class="navbar navbar-default navbar-fixed-top header-navbar" role="banner" itemscope {% if site.author.name %}{{ 'http://schema.org/Person' }}(% else %}{{ 'http://schema.org/WPHeader' }}{% endif %}">
+<header class="navbar navbar-default navbar-fixed-top header-navbar" role="banner" itemscope {% if site.author.name %}itemtype="http://schema.org/Person"(% else %}itemtype="http://schema.org/WPHeader"{% endif %}>
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header page-scroll">
