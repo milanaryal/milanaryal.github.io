@@ -21,11 +21,12 @@ markdown:    kramdown
 highlighter: pygments
 
 # Outputting
-permalink:     /:year/:title/
-paginate_path: /page:num/
-paginate:      5
-timezone:      Asia/Kathmandu
-locale:        en_us
+permalink:           /:year/:title/
+relative_permalinks: true
+paginate_path:       /page:num/
+paginate:            5
+timezone:            Asia/Kathmandu
+locale:              en_us
 
 # URL of site, include http://, do not include a trailing slash
 url: "http://milanaryal.com"
