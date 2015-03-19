@@ -21,11 +21,12 @@ markdown:    kramdown
 highlighter: pygments
 
 # Outputting
-permalink:     /:year/:title/
-paginate_path: /page:num/
-paginate:      5
-timezone:      Asia/Kathmandu
-locale:        en_us
+permalink:           /:year/:title/
+relative_permalinks: true
+paginate_path:       /page:num/
+paginate:            5
+timezone:            Asia/Kathmandu
+locale:              en_us
 
 # URL of site, include http://, do not include a trailing slash
 url: "http://milanaryal.com"
@@ -35,25 +36,28 @@ title:            Milan Aryal
 description:      "Livin' on the edge of web standards."
 icon:             "/assets/img/m-icon-white-on-blue.png"
 featured_image:   "/assets/img/home-bg.jpg"
-ga_trackid:       "UA-42092423-1" # Google Analytics - Tracking ID only for milanaryal.com
-disqus_shortname: milanaryal
 feed_limit:       25
 author:
-  name:        Milan Aryal
-  email:       "considermilan@gmail.com"
-  twitter:     MilanAryal
-  google_plus: MilanAryal
-  github:      MilanAryal
-  keybase:     milanaryal
-  tumblr:      milanaryal
-  linkedin:    MilanAryal
-  facebook:    considermilan
-  fb_id:       100001982813077
-  street:      Chandragiri 23
-  locality:    Kathmandu
-  region:      Bagmati
-  country:     Nepal
-  postcode:    00977
+  name:           Milan Aryal
+  email:          "considermilan@gmail.com"
+  twitter:        MilanAryal
+  google_plus:    MilanAryal
+  github:         MilanAryal
+  keybase:        milanaryal
+  tumblr:         milanaryal
+  linkedin:       MilanAryal
+  facebook:       considermilan
+  fb_id:          100001982813077
+  street:         Chandragiri 23
+  locality:       Kathmandu
+  region:         Bagmati
+  country:        Nepal
+  postcode:       00977
+disqus_shortname: milanaryal
+
+# Google Analytics
+# !! Current Tracking ID only for milanaryal.com !!
+google_analytics_id: "UA-42092423-1"
 
 # Front matter defaults
 defaults:
