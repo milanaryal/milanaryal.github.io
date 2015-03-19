@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<article id="{% if page.path %}{{ page.path | split:'/' | last | remove:'.md' | remove:'.markdown' | remove:'.textile' | remove:'.html' }}{% else %}{{ page.id | replace:'/','-' | remove_first:'-' }}{% endif %}" itemscope itemtype="http://schema.org/Article">
+<article id="{{ page.id | replace:'/','-' | remove_first:'-' }}" itemscope itemtype="http://schema.org/Article">
   <!-- Post header -->
   <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <div class="post-heading">
-            <h1 id="{{ page.id | split:'/' | last }}" itemprop="name headline">{{ page.title }}</h1>
+            <h1 itemprop="name headline">{{ page.title }}</h1>
             {% if page.subtitle %}
             <h2 class="subheading">{{ page.subtitle }}</h2>
             {% endif %}
