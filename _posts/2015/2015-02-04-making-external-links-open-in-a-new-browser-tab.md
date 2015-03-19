@@ -13,12 +13,10 @@ Take note that according to most usability experts, opening links in a new brows
 If you would still like to open external links in a new browser tab/window, follow these instructions.
 
 ### Table of contents
+{:.no_toc}
 
-* [Open link in a new browser tab](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#open-link-in-a-new-browser-tab)
-* [Open link in a new browser tab using jQuery](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#open-link-in-a-new-browser-tab-using-jquery)
-* [Target only external links](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#target-only-external-links)
-* [Add external link indicator](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#add-external-link-indicator)
-* [Open all links in a new browser tab](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/#add-external-link-indicator)
+* Table of contents placeholder
+{:toc}
 
 ---
 
@@ -26,13 +24,13 @@ If you would still like to open external links in a new browser tab/window, foll
 
 We can manually add following atrribute in a anchor tag to open all external links in a new browser tab:
 
-#### HTML attribute (valid in HTML5 now):
+#### HTML attribute (valid in HTML5 now)
 
 {% highlight html %}
 <a href="http://milanaryal.com" target="_blank">This link will open in new a tab/window</a>
 {% endhighlight %}
 
-#### Inline JavaScript way:
+#### Inline JavaScript way
 
 {% highlight html %}
 <a href="http://milanaryal.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">This link will open in new tab/window</a>
