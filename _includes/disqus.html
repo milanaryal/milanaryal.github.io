@@ -4,8 +4,8 @@
   <script>
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = '{{ site.disqus_shortname }}';
-    var disqus_identifier = '{{ page.id | replace:'/','-' | remove_first:'-' }}';
-    var disqus_title = '{{ page.title }}';
+    var disqus_identifier = '{{ page.id }}';
+    var disqus_title = '{{ page.title | strip_newlines | escape | replace:"'","\'" }}';
     var disqus_url = '{{ page.url | prepend: site.url }}';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */

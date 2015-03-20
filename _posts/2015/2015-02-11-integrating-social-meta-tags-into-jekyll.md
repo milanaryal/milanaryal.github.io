@@ -90,7 +90,7 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 
 {% highlight html %}
 {% raw %}
-<link rel="author" href="https://plus.google.com/+{{ site.author.googleplus }}">
+<link rel="author" href="https://plus.google.com/+{{ site.author.google_plus }}">
 {% endraw %}
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
 author:
   facebook:     username
   twitter:      username
-  googleplus:   username
+  google_plus:  username
 fb_admins:      your facebook profile id
 fb_appid:       your facebook app id
 {% endhighlight %}
