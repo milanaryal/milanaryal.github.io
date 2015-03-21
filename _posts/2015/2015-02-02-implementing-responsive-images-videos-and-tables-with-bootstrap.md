@@ -8,6 +8,12 @@ If you're using [Bootstrap](http://getbootstrap.com/) to develop your site (and 
 
 Mostly everything in these posts are coming directly from the documentation itself. So hopefully some of these you immediately recognize and others you'll wonder how you missed that.
 
+### Table of contents
+{:.no_toc}
+
+* Table of contents placeholder
+{:toc}
+
 ### Responsive images with Bootstrap
 
 Working with larger images may be a problem for smaller devices. Bootstrap uses a class of `.img-responsive` to make any image responsive:
@@ -32,7 +38,7 @@ Let suppose on your blog you have already posted 600+ posts and what if you want
 
 {% highlight javascript %}
 $(document).ready(function() {
-	$("img").addClass("img-responsive");
+	$('img').addClass('img-responsive');
 });
 {% endhighlight %}
 
@@ -73,10 +79,10 @@ Here's the Bootstrap CSS:
   height: 100%;
   border: 0;
 }
-.embed-responsive.embed-responsive-16by9 {
+.embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
-.embed-responsive.embed-responsive-4by3 {
+.embed-responsive-4by3 {
   padding-bottom: 75%;
 }
 {% endhighlight %}
@@ -111,14 +117,25 @@ This method also works to have responsive `iframe` object for like SlideShare.
 
 #### Responsive embed videos with Bootstrap using jQuery
 
-Here we're using jQuery method to add the necessary Bootstrap classes to have responsive embed YouTube and Vimeo videos:
+Here we're using jQuery method to add the necessary Bootstrap classes to have responsive embed YouTube and Vimeo videos.
+
+Following jQuery snippet will help you to find YouTube or Vimeo videos and also SlideShare slides and wrap/add the necessary Bootstrap CSS to have the responsive items:
 
 {% highlight javascript %}
 $(document).ready(function () { 
-    $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-	  $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
-    $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-	  $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
+
+  // For embed YouTube videos
+  $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
+
+  // For embed Vimeo videos 
+  $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
+
+  // For SlideShare slides
+  $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
+
 });
 {% endhighlight %}
 
@@ -159,8 +176,8 @@ Here we're using jQuery method to add the necessary Bootstrap classes to have re
 
 {% highlight javascript %}
 $(document).ready(function() {
-	$("table").wrap("<div class='table-responsive'></div>");
-	  $("table").addClass("table");
+  $('table').wrap('<div class="table-responsive"></div>');
+    $('table').addClass('table');
 });
 {% endhighlight %}
 

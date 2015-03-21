@@ -343,8 +343,7 @@ Now it's all done. :wink:
 
 ---
 
-### Further references
+### Other alternatives
 
-* [AnchorJS](//bryanbraun.github.io/anchorjs/) - Bryan Braun
 * [Header hover anchor links on GitHub Pages using Jekyll](http://ben.balter.com/2014/03/13/pages-anchor-links/) - Ben Balter
 * Header Anchor Links in Vanilla JavaScript for GitHub Pages and Jekyll: ([Blog 1](http://blog.parkermoore.de/2014/08/01/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/), [Blog 2](https://byparker.com/blog/2014/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/)) - Parker Moore
