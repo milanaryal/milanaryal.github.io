@@ -61,7 +61,7 @@ Here are a few notes schema.org suggests you to keep in mind when adding schema.
 
 - **More is better, except for hidden text.** In general, the more content you mark up, the better. However, as a general rule, you should mark up only the content that is visible to people who visit the web page and not content in hidden div's or other hidden page elements.
 
-- **Expected types vs text.** When browsing the schema.org types, you will notice that many properties have "expected types". This means that the value of the property can itself be an embedded item (see section 1d: embedded items). But this is not a requirement --- it's fine to include just regular text or a URL. In addition, whenever an expected type is specified, it is also fine to embed an item that is a child type of the expected type. For example, if the expected type is Place, it's also OK to embed a LocalBusiness.
+- **Expected types vs text.** When browsing the schema.org types, you will notice that many properties have "expected types". This means that the value of the property can itself be an embedded item. But this is not a requirement --- it's fine to include just regular text or a URL. In addition, whenever an expected type is specified, it is also fine to embed an item that is a child type of the expected type. For example, if the expected type is Place, it's also OK to embed a LocalBusiness.
 
 - **Using the url property.** Some web pages are about a specific item. For example, you may have a web page about a single person, which you could mark up using the Person item type. Other pages have a collection of items described on them. For example, your company site could have a page listing employees, with a link to a profile page for each person. For pages like this with a collection of items, you should mark up each item separately (in this case as a series of Persons) and add the url property to the link to the corresponding page for each item, like this:
 
@@ -76,5 +76,5 @@ Here are a few notes schema.org suggests you to keep in mind when adding schema.
 
 ### Related tools
 
-* [Google's structured data markup helper](//www.google.com/webmasters/markup-helper/u/0/) - This tool will help you create basic schema.org markup for several use cases.
-* [Google's structured data testing tool](//developers.google.com/structured-data/testing-tool/) - Use this tool to test whether your rich snippets are properly configured.
+* [Google's structured data markup helper](//www.google.com/webmasters/markup-helper/u/0/) -- This tool will help you create basic schema.org markup for several use cases.
+* [Google's structured data testing tool](//developers.google.com/structured-data/testing-tool/) -- Use this tool to test whether your rich snippets are properly configured.
