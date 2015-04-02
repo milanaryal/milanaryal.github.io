@@ -25,18 +25,19 @@ permalink: /archives/
         <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a>
       </li>
       <li class="col-sm-3 text-muted text-right">
-        {% assign day = post.date | date: '%d' %}
+        {% assign day = post.date | date: '%-d' %}
         {% case day %}
-          {% when '01', '21', '31' %}
+          {% when '1' or '21' or '31' %}
             {% assign suffix = 'st' %}
-          {% when '02', '22' %}
+          {% when '2' or '22' %}
             {% assign suffix = 'nd' %}
-          {% when '03', '23' %}
+          {% when '3' or '23' %}
             {% assign suffix = 'rd' %}
           {% else %}
             {% assign suffix = 'th' %}
         {% endcase %}
-        <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%e' }}{{ suffix }}{{ post.date | date:' %b %Y' }}</time>
+        {% capture post_date %}{{ post.date | date: '%b %-d' }}{{ suffix | append:', ' }}{{ post.date | date: '%Y' }}{% endcapture %}
+        <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post_date }}</time>
       </li>
     </ul>
   </article>
