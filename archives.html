@@ -37,7 +37,7 @@ permalink: /archives/
             {% assign suffix = 'th' %}
         {% endcase %}
         {% capture post_date %}{{ post.date | date: '%b %-d' }}{{ suffix | append:', ' }}{{ post.date | date: '%Y' }}{% endcapture %}
-        <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post_date }}</time>
+        <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="top" title="{{ post.date | date: '%a, %b %-d, %Y' }} at {{ post.date | date: '%-I:%M%P %Z' }}">{{ post_date }}</time>
       </li>
     </ul>
   </article>
