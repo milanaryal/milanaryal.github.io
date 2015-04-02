@@ -22,7 +22,7 @@ redirect_from:
     {% endif %}
   </a>
   <div class="post-meta">
-    <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date_to_rfc822 }}">{{ post.date | date: '%B %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}</span>
+    <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date: '%a, %b %-d, %Y' }} at {{ post.date | date: '%-I:%M%P %Z' }}">{{ post.date | date: '%B %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}</span>
   </div>
 </article>
 <hr>
