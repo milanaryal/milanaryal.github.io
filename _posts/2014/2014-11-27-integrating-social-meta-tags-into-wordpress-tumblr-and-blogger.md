@@ -117,10 +117,10 @@ And place the [following code](http://stackoverflow.com/questions/11493718/faceb
 {/block:PermalinkPage}
 
 {block:IndexPage}
-        <meta property="og:title" content="{Title}"/>
-        <meta property="og:type" content="blog"/>
-        <meta property="og:description" content="{MetaDescription}"/>
-        <meta property="og:image" content="{PortraitURL-64}"/>
+    <meta property="og:title" content="{Title}"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:description" content="{MetaDescription}"/>
+    <meta property="og:image" content="{PortraitURL-64}"/>
 {/block:IndexPage}
 <!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
 {% endhighlight %}
@@ -131,9 +131,9 @@ For Twitter card property also place the [following code](http://www.quora.com/W
 <!-- BEGIN TWITTER TAGS -->
 {block:PermalinkPage}
 
-<meta name="twitter:url" content="{Permalink}"/>
-<meta name="twitter:site" content="@YOUR_BLOG_TWITTER_USERNAME_HERE">
-<meta name="twitter:creator" content="@YOUR_TWITTER_USERNAME_HERE">
+    <meta name="twitter:url" content="{Permalink}"/>
+    <meta name="twitter:site" content="@YOUR_BLOG_TWITTER_USERNAME_HERE">
+    <meta name="twitter:creator" content="@YOUR_TWITTER_USERNAME_HERE">
 
         {block:Posts}
             {block:Text}
@@ -199,6 +199,13 @@ For Twitter card property also place the [following code](http://www.quora.com/W
         {/block:Posts}
 
 {/block:PermalinkPage}
+
+{block:IndexPage}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{Title}"/>
+    <meta name="twitter:description" content="{MetaDescription}"/>
+    <meta name="twitter:image" content="{PortraitURL-64}"/>
+{/block:IndexPage}
 <!-- END TWITTER TAGS -->
 {% endhighlight %}
 
@@ -218,7 +225,8 @@ And place the following code before `</head>` section:
 <!-- Open Graph metatags -->
 	<b:if cond='data:blog.pageType == &quot;item&quot;'>
 	<meta content='article' property='og:type'/>
-	<meta content='YOUR_NAME_HERE' name='author' property='article:author'/>
+	<meta content='https://www.facebook.com/YOUR_FACEBOOK_PROFILE_USERNAME_HERE' property='article:author'/>
+    <meta content='YOUR_NAME_HERE' name='author'/>
 	<meta expr:content='data:blog.title' property='og:site_name'/>
 	<meta expr:content='data:blog.pageName' property='og:title'/>
 	<meta expr:content='data:blog.pageName' name='title'/>
@@ -300,8 +308,8 @@ For Google+ and Facebook authorship include the following code before `</head>` 
 <meta content='YOUR_FB_APP_ID_HERE' property='fb:app_id'/>
 
 <!-- Google authorship and publisher markup -->
-<link href='https://plus.google.com/YOUR_PAGE_ID_HERE/posts' rel='author'/>
-<link href='https://plus.google.com/YOUR_PAGE_ID_HERE' rel='publisher'/>
+<link href='https://plus.google.com/YOUR_GOOGLE+_PROFILE_ID_HERE' rel='author'/>
+<link href='https://plus.google.com/YOUR_GOOGLE+_PAGE_ID_HERE' rel='publisher'/>
 {% endhighlight %}
 
 ---
