@@ -1,6 +1,6 @@
 feed {
   display:block;
-  font-family:sans-serif;
+  font-family:verdana,sans-serif;
   margin:2%;
   font-size:90%;
   color:#000000;
@@ -20,21 +20,21 @@ subtitle, link, rights {
   font-size:0.9em;
 }
 
-feed updated, feed author name, uri, email, id, icon, generator, convertLineBreaks {
-  display:none;
-}
-
-generator:after {
+rights:after {
   display:block;
-  margin:3em 4em 3em 4em;
+  margin:3em 4em;
   color:#CC3333;
   background:#FFFF66;
   border:solid #CCCC66 2px;
   text-align:center;
   padding:1.5em;
-  font-family:mono;
+  font-family:monospace;
   font-size:0.8em;
   content:"This is an Atom formatted XML site feed. It is intended to be viewed in a Newsreader or syndicated to another site.";
+}
+
+feed updated, feed author name, uri, email, id, icon, generator, convertLineBreaks {
+  display:none;
 }
 
 entry {
@@ -42,14 +42,14 @@ entry {
   color:inherit;
   background:inherit;
   padding:0;
-  margin:1em 1em 4em 1em;
+  margin:1em 1em 4em;
 }
 
 entry updated, entry author name {
   display:inline;
   color:#999999;
   background:inherit;
-  padding:0em 1em;
+  padding-left:1.25em;
   font-size:0.8em;
 }
 
@@ -63,7 +63,7 @@ entry title {
   font-weight:bold;
   color:inherit;
   background:inherit;
-  padding:1em 1em 0em 1em;
+  padding:1em 1em 0em;
   margin:0;
   border-top:solid 1px #dddddd;
 }
