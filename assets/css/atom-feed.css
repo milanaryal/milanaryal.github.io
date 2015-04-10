@@ -3,8 +3,8 @@ feed {
   font-family:verdana,sans-serif;
   margin:2%;
   font-size:90%;
-  color:#000000;
-  background:#ffffff;
+  color:#000;
+  background:#fff;
 }
 
 title {
@@ -12,28 +12,28 @@ title {
   font-size:1.3em;
   color:inherit;
   background:inherit;
-  font-weight:bold;
+  font-weight:700;
 }
 
-subtitle, link, rights {
+subtitle,link,rights {
   display:block;
-  font-size:0.9em;
+  font-size:.9em;
 }
 
 rights:after {
   display:block;
   margin:3em 4em;
-  color:#CC3333;
-  background:#FFFF66;
-  border:solid #CCCC66 2px;
+  color:#C33;
+  background:#FF6;
+  border:solid #CC6 2px;
   text-align:center;
   padding:1.5em;
   font-family:monospace;
-  font-size:0.8em;
+  font-size:1em;
   content:"This is an Atom formatted XML site feed. It is intended to be viewed in a Newsreader or syndicated to another site.";
 }
 
-feed updated, feed author name, uri, email, id, icon, generator, convertLineBreaks {
+feed updated,feed author name,uri,email,id,icon,generator,convertLineBreaks {
   display:none;
 }
 
@@ -45,32 +45,35 @@ entry {
   margin:1em 1em 4em;
 }
 
-entry updated, entry author name {
+entry updated,entry author name {
   display:inline;
-  color:#999999;
+  color:#999;
   background:inherit;
-  padding-left:1.25em;
-  font-size:0.8em;
+  font-size:.8em;
 }
 
-entry published, entry id, entry draft {
+entry updated {
+  padding-left:1.25em;
+}
+
+entry published,entry id,entry draft {
   display:none;
 }
 
 entry title {
   display:block;
   font-size:1em;
-  font-weight:bold;
+  font-weight:700;
   color:inherit;
   background:inherit;
-  padding:1em 1em 0em;
+  padding:1em 1em 0;
   margin:0;
-  border-top:solid 1px #dddddd;
+  border-top:solid 1px #ddd;
 }
 
 content {
   display:block;
-  font-size:0.9em;
+  font-size:.9em;
   color:inherit;
   background:inherit;
   padding:1em;
