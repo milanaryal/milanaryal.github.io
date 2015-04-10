@@ -1,6 +1,6 @@
 ---
 layout: null
-style: "http://milanaryal.com/assets/css/feed.css"
+style: "http://milanaryal.com/assets/css/feed.min.css"
 feed_limit: 25
 sitemap: false
 permalink: /feed.xml
