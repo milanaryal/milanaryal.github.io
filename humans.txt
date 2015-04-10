@@ -7,10 +7,10 @@ permalink: /humans.txt
 # The humans responsible & technology colophon
 
 # TEAM
-
-  {% for contributor in site.github.contributors %}Name: {{ contributor.login }}
-  Site: {{ contributor.html_url }}{% endfor %}
-
+  {% for contributor in site.github.contributors %}
+  Name: {{ contributor.login }}
+  Site: {{ contributor.html_url }}
+  {% endfor %}
 # THANKS
 
   GitHub
