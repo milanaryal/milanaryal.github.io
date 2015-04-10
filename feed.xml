@@ -1,12 +1,13 @@
 ---
 layout: null
+style: "http://milanaryal.com/assets/css/atom.css"
 feed_limit: 25
 sitemap: false
 permalink: /feed.xml
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="{{ base }}/css/atom.css" type="text/css"?>
+{% if page.style %}<?xml-stylesheet href="{{ page.style }}" type="text/css"?>{% endif %}
 <feed xmlns="http://www.w3.org/2005/Atom">
 {% if site.url %}{% assign base = site.url %}{% elsif site.github.url %}{% assign base = site.github.url %}{% endif %}
   <title type="text">{{ site.title }}</title>
@@ -31,7 +32,7 @@ permalink: /feed.xml
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>{% if post.author.name %}{{ post.author.name }}{% else %}{{ site.author.name }}{% endif %}</name>
-      <uri>{% if post.author.url %}{{ post.author.url }}{% else %}{{ post.author.url }}{% endif %}</uri>
+      <uri>{% if post.author.url %}{{ post.author.url }}{% else %}{{ site.author.url }}{% endif %}</uri>
       <email>{% if post.author.email %}{{ post.author.email }}{% else %}{{ site.author.email }}{% endif %}</email>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
