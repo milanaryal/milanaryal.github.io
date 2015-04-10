@@ -1,13 +1,13 @@
 ---
 layout: null
-style: "http://milanaryal.com/assets/css/atom.css"
+style: "http://milanaryal.com/assets/css/atom-feed.css"
 feed_limit: 25
 sitemap: false
 permalink: /feed.xml
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
-{% if page.style %}<?xml-stylesheet href="{{ page.style }}" type="text/css"?>{% endif %}
+{% if page.style %}<?xml-stylesheet type="text/css" href="{{ page.style }}"?>{% endif %}
 <feed xmlns="http://www.w3.org/2005/Atom">
 {% if site.url %}{% assign base = site.url %}{% elsif site.github.url %}{% assign base = site.github.url %}{% endif %}
   <title type="text">{{ site.title }}</title>
@@ -15,6 +15,7 @@ permalink: /feed.xml
   <link rel="self" type="application/atom+xml" href="{{ base }}{{ page.url }}"/>
   <link rel="alternate" type="text/html" href="{{ base }}/"/>
   <id>{{ base }}/</id>
+  <icon type="image/x-icon">{{ base }}/favicon.ico</icon>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <author>
     <name>{{ site.author.name }}</name>
@@ -23,7 +24,6 @@ permalink: /feed.xml
   </author>
   <rights>Copyright (c) {{ site.time | date: '%Y' }}, {{ site.author.name }}</rights>
   <generator version="{{ jekyll.version }}" uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-  <icon>{{ base }}/favicon.ico</icon>
   {% for post in site.posts limit: page.feed_limit %}
   <entry>
     <title type="text">{{ post.title | xml_escape }}</title>
