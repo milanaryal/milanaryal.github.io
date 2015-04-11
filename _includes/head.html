@@ -32,8 +32,8 @@
   <!-- SEO -->
   {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  {% if page.next.url %}<link rel="next" title="{{ page.next.title }}" href="{{ page.next.url | replace:'index.html','' | prepend: site.url }}">{% endif %}
-  {% if page.previous.url %}<link rel="prev" title="{{ page.previous.title }}" href="{{ page.previous.url | replace:'index.html','' | prepend: site.url }}">{% endif %}
+  {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.previous.title }}">{% endif %}
+  {% if page.next.url %}<link rel="next" href="{{ page.next.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.next.title }}">{% endif %}
 
   <!-- DNS prefetch -->
   <link rel="dns-prefetch" href="//www.google-analytics.com">
