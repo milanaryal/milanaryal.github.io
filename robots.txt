@@ -8,6 +8,5 @@ permalink: /robots.txt
 
 User-agent: *
 Disallow:
-Disallow: /404.html
-Disallow: /page*/
+Disallow: /page*
 Sitemap: {{ site.url }}/sitemap.xml
