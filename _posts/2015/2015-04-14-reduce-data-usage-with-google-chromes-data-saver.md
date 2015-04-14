@@ -39,4 +39,4 @@ The feature is certainly much more useful on mobile: It can save you money if yo
 ---
 
 [^1]: For more information about Google Chrome's Data Saver please visit the [Google support page](https://support.google.com/chrome/answer/2392284).
-[^2]: Custom downloaded images may not worked if you've enabled the data compression tool. Thus, turn off the Chrome's Data Saver or simply download the images in Chrome's incognito pages.
+[^2]: Custom downloaded images may not worked if you've enabled the data compression tool. Thus, turn off the Chrome's Data Saver or simply download the images in Chrome's incognito window.
