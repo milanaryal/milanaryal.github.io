@@ -28,7 +28,7 @@ Google began testing its data compression service for browsers back in March 201
 
 #### Other alternative on desktop
 
-Since long time there's an unofficial experimental [Data Compression Proxy](https://chrome.google.com/webstore/detail/data-compression-proxy/ajfiodhbiellfpcjjedhmmmpeeaebmep) extension alternative bringing Chrome Data Compression Proxy from mobile to desktop PCs available on Chrome Web Store. Data Compression Proxy also have the feature of ad blocking and a bypass list, which you can customize in options.
+Since long time there's an unofficial experimental [Data Compression Proxy](https://chrome.google.com/webstore/detail/data-compression-proxy/ajfiodhbiellfpcjjedhmmmpeeaebmep) extension bringing Chrome Data Compression Proxy from mobile to desktop PCs, alternative available on Chrome Web Store. Data Compression Proxy also have the feature of ad blocking and a bypass list, which you can customize in options.
 
 ### Chrome's Data Saver on mobile
 
@@ -39,4 +39,4 @@ The feature is certainly much more useful on mobile: It can save you money if yo
 ---
 
 [^1]: For more information about Google Chrome's Data Saver please visit the [Google support page](https://support.google.com/chrome/answer/2392284).
-[^2]: Custom downloaded images may not worked if you've enabled the data compression tool. Thus, turn off the Chrome's Data Saver or simple download the images in Chrome's incognito pages.
+[^2]: Custom downloaded images may not worked if you've enabled the data compression tool. Thus, turn off the Chrome's Data Saver or simply download the images in Chrome's incognito pages.
