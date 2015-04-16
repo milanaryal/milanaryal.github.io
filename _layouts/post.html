@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article id="{{ page.id | replace:'/','-' | remove_first:'-' }}" itemscope itemtype="http://schema.org/Article">
+<article id="{{ page.id | replace:'/','-' | replace_first:'-','' }}" itemscope itemtype="http://schema.org/Article">
   <!-- Post header -->
   <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')">
     <div class="dark-background">
@@ -14,7 +14,7 @@ layout: default
               {% if page.subtitle %}
               <h2 class="subheading">{{ page.subtitle }}</h2>
               {% endif %}
-              <link itemprop="url" href="{{ page.url | prepend: site.url }}">
+              <link itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
               <meta itemprop="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
               <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
               <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Person">
@@ -57,11 +57,13 @@ layout: default
               </ul>
             </nav>
           </footer>
-        {% if site.disqus_shortname %}
-          {% unless page.comments == 'false' %}
-            {% include disqus.html %}
-          {% endunless %}
-        {% endif %}
+          {% if site.disqus_shortname %}
+            {% unless page.comments == 'false' %}
+          <article class="comments" itemprop="comment">
+            {% include disqus_thread.html %}
+          </article>
+            {% endunless %}
+          {% endif %}
       </div>
     </div>
   </div>
