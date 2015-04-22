@@ -8,9 +8,8 @@
 (function () {
   'use strict';
 
-var selector = '.post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6';
-
-function addAnchors(selector) {
+  // Anchor selector
+  var selector = '.post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6';
 
   // Select any elements that match the provided selector.
   var elements = document.querySelectorAll(selector);
@@ -79,6 +78,5 @@ function addAnchors(selector) {
 
     elements[i].innerHTML += anchor;
   }
-}
 
 })();
