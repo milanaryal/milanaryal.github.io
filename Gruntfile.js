@@ -57,6 +57,9 @@ module.exports = function (grunt) {
       js: [
         '<%= project.assets %>/js/scripts.js',
         '<%= project.assets %>/js/scripts.min.js'
+      ],
+      fonts: [
+        '<%= project.assets %>/fonts',
       ]
     },
 
