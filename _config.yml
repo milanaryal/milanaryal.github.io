@@ -7,6 +7,9 @@ exclude:
   - CNAME
   - Gemfile
   - key.asc
+  - src
+  - package.json
+  - Gruntfile.js
 encoding: "utf-8"
 
 # Plugins

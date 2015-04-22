@@ -1,0 +1,35 @@
+//
+// Link placement and hover behavior.
+// --------------------------------------------------
+
+.anchor-link {
+  opacity: 0;
+  text-decoration: none;
+  font-size: 90%;
+  padding-left: 0.5em;
+}
+
+*:hover > .anchor-link,
+.anchor-link:focus  {
+  // To fade links as they appear, change transition-property from 'color' to 'all'
+  opacity: 1;
+  -webkit-transition: color .16s linear;
+  -moz-transition: color .16s linear;
+  -o-transition: color .16s linear;
+  transition: color .16s linear;
+}
+
+//
+// Make screen-reader friendly description text visually hidden.
+// -------------------------------------------------------------
+
+.anchor-description {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

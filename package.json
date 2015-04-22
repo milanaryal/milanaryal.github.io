@@ -1,0 +1,27 @@
+{
+  "name": "milanaryal",
+  "title": "Milan Aryal",
+  "description": "Livin' on the edge of web standards.",
+  "homepage": "http://milanaryal.com",
+  "author": "Milan Aryal",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/MilanAryal/milanaryal,github.io/blob/master/LICENSE"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-banner": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MilanAryal/milanaryal,github.io.git"
+  }
+}

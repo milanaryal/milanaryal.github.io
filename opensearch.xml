@@ -1,0 +1,17 @@
+---
+# Milan Aryal (http://milanaryal.com)
+# OpenSearch.org description document format
+
+layout: null
+sitemap: false
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Milan Aryal</ShortName>
+  <Description>Search MilanAryal.com</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">http://milanaryal.com/favicon.ico</Image>
+  <Url type="text/html" method="get" template="http://google.com/search?q=site%3Amilanaryal.com+{searchTerms}"/>
+  <moz:SearchForm>http://google.com/search?q=site%3Amilanaryal.com</moz:SearchForm>
+</OpenSearchDescription>

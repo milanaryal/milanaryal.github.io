@@ -1,0 +1,177 @@
+// ==============================================
+//  Post content
+// ==============================================
+
+.post-content h2,
+.post-content h3,
+.section-heading {
+  margin: 40px 0 30px;
+  font-weight: 700;
+}
+
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  margin: 40px 0 30px;
+  font-weight: 600;
+  color: @gray;
+}
+
+.post-content h2 {
+  font-size: 40px;
+}
+
+.post-content h3,
+.section-heading {
+  font-size: 36px;
+}
+
+.post-content h4 {
+  font-size: 30px;
+}
+
+.post-content h5 {
+  font-size: 24px;
+}
+
+.post-content h6 {
+  font-size: 22px;
+}
+
+.post-content h2,
+.post-content h3,
+.section-heading,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  &:link {
+    text-decoration: underline;
+    }
+}
+
+blockquote,
+figure,
+iframe,
+pre,
+.table-responsive,
+.post-content ol,
+.post-content ul {
+  margin: 30px 0;
+}
+
+figure > iframe {
+  margin: 0;
+}
+
+figcaption,
+.caption {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  font-style: italic;
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.post-content li,
+figcaption,
+.caption {
+  a {
+    text-decoration: underline;
+  }
+}
+
+.post-content hr,
+.section-divider {
+  display: block;
+  max-width: 100px;
+  margin: 51px auto 41px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+// GitHub Pages
+.emoji {
+  display: inline-block;
+}
+
+// Jekyll Kramdown markdown
+
+// Footnotes
+.footnotes {
+  margin: 30px 0;
+  font-size: 16px;
+    ol,
+    p {
+      margin: 15px 0;
+    }
+    &:before {
+      content: 'Footnotes';
+      font-weight: 700;
+      .sans-serif;
+    }
+}
+
+.footnote,
+.reversefootnote {
+  &:link {
+    text-decoration: none;
+  }
+}
+
+// ==============================================
+//  Page content
+// ==============================================
+
+// Social
+.social-container,
+.comments {
+  margin: 50px 0 40px;
+}
+
+.social-container a {
+  color: #e1e8ed;
+    &:hover,
+    &:focus {
+      color: #55acee;
+    }
+}
+
+// Middot divider
+.middot-divider {
+  display: inline-block;
+  padding: 0 0.42em;
+}
+
+.middot-divider:after {
+  content: '·';
+}
+
+// Archives page
+
+.archives {
+  ul {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+  }
+  li {
+    // remove column margin or padding
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+      &:hover,
+      &:focus {
+        color: @gray-dark;
+        text-decoration: none;
+        border-bottom: 1px solid @gray-dark;
+      }
+  }
+}
