@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal,github.io/blob/master/LICENSE)
  *
- * Date: 2015-04-22T22:35:49+05:45
+ * Date: 2015-04-23T17:10:27+05:45
  */
 
 /* ========================================================================
@@ -11514,93 +11514,98 @@ return jQuery;
 }(jQuery);
 
 /* ========================================================================
- * These scripts helps to wrap/add/remove necessary CSS class
- * when DOM is ready.
+ * Milan Aryal (http://milanaryal.com)
+ * These scripts helps to wrap/add/remove/popup necessary CSS class when DOM is ready.
+ * ========================================================================
+ * Copyright 2015 Milan Aryal
+ * Licensed under MIT (https://github.com/MilanAryal/milanaryal,github.io/blob/master/LICENSE)
  * ======================================================================== */
 
 
-+function ($) {
+!function ($) {
   'use strict';
 
-  // Tooltip init
-  // ============
+  $(function () {
 
-  $('[data-toggle="tooltip"]').tooltip()
+    // Tooltip init
+    // ============
 
-  // Responsive stuffs
-  // =================
+    $('[data-toggle="tooltip"]').tooltip()
+
+
+    // Responsive stuffs
+    // =================
 
     // make all images responsive
-	$('img').addClass('img-responsive');
+    $('img').addClass('img-responsive');
 
     // responsive table
-	$('table').wrap('<div class="table-responsive"></div>');
-	    $('table').addClass('table table-hover');
+    $('table').wrap('<div class="table-responsive"></div>');
+    $('table').addClass('table table-hover');
 
     // responsive embed video
     $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-	    $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
+    $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
+
     $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-	    $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
-	$('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-	    $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
+    $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
+
+    $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
 
 
- // Navigation Scripts to Show Header on Scroll-Up
- // ===============================================
+    // Navigation Scripts to Show Header on Scroll-Up
+    // ===============================================
 
     var MQL = 1170;
 
     // primary navigation slide-in effect
     if ($(window).width() > MQL) {
-        var headerHeight = $('.header-navbar').height();
-        $(window).on('scroll', {
-                previousTop: 0
-            },
-            function() {
-                var currentTop = $(window).scrollTop();
-                // check if user is scrolling up
-                if (currentTop < this.previousTop) {
-                    // if scrolling up...
-                    if (currentTop > 0 && $('.header-navbar').hasClass('is-fixed')) {
-                        $('.header-navbar').addClass('is-visible');
-                    } else {
-                        $('.header-navbar').removeClass('is-visible is-fixed');
-                    }
-                } else {
-                    // if scrolling down...
-                    $('.header-navbar').removeClass('is-visible');
-                    if (currentTop > headerHeight && !$('.header-navbar').hasClass('is-fixed')) $('.header-navbar').addClass('is-fixed');
-                }
-                this.previousTop = currentTop;
-            });
+      var headerHeight = $('.header-navbar').height();
+      $(window).on('scroll', {
+        previousTop: 0
+      },
+      function () {
+        var currentTop = $(window).scrollTop();
+        // check if user is scrolling up
+        if (currentTop < this.previousTop) {
+          // if scrolling up...
+          if (currentTop > 0 && $('.header-navbar').hasClass('is-fixed')) {
+            $('.header-navbar').addClass('is-visible');
+          } else {
+            $('.header-navbar').removeClass('is-visible is-fixed');
+          }
+        } else {
+          // if scrolling down...
+          $('.header-navbar').removeClass('is-visible');
+          if (currentTop > headerHeight && !$('.header-navbar').hasClass('is-fixed')) $('.header-navbar').addClass('is-fixed');
+        }
+        this.previousTop = currentTop;
+      });
     }
 
-}(jQuery);
 
-/* ========================================================================
- *  Social share - Helps to pop-up a window on click
- * ======================================================================== */
+    // Social share - Helps to pop-up a window on click
+    // =================================================
 
- +function ($) {
-  'use strict';
+    $('.social-share').on('click', function () {
+      var width  = 670; // last update: 575
+      var height = 420; // last update: 400
+      var top    = ($(window).height() - height) / 2;
+      var left   = ($(window).width()  - width)  / 2;
+      var url    = this.href;
+      var opts   = 'status=1' +
+                   ',width='  + width  +
+                   ',height=' + height +
+                   ',top='    + top    +
+                   ',left='   + left;
 
-  $('.social-share').click(function(event) {
-    var width  = 670, // last update: 575
-        height = 420, // last update: 400
-        left   = ($(window).width()  - width)  / 2,
-        top    = ($(window).height() - height) / 2,
-        url    = this.href,
-        opts   = 'status=1' +
-                 ',width='  + width  +
-                 ',height=' + height +
-                 ',top='    + top    +
-                 ',left='   + left;
+      window.open(url, '', opts);
 
-    window.open(url, '', opts);
+      return false;
+    })
 
-    return false;
-  });
+  })
 
 }(jQuery);
 
@@ -11654,9 +11659,9 @@ return jQuery;
 
       // Compare our generated ID to existing IDs (and increment it if needed)
       // before we add it to the page.
-      var index,
-          count = 0,
-          newTidyText = tidyText;
+      var index = 0;
+      var count = 0;
+      var newTidyText = tidyText;
       do {
         if (index !== undefined) {
           newTidyText = tidyText + '-' + count;

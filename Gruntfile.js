@@ -42,7 +42,6 @@ module.exports = function (grunt) {
         '<%= project.src %>/js/bootstrap/tab.js',
         '<%= project.src %>/js/bootstrap/affix.js',
         '<%= project.src %>/js/scripts.js',
-        '<%= project.src %>/js/social-share.js',
         '<%= project.src %>/js/anchor.js'
       ]
     },
@@ -61,6 +60,24 @@ module.exports = function (grunt) {
       fonts: [
         '<%= project.assets %>/fonts',
       ]
+    },
+
+    jshint: {
+      options: {
+        jshintrc: '<%= project.src %>/js/bootstrap/.jshintrc'
+      },
+      core: {
+        src: ['<%= project.js %>', '!<%= project.src %>/js/jquery.js']
+      }
+    },
+
+    jscs: {
+      options: {
+        config: '<%= project.src %>/js/bootstrap/.jscsrc'
+      },
+      core: {
+        src: ['<%= project.js %>', '!<%= project.src %>/js/jquery.js']
+      }
     },
 
     concat: {
@@ -116,6 +133,25 @@ module.exports = function (grunt) {
       }
     },
 
+    csslint: {
+      options: {
+        csslintrc: '<%= project.src %>/less/bootstrap/.csslintrc'
+      },
+      dist: [
+        '<%= project.assets %>/css/style.css',
+      ]
+    },
+
+    csscomb: {
+      options: {
+        config: '<%= project.src %>/less/bootstrap/.csscomb.json'
+      },
+      core: {
+        src: '<%= project.assets %>/css/style.css',
+        dest: '<%= project.assets %>/css/style.css'
+      }
+    },
+
     cssmin: {
       options: {
         compatibility: 'ie8',
@@ -160,14 +196,14 @@ module.exports = function (grunt) {
         files: ['<%= project.js %>'],
         tasks: ['uglify'],
         options: {
-          spawn: false,
+          spawn: false
         }
       },
       less: {
         files: ['<%= project.css %>'],
         tasks: ['less'],
         options: {
-          spawn: false,
+          spawn: false
         }
       }
     }
@@ -176,16 +212,20 @@ module.exports = function (grunt) {
 
   // Load the plugin(s).
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-jscs');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean', 'concat', 'uglify', 'less', 'autoprefixer', 'cssmin', 'usebanner', 'copy']);
+  grunt.registerTask('default', ['clean', 'jshint', 'jscs', 'concat', 'uglify', 'less', 'autoprefixer', 'csslint', 'csscomb', 'cssmin', 'usebanner', 'copy']);
 
 };

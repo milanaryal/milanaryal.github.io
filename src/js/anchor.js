@@ -48,9 +48,9 @@
 
       // Compare our generated ID to existing IDs (and increment it if needed)
       // before we add it to the page.
-      var index,
-          count = 0,
-          newTidyText = tidyText;
+      var index = 0;
+      var count = 0;
+      var newTidyText = tidyText;
       do {
         if (index !== undefined) {
           newTidyText = tidyText + '-' + count;

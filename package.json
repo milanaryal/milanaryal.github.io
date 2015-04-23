@@ -15,13 +15,17 @@
     "grunt-contrib-clean": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-copy": "*",
+    "grunt-contrib-csslint": "*",
     "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
     "grunt-contrib-less": "*",
     "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-watch": "*",
+    "grunt-csscomb": "*",
+    "grunt-jscs": "*"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MilanAryal/milanaryal,github.io.git"
+    "url": "https://github.com/MilanAryal/milanaryal.github.io.git"
   }
 }
