@@ -1,9 +1,9 @@
 /*!
  * Milan Aryal (http://milanaryal.com)
  * Copyright 2015 Milan Aryal
- * Licensed under MIT (https://github.com/MilanAryal/milanaryal,github.io/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-04-23T17:10:27+05:45
+ * Date: 2015-04-23T18:11:00+05:45
  */
 
 /* ========================================================================
@@ -11518,7 +11518,7 @@ return jQuery;
  * These scripts helps to wrap/add/remove/popup necessary CSS class when DOM is ready.
  * ========================================================================
  * Copyright 2015 Milan Aryal
- * Licensed under MIT (https://github.com/MilanAryal/milanaryal,github.io/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  * ======================================================================== */
 
 

@@ -3,7 +3,7 @@
  * These scripts helps to wrap/add/remove/popup necessary CSS class when DOM is ready.
  * ========================================================================
  * Copyright 2015 Milan Aryal
- * Licensed under MIT (https://github.com/MilanAryal/milanaryal,github.io/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  * ======================================================================== */
 
 

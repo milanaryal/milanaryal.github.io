@@ -1,7 +1,7 @@
 /*!
  * Milan Aryal Gruntfile (http://milanaryal.com)
  * Copyright 2015 Milan Aryal
- * Licensed under MIT (https://github.com/MilanAryal/milanaryal,github.io/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
 
 module.exports = function (grunt) {
