@@ -1,10 +1,25 @@
 //
-// Link placement and hover behavior.
+// AnchorJS - Link placement and hover behavior
 // --------------------------------------------------
 
-*:hover > .anchorjs-link,
-.anchorjs-link:focus  {
+.anchorjs-link {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .anchorjs-link {
+    display: none;
+  }
+}
+
+*:hover > .anchorjs-link {
+  opacity: .75;
   // To fade links as they appear, change transition-property from 'color' to 'all'
   transition: color .16s linear;
+}
+
+*:hover > .anchorjs-link:hover,
+.anchorjs-link:focus {
   text-decoration: none;
+  opacity: 1;
 }
