@@ -18,9 +18,9 @@ module.exports = function (grunt) {
       assets: 'assets',
       date: '<%= grunt.template.date("isoDateTime")%>\+05\:45',
       banner: '/*!\n' +
-              ' * <%= pkg.title %> (<%= pkg.homepage %>)\n' +
+              ' * <%= pkg.title %> (<%= pkg.url %>)\n' +
               ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-              ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+              ' * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)\n' +
               ' *\n' +
               ' * Date: <%= project.date %>\n' +
               ' */\n',
