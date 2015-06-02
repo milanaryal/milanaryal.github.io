@@ -1,6 +1,5 @@
 ---
 layout: null
-permalink: /humans.txt
 ---
 
 # humanstxt.org/

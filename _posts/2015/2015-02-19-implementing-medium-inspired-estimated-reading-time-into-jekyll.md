@@ -1,7 +1,7 @@
 ---
 title: "Implementing Medium inspired estimated reading time into Jekyll"
 date: 2015-02-19T22:26:57+05:45
-date_modified: 2015-03-16T15:07:25+05:45
+last_modified_at: 2015-03-16T15:07:25+05:45
 excerpt: "Estimating the reading time for a article based on standard reading speed."
 ---
 
@@ -55,7 +55,7 @@ Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki
 {% endraw %}
 {% endhighlight %}
 
-With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` so we can not get rounded value from the above technique. Here we only get 1.6 = 1 or 2.4 = 2 value. 
+With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` so we can not get rounded value from the above technique. Here we only get 1.6 = 1 or 2.4 = 2 value.
 
 #### Estimating reading time to the rounded whole number into Jekyll
 
@@ -81,7 +81,7 @@ What some of the following Liquid tags do for us:
 {% endhighlight %}
 
 Here we get 1.67777 or 2.43333 so until the Jekyll implementation of Liquid rounding method for now we wrap the `{% raw %}{{ reading_time }}{% endraw %}` with the `.reading-time` class so that the following jQuery will help us to get the rounded value to the nearest whole number.[^jquery]
- 
+
 {% highlight javascript %}
 // Reading time - jQuery script that rounds it to the nearest whole number
 

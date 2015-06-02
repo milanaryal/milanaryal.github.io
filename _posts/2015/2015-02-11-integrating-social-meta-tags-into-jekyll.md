@@ -1,7 +1,7 @@
 ---
 title: "Integrating social meta tags into Jekyll"
 date: 2015-02-11T13:04:19+05:45
-date_modified: 2015-03-17T22:35:36+05:45
+last_modified_at: 2015-03-17T22:35:36+05:45
 excerpt: "A guide to adding social meta tags into Jekyll."
 ---
 
@@ -21,8 +21,8 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="{{ site.locale }}">
 
-{% if page.date_modified %}
-  <meta property="article:modified_time" content="{{ page.date_modified | date_to_xmlschema }}">
+{% if page.last_modified_at %}
+  <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
 {% endif %}
 
 {% if page.date %}
@@ -104,7 +104,7 @@ Site `_config.yml` setting:
 timezone:       your timezone # eg. Asia/Kathmandu
 locale:         your locale language # eg. en_us
 baseurl:        "/base" # does not include hostname
-url:            "http://yoursitename.com" # URL of site, include http://, do not include a trailing slash 
+url:            "http://yoursitename.com" # URL of site, include http://, do not include a trailing slash
 title:          "your site title"
 description:    "your site description"
 icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
@@ -120,14 +120,14 @@ Post front matter:
 
 {% highlight ruby %}
 ---
-layout:        post
-title:         "your post title"
-date:          2015-02-11T13:04:19+05:45 # XML Schema Date/Time
-date_modified: 2015-03-15T05:20:00+05:45 # last page modified date/time
-image:         your post image path # /assets/img/image.jpg
-excerpt:       "for meta description" # Optional for overring content excerpt
-categories:    your post categories # ["category1"] - best is to have one category in a post
-tags:          your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
+layout:           post
+title:            "your post title"
+date:             2015-02-11T13:04:19+05:45 # XML Schema Date/Time
+last_modified_at: 2015-03-15T05:20:00+05:45 # last page modified date/time
+image:            your post image path # /assets/img/image.jpg
+excerpt:          "for meta description" # Optional for overring content excerpt
+categories:       your post categories # ["category1"] - best is to have one category in a post
+tags:             your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
 ---
 {% endhighlight %}
 

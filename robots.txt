@@ -1,6 +1,5 @@
 ---
 layout: null
-permalink: /robots.txt
 ---
 
 # robotstxt.org/
