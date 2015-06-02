@@ -7,11 +7,11 @@ description: "Livin' on the edge of web standards."
 <article class="post-preview" itemscope itemtype="http://schema.org/Article">
   <a itemprop="url" href="{{ post.url }}">
     <h2 class="post-title" itemprop="name">
-      {{ post.title }}
+      {{ post.title | markdownify | strip_html | strip_newlines }}
     </h2>
     {% if post.subtitle %}
     <h3 class="post-subtitle">
-      {{ post.subtitle }}
+      {{ post.subtitle | markdownify | strip_html | strip_newlines }}
     </h3>
     {% endif %}
   </a>

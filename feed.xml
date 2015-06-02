@@ -82,7 +82,7 @@ sitemap: false
       {% endfor %}
 
       {% if post.excerpt %}
-        <summary>{{ post.excerpt | markdownify | strip_html | strip_newlines | xml_escape }}</summary>
+        <summary>{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | xml_escape }}</summary>
       {% endif %}
     </entry>
   {% endfor %}
