@@ -37,7 +37,7 @@ locale:        en_us
 url: "http://milanaryal.com"
 
 # Site settings
-title:            Milan Aryal
+name:             Milan Aryal
 description:      "Livin' on the edge of web standards."
 icon:             "/assets/img/m-icon-white-on-blue.png"
 featured_image:   "/assets/img/home-bg.jpg"

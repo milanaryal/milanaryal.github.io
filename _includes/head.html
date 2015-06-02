@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>{% if page.title %}{{ page.title }} &mdash; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <title>{% if page.title %}{{ page.title }} &mdash; {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+  <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% if page.date %}<meta name="author" content="{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}">{% endif %}
 
   <!-- Open Graph tags -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:type" content="{% if page.date %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:image" content="{{ site.icon | prepend: site.url }}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:locale" content="{{ site.locale }}">
   {% if page.date_modified %}<meta property="article:modified_time" content="{{ page.date_modified | date_to_xmlschema }}">{% endif %}
   {% if page.date %}
@@ -51,7 +51,7 @@
   {{ feed_meta }}
 
   <!-- Open Search description -->
-  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site.title }}">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site.name }}">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/style.min.css?v={{ site.github.build_revision }}">
@@ -71,14 +71,14 @@
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+  <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
   <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
   <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <!-- Pin to start screen for IE on Windows -->
-  <meta name="application-name" content="{{ site.title }}">
+  <meta name="application-name" content="{{ site.name }}">
   <meta name="msapplication-config" content="/browserconfig.xml">
   <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico">
 
