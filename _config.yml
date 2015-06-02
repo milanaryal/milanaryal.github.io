@@ -14,10 +14,11 @@ encoding: "utf-8"
 
 # Plugins
 gems:
-  - jemoji
+  - jekyll-feed
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jemoji
 
 # Conversion
 markdown:     kramdown
