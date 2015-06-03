@@ -14,6 +14,7 @@ encoding: "utf-8"
 
 # Plugins
 gems:
+  - jekyll-feed
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
@@ -31,6 +32,9 @@ paginate_path: /page:num/
 paginate:      5
 timezone:      Asia/Kathmandu
 locale:        en_us
+
+# Serving, does not include hostname
+baseurl: ""
 
 # URL of site, include http://, do not include a trailing slash
 url: "http://milanaryal.com"
