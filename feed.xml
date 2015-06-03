@@ -77,14 +77,12 @@ sitemap: false
         <category term="{{ post.category | xml_escape }}" />
       {% endif %}
 
-    {% if post.tags %}
       {% for tag in post.tags %}
         <category term="{{ tag | xml_escape }}" />
       {% endfor %}
-    {% endif %}
 
       {% if post.excerpt %}
-        <summary>{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | xml_escape }}</summary>
+        <summary>{{ post.excerpt | markdownify | strip_html | strip_newlines | xml_escape }}</summary>
       {% endif %}
     </entry>
   {% endfor %}
