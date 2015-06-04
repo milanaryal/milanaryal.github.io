@@ -1,43 +1,91 @@
 ---
-layout: default
-title: "Page not found"
-description: "Sorry, but nothing exists here."
+layout: compress
 featured_image: "/assets/img/404-bg.jpg"
 robots: "noindex, follow"
 sitemap: false
 permalink: /404.html
 ---
 
-<article>
-  <!-- Page header -->
-  <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')" role="banner">
-    <div class="dark-background">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="site-heading">
-              <h1>404</h1>
-              <hr class="small">
-              <span class="subheading">Sorry, but nothing exists here.</span>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Page not found &mdash; {{ site.name }}</title>
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="stylesheet" href="/assets/css/style.min.css?v={{ site.github.build_revision }}">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic|Lora:400,700,400italic,700italic">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="/assets/js/jshtml5shiv.min.js?v={{ site.github.build_revision }}"></script>
+        <script src="/assets/js/respond.min.js?v={{ site.github.build_revision }}"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <!-- Page header -->
+    <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')" role="banner">
+      <div class="dark-background">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="site-heading">
+                <h1>404</h1>
+                <hr class="small">
+                <span class="subheading">Sorry, but nothing exists here.</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Main content -->
-  <main role="main">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <section class="text-center"><!-- 404 page content -->
-          <p><em>I may have misplaced that URL or it’s pointing to something that doesn’t exist.</em></p>
-          <p>Check the <a href="/archives/">archives page</a> or <a href="/">home page</a> to try finding it manually. Thanks!</p>
-        </section><!-- /404 page content -->
+    <!-- Main content -->
+    <main role="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <section class="text-center"> <!-- 404 page content -->
+              <p><em>I may have misplaced that URL or it’s pointing to something that doesn’t exist.</em></p>
+              <p>Check the <a href="/archives/">archives page</a> or <a href="/">home page</a> to try finding it manually. Thanks!</p>
+            </section> <!-- /404 page content -->
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</article><!--# Generated {{ site.time | date_to_xmlschema }} | Revision {{ site.github.build_revision }} #-->
 
-<hr>
+      <hr>
+    </main>
+
+    <!-- Page footer -->
+    <footer class="info-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <ul class="list-inline text-center">
+              <li>
+                <a href="/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {% include scripts.html %}
+
+  </body>
+
+</html> <!--# Generated {{ site.time | date_to_xmlschema }} | Revision {{ site.github.build_revision }} #-->
