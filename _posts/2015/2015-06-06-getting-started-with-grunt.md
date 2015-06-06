@@ -118,9 +118,9 @@ You can use `>`, `<`, `<=`, `>=` to explicitly set the version range. Another go
 }
 {% endhighlight %}
 
-**Always install the latest with *:**
+**Always install the latest with `*`:**
 
-Or if you just always want the latest version use *:
+Or if you just always want the latest version use `*`:
 
 {% highlight json %}
 {
