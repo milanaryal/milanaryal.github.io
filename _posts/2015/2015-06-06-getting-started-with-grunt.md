@@ -19,7 +19,7 @@ Well, the list is exhaustive. Suffice it to say, Grunt can handle most things yo
 
 The first thing to do in order to use Grunt is to set up [Node.js](https://nodejs.org/) on your system. When you install Node.js, you also get [npm](https://www.npmjs.com/), a package manager for JavaScript, and is the default for Node.js.
 
-Once Node.js is installed, run this command:
+Once Node.js is installed, just run this command in the terminal:
 
 {% highlight bash %}
 $ npm install -g grunt-cli
@@ -32,7 +32,9 @@ Lets break that down:
 * "-g" is an argument (a kind of optional bit of info) for the command short way of saying "--global" This means we're installing Grunt globally on our system. This is a good thing. You want to be able to use it everywhere.
 * "grunt-cli" is another argument. This time telling npm what you want to install. In this instance the Grunt Command Line Interface.
 
-To make sure Grunt has been properly installed, you can run the following command:
+You should close and reopen the terminal as well. That's a generic good practice to make sure things are working right. Kinda like restarting your computer after you install a new application was in the olden days.
+
+To make sure Grunt has been properly installed, you can run the following one-liner command again:
 
 {% highlight bash %}
 $ grunt --version
