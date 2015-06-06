@@ -40,7 +40,7 @@ $ grunt --version
 
 The next step is to create a `package.json` file and a `Gruntfile` in the root directory of your project.
 
-### Creating the `package.json` file
+### Creating the package.json file
 
 The `package.json` file belongs in the root directory of your project, next to the Gruntfile, and should be committed with your project source.
 
@@ -56,9 +56,9 @@ There are a few ways to create a `package.json` file for your project:
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "\*",
-    "grunt-contrib-uglify": "\*",
-    "grunt-contrib-watch": "\*"
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*"
   }
 }
 {% endhighlight %}
@@ -95,6 +95,7 @@ In your `package.json` you can tag each dependency with a range of versions to i
 {% endhighlight %}
 
 **Prefix with `~` to install the latest patch version `0.6.x`:**
+
 As `0.6.1`, `0.6.2`, `0.6.3`, etc versions are released, `npm install` will install the latest version of those. If `0.7.0` is release, it will not install that version (generally a good strategy as it may contain breaking changes).
 
 {% highlight json %}
@@ -106,6 +107,7 @@ As `0.6.1`, `0.6.2`, `0.6.3`, etc versions are released, `npm install` will inst
 {% endhighlight %}
 
 **Explicitly set the range:**
+
 You can use `>`, `<`, `<=`, `>=` to explicitly set the version range. Another good option for custom ranges or if you would like to be explicit with your version ranges. The follow will install every version greater or equal than `0.6.0` but less than `1.0.0`:
 
 {% highlight json %}
@@ -116,13 +118,14 @@ You can use `>`, `<`, `<=`, `>=` to explicitly set the version range. Another go
 }
 {% endhighlight %}
 
-**Always install the latest with \*:**
-Or if you just always want the latest version use \*:
+**Always install the latest with *:**
+
+Or if you just always want the latest version use *:
 
 {% highlight json %}
 {
   "devDependencies": {
-    "grunt-contrib-watch": "\*"
+    "grunt-contrib-watch": "*"
   }
 }
 {% endhighlight %}
@@ -130,9 +133,11 @@ Or if you just always want the latest version use \*:
 See more about version ranges in the [npm docs](https://docs.npmjs.com/misc/semver).
 
 **`npm outdated`**
+
 If you would like to see which of your dependencies are out of date, use `npm outdated`: see [npm docs](https://www.npmjs.org/doc/cli/npm-outdated.html) for more info.
 
 **`npm update`**
+
 Use `npm update` to update all your dependencies to the latest versions. Or `npm update packagename anotherpackage` to update specific packages to the latest version.
 
 ### Creating the Gruntfile
@@ -147,10 +152,10 @@ A `Gruntfile` is comprised of the following parts:
 * Custom tasks
 
 {% highlight javascript %}
-/\*!
- \* Gruntfile
- \* Basic sample file
- \*/
+/*!
+ * Gruntfile
+ * Basic sample file
+ */
 
 module.exports = function (grunt) {
   'use strict';
@@ -189,7 +194,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        banner: '/\*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \*/\n'
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
         src: 'src/<%= pkg.name %>.js',
@@ -213,7 +218,11 @@ The `uglify` task will be run by default, when the following command line is run
 $ grunt
 {% endhighlight %}
 
+An incredibly active community of developers is building front-end plugins, you can explore them at [Grunt plugins library](http://gruntjs.com/plugins/).
+
 ### Further reading
+
+This is the basic foundation for learning Grunt, you can also further lean by the following links:
 
 * The [getting started](http://gruntjs.com/getting-started/) with grunt guide
 * The [installing grunt](http://gruntjs.com/installing-grunt/) guide
