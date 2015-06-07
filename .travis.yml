@@ -1,0 +1,7 @@
+ language: ruby
+2 rvm:
+3 - 2.1.1
+4 script: bundle exec rake test
+5 env:
+6   global:
+7   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
