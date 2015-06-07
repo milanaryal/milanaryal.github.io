@@ -57,7 +57,7 @@ There are a few ways to create a `package.json` file for your project:
   "name": "my-project-name",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "~0.4.5",
+    "grunt": "~0.4.5"
   }
 }
 {% endhighlight %}
@@ -85,6 +85,7 @@ This tells npm which dependencies to install and places them in a `node_modules`
 In your `package.json` you can tag each dependency with a range of versions to install then type `npm install` to install all the listed dependencies at the given versions:
 
 **Only install `0.6.0`:**
+
 {% highlight json %}
 {
   "devDependencies": {
@@ -101,6 +102,18 @@ As `0.6.1`, `0.6.2`, `0.6.3`, etc versions are released, `npm install` will inst
 {
   "devDependencies": {
     "grunt-contrib-watch": "~0.6.0"
+  }
+}
+{% endhighlight %}
+
+**Prefix with `^` to install the latest patch version `0.x.x`:**
+
+It will update you to the most recent major version (the first number). `^0.6.0` will match any `0.x.x` release including `0.7.0`, but will hold off on `1.0.0`.
+
+{% highlight json %}
+{
+  "devDependencies": {
+    "grunt-contrib-watch": "^0.6.0"
   }
 }
 {% endhighlight %}
@@ -129,7 +142,7 @@ Or if you just always want the latest version use `*`:
 }
 {% endhighlight %}
 
-See more about version ranges in the [npm docs](https://docs.npmjs.com/misc/semver).
+See more about version ranges in the [npm docs](https://docs.npmjs.com/misc/semver) or npm's [semantic versioning parser](https://github.com/isaacs/node-semver).
 
 **`npm outdated`**
 
@@ -193,8 +206,8 @@ npm install grunt-contrib-uglify --save-dev
 
 A neat thing about doing it this way: your `package.json` file will automatically be updated to include this new dependency. Open it up and check it out. You'll see a new line:
 
-{% highlight json %}
-"grunt-contrib-uglify": "~0.9.0"
+{% highlight text %}
+"grunt-contrib-uglify": "^0.9.1"
 {% endhighlight %}
 
 Now we're ready to use it. To use it we need to start configuring Grunt and telling it what to do.
