@@ -58,9 +58,6 @@ There are a few ways to create a `package.json` file for your project:
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*"
   }
 }
 {% endhighlight %}
@@ -188,12 +185,36 @@ module.exports = function (grunt) {
 
 In the following `Gruntfile`, project metadata is imported into the Grunt config from the project's `package.json` file and the [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) plugin's `uglify` task is configured to minify a source file and generate a banner comment dynamically using that metadata.
 
+You can run this command from the terminal (it will henceforth go without saying that you need to run the given commands from your project's root folder):
+
+{% highlight bash %}
+npm install grunt-contrib-uglify --save-dev
+{% endhighlight %}
+
+A neat thing about doing it this way: your `package.json` file will automatically be updated to include this new dependency. Open it up and check it out. You'll see a new line:
+
+{% highlight json %}
+"grunt-contrib-uglify": "~0.9.0"
+{% endhighlight %}
+
+Now we're ready to use it. To use it we need to start configuring Grunt and telling it what to do.
+
 {% highlight javascript %}
-module.exports = function(grunt) {
+/*!
+ * Gruntfile
+ * Minify JavaScript using Uglify
+ */
+
+module.exports = function (grunt) {
+  'use strict';
 
   // Project configuration.
   grunt.initConfig({
+
+    // Metadata.
     pkg: grunt.file.readJSON('package.json'),
+
+    // Task(s) configuration.
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -224,7 +245,7 @@ An incredibly active community of developers is building front-end plugins, you 
 
 ### Further reading
 
-This is the basic foundation for learning Grunt, you can also further lean by the following links:
+This is the basic foundation for learning Grunt, you can learn more by the following links:
 
 * The [getting started](http://gruntjs.com/getting-started/) with grunt guide
 * The [installing grunt](http://gruntjs.com/installing-grunt/) guide
