@@ -33,7 +33,3 @@ Recently, we had the pleasure of going to Sandy's daughter's wedding, and it was
 When you get to be my age, you will find yourself beginning to ask, did my life make a difference? That's the day of personal reckoning. And I think the only way to face it is to consider, every day of your life: How can I do something for somebody else? How can I give back to others?... no matter what your career path, there will always opportunity to give back. The chance will present itself to be giving of your time, giving of your money, but mostly, to be giving of yourselves, of your own heart and soul.
 
 My hope today, as you commence to new beginnings, is you will always keep your eyes open for those opportunities to give and embrace them as your best sure way of doing well.
-
----
-
-*Read the full May 26, 2005 speech delivered by John Brody, [here](http://www.jhu.edu/news/commence05/speeches/brody.html).*

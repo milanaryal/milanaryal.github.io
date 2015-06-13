@@ -7,7 +7,7 @@ redirect_from: "/2015/01/async-social-sharing-buttons/"
 
 Social sharing button are great easy resource to share the content of the site. Different social sites use different scripts to load the sharing button. If you go and copying every social sharing button scripts then it will be bunch of and may slow down your site. Thus, here's the simple asynchronously (async) loading JavaScript of every social media.
 
-<a class="btn btn-primary" href="/labs/2015/async-social-sharing-buttons/" onClick="ga('send', 'event', 'Click', 'Demo', 'Async social sharing buttons');">Demo</a> <a class="btn btn-primary" href="/labs/2015/async-social-sharing-buttons/async-social-sharing-buttons.zip" onClick="ga('send', 'event', 'Click', 'Download', 'Async social sharing buttons');">Download</a>
+<a class="btn btn-primary" href="{{ site.url }}/labs/2015/async-social-sharing-buttons/" onClick="ga('send', 'event', 'Click', 'Demo', 'Async social sharing buttons');">Demo</a> <a class="btn btn-primary" href="{{ site.url }}/labs/2015/async-social-sharing-buttons/async-social-sharing-buttons.zip" onClick="ga('send', 'event', 'Click', 'Download', 'Async social sharing buttons');">Download</a>
 
 ### Asynchronously loading social JavaScript
 
@@ -19,7 +19,7 @@ Some of these services already (smartly) provide their scripts in an async fashi
 
 {% highlight javascript %}
 (function(doc, script) {
-  var js, 
+  var js,
       fjs = doc.getElementsByTagName(script)[0],
       frag = doc.createDocumentFragment(),
       add = function(url, id) {
@@ -29,7 +29,7 @@ Some of these services already (smartly) provide their scripts in an async fashi
           id && (js.id = id);
           frag.appendChild( js );
       };
-      
+
     // Google+ button
     add('//apis.google.com/js/plusone.js');
     // Facebook SDK
@@ -65,7 +65,7 @@ $(document).ready(function() {
 		  FB.init({ status: true, cookie: true, xfbml: true });
 		});
 });
-{% endhighlight %}				
+{% endhighlight %}
 
 ### HTML tags to load social sharing buttons
 
@@ -83,4 +83,4 @@ You'll need the HTML in place for the scripts to put their stuff:
 <div class="g-plusone" data-size="medium" data-count="true"></div>
 {% endhighlight %}
 
-<a class="btn btn-primary" href="/labs/2015/async-social-sharing-buttons/" onClick="ga('send', 'event', 'Click', 'Demo', 'Async social sharing buttons');">Demo</a> <a class="btn btn-primary" href="/labs/2015/async-social-sharing-buttons/async-social-sharing-buttons.zip" onClick="ga('send', 'event', 'Click', 'Download', 'Async social sharing buttons');">Download</a>
+<a class="btn btn-primary" href="{{ site.url }}/labs/2015/async-social-sharing-buttons/" onClick="ga('send', 'event', 'Click', 'Demo', 'Async social sharing buttons');">Demo</a> <a class="btn btn-primary" href="{{ site.url }}/labs/2015/async-social-sharing-buttons/async-social-sharing-buttons.zip" onClick="ga('send', 'event', 'Click', 'Download', 'Async social sharing buttons');">Download</a>

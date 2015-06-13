@@ -4,7 +4,7 @@ date: 2015-01-09T15:04:14
 redirect_from: "/2015/01/writing-on-github-pages-and-jekyll-using-markdown/"
 ---
 
-Readme file on GitHub uses GitHub Flavored Markdown (GFM) and blogging platform like Jekyll, Ghost, Tumblr (support editing posts in Markdown).. also encouraging to write posts using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
+Readme file on GitHub uses GitHub Flavored Markdown (GFM) and blogging platform like Jekyll, Ghost, Tumblr (support editing posts in Markdown) and many other platforms also encouraging to write posts using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
 
 File extention with .markdown, .mkdown, .mkdn, .mkd, .md are the supported Markdown document.
 
@@ -43,7 +43,7 @@ The most common formatting options have keyboard shortcuts to make them easier t
 |**Bold**                        |`**text**`
 |*Emphasize*                     |`*text*`
 |<strike>Strike-through</strike> |`~~text~~`
-|[Link](#)                       |`[title](http://)`
+|[Link]({{ page.url }}#)         |`[title](http://)`
 |`Inline Code`                   |``` `code` ```
 |Image                           |`![alt](http://)`
 |List                            |`* item`
