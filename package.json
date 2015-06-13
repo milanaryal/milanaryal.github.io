@@ -1,11 +1,14 @@
 {
   "name": "milanaryal",
   "title": "Milan Aryal",
-  "email": "considermilan@gmail.com",
   "url": "http://milanaryal.com",
   "description": "Livin' on the edge of web standards.",
   "author": "Milan Aryal",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MilanAryal/milanaryal.github.io.git"
+  },
   "devDependencies": {
     "grunt": "*",
     "grunt-autoprefixer": "*",
@@ -21,9 +24,5 @@
     "grunt-contrib-watch": "*",
     "grunt-csscomb": "*",
     "grunt-jscs": "*"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MilanAryal/milanaryal.github.io.git"
   }
 }

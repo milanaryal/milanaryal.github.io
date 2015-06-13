@@ -16,11 +16,13 @@ module.exports = function (grunt) {
       src: 'src',
       app: '',
       assets: 'assets',
+      license_type: 'MIT',
+      license_url: 'https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE',
       date: '<%= grunt.template.date("isoDateTime")%>\+05\:45',
       banner: '/*!\n' +
               ' * <%= pkg.title %> (<%= pkg.url %>)\n' +
               ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-              ' * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)\n' +
+              ' * Licensed under <%= project.license_type %> (<%= project.license_url %>)\n' +
               ' *\n' +
               ' * Date: <%= project.date %>\n' +
               ' */\n',
