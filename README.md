@@ -1,5 +1,7 @@
 # Milan Aryal website (milanaryal.com)
 
+[![Build Status](https://travis-ci.org/MilanAryal/milanaryal.github.io.svg?branch=master)](https://travis-ci.org/MilanAryal/milanaryal.github.io)
+
 The Jekyll build for [milanaryal.com](http://milanaryal.com).
 
 Please learn, read, and use any code from this website. All content despite being hosted openly is subject to copyright of Milan Aryal.
