@@ -38,19 +38,19 @@ kramdown:
 
 The most common formatting options have keyboard shortcuts to make them easier to add:
 
-|Result                          |Markdown
-|--------------------------------|---------------------------------------
-|**Bold**                        |`**text**`
-|*Emphasize*                     |`*text*`
-|<strike>Strike-through</strike> |`~~text~~`
-|[Link]({{ page.url }}#)         |`[title](http://)`
-|`Inline Code`                   |``` `code` ```
-|Image                           |`![alt](http://)`
-|List                            |`* item`
-|Blockquote                      |`> quote`
-|H1                              |`# Heading`
-|H2                              |`## Heading`
-|H3                              |`### Heading`
+|Result                                       |Markdown
+|---------------------------------------------|---------------------------------------
+| **Bold**                                    | `**text**`
+| *Emphasize*                                 | `*text*`
+| <strike>Strike-through</strike>             | `~~text~~`
+| [Link]({{ page.url }}#markdown-style-guide) | `[title](http://)`
+| `Inline Code`                               | ``` `code` ```
+| Image                                       | `![alt](http://)`
+| List                                        | `* item`
+| Blockquote                                  | `> quote`
+| H1                                          | `# Heading`
+| H2                                          | `## Heading`
+| H3                                          | `### Heading`
 
 If you add underline extension on Redcarpet Markdown you will have <u>underline</u> feature with `_text_` (parse underscored emphasis as underlines. This is `_underlined_` but this is still `*italic*`).
 
