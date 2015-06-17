@@ -3,7 +3,7 @@ title: "Getting started with Grunt"
 date: 2015-06-06T11:14:15+05:45
 ---
 
-Here, we'll {{ 'explore' }} how to use [Grunt](http://gruntjs.com/) and what it can do in a {% raw %}{{site.url}}{% endraw %}project to speed up and change the way you develop websites.
+Here, we'll explore how to use [Grunt](http://gruntjs.com/) and what it can do in a project to speed up and change the way you develop websites.
 
 Mostly everything in these posts are coming directly from the documentation itself. So hopefully some of these you immediately recognize and others you'll wonder how you missed that.
 
