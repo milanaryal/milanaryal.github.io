@@ -1,6 +1,20 @@
 // ==============================================
-//  Post content
+// Post content / Markdown body
 // ==============================================
+
+.post-content {
+  overflow: hidden;
+  line-height: 1.5;
+  word-wrap: break-word;
+
+  > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
+}
 
 .post-content h2,
 .post-content h3,
@@ -88,8 +102,10 @@ figcaption,
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-// GitHub Pages
+// GitHub Pages and Markdown
 // -------------------------------
+
+// Emoji
 .emoji {
   display: inline-block;
   max-width: none;
@@ -110,7 +126,7 @@ figcaption,
     }
 }
 
-// footnote anchor link
+// Footnotes anchor link
 .footnote,
 .reversefootnote {
   &:link {
@@ -121,6 +137,16 @@ figcaption,
 // ==============================================
 //  Page content
 // ==============================================
+
+// Middot divider
+.middot-divider {
+  display: inline-block;
+  padding: 0 0.42em;
+}
+
+.middot-divider:after {
+  content: '\00b7';
+}
 
 // Social
 .social-container,
@@ -136,18 +162,7 @@ figcaption,
     }
 }
 
-// Middot divider
-.middot-divider {
-  display: inline-block;
-  padding: 0 0.42em;
-}
-
-.middot-divider:after {
-  content: '\00b7';
-}
-
 // Archives page
-
 .archives {
   ul {
     list-style: none;

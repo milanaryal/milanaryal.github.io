@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-06-18T00:35:32+05:45
+ * Date: 2015-06-18T13:25:51+05:45
  */
 
 /*! Bootstrap v3.3.4 | MIT License | getbootstrap.com */
@@ -8757,6 +8757,17 @@ img::selection {
 body {
   webkit-tap-highlight-color: #0084b4;
 }
+.post-content {
+  overflow: hidden;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+.post-content > *:first-child {
+  margin-top: 0 !important;
+}
+.post-content > *:last-child {
+  margin-bottom: 0 !important;
+}
 .post-content h2,
 .post-content h3,
 .section-heading {
@@ -8848,6 +8859,13 @@ figcaption a,
 .reversefootnote:link {
   text-decoration: none;
 }
+.middot-divider {
+  display: inline-block;
+  padding: 0 .42em;
+}
+.middot-divider:after {
+  content: '\00b7';
+}
 .social-container,
 .comments {
   margin: 50px 0 40px;
@@ -8858,13 +8876,6 @@ figcaption a,
 .social-container a:hover,
 .social-container a:focus {
   color: #55acee;
-}
-.middot-divider {
-  display: inline-block;
-  padding: 0 .42em;
-}
-.middot-divider:after {
-  content: '\00b7';
 }
 .archives ul {
   padding: 0;
@@ -8896,7 +8907,7 @@ tt {
   padding-bottom: .2em;
   margin: 0;
   font-size: 85%;
-  color: #404040;
+  color: inherit;
   background-color: rgba(0, 0, 0, .04);
   border-radius: 3px;
 }
@@ -8928,12 +8939,11 @@ pre > code {
 }
 .highlight pre,
 pre {
-  padding: 16px;
+  padding: 15px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
   background-color: #f7f7f7;
-  border: 0;
   border-radius: 3px;
 }
 .highlight pre {
@@ -8942,6 +8952,7 @@ pre {
 }
 pre {
   word-wrap: normal;
+  border: 0;
 }
 pre code,
 pre tt {
@@ -8975,71 +8986,6 @@ kbd {
   -webkit-box-shadow: inset 0 -1px 0 #bbb;
           box-shadow: inset 0 -1px 0 #bbb;
 }
-.highlight {
-  /* Comment */
-  /* Error */
-  /* Keyword */
-  /* Operator */
-  /* Comment.Multiline */
-  /* Comment.Preproc */
-  /* Comment.Single */
-  /* Comment.Special */
-  /* Generic.Deleted */
-  /* Generic.Emph */
-  /* Generic.Error */
-  /* Generic.Heading */
-  /* Generic.Inserted */
-  /* Generic.Output */
-  /* Generic.Prompt */
-  /* Generic.Strong */
-  /* Generic.Subheading */
-  /* Generic.Traceback */
-  /* Keyword.Constant */
-  /* Keyword.Declaration */
-  /* Keyword.Namespace */
-  /* Keyword.Pseudo */
-  /* Keyword.Reserved */
-  /* Keyword.Type */
-  /* Literal.Number */
-  /* Literal.String */
-  /* Name.Attribute */
-  /* Name.Builtin */
-  /* Name.Class */
-  /* Name.Constant */
-  /* Name.Decorator */
-  /* Name.Entity */
-  /* Name.Exception */
-  /* Name.Function */
-  /* Name.Label */
-  /* Name.Namespace */
-  /* Name.Tag */
-  /* Name.Variable */
-  /* Operator.Word */
-  /* Text.Whitespace */
-  /* Literal.Number.Float */
-  /* Literal.Number.Hex */
-  /* Literal.Number.Integer */
-  /* Literal.Number.Oct */
-  /* Literal.String.Backtick */
-  /* Literal.String.Char */
-  /* Literal.String.Doc */
-  /* Literal.String.Double */
-  /* Literal.String.Escape */
-  /* Literal.String.Heredoc */
-  /* Literal.String.Interpol */
-  /* Literal.String.Other */
-  /* Literal.String.Regex */
-  /* Literal.String.Single */
-  /* Literal.String.Symbol */
-  /* Name.Builtin.Pseudo */
-  /* Name.Variable.Class */
-  /* Name.Variable.Global */
-  /* Name.Variable.Instance */
-  /* Literal.Number.Integer.Long */
-}
-.highlight .hll {
-  background-color: #ffc;
-}
 .highlight .c {
   font-style: italic;
   color: #998;
@@ -9050,18 +8996,15 @@ kbd {
 }
 .highlight .k {
   font-weight: bold;
-  color: #000;
 }
 .highlight .o {
   font-weight: bold;
-  color: #000;
 }
 .highlight .cm {
   font-style: italic;
   color: #998;
 }
 .highlight .cp {
-  font-style: italic;
   font-weight: bold;
   color: #999;
 }
@@ -9078,9 +9021,12 @@ kbd {
   color: #000;
   background-color: #fdd;
 }
+.highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
 .highlight .ge {
   font-style: italic;
-  color: #000;
 }
 .highlight .gr {
   color: #a00;
@@ -9091,6 +9037,10 @@ kbd {
 .highlight .gi {
   color: #000;
   background-color: #dfd;
+}
+.highlight .gi .x {
+  color: #000;
+  background-color: #afa;
 }
 .highlight .go {
   color: #888;
@@ -9109,23 +9059,15 @@ kbd {
 }
 .highlight .kc {
   font-weight: bold;
-  color: #000;
 }
 .highlight .kd {
   font-weight: bold;
-  color: #000;
-}
-.highlight .kn {
-  font-weight: bold;
-  color: #000;
 }
 .highlight .kp {
   font-weight: bold;
-  color: #000;
 }
 .highlight .kr {
   font-weight: bold;
-  color: #000;
 }
 .highlight .kt {
   font-weight: bold;
@@ -9135,7 +9077,7 @@ kbd {
   color: #099;
 }
 .highlight .s {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .na {
   color: #008080;
@@ -9150,10 +9092,6 @@ kbd {
 .highlight .no {
   color: #008080;
 }
-.highlight .nd {
-  font-weight: bold;
-  color: #3c5d5d;
-}
 .highlight .ni {
   color: #800080;
 }
@@ -9162,10 +9100,6 @@ kbd {
   color: #900;
 }
 .highlight .nf {
-  font-weight: bold;
-  color: #900;
-}
-.highlight .nl {
   font-weight: bold;
   color: #900;
 }
@@ -9180,7 +9114,6 @@ kbd {
 }
 .highlight .ow {
   font-weight: bold;
-  color: #000;
 }
 .highlight .w {
   color: #bbb;
@@ -9198,34 +9131,34 @@ kbd {
   color: #099;
 }
 .highlight .sb {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .sc {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .sd {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .s2 {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .se {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .sh {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .si {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .sx {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .sr {
   color: #009926;
 }
 .highlight .s1 {
-  color: #d01040;
+  color: #d14;
 }
 .highlight .ss {
   color: #990073;
@@ -9244,11 +9177,6 @@ kbd {
 }
 .highlight .il {
   color: #099;
-}
-.css .o,
-.css .o + .nt,
-.css .nt + .nt {
-  color: #999;
 }
 .anchorjs-link {
   color: inherit;
