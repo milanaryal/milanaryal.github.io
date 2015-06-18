@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-06-18T13:25:51+05:45
+ * Date: 2015-06-18T22:15:09+05:45
  */
 
 /*! Bootstrap v3.3.4 | MIT License | getbootstrap.com */
@@ -8763,7 +8763,7 @@ body {
   word-wrap: break-word;
 }
 .post-content > *:first-child {
-  margin-top: 0 !important;
+  margin-top: 30px !important;
 }
 .post-content > *:last-child {
   margin-bottom: 0 !important;
@@ -8797,16 +8797,18 @@ body {
 .post-content h6 {
   font-size: 22px;
 }
-.post-content h2:link,
-.post-content h3:link,
-.section-heading:link,
-.post-content h4:link,
-.post-content h5:link,
-.post-content h6:link {
+.post-content h2 a,
+.post-content h3 a,
+.section-heading a,
+.post-content h4 a,
+.post-content h5 a,
+.post-content h6 a {
+  color: inherit;
   text-decoration: underline;
 }
 blockquote,
-.post-content ul .post-content ol,
+.post-content ul,
+.post-content ol,
 .post-content dl,
 .table-responsive,
 pre,
@@ -8829,6 +8831,11 @@ figcaption,
 figcaption a,
 .caption a {
   text-decoration: underline;
+}
+blockquote a,
+figcaption a,
+.caption a {
+  color: inherit;
 }
 .post-content hr,
 .section-divider {
@@ -8876,6 +8883,12 @@ figcaption a,
 .social-container a:hover,
 .social-container a:focus {
   color: #55acee;
+}
+.archives > *:first-child {
+  margin-top: 30px !important;
+}
+.archives > *:last-child {
+  margin-bottom: 0 !important;
 }
 .archives ul {
   padding: 0;
