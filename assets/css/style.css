@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-06-18T23:00:26+05:45
+ * Date: 2015-06-19T09:17:42+05:45
  */
 
 /*! Bootstrap v3.3.4 | MIT License | getbootstrap.com */
@@ -8863,9 +8863,9 @@ figcaption a,
   font-weight: 700;
   content: 'Footnotes';
 }
-.footnote:link,
-.reversefootnote:link {
-  text-decoration: none;
+.footnote,
+.reversefootnote {
+  text-decoration: none !important;
 }
 .middot-divider {
   display: inline-block;
@@ -9192,11 +9192,9 @@ kbd {
 .highlight .il {
   color: #099;
 }
-a.anchorjs-link {
-  text-decoration: none !important;
-}
 .anchorjs-link {
   color: inherit;
+  text-decoration: none !important;
 }
 @media (max-width: 768px) {
   .anchorjs-link {
@@ -9211,7 +9209,7 @@ a.anchorjs-link {
 }
 *:hover > .anchorjs-link:hover,
 .anchorjs-link:focus {
-  text-decoration: none;
+  text-decoration: none !important;
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@
 // Post content / Markdown body
 // ==============================================
 
+
 .post-content {
   overflow: hidden;
   line-height: 1.5;
@@ -59,7 +60,7 @@
 .post-content h5,
 .post-content h6 {
   a {
-    text-decoration: underline;
+    text-decoration: underline; // underline header link
     color: inherit;
   }
 }
@@ -101,7 +102,7 @@ figcaption,
 .caption,
 .copyright {
   a {
-    color: inherit;
+    color: inherit; // parent color for link
   }
 }
 
@@ -143,14 +144,14 @@ figcaption,
 // Footnotes anchor link
 .footnote,
 .reversefootnote {
-  &:link {
-    text-decoration: none;
-  }
+  text-decoration: none !important; // do not underline
 }
+
 
 // ==============================================
 //  Page content
 // ==============================================
+
 
 // Middot divider
 .middot-divider {

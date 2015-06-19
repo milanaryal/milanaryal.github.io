@@ -2,12 +2,9 @@
 // AnchorJS - Link placement and hover behavior
 // --------------------------------------------------
 
-a.anchorjs-link {
-  text-decoration: none !important;
-}
-
 .anchorjs-link {
   color: inherit;
+  text-decoration: none !important; // do not underline
 }
 
 @media (max-width: 768px) {
@@ -24,6 +21,6 @@ a.anchorjs-link {
 
 *:hover > .anchorjs-link:hover,
 .anchorjs-link:focus {
-  text-decoration: none;
+  text-decoration: none !important; // do not underline
   opacity: 1;
 }
