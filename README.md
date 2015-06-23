@@ -1,6 +1,7 @@
 # Milan Aryal website (milanaryal.com)
 
 [![Build Status](https://travis-ci.org/MilanAryal/milanaryal.github.io.svg?branch=master)](https://travis-ci.org/MilanAryal/milanaryal.github.io)
+[![License](https://img.shields.io/github/license/MilanAryal/milanaryal.github.io.svg?branch=master)](https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
 
 The Jekyll build for [milanaryal.com](http://milanaryal.com).
 
