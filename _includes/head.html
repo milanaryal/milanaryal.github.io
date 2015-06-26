@@ -13,7 +13,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:type" content="{% if page.date %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}">
+  <meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image | prepend: site.url }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:locale" content="{{ site.locale }}">
