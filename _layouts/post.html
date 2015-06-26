@@ -21,7 +21,7 @@ layout: default
                 <meta itemprop="name" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %}">
               </span>
               <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
-              {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+              <meta itemprop="dateModified" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
               <div class="meta">
                 <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ page.date | date: '%a, %b %-d, %Y' }} at {{ page.date | date: '%-I:%M%P %Z' }}">{{ page.date | date: '%B %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}</span>
               </div>
