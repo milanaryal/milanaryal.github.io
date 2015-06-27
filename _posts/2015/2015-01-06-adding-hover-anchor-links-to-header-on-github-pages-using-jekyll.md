@@ -138,7 +138,6 @@ This will place the default AnchorJS icon to the right and of course only add th
 You can style the AnchorJS icon according to your need.
 
 {% highlight css %}
-{% raw %}
 /**
  * Link placement and hover behavior.
  */
@@ -148,7 +147,7 @@ You can style the AnchorJS icon according to your need.
   text-decoration: none !important; // do not underline
 }
 
-@media (max-width: 768px) {
+&#64;media (max-width: 768px) {
   // do not display AnchorJS icon on less than 768px view point
   .anchorjs-link {
     display: none;
@@ -166,7 +165,6 @@ You can style the AnchorJS icon according to your need.
   text-decoration: none !important; // do not underline
   opacity: 1;
 }
-{% endraw %}
 {% endhighlight %}
 
 <div class="alert alert-info" role="alert">You can find updated usage instructions and examples here: <a href="http://bryanbraun.github.io/anchorjs/" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">bryanbraun.github.io/anchorjs</a>.</div>
