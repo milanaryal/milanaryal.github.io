@@ -61,5 +61,5 @@ Finally, the diary ended when it said, "today I will tell her I love her". It wa
 
 <figure>
   <iframe width="560" height="315" src="//www.youtube.com/embed/aPpeaETF1qE?rel=0&amp;theme=light" frameborder="0" allowfullscreen></iframe>
-  <figcaption>Music: YouTube, <a href="https://youtu.be/aPpeaETF1qE">Lizz Wright</a></figcaption>
+  <figcaption>Music: YouTube, <a href="https://youtu.be/aPpeaETF1qE" data-proofer-ignore>Lizz Wright</a></figcaption>
 </figure>

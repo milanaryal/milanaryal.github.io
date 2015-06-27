@@ -12,11 +12,11 @@ When you send someone one of the resulting anchor URLs, which includes the name 
 
 So here's the AnchorJS which is written by Bryan Braun, alternative to do it which is lighter in code and doesn't require the hefty jQuery library.
 
-### Enable markdown auto-generated ID's for headings
+### Enable markdown auto-generated ID's for headings in Jekyll
 
 To add anchor link on headings first enable markdown auto-generated ID's in Jekyll `_config.yml` file.
 
-For `Redcarpet` markdown **enable the `with_toc_data` extension**:
+For `Redcarpet` markdown enable the `with_toc_data` extension:
 
 {% highlight ruby %}
 # Conversion
@@ -26,9 +26,9 @@ redcarpet:
   extensions:    ["with_toc_data"]
 {% endhighlight %}
 
-For `Kramdown` markdown, it auto generate the header ids.
+For `Kramdown` markdown, it auto generate the header ID's.
 
-Only **make sure you have not disable the `auto_ids`**, like the following example:
+Only make sure you have not disable the `auto_ids`, like the following example:
 
 {% highlight ruby %}
 kramdown:
@@ -44,7 +44,7 @@ Then markdown in Jekyll will auto generate ID's to the heading like the followin
 
 You don't have to worry if you don't enable markdown auto-generated ID's, AnchorJS will also auto generate ID's on headers.
 
-**AnchorJS do not add 'table of contents'** but if you want to **utilize this feature with markdown** then just place `{% raw %}{:toc}{% endraw %}` somewhere above all the headings and place {% raw %}`{:.no_toc}`{% endraw %} where you want to disable the auto ID's to the desire headings.
+AnchorJS do not add 'table of contents' but if you want to utilize this feature with markdown then just place `{% raw %}{:toc}{% endraw %}` somewhere above all the headings and place {% raw %}`{:.no_toc}`{% endraw %} where you want to disable the auto ID's to the desire headings.
 
 You can see the following example:
 
@@ -95,11 +95,11 @@ Or, even not downloading you can include various open source CDN library link:
 
 AnchorJS provides the different options for adding anchors to the page. This method accepts a selector as a parameter in the form of a string. The selector can be used to target specific elements that you want to add anchors to. Here's an example.
 
-#### Placing the anchors to the left position
+#### Placing the AnchorJS icon to the left position
 
 This will place the default AnchorJS icon to the left and only add the link to your desire headers.
 
-{% highlight html %}
+{% highlight javascript %}
 /**
  * AnchorJS v1.1.1 options and selector
  */
@@ -114,11 +114,11 @@ This will place the default AnchorJS icon to the left and only add the link to y
 })();
 {% endhighlight %}
 
-#### Placing the anchors to the right position
+#### Placing the AnchorJS icon to the right position
 
 This will place the default AnchorJS icon to the right and of course only add the link to your desire headers.
 
-{% highlight html %}
+{% highlight javascript %}
 /**
  * AnchorJS v1.1.1 options and selector
  */
@@ -137,6 +137,7 @@ This will place the default AnchorJS icon to the right and of course only add th
 
 You can style the anchors according to your need.
 
+{% highlight css %}
 /**
  * Link placement and hover behavior.
  */
@@ -164,8 +165,9 @@ You can style the anchors according to your need.
   text-decoration: none !important; // do not underline
   opacity: 1;
 }
+{% endhighlight %}
 
-<div class="alert alert-info" role="alert">You can find more updated usage instructions and examples <a href="http://bryanbraun.github.io/anchorjs/" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">here</a>.</div>
+<div class="alert alert-info" role="alert">You can find updated usage instructions and examples here: <a href="http://bryanbraun.github.io/anchorjs/" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">bryanbraun.github.io/anchorjs</a>.</div>
 
 ---
 
@@ -274,7 +276,7 @@ Now add the following script before the `</body>` tag or where you might think i
 
 After that add the following style:
 
-#### Floating anchor icon left side
+#### Floating anchor icon to left side
 
 {% highlight css %}
 /**
@@ -320,7 +322,7 @@ After that add the following style:
 .anchorjs-link:active  { color: #EC7963; }
 {% endhighlight %}
 
-#### Floating anchor icon right side
+#### Floating anchor icon to right side
 
 {% highlight css %}
 /**

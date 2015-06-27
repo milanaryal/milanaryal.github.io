@@ -121,7 +121,7 @@ layout:           post
 title:            "your post title"
 date:             2015-02-11T13:04:19+05:45 # XML Schema Date/Time
 last_modified_at: 2015-03-15T05:20:00+05:45 # last page modified date/time
-featured_image:            your post featured image path # /assets/img/image.jpg
+featured_image:   your post featured image path # /assets/img/image.jpg
 excerpt:          "for meta description" # Optional for overring content excerpt
 categories:       your post categories # ["category1"] - best is to have one category in a post
 tags:             your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
