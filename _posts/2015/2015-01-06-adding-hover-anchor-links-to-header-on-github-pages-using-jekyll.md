@@ -147,7 +147,7 @@ You can style the AnchorJS icon according to your need.
   text-decoration: none !important; // do not underline
 }
 
-/@media (max-width: 768px) {
+@media (max-width: 768px) {
   // do not display AnchorJS icon on less than 768px view point
   .anchorjs-link {
     display: none;

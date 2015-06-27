@@ -15,11 +15,14 @@ encoding: "utf-8"
 
 # Plugins
 gems:
-  - jekyll-feed
-  - jekyll-mentions
+#  - jekyll-feed
+#  - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
+
+# jekyll-mentions:
+#  base_url: https://twitter.com
 
 # Conversion
 markdown:     kramdown
