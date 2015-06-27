@@ -1,6 +1,7 @@
 ---
 title: "Blogging with Jekyll and GitHub Pages"
 date: 2014-12-30T19:47:46+05:45
+last_modified_at: "2015-06-27T11:02:50+05:45"
 excerpt: "Transform your plain text into static websites and blogs."
 redirect_from: "/2014/12/blogging-with-jekyll-and-github-pages/"
 ---
@@ -31,9 +32,12 @@ Here are some websites/blog that were created with Jekyll:
 
 * [Jekyll](http://jekyllrb.com/) - itself and most of the GitHub's subpages
 * [HealthCare.gov](https://www.healthcare.gov/) - landing page and content subpages
+* [Bootstrap](http://getbootstrap.com/)
+* [Font Awesome](http://fontawesome.io/)
 * [Todd Motto](http://toddmotto.com/)
 * [CSS Wizardry](http://csswizardry.com/)
-* [Font Awesome Blog](http://blog.fontawesome.io/), [Bootstrap Blog](http://blog.getbootstrap.com/) ... and many other awesome projects and blogs (using Jekyll) are hosted on GitHub.
+
+... and many other awesome projects and blogs are using Jekyll and hosted on GitHub Pages.
 
 ### Getting Started
 
@@ -162,8 +166,10 @@ date:
 author:
 categories:
 tags:
-image:
+featured_image:
 excerpt:
+id:
+permalink:
 ---
 {% endhighlight %}
 
@@ -179,15 +185,17 @@ GitHub Pages currently supports several Jekyll plugins:
 * [Jekyll-mentions](//help.github.com/articles/mentions-on-github-pages) - provides support for @mentions within Jekyll posts and pages
 * [Jekyll-redirect-from](//help.github.com/articles/redirects-on-github-pages) - redirects visitors to an updated URL when Jekyll post or page filenames change.
 * [Jekyll-sitemap](//help.github.com/articles/sitemaps-for-github-pages) - adds a standards compliant sitemap for your GitHub Pages.
+* [Jekyll-feed](//github.com/jekyll/jekyll-feed) - generate an Atom (RSS-like) feed of your Jekyll posts.
 
 Add a list of enabled gems (plugins) to your site's `_config.yml` file, such as:
 
 {% highlight bash %}
 gems:
-- jekyll-mentions
-- jemoji
-- jekyll-redirect-from
-- jekyll-sitemap
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
 {% endhighlight %}
 
 This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](http://jekyllrb.com/).

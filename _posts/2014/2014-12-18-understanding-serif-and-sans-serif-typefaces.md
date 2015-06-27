@@ -13,7 +13,7 @@ Here's a neat infographic that explains the differences between serif and sans s
   <figcaption>For free fonts and dingbats, check <a href="http://www.urbanfonts.com" rel="nofollow">UrbanFonts.com</a></figcaption>
 </figure>
 
-This clever infographic — that smartly draws upon humor to drive home its points — offers a simple, insightful conclusion that designers should bear in mind: “The best font choices are ones where readers do not notice the font … but the message.”
+This clever infographic --- that smartly draws upon humor to drive home its points --- offers a simple, insightful conclusion that designers should bear in mind: "The best font choices are ones where readers do not notice the font ... but the message."
 
 ### The history of typography
 

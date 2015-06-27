@@ -1,7 +1,7 @@
 ---
 title: "Integrating social meta tags into Jekyll"
 date: 2015-02-11T13:04:19+05:45
-last_modified_at: 2015-03-17T22:35:36+05:45
+last_modified_at: 2015-06-26T08:05:27+05:45
 excerpt: "A guide to adding social meta tags into Jekyll."
 ---
 
@@ -13,19 +13,16 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 
 {% highlight html %}
 {% raw %}
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
 <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:locale" content="{{ site.locale }}">
 
-{% if page.last_modified_at %}
-  <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
-{% endif %}
-
 {% if page.date %}
+  <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
   {% for post in site.related_posts limit:3 %}
@@ -57,9 +54,9 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@{{ site.author.twitter }}">
 <meta name="twitter:creator" content="@{{ site.author.twitter }}">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta name="twitter:image" content="{% if page.featured_image %}{{ page.featured_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 {% endraw %}
 {% endhighlight %}
@@ -105,7 +102,7 @@ timezone:       your timezone # eg. Asia/Kathmandu
 locale:         your locale language # eg. en_us
 baseurl:        "/base" # does not include hostname
 url:            "http://yoursitename.com" # URL of site, include http://, do not include a trailing slash
-title:          "your site title"
+name:           "your site name"
 description:    "your site description"
 icon:           your site icon path # /assets/img/icon.png [best 300px X 300px]
 author:
@@ -124,7 +121,7 @@ layout:           post
 title:            "your post title"
 date:             2015-02-11T13:04:19+05:45 # XML Schema Date/Time
 last_modified_at: 2015-03-15T05:20:00+05:45 # last page modified date/time
-image:            your post image path # /assets/img/image.jpg
+featured_image:            your post featured image path # /assets/img/image.jpg
 excerpt:          "for meta description" # Optional for overring content excerpt
 categories:       your post categories # ["category1"] - best is to have one category in a post
 tags:             your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags

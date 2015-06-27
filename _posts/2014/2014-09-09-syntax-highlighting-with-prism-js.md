@@ -15,7 +15,7 @@ Yet not sure what I mean by a syntax highlighter or what it does? Here's an exam
 <script language="javascript">
   var today= new Date()
 </script>
-      ....
+  ....
 <body onload=alert(today)>
 {% endhighlight %}
 
@@ -23,7 +23,7 @@ PrismJS is a light weight and works on most of all the platform whether it is yo
 
 ### Installing on your page
 
-To install Prism on your webpage you need to [download](http://prismjs.com/download.html) the files `prism.js` and `prism.css` choosing your desire theme and required settings.
+To install PrismJS on your webpage you need to [download](http://prismjs.com/download.html) the files `prism.js` and `prism.css` choosing your desire theme and required settings.
 
 Here, JavaScript file `prism.js` is your settings and CSS file `prism.css` is your theme styles.
 
@@ -54,11 +54,11 @@ Easily highlight your code on WordPress with WP PrismJS. Simply [download](http:
 
 ### Installing on Blogger/Tumblr
 
-To install Prism on your Blogger/Tumblr blog you need to upload `prism.css` and `prism.js` files in other file hosting sites alternately like [Google Drive](http://drive.google.com/) or [Dropbox](http://www.dropbox.com/) because we cannot host file in the Blogger/Tumblr site. Then as same process above go to template edit and inculde `prism.css` file link before the `</head>` tag and `prism.js` file link before `</body>` tag.
+To install PrismJS on your Blogger/Tumblr blog you need to upload `prism.css` and `prism.js` files in other file hosting sites alternately like [Google Drive](http://drive.google.com/) or [Dropbox](http://www.dropbox.com/) because we cannot host file in the Blogger/Tumblr site. Then as same process above go to template edit and inculde `prism.css` file link before the `</head>` tag and `prism.js` file link before `</body>` tag.
 
 Remember that hosting your file on other site like Google Drive you should set the file for public view and need to link direct link like `http://googledrive.com/host/YOUR_FILE_ID/`. Public viewing link and direct link may vary according to the different sites.
 
-If you don't like to upload the file and want to use Prism default theme then you can include the following two files link to install Prism:
+If you don't like to upload the file and want to use PrismJS default theme then you can include the following two files link to install PrismJS:
 
 {% highlight html %}
 <link href="http://prismjs.com/themes/prism.css" rel="stylesheet" />
@@ -66,20 +66,20 @@ If you don't like to upload the file and want to use Prism default theme then yo
 <script src="http://prismjs.com/prism.js"></script>
 {% endhighlight %}
 
-### Using Prism
+### Using PrismJS
 
-First thing you have to escape HTML character `<` to `&lt;` and `>` to `&gt;` to highlight syntax with Prism. For Example:
+First thing you have to escape HTML character `<` to `&lt;` and `>` to `&gt;` to highlight syntax with PrismJS. For Example:
 
 {% highlight html %}
-&lt;pre&gt;
-&lt;code class="language-javascript"&gt;
-&lt;script&gt;
-        var today= new Date()
-  &lt;/script&gt;
-          ....
-  &lt;body onload=alert(today)&gt;
-&lt;/code&gt;
-&lt;/pre&gt;
+<pre>
+  <code class="language-javascript">
+    &lt;script&gt;
+      var today= new Date()
+    &lt;/script&gt;
+      ....
+    &lt;body onload=alert(today)&gt;
+  </code>
+</pre>
 {% endhighlight %}
 
 You can also use different tools to escape HTML character.
@@ -91,31 +91,31 @@ You have to wrap your code inside the `<pre>` and the `<code>` tag defining the 
 For example to show HTML snippet define `class="language-markup"`
 
 {% highlight html %}
-&lt;pre&gt;
-&lt;code class="language-markup"&gt;
-    <!-- YOUR HTML CODE HERE -->
-&lt;pre&gt;
-&lt;/code&gt;
+<pre>
+  <code class="language-markup">
+    <!-- YOUR RAW HTML CODE HERE -->
+  </code>
+</pre>
 {% endhighlight %}
 
 For CSS snippet define `class="language-css"`
 
 {% highlight html %}
-&lt;pre&gt;
-&lt;code class="language-css"&gt;
-    /* YOUR CSS CODE HERE */
-&lt;pre&gt;
-&lt;/code&gt;
+<pre>
+  <code class="language-css">
+    /* YOUR RAW CSS CODE HERE */
+  </code>
+</pre>
 {% endhighlight %}
 
 For JavaScript snippet define `class="language-javascript"`
 
 {% highlight html %}
-&lt;pre&gt;
-&lt;code class="language-javascript"&gt;
-    // YOUR JAVASCRIPT CODE HERE
-&lt;pre&gt;
-&lt;/code&gt;
+<pre>
+  <code class="language-javascript">
+    // YOUR RAW JAVASCRIPT CODE HERE
+  </code>
+</pre>
 {% endhighlight %}
 
-With Prism by help of these few easy steps you get a nice highlighted code snippet, isn't it awesome? :sunglasses:
+With PrismJS by help of these few easy steps you get a nice highlighted code snippet in your webpage, isn't it awesome? :sunglasses:
