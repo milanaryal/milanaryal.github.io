@@ -1,0 +1,124 @@
+// ==============================================
+// Markdown body
+// ==============================================
+
+
+.markdown-body {
+  overflow: hidden;
+  line-height: 1.5;
+  word-wrap: break-word;
+
+  > *:first-child {
+    margin-top: 30px !important;
+  }
+
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  h2, h3, h4, h5, h6 {
+    margin: 40px 0 30px;
+    line-height: 1.2;
+  }
+
+  h2, h3 {
+    font-weight: 700;
+  }
+
+  h4, h5, h6 {
+    font-weight: 600;
+    color: @gray-light;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  h5, h6 {
+    font-size: 24px;
+  }
+
+  p,
+  blockquote,
+  ul, ol, dl,
+  .table-responsive,
+  pre,
+  figure {
+    margin: @m-margin;
+  }
+
+  figcaption {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: @gray-light;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  blockquote,
+  figcaption {
+    a {
+      text-decoration: underline;
+      color: inherit; // parent color for link
+    }
+  }
+
+  hr {
+    display: block;
+    max-width: 100px;
+    margin: 51px auto 41px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+
+} //.markdown-body
+
+
+// GitHub Pages and Markdown
+// -------------------------------
+
+// Emoji
+.emoji {
+  display: inline-block;
+  max-width: none;
+}
+
+// Footnotes
+.footnotes {
+  margin: @m-margin;
+  font-size: 16px;
+
+  ol,
+  p {
+    margin: 15px 0;
+  }
+
+  &:before {
+    content: 'Footnotes';
+    font-weight: 700;
+    .m-sans-serif;
+  }
+}
+
+// Footnotes anchor link
+.footnote,
+.reversefootnote {
+  text-decoration: none !important; // do not underline
+}

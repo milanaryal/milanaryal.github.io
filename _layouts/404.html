@@ -1,9 +1,5 @@
 ---
 layout: compress
-featured_image: "/assets/img/404-bg.jpg"
-robots: "noindex, follow"
-sitemap: false
-permalink: /404.html
 ---
 
 <!DOCTYPE html>
@@ -14,7 +10,7 @@ permalink: /404.html
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Page not found &mdash; {{ site.name }}</title>
+    <title>{{ page.title }} &mdash; {{ site.name }}</title>
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     <link rel="dns-prefetch" href="//fonts.googleapis.com" data-proofer-ignore>
     <link rel="dns-prefetch" href="//www.google-analytics.com">
@@ -31,13 +27,13 @@ permalink: /404.html
 
   <body>
 
-    <!-- Page header -->
+    <!-- 404 page header -->
     <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')" role="banner">
       <div class="dark-background">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="site-heading">
+              <div class="page-heading">
                 <h1>404</h1>
                 <hr class="small">
                 <span class="subheading">Sorry, but nothing exists here.</span>
@@ -48,15 +44,14 @@ permalink: /404.html
       </div>
     </header>
 
-    <!-- Main content -->
+    <!-- 404 main content -->
     <main role="main">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <section class="text-center"> <!-- 404 page content -->
-              <p><em>I may have misplaced that URL or it’s pointing to something that doesn’t exist.</em></p>
-              <p>Check the <a href="/archives/">archives page</a> or <a href="/">home page</a> to try finding it manually. Thanks!</p>
-            </section> <!-- /404 page content -->
+            <div class="markdown-body text-center">
+              {{ content }}
+            </div>
           </div>
         </div>
       </div>
@@ -64,7 +59,7 @@ permalink: /404.html
       <hr>
     </main>
 
-    <!-- Page footer -->
+    <!-- 404 page footer -->
     <footer class="info-footer" role="contentinfo">
       <div class="container">
         <div class="row">

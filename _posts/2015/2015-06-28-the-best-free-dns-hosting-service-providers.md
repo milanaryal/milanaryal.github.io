@@ -1,7 +1,7 @@
 ---
 title: "The best free DNS hosting service providers"
 date: 2015-06-28T18:21:41+05:45
-excerpt: "List of the DNS (Domain Name System) management service providers who offer it free of charge."
+excerpt: "List of the DNS management service providers who offers for free of charge."
 ---
 
 For people whose registrars don't provide DNS (Domain Name System) hosting with domain registration then here's the list who offers it free of charge.
@@ -14,11 +14,11 @@ DNS hosting portal Hurricane Electric provide a 100% free DNS service. They have
 
 ### [Namecheap](https://www.namecheap.com/domains/freedns.aspx)
 
-A highly reputable domain registrar Namecheap offers free Dynamic DNS hosting package, you don't even have to register your domain with them (though we use them for domain registration!)
+A highly reputable domain registrar Namecheap offers free DNS hosting package, you don't even have to register your domain with them (though we use them for domain registration!)
 
 ### [CloudFlare](https://www.cloudflare.com/dns)
 
-Although CloudFlare isn't really advertised or known for being a DNS hosting service, but it completely offers free DNS hosting with unlimited domains. No premium charges unless you get into some of their advanced CDN features.
+Although CloudFlare isn't really advertised or known for being a DNS hosting service provider, but it completely offers free DNS hosting with unlimited domains. No premium charges unless you get into some of their advanced CDN features.
 
 ### [BuddyNS](http://www.buddyns.com/)
 

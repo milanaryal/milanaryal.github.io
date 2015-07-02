@@ -143,7 +143,7 @@ You can style the AnchorJS icon according to your need.
  */
 
 .anchorjs-link {
-  color: inherit;
+  color: inherit !important;
   text-decoration: none !important; // do not underline
 }
 

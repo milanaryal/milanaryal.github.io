@@ -1,13 +1,13 @@
 ---
-layout: page
+layout: archive
 title: Archives
 description: "A year wise archive collection."
 excerpt: "A year wise archive collection for Milan Aryal"
 featured_image: "/assets/img/archives-bg.jpg"
 permalink: /archives/
+redirect_from: /archive/
 ---
 
-<div class="archives">
 {% for post in site.posts %}
   {% unless post.next %}
     <h3 id="{{ post.date | date: '%Y' }}" class="section-heading">{{ post.date | date: '%Y' }}</h3>
@@ -41,4 +41,3 @@ permalink: /archives/
     </ul>
   </article>
 {% endfor %}
-</div>

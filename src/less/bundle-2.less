@@ -1,151 +1,6 @@
-// ==============================================
-// Post content / Markdown body
-// ==============================================
-
-
-.post-content {
-  overflow: hidden;
-  line-height: 1.5;
-  word-wrap: break-word;
-
-  > *:first-child {
-    margin-top: 30px !important;
-  }
-
-  > *:last-child {
-    margin-bottom: 0 !important;
-  }
-}
-
-.post-content h2,
-.post-content h3,
-.section-heading {
-  margin: 40px 0 30px;
-  font-weight: 700;
-}
-
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-  margin: 40px 0 30px;
-  font-weight: 600;
-  color: @m-gray;
-}
-
-.post-content h2 {
-  font-size: 40px;
-}
-
-.post-content h3,
-.section-heading {
-  font-size: 36px;
-}
-
-.post-content h4 {
-  font-size: 30px;
-}
-
-.post-content h5 {
-  font-size: 24px;
-}
-
-.post-content h6 {
-  font-size: 22px;
-}
-
-.post-content h2,
-.post-content h3,
-.section-heading,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-  a {
-    text-decoration: underline; // underline header link
-    color: inherit;
-  }
-}
-
-blockquote,
-.post-content ul,
-.post-content ol,
-.post-content dl,
-.table-responsive,
-pre,
-figure {
-  margin: @m-margin;
-}
-
-figcaption,
-.caption {
-  display: block;
-  margin: 0;
-  padding: 10px;
-  font-style: italic;
-  font-size: 14px;
-  color: @gray-light;
-  text-align: center;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-// list, blockquote, figcaption, copyright anchor
-.post-content li,
-figcaption,
-.caption {
-  a {
-    text-decoration: underline;
-  }
-}
-
-blockquote,
-figcaption,
-.caption,
-.copyright {
-  a {
-    color: inherit; // parent color for link
-  }
-}
-
-.post-content hr,
-.section-divider {
-  display: block;
-  max-width: 100px;
-  margin: 51px auto 41px;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-// GitHub Pages and Markdown
-// -------------------------------
-
-// Emoji
-.emoji {
-  display: inline-block;
-  max-width: none;
-}
-
-// Footnotes
-.footnotes {
-  margin: @m-margin;
-  font-size: 16px;
-
-  ol,
-  p {
-    margin: 15px 0;
-  }
-
-  &:before {
-    content: 'Footnotes';
-    font-weight: 700;
-    .m-sans-serif;
-  }
-}
-
-// Footnotes anchor link
-.footnote,
-.reversefootnote {
-  text-decoration: none !important; // do not underline
-}
+//
+// Style bundle 2
+//
 
 
 // ==============================================
@@ -163,6 +18,12 @@ figcaption,
   content: '\00b7';
 }
 
+
+// ==============================================
+//  Post content
+// ==============================================
+
+
 // Social
 .social-container,
 .comments {
@@ -178,8 +39,13 @@ figcaption,
   }
 }
 
-// Archives page
-.archives {
+
+// ==============================================
+//  Archive page content
+// ==============================================
+
+
+.archive {
 
   > *:first-child {
     margin-top: 30px !important;
@@ -187,6 +53,13 @@ figcaption,
 
   > *:last-child {
     margin-bottom: 0 !important;
+  }
+
+  h3 {
+    margin: 40px 0 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
   }
 
   ul {

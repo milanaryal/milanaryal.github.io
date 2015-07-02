@@ -20,7 +20,7 @@ module.exports = function (grunt) {
       license_url: 'https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE',
       date: '<%= grunt.template.date("isoDateTime")%>\+05\:45',
       banner: '/*!\n' +
-              ' * <%= pkg.title %> (<%= pkg.url %>)\n' +
+              ' * <%= pkg.title %> (<%= pkg.homepage %>)\n' +
               ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
               ' * Licensed under <%= project.license_type %> (<%= project.license_url %>)\n' +
               ' *\n' +

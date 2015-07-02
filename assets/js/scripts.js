@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-06-21T17:05:32+05:45
+ * Date: 2015-07-01T15:30:51+05:45
  */
 
 /* ========================================================================
@@ -11861,6 +11861,6 @@ return jQuery;
   'use strict';
 
   anchors.options.placement = 'left';
-  anchors.add('.post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6');
+  anchors.add('.markdown-body > h2, .markdown-body > h3, .markdown-body > h4, .markdown-body > h5, .markdown-body > h6, .archive > h3');
 
 })();

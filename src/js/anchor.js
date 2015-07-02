@@ -204,6 +204,6 @@
   'use strict';
 
   anchors.options.placement = 'left';
-  anchors.add('.post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6');
+  anchors.add('.markdown-body > h2, .markdown-body > h3, .markdown-body > h4, .markdown-body > h5, .markdown-body > h6, .archive > h3');
 
 })();
