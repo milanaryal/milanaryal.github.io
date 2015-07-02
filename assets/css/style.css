@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-01T15:31:08+05:45
+ * Date: 2015-07-02T12:33:26+05:45
  */
 
 /*! Bootstrap v3.3.5 | MIT License | getbootstrap.com */
@@ -8901,6 +8901,10 @@ hr.small {
   color: inherit;
   text-decoration: underline;
 }
+.info-footer .copyright a:hover,
+.info-footer .copyright a:focus {
+  color: #0084b4;
+}
 .btn {
   padding: 15px 25px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -9101,6 +9105,12 @@ body {
 .markdown-body figcaption a {
   color: inherit;
   text-decoration: underline;
+}
+.markdown-body blockquote a:hover,
+.markdown-body figcaption a:hover,
+.markdown-body blockquote a:focus,
+.markdown-body figcaption a:focus {
+  color: #0084b4;
 }
 .markdown-body hr {
   display: block;

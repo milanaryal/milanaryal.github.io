@@ -306,6 +306,10 @@ hr.small {
     a {
       text-decoration: underline;
       color: inherit; // parent color for link
+      &:hover,
+      &:focus {
+        color: @m-brand-primary;
+      }
     }
   }
 }

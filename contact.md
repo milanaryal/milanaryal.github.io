@@ -54,8 +54,6 @@ If you have any questions, or just questions in general, you can ask me anything
   {% endif %}
 </ul>
 
-<br>
-
 <ul class="list-inline text-center">
   <li>
     <a href="//keybase.io/milanaryal/key.asc">
@@ -63,5 +61,3 @@ If you have any questions, or just questions in general, you can ask me anything
     </a>
   </li>
 </ul>
-
-<br>

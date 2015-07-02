@@ -76,6 +76,10 @@
     a {
       text-decoration: underline;
       color: inherit; // parent color for link
+      &:hover,
+      &:focus {
+        color: @m-brand-primary;
+      }
     }
   }
 
@@ -87,8 +91,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.15);
   }
 
-
-} //.markdown-body
+} // .markdown-body
 
 
 // GitHub Pages and Markdown
