@@ -93,3 +93,15 @@
   })
 
 }(jQuery);
+
+
+// AnchorJS options and selector
+// =============================
+
+(function () {
+  'use strict';
+
+  anchors.options.placement = 'left';
+  anchors.add('.markdown-body > h2, .markdown-body > h3, .markdown-body > h4, .markdown-body > h5, .markdown-body > h6, .archive > h3');
+
+})();

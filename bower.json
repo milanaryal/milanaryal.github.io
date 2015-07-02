@@ -1,0 +1,27 @@
+{
+  "name": "milanaryal",
+  "authors": [
+    "Milan Aryal <considermilan@gmail.com>"
+  ],
+  "description": "Livin' on the edge of web standards.",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "http://milanaryal.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.3.0",
+    "anchor-js": "~1.2.1",
+    "primer-markdown": "~2.1.7"
+  },
+  "private": true
+}

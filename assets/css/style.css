@@ -3,10 +3,14 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-02T12:33:26+05:45
+ * Date: 2015-07-02T18:38:52+05:45
  */
 
-/*! Bootstrap v3.3.5 | MIT License | getbootstrap.com */
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -6803,7 +6807,10 @@ button.close {
     display: none !important;
   }
 }
-/*! Font Awesome v4.3.0 | Font: SIL OFL 1.1, CSS: MIT License | fontawesome.io */
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
 /* FONT PATH
  * -------------------------- */
 @font-face {

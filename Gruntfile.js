@@ -43,8 +43,8 @@ module.exports = function (grunt) {
         '<%= project.src %>/js/bootstrap/scrollspy.js',
         '<%= project.src %>/js/bootstrap/tab.js',
         '<%= project.src %>/js/bootstrap/affix.js',
-        '<%= project.src %>/js/scripts.js',
-        '<%= project.src %>/js/anchor.js'
+        '<%= project.src %>/js/anchor.js',
+        '<%= project.src %>/js/scripts.js'
       ]
     },
 
