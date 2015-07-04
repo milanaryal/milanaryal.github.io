@@ -9,7 +9,7 @@ DNS itself won't redirect the path portion of a URL.
 Adding
 
 {% highlight text %}
-www.proof.com IN CNAME www.proof-two.com
+www.proof.com  IN  CNAME  www.proof-two.com
 {% endhighlight %}
 
 will direct access to `www.proof.com` to `www.proof-two.com`, where you will need to use web server config to direct users to the appropriate page.
@@ -36,14 +36,14 @@ google.example.com.  IN  CNAME  google.com.redirect.center.
 If you want to redirect any subdomains to your main page or another domain then you can also use wildcard selector:
 
 {% highlight text %}
-*.example.  IN  CNAME  example.com.redirect.center.
+*.example.com.  IN  CNAME  example.com.redirect.center.
 {% endhighlight %}
 
 {% highlight text %}
 *.example.com.  IN  CNAME  domain2.com.redirect.center.
 {% endhighlight %}
 
-##### Options to redirect
+#### Options to redirect
 
 Options can be specified as part of a `CNAME`. For example to redirect `www.oldwebsite.com` to `www.newwebsite.com` with a `302` status code:
 
@@ -103,7 +103,7 @@ google.example.com            IN  CNAME  alias.redirect.name
 _redirect.google.example.com  IN  TXT    Redirects to https://www.google.com
 {% endhighlight %}
 
-##### Options to redirect
+#### Options to redirect
 
 Wildcard matches (*) are also supported by `redirect.name`. Any unmatched paths will redirect to specfic page, so it's recommended that you add a wildcard catch-all path when redirecting specific paths.
 
