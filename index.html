@@ -14,7 +14,7 @@ layout: index
     </h3>
     {% else %}
     <h3 class="post-subtitle">
-      {{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
+      {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
     </h3>
     {% endif %}
   </a>
