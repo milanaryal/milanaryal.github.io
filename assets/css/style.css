@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-08T18:52:31+05:45
+ * Date: 2015-07-08T19:37:40+05:45
  */
 
 /*!
@@ -8852,40 +8852,40 @@ hr.small {
   left: 0;
   background: rgba(0, 0, 0, .44);
 }
-.post-preview > a {
+.post-preview a {
   color: #404040;
 }
-.post-preview > a:hover,
-.post-preview > a:focus {
+.post-preview a:hover,
+.post-preview a:focus {
   color: #0084b4;
   text-decoration: none;
 }
-.post-preview > a > .post-title {
+.post-preview a .post-title {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 30px;
 }
-.post-preview > a > .post-subtitle {
+.post-preview a .post-subtitle {
   margin-top: 0;
   margin-bottom: 10px;
 }
-.post-preview > .post-meta {
+.post-preview .post-meta {
   margin-top: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #808080;
 }
-.post-preview > .post-meta > a {
+.post-preview .post-meta a {
   color: #404040;
   text-decoration: none;
 }
-.post-preview > .post-meta > a:hover,
-.post-preview > .post-meta > a:focus {
+.post-preview .post-meta a:hover,
+.post-preview .post-meta a:focus {
   color: #0084b4;
   text-decoration: underline;
 }
 @media (min-width: 768px) {
-  .post-preview > a > .post-title {
+  .post-preview a .post-title {
     font-size: 36px;
   }
 }

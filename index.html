@@ -5,7 +5,7 @@ layout: index
 {% for post in paginator.posts %}
 <article class="post-preview" itemscope itemtype="http://schema.org/Article">
   <a itemprop="url" href="{{ post.url }}">
-    <div>
+    <div id="anchor-content">
       <h2 class="post-title" itemprop="name">
         {{ post.title | markdownify | strip_html | strip_newlines }}
       </h2>
