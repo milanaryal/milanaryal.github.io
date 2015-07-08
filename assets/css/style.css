@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-08T15:43:55+05:45
+ * Date: 2015-07-08T18:52:31+05:45
  */
 
 /*!
@@ -8637,7 +8637,7 @@ button.close {
   content: "\f23a";
 }
 body {
-  font-family: 'Noto Serif', Georgia, 'Times New Roman', serif;
+  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   color: #404040;
 }
@@ -8647,7 +8647,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 p {
@@ -8690,7 +8690,7 @@ hr.small {
   left: 0;
   z-index: 3;
   width: 100%;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: white;
 }
 .header-navbar .navbar-brand {
@@ -8804,7 +8804,7 @@ hr.small {
 .intro-header .page-heading .subheading {
   display: block;
   margin: 10px 0 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.1;
@@ -8825,12 +8825,12 @@ hr.small {
 }
 .intro-header .post-heading .subheading {
   margin: 10px 0 30px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -8871,7 +8871,7 @@ hr.small {
 }
 .post-preview > .post-meta {
   margin-top: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #808080;
 }
@@ -8898,7 +8898,7 @@ hr.small {
 }
 .info-footer .copyright {
   margin-bottom: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #777;
   text-align: center;
@@ -8913,7 +8913,7 @@ hr.small {
 }
 .btn {
   padding: 15px 25px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
   text-decoration: none !important;
@@ -8938,7 +8938,7 @@ hr.small {
 .pager li > a,
 .pager li > span {
   padding: 10px 5px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
@@ -9138,7 +9138,7 @@ body {
   margin: 15px 0;
 }
 .footnotes:before {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   content: 'Footnotes';
 }
