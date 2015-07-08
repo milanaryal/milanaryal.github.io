@@ -8,13 +8,13 @@ layout: index
     <h2 class="post-title" itemprop="name">
       {{ post.title | markdownify | strip_html | strip_newlines }}
     </h2>
-    {% if post.subtitle and post.excerpt != blank %}
-    <h3 class="post-subtitle" itemprop="description">
+    <p class="post-subtitle" itemprop="description">
+    {% if post.subtitle %}
       {{ post.subtitle | markdownify | strip_html | strip_newlines }}
         {% else %}
       {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
-    </h3>
     {% endif %}
+    </p>
   </a>
   <div class="post-meta">
     <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date: '%a, %b %-d, %Y' }} at {{ post.date | date: '%-I:%M%P %Z' }}">{{ post.date | date: '%B %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}</span>

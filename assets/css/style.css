@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-08T15:20:39+05:45
+ * Date: 2015-07-08T15:43:55+05:45
  */
 
 /*!
@@ -8637,7 +8637,7 @@ button.close {
   content: "\f23a";
 }
 body {
-  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  font-family: 'Noto Serif', Georgia, 'Times New Roman', serif;
   font-size: 20px;
   color: #404040;
 }
@@ -8868,7 +8868,6 @@ hr.small {
 .post-preview > a > .post-subtitle {
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 300;
 }
 .post-preview > .post-meta {
   margin-top: 0;
