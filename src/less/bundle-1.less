@@ -240,7 +240,7 @@ hr.small {
   left: 0;
   right: 0;
   bottom: 0;
-  // Darken background (black 44%)
+  // Darken background (black 44% opacity)
   background: rgba(0, 0, 0, 0.44);
 }
 
@@ -260,8 +260,8 @@ hr.small {
       margin-bottom: 10px;
     }
     > .post-subtitle {
-      margin: 0;
       font-weight: 300;
+      margin-top: 0;
       margin-bottom: 10px;
     }
   }
@@ -275,8 +275,8 @@ hr.small {
       color: @m-gray-dark;
       &:hover,
       &:focus {
-        color: @m-brand-primary;
         text-decoration: underline;
+        color: @m-brand-primary;
       }
     }
   }

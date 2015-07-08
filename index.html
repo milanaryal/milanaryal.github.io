@@ -8,12 +8,10 @@ layout: index
     <h2 class="post-title" itemprop="name">
       {{ post.title | markdownify | strip_html | strip_newlines }}
     </h2>
-    {% if post.subtitle %}
-    <h3 class="post-subtitle">
+    {% if post.subtitle and post.excerpt != blank %}
+    <h3 class="post-subtitle" itemprop="description">
       {{ post.subtitle | markdownify | strip_html | strip_newlines }}
-    </h3>
-    {% else %}
-    <h3 class="post-subtitle">
+        {% else %}
       {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
     </h3>
     {% endif %}
