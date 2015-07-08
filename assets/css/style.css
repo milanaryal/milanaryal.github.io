@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-08T19:37:40+05:45
+ * Date: 2015-07-08T21:56:20+05:45
  */
 
 /*!
@@ -8830,9 +8830,10 @@ hr.small {
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
+  margin-top: 30px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .intro-header .post-heading .meta a {
   color: white;
@@ -8852,6 +8853,10 @@ hr.small {
   left: 0;
   background: rgba(0, 0, 0, .44);
 }
+.post-preview {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .post-preview a {
   color: #404040;
 }
@@ -8861,16 +8866,15 @@ hr.small {
   text-decoration: none;
 }
 .post-preview a .post-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 15px;
   font-size: 30px;
 }
 .post-preview a .post-subtitle {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .post-preview .post-meta {
-  margin-top: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #808080;
