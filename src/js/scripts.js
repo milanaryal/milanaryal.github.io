@@ -101,16 +101,3 @@
   anchors.add('.markdown-body > h2, .markdown-body > h3, .markdown-body > h4, .markdown-body > h5, .markdown-body > h6, .archive > h3');
 
 })();
-
-
-// Make Lora font short mdash a little long
-// ========================================
-
-(function () {
-  'use strict';
-
-  var elements = document.getElementsByClassName('markdown-body');
-
-  element.innerHTML = element.innerHTML.replace('/\u0020/\u2014/\u0020', '/\u200A/\u2014/\u200A');
-
-})();

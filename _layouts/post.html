@@ -36,12 +36,26 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
         <div class="markdown-body" itemprop="articleBody">
           {{ content }}
         </div>
+
           <footer>
             {% include social_share.html %}
+
             <hr>
+
+            {% if site.disqus_shortname %}
+              {% unless page.comments == 'false' %}
+              <div class="comments" itemprop="comment">
+                {% include disqus_thread.html %}
+              </div>
+              {% endunless %}
+            {% endif %}
+
+            <hr>
+
             <nav itemprop="pagination">
               <ul class="pager">
                 {% if page.previous.url %}
@@ -57,13 +71,7 @@ layout: default
               </ul>
             </nav>
           </footer>
-          {% if site.disqus_shortname %}
-            {% unless page.comments == 'false' %}
-          <article class="comments" itemprop="comment">
-            {% include disqus_thread.html %}
-          </article>
-            {% endunless %}
-          {% endif %}
+
       </div>
     </div>
   </div>
