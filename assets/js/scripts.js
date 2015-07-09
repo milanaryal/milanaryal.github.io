@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-08T21:56:02+05:45
+ * Date: 2015-07-09T18:09:39+05:45
  */
 
 /*!
@@ -11862,5 +11862,18 @@ var anchors = new AnchorJS();
 
   anchors.options.placement = 'left';
   anchors.add('.markdown-body > h2, .markdown-body > h3, .markdown-body > h4, .markdown-body > h5, .markdown-body > h6, .archive > h3');
+
+})();
+
+
+// Make Lora font short mdash a little long
+// ========================================
+
+(function () {
+  'use strict';
+
+  var elements = document.getElementsByClassName('markdown-body');
+
+  element.innerHTML = element.innerHTML.replace('/\u0020/\u2014/\u0020', '/\u200A/\u2014/\u200A');
 
 })();
