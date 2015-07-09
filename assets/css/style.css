@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-09T21:55:06+05:45
+ * Date: 2015-07-09T22:18:05+05:45
  */
 
 /*!
@@ -8840,7 +8840,7 @@ hr.small {
 }
 @media (min-width: 768px) {
   .intro-header .post-heading h1 {
-    font-size: 60px;
+    font-size: 56px;
   }
   .intro-header .post-heading .subheading {
     font-size: 32px;
@@ -8999,8 +8999,7 @@ body {
 .middot-divider:after {
   content: '\00b7';
 }
-.social-container,
-.comments {
+.social-container {
   margin: 30px 0;
 }
 .social-container a {
@@ -9009,6 +9008,9 @@ body {
 .social-container a:hover,
 .social-container a:focus {
   color: #55acee;
+}
+.comments {
+  margin: 30px 0 50px;
 }
 .archive > *:first-child {
   margin-top: 30px !important;
