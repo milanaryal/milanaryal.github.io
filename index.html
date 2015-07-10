@@ -9,13 +9,13 @@ layout: index
       <h2 class="post-title" itemprop="name">
         {{ post.title | markdownify | strip_html | strip_newlines }}
       </h2>
-      <p class="post-subtitle" itemprop="description">
+      <h4 class="post-subtitle" itemprop="description">
         {% if post.subtitle %}
           {{ post.subtitle | markdownify | strip_html | strip_newlines }}
             {% else %}
-          {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
+          {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 120 }}
         {% endif %}
-      </p>
+      </h4>
     </div>
   </a>
   <div class="post-meta">
