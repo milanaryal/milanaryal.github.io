@@ -12,13 +12,13 @@ layout: default
             <div class="post-heading">
               <h1 itemprop="name headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
 
-              {% if page.subtitle %}
                 {% capture post_subtitle %}
-                  {{ post.subtitle | markdownify | strip_html | strip_newlines }}
-                    {% else %}
-                  {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
+                 {% if page.subtitle %}
+                    {{ post.subtitle | markdownify | strip_html | strip_newlines }}
+                      {% else %}
+                    {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
+                  {% endif %}
                 {% endcapture %}
-              {% endif %}
 
               {% capture post_content %}
                 {{ post.content | markdownify | strip_html | strip_newlines | truncate: 160 }}
