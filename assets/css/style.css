@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-09T22:18:05+05:45
+ * Date: 2015-07-10T19:39:15+05:45
  */
 
 /*!
@@ -8638,8 +8638,12 @@ button.close {
 }
 body {
   font-family: "Lora", Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
   color: #404040;
+  letter-spacing: -.02em;
 }
 h1,
 h2,
@@ -8648,10 +8652,15 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
   font-weight: 800;
+  letter-spacing: -.02em;
 }
 p {
   margin: 30px 0;
+  font-size: 20px;
+  line-height: 1.45;
+  letter-spacing: .005rem;
 }
 p a {
   text-decoration: underline;
@@ -8817,6 +8826,7 @@ hr.small {
 }
 .intro-header .post-heading h1 {
   font-size: 36px;
+  line-height: 1;
 }
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
@@ -8832,7 +8842,7 @@ hr.small {
 .intro-header .post-heading .meta {
   margin-top: 30px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 .intro-header .post-heading .meta a {
@@ -8877,7 +8887,7 @@ hr.small {
 .post-preview .post-meta {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  color: #808080;
+  color: #777;
 }
 .post-preview .post-meta a {
   color: #404040;
@@ -9049,7 +9059,10 @@ body {
 }
 .markdown-body {
   overflow: hidden;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.5;
+  letter-spacing: .01rem;
   word-wrap: break-word;
 }
 .markdown-body > *:first-child {
@@ -9067,7 +9080,9 @@ body {
 .markdown-body h5,
 .markdown-body h6 {
   margin: 40px 0 30px;
+  font-style: normal;
   line-height: 1.2;
+  letter-spacing: -.02em;
 }
 .markdown-body h2,
 .markdown-body h3 {
@@ -9076,7 +9091,7 @@ body {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  font-weight: 600;
+  font-weight: 300;
   color: #777;
 }
 .markdown-body h2 {
@@ -9091,6 +9106,11 @@ body {
 .markdown-body h5,
 .markdown-body h6 {
   font-size: 28px;
+}
+.markdown-body li {
+  padding-top: 2px;
+  margin-bottom: 12px;
+  margin-left: 30px;
 }
 .markdown-body p,
 .markdown-body blockquote,
@@ -9191,7 +9211,7 @@ pre > code {
 }
 .highlight pre,
 pre {
-  padding: 15px;
+  padding: 20px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;

@@ -6,8 +6,12 @@
 
 body {
   .m-serif;
-  font-size: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
   color: @m-gray-dark;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 // Typography
@@ -19,11 +23,16 @@ h4,
 h5,
 h6 {
   .m-sans-serif;
+  letter-spacing: -0.02em;
   font-weight: 800;
+  font-style: normal;
 }
 
 p {
   // Bootstrap default (line-height: 1.42857143;)
+  line-height: 1.45;
+  letter-spacing: .005rem;
+  font-size: 20px;
   margin: @m-margin;
   a {
     text-decoration: underline;
@@ -203,6 +212,7 @@ hr.small {
   .post-heading {
     h1 {
       font-size: 36px;
+      line-height: 1;
     }
     .subheading,
     .meta {
@@ -219,7 +229,7 @@ hr.small {
       .m-sans-serif;
       margin-top: 30px;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 18px;
       a {
         color: white;
       }
@@ -270,7 +280,7 @@ hr.small {
   }
   .post-meta {
     .m-sans-serif;
-    color: @m-gray;
+    color: @gray-light;
     font-size: 18px;
     a {
       text-decoration: none;
