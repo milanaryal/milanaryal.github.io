@@ -13,7 +13,7 @@ layout: index
         {% if post.subtitle %}
           {{ post.subtitle | markdownify | strip_html | strip_newlines }}
             {% else %}
-          {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 120 }}
+          {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
         {% endif %}
       </h4>
     </div>

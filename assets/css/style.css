@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-10T22:08:11+05:45
+ * Date: 2015-07-10T23:00:47+05:45
  */
 
 /*!
@@ -8882,6 +8882,7 @@ hr.small {
 .post-preview a .post-subtitle {
   margin-top: 0;
   margin-bottom: 15px;
+  font-size: 24px;
   font-weight: 300;
 }
 .post-preview .post-meta {
@@ -9105,7 +9106,6 @@ body {
   font-size: 28px;
 }
 .markdown-body li {
-  padding-top: 2px;
   margin-bottom: 12px;
 }
 .markdown-body p,
