@@ -11,25 +11,8 @@ layout: default
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               <h1 itemprop="name headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
-
-                {% capture post_subtitle %}
-                 {% if page.subtitle %}
-                    {{ post.subtitle | markdownify | strip_html | strip_newlines }}
-                      {% else %}
-                    {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
-                  {% endif %}
-                {% endcapture %}
-
-              {% capture post_content %}
-                {{ post.content | markdownify | strip_html | strip_newlines | truncate: 160 }}
-              {% endcapture %}
-
-              {% if page.subtitle and post_subtitle != post_content %}
-                {{ assign subtitle = post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
-              {% endif %}
-
               {% if page.subtitle %}
-              <h2 class="subheading">{{ subtitle }}</h2>
+              <h2 class="subheading">{{ page.subtitle | markdownify | strip_html | strip_newlines }}</h2>
               {% endif %}
               <link itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
               <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}">
