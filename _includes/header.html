@@ -27,7 +27,7 @@
         <li>
           <a itemprop="url" href="/"><span itemprop="name">Home</span></a>
         </li>
-        {% for page in site.pages %}{% if page.title and page.url != '/404.html' %}
+        {% for page in site.pages %}{% if page.title and page.url != '/404.html' and page.url != '/search/' %}
         <li>
           <a itemprop="url" href="{{ page.url }}"><span itemprop="name">{{ page.title }}</span></a>
         </li>

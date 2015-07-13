@@ -7,14 +7,40 @@ permalink: /search/
 ---
 
 <style>
-.reset-box,
-.reset-box * {
+.search-heading {
+  font-weight: normal;
+}
+.search-box {
+  margin: 30px 0;
+}
+.search-box,
+.search-box * {
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
-.reset-box {
-  margin: 30px;
+.gsc-input-box {
+  height: 34px;
+  font-family: sans-serif;
+}
+input.gsc-input {
+  line-height: 2;
+  background: none!important;
+}
+input.gsc-search-button-v2 {
+  margin-top: 3px;
+}
+.gsst_a .gscb_a {
+  margin-top: 7px;
+}
+.gcsc-branding {
+  display: none;
+}
+.gsc-adBlock {
+  display: none;
+}
+.gsc-location {
+  display: none;
 }
 </style>
 
@@ -31,10 +57,12 @@ permalink: /search/
   })();
 </script>
 
-<div class="reset-box">
+<h3 class="search-heading"><i class="fa fa-search"></i> Search</h3>
+
+<div class="search-box">
   <gcse:searchbox></gcse:searchbox>
 </div>
 
-<div class="reset-box">
+<div class="search-box">
   <gcse:searchresults linktarget="_parent"></gcse:searchresults>
 </div>
