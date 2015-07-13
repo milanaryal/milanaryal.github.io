@@ -6,6 +6,25 @@ sitemap: false
 permalink: /search/
 ---
 
+<style>
+.reset-box,
+.reset-box * {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+
+  overflow: visible;
+  line-height: normal;
+}
+.reset-box {
+  margin: 30px;
+}
+</style>
+
 <script>
   (function() {
     var cx = '000254926668963224856:z4vgwqv7kla';
@@ -19,10 +38,10 @@ permalink: /search/
   })();
 </script>
 
-<div style="margin:15px;">
+<div class="reset-box">
   <gcse:searchbox></gcse:searchbox>
 </div>
 
-<div style="margin:15px;">
+<div class="reset-box">
   <gcse:searchresults linktarget="_parent"></gcse:searchresults>
 </div>
