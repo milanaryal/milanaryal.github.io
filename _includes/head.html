@@ -54,8 +54,8 @@
     "url": "{{ site.url }}/",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "http://google.com/search?q=site%3A{{site.url|replace:'http://',''|replace:'https://',''|strip_newlines}}+{search_term_string}",
-      "query-input": "required name=search_term_string"
+      "target": "{{ site.url }}/search?q={searchTerms}",
+      "query-input": "required name=searchTerms"
     }
   }
   </script>
