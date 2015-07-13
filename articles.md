@@ -8,5 +8,5 @@ redirect_from:
   - /2013/
   - /2014/
   - /2015/
-reditect_to: /
+redirect_to: /
 ---
