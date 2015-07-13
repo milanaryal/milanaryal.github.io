@@ -37,14 +37,27 @@
   {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.previous.title | markdownify | strip_html | strip_newlines }}">{% endif %}
   {% if page.next.url %}<link rel="next" href="{{ page.next.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.next.title | markdownify | strip_html | strip_newlines }}">{% endif %}
 
-  <!-- Site Name in Search Results | Read: https://developers.google.com/structured-data/site-name -->
   <script type="application/ld+json">
-   {  "@context" : "http://schema.org",
-      "@type" : "WebSite",
-      "name" : "{{ site.name | markdownify | strip_html | strip_newlines }}",
-      "alternateName" : "{{ site.description | markdownify | strip_html | strip_newlines }}",
-      "url" : "{{ site.url }}/"
-   }
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.name | markdownify | strip_html | strip_newlines }}",
+    "alternateName": "{{ site.description | markdownify | strip_html | strip_newlines }}",
+    "url": "{{ site.url }}/"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "{{ site.url }}/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "http://google.com/search?q=site%3A{{site.url|replace:'http://',''|replace:'https://',''|strip_newlines}}+{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
   </script>
 
   <!-- DNS prefetch -->

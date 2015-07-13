@@ -8,10 +8,10 @@ sitemap: false
 
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Milan Aryal</ShortName>
-  <Description>Search Milan Aryal</Description>
+  <ShortName>{{ site.name }}</ShortName>
+  <Description>Search {{ site.name }}</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">http://milanaryal.com/favicon.ico</Image>
-  <Url type="text/html" method="get" template="http://google.com/search?q=site%3Amilanaryal.com+{searchTerms}"/>
-  <moz:SearchForm>http://google.com/search?q=site%3Amilanaryal.com</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">{{ site.url }}/favicon.ico</Image>
+  <Url type="text/html" method="get" template="http://google.com/search?q=site%3A{{site.url|replace:'http://',''|replace:'https://',''|strip_newlines}}+{searchTerms}"/>
+  <moz:SearchForm>http://google.com/search?q=site%3A{{site.url|replace:'http://',''|replace:'https://',''|strip_newlines}}</moz:SearchForm>
 </OpenSearchDescription>
