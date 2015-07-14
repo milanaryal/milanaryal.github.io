@@ -21,52 +21,33 @@ permalink: /search/
 }
 </style>
 
-<section>
-  <h3 class="search-heading"><i class="fa fa-search"></i> Search</h3>
 
-  <div class="search-box" id="cse-search"></div>
+<h3 class="search-heading"><i class="fa fa-search"></i> Search</h3>
 
-  
-  <div id="default"></div>
+<div class="search-box" id="cse-search">
 
+  <!-- Google CSE Search Box Begins  -->
+  <center>
+  <form id="searchbox_{{ site.google_cse_id }}" action="/search/">
+    <input value="{{ site.google_cse_id }}" name="cx" type="hidden"/>
+    <input value="FORID:11" name="cof" type="hidden"/>
+    <input id="q" style="width:600px;" name="q" size="75" type="text"/>
+    <input value="Search" name="sa" type="submit"/>
+  </form>
+  </center>
 
-  <div id="test"></div>
-</section>
+  <script>
+    (function() {
+      var cx = '{{ site.google_cse_id }}';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <gcse:searchresults-only></gcse:searchresults-only>
 
-<script>
-  var renderSearchElement = function() {
-    google.search.cse.element.render(
-      {
-        div: "default",
-        tag: 'search'
-      });
-    google.search.cse.element.render(
-      {
-        div: "test",
-        attributes: {
-          disableWebSearch: true,
-          enableHistory: true},
-        tag: 'search'
-      });
-  };
-  var myCallback = function() {
-    if (document.readyState == 'complete') {
-      renderSearchElement();
-    } else {
-      google.setOnLoadCallback(renderSearchElement, true);
-    }
-  };
-
-  window.__gcse = {
-    parsetags: 'explicit',
-    callback: myCallback
-  };
-
-  var loadElements = function() {
-    var cx = '000254926668963224856:z4vgwqv7kla';
-    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-  }
-</script>
+</div> <!-- ./search-box -->
