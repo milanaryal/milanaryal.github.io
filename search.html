@@ -20,13 +20,23 @@ permalink: /search/
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
-.gsc-control-cse{
+.search-form {
+  margin-bottom: 30px;
+}
+.gsc-control-cse {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 .gsc-webResult .gsc-result {
-  padding: 15px 0 15px;
+  padding: 20px 0;
+}
+.gs-title,
+.gs-title * {
+  font-size: 18px;
 }
 .gs-snippet {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
   margin-top: 10px;
   padding-left: 6px;
 }
@@ -39,23 +49,29 @@ permalink: /search/
 .gsc-url-top {
   padding-top: 8px;
 }
-.gcsc-branding, .gsc-adBlock, .gsc-location {
+.gcsc-branding,
+.gsc-adBlock,
+.gsc-location {
   display: none!important;
 }
 </style>
 
 
-<h3 class="search-heading"><i class="fa fa-search"></i> Search</h3>
+<h3 class="search-heading"><i class="fa fa-search"></i> Search {{ site.name }} articles</h3>
 
 <div class="search-box" id="cse-search">
   <!-- Google CSE Search Box Begins  -->
-  <form class="form-inline" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
-    <div class="input-group">
-      <input type="text" class="form-control" id="q" name="q" placeholder="Search {{ site.name }}" tabindex="1" autocapitalize="off" autofocus autocomplete="off" spellcheck="false">
-      <div class="input-group-btn">
-        <button class="btn btn-default" type="submit" tabindex="2"><i class="glyphicon glyphicon-search"></i></button>
-      </div>
-    </div>
+  <form class="search-form" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" id="q" name="q" placeholder="Search {{ site.name }}" tabindex="1" autocapitalize="off" autofocus autocomplete="off" spellcheck="false">
+          <div class="input-group-btn">
+            <button type="submit" class="btn btn-default" tabindex="2"><i class="glyphicon glyphicon-search"></i></button>
+          </div><!-- /.btn-group -->
+        </div><!-- /.input-group -->
+      </div><!-- /.col-xs-12 -->
+    </div><!-- /.row -->
   </form>
 
   <script>
