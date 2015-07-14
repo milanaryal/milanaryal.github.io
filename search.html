@@ -7,6 +7,14 @@ permalink: /search/
 ---
 
 <style>
+@media (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 65px 0;
+  }
+}
+.intro-header .site-heading {
+    padding: 75px 0 25px;
+}
 .search-heading {
   font-weight: normal;
 }
@@ -32,7 +40,7 @@ permalink: /search/
 }
 .gs-title,
 .gs-title * {
-  font-size: 18px;
+  font-size: 18px!important;
 }
 .gs-snippet {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -45,6 +53,8 @@ permalink: /search/
   padding: 10px;
   text-align: center;
   background-color: #f5f6f5;
+  border-radius: 3px;
+  margin-top: 30px!important;
 }
 .gsc-url-top {
   padding-top: 8px;
@@ -86,5 +96,5 @@ permalink: /search/
       s.parentNode.insertBefore(gcse, s);
     })();
   </script>
-  <gcse:searchresults-only></gcse:searchresults-only>
-</div> <!-- ./search-box -->
+  <gcse:searchresults-only linktarget="_parent"></gcse:searchresults-only>
+</div><!-- ./search-box -->
