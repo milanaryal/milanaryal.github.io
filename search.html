@@ -12,6 +12,7 @@ permalink: /search/
 }
 .search-box {
   margin: 30px 0;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .search-box,
 .search-box * {
@@ -19,22 +20,43 @@ permalink: /search/
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
+.gsc-control-cse{
+  font-size: 16px;
+}
+.gsc-webResult .gsc-result {
+  padding: 15px 0 15px;
+}
+.gs-snippet {
+  margin-top: 10px;
+  padding-left: 6px;
+}
+.gsc-cursor-box {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background-color: #f5f6f5;
+}
+.gsc-url-top {
+  padding-top: 8px;
+}
+.gcsc-branding, .gsc-adBlock, .gsc-location {
+  display: none!important;
+}
 </style>
 
 
 <h3 class="search-heading"><i class="fa fa-search"></i> Search</h3>
 
 <div class="search-box" id="cse-search">
-
   <!-- Google CSE Search Box Begins  -->
-  <center>
-  <form id="searchbox_{{ site.google_cse_id }}" action="/search/">
-    <input value="{{ site.google_cse_id }}" name="cx" type="hidden"/>
-    <input value="FORID:11" name="cof" type="hidden"/>
-    <input id="q" style="width:600px;" name="q" size="75" type="text"/>
-    <input value="Search" name="sa" type="submit"/>
+  <form class="form-inline" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
+    <div class="input-group">
+      <input type="text" class="form-control" id="q" name="q" placeholder="Search {{ site.name }}" tabindex="1" autocapitalize="off" autofocus autocomplete="off" spellcheck="false">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit" tabindex="2"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
   </form>
-  </center>
 
   <script>
     (function() {
@@ -49,5 +71,4 @@ permalink: /search/
     })();
   </script>
   <gcse:searchresults-only></gcse:searchresults-only>
-
 </div> <!-- ./search-box -->
