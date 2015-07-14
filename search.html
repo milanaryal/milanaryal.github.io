@@ -25,44 +25,48 @@ permalink: /search/
   <h3 class="search-heading"><i class="fa fa-search"></i> Search</h3>
 
   <div class="search-box" id="cse-search"></div>
+
+  
+  <div id="default"></div>
+
+
+  <div id="test"></div>
 </section>
 
 <script>
-var myCallback = function() {
-  if (document.readyState == 'complete') {
-    /* Document is ready when CSE element is initialized. */
-    /* Render an element with both search box and search results in div with id 'cse-search'. */
+  var renderSearchElement = function() {
     google.search.cse.element.render(
-        {
-          div: "cse-search",
-          tag: 'search'
-         });
-  } else {
-    /* Document is not ready yet, when CSE element is initialized. */
-    google.setOnLoadCallback(function() {
-       /* Render an element with both search box and search results in div with id 'cse-search'. */
-        google.search.cse.element.render(
-            {
-              div: "cse-search",
-              tag: 'search'
-            });
-    }, true);
+      {
+        div: "default",
+        tag: 'search'
+      });
+    google.search.cse.element.render(
+      {
+        div: "test",
+        attributes: {
+          disableWebSearch: true,
+          enableHistory: true},
+        tag: 'search'
+      });
+  };
+  var myCallback = function() {
+    if (document.readyState == 'complete') {
+      renderSearchElement();
+    } else {
+      google.setOnLoadCallback(renderSearchElement, true);
+    }
+  };
+
+  window.__gcse = {
+    parsetags: 'explicit',
+    callback: myCallback
+  };
+
+  var loadElements = function() {
+    var cx = '000254926668963224856:z4vgwqv7kla';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
   }
-};
-
-/* Insert it before the CSE code snippet so that cse.js can take the script */
-/* parameters, like parsetags, callbacks. */
-window.__gcse = {
-  parsetags: 'explicit',
-  callback: myCallback
-};
-
-(function() {
-  var cx = '000254926668963224856:z4vgwqv7kla'; /* Insert your own Custom Search engine ID here */
-  var gcse = document.createElement('script'); gcse.type = 'text/javascript';
-  gcse.async = true;
-  gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
-      '//cse.google.com/cse.js?cx=' + cx;
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-})();
 </script>
