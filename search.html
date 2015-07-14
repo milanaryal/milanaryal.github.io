@@ -19,45 +19,50 @@ permalink: /search/
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
-.gsc-input-box {
-  height: 34px;
-  font-family: sans-serif;
-}
-input.gsc-input {
-  line-height: 1.7;
-  background: none!important;
-}
-input.gsc-search-button-v2 {
-  padding: 10px 27px;
-  margin-top: 3px;
-}
-.gsst_a .gscb_a {
-  margin-top: 9px;
-}
-.gcsc-branding, .gsc-adBlock, .gsc-location {
-  display: none!important;
-}
 </style>
 
+<section>
+  <h3 class="search-heading"><i class="fa fa-search"></i> Search</h3>
+
+  <div class="search-box" id="cse-search"></div>
+</section>
+
 <script>
-  (function() {
-    var cx = '000254926668963224856:z4vgwqv7kla';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
+var myCallback = function() {
+  if (document.readyState == 'complete') {
+    /* Document is ready when CSE element is initialized. */
+    /* Render an element with both search box and search results in div with id 'cse-search'. */
+    google.search.cse.element.render(
+        {
+          div: "cse-search",
+          tag: 'search'
+         });
+  } else {
+    /* Document is not ready yet, when CSE element is initialized. */
+    google.setOnLoadCallback(function() {
+       /* Render an element with both search box and search results in div with id 'cse-search'. */
+        google.search.cse.element.render(
+            {
+              div: "cse-search",
+              tag: 'search'
+            });
+    }, true);
+  }
+};
+
+/* Insert it before the CSE code snippet so that cse.js can take the script */
+/* parameters, like parsetags, callbacks. */
+window.__gcse = {
+  parsetags: 'explicit',
+  callback: myCallback
+};
+
+(function() {
+  var cx = '000254926668963224856:z4vgwqv7kla'; /* Insert your own Custom Search engine ID here */
+  var gcse = document.createElement('script'); gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
+      '//cse.google.com/cse.js?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})();
 </script>
-
-<h3 class="search-heading"><i class="fa fa-search"></i> Search</h3>
-
-<div class="search-box">
-  <gcse:searchbox></gcse:searchbox>
-</div>
-
-<div class="search-box">
-  <gcse:searchresults linktarget="_parent"></gcse:searchresults>
-</div>
