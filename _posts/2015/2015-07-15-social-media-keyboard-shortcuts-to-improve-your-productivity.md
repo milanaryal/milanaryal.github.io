@@ -7,9 +7,9 @@ featured_image: "/uploads/2015/20150715--keyboard_w1200.jpg"
 
 <p class="lead">Save yourself loads of time every day by speeding up your social network browsing with some lightning fast keyboard shortcuts!</p>
 
-Here's a list of social media keyboard shortcuts for Twitter, Medium, Facebook, YouTube, Tumblr and Google+. A shortcut key combination that links up with a specific command that would otherwise be accessible through a menu via a click of a mouse button.
+Here's a list of social media keyboard shortcuts for Twitter, Medium, Facebook, YouTube, Tumblr and Google+. A shortcut key combination that links up with a specific command that would otherwise be accessible through a menu via a click of a mouse button.
 
-These shortcuts allow you to bypass the need for mouse clicks and movements and get's you to the function you need in the fastest possible way.
+These shortcuts allow you to bypass the need for mouse clicks and movements and get's you to the function you need in the fastest possible way.
 
 #### Twitter keyboard shortcuts
 

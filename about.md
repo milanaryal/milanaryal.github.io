@@ -104,4 +104,4 @@ If you have any questions, comments, or would just like to say hello, please don
 
 ### Licensing
 
-Except as otherwise noted, the content of this site is licensed under the <a rel="license" href="//creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>, and code samples are licensed under the <a rel="license" href="//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE">MIT License</a>.
+Except as otherwise noted, the content of this site is licensed under the <a rel="license cc:license" href="//creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 4.0 International license</a>, and code samples are licensed under the <a rel="license" href="//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE">MIT license</a>.
