@@ -1,7 +1,7 @@
 ---
 title: "Blogging with Jekyll and GitHub Pages"
 date: 2014-12-30T19:47:46+05:45
-last_modified_at: "2015-06-27T11:02:50+05:45"
+last_modified_at: "2015-07-15T15:59:30+05:45"
 excerpt: "Transform your plain text into static websites and blogs."
 redirect_from: "/2014/12/blogging-with-jekyll-and-github-pages/"
 ---
@@ -24,7 +24,7 @@ According to Jekyll wiki,
 
 GitHub Pages uses the [following dependencies](//pages.github.com/versions/):
 
-- jekyll, jekyll-coffeescript, jekyll-sass-converter, kramdown, maruku, rdiscount, redcarpet, RedCloth, liquid, pygments.rb, jemoji, jekyll-mentions, jekyll-redirect-from, jekyll-sitemap, github-pages, ruby
+- {% for dependency in site.github.versions %}{{ dependency[0] }}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}
 
 ### Who are using Jekyll?
 
@@ -34,14 +34,19 @@ Here are some websites/blog that were created with Jekyll:
 * [HealthCare.gov](https://www.healthcare.gov/) - landing page and content subpages
 * [Bootstrap](http://getbootstrap.com/)
 * [Font Awesome](http://fontawesome.io/)
+* [Mark Dotto](http://markdotto.com/)
+* [Zach Holman](http://zachholman.com/)
 * [Todd Motto](http://toddmotto.com/)
-* [CSS Wizardry](http://csswizardry.com/)
 
 ... and many other awesome projects and blogs are using Jekyll and hosted on GitHub Pages.
 
 ### Getting Started
 
-You don't need to be a good coder to blog with Jekyll. Here are the simple steps to blog with Jekyll on GitHub Pages:
+There are various ways to get started with Jekyll.
+
+Install Jekyll locally via the command line, create a new boilerplate website using `jekyll new`, build it locally with `jekyll build`, and then serve it just make sure you've Ruby installed on your machine (further information visit [Jekyll docs](http://jekyllrb.com/)).
+
+Or, here're the simple steps to blog with Jekyll on GitHub Pages without touching the single command line:
 
 #### Step 1
 
@@ -64,48 +69,51 @@ Download and setup a good themes from the following popular sites:
 * [Jekyll Now](http://www.jekyllnow.com/)
 * There're other many theme collection site for Jekyll.
 
+
+### Jekyll directory structure
+
 A basic Jekyll site usually looks something like this:
 
 {% highlight bash %}
 .
-├── CNAME # Contains your custom domain name (optional)
+├── CNAME # Contains your custom domain name (optional).
 ├── _config.yml
-├── _drafts # To preview your posts
+├── _drafts # To preview your posts.
 │   ├── begin-with-the-crazy-ideas.textile
 │   └── on-simplicity-in-technology.markdown
-├── _includes # Snippets of code that can be used throughout your templates
+├── _includes # Snippets of code that can be used throughout your templates.
 │   ├── footer.html
 │   └── header.html
 ├── _layouts
-│   ├── default.html default.html # The main template. Includes <head>, <navigation>, <footer>, etc
-│   └── page.html # Static page layout
-│   └── post.html # Blog post layout
+│   ├── default.html # The main template.
+│   └── page.html # Static page layout.
+│   └── post.html # Blog post layout.
 ├── _posts # All posts go in this directory!
-│   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
+│   ├── 2007-10-29-why-every-programmer-should-play-nethack.markdown
 │   └── 2009-04-26-barcamp-boston-4-roundup.textile
 ├── _data
 │   └── members.yml
 ├── _site # After Jekyll builds the website, it puts the static HTML output here. This is what's served!
 │   ├── CNAME
-│   └── LICENSE
 │   ├── about.html
 │   └── feed.xml
 │   ├── index.html
 │   └── sitemap.xml
 │   └── style.css
+├─ .jekyll-metadata
 ├─ about.md # A static "About" page that I created.
-├─ feed.xml # Powers the RSS feed
-├─ images # All of my images are stored here.
+├─ feed.xml # Powers the Atom/RSS feed.
+├─ images # All of your images are stored here.
 │  ├── first-post.jpg
-├─ index.html # Home page layout
-├─ scss # The Sass style sheets for my website
+├─ index.html # Home page layout.
+├─ scss # The Sass style sheets for your website.
 │  ├─ _highlights.scss
 │  ├─ _reset.scss
 │  ├─ _variables.scss
 │  └─ style.scss
 └── index.html
-└── 404.html # Custom 404 page
-└── sitemap.xml # Site map for the website
+└── 404.html # Custom 404 page.
+└── sitemap.xml # Site map for the website.
 {% endhighlight %}
 
 #### Step 4
@@ -122,7 +130,7 @@ Follow the following process to setup custom domain name with your GitHub Pages.
 
 With your DNS provider, create A records that resolve to the following IP addresses:
 
-| Domain       | Records | IP addresses   |
+| Name         | Type    | Record         |
 |--------------|---------|----------------|
 | example.com  | A       | 192.30.252.153 |
 | example.com  | A       | 192.30.252.154 |
@@ -131,13 +139,18 @@ With your DNS provider, create A records that resolve to the following IP addres
 
 Again add following CNAME record to your DNS provider:
 
-| Sub Domain   | Records | Addresses          |
+| Name         | Type    | Record             |
 |--------------|---------|--------------------|
 | www          | CNAME   | username.github.io |
 
+
+<div class="alert alert-warning" role="alert">
+  <p>Do not use wildcard DNS records (e.g. <code>*.example.com</code>) with GitHub Pages! A wildcard DNS record will allow anyone to host a GitHub Pages site at one of your subdomains.</p>
+</div>
+
 #### Create a CNAME file name
 
-Now create a CNAME (with out any extention) file name in your GitHub Pages with your desire redirect:
+Now push a CNAME (with out any extention) file name in your GitHub Pages with your desire redirect:
 
 * If your CNAME file contains `example.com`, then `www.example.com` will redirect to `example.com`.
 * If your CNAME file contains `www.example.com`, then `example.com` will redirect to `www.example.com`.
@@ -166,10 +179,10 @@ date:
 author:
 categories:
 tags:
-featured_image:
-excerpt:
 id:
+excerpt:
 permalink:
+featured_image:
 ---
 {% endhighlight %}
 
@@ -182,7 +195,7 @@ Now if you set your permalink as `/:year/:month/:title/` in `_config.yml` then a
 GitHub Pages currently supports several Jekyll plugins:
 
 * [Jemoji](//help.github.com/articles/emoji-on-github-pages) - provides support for emoji within Jekyll posts and pages ([Emoji cheat sheet](http://www.emoji-cheat-sheet.com/))
-* [Jekyll-mentions](//help.github.com/articles/mentions-on-github-pages) - provides support for @mentions within Jekyll posts and pages
+* [Jekyll-mentions](//help.github.com/articles/mentions-on-github-pages) - provides support for &#64;mentions within Jekyll posts and pages
 * [Jekyll-redirect-from](//help.github.com/articles/redirects-on-github-pages) - redirects visitors to an updated URL when Jekyll post or page filenames change.
 * [Jekyll-sitemap](//help.github.com/articles/sitemaps-for-github-pages) - adds a standards compliant sitemap for your GitHub Pages.
 * [Jekyll-feed](//github.com/jekyll/jekyll-feed) - generate an Atom (RSS-like) feed of your Jekyll posts.
