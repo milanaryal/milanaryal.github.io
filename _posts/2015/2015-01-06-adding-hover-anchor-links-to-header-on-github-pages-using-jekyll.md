@@ -74,7 +74,9 @@ $ bower install anchor-js --save-dev
 
 or just download it from GitHub:
 
-<p><a class="btn btn-primary" href="https://github.com/bryanbraun/anchorjs/releases" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">Direct link</a></p>
+<p>
+  <a class="btn btn-primary" href="https://github.com/bryanbraun/anchorjs/releases" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">Direct link</a>
+</p>
 
 ### Including AnchorJS
 
@@ -167,7 +169,9 @@ You can style the AnchorJS icon according to your need.
 }
 {% endhighlight %}
 
-<div class="alert alert-info" role="alert">You can find updated usage instructions and examples here: <a href="http://bryanbraun.github.io/anchorjs/" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">bryanbraun.github.io/anchorjs</a>.</div>
+<div class="alert alert-info" role="alert">
+  <p>You can find updated usage instructions and examples here: <a class="alert-link" href="http://bryanbraun.github.io/anchorjs/" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">bryanbraun.github.io/anchorjs</a>.</p>
+</div>
 
 ---
 

@@ -84,7 +84,9 @@ example.com           IN  A      54.84.55.102
 redirect.example.com  IN  CNAME  domain2.com.redirect.center
 {% endhighlight %}
 
-<div class="alert alert-info" role="alert">You can find updated usage instructions and examples here: <a href="http://redirect.center/" onClick="ga('send', 'event', 'Click', 'Direct link', 'redirect.center');">redirect.center</a>.</div>
+<div class="alert alert-info" role="alert">
+ <p>You can find updated usage instructions and examples here: <a class="alert-link" href="http://redirect.center/" onClick="ga('send', 'event', 'Click', 'Direct link', 'redirect.center');">redirect.center</a>.</p>
+</div>
 
 ---
 
@@ -134,7 +136,9 @@ example.com.           IN  A    45.55.72.95
 _redirect.example.com  IN  TXT  Redirects to http://domain2.com
 {% endhighlight %}
 
-<div class="alert alert-info" role="alert">You can find updated usage instructions and examples here: <a href="http://redirect.name/" onClick="ga('send', 'event', 'Click', 'Direct link', 'redirect.name');">redirect.name</a>.</div>
+<div class="alert alert-info" role="alert">
+ <p>You can find updated usage instructions and examples here: <a class="alert-link" href="http://redirect.name/" onClick="ga('send', 'event', 'Click', 'Direct link', 'redirect.name');">redirect.name</a>.</p>
+</div>
 
 ---
 

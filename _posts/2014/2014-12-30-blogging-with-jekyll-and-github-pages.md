@@ -145,7 +145,7 @@ Again add following CNAME record to your DNS provider:
 
 
 <div class="alert alert-warning" role="alert">
-  <p>Do not use wildcard DNS records (e.g. <code>*.example.com</code>) with GitHub Pages! A wildcard DNS record will allow anyone to host a GitHub Pages site at one of your subdomains.</p>
+  <p><i class="fa fa-warning"></i> Do not use wildcard DNS records (e.g. <code>*.example.com</code>) with GitHub Pages! A wildcard DNS record will allow anyone to host a GitHub Pages site at one of your subdomains.</p>
 </div>
 
 #### Create a CNAME file name
