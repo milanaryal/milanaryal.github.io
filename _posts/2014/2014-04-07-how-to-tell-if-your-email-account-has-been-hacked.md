@@ -19,7 +19,7 @@ If your e-mail service provider claims that the password that you have entered i
 
 #### 'Sent Items' folder getting updated on its own
 
-Often, some e-mail worm acts in a way that makes copies of itself and appear in the sent items folder of your e-mail. It is most likely to be an older version of a worm which can be removed easily, as the new–age malware normally doesn't leave behind such obvious evidences. The best way to challenge this problem is to update your antivirus software and run a full scan on your PC on a regular basis.
+Often, some e-mail worm acts in a way that makes copies of itself and appear in the sent items folder of your e-mail. It is most likely to be an older version of a worm which can be removed easily, as the new-age malware normally doesn't leave behind such obvious evidences. The best way to challenge this problem is to update your antivirus software and run a full scan on your PC on a regular basis.
 
 #### When e-mail is sent to a recipient and cannot be traced back in the sent folder on 'Webmail'
 
