@@ -10,7 +10,7 @@ Before celebrating this year's Valentine's Day here are some famous quotations a
 
 * "If you live to be a hundred, I want to live to be a hundred minus one day so I never have to live without you." --- *A A Milne*
 
-* "Love is our true destiny. We do not find the meaning of life by ourselves alone � we find it with another." --- *Thomas Merton*
+* "Love is our true destiny. We do not find the meaning of life by ourselves alone --- we find it with another." --- *Thomas Merton*
 
 * "If you have only one smile in you, give it to the people you love." --- *Maya Angelou*
 
