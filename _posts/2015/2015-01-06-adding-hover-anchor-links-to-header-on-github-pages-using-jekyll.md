@@ -200,8 +200,8 @@ Now add the following script before the `</body>` tag or where you might think i
 (function () {
   'use strict';
 
-  // AnchorJS selector - Define/change like the following eg where you want to put anchor links.
-  var selector = '.post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6';
+  // AnchorJS selector - Define/change like the following eg where you want to use anchor links.
+  var selector = '.post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6';
 
   // Select any elements that match the provided selector.
   var elements = document.querySelectorAll(selector);
