@@ -25,7 +25,8 @@
   }
 
   h2, h3, h4, h5, h6 {
-    margin: 40px 0 30px;
+    margin-top: (@m-margin + 10); // ~40px
+    margin-bottom: (@m-margin / 2); // ~15px
     // font-style: normal;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -56,10 +57,15 @@
     font-size: 28px;
   }
 
+  ul, ol, dl {
+    padding-left: @m-margin;
+  }
+
   li {
     // margin-left: 30px;
-    margin-bottom: 12px;
+    // margin-bottom: 12px;
     // padding-top: 2px;
+    margin-bottom: ((@m-margin / 2) - 5); // ~10px
   }
 
   p,
@@ -68,8 +74,15 @@
   .table-responsive,
   pre,
   figure {
-    margin: @m-margin;
+    // margin-top: 0;
+    margin-bottom: @m-margin;
   }
+
+  // h2 + figure,
+  // h3 + figure,
+  // h4 + figure {
+  //  margin-top: 15px;
+  // }
 
   figcaption {
     display: block;
@@ -96,7 +109,7 @@
   }
 
   .lead {
-    margin: 30px 0;
+    margin-bottom: (@m-margin + 10); // ~40px
     font-size: 24px;
     // font-weight: 300;
     line-height: 1.4;
@@ -109,6 +122,7 @@
   }
 
   .alert {
+    border: 0;
     font-size: 18px;
     h4 {
       margin: 0 0 10px;
@@ -150,19 +164,29 @@
 
 // Footnotes
 .footnotes {
-  margin: @m-margin;
+  margin: @m-margin 0;
   font-size: 16px;
 
-  ol,
-  p {
-    margin: 15px 0;
-  }
-
-  &:before {
+  &:before { // footer heading
+    display: block;
+    margin-bottom: (@m-margin - 20); // ~10px
     content: 'Footnotes';
     font-weight: 700;
     .m-sans-serif;
   }
+
+  &> *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  ol {
+    padding-left: (@m-margin - 6); // ~24px
+  }
+
+  li, p {
+    margin-bottom: (@m-margin - 20); // ~10px
+  }
+
 }
 
 // Footnotes anchor link

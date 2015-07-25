@@ -38,12 +38,12 @@ pre > code {
 }
 
 .highlight {
-  margin: @m-margin;
+  margin-bottom: @m-margin;
 }
 
 .highlight pre,
 pre {
-  padding: 20px;
+  padding: (@m-margin - 10); // ~20px
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;

@@ -36,7 +36,7 @@ p {
   // Bootstrap default (line-height: 1.42857143;)
   // line-height: 1.45;
   // letter-spacing: .005rem;
-  margin: @m-margin;
+  margin-bottom: @m-margin;
   a {
     text-decoration: underline;
   }
@@ -59,13 +59,8 @@ a img {
 }
 
 blockquote {
-  & {
-    color: @m-gray;
-    font-style: italic;
-  }
-  p:first-child {
-    margin-top: 0;
-  }
+  color: @m-gray;
+  font-style: italic;
 }
 
 hr.small {
@@ -317,6 +312,7 @@ hr.small {
     font-size: 14px;
     color: @gray-light;
     text-align: center;
+    margin-top: @m-margin;
     margin-bottom: 0;
     a {
       text-decoration: underline;
