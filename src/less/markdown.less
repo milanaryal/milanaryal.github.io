@@ -62,15 +62,45 @@
     font-size: 28px;
   }
 
-  ul, ol, dl {
-    padding-left: @m-margin;
+  //  List
+  // ======================
+  &> ul,
+  &> ol {
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+    counter-reset: list;
+    // margin-bottom: @m-margin;
   }
 
-  li {
+  &> ul > li,
+  &> ol > li {
     // margin-left: 30px;
-    // margin-bottom: 12px;
-    // padding-top: 2px;
-    margin-bottom: ((@m-margin / 2) - 5); // ~10px
+    margin-bottom: 12px;
+    padding-top: 2px;
+  }
+
+  &> ul > li:before,
+  &> ol > li:before {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 58px;
+    margin-left: -58px;
+    text-align: right;
+  }
+
+  &> ul > li:before {
+    padding-top: 6px;
+    padding-right: 15px;
+    font-size: 14.3px;
+    content: "\2022"; // "•"
+  }
+
+  &> ol > li:before {
+    padding-right: 12px;
+    counter-increment: list;
+    content: counter(list) "\002E"; // "."
   }
 
   p,
@@ -181,12 +211,39 @@
   }
 
   ol {
-    padding-left: (@m-margin - 6); // ~24px
-    margin-bottom: 0;
+    margin: 0;
+
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+    counter-reset: list;
+
+   &> li {
+      // margin-left: 30px;
+      // margin-bottom: 12px;
+      // padding-top: 2px;
+      margin-bottom: 5px;
+    }
+
     &> li:last-child {
       margin-bottom: 0 !important;
     }
-  }
+
+    &> li:before {
+      position: absolute;
+      display: inline-block;
+      box-sizing: border-box;
+      width: 58px;
+      margin-left: -58px;
+      text-align: right;
+    }
+
+    &> li:before {
+      padding-right: 12px;
+      counter-increment: list;
+      content: counter(list) "\002E"; // "."
+    }
+  } // ./ol
 
   p {
     margin: 0;
@@ -196,7 +253,7 @@
     margin-bottom: (@m-margin - 20); // ~10px
   }
 
-}
+} // ./footnotes
 
 // Footnotes anchor link
 .footnote,

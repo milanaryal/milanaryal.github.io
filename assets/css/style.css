@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-25T18:13:51+05:45
+ * Date: 2015-07-25T22:23:39+05:45
  */
 
 /*!
@@ -7507,7 +7507,7 @@ body {
   padding: 0 .42em;
 }
 .middot-divider:after {
-  content: '\00b7';
+  content: "\00b7";
 }
 .social-container {
   margin: 30px 0;
@@ -7608,13 +7608,39 @@ body {
 .markdown-body h6 {
   font-size: 28px;
 }
-.markdown-body ul,
-.markdown-body ol,
-.markdown-body dl {
-  padding-left: 30px;
+.markdown-body > ul,
+.markdown-body > ol {
+  padding: 0;
+  list-style: none;
+  list-style-image: none;
+  counter-reset: list;
 }
-.markdown-body li {
-  margin-bottom: 10px;
+.markdown-body > ul > li,
+.markdown-body > ol > li {
+  padding-top: 2px;
+  margin-bottom: 12px;
+}
+.markdown-body > ul > li:before,
+.markdown-body > ol > li:before {
+  position: absolute;
+  display: inline-block;
+  width: 58px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: -58px;
+  text-align: right;
+}
+.markdown-body > ul > li:before {
+  padding-top: 6px;
+  padding-right: 15px;
+  font-size: 14.3px;
+  content: "\2022";
+}
+.markdown-body > ol > li:before {
+  padding-right: 12px;
+  content: counter(list) "\002E";
+  counter-increment: list;
 }
 .markdown-body p,
 .markdown-body blockquote,
@@ -7702,11 +7728,32 @@ body {
   content: 'Footnotes';
 }
 .footnotes ol {
-  padding-left: 24px;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+  counter-reset: list;
+}
+.footnotes ol > li {
+  margin-bottom: 5px;
 }
 .footnotes ol > li:last-child {
   margin-bottom: 0 !important;
+}
+.footnotes ol > li:before {
+  position: absolute;
+  display: inline-block;
+  width: 58px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: -58px;
+  text-align: right;
+}
+.footnotes ol > li:before {
+  padding-right: 12px;
+  content: counter(list) "\002E";
+  counter-increment: list;
 }
 .footnotes p {
   margin: 0;
