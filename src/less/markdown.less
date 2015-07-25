@@ -75,7 +75,7 @@
 
   &> ul > li,
   &> ol > li {
-    // margin-left: 30px;
+    margin-left: 30px;
     margin-bottom: 12px;
     padding-top: 2px;
   }
@@ -210,6 +210,10 @@
     .m-sans-serif;
   }
 
+  p {
+    margin: 0;
+  }
+
   ol {
     margin: 0;
 
@@ -218,11 +222,14 @@
     list-style-image: none;
     counter-reset: list;
 
-   &> li {
+    &> li {
       // margin-left: 30px;
       // margin-bottom: 12px;
       // padding-top: 2px;
-      margin-bottom: 5px;
+
+      margin-left: 30px;
+      margin-bottom: 10px;
+      padding-top: 1px;
     }
 
     &> li:last-child {
@@ -244,14 +251,6 @@
       content: counter(list) "\002E"; // "."
     }
   } // ./ol
-
-  p {
-    margin: 0;
-  }
-
-  li {
-    margin-bottom: (@m-margin - 20); // ~10px
-  }
 
 } // ./footnotes
 
