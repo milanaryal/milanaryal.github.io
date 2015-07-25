@@ -32,6 +32,11 @@
     letter-spacing: -0.02em;
   }
 
+  h3 + h4 {
+    // margin-top: -3px;
+    margin-top: ((@m-margin / 2) + 5); // ~20px
+  }
+
   h2, h3 {
     font-weight: 700;
   }
@@ -175,15 +180,19 @@
     .m-sans-serif;
   }
 
-  &> *:last-child {
-    margin-bottom: 0 !important;
-  }
-
   ol {
     padding-left: (@m-margin - 6); // ~24px
+    margin-bottom: 0;
+    &> li:last-child {
+      margin-bottom: 0 !important;
+    }
   }
 
-  li, p {
+  p {
+    margin: 0;
+  }
+
+  li {
     margin-bottom: (@m-margin - 20); // ~10px
   }
 
