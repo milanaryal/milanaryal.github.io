@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-25T22:49:27+05:45
+ * Date: 2015-07-26T18:34:30+05:45
  */
 
 /*!
@@ -7168,9 +7168,9 @@ p a {
 }
 a {
   color: #404040;
-  -webkit-transition: all .2s ease-in-out;
-       -o-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease;
+       -o-transition: all .2s ease;
+          transition: all .2s ease;
 }
 a:hover,
 a:focus {
@@ -7180,10 +7180,6 @@ a img:hover,
 a img:focus {
   cursor: -webkit-zoom-in;
   cursor:         zoom-in;
-}
-blockquote {
-  font-style: italic;
-  color: #808080;
 }
 hr.small {
   max-width: 100px;
@@ -7570,7 +7566,12 @@ body {
   margin-bottom: 0 !important;
 }
 .markdown-body a {
+  color: inherit;
   text-decoration: underline;
+}
+.markdown-body a:hover,
+.markdown-body a:focus {
+  color: #0084b4;
 }
 .markdown-body h2,
 .markdown-body h3,
@@ -7643,6 +7644,23 @@ body {
   content: counter(list) "\002E";
   counter-increment: list;
 }
+.markdown-body .list-unstyled > li,
+.markdown-body .list-inline > li {
+  padding: 0;
+  margin: 0;
+}
+.markdown-body .list-unstyled > li:before,
+.markdown-body .list-inline > li:before {
+  content: normal;
+}
+.markdown-body .list-inline {
+  margin-left: -5px;
+}
+.markdown-body .list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
 .markdown-body p,
 .markdown-body blockquote,
 .markdown-body ul,
@@ -7664,16 +7682,18 @@ body {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.markdown-body blockquote a,
-.markdown-body figcaption a {
-  color: inherit;
-  text-decoration: underline;
+.markdown-body blockquote {
+  padding: 0 0 3px 20px;
+  font-size: 1em;
+  font-style: italic;
+  border-left: 3px solid #404040;
 }
-.markdown-body blockquote a:hover,
-.markdown-body figcaption a:hover,
-.markdown-body blockquote a:focus,
-.markdown-body figcaption a:focus {
-  color: #0084b4;
+.markdown-body blockquote footer {
+  font-size: 85%;
+  font-style: normal;
+}
+.markdown-body blockquote footer cite {
+  font-style: italic;
 }
 .markdown-body .lead {
   margin-bottom: 40px;
@@ -7687,7 +7707,6 @@ body {
   }
 }
 .markdown-body .alert {
-  font-size: 18px;
   border: 0;
 }
 .markdown-body .alert h4 {
@@ -7736,10 +7755,10 @@ body {
   margin: 0;
   list-style: none;
   list-style-image: none;
-  counter-reset: list;
+  counter-reset: note;
 }
 .footnotes ol > li {
-  padding-top: 1px;
+  padding-top: 2px;
   margin-bottom: 10px;
   margin-left: 30px;
 }
@@ -7758,8 +7777,8 @@ body {
 }
 .footnotes ol > li:before {
   padding-right: 12px;
-  content: counter(list) "\002E";
-  counter-increment: list;
+  content: counter(note) "\002E";
+  counter-increment: note;
 }
 .footnote,
 .reversefootnote {

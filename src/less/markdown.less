@@ -21,7 +21,13 @@
   }
 
   a {
+    color: inherit; // parent color for link
     text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: @m-brand-primary;
+    }
   }
 
   h2, h3, h4, h5, h6 {
@@ -63,7 +69,9 @@
   }
 
   //  List
-  // ======================
+  // Reset list left padding
+  // Assume counter-reset = list
+  // ------------------------------
   &> ul,
   &> ol {
     padding: 0;
@@ -103,6 +111,30 @@
     content: counter(list) "\002E"; // "."
   }
 
+  //  Normalizing unstyled and inline list class
+  // --------------------------------------------
+  .list-unstyled,
+  .list-inline {
+    &> li {
+      margin: 0;
+      padding: 0;
+
+      &:before {
+        content: normal;
+      }
+    }
+  }
+
+  .list-inline {
+    margin-left: -5px;
+
+    &> li {
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+
   p,
   blockquote,
   ul, ol, dl,
@@ -131,14 +163,26 @@
     border-bottom-left-radius: 5px;
   }
 
-  blockquote,
-  figcaption {
-    a {
-      text-decoration: underline;
-      color: inherit; // parent color for link
-      &:hover,
-      &:focus {
-        color: @m-brand-primary;
+  // Blockquote
+  // ------------------------------------------------
+  // <blockquote>
+  // <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  // <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  // </blockquote>
+  // -------------------------------------------------
+  blockquote {
+    padding: 0 0 3px 20px;
+    // margin: 0 0 20px;
+    font-size: 1em; // ~20px
+    font-style: italic;
+    border-left: 3px solid @m-gray-dark; // #404040
+
+    footer {
+      font-style: normal;
+      font-size: 85%;
+
+      cite {
+        font-style: italic;
       }
     }
   }
@@ -158,7 +202,7 @@
 
   .alert {
     border: 0;
-    font-size: 18px;
+    // font-size: 18px;
     h4 {
       margin: 0 0 10px;
       font-size: 24px;
@@ -202,34 +246,30 @@
   margin: @m-margin 0;
   font-size: 16px;
 
-  &:before { // footer heading
+  &:before {
     display: block;
-    margin-bottom: (@m-margin - 20); // ~10px
-    content: 'Footnotes';
+    margin-bottom: ((@m-margin / 2) - 5); // ~10px
+    content: 'Footnotes'; // footnotes heading
     font-weight: 700;
     .m-sans-serif;
   }
 
   p {
-    margin: 0;
+    margin: 0; // remove margin-bottom
   }
 
   ol {
-    margin: 0;
+    margin: 0; // remove margin-bottom
 
     padding: 0;
     list-style: none;
     list-style-image: none;
-    counter-reset: list;
+    counter-reset: note;
 
     &> li {
-      // margin-left: 30px;
-      // margin-bottom: 12px;
-      // padding-top: 2px;
-
       margin-left: 30px;
-      margin-bottom: 10px;
-      padding-top: 1px;
+      margin-bottom: ((@m-margin / 2) - 5); // ~10px
+      padding-top: 2px;
     }
 
     &> li:last-child {
@@ -247,15 +287,15 @@
 
     &> li:before {
       padding-right: 12px;
-      counter-increment: list;
-      content: counter(list) "\002E"; // "."
+      counter-increment: note;
+      content: counter(note) "\002E"; // "."
     }
-  } // ./ol
+  } // ol
 
-} // ./footnotes
+} // .footnotes
 
 // Footnotes anchor link
 .footnote,
 .reversefootnote {
-  text-decoration: none !important; // do not underline
+  text-decoration: none !important; // do not underline link
 }
