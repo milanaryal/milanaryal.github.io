@@ -1,6 +1,7 @@
 ---
 title: "Custom styling lists with CSS"
 date: 2015-07-27T16:20:55+05:45
+last_modified_at: 2015-07-27T17:27:22+05:45
 excerpt: "Customizing unordered and ordered lists according to our needs with the help of CSS."
 ---
 
@@ -20,7 +21,7 @@ It's really easy to have lists into a document, you just have need to add `ul` o
 </ol>
 {% endhighlight %}
 
-## Default CSS settings
+## Default lists CSS settings
 
 Most browsers will display the `<ul>` and `<ol>` element with the following default values:
 
@@ -147,7 +148,7 @@ If you love SCSS like me, then here's what we have done.
 //
 // Global list reset
 //
-ol, ul {
+ul, ol {
   padding: 0;
   list-style: none;
   list-style-image: none;
@@ -249,21 +250,27 @@ You might want to look onto the following examples on CodePen styled with SCSS a
 
 <figure>
   <p data-height="268" data-theme-id="0" data-slug-hash="pJxqzM" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/pJxqzM/'>Custom styling lists with CSS</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-  <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
   <figcaption>Custom styling lists with CSS</figcaption>
 </figure>
 
 <figure>
+  <p data-height="268" data-theme-id="0" data-slug-hash="aORxzB" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/aORxzB/'>Using CSS counters</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+  <figcaption>Using CSS counters</figure>
+</figure>
+
+<figure>
   <p data-height="268" data-theme-id="0" data-slug-hash="BNqGmr" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/BNqGmr/'>Custom ordered lists number</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-  <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
   <figcaption>Tutor: Treehouse, <a href="http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element" rel="nofollow">Customize your ordered lists with CSS</a></figcaption>
 </figure>
 
 <figure>
   <p data-height="268" data-theme-id="0" data-slug-hash="GJYwdO" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/GJYwdO/'>Custom styling ordered lists</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-  <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
   <figcaption>Tutor: Christian Heilmann, <a rel="nofollow" href="http://christianheilmann.com/2014/11/19/simple-things-styling-ordered-lists/">Simple things: styling ordered lists</a></figcaption>
 </figure>
+
+<!-- CodePen JS -->
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
