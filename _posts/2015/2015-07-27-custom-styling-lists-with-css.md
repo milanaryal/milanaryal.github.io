@@ -1,7 +1,7 @@
 ---
 title: "Custom styling lists with CSS"
 date: 2015-07-27T16:20:55+05:45
-last_modified_at: 2015-07-27T17:27:22+05:45
+last_modified_at: 2015-07-27T18:35:15+05:45
 excerpt: "Customizing unordered and ordered lists according to our needs with the help of CSS."
 ---
 
@@ -47,11 +47,11 @@ ol {
 }
 {% endhighlight %}
 
-There's pretty default list CSS options to style them. But, what if you want absolute unordered list bullet icon or don't what to have full stop on ordered list number or want to remove the left spacing (proper indenting) of list.
+There's pretty default list CSS options to style them. But, what if you want absolute unordered list bullet icon or don't what to have full stop on ordered list number or want to remove the left spacing (or proper indenting) of list.
 
 ---
 
-The secret is what we are opening here.
+The secret to custom styling lists is here we are opening.
 
 For better structure, recognition or to make more style-able it's good habit to add a hook (i.e. classes or ID's) to the elements.
 
@@ -71,7 +71,7 @@ For better structure, recognition or to make more style-able it's good habit to 
 
 ### Custom styling unordered and ordered lists with CSS
 
-First reset the default list CSS settings.
+First reset the default lists CSS settings.
 
 {% highlight css %}
 /**
@@ -111,7 +111,7 @@ Then, we're styling the lists and resetting the ordered list counter.
 
 #### Customizing unordered lists
 
-Here we're custom styling unordered list.
+Here we're styling unordered lists.
 
 {% highlight css %}
 /**
@@ -127,7 +127,7 @@ ul.post-list > li:before {
 
 #### Customizing ordered lists
 
-Then, here we're custom styling ordered list.
+Then, after we're styling ordered lists.
 
 {% highlight css %}
 /**
@@ -140,9 +140,9 @@ ol.post-list > li:before {
 }
 {% endhighlight %}
 
-#### Custom styling unordered and ordered lists with SCSS
+### Custom styling unordered and ordered lists with SCSS
 
-If you love SCSS like me, then here's what we have done.
+If you love SCSS like me, then here's what we do.
 
 {% highlight scss %}
 //
@@ -205,7 +205,7 @@ ol.post-list {
 
 #### Normalizing unstyled and inline list CSS
 
-If you want to normalize the default unstyled and inline Bootstrap CSS, then you just have to add the following CSS.
+If you want to normalize the default unstyled and inline list Bootstrap CSS for the above values, then you just have to add following CSS after above values.
 
 {% highlight css %}
 /**
@@ -222,7 +222,7 @@ If you want to normalize the default unstyled and inline Bootstrap CSS, then you
 }
 {% endhighlight %}
 
-Then, after that the following default Bootstrap CSS.
+Then, after put the following default Bootstrap CSS.
 
 {% highlight css %}
 /**
@@ -244,9 +244,9 @@ Then, after that the following default Bootstrap CSS.
 }
 {% endhighlight %}
 
-### Some custom styled list examples on CodePen
+### Some custom styled lists examples on CodePen
 
-You might want to look onto the following examples on CodePen styled with SCSS a CSS preprocessor and build with Slim a HTML preprocessor.
+You might want to look onto the following examples on CodePen styled with SCSS (a CSS preprocessor) and build with Slim (a HTML preprocessor).
 
 <figure>
   <p data-height="268" data-theme-id="0" data-slug-hash="pJxqzM" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/pJxqzM/'>Custom styling lists with CSS</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
