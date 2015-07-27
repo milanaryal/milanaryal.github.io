@@ -257,7 +257,7 @@ You might want to look onto the following examples on CodePen styled with SCSS a
 <figure>
   <p data-height="268" data-theme-id="0" data-slug-hash="aORxzB" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/aORxzB/'>Using CSS counters</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
-  <figcaption>Using CSS counters</figure>
+  <figcaption>Using CSS counters</figcaption>
 </figure>
 
 <figure>
@@ -269,7 +269,7 @@ You might want to look onto the following examples on CodePen styled with SCSS a
 <figure>
   <p data-height="268" data-theme-id="0" data-slug-hash="GJYwdO" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/GJYwdO/'>Custom styling ordered lists</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
-  <figcaption>Tutor: Christian Heilmann, <a rel="nofollow" href="http://christianheilmann.com/2014/11/19/simple-things-styling-ordered-lists/">Simple things: styling ordered lists</a></figcaption>
+  <figcaption>Tutor: Christian Heilmann, <a href="http://christianheilmann.com/2014/11/19/simple-things-styling-ordered-lists/" rel="nofollow">Simple things: styling ordered lists</a></figcaption>
 </figure>
 
 <!-- CodePen JS -->
