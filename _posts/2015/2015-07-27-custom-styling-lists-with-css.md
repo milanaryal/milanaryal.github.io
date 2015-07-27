@@ -1,7 +1,7 @@
 ---
 title: "Custom styling lists with CSS"
 date: 2015-07-27T16:20:55+05:45
-last_modified_at: 2015-07-27T18:35:15+05:45
+last_modified_at: 2015-07-27T19:09:10+05:45
 excerpt: "Customizing unordered and ordered lists according to our needs with the help of CSS."
 ---
 
@@ -21,7 +21,7 @@ It's really easy to have lists into a document, you just have need to add `ul` o
 </ol>
 {% endhighlight %}
 
-## Default lists CSS settings
+### Default lists CSS settings
 
 Most browsers will display the `<ul>` and `<ol>` element with the following default values:
 
@@ -140,6 +140,47 @@ ol.post-list > li:before {
 }
 {% endhighlight %}
 
+#### Normalizing unstyled and inline list CSS
+
+If you want to normalize the default unstyled and inline list Bootstrap CSS for the above values, then you just have to add following CSS after above values.
+
+{% highlight css %}
+/**
+ * Normalizing unstyled and inline list
+ */
+ .list-unstyled > li,
+ .list-inline > li {
+   margin: 0;
+   padding: 0;
+ }
+ .list-unstyled > li:before,
+ .list-inline > li:before {
+   content: normal;
+}
+{% endhighlight %}
+
+Then, after put the following default Bootstrap CSS.
+
+{% highlight css %}
+/**
+ * Default unstyled and inline list Bootstrap CSS
+ */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+{% endhighlight %}
+
 ### Custom styling unordered and ordered lists with SCSS
 
 If you love SCSS like me, then here's what we do.
@@ -202,47 +243,6 @@ ol.post-list {
 <div class="alert alert-info">
   <p>You may need to style the elements according to your need.</p>
 </div>
-
-#### Normalizing unstyled and inline list CSS
-
-If you want to normalize the default unstyled and inline list Bootstrap CSS for the above values, then you just have to add following CSS after above values.
-
-{% highlight css %}
-/**
- * Normalizing unstyled and inline list
- */
- .list-unstyled > li,
- .list-inline > li {
-   margin: 0;
-   padding: 0;
- }
- .list-unstyled > li:before,
- .list-inline > li:before {
-   content: normal;
-}
-{% endhighlight %}
-
-Then, after put the following default Bootstrap CSS.
-
-{% highlight css %}
-/**
- * Default unstyled and inline list Bootstrap CSS
- */
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-.list-inline {
-  padding-left: 0;
-  margin-left: -5px;
-  list-style: none;
-}
-.list-inline > li {
-  display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-{% endhighlight %}
 
 ### Some custom styled lists examples on CodePen
 
