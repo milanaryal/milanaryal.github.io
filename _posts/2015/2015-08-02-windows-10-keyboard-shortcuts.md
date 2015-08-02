@@ -1,10 +1,11 @@
 ---
 title: "Windows 10 keyboard shortcuts"
 date: 2015-08-02T09:32:45+05:45
+last_modified_at: 2015-08-02T14:46:03+05:45
 excerpt: "The list of Windows 10 keyboard shortcuts to improve your productivity."
 ---
 
-Here's the list of Windows 10 shortcuts, and --- in addition --- some of the favorite "old but gold" shortcuts known from previous versions of Windows:
+Here's the list of Windows 10 shortcuts, and --- in addition --- some of our favorite "old but gold" shortcuts known from previous versions of Windows:
 
 | Windows 10 keyboard shortcut | Description                                       |
 | ---------------------------- | ------------------------------------------------- |
@@ -34,12 +35,13 @@ And, of course, these "old but gold" shortcuts known from previous Windows versi
 | Win + Shift + [Left][Right]  | Move current Window from one monitor to another (when using a multiple monitor setup) |
 | Win + [1][2][3][...]         | Open programs that are pinned to task bar <br> E.g. if first pinned program on your task bar is Windows Explorer (from left to right), the shortcut *Win + 1* opens *Windows Explorer* for you. |
 | Win + R                      | Run a command                                     |
+| Ctrl + Shift + Esc           | Open the Windows Task Manager                     |
 | Win + P                      | Project a screen                                  |
 | Alt + Tab                    | Switch to previous window                         |
 | Alt + Space                  | Restore, move, size, minimize, maximize or close current window. Also works like a charm for Windows 10 modern apps. |
 | Alt + F4                     | a) Close current window <br> b) If you're on your Windows 10 desktop, open Power dialogue to shut down or restart Windows, put your device in sleep mode, sign out or switch the current user |
 
-Additional shortcuts (not just Win key shortcuts):
+Additional shortcuts (not just Windows keyboard shortcuts):
 
 | Windows 10 keyboard shortcut | Description                                       |
 | ---------------------------- | ------------------------------------------------- |
@@ -48,7 +50,11 @@ Additional shortcuts (not just Win key shortcuts):
 | Win + M                      | Minimize all windows                              |
 | Win + Shift + Up arrow       | Stretch windows to top and bottom but retain width |
 | Win + Enter                  | Open narrator                                     |
-| Win + Shift + M              | Restore all minimize windows                      |
+| Win + Shift + M              | Restore all minimize windows (useful after a Win + M) |
+| Win + Home                   | Minimize all windows except the one you're actively using |
+| Alt + Up                     | Go up one level in File Explorer (aka Windows Explorer) |
+| Alt + Left                   | go to the previous folder in File Explorer        |
+| Alt + right                  | go to the next folder in File Explorer            |
 | Win + O                      | Lock orientation                                  |
 | Win + Prtsc                  | Screen grab to image to Pictures\Screenshots <br> You can still just press Prtsc and then Ctrl + V to paste it in Word, PPT, and/or your favorite image manipulation program. |
 | Win + "+"                    | Magnify in                                        |
@@ -57,7 +63,24 @@ Additional shortcuts (not just Win key shortcuts):
 | Win + T                      | Cycle through taskbar apps                        |
 | Win + F1                     | Open help support in browser? Really should open new app |
 | Win + B                      | Focus to notification area                        |
-| Win + ","                    | Desktop peek                                      |
-| Win + Shift + Number         | Open new instance of pinned taskbar item          |
+| Win + ","                    | Desktop peek (temporarily hide apps to briefly show the desktop) |
+| Win + Shift + Number         | Open new instance of pinned taskbar item <br> E.g. Win + 2 launches the app in your second taskbar slot. |
+| Win + Ctrl + Shift + Number  | Same as above, but launch the app with admin powers enabled |
+| Win + U                      | Open the Ease of Access Center                     |
+| Win + Space                  | Switch input language and keyboard                 |
+| F2                           | Rename the selected item                           |
+| Shift + Left                 | Highlight text to the left of the cursor           |
+| Shift + Right                | Highlight text to the right of the cursor          |
+| Ctrl + Shift + Left (or Right) | Highlight blocks of text instead of just characters at a time |
+| Ctrl + A                     | Select all item                                    |
+| Ctrl + X                     | Cut (i.e. to move) selected item
+| Ctrl + C                     | Copy selected item                                 |
+| Ctrl + V                     | Paste copied/cut item                              |
+| Ctrl + Z                     | Undo changes                                       |
+| Ctrl + Y                     | Redo changes                                       |
+| Shift + Delete               | Delete files without sending them to the Recycle Bin |
+| Alt + Enter                  | Show the properties of the currently selected file |
 
-I'm pretty sure there are much more keyboard shortcuts you can use to speed up your work with Windows 10. If you experience new ones, please let me know! I will try to keep the above list up to date.
+Find even more Windows 10 keyboard shortcuts [at this link](http://windows.microsoft.com/en-us/windows-10/keyboard-shortcuts).
+
+I'm pretty sure there are much more keyboard shortcuts you can use to speed up your work with Windows 10. If I miss one of your favorites, please let me know! I will try to keep the above list up to date.
