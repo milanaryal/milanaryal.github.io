@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 keyboard shortcuts"
 date: 2015-08-02T09:32:45+05:45
-last_modified_at: 2015-08-02T14:46:03+05:45
+last_modified_at: 2015-08-02T15:28:32+05:45
 excerpt: "The list of Windows 10 keyboard shortcuts to improve your productivity."
 ---
 
@@ -73,14 +73,14 @@ Additional shortcuts (not just Windows keyboard shortcuts):
 | Shift + Right                | Highlight text to the right of the cursor          |
 | Ctrl + Shift + Left (or Right) | Highlight blocks of text instead of just characters at a time |
 | Ctrl + A                     | Select all item                                    |
-| Ctrl + X                     | Cut (i.e. to move) selected item
-| Ctrl + C                     | Copy selected item                                 |
+| Ctrl + X                     | Cut (i.e. to move) the selected item
+| Ctrl + C                     | Copy the selected item                                 |
 | Ctrl + V                     | Paste copied/cut item                              |
-| Ctrl + Z                     | Undo changes                                       |
-| Ctrl + Y                     | Redo changes                                       |
+| Ctrl + Z                     | Undo an action (changes)                           |
+| Ctrl + Y                     | Redo an action (changes)                           |
 | Shift + Delete               | Delete files without sending them to the Recycle Bin |
 | Alt + Enter                  | Show the properties of the currently selected file |
 
 Find even more Windows 10 keyboard shortcuts [at this link](http://windows.microsoft.com/en-us/windows-10/keyboard-shortcuts).
 
-I'm pretty sure there are much more keyboard shortcuts you can use to speed up your work with Windows 10. If I miss one of your favorites, please let me know! I will try to keep the above list up to date.
+I'm pretty sure there are much more keyboard shortcuts you can use to speed up your work with Windows 10. If I miss one of your favorite(s), please let me know! I will try to keep the above list up to date.
