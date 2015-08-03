@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 keyboard shortcuts"
 date: 2015-08-02T09:32:45+05:45
-last_modified_at: 2015-08-02T15:28:32+05:45
+last_modified_at: 2015-08-02T14:00:42+05:45
 excerpt: "The list of Windows 10 keyboard shortcuts to improve your productivity."
 ---
 
@@ -80,6 +80,7 @@ Additional shortcuts (not just Windows keyboard shortcuts):
 | Ctrl + Y                     | Redo an action (changes)                           |
 | Shift + Delete               | Delete files without sending them to the Recycle Bin |
 | Alt + Enter                  | Show the properties of the currently selected file |
+| Ctrl + Shift + Enter         | Run the selected app as an administrator           |
 
 Find even more Windows 10 keyboard shortcuts [at this link](http://windows.microsoft.com/en-us/windows-10/keyboard-shortcuts).
 
