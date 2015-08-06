@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-07-26T18:34:30+05:45
+ * Date: 2015-08-06T23:43:18+05:45
  */
 
 /*!
@@ -7142,7 +7142,7 @@ html {
   font-size: 18px;
 }
 body {
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -7155,9 +7155,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -.02em;
 }
 p {
@@ -7193,15 +7193,15 @@ hr.small {
   left: 0;
   z-index: 3;
   width: 100%;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   background: white;
 }
 .header-navbar .navbar-brand {
-  font-weight: 800;
+  font-weight: 700;
 }
 .header-navbar .nav li a {
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -7307,7 +7307,7 @@ hr.small {
 .intro-header .page-heading .subheading {
   display: block;
   margin: 10px 0 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.1;
@@ -7328,13 +7328,13 @@ hr.small {
 }
 .intro-header .post-heading .subheading {
   margin: 10px 0 30px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .intro-header .post-heading .meta {
   margin-top: 30px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 300;
 }
@@ -7380,7 +7380,7 @@ hr.small {
   font-weight: 300;
 }
 .post-preview .post-meta {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 18px;
   color: #777;
 }
@@ -7408,7 +7408,7 @@ hr.small {
 .info-footer .copyright {
   margin-top: 30px;
   margin-bottom: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 14px;
   color: #777;
   text-align: center;
@@ -7423,9 +7423,9 @@ hr.small {
 }
 .btn {
   padding: 15px 25px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: none !important;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -7448,9 +7448,9 @@ hr.small {
 .pager li > a,
 .pager li > span {
   padding: 10px 5px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: white;
@@ -7743,7 +7743,7 @@ body {
 .footnotes:before {
   display: block;
   margin-bottom: 10px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-weight: 700;
   content: 'Footnotes';
 }
