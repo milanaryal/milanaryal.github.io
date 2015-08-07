@@ -27,7 +27,7 @@ module.exports = function (grunt) {
               ' * Date: <%= project.date %>\n' +
               ' */\n',
       css: [
-        '<%= project.src %>/less/style.less'
+        '<%= project.src %>/less/styles.less'
       ],
       js: [
         '<%= project.src %>/js/jquery.js',
@@ -51,9 +51,9 @@ module.exports = function (grunt) {
     // Task(s) configuration.
     clean: {
       css: [
-        '<%= project.assets %>/css/style.css',
-        '<%= project.assets %>/css/style.css.map',
-        '<%= project.assets %>/css/style.min.css'
+        '<%= project.assets %>/css/styles.css',
+        '<%= project.assets %>/css/styles.css.map',
+        '<%= project.assets %>/css/styles.min.css'
       ],
       js: [
         '<%= project.assets %>/js/scripts.js',
@@ -106,11 +106,11 @@ module.exports = function (grunt) {
           strictMath: true,
           sourceMap: true,
           outputSourceFiles: true,
-          sourceMapURL: 'style.css.map',
-          sourceMapFilename: '<%= project.assets %>/css/style.css.map'
+          sourceMapURL: 'styles.css.map',
+          sourceMapFilename: '<%= project.assets %>/css/styles.css.map'
         },
         src: '<%= project.css %>',
-        dest: '<%= project.assets %>/css/style.css'
+        dest: '<%= project.assets %>/css/styles.css'
       }
     },
 
@@ -131,7 +131,7 @@ module.exports = function (grunt) {
         options: {
           map: true
         },
-        src: '<%= project.assets %>/css/style.css'
+        src: '<%= project.assets %>/css/styles.css'
       }
     },
 
@@ -140,7 +140,7 @@ module.exports = function (grunt) {
         csslintrc: '<%= project.src %>/less/bootstrap/.csslintrc'
       },
       dist: [
-        '<%= project.assets %>/css/style.css',
+        '<%= project.assets %>/css/styles.css',
       ]
     },
 
@@ -149,8 +149,8 @@ module.exports = function (grunt) {
         config: '<%= project.src %>/less/bootstrap/.csscomb.json'
       },
       core: {
-        src: '<%= project.assets %>/css/style.css',
-        dest: '<%= project.assets %>/css/style.css'
+        src: '<%= project.assets %>/css/styles.css',
+        dest: '<%= project.assets %>/css/styles.css'
       }
     },
 
@@ -161,8 +161,8 @@ module.exports = function (grunt) {
         advanced: false
       },
       minifyCore: {
-        src: '<%= project.assets %>/css/style.css',
-        dest: '<%= project.assets %>/css/style.min.css'
+        src: '<%= project.assets %>/css/styles.css',
+        dest: '<%= project.assets %>/css/styles.min.css'
       }
     },
 
@@ -174,8 +174,8 @@ module.exports = function (grunt) {
         },
         files: {
           src: [
-            '<%= project.assets %>/css/style.css',
-            '<%= project.assets %>/css/style.min.css',
+            '<%= project.assets %>/css/styles.css',
+            '<%= project.assets %>/css/styles.min.css',
             '<%= project.assets %>/js/scripts.min.js'
             ]
         }

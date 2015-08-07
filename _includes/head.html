@@ -11,20 +11,20 @@
 
   <!-- Open Graph tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }}{% else %}{{ site.name }}{% endif %}">
-  <meta property="og:type" content="{% if page.date %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}">
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image | prepend: site.url }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}">
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image | prepend: site.url }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}">
+  <meta property="fb:admins" content="{{ site.author.fb_id }}">
+  <meta property="fb:profile_id" content="{{ site.author.fb_id }}">
+  <meta property="og:type" content="{% if page.date %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}">
   <meta property="og:locale" content="{{ site.locale }}">
   {% if page.date %}
+  <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
   <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   {% for post in site.related_posts limit:3 %}<meta property="og:see_also" content="{{ post.url | replace:'index.html','' | prepend: site.url }}">{% endfor %}
-  <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
   {% endif %}
-  <meta property="fb:admins" content="{{ site.author.fb_id }}">
-  <meta property="fb:profile_id" content="{{ site.author.fb_id }}">
 
   <!-- Twitter card property -->
   <meta name="twitter:card" content="{% if page.featured_image %}{{ 'summary_large_image' }}{% else %}{{ 'summary' }}{% endif %}">
@@ -77,8 +77,7 @@
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site.name }}">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/style.min.css?v={{ site.github.build_revision }}">
-  <link rel="stylesheet" href="/assets/css/fonts.min.css?v={{ site.github.build_revision }}">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>

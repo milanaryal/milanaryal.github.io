@@ -10,10 +10,6 @@ layout: default
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1 itemprop="name headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
-              {% if page.subtitle %}
-              <h2 class="subheading">{{ page.subtitle | markdownify | strip_html | strip_newlines }}</h2>
-              {% endif %}
               <link itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
               <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}">
               <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
@@ -23,8 +19,12 @@ layout: default
               <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
               <meta itemprop="dateModified" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
               <div class="meta">
-                <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ page.date | date: '%a, %b %-d, %Y' }} at {{ page.date | date: '%-I:%M%P %Z' }}">{{ page.date | date: '%B %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}</span>
+                <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}</span>
               </div>
+              <h1 itemprop="name headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
+              {% if page.subtitle %}
+              <h2 class="subheading">{{ page.subtitle | markdownify | strip_html | strip_newlines }}</h2>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -74,8 +74,6 @@ layout: default
     </div>
   </div>
 </article>
-
-<hr>
 
 <script type="application/ld+json">
 {

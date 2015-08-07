@@ -4,23 +4,23 @@ layout: index
 
 {% for post in paginator.posts %}
 <article class="post-preview" itemscope itemtype="http://schema.org/Article">
+  <div class="post-meta">
+    <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}"{% if post.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ post.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ post.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}</span>
+  </div>
   <a itemprop="url" href="{{ post.url }}">
-    <div id="anchor-content">
+    <div class="clearfix">
       <h2 class="post-title" itemprop="name">
         {{ post.title | markdownify | strip_html | strip_newlines }}
       </h2>
-      <h4 class="post-subtitle" itemprop="description">
+      <p class="post-subtitle" itemprop="description">
         {% if post.subtitle %}
           {{ post.subtitle | markdownify | strip_html | strip_newlines }}
             {% else %}
           {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
         {% endif %}
-      </h4>
+      </p>
     </div>
   </a>
-  <div class="post-meta">
-    <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date: '%a, %b %-d, %Y' }} at {{ post.date | date: '%-I:%M%P %Z' }}">{{ post.date | date: '%B %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="bottom" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}</span>
-  </div>
 </article>
 <hr>
 {% endfor %}

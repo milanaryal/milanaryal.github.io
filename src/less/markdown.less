@@ -7,10 +7,14 @@
   overflow: hidden;
   word-wrap: break-word;
   letter-spacing: .01rem;
-  // font-weight: 400;
-  // font-style: normal;
-  // font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
   line-height: 1.5;
+  color: @markdown-body-color;
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
 
   > *:first-child {
     margin-top: 30px !important;
@@ -20,27 +24,66 @@
     margin-bottom: 0 !important;
   }
 
-  a {
-    color: inherit; // parent color for link
-    text-decoration: underline;
-
-    &:hover,
-    &:focus {
-      color: @m-brand-primary;
+  &> h2, &> h3, &> h4,
+  &> p,
+  &> blockquote,
+  &> ul, &> ol, &> dl,
+  &> .table-responsive,
+  &> .alert {
+    a {
+      text-decoration: none;
+      background-image: linear-gradient(to bottom, fade(black, 0%) 50%, fade(black, 60%) 50%); // rgba(0,0,0,0) and rgba(0,0,0,0.6)
+      background-repeat: repeat-x;
+      background-size: 2px 2px;
+      background-position: 0 21px;
+      @media (min-width: 768px) {
+        background-position: 0 23px;
+      }
+      &:hover,
+      &:focus {
+        outline: 0;
+        color: inherit;
+        text-decoration: none;
+      }
     }
   }
 
+  &> figure figcaption,
+  &> .footnotes {
+    a {
+      color: inherit; // parent color for link
+      text-decoration: underline;
+      &:hover,
+      &:focus {
+        outline: 0;
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .list-inline {
+    a {
+      background-image: none !important;
+    }
+  }
+
+  // h1 and h2 are already reserved in markdown front matter
+  // h3 and h4 are main markdown body head tags
+  // h5 and h6 are depreciated in this site.
+  // ------------------------------------------------------
+
   h2, h3, h4, h5, h6 {
-    margin-top: (@m-margin + 10); // ~40px
-    margin-bottom: (@m-margin / 2); // ~15px
-    // font-style: normal;
+    margin-top: (@markdown-margin + 10); // ~40px
+    margin-bottom: (@markdown-margin / 2); // ~15px
+    font-style: normal;
     line-height: 1.2;
     letter-spacing: -0.02em;
   }
 
   h3 + h4 {
     // margin-top: -3px;
-    margin-top: ((@m-margin / 2) + 5); // ~20px
+    margin-top: ((@markdown-margin / 2) + 5); // ~20px
   }
 
   h2, h3 {
@@ -49,23 +92,57 @@
 
   h4, h5, h6 {
     font-weight: 300;
-    color: @gray-light;
+    color: @markdown-text-muted; // rgba(0, 0, 0, 0.44)
   }
 
   h2 {
-    font-size: 40px;
+    font-size: (@markdown-font-size-h2 - 2); // ~38px
+    @media (min-width: 768px) {
+      font-size: @markdown-font-size-h2; // ~40px
+    }
+    a {
+      background-image: linear-gradient(to bottom, fade(black, 80%), fade(black, 80%)); // rgba(0,0,0,0.8), rgba(0,0,0,0.8)
+      // background-size: 2px 3px;
+      background-position: 0 39px;
+      @media (min-width: 768px) {
+        background-position: 0 41px;
+      }
+    }
   }
 
   h3 {
-    font-size: 36px;
+    font-size: (@markdown-font-size-h3 - 2); // ~34px
+    @media (min-width: 768px) {
+      font-size: @markdown-font-size-h3; // ~36px
+    }
+    a {
+      background-image: linear-gradient(to bottom, fade(black, 80%), fade(black, 80%)); // rgba(0,0,0,0.8), rgba(0,0,0,0.8)
+      background-position: 0 35px;
+      @media (min-width: 768px) {
+        background-position: 0 37px;
+      }
+    }
   }
 
   h4 {
-    font-size: 32px;
+    font-size: (@markdown-font-size-h4 - 2); // ~30px
+    @media (min-width: 768px) {
+      font-size: @markdown-font-size-h4; // ~32px
+    }
+    a {
+      background-image: linear-gradient(to bottom, fade(black, 0%) 50%, fade(black, 44%) 50%); // rgba(0,0,0,0) and rgba(0,0,0,0.44)
+      background-position: 0 31px;
+      @media (min-width: 768px) {
+        background-position: 0 33px;
+      }
+    }
   }
 
   h5, h6 {
-    font-size: 28px;
+    font-size: (@markdown-font-size-h5 - 2); // ~26px
+    @media (min-width: 768px) {
+      font-size: @markdown-font-size-h5; // ~28px
+    }
   }
 
   //  List
@@ -78,7 +155,7 @@
     list-style: none;
     list-style-image: none;
     counter-reset: list;
-    // margin-bottom: @m-margin;
+    // margin-bottom: @markdown-margin;
   }
 
   &> ul > li,
@@ -142,7 +219,7 @@
   pre,
   figure {
     // margin-top: 0;
-    margin-bottom: @m-margin;
+    margin-bottom: @markdown-margin;
   }
 
   // h2 + figure,
@@ -157,7 +234,7 @@
     padding: 10px;
     font-style: italic;
     font-size: 14px;
-    color: @gray-light;
+    color: @markdown-text-muted;
     text-align: center;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -173,13 +250,13 @@
   blockquote {
     padding: 0 0 3px 20px;
     // margin: 0 0 20px;
-    font-size: 1em; // ~20px
+    font-size: 22px;
     font-style: italic;
-    border-left: 3px solid @m-gray-dark; // #404040
+    border-left: 3px solid fade(black, 95%); // rgba(0,0,0,0.95);
 
     footer {
       font-style: normal;
-      font-size: 85%;
+      font-size: 100%;
 
       cite {
         font-style: italic;
@@ -188,15 +265,21 @@
   }
 
   .lead {
-    margin-bottom: (@m-margin + 10); // ~40px
+    margin-bottom: (@markdown-margin + 10); // ~40px
     font-size: 24px;
     // font-weight: 300;
     line-height: 1.4;
     font-style: italic;
   }
+  a {
+    background-position: 0 25px;
+  }
   @media (min-width: 768px) {
     .lead {
       font-size: 28px;
+      a {
+        background-position: 0 29px;
+      }
     }
   }
 
@@ -226,7 +309,7 @@
     max-width: 100px;
     margin: 51px auto 41px;
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid @markdown-color-hr;
   }
 
 } // .markdown-body
@@ -243,12 +326,12 @@
 
 // Footnotes
 .footnotes {
-  margin: @m-margin 0;
+  margin: @markdown-margin 0;
   font-size: 16px;
 
   &:before {
     display: block;
-    margin-bottom: ((@m-margin / 2) - 5); // ~10px
+    margin-bottom: ((@markdown-margin / 2) - 5); // ~10px
     content: 'Footnotes'; // footnotes heading
     font-weight: 700;
     .m-sans-serif;
@@ -268,7 +351,7 @@
 
     &> li {
       margin-left: 30px;
-      margin-bottom: ((@m-margin / 2) - 5); // ~10px
+      margin-bottom: ((@markdown-margin / 2) - 5); // ~10px
       padding-top: 2px;
     }
 
@@ -298,4 +381,5 @@
 .footnote,
 .reversefootnote {
   text-decoration: none !important; // do not underline link
+  background-image: none !important;
 }

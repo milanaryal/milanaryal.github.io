@@ -39,7 +39,7 @@
 }
 
 .comments {
-  margin: 30px 0 50px;
+  margin: 30px 0 60px;
 }
 
 // ==============================================
@@ -88,6 +88,57 @@
       color: @m-gray-dark;
       text-decoration: none;
       border-bottom: 1px solid @m-gray-dark;
+    }
+  }
+}
+
+// ==============================================
+//  404 error page content
+// ==============================================
+
+.error-page {
+  height: 100%;
+  padding-top: 10%;
+  // box-sizing: border-box;
+}
+.error-page-message {
+  color: fade(black, 80%); // rgba(0,0,0,0.8)
+  .m-sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+.error-page-message-lead {
+  font-size: 32px;
+  margin-bottom: 10px;
+  @media (min-width: 768px) {
+    font-size: 60px;
+  }
+}
+.error-page-message-small {
+  color: fade(black, 44%); // rgba(0,0,0,0.44)
+  margin-top: 10px;
+  font-size: 16px;
+  // .m-sans-serif;
+  // letter-spacing: -0.02em;
+  font-weight: 400;
+  // font-style: normal;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+  a {
+    color: fade(black, 44%); // rgba(0,0,0,0.44)
+    text-decoration: underline;
+    &:hover,
+    &:active {
+      color: fade(black, 60%); // rgba(0,0,0,0.6)
+      text-decoration: underline
     }
   }
 }

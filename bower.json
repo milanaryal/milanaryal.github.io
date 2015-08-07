@@ -17,9 +17,9 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.4",
+    "jquery": "~3.0.0-alpha1+compat",
     "bootstrap": "~3.3.5",
-    "font-awesome": "~4.3.0",
+    "font-awesome": "~4.4.0",
     "anchor-js": "~1.2.1",
     "primer-markdown": "~2.1.7"
   },

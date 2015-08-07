@@ -10,7 +10,8 @@ tt {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   margin: 0;
-  font-size: 85%;
+  // font-size: 85%;
+  font-size: 75%; // 75% of 22 = 16.5
   color: inherit; // override to bootstrap
   background-color: rgba(0,0,0,0.04);
   border-radius: 3px; // don't add padding, gives scrollbars
@@ -38,14 +39,15 @@ pre > code {
 }
 
 .highlight {
-  margin-bottom: @m-margin;
+  margin-bottom: @markdown-margin;
 }
 
 .highlight pre,
 pre {
-  padding: (@m-margin - 10); // ~20px
+  padding: (@markdown-margin - 10); // ~20px
   overflow: auto;
-  font-size: 85%;
+  // font-size: 85%;
+  font-size: 75%; // 75% of 22 = 16.5
   line-height: 1.45;
   background-color: #f7f7f7;
   border-radius: 3px;

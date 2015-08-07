@@ -14,8 +14,7 @@ layout: compress
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     <!-- <link rel="dns-prefetch" href="//fonts.googleapis.com" data-proofer-ignore> -->
     <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="stylesheet" href="/assets/css/style.min.css?v={{ site.github.build_revision }}">
-    <link rel="stylesheet" href="/assets/css/fonts.min.css?v={{ site.github.build_revision }}">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,60 +26,23 @@ layout: compress
 
   <body>
 
-    <!-- 404 page header -->
-    <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')" role="banner">
-      <div class="dark-background">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="page-heading">
-                <h1>404</h1>
-                <hr class="small">
-                <span class="subheading">Sorry, but nothing exists here.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
     <!-- 404 main content -->
-    <main role="main">
+    <div class="error-page">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="markdown-body text-center">
-              {{ content }}
+          <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-3">
+            <div class="clearfix">
+              <div class="error-page-message error-page-message-lead">404</div>
+              <div class="error-page-message">Sorry, but nothing exists here.</div>
+              <div class="error-page-message error-page-message-small">Find something <a href="/archives/">interesting to read</a>.</h1>
             </div>
           </div>
         </div>
       </div>
-
-      <hr>
-    </main>
-
-    <!-- 404 page footer -->
-    <footer class="info-footer" role="contentinfo">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <ul class="list-inline text-center">
-              <li>
-                <a href="/">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
 
     {% include scripts.html %}
 
   </body>
 
-</html> <!--# Generated {{ site.time | date_to_xmlschema }} | Revision {{ site.github.build_revision }} #-->
+</html><!--# Generated {{ site.time | date_to_xmlschema }} | Revision {{ site.github.build_revision }} #-->
