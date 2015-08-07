@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-07T22:48:51+05:45
+ * Date: 2015-08-08T00:08:42+05:45
  */
 
 /*!
@@ -11675,22 +11675,5 @@ var anchors = new AnchorJS();
 
   anchors.options.placement = 'left';
   anchors.add('.markdown-body > h2, .markdown-body > h3, .markdown-body > h4, .markdown-body > h5, .markdown-body > h6, .archive > h3');
-
-})();
-
-
-// Dynamically loading css file using JavaScript
-// =============================================
-
-(function () {
-  'use strict';
-
-  var head  = document.getElementsByTagName('head')[0];
-  var link  = document.createElement('link');
-
-  link.rel  = 'stylesheet';
-  link.href = '\/assets\/css\/fonts.min.css';
-
-  head.appendChild(link);
 
 })();

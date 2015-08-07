@@ -79,6 +79,9 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
 
+  <!-- Dynamically loading CSS file using JavaScript -->
+  <script>(function(){"use strict";var a=document.getElementsByTagName("head")[0],b=document.createElement("link");b.rel="stylesheet",b.href="\/assets\/css\/fonts.min.css",a.appendChild(b)})();</script>
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <script src="/assets/js/html5shiv.min.js?v={{ site.github.build_revision }}"></script>
