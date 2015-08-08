@@ -15,6 +15,10 @@ layout: compress
       {{ content }}
     </main>
 
+    {% if page.layout = 'post' %}
+      <a href="#" id="elevator"><i class="fa fa-chevron-up"></i></a>
+    {% endif %}
+
     {% include footer.html %}
 
     {% include scripts.html %}

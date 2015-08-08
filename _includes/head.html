@@ -43,14 +43,6 @@
     "@type": "WebSite",
     "name": "{{ site.name | markdownify | strip_html | strip_newlines }}",
     "alternateName": "{{ site.description | markdownify | strip_html | strip_newlines }}",
-    "url": "{{ site.url }}/"
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "WebSite",
     "url": "{{ site.url }}/",
     "potentialAction": {
       "@type": "SearchAction",
@@ -79,8 +71,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
 
-  <!-- Dynamically loading CSS file using JavaScript -->
-  <script>(function(){"use strict";var a=document.getElementsByTagName("head")[0],b=document.createElement("link");b.rel="stylesheet",b.href="\/assets\/css\/fonts.min.css",a.appendChild(b)})();</script>
+  <script>(function(){"use strict";var a=document.getElementsByTagName("head")[0],b=document.createElement("link");b.rel="stylesheet",b.href="\/assets\/css\/fonts.min.css\?v\={{ site.github.build_revision }}",a.appendChild(b)})();</script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>

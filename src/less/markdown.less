@@ -2,16 +2,20 @@
 // Markdown body
 // ==============================================
 
-
 .markdown-body {
   overflow: hidden;
+  // outline: 0;
+  // word-break: break-word;
   word-wrap: break-word;
+  // position: relative;
+  font-size: 20px;
+  line-height: 1.5;
+  // margin-bottom: 30px;
+  .m-serif;
   letter-spacing: .01rem;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
-  line-height: 1.5;
-  color: @markdown-body-color;
+  color: @markdown-body-color; // rgba(0,0,0,0.95);
   @media (min-width: 768px) {
     font-size: 22px;
   }
@@ -72,11 +76,14 @@
   // ------------------------------------------------------
 
   h2, h3, h4, h5, h6 {
+    .m-sans-serif;
+    letter-spacing: -0.02em;
+    // font-weight: 700;
+    font-style: normal;
+
+    line-height: 1.2;
     margin-top: (@markdown-margin + 10); // ~40px
     margin-bottom: (@markdown-margin / 2); // ~15px
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
   }
 
   h3 + h4 {
@@ -86,11 +93,12 @@
 
   h2, h3 {
     font-weight: 700;
+    color: fade(black, 80%); // rgba(0,0,0,0.8);
   }
 
   h4, h5, h6 {
     font-weight: 300;
-    color: @markdown-text-muted; // rgba(0, 0, 0, 0.44)
+    color: fade(black, 44); // rgba(0, 0, 0, 0.44)
   }
 
   h2 {
@@ -232,7 +240,7 @@
     padding: 10px;
     font-style: italic;
     font-size: 14px;
-    color: @markdown-text-muted;
+    color: fade(black, 60%); // rgba(0,0,0,0.6);
     text-align: center;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;

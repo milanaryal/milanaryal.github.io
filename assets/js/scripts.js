@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-08T00:08:42+05:45
+ * Date: 2015-08-09T00:12:44+05:45
  */
 
 /*!
@@ -11663,6 +11663,28 @@ var anchors = new AnchorJS();
 
     return false;
   })
+
+
+  // Scroll to top
+  // =============
+
+  // Check to see if the window is top if not then display button
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {  // If page is scrolled more than 100px
+      $('#elevator').fadeIn();    // Fade in the arrow
+    } else {
+      $('#elevator').fadeOut();   // Else fade out the arrow
+    }
+  });
+
+  // Click event to scroll to top
+  $('#elevator').click(function () { // When arrow is clicked
+    $('body, html').animate({
+      scrollTop : 0                  // Scroll to top of body
+    }, 800);
+    return false;
+  });
+
 
 }(jQuery);
 

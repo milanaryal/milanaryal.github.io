@@ -88,6 +88,28 @@
     return false;
   })
 
+
+  // Scroll to top
+  // =============
+
+  // Check to see if the window is top if not then display button
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {  // If page is scrolled more than 100px
+      $('#elevator').fadeIn();    // Fade in the arrow
+    } else {
+      $('#elevator').fadeOut();   // Else fade out the arrow
+    }
+  });
+
+  // Click event to scroll to top
+  $('#elevator').click(function () { // When arrow is clicked
+    $('body, html').animate({
+      scrollTop : 0                  // Scroll to top of body
+    }, 800);
+    return false;
+  });
+
+
 }(jQuery);
 
 

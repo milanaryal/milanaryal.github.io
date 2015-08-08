@@ -19,9 +19,10 @@ redirect_from: /archive/
     {% endif %}
   {% endunless %}
   <article itemscope itemtype="http://schema.org/Article">
+    <link itemprop="image" href="{% if post.featured_image %}{{ post.featured_image }}{% else %}{{ site.icon }}{% endif %}">
     <ul class="row">
       <li class="col-sm-9">
-        <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title | markdownify | strip_html | strip_newlines }}</span></a>
+        <a itemprop="url" href="{{ post.url }}"><span itemprop="name headline">{{ post.title | markdownify | strip_html | strip_newlines }}</span></a>
       </li>
       <li class="col-sm-3 text-muted text-right">
         {% assign day = post.date | date: '%-d' %}
