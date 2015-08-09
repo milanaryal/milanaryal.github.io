@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-09T00:13:00+05:45
+ * Date: 2015-08-09T17:08:27+05:45
  */
 
 /*!
@@ -6919,8 +6919,14 @@ hr.small {
   background: rgba(0, 0, 0, .44);
 }
 .post-preview {
+  position: relative;
   margin-top: 40px;
   margin-bottom: 40px;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+
+  *zoom: 1;
 }
 .post-preview a {
   color: inherit;
@@ -6938,6 +6944,7 @@ hr.small {
 .post-preview a .post-subtitle {
   margin-top: 10px;
   margin-bottom: 0;
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 300;
 }
@@ -7077,6 +7084,7 @@ body {
   webkit-tap-highlight-color: #0c86e6;
 }
 .markdown-body {
+  position: relative;
   overflow: hidden;
   font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 20px;
@@ -7086,6 +7094,10 @@ body {
   color: rgba(0, 0, 0, .95);
   letter-spacing: .01rem;
   word-wrap: break-word;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+
+  *zoom: 1;
 }
 @media (min-width: 768px) {
   .markdown-body {
@@ -7727,14 +7739,14 @@ kbd {
 .comments {
   margin: 30px 0 60px;
 }
-.comments .nav-primary > ul > li.active > a:after {
+.nav-primary > ul > li.active > a:after {
   background: #3f4549 !important;
 }
-.comments .publisher-anchor-color {
+.discovery-posts .publisher-anchor-color {
   color: #3f4549 !important;
 }
-.comments .publisher-anchor-color:hover,
-.comments .publisher-anchor-color:focus {
+.discovery-posts .publisher-anchor-color:hover,
+.discovery-posts .publisher-anchor-color:focus {
   color: #3f4549 !important;
 }
 .archive > *:first-child {
@@ -7842,41 +7854,42 @@ kbd {
   background-image: none !important;
   opacity: 1;
 }
-#elevator {
+.elevator {
   position: fixed;
   right: 20px;
   bottom: 20px;
   display: block;
-  display: none;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   text-decoration: none;
+  cursor: pointer;
   background: rgba(0, 0, 0, .7);
-  border-radius: 35px;
-  -webkit-transition: all .3s linear;
+  background-image: none;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease;
        -o-transition: all .3s ease;
           transition: all .3s ease;
 }
-#elevator i {
+.elevator i {
   position: relative;
-  top: 13px;
-  left: 16px;
+  top: 10px;
+  left: 15px;
   margin: 0;
-  font-size: 19px;
+  font-size: 20px;
   color: #fff;
   -webkit-transition: all .3s ease;
        -o-transition: all .3s ease;
           transition: all .3s ease;
 }
-#elevator:hover {
+.elevator:hover {
   background: rgba(0, 0, 0, .8);
 }
-#elevator:hover i {
+.elevator:hover i {
   top: 5px;
   color: white;
 }
 @media (max-width: 768px) {
-  #elevator {
+  .elevator {
     display: none;
   }
 }

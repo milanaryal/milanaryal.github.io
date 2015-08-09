@@ -288,6 +288,12 @@ hr.small {
 // Post Preview Pages
 
 .post-preview {
+  position: relative;
+  // -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  overflow: hidden;
+  *zoom: 1;
+
   margin-top: 40px;
   margin-bottom: 40px;
   a {
@@ -303,6 +309,7 @@ hr.small {
       margin-bottom: 0;
     }
     .post-subtitle {
+      .m-serif;
       font-weight: 300;
       font-size: 18px;
       margin-top: 10px;
