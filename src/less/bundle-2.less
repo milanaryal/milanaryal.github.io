@@ -26,36 +26,42 @@
 
 // Social
 .social-container {
-  margin: 30px 0;
-}
-
-.social-container a {
-  color: #e1e8ed; // Twitter brand
-
-  &:hover,
-  &:focus {
-    color: #55acee;
+  margin-bottom: 30px;
+  a {
+    color: #e1e8ed; // Twitter brand
+    &:hover,
+    &:focus {
+      color: #55acee;
+    }
   }
 }
 
 // Disqus commenting system
 .comments {
   margin: 30px 0 60px;
-}
-
-.nav-primary>ul>li.active>a:after {
-  background: #3f4549 !important;
-}
-
-.discovery-posts .publisher-anchor-color {
-  // color: fade(black, 75%) !important; // rgba(0,0,0,0.75)
-  color: #3f4549 !important;
-  &:hover,
-  &:focus {
-    // color: fade(black, 90%) !important;
-    color: #3f4549 !important;
+  a {
+    color: #3f4549;
+    &:hover,
+    &:focus {
+      // color: fade(black, 90%) !important;
+      color: darken(#3f4549, 6.5%);
+    }
   }
 }
+
+// .nav-primary>ul>li.active>a:after {
+//  background: #3f4549 !important;
+// }
+
+// .discovery-posts .publisher-anchor-color {
+  // color: fade(black, 75%) !important;
+  // color: #3f4549 !important;
+  // &:hover,
+  // &:focus {
+    // color: fade(black, 90%) !important;
+    // color: #3f4549 !important;
+  // }
+// }
 
 // ==============================================
 //  Archive page content
@@ -63,9 +69,15 @@
 
 
 .archive {
+  // position: relative;
+  // -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  // overflow: hidden;
+  // *zoom: 1;
+  margin-bottom: 30px;
 
   > *:first-child {
-    margin-top: 30px !important;
+    margin-top: 0 !important;
   }
 
   > *:last-child {
@@ -76,7 +88,10 @@
     margin: 40px 0 15px;
     line-height: 1.2;
     font-weight: 700;
-    font-size: 36px;
+    font-size: (@markdown-font-size-h3 - 4); // ~32px
+    @media (min-width: 768px) {
+      font-size: @markdown-font-size-h3; // ~36px
+    }
   }
 
   ul {
@@ -115,6 +130,12 @@
   height: 100%;
   padding-top: 15%;
   // box-sizing: border-box;
+
+  // position: relative;
+  // -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  // overflow: hidden;
+  // *zoom: 1;
 }
 .error-page-message {
   color: fade(black, 80%); // rgba(0,0,0,0.8)
@@ -153,7 +174,7 @@
     &:hover,
     &:active {
       color: fade(black, 60%); // rgba(0,0,0,0.6)
-      text-decoration: underline
+      text-decoration: underline;
     }
   }
 }

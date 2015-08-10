@@ -6,12 +6,12 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: fade(black, 70%); // rgba(0, 0, 0, 0.7);
   width: 48px;
   height: 48px;
-  display: block;
+  display: none;
   text-decoration: none;
   background-image: none;
+  background: fade(black, 70%); // rgba(0, 0, 0, 0.7);
   // -webkit-border-radius: 50%;
   // -moz-border-radius: 50%;
   border-radius: 50%;
@@ -41,6 +41,6 @@
     top: 5px;
   }
   @media (max-width: 768px) {
-    display: none;
+    display: none !important;
   }
 }

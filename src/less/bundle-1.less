@@ -56,11 +56,14 @@ h6 {
 //  }
 // }
 
+// p {
+//  margin-bottom: @markdown-margin;
+// }
+
 a {
   color: inherit;
   text-decoration: none;
   .m-anchor-transition;
-
   &:hover,
   &:focus {
     color: inherit;
@@ -202,12 +205,15 @@ hr.small {
   background-attachment: scroll;
   .m-background-cover;
   // NOTE: Background images are set within the HTML using inline CSS!
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   .site-heading,
   .post-heading,
   .page-heading {
     padding: 100px 0 50px;
     color: #fff;
+
+    transform: translateZ(0);
+
     @media (min-width: 768px) {
       // padding: 150px 0;
       padding: 200px 0 150px;
@@ -288,21 +294,21 @@ hr.small {
 // Post Preview Pages
 
 .post-preview {
-  position: relative;
+  // position: relative;
   // -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  overflow: hidden;
-  *zoom: 1;
+  // overflow: hidden;
+  // *zoom: 1;
 
   margin-top: 40px;
   margin-bottom: 40px;
   a {
-    color: inherit;
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: inherit;
-    }
+  //  color: inherit;
+  //  &:hover,
+  //  &:focus {
+  //    text-decoration: none;
+  //    color: inherit;
+  // }
     .post-title {
       font-size: 30px;
       margin-top: 10px;
@@ -326,7 +332,7 @@ hr.small {
       &:hover,
       &:focus {
         text-decoration: underline;
-        color: @markdown-link-hover-color;
+      // color: @markdown-link-hover-color;
       }
     }
   }
@@ -348,17 +354,18 @@ hr.small {
 // Footer
 
 .info-footer {
-  padding: 50px 0 65px;
-  margin-top: 40px;
+  padding: 50px 0 40px;
+  // margin-top: 40px;
   background-color: #fafafa;
   .list-inline {
     margin: 0;
     padding: 0;
     a {
-      color: fade(black, 75%); // rgba(0,0,0,0.75)
+      color: fade(black, 70%); // rgba(0,0,0,0.75)
       &:hover,
       &:focus {
-        color: @markdown-link-hover-color;
+        color: fade(black, 80%);
+        // color: @markdown-link-hover-color;
       }
     }
   }
@@ -369,29 +376,37 @@ hr.small {
     text-align: center;
     margin-top: @markdown-margin;
     margin-bottom: 0;
+
+    text-rendering: auto;
+    transform: translateZ(0);
     a {
-      text-decoration: underline;
-      color: inherit; // parent color for link
+      // text-decoration: underline;
+      // color: inherit; // parent color for link
       &:hover,
       &:focus {
-        color: @markdown-link-hover-color;
+        text-decoration: underline;
+      //  color: @markdown-link-hover-color;
       }
     }
   }
 }
 
-// Button Styles
 
 .btn {
   .m-sans-serif;
   text-decoration: none !important;
   background-image: none !important;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  border-radius: 0;
+  font-weight: 400;
+  letter-spacing: -.02em;
+  border-radius: 999em;
   padding: 15px 25px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: liga on;
 }
 
 .btn-lg {
@@ -402,40 +417,52 @@ hr.small {
 .btn-default {
   &:hover,
   &:focus {
-    background-color: @markdown-link-hover-color;
-    border: 1px solid @markdown-link-hover-color;
-    color: white;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgba(0,0,0,0.15);
+    color: rgba(0,0,0,0.6);
+    border-color: rgba(0,0,0,0.3);
   }
 }
 
-// Pager Styling
-
 .pager {
-
-  margin: 40px 0 0;
+  margin: 40px 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: liga on;
 
   li {
     > a,
     > span {
       .m-sans-serif;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
+      // text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -.02em;
       padding: 10px 5px;
-      background-color: white;
-      border-radius: 0;
+      color: rgba(0,0,0,0.44);
+      background-color: rgba(0,0,0,0);
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 999em;
       @media (min-width: 768px) {
         font-size: 14px;
         padding: 15px 25px;
       }
     }
 
-    > a:hover,
-    > a:focus {
-      color: white;
-      background-color: @markdown-link-hover-color;
-      border: 1px solid @markdown-link-hover-color;
+    > a:hover {
+      background-color: rgba(0,0,0,0);
+      color: rgba(0,0,0,0.6);
+      border-color: rgba(0,0,0,0.3);
+    }
+    > a:focus,
+    > a:active {
+    outline: none;
+    background-color: rgba(0,0,0,0);
+    color: rgba(0,0,0,0.8);
+    border-color: rgba(0,0,0,0.6);
     }
   }
 
@@ -444,37 +471,109 @@ hr.small {
     > a:hover,
     > a:focus,
     > span {
-      color: @m-gray;
-      background-color: @m-gray-dark;
-      cursor: not-allowed;
+      pointer-events: none;
+      opacity: 0.25;
+      cursor: default;
     }
   }
 }
 
+// Button Styles
+//
+// .btn {
+//  .m-sans-serif;
+//  text-decoration: none !important;
+//  background-image: none !important;
+//  text-transform: uppercase;
+//  font-size: 14px;
+//  font-weight: 700;
+//  letter-spacing: 1px;
+//  border-radius: 0;
+//  padding: 15px 25px;
+// }
+//
+// .btn-lg {
+//  font-size: 16px;
+//  padding: 25px 35px;
+// }
+//
+// .btn-default {
+//  &:hover,
+//  &:focus {
+//    background-color: @markdown-link-hover-color;
+//    border: 1px solid @markdown-link-hover-color;
+//    color: white;
+//  }
+// }
+
+
+// Pager Styling
+
+// .pager {
+//
+//  margin: 40px 0 0;
+//
+//  li {
+//    > a,
+//    > span {
+//      .m-sans-serif;
+//      text-transform: uppercase;
+//      font-size: 14px;
+//      font-weight: 700;
+//      letter-spacing: 1px;
+//      padding: 10px 5px;
+//      background-color: white;
+//      border-radius: 0;
+//      @media (min-width: 768px) {
+//        font-size: 14px;
+//        padding: 15px 25px;
+//      }
+//    }
+//
+//    > a:hover,
+//    > a:focus {
+//      color: white;
+//      background-color: @markdown-link-hover-color;
+//      border: 1px solid @markdown-link-hover-color;
+//    }
+//  }
+//
+//  .disabled {
+//    > a,
+//    > a:hover,
+//    > a:focus,
+//    > span {
+//      color: @m-gray;
+//      background-color: @m-gray-dark;
+//      cursor: not-allowed;
+//    }
+//  }
+// }
+
 // Highlight Color Customization
 
-::-moz-selection {
-  color: #fff;
-  text-shadow: none;
-  background: @markdown-brand-color;
-}
+// ::-moz-selection {
+//  color: #fff;
+//  text-shadow: none;
+//  background: @markdown-brand-color;
+// }
 
-::selection {
-  color: #fff;
-  text-shadow: none;
-  background: @markdown-brand-color;
-}
+// ::selection {
+//  color: #fff;
+//  text-shadow: none;
+//  background: @markdown-brand-color;
+// }
 
-img::-moz-selection {
-  color: #fff;
-  background: transparent;
-}
+// img::-moz-selection {
+//  color: #fff;
+//  background: transparent;
+// }
 
-img::selection {
-  color: #fff;
-  background: transparent;
-}
+// img::selection {
+//  color: #fff;
+//  background: transparent;
+// }
 
-body {
-  webkit-tap-highlight-color: @markdown-brand-color;
-}
+// body {
+//  -webkit-tap-highlight-color: @markdown-brand-color;
+// }

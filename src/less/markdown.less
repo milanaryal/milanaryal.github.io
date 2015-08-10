@@ -3,20 +3,22 @@
 // ==============================================
 
 .markdown-body {
-  position: relative;
+  // position: relative;
   // -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  // transform: translateZ(0);
   // overflow: hidden;
-  *zoom: 1;
+  // *zoom: 1;
 
-  overflow: hidden;
+  // overflow: hidden;
   // outline: 0;
   // word-break: break-word;
-  word-wrap: break-word;
   // position: relative;
+
+  transform: translateZ(0);
+  word-wrap: break-word;
   font-size: 20px;
-  line-height: 1.5;
-  // margin-bottom: 30px;
+  line-height: 1.4;
+  margin-bottom: 30px;
   .m-serif;
   letter-spacing: .01rem;
   font-weight: 400;
@@ -24,10 +26,11 @@
   color: @markdown-body-color; // rgba(0,0,0,0.95);
   @media (min-width: 768px) {
     font-size: 22px;
+    line-height: 1.5;
   }
 
   > *:first-child {
-    margin-top: 30px !important;
+    margin-top: 0 !important;
   }
 
   > *:last-child {
@@ -108,14 +111,14 @@
   }
 
   h2 {
-    font-size: (@markdown-font-size-h2 - 2); // ~38px
+    font-size: (@markdown-font-size-h2 - 4); // ~36px
     @media (min-width: 768px) {
       font-size: @markdown-font-size-h2; // ~40px
     }
     a {
       background-image: linear-gradient(to bottom, fade(black, 80%), fade(black, 80%)); // rgba(0,0,0,0.8), rgba(0,0,0,0.8)
       // background-size: 2px 3px;
-      background-position: 0 39px;
+      background-position: 0 37px;
       @media (min-width: 768px) {
         background-position: 0 41px;
       }
@@ -123,13 +126,13 @@
   }
 
   h3 {
-    font-size: (@markdown-font-size-h3 - 2); // ~34px
+    font-size: (@markdown-font-size-h3 - 4); // ~32px
     @media (min-width: 768px) {
       font-size: @markdown-font-size-h3; // ~36px
     }
     a {
       background-image: linear-gradient(to bottom, fade(black, 80%), fade(black, 80%)); // rgba(0,0,0,0.8), rgba(0,0,0,0.8)
-      background-position: 0 35px;
+      background-position: 0 33px;
       @media (min-width: 768px) {
         background-position: 0 37px;
       }
@@ -137,13 +140,13 @@
   }
 
   h4 {
-    font-size: (@markdown-font-size-h4 - 2); // ~30px
+    font-size: (@markdown-font-size-h4 - 4); // ~28px
     @media (min-width: 768px) {
       font-size: @markdown-font-size-h4; // ~32px
     }
     a {
       background-image: linear-gradient(to bottom, fade(black, 0%) 50%, fade(black, 44%) 50%); // rgba(0,0,0,0) and rgba(0,0,0,0.44)
-      background-position: 0 31px;
+      background-position: 0 29px;
       @media (min-width: 768px) {
         background-position: 0 33px;
       }
@@ -151,7 +154,7 @@
   }
 
   h5, h6 {
-    font-size: (@markdown-font-size-h5 - 2); // ~26px
+    font-size: (@markdown-font-size-h5 - 4); // ~24px
     @media (min-width: 768px) {
       font-size: @markdown-font-size-h5; // ~28px
     }

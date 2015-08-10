@@ -38,7 +38,7 @@ layout: default
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-        <div class="markdown-body" itemprop="articleBody">
+        <div class="markdown-body clearfix" itemprop="articleBody">
           {{ content }}
         </div>
 
@@ -49,22 +49,22 @@ layout: default
 
             {% if site.disqus_shortname %}
               {% unless page.comments == 'false' %}
-              <div class="comments" itemprop="comment">
+              <div class="comments clearfix" itemprop="comment">
                 {% include disqus_thread.html %}
               </div>
               {% endunless %}
             {% endif %}
 
-            <nav itemprop="pagination">
+            <nav class="clearfix" itemprop="pagination">
               <ul class="pager">
                 {% if page.previous.url %}
                 <li class="previous">
-                  <a href="{{ page.previous.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}"><i class="fa fa-angle-double-left"></i> Previous Post</a>
+                  <a href="{{ page.previous.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}"><i class="fa fa-angle-double-left"></i> Previous</a>
                 </li>
                 {% endif %}
                 {% if page.next.url %}
                 <li class="next">
-                  <a href="{{ page.next.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next Post <i class="fa fa-angle-double-right"></i></a>
+                  <a href="{{ page.next.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next <i class="fa fa-angle-double-right"></i></a>
                 </li>
                 {% endif %}
               </ul>
