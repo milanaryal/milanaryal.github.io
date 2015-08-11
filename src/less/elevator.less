@@ -1,31 +1,40 @@
-// Elevator - Scroll to top utility
-// =================================
+// Elevator - Scroll back to top utility
+// ======================================
 
 .elevator {
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 48px;
+  display: inline-block;
   height: 48px;
-  display: none;
+  width: 48px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  white-space: nowrap;
+
+  cursor: pointer;
+  border-radius: 100%;
   text-decoration: none;
   background-image: none;
   background: fade(black, 70%); // rgba(0, 0, 0, 0.7);
-  // -webkit-border-radius: 50%;
-  // -moz-border-radius: 50%;
-  border-radius: 50%;
-  // -webkit-transition: all 0.3s ease;
-  // -moz-transition: all 0.3s ease;
-  // -ms-transition: all 0.3s ease;
-  // -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  i {
-    color: #fff;
+
+  visibility: hidden;
+  opacity: 0;
+
+  &.elevator-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .fa {
+    color: white;
     margin: 0;
+    padding: 0;
     position: relative;
-    left: 15px;
-    top: 10px;
+    left: 14px;
+    top: 12px;
     font-size: 20px;
     // -webkit-transition: all 0.3s ease;
     // -moz-transition: all 0.3s ease;
@@ -35,12 +44,13 @@
   }
   &:hover {
     background: fade(black, 80%); // rgba(0, 0, 0, 0.8);
-  }
-  &:hover i {
-    color: white; // #fff
-    top: 5px;
+    .fa {
+      color: white; // #fff
+      top: 5px;
+    }
   }
   @media (max-width: 768px) {
+    /* only show elevator on desktop screen */
     display: none !important;
   }
 }
