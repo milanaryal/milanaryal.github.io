@@ -9,7 +9,7 @@ This resource is suitable for website with lots of page content. When a user scr
 
 #### Creating the structure
 
-Insert the '.elevator-wrapper' class at the bottom of your content, before the closing tag.
+Insert the `.elevator-wrapper` at the bottom of your content, before the closing tag.
 
 {% highlight html %}
 <body>
@@ -63,8 +63,8 @@ Add the following style for the elevator button or you can further change accord
 }
 .elevator .fa {
   position: relative;
-  top: 12px;
-  left: 14px;
+  top: 12.5px;
+  left: 14.5px;
   padding: 0;
   margin: 0;
   font-size: 20px;
@@ -97,7 +97,7 @@ Then add the following jQuery snippet on your script file. This script helps to 
   'use strict';
 
   // Elevator - Scroll back to top utility JS
-  // ======================================
+  // ========================================
 
   // append necessary class
   // should have already contain wrapper on a page.
@@ -105,25 +105,25 @@ Then add the following jQuery snippet on your script file. This script helps to 
   $('.elevator-wrapper').append('<div class="elevator"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>');
 
   // browser window scroll (in pixels) after which the "back to top" link is shown
-	var offset = 300,
-		// duration of the top scrolling animation (in ms)
-		scroll_top_duration = 700,
-		// grab the "back to top" link
-		$back_to_top = $('.elevator');
+  var offset = 300,
+    // duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    // grab the "back to top" link
+    $back_to_top = $('.elevator');
 
-	// hide or show the "back to top" link
-	$(window).scroll(function(){
-		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('elevator-is-visible') : $back_to_top.removeClass('elevator-is-visible');
-	});
+  // hide or show the "back to top" link
+  $(window).scroll(function(){
+    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('elevator-is-visible') : $back_to_top.removeClass('elevator-is-visible');
+  });
 
-	// smooth scroll to top
-	$back_to_top.on('click', function(event){
-		event.preventDefault();
-		$('body,html').animate({
-			scrollTop: 0 ,
-		 	}, scroll_top_duration
-		);
-	});
+  // smooth scroll to top
+  $back_to_top.on('click', function(event){
+    event.preventDefault();
+    $('body,html').animate({
+      scrollTop: 0 ,
+      }, scroll_top_duration
+      );
+  });
 
 
 }(jQuery);

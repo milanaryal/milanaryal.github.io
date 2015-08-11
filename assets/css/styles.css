@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-11T06:35:22+05:45
+ * Date: 2015-08-12T00:26:42+05:45
  */
 
 /*!
@@ -6897,20 +6897,20 @@ hr.small {
 .intro-header .post-heading .meta {
   margin: 0 0 10px;
   font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: rgba(255, 255, 255, .75);
 }
 @media (min-width: 768px) {
   .intro-header .post-heading .meta {
-    font-size: 16px;
+    font-size: 14px;
   }
   .intro-header .post-heading h1 {
-    font-size: 58px;
+    font-size: 60px;
     line-height: 1;
   }
   .intro-header .post-heading .subheading {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 .dark-background {
@@ -6921,15 +6921,13 @@ hr.small {
   background: rgba(0, 0, 0, .44);
 }
 .post-preview {
-  margin-top: 40px;
-  margin-bottom: 40px;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
 .post-preview a .post-title {
   margin-top: 10px;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 24px;
 }
 .post-preview a .post-subtitle {
   margin-top: 10px;
@@ -6937,10 +6935,11 @@ hr.small {
   font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 300;
+  letter-spacing: .005rem;
 }
 .post-preview .post-meta {
   font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(0, 0, 0, .44);
 }
 .post-preview .post-meta a {
@@ -6953,14 +6952,18 @@ hr.small {
 }
 @media (min-width: 768px) {
   .post-preview .post-meta {
-    font-size: 16px;
+    font-size: 14px;
   }
   .post-preview a .post-title {
-    font-size: 34px;
+    font-size: 28px;
   }
   .post-preview a .post-subtitle {
     font-size: 20px;
   }
+}
+.post-preview-divider {
+  margin: 30px 0 25px;
+  border-top: 1px solid rgba(0, 0, 0, .1);
 }
 .info-footer {
   padding: 50px 0 40px;
@@ -7023,7 +7026,7 @@ hr.small {
   outline: none;
 }
 .pager {
-  margin: 20px 0 40px;
+  margin: 15px 0 40px;
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-rendering: optimizeLegibility;
@@ -7169,7 +7172,7 @@ hr.small {
   color: rgba(0, 0, 0, .44);
 }
 .markdown-body h2 {
-  font-size: 36px;
+  font-size: 32px;
 }
 @media (min-width: 768px) {
   .markdown-body h2 {
@@ -7181,7 +7184,7 @@ hr.small {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
   background-image:      -o-linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
   background-image:         linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
-  background-position: 0 37px;
+  background-position: 0 33px;
 }
 @media (min-width: 768px) {
   .markdown-body h2 a {
@@ -7189,7 +7192,7 @@ hr.small {
   }
 }
 .markdown-body h3 {
-  font-size: 32px;
+  font-size: 28px;
 }
 @media (min-width: 768px) {
   .markdown-body h3 {
@@ -7201,7 +7204,7 @@ hr.small {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
   background-image:      -o-linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
   background-image:         linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
-  background-position: 0 33px;
+  background-position: 0 29px;
 }
 @media (min-width: 768px) {
   .markdown-body h3 a {
@@ -7209,7 +7212,7 @@ hr.small {
   }
 }
 .markdown-body h4 {
-  font-size: 28px;
+  font-size: 24px;
 }
 @media (min-width: 768px) {
   .markdown-body h4 {
@@ -7221,7 +7224,7 @@ hr.small {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .44) 50%);
   background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .44) 50%);
   background-image:         linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .44) 50%);
-  background-position: 0 29px;
+  background-position: 0 25px;
 }
 @media (min-width: 768px) {
   .markdown-body h4 a {
@@ -7230,7 +7233,7 @@ hr.small {
 }
 .markdown-body h5,
 .markdown-body h6 {
-  font-size: 24px;
+  font-size: 20px;
 }
 @media (min-width: 768px) {
   .markdown-body h5,
@@ -7861,7 +7864,7 @@ kbd {
   visibility: hidden;
   background: rgba(0, 0, 0, .7);
   background-image: none;
-  border-radius: 100%;
+  border-radius: 50%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
           box-shadow: 0 0 10px rgba(0, 0, 0, .05);
   opacity: 0;
@@ -7876,8 +7879,8 @@ kbd {
 }
 .elevator .fa {
   position: relative;
-  top: 12px;
-  left: 14px;
+  top: 12.5px;
+  left: 14.5px;
   padding: 0;
   margin: 0;
   font-size: 20px;
