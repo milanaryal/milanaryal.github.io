@@ -2,12 +2,16 @@
 title: "Style guide"
 description: "This is the style guide for Milan Aryal."
 date: 2015-08-12T13:09:23+05:45
-last_modified_at: 2015-08-12T13:53:03+05:45
+last_modified_at: 2015-08-12T19:43:47+05:45
 ---
 
 <p class="lead">A living document of code detailing all the various colors, typographic elements, UI patterns, and components used on the website to maintain visual consistency.</p>
 
-Articles in [Milan Aryal](http://milanaryal.com/) are written in Markdown which are generated in standard HTML using [Jekyll](http://jekyllrb.com/). Since this style guide is written in Markdown, the raw file is available [here](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/_posts/2015-08-12-style-guide.md).
+Articles in [Milan Aryal](http://milanaryal.com/) are written in Markdown which are generated in standard HTML using [Jekyll](http://jekyllrb.com/).
+
+<div class="alert alert-info">
+  This style guide is written in Markdown, the raw file is available <a class="alert-link" href="https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/_docs/style-guide.md">here</a>.
+</div>
 
 ---
 
@@ -162,11 +166,19 @@ For example, `<section>` should be wrapped as inline.
 
 ### Images
 
+#### Default image shape
+
 ![Milan Aryal](/assets/img/m-icon-white-on-blue.png)
+
+#### Rounded corners
 
 <img src="/assets/img/m-icon-white-on-blue.png" alt="Milan Aryal" class="img-rounded">
 
+#### Circle
+
 <img src="/assets/img/m-icon-white-on-blue.png" alt="Milan Aryal" class="img-circle">
+
+#### Thumbnail
 
 <img src="/assets/img/m-icon-white-on-blue.png" alt="Milan Aryal" class="img-thumbnail">
 
@@ -182,9 +194,9 @@ For example, `<section>` should be wrapped as inline.
   <!-- Contextual button for informational alert messages -->
   <button type="button" class="btn btn-info">Info</button>
   <!-- Indicates caution should be taken with this action -->
-  <button type="button" class="btn btn-warning">Warning</button><br />
+  <button type="button" class="btn btn-warning">Warning</button>
   <!-- Indicates a dangerous or potentially negative action -->
-  <button type="button" class="btn btn-danger">Danger</button><br />
+  <button type="button" class="btn btn-danger">Danger</button>
   <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
   <button type="button" class="btn btn-link">Link</button>
 </p>
