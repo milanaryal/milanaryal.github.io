@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title: "Style Guide"
-subtitle: "This is the style guide for Milan Aryal."
+description: "This is the style guide for Milan Aryal."
 date: 2015-08-12T13:09:23+05:45
 last_modifies_at: 2015-08-12T13:53:03+05:45
 ---
@@ -203,19 +203,19 @@ For example, `<section>` should be wrapped as inline.
 ### Alerts
 
 <div class="alert alert-danger">
-  <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+  <strong>Oh snap!</strong> <a href="#" class="alert-link" data-proofer-ignore>Change a few things up</a> and try submitting again.
 </div>
 
 <div class="alert alert-success">
-  <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+  <strong>Well done!</strong> You successfully read <a href="#" class="alert-link" data-proofer-ignore>this important alert message</a>.
 </div>
 
 <div class="alert alert-warning">
-  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+  <strong>Heads up!</strong> This <a href="#" class="alert-link" data-proofer-ignore>alert needs your attention</a>, but it's not super important.
 </div>
 
 <div class="alert alert-info">
-  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+  <strong>Heads up!</strong> This <a href="#" class="alert-link" data-proofer-ignore>alert needs your attention</a>, but it's not super important.
 </div>
 
 <div class="alert">

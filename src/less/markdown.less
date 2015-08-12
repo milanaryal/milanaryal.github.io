@@ -95,7 +95,7 @@
     margin-bottom: (@markdown-margin / 2); // ~15px
   }
 
-  h3 + h4 {
+  h2 + h2, h2 + h3, h3 + h3, h3 + h4, h4 + h4 {
     // margin-top: -3px;
     margin-top: ((@markdown-margin / 2) + 5); // ~20px
   }
@@ -316,6 +316,16 @@
     hr {
       margin: 20px auto;
       border-top-color: inherit;
+    }
+    .alert-link {
+      background-image: none !important;
+      // color: inherit; // parent color for link
+      text-decoration: underline !important;
+      &:hover,
+      &:focus {
+      //  color: inherit;
+        text-decoration: underline !important;
+      }
     }
   }
 

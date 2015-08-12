@@ -32,7 +32,7 @@ module.exports = function (grunt) {
       js: [
         '<%= project.src %>/js/jquery.js',
         '<%= project.src %>/js/bootstrap/transition.js',
-        '<%= project.src %>/js/bootstrap/alert.js',
+        // '<%= project.src %>/js/bootstrap/alert.js',
         // '<%= project.src %>/js/bootstrap/button.js',
         // '<%= project.src %>/js/bootstrap/carousel.js',
         '<%= project.src %>/js/bootstrap/collapse.js',
