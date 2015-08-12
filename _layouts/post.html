@@ -12,7 +12,11 @@ layout: default
             <div class="post-heading">
               <link itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
               <link itemprop="image" href="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.icon }}{% endif %}">
-              <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}">
+              {% if post.subtitle %}
+                <meta itemprop="description" content="{{ page.subtitle | markdownify | strip_newlines | truncate: 160 }}">
+              {% elsif post.excerpt and post.excerpt != blank %}
+                <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}">
+              {% endif %}
               <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
               <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Person">
                 <meta itemprop="name" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %}">
@@ -24,7 +28,7 @@ layout: default
               </div>
               <h1 itemprop="name headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
               {% if page.subtitle %}
-              <h2 class="subheading">{{ page.subtitle | markdownify | strip_html | strip_newlines }}</h2>
+                <h2 class="subheading">{{ page.subtitle | markdownify | strip_html | strip_newlines }}</h2>
               {% endif %}
             </div>
           </div>

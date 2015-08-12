@@ -1,15 +1,5 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-  {% capture meta_description %}
-    {% if page.subtitle %}
-      {{ page.subtitle | markdownify | strip_html | strip_newlines | truncate: 160 }}
-    {% elsif page.excerpt %}
-      {{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
-    {% elsif page.description %}
-      {{ page.description | markdownify | strip_html | strip_newlines | truncate: 160 }}
-    {% else %}
-      {{ site.description | markdownify | strip_html | strip_newlines | truncate: 160 }}
-    {% endif %}
-  {% endcapture %}
+  {% capture meta_description %}{% if page.subtitle %}{{ page.subtitle | markdownify | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt and page.excerpt != blank %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}{% elsif page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | markdownify | strip_html | strip_newlines | truncate: 160 }}{% endif %}{% endcapture %}
 
   <!-- Basic page needs -->
   <meta charset="utf-8">

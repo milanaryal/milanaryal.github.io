@@ -24,7 +24,7 @@ sitemap: false
   {% endif %}
 
   {% if site.description %}
-    <subtitle>{{ site.description | xml_escape }}</subtitle>
+    <subtitle>{{ site.description | markdownify | strip_html | strip_newlines | truncate: 160 | xml_escape }}</subtitle>
   {% endif %}
 
   {% if site.author %}
@@ -57,32 +57,10 @@ sitemap: false
       <id>{{ post.id | prepend: url_base | xml_escape }}</id>
       <content type="html" xml:base="{{ post.url | prepend: url_base | xml_escape }}">{{ post.content | xml_escape }}</content>
 
-      {% if post.author %}
-        <author>
-          {% if post.author.name %}
-            <name>{{ post.author.name | xml_escape }}</name>
-          {% else %}
-            <name>{{ post.author | xml_escape }}</name>
-          {% endif %}
-          {% if post.author.email %}
-            <email>{{ post.author.email | xml_escape }}</email>
-          {% endif %}
-          {% if post.author.uri %}
-            <uri>{{ post.author.uri | xml_escape }}</uri>
-          {% endif %}
-        </author>
-      {% endif %}
-
-      {% if post.category %}
-        <category term="{{ post.category | xml_escape }}" />
-      {% endif %}
-
-      {% for tag in post.tags %}
-        <category term="{{ tag | xml_escape }}" />
-      {% endfor %}
-
-      {% if post.excerpt and post.excerpt != blank %}
-        <summary>{{ post.excerpt | markdownify | strip_html | strip_newlines | xml_escape }}</summary>
+      {% if post.subtitle %}
+        <summary>{{ post.subtitle | markdownify | strip_html | strip_newlines | truncate: 160 | xml_escape }}</summary>
+      {% elsif post.excerpt and post.excerpt != blank %}
+        <summary>{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | xml_escape }}</summary>
       {% endif %}
     </entry>
   {% endfor %}

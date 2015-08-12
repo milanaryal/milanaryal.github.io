@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" itemprop="url" href="/"><span itemprop="name">{% if site.author.name %}{{ site.author.name }}{% else %}{{ site.name }}{% endif %}</span></a>
-        {% if site.author.name %}<meta itemprop="description" content="{{ site.description }}">
+        {% if site.author.name %}<meta itemprop="description" content="{{ site.description | markdownify | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
         <link itemprop="image" href="{{ site.icon | prepend: site.url }}">
         <span class="hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
           <meta itemprop="streetAddress" content="{{ site.author.street }}">
