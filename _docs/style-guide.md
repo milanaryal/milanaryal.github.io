@@ -30,20 +30,20 @@ Following are the header tags for the body content. H1 and H2 are reserved on th
 ### This is an h3 heading
 {:.no_toc}
 
-### [H3 heading with an anchor link]({{ site.url }}/labs/style-guide/)
+### [H3 heading with an anchor link]({{ site.url }}/docs/style-guide/)
 {:.no_toc}
 
 #### This is an h4 heading
 {:.no_toc}
 
-#### [H4 heading with an anchor link]({{ site.url }}/labs/style-guide/)
+#### [H4 heading with an anchor link]({{ site.url }}/docs/style-guide/)
 {:.no_toc}
 
 ---
 
 ### Body copy
 
-This is an **ordinary paragraph** that is *long enough* to wrap to [multiple lines]({{ site.url }}/labs/style-guide/) so that you can see how the `line spacing` looks.
+This is an **ordinary paragraph** that is *long enough* to wrap to [multiple lines]({{ site.url }}/docs/style-guide/) so that you can see how the `line spacing` looks.
 
 Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 

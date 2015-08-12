@@ -1,7 +1,6 @@
 ---
 title: "Adding a sticky 'scroll back to top' button to your website"
 subtitle: "This elevator button allows users to smoothly scroll back to the top of the page."
-excerpt: "This elevator button allows users to smoothly scroll back to the top of the page."
 date: 2015-08-11T22:55:01+05:45
 ---
 

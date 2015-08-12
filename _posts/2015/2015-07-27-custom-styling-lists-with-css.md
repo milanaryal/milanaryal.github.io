@@ -1,8 +1,8 @@
 ---
 title: "Custom styling lists with CSS"
+subtitle: "Customizing unordered and ordered lists according to our needs with the help of CSS."
 date: 2015-07-27T16:20:55+05:45
 last_modified_at: 2015-07-27T19:09:10+05:45
-excerpt: "Customizing unordered and ordered lists according to our needs with the help of CSS."
 ---
 
 It's really easy to have lists into a document, you just have need to add `ul` or `ol` element and `li` child elements.
