@@ -86,9 +86,10 @@ defaults:
 
 # Collections
 collections:
-  labs:
+  docs:
     output: true
-    permalink: /labs/:path/
+    layout: "docs"
+    permalink: /docs/:path/
 
 # Compress HTML
 compress_html:

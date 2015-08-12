@@ -9,4 +9,5 @@ redirect_from:
   - /2014/
   - /2015/
 redirect_to: /
+sitemap: false
 ---
