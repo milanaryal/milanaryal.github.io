@@ -84,6 +84,12 @@ defaults:
       layout: "post"
       comments: "true"
 
+# Collections
+collections:
+  labs:
+    output: true
+    permalink: /labs/:path/
+
 # Compress HTML
 compress_html:
   clippings: all

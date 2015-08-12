@@ -1,9 +1,9 @@
 ---
+layout: post
 title: "Style Guide"
 subtitle: "This is the style guide for Milan Aryal."
 date: 2015-08-12T13:09:23+05:45
-robots: "noindex, follow"
-permalink: /labs/style-guide/
+last_modifies_at: 2015-08-12T13:53:03+05:45
 ---
 
 <p class="lead">A living document of code detailing all the various colors, typographic elements, UI patterns, and components used on the website to maintain visual consistency.</p>
@@ -241,12 +241,6 @@ Convey meaning through color with a handful of emphasis utility classes. These m
 ### Contextual backgrounds
 
 Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.
-
-<p class="text-muted">Muted color paragraph.</p>
-<p class="text-warning">Warning color paragraph.</p>
-<p class="text-danger">Danger color paragraph.</p>
-<p class="text-info">Info color paragraph.</p>
-<p class="text-success">Success color paragraph.</p>
 
 <p class="bg-primary">Primary background color paragraph.</p>
 <p class="bg-success">Success background color paragraph.</p>
