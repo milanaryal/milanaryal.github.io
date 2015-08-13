@@ -15,6 +15,11 @@ layout: compress
       {{ content }}
     </main>
 
+    {% comment %} Elevator wrapper - scroll back to top utility {% endcomment %}
+    {% if page.layout == 'post' or page.layout == 'docs' %}
+      <div class="elevator-wrapper"></div>
+    {% endif %}
+
     {% include footer.html %}
 
     {% include scripts.html %}
