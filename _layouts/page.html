@@ -35,12 +35,12 @@ layout: default
 {% comment %}
   Just to validate page.title is taken as a common condition in both id and name.
 {% endcomment %}
-{% if page.title and page.url == '/about/' and page.url == '/contact/' %}
+{% if page.title and page.url == '/about/' or page.url == '/contact/' %}
  {% assign breadcrumb_2_id = '/about/' %}
  {% else %}
  {% assign breadcrumb_2_id = page.url %}
 {% endif %}
-{% if page.title == 'About' and page.title == 'Contact' %}
+{% if page.title == 'About' or page.title == 'Contact' %}
  {% assign breadcrumb_2_name = 'About' %}
  {% else %}
  {% assign breadcrumb_2_name = page.title %}
