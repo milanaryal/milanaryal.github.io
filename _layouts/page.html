@@ -32,6 +32,19 @@ layout: default
   </div>
 </article>
 
+{% comment %}
+  Just to validate page.title is taken as a common condition in both id and name.
+{% endcomment %}
+{% if page.title and page.url == '/about/' and page.url == '/contact/' %}
+ {% assign breadcrumb_2_id = '/about/' %}
+ {% else %}
+ {% assign breadcrumb_2_id = page.url %}
+{% endif %}
+{% if page.title == 'About' and page.title == 'Contact' %}
+ {% assign breadcrumb_2_name = 'About' %}
+ {% else %}
+ {% assign breadcrumb_2_name = page.title %}
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -52,8 +65,8 @@ layout: default
       "position": 2,
       "item":
       {
-        "@id": "{{ site.url }}{{ page.url | replace:'index.html','' }}",
-        "name": "{{ page.title }}"
+        "@id": "{{ site.url }}{{ breadcrumb_2_id | replace:'index.html','' }}",
+        "name": "{{ breadcrumb_2_name }}"
       }
     }
   ]
