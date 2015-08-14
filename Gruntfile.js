@@ -158,6 +158,7 @@ module.exports = function (grunt) {
       options: {
         compatibility: 'ie8',
         keepSpecialComments: '0',
+        sourceMap: true,
         advanced: false
       },
       minifyCore: {
