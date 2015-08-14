@@ -53,7 +53,8 @@ module.exports = function (grunt) {
       css: [
         '<%= project.assets %>/css/styles.css',
         '<%= project.assets %>/css/styles.css.map',
-        '<%= project.assets %>/css/styles.min.css'
+        '<%= project.assets %>/css/styles.min.css',
+        '<%= project.assets %>/css/styles.min.css.map'
       ],
       js: [
         '<%= project.assets %>/js/scripts.js',
@@ -158,7 +159,7 @@ module.exports = function (grunt) {
       options: {
         compatibility: 'ie8',
         keepSpecialComments: '0',
-        sourceMap: true,
+        // sourceMap: true,
         advanced: false
       },
       minifyCore: {
