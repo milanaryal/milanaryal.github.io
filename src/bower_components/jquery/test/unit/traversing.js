@@ -530,7 +530,7 @@ test("parent([String])", function() {
 	deepEqual( jQuery("#en, #sndp").parent().get(), q("foo"), "Check for unique results from parent" );
 
 	$el = jQuery("<div>text</div>");
-	strictEqual( $el.contents().parent()[0], $el[0], "Check for parent of text node (#13265)" );
+	deepEqual( $el.contents().parent().get(), $el.get(), "Check for parent of text node (#13265)" );
 });
 
 test("parents([String])", function() {

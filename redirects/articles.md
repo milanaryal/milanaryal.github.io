@@ -8,6 +8,6 @@ redirect_from:
   - /2013/
   - /2014/
   - /2015/
-redirect_to: /
+redirect_to: /archives/
 sitemap: false
 ---

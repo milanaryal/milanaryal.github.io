@@ -12,15 +12,12 @@
 
 	"sub": true,
 
-	"es3": true,
-	"browser": true,
-	"wsh": true,
-
 	"globals": {
-		"JSON": false,
+		"window": true,
+
 		"jQuery": true,
-		"define": false,
-		"module": false,
+		"define": true,
+		"module": true,
 		"noGlobal": true
 	}
 }

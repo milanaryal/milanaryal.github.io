@@ -3,7 +3,7 @@ if ( jQuery.css ) {
 module("css", { teardown: moduleTeardown });
 
 test("css(String|Hash)", function() {
-	expect( 43 );
+	expect( 42 );
 
 	equal( jQuery("#qunit-fixture").css("display"), "block", "Check for css property \"display\"" );
 
@@ -61,9 +61,6 @@ test("css(String|Hash)", function() {
 	equal( jQuery("#empty").css("opacity"), "0", "Assert opacity is accessible via filter property set in stylesheet in IE" );
 	jQuery("#empty").css({ "opacity": "1" });
 	equal( jQuery("#empty").css("opacity"), "1", "Assert opacity is taken from style attribute when set vs stylesheet in IE with filters" );
-	jQuery.support.opacity ?
-		ok(true, "Requires the same number of tests"):
-		ok( ~jQuery("#empty")[0].currentStyle.filter.indexOf("gradient"), "Assert setting opacity doesn't overwrite other filters of the stylesheet in IE" );
 
 	div = jQuery("#nothiddendiv");
 	child = jQuery("#nothiddendivchild");
@@ -118,17 +115,6 @@ test("css(String|Hash)", function() {
 	strictEqual( div.css( "z-index" ), "1000",
 		"Make sure that a string z-index is returned from css('z-index') (#14432)." );
 });
-
-test( "css(String) computed values", 3, function() {
-	var div = jQuery( "<div/>" ).addClass( "get-computed-value" ),
-		fixture = document.getElementById( "qunit-fixture" );
-
-	div.appendTo( fixture );
-	strictEqual( div.css( "padding-left" ), "500px", "should get computed value for padding-left property" );
-	strictEqual( div.css( "width" ), "200px", "should get computed value for width property" );
-	strictEqual( div.css( "font-size" ), "32px", "should get computed value for font-size property" );
-});
-
 
 test( "css() explicit and relative values", 29, function() {
 	var $elem = jQuery("#nothiddendiv");
@@ -357,39 +343,6 @@ test( "css(Array)", function() {
 	deepEqual( elem.css( expectedSingle ).css([ "width" ]), expectedSingle, "Getting single element array" );
 });
 
-if ( !jQuery.support.opacity ) {
-	test("css(String, Object) for MSIE", function() {
-		expect( 5 );
-		// for #1438, IE throws JS error when filter exists but doesn't have opacity in it
-		jQuery("#foo").css("filter", "progid:DXImageTransform.Microsoft.Chroma(color='red');");
-		equal( jQuery("#foo").css("opacity"), "1", "Assert opacity is 1 when a different filter is set in IE, #1438" );
-
-		var filterVal = "progid:DXImageTransform.Microsoft.Alpha(opacity=30) progid:DXImageTransform.Microsoft.Blur(pixelradius=5)",
-			filterVal2 = "progid:DXImageTransform.Microsoft.alpha(opacity=100) progid:DXImageTransform.Microsoft.Blur(pixelradius=5)",
-			filterVal3 = "progid:DXImageTransform.Microsoft.Blur(pixelradius=5)";
-		jQuery("#foo").css("filter", filterVal);
-		equal( jQuery("#foo").css("filter"), filterVal, "css('filter', val) works" );
-		jQuery("#foo").css("opacity", 1);
-		equal( jQuery("#foo").css("filter"), filterVal2, "Setting opacity in IE doesn't duplicate opacity filter" );
-		equal( jQuery("#foo").css("opacity"), 1, "Setting opacity in IE with other filters works" );
-		jQuery("#foo").css("filter", filterVal3).css("opacity", 1);
-		ok( jQuery("#foo").css("filter").indexOf(filterVal3) !== -1, "Setting opacity in IE doesn't clobber other filters" );
-	});
-
-	test( "Setting opacity to 1 properly removes filter: style (#6652)", function() {
-		var rfilter = /filter:[^;]*/i,
-			test = jQuery( "#t6652" ).css( "opacity", 1 ),
-			test2 = test.find( "div" ).css( "opacity", 1 );
-
-		function hasFilter( elem ) {
-			return !!rfilter.exec( elem[0].style.cssText );
-		}
-		expect( 2 );
-		ok( !hasFilter( test ), "Removed filter attribute on element without filter in stylesheet" );
-		ok( hasFilter( test2 ), "Filter attribute remains on element that had filter in stylesheet" );
-	});
-}
-
 test("css(String, Function)", function() {
 	expect(3);
 
@@ -515,6 +468,7 @@ test("css(Object) where values are Functions with incoming values", function() {
 });
 
 test("show(); hide()", function() {
+
 	expect( 4 );
 
 	var hiddendiv, div;
@@ -536,7 +490,7 @@ test("show();", function() {
 
 	expect( 18 );
 
-	var hiddendiv, div, pass, test;
+	var hiddendiv, div, pass, old, test;
 		hiddendiv = jQuery("div.hidden");
 
 	equal(jQuery.css( hiddendiv[0], "display"), "none", "hiddendiv is display: none");
@@ -566,6 +520,7 @@ test("show();", function() {
 		"<table id='test-table'></table>"
 	).appendTo( "#qunit-fixture" ).find( "*" ).css( "display", "none" );
 
+	old = jQuery("#test-table").show().css("display") !== "table";
 	jQuery("#test-table").remove();
 
 	test = {
@@ -575,14 +530,14 @@ test("show();", function() {
 		"code"     : "inline",
 		"pre"      : "block",
 		"span"     : "inline",
-		"table"    : "table",
-		"thead"    : "table-header-group",
-		"tbody"    : "table-row-group",
-		"tr"       : "table-row",
-		"th"       : "table-cell",
-		"td"       : "table-cell",
+		"table"    : old ? "block" : "table",
+		"thead"    : old ? "block" : "table-header-group",
+		"tbody"    : old ? "block" : "table-row-group",
+		"tr"       : old ? "block" : "table-row",
+		"th"       : old ? "block" : "table-cell",
+		"td"       : old ? "block" : "table-cell",
 		"ul"       : "block",
-		"li"       : "list-item"
+		"li"       : old ? "block" : "list-item"
 	};
 
 	jQuery.each(test, function(selector, expected) {
@@ -716,7 +671,7 @@ test("hide hidden elements (bug #7141)", function() {
 	var div = jQuery("<div style='display:none'></div>").appendTo("#qunit-fixture");
 	equal( div.css("display"), "none", "Element is hidden by default" );
 	div.hide();
-	ok( !jQuery._data(div, "display"), "display data is undefined after hiding an already-hidden element" );
+	ok( !jQuery._data(div, "olddisplay"), "olddisplay is undefined after hiding an already-hidden element" );
 	div.show();
 	equal( div.css("display"), "block", "Show a double-hidden element" );
 
@@ -791,22 +746,15 @@ test("widows & orphans #8936", function () {
 
 	var $p = jQuery("<p>").appendTo("#qunit-fixture");
 
-	if ( "widows" in $p[0].style ) {
-		expect(2);
+	expect( 2 );
 
-		$p.css({
-			"widows": 3,
-			"orphans": 3
-		});
+	$p.css({
+		"widows": 3,
+		"orphans": 3
+	});
 
-		equal( $p.css("widows") || jQuery.style( $p[0], "widows" ), 3, "widows correctly set to 3");
-		equal( $p.css("orphans") || jQuery.style( $p[0], "orphans" ), 3, "orphans correctly set to 3");
-	} else {
-
-		expect(1);
-		ok( true, "jQuery does not attempt to test for style props that definitely don't exist in older versions of IE");
-	}
-
+	equal( $p.css( "widows" ) || jQuery.style( $p[0], "widows" ), 3, "widows correctly set to 3" );
+	equal( $p.css( "orphans" ) || jQuery.style( $p[0], "orphans" ), 3, "orphans correctly set to 3" );
 
 	$p.remove();
 });
@@ -845,12 +793,6 @@ test("can't get background-position in IE<9, see #10796", function() {
 	}
 });
 
-test("percentage properties for bottom and right in IE<9 should not be incorrectly transformed to pixels, see #11311", function() {
-	expect( 1 );
-	var div = jQuery("<div style='position: absolute; width: 1px; height: 20px; bottom:50%;'></div>").appendTo( "#qunit-fixture" );
-	ok( window.getComputedStyle || div.css( "bottom" ) === "50%", "position properties get incorrectly transformed in IE<8, see #11311" );
-});
-
 if ( jQuery.fn.offset ) {
 	test("percentage properties for left and top should be transformed to pixels, see #9505", function() {
 		expect( 2 );
@@ -870,7 +812,7 @@ test("Do not append px (#9548, #12990)", function() {
 	$div.css( "fill-opacity", 1 );
 	// Support: Android 2.3 (no support for fill-opacity)
 	if ( $div.css( "fill-opacity" ) ) {
-		equal( $div.css("fill-opacity"), 1, "Do not append px to 'fill-opacity'" );
+		equal( $div.css( "fill-opacity" ), 1, "Do not append px to 'fill-opacity'" );
 	} else {
 		ok( true, "No support for fill-opacity CSS property" );
 	}
@@ -910,8 +852,7 @@ testIframeWithCallback( "css('width') should work correctly before document read
 		div = document.createElement( "div" );
 	div.style.width = "3.3px";
 	qunitFixture.appendChild( div );
-	supportsFractionalGBCR = jQuery.support.gBCRDimensions() &&
-		div.getBoundingClientRect().width.toFixed(1) === "3.3";
+	supportsFractionalGBCR = div.getBoundingClientRect().width.toFixed(1) === "3.3";
 	qunitFixture.removeChild( div );
 
 	test( "css('width') and css('height') should return fractional values for nodes in the document", function() {
@@ -1014,13 +955,13 @@ test( "css opacity consistency across browsers (#12685)", function() {
 		fixture = jQuery("#qunit-fixture");
 
 	// Append style element
-	jQuery("<style>.opacityWithSpaces_t12685 { opacity: 0.1; -ms-filter: 'alpha(opacity = 10)'; } .opacityNoSpaces_t12685 { opacity: 0.2; -ms-filter: 'alpha(opacity=20)'; }</style>").appendTo( fixture );
+	jQuery("<style>.opacityWithSpaces_t12685 { opacity: 0.1; filter: alpha(opacity = 10); } .opacityNoSpaces_t12685 { opacity: 0.2; filter: alpha(opacity=20); }</style>").appendTo( fixture );
 
 	el = jQuery("<div class='opacityWithSpaces_t12685'></div>").appendTo(fixture);
 
-	equal( Math.round( el.css("opacity") * 100 ), 10, "opacity from style sheet (-ms-filter:alpha with spaces)" );
+	equal( Math.round( el.css("opacity") * 100 ), 10, "opacity from style sheet (filter:alpha with spaces)" );
 	el.removeClass("opacityWithSpaces_t12685").addClass("opacityNoSpaces_t12685");
-	equal( Math.round( el.css("opacity") * 100 ), 20, "opacity from style sheet (-ms-filter:alpha without spaces)" );
+	equal( Math.round( el.css("opacity") * 100 ), 20, "opacity from style sheet (filter:alpha without spaces)" );
 	el.css( "opacity", 0.3 );
 	equal( Math.round( el.css("opacity") * 100 ), 30, "override opacity" );
 	el.css( "opacity", "" );
@@ -1139,7 +1080,7 @@ asyncTest( "Clearing a Cloned Element's Style Shouldn't Clear the Original Eleme
 		if ( source.style[ style.name ] === undefined ) {
 			ok( true, style.name +  ": style isn't supported and therefore not an issue" );
 			ok( true );
-			ok( true );
+
 			return true;
 		}
 
@@ -1221,19 +1162,6 @@ test( "Do not throw on frame elements from css method (#15098)", 1, function() {
 	}
 });
 
-test( "get upper case alpha opacity in IE8", 1, function() {
-	var div = document.createElement( "div" ),
-		fixture = document.getElementById( "qunit-fixture" );
-
-	div.className = "fix-get-alpha-opacity-in-ie8";
-	fixture.appendChild( div );
-
-	equal( jQuery( div ).css( "opacity" ), "0.5", "get upper case alpha opacity in IE8 ok" );
-
-	fixture.removeChild( div );
-});
-
-
 ( function() {
 	var vendorPrefixes = [ "Webkit", "Moz", "ms" ];
 
@@ -1297,7 +1225,7 @@ test( "get upper case alpha opacity in IE8", 1, function() {
 		if ( transformName ) {
 			equal( elemStyle[ transformName ], transformVal, "setting properly-prefixed transform" );
 		}
-		equal( elemStyle[ "undefined" ], undefined, "Nothing writes to node.style.undefined" );
+		equal( elemStyle.undefined, undefined, "Nothing writes to node.style.undefined" );
 	} );
 
 	test( "Don't detect fake set properties on a node when caching the prefixed version", function() {

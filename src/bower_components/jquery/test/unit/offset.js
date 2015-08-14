@@ -18,8 +18,7 @@ var supportsScroll, supportsFixedPosition,
 		supportsScroll = document.documentElement.scrollTop || document.body.scrollTop;
 		forceScroll.detach();
 
-		// Safari subtracts parent border width here (which is 5px)
-		supportsFixedPosition = checkFixed[0].offsetTop === 20 || checkFixed[0].offsetTop === 15;
+		supportsFixedPosition = checkFixed[0].offsetTop === 20;
 		checkFixed.remove();
 	};
 
@@ -191,10 +190,8 @@ testIframe("offset/absolute", "absolute", function( $ ) {
 testIframe("offset/relative", "relative", function( $ ) {
 	expect(60);
 
-	var tests;
-
 	// get offset
-	tests = [
+	var tests = [
 		{ "id": "#relative-1",   "top":   7, "left":  7 },
 		{ "id": "#relative-1-1", "top":  15, "left": 15 },
 		{ "id": "#relative-2",   "top": 142, "left": 27 }
@@ -251,14 +248,12 @@ testIframe("offset/relative", "relative", function( $ ) {
 testIframe("offset/static", "static", function( $ ) {
 	expect( 80 );
 
-	var tests;
-
 	// get offset
-	tests = [
-		{ "id": "#static-1",     "top":  7, "left":  7 },
-		{ "id": "#static-1-1",   "top": 15, "left": 15 },
-		{ "id": "#static-1-1-1", "top": 23, "left": 23 },
-		{ "id": "#static-2", "top": 122, left: 7 }
+	var tests = [
+		{ "id": "#static-1",     "top":   7, "left":  7 },
+		{ "id": "#static-1-1",   "top":  15, "left": 15 },
+		{ "id": "#static-1-1-1", "top":  23, "left": 23 },
+		{ "id": "#static-2",     "top": 122, left: 7 }
 	];
 	jQuery.each( tests, function() {
 		equal( $( this["id"] ).offset().top,  this["top"],  "jQuery('" + this["id"] + "').offset().top" );
@@ -268,10 +263,10 @@ testIframe("offset/static", "static", function( $ ) {
 
 	// get position
 	tests = [
-		{ "id": "#static-1",     "top":  6, "left":  6 },
-		{ "id": "#static-1-1",   "top": 14, "left": 14 },
-		{ "id": "#static-1-1-1", "top": 22, "left": 22 },
-		{ "id": "#static-2", "top": 121, "left": 6 }
+		{ "id": "#static-1",     "top":   6, "left":  6 },
+		{ "id": "#static-1-1",   "top":  14, "left": 14 },
+		{ "id": "#static-1-1-1", "top":  22, "left": 22 },
+		{ "id": "#static-2",     "top": 121, "left": 6 }
 	];
 	jQuery.each( tests, function() {
 		equal( $( this["id"] ).position().top,  this["top"],  "jQuery('" + this["top"]  + "').position().top" );
@@ -414,21 +409,10 @@ testIframe("offset/table", "table", function( $ ) {
 testIframe("offset/scroll", "scroll", function( $, win ) {
 	expect( 30 );
 
-	// If we're going to bastardize the tests, let's just DO it
-	var ie = /msie 8/i.test( navigator.userAgent );
-
-	if ( ie ) {
-		ok( true, "TestSwarm's iframe has hosed this test in oldIE, we surrender" );
-	} else {
-		equal( $("#scroll-1").offset().top, 7, "jQuery('#scroll-1').offset().top" );
-	}
+	equal( $("#scroll-1").offset().top, 7, "jQuery('#scroll-1').offset().top" );
 	equal( $("#scroll-1").offset().left, 7, "jQuery('#scroll-1').offset().left" );
 
-	if ( ie ) {
-		ok( true, "TestSwarm's iframe has hosed this test in oldIE, we surrender" );
-	} else {
-		equal( $("#scroll-1-1").offset().top, 11, "jQuery('#scroll-1-1').offset().top" );
-	}
+	equal( $("#scroll-1-1").offset().top, 11, "jQuery('#scroll-1-1').offset().top" );
 	equal( $("#scroll-1-1").offset().left, 11, "jQuery('#scroll-1-1').offset().left" );
 
 	// These tests are solely for master/compat consistency
@@ -590,13 +574,7 @@ test("iframe scrollTop/Left (see gh-1945)", function() {
 	} else {
 		// Tests scrollTop/Left with iframes
 		jQuery( "#iframe" ).css( "width", "50px" ).css( "height", "50px" );
-
-		// Support: IE8
-		// Need a doctype, otherwise IE will scroll it but will still show old values
-		ifDoc.write( "<!DOCTYPE><div style='width: 1000px; height: 1000px;'></div>" );
-
-		// Support: IE8
-		ifDoc.close();
+		ifDoc.write( "<div style='width: 1000px; height: 1000px;'></div>" );
 
 		jQuery( ifDoc ).scrollTop( 200 );
 		jQuery( ifDoc ).scrollLeft( 500 );

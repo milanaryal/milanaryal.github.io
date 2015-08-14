@@ -1,9 +1,10 @@
 {
-  "name": "milanaryal",
+  "name": "milanaryal.github.io",
+  "main": "index.html",
   "title": "Milan Aryal",
   "homepage": "http://milanaryal.com",
-  "description": "Livin' on the edge of web standards.",
   "author": "Milan Aryal",
+  "description": "Jekyll build for milanaryal.com",
   "license": "MIT",
   "repository": {
     "type": "git",

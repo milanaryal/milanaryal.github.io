@@ -1,18 +1,4 @@
-var isIE8 = /msie 8\.0/i.test( window.navigator.userAgent );
-
 module( "ajax", {
-	setup: function() {
-		if ( !isIE8 ) {
-			return;
-		}
-
-		var jsonpCallback = this.jsonpCallback = jQuery.ajaxSettings.jsonpCallback;
-		jQuery.ajaxSettings.jsonpCallback = function() {
-			var callback = jsonpCallback.apply( this, arguments );
-			Globals.register( callback );
-			return callback;
-		};
-	},
 	teardown: function() {
 		jQuery( document ).off( "ajaxStart ajaxStop ajaxSend ajaxComplete ajaxError ajaxSuccess" );
 		moduleTeardown.apply( this, arguments );
@@ -39,6 +25,11 @@ module( "ajax", {
 	}
 
 //----------- jQuery.ajax()
+
+	testIframeWithCallback( "XMLHttpRequest - Attempt to block tests because of dangling XHR requests (IE)", "ajax/unreleasedXHR.html", function() {
+		expect( 1 );
+		ok( true, "done" );
+	});
 
 	ajaxTest( "jQuery.ajax() - success callbacks", 8, {
 		setup: addGlobalEvents("ajaxStart ajaxStop ajaxSend ajaxComplete ajaxSuccess"),
@@ -1029,58 +1020,38 @@ module( "ajax", {
 			" (no cache)": false
 		},
 		function( label, cache ) {
-			asyncTest( "jQuery.ajax() - If-Modified-Since support" + label, 4, function() {
-				var url = "data/if_modified_since.php?ts=" + ifModifiedNow++;
-
-				jQuery.ajax({
-					url: url,
-					ifModified: true,
-					cache: cache,
-					success: function( data, status ) {
-						strictEqual( status, "success" );
-
+			jQuery.each(
+				{
+					"If-Modified-Since": "if_modified_since.php",
+					"Etag": "etag.php"
+				},
+				function( type, url ) {
+					url = "data/" + url + "?ts=" + ifModifiedNow++;
+					asyncTest( "jQuery.ajax() - " + type + " support" + label, 4, function() {
 						jQuery.ajax({
 							url: url,
 							ifModified: true,
 							cache: cache,
-							success: function( data, status, jqXHR ) {
-								strictEqual( status, "notmodified", "Following status is 'notmodified'" );
-								strictEqual( jqXHR.status, 304, "XHR status is 304" );
-								equal( data, null, "no response body is given" );
-							},
-							complete: function() {
-								start();
+							success: function( _, status ) {
+								strictEqual( status, "success", "Initial status is 'success'" );
+								jQuery.ajax({
+									url: url,
+									ifModified: true,
+									cache: cache,
+									success: function( data, status, jqXHR ) {
+										strictEqual( status, "notmodified", "Following status is 'notmodified'" );
+										strictEqual( jqXHR.status, 304, "XHR status is 304" );
+										equal( data, null, "no response body is given" );
+									},
+									complete: function() {
+										start();
+									}
+								});
 							}
 						});
-					}
-				});
-			});
-
-			asyncTest( "jQuery.ajax() - Etag support" + label, 3, function() {
-				var url = "data/etag.php?ts=" + ifModifiedNow++;
-
-				jQuery.ajax({
-					url: url,
-					ifModified: true,
-					cache: cache,
-					success: function( data, status ) {
-						strictEqual( status, "success" );
-
-						jQuery.ajax({
-							url: url,
-							ifModified: true,
-							cache: cache,
-							success: function( data, status ) {
-								strictEqual( status, "notmodified" );
-								ok( data == null, "response body should be empty" );
-							},
-							complete: function() {
-								start();
-							}
-						});
-					}
-				});
-			});
+					});
+				}
+			);
 		}
 		/* jQuery.each arguments end */
 	);
@@ -1113,7 +1084,6 @@ module( "ajax", {
 			ok( jqXHR.statusText === "Hello" || jqXHR.statusText === "OK", "jqXHR status text ok for success (" + jqXHR.statusText + ")" );
 			jQuery.ajax( url("data/statusText.php?status=404&text=World") ).fail(function( jqXHR, statusText ) {
 				strictEqual( statusText, "error", "callback status text ok for error" );
-				// ok( jqXHR.statusText === "World" || jQuery.browser.safari && jqXHR.statusText === "Not Found", "jqXHR status text ok for error (" + jqXHR.statusText + ")" );
 				start();
 			});
 		});
@@ -1401,15 +1371,10 @@ module( "ajax", {
 					"jsonpCallback option is set back to default in callbacks"
 				);
 
-				if ( isIE8 ) {
-					ok( true, "IE8 can't remove property from the window" );
-
-				} else {
-					ok(
-						!( this.callback in window ),
-						"JSONP callback name was removed from the window"
-					);
-				}
+				ok(
+					!( this.callback in window ),
+					"JSONP callback name was removed from the window"
+				);
 
 				jQuery.ajax({
 					url: "data/jsonp.php",
@@ -1494,7 +1459,7 @@ module( "ajax", {
 		jQuery.ajax({
 			url: "data/badjson.js",
 			dataType: "script",
-			"throws": true
+			throws: true
 		});
 	});
 
@@ -1607,26 +1572,40 @@ module( "ajax", {
 		}
 	} );
 
-	// BrowserStack PATCH support sometimes breaks so on TestSwarm run the test in IE only.
-	// Unfortunately, all IE versions gets special treatment in request object creation
-	// so we need to test in all supported IE versions to be sure.
-	if ( location.search.indexOf( "swarmURL=" ) === -1 || document.documentMode ) {
-		ajaxTest( "#13240 - jQuery.ajax() - support non-RFC2616 methods", 1, {
-			url: "data/echoQuery.php",
-			method: "PATCH",
-			success: function() {
-				ok( true, "success" );
-			},
-			error: function() {
-				ok( false, "error" );
-			}
-		} );
-	}
-
 	testIframeWithCallback( "#14379 - jQuery.ajax() on unload", "ajax/onunload.html", function( status ) {
 		expect( 1 );
 		strictEqual( status, "success", "Request completed" );
 	});
+
+	ajaxTest( "#14683 - jQuery.ajax() - Exceptions thrown synchronously by xhr.send should be caught", 4, [
+		{
+			url: "data/params_html.php",
+			method: "POST",
+			data: {
+				toString: function() {
+					throw "Can't parse";
+				}
+			},
+			processData: false,
+			done: function( data ) {
+				ok( false, "done: " + data );
+			},
+			fail: function( jqXHR, status, error ) {
+				ok( true, "exception caught: " + error );
+				strictEqual( jqXHR.status, 0, "proper status code" );
+				strictEqual( status, "error", "proper status" );
+			}
+		},
+		{
+			url: "http://domain.org:80d",
+			done: function( data ) {
+				ok( false, "done: " + data );
+			},
+			fail: function( _, status, error ) {
+				ok( true, "fail: " + status + " - " + error );
+			}
+		}
+	]);
 
 //----------- jQuery.ajaxPrefilter()
 
@@ -1790,25 +1769,6 @@ module( "ajax", {
 				strictEqual( json["data"].length, 25, "Check JSON: length" );
 				start();
 			}
-		});
-	});
-
-	asyncTest( "jQuery.getJSON() - Using Native JSON", 2, function() {
-		var restore = "JSON" in window,
-			old = window.JSON;
-		if ( !restore ) {
-			Globals.register("JSON");
-		}
-		window.JSON = {
-			parse: function() {
-				ok( true, "Verifying that parse method was run" );
-				window.JSON = old;
-				return true;
-			}
-		};
-		jQuery.getJSON( url("data/json.php"), function( json ) {
-			strictEqual( json, true, "Verifying return value" );
-			start();
 		});
 	});
 

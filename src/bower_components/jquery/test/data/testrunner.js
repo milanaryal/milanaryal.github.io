@@ -1,9 +1,8 @@
-define(function() {
+(function() {
 
 // Store the old counts so that we only assert on tests that have actually leaked,
 // instead of asserting every time a test has leaked sometime in the past
-var reset,
-	oldCacheLength = 0,
+var oldCacheLength = 0,
 	oldActive = 0,
 
 	expectedDataKeys = {},
@@ -20,24 +19,6 @@ QUnit.config.testTimeout = 12e4; // 2 minutes
 
 // Enforce an "expect" argument or expect() call in all test bodies.
 QUnit.config.requireExpects = true;
-
-/**
- * QUnit hooks
- */
-
-function keys( o ) {
-	var ret, key;
-	if ( Object.keys ) {
-		ret = Object.keys( o );
-	} else {
-		ret = [];
-		for ( key in o ) {
-			ret.push( key );
-		}
-	}
-	ret.sort();
-	return ret;
-}
 
 /**
  * @param {jQuery|HTMLElement|Object|Array} elems Target (or array of targets) for jQuery.data.
@@ -110,8 +91,7 @@ QUnit.config.urlConfig.push({
  * teardown function on all modules' lifecycle object.
  */
 window.moduleTeardown = function() {
-	var i,
-		expectedKeys, actualKeys,
+	var i, expectedKeys, actualKeys,
 		cacheLength = 0;
 
 	// Only look for jQuery data problems if this test actually
@@ -119,7 +99,7 @@ window.moduleTeardown = function() {
 	if ( QUnit.urlParams.jqdata || this.checkJqData ) {
 		for ( i in jQuery.cache ) {
 			expectedKeys = expectedDataKeys[ i ];
-			actualKeys = jQuery.cache[ i ] ? keys( jQuery.cache[ i ] ) : jQuery.cache[ i ];
+			actualKeys = jQuery.cache[ i ] ? Object.keys( jQuery.cache[ i ] ) : jQuery.cache[ i ];
 			if ( !QUnit.equiv( expectedKeys, actualKeys ) ) {
 				deepEqual( actualKeys, expectedKeys, "Expected keys exist in jQuery.cache" );
 			}
@@ -149,12 +129,12 @@ window.moduleTeardown = function() {
 	if ( jQuery.active !== undefined && jQuery.active !== oldActive ) {
 		equal( jQuery.active, oldActive, "No AJAX requests are still active" );
 		if ( ajaxTest.abort ) {
-			ajaxTest.abort( "active requests" );
+			ajaxTest.abort("active requests");
 		}
 		oldActive = jQuery.active;
 	}
 
-	reset();
+	Globals.cleanup();
 
 	for ( i in jQuery.cache ) {
 		++cacheLength;
@@ -175,8 +155,7 @@ QUnit.done(function() {
 	supportjQuery( "#qunit ~ *" ).remove();
 });
 
-// jQuery-specific post-test cleanup
-reset = function() {
+QUnit.testDone(function() {
 
 	// Ensure jQuery events and data on the fixture are properly removed
 	jQuery( "#qunit-fixture" ).empty();
@@ -193,31 +172,27 @@ reset = function() {
 
 	// Cleanup globals
 	Globals.cleanup();
-};
-
-QUnit.testDone( reset );
+});
 
 // Register globals for cleanup and the cleanup code itself
-// Explanation at http://perfectionkills.com/understanding-delete/#ie_bugs
 window.Globals = (function() {
 	var globals = {};
+
 	return {
 		register: function( name ) {
-			globals[ name ] = true;
-			supportjQuery.globalEval( "var " + name + " = true;" );
+			window[ name ] = globals[ name ] = true;
 		},
+
 		cleanup: function() {
-			var name,
-				current = globals;
-			globals = {};
-			for ( name in current ) {
-				supportjQuery.globalEval( "try { " +
-					"delete " +
-					( supportjQuery.support.deleteExpando ? "window['" + name + "']" : name ) +
-				"; } catch( x ) {}" );
+			var name;
+
+			for ( name in globals ) {
+				delete window[ name ];
 			}
+
+			globals = {};
 		}
 	};
 })();
 
-});
+})();

@@ -64,7 +64,7 @@ test( "text(undefined)", function() {
 
 function testText( valueObj ) {
 
-	expect( 7 );
+	expect( 6 );
 
 	var val, j, expected, $multipleElements, $parentDiv, $childDiv;
 
@@ -94,8 +94,6 @@ function testText( valueObj ) {
 	$parentDiv = jQuery( "<div/>" );
 	$parentDiv.append( $childDiv );
 	$parentDiv.text("Dry off");
-
-	equal( $childDiv.data("leak"), undefined, "Check for leaks (#11809)" );
 }
 
 test( "text(String)", function() {
@@ -259,11 +257,11 @@ function testAppend( valueObj ) {
 	equal( jQuery("#select1 optgroup").attr("label"), "optgroup", "Label attribute in newly inserted optgroup is correct" );
 	equal( jQuery("#select1 option").last().text(), "optgroup", "Appending optgroup" );
 
-	$table = jQuery("#table").empty();
+	$table = jQuery("#table");
 
 	jQuery.each( "thead tbody tfoot colgroup caption tr th td".split(" "), function( i, name ) {
 		$table.append( valueObj( "<" + name + "/>" ) );
-		ok( $table.find( name ).length >= 1, "Append " + name );
+		equal( $table.find( name ).length, 1, "Append " + name );
 		ok( jQuery.parseHTML( "<" + name + "/>" ).length, name + " wrapped correctly" );
 	});
 
@@ -449,47 +447,6 @@ test( "XML DOM manipulation (#9960)", function() {
 	deepEqual( jQuery( "state", xml2 ).get(), scxml1.find("state").get(), "replaceWith" );
 });
 
-test( "append the same fragment with events (Bug #6997, 5566)", function() {
-
-	var element, clone,
-		doExtra = !jQuery.support.noCloneEvent && document["fireEvent"];
-
-	expect( 2 + ( doExtra ? 1 : 0 ) );
-
-	stop();
-
-	// This patch modified the way that cloning occurs in IE; we need to make sure that
-	// native event handlers on the original object don't get disturbed when they are
-	// modified on the clone
-	if ( doExtra ) {
-		element = jQuery("div:first").on( "click", function() {
-			ok( true, "Event exists on original after being unbound on clone" );
-			jQuery( this ).off("click");
-		});
-		clone = element.clone( true ).off("click");
-		clone[ 0 ].fireEvent("onclick");
-		element[ 0 ].fireEvent("onclick");
-
-		// manually clean up detached elements
-		clone.remove();
-	}
-
-	element = jQuery("<a class='test6997'></a>").on( "click", function() {
-		ok( true, "Append second element events work" );
-	});
-
-	jQuery("#listWithTabIndex li").append( element )
-		.find("a.test6997").eq( 1 ).trigger("click");
-
-	element = jQuery("<li class='test6997'></li>").on( "click", function() {
-		ok( true, "Before second element events work" );
-		start();
-	});
-
-	jQuery("#listWithTabIndex li").before( element );
-	jQuery("#listWithTabIndex li.test6997").eq( 1 ).trigger("click");
-});
-
 test( "append HTML5 sectioning elements (Bug #6485)", function() {
 
 	expect( 2 );
@@ -528,13 +485,6 @@ test( "html(String) with HTML5 (Bug #6485)", function() {
 });
 
 test( "html(String) tag-hyphenated elements (Bug #1987)", function() {
-
-	// Support: IE8
-	if ( /msie 8\.0/i.test( navigator.userAgent ) ) {
-		expect( 1 );
-		ok( true, "IE8 doesn't support custom elements" );
-		return;
-	}
 
 	expect( 27 );
 
@@ -1663,7 +1613,7 @@ function childNodeNames( node ) {
 }
 
 function testHtml( valueObj ) {
-	expect( 39 );
+	expect( 40 );
 
 	var actual, expected, tmp,
 		div = jQuery("<div></div>"),
@@ -1765,6 +1715,9 @@ function testHtml( valueObj ) {
 		"<span id='scriptorder'><script>equal( jQuery.scriptorder++, 1, 'Script (nested) is executed in order');</script></span>",
 		"<script>equal( jQuery.scriptorder++, 2, 'Script (unnested) is executed in order' );</script>"
 	].join("")) );
+
+	fixture.html( valueObj( fixture.text() ) );
+	ok( /^[^<]*[^<\s][^<]*$/.test( fixture.html() ), "Replace html with text" );
 }
 
 test( "html(String|Number)", function() {
@@ -1773,24 +1726,6 @@ test( "html(String|Number)", function() {
 
 test( "html(Function)", function() {
 	testHtml( manipulationFunctionReturningObj );
-});
-
-test( "html( $.text() )", function() {
-
-	expect( 1 );
-
-	var fixture = jQuery("#qunit-fixture");
-	fixture.html(  fixture.text() );
-	ok( /^[^<]*[^<\s][^<]*$/.test( fixture.html() ), "Replace html with text" );
-});
-
-test( "html( fn ) returns $.text()", function() {
-
-	expect( 1 );
-
-	var fixture = jQuery("#qunit-fixture");
-	fixture.html( manipulationFunctionReturningObj( fixture.text() ) );
-	ok( /^[^<]*[^<\s][^<]*$/.test( fixture.html() ), "Replace html with text" );
 });
 
 test( "html(Function) with incoming value -- direct selection", function() {
@@ -1893,7 +1828,7 @@ test( "clone()/html() don't expose jQuery/Sizzle expandos (#12858)", function() 
 
 test( "remove() no filters", function() {
 
-  expect( 3 );
+  expect( 2 );
 
 	var first = jQuery("#ap").children().first();
 
@@ -1902,9 +1837,6 @@ test( "remove() no filters", function() {
 	jQuery("#ap").children().remove();
 	ok( jQuery("#ap").text().length > 10, "Check text is not removed" );
 	equal( jQuery("#ap").children().length, 0, "Check remove" );
-
-	equal( first.data("foo"), null, "first data" );
-
 });
 
 test( "remove() with filters", function() {
@@ -2042,7 +1974,7 @@ test( "detach() event cleaning ", 1, function() {
 
 test("empty()", function() {
 
-	expect( 6 );
+	expect( 3 );
 
 	equal( jQuery("#ap").children().empty().text().length, 0, "Check text is removed" );
 	equal( jQuery("#ap").children().length, 4, "Check elements are not removed" );
@@ -2051,12 +1983,6 @@ test("empty()", function() {
 	var j = jQuery("#nonnodes").contents();
 	j.empty();
 	equal( j.html(), "", "Check node,textnode,comment empty works" );
-
-	// Ensure oldIE empties selects (#12336)
-	notEqual( jQuery("#select1").find("option").length, 0, "Have some initial options" );
-	jQuery("#select1").empty();
-	equal( jQuery("#select1").find("option").length, 0, "No more option elements found" );
-	equal( jQuery("#select1")[0].options.length, 0, "options.length cleared as well" );
 });
 
 test( "jQuery.cleanData", function() {
@@ -2135,6 +2061,23 @@ test( "jQuery.cleanData", function() {
 
 		return div;
 	}
+});
+
+test( "jQuery.cleanData eliminates all private data (gh-2127)", function() {
+	expect( 2 );
+
+	var div = jQuery( "<div/>" ).appendTo( "#qunit-fixture" );
+
+	jQuery._data( div[ 0 ], "gh-2127", "testing" );
+
+	ok( !jQuery.isEmptyObject( jQuery._data( div[ 0 ] ) ),  "Ensure some private data exists" );
+
+	div.remove();
+
+	ok( jQuery.isEmptyObject( jQuery._data( div[ 0 ] ) ),
+		"Private data is empty after node is removed" );
+
+	div.remove();
 });
 
 test( "domManip plain-text caching (trac-6779)", function() {
@@ -2216,15 +2159,9 @@ test( "Cloned, detached HTML5 elems (#10667,10670)", function() {
 	// First clone
 	$clone = $section.clone();
 
-	// Infer that the test is being run in IE<=8
-	if ( $clone[ 0 ].outerHTML && !jQuery.support.opacity ) {
-		// This branch tests cloning nodes by reading the outerHTML, used only in IE<=8
-		equal( $clone[ 0 ].outerHTML, "<section></section>", "detached clone outerHTML matches '<section></section>'" );
-	} else {
-		// This branch tests a known behaviour in modern browsers that should never fail.
-		// Included for expected test count symmetry (expecting 1)
-		equal( $clone[ 0 ].nodeName, "SECTION", "detached clone nodeName matches 'SECTION' in modern browsers" );
-	}
+	// This branch tests a known behaviour in modern browsers that should never fail.
+	// Included for expected test count symmetry (expecting 1)
+	equal( $clone[ 0 ].nodeName, "SECTION", "detached clone nodeName matches 'SECTION'" );
 
 	// Bind an event
 	$section.on( "click", function() {
@@ -2304,7 +2241,6 @@ test( "Ensure oldIE creates a new set on appendTo (#8894)", function() {
 });
 
 asyncTest( "html() - script exceptions bubble (#11743)", 2, function() {
-
 	var onerror = window.onerror;
 
 	setTimeout(function() {
@@ -2536,6 +2472,49 @@ test( "Make sure jQuery.fn.remove can work on elements in documentFragment", 1, 
 	equal( fragment.childNodes.length, 0, "div element was removed from documentFragment" );
 });
 
+test( "Make sure specific elements with content created correctly (#13232)", 20, function() {
+	var results = [],
+		args = [],
+		elems = {
+			thead: "<tr><td>thead</td></tr>",
+			tbody: "<tr><td>tbody</td></tr>",
+			tfoot: "<tr><td>tfoot</td></tr>",
+			colgroup: "<col span='5' />",
+			caption: "caption",
+			tr: "<td>tr</td>",
+			th: "th",
+			td: "<div>td</div>",
+			optgroup: "<option>optgroup</option>",
+			option: "option"
+		};
+
+	jQuery.each( elems, function( name, value ) {
+		var html = "<" + name + ">" + value + "</" + name + ">";
+		ok( jQuery.nodeName( jQuery.parseHTML( "<" + name + ">" + value + "</" + name + ">" )[ 0 ], name ), name + " is created correctly" );
+
+		results.push( name );
+		args.push( html );
+	});
+
+	jQuery.fn.append.apply( jQuery("<div/>"), args ).children().each(function( i ) {
+		ok( jQuery.nodeName( this, results[ i ] ) );
+	});
+});
+
+test( "Validate creation of multiple quantities of certain elements (#13818)", 44, function() {
+	var tags = [ "thead", "tbody", "tfoot", "colgroup", "col", "caption", "tr", "th", "td", "optgroup", "option" ];
+
+	jQuery.each( tags, function( index, tag ) {
+		jQuery( "<" + tag + "/><" + tag + "/>" ).each(function() {
+			ok( jQuery.nodeName( this, tag ), tag + " empty elements created correctly" );
+		});
+
+		jQuery( "<" + this + "></" + tag + "><" + tag + "></" + tag + ">" ).each(function() {
+			ok( jQuery.nodeName( this, tag ), tag + " elements with closing tag created correctly" );
+		});
+	});
+});
+
 test( "Make sure tr element will be appended to tbody element of table when present", function() {
 	expect( 1 );
 
@@ -2614,7 +2593,7 @@ test( "Make sure document fragment will be appended to tbody element of table wh
 test( "Make sure col element is appended correctly", function() {
 	expect( 1 );
 
-	var table = jQuery( "<table cellpadding='0'><tr><td style='padding:0'>test</td></tr></table>" );
+	var table = jQuery( "<table cellpadding='0'><tr><td>test</td></tr></table>" );
 
 	jQuery( table ).appendTo( "#qunit-fixture" );
 

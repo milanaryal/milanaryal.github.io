@@ -457,6 +457,7 @@ test( "attr(String, Object)", function() {
 	// Setting attributes on svg elements (bug #3116)
 	$svg = jQuery(
 		"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' baseProfile='full' width='200' height='200'>" +
+
 			"<circle cx='200' cy='200' r='150' />" +
 			"</svg>"
 		).appendTo("body");
@@ -590,7 +591,7 @@ test( "removeAttr(String)", function() {
 	$first = jQuery("<div Case='mixed'></div>");
 	equal( $first.attr("Case"), "mixed", "case of attribute doesn't matter" );
 	$first.removeAttr("Case");
-	equal( $first.attr("Case"), undefined, "mixed-case attribute was removed" );
+	equal( $first.attr( "Case" ), undefined, "mixed-case attribute was removed" );
 });
 
 test( "removeAttr(String) in XML", function() {
@@ -635,6 +636,7 @@ test( "removeAttr(Multi String, variable space width)", function() {
 });
 
 test( "prop(String, Object)", function() {
+
 	expect( 17 );
 
 	equal( jQuery("#text1").prop("value"), "Test", "Check for value attribute" );
@@ -667,7 +669,7 @@ test( "prop(String, Object)", function() {
 
 test( "prop(String, Object) on null/undefined", function() {
 
-	expect( 14 );
+  expect( 14 );
 
 	var select, optgroup, option, attributeNode, commentNode, textNode, obj, $form,
 		body = document.body,
@@ -800,12 +802,13 @@ test( "removeProp(String)", function() {
 });
 
 test( "val() after modification", function() {
+
 	expect( 1 );
 
 	document.getElementById("text1").value = "bla";
 	equal( jQuery("#text1").val(), "bla", "Check for modified value of input element" );
-
 });
+
 
 test( "val()", function() {
 
@@ -1057,7 +1060,6 @@ var testAddClass = function( valueObj ) {
 
 	var pass, j, i,
 		div = jQuery("#qunit-fixture div");
-
 	div.addClass( valueObj("test") );
 	pass = true;
 	for ( i = 0; i < div.length; i++ ) {
@@ -1478,18 +1480,6 @@ test( "Insignificant white space returned for $(option).val() (#14858)", functio
 });
 
 test( "SVG class manipulation (gh-2199)", function() {
-
-	// Support: IE8
-	var svgSupport = !!document.createElementNS &&
-		!!document.createElementNS( "http://www.w3.org/2000/svg", "svg" ).createSVGRect;
-
-	if ( !svgSupport ) {
-		expect( 1 );
-		ok( true, "Environment doesn't support SVG" );
-
-		return;
-	}
-
 	expect( 12 );
 
 	function createSVGElement( nodeName ) {

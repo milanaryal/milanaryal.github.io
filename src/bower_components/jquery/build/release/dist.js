@@ -4,7 +4,7 @@ module.exports = function( Release, complete ) {
 		fs = require( "fs" ),
 		shell = require( "shelljs" ),
 		pkg = require( Release.dir.repo + "/package.json" ),
-		distRemote = Release.remote.replace( "jquery.git", "jquery-compat-dist.git" ),
+		distRemote = Release.remote.replace( "jquery.git", "jquery-dist.git" ),
 		// These files are included with the distrubtion
 		files = [
 			"src",
@@ -31,7 +31,7 @@ module.exports = function( Release, complete ) {
 	}
 
 	/**
-	 * Generate bower file for jquery-compat-dist
+	 * Generate bower file for jquery-dist
 	 */
 	function generateBower() {
 		return JSON.stringify({
@@ -68,9 +68,6 @@ module.exports = function( Release, complete ) {
 
 		// Write generated bower file
 		fs.writeFileSync( Release.dir.dist + "/bower.json", generateBower() );
-
-		// Restore newVersion
-		Release.newVersion = Release.distVersion;
 
 		console.log( "Adding files to dist..." );
 		Release.exec( "git add .", "Error adding files." );

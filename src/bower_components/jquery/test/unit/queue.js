@@ -78,7 +78,7 @@ test("queue() passes in the next item in the queue as a parameter to fx queues",
 	var div = jQuery({}),
 		counter = 0;
 
-	div.queue(function( next ) {
+	div.queue(function(next) {
 		equal(++counter, 1, "Dequeueing");
 		setTimeout(function() { next(); }, 500);
 	}).queue(function(next) {
@@ -119,6 +119,12 @@ test("callbacks keep their place in the queue", function() {
 		equal(counter, 4, "Deferreds resolved");
 		start();
 	});
+});
+
+test( "jQuery.queue should return array while manipulating the queue", 1, function() {
+	var div = document.createElement("div");
+
+	ok( jQuery.isArray( jQuery.queue( div, "fx", jQuery.noop ) ), "jQuery.queue should return an array while manipulating the queue" );
 });
 
 test("delay()", function() {

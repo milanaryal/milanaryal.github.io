@@ -9,7 +9,7 @@ module( "wrap", {
 });
 
 // See test/unit/manipulation.js for explanation about these 2 functions
-function manipulationBareObj( value ) {
+function manipulationBareObj( value ) {
 	return value;
 }
 
@@ -47,7 +47,7 @@ function testWrap( val ) {
 	j = jQuery("#nonnodes").contents();
 	j.wrap( val("<i></i>") );
 
-	equal( jQuery("#nonnodes > i").length, 3, "Check node,textnode,comment wraps ok" );
+	equal( jQuery("#nonnodes > i").length, jQuery("#nonnodes")[ 0 ].childNodes.length, "Check node,textnode,comment wraps ok" );
 	equal( jQuery("#nonnodes > i").text(), j.text(), "Check node,textnode,comment wraps doesn't hurt text" );
 
 	// Try wrapping a disconnected node
@@ -93,7 +93,6 @@ function testWrap( val ) {
 	equal( j[ 0 ].parentNode.nodeName.toLowerCase(), "div", "Wrapping works." );
 
 	j.parent().trigger("click");
-
 }
 
 test( "wrap(String|Element)", function() {
@@ -179,42 +178,11 @@ test( "wrapAll(Function) check execution characteristics", 3, function() {
 	});
 });
 
-test( "wrapAll(Function)", 5, function() {
-	var prev = jQuery( "#firstp" )[ 0 ].previousSibling,
-		p = jQuery( "#firstp,#first" )[ 0 ].parentNode,
-		result = jQuery( "#firstp,#first" ).wrapAll(function() {
-			return "<div class='red'><div class='tmp'></div></div>";
-		});
-
-	equal( result.parent().length, 1, "Check for wrapping of on-the-fly html" );
-	ok( jQuery( "#first" ).parent().parent().is( ".red" ), "Check if wrapper has class 'red'" );
-	ok( jQuery( "#firstp" ).parent().parent().is( ".red" ), "Check if wrapper has class 'red'" );
-	ok( jQuery( "#first" ).parent().parent().parent().is( p ), "Correct Parent" );
-	strictEqual( jQuery( "#first" ).parent().parent()[ 0 ].previousSibling, prev, "Correct Previous Sibling" );
-});
-
-test( "wrapAll(Function) check execution characteristics", 3, function() {
-	var i = 0;
-
-	jQuery( "non-existent" ).wrapAll(function() {
-		i++;
-		return "";
-	});
-
-	ok( !i, "should not execute function argument if target element does not exist" );
-
-	jQuery( "#firstp" ).wrapAll(function( index ) {
-		strictEqual( this, jQuery( "#firstp" )[ 0 ], "context must be the first found element" );
-		strictEqual( index, undefined, "index argument should not be included in function execution" );
-	});
-});
-
 test( "wrapAll(Element)", function() {
 
-	expect( 3 );
+  expect( 3 );
 
-	var prev, p;
-
+  var prev, p;
 	prev = jQuery("#firstp")[ 0 ].previousSibling;
 	p = jQuery("#first")[ 0 ].parentNode;
 	jQuery("#firstp,#first").wrapAll( document.getElementById("empty") );

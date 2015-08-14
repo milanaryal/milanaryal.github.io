@@ -110,7 +110,7 @@ test("jQuery.param() Constructed prop values", function() {
 });
 
 test("serialize()", function() {
-	expect( 6 );
+	expect(6);
 
 	// Add html5 elements only for serialize because selector can't yet find them on non-html5 browsers
 	jQuery("#search").after(

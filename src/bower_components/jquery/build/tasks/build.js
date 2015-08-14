@@ -11,7 +11,7 @@ module.exports = function( grunt ) {
 	var fs = require( "fs" ),
 		requirejs = require( "requirejs" ),
 		srcFolder = __dirname + "/../../src/",
-		rdefineEnd = /\}\);[^}\w]*$/,
+		rdefineEnd = /\}\s*?\);[^}\w]*$/,
 		config = {
 			baseUrl: "src",
 			name: "jquery",
@@ -62,7 +62,7 @@ module.exports = function( grunt ) {
 		} else {
 
 			contents = contents
-				.replace( /\s*return\s+[^\}]+(\}\);[^\w\}]*)$/, "$1" )
+				.replace( /\s*return\s+[^\}]+(\}\s*?\);[^\w\}]*)$/, "$1" )
 				// Multiple exports
 				.replace( /\s*exports\.\w+\s*=\s*\w+;/g, "" );
 
@@ -158,12 +158,8 @@ module.exports = function( grunt ) {
 					module = m[ 2 ];
 
 				if ( exclude ) {
-					// Can't exclude sizzle on this branch
-					if ( module === "sizzle" ) {
-						grunt.log.error( "Sizzle cannot be excluded on the compat branch." );
-
 					// Can't exclude certain modules
-					} else if ( minimum.indexOf( module ) === -1 ) {
+					if ( minimum.indexOf( module ) === -1 ) {
 						// Add to excluded
 						if ( excluded.indexOf( module ) === -1 ) {
 							grunt.log.writeln( flag );
@@ -181,6 +177,11 @@ module.exports = function( grunt ) {
 						excludeList( removeWith[ module ] );
 					} else {
 						grunt.log.error( "Module \"" + module + "\" is a minimum requirement.");
+						if ( module === "selector" ) {
+							grunt.log.error(
+								"If you meant to replace Sizzle, use -sizzle instead."
+							);
+						}
 					}
 				} else {
 					grunt.log.writeln( flag );
@@ -210,6 +211,13 @@ module.exports = function( grunt ) {
 		delete flags[ "*" ];
 		for ( flag in flags ) {
 			excluder( flag );
+		}
+
+		// Handle Sizzle exclusion
+		// Replace with selector-native
+		if ( (index = excluded.indexOf( "sizzle" )) > -1 ) {
+			config.rawText.selector = "define(['./selector-native']);";
+			excluded.splice( index, 1 );
 		}
 
 		// Replace exports/global with a noop noConflict

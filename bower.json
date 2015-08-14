@@ -1,14 +1,18 @@
 {
-  "name": "milanaryal",
+  "name": "milanaryal.github.io",
+  "main": "index.html",
+  "homepage": "http://milanaryal.com",
   "authors": [
     "Milan Aryal <considermilan@gmail.com>"
   ],
-  "description": "Livin' on the edge of web standards.",
-  "moduleType": [
-    "globals"
-  ],
+  "description": "Jekyll build for milanaryal.com",
   "license": "MIT",
-  "homepage": "http://milanaryal.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MilanAryal/milanaryal.github.io.git"
+  },
+  "moduleType": "globals",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -17,11 +21,14 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~3.0.0-alpha1+compat",
+    "jquery": "3.0.0-alpha1",
     "bootstrap": "~3.3.5",
     "font-awesome": "~4.4.0",
     "anchor-js": "~1.2.1",
     "primer-markdown": "~2.1.7"
   },
-  "private": true
+  "devDependencies": {
+    "html5shiv": "~3.7.3",
+    "respond": "~1.4.2"
+  }
 }

@@ -30,6 +30,18 @@ module.exports = function( grunt ) {
 				cache: "build/.sizecache.json"
 			}
 		},
+		babel: {
+			options: {
+				sourceMap: "inline",
+				retainLines: true
+			},
+			nodeSmokeTests: {
+				files: {
+					"test/node_smoke_tests/lib/ensure_iterability.js":
+						"test/node_smoke_tests/lib/ensure_iterability_es6.js"
+				}
+			}
+		},
 		build: {
 			all: {
 				dest: "dist/jquery.js",
@@ -37,10 +49,12 @@ module.exports = function( grunt ) {
 					"core",
 					"selector"
 				],
+				// Exclude specified modules if the module matching the key is removed
 				removeWith: {
 					ajax: [ "manipulation/_evalUrl", "event/ajax" ],
 					callbacks: [ "deferred" ],
-					css: [ "effects", "dimensions", "offset" ]
+					css: [ "effects", "dimensions", "offset" ],
+					sizzle: [ "css/hiddenVisibleSelectors", "effects/animatedSelector" ]
 				}
 			}
 		},
@@ -62,7 +76,6 @@ module.exports = function( grunt ) {
 					"requirejs/require.js": "requirejs/require.js",
 
 					"sinon/fake_timers.js": "sinon/lib/sinon/util/fake_timers.js",
-					"sinon/timers_ie.js": "sinon/lib/sinon/util/timers_ie.js",
 					"sinon/LICENSE.txt": "sinon/LICENSE"
 				}
 			}
@@ -135,7 +148,7 @@ module.exports = function( grunt ) {
 					beautify: {
 						"ascii_only": true
 					},
-					banner: "/*! jQuery Compat v<%= pkg.version %> | " +
+					banner: "/*! jQuery v<%= pkg.version %> | " +
 						"(c) jQuery Foundation | jquery.org/license */",
 					compress: {
 						"hoist_funs": false,
@@ -155,11 +168,9 @@ module.exports = function( grunt ) {
 
 	grunt.registerTask( "lint", [ "jsonlint", "jshint", "jscs" ] );
 
-	// Only defined for master at this time, but kept for cross-branch consistency
-	grunt.registerTask( "test_fast", [] );
+	grunt.registerTask( "test_fast", [ "node_smoke_tests" ] );
 
-	// gh-2133 TODO: cherry-pick 76df9e4e389d80bff410a9e5f08b848de1d21a2f for promises-aplus-tests
-	grunt.registerTask( "test", [ "test_fast"/*, "promises-aplus-tests"*/ ] );
+	grunt.registerTask( "test", [ "test_fast", "promises_aplus_tests" ] );
 
 	// Short list as a high frequency watch task
 	grunt.registerTask( "dev", [ "build:*:*", "lint", "uglify", "remove_map_comment", "dist:*" ] );

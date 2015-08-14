@@ -1,8 +1,9 @@
 define([
 	"../core",
 	"../var/rnotwhite",
+	"../data/var/dataPriv",
 	"../core/init"
-], function( jQuery, rnotwhite ) {
+], function( jQuery, rnotwhite, dataPriv ) {
 
 var rclass = /[\t\r\n\f]/g;
 
@@ -13,9 +14,9 @@ function getClass( elem ) {
 jQuery.fn.extend({
 	addClass: function( value ) {
 		var classes, elem, cur, curValue, clazz, j, finalValue,
+			proceed = typeof value === "string" && value,
 			i = 0,
-			len = this.length,
-			proceed = typeof value === "string" && value;
+			len = this.length;
 
 		if ( jQuery.isFunction( value ) ) {
 			return this.each(function( j ) {
@@ -55,9 +56,9 @@ jQuery.fn.extend({
 
 	removeClass: function( value ) {
 		var classes, elem, cur, curValue, clazz, j, finalValue,
+			proceed = arguments.length === 0 || typeof value === "string" && value,
 			i = 0,
-			len = this.length,
-			proceed = arguments.length === 0 || typeof value === "string" && value;
+			len = this.length;
 
 		if ( jQuery.isFunction( value ) ) {
 			return this.each(function( j ) {
@@ -84,7 +85,7 @@ jQuery.fn.extend({
 						}
 					}
 
-					// only assign if different to avoid unneeded rendering.
+					// Only assign if different to avoid unneeded rendering.
 					finalValue = value ? jQuery.trim( cur ) : "";
 					if ( curValue !== finalValue ) {
 						elem.setAttribute( "class", finalValue );
@@ -138,10 +139,10 @@ jQuery.fn.extend({
 				if ( className ) {
 
 					// store className if set
-					jQuery._data( this, "__className__", className );
+					dataPriv.set( this, "__className__", className );
 				}
 
-				// If the element has a class name or if we're passed "false",
+				// If the element has a class name or if we're passed `false`,
 				// then remove the whole classname (if there was one, the above saved it).
 				// Otherwise bring back whatever was previously saved (if anything),
 				// falling back to the empty string if nothing was stored.
@@ -149,7 +150,7 @@ jQuery.fn.extend({
 					this.setAttribute( "class",
 						className || value === false ?
 						"" :
-						jQuery._data( this, "__className__" ) || ""
+						dataPriv.get( this, "__className__" ) || ""
 					);
 				}
 			}

@@ -13,14 +13,13 @@ module( "tween", {
 		this.sandbox = sinon.sandbox.create();
 		this.clock = this.sandbox.useFakeTimers( 505877050 );
 		this._oldInterval = jQuery.fx.interval;
-		this._oldNow = jQuery.now;
 		jQuery.fx.step = {};
 		jQuery.fx.interval = 10;
-		jQuery.now = Date.now || this._oldNow;
+		jQuery.now = Date.now;
 	},
 	teardown: function() {
 		this.sandbox.restore();
-		jQuery.now = this._oldNow;
+		jQuery.now = Date.now;
 		jQuery.fx.stop();
 		jQuery.fx.interval = this._oldInterval;
 		window.requestAnimationFrame = oldRaf;
@@ -199,7 +198,7 @@ test( "jQuery.Tween - Element", function() {
 
 	ok( easingSpy.calledWith( 0.1, 0.1 * testOptions.duration, 0, 1, testOptions.duration ),
 		"...using jQuery.easing.linear with back-compat arguments" );
-	equal( Math.floor( parseFloat( testElement.style.height ) ), Math.floor( eased ), "Set value" );
+	equal( parseFloat( testElement.style.height ).toFixed( 2 ), eased.toFixed( 2 ), "Set value" );
 
 	tween.run( 1 );
 	equal( testElement.style.height, "0px", "Checking another value" );

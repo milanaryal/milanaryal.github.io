@@ -57,7 +57,7 @@ function testWidth( val ) {
 
 	equal( jQuery(window).width(), document.documentElement.clientWidth, "Window width is equal to width reported by window/document." );
 
-	QUnit.expectJqData( this, $div[0], "display" );
+	QUnit.expectJqData( this, $div[0], "olddisplay" );
 }
 
 test("width()", function() {
@@ -110,7 +110,7 @@ function testHeight( val ) {
 
 	equal( jQuery(window).height(), document.documentElement.clientHeight, "Window width is equal to width reported by window/document." );
 
-	QUnit.expectJqData( this, $div[0], "display" );
+	QUnit.expectJqData( this, $div[0], "olddisplay" );
 }
 
 test("height()", function() {
@@ -165,7 +165,7 @@ test("innerWidth()", function() {
 	equal( div.innerWidth(), 0, "Make sure that disconnected nodes are handled." );
 
 	div.remove();
-	QUnit.expectJqData( this, $div[ 0 ], "display" );
+	QUnit.expectJqData( this, $div[ 0 ], "olddisplay" );
 });
 
 test("innerHeight()", function() {
@@ -200,7 +200,7 @@ test("innerHeight()", function() {
 	equal( div.innerHeight(), 0, "Make sure that disconnected nodes are handled." );
 
 	div.remove();
-	QUnit.expectJqData( this, $div[ 0 ], "display" );
+	QUnit.expectJqData( this, $div[ 0 ], "olddisplay" );
 });
 
 test("outerWidth()", function() {
@@ -239,7 +239,7 @@ test("outerWidth()", function() {
 	equal( div.outerWidth(), 0, "Make sure that disconnected nodes are handled." );
 
 	div.remove();
-	QUnit.expectJqData( this, $div[ 0 ], "display" );
+	QUnit.expectJqData( this, $div[ 0 ], "olddisplay" );
 });
 
 test("child of a hidden elem (or unconnected node) has accurate inner/outer/Width()/Height()  see #9441 #9300", function() {
@@ -393,7 +393,7 @@ test("outerHeight()", function() {
 	equal( div.outerHeight(), 0, "Make sure that disconnected nodes are handled." );
 
 	div.remove();
-	QUnit.expectJqData( this, $div[ 0 ], "display" );
+	QUnit.expectJqData( this, $div[ 0 ], "olddisplay" );
 });
 
 test("passing undefined is a setter #5571", function() {
@@ -451,21 +451,6 @@ test("setters with and without box-sizing:border-box", function(){
 	equal( el.outerHeight( 117 ).height(), expected + 3, "test border-box outerHeight(int) by roundtripping" );
 	equal( el.outerHeight( 118, false ).height(), expected + 4, "test border-box outerHeight(int, false) by roundtripping" );
 	equal( el.outerHeight( 129, true ).height(), expected + 5, "test border-box innerHeight(int, true) by roundtripping" );
-});
-
-testIframe( "dimensions/documentSmall", "window vs. small document", function( jQuery, window, document ) {
-	// this test is practically tautological, but there is a bug in IE8
-	// with no simple workaround, so this test exposes the bug and works around it
-	if ( document.body.offsetWidth >= document.documentElement.offsetWidth ) {
-		expect( 2 );
-
-		equal( jQuery( document ).height(), jQuery( window ).height(), "document height matches window height" );
-		equal( jQuery( document ).width(), jQuery( window ).width(), "document width matches window width" );
-	} else {
-		// all tests should have at least one assertion
-		expect( 1 );
-		ok( true, "skipping test (conditions not satisfied)" );
-	}
 });
 
 testIframe( "dimensions/documentLarge", "window vs. large document", function( jQuery, window, document ) {

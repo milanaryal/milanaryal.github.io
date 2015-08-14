@@ -166,6 +166,14 @@ test( "globalEval", function() {
 	equal( window.globalEvalTest, 3, "Test context (this) is the window object" );
 });
 
+test( "globalEval with 'use strict'", function() {
+	expect( 1 );
+	Globals.register("strictEvalTest");
+
+	jQuery.globalEval("'use strict'; var strictEvalTest = 1;");
+	equal( window.strictEvalTest, 1, "Test variable declarations are global (strict mode)" );
+});
+
 test( "globalEval execution after script injection (#7862)", 1, function() {
 	var now,
 		script = document.createElement( "script" );
@@ -263,7 +271,7 @@ test("type", function() {
 });
 
 asyncTest("isPlainObject", function() {
-	expect(16);
+	expect(15);
 
 	var pass, iframe, doc,
 		fn = function() {};
@@ -296,16 +304,6 @@ asyncTest("isPlainObject", function() {
 
 	// Again, instantiated objects shouldn't be matched
 	ok( !jQuery.isPlainObject(new fn()), "new fn" );
-
-	// Make it even harder to detect in IE < 9
-	fn = function() {
-		this.a = "a";
-	};
-	fn.prototype = {
-		b: "b"
-	};
-
-	ok( !jQuery.isPlainObject(new fn()), "fn (inherited and own properties)");
 
 	// DOM Element
 	ok( !jQuery.isPlainObject( document.createElement("div") ), "DOM Element" );
@@ -353,7 +351,6 @@ test("isFunction", function() {
 	ok( !jQuery.isFunction( 0 ), "0 Value" );
 
 	// Check built-ins
-	// Safari uses "(Internal Function)"
 	ok( jQuery.isFunction(String), "String Function("+String+")" );
 	ok( jQuery.isFunction(Array), "Array Function("+Array+")" );
 	ok( jQuery.isFunction(Object), "Object Function("+Object+")" );
@@ -380,7 +377,6 @@ test("isFunction", function() {
 	// Firefox says this is a function
 	ok( !jQuery.isFunction(obj), "Object Element" );
 
-	// IE says this is an object
 	// Since 1.3, this isn't supported (#2968)
 	//ok( jQuery.isFunction(obj.getAttribute), "getAttribute Function" );
 
@@ -398,7 +394,6 @@ test("isFunction", function() {
 	input.type = "text";
 	document.body.appendChild( input );
 
-	// IE says this is an object
 	// Since 1.3, this isn't supported (#2968)
 	//ok( jQuery.isFunction(input.focus), "A default function property" );
 
@@ -1079,6 +1074,27 @@ test("jQuery.extend(Object, Object)", function() {
 	deepEqual( options2, options2Copy, "Check if not modified: options2 must not be modified" );
 });
 
+test("jQuery.extend(true,{},{a:[], o:{}}); deep copy with array, followed by object", function() {
+	expect(2);
+
+	var result, initial = {
+		// This will make "copyIsArray" true
+		array: [ 1, 2, 3, 4 ],
+		// If "copyIsArray" doesn't get reset to false, the check
+		// will evaluate true and enter the array copy block
+		// instead of the object copy block. Since the ternary in the
+		// "copyIsArray" block will will evaluate to false
+		// (check if operating on an array with ), this will be
+		// replaced by an empty array.
+		object: {}
+	};
+
+	result = jQuery.extend( true, {}, initial );
+
+	deepEqual( result, initial, "The [result] and [initial] have equal shape and values" );
+	ok( !jQuery.isArray( result.object ), "result.object wasn't paved with an empty array" );
+});
+
 test("jQuery.each(Object,Function)", function() {
 	expect( 23 );
 
@@ -1302,7 +1318,7 @@ test("jQuery.proxy", function(){
 });
 
 test("jQuery.parseHTML", function() {
-	expect( 22 );
+	expect( 23 );
 
 	var html, nodes;
 
@@ -1336,11 +1352,14 @@ test("jQuery.parseHTML", function() {
 	equal( jQuery.parseHTML(" <div/> ")[0].nodeType, 3, "Leading spaces are treated as text nodes (#11290)" );
 
 	html = jQuery.parseHTML( "<div>test div</div>" );
+
 	equal( html[ 0 ].parentNode.nodeType, 11, "parentNode should be documentFragment" );
 	equal( html[ 0 ].innerHTML, "test div", "Content should be preserved" );
 
 	equal( jQuery.parseHTML("<span><span>").length, 1, "Incorrect html-strings should not break anything" );
-	equal( jQuery.parseHTML("<td><td>")[ 1 ].parentNode.nodeType, 11, "parentNode should be documentFragment" );
+	equal( jQuery.parseHTML("<td><td>")[ 1 ].parentNode.nodeType, 11,
+		"parentNode should be documentFragment for wrapMap (variable in manipulation module) elements too" );
+	ok( jQuery.parseHTML("<#if><tr><p>This is a test.</p></tr><#/if>") || true, "Garbage input should not cause error" );
 });
 
 if ( jQuery.support.createHTMLDocument ) {
@@ -1381,7 +1400,7 @@ test("jQuery.parseJSON", function() {
 	deepEqual(
 		jQuery.parseJSON( "{ \"string\": \"\", \"number\": 4.2e+1, \"object\": {}," +
 			"\"array\": [[]], \"boolean\": [ true, false ], \"null\": null }"),
-		{ string: "", number: 42, object: {}, array: [[]], "boolean": [ true, false ], "null": null },
+		{ string: "", number: 42, object: {}, array: [[]], boolean: [ true, false ], "null": null },
 		"Dictionary of all data types"
 	);
 

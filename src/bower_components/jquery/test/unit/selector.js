@@ -30,7 +30,7 @@ test("id", function() {
 	t( "ID Selector w/ Element", "body#body", ["body"] );
 	t( "ID Selector w/ Element", "ul#first", [] );
 	t( "ID selector with existing ID descendant", "#firstp #simon1", ["simon1"] );
-	t( "ID selector with non-existant descendant", "#firstp #foobar", [] );
+	t( "ID selector with non-existent descendant", "#firstp #foobar", [] );
 	t( "ID selector using UTF8", "#台北Táiběi", ["台北Táiběi"] );
 	t( "Multiple ID selectors using UTF8", "#台北Táiběi, #台北", ["台北Táiběi","台北"] );
 	t( "Descendant ID selector using UTF8", "div #台北", ["台北"] );
@@ -55,7 +55,7 @@ test("id", function() {
 
 	t( "ID Selector on Form with an input that has a name of 'id'", "#lengthtest", ["lengthtest"] );
 
-	t( "ID selector with non-existant ancestor", "#asdfasdf #foobar", [] ); // bug #986
+	t( "ID selector with non-existent ancestor", "#asdfasdf #foobar", [] ); // bug #986
 
 	t( "Underscore ID", "#types_all", ["types_all"] );
 	t( "Dash ID", "#qunit-fixture", ["qunit-fixture"] );
@@ -138,7 +138,7 @@ test( "child and adjacent", function() {
 
 	nothiddendiv = document.getElementById("nothiddendiv");
 
-	t( "Non-existant ancestors", ".fototab > .thumbnails > a", [] );
+	t( "Non-existent ancestors", ".fototab > .thumbnails > a", [] );
 });
 
 test("attributes", function() {
@@ -272,7 +272,7 @@ test("disconnected nodes - jQuery only", function() {
 });
 
 testIframe("selector/html5_selector", "attributes - jQuery.attr", function( jQuery, window, document ) {
-	expect( 37 );
+	expect( 38 );
 
 	/**
 	 * Returns an array of elements with the given IDs
@@ -355,7 +355,8 @@ testIframe("selector/html5_selector", "attributes - jQuery.attr", function( jQue
 	});
 	t( "Enumerated attribute", "[spellcheck]", ["span1"]);
 
-	// t( "tabindex selector does not retrieve all elements in IE6/7(#8473)", "form, [tabindex]", ["form1", "text1"] ); // sigh, FF12 QSA mistakenly includes video elements even though they have no tabindex attribute (see https://bugzilla.mozilla.org/show_bug.cgi?id=618737)
+	t( "tabindex selector does not retrieve all elements in IE6/7 (#8473)",
+		"form, [tabindex]", [ "form1", "text1" ] );
 	t( "Improperly named form elements do not interfere with form selections (#9570)", "form[name='formName']", ["form1"] );
 });
 

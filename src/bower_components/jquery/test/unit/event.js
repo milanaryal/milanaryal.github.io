@@ -374,6 +374,7 @@ test("on immediate propagation", function() {
 
 test("on bubbling, isDefaultPrevented, stopImmediatePropagation", function() {
 	expect( 3 );
+
 	var $anchor2 = jQuery( "#anchor2" ),
 		$main = jQuery( "#qunit-fixture" ),
 		neverCallMe = function() {
@@ -381,19 +382,14 @@ test("on bubbling, isDefaultPrevented, stopImmediatePropagation", function() {
 		},
 		fakeClick = function($jq) {
 			// Use a native click so we don't get jQuery simulated bubbling
-			if ( document.createEvent ) {
-				var e = document.createEvent( "MouseEvents" );
-				e.initEvent( "click", true, true );
-				$jq[0].dispatchEvent(e);
-			}
-			else if ( $jq[0].click ) {
-				$jq[0].click();	// IE
-			}
+			var e = document.createEvent( "MouseEvents" );
+			e.initEvent( "click", true, true );
+			$jq[ 0 ].dispatchEvent( e );
 		};
 	$anchor2.on( "click", function(e) {
 		e.preventDefault();
 	});
-	$main.on("click", "#foo", function(e) {
+	$main.on( "click", "#foo", function( e ) {
 		equal( e.isDefaultPrevented(), true, "isDefaultPrevented true passed to bubbled event" );
 	});
 	fakeClick( $anchor2 );
@@ -412,8 +408,8 @@ test("on bubbling, isDefaultPrevented, stopImmediatePropagation", function() {
 	// Android 2.3 doesn't support stopImmediatePropagation; jQuery fallbacks to stopPropagation
 	// in such a case.
 	// Support: Android 2.3
-	if ( !window.addEventListener || /android 2\.3/i.test( navigator.userAgent ) ) {
-		ok( true, "Old IE or Android 2.3, skipping native stopImmediatePropagation check" );
+	if ( /android 2\.3/i.test( navigator.userAgent ) ) {
+		ok( true, "Android 2.3, skipping native stopImmediatePropagation check" );
 	} else {
 		$anchor2.on( "click", function( e ) {
 			e.stopImmediatePropagation();
@@ -1239,8 +1235,6 @@ test("trigger(eventObject, [data], [fn])", function() {
 	equal( event.isDefaultPrevented(), false, "default not prevented" );
 });
 
-// Explicitly introduce global variable for oldIE so QUnit doesn't complain if checking globals
-window.onclick = undefined;
 test(".trigger() bubbling on disconnected elements (#10489)", function() {
 	expect(2);
 
@@ -1420,48 +1414,20 @@ test("Submit event can be stopped (#11049)", function() {
 // handler making it impossible to feature-detect the support.
 if ( window.onbeforeunload === null &&
 	!/(ipad|iphone|ipod|android 2\.3)/i.test( navigator.userAgent ) ) {
-	asyncTest("on(beforeunload)", 4, function() {
-		var win,
-			fired = false,
-			iframe = jQuery("<iframe src='data/iframe.html' />");
+	asyncTest("on(beforeunload)", 1, function() {
+		var iframe = jQuery(jQuery.parseHTML("<iframe src='data/event/onbeforeunload.html'><iframe>"));
 
-		iframe.appendTo("#qunit-fixture").one( "load", function() {
-			win = this.contentWindow || this.contentDocument;
+		window.onmessage = function( event ) {
+			var payload = JSON.parse( event.data );
 
-			jQuery( win ).on( "beforeunload", function() {
-				fired = true;
-				ok( true, "beforeunload event is fired" );
-			});
+			ok( payload.event, "beforeunload", "beforeunload event" );
 
-			strictEqual( win.onbeforeunload, null, "onbeforeunload property on window object still equals null" );
+			iframe.remove();
+			window.onmessage = null;
+			start();
+		};
 
-			win.onbeforeunload = function() {
-				ok( true, "window.onbeforeunload handler is called" );
-				iframe = jQuery("<iframe src='data/iframe.html' />");
-
-				iframe.appendTo("#qunit-fixture").one( "load", function() {
-					win = iframe[ 0 ].contentWindow || iframe[ 0 ].contentDocument;
-
-					jQuery( win ).on( "beforeunload", function() {
-						strictEqual( win.onbeforeunload, null, "Event handler is fired, even when onbeforeunload property on window is nulled" );
-
-						start();
-					});
-
-					jQuery( win ).on( "unload", function() {
-						if ( !fired ) {
-							jQuery( win ).trigger("beforeunload");
-						}
-					});
-
-					win.onbeforeunload = null;
-
-					win.location.reload();
-				});
-			};
-
-			win.location.reload();
-		});
+		iframe.appendTo("#qunit-fixture");
 	});
 }
 
@@ -1494,7 +1460,7 @@ test("jQuery.Event( type, props )", function() {
 test("jQuery.Event properties", function(){
 	expect(12);
 
-	var handler, event,
+	var handler,
 		$structure = jQuery("<div id='ancestor'><p id='delegate'><span id='target'>shiny</span></p></div>"),
 		$target = $structure.find("#target");
 
@@ -1521,19 +1487,12 @@ test("jQuery.Event properties", function(){
 
 	handler = function( e ) {
 		strictEqual( e.isTrigger, undefined, "native event at " + this.id );
-		event = e;
 	};
 	$target.one( "click", handler );
 	$target[0].onclick = function( e ) {
 		strictEqual( e.isTrigger, undefined, "native event at target (native handler)" );
-		$target[0].onclick = null;
 	};
 	fireNative( $target[0], "click" );
-
-	// Make sure that even oldIE executes the inline handler
-	if ( $target[0].onclick ) {
-		$target[0].onclick( event );
-	}
 });
 
 test(".on()/.off()", function() {
@@ -1871,17 +1830,6 @@ test( "delegated event with selector matching Object.prototype property (#13203)
 	jQuery("#anchor2").trigger("click");
 
 	equal( matched, 0, "Nothing matched 'toString'" );
-});
-
-test( "delegated event with intermediate DOM manipulation (#13208)", function() {
-	expect(1);
-
-	jQuery("#foo").on( "click", "#sap", function() {});
-	jQuery("#sap").on( "click", "#anchor2", function() {
-		jQuery( this.parentNode ).remove();
-		ok( true, "Element removed" );
-	});
-	jQuery("#anchor2").trigger("click");
 });
 
 test("stopPropagation() stops directly-bound events on delegated target", function() {
@@ -2424,6 +2372,25 @@ test("hover event no longer special since 1.9", function() {
 		.off("hover");
 });
 
+test( "event object properties on natively-triggered event", function() {
+	expect( 3 );
+
+	var link = document.createElement( "a" ),
+		$link = jQuery( link ),
+		evt = document.createEvent( "MouseEvents" );
+
+	// IE9+ requires element to be in the body before it will dispatch
+	$link.appendTo( "body" ).on( "click", function( e ) {
+		// Not trying to assert specific values here, just ensure the property exists
+		equal( "detail" in e, true, "has .detail" );
+		equal( "cancelable" in e, true, "has .cancelable" );
+		equal( "bubbles" in e, true, "has .bubbles" );
+	});
+	evt.initEvent( "click", true, true );
+	link.dispatchEvent( evt );
+	$link.off( "click" ).remove();
+});
+
 test("fixHooks extensions", function() {
 	expect( 2 );
 
@@ -2456,30 +2423,27 @@ test("fixHooks extensions", function() {
 	jQuery.event.fixHooks.click = saved;
 });
 
-// IE8 doesn't support custom event triggering natively, but we can skip
-// this test in IE8 since a native HTML5 drag event will never occur there.
-if ( document.createEvent ) {
+test( "drag/drop events copy mouse-related event properties (gh-1925, gh-2009)", function() {
+	expect( 4 );
 
-	test( "drag/drop events copy mouse-related event properties (gh-1925, gh-2009)", function() {
-		expect( 4 );
+	var $fixture = jQuery( "<div id='drag-fixture'></div>" ).appendTo( "body" );
 
-		var $fixture = jQuery( "<div id='drag-fixture'></div>" ).appendTo( "body" );
-
-		$fixture.on( "dragmove", function( evt ) {
-			ok( "pageX" in evt, "checking for pageX property on dragmove" );
-			ok( "pageY" in evt, "checking for pageY property on dragmove" );
-		});
-		fireNative( $fixture[ 0 ], "dragmove" );
-
-		$fixture.on( "drop", function( evt ) {
-			ok( "pageX" in evt, "checking for pageX property on drop" );
-			ok( "pageY" in evt, "checking for pageY property on drop" );
-		});
-		fireNative( $fixture[ 0 ], "drop" );
-
-		$fixture.unbind( "dragmove drop" ).remove();
+	$fixture.on( "dragmove", function( evt ) {
+		ok( "pageX" in evt, "checking for pageX property on dragmove" );
+		ok( "pageY" in evt, "checking for pageY property on dragmove" );
 	});
-}
+	fireNative( $fixture[ 0 ], "dragmove" );
+
+	$fixture.on( "drop", function( evt ) {
+		ok( "pageX" in evt, "checking for pageX property on drop" );
+		ok( "pageY" in evt, "checking for pageY property on drop" );
+	});
+
+	fireNative( $fixture[ 0 ], "drop" );
+
+	$fixture.unbind( "dragmove drop" ).remove();
+});
+
 test( "focusin using non-element targets", function() {
 	expect( 2 );
 
@@ -2594,7 +2558,7 @@ test( "Namespace preserved when passed an Event (#12739)", function() {
 				e.handled = true;
 				equal( e.namespace, "bar", "namespace is bar" );
 				jQuery( e.target ).find("div").each(function() {
-				  jQuery( this ).triggerHandler( e );
+					jQuery( this ).triggerHandler( e );
 				});
 			}
 		})
@@ -2686,26 +2650,48 @@ test( "Inline event result is returned (#13993)", function() {
 	equal( result, 42, "inline handler returned value" );
 });
 
+test( ".off() removes the expando when there's no more data", function() {
+	expect( 1 );
+
+	var key,
+		div = jQuery( "<div/>" ).appendTo( "#qunit-fixture" );
+
+	div.on( "click", false );
+	div.on( "custom", function() {
+		ok( true, "Custom event triggered" );
+	} );
+	div.trigger( "custom" );
+	div.off( "click custom" );
+
+	// Make sure the expando is gone
+	for ( key in div[ 0 ] ) {
+		if ( /^jQuery/.test( key ) ) {
+			ok( false, "Expando was not removed when there was no more data" );
+		}
+	}
+});
+
 test( "preventDefault() on focusin does not throw exception", function( assert ) {
 	expect( 1 );
 
 	var done = assert.async(),
 		input = jQuery( "<input/>" ).appendTo( "#form" );
+		input
+			.on( "focusin", function( event ) {
+				var exceptionCaught;
 
-	input.on( "focusin", function( event ) {
-		var exceptionCaught;
+				try {
+					event.preventDefault();
+				} catch ( theException ) {
+					exceptionCaught = theException;
+				}
 
-		try {
-			event.preventDefault();
-		} catch ( theException ) {
-			exceptionCaught = theException;
-		}
+				assert.strictEqual( exceptionCaught, undefined,
+					"Preventing default on focusin throws no exception" );
 
-		assert.strictEqual( exceptionCaught, undefined,
-			"Preventing default on focusin throws no exception" );
-
-		done();
-	} ).trigger( "focus" );
+				done();
+			} )
+			.focus();
 } );
 
 test( "Donor event interference", function( assert ) {
@@ -2736,53 +2722,10 @@ test( "Donor event interference", function( assert ) {
 		assert.ok( true, "got a change event from the input" );
 		event.stopPropagation();
 	} );
-
 	jQuery( "#donor-input" )[ 0 ].click();
 } );
 
-test( "originalEvent property for IE8", function( assert ) {
-	if ( !(/msie 8\.0/i.test( window.navigator.userAgent )) ) {
-		assert.expect( 1 );
-		assert.ok( true, "Assertions should run only in IE" );
-		return;
-	}
-
-	assert.expect( 12 );
-
-	var html = "<div id='donor-outer'>" +
-		"<form id='donor-form'>" +
-			"<input id='donor-input' type='radio' />" +
-		"</form>" +
-	"</div>";
-
-	jQuery( "#qunit-fixture" ).append( html );
-
-	jQuery( "#donor-outer" ).on( "change", function( event ) {
-		assert.ok( true, "click bubbled to outer div" );
-		assert.equal( event.originalEvent.type, "click", "make sure simulated event is a click" );
-		assert.equal( event.type, "change", "make sure event type is correct" );
-	} );
-
-	jQuery( "#donor-outer" ).on( "click", function( event ) {
-		assert.ok( true, "click bubbled to outer div" );
-		assert.equal( event.originalEvent.type, "click", "make sure originalEvent exist" );
-	} );
-	jQuery( "#donor-input" ).on( "click", function( event ) {
-		assert.ok( true, "got a click event from the input" );
-		assert.ok( !event.isPropagationStopped(), "propagation says it's not stopped" );
-		assert.equal( event.originalEvent.type, "click", "make sure originalEvent exist" );
-		assert.equal( event.type, "click", "make sure event type is correct" );
-	} );
-	jQuery( "#donor-input" ).on( "change", function( event ) {
-		assert.equal( event.originalEvent.type, "click", "make sure originalEvent exist" );
-		assert.equal( event.type, "change", "make sure event type is correct" );
-		assert.ok( true, "got a change event from the input" );
-	} );
-
-	jQuery( "#donor-input" )[ 0 ].click();
-} );
-
-test( "originalEvent property for Chrome, Safari and FF of simulated event", function( assert ) {
+test( "originalEvent property for Chrome, Safari and FF of simualted event", function( assert ) {
 	var userAgent = window.navigator.userAgent;
 
 	if ( !(/chrome/i.test( userAgent ) ||
@@ -2851,7 +2794,6 @@ if ( !(/firefox/i.test( window.navigator.userAgent )) ) {
 			$text = jQuery("#text1"),
 			$radio = jQuery("#radio1").trigger("focus");
 
-		// Support: IE<11
 		// IE8-10 fire focus/blur events asynchronously; this is the resulting mess.
 		// IE's browser window must be topmost for this to work properly!!
 		stop();
