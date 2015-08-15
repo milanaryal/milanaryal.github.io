@@ -74,6 +74,12 @@ google_cse_id:    "000254926668963224856:z4vgwqv7kla"
 # !! Current Tracking ID only for milanaryal.com !!
 google_analytics_id: "UA-42092423-1"
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
 # Front matter defaults
 defaults:
   -
@@ -83,14 +89,6 @@ defaults:
     values:
       layout: "post"
       comments: "true"
-
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /docs/:path/
-
-defaults:
   -
     scope:
       path: ""
