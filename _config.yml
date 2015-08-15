@@ -83,6 +83,14 @@ defaults:
     values:
       layout: "post"
       comments: "true"
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+defaults:
   -
     scope:
       path: ""
@@ -90,12 +98,6 @@ defaults:
     values:
       layout: "docs"
       comments: "false"
-
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /docs/:path/
 
 # Compress HTML
 compress_html:
