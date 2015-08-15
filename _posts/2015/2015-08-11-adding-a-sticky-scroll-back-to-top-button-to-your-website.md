@@ -2,6 +2,7 @@
 title: "Adding a sticky 'scroll back to top' button to your website"
 subtitle: "This elevator button allows users to smoothly scroll back to the top of the page."
 date: 2015-08-11T22:55:01+05:45
+last_modified_at: 2015:08:15T17:21:49+05:45
 ---
 
 This resource is suitable for website with lots of page content. When a user scrolls past a certain point on the website, this helpful button appears, enabling users to easily return to the top of a page.
@@ -111,21 +112,20 @@ Then add the following jQuery snippet on your script file. This script helps to 
     $back_to_top = $('.elevator');
 
   // hide or show the "back to top" link
-  $(window).scroll(function(){
-    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('elevator-is-visible') : $back_to_top.removeClass('elevator-is-visible');
+  $(window).scroll(function () {
+    ($(this).scrollTop() > offset) ? $back_to_top.addClass('elevator-is-visible') : $back_to_top.removeClass('elevator-is-visible');
   });
 
   // smooth scroll to top
-  $back_to_top.on('click', function(event){
+  $back_to_top.on('click', function (event) {
     event.preventDefault();
     $('body,html').animate({
-      scrollTop: 0 ,
+      scrollTop: 0
       }, scroll_top_duration
-      );
+    );
   });
 
-
-}(jQuery);
+})(jQuery);
 {% endhighlight %}
 
 #### Demo

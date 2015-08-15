@@ -51,12 +51,10 @@ layout: default
 
             <hr>
 
-            {% if site.disqus_shortname %}
-              {% unless page.comments == 'false' %}
+            {% if site.disqus_shortname and page.comments != 'false' %}
               <div class="comments clearfix" itemprop="comment">
                 {% include disqus_thread.html %}
               </div>
-              {% endunless %}
             {% endif %}
 
             <nav class="clearfix" itemprop="pagination">

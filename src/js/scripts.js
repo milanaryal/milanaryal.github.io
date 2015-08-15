@@ -91,7 +91,7 @@
   // Elevator - Scroll back to top utility
   // ======================================
 
-  // Append necessary class
+  // append necessary class
   // should have already contain wrapper on a page.
   // <div class="elevator-wrapper"></div>
   $('.elevator-wrapper').append('<div class="elevator"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>');
