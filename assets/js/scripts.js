@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-16T09:41:04+05:45
+ * Date: 2015-08-16T11:00:21+05:45
  */
 
 /*!
@@ -10697,7 +10697,7 @@ var anchors = new AnchorJS();
   // browser window scroll (in pixels) after which the "elevator button" is shown
   var offset_header = 500,
     // browser window scroll (in pixels) after which the "elevator button" is hidden
-    offset_footer = $('.info-footer').offset().top - $(window).height() - 187,
+    offset_footer = $('.info-footer').offset().top - $(window).height() - 50,
     // duration of the top scrolling animation (in ms)
     scroll_top_duration = 700,
     // grab the "back to top" link

@@ -99,7 +99,7 @@
   // browser window scroll (in pixels) after which the "elevator button" is shown
   var offset_header = 500,
     // browser window scroll (in pixels) after which the "elevator button" is hidden
-    offset_footer = $('.info-footer').offset().top - $(window).height() - 187,
+    offset_footer = $('.info-footer').offset().top - $(window).height() - 50,
     // duration of the top scrolling animation (in ms)
     scroll_top_duration = 700,
     // grab the "back to top" link
