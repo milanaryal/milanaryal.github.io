@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-14T22:44:25+05:45
+ * Date: 2015-08-16T09:41:04+05:45
  */
 
 /*!
@@ -10689,13 +10689,15 @@ var anchors = new AnchorJS();
   // Elevator - Scroll back to top utility
   // ======================================
 
-  // Append necessary class
+  // append necessary class
   // should have already contain wrapper on a page.
   // <div class="elevator-wrapper"></div>
   $('.elevator-wrapper').append('<div class="elevator"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>');
 
-  // browser window scroll (in pixels) after which the "back to top" link is shown
-  var offset = 500,
+  // browser window scroll (in pixels) after which the "elevator button" is shown
+  var offset_header = 500,
+    // browser window scroll (in pixels) after which the "elevator button" is hidden
+    offset_footer = $('.info-footer').offset().top - $(window).height() - 187,
     // duration of the top scrolling animation (in ms)
     scroll_top_duration = 700,
     // grab the "back to top" link
@@ -10703,7 +10705,9 @@ var anchors = new AnchorJS();
 
   // hide or show the "back to top" link
   $(window).scroll(function () {
-    ($(this).scrollTop() > offset) ? $back_to_top.addClass('elevator-is-visible') : $back_to_top.removeClass('elevator-is-visible');
+    var $scroll_top = $(this).scrollTop();
+
+    ($scroll_top > offset_header && $scroll_top < offset_footer) ? $back_to_top.addClass('elevator-is-visible') : $back_to_top.removeClass('elevator-is-visible');
   });
 
   // smooth scroll to top

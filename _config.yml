@@ -89,6 +89,7 @@ defaults:
     values:
       layout: "post"
       comments: "true"
+      elevator: "true"
   -
     scope:
       path: ""
@@ -96,6 +97,7 @@ defaults:
     values:
       layout: "docs"
       comments: "false"
+      elevator: "true"
 
 # Compress HTML
 compress_html:
