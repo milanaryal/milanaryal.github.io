@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-16T11:00:41+05:45
+ * Date: 2015-08-16T16:46:47+05:45
  */
 
 /*!
@@ -7865,57 +7865,5 @@ kbd {
 *:hover > .anchorjs-link:hover,
 *:hover > .anchorjs-link:focus {
   opacity: 1;
-}
-.elevator {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  overflow: hidden;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
-  visibility: hidden;
-  background: rgba(0, 0, 0, .7);
-  background-image: none;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-          box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-  opacity: 0;
-  -webkit-transition: all .3s ease;
-       -o-transition: all .3s ease;
-          transition: all .3s ease;
-}
-.elevator.elevator-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-}
-.elevator .fa {
-  position: relative;
-  top: 12.5px;
-  left: 14.5px;
-  padding: 0;
-  margin: 0;
-  font-size: 20px;
-  color: white;
-  -webkit-transition: all .3s ease;
-       -o-transition: all .3s ease;
-          transition: all .3s ease;
-}
-.elevator:hover {
-  background: rgba(0, 0, 0, .8);
-}
-.elevator:hover .fa {
-  top: 5px;
-  color: white;
-}
-@media (max-width: 768px) {
-  .elevator {
-    /* only show elevator on desktop screen */
-    display: none !important;
-  }
 }
 /*# sourceMappingURL=styles.css.map */
