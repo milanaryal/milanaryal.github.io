@@ -9,6 +9,8 @@ permalink: /about/
 
 <p class="lead">{{ "Hello, my name is Milan Aryal (मिलन अर्याल) and I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot." | markdownify | strip_html | strip_newlines }}</p>
 
+If I have an idea I can't sleep until I make it real. Design is my passion.
+
 <div class="alert alert-info">The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification. :blush:</div>
 
 ### Let's be friends
