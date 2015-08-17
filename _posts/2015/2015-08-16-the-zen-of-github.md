@@ -20,4 +20,4 @@ I really like "The Zen of GitHub", an ideas and culture of GitHub. So I thought 
 
 ---
 
-*Read [a great write up](http://warpspire.com/posts/taste/) by Kyle Neathas to the how and why that GitHub Zen came to be.*
+*Read [a great write up](http://warpspire.com/posts/taste/) by Kyle Neath as to the how and why that GitHub Zen came to be.*
