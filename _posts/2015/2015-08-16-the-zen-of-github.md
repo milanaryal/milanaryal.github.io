@@ -9,7 +9,7 @@ date: 2015-08-16T17:27:53+05:45
 I really like "The Zen of GitHub", an ideas and culture of GitHub. So I thought to post it here for inspiration.
 
 <figure>
-  <a href="{{ site.url }}/uploads/2015/20150816-the-gen-of-github.png"><img src="{{ site.url }}/uploads/2015/20150816-the-gen-of-github.png" alt="The Zen of GitHub" title="The Zen of GitHub"></a>
+  <a href="{{ site.url }}/uploads/2015/the-gen-of-github-20150816.png"><img src="{{ site.url }}/uploads/2015/the-gen-of-github-20150816.png" alt="The Zen of GitHub" title="The Zen of GitHub"></a>
   <figcaption>Image: Dribbble, <a href="https://dribbble.com/shots/808470-The-Zen-of-GitHub">Kyle Neath</a></figcaption>
 </figure>
 
