@@ -42,7 +42,7 @@ When you get copied of Dropbox shared link, you will see the file link in the fo
 www.dropbox.com/u/<number>/<name of file>
 {% endhighlight %}
 
-### Step 2: Change an image file shared link to a hostable link
+### Step 2: Change an image file shared link to hostable link
 
 After getting a shared link to a image file, if you visit it you get preview on Dropbox site and simple file hosting doesn't work by pasting in the link.
 
@@ -64,7 +64,7 @@ https://dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-bl
   <strong>Tip:</strong> If you replace <code>?dl=0</code> to <code>?dl=1</code>, then you will get direct download link to a file uploaded on Dropbox. For example <a href="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=1" class="alert-link">click this link</a> to direct download a image file from Dropbox.
 </div>
 
-### Step 3: Hosting an image file to your website
+### Step 3: Hosting an image file on your website
 
 Now an HTML markup like
 
@@ -88,13 +88,7 @@ turns into this:
 
 <div class="alert alert-info">
   <h4>Host webpages for free within Dropbox API</h4>
-  <p>Following sites are the free static HTML host powered by the Dropbox API:</p>
-  <ul>
-    <li>Updog <a href="https://updog.co/" class="alert-link">https://updog.co</a></li>
-    <li>Pancake <a href="https://pancake.io/" class="alert-link">https://pancake.io</a></li>
-    <li>DropPages <a href="http://droppages.com/" class="alert-link">http://droppages.com</a></li>
-    <li>KISSr <a href="https://www.kissr.com/" class="alert-link">https://www.kissr.com</a></li>
-  </ul>
+  There’re many free static HTML host powered by the Dropbox API. Some of them are <a href="https://updog.co/" class="alert-link">Updog</a>, <a href="https://pancake.io/" class="alert-link">Pancake</a>, <a href="http://droppages.com/" class="alert-link">DropPages</a>, and <a href="https://www.kissr.com/" class="alert-link">KISSr</a>.
 </div>
 
 ### Is there a bandwidth limit for Dropbox public links?
@@ -111,5 +105,5 @@ Note that this is for share links, not for access via the API.
 
 <div class="alert alert-info">
   <h4>Invitation</h4>
-  Want to join Dropbox? Sign in now with <a href="https://db.tt/vocH7o0j" class="alert-link">https://db.tt/vocH7o0j</a> link and setup Dropbox to your desktop or mobile device you’ll get extra 500MB of bonus space.
+  Want to join Dropbox? Sign up now with <a href="https://db.tt/vocH7o0j" class="alert-link">https://db.tt/vocH7o0j</a> link and setup Dropbox to your desktop or mobile device you’ll get extra 500MB of bonus space.
 </div>
