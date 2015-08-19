@@ -68,7 +68,7 @@ https://dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-bl
 
 Now an HTML markup like
 
-{% highlight %}
+{% highlight html %}
 <figure>
   <a href="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png">
     <img src="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png" alt="Copyright Dropbox logo type blue">
