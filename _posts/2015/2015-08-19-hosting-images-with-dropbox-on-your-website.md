@@ -61,7 +61,7 @@ https://dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-bl
 {% endhighlight %}
 
 <div class="alert alert-info">
-  <strong>Tip:</strong> If you replace `?dl=0` to `?dl=1`, then you will get direct download link to a file uploaded on Dropbox. For example [click this link](//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=1) to direct download a image file from Dropbox.
+  <strong>Tip:</strong> If you replace `?dl=0` to `?dl=1`, then you will get direct download link to a file uploaded on Dropbox. For example <a href="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=1" class="alert-link">click this link</a> to direct download a image file from Dropbox.
 </div>
 
 ### Step 3: Hosting a image file to your website
@@ -98,5 +98,5 @@ And if another site decides to hotlink to your static images, it may exhaust you
 
 <div class="alert alert-info">
   <h4>Invitation</h4>
-  Want to join Dropbox? Sign in now with <a href="https://db.tt/vocH7o0j">https://db.tt/vocH7o0j</a> link and setup Dropbox to your desktop or mobile device you'll get extra 500MB of bonus space.
+  Want to join Dropbox? Sign in now with <a href="https://db.tt/vocH7o0j" class="alert-link">https://db.tt/vocH7o0j</a> link and setup Dropbox to your desktop or mobile device you’ll get extra 500MB of bonus space.
 </div>
