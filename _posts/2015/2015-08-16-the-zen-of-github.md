@@ -15,8 +15,10 @@ I really like "The Zen of GitHub", an ideas and culture of GitHub. So I thought 
 
 #### In GitHub API
 
-* [An API endpoint to retrieve random Zen](https://api.github.com/zen)
-* [Ms. Mona Lisa Octocat read the Zen herself](https://api.github.com/octocat)
+<ul>
+  <li><a href="https://api.github.com/zen" data-proofer-ignore>An API endpoint to retrieve random Zen</a></li>
+  <li><a href="https://api.github.com/octocat" data-proofer-ignore>Ms. Mona Lisa Octocat read the Zen herself</a></li>
+</ul>
 
 ---
 

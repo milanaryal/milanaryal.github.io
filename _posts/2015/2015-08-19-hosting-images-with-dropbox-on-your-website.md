@@ -42,13 +42,13 @@ When you get copied of Dropbox shared link, you will see the file link in the fo
 www.dropbox.com/u/<number>/<name of file>
 {% endhighlight %}
 
-### Step 2: Change an image file shared link to hostable link
+### Step 2: Change an image file shared link path
 
 After getting a shared link to a image file, if you visit it you get preview on Dropbox site and simple file hosting doesn't work by pasting in the link.
 
 To solve this, you just need to change the actual shared link with the link to the file itself. To do this, you just need to replace `www.dropbox.com` with `dl.dropboxusercontent.com`. This will serve the true file instead of the file wrapped in a preview.
 
-Example of default Dropbox shared link wrapped in a preview:
+Example of default Dropbox shared link path:
 
 {% highlight text %}
 https://www.dropbox.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=0
@@ -104,6 +104,6 @@ Note that this is for share links, not for access via the API.
 ---
 
 <div class="alert alert-info">
-  <h4>Invitation</h4>
-  Want to join Dropbox? Sign up now with <a href="https://db.tt/vocH7o0j" class="alert-link">https://db.tt/vocH7o0j</a> link and setup Dropbox to your desktop or mobile device you’ll get extra 500MB of bonus space.
+  <h4>Invitation to Dropbox!</h4>
+  Want to join Dropbox? Sign up now with <a href="https://db.tt/vocH7o0j" class="alert-link">https://db.tt/vocH7o0j</a> link and install Dropbox on your desktop computer, you’ll get extra 500MB of bonus space.
 </div>
