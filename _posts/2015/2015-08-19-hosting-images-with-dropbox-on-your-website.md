@@ -7,7 +7,7 @@ date: 2015-08-19T12:24:31+05:45
 
 Within these few simple steps you will learn to host images with Dropbox on your website:
 
-### Step 1: Get a share link to a image file
+### Step 1: Get a share link to an image file
 
 There're various way of [getting share link](https://www.dropbox.com/help/167) to a file in a Dropbox, follow one of them as your comfort.
 
@@ -42,7 +42,7 @@ When you get copied of Dropbox shared link, you will see the file link in the fo
 www.dropbox.com/u/<number>/<name of file>
 {% endhighlight %}
 
-### Step 2: Change a image file shared link to a hostable link
+### Step 2: Change an image file shared link to a hostable link
 
 After getting a shared link to a image file, if you visit it you get preview on Dropbox site and simple file hosting doesn't work by pasting in the link.
 
@@ -61,10 +61,10 @@ https://dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-bl
 {% endhighlight %}
 
 <div class="alert alert-info">
-  <strong>Tip:</strong> If you replace `?dl=0` to `?dl=1`, then you will get direct download link to a file uploaded on Dropbox. For example <a href="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=1" class="alert-link">click this link</a> to direct download a image file from Dropbox.
+  <strong>Tip:</strong> If you replace <code>?dl=0</code> to <code>?dl=1</code>, then you will get direct download link to a file uploaded on Dropbox. For example <a href="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=1" class="alert-link">click this link</a> to direct download a image file from Dropbox.
 </div>
 
-### Step 3: Hosting a image file to your website
+### Step 3: Hosting an image file to your website
 
 Now an HTML markup like
 
@@ -86,13 +86,26 @@ turns into this:
   <figcaption>Dropbox, the Dropbox logo are trademarks of Dropbox Inc., registered in the U.S. and other countries.</figcaption>
 </figure>
 
+<div class="alert alert-info">
+  <h4>Host webpages for free within Dropbox API</h4>
+  <p>Following sites are the free static HTML host powered by the Dropbox API:</p>
+  <ul>
+    <li>Updog <a href="https://updog.co/" class="alert-link">https://updog.co</a></li>
+    <li>Pancake <a href="https://pancake.io/" class="alert-link">https://pancake.io</a></li>
+    <li>DropPages <a href="http://droppages.com/" class="alert-link">http://droppages.com</a></li>
+    <li>KISSr <a href="https://www.kissr.com/" class="alert-link">https://www.kissr.com</a></li>
+  </ul>
+</div>
+
 ### Is there a bandwidth limit for Dropbox public links?
 
-"There is a hard limit of 10GB/day for Basic (free) accounts and 250GB/day for paid accounts per link, after which they are automatically suspended and your account is flagged," [Dropbox explains](https://www.dropbox.com/help/45).
+"There is a hard limit of 20GB/day for Basic (free) accounts and 200GB/day for paid accounts to all of your links together, after which they're temporarily disabled, and those who try to access them will see an error page instead of your files," [Dropbox explains](https://www.dropbox.com/help/4204).
 
-For comparison, let's say you have a image file hosted on Dropbox, weight around 400KB. That means a image file should have less than 25K impressions in a day for you to stay within the Dropbox limit.
+For comparison, let's say you have image files hosted on Dropbox, weight around 400KB. That means image files all together should have less than 25K impressions in a day for you to stay within the Dropbox traffic limits.
 
 And if another site decides to hotlink to your static images, it may exhaust your "free bandwidth" quota even sooner.
+
+Note that this is for share links, not for access via the API.
 
 ---
 
