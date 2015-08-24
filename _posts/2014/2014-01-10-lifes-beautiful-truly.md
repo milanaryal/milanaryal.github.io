@@ -6,7 +6,7 @@ redirect_from:
   - "/2014/01/lifes-beautiful-truly/"
 ---
 
-<p class="lead">This story contains some 'tips' that may bring you a beautiful life. Read them, live by them more fully, and you will surely experience a beautiful life!</p>
+<p class="lead">This story contains some ‘tips’ that may bring you a beautiful life. Read them, live by them more fully, and you will surely experience a beautiful life!</p>
 
 Take a 10 to 30 minute walk every day and while you walk, smile.
 

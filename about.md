@@ -7,7 +7,7 @@ featured_image: "/assets/img/about-bg.jpg"
 permalink: /about/
 ---
 
-<p class="lead">Hello, my name is Milan Aryal (मिलन अर्याल) and I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.</p>
+<p class="lead">Hello, my name is Milan Aryal (मिलन अर्याल) and I’m a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.</p>
 
 If I have an idea I can't sleep until I make it real. Design is my passion.
 
