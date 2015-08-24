@@ -5,13 +5,9 @@ excerpt: "Real wisdom, from some of the worlds greatest designers."
 redirect_from: "/2014/11/inspiring-design-quotes.html"
 ---
 
-We all need a bit of design inspiration from time to time. If you're stuck in a creative cul de sac, take a read through these inspiring design quotes. Real wisdom, from some of the worlds greatest designers. Enjoy, then go and create great work!
+<p class="lead">Design is what you do when you want to express yourself.</p>
 
-<figure>
-  <img alt="Design is what you do when you want to express yourself." src="http://1.bp.blogspot.com/-8PM_SyFyaqI/VFd7OAAbeVI/AAAAAAAAGXY/aZihk_9I1fU/s900/design.jpg" />
- 
-  <figcaption>Design is what you do when you want to express yourself.</figcaption>
-</figure>
+We all need a bit of design inspiration from time to time. If you're stuck in a creative cul de sac, take a read through these inspiring design quotes. Real wisdom, from some of the worlds greatest designers. Enjoy, then go and create great work!
 
 "People ignore design that ignores people." --- *Frank Chimero*
 

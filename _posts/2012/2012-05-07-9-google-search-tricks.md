@@ -6,9 +6,7 @@ redirect_from:
   - "/2012/05/9-google-search-tricks/"
 ---
 
-*Use these cool shortcuts to find things better and faster*
-
----
+<p class="lead">Use these cool shortcuts to find things better and faster</p>
 
 Not many users know the little tricks that can be used to get more out of a simple Google search. Following are the top nine Google search tricks:
 

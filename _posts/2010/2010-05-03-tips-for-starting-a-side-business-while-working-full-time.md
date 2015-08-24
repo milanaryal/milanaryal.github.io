@@ -6,9 +6,7 @@ redirect_from:
   - "/2010/05/tips-for-starting-a-side-business-while-working-full-time/"
 ---
 
-*It may be tempting to continue to spend money because it's regularly coming in, but once you're no longer an employee, you won't have that income*
-
----
+<p class="lead">It may be tempting to continue to spend money because it’s regularly coming in, but once you’re no longer an employee, you won’t have that income</p>
 
 If you're thinking about entrepreneurship, you've probably heard that you should start your business before you quit your day job.
 

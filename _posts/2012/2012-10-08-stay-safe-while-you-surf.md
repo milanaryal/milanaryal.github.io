@@ -6,9 +6,7 @@ redirect_from:
   - "/2012/10/stay-safe-while-you-surf/"
 ---
 
-*7 tips to remain secure while using public Wi-Fi hotspots*
-
----
+<p class="lead">7 tips to remain secure while using public Wi-Fi hotspots</p>
 
 Public Wi-Fi hotspots can be a hacker's paradise, as they are usually unsecured. The following measures can help users stay safe, whether they are connecting in the coffee shop next door or in an airplane 35,000 feet in the air.
 

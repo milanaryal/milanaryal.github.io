@@ -37,8 +37,8 @@ This combination of `max-width: 100%` and `height: auto` will ensure the images 
 Let suppose on your blog you have already posted 600+ posts and what if you want to add `.img-responsive` class in your every posts `img`, its very awful to open and add in your every posts that's why here we are using some jQuery code to add `.img-responsive` class in every old or new posts:
 
 {% highlight javascript %}
-$(document).ready(function() {
-	$('img').addClass('img-responsive');
+$(document).ready(function () {
+  $('img').addClass('img-responsive');
 });
 {% endhighlight %}
 
@@ -96,12 +96,12 @@ When Bootstrap 3.2 came out, it came out with an additional helper class to make
 {% highlight html %}
 <!-- 16:9 aspect ratio -->
 <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
 </div>
 
 <!-- 4:3 aspect ratio -->
 <div class="embed-responsive embed-responsive-4by3">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
 </div>
 {% endhighlight %}
 
@@ -122,19 +122,19 @@ Here we're using jQuery method to add the necessary Bootstrap classes to have re
 Following jQuery snippet will help you to find YouTube or Vimeo videos and also SlideShare slides and wrap/add the necessary Bootstrap CSS to have the responsive items:
 
 {% highlight javascript %}
-$(document).ready(function () { 
+$(document).ready(function () {
 
   // For embed YouTube videos
   $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-    $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
+  $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
 
-  // For embed Vimeo videos 
+  // For embed Vimeo videos
   $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-    $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
+  $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
 
   // For SlideShare slides
   $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-    $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
+  $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
 
 });
 {% endhighlight %}
@@ -175,12 +175,12 @@ These styles cause the table to become scrollable on the horizontal axis on smal
 Here we're using jQuery method to add the necessary Bootstrap classes to have responsive tables:
 
 {% highlight javascript %}
-$(document).ready(function() {
+$(document).ready(function () {
   $('table').wrap('<div class="table-responsive"></div>');
-    $('table').addClass('table');
+  $('table').addClass('table');
 });
 {% endhighlight %}
 
 ---
 
-Hope that helps someone! :thumbsup:
+Hope that helps someone!

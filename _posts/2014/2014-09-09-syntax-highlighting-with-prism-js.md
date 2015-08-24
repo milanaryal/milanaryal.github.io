@@ -118,4 +118,4 @@ For JavaScript snippet define `class="language-javascript"`
 </pre>
 {% endhighlight %}
 
-With PrismJS by help of these few easy steps you get a nice highlighted code snippet in your webpage, isn't it awesome? :sunglasses:
+With PrismJS by help of these few easy steps you get a nice highlighted code snippet in your webpage, isn't it awesome?

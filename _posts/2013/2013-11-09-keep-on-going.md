@@ -6,9 +6,7 @@ redirect_from:
   - "/2013/11/keep-on-going/"
 ---
 
-The current obstacles are the foundation of your future success. There are some persons who didn't give up no matter what. Thus, if you are failing, keep on going
-
----
+<p class="lead">The current obstacles are the foundation of your future success. There are some persons who didn’t give up no matter what. Thus, if you are failing, keep on going</p>
 
 ### Albert Einstein, physicist
 
@@ -40,7 +38,7 @@ You may not have heard of Morita but you've undoubtedly heard of his company, So
 
 ### Orville and Wilbur Wright (Wright Brothers), airplane inventors
 
-These brothers battled depression and family illness before starting the bicycle shop that would lead them to experimenting with fight. After numerous attempts at creating flying machines, several years of hard work, and tons of failed prototypes, the brothers finally created a plane that could get airborne and stay there. 
+These brothers battled depression and family illness before starting the bicycle shop that would lead them to experimenting with fight. After numerous attempts at creating flying machines, several years of hard work, and tons of failed prototypes, the brothers finally created a plane that could get airborne and stay there.
 
 ### Winston Churchill, politician, UK
 

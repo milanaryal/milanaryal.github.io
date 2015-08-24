@@ -23,7 +23,11 @@ Popular plugins in particular like [Jetpack](//wordpress.org/plugins/jetpack/ins
 
 Install WordPress SEO by Yoast, this plugin made everything easier:
 
-![Installing WordPress SEO by Yoast](http://3.bp.blogspot.com/-2G70QwEHuB8/VHcp4te9lUI/AAAAAAAAGpQ/2t7-oKSYvQQ/s750/wordpress-dashboard-screenshot--yoast-wordpress-seo.png)
+<figure>
+  <a href="//dl.dropboxusercontent.com/s/8pyhl0kani969xo/20141127-wordpress-dashboard-screenshot-yoast-wordpress-seo.png">
+    <img src="//dl.dropboxusercontent.com/s/8pyhl0kani969xo/20141127-wordpress-dashboard-screenshot-yoast-wordpress-seo.png" alt="Installing WordPress SEO by Yoast">
+  </a>
+</figure>
 
 1. Go to the left navigation and click on SEO and then Social under that.
 2. In the Facebook tab, check the checkbox "Add Open Graph meta data".

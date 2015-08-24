@@ -1,6 +1,6 @@
 ---
 title: "Mistakes to avoid"
-date: 2012-09-17T16:46:59+04:45
+date: 2012-09-17T16:46:59+05:45
 redirect_from: "/2012/11/mistakes-to-avoid.html"
 ---
 

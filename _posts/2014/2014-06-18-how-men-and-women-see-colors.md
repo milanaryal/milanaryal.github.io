@@ -26,4 +26,8 @@ The results:
 
 What may be simply "purple" to a man, could be grape, plum or any other fruit-like variant to a woman.
 
-![How men and women see colors](http://4.bp.blogspot.com/-lvgBgsc0IpM/U6GZllp0WfI/AAAAAAAAFLc/9IWG-K9OO6k/s1600/how-men-and-women-see-colors.png)
+<figure>
+  <a href="//dl.dropboxusercontent.com/s/dj54dhp9skp6zq2/20140618-how-men-and-women-see-colors.png">
+    <img src="//dl.dropboxusercontent.com/s/dj54dhp9skp6zq2/20140618-how-men-and-women-see-colors.png" alt="How men and women see colors">
+  </a>
+</figure>

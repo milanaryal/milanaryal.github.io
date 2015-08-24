@@ -19,7 +19,7 @@ Thus, a simple application called "[Twitter Archive Eraser](//martani.github.io/
 
 Download and setup the Twitter Archive Eraser app by visiting the link given below:
 
-<p><a class="btn btn-primary" href="//martani.github.io/Twitter-Archive-Eraser" onClick="ga('send', 'event', 'Click', 'Direct link', 'Twitter Archive Eraser');">Direct link →</a></p>
+<p><a class="btn btn-default" href="//martani.github.io/Twitter-Archive-Eraser" onClick="ga('send', 'event', 'Click', 'Direct link', 'Twitter Archive Eraser');">Direct link →</a></p>
 
 There is two kinds of download app available:
 
@@ -36,7 +36,12 @@ In this step, you give Twitter Archive Eraser access to your twitter account so 
 
 Note: You need to accept sharing several statistics to use Twitter Archive Eraser.
 
-![Step 1](http://1.bp.blogspot.com/-tGNrhkp6Uq0/VFEGlhTT19I/AAAAAAAAGWM/9J9XZU_GtHQ/s700/twitter-archive-eraser-screenshot-step1.png)
+<figure>
+  <a href="//dl.dropboxusercontent.com/s/gvgkag10py1o3x7/20141029-twitter-archive-eraser-screenshot-step1.png">
+    <img src="//dl.dropboxusercontent.com/s/gvgkag10py1o3x7/20141029-twitter-archive-eraser-screenshot-step1.png" alt="Step 1">
+  </a>
+  <figcaption>Step 1</figcaption>
+</figure>
 
 #### Step 2
 
@@ -44,7 +49,12 @@ After you download your Twitter archive (from  [twitter.com/settings/account](//
 
 You can select which period of time you want to delete tweets from (grouped by month).
 
-![Step 2](http://4.bp.blogspot.com/-Acx_oLaeJGQ/VFEGxJ6J_7I/AAAAAAAAGWU/CR40d6ArpJ8/s700/twitter-archive-eraser-screenshot-step2.png)
+<figure>
+  <a href="//dl.dropboxusercontent.com/s/i4knrf5fw4obltc/20141029-twitter-archive-eraser-screenshot-step2.png">
+    <img src="//dl.dropboxusercontent.com/s/i4knrf5fw4obltc/20141029-twitter-archive-eraser-screenshot-step2.png" alt="Step 2">
+  </a>
+  <figcaption>Step 2</figcaption>
+</figure>
 
 #### Step 3
 
@@ -56,7 +66,12 @@ You can also choose the degree of parallelism you want: that is how many tweets 
 
 You can pause/resume the deletion process and check/uncheck tweets in between.
 
-![Step 3](http://2.bp.blogspot.com/-78kU0yfixUg/VFEG5JfQQGI/AAAAAAAAGWc/n02eYjB6Ppw/s700/twitter-archive-eraser-screenshot-step3.png)
+<figure>
+  <a href="//dl.dropboxusercontent.com/s/jqjy2dvum412g0s/20141029-twitter-archive-eraser-screenshot-step3.png">
+    <img src="//dl.dropboxusercontent.com/s/jqjy2dvum412g0s/20141029-twitter-archive-eraser-screenshot-step3.png" alt="Step 3">
+  </a>
+  <figcaption>Step 3</figcaption>
+</figure>
 
 ### Common filtering expressions
 

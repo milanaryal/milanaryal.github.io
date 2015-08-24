@@ -46,10 +46,10 @@ Maintain a good internal link structure and include some contextual internal lin
 If your business is targeting local customers you need to make sure Google knows your physical location. There are a number of ways to do this:
 
 <ol>
-<li>Have your full business address in html on the footer of every page.</li>
-<li>Upload a geositemap to Google's Webmaster Tools.</li>
-<li>Mark up your site using microdata. Here's a handy tool to help you <a rel="nofollow" href="http://www.geositemapgenerator.com/input">create your geo markup</a>.</li>
-<li>Include your city name/location in your page titles. This is a proven factor in Google Places ranking.</li>
+  <li>Have your full business address in html on the footer of every page.</li>
+  <li>Upload a geositemap to Google’s Webmaster Tools.</li>
+  <li>Mark up your site using microdata. Here’s a handy tool to help you <a href="http://www.geositemapgenerator.com/input" rel="nofollow">create your geo markup</a>.</li>
+  <li>Include your city name/location in your page titles. This is a proven factor in Google Places ranking.</li>
 </ol>
 
 ### 8. Use rich snippets (microdata)

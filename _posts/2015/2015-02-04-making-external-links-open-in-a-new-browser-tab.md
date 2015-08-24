@@ -46,7 +46,7 @@ If you want to use jQuery to auto do the same above work for the external links 
 
 There are a wide variety of different ways to only target external links:
 
-##### Technique 1
+#### Technique 1
 
 {% highlight javascript %}
 $(document).ready(function() {
@@ -59,13 +59,13 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-##### Technique 2
+#### Technique 2
 
 {% highlight javascript %}
 jQuery('a[href^="http"]').not('a[href^="http://your-website.com"]').attr('target', '_blank');
 {% endhighlight %}
 
-##### Technique 3
+#### Technique 3
 
 {% highlight javascript %}
 jQuery('a').each(function() {
@@ -78,7 +78,7 @@ jQuery('a').each(function() {
 });
 {% endhighlight %}
 
-##### Technique 4
+#### Technique 4
 
 {% highlight javascript %}
 $("a:not([href*=yourdomain.com])")
@@ -87,7 +87,7 @@ $("a:not([href*=yourdomain.com])")
 .attr('target', '_blank');
 {% endhighlight %}
 
-##### Technique 5
+#### Technique 5
 
 {% highlight javascript %}
 $('a').each(function() {
@@ -102,7 +102,7 @@ $('a').each(function() {
 });
 {% endhighlight %}
 
-##### Technique 6
+#### Technique 6
 
 A slightly different version if you only want to target specific URLs (if you use the rel tag "external"):
 
@@ -122,7 +122,7 @@ Target all the external link and add `.external` class so that you can add extra
 
 #### Targetting only external links using jQuery
 
-##### Technique I
+#### Technique I
 
 {% highlight javascript %}
 $.expr[':'].external = function(obj) {
@@ -131,13 +131,13 @@ $.expr[':'].external = function(obj) {
 $('a:external').addClass('external');
 {% endhighlight %}
 
-##### Technique II
+#### Technique II
 
 {% highlight javascript %}
 $('a:not([href^="http://your-website.com"]):not([href^="#"]):not([href^="/"])').addClass('external');
 {% endhighlight %}
 
-##### Technique III
+#### Technique III
 
 {% highlight javascript %}
 $('a').each(function() {
@@ -148,7 +148,7 @@ $('a').each(function() {
 });
 {% endhighlight %}
 
-##### Technique IV
+#### Technique IV
 
 {% highlight javascript %}
 $('a').filter(function() {
@@ -164,7 +164,7 @@ Indicating external links with different styles is good practice. This lets user
 
 #### Adding external link indicator using CSS
 
-##### Technique A
+#### Technique A
 
 The following CSS code will add simple text indication.
 
@@ -174,7 +174,7 @@ a[target="_blank"]:after {
 }
 {% endhighlight %}
 
-##### Technique B
+#### Technique B
 
 If you want an image to show after then use the following, replace `IMAGEURL` with the actual image URL.
 
@@ -184,7 +184,7 @@ a[target="_blank"]:after {
 }
 {% endhighlight %}
 
-##### Technique C
+#### Technique C
 
 If you have install Font Awesome use the following:
 
@@ -195,7 +195,7 @@ a[target="_blank"]:after {
 }
 {% endhighlight %}
 
-##### Technique D
+#### Technique D
 
 The previous selector relies on the target tag. This selector will find all links to domains other than your own and the Font Awesome external link `.fa-external-link` <i class="fa fa-external-link"></i> indicator.
 
@@ -212,7 +212,7 @@ a:not( [href*='yourdomain.com'] ):not( [href^='#'] ):not( [href^='/'] ):not( [hr
     <figcaption>External link indicator using Font Awesome</figcaption>
 </figure>
 
-##### Technique E
+#### Technique E
 
 With pure CSS you can achieve this by setting all links to have the external treatment and using the cascade w/ attribute selectors to target and unset your exclusions. This technique probably won’t work on all browsers (*ahem* oldIE), but it's handy when you don’t have complete control over how your markup is created—like in a CMS with inconsistant modules/plugins that write markup—where you have a mix of absolute and relative links and no way to apply an `class="external"`, `rel="external"`, `target="_blank"`, etc. and you don’t want to rely on JavaScript.
 
@@ -256,7 +256,7 @@ If you want open you all links in a new browser tab/window then use these proced
 
 In case if you like to make open all the links (including external and internal) in a new tab/window:
 
-##### Technique A1
+#### Technique A1
 
 {% highlight javascript %}
 $(document).ready(function() {
@@ -264,7 +264,7 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-##### Technique B2
+#### Technique B2
 
 {% highlight javascript %}
 $('a').click(function() {
@@ -272,7 +272,7 @@ $('a').click(function() {
 });
 {% endhighlight %}
 
-##### Technique C3
+#### Technique C3
 
 The example below only targets links in a `#content` area. Scoping down like that might be a good idea in case your menus are dynamic and create full URLs.
 

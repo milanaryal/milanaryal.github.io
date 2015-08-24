@@ -16,7 +16,11 @@ Responsive design also gives users better and effective experiences. For instanc
 
 However, when a person has a good experience on a specific website with their mobile websites they are likely to use the site effectively to buy products and services from it. An effective user experience further makes communication and feedback to be efficient. It is always important to ensure that the content is accessible in an easy way and it engages the users. A fully responsive website ensures this is achieved by making sure that the users view the site in the best appropriate format for any device being used.
 
-![Responsive web design](http://3.bp.blogspot.com/-4qglDsFV14E/VB95lrjoXOI/AAAAAAAAGNA/yLRwRQ3d6Zk/s900/responsive-web-design.png)
+<figure>
+  <a href="//dl.dropboxusercontent.com/s/k1a317zgau63fi3/20140922-responsive-web-design.png">
+    <img src="//dl.dropboxusercontent.com/s/k1a317zgau63fi3/20140922-responsive-web-design.png" alt="Responsive web design">
+  </a>
+</figure>
 
 A responsive website is easier to manage and very cost effective when conducting SEO campaigns as you only campaign for one website unlike in a situation where you would have to conduct separate campaigns for the desktop website and the mobile devices. It also ensures that you always stay ahead in the business as many users use mobile devices to search for commodities as well as make purchases. Time is also an important aspect that is saved because there is only one website to update, maintain and market.
 

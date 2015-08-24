@@ -213,4 +213,4 @@ gems:
 
 This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](http://jekyllrb.com/).
 
-Happy Jekyll'ing! :smile:
+Happy Jekyll'ing!

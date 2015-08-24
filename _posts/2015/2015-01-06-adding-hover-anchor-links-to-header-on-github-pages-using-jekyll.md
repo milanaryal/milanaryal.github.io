@@ -75,7 +75,7 @@ $ bower install anchor-js --save-dev
 or just download it from GitHub:
 
 <p>
-  <a class="btn btn-primary" href="https://github.com/bryanbraun/anchorjs/releases" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">Direct link</a>
+  <a class="btn btn-default" href="https://github.com/bryanbraun/anchorjs/releases" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">Direct link</a>
 </p>
 
 ### Including AnchorJS

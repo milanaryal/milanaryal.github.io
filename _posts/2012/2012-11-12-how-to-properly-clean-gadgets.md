@@ -6,9 +6,7 @@ redirect_from:
   - "/2012/11/how-to-properly-clean-gadgets/"
 ---
 
-*Without ruining them in the process*
-
----
+<p class="lead">Without ruining them in the process</p>
 
 No matter how clean a house you keep, computers and gadgets are bound to get a little dirty here and there. Here is how to clean them well:
 

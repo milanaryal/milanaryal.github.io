@@ -13,30 +13,54 @@ These shortcuts allow you to bypass the need for mouse clicks and movements and 
 
 #### Twitter keyboard shortcuts
 
-![Twitter keyboard shortcuts]({{ site.url }}/uploads/2015/20150715--twitter-keyboard-shortcuts_w1000.jpg)
+<figure>
+  <a href="/uploads/2015/20150715-twitter-keyboard-shortcuts.jpg">
+    <img src="/uploads/2015/20150715-twitter-keyboard-shortcuts.jpg" alt="Twitter keyboard shortcuts">
+  </a>
+</figure>
 
 #### Medium keyboard shortcuts
 
-![Medium keyboard shortcuts]({{ site.url }}/uploads/2015/20150715--medium-keyboard-shortcuts_w1000.jpg)
+<figure>
+  <a href="/uploads/2015/20150715-medium-keyboard-shortcuts.jpg">
+    <img src="/uploads/2015/20150715-medium-keyboard-shortcuts.jpg" alt="Medium keyboard shortcuts">
+  </a>
+</figure>
 
-*For Windows users, use command+Alt+the number.*
+For Windows users, use `Ctrl + Alt + the number`.
 
 #### Facebook keyboard shortcuts
 
-![Facebook keyboard shortcuts]({{ site.url }}/uploads/2015/20150715--facebook-keyboard-shortcuts_w1000.jpg)
+<figure>
+  <a href="/uploads/2015/20150715-facebook-keyboard-shortcuts.jpg">
+    <img src="/uploads/2015/20150715-facebook-keyboard-shortcuts.jpg" alt="Facebook keyboard shortcuts">
+  </a>
+</figure>
 
 #### YouTube keyboard shortcuts
 
-![YouTube keyboard shortcuts]({{ site.url }}/uploads/2015/20150715--youtube-keyboard-shortcuts_w1000.jpg)
+<figure>
+  <a href="/uploads/2015/20150715-youtube-keyboard-shortcuts.jpg">
+    <img src="/uploads/2015/20150715-youtube-keyboard-shortcuts.jpg" alt="YouTube keyboard shortcuts">
+  </a>
+</figure>
 
 #### Tumblr keyboard shortcuts
 
-![Tumblr keyboard shortcuts]({{ site.url }}/uploads/2015/20150715--tumblr-keyboard-shortcuts_w1000.jpg)
+<figure>
+  <a href="/uploads/2015/20150715-tumblr-keyboard-shortcuts.jpg">
+    <img src="/uploads/2015/20150715-tumblr-keyboard-shortcuts.jpg" alt="Tumblr keyboard shortcuts">
+  </a>
+</figure>
 
 #### Google Plus keyboard shortcuts
 
-![Google Plus keyboard shortcuts]({{ site.url }}/uploads/2015/20150715--google-plus-keyboard-shortcuts_w1000.jpg)
+<figure>
+  <a href="/uploads/2015/20150715-google-plus-keyboard-shortcuts.jpg">
+    <img src="/uploads/2015/20150715-google-plus-keyboard-shortcuts.jpg" alt="Google Plus keyboard shortcuts">
+  </a>
+</figure>
 
 ---
 
-Have a nice social life! :smiley:
+Have a nice social life!

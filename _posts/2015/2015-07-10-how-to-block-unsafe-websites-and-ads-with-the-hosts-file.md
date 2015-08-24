@@ -124,4 +124,4 @@ Don't worry about a larger file making your PC slower. There is nothing those ho
 
 ---
 
-*Currently free websites that depend on advertising revenue would quickly disappear with we blocked all advertising. Please consider whitelisting the domain. Thank you :heart:*
+*Currently free websites that depend on advertising revenue would quickly disappear with we blocked all advertising. Please consider whitelisting the domain. Thank you <3*

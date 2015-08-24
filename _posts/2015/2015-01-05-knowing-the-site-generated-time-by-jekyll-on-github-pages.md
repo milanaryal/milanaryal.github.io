@@ -50,4 +50,4 @@ Following is the generated example format:
 
 ---
 
-Happy Jekyll'ing! :sunglasses:
+Happy Jekyll'ing!
