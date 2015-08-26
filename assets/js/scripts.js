@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-26T23:53:52+05:45
+ * Date: 2015-08-27T00:44:32+05:45
  */
 
 /*!
@@ -11331,8 +11331,7 @@ var anchors = new AnchorJS();
   var bigfoot = $.bigfoot(
     {
       deleteOnUnhover: false,
-      preventPageScroll: false,
-      activateOnHover: true
+      preventPageScroll: false
     }
   );
 
