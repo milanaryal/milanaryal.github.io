@@ -88,6 +88,18 @@
   });
 
 
+  // Footnotes
+  // ================================
+
+  var bigfoot = $.bigfoot(
+    {
+      deleteOnUnhover: false,
+      preventPageScroll: false,
+      activateOnHover: true
+    }
+  );
+
+
 }(jQuery);
 
 
