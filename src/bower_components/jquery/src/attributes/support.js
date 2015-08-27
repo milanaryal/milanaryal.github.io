@@ -1,7 +1,6 @@
 define([
-	"../var/document",
 	"../var/support"
-], function( document, support ) {
+], function( support ) {
 
 (function() {
 	var input = document.createElement( "input" ),
@@ -10,7 +9,7 @@ define([
 
 	input.type = "checkbox";
 
-	// Support: Android<4.4
+	// Support: iOS<=5.1, Android<=4.2+
 	// Default value for a checkbox should be "on"
 	support.checkOn = input.value !== "";
 

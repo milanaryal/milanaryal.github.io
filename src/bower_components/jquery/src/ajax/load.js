@@ -4,18 +4,27 @@ define([
 	"../ajax",
 	"../traversing",
 	"../manipulation",
-	"../selector"
+	"../selector",
+	// Optional event/alias dependency
+	"../event/alias"
 ], function( jQuery ) {
+
+// Keep a copy of the old load method
+var _load = jQuery.fn.load;
 
 /**
  * Load a url into a page
  */
 jQuery.fn.load = function( url, params, callback ) {
+	if ( typeof url !== "string" && _load ) {
+		return _load.apply( this, arguments );
+	}
+
 	var selector, type, response,
 		self = this,
 		off = url.indexOf(" ");
 
-	if ( off > -1 ) {
+	if ( off >= 0 ) {
 		selector = jQuery.trim( url.slice( off ) );
 		url = url.slice( 0, off );
 	}
@@ -37,10 +46,8 @@ jQuery.fn.load = function( url, params, callback ) {
 		jQuery.ajax({
 			url: url,
 
-			// If "type" variable is undefined, then "GET" method will be used.
-			// Make value of this field explicit since
-			// user can override it through ajaxSetup method
-			type: type || "GET",
+			// if "type" variable is undefined, then "GET" method will be used
+			type: type,
 			dataType: "html",
 			data: params
 		}).done(function( responseText ) {
@@ -57,13 +64,8 @@ jQuery.fn.load = function( url, params, callback ) {
 				// Otherwise use the full result
 				responseText );
 
-		// If the request succeeds, this function gets "data", "status", "jqXHR"
-		// but they are ignored because response was set above.
-		// If it fails, this function gets "jqXHR", "status", "error"
-		}).always( callback && function( jqXHR, status ) {
-			self.each( function() {
-				callback.apply( self, response || [ jqXHR.responseText, status, jqXHR ] );
-			});
+		}).complete( callback && function( jqXHR, status ) {
+			self.each( callback, response || [ jqXHR.responseText, status, jqXHR ] );
 		});
 	}
 

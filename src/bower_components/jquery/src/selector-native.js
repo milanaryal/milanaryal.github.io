@@ -1,8 +1,6 @@
 define([
-	"./core",
-	"./var/document",
-	"./var/documentElement"
-], function( jQuery, document, documentElement ) {
+	"./core"
+], function( jQuery ) {
 
 /*
  * Optional (non-Sizzle) selector module for custom builds.
@@ -29,22 +27,21 @@ define([
  * customize this stub for the project's specific needs.
  */
 
-var hasDuplicate,
-	matches = documentElement.matches ||
-		documentElement.webkitMatchesSelector ||
-		documentElement.mozMatchesSelector ||
-		documentElement.oMatchesSelector ||
-		documentElement.msMatchesSelector,
-	sortOrder = function( a, b ) {
+var docElem = window.document.documentElement,
+	selector_hasDuplicate,
+	matches = docElem.matches ||
+		docElem.webkitMatchesSelector ||
+		docElem.mozMatchesSelector ||
+		docElem.oMatchesSelector ||
+		docElem.msMatchesSelector,
+	selector_sortOrder = function( a, b ) {
 		// Flag for duplicate removal
 		if ( a === b ) {
-			hasDuplicate = true;
+			selector_hasDuplicate = true;
 			return 0;
 		}
 
-		var compare = b.compareDocumentPosition &&
-			a.compareDocumentPosition &&
-			a.compareDocumentPosition( b );
+		var compare = b.compareDocumentPosition && a.compareDocumentPosition && a.compareDocumentPosition( b );
 
 		if ( compare ) {
 			// Disconnected nodes
@@ -105,10 +102,10 @@ jQuery.extend({
 			i = 0,
 			j = 0;
 
-		hasDuplicate = false;
-		results.sort( sortOrder );
+		selector_hasDuplicate = false;
+		results.sort( selector_sortOrder );
 
-		if ( hasDuplicate ) {
+		if ( selector_hasDuplicate ) {
 			while ( (elem = results[i++]) ) {
 				if ( elem === results[ i ] ) {
 					j = duplicates.push( i );
@@ -154,8 +151,7 @@ jQuery.extend({
 	expr: {
 		attrHandle: {},
 		match: {
-			bool: new RegExp( "^(?:checked|selected|async|autofocus|autoplay|controls|defer" +
-				"|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped)$", "i" ),
+			bool: /^(?:checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped)$/i,
 			needsContext: /^[\x20\t\r\n\f]*[>+~]/
 		}
 	}

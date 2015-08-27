@@ -1,9 +1,9 @@
 define([
 	"./core",
-	"./data/var/dataPriv",
+	"./data/var/data_priv",
 	"./deferred",
 	"./callbacks"
-], function( jQuery, dataPriv ) {
+], function( jQuery, data_priv ) {
 
 jQuery.extend({
 	queue: function( elem, type, data ) {
@@ -11,12 +11,12 @@ jQuery.extend({
 
 		if ( elem ) {
 			type = ( type || "fx" ) + "queue";
-			queue = dataPriv.get( elem, type );
+			queue = data_priv.get( elem, type );
 
 			// Speed up dequeue by getting out quickly if this is just a lookup
 			if ( data ) {
 				if ( !queue || jQuery.isArray( data ) ) {
-					queue = dataPriv.access( elem, type, jQuery.makeArray(data) );
+					queue = data_priv.access( elem, type, jQuery.makeArray(data) );
 				} else {
 					queue.push( data );
 				}
@@ -63,9 +63,9 @@ jQuery.extend({
 	// Not public - generate a queueHooks object, or return the current one
 	_queueHooks: function( elem, type ) {
 		var key = type + "queueHooks";
-		return dataPriv.get( elem, key ) || dataPriv.access( elem, key, {
+		return data_priv.get( elem, key ) || data_priv.access( elem, key, {
 			empty: jQuery.Callbacks("once memory").add(function() {
-				dataPriv.remove( elem, [ type + "queue", key ] );
+				data_priv.remove( elem, [ type + "queue", key ] );
 			})
 		});
 	}
@@ -127,7 +127,7 @@ jQuery.fn.extend({
 		type = type || "fx";
 
 		while ( i-- ) {
-			tmp = dataPriv.get( elements[ i ], type + "queueHooks" );
+			tmp = data_priv.get( elements[ i ], type + "queueHooks" );
 			if ( tmp && tmp.empty ) {
 				count++;
 				tmp.empty.add( resolve );

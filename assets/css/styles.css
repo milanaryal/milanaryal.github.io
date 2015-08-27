@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-27T00:53:28+05:45
+ * Date: 2015-08-27T09:19:51+05:45
  */
 
 /*!
@@ -7892,8 +7892,9 @@ kbd {
           transition-property: background-color;
 
   -webkit-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 .bigfoot-footnote__button:hover,
 .bigfoot-footnote__button:focus {
@@ -7968,6 +7969,7 @@ kbd {
        -o-transition-property: opacity, -o-transform;
           transition-property: opacity, transform;
   -webkit-transform: scale(.1) translateZ(0);
+      -ms-transform: scale(.1) translateZ(0);
           transform: scale(.1) translateZ(0);
   -webkit-transform-origin: 50% 0;
       -ms-transform-origin: 50% 0;
@@ -7981,6 +7983,7 @@ kbd {
 .bigfoot-footnote.is-active {
   opacity: .97;
   -webkit-transform: scale(1) translateZ(0);
+      -ms-transform: scale(1) translateZ(0);
           transform: scale(1) translateZ(0);
 }
 .bigfoot-footnote.is-bottom-fixed {
@@ -8056,6 +8059,7 @@ kbd {
 .bigfoot-footnote.is-scrollable .bigfoot-footnote__wrapper:before {
   top: -1px;
   height: 1.1em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(rgba(250, 250, 250, 0)));
   background-image: -webkit-linear-gradient(top, #fafafa 50%, rgba(250, 250, 250, 0) 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fafafa), to(rgba(250, 250, 250, 0)));
   background-image:      -o-linear-gradient(top, #fafafa 50%, rgba(250, 250, 250, 0) 100%);
@@ -8065,6 +8069,7 @@ kbd {
 .bigfoot-footnote.is-scrollable .bigfoot-footnote__wrapper:after {
   bottom: -1px;
   height: 1.2em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fafafa), to(rgba(250, 250, 250, 0)));
   background-image: -webkit-linear-gradient(bottom, #fafafa 50%, rgba(250, 250, 250, 0) 100%);
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fafafa), to(rgba(250, 250, 250, 0)));
   background-image:      -o-linear-gradient(bottom, #fafafa 50%, rgba(250, 250, 250, 0) 100%);
@@ -8110,7 +8115,7 @@ kbd {
   background: #fafafa;
   border-radius: .5em;
 
-  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
 }
 .bigfoot-footnote__content img {
   max-width: 100%;
@@ -8145,45 +8150,5 @@ kbd {
 }
 .is-positioned-top .bigfoot-footnote__tooltip {
   bottom: -.65em;
-}
-.bigfoot-footnote {
-  position: fixed;
-  top: auto;
-  right: auto;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  border-width: 1px 0 0;
-  border-radius: 0;
-  opacity: 1;
-  -webkit-transition: -webkit-transform .3s ease;
-       -o-transition:      -o-transform .3s ease;
-          transition:         transform .3s ease;
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-       -o-transform: translateY(100%);
-          transform: translateY(100%);
-}
-.bigfoot-footnote.is-active {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-       -o-transform: translateY(0);
-          transform: translateY(0);
-}
-.bigfoot-footnote__wrapper {
-  max-width: 100%;
-  margin: 0 0 0 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-.bigfoot-footnote__wrapper,
-.bigfoot-footnote__content {
-  border-radius: 0;
-}
-.bigfoot-footnote__tooltip {
-  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

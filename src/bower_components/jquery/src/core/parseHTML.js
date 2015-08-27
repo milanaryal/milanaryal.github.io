@@ -1,30 +1,21 @@
 define([
 	"../core",
-	"../var/document",
 	"./var/rsingleTag",
-	"../manipulation/buildFragment",
-
-	// This is the only module that needs core/support
-	"./support"
-], function( jQuery, document, rsingleTag, buildFragment, support ) {
+	"../manipulation" // buildFragment
+], function( jQuery, rsingleTag ) {
 
 // data: string of html
-// context (optional): If specified, the fragment will be created in this context,
-// defaults to document
+// context (optional): If specified, the fragment will be created in this context, defaults to document
 // keepScripts (optional): If true, will include scripts passed in the html string
 jQuery.parseHTML = function( data, context, keepScripts ) {
-	if ( typeof data !== "string" ) {
-		return [];
+	if ( !data || typeof data !== "string" ) {
+		return null;
 	}
 	if ( typeof context === "boolean" ) {
 		keepScripts = context;
 		context = false;
 	}
-	// document.implementation stops scripts or inline event handlers from
-	// being executed immediately
-	context = context || ( support.createHTMLDocument ?
-		document.implementation.createHTMLDocument( "" ) :
-		document );
+	context = context || document;
 
 	var parsed = rsingleTag.exec( data ),
 		scripts = !keepScripts && [];
@@ -34,7 +25,7 @@ jQuery.parseHTML = function( data, context, keepScripts ) {
 		return [ context.createElement( parsed[1] ) ];
 	}
 
-	parsed = buildFragment( [ data ], context, scripts );
+	parsed = jQuery.buildFragment( [ data ], context, scripts );
 
 	if ( scripts && scripts.length ) {
 		jQuery( scripts ).remove();

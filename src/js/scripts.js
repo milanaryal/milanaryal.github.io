@@ -94,8 +94,7 @@
   var bigfoot = $.bigfoot(
     {
       deleteOnUnhover: false,
-      preventPageScroll: false,
-      positionContent: false
+      preventPageScroll: false
     }
   );
 

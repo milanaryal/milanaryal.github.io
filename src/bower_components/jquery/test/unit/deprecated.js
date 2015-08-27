@@ -1,2 +1,0 @@
-module("deprecated", { teardown: moduleTeardown });
-

@@ -1,14 +1,12 @@
 define([
 	"../core",
-	"../var/document",
 	"../ajax"
-], function( jQuery, document ) {
+], function( jQuery ) {
 
 // Install script dataType
 jQuery.ajaxSetup({
 	accepts: {
-		script: "text/javascript, application/javascript, " +
-			"application/ecmascript, application/x-ecmascript"
+		script: "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"
 	},
 	contents: {
 		script: /(?:java|ecma)script/
@@ -39,6 +37,7 @@ jQuery.ajaxTransport( "script", function( s ) {
 		return {
 			send: function( _, complete ) {
 				script = jQuery("<script>").prop({
+					async: true,
 					charset: s.scriptCharset,
 					src: s.url
 				}).on(
@@ -51,8 +50,6 @@ jQuery.ajaxTransport( "script", function( s ) {
 						}
 					}
 				);
-
-				// Use native DOM manipulation to avoid our domManip AJAX trickery
 				document.head.appendChild( script[ 0 ] );
 			},
 			abort: function() {

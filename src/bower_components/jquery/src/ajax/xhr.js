@@ -6,11 +6,13 @@ define([
 
 jQuery.ajaxSettings.xhr = function() {
 	try {
-		return new window.XMLHttpRequest();
-	} catch ( e ) {}
+		return new XMLHttpRequest();
+	} catch( e ) {}
 };
 
-var xhrSuccessStatus = {
+var xhrId = 0,
+	xhrCallbacks = {},
+	xhrSuccessStatus = {
 		// file protocol always yields status code 0, assume 200
 		0: 200,
 		// Support: IE9
@@ -18,6 +20,17 @@ var xhrSuccessStatus = {
 		1223: 204
 	},
 	xhrSupported = jQuery.ajaxSettings.xhr();
+
+// Support: IE9
+// Open requests must be manually aborted on unload (#5280)
+// See https://support.microsoft.com/kb/2856746 for more info
+if ( window.attachEvent ) {
+	window.attachEvent( "onunload", function() {
+		for ( var key in xhrCallbacks ) {
+			xhrCallbacks[ key ]();
+		}
+	});
+}
 
 support.cors = !!xhrSupported && ( "withCredentials" in xhrSupported );
 support.ajax = xhrSupported = !!xhrSupported;
@@ -30,15 +43,10 @@ jQuery.ajaxTransport(function( options ) {
 		return {
 			send: function( headers, complete ) {
 				var i,
-					xhr = options.xhr();
+					xhr = options.xhr(),
+					id = ++xhrId;
 
-				xhr.open(
-					options.type,
-					options.url,
-					options.async,
-					options.username,
-					options.password
-				);
+				xhr.open( options.type, options.url, options.async, options.username, options.password );
 
 				// Apply custom fields if provided
 				if ( options.xhrFields ) {
@@ -70,6 +78,7 @@ jQuery.ajaxTransport(function( options ) {
 				callback = function( type ) {
 					return function() {
 						if ( callback ) {
+							delete xhrCallbacks[ id ];
 							callback = xhr.onload = xhr.onerror = null;
 
 							if ( type === "abort" ) {
@@ -102,7 +111,7 @@ jQuery.ajaxTransport(function( options ) {
 				xhr.onerror = callback("error");
 
 				// Create the abort callback
-				callback = callback("abort");
+				callback = xhrCallbacks[ id ] = callback("abort");
 
 				try {
 					// Do send the request (this may raise an exception)
