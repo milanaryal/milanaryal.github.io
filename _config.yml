@@ -47,9 +47,9 @@ url: "http://milanaryal.com"
 # Site settings
 name:             Milan Aryal
 description:      "Livin' on the edge of web standards."
-icon:             "/assets/img/m-icon-white-on-blue.png"
+icon:             "/assets/img/m-icon-blue-on-white.png"
 featured_image:   "/assets/img/home-bg.jpg"
-theme_color:      "#2980B9"
+theme_color:      "#007ee5"
 author:
   name:           Milan Aryal
   email:          "considermilan@gmail.com"
