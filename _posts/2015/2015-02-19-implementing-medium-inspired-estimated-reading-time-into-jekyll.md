@@ -122,8 +122,6 @@ Also it can be done as below,
 {% endraw %}
 {% endhighlight %}
 
----
-
 [^ertmath]: Estimated reading time = Total content words / Average reading words per minute
 
 [^content]: If you're implementing estimated reading time in paginator i.e. `{% raw %}{% for post in paginator.posts %}{% endraw %}` condition you should change `content` to `post.content`. Also know that `page.content` tag will include your current post front matter `title` text.

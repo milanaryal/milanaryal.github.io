@@ -36,7 +36,5 @@ Chrome's Data Saver feature is also available in Chrome on [Android](https://pla
 
 The feature is certainly much more useful on mobile: It can save you money if you're on a tight data plan, in addition to speeding up page loads and beefing up security. Chances are that browsing on the desktop is already quite speedy for most people, and Google's Safe Browsing feature is already built into Chrome for Windows, Mac, and Linux.
 
----
-
 [^1]: For more information about Google Chrome's Data Saver please visit the [Google support page](https://support.google.com/chrome/answer/2392284).
 [^2]: Custom downloaded images may not worked if you've enabled the data compression tool. Thus, turn off the Chrome's Data Saver or simply download the images in Chrome's incognito window.
