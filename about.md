@@ -7,9 +7,9 @@ featured_image: "/assets/img/about-bg.jpg"
 permalink: /about/
 ---
 
-Hello, my name is Milan Aryal (मिलन अर्याल)[^n] and I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
+Hello, my name is Milan Aryal (मिलन अर्याल)[^name] and I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
 
-[^n]: The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification. :blush:
+[^name]: The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification. :blush:
 
 ### Let's be friends
 
@@ -82,11 +82,11 @@ Join me on the following networks and/or websites:
   </li>
 </ul>
 
-[![Design quote](/assets/img/design-quote.png)](/assets/img/design-quote.png)
+[![Design hunter ink](/assets/img/design-hunter-ink.jpg)](/assets/img/design-hunter-ink.jpg)
 
-Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.[^n]
+Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.[^design]
 
-[^n]: If I have an idea I can't sleep until I make it real. Design is my passion.
+[^design]: If I have an idea I can't sleep until I make it real. Design is my passion.
 
 Nothing brings me more pleasure than making something out of nothing. Even when the results are far from my ideal expectations, I find the whole ceremony of creativity completely enthralling.
 
