@@ -82,7 +82,7 @@ Join me on the following networks and/or websites:
   </li>
 </ul>
 
-[![Design hunter ink](/assets/img/design-hunter-ink.jpg)](/assets/img/design-hunter-ink.jpg)
+[![Simple is good](/assets/img/simple-is-good.png)](/assets/img/simple-is-good.png)
 
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.[^design]
 
@@ -96,9 +96,9 @@ I'd like to think that I'm very happy person, but I find the art that strikes me
 
 ### About the site
 
-In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, business, or the blogosphere among other web culture topics.
+In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, business, or the blogosphere among other web culture topics.[^blog]
 
-Initially this blog was established as a means to keep up with my own interest in the web, but with time and little efforts, this blog has evolved into something much more elaborate and meaningful.
+[^blog]: Initially this blog was established as a means to keep up with my own interest in the web, but with time and little efforts, this blog has evolved into something much more elaborate and meaningful.
 
 If you enjoy the content found here, you might like to subscribe to my <i class="fa fa-rss" aria-hidden="true"></i> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
