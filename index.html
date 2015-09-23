@@ -28,12 +28,12 @@ layout: index
   <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-      <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' }}"><i class="fa fa-angle-double-left"></i> <span itemprop="name">Newer</span></a>
+      <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' | replace:'index.html','' }}"><i class="fa fa-angle-double-left"></i> <span itemprop="name">Newer</span></a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-      <a itemprop="url" href="{{ paginator.next_page_path | replace:'//','/' }}"><span itemprop="name">Older</span> <i class="fa fa-angle-double-right"></i></a>
+      <a itemprop="url" href="{{ paginator.next_page_path | replace:'//','/' | replace:'index.html','' }}"><span itemprop="name">Older</span> <i class="fa fa-angle-double-right"></i></a>
     </li>
     {% endif %}
   </ul>
