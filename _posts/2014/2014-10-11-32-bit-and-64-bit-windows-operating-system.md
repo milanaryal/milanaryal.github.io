@@ -1,5 +1,5 @@
 ---
-title: "32-bit [x86] and 64-bit [x64] Windows: Everything You Need to Know"
+title: "32-bit [x86] and 64-bit [x64] Windows: Everything you need to know"
 date: 2014-10-11T11:21:00+05:45
 excerpt: "Learn about the various aspects of the 32-bit and 64-bit versions of Windows."
 ---
