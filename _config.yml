@@ -75,14 +75,6 @@ google_cse_id:    "000254926668963224856:z4vgwqv7kla"
 # !! Current Tracking ID only for milanaryal.com !!
 google_analytics_id: "UA-42092423-1"
 
-# Site nav
-  - title: "Articles"
-    url:   "/articles/"
-  - title: "About"
-    url:   "/about/"
-  - title: "Contact"
-    url:   "/contact/"
-
 # Collections
 collections:
   docs:

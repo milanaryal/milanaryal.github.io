@@ -20,7 +20,7 @@ permalink: /
       {% endif %}
     </div>
     <div class="home-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-    {% for nav_item in site.nav %}
+    {% for nav_item in site.data.nav %}
       <a itemprop="url" href="{{ nav_item.url }}" class="home-nav-item"><span itemprop="name">{{ nav_item.title }}</span></a>
     {% endfor %}
     </div><!-- /.home-nav -->

@@ -26,7 +26,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <nav class="navbar-collapse collapse header-navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <ul class="nav navbar-nav navbar-right">
-        {% for nav_item in site.nav %}
+        {% for nav_item in site.data.nav %}
         <li>
           <a itemprop="url" href="{{ nav_item.url }}"><span itemprop="name">{{ nav_item.title }}</span></a>
         </li>
