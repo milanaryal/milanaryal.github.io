@@ -10,28 +10,27 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" itemprop="url" href="/"><span itemprop="name">{% if site.author.name %}{{ site.author.name }}{% else %}{{ site.name }}{% endif %}</span></a>
-        {% if site.author.name %}<meta itemprop="description" content="{{ site.description | markdownify | strip_html | strip_newlines | truncate: 160 }}">
+      {% if site.author.name %}
+        <meta itemprop="description" content="{{ site.description | markdownify | strip_html | strip_newlines | truncate: 160 }}">
         <link itemprop="image" href="{{ site.icon | prepend: site.url }}">
         <span class="hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
           <meta itemprop="streetAddress" content="{{ site.author.street }}">
           <meta itemprop="addressLocality" content="{{ site.author.locality }}">
           <meta itemprop="addressRegion" content="{{ site.author.region }}">
           <meta itemprop="addressCountry" content="{{ site.author.country }}">
-          <meta itemprop="postalCode" content="{{ site.author.postcode }}">{% endif %}
+          <meta itemprop="postalCode" content="{{ site.author.postcode }}">
         </span><!-- /itemscope itemtype PostalAddress -->
+      {% endif %}
     </div><!-- /.navbar-header -->
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <nav class="navbar-collapse collapse header-navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <ul class="nav navbar-nav navbar-right">
+        {% for nav_item in site.nav %}
         <li>
-          <a itemprop="url" href="/"><span itemprop="name">Home</span></a>
+          <a itemprop="url" href="{{ nav_item.url }}"><span itemprop="name">{{ nav_item.title }}</span></a>
         </li>
-        {% for page in site.pages %}{% if page.title and page.url != '/404.html' and page.url != '/search/' %}
-        <li>
-          <a itemprop="url" href="{{ page.url }}"><span itemprop="name">{{ page.title }}</span></a>
-        </li>
-        {% endif %}{% endfor %}
+        {% endfor %}
       </ul>
     </nav><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -33,8 +33,8 @@ highlighter:  pygments
 
 # Outputting
 permalink:     /:year/:title/
-paginate_path: /page:num/
-paginate:      5
+paginate_path: /articles/page:num/
+paginate:      10
 timezone:      Asia/Kathmandu
 locale:        en_us
 
@@ -52,6 +52,7 @@ featured_image:   "/assets/img/home-bg.jpg"
 theme_color:      "#2196F3"
 author:
   name:           Milan Aryal
+  bio:            "I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot."
   email:          "considermilan@gmail.com"
   uri:            "https://twitter.com/MilanAryal"
   twitter:        MilanAryal
@@ -73,6 +74,14 @@ google_cse_id:    "000254926668963224856:z4vgwqv7kla"
 # Google Analytics
 # !! Current Tracking ID only for milanaryal.com !!
 google_analytics_id: "UA-42092423-1"
+
+# Site nav
+  - title: "Articles"
+    url:   "/articles/"
+  - title: "About"
+    url:   "/about/"
+  - title: "Contact"
+    url:   "/contact/"
 
 # Collections
 collections:

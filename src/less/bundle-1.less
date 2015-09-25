@@ -2,10 +2,10 @@
 // Style bundle 1
 //
 
-// Global Components
+// Global components
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body {
@@ -77,6 +77,87 @@ a img {
     cursor: zoom-in;
   }
 }
+
+
+//
+// Home page
+//
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  //font-size: 1.6rem;
+  //font-family: sans-serif;
+  color: #aebcb9;
+  background-color: #0d0d0d;
+}
+
+.home-container {
+  padding: 2em;
+  color: #aebcb9;
+  animation: fade-in 2s;
+}
+
+.home-title {
+  margin-top: 0;
+  //font-family: sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+  span {
+    display: block;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    @media (max-width: 767px) {
+      font-size: 48px;
+    }
+  }
+}
+
+.home-description {
+  margin-bottom: 2em;
+  max-width: 28em;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.home-nav {
+  font-size: 18px;
+  font-weight: 300;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.home-nav-item {
+  display: inline-block;
+  padding: .6em .8em;
+  background: #1a1a1a;
+  color: #737373;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 1px 5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  border-radius: 3px;
+  @media (max-width: 767px) {
+    margin-bottom: 0.25em;
+    justify-content: flex-start;
+  }
+
+  &:hover {
+    color: #0096a7;
+    background: #000;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+}
+
 
 // blockquote {
 //  color: @m-gray;

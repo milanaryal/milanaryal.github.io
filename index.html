@@ -1,41 +1,28 @@
 ---
-layout: index
+layout: home
+permalink: /
 ---
 
-{% for post in paginator.posts %}
-<article class="post-preview clearfix" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="image" href="{% if post.featured_image %}{{ post.featured_image }}{% else %}{{ site.icon }}{% endif %}">
-  <div class="post-meta">
-    <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}"{% if post.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ post.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ post.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}</span>
-  </div>
-  <a itemprop="url" href="{{ post.url }}">
-    <div class="clearfix">
-      <h2 class="post-title" itemprop="name headline">{{ post.title | markdownify | strip_html | strip_newlines }}</h2>
-      {% if post.subtitle %}
-        <p class="post-subtitle" itemprop="description">{{ post.subtitle | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>
-      {% elsif post.excerpt and post.excerpt != blank %}
-        <p class="post-subtitle" itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>
+<div class="home-wrapper">
+  <div class="home-container">
+    <div class="clearfix" itemscope itemtype="http://schema.org/Person">
+      <h1 class="home-title">Hello, my name is <span itemprop="name">{{ site.author.name }}</span></h1>
+      <p class="home-description" itemprop="description">{{ site.author.bio | markdownify | strip_html | strip_newlines }}</p>
+      {% if site.author %}
+        <link itemprop="image" href="{{ site.icon | prepend: site.url }}">
+        <span class="hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <meta itemprop="streetAddress" content="{{ site.author.street }}">
+          <meta itemprop="addressLocality" content="{{ site.author.locality }}">
+          <meta itemprop="addressRegion" content="{{ site.author.region }}">
+          <meta itemprop="addressCountry" content="{{ site.author.country }}">
+          <meta itemprop="postalCode" content="{{ site.author.postcode }}">
+        </span><!-- /itemscope itemtype PostalAddress -->
       {% endif %}
     </div>
-  </a>
-</article>
-<hr class="post-preview-divider">
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<nav class="clearfix" itemscope itemtype="http://schema.org/SiteNavigationElement">
-  <ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-      <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' | replace:'index.html','' }}"><i class="fa fa-angle-double-left"></i> <span itemprop="name">Newer</span></a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-      <a itemprop="url" href="{{ paginator.next_page_path | replace:'//','/' | replace:'index.html','' }}"><span itemprop="name">Older</span> <i class="fa fa-angle-double-right"></i></a>
-    </li>
-    {% endif %}
-  </ul>
-</nav>
-{% endif %}
+    <div class="home-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    {% for nav_item in site.nav %}
+      <a itemprop="url" href="{{ nav_item.url }}" class="home-nav-item"><span itemprop="name">{{ nav_item.title }}</span></a>
+    {% endfor %}
+    </div><!-- /.home-nav -->
+  </div><!-- /.home-container -->
+</div><!-- /.home-wrapper -->

@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-27T09:19:51+05:45
+ * Date: 2015-09-25T19:34:28+05:45
  */
 
 /*!
@@ -6712,7 +6712,7 @@ button.list-group-item-danger.active:focus {
   content: "\f280";
 }
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 body {
   font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -6755,6 +6755,105 @@ a img:hover,
 a img:focus {
   cursor: -webkit-zoom-in;
   cursor:         zoom-in;
+}
+.home-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  min-height: 100vh;
+  color: #aebcb9;
+  background-color: #0d0d0d;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+}
+.home-container {
+  padding: 2em;
+  color: #aebcb9;
+  -webkit-animation: fade-in 2s;
+       -o-animation: fade-in 2s;
+          animation: fade-in 2s;
+}
+.home-title {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+@media (max-width: 767px) {
+  .home-title {
+    font-size: 18px;
+  }
+}
+.home-title span {
+  display: block;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+@media (max-width: 767px) {
+  .home-title span {
+    font-size: 48px;
+  }
+}
+.home-description {
+  max-width: 28em;
+  margin-bottom: 2em;
+  font-size: 20px;
+  font-weight: 300;
+}
+.home-nav {
+  font-size: 18px;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  .home-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+  }
+}
+.home-nav-item {
+  display: inline-block;
+  padding: .6em .8em;
+  color: #737373;
+  cursor: pointer;
+  background: #1a1a1a;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 1px 5px rgba(0, 0, 0, .6);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 1px 5px rgba(0, 0, 0, .6);
+}
+@media (max-width: 767px) {
+  .home-nav-item {
+    margin-bottom: .25em;
+
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.home-nav-item:hover {
+  color: #0096a7;
+  background: #000;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .06);
+          box-shadow: 0 1px 0 rgba(255, 255, 255, .06);
 }
 hr.small {
   max-width: 100px;

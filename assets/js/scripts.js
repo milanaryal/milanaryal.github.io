@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-08-27T09:19:34+05:45
+ * Date: 2015-09-25T19:34:11+05:45
  */
 
 /*!
@@ -10004,8 +10004,8 @@ return jQuery;
 
 }(jQuery);
 
-/*!
- * AnchorJS - v1.2.1 - 2015-07-02
+/**
+ * AnchorJS - v1.3.0 - 2015-09-22
  * https://github.com/bryanbraun/anchorjs
  * Copyright (c) 2015 Bryan Braun; Licensed MIT
  */
@@ -10120,6 +10120,13 @@ function AnchorJS(options) {
         anchor.style.fontVariant = 'normal';
         anchor.style.fontWeight = 'normal';
         anchor.style.lineHeight = 1;
+        // We set lineHeight = 1 here because the `anchorjs-icons` font family could otherwise affect the
+        // height of the heading. This isn't the case for icons with `placement: left`, so we restore
+        // line-height: inherit in that case, ensuring they remain positioned correctly. For more info,
+        // see https://github.com/bryanbraun/anchorjs/issues/39.
+        if (this.options.placement === 'left') {
+          anchor.style.lineHeight = 'inherit';
+        }
       }
 
       if (this.options.placement === 'left') {

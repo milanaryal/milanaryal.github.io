@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en" xmlns:cc="http://creativecommons.org/ns#">
+
+  {% include head.html %}
+
+  <body itemscope itemtype="http://schema.org/WebPage">
+
+    <main role="main" itemprop="mainContentOfPage">
+      {{ content }}
+    </main>
+
+    <div class="hidden">Except as otherwise <a href="//creativecommons.org/policies#license">noted</a>, the content of <span href="{{ site.url }}/" rel="cc:attributionURL">this site</span> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>, and code samples are licensed under the <a rel="license" itemprop="license" href="//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE">MIT license</a>.</div>
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>
