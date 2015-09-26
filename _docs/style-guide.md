@@ -1,8 +1,8 @@
 ---
 title: "Style guide"
 description: "This is the style guide for Milan Aryal."
-date: 2015-08-12T13:09:23+05:45
-last_modified_at: 2015-08-12T19:43:47+05:45
+# date: 2015-08-12T13:09:23+05:45
+# last_modified_at: 2015-08-12T19:43:47+05:45
 ---
 
 <p class="lead">A living document of code detailing all the various colors, typographic elements, UI patterns, and components used on the website to maintain visual consistency.</p>

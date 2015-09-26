@@ -1,7 +1,7 @@
 ---
 title: "Example content"
 description: "Just an example post."
-date: 2015-08-15T13:12:39+05:45
+# date: 2015-08-15T13:12:39+05:45
 ---
 
 <div class="alert alert-info">

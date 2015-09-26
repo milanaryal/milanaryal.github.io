@@ -14,7 +14,7 @@ layout: default
               <link itemprop="image" href="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.icon }}{% endif %}">
               {% if post.subtitle %}
                 <meta itemprop="description" content="{{ page.subtitle | markdownify | strip_newlines | truncate: 160 }}">
-              {% elsif post.excerpt and post.excerpt != blank %}
+              {% elsif post.excerpt and post.excerpt != empty %}
                 <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}">
               {% endif %}
               <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
@@ -52,9 +52,9 @@ layout: default
             <hr>
 
             {% if site.disqus_shortname and page.comments != 'false' %}
-              <div class="comments clearfix" itemprop="comment">
-                {% include disqus_thread.html %}
-              </div>
+            <div class="comments clearfix" itemprop="comment">
+              {% include disqus_thread.html %}
+            </div>
             {% endif %}
 
             <nav class="clearfix" itemprop="pagination">

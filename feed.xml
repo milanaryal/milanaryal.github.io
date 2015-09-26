@@ -59,7 +59,7 @@ sitemap: false
 
       {% if post.subtitle %}
         <summary>{{ post.subtitle | markdownify | strip_html | strip_newlines | truncate: 160 | xml_escape }}</summary>
-      {% elsif post.excerpt and post.excerpt != blank %}
+      {% elsif post.excerpt and post.excerpt != empty %}
         <summary>{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | xml_escape }}</summary>
       {% endif %}
     </entry>

@@ -1,5 +1,5 @@
 ---
-layout: articles
+layout: archive
 title: "Articles"
 ---
 
@@ -14,7 +14,7 @@ title: "Articles"
       <h2 class="post-title" itemprop="name headline">{{ post.title | markdownify | strip_html | strip_newlines }}</h2>
       {% if post.subtitle %}
         <p class="post-subtitle" itemprop="description">{{ post.subtitle | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>
-      {% elsif post.excerpt and post.excerpt != blank %}
+        {% elsif post.excerpt and post.excerpt != empty %}
         <p class="post-subtitle" itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>
       {% endif %}
     </div>

@@ -95,7 +95,7 @@ defaults:
       path: ""
       type: "docs"
     values:
-      layout: "docs"
+      layout: "doc"
       comments: "false"
 
 # Compress HTML

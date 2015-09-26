@@ -2,7 +2,7 @@
 
   {% if page.subtitle %}
     {% assign page_description = page.subtitle %}
-  {% elsif page.excerpt and page.excerpt != blank %}
+  {% elsif page.excerpt and page.excerpt != empty %}
     {% assign page_description = page.excerpt %}
   {% elsif page.description %}
     {% assign page_description = page.description %}
