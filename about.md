@@ -82,8 +82,6 @@ Join me on the following networks and/or websites:
   </li>
 </ul>
 
-[![Simple is good](/assets/img/simple-is-good.png)](/assets/img/simple-is-good.png)
-
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.[^design]
 
 [^design]: If I have an idea I can't sleep until I make it real. Design is my passion.
@@ -92,7 +90,7 @@ Nothing brings me more pleasure than making something out of nothing. Even when 
 
 I'd like to think that I'm very happy person, but I find the art that strikes me truest is the sad, depressing sort, I love hip-hop and R&B music, post-apocalyptic fiction, and movie trailers that can make me squirt tears in under two minutes. Go figure. :wink:
 
----
+[![Simple is good](/assets/img/simple-is-good.png)](/assets/img/simple-is-good.png)
 
 ### About the site
 
