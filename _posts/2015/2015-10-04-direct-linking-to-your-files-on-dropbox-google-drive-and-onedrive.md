@@ -31,7 +31,7 @@ Note that the original share link URL may contain query string parameters alread
 
 If you only want to bypass the preview page on Dropbox and allow your browser to directly render your files, use `raw=1` as a query parameter in your URL.
 
-See also: [Hosting images with Dropbox on your website]({% post_url /2015/2015-08-19-hosting-images-with-dropbox-on-your-website %})
+**See also:** [Hosting images with Dropbox on your website]({% post_url /2015/2015-08-19-hosting-images-with-dropbox-on-your-website %})
 
 ---
 

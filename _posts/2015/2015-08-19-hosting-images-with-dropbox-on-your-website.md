@@ -1,6 +1,7 @@
 ---
 title: "Hosting images with Dropbox on your website"
 date: 2015-08-19T12:24:31+05:45
+last_modified_at: 2015-10-05T08:32:27+05:45
 ---
 
 <p class="lead">Dropbox is a great way to post an image quickly on a forum or as free hosting for your low traffic website, but there are a few things to know.</p>
@@ -61,7 +62,7 @@ https://dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-bl
 {% endhighlight %}
 
 <div class="alert alert-info">
-  <strong>Tip:</strong> If you replace <code>?dl=0</code> to <code>?dl=1</code>, then you will get direct download link to a file uploaded on Dropbox. For example <a href="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=1" class="alert-link">click this link</a> to direct download a image file from Dropbox.
+  <strong>Tip:</strong> If you replace <code>?dl=0</code> to <code>?dl=1</code>, then you will get direct download link to a file uploaded on Dropbox. For example <a href="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=1" class="alert-link">click this link</a> to direct download a image file from Dropbox. Or if you just want to bypass the preview page on Dropbox, use `?raw=1` as a query parameter in your URL.
 </div>
 
 ### Step 3: Now what?

@@ -1,6 +1,7 @@
 ---
 title: "Syntax highlighting with prism.js"
 date: 2014-09-09T13:28:25+05:45
+last_modified_at: 2015-10-05T08:11:07+05:45
 excerpt: "Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind."
 redirect_from:
   - "/2014/09/syntax-highlighter-prism.html"
@@ -54,9 +55,9 @@ Easily highlight your code on WordPress with WP PrismJS. Simply [download](http:
 
 ### Installing on Blogger/Tumblr
 
-To install PrismJS on your Blogger/Tumblr blog you need to upload `prism.css` and `prism.js` files in other file hosting sites alternately like [Google Drive](http://drive.google.com/) or [Dropbox](http://www.dropbox.com/) because we cannot host file in the Blogger/Tumblr site. Then as same process above go to template edit and inculde `prism.css` file link before the `</head>` tag and `prism.js` file link before `</body>` tag.
+To install PrismJS on your Blogger/Tumblr blog you can upload `prism.css` and `prism.js` files on [Dropbox](http://www.dropbox.com/) because we cannot host file in the Blogger/Tumblr site. Then as same process above go to template edit and inculde `prism.css` file link before the `</head>` tag and `prism.js` file link before `</body>` tag.
 
-Remember that hosting your file on other site like Google Drive you should set the file for public view and need to link direct link like `http://googledrive.com/host/YOUR_FILE_ID/`. Public viewing link and direct link may vary according to the different sites.
+**See also:** [How to host assets with Dropbox on your website]({% post_url /2015/2015-08-19-hosting-images-with-dropbox-on-your-website %})
 
 If you don't like to upload the file and want to use PrismJS default theme then you can include the following two files link to install PrismJS:
 
