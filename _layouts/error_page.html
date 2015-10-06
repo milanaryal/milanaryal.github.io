@@ -2,45 +2,25 @@
 layout: compress
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
   <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ page.title | markdownify | strip_html | strip_newlines }} &mdash; {{ site.name }}</title>
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
-    <!-- <link rel="dns-prefetch" href="//fonts.googleapis.com" data-proofer-ignore> -->
     <link rel="dns-prefetch" href="//www.google-analytics.com">
     <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
     <script>(function(){"use strict";var a=document.getElementsByTagName("head")[0],b=document.createElement("link");b.rel="stylesheet",b.href="\/assets\/css\/fonts.min.css\?v\={{ site.github.build_revision }}",a.appendChild(b)})();</script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="/assets/js/html5shiv.min.js?v={{ site.github.build_revision }}"></script>
-        <script src="/assets/js/respond.min.js?v={{ site.github.build_revision }}"></script>
-    <![endif]-->
 
   </head>
 
   <body>
 
-    <!-- 404 main content -->
-    <div class="error-page">
-      <!-- <div class="container"> -->
-        <!-- <div class="row"> -->
-          <!--  <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-3"> -->
-            <div class="error-page-container clearfix">
-              <div class="error-page-message error-page-message-lead">404</div>
-              <div class="error-page-message">Sorry, but nothing exists here.</div>
-              <div class="error-page-message error-page-message-small">Find something <a href="/archives/">interesting to read</a>.</div>
-            </div><!-- /.error-page-container .clearfix -->
-          <!-- </div> --><!-- /.col-lg-8 .col-lg-offset-3 .col-md-10 .col-md-offset-3 -->
-        <!-- </div> --><!-- /.row -->
-      <!-- </div> --><!-- /.container -->
-    </div><!-- /.error-page -->
+    {{ content }}
 
     {% include scripts.html %}
 

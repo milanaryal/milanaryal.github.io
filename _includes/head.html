@@ -13,8 +13,8 @@
 
   <!-- Basic page needs -->
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }} &mdash; {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
   <meta name="title" content="{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }}{% else %}{{ site.name }}{% endif %}">
   <meta name="description" content="{{ meta_description }}">

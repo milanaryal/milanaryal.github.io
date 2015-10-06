@@ -1,5 +1,5 @@
 {
-  "name": "primer-user-content",
+  "name": "primer-markdown",
   "keywords": [
     "github",
     "markdown",
@@ -17,14 +17,15 @@
     "render-test.md"
   ],
   "homepage": "https://github.com/primer/markdown",
-  "version": "2.1.7",
-  "_release": "2.1.7",
+  "version": "2.1.9",
+  "_release": "2.1.9",
   "_resolution": {
     "type": "version",
-    "tag": "v2.1.7",
-    "commit": "66c71cd395676b58fe3de587fb643eb0c11509d8"
+    "tag": "v2.1.9",
+    "commit": "fbb8d35b108d7ef6c440351b42c88868714a0edb"
   },
   "_source": "git://github.com/primer/markdown.git",
-  "_target": "~2.1.7",
-  "_originalSource": "primer-markdown"
+  "_target": "~2.1.9",
+  "_originalSource": "primer-markdown",
+  "_direct": true
 }
