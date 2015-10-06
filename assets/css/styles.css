@@ -3,7 +3,7 @@
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  *
- * Date: 2015-09-25T20:57:21+05:45
+ * Date: 2015-10-06T21:54:54+05:45
  */
 
 /*!
@@ -6764,6 +6764,8 @@ a img:focus {
   min-height: 100vh;
   color: #aebcb9;
   background-color: #0d0d0d;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -7921,10 +7923,29 @@ kbd {
   border-bottom: 1px solid #404040;
 }
 .error-page {
-  height: 100%;
-  padding-top: 15%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  min-height: 100vh;
+  background-color: white;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+}
+.error-page-container {
+  padding: 2em;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
+  -webkit-animation: fade-in 2s;
+       -o-animation: fade-in 2s;
+          animation: fade-in 2s;
 }
 .error-page-message {
   font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;

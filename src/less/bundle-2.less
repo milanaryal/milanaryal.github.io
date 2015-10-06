@@ -127,15 +127,33 @@
 // ==============================================
 
 .error-page {
-  height: 100%;
-  padding-top: 15%;
+  // height: 100%;
+  // padding-top: 15%;
   // box-sizing: border-box;
 
   // position: relative;
   // -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  // transform: translateZ(0);
   // overflow: hidden;
   // *zoom: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+
+  // font-size: 1.6rem;
+  // font-family: sans-serif;
+  // color: #aebcb9;
+  // background-color: #0d0d0d;
+}
+.error-page-container {
+  padding: 2em;
+  // color: #aebcb9;
+  animation: fade-in 2s;
+
+  transform: translateZ(0);
 }
 .error-page-message {
   color: fade(black, 80%); // rgba(0,0,0,0.8)
