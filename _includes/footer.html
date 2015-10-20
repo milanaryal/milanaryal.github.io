@@ -53,10 +53,7 @@
           </li>
           {% endif %}
         </ul>
-        <p class="copyright">
-          &copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> {% if site.author.name %}<span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Person"><span property="cc:attributionName" itemprop="name">{{ site.author.name }}</span></span>{% else %}{{ site.name }}{% endif %}. <a rel="nofollow" href="//creativecommons.org/licenses/by/4.0/" data-toggle="tooltip" data-placement="top" data-original-title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a>.
-          <span class="hidden">Except as otherwise <a href="//creativecommons.org/policies#license">noted</a>, the content of <span href="{{ site.url }}/" rel="cc:attributionURL">this site</span> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>, and code samples are licensed under the <a rel="license" itemprop="license" href="//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE">MIT license</a>.</span>
-        </p>
+        <p class="copyright">&copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> {% if site.author.name %}<span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.author.name }}</span></span>{% else %}{{ site.name }}{% endif %}</p>
       </div>
     </div>
   </div>

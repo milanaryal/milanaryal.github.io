@@ -7,6 +7,9 @@
 module.exports = function (grunt) {
   'use strict';
 
+  // Display the elapsed execution time of grunt tasks.
+  require('time-grunt')(grunt);
+
   // Project configuration.
   grunt.initConfig({
 
@@ -16,18 +19,13 @@ module.exports = function (grunt) {
       src: 'src',
       app: '',
       assets: 'assets',
-      license_type: 'MIT',
-      license_url: 'https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE',
-      date: '<%= grunt.template.date("isoDateTime")%>\+05\:45',
       banner: '/*!\n' +
               ' * <%= pkg.title %> (<%= pkg.homepage %>)\n' +
               ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-              ' * Licensed under <%= project.license_type %> (<%= project.license_url %>)\n' +
-              ' *\n' +
-              ' * Date: <%= project.date %>\n' +
+              ' * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)\n' +
               ' */\n',
       css: [
-        '<%= project.src %>/less/styles.less'
+        '<%= project.src %>/scss/styles.scss'
       ],
       js: [
         '<%= project.src %>/js/jquery.js',
@@ -66,6 +64,7 @@ module.exports = function (grunt) {
       ]
     },
 
+    // JS build configuration
     jshint: {
       options: {
         jshintrc: '<%= project.src %>/js/bootstrap/.jshintrc'
@@ -87,7 +86,7 @@ module.exports = function (grunt) {
     concat: {
       options: {
         banner: '<%= project.banner %>\n',
-        stripBanners: false,
+        stripBanners: false
       },
       core: {
         src: '<%= project.js %>',
@@ -96,23 +95,40 @@ module.exports = function (grunt) {
     },
 
     uglify: {
+      options: {
+        compress: {
+          warnings: false
+        },
+        mangle: true,
+        preserveComments: '0'
+      },
       core: {
         src: '<%= project.js %>',
         dest: '<%= project.assets %>/js/scripts.min.js'
       }
     },
 
-    less: {
-      compileCore: {
-        options: {
-          strictMath: true,
-          sourceMap: true,
-          outputSourceFiles: true,
-          sourceMapURL: 'styles.css.map',
-          sourceMapFilename: '<%= project.assets %>/css/styles.css.map'
-        },
-        src: '<%= project.css %>',
-        dest: '<%= project.assets %>/css/styles.css'
+    // CSS build configuration
+    scsslint: {
+      options: {
+        config: '<%= project.src %>/scss/bootstrap/.scss-lint.yml',
+        reporterOutput: null
+      },
+      src: ['<%= project.src %>/scss/*.scss', '!<%= project.src %>/scss/bootstrap/_normalize.scss']
+    },
+
+    sass: {
+      options: {
+        includePaths: ['scss'],
+        precision: 6,
+        sourceComments: false,
+        sourceMap: true,
+        outputStyle: 'expanded'
+      },
+      core: {
+        files: {
+          '<%= project.assets %>/css/styles.css': '<%= project.css %>'
+        }
       }
     },
 
@@ -121,12 +137,12 @@ module.exports = function (grunt) {
         browsers: [
           'Android 2.3',
           'Android >= 4',
-          'Chrome >= 20',
-          'Firefox >= 24',
-          'Explorer >= 8',
-          'iOS >= 6',
+          'Chrome >= 35',
+          'Firefox >= 31',
+          'Explorer >= 9',
+          'iOS >= 7',
           'Opera >= 12',
-          'Safari >= 6'
+          'Safari >= 7.1'
         ]
       },
       core: {
@@ -137,18 +153,9 @@ module.exports = function (grunt) {
       }
     },
 
-    csslint: {
-      options: {
-        csslintrc: '<%= project.src %>/less/bootstrap/.csslintrc'
-      },
-      dist: [
-        '<%= project.assets %>/css/styles.css',
-      ]
-    },
-
     csscomb: {
       options: {
-        config: '<%= project.src %>/less/bootstrap/.csscomb.json'
+        config: '<%= project.src %>/scss/bootstrap/.csscomb.json'
       },
       core: {
         src: '<%= project.assets %>/css/styles.css',
@@ -158,30 +165,14 @@ module.exports = function (grunt) {
 
     cssmin: {
       options: {
-        compatibility: 'ie8',
+        compatibility: 'ie9',
         keepSpecialComments: '0',
         // sourceMap: true,
-        advanced: false
+        noAdvanced: true
       },
-      minifyCore: {
+      core: {
         src: '<%= project.assets %>/css/styles.css',
         dest: '<%= project.assets %>/css/styles.min.css'
-      }
-    },
-
-    usebanner: {
-      dist: {
-        options: {
-          position: 'top',
-          banner: '<%= project.banner %>'
-        },
-        files: {
-          src: [
-            '<%= project.assets %>/css/styles.css',
-            '<%= project.assets %>/css/styles.min.css',
-            '<%= project.assets %>/js/scripts.min.js'
-            ]
-        }
       }
     },
 
@@ -204,9 +195,9 @@ module.exports = function (grunt) {
           spawn: false
         }
       },
-      less: {
+      sass: {
         files: ['<%= project.css %>'],
-        tasks: ['less'],
+        tasks: ['sass'],
         options: {
           spawn: false
         }
@@ -215,22 +206,22 @@ module.exports = function (grunt) {
 
   });
 
-  // Load the plugin(s).
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-jscs');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-contrib-csslint');
-  grunt.loadNpmTasks('grunt-csscomb');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-banner');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  // Load multiple grunt tasks using globbing patterns.
+  require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
   // Default task(s).
-  grunt.registerTask('default', ['clean', 'jshint', 'jscs', 'concat', 'uglify', 'less', 'autoprefixer', 'csslint', 'csscomb', 'cssmin', 'usebanner', 'copy']);
+  grunt.registerTask('default', [
+    'clean',
+    'jshint',
+    'jscs',
+    'concat',
+    'uglify',
+    'scsslint',
+    'sass',
+    'autoprefixer',
+    'csscomb',
+    'cssmin',
+    'copy'
+  ]);
 
 };

@@ -1,0 +1,13 @@
+// Mixins
+//
+// Custom mixins for the theme.
+
+@mixin theme-anchor-transition() {
+  transition: all 0.2s ease;
+}
+
+@mixin theme-background-cover() {
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+          background-size: cover;
+}

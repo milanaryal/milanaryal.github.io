@@ -2,8 +2,6 @@
  * Milan Aryal (http://milanaryal.com)
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
- *
- * Date: 2015-10-06T21:54:35+05:45
  */
 
 /*!
@@ -10846,26 +10844,27 @@ var anchors = new AnchorJS();
 
 }).call(this);
 
-/* ========================================================================
- * Milan Aryal (http://milanaryal.com)
- * These scripts helps to wrap/add/remove/popup necessary CSS class when DOM is ready.
- * ========================================================================
- * Copyright 2015 Milan Aryal
+/**
+ * --------------------------------------------------------------------------
+ * Milan Aryal (http://milanaryal.com): scripts.js
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
- * ======================================================================== */
-
+ * --------------------------------------------------------------------------
+ */
 
 !function ($) {
   'use strict';
 
-  // Navigation Scripts to Show Header on Scroll-Up
-  // ===============================================
+  /**
+   * ------------------------------------------------------------------------
+   * Navigation Scripts to Show Header on Scroll-Up
+   * ------------------------------------------------------------------------
+   */
 
   var MQL = 1170;
 
   // primary navigation slide-in effect
   if ($(window).width() > MQL) {
-    var headerHeight = $('.header-navbar').height();
+    var headerHeight = $('.navbar-top').height();
     $(window).on('scroll', {
       previousTop: 0
     },
@@ -10874,36 +10873,41 @@ var anchors = new AnchorJS();
       // check if user is scrolling up
       if (currentTop < this.previousTop) {
         // if scrolling up...
-        if (currentTop > 0 && $('.header-navbar').hasClass('is-fixed')) {
-          $('.header-navbar').addClass('is-visible');
+        if (currentTop > 0 && $('.navbar-top').hasClass('is-fixed')) {
+          $('.navbar-top').addClass('is-visible');
         } else {
-          $('.header-navbar').removeClass('is-visible is-fixed');
+          $('.navbar-top').removeClass('is-visible is-fixed');
         }
       } else {
         // if scrolling down...
-        $('.header-navbar').removeClass('is-visible');
-        if (currentTop > headerHeight && !$('.header-navbar').hasClass('is-fixed')) $('.header-navbar').addClass('is-fixed');
+        $('.navbar-top').removeClass('is-visible');
+        if (currentTop > headerHeight && !$('.navbar-top').hasClass('is-fixed')) $('.navbar-top').addClass('is-fixed');
       }
       this.previousTop = currentTop;
     });
   }
 
 
-  // Tooltip init
-  // ============
+  /**
+   * ------------------------------------------------------------------------
+   * Tooltip init
+   * ------------------------------------------------------------------------
+   */
 
-  $('[data-toggle="tooltip"]').tooltip()
+   $('[data-toggle="tooltip"]').tooltip()
 
 
-  // Responsive stuffs
-  // =================
+  /**
+   * ------------------------------------------------------------------------
+   * Responsive stuffs
+   * ------------------------------------------------------------------------
+   */
 
   // make all images responsive
   $('img').addClass('img-responsive');
 
   // responsive table
-  $('table').wrap('<div class="table-responsive"></div>');
-  $('table').addClass('table table-hover');
+  $('table').addClass('table table-responsive table-hover');
 
   // responsive embed video
   $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
@@ -10916,8 +10920,11 @@ var anchors = new AnchorJS();
   $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
 
 
-  // Social share - Helps to pop-up a window on click
-  // =================================================
+  /**
+   * ------------------------------------------------------------------------
+   * Social share - Helps to pop-up a window on click
+   * ------------------------------------------------------------------------
+   */
 
   $('.social-share').on('click', function () {
     var width  = 670; // last update: 575
@@ -10936,8 +10943,11 @@ var anchors = new AnchorJS();
   });
 
 
-  // Footnotes
-  // ================================
+  /**
+   * ------------------------------------------------------------------------
+   * Footnotes - bigfootJS
+   * ------------------------------------------------------------------------
+   */
 
   var bigfoot = $.bigfoot(
     {
@@ -10950,8 +10960,11 @@ var anchors = new AnchorJS();
 }(jQuery);
 
 
-// AnchorJS options and selector
-// =============================
+/**
+ * ------------------------------------------------------------------------
+ * AnchorJS options and selector
+ * ------------------------------------------------------------------------
+ */
 
 (function () {
   'use strict';

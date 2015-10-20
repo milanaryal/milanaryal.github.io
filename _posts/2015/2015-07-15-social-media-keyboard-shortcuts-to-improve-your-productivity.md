@@ -2,7 +2,6 @@
 title: "Social media keyboard shortcuts to improve your productivity"
 date: 2015-07-15T10:57:40+05:45
 last_modified_at: 2015-07-15T11:28:57+05:45
-featured_image: "/uploads/2015/20150715--keyboard_w1200.jpg"
 ---
 
 <p class="lead">Save yourself loads of time every day by speeding up your social network browsing with some lightning fast keyboard shortcuts!</p>

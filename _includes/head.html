@@ -1,8 +1,6 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 
-  {% if page.subtitle %}
-    {% assign page_description = page.subtitle %}
-  {% elsif page.excerpt and page.excerpt != empty %}
+  {% if page.excerpt %}
     {% assign page_description = page.excerpt %}
   {% elsif page.description %}
     {% assign page_description = page.description %}
@@ -14,7 +12,6 @@
   <!-- Basic page needs -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }} &mdash; {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
   <meta name="title" content="{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }}{% else %}{{ site.name }}{% endif %}">
   <meta name="description" content="{{ meta_description }}">
@@ -25,7 +22,7 @@
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:description" content="{{ meta_description }}">
-  <meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image | prepend: site.url }}{% else %}{{ site.icon | prepend: site.url }}{% endif %}">
+  <meta property="og:image" content="{{ site.icon | prepend: site.url }}">
   <meta property="fb:admins" content="{{ site.author.fb_id }}">
   <meta property="fb:profile_id" content="{{ site.author.fb_id }}">
   <meta property="og:type" content="{% if page.date %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}">
@@ -38,7 +35,7 @@
   {% endif %}
 
   <!-- Twitter card property -->
-  <meta name="twitter:card" content="{% if page.featured_image %}{{ 'summary_large_image' }}{% else %}{{ 'summary' }}{% endif %}">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@{{ site.author.twitter }}">
   {% if page.date %}<meta name="twitter:creator" content="@{{ site.author.twitter }}">{% endif %}
 
@@ -64,7 +61,7 @@
   </script>
 
   <!-- DNS prefetch -->
-  <!-- <link rel="dns-prefetch" href="//fonts.googleapis.com" data-proofer-ignore> -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" data-proofer-ignore>
   <link rel="dns-prefetch" href="//www.google-analytics.com">
 
   <!-- Google+ authorship -->
@@ -81,14 +78,10 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,700,400|Lora:400,400italic,700,700italic">
 
-  <script>(function(){"use strict";var a=document.getElementsByTagName("head")[0],b=document.createElement("link");b.rel="stylesheet",b.href="\/assets\/css\/fonts.min.css\?v\={{ site.github.build_revision }}",a.appendChild(b)})();</script>
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-    <script src="/assets/js/html5shiv.min.js?v={{ site.github.build_revision }}"></script>
-    <script src="/assets/js/respond.min.js?v={{ site.github.build_revision }}"></script>
-  <![endif]-->
+  <!-- Favicon -->
+  <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ site.github.build_revision }}">
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="theme-color" content="{{ site.theme_color }}">
@@ -107,6 +100,5 @@
   <!-- Pin to start screen for IE on Windows -->
   <meta name="application-name" content="{{ site.name }}">
   <meta name="msapplication-config" content="/browserconfig.xml">
-  <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ site.github.build_revision }}">
 
 </head>

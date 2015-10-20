@@ -1,107 +1,90 @@
 ---
-layout: default
+layout: compress
 ---
 
-<article id="{{ page.id | replace:'/','-' | replace_first:'-','' }}" itemscope itemtype="http://schema.org/Article">
-  <!-- Post header -->
-  <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')">
-    <div class="dark-background">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="post-heading">
-              <link itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-              <link itemprop="image" href="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.icon }}{% endif %}">
-              {% if post.subtitle %}
-                <meta itemprop="description" content="{{ page.subtitle | markdownify | strip_newlines | truncate: 160 }}">
-              {% elsif post.excerpt and post.excerpt != empty %}
-                <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}">
-              {% endif %}
-              <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
-              <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Person">
-                <meta itemprop="name" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %}">
-              </span>
-              <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
-              <meta itemprop="dateModified" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
-              <div class="meta">
+<!doctype html>
+<html lang="en" xmlns:cc="http://creativecommons.org/ns#">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include nav.html %}
+
+    <article class="post-article" itemscope itemtype="http://schema.org/Article">
+      <header class="post-meta-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+              <div class="post-meta">
                 <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}</span>
               </div>
-              <h1 itemprop="name headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
-              {% if page.subtitle %}
-                <h2 class="subheading">{{ page.subtitle | markdownify | strip_html | strip_newlines }}</h2>
+
+            </div><!-- /.col-* -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </header>
+
+      <main role="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+              <h1 class="post-title" itemprop="headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
+
+              <div class="post-body markdown-body clearfix" itemprop="articleBody">
+                {{ content }}
+              </div>
+
+            </div><!-- /.col-* -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </main>
+
+      <footer class="post-article-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+              <div class="post-meta-inline-acknowledgments">
+                <span class="post-meta-acknowledgment"><a class="link" href="http://creativecommons.org/licenses/by/4.0/" rel="license cc:license" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by the author. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span></span>
+                <div class="hidden">Except as otherwise <a href="//creativecommons.org/policies#license">noted</a>, the content of <span href="{{ site.url }}/" rel="cc:attributionURL">this site</span> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>, and code samples are licensed under the <a rel="license" itemprop="license" href="//github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE">MIT license</a>.</div>
+              </div>
+
+              {% include social_share.html %}
+
+              <hr>
+
+              {% if site.disqus_shortname and page.comments != 'false' %}
+              <div class="comments clearfix" itemprop="comment">
+                {% include disqus_thread.html %}
+              </div>
               {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <!-- Post content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <nav class="post-pager clearfix" itemprop="pagination">
+                <ul class="pager">
+                  {% if page.previous.url %}
+                  <li class="previous">
+                    <a href="{{ page.previous.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}"><i class="fa fa-angle-left"></i> Previous</a>
+                  </li>
+                  {% endif %}
+                  {% if page.next.url %}
+                  <li class="next">
+                    <a href="{{ page.next.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next <i class="fa fa-angle-right"></i></a>
+                  </li>
+                  {% endif %}
+                </ul>
+              </nav>
 
-        <div class="markdown-body clearfix" itemprop="articleBody">
-          {{ content }}
-        </div>
+            </div><!-- /.col-* -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </footer>
+    </article>
 
-          <footer>
-            {% include social_share.html %}
+    {% include scripts.html %}
 
-            <hr>
+  </body>
 
-            {% if site.disqus_shortname and page.comments != 'false' %}
-            <div class="comments clearfix" itemprop="comment">
-              {% include disqus_thread.html %}
-            </div>
-            {% endif %}
-
-            <nav class="clearfix" itemprop="pagination">
-              <ul class="pager">
-                {% if page.previous.url %}
-                <li class="previous">
-                  <a href="{{ page.previous.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}"><i class="fa fa-angle-double-left"></i> Previous</a>
-                </li>
-                {% endif %}
-                {% if page.next.url %}
-                <li class="next">
-                  <a href="{{ page.next.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next <i class="fa fa-angle-double-right"></i></a>
-                </li>
-                {% endif %}
-              </ul>
-            </nav>
-          </footer>
-
-      </div>
-    </div>
-  </div>
-</article>
-
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement":
-  [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "item":
-      {
-        "@id": "{{ site.url }}/",
-        "name": "Home"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "item":
-      {
-        "@id": "{{ site.url }}/articles/",
-        "name": "Articles"
-      }
-    }
-  ]
-}
-</script>
+</html>

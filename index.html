@@ -3,26 +3,37 @@ layout: home
 permalink: /
 ---
 
+<!-- Wrapper -->
 <div class="home-wrapper">
-  <div class="home-container">
-    <div class="clearfix" itemscope itemtype="http://schema.org/Person">
-      <h1 class="home-title">Hello, my name is <span itemprop="name">{{ site.author.name }}</span></h1>
-      <p class="home-description" itemprop="description">{{ site.author.bio | markdownify | strip_html | strip_newlines }}</p>
-      {% if site.author %}
-        <link itemprop="image" href="{{ site.icon | prepend: site.url }}">
-        <span class="hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <meta itemprop="streetAddress" content="{{ site.author.street }}">
-          <meta itemprop="addressLocality" content="{{ site.author.locality }}">
-          <meta itemprop="addressRegion" content="{{ site.author.region }}">
-          <meta itemprop="addressCountry" content="{{ site.author.country }}">
-          <meta itemprop="postalCode" content="{{ site.author.postcode }}">
-        </span><!-- /itemscope itemtype PostalAddress -->
-      {% endif %}
-    </div>
-    <div class="home-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-    {% for nav_item in site.data.nav %}
-      <a itemprop="url" href="{{ nav_item.url }}" class="home-nav-item"><span itemprop="name">{{ nav_item.title }}</span></a>
-    {% endfor %}
-    </div><!-- /.home-nav -->
-  </div><!-- /.home-container -->
+  <!-- Container -->
+  <section class="home-container">
+    <header>
+      <span class="avatar">
+        <img src="{{ site.author.avatar | prepend: site.url }}" alt="{{ site.author.name }}">
+      </span>
+      <main role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Person">
+        <h1 itemprop="name">{{ site.author.name }}</h1>
+        <p itemprop="description">{{ site.author.bio | markdownify | strip_html | strip_newlines }}</p>
+
+        {% if site.author %}
+          <link itemprop="image" href="{{ site.icon | prepend: site.url }}">
+          <span class="hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <meta itemprop="streetAddress" content="{{ site.author.street }}">
+            <meta itemprop="addressLocality" content="{{ site.author.locality }}">
+            <meta itemprop="addressRegion" content="{{ site.author.region }}">
+            <meta itemprop="addressCountry" content="{{ site.author.country }}">
+            <meta itemprop="postalCode" content="{{ site.author.postcode }}">
+          </span><!-- /itemscope itemtype PostalAddress -->
+        {% endif %}
+      </main>
+    </header>
+
+    <footer>
+      <ul class="icons">
+        <li><a href="#" class="fa-twitter">Twitter</a></li>
+        <li><a href="#" class="fa-instagram">Instagram</a></li>
+        <li><a href="#" class="fa-facebook">Facebook</a></li>
+      </ul>
+    </footer>
+  </section><!-- /.home-container -->
 </div><!-- /.home-wrapper -->

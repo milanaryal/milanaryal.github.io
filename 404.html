@@ -1,0 +1,41 @@
+---
+layout: compress
+title: "Page not found"
+robots: "noindex, follow"
+sitemap: false
+permalink: /404.html
+---
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ page.title | markdownify | strip_html | strip_newlines }} &mdash; {{ site.name }}</title>
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site.name }}">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site.name }}">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
+    <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ site.github.build_revision }}">
+
+  </head>
+
+  <body>
+
+    <!-- 404 main content -->
+    <div class="error-page">
+      <div class="error-page-container clearfix">
+        <div class="error-page-message error-page-message-lead">404</div>
+        <div class="error-page-message">Sorry, but nothing exists here.</div>
+        <div class="error-page-message error-page-message-small">Find something <a href="/archives/">interesting to read</a>.</div>
+      </div><!-- /.error-page-container .clearfix -->
+    </div><!-- /.error-page -->
+
+    {% include scripts.html %}
+
+  </body>
+
+</html><!--# Generated {{ site.time | date_to_xmlschema }} | Revision {{ site.github.build_revision }} #-->

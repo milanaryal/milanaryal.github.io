@@ -1,31 +1,106 @@
 ---
-layout: default
+layout: compress
 ---
 
-<article>
-  <!-- Page header -->
-  <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')">
-    <div class="dark-background">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1 itemprop="name">{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }}{% else %}{{ site.name }}{% endif %}</h1>
-              <hr class="small">
-              <span class="subheading" itemprop="description">{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines }}{% else %}{{ site.description | markdownify | strip_html | strip_newlines }}{% endif %}</span>
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ page.title | markdownify | strip_html | strip_newlines }} &mdash; {{ site.name }}</title>
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site.name }}">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site.name }}">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
+    <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ site.github.build_revision }}">
+    <style>
+    body {
+      min-height: 100vh !important;
+    }
+    .search-heading {
+      margin-top: 100px;
+      font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+      font-weight: normal;
+    }
+    @media (min-width: 768px) {
+      .search-heading {
+        margin-top: 225px;
+      }
+    }
+    .search-box {
+      margin: 30px 0 50px;
+      font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+    }
+    .search-box,
+    .search-box * {
+      -webkit-box-sizing: content-box;
+         -moz-box-sizing: content-box;
+              box-sizing: content-box;
+    }
+    .search-form {
+      margin-bottom: 30px;
+    }
+    .gsc-control-cse {
+      font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+    }
+    .gsc-webResult .gsc-result {
+      padding: 20px 0;
+    }
+    .gs-title,
+    .gs-title * {
+      font-size: 18px!important;
+    }
+    .gs-snippet {
+      font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+      font-size: 15px;
+      margin-top: 10px;
+      padding-left: 6px;
+    }
+    .gsc-cursor-box {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      background-color: #f5f6f5;
+      border-radius: 3px;
+      margin-top: 30px!important;
+    }
+    .gsc-url-top {
+      padding-top: 8px;
+    }
+    .gcsc-branding,
+    .gsc-adBlock,
+    .gsc-location {
+      display: none!important;
+    }
+    </style>
+
+  </head>
+
+  <body>
+
+    {% include nav.html %}
+
+    <main>
+      <article>
+        <!-- Page content -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+              {{ content }}
+
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
+      </article>
+    </main>
 
-  <!-- Page content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        {{ content }}
-      </div>
-    </div>
-  </div>
-</article>
+    {% include scripts.html %}
+
+  </body>
+
+</html>

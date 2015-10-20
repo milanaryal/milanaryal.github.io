@@ -23,13 +23,10 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.5",
+    "bootstrap-sass": "~3.3.5",
     "font-awesome": "~4.4.0",
     "anchor-js": "~1.3.0",
-    "primer-markdown": "~2.1.9",
+    "primer-markdown": "~2.3.0",
     "bigfoot": "2.1.1"
-  },
-  "devDependencies": {
-    "html5shiv": "~3.7.3",
-    "respond": "~1.4.2"
   }
 }

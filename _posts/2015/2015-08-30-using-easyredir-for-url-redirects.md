@@ -1,9 +1,10 @@
 ---
 author: "William Richards"
 title: "Using EasyRedir for URL redirects"
-subtitle: "A simple, easy to use service for managing URL and domain redirects."
 date: 2015-08-30T19:52:01+05:45
 ---
+
+<p class="lead">A simple, easy to use service for managing URL and domain redirects.</p>
 
 URL (also known as domain) redirects are a common way to use branded, easy to remember names to find your content. [EasyRedir](https://www.easyredir.com/) is a service that makes it simple to set up these kinds redirects. The nice thing about EasyRedir is that you don't have to understand or set up the technical stuff.
 

@@ -1,10 +1,9 @@
 ---
 title: "The Zen of GitHub"
-subtitle: "The guiding principles of a GitHubber."
 date: 2015-08-16T17:27:56+05:45
 ---
 
-<p class="lead">Anything added dilutes everything else.</p>
+<p class="lead">The guiding principles of a GitHubber.</p>
 
 I really like "The Zen of GitHub", an ideas and culture of GitHub. So I thought to post it here for inspiration.
 

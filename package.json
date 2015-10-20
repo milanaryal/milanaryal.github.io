@@ -13,17 +13,21 @@
   "devDependencies": {
     "grunt": "*",
     "grunt-autoprefixer": "*",
-    "grunt-banner": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-copy": "*",
     "grunt-contrib-csslint": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-jshint": "*",
-    "grunt-contrib-less": "*",
+    "grunt-contrib-sass": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "grunt-csscomb": "*",
-    "grunt-jscs": "*"
+    "grunt-jscs": "*",
+    "grunt-sass": "*",
+    "grunt-scss-lint": "*",
+    "load-grunt-tasks": "*",
+    "npm-shrinkwrap": "*",
+    "time-grunt": "*"
   }
 }

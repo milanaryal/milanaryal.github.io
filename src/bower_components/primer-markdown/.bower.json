@@ -6,7 +6,7 @@
     "css"
   ],
   "main": [
-    "dist/github-markdown.css"
+    "dist/user-content.css"
   ],
   "ignore": [
     "**/.*",
@@ -17,15 +17,15 @@
     "render-test.md"
   ],
   "homepage": "https://github.com/primer/markdown",
-  "version": "2.1.9",
-  "_release": "2.1.9",
+  "version": "2.3.0",
+  "_release": "2.3.0",
   "_resolution": {
     "type": "version",
-    "tag": "v2.1.9",
-    "commit": "fbb8d35b108d7ef6c440351b42c88868714a0edb"
+    "tag": "v2.3.0",
+    "commit": "c1d78b7cb820f0b3d69617f1ccf405a5d9322141"
   },
   "_source": "git://github.com/primer/markdown.git",
-  "_target": "~2.1.9",
+  "_target": "~2.3.0",
   "_originalSource": "primer-markdown",
   "_direct": true
 }

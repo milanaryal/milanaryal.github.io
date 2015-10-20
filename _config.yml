@@ -8,6 +8,7 @@ exclude:
   - Gemfile
   - key.asc
   - src
+  - node_modules
   - package.json
   - Gruntfile.js
   - vendor
@@ -52,6 +53,7 @@ featured_image:   "/assets/img/home-bg.jpg"
 theme_color:      "#2196F3"
 author:
   name:           Milan Aryal
+  avatar:         "/assets/img/m-icon-white-on-blue.png"
   bio:            "I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot."
   email:          "considermilan@gmail.com"
   uri:            "https://twitter.com/MilanAryal"
@@ -67,7 +69,7 @@ author:
   locality:       Kathmandu
   region:         Bagmati
   country:        Nepal
-  postcode:       00977
+  postcode:       44600
 disqus_shortname: milanaryal
 google_cse_id:    "000254926668963224856:z4vgwqv7kla"
 
@@ -95,12 +97,12 @@ defaults:
       path: ""
       type: "docs"
     values:
-      layout: "doc"
+      layout: "page"
       comments: "false"
 
 # Compress HTML
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
+  comments: all
   endings: all
   profile: false
