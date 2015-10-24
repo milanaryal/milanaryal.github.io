@@ -27,7 +27,6 @@
     "grunt-sass": "*",
     "grunt-scss-lint": "*",
     "load-grunt-tasks": "*",
-    "npm-shrinkwrap": "*",
     "time-grunt": "*"
   }
 }

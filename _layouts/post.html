@@ -26,21 +26,19 @@ layout: compress
         </div><!-- /.container -->
       </header>
 
-      <main role="main">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <main role="main" class="container">
+        <div class="row">
+          <section class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h1 class="post-title" itemprop="name headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
 
-              <h1 class="post-title" itemprop="headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
+            <div class="post-body markdown-body clearfix" itemprop="articleBody">
 
-              <div class="post-body markdown-body clearfix" itemprop="articleBody">
-                {{ content }}
-              </div>
+              {{ content }}
 
-            </div><!-- /.col-* -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </main>
+            </div>
+          </section><!-- /.col-* -->
+        </div><!-- /.row -->
+      </main><!-- /.container -->
 
       <footer class="post-article-footer">
         <div class="container">
