@@ -7837,6 +7837,7 @@ h4 {
 a {
   color: inherit;
   text-decoration: none;
+  background-color: transparent;
   -webkit-transition: all .2s ease;
        -o-transition: all .2s ease;
           transition: all .2s ease;
@@ -7845,6 +7846,7 @@ a {
 a:hover, a:focus {
   color: inherit;
   text-decoration: none;
+  outline: 0;
 }
 
 .navbar-top {
