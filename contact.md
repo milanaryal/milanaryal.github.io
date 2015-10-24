@@ -56,7 +56,7 @@ If you have any questions, or just questions in general, you can ask me anything
 <ul class="list-inline text-center">
   <li>
     <a href="//keybase.io/milanaryal/key.asc">
-      PGP: <code>C0D5 6A65 7B40 6CED 39AD A781 232A 0E96 122E AB4A</code>
+      PGP: <code>9A68 F472 C067 D0DD 7877 E0C7 BD04 0021 477E 20C1</code>
     </a>
   </li>
 </ul>

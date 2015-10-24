@@ -8232,7 +8232,7 @@ hr.small {
   font-size: 14px;
   font-weight: 400;
   text-decoration: none !important;
-  letter-spacing: -.02em;
+  letter-spacing: 0;
   background-image: none !important;
   border-radius: 999em;
 
@@ -8273,7 +8273,7 @@ hr.small {
   font-size: 12px;
   font-weight: 400;
   color: rgba(0, 0, 0, .44);
-  letter-spacing: -.02em;
+  letter-spacing: 0;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, .15);
   border-radius: 999em;
