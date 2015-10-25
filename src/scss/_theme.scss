@@ -580,13 +580,10 @@ hr.small {
 // Post page
 //
 
-.post-meta-header {
+.post-header {
   padding-top: 25px;
-  padding-bottom: 15px;
-
   @media (min-width: 768px) {
     padding-top: 40px;
-    padding-bottom: 20px;
   }
 }
 
@@ -594,6 +591,10 @@ hr.small {
   display: block;
   font-family: $theme-font-family-base;
   margin: 0 0 10px;
+  padding-bottom: 10px;
+  @media (min-width: 768px) {
+    padding-bottom: 15px;
+  }
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1;
@@ -621,7 +622,7 @@ hr.small {
   margin-top: 30px;
 }
 
-.post-article-footer {
+.post-footer {
   padding-top: 20px;
 }
 

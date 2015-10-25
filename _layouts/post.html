@@ -1,126 +1,109 @@
 ---
-layout: compress
+layout: default
 ---
 
-<!doctype html>
-<html lang="en" xmlns:cc="http://creativecommons.org/ns#">
+<article class="post-article" itemscope itemtype="http://schema.org/Article">
+  <header class="post-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-  {% include head.html %}
+          <link itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+          <link itemprop="image" href="{{ site.icon }}">
+          <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}">
+          <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
+          <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="name" content="{% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}">
+          </span>
+          <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
+          <meta itemprop="dateModified" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
 
-  <body itemscope itemtype="http://schema.org/WebPage">
+          <div class="post-meta">
+            <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}</span>
+          </div><!-- /.post-meta -->
 
-    {% include header.html %}
+          <h1 class="post-title" itemprop="name headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
 
-    <article class="post-article" itemscope itemtype="http://schema.org/Article">
-      <header class="post-meta-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        </div><!-- /.col-* -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </header>
 
-              <link itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-              <link itemprop="image" href="{{ site.icon }}">
-              <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}">
-              <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
-              <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Person">
-                <meta itemprop="name" content="{% if page.author %}{{ page.author }}{% elsif page.author.name %}{{ page.author.name }}{% elsif site.author %}{{ site.author }}{% elsif site.author.name %}{{ site.author.name }}{% endif %}">
-              </span>
-              <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
-              <meta itemprop="dateModified" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-body markdown-body clearfix" itemprop="articleBody">
+          {{ content }}
+        </div>
+      </div><!-- /.col-* -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
 
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}</span>
-              </div><!-- /.post-meta -->
+  <footer class="post-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-            </div><!-- /.col-* -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </header>
+          <div class="post-meta-inline-acknowledgments">
+            <span class="post-meta-acknowledgment"><a href="http://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by the author. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span></span>
+            <span class="hidden">Except as otherwise <a href="//creativecommons.org/policies#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}</span>.</span>
+          </div>
 
-      <main role="main" class="container" itemprop="mainContentOfPage">
-        <div class="row">
-          <section class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h1 class="post-title" itemprop="name headline">{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
+          {% include social_share.html %}
 
-            <div class="post-body markdown-body clearfix" itemprop="articleBody">
+          <hr>
 
-              {{ content }}
+          {% if site.disqus_shortname and page.comments != 'false' %}
+          <div class="comments clearfix" itemprop="comment">
+            {% include disqus_thread.html %}
+          </div>
+          {% endif %}
 
-            </div>
-          </section><!-- /.col-* -->
-        </div><!-- /.row -->
-      </main><!-- /.container -->
-
-      <footer class="post-article-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-              <div class="post-meta-inline-acknowledgments">
-                <span class="post-meta-acknowledgment"><a href="http://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by the author. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span></span>
-                <span class="hidden">Except as otherwise <a href="//creativecommons.org/policies#license">noted</a>, the content of <a href="{{ page.url | replace:'index.html','' | prepend: site.url }}" rel="cc:attributionURL">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{% if page.author %}{{ page.author }}{% elsif page.author.name %}{{ page.author.name }}{% elsif site.author %}{{ site.author }}{% elsif site.author.name %}{{ site.author.name }}{% endif %}</span>.</span>
-              </div>
-
-              {% include social_share.html %}
-
-              <hr>
-
-              {% if site.disqus_shortname and page.comments != 'false' %}
-              <div class="comments clearfix" itemprop="comment">
-                {% include disqus_thread.html %}
-              </div>
+          <nav class="post-pager clearfix" itemprop="pagination">
+            <ul class="pager">
+              {% if page.previous.url %}
+              <li class="previous">
+                <a href="{{ page.previous.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}"><i class="fa fa-angle-left"></i> Previous</a>
+              </li>
               {% endif %}
+              {% if page.next.url %}
+              <li class="next">
+                <a href="{{ page.next.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next <i class="fa fa-angle-right"></i></a>
+              </li>
+              {% endif %}
+            </ul>
+          </nav>
 
-              <nav class="post-pager clearfix" itemprop="pagination">
-                <ul class="pager">
-                  {% if page.previous.url %}
-                  <li class="previous">
-                    <a href="{{ page.previous.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}"><i class="fa fa-angle-left"></i> Previous</a>
-                  </li>
-                  {% endif %}
-                  {% if page.next.url %}
-                  <li class="next">
-                    <a href="{{ page.next.url | replace:'//','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next <i class="fa fa-angle-right"></i></a>
-                  </li>
-                  {% endif %}
-                </ul>
-              </nav>
+        </div><!-- /.col-* -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </footer>
+</article>
 
-            </div><!-- /.col-* -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </footer>
-    </article>
-
-    <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement":
+  [
     {
-      "@context": "http://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement":
-      [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item":
-          {
-            "@id": "{{ site.url }}/",
-            "name": "Home"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item":
-          {
-            "@id": "{{ site.url }}/articles/",
-            "name": "Articles"
-          }
-        }
-      ]
+      "@type": "ListItem",
+      "position": 1,
+      "item":
+      {
+        "@id": "{{ site.url }}/",
+        "name": "Home"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item":
+      {
+        "@id": "{{ site.url }}/articles/",
+        "name": "Articles"
+      }
     }
-    </script>
-
-    {% include scripts.html %}
-
-  </body>
-
-</html>
+  ]
+}
+</script>
