@@ -1,37 +1,30 @@
-<!-- Header -->
-<header class="header-navbar navbar navbar-default navbar-fixed-top" role="banner" itemscope itemtype="http://schema.org/{% if site.author %}{{ 'Person' }}{% else %}{{ 'WPHeader' }}{% endif %}">
+<!-- Navigation -->
+<header class="navbar navbar-default navbar-fixed-top navbar-top" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" itemprop="url" href="/"><span itemprop="name">{% if site.author.name %}{{ site.author.name }}{% else %}{{ site.name }}{% endif %}</span></a>
-      {% if site.author %}
-        <meta itemprop="description" content="{{ site.description | markdownify | strip_html | strip_newlines | truncate: 160 }}">
-        <link itemprop="image" href="{{ site.icon | prepend: site.url }}">
-        <span class="hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <meta itemprop="streetAddress" content="{{ site.author.street }}">
-          <meta itemprop="addressLocality" content="{{ site.author.locality }}">
-          <meta itemprop="addressRegion" content="{{ site.author.region }}">
-          <meta itemprop="addressCountry" content="{{ site.author.country }}">
-          <meta itemprop="postalCode" content="{{ site.author.postcode }}">
-        </span><!-- /itemscope itemtype PostalAddress -->
-      {% endif %}
-    </div><!-- /.navbar-header -->
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" itemprop="url" href="/">
+            <span itemprop="name">{{ site.name }}</span>
+          </a>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <nav class="navbar-collapse collapse header-navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
-      <ul class="nav navbar-nav navbar-right">
-      {% for nav_item in site.data.nav %}
-        <li>
-          <a itemprop="url" href="{{ nav_item.url }}"><span itemprop="name">{{ nav_item.title }}</span></a>
-        </li>
-      {% endfor %}
-      </ul>
-    </nav><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <nav class="collapse navbar-collapse navbar-top-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <ul class="nav navbar-nav navbar-right">
+          {% for nav_item in site.data.nav %}
+            <li>
+              <a itemprop="url" href="{{ nav_item.url }}">
+                <span itemprop="name">{{ nav_item.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
 </header>
