@@ -2,34 +2,36 @@
 layout: default
 ---
 
-<article class="page-content">
-  <!-- Page header -->
-  <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')">
-    <div class="dark-background">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1 class="page-title" itemprop="name">{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }}{% else %}{{ site.name }}{% endif %}</h1>
-              <hr class="small">
-              <span class="page-description" itemprop="description">{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines }}{% else %}{{ site.description | markdownify | strip_html | strip_newlines }}{% endif %}</span>
+<main role="main" itemprop="mainContentOfPage">
+  <article class="page-content">
+    <!-- Page header -->
+    <header class="intro-header" style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}')">
+      <div class="dark-background">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading">
+                <h1 class="page-title" itemprop="name">{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }}{% else %}{{ site.name }}{% endif %}</h1>
+                <hr class="small">
+                <span class="page-description" itemprop="description">{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines }}{% else %}{{ site.description | markdownify | strip_html | strip_newlines }}{% endif %}</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Page content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-body markdown-body clearfix">
-          {{ content }}
+    <!-- Page content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="page-body markdown-body clearfix">
+            {{ content }}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</article>
+  </article>
+</main>
 
 {% include footer.html %}
