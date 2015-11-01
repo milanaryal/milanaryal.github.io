@@ -13,7 +13,7 @@ permalink: /404.html
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{ page.title | markdownify | strip_html | strip_newlines }} &mdash; {{ site.name }}</title>
+    <title>{{ page.title | markdownify | strip_html | strip_newlines | escape_once }} &mdash; {{ site.name }}</title>
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site.name }}">
     <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site.name }}">

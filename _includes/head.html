@@ -1,5 +1,4 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-
   {% if page.excerpt %}
     {% assign page_description = page.excerpt %}
   {% elsif page.description %}
@@ -7,18 +6,18 @@
   {% else %}
     {% assign page_description = site.description %}
   {% endif %}
-  {% capture meta_description %}{{ page_description | markdownify | strip_html | strip_newlines | truncate: 160 }}{% endcapture %}
+  {% capture meta_description %}{{ page_description | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% endcapture %}
 
   <!-- Basic page needs -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }} &mdash; {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-  <meta name="title" content="{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }}{% else %}{{ site.name }}{% endif %}">
+  <title>{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines | escape_once }} &mdash; {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+  <meta name="title" content="{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
   <meta name="description" content="{{ meta_description }}">
   {% if page.date %}<meta name="author" content="{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}">{% endif %}
 
   <!-- Open Graph tags -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:description" content="{{ meta_description }}">
@@ -42,15 +41,15 @@
   <!-- SEO -->
   {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.previous.title | markdownify | strip_html | strip_newlines }}">{% endif %}
-  {% if page.next.url %}<link rel="next" href="{{ page.next.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.next.title | markdownify | strip_html | strip_newlines }}">{% endif %}
+  {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.previous.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  {% if page.next.url %}<link rel="next" href="{{ page.next.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.next.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
 
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "{{ site.name | markdownify | strip_html | strip_newlines }}",
-    "alternateName": "{{ site.description | markdownify | strip_html | strip_newlines }}",
+    "name": "{{ site.name | markdownify | strip_html | strip_newlines | escape_once }}",
+    "alternateName": "{{ site.description | markdownify | strip_html | strip_newlines | escape_once }}",
     "url": "{{ site.url }}/",
     "potentialAction": {
       "@type": "SearchAction",

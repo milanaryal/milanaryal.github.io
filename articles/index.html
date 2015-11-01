@@ -11,9 +11,9 @@ title: "Articles"
   </div>
   <a itemprop="url" href="{{ post.url }}">
     <div class="clearfix">
-      <h2 class="post-preview-title" itemprop="name headline">{{ post.title | markdownify | strip_html | strip_newlines }}</h2>
+      <h2 class="post-preview-title" itemprop="name headline">{{ post.title | markdownify | strip_html | strip_newlines | escape_once }}</h2>
       {% if post.excerpt and post.excerpt != empty %}
-        <p class="post-preview-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>
+        <p class="post-preview-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}</p>
       {% endif %}
     </div>
   </a>
