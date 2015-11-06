@@ -111,6 +111,7 @@ module.exports = function (grunt) {
     // CSS build configuration
     scsslint: {
       options: {
+        bundleExec: true,
         config: '<%= project.src %>/scss/bootstrap/.scss-lint.yml',
         reporterOutput: null
       },
@@ -139,6 +140,7 @@ module.exports = function (grunt) {
           'Android >= 4',
           'Chrome >= 35',
           'Firefox >= 31',
+          'Edge >= 12',
           'Explorer >= 9',
           'iOS >= 7',
           'Opera >= 12',
