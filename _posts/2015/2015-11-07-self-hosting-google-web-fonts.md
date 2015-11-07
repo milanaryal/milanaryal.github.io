@@ -20,9 +20,9 @@ First lets check out the pros and cons of self-hosting Google web fonts ---
 
 > Sleep better at night, especially if you're a web developer.
 
-You have to work a little hard to self-host Google web fonts. Google Fonts does provide local '.ttf' font files but does not provide necessary CSS and web font files with format like '.woff', '.woff2', etc. which is necessary.
+You have to work a little hard to self-host Google web fonts because Google does not provide any direct links to download all the popular font formats `.eot`, `.woff`, `.woff2`, `.ttf` and `.svg` files and a customized CSS for self-hosting them.
 
-So following web tools will help you to host Google web fonts on your own server:
+So to fix this problem following web tools will help you to host Google web fonts on your own server:
 
 #### [Google web fonts helper](http://google-webfonts-helper.herokuapp.com/fonts)
 
@@ -38,4 +38,4 @@ This is a similar and alternative to Google web fonts helper. A little disadvant
 
 If you need to convert a font for which you have the rights, there's Font Squirrel web font generator. This tool can convert a font to all the popular formats.
 
-To generate the web fonts you have to download the '.ttf' font files, upload to Font Squirrel web font generator, choose the browser support, copy the CSS and download the font files.
+To generate the web fonts you have to download the `.ttf` (Google Fonts does provide direct link to download only `.ttf`) font files, upload to Font Squirrel web font generator, choose the browser support, copy the CSS and download the font files.
