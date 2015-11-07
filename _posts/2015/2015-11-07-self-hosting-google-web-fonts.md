@@ -10,6 +10,8 @@ First lets check out the pros and cons of self-hosting Google web fonts ---
 
 #### Pros of self-hosting Google web fonts
 
+> Sleep better at night, especially if you're a web developer.
+
 * Less HTTP request, which helps to load your site a little faster.
 * You don't have to worry about the downtime of Google's CDN.
 * Control over the font files.
@@ -18,7 +20,7 @@ First lets check out the pros and cons of self-hosting Google web fonts ---
 
 * You have to regularly check for the updates.
 
-> Sleep better at night, especially if you're a web developer.
+---
 
 You have to work a little hard to self-host Google web fonts because Google does not provide any direct links to download all the popular font formats `.eot`, `.woff`, `.woff2`, `.ttf` and `.svg` files and a customized CSS for self-hosting them.
 
@@ -26,7 +28,7 @@ So to fix this problem following web tools will help you to host Google web font
 
 #### [Google web fonts helper](http://google-webfonts-helper.herokuapp.com/fonts)
 
-A Hazzle-Free Way to self-host Google Fonts in few easy steps. Google web fonts helper is a free tool created by [Mario Ranftl](http://ranf.tl/2014/12/23/self-hosting-google-web-fonts/) which uses the Google Fonts API that does all the hard work for us to self-host Google web fonts. It also allows you to select more than one font variant, which saves a lot of time.
+Google web fonts helper is a free tool created by [Mario Ranftl](http://ranf.tl/2014/12/23/self-hosting-google-web-fonts/) which uses the Google Fonts API that does all the hard work for us to self-host Google web fonts in few easy steps. It also allows you to select more than one font variant, which saves a lot of time.
 
 All you need is to choose your font, choose browser support, copy the CSS and download the font files.
 
