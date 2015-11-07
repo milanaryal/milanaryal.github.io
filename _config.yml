@@ -6,6 +6,7 @@ exclude:
   - LICENSE
   - CNAME
   - Gemfile
+  - Gemfile.lock
   - src
   - node_modules
   - package.json

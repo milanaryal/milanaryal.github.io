@@ -17,15 +17,15 @@
     "render-test.md"
   ],
   "homepage": "https://github.com/primer/markdown",
-  "version": "2.3.0",
-  "_release": "2.3.0",
+  "version": "2.4.0",
+  "_release": "2.4.0",
   "_resolution": {
     "type": "version",
-    "tag": "v2.3.0",
-    "commit": "c1d78b7cb820f0b3d69617f1ccf405a5d9322141"
+    "tag": "v2.4.0",
+    "commit": "a7f441f5432da5a134c319d997f0731be97494f9"
   },
   "_source": "git://github.com/primer/markdown.git",
-  "_target": "~2.3.0",
+  "_target": "~2.4.0",
   "_originalSource": "primer-markdown",
   "_direct": true
 }

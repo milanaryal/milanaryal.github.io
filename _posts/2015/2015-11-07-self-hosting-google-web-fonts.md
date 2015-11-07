@@ -1,7 +1,7 @@
 ---
 title: "Self-hosting Google web fonts"
 date: 2015-11-07T12:36:32+05:45
-excerpt: "Self-hosting Google Fonts on own server and taking control over the font files."
+excerpt: "Self-hosting Google Fonts on your own server and taking control over the font files."
 ---
 
 Using web fonts from [Google Fonts](https://www.google.com/fonts), generally makes sense to take advantages of the files hosted on Google's CDN. However a lot of web developers prefer to host web fonts on their own servers, so that they have more control over the actual font files.
@@ -10,11 +10,11 @@ First lets check out the pros and cons of self-hosting Google web fonts ---
 
 #### Pros of self-hosting Google web fonts
 
-> Sleep better at night, especially if you're a web developer.
-
 * Less HTTP request, which helps to load your site a little faster.
 * You don't have to worry about the downtime of Google's CDN.
 * Control over the font files.
+
+> Sleep better at night, especially if you're a web developer.
 
 #### Cons of self-hosting Google web fonts
 
