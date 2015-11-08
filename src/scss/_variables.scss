@@ -12,10 +12,10 @@ $theme-color-white:             white; // #fff
 $theme-color-black:             black; // #000
 $theme-color-gray:              gray; // #808080
 
-$theme-font-family-sans-serif:   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$theme-font-family-serif:        "Lora", Georgia, "Times New Roman", Times, serif !default;
-$theme-font-family-monospace:    Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$theme-font-family-base:         -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif !default;
+$theme-font-family-sans-serif:   "Open Sans", "Helvetica Neue", Helvetica, "Liberation Sans", FreeSans, Arial, sans-serif !default;
+$theme-font-family-serif:        "Lora", Georgia, "Liberation Serif", FreeSerif, "Times New Roman", Times, serif !default;
+$theme-font-family-monospace:    Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", FreeMono, Consolas, "Courier New", monospace !default;
+$theme-font-family-base:         -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif !default;
 
 $theme-facebook-color:           #3b5998;
 $theme-flickr-color:             #ff0084;

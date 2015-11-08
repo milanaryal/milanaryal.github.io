@@ -7861,7 +7861,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -7879,7 +7879,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Liberation Sans", FreeSans, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: -.02em;
@@ -7906,7 +7906,7 @@ a:hover, a:focus {
   left: 0;
   z-index: 3;
   width: 100%;
-  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif;
   background: white;
   border-color: white;
 }
@@ -8215,7 +8215,7 @@ hr.small {
 .page-description {
   display: block;
   margin: 10px 0 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Liberation Sans", FreeSans, Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.1;
@@ -8263,7 +8263,7 @@ hr.small {
 .copyright {
   margin-top: 30px;
   margin-bottom: 0;
-  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, .6);
   text-align: center;
@@ -8279,7 +8279,7 @@ hr.small {
 
 .btn {
   padding: 15px 25px;
-  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none !important;
@@ -8320,7 +8320,7 @@ hr.small {
 .pager li > a,
 .pager li > span {
   padding: 12.5px 20px;
-  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: rgba(0, 0, 0, .44);
@@ -8375,7 +8375,7 @@ hr.small {
 }
 
 .post-preview-meta {
-  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif;
   font-size: 12px;
   color: rgba(0, 0, 0, .44);
 }
@@ -8389,7 +8389,7 @@ hr.small {
 .post-preview-excerpt {
   margin-top: 10px;
   margin-bottom: 0;
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Lora", Georgia, "Liberation Serif", FreeSerif, "Times New Roman", Times, serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: .005rem;
@@ -8426,7 +8426,7 @@ hr.small {
   display: block;
   padding-bottom: 10px;
   margin: 0 0 10px;
-  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.1;
@@ -8588,7 +8588,7 @@ hr.small {
 }
 
 .error-page-message {
-  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -8639,7 +8639,7 @@ hr.small {
 }
 
 .markdown-body {
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Lora", Georgia, "Liberation Serif", FreeSerif, "Times New Roman", Times, serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -8719,7 +8719,7 @@ hr.small {
 .markdown-body h3, .markdown-body h4 {
   margin-top: 40px;
   margin-bottom: 15px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Liberation Sans", FreeSans, Arial, sans-serif;
   font-style: normal;
   line-height: 1.2;
   letter-spacing: -.02em;
@@ -8803,7 +8803,7 @@ hr.small {
 .markdown-body figcaption {
   display: block;
   margin-top: 10px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Liberation Sans", FreeSans, Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -8913,7 +8913,7 @@ hr.small {
 .footnotes::before {
   display: block;
   margin-bottom: 10px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Liberation Sans", FreeSans, Arial, sans-serif;
   font-weight: 700;
   content: 'Footnotes';
 }
@@ -8966,7 +8966,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", FreeMono, Consolas, "Courier New", monospace;
 }
 
 code {
@@ -9598,7 +9598,7 @@ kbd {
   padding: 1.1em 1.3em 1.2em;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Segoe UI", Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", Helvetica, "Roboto", "Liberation Sans", FreeSans, "Segoe UI", Arial, sans-serif;
   font-size: .8em;
   line-height: normal;
   background: #fafafa;
