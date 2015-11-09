@@ -14,7 +14,7 @@ $theme-color-gray:              gray; // #808080
 
 $theme-font-family-sans-serif:   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $theme-font-family-serif:        "Lora", Georgia, "Times New Roman", Times, serif !default;
-$theme-font-family-monospace:    Menlo, Consolas, "DejaVu Sans Mono", Monaco, "Courier New", "Liberation Mono", monospace !default;
+$theme-font-family-monospace:    Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif !default;
 $theme-font-family-base:         -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif !default;
 
 $theme-facebook-color:           #3b5998;

@@ -2,12 +2,12 @@
 layout: page
 title: "About"
 description: "This is what I do."
-excerpt: "I'm Milan, a student living in Kathmandu, Nepal who loves designing the web and listening music a lot."
+excerpt: "I'm Milan, a student living in Kathmandu, Nepal who loves designing for the web and listening music a lot."
 featured_image: "/assets/img/about-bg.jpg"
 permalink: /about/
 ---
 
-Hello, my name is Milan Aryal (मिलन अर्याल)[^name] and I'm a student living in Kathmandu, Nepal who loves designing the web and listening music a lot.
+Hello, my name is Milan Aryal (मिलन अर्याल)[^name] and I'm a student living in Kathmandu, Nepal who loves designing for the web and listening music a lot.
 
 [^name]: The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification. :blush:
 
