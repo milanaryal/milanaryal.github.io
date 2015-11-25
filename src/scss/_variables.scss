@@ -12,6 +12,8 @@ $theme-color-white:             white; // #fff
 $theme-color-black:             black; // #000
 $theme-color-gray:              gray; // #808080
 
+$theme-brand-primary:           darken($theme-brand-color, 6.5%); // #0c86e6
+
 $theme-font-family-sans-serif:   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $theme-font-family-serif:        "Lora", Georgia, "Times New Roman", Times, serif !default;
 $theme-font-family-monospace:    Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif !default;

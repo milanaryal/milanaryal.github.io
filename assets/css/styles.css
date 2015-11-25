@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
 /*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -1924,9 +1924,12 @@ output {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 }
 
 .form-control:focus {
@@ -1947,6 +1950,11 @@ output {
 
 .form-control::-webkit-input-placeholder {
   color: #999;
+}
+
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
 }
 
 .form-control[disabled], .form-control[readonly],
@@ -2478,7 +2486,7 @@ select[multiple].input-lg,
 
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 14.333333px;
+    padding-top: 11px;
     font-size: 18px;
   }
 }
@@ -2583,13 +2591,10 @@ fieldset[disabled] a.btn {
   background-image: none;
 }
 
-.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active,
-fieldset[disabled] .btn-default,
+.btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus,
 fieldset[disabled] .btn-default:hover,
 fieldset[disabled] .btn-default:focus,
-fieldset[disabled] .btn-default.focus,
-fieldset[disabled] .btn-default:active,
-fieldset[disabled] .btn-default.active {
+fieldset[disabled] .btn-default.focus {
   background-color: #fff;
   border-color: #ccc;
 }
@@ -2638,13 +2643,10 @@ fieldset[disabled] .btn-default.active {
   background-image: none;
 }
 
-.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active,
-fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
-fieldset[disabled] .btn-primary.focus,
-fieldset[disabled] .btn-primary:active,
-fieldset[disabled] .btn-primary.active {
+fieldset[disabled] .btn-primary.focus {
   background-color: #337ab7;
   border-color: #2e6da4;
 }
@@ -2693,13 +2695,10 @@ fieldset[disabled] .btn-primary.active {
   background-image: none;
 }
 
-.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active,
-fieldset[disabled] .btn-success,
+.btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus,
 fieldset[disabled] .btn-success:hover,
 fieldset[disabled] .btn-success:focus,
-fieldset[disabled] .btn-success.focus,
-fieldset[disabled] .btn-success:active,
-fieldset[disabled] .btn-success.active {
+fieldset[disabled] .btn-success.focus {
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
@@ -2748,13 +2747,10 @@ fieldset[disabled] .btn-success.active {
   background-image: none;
 }
 
-.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, .btn-info[disabled]:active, .btn-info[disabled].active,
-fieldset[disabled] .btn-info,
+.btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus,
 fieldset[disabled] .btn-info:hover,
 fieldset[disabled] .btn-info:focus,
-fieldset[disabled] .btn-info.focus,
-fieldset[disabled] .btn-info:active,
-fieldset[disabled] .btn-info.active {
+fieldset[disabled] .btn-info.focus {
   background-color: #5bc0de;
   border-color: #46b8da;
 }
@@ -2803,13 +2799,10 @@ fieldset[disabled] .btn-info.active {
   background-image: none;
 }
 
-.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active,
-fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus,
 fieldset[disabled] .btn-warning:hover,
 fieldset[disabled] .btn-warning:focus,
-fieldset[disabled] .btn-warning.focus,
-fieldset[disabled] .btn-warning:active,
-fieldset[disabled] .btn-warning.active {
+fieldset[disabled] .btn-warning.focus {
   background-color: #f0ad4e;
   border-color: #eea236;
 }
@@ -2858,13 +2851,10 @@ fieldset[disabled] .btn-warning.active {
   background-image: none;
 }
 
-.btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active,
-fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus,
 fieldset[disabled] .btn-danger:hover,
 fieldset[disabled] .btn-danger:focus,
-fieldset[disabled] .btn-danger.focus,
-fieldset[disabled] .btn-danger:active,
-fieldset[disabled] .btn-danger.active {
+fieldset[disabled] .btn-danger.focus {
   background-color: #d9534f;
   border-color: #d43f3a;
 }
@@ -3304,6 +3294,7 @@ tbody.collapse.in {
 }
 
 .btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -3312,6 +3303,7 @@ tbody.collapse.in {
 .btn-group-vertical > .btn:last-child:not(:first-child) {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
@@ -3379,6 +3371,10 @@ tbody.collapse.in {
   float: left;
   width: 100%;
   margin-bottom: 0;
+}
+
+.input-group .form-control:focus {
+  z-index: 3;
 }
 
 .input-group-addon,
@@ -5106,10 +5102,8 @@ button.list-group-item-danger.active:focus {
   font-style: normal;
   font-weight: 300;
 
-  src: url("../fonts/open-sans-v13-latin-300.eot");
-  /* IE9 Compat Modes */
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v13-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v13-latin-300.woff2") format("woff2"), url("../fonts/open-sans-v13-latin-300.woff") format("woff"), url("../fonts/open-sans-v13-latin-300.ttf") format("truetype"), url("../fonts/open-sans-v13-latin-300.svg#OpenSans") format("svg");
-  /* Legacy iOS */
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v13-latin-300.woff2") format("woff2"), url("../fonts/open-sans-v13-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-regular - latin */
@@ -5118,10 +5112,8 @@ button.list-group-item-danger.active:focus {
   font-style: normal;
   font-weight: 400;
 
-  src: url("../fonts/open-sans-v13-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local("Open Sans"), local("OpenSans"), url("../fonts/open-sans-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v13-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v13-latin-regular.woff") format("woff"), url("../fonts/open-sans-v13-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v13-latin-regular.svg#OpenSans") format("svg");
-  /* Legacy iOS */
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/open-sans-v13-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v13-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-700 - latin */
@@ -5130,10 +5122,8 @@ button.list-group-item-danger.active:focus {
   font-style: normal;
   font-weight: 700;
 
-  src: url("../fonts/open-sans-v13-latin-700.eot");
-  /* IE9 Compat Modes */
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v13-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v13-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v13-latin-700.woff") format("woff"), url("../fonts/open-sans-v13-latin-700.ttf") format("truetype"), url("../fonts/open-sans-v13-latin-700.svg#OpenSans") format("svg");
-  /* Legacy iOS */
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v13-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v13-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lora-regular - latin */
@@ -5142,10 +5132,8 @@ button.list-group-item-danger.active:focus {
   font-style: normal;
   font-weight: 400;
 
-  src: url("../fonts/lora-v9-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local("Lora"), local("Lora-Regular"), url("../fonts/lora-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lora-v9-latin-regular.woff2") format("woff2"), url("../fonts/lora-v9-latin-regular.woff") format("woff"), url("../fonts/lora-v9-latin-regular.ttf") format("truetype"), url("../fonts/lora-v9-latin-regular.svg#Lora") format("svg");
-  /* Legacy iOS */
+  src: local("Lora"), local("Lora-Regular"), url("../fonts/lora-v9-latin-regular.woff2") format("woff2"), url("../fonts/lora-v9-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lora-italic - latin */
@@ -5154,10 +5142,8 @@ button.list-group-item-danger.active:focus {
   font-style: italic;
   font-weight: 400;
 
-  src: url("../fonts/lora-v9-latin-italic.eot");
-  /* IE9 Compat Modes */
-  src: local("Lora Italic"), local("Lora-Italic"), url("../fonts/lora-v9-latin-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lora-v9-latin-italic.woff2") format("woff2"), url("../fonts/lora-v9-latin-italic.woff") format("woff"), url("../fonts/lora-v9-latin-italic.ttf") format("truetype"), url("../fonts/lora-v9-latin-italic.svg#Lora") format("svg");
-  /* Legacy iOS */
+  src: local("Lora Italic"), local("Lora-Italic"), url("../fonts/lora-v9-latin-italic.woff2") format("woff2"), url("../fonts/lora-v9-latin-italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lora-700 - latin */
@@ -5166,10 +5152,8 @@ button.list-group-item-danger.active:focus {
   font-style: normal;
   font-weight: 700;
 
-  src: url("../fonts/lora-v9-latin-700.eot");
-  /* IE9 Compat Modes */
-  src: local("Lora Bold"), local("Lora-Bold"), url("../fonts/lora-v9-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/lora-v9-latin-700.woff2") format("woff2"), url("../fonts/lora-v9-latin-700.woff") format("woff"), url("../fonts/lora-v9-latin-700.ttf") format("truetype"), url("../fonts/lora-v9-latin-700.svg#Lora") format("svg");
-  /* Legacy iOS */
+  src: local("Lora Bold"), local("Lora-Bold"), url("../fonts/lora-v9-latin-700.woff2") format("woff2"), url("../fonts/lora-v9-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lora-700italic - latin */
@@ -5178,14 +5162,12 @@ button.list-group-item-danger.active:focus {
   font-style: italic;
   font-weight: 700;
 
-  src: url("../fonts/lora-v9-latin-700italic.eot");
-  /* IE9 Compat Modes */
-  src: local("Lora Bold Italic"), local("Lora-BoldItalic"), url("../fonts/lora-v9-latin-700italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lora-v9-latin-700italic.woff2") format("woff2"), url("../fonts/lora-v9-latin-700italic.woff") format("woff"), url("../fonts/lora-v9-latin-700italic.ttf") format("truetype"), url("../fonts/lora-v9-latin-700italic.svg#Lora") format("svg");
-  /* Legacy iOS */
+  src: local("Lora Bold Italic"), local("Lora-BoldItalic"), url("../fonts/lora-v9-latin-700italic.woff2") format("woff2"), url("../fonts/lora-v9-latin-700italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /*!
- *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
@@ -5195,13 +5177,13 @@ button.list-group-item-danger.active:focus {
   font-style: normal;
   font-weight: normal;
 
-  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
 }
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px / 1 FontAwesome;
   font-size: inherit;
 
   text-rendering: auto;
@@ -5278,23 +5260,6 @@ button.list-group-item-danger.active:focus {
 }
 
 .fa.fa-pull-right {
-  margin-left: .3em;
-}
-
-/* Deprecated as of 4.4.0 */
-.pull-right {
-  float: right;
-}
-
-.pull-left {
-  float: left;
-}
-
-.fa.pull-left {
-  margin-right: .3em;
-}
-
-.fa.pull-right {
   margin-left: .3em;
 }
 
@@ -7856,6 +7821,86 @@ button.list-group-item-danger.active:focus {
   content: "";
 }
 
+.fa-reddit-alien:before {
+  content: "";
+}
+
+.fa-edge:before {
+  content: "";
+}
+
+.fa-credit-card-alt:before {
+  content: "";
+}
+
+.fa-codiepie:before {
+  content: "";
+}
+
+.fa-modx:before {
+  content: "";
+}
+
+.fa-fort-awesome:before {
+  content: "";
+}
+
+.fa-usb:before {
+  content: "";
+}
+
+.fa-product-hunt:before {
+  content: "";
+}
+
+.fa-mixcloud:before {
+  content: "";
+}
+
+.fa-scribd:before {
+  content: "";
+}
+
+.fa-pause-circle:before {
+  content: "";
+}
+
+.fa-pause-circle-o:before {
+  content: "";
+}
+
+.fa-stop-circle:before {
+  content: "";
+}
+
+.fa-stop-circle-o:before {
+  content: "";
+}
+
+.fa-shopping-bag:before {
+  content: "";
+}
+
+.fa-shopping-basket:before {
+  content: "";
+}
+
+.fa-hashtag:before {
+  content: "";
+}
+
+.fa-bluetooth:before {
+  content: "";
+}
+
+.fa-bluetooth-b:before {
+  content: "";
+}
+
+.fa-percent:before {
+  content: "";
+}
+
 html {
   font-size: 18px;
 }
@@ -7958,8 +8003,10 @@ a:hover, a:focus {
     background-color: rgba(255, 255, 255, .9);
     border-bottom: 1px solid #f2f2f2;
     -webkit-transition: -webkit-transform .3s;
-         -o-transition:      -o-transform .3s;
+         -o-transition:         transform .3s, -o-transform .3s;
+            transition: -webkit-transform .3s;
             transition:         transform .3s;
+            transition:         transform .3s, -webkit-transform .3s, -o-transform .3s;
   }
   .navbar-top.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -8043,8 +8090,10 @@ a:hover, a:focus {
   border-radius: 4px;
   opacity: .95;
   -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-       -o-transition: opacity 1s ease, -o-transform 1s ease;
+       -o-transition: opacity 1s ease, transform 1s ease, -o-transform 1s ease;
+          transition: opacity 1s ease, -webkit-transform 1s ease;
           transition: opacity 1s ease, transform 1s ease;
+          transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease, -o-transform 1s ease;
   -webkit-transform: rotateX(0deg);
       -ms-transform: rotateX(0deg);
           transform: rotateX(0deg);
@@ -9357,7 +9406,6 @@ kbd {
           transition-property: background-color;
 
   -webkit-backface-visibility: hidden;
-      -ms-backface-visibility: hidden;
           backface-visibility: hidden;
   font-smoothing: antialiased;
 }
@@ -9440,8 +9488,10 @@ kbd {
        -o-transition-duration: .25s;
           transition-duration: .25s;
   -webkit-transition-property: opacity, -webkit-transform;
-       -o-transition-property: opacity, -o-transform;
+       -o-transition-property: opacity, transform, -o-transform;
+          transition-property: opacity, -webkit-transform;
           transition-property: opacity, transform;
+          transition-property: opacity, transform, -webkit-transform, -o-transform;
   -webkit-transform: scale(.1) translateZ(0);
       -ms-transform: scale(.1) translateZ(0);
           transform: scale(.1) translateZ(0);
@@ -9475,8 +9525,10 @@ kbd {
   border-radius: 0;
   opacity: 1;
   -webkit-transition: -webkit-transform .3s ease;
-       -o-transition:      -o-transform .3s ease;
+       -o-transition:         transform .3s ease, -o-transform .3s ease;
+          transition: -webkit-transform .3s ease;
           transition:         transform .3s ease;
+          transition:         transform .3s ease, -webkit-transform .3s ease, -o-transform .3s ease;
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
        -o-transform: translateY(100%);

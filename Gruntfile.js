@@ -9,6 +9,20 @@ module.exports = function (grunt) {
 
   // Display the elapsed execution time of grunt tasks.
   require('time-grunt')(grunt);
+  // Add vendor prefixes.
+  var autoprefixer = require('autoprefixer')({
+    browsers: [
+      'Android 2.3',
+      'Android >= 4',
+      'Chrome >= 35',
+      'Firefox >= 31',
+      'Edge >= 12',
+      'Explorer >= 9',
+      'iOS >= 7',
+      'Opera >= 12',
+      'Safari >= 7.1'
+    ]
+  });
 
   // Project configuration.
   grunt.initConfig({
@@ -67,7 +81,7 @@ module.exports = function (grunt) {
     // JS build configuration
     jshint: {
       options: {
-        jshintrc: '<%= project.src %>/js/bootstrap/.jshintrc'
+        jshintrc: '<%= project.src %>/js/.jshintrc'
       },
       core: {
         src: ['<%= project.js %>', '!<%= project.src %>/js/jquery.js']
@@ -76,7 +90,7 @@ module.exports = function (grunt) {
 
     jscs: {
       options: {
-        config: '<%= project.src %>/js/bootstrap/.jscsrc'
+        config: '<%= project.src %>/js/.jscsrc'
       },
       core: {
         src: ['<%= project.js %>', '!<%= project.src %>/js/jquery.js']
@@ -100,7 +114,7 @@ module.exports = function (grunt) {
           warnings: false
         },
         mangle: true,
-        preserveComments: '0'
+        preserveComments: false
       },
       core: {
         src: '<%= project.js %>',
@@ -112,7 +126,7 @@ module.exports = function (grunt) {
     scsslint: {
       options: {
         bundleExec: true,
-        config: '<%= project.src %>/scss/bootstrap/.scss-lint.yml',
+        config: '<%= project.src %>/scss/.scss-lint.yml',
         reporterOutput: null
       },
       src: ['<%= project.src %>/scss/*.scss', '!<%= project.src %>/scss/bootstrap/_normalize.scss']
@@ -133,23 +147,13 @@ module.exports = function (grunt) {
       }
     },
 
-    autoprefixer: {
-      options: {
-        browsers: [
-          'Android 2.3',
-          'Android >= 4',
-          'Chrome >= 35',
-          'Firefox >= 31',
-          'Edge >= 12',
-          'Explorer >= 9',
-          'iOS >= 7',
-          'Opera >= 12',
-          'Safari >= 7.1'
-        ]
-      },
+    postcss: {
       core: {
         options: {
-          map: true
+          map: true,
+          processors: [
+            autoprefixer
+          ]
         },
         src: '<%= project.assets %>/css/styles.css'
       }
@@ -157,7 +161,7 @@ module.exports = function (grunt) {
 
     csscomb: {
       options: {
-        config: '<%= project.src %>/scss/bootstrap/.csscomb.json'
+        config: '<%= project.src %>/scss/.csscomb.json'
       },
       core: {
         src: '<%= project.assets %>/css/styles.css',
@@ -168,7 +172,7 @@ module.exports = function (grunt) {
     cssmin: {
       options: {
         compatibility: 'ie9',
-        keepSpecialComments: '0',
+        keepSpecialComments: false,
         // sourceMap: true,
         noAdvanced: true
       },
@@ -220,7 +224,7 @@ module.exports = function (grunt) {
     'uglify',
     'scsslint',
     'sass',
-    'autoprefixer',
+    'postcss',
     'csscomb',
     'cssmin',
     'copy'

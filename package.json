@@ -11,8 +11,8 @@
     "url": "https://github.com/MilanAryal/milanaryal.github.io.git"
   },
   "devDependencies": {
+    "autoprefixer": "*",
     "grunt": "*",
-    "grunt-autoprefixer": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-copy": "*",
@@ -24,6 +24,7 @@
     "grunt-contrib-watch": "*",
     "grunt-csscomb": "*",
     "grunt-jscs": "*",
+    "grunt-postcss": "*",
     "grunt-sass": "*",
     "grunt-scss-lint": "*",
     "load-grunt-tasks": "*",

@@ -22,11 +22,11 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
-    "bootstrap": "~3.3.5",
-    "bootstrap-sass": "~3.3.5",
-    "font-awesome": "~4.4.0",
+    "bootstrap": "~3.3.6",
+    "bootstrap-sass": "3.3.6",
+    "font-awesome": "4.5.0",
     "anchor-js": "~2.0.0",
-    "primer-markdown": "~2.4.0",
-    "bigfoot": "~2.1.1"
+    "primer-markdown": "~2.5.0",
+    "bigfoot": "~2.1.3"
   }
 }
