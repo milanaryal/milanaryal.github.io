@@ -65,9 +65,9 @@ paginate:      10
 
 # Collections
 collections:
-  - docs:
-      output: true
-      permalink: /docs/:path/
+  docs:
+    output: true
+    permalink: /docs/:path/
 
 # Front matter defaults
 defaults:
