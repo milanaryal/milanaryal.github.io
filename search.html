@@ -8,8 +8,8 @@ permalink: /search/
 
 <h3 class="search-heading"><i class="fa fa-search"></i> Search {{ site.name }} articles</h3>
 
-<div class="search-box" id="cse-search">
-  <!-- Google CSE Search Box Begins  -->
+<div class="search-wrapper" id="cse-search">
+  <!-- Google CSE search box begins  -->
   <form class="search-form" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
     <div class="row">
       <div class="col-xs-12">
@@ -35,5 +35,8 @@ permalink: /search/
       s.parentNode.insertBefore(gcse, s);
     })();
   </script>
-  <gcse:searchresults-only linktarget="_parent"></gcse:searchresults-only>
+
+  <div class="search-results">
+    <gcse:searchresults-only linktarget="_parent"></gcse:searchresults-only>
+  </div>
 </div><!-- ./search-box -->
