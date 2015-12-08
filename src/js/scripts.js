@@ -99,16 +99,29 @@
 
   /**
    * ------------------------------------------------------------------------
+   * Loading bar - NProgress
+   * ------------------------------------------------------------------------
+   */
+
+   NProgress.configure({
+     showSpinner: false,
+     template: '<div class="bar" role="bar"><div class="peg"></div></div>'
+   });
+
+   NProgress.start();
+   NProgress.done();
+
+
+  /**
+   * ------------------------------------------------------------------------
    * Footnotes - bigfootJS
    * ------------------------------------------------------------------------
    */
 
-  var bigfoot = $.bigfoot(
-    {
-      deleteOnUnhover: false,
-      preventPageScroll: false
-    }
-  );
+  var bigfoot = $.bigfoot({
+    deleteOnUnhover: false,
+    preventPageScroll: false
+  });
 
 
 }(jQuery);

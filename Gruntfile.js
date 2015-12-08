@@ -12,15 +12,15 @@ module.exports = function (grunt) {
   // Add vendor prefixes.
   var autoprefixer = require('autoprefixer')({
     browsers: [
-      'Android 2.3',
-      'Android >= 4',
       'Chrome >= 35',
       'Firefox >= 31',
       'Edge >= 12',
       'Explorer >= 9',
-      'iOS >= 7',
-      'Opera >= 12',
-      'Safari >= 7.1'
+      'iOS >= 8',
+      'Safari >= 8',
+      'Android 2.3',
+      'Android >= 4',
+      'Opera >= 12'
     ]
   });
 
@@ -55,6 +55,7 @@ module.exports = function (grunt) {
         // '<%= project.src %>/js/bootstrap/scrollspy.js',
         // '<%= project.src %>/js/bootstrap/tab.js',
         // '<%= project.src %>/js/bootstrap/affix.js',
+        '<%= project.src %>/js/nprogress.js',
         '<%= project.src %>/js/anchor.js',
         '<%= project.src %>/js/bigfoot.js',
         '<%= project.src %>/js/scripts.js'

@@ -8020,7 +8020,6 @@ a:hover, a:focus {
 .home-wrapper {
   position: relative;
   z-index: 2;
-  /* W3C */
   display:    -moz-flex;
   display: -webkit-flex;
   display:     -ms-flex;
@@ -8032,11 +8031,7 @@ a:hover, a:focus {
   font-size: 16px;
           flex-direction: column;
   background: -webkit-linear-gradient(90deg, #d3959b 10%, #bfe6ba 90%);
-  /* Chrome 10+, Saf5.1+ */
-  /* FF3.6+ */
-  /* IE10 */
   background:      -o-linear-gradient(90deg, #d3959b 10%, #bfe6ba 90%);
-  /* Opera 11.10+ */
   background: -webkit-linear-gradient(0deg, #d3959b 10%, #bfe6ba 90%);
   background:      -o-linear-gradient(0deg, #d3959b 10%, #bfe6ba 90%);
   background:         linear-gradient(90deg, #d3959b 10%, #bfe6ba 90%);
@@ -9354,6 +9349,37 @@ kbd {
 
 .highlight .il {
   color: #099;
+}
+
+#nprogress {
+  /* Make clicks pass-through */
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1031;
+  width: 100%;
+  height: 2px;
+  background: #29d;
+}
+
+#nprogress .peg {
+  position: absolute;
+  right: 0;
+  /* Fancy blur effect */
+  display: block;
+  width: 100px;
+  height: 100%;
+  -webkit-box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+          box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1.0;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+       -o-transform: rotate(3deg) translate(0px, -4px);
+          transform: rotate(3deg) translate(0px, -4px);
 }
 
 .anchorjs-link {
