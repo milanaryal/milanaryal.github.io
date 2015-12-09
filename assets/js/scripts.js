@@ -11394,13 +11394,13 @@ var anchors = new AnchorJS();
   var interval = setInterval(function() { NProgress.inc(); }, 1000);
 
   // Trigger finish when page fully loaded
-  $(window).load(function () {
+  $(window).on('load', function () {
     clearInterval(interval);
     NProgress.done();
   });
 
   // Trigger bar when exiting the page
-  $(window).unload(function () {
+  $(window).on('unload', function () {
     NProgress.start();
   });
 
@@ -11452,7 +11452,7 @@ var anchors = new AnchorJS();
         }
         this.previousTop = currentTop;
       });
-    };
+    }
 
 
     /**
@@ -11464,50 +11464,81 @@ var anchors = new AnchorJS();
      $('[data-toggle="tooltip"]').tooltip();
 
 
-     /**
-      * ------------------------------------------------------------------------
-      * Responsive stuffs
-      * ------------------------------------------------------------------------
-      */
+    /**
+     * ------------------------------------------------------------------------
+     * Responsive stuffs
+     * ------------------------------------------------------------------------
+     */
 
-     // make all images responsive
-     $('img').addClass('img-responsive');
+    // make all images responsive
+    $('img').addClass('img-responsive');
 
-     // responsive table
-     $('table').addClass('table table-responsive table-hover');
+    // responsive table
+    $('.markdown-body>table').addClass('table table-responsive table-hover');
 
-     // responsive embed video
-     $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-     $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
+    // responsive embed video
+    $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
 
-     $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-     $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
+    $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
 
-     $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-     $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
+    $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
 
 
-     /**
-      * ------------------------------------------------------------------------
-      * Social share - Helps to pop-up a window on click
-      * ------------------------------------------------------------------------
-      */
+    /**
+     * ------------------------------------------------------------------------
+     * Elevator - Scroll to top button
+     * ------------------------------------------------------------------------
+     */
 
-     $('.social-share').on('click', function () {
-       var width  = 670; // last update: 575
-       var height = 420; // last update: 400
-       var top    = ($(window).height() - height) / 2;
-       var left   = ($(window).width()  - width)  / 2;
-       var url    = this.href;
-       var opts   = 'status=1' +
-                    ',width='  + width  +
-                    ',height=' + height +
-                    ',top='    + top    +
-                    ',left='   + left;
+    $('.elevator-wrapper').append('<div class="elevator"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>');
 
-       window.open(url, '', opts);
-       return false;
-     });
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+      // duration of the top scrolling animation (in ms)
+      scroll_top_duration = 700,
+      // grab the "back to top" link
+      $back_to_top = $('.elevator');
+
+    // hide or show the "back to top" link
+    $(window).scroll(function () {
+      ($(this).scrollTop() > offset) ? $back_to_top.addClass('elevator-is-visible') : $back_to_top.removeClass('elevator-is-visible');
+    });
+
+    // smooth scroll to top
+    $back_to_top.on('click', function (event) {
+      event.preventDefault();
+      $('body,html').animate({
+          scrollTop: 0
+        }, scroll_top_duration
+      );
+    });
+
+
+    /**
+     * ------------------------------------------------------------------------
+     * Social share - Helps to pop-up a window on click
+     * ------------------------------------------------------------------------
+     */
+
+    $('.social-share').on('click', function () {
+      var width  = 670,
+          height = 420,
+          left   = ($(window).width()  - width)  / 2,
+          top    = ($(window).height() - height) / 2,
+          url    = this.href,
+          opts   = 'status=1' +
+                   ',width='  + width  +
+                   ',height=' + height +
+                   ',top='    + top    +
+                   ',left='   + left;
+
+      window.open(url, '', opts);
+
+      return false;
+    });
 
 
   }); // END document ready function

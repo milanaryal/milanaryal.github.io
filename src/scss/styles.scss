@@ -1,5 +1,5 @@
 // Character encoding
-@charset "utf-8";
+// @charset "utf-8";
 
 /*!
  * Milan Aryal (http://milanaryal.com)
@@ -23,5 +23,6 @@
 
 // Components w/ JavaScript
 @import "nprogress";
-@import "anchor";
 @import "bigfoot-default";
+@import "elevator";
+@import "anchor";
