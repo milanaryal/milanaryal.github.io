@@ -7982,7 +7982,7 @@ a:hover, a:focus {
   }
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 992px) {
   .navbar-top {
     -webkit-transition: background-color .3s;
          -o-transition: background-color .3s;
@@ -8297,7 +8297,7 @@ hr.small {
 }
 
 .info-footer .list-inline a {
-  color: rgba(0, 0, 0, .75);
+  color: rgba(0, 0, 0, .7);
 }
 
 .info-footer .list-inline a:hover, .info-footer .list-inline a:focus {
@@ -9703,53 +9703,54 @@ kbd {
 .elevator {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 25px;
   display: inline-block;
-  width: 48px;
-  height: 48px;
-  overflow: hidden;
+  font-size: 22px;
+  color: rgba(0, 0, 0, .7);
   text-decoration: none;
-  white-space: nowrap;
   cursor: pointer;
   visibility: hidden;
-  background: rgba(0, 0, 0, .7);
   background-image: none;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-          box-shadow: 0 0 10px rgba(0, 0, 0, .05);
   opacity: 0;
-  -webkit-transition: all .3s ease;
-       -o-transition: all .3s ease;
-          transition: all .3s ease;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+       -o-transition: opacity .3s 0s, visibility 0s .3s;
+          transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.elevator.elevator-is-visible, .elevator.elevator-fade-out, .elevator:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+       -o-transition: opacity .3s 0s, visibility 0s 0s;
+          transition: opacity .3s 0s, visibility 0s 0s;
 }
 
 .elevator.elevator-is-visible {
-  z-index: 999;
   /* the button becomes visible */
   visibility: visible;
   opacity: 1;
 }
 
-.elevator .fa {
-  position: relative;
-  top: 12.5px;
-  left: 14.5px;
-  padding: 0;
-  margin: 0;
-  font-size: 20px;
-  color: white;
-  -webkit-transition: all .3s ease;
-       -o-transition: all .3s ease;
-          transition: all .3s ease;
+.elevator.elevator-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
 }
 
 .elevator:hover {
-  background: rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, .8);
+  opacity: 1;
 }
 
-.elevator:hover .fa {
-  top: 5px;
-  color: white;
+@media (max-width: 991px) {
+  .elevator {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .elevator {
+    right: 30px;
+    bottom: 35px;
+    font-size: 24px;
+  }
 }
 
 .anchorjs-link {
@@ -9759,7 +9760,7 @@ kbd {
   opacity: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .anchorjs-link {
     display: none !important;
   }

@@ -31,11 +31,6 @@
     NProgress.done();
   });
 
-  // Trigger bar when exiting the page
-  $(window).on('unload', function () {
-    NProgress.start();
-  });
-
 
   /**
    * ------------------------------------------------------------------------
@@ -59,7 +54,7 @@
      * ------------------------------------------------------------------------
      */
 
-    var MQL = 1170;
+    var MQL = 992;
 
     // primary navigation slide-in effect
     if ($(window).width() > MQL) {
@@ -121,14 +116,16 @@
 
     /**
      * ------------------------------------------------------------------------
-     * Elevator - Scroll to top button
+     * Elevator - Scroll back to top button
      * ------------------------------------------------------------------------
      */
 
-    $('.elevator-wrapper').append('<div class="elevator"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>');
+    $('.elevator-wrapper').append('<div class="elevator"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-chevron-up fa-stack-1x fa-inverse" aria-hidden="true"></i></span></div>');
 
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,
+      // browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+      offset_opacity = 1200,
       // duration of the top scrolling animation (in ms)
       scroll_top_duration = 700,
       // grab the "back to top" link
@@ -136,14 +133,17 @@
 
     // hide or show the "back to top" link
     $(window).scroll(function () {
-      ($(this).scrollTop() > offset) ? $back_to_top.addClass('elevator-is-visible') : $back_to_top.removeClass('elevator-is-visible');
+      ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('elevator-is-visible') : $back_to_top.removeClass('elevator-is-visible elevator-fade-out');
+      if( $(this).scrollTop() > offset_opacity ) {
+        $back_to_top.addClass('elevator-fade-out');
+      }
     });
 
     // smooth scroll to top
-    $back_to_top.on('click', function (event) {
+    $back_to_top.on('click', function(event){
       event.preventDefault();
       $('body,html').animate({
-          scrollTop: 0
+        scrollTop: 0
         }, scroll_top_duration
       );
     });

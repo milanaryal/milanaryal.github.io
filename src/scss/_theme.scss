@@ -94,7 +94,7 @@ a {
       }
     }
   }
-  @media (min-width: 1170px) {
+  @media (min-width: 992px) {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -402,7 +402,7 @@ hr.small {
     margin: 0;
     padding: 0;
     a {
-      color: rgba(0,0,0,0.75);
+      color: rgba(0,0,0,0.7);
       &:hover,
       &:focus {
         color: rgba(0,0,0,0.8);

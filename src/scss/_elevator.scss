@@ -1,54 +1,56 @@
 //
-// Elevator - Scroll to top button
+// Elevator - Scroll back to top button
 //
 
 .elevator {
+  cursor: pointer;
   display: inline-block;
-  height: 48px;
-  width: 48px;
+
   position: fixed;
   right: 20px;
-  bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  border-radius: 50%;
+  bottom: 25px;
+
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   background-image: none;
-  background: rgba(0, 0, 0, 0.7);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+
   visibility: hidden;
   opacity: 0;
-  &.elevator-is-visible {
-    /* the button becomes visible */
+
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+
+  &.elevator-is-visible,
+  &.elevator-fade-out,
+  &:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+  }
+
+  &.elevator-is-visible { /* the button becomes visible */
     visibility: visible;
     opacity: 1;
-    z-index: 999;
   }
-  .fa {
-    color: white;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 14.5px;
-    top: 12.5px;
-    font-size: 20px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+
+  &.elevator-fade-out { /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
   }
+
   &:hover {
-    background: rgba(0, 0, 0, 0.8);
-    .fa {
-      color: white; // #fff
-      top: 5px;
-    }
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+  }
+
+  @media (max-width: 991px) {
+    display: none !important;
+  }
+
+  @media (min-width: 1200px) {
+    right: 30px;
+    bottom: 35px;
+    font-size: 24px;
   }
 }
