@@ -11579,7 +11579,7 @@ var anchors = new AnchorJS();
           zoom: 13,
 
           // The latitude and longitude to center the map (always required)
-          center: new google.maps.LatLng(27.7089604, 85.3261328), // Kathmandu, Nepal
+          center: new google.maps.LatLng(27.7090319, 85.2910273), // Kathmandu, Nepal
 
           // Disables the default Google Maps UI components
           disableDefaultUI: true,
@@ -11588,144 +11588,7 @@ var anchors = new AnchorJS();
 
           // How you would like to style the map.
           // This is where you would paste any style found on Snazzy Maps.
-          styles:
-          [
-              {
-                  "featureType": "administrative",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "off"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "poi",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "simplified"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "simplified"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "water",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "simplified"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "transit",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "simplified"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "landscape",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "simplified"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road.highway",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "off"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road.local",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "on"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road.highway",
-                  "elementType": "geometry",
-                  "stylers": [
-                      {
-                          "visibility": "on"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road.arterial",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "off"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "water",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "color": "#5f94ff"
-                      },
-                      {
-                          "lightness": 26
-                      },
-                      {
-                          "gamma": 5.86
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road.highway",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "weight": 0.6
-                      },
-                      {
-                          "saturation": -85
-                      },
-                      {
-                          "lightness": 61
-                      }
-                  ]
-              },
-              {
-                  "featureType": "landscape",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "hue": "#0066ff"
-                      },
-                      {
-                          "saturation": 74
-                      },
-                      {
-                          "lightness": 100
-                      }
-                  ]
-              }
-          ]
+          styles: [{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]
 
       };
 
@@ -11738,7 +11601,7 @@ var anchors = new AnchorJS();
 
       // Let's also add a marker while we're at it
       var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(27.6857605, 85.2690769), // Tinthana, Kathmandu, Nepal
+        position: new google.maps.LatLng(27.6857792, 85.2603007), // Tinthana, Kathmandu, Nepal
         map: map,
         title: 'Residence!'
       });
