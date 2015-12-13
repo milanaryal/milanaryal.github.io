@@ -60,3 +60,5 @@ If you have any questions, or just questions in general, you can ask me anything
     </a>
   </li>
 </ul>
+
+{% include google_maps.html %}

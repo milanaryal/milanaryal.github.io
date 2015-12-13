@@ -41,9 +41,11 @@ author:
   postcode:       44600
 disqus_shortname: milanaryal
 google_cse_id:    "000254926668963224856:z4vgwqv7kla"
+google_api_key:   "AIzaSyAeKMcqRQown-o3z7-HNxqG6NnsiVn7Xx4"
 
 # Google Analytics, milanaryal.com current Tracking ID
 google_analytics_id: "UA-42092423-1"
+
 
 # ----------------------------------------------------------------------
 # | Build settings                                                     |

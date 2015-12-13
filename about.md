@@ -98,6 +98,14 @@ In this site you'll find a recollection of thoughts and opinions based on my exp
 
 [^blog]: Initially this blog was established as a means to keep up with my own interest in the web, but with time and little efforts, this blog has evolved into something much more elaborate and meaningful.
 
+In case you were wondering, this site is:
+
+* Designed and coded on a [Ubuntu OS](http://www.ubuntu.com/) in Kathmandu
+* Coded with [Atom](http://atom.io/)
+* Used [Bootstrap](http://getbootstrap.com/) framework
+* Built on [Jekyll](http://jekyllrb.com/), the open source static site generator
+* Hosted on [GitHub Pages](http://pages.github.com/)
+
 If you enjoy the content found here, you might like to subscribe to my <i class="fa fa-rss" aria-hidden="true"></i> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
 ### Contact me
@@ -107,3 +115,5 @@ If you have any questions, comments, or would just like to say hello, please don
 ### Licensing
 
 Except as otherwise noted, the content of this site is licensed under the <a rel="license cc:license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>, and code samples are licensed under the <a rel="license" href="//raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE">MIT license</a>.
+
+{% include google_maps.html %}

@@ -5,6 +5,7 @@
  * --------------------------------------------------------------------------
  */
 
+// jQuery and initialization
 !function ($) {
   'use strict';
 
@@ -179,16 +180,201 @@
 }(jQuery);
 
 
-/**
- * ------------------------------------------------------------------------
- * AnchorJS options and selector - anchor.js
- * ------------------------------------------------------------------------
- */
-
+// Vanilla JS and initialization
 (function () {
   'use strict';
 
+  /**
+   * ------------------------------------------------------------------------
+   * AnchorJS options and selector - anchor.js
+   * ------------------------------------------------------------------------
+   */
+
   anchors.options.placement = 'left';
   anchors.add('.markdown-body>h2,.markdown-body>h3,.markdown-body>h4,.markdown-body>h5,.markdown-body>h6,.archive>h3');
+
+
+  /**
+   * ------------------------------------------------------------------------
+   * Google Maps Scripts
+   * ------------------------------------------------------------------------
+   */
+
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 13,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(27.7089604, 85.3261328), // Kathmandu, Nepal
+
+          // Disables the default Google Maps UI components
+          disableDefaultUI: true,
+          scrollwheel: false,
+          draggable: false,
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles:
+          [
+              {
+                  "featureType": "administrative",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "poi",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "simplified"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "simplified"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "simplified"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "transit",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "simplified"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "landscape",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "simplified"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.highway",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.local",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "on"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.highway",
+                  "elementType": "geometry",
+                  "stylers": [
+                      {
+                          "visibility": "on"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.arterial",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "color": "#5f94ff"
+                      },
+                      {
+                          "lightness": 26
+                      },
+                      {
+                          "gamma": 5.86
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.highway",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "weight": 0.6
+                      },
+                      {
+                          "saturation": -85
+                      },
+                      {
+                          "lightness": 61
+                      }
+                  ]
+              },
+              {
+                  "featureType": "landscape",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "hue": "#0066ff"
+                      },
+                      {
+                          "saturation": 74
+                      },
+                      {
+                          "lightness": 100
+                      }
+                  ]
+              }
+          ]
+
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map-canvas" seen below in the <body>
+      var mapElement = document.getElementById('map-canvas');
+
+      // Create the Google Map using out element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(27.6857605, 85.2690769), // Tinthana, Kathmandu, Nepal
+        map: map,
+        title: 'Residence!'
+      });
+  }
+
 
 })();

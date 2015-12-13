@@ -9776,4 +9776,16 @@ kbd {
 *:hover > .anchorjs-link:hover, *:hover > .anchorjs-link:focus {
   opacity: 1;
 }
+
+/* Set a size for our map container, the Google Map will take up 100% of this container */
+#map-canvas {
+  width: 100%;
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  #map-canvas {
+    height: 350px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
