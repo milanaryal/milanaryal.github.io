@@ -30,4 +30,7 @@
         -ms-transform: rotate(3deg) translate(0px, -4px);
             transform: rotate(3deg) translate(0px, -4px);
   }
+  @media (max-width: 991px) {
+    display: none !important;
+  }
 }

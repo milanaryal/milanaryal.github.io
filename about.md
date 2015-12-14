@@ -112,8 +112,8 @@ If you enjoy the content found here, you might like to subscribe to my <i class=
 
 If you have any questions, comments, or would just like to say hello, please don't hesitate to drop me a line in <i class="fa fa-github" aria-hidden="true"></i> [MilanAryal/feedback](//github.com/MilanAryal/feedback), otherwise, feel free to e-mail me at <i class="fa fa-envelope-o" aria-hidden="true"></i> <a rel="contact" href="//www.google.com/recaptcha/mailhide/d?k=01ncc726fFMUEHv8sz5LEobQ==&amp;c=a3UFIHYNDKz_Z3A1uaHhaAMK4Y5wr0o2Thiww0TkfCE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501ncc726fFMUEHv8sz5LEobQ\75\75\46c\75a3UFIHYNDKz_Z3A1uaHhaAMK4Y5wr0o2Thiww0TkfCE\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">[show email]</a> or <i class="fa fa-twitter" aria-hidden="true"></i> [tweet](//twitter.com/MilanAryal). I'll be sure to respond in a timely manner!
 
+{% include google_maps.html %}
+
 ### Licensing
 
 Except as otherwise noted, the content of this site is licensed under the <a rel="license cc:license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>, and code samples are licensed under the <a rel="license" href="//raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE">MIT license</a>.
-
-{% include google_maps.html %}

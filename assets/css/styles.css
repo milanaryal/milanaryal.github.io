@@ -9382,6 +9382,12 @@ kbd {
           transform: rotate(3deg) translate(0px, -4px);
 }
 
+@media (max-width: 991px) {
+  #nprogress {
+    display: none !important;
+  }
+}
+
 .bigfoot-footnote__button {
   position: relative;
   top: -.1em;
@@ -9775,6 +9781,12 @@ kbd {
 
 *:hover > .anchorjs-link:hover, *:hover > .anchorjs-link:focus {
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .map-wrapper {
+    display: none !important;
+  }
 }
 
 /* Set a size for our map container, the Google Map will take up 100% of this container */

@@ -1,3 +1,9 @@
+.map-wrapper {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
 /* Set a size for our map container, the Google Map will take up 100% of this container */
 #map-canvas {
   width: 100%;
