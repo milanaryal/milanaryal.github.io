@@ -2,6 +2,12 @@
 // Elevator - Scroll back to top button
 //
 
+.elevator-wrapper {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
 .elevator {
   cursor: pointer;
   display: inline-block;
@@ -42,10 +48,6 @@
   &:hover {
     color: rgba(0, 0, 0, 0.8);
     opacity: 1;
-  }
-
-  @media (max-width: 991px) {
-    display: none !important;
   }
 
   @media (min-width: 1200px) {

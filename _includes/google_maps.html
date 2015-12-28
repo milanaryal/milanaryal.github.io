@@ -1,10 +1,27 @@
-<!-- Google Maps API Key - Use your own API key to enable the map feature.
-     More information on the Google Maps API can be found at https://developers.google.com/maps/documentation/javascript/tutorial#api_key -->
-<script async defer src="//maps.googleapis.com/maps/api/js?key={{ site.google_api_key }}&callback=initMap&sensor=false"></script>
-
 <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS. -->
 <figure class="map-wrapper">
   <div id="map-canvas"></div>
-
   <figcaption>Hometown</figcaption>
 </figure>
+
+<!-- Google Maps JavaScript API -->
+<script>
+  (function initMap() {
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+      center: {lat: 27.7090319, lng: 85.2910273},
+      zoom: 13,
+      disableDefaultUI: true,
+      scrollwheel: false,
+      draggable: false,
+      styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+    });
+    var marker = new google.maps.Marker({
+      position: {lat: 27.6857792, lng: 85.2603007},
+      map: map,
+      title: 'Residence!'
+    });
+  })();
+</script>
+<!-- Google Maps API Key - Use your own API key to enable the map feature.
+     More information on the Google Maps API can be found at https://developers.google.com/maps/documentation/javascript/tutorial#api_key -->
+<script src="//maps.googleapis.com/maps/api/js?key={{ site.google_api_key }}&callback=initMap" async></script>

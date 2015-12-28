@@ -12,6 +12,7 @@
   font-weight: 400;
   font-style: normal;
   color: $markdown-body-color; // rgba(0,0,0,0.95);
+
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 1.5;
@@ -29,13 +30,16 @@
   &> p,
   &> blockquote,
   &> ul, &> ol, &> dl,
-  &> .table-responsive {
+  &> .table {
     a {
       text-decoration: none;
       background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
       background-repeat: repeat-x;
       background-size: 2px 2px;
       background-position: 0 19px;
+
+      -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+
       @media (min-width: 768px) {
         background-position: 0 21px;
       }
@@ -47,9 +51,12 @@
     a {
       // color: inherit; // parent color for link
       text-decoration: underline;
+
+      -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+
       &:hover,
       &:focus {
-      //  color: inherit;
+        // color: inherit;
         text-decoration: underline;
       }
     }
@@ -102,12 +109,15 @@
 
   h3 {
     font-size: ($markdown-font-size-h3 - 8); // ~24px
+
     @media (min-width: 768px) {
       font-size: $markdown-font-size-h3; // ~32px
     }
+
     a {
       background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));
       background-position: 0 28px;
+
       @media (min-width: 768px) {
         background-position: 0 36px;
       }
@@ -116,12 +126,15 @@
 
   h4 {
     font-size: ($markdown-font-size-h4 - 8); // ~20px
+
     @media (min-width: 768px) {
       font-size: $markdown-font-size-h4; // ~28px
     }
+
     a {
       background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.44) 50%);
       background-position: 0 24px;
+
       @media (min-width: 768px) {
         background-position: 0 32px;
       }
@@ -131,7 +144,7 @@
   p,
   blockquote,
   ul, ol, dl,
-  .table-responsive,
+  .table,
   pre,
   figure {
     margin-bottom: $markdown-margin;
@@ -187,15 +200,16 @@
     // font-weight: 300;
     line-height: 1.4;
     font-style: italic;
-  }
-  a {
-    background-position: 0 25px;
-  }
-  @media (min-width: 768px) {
-    .lead {
+
+    @media (min-width: 768px) {
       font-size: 24px;
-      a {
-        background-position: 0 29px;
+    }
+
+    a {
+      background-position: 0 23px;
+
+      @media (min-width: 768px) {
+        background-position: 0 25px;
       }
     }
   }
@@ -208,29 +222,35 @@
   .alert {
     border: 0;
     font-size: 18px;
+
     h4 {
       margin: 0 0 10px;
       font-size: 22px;
       color: inherit;
     }
+
     > p,
     > ul {
       margin: 0;
     }
+
     > p + p {
       margin-top: 10px;
     }
+
     hr {
       margin: 20px auto;
       border-top-color: inherit;
     }
+
     .alert-link {
       background-image: none !important;
       // color: inherit; // parent color for link
       text-decoration: underline !important;
+
       &:hover,
       &:focus {
-      //  color: inherit;
+        // color: inherit;
         text-decoration: underline !important;
       }
     }
@@ -277,38 +297,16 @@
 
   ol {
     margin: 0; // remove margin-bottom
+    padding-left: 30px;
 
-    padding: 0;
-    list-style: none;
-    list-style-image: none;
-    counter-reset: note;
-
-    &> li {
-      margin-left: 30px;
+    li {
       margin-bottom: (($markdown-margin / 2) - 5); // ~10px
-      padding-top: 2px;
-    }
 
-    &> li:last-child {
-      margin-bottom: 0 !important;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
     }
-
-    &> li::before {
-      position: absolute;
-      display: inline-block;
-      box-sizing: border-box;
-      width: 58px;
-      margin-left: -58px;
-      text-align: right;
-    }
-
-    &> li::before {
-      padding-right: 12px;
-      counter-increment: note;
-      content: counter(note) "\002E"; // "."
-    }
-  } // ol
-
+  }
 } // .footnotes
 
 

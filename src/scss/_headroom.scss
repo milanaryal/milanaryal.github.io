@@ -1,0 +1,25 @@
+//
+// Headroom
+//
+
+.headroom {
+  // background-color: white;
+  // border-color: transparent;
+  transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+  display: block;
+  background-color: rgba(white, 0.9);
+  border-color: darken(white, 5%);
+  transform: translateY(0%);
+
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.headroom--unpinned {
+  display: none;
+  transform: translateY(-100%);
+}

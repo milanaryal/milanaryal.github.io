@@ -1,10 +1,11 @@
 //
-// NProgress v0.2.0
+// NProgress
 //
 
 #nprogress {
   /* Make clicks pass-through */
   pointer-events: none;
+
   .bar {
     background: #29d;
 
@@ -16,6 +17,7 @@
     width: 100%;
     height: 2px;
   }
+
   .peg {
     /* Fancy blur effect */
     display: block;
@@ -30,7 +32,8 @@
         -ms-transform: rotate(3deg) translate(0px, -4px);
             transform: rotate(3deg) translate(0px, -4px);
   }
-  @media (max-width: 991px) {
+
+  @media (max-width: 767px) {
     display: none !important;
   }
 }

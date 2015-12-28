@@ -12,7 +12,7 @@ layout: default
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="page-heading">
                 <h1 class="page-title" itemprop="name">{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}</h1>
-                <hr class="small">
+                <hr class="intro-divider">
                 <span class="page-description" itemprop="description">{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.description | markdownify | strip_html | strip_newlines | escape_once }}{% endif %}</span>
               </div>
             </div>

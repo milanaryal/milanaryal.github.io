@@ -51,40 +51,6 @@
 
     /**
      * ------------------------------------------------------------------------
-     * Navigation Scripts to Show Header on Scroll-Up
-     * ------------------------------------------------------------------------
-     */
-
-    var MQL = 992;
-
-    // primary navigation slide-in effect
-    if ($(window).width() > MQL) {
-      var headerHeight = $('.navbar-top').height();
-      $(window).on('scroll', {
-        previousTop: 0
-      },
-      function () {
-        var currentTop = $(window).scrollTop();
-        // check if user is scrolling up
-        if (currentTop < this.previousTop) {
-          // if scrolling up...
-          if (currentTop > 0 && $('.navbar-top').hasClass('is-fixed')) {
-            $('.navbar-top').addClass('is-visible');
-          } else {
-            $('.navbar-top').removeClass('is-visible is-fixed');
-          }
-        } else {
-          // if scrolling down...
-          $('.navbar-top').removeClass('is-visible');
-          if (currentTop > headerHeight && !$('.navbar-top').hasClass('is-fixed')) $('.navbar-top').addClass('is-fixed');
-        }
-        this.previousTop = currentTop;
-      });
-    }
-
-
-    /**
-     * ------------------------------------------------------------------------
      * Tooltip init - tooltip.js
      * ------------------------------------------------------------------------
      */
@@ -186,58 +152,26 @@
 
   /**
    * ------------------------------------------------------------------------
+   * Navigation scripts to Show header on scroll-up - headroom.js
+   * ------------------------------------------------------------------------
+   */
+
+  // grab an element
+  var myElement = document.querySelector('.headroom');
+  // construct an instance of Headroom, passing the element
+  var headroom  = new Headroom(myElement);
+  // initialise
+  headroom.init();
+
+
+  /**
+   * ------------------------------------------------------------------------
    * AnchorJS options and selector - anchor.js
    * ------------------------------------------------------------------------
    */
 
   anchors.options.placement = 'left';
   anchors.add('.markdown-body>h2,.markdown-body>h3,.markdown-body>h4,.markdown-body>h5,.markdown-body>h6,.archive>h3');
-
-
-  /**
-   * ------------------------------------------------------------------------
-   * Google Maps Scripts
-   * ------------------------------------------------------------------------
-   */
-
-  // When the window has finished loading create our google map below
-  google.maps.event.addDomListener(window, 'load', init);
-
-  function init() {
-      // Basic options for a simple Google Map
-      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-      var mapOptions = {
-          // How zoomed in you want the map to start at (always required)
-          zoom: 13,
-
-          // The latitude and longitude to center the map (always required)
-          center: new google.maps.LatLng(27.7090319, 85.2910273), // Kathmandu, Nepal
-
-          // Disables the default Google Maps UI components
-          disableDefaultUI: true,
-          scrollwheel: false,
-          draggable: false,
-
-          // How you would like to style the map.
-          // This is where you would paste any style found on Snazzy Maps.
-          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-
-      };
-
-      // Get the HTML DOM element that will contain your map
-      // We are using a div with id="map-canvas" seen below in the <body>
-      var mapElement = document.getElementById('map-canvas');
-
-      // Create the Google Map using out element and options defined above
-      var map = new google.maps.Map(mapElement, mapOptions);
-
-      // Let's also add a marker while we're at it
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(27.6857792, 85.2603007), // Tinthana, Kathmandu, Nepal
-        map: map,
-        title: 'Residence!'
-      });
-  }
 
 
 })();
