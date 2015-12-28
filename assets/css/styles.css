@@ -7948,8 +7948,6 @@ a:hover, a:focus {
 .navbar {
   margin-bottom: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
-  background-color: white;
-  border-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -9380,6 +9378,11 @@ kbd {
   .headroom--pinned {
     display: none !important;
   }
+}
+
+.headroom--top {
+  background-color: white;
+  border-color: transparent;
 }
 
 .headroom--unpinned {

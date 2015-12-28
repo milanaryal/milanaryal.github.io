@@ -1,7 +1,7 @@
 ---
 title: "Integrating social meta tags into Jekyll"
 date: 2015-02-11T13:04:19+05:45
-last_modified_at: 2015-06-26T08:05:27+05:45
+last_modified_at: 2015-12-28T23:54:52+05:45
 excerpt: "A guide to adding social meta tags into Jekyll."
 ---
 
@@ -137,4 +137,4 @@ Be sure to check one of your example posts via the different social media metada
 * For Facebook, test using the [Facebook debugger](//developers.facebook.com/tools/debug).
 * For Twitter, submit one of your example posts via the [Twitter card validator](//cards-dev.twitter.com/validator).
 * For Google+, test with the [rich snippets tester](//www.google.com/webmasters/tools/richsnippets).
-* If you use Pinterest a lot, you need to validate your rich pins by going to the [rich pin validator page](http://developers.pinterest.com/rich_pins/validator).
+* If you use Pinterest a lot, you need to validate your rich pins by going to the [rich pin validator page](//developers.pinterest.com/tools/url-debugger/).
