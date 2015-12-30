@@ -7948,6 +7948,8 @@ a:hover, a:focus {
 .navbar {
   margin-bottom: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  background-color: white;
+  border-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -7965,7 +7967,7 @@ a:hover, a:focus {
   .navbar-brand {
     height: 65px;
     padding: 22px 0;
-    margin-left: 25px !important;
+    margin-left: 15px !important;
   }
 }
 
@@ -8070,18 +8072,25 @@ a:hover, a:focus {
           transform-origin: 50% 50%;
 }
 
-.home-container .avatar {
-  position: relative;
-  display: block;
-  margin-bottom: 1.5em;
-}
-
 @media (max-width: 480px) {
-  .home-container .avatar {
+  .home-container {
     width: 100%;
     min-width: 0;
     padding: 4em 2em 2.5em 2em;
   }
+}
+
+.home-container.is-loading {
+  opacity: 0;
+  -webkit-transform: rotateX(15deg);
+      -ms-transform: rotateX(15deg);
+          transform: rotateX(15deg);
+}
+
+.home-container .avatar {
+  position: relative;
+  display: block;
+  margin-bottom: 1.5em;
 }
 
 .home-container .avatar::before {
@@ -9356,41 +9365,38 @@ kbd {
   }
 }
 
-.headroom {
-  -webkit-transition: -webkit-transform 200ms linear;
-       -o-transition:         transform 200ms linear, -o-transform 200ms linear;
-          transition: -webkit-transform 200ms linear;
-          transition:         transform 200ms linear;
-          transition:         transform 200ms linear, -webkit-transform 200ms linear, -o-transform 200ms linear;
-}
-
-.headroom--pinned {
-  display: block;
-  background-color: rgba(255, 255, 255, .9);
-  border-color: #f2f2f2;
-  -webkit-transform: translateY(0%);
-      -ms-transform: translateY(0%);
-       -o-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
-@media (max-width: 767px) {
-  .headroom--pinned {
-    display: none !important;
+@media (min-width: 768px) {
+  .headroom {
+    -webkit-transition: background-color 200ms, -webkit-transform 200ms;
+         -o-transition: background-color 200ms, transform 200ms, -o-transform 200ms;
+            transition: background-color 200ms, -webkit-transform 200ms;
+            transition: background-color 200ms, transform 200ms;
+            transition: background-color 200ms, transform 200ms, -webkit-transform 200ms, -o-transform 200ms;
   }
-}
-
-.headroom--top {
-  background-color: white;
-  border-color: transparent;
-}
-
-.headroom--unpinned {
-  display: none;
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-       -o-transform: translateY(-100%);
-          transform: translateY(-100%);
+  .headroom--not-top {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+         -o-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  .headroom--pinned {
+    background-color: rgba(255, 255, 255, .97);
+    border-color: #f2f2f2;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+         -o-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .headroom--top {
+    background-color: white;
+    border-color: transparent;
+  }
+  .headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+         -o-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
 }
 
 .bigfoot-footnote__button {

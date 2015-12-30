@@ -57,8 +57,8 @@ a {
 .navbar {
   margin-bottom: 0;
   font-family: $theme-font-family-base;
-  // background-color: white;
-  // border-color: transparent;
+  background-color: white;
+  border-color: transparent;
   // border-radius: 0;
 
   @media (min-width: 768px) {
@@ -74,7 +74,7 @@ a {
   @media (min-width: 768px) {
     height: 65px;
     padding: 22px 0;
-    margin-left: 25px !important;
+    margin-left: 15px !important;
   }
 }
 
@@ -181,16 +181,24 @@ a {
   -ms-transition: opacity 1s ease, -ms-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
 
+  @media (max-width: 480px) {
+    min-width: 0;
+    width: 100%;
+    padding: 4em 2em 2.5em 2em ;
+  }
+
+  &.is-loading {
+    opacity: 0;
+		-moz-transform: rotateX(15deg);
+		-webkit-transform: rotateX(15deg);
+		-ms-transform: rotateX(15deg);
+		transform: rotateX(15deg);
+  }
+
   .avatar {
     position: relative;
     display: block;
     margin-bottom: 1.5em;
-
-    @media (max-width: 480px) {
-      min-width: 0;
-      width: 100%;
-      padding: 4em 2em 2.5em 2em ;
-    }
 
     &::before {
       content: '';
