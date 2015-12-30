@@ -22,9 +22,6 @@
   // Show the progress bar
   NProgress.start();
 
-  // show home page loading effect
-  $('.home-container').addClass('is-loading');
-
   // Increase randomly
   var interval = setInterval(function() { NProgress.inc(); }, 1000);
 
@@ -38,42 +35,18 @@
   });
 
 
-  // initialize our JavaScript plugins
-  // in our custom defined window width.
-  var window_min_width = 768;
+  /**
+   * ------------------------------------------------------------------------
+   * Navigation scripts to Show header on scroll-up - headroom.js
+   * ------------------------------------------------------------------------
+   */
 
-  if ($(window).width() >= window_min_width) { // BEGIN if window width condition
-
-    /**
-     * ------------------------------------------------------------------------
-     * Navigation scripts to Show header on scroll-up - headroom.js
-     * ------------------------------------------------------------------------
-     */
-
-    // grab an element
-    var myElement = document.querySelector('.headroom');
-    // construct an instance of Headroom, passing the element
-    var headroom  = new Headroom(myElement, {
-      tolerance: {
-        up : 25,
-        down : 0
-      }
-    });
-    // initialize
-    headroom.init();
-
-
-    /**
-     * ------------------------------------------------------------------------
-     * AnchorJS options and selector - anchor.js
-     * ------------------------------------------------------------------------
-     */
-
-    anchors.options.placement = 'left';
-    anchors.add('.markdown-body>h2,.markdown-body>h3,.markdown-body>h4,.markdown-body>h5,.markdown-body>h6,.archive>h3');
-
-
-  } // END if window width condition
+  // grab an element
+  var myElement = document.querySelector('.headroom');
+  // construct an instance of Headroom, passing the element
+  var headroom  = new Headroom(myElement);
+  // initialise
+  headroom.init();
 
 
   /**
@@ -86,6 +59,16 @@
     deleteOnUnhover: false,
     preventPageScroll: false
   });
+
+
+  /**
+   * ------------------------------------------------------------------------
+   * AnchorJS options and selector - anchor.js
+   * ------------------------------------------------------------------------
+   */
+
+  anchors.options.placement = 'left';
+  anchors.add('.markdown-body>h2,.markdown-body>h3,.markdown-body>h4,.markdown-body>h5,.markdown-body>h6,.archive>h3');
 
 
   // Only run once the page Document Object Model (DOM)
