@@ -7906,7 +7906,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -7947,7 +7947,7 @@ a:hover, a:focus {
 
 .navbar {
   margin-bottom: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
   background-color: white;
   border-color: transparent;
 }
@@ -8294,7 +8294,7 @@ ul.icons li a:hover {
 .copyright {
   margin-top: 30px;
   margin-bottom: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, .6);
   text-align: center;
@@ -8310,7 +8310,7 @@ ul.icons li a:hover {
 
 .btn {
   padding: 15px 25px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none !important;
@@ -8351,7 +8351,7 @@ ul.icons li a:hover {
 .pager li > a,
 .pager li > span {
   padding: 12.5px 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: rgba(0, 0, 0, .44);
@@ -8406,7 +8406,7 @@ ul.icons li a:hover {
 }
 
 .post-preview-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
   font-size: 12px;
   color: rgba(0, 0, 0, .44);
 }
@@ -8463,7 +8463,7 @@ ul.icons li a:hover {
   display: block;
   padding-bottom: 10px;
   margin: 0 0 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.1;
@@ -8623,7 +8623,7 @@ ul.icons li a:hover {
 }
 
 .error-page-message {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -9399,6 +9399,12 @@ kbd {
   }
 }
 
+@media (max-width: 767px) {
+  .headroom--not-top {
+    display: none !important;
+  }
+}
+
 .bigfoot-footnote__button {
   position: relative;
   top: -.1em;
@@ -9669,7 +9675,7 @@ kbd {
   padding: 1.1em 1.3em 1.2em;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
   font-size: .8em;
   line-height: normal;
   background: #fafafa;

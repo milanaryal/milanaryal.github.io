@@ -29,3 +29,9 @@
     transform: translateY(-100%);
   }
 }
+
+@media (max-width: 767px) {
+  .headroom--not-top {
+    display: none !important;
+  }
+}
