@@ -2,12 +2,12 @@
 layout: page
 title: "About"
 description: "This is what I do."
-excerpt: "I'm Milan, a student living in Kathmandu, Nepal who loves designing for the web and listening music a lot."
+excerpt: "I'm Milan, a student living in Kathmandu, Nepal who loves getting lost in web design, front-end development, and listening music a lot."
 featured_image: "/assets/img/about-bg.jpg"
 permalink: /about/
 ---
 
-Hello, my name is Milan Aryal (मिलन अर्याल)[^name] and I'm a student living in Kathmandu, Nepal who loves designing for the web and listening music a lot.
+Hello, my name is Milan Aryal (मिलन अर्याल)[^name] and I'm a student living in Kathmandu, Nepal who loves getting lost in web design, front-end development, and listening music a lot.
 
 [^name]: The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification. :blush:
 
@@ -100,8 +100,8 @@ In this site you'll find a recollection of thoughts and opinions based on my exp
 
 In case you were wondering, this site is:
 
-* Designed and coded on a [Ubuntu OS](http://www.ubuntu.com/) in Kathmandu
-* Coded with [Atom](http://atom.io/)
+* Designed and developed on a [Ubuntu OS](http://www.ubuntu.com/) in Kathmandu
+* Developed with [Atom](http://atom.io/)
 * Used [Bootstrap](http://getbootstrap.com/) framework
 * Built on [Jekyll](http://jekyllrb.com/), the open source static site generator
 * Hosted on [GitHub Pages](http://pages.github.com/)
