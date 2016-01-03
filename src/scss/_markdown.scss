@@ -30,7 +30,7 @@
   &> p,
   &> blockquote,
   &> ul, &> ol, &> dl,
-  &> .table {
+  &> .table-responsive {
     a {
       text-decoration: none;
       background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
@@ -144,7 +144,7 @@
   p,
   blockquote,
   ul, ol, dl,
-  .table,
+  .table-responsive,
   pre,
   figure {
     margin-bottom: $markdown-margin;

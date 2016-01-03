@@ -1,6 +1,6 @@
 /*!
  * Milan Aryal (http://milanaryal.com)
- * Copyright 2015 Milan Aryal
+ * Copyright 2016 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
 
@@ -11852,17 +11852,18 @@ var anchors = new AnchorJS();
     $('img').addClass('img-responsive');
 
     // responsive table
-    $('.markdown-body>table').addClass('table table-responsive table-hover');
+    $('.markdown-body>table').addClass('table table-hover');
+    $('.markdown-body>table').wrap('<div class="table-responsive"></div>');
 
     // responsive embed video
-    $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
     $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
+    $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
-    $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
     $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
+    $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
-    $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
     $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
+    $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
 
     /**

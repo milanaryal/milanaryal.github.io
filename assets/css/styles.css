@@ -8705,7 +8705,7 @@ ul.icons li a:hover {
 .markdown-body > p a,
 .markdown-body > blockquote a,
 .markdown-body > ul a, .markdown-body > ol a, .markdown-body > dl a,
-.markdown-body > .table a {
+.markdown-body > .table-responsive a {
   text-decoration: none;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(0, 0, 0, .6)));
   background-image: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, .6) 50%);
@@ -8724,7 +8724,7 @@ ul.icons li a:hover {
   .markdown-body > p a,
   .markdown-body > blockquote a,
   .markdown-body > ul a, .markdown-body > ol a, .markdown-body > dl a,
-  .markdown-body > .table a {
+  .markdown-body > .table-responsive a {
     background-position: 0 21px;
   }
 }
@@ -8829,7 +8829,7 @@ ul.icons li a:hover {
 .markdown-body p,
 .markdown-body blockquote,
 .markdown-body ul, .markdown-body ol, .markdown-body dl,
-.markdown-body .table,
+.markdown-body .table-responsive,
 .markdown-body pre,
 .markdown-body figure {
   margin-bottom: 30px;
