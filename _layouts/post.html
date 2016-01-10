@@ -3,7 +3,7 @@ layout: default
 ---
 
 <main role="main" itemprop="mainContentOfPage">
-  <article class="post-article" itemscope itemtype="http://schema.org/Article">
+  <article class="post-article" itemscope itemtype="https://schema.org/Article">
     <header class="post-header">
       <div class="container">
         <div class="row">
@@ -13,7 +13,7 @@ layout: default
             <link itemprop="image" href="{{ site.icon }}">
             <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}">
             <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
-            <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Person">
+            <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="https://schema.org/Person">
               <meta itemprop="name" content="{% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}">
             </span>
             <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
@@ -46,7 +46,7 @@ layout: default
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
             <div class="post-meta-inline-acknowledgments">
-              <span class="post-meta-acknowledgment"><a href="http://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span></span>
+              <span class="post-meta-acknowledgment"><a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span></span>
               <div class="hidden" about="{{ page.url | replace:'index.html','' | prepend: site.url }}">Except as otherwise <a href="{{ site.url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}</span>.</div>
             </div>
 
@@ -89,7 +89,7 @@ layout: default
 
         <script type="application/ld+json">
         {
-          "@context": "http://schema.org",
+          "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement":
           [

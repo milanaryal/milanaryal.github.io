@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% for post in paginator.posts %}
-<article class="post-preview clearfix" itemscope itemtype="http://schema.org/Article">
+<article class="post-preview clearfix" itemscope itemtype="https://schema.org/Article">
   <link itemprop="image" href="{% if post.featured_image %}{{ post.featured_image }}{% else %}{{ site.icon }}{% endif %}">
   <div class="post-preview-meta">
     <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}"{% if post.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ post.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ post.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}</span>
@@ -27,7 +27,7 @@ redirect_from:
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
-<nav class="clearfix" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<nav class="clearfix" itemscope itemtype="https://schema.org/SiteNavigationElement">
   <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">

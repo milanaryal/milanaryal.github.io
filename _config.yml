@@ -11,7 +11,7 @@ description:      "Livin' on the edge of web standards."
 baseurl:          ""
 
 # URL of site, include http://, do not include a trailing slash
-url:              "http://milanaryal.com"
+url:              "https://milanaryal.com"
 
 icon:             "/assets/img/m-icon-blue-on-white.png"
 featured_image:   "/assets/img/home-bg.jpg"
