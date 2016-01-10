@@ -1,7 +1,7 @@
 # Site nav
 
-- title: "Articles"
-  url:   "/articles/"
+- title: "Writings"
+  url:   "/writings/"
 
 - title: "About"
   url:   "/about/"

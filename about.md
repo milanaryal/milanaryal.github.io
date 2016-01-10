@@ -94,25 +94,19 @@ I'd like to think that I'm very happy person, but I find the art that strikes me
 
 ### About the site
 
-In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, business, or the blogosphere among other web culture topics.[^blog]
+In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, development, or the blogosphere among other web culture topics.[^site]
 
-[^blog]: Initially this blog was established as a means to keep up with my own interest in the web, but with time and little efforts, this blog has evolved into something much more elaborate and meaningful.
+[^site]: Initially this site was established as a means to keep up with my own interest in the web, but with time and little efforts, this site has evolved into something much more elaborate and meaningful.
 
 In case you were wondering, this site is:
 
-* Designed and developed on a [Ubuntu OS](http://www.ubuntu.com/) in Kathmandu
+* Designed and developed on a [Ubuntu OS](http://www.ubuntu.com/)
 * Developed with [Atom](http://atom.io/)
 * Used [Bootstrap](http://getbootstrap.com/) framework
 * Built on [Jekyll](http://jekyllrb.com/), the open source static site generator
 * Hosted on [GitHub Pages](http://pages.github.com/)
 
 If you enjoy the content found here, you might like to subscribe to my <i class="fa fa-rss" aria-hidden="true"></i> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
-
-### Contact me
-
-If you have any questions, comments, or would just like to say hello, please don't hesitate to drop me a line in <i class="fa fa-github" aria-hidden="true"></i> [MilanAryal/feedback](//github.com/MilanAryal/feedback), otherwise, feel free to e-mail me at <i class="fa fa-envelope-o" aria-hidden="true"></i> <a rel="contact" href="//www.google.com/recaptcha/mailhide/d?k=01ncc726fFMUEHv8sz5LEobQ==&amp;c=a3UFIHYNDKz_Z3A1uaHhaAMK4Y5wr0o2Thiww0TkfCE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501ncc726fFMUEHv8sz5LEobQ\75\75\46c\75a3UFIHYNDKz_Z3A1uaHhaAMK4Y5wr0o2Thiww0TkfCE\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">[show email]</a> or <i class="fa fa-twitter" aria-hidden="true"></i> [tweet](//twitter.com/MilanAryal). I'll be sure to respond in a timely manner!
-
-{% include google_maps.html %}
 
 ### Licensing
 

@@ -6,7 +6,7 @@ featured_image: "/assets/img/contact-bg.jpg"
 permalink: /contact/
 ---
 
-If you have any questions, or just questions in general, you can ask me anything over in <i class="fa fa-github" aria-hidden="true"></i> [MilanAryal/feedback](//github.com/MilanAryal/feedback), otherwise, feel free to e-mail me at <i class="fa fa-envelope-o" aria-hidden="true"></i> <a rel="contact" href="//www.google.com/recaptcha/mailhide/d?k=01ncc726fFMUEHv8sz5LEobQ==&amp;c=a3UFIHYNDKz_Z3A1uaHhaAMK4Y5wr0o2Thiww0TkfCE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501ncc726fFMUEHv8sz5LEobQ\75\75\46c\75a3UFIHYNDKz_Z3A1uaHhaAMK4Y5wr0o2Thiww0TkfCE\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">[show email]</a> or you can find me on these social networks and I will try to get back to you within 24 hours!
+If you have any questions, comments, or would just like to say hello in general, please don't hesitate to e-mail me at <i class="fa fa-envelope-o" aria-hidden="true"></i> <a rel="nofollow" href="//www.google.com/recaptcha/mailhide/d?k=01ncc726fFMUEHv8sz5LEobQ==&amp;c=a3UFIHYNDKz_Z3A1uaHhaAMK4Y5wr0o2Thiww0TkfCE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501ncc726fFMUEHv8sz5LEobQ\75\75\46c\75a3UFIHYNDKz_Z3A1uaHhaAMK4Y5wr0o2Thiww0TkfCE\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">[show email]</a>. You can also contact me through these following social networks and I'll be sure to respond in a timely manner!
 
 <ul class="list-inline text-center fa-3x">
   {% if site.author.twitter %}

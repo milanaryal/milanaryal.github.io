@@ -11,7 +11,7 @@ permalink: /
     <link itemprop="url" href="{{ site.url }}/">
     <header>
       <span class="avatar">
-        <img itemprop="image" src="{{ site.author.avatar | prepend: site.url }}" alt="{{ site.author.name }}">
+        <img itemprop="image" src="{{ site.author.avatar }}" alt="{{ site.author.name }}">
       </span>
       <h1 itemprop="name">{{ site.author.name }}</h1>
       <p itemprop="description">{{ site.author.bio | markdownify | strip_html | strip_newlines | escape_once }}</p>
