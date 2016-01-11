@@ -6,16 +6,18 @@ featured_image: "/assets/img/archives-bg.jpg"
 permalink: /archives/
 redirect_from:
   - /archive/
+  - /articles/
+  - /posts/
   - /2010/
   - /2011/
   - /2012/
   - /2013/
   - /2014/
   - /2015/
+  - /2016/
 ---
 
 <div class="archive">
-
 {% for post in site.posts %}
   {% unless post.next %}
     <h3 id="{{ post.date | date: '%Y' }}" class="section-heading">{{ post.date | date: '%Y' }}</h3>
@@ -27,10 +29,18 @@ redirect_from:
     {% endif %}
   {% endunless %}
   <article itemscope itemtype="https://schema.org/Article">
-    <link itemprop="image" href="{% if post.featured_image %}{{ post.featured_image }}{% else %}{{ site.icon }}{% endif %}">
+    <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <link itemprop="url" content="{{ site.icon }}">
+    </span>
+    <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+      <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+        <link itemprop="url" content="{{ site.icon }}">
+      </span>
+      <meta itemprop="name" content="{{ site.name }}">
+    </span>
     <ul class="row">
       <li class="col-sm-9">
-        <a itemprop="url" href="{{ post.url }}"><span itemprop="name headline">{{ post.title | markdownify | strip_html | strip_newlines }}</span></a>
+        <a itemprop="url" itemprop="mainEntityOfPage" href="{{ post.url }}"><span itemprop="name headline">{{ post.title | markdownify | strip_html | strip_newlines }}</span></a>
       </li>
       <li class="col-sm-3 text-muted text-right">
         {% assign day = post.date | date: '%-d' %}
@@ -45,10 +55,10 @@ redirect_from:
             {% assign suffix = 'th' %}
         {% endcase %}
         {% capture post_date %}{{ post.date | date: '%b %-d' }}{{ suffix | append:', ' }}{{ post.date | date: '%Y' }}{% endcapture %}
+        <meta itemprop="dateModified" content="{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{ post.date | date_to_xmlschema }}{% endif %}">
         <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}" data-toggle="tooltip" data-placement="top" title="{{ post.date | date: '%a, %b %-d, %Y' }} at {{ post.date | date: '%-I:%M%P %Z' }}">{{ post_date }}</time>
       </li>
     </ul>
   </article>
 {% endfor %}
-
-</div>
+</div><!-- /.archive -->
