@@ -21,7 +21,7 @@
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:description" content="{{ meta_description }}">
-  <meta property="og:image" content="{{ site.icon | prepend: site.url }}">
+  <meta property="og:image" content="{{ site.icon.base_url | prepend: site.url }}">
   <meta property="fb:admins" content="{{ site.author.fb_id }}">
   <meta property="fb:profile_id" content="{{ site.author.fb_id }}">
   <meta property="og:type" content="{% if page.date %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}">

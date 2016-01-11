@@ -12,8 +12,10 @@ baseurl:          ""
 
 # URL of site, include http://, do not include a trailing slash
 url:              "https://milanaryal.com"
-
-icon:             "/assets/img/m-icon-blue-on-white.png"
+icon:
+  base_url:       "/assets/img/m-icon-blue-on-white.png"
+  width:          300
+  height:         300
 featured_image:   "/assets/img/home-bg.jpg"
 theme_color:      "#2196F3"
 author:
@@ -62,7 +64,7 @@ highlighter:   pygments
 # Permalink structure, see http://jekyllrb.com/docs/permalinks/
 permalink:     /:year/:title/
 
-paginate_path: /articles/page:num/
+paginate_path: /writings/page:num/
 paginate:      10
 
 # Collections

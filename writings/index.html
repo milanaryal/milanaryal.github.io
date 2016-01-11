@@ -2,16 +2,22 @@
 layout: archive
 title: "Writings"
 excerpt: "A collection of writings about web design and front-end development to help build a better web."
+redirect_from:
+  - /articles/
+  - /posts/
 ---
 
 {% for post in paginator.posts %}
 <article class="post-preview clearfix" itemscope itemtype="https://schema.org/Article">
+  <meta itemprop="mainEntityOfPage" itemid="{{ post.url | replace:'index.html','' | prepend: site.url }}">
   <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-    <link itemprop="url" content="{{ site.icon }}">
+    <link itemprop="url" content="{{ site.icon.base_url | prepend: site.url }}">
+    <meta itemprop="width" content="{{ site.icon.width }}">
+    <meta itemprop="height" content="{{ site.icon.height }}">
   </span>
   <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
     <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-      <link itemprop="url" content="{{ site.icon }}">
+      <link itemprop="url" content="{{ site.icon.base_url | prepend: site.url }}">
     </span>
     <meta itemprop="name" content="{{ site.name }}">
   </span>
@@ -19,7 +25,7 @@ excerpt: "A collection of writings about web design and front-end development to
   <div class="post-preview-meta">
     <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}"{% if post.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ post.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ post.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}</span>
   </div>
-  <a itemprop="url" itemprop="mainEntityOfPage" href="{{ post.url }}">
+  <a itemprop="url" href="{{ post.url }}">
     <div class="clearfix">
       <h2 class="post-preview-title" itemprop="name headline">{{ post.title | markdownify | strip_html | strip_newlines | escape_once }}</h2>
       {% if post.excerpt and post.excerpt != empty %}
