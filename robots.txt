@@ -7,6 +7,5 @@ layout: null
 
 User-agent: *
 Disallow:
-Disallow: /articles/page
 Disallow: /search
 Sitemap: {{ site.url }}/sitemap.xml
