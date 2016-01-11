@@ -9,11 +9,14 @@ redirect_from:
 
 {% for post in paginator.posts %}
 <article class="post-preview clearfix" itemscope itemtype="https://schema.org/Article">
-  <meta itemprop="mainEntityOfPage" itemid="{{ post.url | replace:'index.html','' | prepend: site.url }}">
+  <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'index.html','' | prepend: site.url }}">
   <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
     <link itemprop="url" content="{{ site.icon.base_url | prepend: site.url }}">
     <meta itemprop="width" content="{{ site.icon.width }}">
     <meta itemprop="height" content="{{ site.icon.height }}">
+  </span>
+  <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <meta itemprop="name" content="{% if post.author.name %}{{ post.author.name }}{% elsif post.author %}{{ post.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}">
   </span>
   <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
     <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
@@ -27,7 +30,7 @@ redirect_from:
   </div>
   <a itemprop="url" href="{{ post.url }}">
     <div class="clearfix">
-      <h2 class="post-preview-title" itemprop="name headline">{{ post.title | markdownify | strip_html | strip_newlines | escape_once }}</h2>
+      <h2 class="post-preview-title" itemprop="headline">{{ post.title | markdownify | strip_html | strip_newlines | escape_once }}</h2>
       {% if post.excerpt and post.excerpt != empty %}
         <p class="post-preview-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}</p>
       {% endif %}
