@@ -9,9 +9,9 @@ redirect_from:
 
 {% for post in paginator.posts %}
 <article class="post-preview clearfix" itemscope itemtype="https://schema.org/Article">
-  <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'index.html','' | prepend: site.url }}">
+  <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'index.html','' | prepend: site.url }}">
   <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-    <link itemprop="url" content="{{ site.icon.base_url | prepend: site.url }}">
+    <link itemprop="url" href="{{ site.icon.base_url | prepend: site.url }}">
     <meta itemprop="width" content="{{ site.icon.width }}">
     <meta itemprop="height" content="{{ site.icon.height }}">
   </span>
@@ -20,7 +20,7 @@ redirect_from:
   </span>
   <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
     <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-      <link itemprop="url" content="{{ site.icon.base_url | prepend: site.url }}">
+      <link itemprop="url" href="{{ site.icon.base_url | prepend: site.url }}">
     </span>
     <meta itemprop="name" content="{{ site.name }}">
   </span>
