@@ -1,6 +1,7 @@
 ---
 title: "The best free DNS hosting service providers"
 date: 2015-06-28T18:21:41+05:45
+last_modified_at: "2016-01-13T05:09:30+05:45"
 excerpt: "List of the DNS management service providers who offers for free of charge."
 ---
 
@@ -12,15 +13,35 @@ All of these providers are either free, or have a decent free plan.
 
 DNS hosting portal Hurricane Electric provide a 100% free DNS service. They have incredible connectivity all over the world making them an ideal host for your DNS infrastructure.
 
+### [CloudFlare](https://www.cloudflare.com/dns)
+
+Probably one of the largest free DNS hosting providers, no premium charges unless you get into some of their advanced CDN features. But they are also technically a managed DNS host which means you don't have as much control. However, they do provide you with additional security features such as rate limiting, filtering, and blocking. Cloudflare's speeds are also faster than most premium DNS providers.
+
 ### [Namecheap](https://www.namecheap.com/domains/freedns.aspx)
 
 A highly reputable domain registrar Namecheap offers free DNS hosting package, you don't even have to register your domain with them (though we use them for domain registration!)
 
-### [CloudFlare](https://www.cloudflare.com/dns)
+### [Rackspace](https://www.rackspace.com/cloud/dns)
 
-Although CloudFlare isn't really advertised or known for being a DNS hosting service provider, but it completely offers free DNS hosting with unlimited domains. No premium charges unless you get into some of their advanced CDN features.
+A reliable DNS hosting and management services for current customers at no cost. They feature automated migrations, IP Anycast routing, load balancing, and flexible access via their cloud control panel and RESTful API.
 
-### [BuddyNS](http://www.buddyns.com/)
+### [Nsone](https://ns1.com/)
+
+A data driven DNS provider with speeds faster than many other top-tier providers. You can customize your DNS with their powerful filters, use real-time data from your infrastructure for automatic traffic management, and get next-level performance and reliability. They even provide a developer-friendly REST API.
+
+### [ClouDNS](https://www.cloudns.net/)
+
+The free plan from ClouDNS offers 4 DNS servers, 3 zones, Dynamic DNS, round robin, native IPv6 support, and has no limits or restrictions on the records or requests. They also recently introduced premium plans with DDoS protected servers.
+
+### [DNS4.PRO](https://dns4.pro/)
+
+A newer anycast DNS provider with over 30 locations. They are owned and operated by [Prometeus](http://www.prometeus.net/site/?from=oldsite/) who originally created it because they weren't happy with the current situation in the DNS market.
+
+### [Rage4](https://www.rage4.com/)
+
+A fast and reliable hosting service provider which has a free plan featuring set such as geo routing, DNSSEC, a friendly API, and failover support. They also support Anycast DNS, which allows you to serve your DNS from their dual stack Anycast network.
+
+### [BuddyNS](https://www.buddyns.com/)
 
 One of the friendliest and easiest to use DNS provider out there. They provide reliability, performance, and security whilst staying simplistic for anyone to use.
 

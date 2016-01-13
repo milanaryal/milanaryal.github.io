@@ -62,7 +62,7 @@ After the jQuery library script paste the following code (inside another tag `<s
 $(document).ready(function() {
   $.getScript('//apis.google.com/js/plusone.js');
   $.getScript('//platform.twitter.com/widgets.js');
-  $.getScript("//connect.facebook.net/en_US/all.js#xfbml=1", function () {
+  $.getScript("//connect.facebook.net/en_US/sdk.js#xfbml=1", function () {
     FB.init({ status: true, cookie: true, xfbml: true });
   });
 });

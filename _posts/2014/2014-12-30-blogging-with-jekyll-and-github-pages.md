@@ -1,7 +1,7 @@
 ---
 title: "Blogging with Jekyll and GitHub Pages"
 date: 2014-12-30T19:47:46+05:45
-last_modified_at: "2015-07-15T15:59:30+05:45"
+last_modified_at: "2016-01-13T06:09:30+05:45"
 excerpt: "Transform your plain text into static websites and blogs."
 redirect_from: "/2014/12/blogging-with-jekyll-and-github-pages/"
 ---
@@ -54,10 +54,7 @@ Make [GitHub](//github.com) account and create repo `username.github.io`, rememb
 
 #### Step 2
 
-Download and install GitHub app according to your OS:
-
-* Mac - [mac.github.com](//mac.github.com)
-* Windows - [windows.github.com](//windows.github.com)
+Download and install [GitHub Desktop app](//desktop.github.com/) (Currently available for Mac and Windows)
 
 #### Step 3
 
@@ -118,7 +115,7 @@ A basic Jekyll site usually looks something like this:
 
 #### Step 4
 
-* With the help of GutHub Windows/Mac client, clone your `username.github.io` and sync/push your theme.
+* With the help of GitHub Desktop app, clone your `username.github.io` and sync/push your theme.
 * Congratulation! You are done.
 * Now after few minutes (less than 15 min) you'll see your changes at your `http://username.githun.io`.
 
@@ -204,13 +201,13 @@ Add a list of enabled gems (plugins) to your site's `_config.yml` file, such as:
 
 {% highlight bash %}
 gems:
+  - jekyll-feed
   - jekyll-mentions
-  - jemoji
   - jekyll-redirect-from
   - jekyll-sitemap
-  - jekyll-feed
+  - jemoji
 {% endhighlight %}
 
-This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](http://jekyllrb.com/).
+This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](//jekyllrb.com/).
 
 Happy Jekyll'ing!
