@@ -633,19 +633,52 @@ ul.icons {
   }
 }
 
-// Social
+// Social share
 
-.social-container {
+.social-share {
+  padding-top: 10px;
   margin-bottom: 30px;
+  color: rgba(0,0,0,0.44);
+  font-size: 14px;
+}
 
-  a {
-    color: #e1e8ed; // Twitter blue gray
+.btn-social-icon {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
 
-    &:hover,
-    &:focus {
-      color: #55acee; // Twitter blue brand
+  .fa {
+    margin-right: 0.5em;
+  }
+
+  @media (max-width: 479px) {
+    padding: 5px 0;
+    width: 35px;
+
+    .fa {
+      margin-right: 0;
+    }
+
+    .social-label {
+      display: none !important;
     }
   }
+}
+
+.btn-envelope {
+  @include btn-social($social-envelope-color);
+}
+
+.btn-facebook {
+  @include btn-social($social-facebook-color);
+}
+
+.btn-google-plus {
+  @include btn-social($social-google-plus-color);
+}
+
+.btn-twitter {
+  @include btn-social($social-twitter-color);
 }
 
 // Disqus commenting system

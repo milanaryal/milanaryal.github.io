@@ -1,7 +1,23 @@
-<ul class="social-container list-inline text-center">
+<ul class="social-share list-inline">
+  <li>Share on:</li>
   <li>
-    <a class="social-share fa-3x" href="//twitter.com/intent/tweet?text={{ page.title | markdownify | strip_html | strip_newlines | replace:'&#147;','' | replace:'&#148;','' | cgi_escape }}&amp;url={{ page.url | replace:'index.html','' | prepend: site.url | uri_escape }}&amp;via={{ site.author.twitter }}" target="_blank" data-toggle="tooltip" data-placement="top" title="Share on Twitter">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
+    <a class="btn btn-social-icon btn-twitter share-popup" href="//twitter.com/intent/tweet?url={{ page.url | replace:'index.html','' | prepend: site.url | uri_escape }}&text={{ page.title | markdownify | strip_html | strip_newlines | cgi_escape }}&via={{ site.author.twitter }}" target="_blank" role="button">
+      <i class="fa fa-twitter" aria-hidden="true"></i><span class="social-label">Twitter</span>
+    </a>
+  </li>
+  <li>
+    <a class="btn btn-social-icon btn-facebook share-popup" href="//www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.url | uri_escape }}&t={{ page.title | markdownify | strip_html | strip_newlines | cgi_escape }}" target="_blank" role="button">
+      <i class="fa fa-facebook" aria-hidden="true"></i><span class="social-label">Facebook</span>
+    </a>
+  </li>
+  <li>
+    <a class="btn btn-social-icon btn-google-plus share-popup" href="//plus.google.com/share?url={{ page.url | replace:'index.html','' | prepend: site.url | uri_escape }}" target="_blank" role="button">
+      <i class="fa fa-google-plus" aria-hidden="true"></i><span class="social-label">Google+</span>
+    </a>
+  </li>
+  <li>
+    <a class="btn btn-social-icon btn-envelope" href="mailto:?subject={{ page.title | markdownify | strip_html | strip_newlines | cgi_escape }}&body={{ page.url | replace:'index.html','' | prepend: site.url | uri_escape }}" target="_blank" role="button">
+      <i class="fa fa-envelope" aria-hidden="true"></i><span class="social-label">Email</span>
     </a>
   </li>
 </ul>

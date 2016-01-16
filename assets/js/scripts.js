@@ -12528,7 +12528,7 @@ var anchors = new AnchorJS();
      * ------------------------------------------------------------------------
      */
 
-    $('.social-share').on('click', function () {
+    $('.share-popup').on('click', function () {
       var width  = 670,
           height = 420,
           left   = ($(window).width()  - width)  / 2,

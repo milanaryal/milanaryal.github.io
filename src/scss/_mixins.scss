@@ -11,3 +11,14 @@
      -moz-background-size: cover;
           background-size: cover;
 }
+
+@mixin btn-social($background, $color: white) {
+  color: $color;
+  background-color: $background;
+
+  &:focus,
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+  }
+}
