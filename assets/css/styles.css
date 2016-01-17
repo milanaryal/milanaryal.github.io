@@ -8526,7 +8526,7 @@ ul.icons li a:hover {
 }
 
 .btn-social-icon .fa {
-  margin-right: .5em;
+  margin-right: .6em;
 }
 
 @media (max-width: 479px) {
@@ -8583,7 +8583,7 @@ ul.icons li a:hover {
 }
 
 .comments {
-  margin: 30px 0 60px;
+  margin: 30px 0 50px;
 }
 
 .comments a {
@@ -8592,6 +8592,24 @@ ul.icons li a:hover {
 
 .comments a:hover, .comments a:focus {
   color: #303437;
+}
+
+.btn-disqus {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: #2e9fff;
+  border: 0;
+  border-radius: 4px;
+}
+
+.btn-disqus:focus, .btn-disqus:hover {
+  color: white;
+  background-color: #0087fa;
+}
+
+.btn-disqus .fa {
+  margin-right: .6em;
 }
 
 .post-pager {

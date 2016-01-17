@@ -648,7 +648,7 @@ ul.icons {
   border-radius: 4px;
 
   .fa {
-    margin-right: 0.5em;
+    margin-right: 0.6em;
   }
 
   @media (max-width: 479px) {
@@ -684,7 +684,7 @@ ul.icons {
 // Disqus commenting system
 
 .comments {
-  margin: 30px 0 60px;
+  margin: 30px 0 50px;
 
   a {
     color: #3f4549;
@@ -693,6 +693,20 @@ ul.icons {
     &:focus {
       color: darken(#3f4549, 6.5%);
     }
+  }
+}
+
+.btn-disqus {
+  display: block;
+  // padding: 15px 25px;
+  width: 100%;
+  // font-size: 14px;
+  border: 0;
+  border-radius: 4px;
+  @include btn-social($social-disqus-color);
+
+  .fa {
+    margin-right: 0.6em;
   }
 }
 
