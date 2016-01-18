@@ -71,9 +71,53 @@
   anchors.add('.markdown-body>h2,.markdown-body>h3,.markdown-body>h4,.markdown-body>h5,.markdown-body>h6,.archive>h3');
 
 
+  /**
+   * ------------------------------------------------------------------------
+   * Generate ramdom posts
+   * ------------------------------------------------------------------------
+   */
+
+   function generateRandomPosts() {
+     $.getJSON('/posts.json', function(data) {
+       console.log('[posts.json loaded for random posts]');
+
+       var postsCount = data.length;
+       var posts = data;
+       var randomIndexUsed = [];
+       var counter = 0;
+       var numberOfPosts = 5;
+       var divRandomPosts = $('#random-posts');
+
+       while (counter < numberOfPosts) {
+         var randomIndex = Math.floor(Math.random() * postsCount);
+
+         if (randomIndexUsed.indexOf(randomIndex) == '-1') {
+           var postTitle = posts[randomIndex].title;
+           var postURL = posts[randomIndex].url;
+           var postDate = posts[randomIndex].date;
+           var postExcerpt = posts[randomIndex].excerpt;
+
+           divRandomPosts.append('<div class="random-post"><a href="' + postURL + '"><div class="clearfix"><h2 class="random-post-title">' + postTitle + '</h2><p class="random-post-excerpt">' + postExcerpt + '</p></div></a><div class="random-post-meta">Posted on ' + postDate + '</div></div>');
+
+           randomIndexUsed.push(randomIndex);
+           counter++;
+         }
+       }
+     });
+   }
+
+
   // Only run once the page Document Object Model (DOM)
   // is ready for JavaScript code to execute.
   $(function () { // BEGIN document ready function
+
+    /**
+     * ------------------------------------------------------------------------
+     * Random posts init
+     * ------------------------------------------------------------------------
+     */
+
+    generateRandomPosts();
 
     /**
      * ------------------------------------------------------------------------

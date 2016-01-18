@@ -8330,11 +8330,22 @@ ul.icons li a:hover {
   font-size: 16px;
 }
 
-.btn-default:hover, .btn-default:focus {
+.btn-default {
+  color: rgba(0, 0, 0, .44);
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, .15);
+}
+
+.btn-default:hover {
   color: rgba(0, 0, 0, .6);
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, .15);
   border-color: rgba(0, 0, 0, .3);
+}
+
+.btn-default:focus, .btn-default:active {
+  color: rgba(0, 0, 0, .8);
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, .6);
   outline: 0;
 }
 
@@ -8597,6 +8608,8 @@ ul.icons li a:hover {
 .btn-disqus {
   display: block;
   width: 100%;
+  padding: 13px;
+  font-size: 13px;
   color: white;
   background-color: #2e9fff;
   border: 0;
@@ -8613,7 +8626,100 @@ ul.icons li a:hover {
 }
 
 .post-pager {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.random-posts {
+  padding-bottom: 40px;
+  background-color: #fafafa;
+}
+
+.random-posts-heading {
+  padding-top: 50px;
+  padding-bottom: 15px;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, .44);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border-bottom: solid 1px rgba(0, 0, 0, .15);
+}
+
+@media (max-width: 767px) {
+  .random-posts-heading {
+    padding-top: 20px;
+  }
+}
+
+.random-post {
+  position: relative;
+  padding: 25px 0 32px;
+  line-height: 1.1;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+@media (max-width: 767px) {
+  .random-post {
+    padding: 24px 0 17px;
+  }
+}
+
+.random-post:last-child {
+  border-bottom: 0;
+}
+
+.random-post-title {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+@media (max-width: 767px) {
+  .random-post-title {
+    font-size: 20px;
+  }
+}
+
+.random-post-excerpt {
+  margin: 2px 0 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+  .random-post-excerpt {
+    font-size: 16px;
+  }
+}
+
+.random-post-meta {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, .3);
+  vertical-align: top;
+
+  text-rendering: auto;
+}
+
+@media (max-width: 767px) {
+  .random-post-meta {
+    font-size: 12px;
+  }
+}
+
+.btn-random {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .btn-random {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
 }
 
 .archive {

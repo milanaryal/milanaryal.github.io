@@ -1,0 +1,16 @@
+---
+# Generate all posts metadata
+
+layout: null
+---
+
+[
+  {% for post in site.posts %}{
+    "title": "{{ post.title }}",
+    "url": "{{ post.url }}",
+    "date": "{{ post.date | date: '%b %-d, %Y' }}",
+    "modified": "{% if post.last_modified_at %}{{ post.last_modified_at | date: '%b %-d, %Y' }}{% else %}{{ post.date | date: '%b %-d, %Y' }}{% endif %}",
+    "reading-time": "{% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}",
+    "excerpt": "{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}"
+  }{% unless forloop.last %},{% endunless %}{% endfor %}
+]
