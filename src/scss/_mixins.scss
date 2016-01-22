@@ -12,13 +12,13 @@
           background-size: cover;
 }
 
-@mixin btn-social($background, $color: white) {
-  color: $color;
-  background-color: $background;
+@mixin btn-social-share() {
+  color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.05);
 
   &:focus,
   &:hover {
-    color: $color;
-    background-color: darken($background, 10%);
+    color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.1);
   }
 }

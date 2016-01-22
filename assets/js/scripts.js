@@ -12410,7 +12410,7 @@ var anchors = new AnchorJS();
     NProgress.done();
 
     // finish home page loading effect
-    $('.home-container').removeClass('is-loading');
+    $('.hero-container').removeClass('is-loading');
   });
 
 
@@ -12467,6 +12467,8 @@ var anchors = new AnchorJS();
        var numberOfPosts = 5;
        var divRandomPosts = $('#random-posts');
 
+       divRandomPosts.append('<h3 class="random-posts-heading">Other writings</h3>');
+
        while (counter < numberOfPosts) {
          var randomIndex = Math.floor(Math.random() * postsCount);
 
@@ -12476,7 +12478,7 @@ var anchors = new AnchorJS();
            var postDate = posts[randomIndex].date;
            var postExcerpt = posts[randomIndex].excerpt;
 
-           divRandomPosts.append('<div class="random-post"><a href="' + postURL + '"><div class="clearfix"><h2 class="random-post-title">' + postTitle + '</h2><p class="random-post-excerpt">' + postExcerpt + '</p></div></a><div class="random-post-meta">Posted on ' + postDate + '</div></div>');
+           divRandomPosts.append('<div class="random-post"><a href="' + postURL + '"><div class="clearfix"><h3 class="random-post-title">' + postTitle + '</h3><p class="random-post-excerpt">' + postExcerpt + '</p></div></a><div class="random-post-meta">Posted on ' + postDate + '</div></div>');
 
            randomIndexUsed.push(randomIndex);
            counter++;
@@ -12514,7 +12516,7 @@ var anchors = new AnchorJS();
      */
 
     // make all images responsive
-    $('img').addClass('img-responsive');
+    $('.markdown-body img').addClass('img-responsive');
 
     // responsive table
     $('.markdown-body>table').addClass('table table-hover');

@@ -16,7 +16,7 @@ Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur puru
 
 ### Inline HTML elements
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](//developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
 - **To bold text**, use `<strong>`.
 - *To italicize text*, use `<em>`.
@@ -166,6 +166,6 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 
 -----
 
-Want to see something else added? <a href="https://github.com/MilanAryal/feedback/issues/new">Open an issue.</a>
+Want to see something else added? [Open an issue](//github.com/MilanAryal/ama/issues/new).
 
 [^fn-sample_footnote]: Handy! Now click the return link to go back.

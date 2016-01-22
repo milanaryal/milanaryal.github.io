@@ -57,7 +57,12 @@ layout: default
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
             <div class="post-meta-inline-acknowledgments">
-              <span class="post-meta-acknowledgment"><a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span></span>
+              {% if page.author and page.author != empty %}
+                <span class="post-meta-acknowledgment"><a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author.name %}{{ page.author.name }}{% else %}{{ page.author }}{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span></span>
+              {% else %}
+                <span class="post-meta-acknowledgment"><a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by the author. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span></span>
+              {% endif %}
+
               <div class="hidden" about="{{ page.url | replace:'index.html','' | prepend: site.url }}">Except as otherwise <a href="{{ site.url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}</span>.</div>
             </div>
 
@@ -75,14 +80,29 @@ layout: default
 
         {% include social_share.html %}
 
-        <hr>
+        {% unless page.author %}
+        <hr class="post-footer-info-divider">
+        <div class="author-card">
+          <div class="author-card-image-wrapper">
+            <a class="author-card-avatar-link" href="{{ site.url }}/">
+              <img class="author-card-avatar" src="{{ site.author.avatar }}" alt="{{ site.author.name }}">
+            </a>
+          </div>
+          <div class="author-card-content">
+            <h4 class="author-card-name">
+              <a href="{{ site.url }}/">{{ site.author.name }}</a>
+            </h4>
+            <p class="author-card-description">{{ site.author.bio }}</p>
+          </div>
+        </div>
+        {% endunless %}
 
         {% if site.disqus_shortname and page.comments != 'false' %}
           {% include disqus_thread.html %}
         {% endif %}
 
-        <nav class="post-pager clearfix">
-          <ul class="pager">
+        <nav class="clearfix">
+          <ul class="pager post-pager">
             {% if page.previous.url %}
             <li class="previous">
               <a href="{{ page.previous.url | replace:'//','/' | replace:'index.html','' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title | markdownify | strip_html | strip_newlines | escape_once }}"><i class="fa fa-angle-left"></i> Previous</a>
@@ -134,7 +154,6 @@ layout: default
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-        <h4 class="random-posts-heading">Other writings</h4>
         <div id="random-posts"></div>
 
         <div class="text-center">
