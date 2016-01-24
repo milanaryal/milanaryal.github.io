@@ -7,6 +7,7 @@ excerpt: "Create a shell script to install your list of APT-Get apps on freshly 
 If you have freshly set up your Ubuntu OS on your machine, it's a pain to install each app by hand. So, here I want to share a technic to install a list of your required Apt-Get apps with a shell script file.
 
 Our shell script file can do the following things respectively:
+
 * Add different repos (PPAs and other sources)
 * Update apps sources
 * Install our apps
