@@ -58,7 +58,17 @@ a {
   }
 }
 
+::-moz-selection {
+  background: #507ED9;
+  color: white;
+  text-shadow: none;
+}
 
+::selection {
+  background: #507ED9;
+  color: white;
+  text-shadow: none;
+}
 
 
 //
