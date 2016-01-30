@@ -8146,6 +8146,7 @@ ul.hero-social a.fa {
   line-height: 3.75em;
   text-align: center;
   text-indent: 3.75em;
+  text-transform: none !important;
   white-space: nowrap;
   border: solid 1px #c8cccf;
   border-radius: 100%;
@@ -8163,7 +8164,6 @@ ul.hero-social a.fa::before {
   text-align: center;
   text-indent: 0;
   text-shadow: 1.25px 0 0 #c8cccf, -1.25px 0 0 #c8cccf, 0 1.25px 0 #c8cccf, 0 -1.25px 0 #c8cccf;
-  text-transform: none !important;
 }
 
 @media (max-width: 480px) {

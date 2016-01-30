@@ -264,6 +264,7 @@ ul.hero-social {
     text-align: center;
     text-indent: 3.75em;
     white-space: nowrap;
+    text-transform: none !important;
 
     &::before {
       position: absolute;
@@ -275,8 +276,6 @@ ul.hero-social {
       line-height: inherit;
       text-align: center;
       text-indent: 0;
-
-      text-transform: none !important;
       color: #fff;
       text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
 
