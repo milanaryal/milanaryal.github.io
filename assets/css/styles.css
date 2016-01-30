@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * Milan Aryal (http://milanaryal.com)
- * Copyright 2015 Milan Aryal
+ * Copyright 2016 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
 /*!
@@ -8126,18 +8126,18 @@ a:hover, a:focus {
   margin-bottom: 1.25em;
 }
 
-ul.icons {
+ul.hero-social {
   padding-left: 0;
   list-style: none;
   cursor: default;
 }
 
-ul.icons li {
+ul.hero-social > li {
   display: inline-block;
   padding: .675em .5em;
 }
 
-ul.icons li a {
+ul.hero-social a.fa {
   position: relative;
   display: block;
   width: 3.75em;
@@ -8145,33 +8145,13 @@ ul.icons li a {
   overflow: hidden;
   line-height: 3.75em;
   text-align: center;
-  text-decoration: none;
   text-indent: 3.75em;
   white-space: nowrap;
   border: solid 1px #c8cccf;
   border-radius: 100%;
 }
 
-ul.icons li a:before {
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none !important;
-
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-
-ul.icons li a:before {
-  color: #fff;
-  text-shadow: 1.25px 0 0 #c8cccf, -1.25px 0 0 #c8cccf, 0 1.25px 0 #c8cccf, 0 -1.25px 0 #c8cccf;
-}
-
-ul.icons li a:hover:before {
-  text-shadow: 1.25px 0 0 #ff7496, -1.25px 0 0 #ff7496, 0 1.25px 0 #ff7496, 0 -1.25px 0 #ff7496;
-}
-
-ul.icons li a:before {
+ul.hero-social a.fa::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -8179,18 +8159,25 @@ ul.icons li a:before {
   height: inherit;
   font-size: 1.85em;
   line-height: inherit;
+  color: #fff;
   text-align: center;
   text-indent: 0;
+  text-shadow: 1.25px 0 0 #c8cccf, -1.25px 0 0 #c8cccf, 0 1.25px 0 #c8cccf, 0 -1.25px 0 #c8cccf;
+  text-transform: none !important;
 }
 
 @media (max-width: 480px) {
-  ul.icons li a:before {
+  ul.hero-social a.fa::before {
     font-size: 1.5em;
   }
 }
 
-ul.icons li a:hover {
+ul.hero-social a.fa:hover {
   border-color: #ff7496;
+}
+
+ul.hero-social a.fa:hover::before {
+  text-shadow: 1.25px 0 0 #ff7496, -1.25px 0 0 #ff7496, 0 1.25px 0 #ff7496, 0 -1.25px 0 #ff7496;
 }
 
 .intro-divider {
@@ -8967,10 +8954,6 @@ ul.icons li a:hover {
   text-decoration: underline;
 }
 
-.markdown-body .list-inline a {
-  background-image: none !important;
-}
-
 .markdown-body ul,
 .markdown-body ol {
   padding-left: 30px;
@@ -8978,6 +8961,18 @@ ul.icons li a:hover {
 
 .markdown-body li {
   margin-bottom: 14px;
+}
+
+.markdown-body .list-inline {
+  padding-left: 0;
+}
+
+.markdown-body .list-inline li {
+  margin-bottom: 0;
+}
+
+.markdown-body .list-inline a {
+  background-image: none !important;
 }
 
 .markdown-body h3, .markdown-body h4 {

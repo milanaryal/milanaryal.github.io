@@ -242,18 +242,17 @@ a {
 
 // Hero page icons
 
-ul.icons {
+ul.hero-social {
   cursor: default;
-  list-style: none;
   padding-left: 0;
+  list-style: none;
 
-  li {
+  > li {
     display: inline-block;
     padding: 0.675em 0.5em;
   }
 
-  li a {
-    text-decoration: none;
+  a.fa {
     position: relative;
     display: block;
     width: 3.75em;
@@ -265,44 +264,34 @@ ul.icons {
     text-align: center;
     text-indent: 3.75em;
     white-space: nowrap;
-  }
 
-  li a:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-  }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      font-size: 1.85em;
+      line-height: inherit;
+      text-align: center;
+      text-indent: 0;
 
-  li a:before {
-    color: #fff;
-    text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
-  }
+      text-transform: none !important;
+      color: #fff;
+      text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
 
-  li a:hover:before {
-    text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
-  }
-
-  li a:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height: inherit;
-    font-size: 1.85em;
-    line-height: inherit;
-    text-align: center;
-    text-indent: 0;
-
-    @media (max-width: 480px) {
-      font-size: 1.5em;
+      @media (max-width: 480px) {
+        font-size: 1.5em;
+      }
     }
-  }
 
-  li a:hover {
-    border-color: #ff7496;
+    &:hover {
+      border-color: #ff7496;
+
+      &::before {
+        text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+      }
+    }
   }
 }
 

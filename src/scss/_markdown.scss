@@ -62,12 +62,6 @@
     }
   }
 
-  .list-inline {
-    a {
-      background-image: none !important;
-    }
-  }
-
   ul,
   ol {
     padding-left: 30px;
@@ -75,6 +69,18 @@
 
   li {
     margin-bottom: 14px;
+  }
+
+  .list-inline {
+    padding-left: 0;
+
+    li {
+      margin-bottom: 0;
+    }
+
+    a {
+      background-image: none !important;
+    }
   }
 
   // h1 and h2 are reserved for markdown front matter
