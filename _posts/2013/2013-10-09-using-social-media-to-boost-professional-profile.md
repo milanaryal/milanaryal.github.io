@@ -1,9 +1,6 @@
 ---
 title: "Using social media to boost professional profile"
 date: 2013-10-09T12:32:01+05:45
-redirect_from:
-  - "/2013/10/social-media-professional-profile.html"
-  - "/2013/10/using-social-media-to-boost-professional-profile/"
 ---
 
 Whether you're actively job seeking or not, building your professional profile using social media will extend your professional reach beyond your immediate circle. This could increase the potential career opportunities coming your way.

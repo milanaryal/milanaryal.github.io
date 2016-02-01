@@ -2,9 +2,6 @@
 title: "Classroom called life"
 date: 2012-04-30T09:21:36+05:45
 excerpt: "Life is a classroom."
-redirect_from:
-  - "/2012/08/classroom-called-life.html"
-  - "/2012/04/classroom-called-life/"
 ---
 
 At 5 I learned our dog doesn't want to eat my broccoli either.

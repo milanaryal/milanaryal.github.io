@@ -1,9 +1,6 @@
 ---
 title: "9 best FB practice tips"
 date: 2012-05-14T09:42:59+05:45
-redirect_from:
-  - "/2012/05/9-best-fb-practice-tips.html"
-  - "/2012/05/9-best-fb-practice-tips/"
 ---
 
 <p class="lead">Paying attention to content does wonders for business</p>

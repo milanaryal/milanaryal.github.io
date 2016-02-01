@@ -1,7 +1,6 @@
 ---
 title: "10 dangerous things users do online"
 date: 2012-06-04T19:47:29+05:45
-redirect_from: "/2012/06/10-dangerous-things-users-do-online.html"
 ---
 
 <p class="lead">Protect yourself from getting hacked, phised or burgled</p>

@@ -1,9 +1,6 @@
 ---
 title: "Speak your heart"
 date: 2012-10-01T15:20:45+05:45
-redirect_from:
-  - "/2013/10/speak-your-heart.html"
-  - "/2012/10/speak-your-heart/"
 ---
 
 <p class="lead">That night was my big chance and all I did was just sit there...</p>

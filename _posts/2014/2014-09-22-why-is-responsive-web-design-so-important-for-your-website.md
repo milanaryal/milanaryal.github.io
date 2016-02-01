@@ -2,10 +2,6 @@
 title: "Why is responsive web design so important for your website?"
 date: 2014-09-22T11:06:34+05:45
 excerpt: "Responsive design helps to ensure that the images, layout and content remain as usual in any device."
-redirect_from:
-  - "/2014/09/responsive-website-design.html"
-  - "/2014/09/responsive-web-design-best-practices.html"
-  - "/2014/why-is-responsive-web-design-so-importan-for-your-website/"
 ---
 
 Responsive design is a website that is designed to ensure that the images, structure and content remain as usual in any device. The design ensures that users get full access to the site when using their phones or tablets smaller screen. This means that a person does not have to worry about having various websites, but to ensure that the sites functions effectively on the mobile device. Majority of the people in the world conduct Google searches on their phones. This means that one can get a good experience regardless of the device sizes and make.

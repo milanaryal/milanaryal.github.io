@@ -2,7 +2,6 @@
 title: "Prebrowsing to improve web performance in your application"
 date: 2015-03-04T18:50:13+05:45
 excerpt: "Optimistically loading web resources ahead of time for better performance."
-redirect_from: "/2015/prefetching-to-improve-web-performance-in-your-application/"
 ---
 
 "Prebrowsing" (short for "predictive browsing" --- a word made by Steve Souders) is simply loading a file before browser needs it, to provide a fast and instant user experience. You can decide on which content to prefetch by analysing your users behaviour, and try to predict which resources they will need ahead of time.

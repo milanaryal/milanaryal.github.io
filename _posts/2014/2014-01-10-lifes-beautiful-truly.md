@@ -1,9 +1,6 @@
 ---
 title: "Life's beautiful, truly!"
 date: 2014-01-10T09:36:13+05:45
-redirect_from:
-  - "/2014/01/lifes-beautiful-truly.html"
-  - "/2014/01/lifes-beautiful-truly/"
 ---
 
 <p class="lead">This story contains some ‘tips’ that may bring you a beautiful life. Read them, live by them more fully, and you will surely experience a beautiful life!</p>

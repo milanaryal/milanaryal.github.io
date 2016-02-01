@@ -1,9 +1,6 @@
 ---
 title: "Best practices for Gmail"
 date: 2012-11-05T19:12:49+05:45
-redirect_from:
-  - "/2012/11/best-practices-for-gmail.html"
-  - "/2012/11/best-practices-for-gmail/"
 ---
 
 <p class="lead">Understand its core features to keep communication organised and efficient</p>

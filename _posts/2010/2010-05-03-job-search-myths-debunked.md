@@ -1,9 +1,6 @@
 ---
 title: "Job-search myths debunked"
 date: 2010-05-03T23:58:59+05:45
-redirect_from:
-  - "/2010/05/job-search-myths-debunked.html"
-  - "/2010/05/job-search-myths-debunked/"
 ---
 
 Myths that people believed about looking for a job are many and persistent. The most common ones are these:

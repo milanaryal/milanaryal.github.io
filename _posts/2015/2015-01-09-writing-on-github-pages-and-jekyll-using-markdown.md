@@ -1,7 +1,6 @@
 ---
 title: "Writing on GitHub Pages and Jekyll using Markdown"
 date: 2015-01-09T15:04:14
-redirect_from: "/2015/01/writing-on-github-pages-and-jekyll-using-markdown/"
 ---
 
 Readme file on GitHub uses GitHub Flavored Markdown (GFM) and blogging platform like Jekyll, Ghost, Tumblr (support editing posts in Markdown) and many other platforms also encouraging to write posts using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.
@@ -32,7 +31,7 @@ kramdown:
 
 **Also on Gost blogging platform**, it support the following combination of standard Markdown and GitHub Flavored Markdown.
 
-> All HTML is valid Markdown. If you're stuck not able to format your content how you would like (for example using tables) you can always use [plain HTML](http://htmldog.com/guides/html/beginner/?__hstc=10303082.f33480622a9bdc4ffce7bcd81cc8cc49.1420789915940.1420789915940.1420789915940.1&__hssc=10303082.1.1420789915940&__hsfp=3394336207) instead of Markdown.
+> All HTML is valid Markdown. If you're stuck not able to format your content how you would like (for example using tables) you can always use [plain HTML](http://htmldog.com/guides/html/beginner/) instead of Markdown.
 
 ### Markdown style guide
 
@@ -108,8 +107,8 @@ For code blocks, if extensions enabled Redcarpet and Kramdown supports both stan
 {% highlight html %}
 {% raw %}
 <header>
-        <h1>{{title}}</h1>
-    </header>
+  <h1>{{title}}</h1>
+</header>
 GFM uses triple back-ticks ```
 {% endraw %}
 {% endhighlight %}
@@ -118,7 +117,7 @@ GFM uses triple back-ticks ```
 {% raw %}
 ```
 <header>
-    <h1>{{title}}</h1>
+  <h1>{{title}}</h1>
 </header>
 ```
 {% endraw %}

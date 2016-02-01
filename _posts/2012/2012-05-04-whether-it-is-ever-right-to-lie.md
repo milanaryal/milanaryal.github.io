@@ -1,7 +1,6 @@
 ---
 title: "Whether it is ever right to lie?"
 date: 2012-05-04T19:52:41+05:45
-redirect_from: "/2012/05/whether-it-is-ever-right-to-lie.html"
 ---
 
 Is it ever right to lie? Of course not. Instinctively, we all know that it is not. But often when faced with the decision of whether or not we should lie, we overlook the morality of the situation, and do what seems best for us at that moment. Let us consider that a patient is going to die, but if the doctor withholding bad news from patient in order to give them hope. Is it good to lie? Absolutely no. Its right to salute Kant's position that being moral means being consistent in each and every instance.

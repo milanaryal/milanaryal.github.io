@@ -1,7 +1,6 @@
 ---
 title: "Mistakes to avoid"
 date: 2012-09-17T16:46:59+05:45
-redirect_from: "/2012/11/mistakes-to-avoid.html"
 ---
 
 One of the hardest challenges we face in life is to live in our own skin --- to just be right here, right now, regardless of where we are. Too often we needlessly distract ourselves with anything and everything to keep us from being fully present in the current moment.

@@ -1,9 +1,6 @@
 ---
 title: "Keep on going"
 date: 2013-11-09T10:38:27+05:45
-redirect_from:
-  - "/2013/11/keep-on-going.html"
-  - "/2013/11/keep-on-going/"
 ---
 
 <p class="lead">The current obstacles are the foundation of your future success. There are some persons who didn’t give up no matter what. Thus, if you are failing, keep on going</p>

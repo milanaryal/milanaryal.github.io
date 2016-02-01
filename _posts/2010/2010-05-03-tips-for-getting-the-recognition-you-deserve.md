@@ -1,9 +1,6 @@
 ---
 title: "Tips for getting the recognition you deserve"
 date: 2010-05-03T23:05:36+05:45
-redirect_from:
-  - "/2008/05/tips-for-getting-recognition-you-deserve.html"
-  - "/2010/05/tips-for-getting-the-recognition-you-deserve/"
 ---
 
 <p class="lead">Employees who receive regular recognition are more productive, rate higher on consumer satisfaction surveys, have increased co-worker engagement, have better safety records and are less likely to leave the organization</p>

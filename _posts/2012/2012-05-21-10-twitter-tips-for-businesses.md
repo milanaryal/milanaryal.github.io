@@ -1,9 +1,6 @@
 ---
 title: "10 Twitter tips for businesses"
 date: 2012-05-21T09:48:44+05:45
-redirect_from:
-  - "/2012/05/10-twitter-tips-for-businesses.html"
-  - "/2012/05/10-twitter-tips-for-businesses/"
 ---
 
 <p class="lead">Use the powerful social media as a tool for marketing and promotion</p>

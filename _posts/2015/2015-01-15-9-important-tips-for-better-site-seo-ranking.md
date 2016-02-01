@@ -1,7 +1,6 @@
 ---
 title: "9 important tips for better site SEO ranking"
 date: 2015-01-15T15:49:57+05:45
-redirect_from: "/2015/01/9-important-tips-for-better-site-seo-ranking/"
 ---
 
 Every website owner wants his site to get better online visibility but it isn't that easy to have in practical sense as it sounds. What do you think proves helpful in this goal of yours?

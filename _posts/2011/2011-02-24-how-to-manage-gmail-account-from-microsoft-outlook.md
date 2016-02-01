@@ -1,9 +1,6 @@
 ---
 title: "How to manage Gmail account from Microsoft Outlook"
 date: 2011-02-24T15:06:36+05:45
-redirect_from:
-  - "/2011/02/how-to-manage-gmail-account-from.html"
-  - "/2011/02/how-to-manage-gmail-account-from-microsoft-outlook/"
 ---
 
 We can set-up Gmail in different email clients like Outlook and Mozilla Thunderbird. In fact, any email address which lets you enable POP can be set up in such mail clients. So you can use Hotmail and Gmail in Outlook but unfortunately as you cannot import mails using POP, Yahoo cannot be used with Outlook.

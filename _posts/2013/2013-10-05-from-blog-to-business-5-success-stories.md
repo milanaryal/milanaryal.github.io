@@ -2,9 +2,6 @@
 title: "From blog to business: 5 success stories"
 date: 2013-10-05T13:59:33+05:45
 excerpt: "The world of blogging has turned hobbies into full-time careers."
-redirect_from: 
-  - "/2013/10/from-blog-to-business-5-success-stories.html"
-  - "/2013/10/from-blog-to-business-5-success-stories/"
 ---
 
 From advertisements, sponsorships and brand collaborations to endorsement opportunities and even book deals --- the world of blogging has turned hobbies into full-time careers.

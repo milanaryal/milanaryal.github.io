@@ -2,7 +2,6 @@
 title: "10 steps to a happier you"
 date: 2012-12-03T16:42:21+05:45
 excerpt: "A spiritual teacher has suggested 10 simple steps that could lead you to a happier lifestyle."
-redirect_from: "/2012/12/10-steps-to-happier-you.html"
 ---
 
 Author of *The Human Being Of The Future* Daniele Boido believes that purging negative emotions and improving relationships could help us create a better and happier life

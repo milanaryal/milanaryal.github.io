@@ -1,9 +1,6 @@
 ---
 title: "9 Google search tricks"
 date: 2012-05-07T05:51:59+05:45
-redirect_from:
-  - "/2013/10/9-google-search-tricks.html"
-  - "/2012/05/9-google-search-tricks/"
 ---
 
 <p class="lead">Use these cool shortcuts to find things better and faster</p>

@@ -1,7 +1,6 @@
 ---
 title: "The evolution of web design"
 date: 2014-07-06T15:12:26+05:45
-redirect_from: "/2014/07/the-evolution-of-web-design.html"
 ---
 
 An amazing infographic on how Web Design has evolved across the years. Right from the first website.
