@@ -9157,10 +9157,24 @@ ul.hero-social a.fa:hover::before {
 
 .markdown-body hr {
   display: block;
-  max-width: 100px;
-  margin: 51px auto 41px;
+  margin-top: 52px;
+  margin-bottom: 42px;
+  text-align: center;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, .15);
+}
+
+.markdown-body hr::before {
+  position: relative;
+  top: -25px;
+  display: inline-block;
+  margin-left: .8em;
+  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(0, 0, 0, .6);
+  letter-spacing: .8em;
+  content: '\002e\002e\002e';
 }
 
 .emoji {

@@ -29,17 +29,19 @@ Most of these elements are styled by browsers with few modifications on our part
 
 ### Footnotes
 
-Footnotes are supported as part of the Markdown syntax. Here's one in action. Clicking this number[^fn-sample_footnote] will lead you to a footnote. The syntax looks like:
+Footnotes are supported as part of the Markdown syntax. Here's one in action. Clicking this button[^fn-sample_footnote] will lead you to a footnote. The syntax looks like:
 
-{% highlight text %}
-Clicking this number[^fn-sample_footnote]
-{% endhighlight %}
+[^fn-sample_footnote]: Handy! Now click the button to view or hide footnotes.
+
+```text
+Clicking this button[^fn-sample_footnote]
+```
 
 Each footnote needs the `^fn-` prefix and a unique ID to be referenced for the footnoted content. The syntax for that list looks something like this:
 
-{% highlight text %}
-[^fn-sample_footnote]: Handy! Now click the return link to go back.
-{% endhighlight %}
+```text
+[^fn-sample_footnote]: Handy! Now click the button to view or hide footnotes.
+```
 
 You can place the footnoted content wherever you like. Markdown parsers should properly place it at the bottom of the post.
 
@@ -51,7 +53,7 @@ Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est 
 
 Inline code is available with the `<code>` element. Snippets of multiple lines of code are supported through Pygments. Longer lines will automatically scroll horizontally when needed.
 
-{% highlight js %}
+```js
 // Example can be run directly in your JavaScript console
 
 // Create a function that takes two arguments and returns the sum of those arguments
@@ -60,20 +62,7 @@ var adder = new Function("a", "b", "return a + b");
 // Call the function
 adder(2, 6);
 // > 8
-{% endhighlight %}
-
-You may also optionally show code snippets with line numbers. Add `linenos` to the Pygments tags.
-
-{% highlight js linenos %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-{% endhighlight %}
+```
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
@@ -163,9 +152,3 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
 </table>
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
------
-
-Want to see something else added? [Open an issue](//github.com/MilanAryal/ama/issues/new).
-
-[^fn-sample_footnote]: Handy! Now click the return link to go back.

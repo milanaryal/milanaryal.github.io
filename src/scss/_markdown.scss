@@ -264,10 +264,26 @@
 
   hr {
     display: block;
-    max-width: 100px;
-    margin: 51px auto 41px;
     border: 0;
-    border-top: 1px solid $markdown-color-hr;
+    text-align: center;
+
+    margin-top: 52px;
+    margin-bottom: 42px;
+
+    &::before {
+      content: '\002e\002e\002e'; // ...
+      display: inline-block;
+      margin-left: .8em;
+      color: rgba(0,0,0,.6);
+      position: relative;
+      top: -25px;
+
+      font-family: $theme-font-family-serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 22px;
+      letter-spacing: .8em;
+    }
   }
 
 
