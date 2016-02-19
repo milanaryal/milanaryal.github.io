@@ -9234,37 +9234,16 @@ del code {
   text-decoration: inherit;
 }
 
-pre > code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
-}
-
-.highlight {
-  margin-bottom: 30px;
-}
-
-.highlight pre,
 pre {
   padding: 20px;
+  margin-bottom: 30px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
+  word-break: normal;
+  word-wrap: normal;
   background-color: #f7f7f7;
   border-radius: 3px;
-}
-
-.highlight pre {
-  margin-bottom: 0;
-  word-break: normal;
-}
-
-pre {
-  word-wrap: normal;
 }
 
 pre code {
@@ -9273,8 +9252,11 @@ pre code {
   padding: 0;
   margin: 0;
   overflow: initial;
+  font-size: 100%;
   line-height: inherit;
+  word-break: normal;
   word-wrap: normal;
+  white-space: pre;
   background-color: transparent;
   border: 0;
 }
@@ -9588,11 +9570,11 @@ kbd {
 
 @media (min-width: 768px) {
   .headroom {
-    -webkit-transition: background-color 200ms, -webkit-transform 200ms;
-         -o-transition: background-color 200ms, transform 200ms, -o-transform 200ms;
-            transition: background-color 200ms, -webkit-transform 200ms;
-            transition: background-color 200ms, transform 200ms;
-            transition: background-color 200ms, transform 200ms, -webkit-transform 200ms, -o-transform 200ms;
+    -webkit-transition: background-color 200ms,    -webkit-transform 200ms;
+         -o-transition: background-color 200ms,    transform 200ms,    -o-transform 200ms;
+            transition: background-color 200ms,    -webkit-transform 200ms;
+            transition: background-color 200ms,    transform 200ms;
+            transition: background-color 200ms,    transform 200ms,    -webkit-transform 200ms,    -o-transform 200ms;
   }
   .headroom--not-top {
     -webkit-transform: translateY(-100%);
@@ -9653,7 +9635,7 @@ kbd {
 
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 .bigfoot-footnote__button:hover,
@@ -9902,7 +9884,7 @@ kbd {
   background: #fafafa;
   border-radius: .5em;
 
-  font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .bigfoot-footnote__content img {

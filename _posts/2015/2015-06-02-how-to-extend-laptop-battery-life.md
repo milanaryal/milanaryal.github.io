@@ -26,7 +26,7 @@ So here's the basic suggestions that helps to expand your laptop battery life:
 
 9. Don't block the Air Vents. Lots of people try use their new laptop on their knee, or on a bed, etc. This blocks the air vents at the bottom of the machine and causes the laptop to work less efficiently. You can also lead to a breakdown if your laptop overheats, and this might not be cheap to repair.
 
-10. Run Disk Cleanup & Disk Defrag regularly, as these will keep your laptop operating at peak perfoemance, and lengthen battery life.
+10. Run Disk Cleanup & Disk Defrag regularly, as these will keep your laptop operating at peak performance, and lengthen battery life.
 
 11. Run your battery completely down and recharge it once every 2 months.
 
@@ -40,4 +40,4 @@ So here's the basic suggestions that helps to expand your laptop battery life:
 
 16. Charge the battery! Consider keeping it plugged in for 12 hours before you unplug.
 
-Tip! Over time, you may find that you have to recharge your battery more often to get the expected level of performance. If that's the case, it's time to replace your battery. Look for lithium ion (Li-Ion) replacement batteries for the greatest longevity. 
+Tip! Over time, you may find that you have to recharge your battery more often to get the expected level of performance. If that's the case, it's time to replace your battery. Look for lithium ion (Li-Ion) replacement batteries for the greatest longevity.

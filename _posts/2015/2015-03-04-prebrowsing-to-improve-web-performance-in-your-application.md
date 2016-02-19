@@ -34,13 +34,13 @@ DNS is the protocol that converts human readable domains `http://www.google.com`
 
 To improve the speed of redirects, content authors can add the following tag to their page:
 
-{% highlight html %}
+```html
 <link rel="dns-prefetch" href="//host_name_to_prefetch.com">
-{% endhighlight %}
+```
 
 For example:
 
-{% highlight html %}
+```html
 <html>
   <head>
     <link rel="dns-prefetch" href="//www.domain1.com">
@@ -48,10 +48,10 @@ For example:
   </head>
   <body>
     <img src="www.domain1.com/image1.jpeg">
-    <script src="www.domain2.com/script1.js">
+    <script src="www.domain2.com/script1.js"></script>
   </body>
 </html>
-{% endhighlight %}
+```
 
 ### Link prefetching
 
@@ -59,11 +59,11 @@ Link prefetching is a browser mechanism, which utilizes browser idle time to dow
 
 Standard link prefetching (executed by most modern browsers):
 
-{% highlight html %}
+```html
 <link rel="prefetch" href="/css/style.css">
 <link rel="prefetch" href="/js/scripts.js">
 <link rel="prefetch" href="/img/big.jpeg">
-{% endhighlight %}
+```
 
 ### Prerendering
 
@@ -71,9 +71,9 @@ Prerendering extends the concept of prefetching. Instead of just downloading the
 
 You can trigger prerendering by inserting a link element with a rel of "prerender", for example:
 
-{% highlight html %}
+```html
 <link rel="prerender" href="http://example.org/index.html">
-{% endhighlight %}
+```
 
 Situations in which prerendering is aborted:
 
@@ -91,12 +91,12 @@ Situations in which prerendering is aborted:
 
 You can trigger the prefetch hints when you predict that a user action will require the download of additional content:
 
-{% highlight javascript %}
+```js
 var hint =document.createElement("link")
 hint.setAttribute("rel","prerender")
 hint.setAttribute("href","next-page.html")
 document.getElementsByTagName("head")[0].appendChild(hint)
-{% endhighlight %}
+```
 
 ### Browser support
 

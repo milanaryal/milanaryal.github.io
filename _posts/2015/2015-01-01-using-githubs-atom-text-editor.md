@@ -77,4 +77,4 @@ I see these products as complementary. The fact that they share similar visuals 
 
 ---
 
-More features on Atom are still coming and it is impressive. The fact that it is built on Web technologies makes it fully customizable and extensible. Modelling after Sublime Text’s look and feel is also a good idea, as it can reduce (or eliminate) any learning curve when switching from another text editor. I can definitely see it getting better in the future. If you have not tried it, do give it a try. I am sure you will love [Atom text editor](//atom.io/).
+More features on Atom are still coming and it is impressive. The fact that it is built on Web technologies makes it fully customizable and extensible. Modelling after Sublime Text's look and feel is also a good idea, as it can reduce (or eliminate) any learning curve when switching from another text editor. I can definitely see it getting better in the future. If you have not tried it, do give it a try. I am sure you will love [Atom text editor](//atom.io/).

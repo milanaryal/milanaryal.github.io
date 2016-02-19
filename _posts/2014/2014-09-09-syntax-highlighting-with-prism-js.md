@@ -10,13 +10,13 @@ Last time I was searching for a good syntax highlighter for beautifully viewing 
 
 Yet not sure what I mean by a syntax highlighter or what it does? Here's an example of JavaScript snippet highlighted with syntax highlighter:
 
-{% highlight html %}
+```html
 <script language="javascript">
   var today= new Date()
 </script>
   ....
 <body onload=alert(today)>
-{% endhighlight %}
+```
 
 PrismJS is a light weight and works on most of all the platform whether it is your own hosted site or any other popular CMS platform like WordPress, Blogger or Tumblr.
 
@@ -30,7 +30,7 @@ Now, upload the two files in your hosting site.
 
 Then, you will need to link the `prism.css` and `prism.js` files in your index page. Example:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,7 +43,7 @@ Then, you will need to link the `prism.css` and `prism.js` files in your index p
     <script src="prism.js"></script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 Remember that to correctly work, `prism.css` file should be include before the `</head>` tag and `prism.js` before `</body>` tag.
 
@@ -55,21 +55,21 @@ Easily highlight your code on WordPress with WP PrismJS. Simply [download](http:
 
 To install PrismJS on your Blogger/Tumblr blog you can upload `prism.css` and `prism.js` files on [Dropbox](http://www.dropbox.com/) because we cannot host file in the Blogger/Tumblr site. Then as same process above go to template edit and inculde `prism.css` file link before the `</head>` tag and `prism.js` file link before `</body>` tag.
 
-**See also:** [How to host assets with Dropbox on your website]({% post_url /2015/2015-08-19-hosting-images-with-dropbox-on-your-website %})
+**See also:** [How to host assets with Dropbox on your website]({% post_url 2015-08-19-hosting-images-with-dropbox-on-your-website %})
 
 If you don't like to upload the file and want to use PrismJS default theme then you can include the following two files link to install PrismJS:
 
-{% highlight html %}
+```html
 <link href="http://prismjs.com/themes/prism.css" rel="stylesheet" />
 
 <script src="http://prismjs.com/prism.js"></script>
-{% endhighlight %}
+```
 
 ### Using PrismJS
 
 First thing you have to escape HTML character `<` to `&lt;` and `>` to `&gt;` to highlight syntax with PrismJS. For Example:
 
-{% highlight html %}
+```html
 <pre>
   <code class="language-javascript">
     &lt;script&gt;
@@ -79,7 +79,7 @@ First thing you have to escape HTML character `<` to `&lt;` and `>` to `&gt;` to
     &lt;body onload=alert(today)&gt;
   </code>
 </pre>
-{% endhighlight %}
+```
 
 You can also use different tools to escape HTML character.
 
@@ -89,32 +89,32 @@ You have to wrap your code inside the `<pre>` and the `<code>` tag defining the 
 
 For example to show HTML snippet define `class="language-markup"`
 
-{% highlight html %}
+```html
 <pre>
   <code class="language-markup">
     <!-- YOUR RAW HTML CODE HERE -->
   </code>
 </pre>
-{% endhighlight %}
+```
 
 For CSS snippet define `class="language-css"`
 
-{% highlight html %}
+```html
 <pre>
   <code class="language-css">
     /* YOUR RAW CSS CODE HERE */
   </code>
 </pre>
-{% endhighlight %}
+```
 
 For JavaScript snippet define `class="language-javascript"`
 
-{% highlight html %}
+```html
 <pre>
   <code class="language-javascript">
     // YOUR RAW JAVASCRIPT CODE HERE
   </code>
 </pre>
-{% endhighlight %}
+```
 
 With PrismJS by help of these few easy steps you get a nice highlighted code snippet in your webpage, isn't it awesome?

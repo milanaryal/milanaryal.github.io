@@ -149,6 +149,10 @@ node_modules
 .node_repl_history
 node_modules
 
+# Bower packages
+bower_components
+src/bower_components
+
 
 # ----------------------------------------------------------------------
 # | Text editor files                                                  |

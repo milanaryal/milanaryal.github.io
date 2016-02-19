@@ -16,7 +16,7 @@ To load in a JavaScript file asynchronously you can use the following code.
 
 Some of these services already (smartly) provide their scripts in an async fashion, this just combines them into more efficient, organized, and understandable code.
 
-{% highlight javascript %}
+```js
 (function(doc, script) {
   var js,
   fjs = doc.getElementsByTagName(script)[0],
@@ -38,7 +38,7 @@ Some of these services already (smartly) provide their scripts in an async fashi
 
   fjs.parentNode.insertBefore(frag, fjs);
 }(document, 'script'));
-{% endhighlight %}
+```
 
 This will create a new script tag, add in the social media JavaScript in the src attribute and add the tag inside the head of the document.
 
@@ -50,14 +50,14 @@ First make sure you have [load recent jQuery library](https://developers.google.
 
 Just simple following code before `</body>` to load jQuery library:
 
-{% highlight html %}
+```html
 <!-- make sure you include the latest version -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-{% endhighlight %}
+```
 
 After the jQuery library script paste the following code (inside another tag `<script> // your code here </script>`):
 
-{% highlight javascript %}
+```js
 $(document).ready(function() {
   $.getScript('//apis.google.com/js/plusone.js');
   $.getScript('//platform.twitter.com/widgets.js');
@@ -65,13 +65,13 @@ $(document).ready(function() {
     FB.init({ status: true, cookie: true, xfbml: true });
   });
 });
-{% endhighlight %}
+```
 
 ### HTML tags to load social sharing buttons
 
 You'll need the HTML in place for the scripts to put their stuff:
 
-{% highlight html %}
+```html
 <!-- For Twitter -->
 <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
 
@@ -81,6 +81,6 @@ You'll need the HTML in place for the scripts to put their stuff:
 
 <!-- For Google+ -->
 <div class="g-plusone" data-size="medium" data-count="true"></div>
-{% endhighlight %}
+```
 
 <a class="btn btn-default" href="//dl.dropboxusercontent.com/s/xsh1zt6br3org8x/index.html" onClick="ga('send', 'event', 'Click', 'Demo', 'Async social sharing buttons');">Demo</a> <a class="btn btn-default" href="//dl.dropboxusercontent.com/s/qvcwolr16ws12a7/async-social-sharing-buttons.zip?dl=1" onClick="ga('send', 'event', 'Click', 'Download', 'Async social sharing buttons');">Download</a>

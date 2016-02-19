@@ -14,10 +14,10 @@ In this post, I'll show you making embedded video responsive using CSS, so that 
 
 Services such as YouTube provide code that you can copy and paste into your own website to embed content. When you embed content from an external source, the code will include an iframe:
 
-{% highlight html %}
+```html
 <!-- Copy & Pasted from YouTube -->
 <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M" frameborder="0" allowfullscreen></iframe>
-{% endhighlight %}
+```
 
 This iframe enables external content to be displayed on your website, because it includes a URL that points to the source of the streamed content.
 
@@ -30,14 +30,14 @@ Fortunately there are a couple of possible solutions here.
 
 With [Thierry Koblenz's excellent technique](http://alistapart.com/article/creating-intrinsic-ratios-for-video), you wrap the video in another element which has an intrinsic aspect ratio, then absolute position the video within that. That gives us fluid width with a reasonable height we can count on.
 
-{% highlight html %}
+```html
 <div class="video-wrapper">
   <!-- Copy & Pasted from YouTube -->
   <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M" frameborder="0" allowfullscreen></iframe>
 </div>
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -51,7 +51,7 @@ With [Thierry Koblenz's excellent technique](http://alistapart.com/article/creat
     width: 100%;
     height: 100%;
 }
-{% endhighlight %}
+```
 
 <figure>
   <!-- Copy & Pasted from YouTube -->
@@ -61,7 +61,7 @@ With [Thierry Koblenz's excellent technique](http://alistapart.com/article/creat
 
 We can again look to Thierry's solution for adding additional CSS and imposing aspect ratio.
 
-{% highlight css %}
+```css
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -76,7 +76,7 @@ We can again look to Thierry's solution for adding additional CSS and imposing a
     width: 100%;
     height: 100%;
 }
-{% endhighlight %}
+```
 
 ### Responsive video with JavaScript
 
@@ -99,7 +99,7 @@ A more current solution is to use just a script -- such as [FluidVids.js](http:/
 1. [Download the script](http://github.com/toddmotto/fluidvids/archive/master.zip) (ZIP) from GitHub and upload it to your server with the same folder structure that the downloaded files come in. This will place the script itself in a folder named `dist`.
 2. Ensure you place the script before the closing `<body>` tag.
 
-{% highlight html %}
+```html
 <body>
   <!-- html above -->
   <script src="dist/fluidvids.js"></script>
@@ -107,11 +107,11 @@ A more current solution is to use just a script -- such as [FluidVids.js](http:/
   // fluidvids module available
   </script>
 </body>
-{% endhighlight %}
+```
 
 Pass in your configuration:
 
-{% highlight html %}
+```html
 // fluidvids module available
 <script>
   fluidvids.init({
@@ -119,21 +119,21 @@ Pass in your configuration:
     players: ['www.youtube.com', 'player.vimeo.com'] // players to support
   });
 </script>
-{% endhighlight %}
+```
 
 To add other services like SlideShare to FluidVids:
 
-{% highlight javascript %}
+```js
 players: ['www.youtube.com', 'player.vimeo.com', 'www.slideshare.net'] // players to support
-{% endhighlight %}
+```
 
 That's all you need to do to make videos resize on all devices that support JavaScript. It works not only for YouTube, but for Vimeo and even SlideShare too. The problem, however, is that if you users don't have JavaScript support or the JavaScript hasn't loaded yet or JavaScript hasn't loaded correctly, the only fallback you can use is to add the following to your style sheet:
 
-{% highlight css %}
+```css
 iframe {
     max-width: 100%;
 }
-{% endhighlight %}
+```
 
 This will ensure that video resizes to the width of the browser's window. But it won't resize the video's height; unfortunately, iframe just doesn't work this way. So, the video won't break your layout, but it won't look very good either. This is not really a good option, so **if you can avoid using JavaScript for videos, it's a good idea to do so**.
 
@@ -143,13 +143,13 @@ If you're developing a responsive website using a content management system, the
 
 We can just use [EmbedResponsively](http://embedresponsively.com) to generate the copy-paste-code with one click.
 
-{% highlight css %}
+```css
 .embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-{% endhighlight %}
+```
 
-{% highlight html %}
+```html
 <div class="embed-container"> <!-- Your iframe content here --> </div>
-{% endhighlight %}
+```
 
 ### Putting it all together
 

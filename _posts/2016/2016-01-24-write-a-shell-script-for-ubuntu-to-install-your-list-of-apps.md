@@ -22,7 +22,7 @@ Create a new file with `.sh` extention. For example, `install-apps.sh`.
 
 Now open a file with your favorite text editor. And use the following format to create a script file:
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 
 # ----------------------------------------------------------------------
@@ -60,7 +60,7 @@ sudo apt-get -y install \
   ubuntu-tweak \
   ruby
 # .. other apps
-{% endhighlight %}
+```
 
 In the above script, firstly we have added all your sources and PPAs. Secondly we try to update the machine and lately we have added our list of apps to install on our machine.
 
@@ -70,20 +70,20 @@ Now open the Terminal with shortcut key `Ctrl+Alt+T`.
 
 Give execute permission to your script:
 
-{% highlight bash %}
-chmod +x /path/to/install-apps.sh
-{% endhighlight %}
+```bash
+$ chmod +x /path/to/install-apps.sh
+```
 
 And to run your script:
 
-{% highlight bash %}
-/path/to/install-apps.sh
-{% endhighlight %}
+```bash
+$ /path/to/install-apps.sh
+```
 
 Since `.` refers to the current directory: if `install-apps.sh` is in the current directory, you can simplify this to:
 
-{% highlight bash %}
+```bash
 ./install-apps.sh
-{% endhighlight %}
+```
 
 Note that `sudo` requires you to retype user password after [15 minutes](https://help.ubuntu.com/community/RootSudoTimeout), so here we try to put all `sudo` commands before the rest of the commands, as much as possible. Also we have force automatic "yes" (`-y`) as answer to all `apt-get` prompts which helps us to run commands non-interactively.

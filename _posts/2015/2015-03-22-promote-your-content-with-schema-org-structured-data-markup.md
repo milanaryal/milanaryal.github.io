@@ -65,14 +65,14 @@ Here are a few notes schema.org suggests you to keep in mind when adding schema.
 
 - **Using the url property.** Some web pages are about a specific item. For example, you may have a web page about a single person, which you could mark up using the Person item type. Other pages have a collection of items described on them. For example, your company site could have a page listing employees, with a link to a profile page for each person. For pages like this with a collection of items, you should mark up each item separately (in this case as a series of Persons) and add the url property to the link to the corresponding page for each item, like this:
 
-{% highlight html %}
+```html
 <div itemscope itemtype="http://schema.org/Person">
   <a href="alice.html" itemprop="url">Alice Jones</a>
 </div>
 <div itemscope itemtype="http://schema.org/Person">
   <a href="bob.html" itemprop="url">Bob Smith</a>
 </div>
-{% endhighlight %}
+```
 
 ### Related tools
 

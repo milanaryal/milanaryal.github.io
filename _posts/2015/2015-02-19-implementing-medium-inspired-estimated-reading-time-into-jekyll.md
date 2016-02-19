@@ -47,13 +47,13 @@ With the help of Liquid tags we can have estimated reading time into Jekyll.
 
 Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension) of 180 words per minute (WPM) so here we divide the total content words with 180 (but you can have your own average WPM).
 
-{% highlight text %}
+```liquid
 {% raw %}
 {% assign reading_time = content | strip_html | number_of_words | divided_by: 180 %}
 
 {{ reading_time }} min read
 {% endraw %}
-{% endhighlight %}
+```
 
 With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` so we can not get rounded value from the above technique. Here we only get 1.6 = 1 or 2.4 = 2 value.
 
@@ -69,7 +69,7 @@ What some of the following Liquid tags do for us:
 * `append: '.0'`: Show all the decimal numbers.
 * `divided_by: 180`: Divide the total content words by 180.
 
-{% highlight text %}
+```liquid
 {% raw %}
 {% assign reading_time = content | strip_html | number_of_words | append: '.0' | divided_by: 180 %}
 
@@ -78,11 +78,11 @@ What some of the following Liquid tags do for us:
 {% elsif reading_time >= 1.5 %}<span class="reading-time">{{ reading_time }}</span> minutes read
 {% endif %}
 {% endraw %}
-{% endhighlight %}
+```
 
 Here we get 1.67777 or 2.43333 so until the Jekyll implementation of Liquid rounding method for now we wrap the `{% raw %}{{ reading_time }}{% endraw %}` with the `.reading-time` class so that the following jQuery will help us to get the rounded value to the nearest whole number.[^jquery]
 
-{% highlight javascript %}
+```js
 // Reading time - jQuery script that rounds it to the nearest whole number
 
 $(document).ready(function() {
@@ -90,7 +90,7 @@ $(document).ready(function() {
       return Math.round(parseFloat(value));
     });
 });
-{% endhighlight %}
+```
 
 Now with the help of above jQuery snippet we get the actual rounded value to the nearest whole number 1.6777 = 2 or 2.43333 = 2. That's what we want to get.
 
@@ -104,26 +104,24 @@ Now with the help of above jQuery snippet we get the actual rounded value to the
 
 If you don't want to use jQuery or any other techniques but only want to utilize pure Liquid tags then following codes will definitely help you to get estimated reading time into Jekyll.
 
-{% highlight text %}
+```liquid
 {% raw %}
 {% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
 
 {% if reading_time <= '1' %}{{ '1' | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}
 {% endraw %}
-{% endhighlight %}
+```
 
 Also it can be done as below,
 
-{% highlight text %}
+```liquid
 {% raw %}
 {% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by:180 %}
 
 {% if reading_time <= '1' %}{{ '1' | append:' minute read' }}{% else %}{{ reading_time | append:' minutes read' }}{% endif %}
 {% endraw %}
-{% endhighlight %}
+```
 
 [^ertmath]: Estimated reading time = Total content words / Average reading words per minute
-
 [^content]: If you're implementing estimated reading time in paginator i.e. `{% raw %}{% for post in paginator.posts %}{% endraw %}` condition you should change `content` to `post.content`. Also know that `page.content` tag will include your current post front matter `title` text.
-
 [^jquery]: Place the jQuery snippet below the jQuery loaded library otherwise it won't work!

@@ -17,21 +17,21 @@ You can get a direct link by right-clicking on a file and selecting 'Share'. The
 
 To cause the browser to download a file or folder rather than display it Dropbox web viewer, you can use `dl=1` as a query parameter in your URL. For example:
 
-{% highlight text %}
+```text
 https://www.dropbox.com/s/FILE_ID/filename.extension
-{% endhighlight %}
+```
 
 Becomes:
 
-{% highlight text %}
+```text
 https://www.dropbox.com/s/FILE_ID/filename.extension?dl=1
-{% endhighlight %}
+```
 
 Note that the original share link URL may contain query string parameters already (e.g. `dl=0`).
 
 If you only want to bypass the preview page on Dropbox and allow your browser to directly render your files, use `raw=1` as a query parameter in your URL.
 
-**See also:** [Hosting images with Dropbox on your website]({% post_url /2015/2015-08-19-hosting-images-with-dropbox-on-your-website %})
+**See also:** [Hosting images with Dropbox on your website]({% post_url 2015-08-19-hosting-images-with-dropbox-on-your-website %})
 
 ---
 
@@ -39,15 +39,15 @@ If you only want to bypass the preview page on Dropbox and allow your browser to
 
 Grab the file ID from the original link (get the share link from the sharing settings) and append it to the end of the new link. With the new format, any link you share will automatically download to your recipient's computer. For example:
 
-{% highlight text %}
+```text
 https://drive.google.com/file/d/FILE_ID/edit?usp=sharing
-{% endhighlight %}
+```
 
 Becomes:
 
-{% highlight text %}
+```text
 https://drive.google.com/uc?export=download&id=FILE_ID
-{% endhighlight %}
+```
 
 Above links do not works for Google Docs, Google Presentations... there's other way to do it.
 
@@ -57,46 +57,46 @@ Google Documents direct download links format is a little different.
 
 **Google Docs:** Get the share link of a Google document, and replace `/edit` with `/export` and add the file format that the document should be saved as and your download link is ready. For example:
 
-{% highlight text %}
+```text
 https://docs.google.com/document/d/FILE_ID/edit?usp=sharing
-{% endhighlight %}
+```
 
 Becomes:
 
-{% highlight text %}
+```text
 https://docs.google.com/document/d/FILE_ID/export?format=doc
 https://docs.google.com/document/d/FILE_ID/export?format=pdf
-{% endhighlight %}
+```
 
 The above links will now download the same Google document in Word (.docx) and PDF formats. You can also use "txt", "html" and "odt" for the download format.
 
 **Google Presentations:** Similarly for Google Presentations get the original shared links as the following format:
 
-{% highlight text %}
+```text
 https://docs.google.com/presentation/d/FILE_ID/edit?usp=sharing
-{% endhighlight %}
+```
 
 Becomes:
 
-{% highlight text %}
+```text
 https://docs.google.com/presentation/d/FILE_ID/export/pptx
 https://docs.google.com/presentation/d/FILE_ID/export/pdf
-{% endhighlight %}
+```
 
 The above direct links will download the same presentation deck in PowerPoint (.pptx) and PDF formats.
 
 **Google Spreadsheets:** Now for Google Spreadsheet, make the sheet Public (or Anyone with a link) and make a note of the shared URL. For example:
 
-{% highlight text %}
+```text
 https://docs.google.com/spreadsheets/d/FILE_ID/edit?usp=sharing
-{% endhighlight %}
+```
 
 Becomes:
 
-{% highlight text %}
+```text
 https://docs.google.com/spreadsheets/d/FILE_ID/export?format=xlsx
 https://docs.google.com/spreadsheets/d/FILE_ID/export?format=pdf
-{% endhighlight %}
+```
 
 Note these Google Drive direct links seem to be subject to quotas. So not ideal for public/massive sharing.
 
@@ -106,12 +106,12 @@ Note these Google Drive direct links seem to be subject to quotas. So not ideal 
 
 Get the share link of a file on OneDrive, and replace `redir?` to `download?`. For example:
 
-{% highlight text %}
+```text
 https://onedrive.live.com/redir?resid=FILE_ID
-{% endhighlight %}
+```
 
 Becomes:
 
-{% highlight text %}
+```text
 https://onedrive.live.com/download?resid=FILE_ID
-{% endhighlight %}
+```

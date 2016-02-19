@@ -1,5 +1,5 @@
 //
-// bigfoot - v2.1.1 - 2014.10.18
+// bigfoot - v2.1.4 - 2016.02.11
 //
 
 .bigfoot-footnote__button {
@@ -23,7 +23,7 @@
   line-height: 0;
   vertical-align: middle;
   text-decoration: none;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 0.25s;
@@ -254,12 +254,13 @@
   -webkit-overflow-scrolling: touch;
   background: #fafafa;
   border-radius: 0.5em;
-  font-smoothing: subpixel-antialiased;
-  // line-height: normal;
-  //
-  // override from default
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  // Popover content
+  // custom font family and size
   font-family: $theme-font-family-base;
   font-size: 0.8em;
+
   line-height: normal;
 }
 

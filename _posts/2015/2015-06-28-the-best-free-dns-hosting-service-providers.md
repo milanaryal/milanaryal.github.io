@@ -1,7 +1,7 @@
 ---
 title: "The best free DNS hosting service providers"
 date: 2015-06-28T18:21:41+05:45
-last_modified_at: "2016-01-13T05:09:30+05:45"
+last_modified_at: 2016-01-13T05:09:30+05:45
 excerpt: "List of the DNS management service providers who offers for free of charge."
 ---
 

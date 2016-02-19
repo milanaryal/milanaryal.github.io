@@ -11514,14 +11514,14 @@ return jQuery;
         preventPageScroll: true,
         scope: false,
         useFootnoteOnlyOnce: true,
-        contentMarkup: "<aside class=\"bigfoot-footnote is-positioned-bottom\" data-footnote-number=\"{{FOOTNOTENUM}}\" data-footnote-identifier=\"{{FOOTNOTEID}}\" alt=\"Footnote {{FOOTNOTENUM}}\"> <div class=\"bigfoot-footnote__wrapper\"> <div class=\"bigfoot-footnote__content\"> {{FOOTNOTECONTENT}} </div></div> <div class=\"bigfoot-footnote__tooltip\"></div> </aside>",
-        buttonMarkup: "<div class='bigfoot-footnote__container'> <button class=\"bigfoot-footnote__button\" id=\"{{SUP:data-footnote-backlink-ref}}\" data-footnote-number=\"{{FOOTNOTENUM}}\" data-footnote-identifier=\"{{FOOTNOTEID}}\" alt=\"See Footnote {{FOOTNOTENUM}}\" rel=\"footnote\" data-bigfoot-footnote=\"{{FOOTNOTECONTENT}}\"> <svg class=\"bigfoot-footnote__button__circle\" viewbox=\"0 0 6 6\" preserveAspectRatio=\"xMinYMin\"><circle r=\"3\" cx=\"3\" cy=\"3\" fill=\"white\"></circle></svg> <svg class=\"bigfoot-footnote__button__circle\" viewbox=\"0 0 6 6\" preserveAspectRatio=\"xMinYMin\"><circle r=\"3\" cx=\"3\" cy=\"3\" fill=\"white\"></circle></svg> <svg class=\"bigfoot-footnote__button__circle\" viewbox=\"0 0 6 6\" preserveAspectRatio=\"xMinYMin\"><circle r=\"3\" cx=\"3\" cy=\"3\" fill=\"white\"></circle></svg> </button></div>"
+        contentMarkup: "<aside class='bigfoot-footnote is-positioned-bottom' data-footnote-number='{{FOOTNOTENUM}}' data-footnote-identifier='{{FOOTNOTEID}}' alt='Footnote {{FOOTNOTENUM}}'> <div class='bigfoot-footnote__wrapper'> <div class='bigfoot-footnote__content'> {{FOOTNOTECONTENT}} </div></div> <div class='bigfoot-footnote__tooltip'></div> </aside>",
+        buttonMarkup: "<div class='bigfoot-footnote__container'> <button class='bigfoot-footnote__button' id='{{SUP:data-footnote-backlink-ref}}' data-footnote-number='{{FOOTNOTENUM}}' data-footnote-identifier='{{FOOTNOTEID}}' alt='See Footnote {{FOOTNOTENUM}}' rel='footnote' data-bigfoot-footnote='{{FOOTNOTECONTENT}}'> <svg class='bigfoot-footnote__button__circle' viewbox='0 0 6 6' preserveAspectRatio='xMinYMin'><circle r='3' cx='3' cy='3' fill='white'></circle></svg> <svg class='bigfoot-footnote__button__circle' viewbox='0 0 6 6' preserveAspectRatio='xMinYMin'><circle r='3' cx='3' cy='3' fill='white'></circle></svg> <svg class='bigfoot-footnote__button__circle' viewbox='0 0 6 6' preserveAspectRatio='xMinYMin'><circle r='3' cx='3' cy='3' fill='white'></circle></svg> </button></div>"
       };
       settings = $.extend(defaults, options);
       popoverStates = {};
       footnoteInit = function() {
         var $curResetElement, $currentLastFootnoteLink, $footnoteAnchors, $footnoteButton, $lastResetElement, $parent, $relevantFNLink, $relevantFootnote, finalFNLinks, footnoteButton, footnoteButtonSearchQuery, footnoteContent, footnoteIDNum, footnoteLinks, footnoteNum, footnotes, i, _i, _ref, _results;
-        footnoteButtonSearchQuery = settings.scope ? "" + settings.scope + " a[href*=\"#\"]" : "a[href*=\"#\"]";
+        footnoteButtonSearchQuery = settings.scope ? "" + settings.scope + " a[href*='#']" : "a[href*='#']";
         $footnoteAnchors = $(footnoteButtonSearchQuery).filter(function() {
           var $this, relAttr;
           $this = $(this);
@@ -11552,7 +11552,7 @@ return jQuery;
         _results = [];
         for (i = _i = 0, _ref = footnotes.length; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
           footnoteContent = removeBackLinks($(footnotes[i]).html().trim(), $(finalFNLinks[i]).data("footnote-backlink-ref"));
-          footnoteContent = footnoteContent.replace(/"/g, "&quot;").replace(/&lt;/g, "&ltsym;").replace(/&gt;/g, "&gtsym;");
+          footnoteContent = footnoteContent.replace(/"/g, "&quot;").replace(/&lt;/g, "&ltsym;").replace(/&gt;/g, "&gtsym;").replace(/'/g, "&apos;");
           footnoteIDNum += 1;
           footnoteButton = "";
           $relevantFNLink = $(finalFNLinks[i]);
@@ -11679,7 +11679,7 @@ return jQuery;
         var $buttonHovered, dataIdentifier, otherPopoverSelector;
         if (settings.activateOnHover) {
           $buttonHovered = $(event.target).closest(".bigfoot-footnote__button");
-          dataIdentifier = "[data-footnote-identifier=\"" + ($buttonHovered.attr("data-footnote-identifier")) + "\"]";
+          dataIdentifier = "[data-footnote-identifier='" + ($buttonHovered.attr("data-footnote-identifier")) + "']";
           if ($buttonHovered.hasClass("is-active")) {
             return;
           }
@@ -11708,7 +11708,7 @@ return jQuery;
       clickButton = function($button) {
         var dataIdentifier;
         $button.blur();
-        dataIdentifier = "data-footnote-identifier=\"" + ($button.attr("data-footnote-identifier")) + "\"";
+        dataIdentifier = "data-footnote-identifier='" + ($button.attr("data-footnote-identifier")) + "'";
         if ($button.hasClass("changing")) {
           return;
         } else if (!$button.hasClass("is-active")) {
@@ -11868,7 +11868,7 @@ return jQuery;
         $(footnotes).each(function() {
           $this = $(this);
           footnoteID = $this.attr("data-footnote-identifier");
-          $linkedButton = $(".bigfoot-footnote__button[data-footnote-identifier=\"" + footnoteID + "\"]");
+          $linkedButton = $(".bigfoot-footnote__button[data-footnote-identifier='" + footnoteID + "']");
           if (!$linkedButton.hasClass("changing")) {
             $buttonsClosed = $buttonsClosed.add($linkedButton);
             $linkedButton.removeClass("is-active is-hover-instantiated is-click-instantiated").addClass("changing");
@@ -11890,7 +11890,7 @@ return jQuery;
             var $button, $contentWrapper, $mainWrap, $this, dataIdentifier, identifier, lastState, marginSize, maxHeightInCSS, maxHeightOnScreen, maxWidth, maxWidthInCSS, positionOnTop, relativeToWidth, roomLeft, totalHeight;
             $this = $(this);
             identifier = $this.attr("data-footnote-identifier");
-            dataIdentifier = "data-footnote-identifier=\"" + identifier + "\"";
+            dataIdentifier = "data-footnote-identifier='" + identifier + "'";
             $contentWrapper = $this.find(".bigfoot-footnote__content");
             $button = $this.siblings(".bigfoot-footnote__button");
             roomLeft = roomCalc($button);
@@ -11977,11 +11977,13 @@ return jQuery;
         };
       };
       viewportDetails = function() {
+        var $window;
+        $window = $(window);
         return {
           width: window.innerWidth,
           height: window.innerHeight,
-          scrollX: window.scrollX,
-          scrollY: window.scrollY
+          scrollX: $window.scrollLeft(),
+          scrollY: $window.scrollTop()
         };
       };
       addBreakpoint = function(size, trueCallback, falseCallback, deleteDelay, removeOpen) {

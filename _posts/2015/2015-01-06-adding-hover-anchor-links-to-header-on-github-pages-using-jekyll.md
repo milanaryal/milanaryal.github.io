@@ -1,7 +1,7 @@
 ---
 title: "Adding hover anchor links to header on GitHub Pages using Jekyll"
 date: 2015-01-06T15:19:18+05:45
-last_modified_at: "2015-06-27T10:49:50+05:45"
+last_modified_at: 2015-06-27T10:49:50+05:45
 excerpt: "Learn how to add deep anchor links to your docs using AnchorJS in Jekyll."
 ---
 
@@ -17,29 +17,26 @@ To add anchor link on headings first enable markdown auto-generated ID's in Jeky
 
 For `Redcarpet` markdown enable the `with_toc_data` extension:
 
-{% highlight ruby %}
+```rb
 # Conversion
-markdown:        redcarpet
+markdown: redcarpet
 redcarpet:
-  # enable auto ids for redcarpet
-  extensions:    ["with_toc_data"]
-{% endhighlight %}
+  # Enable auto ID's for Redcarpet
+  extensions: ["with_toc_data"]
+```
 
-For `Kramdown` markdown, it auto generate the header ID's.
+For `Kramdown` markdown, it auto generate the header ID's as default. Though you can mention the `auto_ids` in your `_config.yml` file:
 
-Only make sure you have not disable the `auto_ids`, like the following example:
-
-{% highlight ruby %}
+```rb
 kramdown:
-  # Disable auto-generated ID's for headings
-  auto_ids: false
-{% endhighlight %}
+  auto_ids: true # Auto-generate ID's for headings
+```
 
 Then markdown in Jekyll will auto generate ID's to the heading like the following example, where `header-link-3` ID is added to `h3` header:
 
-{% highlight html %}
+```html
 <h3 id="header-link-3">Header link 3</h3>
-{% endhighlight %}
+```
 
 You don't have to worry if you don't enable markdown auto-generated ID's, AnchorJS will also auto generate ID's on headers.
 
@@ -47,7 +44,7 @@ AnchorJS do not add 'table of contents' but if you want to utilize this feature 
 
 You can see the following example:
 
-{% highlight text %}
+```text
 {% raw %}
 ### Table of contents
 {:.no_toc}
@@ -55,21 +52,21 @@ You can see the following example:
 * Table of contents placeholder
 {:toc}
 {% endraw %}
-{% endhighlight %}
+```
 
 ### Download AnchorJS
 
 Download AnchorJS using npm:
 
-{% highlight bash %}
+```bash
 $ npm install anchor-js
-{% endhighlight %}
+```
 
 or bower:
 
-{% highlight bash %}
+```bash
 $ bower install anchor-js --save-dev
-{% endhighlight %}
+```
 
 or just download it from GitHub:
 
@@ -81,16 +78,16 @@ or just download it from GitHub:
 
 Just include the `anchor.js` file (or alternatively minified version `anchor.min.js`) in your webpage.
 
-{% highlight html %}
+```html
 <script src="/path/to/anchor.js"></script>
-{% endhighlight %}
+```
 
 Or, even not downloading you can include various open source CDN library link:
 
-{% highlight html %}
+```html
 <!-- make sure you include the latest version -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js"></script>
-{% endhighlight %}
+```
 
 ### Using AnchorJS
 
@@ -100,7 +97,7 @@ AnchorJS provides the different options for adding anchors to the page. This met
 
 This will place the default AnchorJS icon to the left and only add the link to your desire headers.
 
-{% highlight javascript %}
+```js
 /**
  * AnchorJS v1.1.1 options and selector
  */
@@ -113,13 +110,13 @@ This will place the default AnchorJS icon to the left and only add the link to y
   anchors.add('.post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6');
 
 })();
-{% endhighlight %}
+```
 
 #### Placing the AnchorJS icon to the right position
 
 This will place the default AnchorJS icon to the right and of course only add the link to your desire headers.
 
-{% highlight javascript %}
+```js
 /**
  * AnchorJS v1.1.1 options and selector
  */
@@ -132,13 +129,13 @@ This will place the default AnchorJS icon to the right and of course only add th
   anchors.add('.post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6');
 
 })();
-{% endhighlight %}
+```
 
 #### Styling the AnchorJS icon
 
 You can style the AnchorJS icon according to your need.
 
-{% highlight css %}
+```css
 /**
  * Link placement and hover behavior.
  */
@@ -166,7 +163,7 @@ You can style the AnchorJS icon according to your need.
   text-decoration: none !important; // do not underline
   opacity: 1;
 }
-{% endhighlight %}
+```
 
 <div class="alert alert-info" role="alert">
   <p>You can find updated usage instructions and examples here: <a class="alert-link" href="http://bryanbraun.github.io/anchorjs/" onClick="ga('send', 'event', 'Click', 'Direct link', 'AnchorJS');">bryanbraun.github.io/anchorjs</a>.</p>
@@ -180,16 +177,16 @@ Here I'm using AnchorJS v0.4.0 with little customization which works with Font A
 
 You can download [Font Awesome](http://fortawesome.github.io/Font-Awesome/) or simply include the following style sheet before the `</head>` tag to activate Font Awesome.
 
-{% highlight html %}
+```html
 <!-- The recommended CDN for Font Awesome - http://bootstrapcdn.com/#fontawesome_tab
 
      make sure you include the latest version -->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-{% endhighlight %}
+```
 
 Now add the following script before the `</body>` tag or where you might think it is suitable, but make sure you change the selector varibles where you want to put anchor links.
 
-{% highlight javascript %}
+```js
 /*!
  * AnchorJS - v0.4.0 - 2015-04-20
  * https://github.com/bryanbraun/anchorjs
@@ -275,13 +272,13 @@ Now add the following script before the `</body>` tag or where you might think i
   }
 
 })();
-{% endhighlight %}
+```
 
 After that add the following style:
 
 #### Floating anchor icon to left side
 
-{% highlight css %}
+```css
 /**
  * Link placement and hover behavior.
  */
@@ -323,11 +320,11 @@ After that add the following style:
 .anchorjs-link:visited { color: #DFD487; }
 .anchorjs-link:hover   { color: #EC7963; }
 .anchorjs-link:active  { color: #EC7963; }
-{% endhighlight %}
+```
 
 #### Floating anchor icon to right side
 
-{% highlight css %}
+```css
 /**
  * Link placement and hover behavior.
  */
@@ -369,7 +366,7 @@ After that add the following style:
 .anchorjs-link:visited { color: #DFD487; }
 .anchorjs-link:hover   { color: #EC7963; }
 .anchorjs-link:active  { color: #EC7963; }
-{% endhighlight %}
+```
 
 ---
 

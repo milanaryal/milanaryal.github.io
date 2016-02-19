@@ -11,47 +11,47 @@ If you're hosting the site on GitHub Pages using Jekyll, they inject the source 
 
 #### For a blog post
 
-{% highlight html %}
+```html
 {% raw %}
 <a href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.path }}">
   Edit this page on GitHub
 </a>
 {% endraw %}
-{% endhighlight %}
+```
 
 Example for output URL of above input URL:
 
-{% highlight html %}
+```html
 {% raw %}
 <a href="https://github.com/username/username.github.io/edit/master/_posts/yyyy-mm-dd-your-post-title.md">
   Edit this page on GitHub
 </a>
 {% endraw %}
-{% endhighlight %}
+```
 
 #### For a collection document
 
 [For a collection document](http://jekyllrb.com/docs/collections/#documents), you'll need to use `{% raw %}{{ page.relative_path }}{% endraw %}` instead of `{% raw %}{{ page.path }}{% endraw %}` to get the desired behavior.
 
-{% highlight html %}
+```html
 {% raw %}
 <a href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.relative_path }}">
   Edit this page on GitHub
 </a>
 {% endraw %}
-{% endhighlight %}
+```
 
 #### On Prose
 
 If you are using [Prose](https://github.com/prose/prose) to manage your content:
 
-{% highlight html %}
+```html
 {% raw %}
 <a href="http://prose.io/#{{ site.repo }}/edit/{{ site.branch }}/{{ page.path }}">
   Edit this page
 </a>
 {% endraw %}
-{% endhighlight %}
+```
 
 ### View source link
 
@@ -59,23 +59,23 @@ You can add link of a source code of a post or doc on GitHub.
 
 #### For a blog post
 
-{% highlight html %}
+```html
 {% raw %}
 <a href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.path }}">
   View source
 </a>
 {% endraw %}
-{% endhighlight %}
+```
 
 #### For a collection document
 
-{% highlight html %}
+```html
 {% raw %}
 <a href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.relative_path }}">
   View source
 </a>
 {% endraw %}
-{% endhighlight %}
+```
 
 ### View revision history link
 
@@ -83,20 +83,20 @@ Like ways you can also add view revision history link which shows all the commit
 
 #### For a blog post
 
-{% highlight html %}
+```html
 {% raw %}
 <a href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.path }}">
   View revision history
 </a>
 {% endraw %}
-{% endhighlight %}
+```
 
 #### For a collection document
 
-{% highlight html %}
+```html
 {% raw %}
 <a href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.relative_path }}">
   View revision history
 </a>
 {% endraw %}
-{% endhighlight %}
+```

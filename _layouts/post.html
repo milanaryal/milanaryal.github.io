@@ -9,12 +9,12 @@ layout: default
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-            <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-            <link itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+            <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">
+            <link itemprop="url" href="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">
             <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <link itemprop="url" href="{{ site.icon.base_url | prepend: site.url }}">
-              <meta itemprop="width" content="{{ site.icon.width }}">
-              <meta itemprop="height" content="{{ site.icon.height }}">
+              <link itemprop="url" href="{{ site.logo.base_url | prepend: site.url }}">
+              <meta itemprop="width" content="{{ site.logo.width }}">
+              <meta itemprop="height" content="{{ site.logo.height }}">
             </span>
             <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}">
             <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
@@ -23,7 +23,7 @@ layout: default
             </span>
             <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
               <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                <link itemprop="url" href="{{ site.icon.base_url | prepend: site.url }}">
+                <link itemprop="url" href="{{ site.logo.base_url | prepend: site.url }}">
               </span>
               <meta itemprop="name" content="{{ site.name }}">
             </span>
@@ -63,7 +63,7 @@ layout: default
                 <span class="post-meta-acknowledgment"><a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by the author. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span></span>
               {% endif %}
 
-              <div class="hidden" about="{{ page.url | replace:'index.html','' | prepend: site.url }}">Except as otherwise <a href="{{ site.url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}</span>.</div>
+              <div class="hidden" about="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">Except as otherwise <a href="{{ site.url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{% if page.author.name %}{{ page.author.name }}{% elsif page.author %}{{ page.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}</span>.</div>
             </div>
 
           </div><!-- /.col-* -->
@@ -105,12 +105,12 @@ layout: default
           <ul class="pager post-pager">
             {% if page.previous.url %}
             <li class="previous">
-              <a href="{{ page.previous.url | replace:'//','/' | replace:'index.html','' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title | markdownify | strip_html | strip_newlines | escape_once }}"><i class="fa fa-angle-left"></i> Previous</a>
+              <a href="{{ page.previous.url | replace:'//','/' | replace:'/index.html','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title | markdownify | strip_html | strip_newlines | escape_once }}"><i class="fa fa-angle-left"></i> Previous</a>
             </li>
             {% endif %}
             {% if page.next.url %}
             <li class="next">
-              <a href="{{ page.next.url | replace:'//','/' | replace:'index.html','' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title | markdownify | strip_html | strip_newlines | escape_once }}">Next <i class="fa fa-angle-right"></i></a>
+              <a href="{{ page.next.url | replace:'//','/' | replace:'/index.html','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title | markdownify | strip_html | strip_newlines | escape_once }}">Next <i class="fa fa-angle-right"></i></a>
             </li>
             {% endif %}
           </ul>

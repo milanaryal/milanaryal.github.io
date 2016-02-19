@@ -47,13 +47,13 @@ By default, Tumblr has social meta tags enabled, and "smart suggests" the meta d
 
 First add following code in the `<head>` tag:
 
-{% highlight html %}
+```html
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
-{% endhighlight %}
+```
 
 And place the [following code](http://stackoverflow.com/questions/11493718/facebook-open-graph-protocol-on-tumblr) before `</head>` section:
 
-{% highlight html %}
+```html
 <!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
 <meta property="og:site_name" content="{Title}"/>
 
@@ -125,11 +125,11 @@ And place the [following code](http://stackoverflow.com/questions/11493718/faceb
     <meta property="og:image" content="{PortraitURL-64}"/>
 {/block:IndexPage}
 <!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
-{% endhighlight %}
+```
 
 For Twitter card property also place the [following code](http://www.quora.com/Whats-the-best-way-to-implement-Twitter-Cards-on-a-Tumblr-blog) before </head> section:
 
-{% highlight html %}
+```html
 <!-- BEGIN TWITTER TAGS -->
 {block:PermalinkPage}
 
@@ -209,7 +209,7 @@ For Twitter card property also place the [following code](http://www.quora.com/W
     <meta name="twitter:image" content="{PortraitURL-64}"/>
 {/block:IndexPage}
 <!-- END TWITTER TAGS -->
-{% endhighlight %}
+```
 
 ### Blogger
 
@@ -217,94 +217,94 @@ Google's Blogger is a great platform for publishing rich content. To add some so
 
 First add `xmlns:og='http://ogp.me/ns#'` in the `<HTML>` tag. Note that there may already exist some code.
 
-{% highlight html %}
+```html
 <HTML xmlns:og='http://ogp.me/ns#'>
-{% endhighlight %}
+```
 
 And place the following code before `</head>` section:
 
-{% highlight html %}
+```html
 <!-- Open Graph metatags -->
-	<b:if cond='data:blog.pageType == &quot;item&quot;'>
-	<meta content='article' property='og:type'/>
-	<meta content='https://www.facebook.com/YOUR_FACEBOOK_PROFILE_USERNAME_HERE' property='article:author'/>
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+  <meta content='article' property='og:type'/>
+  <meta content='https://www.facebook.com/YOUR_FACEBOOK_PROFILE_USERNAME_HERE' property='article:author'/>
     <meta content='YOUR_NAME_HERE' name='author'/>
-	<meta expr:content='data:blog.title' property='og:site_name'/>
-	<meta expr:content='data:blog.pageName' property='og:title'/>
-	<meta expr:content='data:blog.pageName' name='title'/>
-	<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+  <meta expr:content='data:blog.title' property='og:site_name'/>
+  <meta expr:content='data:blog.pageName' property='og:title'/>
+  <meta expr:content='data:blog.pageName' name='title'/>
+  <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
 
-		<b:if cond='data:blog.postImageUrl'>
-	   		<meta expr:content='data:blog.postImageUrl' property='og:image'/>
-	   		<b:else/>
-	   		<meta content='YOUR_LOGO_URL_HERE' property='og:image'/>
-		</b:if>
-		<b:if cond='data:blog.metaDescription'>
-	   		<meta expr:content='data:blog.metaDescription' property='og:description'/>
-			<meta expr:content='data:blog.metaDescription' name='description'/>
-	   		<b:else/>
-	   		<meta expr:content='data:blog.pageTitle' property='og:description'/>
-			<meta expr:content='data:blog.pageTitle' name='description'/>
-		</b:if>
+    <b:if cond='data:blog.postImageUrl'>
+         <meta expr:content='data:blog.postImageUrl' property='og:image'/>
+         <b:else/>
+         <meta content='YOUR_LOGO_URL_HERE' property='og:image'/>
+    </b:if>
+    <b:if cond='data:blog.metaDescription'>
+         <meta expr:content='data:blog.metaDescription' property='og:description'/>
+      <meta expr:content='data:blog.metaDescription' name='description'/>
+         <b:else/>
+         <meta expr:content='data:blog.pageTitle' property='og:description'/>
+      <meta expr:content='data:blog.pageTitle' name='description'/>
+    </b:if>
 
-	<b:else/>
-	<meta content='blog' property='og:type'/>
-	<meta expr:content='data:blog.title' property='og:site_name'/>
-	<meta expr:content='data:blog.canonicalHomepageUrl' property='og:url'/>
-	<meta content='YOUR_LOGO_URL_HERE' property='og:image'/>
+  <b:else/>
+  <meta content='blog' property='og:type'/>
+  <meta expr:content='data:blog.title' property='og:site_name'/>
+  <meta expr:content='data:blog.canonicalHomepageUrl' property='og:url'/>
+  <meta content='YOUR_LOGO_URL_HERE' property='og:image'/>
 
-		<b:if cond='data:blog.metaDescription'>
-			<meta content='data:blog.metaDescription' property='og:description'/>
-			<meta content='data:blog.metaDescription' name='description'/>
-			<meta content='YOUR_BLOG_KERYWORDS_HERE' name='keywords'/>
-		</b:if>
+    <b:if cond='data:blog.metaDescription'>
+      <meta content='data:blog.metaDescription' property='og:description'/>
+      <meta content='data:blog.metaDescription' name='description'/>
+      <meta content='YOUR_BLOG_KERYWORDS_HERE' name='keywords'/>
+    </b:if>
 
-	</b:if>
-	<!-- You can replace following locale "British English" (en_GB) or Nepali (ne_NP) alternative with your own -->
-	<meta content='en_US' property='og:locale'/>
-	<meta content='en_GB' property='og:locale:alternate'/>
-	<meta content='ne_NP' property='og:locale:alternate'/>
+  </b:if>
+  <!-- You can replace following locale "British English" (en_GB) or Nepali (ne_NP) alternative with your own -->
+  <meta content='en_US' property='og:locale'/>
+  <meta content='en_GB' property='og:locale:alternate'/>
+  <meta content='ne_NP' property='og:locale:alternate'/>
     <!-- /Open Graph metatags -->
-{% endhighlight %}
+```
 
 For Twitter card property also place the following before `</head>` section:
 
-{% highlight html %}
+```html
 <!-- Twitter card metatags -->
-	<meta content='@YOUR_BLOG_TWITTER_USERNAME_HERE' name='twitter:site'/>
+  <meta content='@YOUR_BLOG_TWITTER_USERNAME_HERE' name='twitter:site'/>
 
-	<b:if cond='data:blog.pageType == &quot;item&quot;'>
-	<meta content='@YOUR_TWITTER_USERNAME_HERE' name='twitter:creator'/>
-	<meta expr:content='data:blog.pageName' name='twitter:title'/>
-	<meta expr:content='data:blog.canonicalUrl' name='twitter:url'/>
-		<b:if cond='data:blog.postImageUrl'>
-			<meta content='summary_large_image' name='twitter:card'/>
-	   		<meta expr:content='data:blog.postImageUrl' name='twitter:image:src'/>
-			<meta content='560' name='twitter:image:width'/>
-			<meta content='750' name='twitter:image:height'/>
-	   		<b:else/>
-			<meta content='summary' name='twitter:card'/>
-	   		<meta content='YOUR_LOGO_URL_HERE' name='twitter:image'/>
-		</b:if>
-		<b:if cond='data:blog.metaDescription'>
-	   		<meta expr:content='data:blog.metaDescription' name='twitter:description'/>
-	   		<b:else/>
-	   		<meta expr:content='data:blog.pageTitle' name='twitter:description'/>
-		</b:if>
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+  <meta content='@YOUR_TWITTER_USERNAME_HERE' name='twitter:creator'/>
+  <meta expr:content='data:blog.pageName' name='twitter:title'/>
+  <meta expr:content='data:blog.canonicalUrl' name='twitter:url'/>
+    <b:if cond='data:blog.postImageUrl'>
+      <meta content='summary_large_image' name='twitter:card'/>
+         <meta expr:content='data:blog.postImageUrl' name='twitter:image:src'/>
+      <meta content='560' name='twitter:image:width'/>
+      <meta content='750' name='twitter:image:height'/>
+         <b:else/>
+      <meta content='summary' name='twitter:card'/>
+         <meta content='YOUR_LOGO_URL_HERE' name='twitter:image'/>
+    </b:if>
+    <b:if cond='data:blog.metaDescription'>
+         <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+         <b:else/>
+         <meta expr:content='data:blog.pageTitle' name='twitter:description'/>
+    </b:if>
 
-	<b:else/>
-	<meta content='summary' name='twitter:card'/>
-	<meta expr:content='data:blog.title' name='twitter:title'/>
-	<meta expr:content='data:blog.canonicalHomepageUrl' name='twitter:url'/>
-	<meta content='YOUR_LOGO_URL_HERE' name='twitter:image'/>
-	<meta expr:content='data:blog.metaDescription' name='twitter:description'/>
-	</b:if>
+  <b:else/>
+  <meta content='summary' name='twitter:card'/>
+  <meta expr:content='data:blog.title' name='twitter:title'/>
+  <meta expr:content='data:blog.canonicalHomepageUrl' name='twitter:url'/>
+  <meta content='YOUR_LOGO_URL_HERE' name='twitter:image'/>
+  <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+  </b:if>
     <!-- /Twitter card metatags -->
-{% endhighlight %}
+```
 
 For Google+ and Facebook authorship include the following code before `</head>` section:
 
-{% highlight html %}
+```html
 <!-- Facebook admins and app ID -->
 <meta content='YOUR_FB_ID_HERE' property='fb:admins'/>
 <meta content='YOUR_FB_APP_ID_HERE' property='fb:app_id'/>
@@ -312,7 +312,7 @@ For Google+ and Facebook authorship include the following code before `</head>` 
 <!-- Google authorship and publisher markup -->
 <link href='https://plus.google.com/YOUR_GOOGLE+_PROFILE_ID_HERE' rel='author'/>
 <link href='https://plus.google.com/YOUR_GOOGLE+_PAGE_ID_HERE' rel='publisher'/>
-{% endhighlight %}
+```
 
 ---
 

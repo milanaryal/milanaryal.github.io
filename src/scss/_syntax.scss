@@ -31,48 +31,30 @@ code {
 
 del code { text-decoration: inherit; }
 
-// Code tags within code blocks (<pre>s)
-pre > code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
-}
-
-.highlight {
-  margin-bottom: $markdown-margin;
-}
-
-.highlight pre,
 pre {
+  margin-bottom: $markdown-margin;
   padding: ($markdown-margin - 10); // ~20px
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
   background-color: #f7f7f7;
   border-radius: 3px;
-}
-
-.highlight pre {
-  margin-bottom: 0;
   word-break: normal;
-}
-
-pre {
   word-wrap: normal;
 }
 
+// Code tags within code blocks (<pre>s)
 pre code {
   display: inline;
   max-width: initial;
   padding: 0;
   margin: 0;
   overflow: initial;
+  font-size: 100%;
   line-height: inherit;
+  word-break: normal;
   word-wrap: normal;
+  white-space: pre;
   background-color: transparent;
   border: 0;
 
@@ -97,8 +79,9 @@ kbd {
 }
 
 
+//
 // Pygments
-// --------------
+//
 
 .highlight {
   .c { color: #999988; font-style: italic } // Comment

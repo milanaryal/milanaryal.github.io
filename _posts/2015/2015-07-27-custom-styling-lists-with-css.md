@@ -8,7 +8,7 @@ last_modified_at: 2015-07-27T19:09:10+05:45
 
 It's really easy to have lists into a document, you just have need to add `ul` or `ol` element and `li` child elements.
 
-{% highlight html %}
+```html
 <ul>
   <li>This is the first item</li>
   <li>This is the second item</li>
@@ -20,13 +20,13 @@ It's really easy to have lists into a document, you just have need to add `ul` o
   <li>This is the second item</li>
   <li>This is the third item</li>
 </ol>
-{% endhighlight %}
+```
 
 ### Default lists CSS settings
 
 Most browsers will display the `<ul>` and `<ol>` element with the following default values:
 
-{% highlight css %}
+```css
 ul {
   display: block;
   list-style-type: disc;
@@ -46,7 +46,7 @@ ol {
   margin-right: 0;
   padding-left: 40px;
 }
-{% endhighlight %}
+```
 
 There's pretty default list CSS options to style them. But, what if you want absolute unordered list bullet icon or don't what to have full stop on ordered list number or want to remove the left spacing (or proper indenting) of list.
 
@@ -56,7 +56,7 @@ The secret to custom styling lists is here we are opening.
 
 For better structure, recognition or to make more style-able it's good habit to add a hook (i.e. classes or ID's) to the elements.
 
-{% highlight html %}
+```html
 <ul class="post-list">
   <li>This is the first item</li>
   <li>This is the second item</li>
@@ -68,13 +68,13 @@ For better structure, recognition or to make more style-able it's good habit to 
   <li>This is the second item</li>
   <li>This is the third item</li>
 </ol>
-{% endhighlight %}
+```
 
 ### Custom styling unordered and ordered lists with CSS
 
 First reset the default lists CSS settings.
 
-{% highlight css %}
+```css
 /**
  * Global list reset
  */
@@ -83,11 +83,11 @@ ul, ol {
   list-style: none;
   list-style-image: none;
 }
-{% endhighlight %}
+```
 
 Then, we're styling the lists and resetting the ordered list counter.
 
-{% highlight css %}
+```css
 /**
  * Custom list style
  */
@@ -108,13 +108,13 @@ Then, we're styling the lists and resetting the ordered list counter.
   margin-left: -58px;
   text-align: right;
 }
-{% endhighlight %}
+```
 
 #### Customizing unordered lists
 
 Here we're styling unordered lists.
 
-{% highlight css %}
+```css
 /**
  *  Unordered list
  */
@@ -124,13 +124,13 @@ ul.post-list > li:before {
   font-size: 14.3px;
   content: "\2022"; /* unicode for bullet, "•" */
 }
-{% endhighlight %}
+```
 
 #### Customizing ordered lists
 
 Then, after we're styling ordered lists.
 
-{% highlight css %}
+```css
 /**
  * Ordered list
  */
@@ -139,13 +139,13 @@ ol.post-list > li:before {
   counter-increment: post;
   content: counter(post) "\002E"; /* unicode for full stop, "." */
 }
-{% endhighlight %}
+```
 
 #### Normalizing unstyled and inline list CSS
 
 If you want to normalize the default unstyled and inline list Bootstrap CSS for the above values, then you just have to add following CSS after above values.
 
-{% highlight css %}
+```css
 /**
  * Normalizing unstyled and inline list
  */
@@ -158,11 +158,11 @@ If you want to normalize the default unstyled and inline list Bootstrap CSS for 
  .list-inline > li:before {
    content: normal;
 }
-{% endhighlight %}
+```
 
 Then, after put the following default Bootstrap CSS.
 
-{% highlight css %}
+```css
 /**
  * Default unstyled and inline list Bootstrap CSS
  */
@@ -180,13 +180,13 @@ Then, after put the following default Bootstrap CSS.
   padding-right: 5px;
   padding-left: 5px;
 }
-{% endhighlight %}
+```
 
 ### Custom styling unordered and ordered lists with SCSS
 
 If you love SCSS like me, then here's what we do.
 
-{% highlight scss %}
+```scss
 //
 // Global list reset
 //
@@ -239,7 +239,7 @@ ol.post-list {
     content: counter(post) "\002E"; // "."
   }
 }
-{% endhighlight %}
+```
 
 <div class="alert alert-info">
   <p>You may need to style the elements according to your need.</p>

@@ -12,7 +12,7 @@ This resource is suitable for website with lots of page content. When a user scr
 
 Insert the `.elevator-wrapper` at the bottom of your content, before the closing tag.
 
-{% highlight html %}
+```html
 <body>
   <!-- all your content here -->
 
@@ -20,7 +20,7 @@ Insert the `.elevator-wrapper` at the bottom of your content, before the closing
 
   <!-- link to scripts here -->
 </body>
-{% endhighlight %}
+```
 
 <div class="alert alert-info">
   <strong>Note:</strong> To enable elevator button on your page you should have jQuery and Font Awesome library installed.
@@ -30,7 +30,7 @@ Insert the `.elevator-wrapper` at the bottom of your content, before the closing
 
 Add the following style for the elevator button or you can further change according to your needs.
 
-{% highlight css %}
+```css
 /**
  * Elevator - Scroll back to top utility CSS
  */
@@ -87,13 +87,13 @@ Add the following style for the elevator button or you can further change accord
     display: none !important;
   }
 }
-{% endhighlight %}
+```
 
 #### Events handling
 
 Then add the following jQuery snippet on your script file. This script helps to add or remove CSS classes and also helps to smooth scrolling back to the top of the page.
 
-{% highlight javascript %}
+```js
 (function ($) {
   'use strict';
 
@@ -127,7 +127,7 @@ Then add the following jQuery snippet on your script file. This script helps to 
   });
 
 })(jQuery);
-{% endhighlight %}
+```
 
 #### Demo
 

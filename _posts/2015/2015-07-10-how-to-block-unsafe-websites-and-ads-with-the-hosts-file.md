@@ -17,11 +17,11 @@ In most operating systems, the `hosts` file is preferential to `DNS`.  Therefore
 
 The hosts file contains lines of text consisting of an IP address in the first text field followed by one or more host names. Each field is separated by white space --- tabs are often preferred for historical reasons, but spaces are also used. Comment lines may be included; they are indicated by a hash character (#) in the first position of such lines. Entirely blank lines in the file are ignored. For example, a typical hosts file may contain networking entries like the following:
 
-{% highlight text %}
+```text
 # localhost address
 127.0.0.1     localhost loopback #[IPv4]
 ::1           localhost          #[IPv6]
-{% endhighlight %}
+```
 
 This example only contains entries for the loopback addresses of the system and their host names, a typical default content of the hosts file. The example illustrates that an IP address may have multiple host names (`localhost` and `loopback`), and that a host name may be mapped to both `IPv4` and `IPv6` IP addresses.
 
@@ -42,7 +42,7 @@ Having a smart `hosts` file goes a long way towards blocking malware, adware, an
 
 For example, to nullify requests to some `doubleclick.net` servers, adding these lines to your hosts file will do it:
 
-{% highlight text %}
+```text
 # block doubleClick's servers
 127.0.0.1     ad.doubleclick.com
 127.0.0.1     ad.doubleclick.net
@@ -56,7 +56,7 @@ For example, to nullify requests to some `doubleclick.net` servers, adding these
 127.0.0.1     ad.doubleclick.be
 127.0.0.1     ad.doubleclick.de
 # etc...
-{% endhighlight %}
+```
 
 This is just a small number of DoubleClick's domains --- perhaps 0.5%. There are almost 300 doubleclick entries alone. Order doesn't matter, neither does upper or lower case letters, either is acceptable in DNS.
 
@@ -66,9 +66,9 @@ Note: On some machines `0.0.0.0` may run minutely faster instead of `127.0.0.1`,
 
 You can even map or create shortcuts to certain addresses on your system. For example if you want to create shortcut (human readable address) to an IP address commonly used by routers. Then all you need to add following in hosts file:
 
-{% highlight text %}
+```text
 192.168.0.1     router
-{% endhighlight %}
+```
 
 Here we've mapped hostname `router` to IP address `192.168.0.1`. Now you can simply access router home page at `http://router`.
 
@@ -80,25 +80,25 @@ Your operating system will cache DNS lookups. You can either reboot or run the f
 
 Open a Terminal and run:
 
-{% highlight text %}
+```text
 sudo /etc/init.d/nscd restart
-{% endhighlight %}
+```
 
 #### Flush DNS Cache on Mac OS X
 
 Open a Terminal and run:
 
-{% highlight text %}
+```text
 sudo dscacheutil -flushcache
-{% endhighlight %}
+```
 
 #### Flush DNS Cache on Windows
 
 Open a Command Prompt or PowerShell and run (you need to open command prompt as "Run as Administrator"):
 
-{% highlight text %}
+```text
 ipconfig /flushdns
-{% endhighlight %}
+```
 
 #### Flush DNS Cache on Android
 

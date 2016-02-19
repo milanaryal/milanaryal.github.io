@@ -70,7 +70,7 @@ Download and setup a good themes from the following popular sites:
 
 A basic Jekyll site usually looks something like this:
 
-{% highlight bash %}
+```text
 .
 ├── CNAME # Contains your custom domain name (optional).
 ├── _config.yml
@@ -110,7 +110,7 @@ A basic Jekyll site usually looks something like this:
 └── index.html
 └── 404.html # Custom 404 page.
 └── sitemap.xml # Site map for the website.
-{% endhighlight %}
+```
 
 #### Step 4
 
@@ -141,7 +141,7 @@ Again add following CNAME record to your DNS provider:
 
 
 <div class="alert alert-warning" role="alert">
-  <p><i class="fa fa-warning"></i> Do not use wildcard DNS records (e.g. <code>*.example.com</code>) with GitHub Pages! A wildcard DNS record will allow anyone to host a GitHub Pages site at one of your subdomains.</p>
+  <p>Do not use wildcard DNS records (e.g. <code>*.example.com</code>) with GitHub Pages! A wildcard DNS record will allow anyone to host a GitHub Pages site at one of your subdomains.</p>
 </div>
 
 #### Create a CNAME file name
@@ -155,18 +155,18 @@ Now push a CNAME (with out any extention) file name in your GitHub Pages with yo
 
 [The front matter](http://jekyllrb.com/docs/frontmatter/) is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
 
-{% highlight bash %}
+```rb
 ---
 layout: post
 title: Blogging Like a Hacker
 ---
-{% endhighlight %}
+```
 
 *Note: For the proper setup, don't use `tab` use `space` instead.*
 
 Thanks to Liquid (Jekyll uses the Liquid templating language to process templates) that you can add your desire front matter:
 
-{% highlight bash %}
+```rb
 ---
 layout:
 title:
@@ -180,7 +180,7 @@ excerpt:
 permalink:
 featured_image:
 ---
-{% endhighlight %}
+```
 
 Save the file under the format `2014-12-30-blogging-like-a-hacker.md` which is in `YYY-MM-DD-blog-post-title.md`.
 
@@ -198,14 +198,14 @@ GitHub Pages currently supports several Jekyll plugins:
 
 Add a list of enabled gems (plugins) to your site's `_config.yml` file, such as:
 
-{% highlight bash %}
+```rb
 gems:
   - jekyll-feed
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
-{% endhighlight %}
+```
 
 This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](//jekyllrb.com/).
 

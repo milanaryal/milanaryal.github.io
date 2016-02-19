@@ -20,7 +20,8 @@ When things go wrong as they sometimes will, we all need words of encouragement.
 "Use what talent you possess: the woods would be very silent if no birds sang except those that sang best." --- *Henry Van Dyke*
 
 <figure>
-  <img alt="Mark Twain - Words of encouragement" src="http://2.bp.blogspot.com/-xLQAUgx_p-I/UqqPsN7wtYI/AAAAAAAADn8/3iEafsaQc4M/s1600/mark-twain-quotes.jpg">
-
+  <a href="//dl.dropboxusercontent.com/s/0jl20wsqpgpyx8y/20131213-mark-twain-quotes.jpg">
+    <img alt="Mark Twain - Words of encouragement" src="//dl.dropboxusercontent.com/s/0jl20wsqpgpyx8y/20131213-mark-twain-quotes.jpg">
+  </a>
   <figcaption>“Twenty years from now you will be more disappointed by the things you didn't do that by the ones you did. So throw off the bowlines, sail away from the safe harbour, catch the trade winds in your sails. Explore. Dream. Discover.” — Mark Twain</figcaption>
 </figure>

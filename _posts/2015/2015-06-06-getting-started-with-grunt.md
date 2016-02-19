@@ -21,9 +21,9 @@ The first thing to do in order to use Grunt is to set up [Node.js](https://nodej
 
 Once Node.js is installed, just run this command in the terminal:
 
-{% highlight bash %}
+```bash
 $ npm install -g grunt-cli
-{% endhighlight %}
+```
 
 Lets break that down:
 
@@ -36,9 +36,9 @@ You should close and reopen the terminal as well. That's a generic good practice
 
 To make sure Grunt has been properly installed, you can run the following one-liner command again:
 
-{% highlight bash %}
+```bash
 $ grunt --version
-{% endhighlight %}
+```
 
 The next step is to create a `package.json` file and a `Gruntfile` in the root directory of your project.
 
@@ -52,7 +52,7 @@ There are a few ways to create a `package.json` file for your project:
 * The [npm init](https://docs.npmjs.com/cli/init) command will create a basic `package.json` file.
 * Start with the example below, and expand as needed, following this [specification](https://docs.npmjs.com/files/package.json).
 
-{% highlight json %}
+```json
 {
   "name": "my-project-name",
   "version": "0.1.0",
@@ -60,7 +60,7 @@ There are a few ways to create a `package.json` file for your project:
     "grunt": "~0.4.5"
   }
 }
-{% endhighlight %}
+```
 
 Feel free to change the name of the project and the version, but the `devDependencies` thing needs to be in there just like that.
 
@@ -68,15 +68,15 @@ This is how Node does dependencies. Node has a package manager called npm (node 
 
 Once that `package.json` file is in place, go to the terminal and navigate to the root directory of your project folder using following command:
 
-{% highlight bash %}
+```bash
 $ cd ~/path/to/project
-{% endhighlight %}
+```
 
 Then run the following command:
 
-{% highlight bash %}
+```bash
 $ npm install
-{% endhighlight %}
+```
 
 This tells npm which dependencies to install and places them in a `node_modules` folder.
 
@@ -86,61 +86,61 @@ In your `package.json` you can tag each dependency with a range of versions to i
 
 **Only install `0.6.0`:**
 
-{% highlight json %}
+```json
 {
   "devDependencies": {
     "grunt-contrib-watch": "0.6.0"
   }
 }
-{% endhighlight %}
+```
 
 **Prefix with `~` to install the latest patch version `0.6.x`:**
 
 As `0.6.1`, `0.6.2`, `0.6.3`, etc versions are released, `npm install` will install the latest version of those. If `0.7.0` is release, it will not install that version (generally a good strategy as it may contain breaking changes).
 
-{% highlight json %}
+```json
 {
   "devDependencies": {
     "grunt-contrib-watch": "~0.6.0"
   }
 }
-{% endhighlight %}
+```
 
 **Prefix with `^` to install the latest patch version `0.x.x`:**
 
 It will update you to the most recent major version (the first number). `^0.6.0` will match any `0.x.x` release including `0.7.0`, but will hold off on `1.0.0`.
 
-{% highlight json %}
+```json
 {
   "devDependencies": {
     "grunt-contrib-watch": "^0.6.0"
   }
 }
-{% endhighlight %}
+```
 
 **Explicitly set the range:**
 
 You can use `>`, `<`, `<=`, `>=` to explicitly set the version range. Another good option for custom ranges or if you would like to be explicit with your version ranges. The follow will install every version greater or equal than `0.6.0` but less than `1.0.0`:
 
-{% highlight json %}
+```json
 {
   "devDependencies": {
     "grunt-contrib-watch": ">= 0.6.0 < 1.0.0"
   }
 }
-{% endhighlight %}
+```
 
 **Always install the latest with `*`:**
 
 Or if you just always want the latest version use `*`:
 
-{% highlight json %}
+```json
 {
   "devDependencies": {
     "grunt-contrib-watch": "*"
   }
 }
-{% endhighlight %}
+```
 
 See more about version ranges in the [npm docs](https://docs.npmjs.com/misc/semver) or npm's [semantic versioning parser](https://github.com/isaacs/node-semver).
 
@@ -163,7 +163,7 @@ A `Gruntfile` is comprised of the following parts:
 * Loading Grunt plugins and tasks
 * Custom tasks
 
-{% highlight javascript %}
+```js
 /*!
  * Gruntfile
  * Basic sample file
@@ -192,7 +192,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['grunt-task-name']);
 
 };
-{% endhighlight %}
+```
 
 #### An example Gruntfile
 
@@ -200,19 +200,19 @@ In the following `Gruntfile`, project metadata is imported into the Grunt config
 
 You can run this command from the terminal (it will henceforth go without saying that you need to run the given commands from your project's root folder):
 
-{% highlight bash %}
+```bash
 npm install grunt-contrib-uglify --save-dev
-{% endhighlight %}
+```
 
 A neat thing about doing it this way: your `package.json` file will automatically be updated to include this new dependency. Open it up and check it out. You'll see a new line:
 
-{% highlight text %}
+```text
 "grunt-contrib-uglify": "^0.9.1"
-{% endhighlight %}
+```
 
 Now we're ready to use it. To use it we need to start configuring Grunt and telling it what to do.
 
-{% highlight javascript %}
+```js
 /*!
  * Gruntfile
  * Minify JavaScript using Uglify
@@ -246,13 +246,13 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['uglify']);
 
 };
-{% endhighlight %}
+```
 
 The `uglify` task will be run by default, when the following command line is run at the root of your project file:
 
-{% highlight bash %}
+```bash
 $ grunt
-{% endhighlight %}
+```
 
 An incredibly active community of developers is building front-end plugins, you can explore them at [Grunt plugins library](http://gruntjs.com/plugins/).
 

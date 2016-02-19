@@ -39,9 +39,9 @@ There're various way of [getting share link](https://www.dropbox.com/help/167) t
 
 When you get copied of Dropbox shared link, you will see the file link in the following format:
 
-{% highlight text %}
+```text
 www.dropbox.com/u/<number>/<name of file>
-{% endhighlight %}
+```
 
 ### Step 2: Change an image file shared link path
 
@@ -51,15 +51,15 @@ To solve this, you just need to change the actual shared link with the link to t
 
 Example of default Dropbox shared link path:
 
-{% highlight text %}
+```text
 https://www.dropbox.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=0
-{% endhighlight %}
+```
 
 Replaced with a true file path:
 
-{% highlight text %}
+```text
 https://dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png
-{% endhighlight %}
+```
 
 <div class="alert alert-info">
   <strong>Tip:</strong> To get direct download link to a file uploaded on Dropbox you can use <code>?dl=1</code> as a query parameter in your URL. And to just bypass the preview page on Dropbox you can use use <code>?raw=1</code>.
@@ -69,14 +69,14 @@ https://dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-bl
 
 Now an HTML markup like
 
-{% highlight html %}
+```html
 <figure>
   <a href="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png">
     <img src="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png" alt="Copyright Dropbox logo type blue">
   </a>
   <figcaption>Dropbox, the Dropbox logo are trademarks of Dropbox Inc., registered in the U.S. and other countries.</figcaption>
 </figure>
-{% endhighlight %}
+```
 
 turns into this:
 
