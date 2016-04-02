@@ -1,12 +1,19 @@
 ---
 title: "Hosting images with Dropbox on your website"
 date: 2015-08-19T12:24:31+05:45
-last_modified_at: 2015-10-05T09:09:22+05:45
+last_modified_at: 2016-04-02T16:33:41+05:45
 ---
 
 <p class="lead">Dropbox is a great way to post an image quickly on a forum or as free hosting for your low traffic website, but there are a few things to know.</p>
 
-Within these few simple steps you will learn to host images with Dropbox on your website:
+Whether to reduce your website bandwidth or for some other reasons, you may want to host your website assets with CDN. So here, Dropbox will also works for you as a CDN and the only thing you need to do is some simple tweaks.
+
+<div class="alert alert-info">
+  <h4>Invitation to Dropbox!</h4>
+  Haven’t join Dropbox yet? Sign up now with <a href="https://db.tt/vocH7o0j" class="alert-link">https://db.tt/vocH7o0j</a> link and install Dropbox on your desktop computer, you’ll get extra 500MB of bonus space.
+</div>
+
+Following are some few simple steps within which you will learn to host images or website assets with Dropbox on your webpages:
 
 ### Step 1: Get a share link to an image file
 
@@ -40,14 +47,14 @@ There're various way of [getting share link](https://www.dropbox.com/help/167) t
 When you get copied of Dropbox shared link, you will see the file link in the following format:
 
 ```text
-www.dropbox.com/u/<number>/<name of file>
+www.dropbox.com/u/{host id}/{filename}
 ```
 
 ### Step 2: Change an image file shared link path
 
-After getting a shared link to a image file, if you visit it you get preview on Dropbox site and simple file hosting doesn't work by pasting in the link.
+After getting a public shared link path to a image file, if you try to visit it you will get preview on Dropbox site and image hosting doesn't work by pasting this link.
 
-To solve this, you just need to change the actual shared link with the link to the file itself. To do this, you just need to replace `www.dropbox.com` with `dl.dropboxusercontent.com`. This will serve the true file instead of the file wrapped in a preview.
+So to fix this, all you need is to change the shared link path domain name with new one. Just replace `www.dropbox.com` with `dl.dropboxusercontent.com` and this will serve true file instead of getting previewed in a site.
 
 Example of default Dropbox shared link path:
 
@@ -78,7 +85,7 @@ Now an HTML markup like
 </figure>
 ```
 
-turns into this:
+will output as following:
 
 <figure>
   <a href="//dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png">
@@ -96,15 +103,12 @@ turns into this:
 
 "There is a hard limit of 20GB/day for Basic (free) accounts and 200GB/day for paid accounts to all of your links together, after which they're temporarily disabled, and those who try to access them will see an error page instead of your files," [Dropbox explains](https://www.dropbox.com/help/4204).
 
-For comparison, let's say you have image files hosted on Dropbox, weight around 400KB. That means image files all together should have less than 25K impressions in a day for you to stay within the Dropbox traffic limits.
-
-And if another site decides to hotlink to your static images, it may exhaust your "free bandwidth" quota even sooner.
+Lets compare, you have images hosted on Dropbox which is around 250KB. That means images all together should have less than 80K impressions in a day for you to stay within the Dropbox traffic limits. And if another site hotlink to your static images, it may use up your "free bandwidth" quota even sooner.
 
 Note that this is for share links, not for access via the API.
 
 ---
 
-<div class="alert alert-info">
-  <h4>Invitation to Dropbox!</h4>
-  Want to join Dropbox? Sign up now with <a href="https://db.tt/vocH7o0j" class="alert-link">https://db.tt/vocH7o0j</a> link and install Dropbox on your desktop computer, you’ll get extra 500MB of bonus space.
-</div>
+#### References
+
+* [Using Dropbox to Host Images on your Website](https://ryanmo.co/2013/11/03/dropboxsharedlinks/) --- Ryan
