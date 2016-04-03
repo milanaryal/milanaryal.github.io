@@ -1,11 +1,20 @@
 language: ruby
 rvm:
   - 2.1
-script:
-  - bundle exec jekyll build
-  - bundle exec htmlproof ./_site --only-4xx
-cache: bundler
-sudo: false
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+sudo: false
+cache: bundler
+
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --only-4xx
+
+branches:
+  only:
+    - master
+
+git:
+  depth: 10
