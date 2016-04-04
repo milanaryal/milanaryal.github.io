@@ -47,22 +47,22 @@ There're various way of [getting share link](https://www.dropbox.com/help/167) t
 When you get copied of Dropbox shared link, you will see the file link in the following format:
 
 ```text
-www.dropbox.com/u/{host id}/{filename}
+www.dropbox.com/s/HOST_ID/filename.extension
 ```
 
 ### Step 2: Change an image file shared link path
 
 After getting a public shared link path to a image file, if you try to visit it you will get preview on Dropbox site and image hosting doesn't work by pasting this link.
 
-So to fix this, all you need is to change the shared link path domain name with new one. Just replace `www.dropbox.com` with `dl.dropboxusercontent.com` and this will serve true file instead of getting previewed in a site.
+So to fix this, all you need is to change the shared link path domain name with new one. Just replace `www.dropbox.com` with `dl.dropboxusercontent.com` and this will serve actual file instead of getting previewed in a site.
 
-Example of default Dropbox shared link path:
+Example of default Dropbox public shared link path:
 
 ```text
 https://www.dropbox.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png?dl=0
 ```
 
-Replaced with a true file path:
+Replaced with a actual file path:
 
 ```text
 https://dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png
