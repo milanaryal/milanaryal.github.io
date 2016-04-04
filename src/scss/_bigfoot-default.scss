@@ -262,6 +262,11 @@
   font-size: 0.8em;
 
   line-height: normal;
+
+    a {
+      text-decoration: underline !important;
+      background-image: none !important;
+    }
 }
 
 .bigfoot-footnote__content img {

@@ -13,7 +13,7 @@ module.exports = function (grunt) {
   var autoprefixer = require('autoprefixer')({
     browsers: [
       'Chrome >= 35',
-      'Firefox >= 31',
+      'Firefox >= 38',
       'Edge >= 12',
       'Explorer >= 9',
       'iOS >= 8',
@@ -176,7 +176,7 @@ module.exports = function (grunt) {
         compatibility: 'ie9',
         keepSpecialComments: false,
         // sourceMap: true,
-        noAdvanced: true
+        advanced: true
       },
       core: {
         src: '<%= project.assets %>/css/styles.css',

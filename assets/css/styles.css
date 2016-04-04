@@ -9901,6 +9901,11 @@ kbd {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.bigfoot-footnote__content a {
+  text-decoration: underline !important;
+  background-image: none !important;
+}
+
 .bigfoot-footnote__content img {
   max-width: 100%;
 }
