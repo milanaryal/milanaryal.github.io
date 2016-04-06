@@ -5103,7 +5103,6 @@ button.list-group-item-danger.active:focus {
   font-weight: 300;
 
   src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v13-latin-300.woff2") format("woff2"), url("../fonts/open-sans-v13-latin-300.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-regular - latin */
@@ -5113,7 +5112,6 @@ button.list-group-item-danger.active:focus {
   font-weight: 400;
 
   src: local("Open Sans"), local("OpenSans"), url("../fonts/open-sans-v13-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v13-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-700 - latin */
@@ -5123,7 +5121,6 @@ button.list-group-item-danger.active:focus {
   font-weight: 700;
 
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v13-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v13-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lora-regular - latin */
@@ -5133,7 +5130,6 @@ button.list-group-item-danger.active:focus {
   font-weight: 400;
 
   src: local("Lora"), local("Lora-Regular"), url("../fonts/lora-v9-latin-regular.woff2") format("woff2"), url("../fonts/lora-v9-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lora-italic - latin */
@@ -5143,7 +5139,6 @@ button.list-group-item-danger.active:focus {
   font-weight: 400;
 
   src: local("Lora Italic"), local("Lora-Italic"), url("../fonts/lora-v9-latin-italic.woff2") format("woff2"), url("../fonts/lora-v9-latin-italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lora-700 - latin */
@@ -5153,7 +5148,6 @@ button.list-group-item-danger.active:focus {
   font-weight: 700;
 
   src: local("Lora Bold"), local("Lora-Bold"), url("../fonts/lora-v9-latin-700.woff2") format("woff2"), url("../fonts/lora-v9-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lora-700italic - latin */
@@ -5163,7 +5157,6 @@ button.list-group-item-danger.active:focus {
   font-weight: 700;
 
   src: local("Lora Bold Italic"), local("Lora-BoldItalic"), url("../fonts/lora-v9-latin-700italic.woff2") format("woff2"), url("../fonts/lora-v9-latin-700italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /*!
@@ -7910,7 +7903,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -7928,7 +7921,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0;
@@ -7963,7 +7956,7 @@ a:hover, a:focus {
 
 .navbar {
   margin-bottom: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   background-color: white;
   border-color: transparent;
 }
@@ -8285,7 +8278,7 @@ ul.hero-social a.fa:hover::before {
 .copyright {
   margin-top: 30px;
   margin-bottom: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, .6);
   text-align: center;
@@ -8301,7 +8294,7 @@ ul.hero-social a.fa:hover::before {
 
 .btn {
   padding: 15px 25px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none !important;
@@ -8353,7 +8346,7 @@ ul.hero-social a.fa:hover::before {
 .pager li > a,
 .pager li > span {
   padding: 12.5px 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: rgba(0, 0, 0, .44);
@@ -8418,7 +8411,7 @@ ul.hero-social a.fa:hover::before {
 }
 
 .post-preview-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 12px;
   color: rgba(0, 0, 0, .44);
 }
@@ -8471,7 +8464,7 @@ ul.hero-social a.fa:hover::before {
   display: block;
   padding-bottom: 10px;
   margin: 0 0 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.1;
@@ -8567,7 +8560,7 @@ ul.hero-social a.fa:hover::before {
   position: relative;
   display: inline-block;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   color: rgba(0, 0, 0, .6);
@@ -8835,7 +8828,7 @@ ul.hero-social a.fa:hover::before {
 }
 
 .error-page-message {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -9222,7 +9215,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 code {
@@ -9892,7 +9885,7 @@ kbd {
   padding: 1.1em 1.3em 1.2em;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: .8em;
   line-height: normal;
   background: #fafafa;
