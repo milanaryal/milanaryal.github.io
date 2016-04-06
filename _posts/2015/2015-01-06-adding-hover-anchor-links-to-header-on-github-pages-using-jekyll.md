@@ -142,11 +142,11 @@ You can style the AnchorJS icon according to your need.
 
 .anchorjs-link {
   color: inherit !important;
-  text-decoration: none !important; // do not underline
+  text-decoration: none !important; /* do not underline */
 }
 
 @media (max-width: 768px) {
-  // do not display AnchorJS icon on less than 768px view point
+  /* do not display AnchorJS icon on less than 768px view point */
   .anchorjs-link {
     display: none;
   }
@@ -154,13 +154,13 @@ You can style the AnchorJS icon according to your need.
 
 *:hover > .anchorjs-link {
   opacity: .75;
-  // To fade links as they appear, change transition-property from 'color' to 'all'
+  /* To fade links as they appear, change transition-property from 'color' to 'all' */
   transition: color .16s linear;
 }
 
 *:hover > .anchorjs-link:hover,
 .anchorjs-link:focus {
-  text-decoration: none !important; // do not underline
+  text-decoration: none !important; /* do not underline */
   opacity: 1;
 }
 ```

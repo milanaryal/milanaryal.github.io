@@ -26,8 +26,6 @@ kramdown:
 highlighter: rouge
 ```
 
-**Also on Gost blogging platform**, it support the following combination of standard Markdown and GitHub Flavored Markdown.
-
 > All HTML is valid Markdown. If you're stuck not able to format your content how you would like (for example using tables) you can always use [plain HTML](http://htmldog.com/guides/html/beginner/) instead of Markdown.
 
 ### Markdown style guide
