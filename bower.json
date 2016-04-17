@@ -24,11 +24,11 @@
     "jquery": "~2.2.3",
     "bootstrap": "~3.3.6",
     "bootstrap-sass": "~3.3.6",
-    "font-awesome": "~4.5.0",
+    "font-awesome": "~4.6.1",
     "anchor-js": "~3.1.0",
     "primer-markdown": "~2.5.1",
     "bigfoot": "~2.1.4",
     "nprogress": "~0.2.0",
-    "headroom.js": "~0.8.0"
+    "headroom.js": "~0.9.3"
   }
 }
