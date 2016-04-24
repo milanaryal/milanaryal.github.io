@@ -104,6 +104,8 @@ In case you were wondering, this site is:
 * Built on [Jekyll](http://jekyllrb.com/), the open source static site generator
 * Hosted on [GitHub Pages](http://pages.github.com/)
 
+...for more informations see [humans.txt](/humans.txt).
+
 If you enjoy the content found here, you might like to subscribe to my <i class="fa fa-feed" aria-hidden="true"></i> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
 ### Licensing

@@ -7,6 +7,7 @@ When you choose a Gmail address, you actually get more than just `yourusername@g
 
 Here are three different ways you can modify your Gmail address and still get your mail:
 
+1. Everyone who has sign up for an `yourusername@gmail.com` address can also receive mail sent to `yourusername@googlemail.com`. For example, if your email address in Gmail is something like `gmailfan@gmail.com`, all email messages that are sent to `gmailfan@googlemail.com` will be delivered to your `gmailfan@gmail.com`.
 
 2. Insert one or several dots (`.`) anywhere in your email address. Gmail doesn't recognize periods as characters in addresses --- Gmail just ignore them. For example, you could tell people your address was `gmailfan@gmail.com`, `gmail.fan@gmail.com` or `g.ma.il.fan@gmail.com`.
 
