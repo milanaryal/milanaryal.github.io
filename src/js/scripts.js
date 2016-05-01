@@ -22,6 +22,9 @@
   // Show the progress bar
   NProgress.start();
 
+  // Progress percentage
+  NProgress.set(0.4);
+
   // Increase randomly
   var interval = setInterval(function() { NProgress.inc(); }, 1000);
 

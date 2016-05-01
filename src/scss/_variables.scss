@@ -74,3 +74,12 @@ $markdown-font-size-h6:         28px;
 $markdown-font-size-pre:        16px;
 
 $markdown-margin:               30px; // All of our block level items should have the same margin
+
+
+// NProgress
+//
+// Loading bar custom config.
+
+$nprogress-color:               #77b6ff !default; // last update #29d
+$nprogress-height:              2px !default;
+$nprogress-zindex:              1031 !default;

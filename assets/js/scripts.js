@@ -12212,7 +12212,7 @@ return jQuery;
 }).call(this);
 
 /**
- * AnchorJS - v3.1.0 - 2016-02-12
+ * AnchorJS - v3.1.1 - 2016-04-30
  * https://github.com/bryanbraun/anchorjs
  * Copyright (c) 2016 Bryan Braun; Licensed MIT
  */
@@ -12449,10 +12449,10 @@ function AnchorJS(options) {
    * @return   {Boolean}     true/false
    */
   this.hasAnchorJSLink = function(el) {
-    var hasLeftAnchor = (' ' + el.firstChild.className + ' ').indexOf(' anchorjs-link ') > -1,
-        hasRightAnchor = (' ' + el.lastChild.className + ' ').indexOf(' anchorjs-link ') > -1;
+    var hasLeftAnchor = el.firstChild && ((' ' + el.firstChild.className + ' ').indexOf(' anchorjs-link ') > -1),
+        hasRightAnchor = el.lastChild && ((' ' + el.lastChild.className + ' ').indexOf(' anchorjs-link ') > -1);
 
-    return hasLeftAnchor || hasRightAnchor;
+    return hasLeftAnchor || hasRightAnchor || false;
   };
 
   /**
@@ -12557,6 +12557,9 @@ var anchors = new AnchorJS();
 
   // Show the progress bar
   NProgress.start();
+
+  // Progress percentage
+  NProgress.set(0.4);
 
   // Increase randomly
   var interval = setInterval(function() { NProgress.inc(); }, 1000);
