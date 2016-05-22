@@ -1,12 +1,8 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-  {% if page.excerpt %}
-    {% assign page_description = page.excerpt %}
-  {% elsif page.description %}
-    {% assign page_description = page.description %}
-  {% else %}
-    {% assign page_description = site.description %}
+  {% assign meta_description = page.excerpt | default: page.description | default: site.description %}
+  {% if meta_description %}
+    {% assign meta_description = meta_description | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once %}
   {% endif %}
-  {% capture meta_description %}{{ page_description | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% endcapture %}
 
   <!-- Basic page needs -->
   <meta charset="utf-8">
@@ -44,12 +40,12 @@
   {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | replace:'/index.html','/' | prepend: site.url }}" title="{{ page.previous.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
   {% if page.next.url %}<link rel="next" href="{{ page.next.url | replace:'/index.html','/' | prepend: site.url }}" title="{{ page.next.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
 
+  {% if page.url == '/' %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "{{ site.name | markdownify | strip_html | strip_newlines | escape_once }}",
-    "alternateName": "{{ site.description | markdownify | strip_html | strip_newlines | escape_once }}",
     "url": "{{ site.url }}/",
     "potentialAction": {
       "@type": "SearchAction",
@@ -58,6 +54,7 @@
     }
   }
   </script>
+  {% endif %}
 
   <!-- Open Search description -->
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site.name }}">

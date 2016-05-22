@@ -59,13 +59,13 @@ a {
 }
 
 ::-moz-selection {
-  background: #507ED9;
+  background: #2196f3;
   color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background: #507ED9;
+  background: #2196f3;
   color: white;
   text-shadow: none;
 }
@@ -130,11 +130,8 @@ a {
 
 .hero-wrapper {
   font-size: 16px;
-  background: -webkit-linear-gradient(90deg, #D3959B 10%, #BFE6BA 90%); // Chrome 10+, Saf5.1+
-  background:    -moz-linear-gradient(90deg, #D3959B 10%, #BFE6BA 90%); // FF3.6+
-  background:     -ms-linear-gradient(90deg, #D3959B 10%, #BFE6BA 90%); // IE10
-  background:      -o-linear-gradient(90deg, #D3959B 10%, #BFE6BA 90%); // Opera 11.10+
-  background:         linear-gradient(90deg, #D3959B 10%, #BFE6BA 90%); // W3C
+  background: #d3959b; // fallback for old browsers if gradient is not supported
+  background: linear-gradient(to left top, #d3959b , #bfe6ba); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
 
   display: -moz-flex;
   display: -webkit-flex;

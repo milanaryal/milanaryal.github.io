@@ -12,7 +12,7 @@ logo:
   width: 300
   height: 300
 featured_image: "/assets/img/home-bg.jpg"
-theme_color: "#2196F3"
+theme_color: "#2196f3"
 author:
   name: "Milan Aryal"
   email: "considermilan@gmail.com"

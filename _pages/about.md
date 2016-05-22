@@ -43,6 +43,11 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
+    <a rel="me" href="//keybase.io/milanaryal">
+      <i class="fa fa-key" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
     <a rel="me" href="//pinterest.com/milanaryal">
       <i class="fa fa-pinterest" aria-hidden="true"></i>
     </a>
@@ -68,8 +73,13 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
-    <a rel="me" href="//keybase.io/milanaryal">
-      <i class="fa fa-key" aria-hidden="true"></i>
+    <a rel="me" href="//www.snapchat.com/add/milanaryal">
+      <i class="fa fa-snapchat" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a rel="me" href="skype:considermilan?call">
+      <i class="fa fa-skype" aria-hidden="true"></i>
     </a>
   </li>
 </ul>

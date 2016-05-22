@@ -5160,7 +5160,7 @@ button.list-group-item-danger.active:focus {
 }
 
 /*!
- *  Font Awesome 4.6.1 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
@@ -5170,13 +5170,13 @@ button.list-group-item-danger.active:focus {
   font-style: normal;
   font-weight: normal;
 
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.1");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.1") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.1") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
 }
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
 
   text-rendering: auto;
@@ -6823,7 +6823,7 @@ button.list-group-item-danger.active:focus {
   content: "";
 }
 
-.fa-pied-piper:before {
+.fa-pied-piper-pp:before {
   content: "";
 }
 
@@ -6987,6 +6987,7 @@ button.list-group-item-danger.active:focus {
 }
 
 .fa-ra:before,
+.fa-resistance:before,
 .fa-rebel:before {
   content: "";
 }
@@ -7842,6 +7843,32 @@ button.list-group-item-danger.active:focus {
   content: "";
 }
 
+.fa-pied-piper:before {
+  content: "";
+}
+
+.fa-first-order:before {
+  content: "";
+}
+
+.fa-yoast:before {
+  content: "";
+}
+
+.fa-themeisle:before {
+  content: "";
+}
+
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: "";
+}
+
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "";
+}
+
 h1, h2, h3, h4, h5, h6, dl, dd, ol, ul, menu, figure, blockquote, p, pre, form {
   margin: 0;
 }
@@ -7893,13 +7920,13 @@ a:hover, a:focus {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #507ed9;
+  background: #2196f3;
 }
 
 ::selection {
   color: white;
   text-shadow: none;
-  background: #507ed9;
+  background: #2196f3;
 }
 
 .navbar {
@@ -7960,12 +7987,11 @@ a:hover, a:focus {
   padding: 1.5em;
   font-size: 16px;
           flex-direction: column;
-  background: -webkit-linear-gradient(90deg, #d3959b 10%, #bfe6ba 90%);
-  background:      -o-linear-gradient(90deg, #d3959b 10%, #bfe6ba 90%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #d3959b), color-stop(90%, #bfe6ba));
-  background: -webkit-linear-gradient(left, #d3959b 10%, #bfe6ba 90%);
-  background:      -o-linear-gradient(left, #d3959b 10%, #bfe6ba 90%);
-  background:         linear-gradient(90deg, #d3959b 10%, #bfe6ba 90%);
+  background: #d3959b;
+  background: -webkit-gradient(linear, right bottom, left top, from(#d3959b), to(#bfe6ba));
+  background: -webkit-linear-gradient(right bottom, #d3959b, #bfe6ba);
+  background:      -o-linear-gradient(right bottom, #d3959b, #bfe6ba);
+  background:         linear-gradient(to left top, #d3959b, #bfe6ba);
 
      -moz-align-items: center;
   -webkit-align-items: center;
@@ -9121,6 +9147,7 @@ ul.hero-social a.fa:hover::before {
 .emoji {
   display: inline-block;
   max-width: none;
+  background-color: transparent;
 }
 
 .footnotes {
