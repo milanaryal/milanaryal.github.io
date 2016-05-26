@@ -9,14 +9,14 @@ permalink: /about/
 
 Hello, my name is Milan Aryal (मिलन अर्याल)[^name] and I'm a student living in Kathmandu, Nepal who loves getting lost in web design, front-end development, and listening music a lot.
 
-[^name]: The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification. :blush:
+[^name]: The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification.
 
 ### Let's be friends
 
 Join me on the following networks and/or websites:
 
 <!-- Social links -->
-<ul class="list-inline text-center fa-3x">
+<ul class="list-inline text-center text-muted fa-3x">
   <li>
     <a rel="me" href="//twitter.com/MilanAryal">
       <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -68,7 +68,7 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
-    <a rel="me" href="//medium.com/&#64;MilanAryal">
+    <a rel="me" href="//medium.com/@MilanAryal">
       <i class="fa fa-medium" aria-hidden="true"></i>
     </a>
   </li>
@@ -77,14 +77,9 @@ Join me on the following networks and/or websites:
       <i class="fa fa-snapchat" aria-hidden="true"></i>
     </a>
   </li>
-  <li>
-    <a rel="me" href="skype:considermilan?call">
-      <i class="fa fa-skype" aria-hidden="true"></i>
-    </a>
-  </li>
 </ul>
 
-<ul class="list-inline text-center">
+<ul class="list-inline text-center text-muted">
   <li>
     <a href="//keybase.io/milanaryal/key.asc">
       PGP: <code>9A68 F472 C067 D0DD 7877 E0C7 BD04 0021 477E 20C1</code>
@@ -98,7 +93,7 @@ Writing articles is hard, but making up designs is fun. I made this site so I wo
 
 Nothing brings me more pleasure than making something out of nothing. Even when the results are far from my ideal expectations, I find the whole ceremony of creativity completely enthralling.
 
-I'd like to think that I'm very happy person, but I find the art that strikes me truest is the sad, depressing sort, I love hip-hop and R&B music, post-apocalyptic fiction, and movie trailers that can make me squirt tears in under two minutes. Go figure. :wink:
+I'd like to think that I'm very happy person, but I find the art that strikes me truest is the sad, depressing sort, I love hip-hop and R&B music, post-apocalyptic fiction, and movie trailers that can make me squirt tears in under two minutes. Go figure.
 
 ### About the site
 

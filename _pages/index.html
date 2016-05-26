@@ -5,13 +5,13 @@ permalink: /
 ---
 
 <!-- Wrapper -->
-<main class="hero-wrapper" role="main" itemprop="mainContentOfPage">
+<main class="hero-container clearfix" role="main" itemprop="mainContentOfPage">
   <!-- Container -->
-  <section class="hero-container is-loading" itemscope itemtype="https://schema.org/Person">
+  <section class="hero-content is-loading" itemscope itemtype="https://schema.org/Person">
     <link itemprop="url" href="{{ site.url }}/">
     <header class="hero-profile">
       <span class="hero-avatar">
-        <img itemprop="image" src="{{ site.author.avatar }}" alt="{{ site.author.name }}">
+        <img class="hero-avatar-image" itemprop="image" src="{{ site.author.avatar }}" alt="{{ site.author.name }}">
       </span>
       <h1 class="hero-title" itemprop="name">{{ site.author.name }}</h1>
       <p class="hero-description" itemprop="description">{{ site.author.bio | markdownify | strip_html | strip_newlines | escape_once }}</p>
@@ -42,5 +42,5 @@ permalink: /
         <link itemprop="sameAs" rel="me" href="//keybase.io/{{ site.author.keybase }}">
       </ul>
     </footer>
-  </section><!-- /.hero-container -->
-</main><!-- /.hero-wrapper -->
+  </section><!-- /.hero-content -->
+</main><!-- /.hero-container -->

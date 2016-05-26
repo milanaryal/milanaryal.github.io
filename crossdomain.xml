@@ -13,5 +13,4 @@ sitemap: false
 <!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
 <cross-domain-policy>
   <site-control permitted-cross-domain-policies="master-only"/>
-  <allow-access-from domain="*.{{site.url|replace:'http://',''|replace:'https://',''|strip_newlines}}" />
 </cross-domain-policy>

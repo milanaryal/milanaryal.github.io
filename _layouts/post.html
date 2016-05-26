@@ -30,8 +30,14 @@ layout: default
             <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
             <meta itemprop="dateModified" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
 
+            {% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by:180 %}
+            {% if reading_time <= 1 %}
+              {% assign meta_reading_time = '1' | append:' min read' %}
+            {% else %}
+              {% assign meta_reading_time = reading_time | append:' min read' %}
+            {% endif %}
             <div class="post-meta">
-              <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{% capture reading_time %}{{ content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if reading_time <= '1' %}{{ 1 | append:' min read' }}{% else %}{{ reading_time | append:' min read' }}{% endif %}</span>
+              <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{{ meta_reading_time }}</span>
             </div><!-- /.post-meta -->
 
             <h1 class="post-title" itemprop="headline">{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}</h1>

@@ -12542,7 +12542,7 @@ var anchors = new AnchorJS();
     NProgress.done();
 
     // finish home page loading effect
-    $('.hero-container').removeClass('is-loading');
+    $('.hero-content').removeClass('is-loading');
   });
 
 
