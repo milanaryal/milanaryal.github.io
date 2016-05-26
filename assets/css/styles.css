@@ -8028,7 +8028,7 @@ a:hover, a:focus {
   }
 }
 
-.hero-content {
+.hero-profile {
   position: relative;
   width: 27em;
   padding: 0 3em 2em;
@@ -8053,25 +8053,25 @@ a:hover, a:focus {
 }
 
 @media (max-width: 767px) {
-  .hero-content {
+  .hero-profile {
     margin-top: 134px;
   }
 }
 
 @media (max-width: 360px) {
-  .hero-content {
+  .hero-profile {
     margin-top: 122px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-content {
+  .hero-profile {
     width: 100%;
     padding: 0 2em 2em;
   }
 }
 
-.hero-content.is-loading {
+.hero-profile.is-loading {
   opacity: 0;
   -webkit-transform: rotateX(15deg);
       -ms-transform: rotateX(15deg);

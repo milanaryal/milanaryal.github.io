@@ -33,8 +33,8 @@
     clearInterval(interval);
     NProgress.done();
 
-    // finish home page loading effect
-    $('.hero-content').removeClass('is-loading');
+    // finish hero page profile loading effect
+    $('.hero-profile').removeClass('is-loading');
   });
 
 
