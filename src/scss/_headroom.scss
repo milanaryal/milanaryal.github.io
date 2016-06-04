@@ -6,12 +6,13 @@
   .headroom {
     // background-color: white;
     // border-color: transparent;
-    transition: background-color 200ms,
-                transform 200ms;
-  }
 
-  .headroom--not-top {
-    transform: translateY(-100%);
+    will-change: background-color,
+                 border-color,
+                 transform;
+    transition: background-color 200ms linear,
+                border-color 200ms linear,
+                transform 200ms linear;
   }
 
   .headroom--pinned {
@@ -20,18 +21,18 @@
     transform: translateY(0%);
   }
 
+  .headroom--unpinned {
+    transform: translateY(-100%);
+  }
+
   .headroom--top {
     background-color: white;
     border-color: transparent;
-  }
-
-  .headroom--unpinned {
-    transform: translateY(-100%);
   }
 }
 
 @media (max-width: 767px) {
   .headroom--not-top {
-    display: none !important;
+    transform: translateY(-100%);
   }
 }

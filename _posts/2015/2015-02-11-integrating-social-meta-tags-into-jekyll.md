@@ -1,7 +1,7 @@
 ---
 title: "Integrating social meta tags into Jekyll"
 date: 2015-02-11T13:04:19+05:45
-last_modified_at: 2016-02-15T07:32:00+05:45
+last_modified_at: 2016-06-04T22:13:06+05:45
 excerpt: "A guide to adding social meta tags into Jekyll."
 ---
 
@@ -12,19 +12,20 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 ### Integrating Open Graph into Jekyll
 
 ```html
-{% raw %}
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+{% raw %}<meta property="og:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
 <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
-<meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:locale" content="{{ site.locale }}">
+<meta property="fb:admins" content="{{ site.fb_admins }}">
+<meta property="fb:app_id" content="{{ site.fb_appid }}">
 
 {% if page.date %}
+  <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
   <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
   {% for post in site.related_posts limit:3 %}
     <meta property="og:see_also" content="{{ post.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
   {% endfor %}
@@ -40,32 +41,25 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
   {% for tag in page.tags %}
   <meta property="article:tag" content="{{ tag }}">
   {% endfor %}
-{% endif %}
-
-<meta property="fb:admins" content="{{ site.fb_admins }}">
-<meta property="fb:app_id" content="{{ site.fb_appid }}">
-{% endraw %}
+{% endif %}{% endraw %}
 ```
 
 ### Integrating Twitter cards into Jekyll
 
 ```html
-{% raw %}
-<meta name="twitter:card" content="summary">
+{% raw %}<meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@{{ site.author.twitter }}">
 <meta name="twitter:creator" content="@{{ site.author.twitter }}">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{% if page.featured_image %}{{ page.featured_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
-<meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
-{% endraw %}
+<meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">{% endraw %}
 ```
 
 ### Optimizing for search engine into Jekyll
 
 ```html
-{% raw %}
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
+{% raw %}<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
 
 {% if page.robots %}
   <meta name="robots" content="{{ page.robots }}">
@@ -73,17 +67,14 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 
 <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
 
-{% if page.next.url %}
-  <link rel="next" href="{{ page.next.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}" title="{{ page.next.title }}">
+{% if paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | replace:'/index.html','/' | prepend: site.url }}">
 {% endif %}
 
-{% if page.previous.url %}
-  <link rel="prev" href="{{ page.previous.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}" title="{{ page.previous.title }}">
-{% endif %}
-{% endraw %}
+{% if paginator.next_page %}
+  <link rel="next" href="{{ paginator.next_page_path | replace:'/index.html','/' | prepend: site.url }}">
+{% endif %}{% endraw %}
 ```
-
----
 
 Make sure you have the following `_config.yml` and post front matter setting to implement the above social meta tags (or you can change according to your use):
 
@@ -112,12 +103,27 @@ layout:           post
 title:            "your post title"
 date:             2015-02-11T13:04:19+05:45 # XML Schema Date/Time
 last_modified_at: 2015-03-15T05:20:00+05:45 # last page modified date/time
-featured_image:   your post featured image path # /assets/img/image.jpg
+image:            your post featured image path # /assets/img/image.jpg
 excerpt:          "for meta description" # Optional for overring content excerpt
 categories:       your post categories # ["category1"] - best is to have one category in a post
 tags:             your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
 ---
 ```
+
+---
+
+#### Jekyll now have a dedicated SEO plugin to better index your site's content [Update May 10, 2016]
+
+If your blog or product landing page is using using Jekyll or GitHub Pages, [it can now be optimized for SEO](https://github.com/blog/2162-better-discoverability-for-github-pages-sites). To enable the Jekyll SEO tag plugin, you must add the following line to your site's `_config.yml` file:
+
+```ruby
+gems:
+  - jekyll-seo-tag
+```
+
+And by adding a simple `{% raw %}{% seo %}{% endraw %}` tag right before `</head>`, Jekyll will automatically add SEO metadata to each page. It even accounts for the page title, in addition to the description, canonical URL, next (and previous) URL and post metadata.
+
+When you share a post to Facebook, LinkedIn, Twitter or other social networks, the tag makes sure content is displayed richly. The functionality comes courtesy of the [Jekyll SEO plugin](https://github.com/jekyll/jekyll-seo-tag) (GitHub Pages compatible), which GitHub says "provides a battle-tested template of crowdsourced best-practices."
 
 ---
 

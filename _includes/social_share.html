@@ -1,12 +1,12 @@
 <ul class="social-share list-inline clearfix">
   <li>Share on:</li>
   <li>
-    <a class="btn btn-social-share share-popup" href="//twitter.com/intent/tweet?url={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}&text={{ page.title | markdownify | strip_html | strip_newlines | uri_escape }}&via={{ site.author.twitter }}" target="_blank" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share share-popup" href="//twitter.com/intent/tweet?url={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}&text={{ page.title | smartify | strip_html | strip_newlines | uri_escape }}&via={{ site.author.twitter }}" target="_blank" role="button" data-proofer-ignore>
       <i class="fa fa-twitter" aria-hidden="true"></i><span class="social-label">Twitter</span>
     </a>
   </li>
   <li>
-    <a class="btn btn-social-share share-popup" href="//www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}&t={{ page.title | markdownify | strip_html | strip_newlines | uri_escape }}" target="_blank" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share share-popup" href="//www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}&t={{ page.title | smartify | strip_html | strip_newlines | uri_escape }}" target="_blank" role="button" data-proofer-ignore>
       <i class="fa fa-facebook" aria-hidden="true"></i><span class="social-label">Facebook</span>
     </a>
   </li>
@@ -16,7 +16,7 @@
     </a>
   </li>
   <li>
-    <a class="btn btn-social-share" href="mailto:?subject={{ page.title | markdownify | strip_html | strip_newlines | uri_escape }}&body={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share" href="mailto:?subject={{ page.title | smartify | strip_html | strip_newlines | uri_escape }}&body={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}" role="button" data-proofer-ignore>
       <i class="fa fa-envelope" aria-hidden="true"></i><span class="social-label">Email</span>
     </a>
   </li>

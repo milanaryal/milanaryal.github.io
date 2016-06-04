@@ -8,10 +8,10 @@ name: "Milan Aryal"
 description: "Livin' on the edge of web standards."
 url: "https://milanaryal.com"
 logo:
-  base_url: "/assets/img/m-icon-blue-on-white.png"
+  path: "/assets/img/m-icon-blue-on-white.png"
   width: 300
   height: 300
-featured_image: "/assets/img/home-bg.jpg"
+image: "/assets/img/home-bg.jpg"
 theme_color: "#2196f3"
 author:
   name: "Milan Aryal"

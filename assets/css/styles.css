@@ -7920,13 +7920,13 @@ a:hover, a:focus {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #2196f3;
+  background: #0c86e6;
 }
 
 ::selection {
   color: white;
   text-shadow: none;
-  background: #2196f3;
+  background: #0c86e6;
 }
 
 .navbar {
@@ -9566,17 +9566,13 @@ kbd {
 
 @media (min-width: 768px) {
   .headroom {
-    -webkit-transition: background-color 200ms,    -webkit-transform 200ms;
-         -o-transition: background-color 200ms,    transform 200ms,    -o-transform 200ms;
-            transition: background-color 200ms,    -webkit-transform 200ms;
-            transition: background-color 200ms,    transform 200ms;
-            transition: background-color 200ms,    transform 200ms,    -webkit-transform 200ms,    -o-transform 200ms;
-  }
-  .headroom--not-top {
-    -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-         -o-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transition: background-color 200ms linear,    border-color 200ms linear,    -webkit-transform 200ms linear;
+         -o-transition: background-color 200ms linear,    border-color 200ms linear,    transform 200ms linear,    -o-transform 200ms linear;
+            transition: background-color 200ms linear,    border-color 200ms linear,    -webkit-transform 200ms linear;
+            transition: background-color 200ms linear,    border-color 200ms linear,    transform 200ms linear;
+            transition: background-color 200ms linear,    border-color 200ms linear,    transform 200ms linear,    -webkit-transform 200ms linear,    -o-transform 200ms linear;
+
+    will-change: background-color,    border-color,    transform;
   }
   .headroom--pinned {
     background-color: rgba(255, 255, 255, .97);
@@ -9586,21 +9582,24 @@ kbd {
          -o-transform: translateY(0%);
             transform: translateY(0%);
   }
-  .headroom--top {
-    background-color: white;
-    border-color: transparent;
-  }
   .headroom--unpinned {
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
          -o-transform: translateY(-100%);
             transform: translateY(-100%);
   }
+  .headroom--top {
+    background-color: white;
+    border-color: transparent;
+  }
 }
 
 @media (max-width: 767px) {
   .headroom--not-top {
-    display: none !important;
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+         -o-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 

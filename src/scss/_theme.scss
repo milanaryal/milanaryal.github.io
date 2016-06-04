@@ -59,13 +59,13 @@ a {
 }
 
 ::-moz-selection {
-  background: #2196f3;
+  background: darken(#2196f3, 6.5%);
   color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background: #2196f3;
+  background: darken(#2196f3, 6.5%);
   color: white;
   text-shadow: none;
 }

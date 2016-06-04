@@ -9,7 +9,7 @@ excerpt: "A collection of writings about web design and front-end development to
   <article class="post-preview clearfix" itemscope itemtype="https://schema.org/Article">
     <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'/index.html','/' | prepend: site.url }}">
     <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <link itemprop="url" href="{{ site.logo.base_url | prepend: site.url }}">
+      <link itemprop="url" href="{{ site.logo.path | prepend: site.url }}">
       <meta itemprop="width" content="{{ site.logo.width }}">
       <meta itemprop="height" content="{{ site.logo.height }}">
     </span>
@@ -18,7 +18,7 @@ excerpt: "A collection of writings about web design and front-end development to
     </span>
     <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
       <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-        <link itemprop="url" href="{{ site.logo.base_url | prepend: site.url }}">
+        <link itemprop="url" href="{{ site.logo.path | prepend: site.url }}">
       </span>
       <meta itemprop="name" content="{{ site.name }}">
     </span>
@@ -35,7 +35,7 @@ excerpt: "A collection of writings about web design and front-end development to
     </div>
     <a itemprop="url" href="{{ post.url }}">
       <div class="clearfix">
-        <h2 class="post-preview-title" itemprop="headline">{{ post.title | markdownify | strip_html | strip_newlines | escape_once }}</h2>
+        <h2 class="post-preview-title" itemprop="headline">{{ post.title | smartify | strip_html | strip_newlines | escape_once }}</h2>
         {% if post.excerpt and post.excerpt != empty %}
           <p class="post-preview-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}</p>
         {% endif %}

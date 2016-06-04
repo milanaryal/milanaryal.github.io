@@ -12,7 +12,7 @@ layout: default
             <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">
             <link itemprop="url" href="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">
             <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <link itemprop="url" href="{{ site.logo.base_url | prepend: site.url }}">
+              <link itemprop="url" href="{{ site.logo.path | prepend: site.url }}">
               <meta itemprop="width" content="{{ site.logo.width }}">
               <meta itemprop="height" content="{{ site.logo.height }}">
             </span>
@@ -23,7 +23,7 @@ layout: default
             </span>
             <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
               <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                <link itemprop="url" href="{{ site.logo.base_url | prepend: site.url }}">
+                <link itemprop="url" href="{{ site.logo.path | prepend: site.url }}">
               </span>
               <meta itemprop="name" content="{{ site.name }}">
             </span>
@@ -40,7 +40,7 @@ layout: default
               <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{{ meta_reading_time }}</span>
             </div><!-- /.post-meta -->
 
-            <h1 class="post-title" itemprop="headline">{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}</h1>
+            <h1 class="post-title" itemprop="headline">{{ page.title | smartify | strip_html | strip_newlines | escape_once }}</h1>
 
           </div><!-- /.col-* -->
         </div><!-- /.row -->
