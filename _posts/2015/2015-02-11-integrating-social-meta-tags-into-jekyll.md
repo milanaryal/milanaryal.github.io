@@ -16,11 +16,21 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
 <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
-<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:locale" content="{{ site.locale }}">
-<meta property="fb:admins" content="{{ site.fb_admins }}">
-<meta property="fb:app_id" content="{{ site.fb_appid }}">
+
+{% if site.facebook %}
+  {% if site.facebook.admins %}
+    <meta property="fb:admins" content="{{ site.facebook.admins }}">
+  {% endif %}
+  {% if site.facebook.publisher %}
+    <meta property="article:publisher" content="{{ site.facebook.publisher }}">
+  {% endif %}
+  {% if site.facebook.app_id %}
+    <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
+  {% endif %}
+{% endif %}
 
 {% if page.date %}
   <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
@@ -48,10 +58,12 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 
 ```html
 {% raw %}<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@{{ site.author.twitter }}">
-<meta name="twitter:creator" content="@{{ site.author.twitter }}">
+<meta name="twitter:site" content="@{{ site.twitter.username | replace:'@','' }}">
+{% if page.date %}
+  <meta name="twitter:creator" content="@{{ site.author.twitter | replace:'@','' }}">
+{% endif %}
 <meta name="twitter:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
-<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 <meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">{% endraw %}
 ```
@@ -59,7 +71,7 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 ### Optimizing for search engine into Jekyll
 
 ```html
-{% raw %}<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
+{% raw %}<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
 
 {% if page.robots %}
   <meta name="robots" content="{{ page.robots }}">
@@ -68,11 +80,11 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
 
 {% if paginator.previous_page %}
-  <link rel="prev" href="{{ paginator.previous_page_path | replace:'/index.html','/' | prepend: site.url }}">
+  <link rel="prev" href="{{ paginator.previous_page_path | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
 
 {% if paginator.next_page %}
-  <link rel="next" href="{{ paginator.next_page_path | replace:'/index.html','/' | prepend: site.url }}">
+  <link rel="next" href="{{ paginator.next_page_path | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}{% endraw %}
 ```
 
@@ -89,10 +101,14 @@ logo:           your site logo path # /assets/img/logo.png [best 300px X 300px]
 timezone:       your timezone # eg. Asia/Kathmandu
 locale:         your locale language # eg. en_us
 author:
-  facebook:     username
-  twitter:      username
-fb_admins:      your facebook profile id
-fb_appid:       your facebook app id
+  facebook:     username # site author facebook page
+  twitter:      username # site author twitter page
+facebook:
+  app_id:       1234 # site facebook app id
+  publisher:    1234 # site facebook page id
+  admins:       1234 # site admin facebook profile id
+twitter:
+  username:     username # site twitter page
 ```
 
 Post front matter:

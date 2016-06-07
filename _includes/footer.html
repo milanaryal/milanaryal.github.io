@@ -53,7 +53,19 @@
           </li>
           {% endif %}
         </ul>
-        <p class="copyright">&copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> {% if site.author.name %}<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ site.author.name }}</span></span>{% else %}{{ site.name }}{% endif %}</p>
+
+        {% if site.author %}
+          {% assign site_author = site.author.name | default: site.author %}
+        {% endif %}
+        {% if site_author %}
+          {% assign site_author = site_author | smartify | strip_html | strip_newlines | escape_once %}
+        {% endif %}
+
+        {% assign site_name = site.title | default: site.name %}
+        {% if site_name %}
+          {% assign site_name = site_name | smartify | strip_html | strip_newlines | escape_once %}
+        {% endif %}
+        <p class="copyright">&copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> {% if site.author %}<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ site_author }}</span></span>{% else %}{{ site_name }}{% endif %}</p>
       </div>
     </div>
   </div>

@@ -1,22 +1,35 @@
+{% if site.url %}
+  {% assign site_url = site.url | append: site.baseurl %}
+{% endif %}
+{% assign site_url = site_url | default: site.github.url %}
+
+{% if page.url %}
+ {% assign page_url = page.url | replace:'/index.html','/' | prepend: site_url | uri_escape %}
+{% endif %}
+
+{% if page.title %}
+  {% assign page_title = page.title | smartify | strip_html | strip_newlines | uri_escape %}
+{% endif %}
+
 <ul class="social-share list-inline clearfix">
   <li>Share on:</li>
   <li>
-    <a class="btn btn-social-share share-popup" href="//twitter.com/intent/tweet?url={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}&text={{ page.title | smartify | strip_html | strip_newlines | uri_escape }}&via={{ site.author.twitter }}" target="_blank" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share share-popup" href="//twitter.com/intent/tweet?url={{ page_url }}&text={{ page_title }}{% if site.author.twitter %}&via={{ site.author.twitter }}{% endif %}" target="_blank" role="button" data-proofer-ignore>
       <i class="fa fa-twitter" aria-hidden="true"></i><span class="social-label">Twitter</span>
     </a>
   </li>
   <li>
-    <a class="btn btn-social-share share-popup" href="//www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}&t={{ page.title | smartify | strip_html | strip_newlines | uri_escape }}" target="_blank" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share share-popup" href="//www.facebook.com/sharer/sharer.php?u={{ page_url }}&t={{ page_title }}" target="_blank" role="button" data-proofer-ignore>
       <i class="fa fa-facebook" aria-hidden="true"></i><span class="social-label">Facebook</span>
     </a>
   </li>
   <li>
-    <a class="btn btn-social-share share-popup" href="//plus.google.com/share?url={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}" target="_blank" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share share-popup" href="//plus.google.com/share?url={{ page_url }}" target="_blank" role="button" data-proofer-ignore>
       <i class="fa fa-google-plus" aria-hidden="true"></i><span class="social-label">Google+</span>
     </a>
   </li>
   <li>
-    <a class="btn btn-social-share" href="mailto:?subject={{ page.title | smartify | strip_html | strip_newlines | uri_escape }}&body={{ page.url | replace:'/index.html','/' | prepend: site.url | uri_escape }}" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share" href="mailto:?subject={{ page_title }}&body={{ page_url }}" role="button" data-proofer-ignore>
       <i class="fa fa-envelope" aria-hidden="true"></i><span class="social-label">Email</span>
     </a>
   </li>

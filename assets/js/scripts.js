@@ -12554,8 +12554,19 @@ var anchors = new AnchorJS();
 
   // grab an element
   var myElement = document.querySelector('.headroom');
+
+  if(window.location.hash) {
+    myElement.classList.add('headroom--unpinned');
+  }
+
   // construct an instance of Headroom, passing the element
-  var headroom  = new Headroom(myElement);
+  var headroom  = new Headroom(myElement, {
+    tolerance: {
+      down : 10,
+      up : 20
+    },
+    offset : 15
+  });
   // initialise
   headroom.init();
 

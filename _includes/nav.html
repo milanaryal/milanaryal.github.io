@@ -9,7 +9,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">{{ site.name }}</a>
+
+            {% assign site_name = site.title | default: site.name %}
+            {% if site_name %}
+              {% assign site_name = site_name | smartify | strip_html | strip_newlines | escape_once %}
+            {% endif %}
+            <a class="navbar-brand" href="/">{{ site_name }}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,7 +22,7 @@
             <ul class="nav navbar-nav navbar-right">
               {% for nav_item in site.data.nav %}
                 <li>
-                  <a href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+                  <a href="{{ nav_item.url }}">{{ nav_item.title | smartify | strip_html | strip_newlines | escape_once }}</a>
                 </li>
               {% endfor %}
             </ul>

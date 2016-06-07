@@ -5,35 +5,61 @@ excerpt: "A collection of writings about web design and front-end development to
 ---
 
 <section class="clearfix">
-  {% for post in paginator.posts %}
+{% for post in paginator.posts %}
+
+  {% if site.url %}
+    {% assign site_url = site.url | append: site.baseurl %}
+  {% endif %}
+  {% assign site_url = site_url | default: site.github.url %}
+
+  {% assign site_name = site.title | default: site.name %}
+  {% if site_name %}
+    {% assign site_name = site_name | smartify | strip_html | strip_newlines | escape_once %}
+  {% endif %}
+
+  {% assign site_logo = site.logo.path | default: site.logo %}
+  {% if site_logo %}
+    {% assign site_logo = site_logo | escape %}
+  {% endif %}
+
+  {% if post.author %}
+    {% assign post_author = post.author.name | default: post.author %}
+  {% else %}
+    {% assign post_author = site.author.name | default: site.author %}
+  {% endif %}
+  {% if post_author %}
+    {% assign post_author = post_author | smartify | strip_html | strip_newlines | escape_once %}
+  {% endif %}
+
+  {% assign reading_time = post.content | strip_html | number_of_words | plus:91 | divided_by:180 %}
+  {% if reading_time <= 1 %}
+    {% assign reading_time = '1' | append:' min read' %}
+  {% else %}
+    {% assign reading_time = reading_time | append:' min read' %}
+  {% endif %}
+
   <article class="post-preview clearfix" itemscope itemtype="https://schema.org/Article">
     <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'/index.html','/' | prepend: site.url }}">
     <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <link itemprop="url" href="{{ site.logo.path | prepend: site.url }}">
+      <link itemprop="url" href="{{ site_logo }}">
       <meta itemprop="width" content="{{ site.logo.width }}">
       <meta itemprop="height" content="{{ site.logo.height }}">
     </span>
     <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-      <meta itemprop="name" content="{% if post.author.name %}{{ post.author.name }}{% elsif post.author %}{{ post.author }}{% elsif site.author.name %}{{ site.author.name }}{% elsif site.author %}{{ site.author }}{% endif %}">
+      <meta itemprop="name" content="{{ post_author }}">
     </span>
     <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
       <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-        <link itemprop="url" href="{{ site.logo.path | prepend: site.url }}">
+        <link itemprop="url" href="{{ site_logo }}">
       </span>
-      <meta itemprop="name" content="{{ site.name }}">
+      <meta itemprop="name" content="{{ site_name }}">
     </span>
     <meta itemprop="dateModified" content="{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{ post.date | date_to_xmlschema }}{% endif %}">
 
-    {% assign reading_time = post.content | strip_html | number_of_words | plus:91 | divided_by:180 %}
-    {% if reading_time <= 1 %}
-      {% assign meta_reading_time = '1' | append:' min read' %}
-    {% else %}
-      {% assign meta_reading_time = reading_time | append:' min read' %}
-    {% endif %}
     <div class="post-preview-meta">
-      <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}"{% if post.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ post.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ post.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{{ meta_reading_time }}</span>
+      <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}"{% if post.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ post.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ post.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{{ reading_time }}</span>
     </div>
-    <a itemprop="url" href="{{ post.url }}">
+    <a itemprop="url" href="{{ post.url | replace:'/index.html','/' }}">
       <div class="clearfix">
         <h2 class="post-preview-title" itemprop="headline">{{ post.title | smartify | strip_html | strip_newlines | escape_once }}</h2>
         {% if post.excerpt and post.excerpt != empty %}
@@ -42,7 +68,7 @@ excerpt: "A collection of writings about web design and front-end development to
       </div>
     </a>
   </article>
-  {% endfor %}
+{% endfor %}
 </section>
 
 <!-- Pager -->
@@ -50,14 +76,14 @@ excerpt: "A collection of writings about web design and front-end development to
 <nav class="clearfix" itemscope itemtype="https://schema.org/SiteNavigationElement">
   <ul class="pager">
     {% if paginator.previous_page %}
-    <li class="previous">
-      <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' | replace:'/index.html','/' }}"><i class="fa fa-angle-left"></i> <span itemprop="name">Newer</span></a>
-    </li>
+      <li class="previous">
+        <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' | replace:'/index.html','/' }}"><i class="fa fa-angle-left"></i> <span itemprop="name">Newer</span></a>
+      </li>
     {% endif %}
     {% if paginator.next_page %}
-    <li class="next">
-      <a itemprop="url" href="{{ paginator.next_page_path | replace:'//','/' | replace:'/index.html','/' }}"><span itemprop="name">Older</span> <i class="fa fa-angle-right"></i></a>
-    </li>
+      <li class="next">
+        <a itemprop="url" href="{{ paginator.next_page_path | replace:'//','/' | replace:'/index.html','/' }}"><span itemprop="name">Older</span> <i class="fa fa-angle-right"></i></a>
+      </li>
     {% endif %}
   </ul>
 </nav>

@@ -20,7 +20,6 @@ author:
   avatar: "/assets/img/m-icon-white-on-blue.png"
   bio: "I love getting lost in web design, front-end development, and listening music a lot."
   facebook: considermilan
-  fb_id: 100001982813077
   twitter: MilanAryal
   google_plus: MilanAryal
   instagram: milanaryal
@@ -36,6 +35,12 @@ author:
   region: Bagmati
   country: Nepal
   postcode: 44600
+facebook:
+#  app_id: 1234
+#  publisher: 1234
+  admins: 100001982813077
+twitter:
+  username: MilanAryal
 disqus_shortname: milanaryal
 google_cse_id: "000254926668963224856:z4vgwqv7kla"
 google_api_key: "AIzaSyB27uh5sPHJ156nRryf1yuJn6fjo_B7qvI"

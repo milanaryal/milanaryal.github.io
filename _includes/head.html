@@ -1,107 +1,119 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-  {% if site.url %}
-    {% assign meta_site_url = site.url | append: site.baseurl %}
-  {% endif %}
-  {% assign meta_site_url = meta_site_url | default: site.github.url %}
 
-  {% assign meta_site_name = site.title | default: site.name %}
-  {% if meta_site_name %}
-    {% assign meta_site_name = meta_site_name | smartify | strip_html | strip_newlines | escape_once %}
-  {% endif %}
-
-  {% if page.title %}
-    {% assign meta_page_title = page.title | smartify | strip_html | strip_newlines | escape_once %}
-  {% endif %}
-
-  {% assign meta_description = page.excerpt | default: page.description | default: site.description %}
-  {% if meta_description %}
-    {% assign meta_description = meta_description | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once %}
-  {% endif %}
-
-  {% if site.logo %}
-    {% assign meta_site_logo = site.logo.path %}
-    {% unless meta_site_logo contains '://' %}
-      {% assign meta_site_logo = meta_site_logo | prepend: meta_site_url %}
-    {% endunless %}
-    {% assign meta_site_logo = meta_site_logo | escape %}
-  {% endif %}
-
-  {% if page.image %}
-    {% assign meta_page_image = page.image.path | default: page.image.facebook | default: page.image %}
-    {% unless meta_page_image contains '://' %}
-      {% assign meta_page_image = meta_page_image | prepend: seo_url %}
-    {% endunless %}
-    {% assign meta_page_image = meta_page_image | escape %}
-  {% endif %}
+  {% include metadata.html %}
 
   <!-- Basic page needs -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>{% if page.title %}{{ meta_page_title }} &mdash; {{ meta_site_name }}{% else %}{{ meta_site_name }}{% endif %}</title>
-  <meta name="title" content="{% if page.title %}{{ meta_page_title }}{% else %}{{ meta_site_name }}{% endif %}">
-  <meta name="description" content="{{ meta_description }}">
+  <title>{% if page.title %}{{ page_title }} &mdash; {{ site_name }}{% else %}{{ site_name }}{% endif %}</title>
+  <meta name="title" content="{% if page.title %}{{ page_title }}{% else %}{{ site_name }}{% endif %}">
+  <meta name="description" content="{{ page_description }}">
+
   {% if page.date %}
-    <meta name="author" content="{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}">
+    <meta name="author" content="{{ page_author }}">
   {% endif %}
 
   <!-- Open Graph tags -->
-  <meta property="og:title" content="{% if page.title %}{{ meta_page_title }}{% else %}{{ meta_site_name }}{% endif %}">
-  <meta property="og:site_name" content="{{ meta_site_name }}">
-  <meta property="og:url" content="{{ page.url | replace:'/index.html','/' | prepend: meta_site_url }}">
-  <meta property="og:description" content="{{ meta_description }}">
-  <meta property="og:image" content="{% if page.image %}{{ meta_page_image }}{% else %}{{ meta_site_logo }}{% endif %}">
-  <meta property="og:type" content="{% if page.date %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}">
-  <meta property="og:locale" content="{{ site.locale }}">
-  <meta property="fb:admins" content="{{ site.author.fb_id }}">
+  <meta property="og:title" content="{% if page.title %}{{ page_title }}{% else %}{{ site_name }}{% endif %}">
+  <meta property="og:site_name" content="{{ site_name }}">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:image" content="{% if page.image %}{{ page_image }}{% else %}{{ site_logo }}{% endif %}">
+  <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+
+  {% if site.locale %}
+    <meta property="og:locale" content="{{ site.locale }}">
+  {% endif %}
+
+  {% if site.facebook %}
+    {% if site.facebook.admins %}
+      <meta property="fb:admins" content="{{ site.facebook.admins }}">
+    {% endif %}
+
+    {% if site.facebook.publisher %}
+      <meta property="article:publisher" content="{{ site.facebook.publisher }}">
+    {% endif %}
+
+    {% if site.facebook.app_id %}
+      <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
+    {% endif %}
+
+    {% if page.date %}
+      {% if page.author.facebook %}
+        <meta property="article:author" content="https://www.facebook.com/{{ page.author.facebook }}">
+      {% endif %}
+
+      {% if site.author.facebook %}
+        {% unless page.author %}
+          <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
+        {% endunless %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+
   {% if page.date %}
-  <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
-  <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    <meta property="article:modified_time" content="{{ date_modified }}">
+    <meta property="article:published_time" content="{{ date_published }}">
+
     {% for post in site.related_posts limit:3 %}
-      <meta property="og:see_also" content="{{ post.url | replace:'/index.html','/' | prepend: meta_site_url }}">
+      <meta property="og:see_also" content="{{ post.url | replace:'/index.html','/' | prepend: site_url }}">
     {% endfor %}
   {% endif %}
 
   <!-- Twitter card property -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@{{ site.author.twitter }}">
-  {% if page.date %}
-    <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+  {% if site.twitter %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ site.twitter.username | replace:'@','' }}">
+
+    {% if page.date %}
+      {% if page.author.twitter %}
+        <meta name="twitter:creator" content="@{{ page.author.twitter | replace:'@','' }}">
+      {% endif %}
+
+      {% if site.author.twitter %}
+        {% unless page.author %}
+          <meta name="twitter:creator" content="@{{ site.author.twitter | replace:'@','' }}">
+        {% endunless %}
+      {% endif %}
+    {% endif %}
   {% endif %}
 
   <!-- SEO -->
   {% if page.robots %}
     <meta name="robots" content="{{ page.robots }}">
   {% endif %}
-  <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: meta_site_url }}">
+
+  <link rel="canonical" href="{{ page_url }}">
+
   {% if paginator.previous_page %}
-    <link rel="prev" href="{{ paginator.previous_page_path | replace:'/index.html','/' | prepend: meta_site_url }}">
+    <link rel="prev" href="{{ paginator.previous_page_path | replace:'/index.html','/' | prepend: site_url }}">
   {% endif %}
+
   {% if paginator.next_page %}
-    <link rel="next" href="{{ paginator.next_page_path | replace:'/index.html','/' | prepend: meta_site_url }}">
+    <link rel="next" href="{{ paginator.next_page_path | replace:'/index.html','/' | prepend: site_url }}">
   {% endif %}
 
   {% if page.url == '/' %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "{{ meta_site_name }}",
-    "url": "{{ meta_site_url }}/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "{{ meta_site_url }}/search/?q={searchTerms}",
-      "query-input": "required name=searchTerms"
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ site_name }}",
+      "url": "{{ site_url }}/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ site_url }}/search/?q={searchTerms}",
+        "query-input": "required name=searchTerms"
+      }
     }
-  }
-  </script>
+    </script>
   {% endif %}
 
   <!-- Open Search description -->
-  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ meta_site_name }}">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_name }}">
 
   <!-- Feed -->
-  <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ meta_site_name }}">
+  <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_name }}">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
@@ -110,21 +122,21 @@
   <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ site.github.build_revision }}">
 
   <!-- Add to homescreen for Chrome on Android -->
-  <meta name="theme-color" content="{{ site.theme_color }}">
+  <meta name="theme-color" content="{% if site.theme_color %}{{ site.theme_color }}{% else %}aliceblue{% endif %}">
   <link rel="manifest" href="/manifest.json">
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="{{ meta_site_name }}">
-  <link rel="mask-icon" sizes="any" href="/favicon.svg" color="{{ site.theme_color }}">
+  <meta name="apple-mobile-web-app-title" content="{{ site_name }}">
+  <link rel="mask-icon" sizes="any" href="/favicon.svg" color="{% if site.theme_color %}{{ site.theme_color }}{% else %}aliceblue{% endif %}">
   <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
   <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <!-- Pin to start screen for IE on Windows -->
-  <meta name="application-name" content="{{ meta_site_name }}">
+  <meta name="application-name" content="{{ site_name }}">
   <meta name="msapplication-config" content="/browserconfig.xml">
 
 </head>

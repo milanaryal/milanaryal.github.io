@@ -7,12 +7,23 @@ layout: compress
 
   <head>
 
+    {% assign site_name = site.title | default: site.name %}
+    {% if site_name %}
+      {% assign site_name = site_name | smartify | strip_html | strip_newlines | escape_once %}
+    {% endif %}
+
+    {% if page.title %}
+      {% assign page_title = page.title | smartify | strip_html | strip_newlines | escape_once %}
+    {% endif %}
+
+    {% capture theme_font_family_base %}-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif{% endcapture %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{ page.title | smartify | strip_html | strip_newlines | escape_once }} &mdash; {{ site.name }}</title>
+    <title>{{ page_title }} &mdash; {{ site_name }}</title>
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site.name }}">
-    <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site.name }}">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_name }}">
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_name }}">
     <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
     <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ site.github.build_revision }}">
     <style>
@@ -22,7 +33,7 @@ layout: compress
       .search-heading {
         margin-top: 100px;
         margin-bottom: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !important;
+        font-family: {{ theme_font_family_base }} !important;
         font-weight: normal;
         font-size: 18px;
       }
@@ -34,7 +45,7 @@ layout: compress
       }
       .search-wrapper {
         margin: 30px 0 50px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !important;
+        font-family: {{ theme_font_family_base }} !important;
       }
       .search-form {
         margin-bottom: 30px;
@@ -45,49 +56,101 @@ layout: compress
            -moz-box-sizing: content-box;
                 box-sizing: content-box;
       }
+      {% comment %}
       /**
       * Google custom search engine results
+      * Overring styles for Google CSE default theme v2
+      * https://cse.google.com/cse/style/look/v2/default.css
       */
-      .gcsc-branding,
-      .gsc-adBlock,
-      .gsc-thumbnail,
-      .gsc-location {
-        display: none !important;
+      {% endcomment %}
+      .cse .gsc-control-cse,
+      .gsc-control-cse,
+      .gsc-table-result,
+      .gsc-thumbnail-inside,
+      .gsc-url-top,
+      .gsc-results .gsc-cursor-box {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .gsc-control-cse,
+      .gsc-control-cse .gsc-table-result,
+      .gsc-completion-container,
+      .gs-result .gs-title,
+      .gs-result .gs-title *,
+      .gs-result .gs-visibleUrl,
+      .gs-snippet,
+      .gsc-results .gsc-cursor-box {
+        font-family: {{ theme_font_family_base }} !important;
       }
       .cse .gsc-control-cse,
-      .gsc-control-cse {
-        padding: 1em 0 !important;
+      .gsc-control-cse,
+      .gsc-control-cse .gsc-table-result {
+        display: block !important;
         width: auto !important;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !important;
         font-size: 16px !important;
       }
-      .gsc-webResult .gsc-result {
-        padding: 15px 0 !important;
+      .gsc-control-cse {
+        padding: 1em 0 !important;
       }
-      .gs-title,
-      .gs-title * {
+      .gsc-above-wrapper-area {
+        margin-bottom: 23px !important;
+      }
+      .gsc-result-info {
+        padding-left: 0 !important;
+      }
+      .gsc-results,
+      .gsc-webResult {
+        display: block !important;
+        padding: 0 !important;
+        width: auto !important;
+      }
+      .gsc-webResult .gsc-result,
+      .gsc-webResult.gsc-result {
+        border: 0 !important;
+      }
+      .gsc-webResult .gsc-result {
+        padding: 0 !important;
+        margin-bottom: 25px !important;
+      }
+      .gs-result .gs-title,
+      .gs-result .gs-title * {
+        height: auto !important;
         font-size: 18px !important;
       }
+      .gs-result .gs-visibleUrl {
+        margin: 3px 0 3px !important;
+        padding-bottom: 0 !important;
+        font-size: 16px !important;
+      }
       .gs-snippet {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !important;
+        margin-top: 0 !important;
         font-size: 15px !important;
-        margin-top: 10px !important;
-        padding-left: 7px !important;
       }
-      .gsc-url-top {
-        padding-top: 8px !important;
-      }
-      .gsc-cursor-box {
+      .gsc-results .gsc-cursor-box {
         display: block !important;
-        padding: 10px !important;
+        margin-top: 30px !important;
         text-align: center !important;
         background-color: #f5f6f5 !important;
         border-radius: 3px !important;
-        margin-top: 30px !important;
       }
-      .gsc-cursor-page {
-        font-size: 1.25em !important;
+      .gsc-results .gsc-cursor-box .gsc-cursor {
+        display: block !important;
+        padding: 10px !important;
+      }
+      .gsc-results .gsc-cursor-box .gsc-cursor-page {
+        font-size: 1.15em !important;
         padding: 4px 8px !important;
+      }
+      {% comment %}
+      /**
+      * Do't show the following itmes on Google custom search engine results
+      */
+      {% endcomment %}
+      .gsc-adBlock,
+      .gcsc-branding,
+      .gsc-thumbnail,
+      .gsc-location {
+        display: none !important;
       }
     </style>
 

@@ -4,43 +4,59 @@ description: "I'm a student living in Kathmandu, Nepal who loves getting lost in
 permalink: /
 ---
 
+{% assign site_author = site.author.name | default: site.author | default: site.title | default: site.name %}
+{% if site_author %}
+  {% assign site_author = site_author | smartify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+{% assign site_author_bio = site.author.bio | default: site.description %}
+{% if site_author_bio %}
+  {% assign site_author_bio = site_author_bio | smartify | strip_html | strip_newlines | truncate: 160 | escape_once %}
+{% endif %}
+
+{% assign site_author_avatar = site.author.avatar | default: site.logo.path | default: site.logo %}
+{% if site_author_avatar %}
+  {% assign site_author_avatar = site_author_avatar | escape %}
+{% endif %}
+
 <!-- Wrapper -->
 <main class="hero-container clearfix" role="main" itemprop="mainContentOfPage">
   <!-- Container -->
   <section class="hero-profile is-loading" itemscope itemtype="https://schema.org/Person">
-    <link itemprop="url" href="{{ site.url }}/">
+    <link itemprop="url" href="/">
     <header>
       <span class="hero-avatar">
-        <img class="hero-avatar-image" itemprop="image" src="{{ site.author.avatar }}" alt="{{ site.author.name }}">
+        <img class="hero-avatar-image" itemprop="image" src="{{ site_author_avatar }}" alt="{{ site_author }}">
       </span>
-      <h1 class="hero-title" itemprop="name">{{ site.author.name }}</h1>
-      <p class="hero-description" itemprop="description">{{ site.author.bio | markdownify | strip_html | strip_newlines | escape_once }}</p>
+      <h1 class="hero-title" itemprop="name">{{ site_author }}</h1>
+      <p class="hero-description" itemprop="description">{{ site_author_bio }}</p>
 
       {% if site.author %}
         <span class="hidden" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <meta itemprop="streetAddress" content="{{ site.author.street }}">
-          <meta itemprop="addressLocality" content="{{ site.author.locality }}">
-          <meta itemprop="addressRegion" content="{{ site.author.region }}">
-          <meta itemprop="addressCountry" content="{{ site.author.country }}">
-          <meta itemprop="postalCode" content="{{ site.author.postcode }}">
+          {% if site.author.street %}<meta itemprop="streetAddress" content="{{ site.author.street }}">{% endif %}
+          {% if site.author.locality %}<meta itemprop="addressLocality" content="{{ site.author.locality }}">{% endif %}
+          {% if site.author.region %}<meta itemprop="addressRegion" content="{{ site.author.region }}">{% endif %}
+          {% if site.author.country %}<meta itemprop="addressCountry" content="{{ site.author.country }}">{% endif %}
+          {% if site.author.postcode %}<meta itemprop="postalCode" content="{{ site.author.postcode }}">{% endif %}
         </span><!-- /itemscope itemtype PostalAddress -->
       {% endif %}
     </header>
 
     <footer>
       <ul class="hero-social">
-        <li><a itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}" class="fa fa-twitter">Twitter</a></li>
-        <li><a itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}" class="fa fa-instagram">Instagram</a></li>
-        <li><a itemprop="sameAs" rel="me" href="http://{{ site.author.tumblr }}.tumblr.com" class="fa fa-tumblr">Tumblr</a></li>
-        <link itemprop="sameAs" rel="me" href="//www.facebook.com/{{ site.author.facebook }}">
-        <link itemprop="sameAs" rel="me" href="//plus.google.com/+{{ site.author.google_plus }}">
-        <link itemprop="sameAs" rel="me" href="//www.youtube.com/{{ site.author.youtube }}">
-        <link itemprop="sameAs" rel="me" href="//www.linkedin.com/in/{{ site.author.linkedin }}">
-        <link itemprop="sameAs" rel="me" href="//www.pinterest.com/{{ site.author.pinterest }}">
-        <link itemprop="sameAs" rel="me" href="//vine.co/{{ site.author.vine }}">
-        <link itemprop="sameAs" rel="me" href="//github.com/{{ site.author.github }}">
-        <link itemprop="sameAs" rel="me" href="//keybase.io/{{ site.author.keybase }}">
+        {% if site.author.twitter %}<li><a itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}" class="fa fa-twitter">Twitter</a></li>{% endif %}
+        {% if site.author.instagram %}<li><a itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}" class="fa fa-instagram">Instagram</a></li>{% endif %}
+        {% if site.author.tumblr %}<li><a itemprop="sameAs" rel="me" href="http://{{ site.author.tumblr }}.tumblr.com" class="fa fa-tumblr">Tumblr</a></li>{% endif %}
       </ul>
+
+      {% if site.author.facebook %}<link itemprop="sameAs" rel="me" href="//www.facebook.com/{{ site.author.facebook }}">{% endif %}
+      {% if site.author.google_plus %}<link itemprop="sameAs" rel="me" href="//plus.google.com/+{{ site.author.google_plus }}">{% endif %}
+      {% if site.author.youtube %}<link itemprop="sameAs" rel="me" href="//www.youtube.com/{{ site.author.youtube }}">{% endif %}
+      {% if site.author.linkedin %}<link itemprop="sameAs" rel="me" href="//www.linkedin.com/in/{{ site.author.linkedin }}">{% endif %}
+      {% if site.author.pinterest %}<link itemprop="sameAs" rel="me" href="//www.pinterest.com/{{ site.author.pinterest }}">{% endif %}
+      {% if site.author.vine %}<link itemprop="sameAs" rel="me" href="//vine.co/{{ site.author.vine }}">{% endif %}
+      {% if site.author.github %}<link itemprop="sameAs" rel="me" href="//github.com/{{ site.author.github }}">{% endif %}
+      {% if site.author.keybase %}<link itemprop="sameAs" rel="me" href="//keybase.io/{{ site.author.keybase }}">{% endif %}
     </footer>
   </section><!-- /.hero-content -->
 </main><!-- /.hero-container -->

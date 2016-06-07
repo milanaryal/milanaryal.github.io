@@ -2,18 +2,33 @@
 layout: default
 ---
 
+{% assign page_title = page.title | default: site.title | default: site.name %}
+{% if page_title %}
+  {% assign page_title = page_title | smartify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+{% assign page_description = page.description | default: site.description %}
+{% if page_description %}
+  {% assign page_description = page_description | smartify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+{% assign page_image = page.image.path | default: page.image | site.image.path | default: site.image %}
+{% if page_image %}
+  {% assign page_image = page_image | escape %}
+{% endif %}
+
 <main role="main" itemprop="mainContentOfPage">
   <article class="page-content">
     <!-- Page header -->
-    <header class="intro-header" style="background-image: url('{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}')">
+    <header class="intro-header" style="background-image: url('{{ page_image }}')">
       <div class="dark-background">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="page-heading">
-                <h1 class="page-title" itemprop="name">{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}</h1>
+                <h1 class="page-title" itemprop="name">{{ page_title }}</h1>
                 <hr class="intro-divider">
-                <span class="page-description" itemprop="description">{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.description | markdownify | strip_html | strip_newlines | escape_once }}{% endif %}</span>
+                <span class="page-description" itemprop="description">{{ page_description }}</span>
               </div>
             </div>
           </div>
