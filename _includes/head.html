@@ -5,20 +5,38 @@
   <!-- Basic page needs -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>{% if page.title %}{{ page_title }} &mdash; {{ site_name }}{% else %}{{ site_name }}{% endif %}</title>
-  <meta name="title" content="{% if page.title %}{{ page_title }}{% else %}{{ site_name }}{% endif %}">
+  <title>{% if page_title %}{{ page_title }} &mdash; {{ site_name }}{% else %}{{ site_name }}{% endif %}</title>
+  <meta name="title" content="{% if page_title %}{{ page_title }}{% else %}{{ site_name }}{% endif %}">
   <meta name="description" content="{{ page_description }}">
 
-  {% if page.date %}
+  {% if page_author and page.date %}
     <meta name="author" content="{{ page_author }}">
   {% endif %}
 
   <!-- Open Graph tags -->
-  <meta property="og:title" content="{% if page.title %}{{ page_title }}{% else %}{{ site_name }}{% endif %}">
+  <meta property="og:title" content="{% if page_title %}{{ page_title }}{% else %}{{ site_name }}{% endif %}">
   <meta property="og:site_name" content="{{ site_name }}">
   <meta property="og:url" content="{{ page_url }}">
   <meta property="og:description" content="{{ page_description }}">
-  <meta property="og:image" content="{% if page.image %}{{ page_image }}{% else %}{{ site_logo }}{% endif %}">
+
+  {% if page_image and page.date %}
+    <meta property="og:image" content="{{ page_image }}">
+    {% if page.image.width %}
+      <meta property="og:image:width" content="{{ page.image.width }}">
+    {% endif %}
+    {% if page.image.height %}
+      <meta property="og:image:height" content="{{ page.image.height }}">
+    {% endif %}
+  {% else %}
+    <meta property="og:image" content="{{ site_logo }}">
+    {% if site.logo.width %}
+      <meta property="og:image:width" content="{{ site.logo.width }}">
+    {% endif %}
+    {% if site.logo.height %}
+      <meta property="og:image:height" content="{{ site.logo.height }}">
+    {% endif %}
+  {% endif %}
+
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
 
   {% if site.locale %}
@@ -62,6 +80,11 @@
 
   <!-- Twitter card property -->
   {% if site.twitter %}
+    {% if page_image and page.date %}
+      <meta name="twitter:card" content="summary_large_image">
+    {% else %}
+      <meta name="twitter:card" content="summary">
+    {% endif %}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.twitter.username | replace:'@','' }}">
 
@@ -116,10 +139,10 @@
   <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_name }}">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ build_version }}">
 
   <!-- Favicon -->
-  <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ site.github.build_revision }}">
+  <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ build_version }}">
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="theme-color" content="{% if site.theme_color %}{{ site.theme_color }}{% else %}aliceblue{% endif %}">

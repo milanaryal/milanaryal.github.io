@@ -1,5 +1,11 @@
+{% if site.github.build_revision %}
+  {% assign build_version = site.github.build_revision %}
+{% else %}
+  {% assign build_version = site.time | date: '%Y%m%d%H%M%S' %}
+{% endif %}
+
 <!-- Core JavaScript -->
-<script charset="utf-8" src="/assets/js/scripts.min.js?v={{ site.github.build_revision }}" async></script>
+<script charset="utf-8" src="/assets/js/scripts.min.js?v={{ build_version }}" async></script>
 
 <!-- Google Analytics -->
 {% if site.google_analytics_id %}

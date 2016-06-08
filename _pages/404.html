@@ -20,14 +20,20 @@ permalink: /404.html
       {% assign page_title = page.title | smartify | strip_html | strip_newlines | escape_once %}
     {% endif %}
 
+    {% if site.github.build_revision %}
+      {% assign build_version = site.github.build_revision %}
+    {% else %}
+      {% assign build_version = site.time | date: '%Y%m%d%H%M%S' %}
+    {% endif %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{{ page_title }} &mdash; {{ site_name }}</title>
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_name }}">
     <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_name }}">
-    <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ site.github.build_revision }}">
-    <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ site.github.build_revision }}">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ build_version }}">
+    <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ build_version }}">
 
   </head>
 
@@ -46,4 +52,4 @@ permalink: /404.html
 
   </body>
 
-</html><!--# Generated {{ site.time | date_to_xmlschema }} | Revision {{ site.github.build_revision }} #-->
+</html>

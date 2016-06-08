@@ -11,25 +11,45 @@
   {% assign page_title = page.title | smartify | strip_html | strip_newlines | uri_escape %}
 {% endif %}
 
+{% capture twitter_share_link %}//twitter.com/intent/tweet?url={{ page_url }}&text={{ page_title }}{% if site.author.twitter %}&via={{ site.author.twitter }}{% endif %}{% endcapture %}
+{% if twitter_share_link %}
+  {% assign twitter_share_link = twitter_share_link | escape_once %}
+{% endif %}
+
+{% capture facebook_share_link %}//www.facebook.com/sharer/sharer.php?u={{ page_url }}&t={{ page_title }}{% endcapture %}
+{% if facebook_share_link %}
+  {% assign facebook_share_link = facebook_share_link | escape_once %}
+{% endif %}
+
+{% capture google_plus_share_link %}//plus.google.com/share?url={{ page_url }}{% endcapture %}
+{% if google_plus_share_link %}
+  {% assign google_plus_share_link = google_plus_share_link | escape_once %}
+{% endif %}
+
+{% capture email_share_link %}mailto:?subject={{ page_title }}&body={{ page_url }}{% endcapture %}
+{% if email_share_link %}
+  {% assign email_share_link = email_share_link | escape_once %}
+{% endif %}
+
 <ul class="social-share list-inline clearfix">
   <li>Share on:</li>
   <li>
-    <a class="btn btn-social-share share-popup" href="//twitter.com/intent/tweet?url={{ page_url }}&text={{ page_title }}{% if site.author.twitter %}&via={{ site.author.twitter }}{% endif %}" target="_blank" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share share-popup" href="{{ twitter_share_link }}" target="_blank" role="button" data-proofer-ignore>
       <i class="fa fa-twitter" aria-hidden="true"></i><span class="social-label">Twitter</span>
     </a>
   </li>
   <li>
-    <a class="btn btn-social-share share-popup" href="//www.facebook.com/sharer/sharer.php?u={{ page_url }}&t={{ page_title }}" target="_blank" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share share-popup" href="{{ facebook_share_link }}" target="_blank" role="button" data-proofer-ignore>
       <i class="fa fa-facebook" aria-hidden="true"></i><span class="social-label">Facebook</span>
     </a>
   </li>
   <li>
-    <a class="btn btn-social-share share-popup" href="//plus.google.com/share?url={{ page_url }}" target="_blank" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share share-popup" href="{{ google_plus_share_link }}" target="_blank" role="button" data-proofer-ignore>
       <i class="fa fa-google-plus" aria-hidden="true"></i><span class="social-label">Google+</span>
     </a>
   </li>
   <li>
-    <a class="btn btn-social-share" href="mailto:?subject={{ page_title }}&body={{ page_url }}" role="button" data-proofer-ignore>
+    <a class="btn btn-social-share" href="{{ email_share_link }}" role="button" data-proofer-ignore>
       <i class="fa fa-envelope" aria-hidden="true"></i><span class="social-label">Email</span>
     </a>
   </li>

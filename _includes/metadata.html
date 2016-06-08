@@ -32,7 +32,7 @@
 {% endif %}
 
 {% if page.image %}
-  {% assign page_image = page.image.path | default: page.image.facebook | default: page.image %}
+  {% assign page_image = page.image.path | default: page.image %}
   {% unless page_image contains '://' %}
     {% assign page_image = page_image | prepend: site_url %}
   {% endunless %}
@@ -62,4 +62,10 @@
   {% else %}
     {% assign reading_time = reading_time | append:' min read' %}
   {% endif %}
+{% endif %}
+
+{% if site.github.build_revision %}
+  {% assign build_version = site.github.build_revision %}
+{% else %}
+  {% assign build_version = site.time | date: '%Y%m%d%H%M%S' %}
 {% endif %}

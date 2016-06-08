@@ -13,22 +13,46 @@ layout: default
 
             <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ page_url }}">
             <link itemprop="url" href="{{ page_url }}">
-            <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <link itemprop="url" href="{{ site_logo }}">
-              <meta itemprop="width" content="{{ site.logo.width }}">
-              <meta itemprop="height" content="{{ site.logo.height }}">
-            </span>
             <meta itemprop="description" content="{{ page_description }}">
-            <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
+
+            <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+              {% if page_image %}
+                <link itemprop="url" href="{{ page_image }}">
+                {% if page.image.width %}
+                  <meta itemprop="width" content="{{ page.image.width }}">
+                {% endif %}
+                {% if page.image.height %}
+                  <meta itemprop="height" content="{{ page.image.height }}">
+                {% endif %}
+              {% else %}
+                <link itemprop="url" href="{{ site_logo }}">
+                {% if site.logo.width %}
+                  <meta itemprop="width" content="{{ site.logo.width }}">
+                {% endif %}
+                {% if site.logo.height %}
+                  <meta itemprop="height" content="{{ site.logo.height }}">
+                {% endif %}
+              {% endif %}
+            </span>
+
             <span class="hidden" itemprop="author copyrightHolder" itemscope itemtype="https://schema.org/Person">
               <meta itemprop="name" content="{{ page_author }}">
             </span>
+
             <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
               <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
                 <link itemprop="url" href="{{ site_logo }}">
+                {% if site.logo.width %}
+                  <meta itemprop="width" content="{{ site.logo.width }}">
+                {% endif %}
+                {% if site.logo.height %}
+                  <meta itemprop="height" content="{{ site.logo.height }}">
+                {% endif %}
               </span>
               <meta itemprop="name" content="{{ site_name }}">
             </span>
+
+            <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
             <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
             <meta itemprop="dateModified" content="{{ date_modified }}">
 
@@ -60,9 +84,9 @@ layout: default
 
             <div class="post-meta-inline-acknowledgments">
               <div class="post-meta-acknowledgment" about="{{ page_url }}">
-                <div class="hidden">Except as otherwise <a href="{{ site_url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page_url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{{ page_author }}</span>.</div>
-
                 <a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author and page.author != empty %}{{ page_author }}{% else %}by the author{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span>
+
+                <div class="hidden">Except as otherwise <a href="{{ site_url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page_url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{{ page_author }}</span>.</div>
               </div>
             </div>
 

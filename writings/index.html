@@ -7,19 +7,21 @@ excerpt: "A collection of writings about web design and front-end development to
 <section class="clearfix">
 {% for post in paginator.posts %}
 
-  {% if site.url %}
-    {% assign site_url = site.url | append: site.baseurl %}
-  {% endif %}
-  {% assign site_url = site_url | default: site.github.url %}
-
   {% assign site_name = site.title | default: site.name %}
   {% if site_name %}
     {% assign site_name = site_name | smartify | strip_html | strip_newlines | escape_once %}
   {% endif %}
 
-  {% assign site_logo = site.logo.path | default: site.logo %}
-  {% if site_logo %}
-    {% assign site_logo = site_logo | escape %}
+  {% if site.logo %}
+    {% assign site_logo = site.logo.path | default: site.logo %}
+    {% if site_logo %}
+      {% assign site_logo = site_logo | escape %}
+    {% endif %}
+  {% endif %}
+
+  {% if post.image %}
+    {% assign post_image = post.image.path | default: post.image %}
+    {% assign post_image = post_image | escape %}
   {% endif %}
 
   {% if post.author %}
@@ -39,11 +41,25 @@ excerpt: "A collection of writings about web design and front-end development to
   {% endif %}
 
   <article class="post-preview clearfix" itemscope itemtype="https://schema.org/Article">
-    <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'/index.html','/' | prepend: site.url }}">
+    <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'/index.html','/' }}">
     <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <link itemprop="url" href="{{ site_logo }}">
-      <meta itemprop="width" content="{{ site.logo.width }}">
-      <meta itemprop="height" content="{{ site.logo.height }}">
+      {% if post_image %}
+        <link itemprop="url" href="{{ post_image }}">
+        {% if post.image.width %}
+          <meta itemprop="width" content="{{ post.image.width }}">
+        {% endif %}
+        {% if post.image.height %}
+          <meta itemprop="height" content="{{ post.image.height }}">
+        {% endif %}
+      {% else %}
+        <link itemprop="url" href="{{ site_logo }}">
+        {% if site.logo.width %}
+          <meta itemprop="width" content="{{ site.logo.width }}">
+        {% endif %}
+        {% if site.logo.height %}
+          <meta itemprop="height" content="{{ site.logo.height }}">
+        {% endif %}
+      {% endif %}
     </span>
     <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="name" content="{{ post_author }}">
@@ -51,6 +67,12 @@ excerpt: "A collection of writings about web design and front-end development to
     <span class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
       <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
         <link itemprop="url" href="{{ site_logo }}">
+        {% if site.logo.width %}
+          <meta itemprop="width" content="{{ site.logo.width }}">
+        {% endif %}
+        {% if site.logo.height %}
+          <meta itemprop="height" content="{{ site.logo.height }}">
+        {% endif %}
       </span>
       <meta itemprop="name" content="{{ site_name }}">
     </span>
