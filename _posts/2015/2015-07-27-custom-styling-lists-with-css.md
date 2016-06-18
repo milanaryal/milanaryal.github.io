@@ -4,7 +4,9 @@ date: 2015-07-27T16:20:55+05:45
 last_modified_at: 2015-07-27T19:09:10+05:45
 ---
 
-<p class="lead">Customizing unordered and ordered lists according to our needs with the help of CSS.</p>
+This post will helps you to customize unordered and ordered lists according to our needs with the help of CSS.
+
+---
 
 It's really easy to have lists into a document, you just have need to add `ul` or `ol` element and `li` child elements.
 
@@ -241,34 +243,32 @@ ol.post-list {
 }
 ```
 
-<div class="alert alert-info">
-  <p>You may need to style the elements according to your need.</p>
-</div>
+*You may need to style the elements according to your need.*
 
 ### Some custom styled lists examples on CodePen
 
 You might want to look onto the following examples on CodePen styled with SCSS (a CSS preprocessor) and build with Slim (a HTML preprocessor).
 
 <figure>
-  <p data-height="268" data-theme-id="0" data-slug-hash="pJxqzM" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/pJxqzM/'>Custom styling lists with CSS</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+  <p data-height="268" data-theme-id="0" data-slug-hash="pJxqzM" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/pJxqzM/'>Custom styling lists with CSS</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal' rel='me'>@MilanAryal</a>) on <a href='http://codepen.io' rel='nofollow'>CodePen</a>.</p>
 
   <figcaption>Custom styling lists with CSS</figcaption>
 </figure>
 
 <figure>
-  <p data-height="268" data-theme-id="0" data-slug-hash="aORxzB" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/aORxzB/'>Using CSS counters</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+  <p data-height="268" data-theme-id="0" data-slug-hash="aORxzB" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/aORxzB/'>Using CSS counters</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal' rel='me'>@MilanAryal</a>) on <a href='http://codepen.io' rel='nofollow'>CodePen</a>.</p>
 
   <figcaption>Using CSS counters</figcaption>
 </figure>
 
 <figure>
-  <p data-height="268" data-theme-id="0" data-slug-hash="BNqGmr" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/BNqGmr/'>Custom ordered lists number</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+  <p data-height="268" data-theme-id="0" data-slug-hash="BNqGmr" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/BNqGmr/'>Custom ordered lists number</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal' rel='me'>@MilanAryal</a>) on <a href='http://codepen.io' rel='nofollow'>CodePen</a>.</p>
 
   <figcaption>Tutor: Treehouse, <a href="http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element" rel="nofollow">Customize your ordered lists with CSS</a></figcaption>
 </figure>
 
 <figure>
-  <p data-height="268" data-theme-id="0" data-slug-hash="GJYwdO" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/GJYwdO/'>Custom styling ordered lists</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+  <p data-height="268" data-theme-id="0" data-slug-hash="GJYwdO" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/GJYwdO/'>Custom styling ordered lists</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal' rel='me'>@MilanAryal</a>) on <a href='http://codepen.io' rel='nofollow'>CodePen</a>.</p>
 
   <figcaption>Tutor: Christian Heilmann, <a href="http://christianheilmann.com/2014/11/19/simple-things-styling-ordered-lists/" rel="nofollow">Simple things: styling ordered lists</a></figcaption>
 </figure>

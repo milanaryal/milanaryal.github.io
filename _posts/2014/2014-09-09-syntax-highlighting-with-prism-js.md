@@ -6,7 +6,7 @@ excerpt: "Prism is a lightweight, extensible syntax highlighter, built with mode
 redirect_from: "/2014/09/syntax-highlighter-prism.html"
 ---
 
-Last time I was searching for a good syntax highlighter for beautifully viewing the code snippets on my blog post. Among different syntax highlighter I found out [PrismJS](http://prismjs.com) by [Lea Verou](http://lea.verou.me) is pretty awesome.
+Last time I was searching for a good syntax highlighter for beautifully viewing the code snippets on my blog post. Among different syntax highlighter I found out <a href="http://prismjs.com" rel="nofollow">PrismJS</a> by <a href="http://lea.verou.me" rel="nofollow">Lea Verou</a> is pretty awesome.
 
 Yet not sure what I mean by a syntax highlighter or what it does? Here's an example of JavaScript snippet highlighted with syntax highlighter:
 
@@ -22,7 +22,7 @@ PrismJS is a light weight and works on most of all the platform whether it is yo
 
 ### Installing on your page
 
-To install PrismJS on your webpage you need to [download](http://prismjs.com/download.html) the files `prism.js` and `prism.css` choosing your desire theme and required settings.
+To install PrismJS on your webpage you need to <a href="http://prismjs.com/download.html" rel="nofollow">download</a> the files `prism.js` and `prism.css` choosing your desire theme and required settings.
 
 Here, JavaScript file `prism.js` is your settings and CSS file `prism.css` is your theme styles.
 
@@ -49,11 +49,11 @@ Remember that to correctly work, `prism.css` file should be include before the `
 
 ### Installing on WordPress
 
-Easily highlight your code on WordPress with WP PrismJS. Simply [download](http://wordpress.org/plugins/wp-prismjs-syntax-highlighter/) & activate the plugin and a new icon on your TinyMCE editor will appear. Click on it and you will be able to enter your indented code; choose the language; specifying the maximum height of the code window and the filename.
+Easily highlight your code on WordPress with WP PrismJS. Simply <a href="http://wordpress.org/plugins/wp-prismjs-syntax-highlighter/" rel="nofollow">download</a> & activate the plugin and a new icon on your TinyMCE editor will appear. Click on it and you will be able to enter your indented code; choose the language; specifying the maximum height of the code window and the filename.
 
 ### Installing on Blogger/Tumblr
 
-To install PrismJS on your Blogger/Tumblr blog you can upload `prism.css` and `prism.js` files on [Dropbox](http://www.dropbox.com/) because we cannot host file in the Blogger/Tumblr site. Then as same process above go to template edit and inculde `prism.css` file link before the `</head>` tag and `prism.js` file link before `</body>` tag.
+To install PrismJS on your Blogger/Tumblr blog you can upload `prism.css` and `prism.js` files on <a href="http://www.dropbox.com/" rel="nofollow">Dropbox</a> because we cannot host file in the Blogger/Tumblr site. Then as same process above go to template edit and inculde `prism.css` file link before the `</head>` tag and `prism.js` file link before `</body>` tag.
 
 **See also:** [How to host assets with Dropbox on your website]({% post_url 2015-08-19-hosting-images-with-dropbox-on-your-website %})
 

@@ -3,9 +3,7 @@ title: "Example content"
 description: "Just an example post."
 ---
 
-<div class="alert alert-info">
-  Howdy! This is an example post that shows several types of HTML content supported in this theme.
-</div>
+*Howdy! This is an example post that shows several types of HTML content supported in this theme.*
 
 Cum sociis natoque penatibus et magnis <a href="#" data-proofer-ignore>dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
@@ -28,9 +26,7 @@ Most of these elements are styled by browsers with few modifications on our part
 
 ### Footnotes
 
-Footnotes are supported as part of the Markdown syntax. Here's one in action. Clicking this button[^fn-sample_footnote] will lead you to a footnote. The syntax looks like:
-
-[^fn-sample_footnote]: Handy! Now click the button to view or hide footnotes.
+Footnotes are supported as part of the Markdown syntax. Here's one in action. Clicking this number[^fn-sample_footnote] will lead you to a footnote. The syntax looks like:
 
 ```text
 Clicking this button[^fn-sample_footnote]
@@ -69,7 +65,9 @@ Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna m
 
 Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
 
-{% gist 13f94b734a4ddb132735 gist.md %}
+<figure>
+  {% gist 13f94b734a4ddb132735 gist.md %}
+</figure>
 
 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.
 
@@ -151,3 +149,5 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
 </table>
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+[^fn-sample_footnote]: Handy! Now click the return link to go back.

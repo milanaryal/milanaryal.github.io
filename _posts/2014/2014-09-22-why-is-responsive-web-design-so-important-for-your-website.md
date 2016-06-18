@@ -30,7 +30,7 @@ Responsive design also plays an important role in helping combat the bounce rate
 
 Responsive design websites are the best for users who traverse the internet by the use of their phones and expect to have a smooth desktop experience as well. Going responsive is the best way to ensure that visitors have the best experience on your site as well as make the most of tablet and mobile traffic. While going responsive comes with its challenges on the marketers as well as the website owners it is important to know that the future is on the mobile devices. In case you do not provide a mobiles --- friendly environment for your esteemed customers they are likely to move to the competitors that own websites that are easy to operate and manage.
 
-### Summary
+#### Summary
 
 Responsive web design came about as a response to the growing popularity of portable Internet devices like mobile phones and tablets. An already fairly common and growing complaint from users of such devices was the "web's" inability to adapt properly giving users a less-than favorable experience.
 

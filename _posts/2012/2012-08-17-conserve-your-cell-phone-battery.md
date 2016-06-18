@@ -1,9 +1,8 @@
 ---
 title: "Conserve your cell phone battery"
 date: 2012-08-17T08:28:23+05:45
+excerpt: "It will last much longer with these 10 easy steps"
 ---
-
-<p class="lead">It will last much longer with these 10 easy steps</p>
 
 Frequent power cuts take a toll on cell phone battery, but there are simple ways to make it last longer. Follow these easy procedures to make the best of it:
 
@@ -25,4 +24,4 @@ Frequent power cuts take a toll on cell phone battery, but there are simple ways
 
 **9. Customise background:** With a smartphone, avoid using moving or animated pictures or videos for your background. Use a black background whenever possible.
 
-**10. Be net savvy:** When web browsing, use sites like [Blackl](http://www.blackl.com/) that display a black Google background instead of white.
+**10. Be net savvy:** When web browsing, use sites like <a href="http://www.blackl.com/" rel="nofollow">Blackl</a> that display a black Google background instead of white.

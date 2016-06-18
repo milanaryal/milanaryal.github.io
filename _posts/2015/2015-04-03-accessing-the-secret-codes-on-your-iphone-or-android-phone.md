@@ -4,7 +4,7 @@ date: 2015-04-03T11:08:07+05:45
 excerpt: "Learn how to access the secret hidden menus on your iPhone or Android phone."
 ---
 
-Here are some codes you can dial into the phone app that will access hidden information and menus in the iPhone or Android phone. 
+Here are some codes you can dial into the phone app that will access hidden information and menus in the iPhone or Android phone.
 
 Most of the time, they allow the OEM or programmer to get into the system for troubleshooting when other, usual modes of access have been blocked. They can be quite friendly and helpful if you know what you're doing. Be advised, though, that some of these can cause serious changes to your device's configuration, so don't play with something that you don't fully understand.
 
@@ -17,7 +17,7 @@ Code (For iPhone or Android)                          | Description
 `#43# + "Call"`                                       | Disables call waiting
 `*#61# + "Call"`                                      | Check the number for unanswered calls
 `*21*phone-number# + "Call"`                          | Call forwarding unconditionally to current phone call
-`#21#`                                                | Disables unconditionally forwarded calls 
+`#21#`                                                | Disables unconditionally forwarded calls
 `*#21#`                                               | Displays call forwarding status
 `*#62# + "Call"`                                      | Check the number for call forwarding if no service is available
 `*#67# + "Call"`                                      | Check the number for call forwarding when the phone is busy
@@ -81,4 +81,4 @@ Various factory tests code (Only for Android)         | Description
 * Under the "About phone" option in Settings, tap "Build number" seven times --- this will enable a new "Developer options" menu in Settings that gives you access to a treasure trove of functions.
 * Under the "About phone" option in Settings, double tap "Android version" --- this will show your Android version logo.
 
-For more hidden Android codes that will work on various phones, check out [this old Reddit thread](http://www.reddit.com/r/Android/comments/1sl0ep/list_of_android_secret_codes_tips_and_tricks/).
+For more hidden Android codes that will work on various phones, check out [this old Reddit thread](http://www.reddit.com/r/Android/comments/1sl0ep/list_of_android_secret_codes_tips_and_tricks/){:rel="nofollow"}.

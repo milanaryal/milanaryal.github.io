@@ -4,7 +4,7 @@ date: 2014-11-04T08:51:26+05:45
 excerpt: "Real wisdom, from some of the worlds greatest designers."
 ---
 
-<p class="lead">Design is what you do when you want to express yourself.</p>
+> Design is what you do when you want to express yourself.
 
 We all need a bit of design inspiration from time to time. If you're stuck in a creative cul de sac, take a read through these inspiring design quotes. Real wisdom, from some of the worlds greatest designers. Enjoy, then go and create great work!
 

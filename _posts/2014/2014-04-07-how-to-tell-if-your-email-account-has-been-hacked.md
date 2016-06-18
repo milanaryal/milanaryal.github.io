@@ -33,6 +33,4 @@ The recipients on your address book may be sending you angry responses for the s
 
 If you face any of the situations above, you should know that your e-mail account has been hacked or compromised. Take the necessary measures to rectify them or prevent them from happening in the first place by monitoring your account on a regular basis.
 
-<div class="alert alert-info" role="alert">
- <p>Tip: No matter what, if you think your account has been accessed without your permission, change your password immediately.</p>
-</div>
+**Tip:** No matter what, if you think your account has been accessed without your permission, change your password immediately.

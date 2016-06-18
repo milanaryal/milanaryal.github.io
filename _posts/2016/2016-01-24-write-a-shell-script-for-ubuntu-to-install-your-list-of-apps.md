@@ -64,7 +64,7 @@ sudo apt-get -y install \
 
 In the above script, firstly we have added all your sources and PPAs. Secondly we try to update the machine and lately we have added our list of apps to install on our machine.
 
-### Step 3
+#### Step 3
 
 Now open the Terminal with shortcut key `Ctrl+Alt+T`.
 
@@ -86,4 +86,4 @@ Since `.` refers to the current directory: if `install-apps.sh` is in the curren
 ./install-apps.sh
 ```
 
-Note that `sudo` requires you to retype user password after [15 minutes](https://help.ubuntu.com/community/RootSudoTimeout), so here we try to put all `sudo` commands before the rest of the commands, as much as possible. Also we have force automatic "yes" (`-y`) as answer to all `apt-get` prompts which helps us to run commands non-interactively.
+Note that `sudo` requires you to retype user password after [15 minutes](http://help.ubuntu.com/community/RootSudoTimeout){:rel="nofollow"}, so here we try to put all `sudo` commands before the rest of the commands, as much as possible. Also we have force automatic "yes" (`-y`) as answer to all `apt-get` prompts which helps us to run commands non-interactively.

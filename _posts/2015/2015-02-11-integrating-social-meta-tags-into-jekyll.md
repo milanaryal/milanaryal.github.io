@@ -130,7 +130,7 @@ tags:             your post tags # ["tag1", "tag2", "tag3"] - you can have sever
 
 #### Jekyll now have a dedicated SEO plugin to better index your site's content [Update May 10, 2016]
 
-If your blog or product landing page is using using Jekyll or GitHub Pages, [it can now be optimized for SEO](https://github.com/blog/2162-better-discoverability-for-github-pages-sites). To enable the Jekyll SEO tag plugin, you must add the following line to your site's `_config.yml` file:
+If your blog or product landing page is using using Jekyll or GitHub Pages, [it can now be optimized for SEO](http://github.com/blog/2162-better-discoverability-for-github-pages-sites){:rel="nofollow"}. To enable the Jekyll SEO tag plugin, you must add the following line to your site's `_config.yml` file:
 
 ```ruby
 gems:
@@ -139,7 +139,7 @@ gems:
 
 And by adding a simple `{% raw %}{% seo %}{% endraw %}` tag right before `</head>`, Jekyll will automatically add SEO metadata to each page. It even accounts for the page title, in addition to the description, canonical URL, next (and previous) URL and post metadata.
 
-When you share a post to Facebook, LinkedIn, Twitter or other social networks, the tag makes sure content is displayed richly. The functionality comes courtesy of the [Jekyll SEO plugin](https://github.com/jekyll/jekyll-seo-tag) (GitHub Pages compatible), which GitHub says "provides a battle-tested template of crowdsourced best-practices."
+When you share a post to Facebook, LinkedIn, Twitter or other social networks, the tag makes sure content is displayed richly. The functionality comes courtesy of the [Jekyll SEO plugin](http://github.com/jekyll/jekyll-seo-tag){:rel="nofollow"} (GitHub Pages compatible), which GitHub says "provides a battle-tested template of crowdsourced best-practices."
 
 ---
 
@@ -147,7 +147,7 @@ When you share a post to Facebook, LinkedIn, Twitter or other social networks, t
 
 Be sure to check one of your example posts via the different social media metadata validator.
 
-* For Facebook, test using the [Facebook debugger](//developers.facebook.com/tools/debug).
-* For Twitter, submit one of your example posts via the [Twitter card validator](//cards-dev.twitter.com/validator).
-* For Google+, test with the [rich snippets tester](//www.google.com/webmasters/tools/richsnippets).
-* If you use Pinterest a lot, you need to validate your rich pins by going to the [rich pin validator page](//developers.pinterest.com/tools/url-debugger/).
+* For Facebook, test using the [Facebook debugger](http://developers.facebook.com/tools/debug){:rel="nofollow"}.
+* For Twitter, submit one of your example posts via the [Twitter card validator](http://cards-dev.twitter.com/validator){:rel="nofollow"}.
+* For Google+, test with the [rich snippets tester](http://www.google.com/webmasters/tools/richsnippets){:rel="nofollow"}.
+* If you use Pinterest a lot, you need to validate your rich pins by going to the [rich pin validator page](http://developers.pinterest.com/tools/url-debugger/){:rel="nofollow"}.

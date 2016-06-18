@@ -28,7 +28,7 @@ Fortunately there are a couple of possible solutions here.
 
 ### Responsive video with CSS
 
-With [Thierry Koblenz's excellent technique](http://alistapart.com/article/creating-intrinsic-ratios-for-video), you wrap the video in another element which has an intrinsic aspect ratio, then absolute position the video within that. That gives us fluid width with a reasonable height we can count on.
+With <a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video" rel="nofollow">Thierry Koblenz's excellent technique</a>, you wrap the video in another element which has an intrinsic aspect ratio, then absolute position the video within that. That gives us fluid width with a reasonable height we can count on.
 
 ```html
 <div class="video-wrapper">
@@ -90,13 +90,13 @@ If either of these limitations apply to you, you might consider a JavaScript sol
 
 #### FitVids.js
 
-Until recently, most solutions were plugins, which are OK to an extent but can have performance issues. A popular plugin is [FitVids.js](http://fitvidsjs.com), developed by Chris Coyier and Paravel.
+Until recently, most solutions were plugins, which are OK to an extent but can have performance issues. A popular plugin is <a href="http://fitvidsjs.com" rel="nofollow">FitVids.js</a>, developed by Chris Coyier and Paravel.
 
 #### FluidVids.js
 
-A more current solution is to use just a script -- such as [FluidVids.js](http://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/), developed by Todd Motto. FluidVids.js is simple to use and load faster:
+A more current solution is to use just a script -- such as <a href="http://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/" rel="nofollow">FluidVids.js</a>, developed by Todd Motto. FluidVids.js is simple to use and load faster:
 
-1. [Download the script](http://github.com/toddmotto/fluidvids/archive/master.zip) (ZIP) from GitHub and upload it to your server with the same folder structure that the downloaded files come in. This will place the script itself in a folder named `dist`.
+1. <a href="http://github.com/toddmotto/fluidvids/archive/master.zip" rel="nofollow">Download the script</a> (ZIP) from GitHub and upload it to your server with the same folder structure that the downloaded files come in. This will place the script itself in a folder named `dist`.
 2. Ensure you place the script before the closing `<body>` tag.
 
 ```html
@@ -139,9 +139,9 @@ This will ensure that video resizes to the width of the browser's window. But it
 
 ### Other alternative EmbedResponsively.com
 
-If you're developing a responsive website using a content management system, then one or more of the website's editors will probably have to embed video at some point. You can point your editors to [EmbedResponsively.com](http://embedresponsively.com) which **generates responsive `<embed>` codes** for embedding rich third-party media with one click, with CSS alone. Alternatively, you could use a JavaScript solution, to relieve nervous editors from having to add extra CSS and markup. However, as long as you can avoid this path, the better, of course.
+If you're developing a responsive website using a content management system, then one or more of the website's editors will probably have to embed video at some point. You can point your editors to <a href="http://embedresponsively.com" rel="nofollow">EmbedResponsively.com</a> which **generates responsive `<embed>` codes** for embedding rich third-party media with one click, with CSS alone. Alternatively, you could use a JavaScript solution, to relieve nervous editors from having to add extra CSS and markup. However, as long as you can avoid this path, the better, of course.
 
-We can just use [EmbedResponsively](http://embedresponsively.com) to generate the copy-paste-code with one click.
+We can just use <a href="http://embedresponsively.com" rel="nofollow">EmbedResponsively.com</a> to generate the copy-paste-code with one click.
 
 ```css
 .embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

@@ -10,9 +10,9 @@ File extention with .markdown, .mkdown, .mkdn, .mkd, .md are the supported Markd
 
 ### Enabling GitHub Flavored Markdown on Jekyll
 
-> **Starting May 1st, 2016, GitHub Pages will only support [kramdown](http://kramdown.gettalong.org/), Jekyll's default Markdown engine.**
+> **Starting May 1st, 2016, GitHub Pages will only support [kramdown](http://kramdown.gettalong.org/){:rel="nofollow"}, Jekyll's default Markdown engine.**
 >
-> [*Learn more*](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0)
+> [*Learn more*](http://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0){:rel="nofollow"}
 
 You can add several extensions in which you can configure to the behaviour like GitHub Flavored Markdown, i.e. add this to your `_config.yml`:
 
@@ -138,9 +138,9 @@ from the text my post.
 
 ### Further references
 
-* [Daring Fireball: Markdown syntax documentation](http://daringfireball.net/projects/markdown/syntax)
-* [Redcarpet Markdown](https://github.com/vmg/redcarpet)
-* [Kramdown Markdown](https://github.com/gettalong/kramdown)
-* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
-* [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [GitHub guides: Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Daring Fireball: Markdown syntax documentation](http://daringfireball.net/projects/markdown/syntax){:rel="nofollow"}
+* [Redcarpet Markdown](http://github.com/vmg/redcarpet){:rel="nofollow"}
+* [Kramdown Markdown](http://github.com/gettalong/kramdown){:rel="nofollow"}
+* [GitHub Flavored Markdown](http://help.github.com/articles/github-flavored-markdown/){:rel="nofollow"}
+* [Markdown cheatsheet](http://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet){:rel="nofollow"}
+* [GitHub guides: Mastering Markdown](http://guides.github.com/features/mastering-markdown/){:rel="nofollow"}

@@ -3,7 +3,7 @@ title: "Getting started with Grunt"
 date: 2015-06-06T11:14:15+05:45
 ---
 
-Here, we'll explore how to use [Grunt](http://gruntjs.com/) and what it can do in a project to speed up and change the way you develop websites.
+Here, we'll explore how to use [Grunt](http://gruntjs.com/){:rel="nofollow"} and what it can do in a project to speed up and change the way you develop websites.
 
 Mostly everything in these posts are coming directly from the documentation itself. So hopefully some of these you immediately recognize and others you'll wonder how you missed that.
 
@@ -17,7 +17,7 @@ Well, the list is exhaustive. Suffice it to say, Grunt can handle most things yo
 
 ### Setting up Grunt from scratch
 
-The first thing to do in order to use Grunt is to set up [Node.js](https://nodejs.org/) on your system. When you install Node.js, you also get [npm](https://www.npmjs.com/), a package manager for JavaScript, and is the default for Node.js.
+The first thing to do in order to use Grunt is to set up [Node.js](http://nodejs.org/){:rel="nofollow"} on your system. When you install Node.js, you also get [npm](http://www.npmjs.com/){:rel="nofollow"}, a package manager for JavaScript, and is the default for Node.js.
 
 Once Node.js is installed, just run this command in the terminal:
 
@@ -48,9 +48,9 @@ The `package.json` file belongs in the root directory of your project, next to t
 
 There are a few ways to create a `package.json` file for your project:
 
-* Most [grunt-init](http://gruntjs.com/project-scaffolding) templates will automatically create a project-specific `package.json` file.
-* The [npm init](https://docs.npmjs.com/cli/init) command will create a basic `package.json` file.
-* Start with the example below, and expand as needed, following this [specification](https://docs.npmjs.com/files/package.json).
+* Most [grunt-init](http://gruntjs.com/project-scaffolding){:rel="nofollow"} templates will automatically create a project-specific `package.json` file.
+* The [npm init](http://docs.npmjs.com/cli/init){:rel="nofollow"} command will create a basic `package.json` file.
+* Start with the example below, and expand as needed, following this [specification](http://docs.npmjs.com/files/package.json){:rel="nofollow"}.
 
 ```json
 {
@@ -142,11 +142,11 @@ Or if you just always want the latest version use `*`:
 }
 ```
 
-See more about version ranges in the [npm docs](https://docs.npmjs.com/misc/semver) or npm's [semantic versioning parser](https://github.com/isaacs/node-semver).
+See more about version ranges in the [npm docs](http://docs.npmjs.com/misc/semver){:rel="nofollow"} or npm's [semantic versioning parser](http://github.com/isaacs/node-semver){:rel="nofollow"}.
 
 **`npm outdated`**
 
-If you would like to see which of your dependencies are out of date, use `npm outdated`: see [npm docs](https://www.npmjs.org/doc/cli/npm-outdated.html) for more info.
+If you would like to see which of your dependencies are out of date, use `npm outdated`: see [npm docs](http://www.npmjs.org/doc/cli/npm-outdated.html){:rel="nofollow"} for more info.
 
 **`npm update`**
 
@@ -196,7 +196,7 @@ module.exports = function (grunt) {
 
 #### An example Gruntfile
 
-In the following `Gruntfile`, project metadata is imported into the Grunt config from the project's `package.json` file and the [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) plugin's `uglify` task is configured to minify a source file and generate a banner comment dynamically using that metadata.
+In the following `Gruntfile`, project metadata is imported into the Grunt config from the project's `package.json` file and the [grunt-contrib-uglify](http://github.com/gruntjs/grunt-contrib-uglify){:rel="nofollow"} plugin's `uglify` task is configured to minify a source file and generate a banner comment dynamically using that metadata.
 
 You can run this command from the terminal (it will henceforth go without saying that you need to run the given commands from your project's root folder):
 
@@ -254,13 +254,13 @@ The `uglify` task will be run by default, when the following command line is run
 $ grunt
 ```
 
-An incredibly active community of developers is building front-end plugins, you can explore them at [Grunt plugins library](http://gruntjs.com/plugins/).
+An incredibly active community of developers is building front-end plugins, you can explore them at [Grunt plugins library](http://gruntjs.com/plugins/){:rel="nofollow"}.
 
 ### Further reading
 
 This is the basic foundation for learning Grunt, you can learn more by the following links:
 
-* The [getting started](http://gruntjs.com/getting-started/) with grunt guide
-* The [installing grunt](http://gruntjs.com/installing-grunt/) guide
-* The [configuring tasks](http://gruntjs.com/configuring-tasks/) guide
-* The [creating tasks](http://gruntjs.com/creating-tasks/) guide
+* The [getting started](http://gruntjs.com/getting-started/){:rel="nofollow"} with grunt guide
+* The [installing grunt](http://gruntjs.com/installing-grunt/){:rel="nofollow"} guide
+* The [configuring tasks](http://gruntjs.com/configuring-tasks/){:rel="nofollow"} guide
+* The [creating tasks](http://gruntjs.com/creating-tasks/){:rel="nofollow"} guide

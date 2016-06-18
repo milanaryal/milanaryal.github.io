@@ -5,12 +5,17 @@ layout: default
 {% include metadata.html %}
 
 <main role="main" itemprop="mainContentOfPage">
+
+  <!-- Post article -->
   <article class="post-article" itemscope itemtype="https://schema.org/Article">
+
+    <!-- Post header -->
     <header class="post-header">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
+            <!-- Post hidden meta -->
             <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ page_url }}">
             <link itemprop="url" href="{{ page_url }}">
             <meta itemprop="description" content="{{ page_description }}">
@@ -55,153 +60,169 @@ layout: default
             <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
             <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}">
             <meta itemprop="dateModified" content="{{ date_modified }}">
+            <!-- /Post hidden meta -->
 
+            <!-- Post meta (Post published date) -->
             <div class="post-meta">
               <time itemprop="datePublished" datetime="{{ date_published }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{{ reading_time }}</span>
             </div><!-- /.post-meta -->
 
+            <!-- Post title -->
             <h1 class="post-title" itemprop="headline">{{ page_title }}</h1>
 
           </div><!-- /.col-* -->
         </div><!-- /.row -->
       </div><!-- /.container -->
-    </header>
 
+      <!-- Post leading image -->
+      {% if page_image %}
+        {% if page.image.caption %}
+          {% assign image_alternative_text = page.image.caption | smartify | strip_html | strip_newlines | escape_once %}
+        {% else %}
+          {% assign image_alternative_text = page_title %}
+        {% endif %}
+        <figure class="post-leading-figure container">
+          <div class="pil" style="{% if page.image.width %}max-width: {{ page.image.width }}px;{% endif %}{% if page.image.height %}max-height: {{ page.image.height }}px;{% endif %}">
+            <img class="post-leading-image img-responsive" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}{% if page.image.width %} data-full-width="{{ page.image.width }}"{% endif %}{% if page.image.height %} data-full-height="{{ page.image.height }}"{% endif %}>
+          </div>
+          {% if page.image.caption %}
+            <figcaption class="post-leading-figcaption">{{ page.image.caption }}</figcaption>
+          {% endif %}
+        </figure>
+      {% endif %}
+    </header><!-- /.post-header -->
+
+    <!-- Post body -->
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <div class="post-body markdown-body clearfix" itemprop="articleBody">
             {{ content }}
-          </div>
+          </div><!-- /.post-body -->
         </div><!-- /.col-* -->
       </div><!-- /.row -->
     </div><!-- /.container -->
 
+    <!-- Post footer -->
     <footer class="post-footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-            <div class="post-meta-inline-acknowledgments">
-              <div class="post-meta-acknowledgment" about="{{ page_url }}">
-                <a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author and page.author != empty %}{{ page_author }}{% else %}by the author{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span>
-
-                <div class="hidden">Except as otherwise <a href="{{ site_url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page_url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{{ page_author }}</span>.</div>
-              </div>
-            </div>
-
+            <div class="post-meta-acknowledgments" about="{{ page_url }}">
+              <a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author and page.author != empty %}{{ page_author }}{% else %}by the author{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span>
+              <div class="hidden">Except as otherwise <a href="{{ site_url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page_url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{{ page_author }}</span>.</div>
+            </div><!-- /.post-meta-acknowledgments -->
           </div><!-- /.col-* -->
         </div><!-- /.row -->
       </div><!-- /.container -->
-    </footer>
-  </article>
+    </footer><!-- /.post-footer -->
+  </article><!-- /.post-article -->
 </main>
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post footer section -->
+<section class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-        {% include social_share.html %}
+      <!-- Share buttons -->
+      {% include social_share.html %}
 
-        {% unless page.author %}
-          {% assign site_author = site.author.name | default: site.author | default: site.title | default: site.name %}
-          {% if site_author %}
-            {% assign site_author = site_author | smartify | strip_html | strip_newlines | escape_once %}
-          {% endif %}
-
-          {% assign site_author_bio = site.author.bio | default: site.description %}
-          {% if site_author_bio %}
-            {% assign site_author_bio = site_author_bio | smartify | strip_html | strip_newlines | truncate: 160 | escape_once %}
-          {% endif %}
-
-          {% assign site_author_avatar = site.author.avatar | default: site.logo.path | default: site.logo %}
-          {% if site_author_avatar %}
-            {% assign site_author_avatar = site_author_avatar | escape %}
-          {% endif %}
-          <hr class="post-footer-info-divider">
-          <div class="author-card">
-            <div class="author-card-image-wrapper">
-              <a class="author-card-avatar-link" href="{{ site_url }}/">
-                <img class="author-card-avatar" src="{{ site_author_avatar }}" alt="{{ site_author }}">
-              </a>
-            </div>
-            <div class="author-card-content">
-              <h4 class="author-card-name">
-                <a href="{{ site_url }}/">{{ site_author }}</a>
-              </h4>
-              <p class="author-card-description">{{ site_author_bio }}</p>
-            </div>
-          </div>
-        {% endunless %}
-
-        {% if site.disqus_shortname and page.comments != 'false' %}
-          {% include disqus_thread.html %}
+      <!-- Author card -->
+      {% unless page.author %}
+        {% assign site_author = site.author.name | default: site.author | default: site.title | default: site.name %}
+        {% if site_author %}
+          {% assign site_author = site_author | smartify | strip_html | strip_newlines | escape_once %}
         {% endif %}
 
-        <nav class="clearfix">
-          <ul class="pager post-pager">
-            {% if page.previous.url %}
-              <li class="previous">
-                <a href="{{ page.previous.url | replace:'//','/' | replace:'/index.html','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title | markdownify | strip_html | strip_newlines | escape_once }}"><i class="fa fa-angle-left"></i> Previous</a>
-              </li>
-            {% endif %}
-            {% if page.next.url %}
-              <li class="next">
-                <a href="{{ page.next.url | replace:'//','/' | replace:'/index.html','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title | markdownify | strip_html | strip_newlines | escape_once }}">Next <i class="fa fa-angle-right"></i></a>
-              </li>
-            {% endif %}
-          </ul>
-        </nav>
+        {% assign site_author_bio = site.author.bio | default: site.description %}
+        {% if site_author_bio %}
+          {% assign site_author_bio = site_author_bio | smartify | strip_html | strip_newlines | truncate: 160 | escape_once %}
+        {% endif %}
 
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement":
-          [
+        {% assign site_author_avatar = site.author.avatar | default: site.logo.path | default: site.logo %}
+        {% if site_author_avatar %}
+          {% assign site_author_avatar = site_author_avatar | escape %}
+        {% endif %}
+        <hr class="post-footer-info-divider">
+        <div class="author-card">
+          <div class="author-card-image-wrapper">
+            <a class="author-card-avatar-link" href="{{ site_url }}/">
+              <img class="author-card-avatar" src="{{ site_author_avatar }}" alt="{{ site_author }}">
+            </a>
+          </div><!-- /.author-card-image-wrapper -->
+          <div class="author-card-content">
+            <h4 class="author-card-name">
+              <a href="{{ site_url }}/">{{ site_author }}</a>
+            </h4>
+            <p class="author-card-description">{{ site_author_bio }}</p>
+          </div><!-- /.author-card-content -->
+        </div><!-- /.author-card -->
+      {% endunless %}
+
+      <!-- Disqus -->
+      {% if site.disqus_shortname and page.comments != 'false' %}
+        {% include disqus_thread.html %}
+      {% endif %}
+
+      <!-- Pager -->
+      <nav class="clearfix">
+        <ul class="pager post-pager">
+          {% if page.previous.url %}
+            <li class="previous">
+              <a href="{{ page.previous.url | replace:'//','/' | replace:'/index.html','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title | markdownify | strip_html | strip_newlines | escape_once }}"><i class="fa fa-angle-left"></i> Previous</a>
+            </li>
+          {% endif %}
+          {% if page.next.url %}
+            <li class="next">
+              <a href="{{ page.next.url | replace:'//','/' | replace:'/index.html','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title | markdownify | strip_html | strip_newlines | escape_once }}">Next <i class="fa fa-angle-right"></i></a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
+
+      <!-- Breadcrumb -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement":
+        [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item":
             {
-              "@type": "ListItem",
-              "position": 1,
-              "item":
-              {
-                "@id": "{{ site_url }}/",
-                "name": "Home"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "item":
-              {
-                "@id": "{{ site_url }}/writings/",
-                "name": "Writings"
-              }
+              "@id": "{{ site_url }}/",
+              "name": "Home"
             }
-          ]
-        }
-        </script>
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item":
+            {
+              "@id": "{{ site_url }}/writings/",
+              "name": "Writings"
+            }
+          }
+        ]
+      }
+      </script>
 
-      </div><!-- /.col-* -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section>
+    </div><!-- /.col-* -->
+  </div><!-- /.row -->
+</section><!-- /.container -->
 
+<!-- Random posts -->
 <aside class="random-posts">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
         <div id="random-posts"></div>
-
-        <div class="text-center">
-          <a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a>
-        </div>
-
       </div><!-- /.col-* -->
     </div><!-- /.row -->
   </div><!-- /.container -->
-</aside>
+</aside><!-- /.random-posts -->
 
 <!-- Elevator wrapper - Scroll back to top button -->
 <div class="elevator-wrapper"></div>

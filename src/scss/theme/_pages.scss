@@ -1,0 +1,201 @@
+//
+// Theme layout design
+//
+
+// Navigation
+
+.navbar {
+  margin-bottom: 0;
+  font-family: $theme-font-family-base;
+  background-color: white;
+  border-color: transparent;
+  // border-radius: 0;
+
+  @media (min-width: 768px) {
+    height: 65px;
+  }
+}
+
+.navbar-brand {
+  // font-size: 18px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.75) !important;
+
+  @media (min-width: 768px) {
+    height: 65px;
+    padding: 22px 0;
+    margin-left: 15px !important;
+  }
+}
+
+.navbar-nav {
+  li {
+    a {
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: rgba(0, 0, 0, 0.6);
+
+      @media (min-width: 768px) {
+        padding: 24px 0 22px;
+        margin-right: 40px;
+      }
+
+      &:hover,
+      &:focus {
+        color: rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
+}
+
+
+// Middot divider
+
+.middot-divider {
+  display: inline-block;
+  padding: 0 0.42em;
+}
+
+.middot-divider::after {
+  content: "\00b7"; // "·"
+}
+
+
+// Page header
+
+.page-content,
+.post-article {
+  margin-top: 50px;
+
+  @media (min-width: 768px) {
+    margin-top: 65px;
+  }
+}
+
+.page-header {
+  background: no-repeat center center;
+  background-color: $theme-color-gray;
+  background-attachment: scroll;
+  @include theme-background-cover();
+  // NOTE: Background images are set within the HTML using inline CSS!
+  margin-bottom: 80px;
+}
+
+.page-heading {
+  padding: 75px 0;
+  text-align: center;
+  color: #fff;
+  transform: translateZ(0);
+
+  @media (min-width: 768px) {
+    padding: 150px 0;
+  }
+}
+
+.page-heading-divider {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: white;
+}
+
+.page-title {
+  // margin-top: 0;
+  font-family: $theme-font-family-sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 48px;
+
+  @media (min-width: 768px) {
+    font-size: 72px;
+  }
+}
+
+.page-description {
+  display: block;
+  font-size: 20px;
+  line-height: 1.1;
+  font-family: $theme-font-family-sans-serif;
+  font-weight: 300;
+  margin: 10px 0 0;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.page-body {
+  margin-bottom: 50px;
+}
+
+// Darker backgrounded .page-header image to make readable text
+.dark-background {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // Darken background (black 44% opacity)
+  background: rgba(0, 0, 0, 0.44);
+}
+
+
+// Site page footer
+
+.site-footer {
+  padding: 50px 0 40px;
+  // margin-top: 40px;
+  background-color: #fafafa;
+}
+
+.site-footer-social {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+  text-align: center;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  a {
+    color: rgba(0,0,0,0.7);
+
+    &:hover,
+    &:focus {
+      color: rgba(0,0,0,0.8);
+      // color: $markdown-link-hover-color;
+    }
+  }
+}
+
+.site-footer-legal {
+  font-family: $theme-font-family-base;
+  font-size: 14px;
+  color: rgba(0,0,0,0.6);
+  text-align: center;
+  margin-top: $markdown-margin;
+  margin-bottom: 0;
+
+  text-rendering: auto;
+  transform: translateZ(0);
+
+  a {
+    // text-decoration: underline;
+    // color: inherit; // parent color for link
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    //  color: $markdown-link-hover-color;
+    }
+  }
+}
+
+
+// Search page input box
+
+.form-control {
+  border-color: rgba(0,0,0,0.15);
+}

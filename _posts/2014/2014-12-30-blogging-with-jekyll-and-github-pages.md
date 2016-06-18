@@ -5,13 +5,13 @@ last_modified_at: "2016-01-13T06:09:30+05:45"
 excerpt: "Transform your plain text into static websites and blogs."
 ---
 
-I recently migrated my blog to [GitHub Pages](//pages.github.com) using an awesome open source project [Jekyll](http://jekyllrb.com). It's really fun blogging with Jekyll. If you are not enjoying blogging with other CMS platform then you should really try Jekyll.
+I recently migrated my blog to [GitHub Pages](http://pages.github.com){:rel="nofollow"} using an awesome open source project [Jekyll](http://jekyllrb.com){:rel="nofollow"}. It's really fun blogging with Jekyll. If you are not enjoying blogging with other CMS platform then you should really try Jekyll.
 
 After reading a lot of documentation, I found following quickest way to set up a Jekyll powered blog on GitHub Pages:
 
 ### Jekyll's simple purpose
 
-Tom Preston-Werner created Jekyll to enable people to blog using a simple static HTML website, with all of the content hosted and version-controlled on GitHub. The goal was to eliminate the complexity of other blogging platforms by creating a workflow that allows you to [blog like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html).
+Tom Preston-Werner created Jekyll to enable people to blog using a simple static HTML website, with all of the content hosted and version-controlled on GitHub. The goal was to eliminate the complexity of other blogging platforms by creating a workflow that allows you to [blog like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html){:rel="nofollow"}.
 
 Jekyll takes your content written in Markdown, passes it through your templates and spits it out as a complete static website, ready to be served. GitHub Pages conveniently serves the website directly from your GitHub repository so that you don't have to deal with any hosting.
 
@@ -19,9 +19,9 @@ Jekyll takes your content written in Markdown, passes it through your templates 
 
 According to Jekyll wiki,
 
-> Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through [Markdown](http://daringfireball.net/projects/markdown/) (or [Textile](http://redcloth.org/textile)) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind [GitHub Pages](http://pages.github.com/), which means you can use Jekyll to host your project's page, blog, or website from GitHub's servers for free.
+> Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through [Markdown](http://daringfireball.net/projects/markdown/){:rel="nofollow"} (or [Textile](http://redcloth.org/textile){:rel="nofollow"}) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind [GitHub Pages](http://pages.github.com/){:rel="nofollow"}, which means you can use Jekyll to host your project's page, blog, or website from GitHub's servers for free.
 
-GitHub Pages uses the [following dependencies](//pages.github.com/versions/):
+GitHub Pages uses the [following dependencies](http://pages.github.com/versions/){:rel="nofollow"}:
 
 - {% for dependency in site.github.versions %}{{ dependency[0] }}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}
 
@@ -29,13 +29,13 @@ GitHub Pages uses the [following dependencies](//pages.github.com/versions/):
 
 Here are some websites/blog that were created with Jekyll:
 
-* [Jekyll](http://jekyllrb.com/) - itself and most of the GitHub's subpages
-* [HealthCare.gov](https://www.healthcare.gov/) - landing page and content subpages
-* [Bootstrap](http://getbootstrap.com/)
-* [Font Awesome](http://fontawesome.io/)
-* [Mark Dotto](http://markdotto.com/)
-* [Zach Holman](http://zachholman.com/)
-* [Todd Motto](http://toddmotto.com/)
+* [Jekyll](http://jekyllrb.com/){:rel="nofollow"} - itself and most of the GitHub's subpages
+* [HealthCare.gov](http://www.healthcare.gov/){:rel="nofollow"} - landing page and content subpages
+* [Bootstrap](http://getbootstrap.com/){:rel="nofollow"}
+* [Font Awesome](http://fontawesome.io/){:rel="nofollow"}
+* [Mark Dotto](http://markdotto.com/){:rel="nofollow"}
+* [Zach Holman](http://zachholman.com/){:rel="nofollow"}
+* [Todd Motto](http://toddmotto.com/){:rel="nofollow"}
 
 ... and many other awesome projects and blogs are using Jekyll and hosted on GitHub Pages.
 
@@ -43,26 +43,26 @@ Here are some websites/blog that were created with Jekyll:
 
 There are various ways to get started with Jekyll.
 
-Install Jekyll locally via the command line, create a new boilerplate website using `jekyll new`, build it locally with `jekyll build`, and then serve it just make sure you've Ruby installed on your machine (further information visit [Jekyll docs](http://jekyllrb.com/)).
+Install Jekyll locally via the command line, create a new boilerplate website using `jekyll new`, build it locally with `jekyll build`, and then serve it just make sure you've Ruby installed on your machine (further information visit [Jekyll docs](http://jekyllrb.com/){:rel="nofollow"}).
 
 Or, here're the simple steps to blog with Jekyll on GitHub Pages without touching the single command line:
 
 #### Step 1
 
-Make [GitHub](//github.com) account and create repo `username.github.io`, remember your repo username must be match with GitHub account username.
+Make [GitHub](http://github.com){:rel="nofollow"} account and create repo `username.github.io`, remember your repo username must be match with GitHub account username.
 
 #### Step 2
 
-Download and install [GitHub Desktop app](//desktop.github.com/) (Currently available for Mac and Windows)
+Download and install [GitHub Desktop app](http://desktop.github.com/){:rel="nofollow"} (Currently available for Mac and Windows)
 
 #### Step 3
 
 Download and setup a good themes from the following popular sites:
 
-* [Jekyll Themes Wiki](https://github.com/jekyll/jekyll/wiki/Themes)
-* [Jekyll Themes](http://jekyllthemes.org/) - a Jekyll theme collection site
-* [Poole](http://getpoole.com/)
-* [Jekyll Now](http://www.jekyllnow.com/)
+* [Jekyll Themes Wiki](http://github.com/jekyll/jekyll/wiki/Themes){:rel="nofollow"}
+* [Jekyll Themes](http://jekyllthemes.org/){:rel="nofollow"} - a Jekyll theme collection site
+* [Poole](http://getpoole.com/){:rel="nofollow"}
+* [Jekyll Now](http://www.jekyllnow.com/){:rel="nofollow"}
 * There're other many theme collection site for Jekyll.
 
 
@@ -139,10 +139,7 @@ Again add following CNAME record to your DNS provider:
 |--------------|---------|--------------------|
 | www          | CNAME   | username.github.io |
 
-
-<div class="alert alert-warning" role="alert">
-  <p>Do not use wildcard DNS records (e.g. <code>*.example.com</code>) with GitHub Pages! A wildcard DNS record will allow anyone to host a GitHub Pages site at one of your subdomains.</p>
-</div>
+**Note:** Do not use wildcard DNS records (e.g. `*.example.com`) with GitHub Pages! A wildcard DNS record will allow anyone to host a GitHub Pages site at one of your subdomains.
 
 #### Create a CNAME file name
 
@@ -153,7 +150,7 @@ Now push a CNAME (with out any extention) file name in your GitHub Pages with yo
 
 ### Publish your first blog post
 
-[The front matter](http://jekyllrb.com/docs/frontmatter/) is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
+[The front matter](http://jekyllrb.com/docs/frontmatter/){:rel="nofollow"} is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
 
 ```rb
 ---
@@ -188,15 +185,7 @@ Now if you set your permalink as `/:year/:month/:title/` in `_config.yml` then a
 
 ### Using Jekyll Plugins with GitHub Pages
 
-GitHub Pages currently supports several Jekyll plugins:
-
-* [Jemoji](//help.github.com/articles/emoji-on-github-pages) - provides support for emoji within Jekyll posts and pages ([Emoji cheat sheet](http://www.emoji-cheat-sheet.com/))
-* [Jekyll-mentions](//help.github.com/articles/mentions-on-github-pages) - provides support for &#64;mentions within Jekyll posts and pages
-* [Jekyll-redirect-from](//help.github.com/articles/redirects-on-github-pages) - redirects visitors to an updated URL when Jekyll post or page filenames change.
-* [Jekyll-sitemap](//help.github.com/articles/sitemaps-for-github-pages) - adds a standards compliant sitemap for your GitHub Pages.
-* [Jekyll-feed](//github.com/jekyll/jekyll-feed) - generate an Atom (RSS-like) feed of your Jekyll posts.
-
-Add a list of enabled gems (plugins) to your site's `_config.yml` file, such as:
+GitHub Pages officially supports several [Jekyll plugins](http://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/){:rel="nofollow"}. Add a list of enabled gems (plugins) to your site's `_config.yml` file, such as:
 
 ```rb
 gems:
@@ -207,6 +196,6 @@ gems:
   - jemoji
 ```
 
-This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](//jekyllrb.com/).
+This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](http://jekyllrb.com/){:rel="nofollow"}.
 
 Happy Jekyll'ing!

@@ -1,0 +1,61 @@
+//
+// Pil v0.1.0
+//
+
+.pil {
+	margin: 0 auto;
+	background: #70e1f5; // fallback for old browsers
+	background: linear-gradient(to left top, #70e1f5 , #ffd194); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+
+	// background: #ddd;
+	position: relative;
+	overflow: hidden;
+
+	img:first-of-type {
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		backface-visibility: hidden;
+		transition: visibility 0s linear .5s,
+								opacity .1s .4s;
+	}
+}
+
+.pil-loaded img:first-of-type {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s linear 0s,
+							opacity .4s 0s;
+}
+
+.pil-thumb {
+	img {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		// box-sizing: border-box;
+		transition: visibility 0s linear 0s,
+								opacity .4s 0s;
+		-webkit-filter: blur(30px);
+		filter: blur(30px);
+	}
+
+	&.pil-thumb-loaded img {
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 0s linear 0s,
+								opacity .4s 0s;
+	}
+}
+
+.pil-loaded .pil-thumb img {
+	visibility: hidden;
+	opacity: 0;
+	backface-visibility: hidden;
+	transition: visibility 0s linear .5s,
+							opacity .1s .4s;
+}

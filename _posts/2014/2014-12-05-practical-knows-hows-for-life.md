@@ -1,10 +1,9 @@
 ---
 title: "Practical knows-hows for life"
 date: 2014-12-05T20:21:09+05:45
-excerpt: "Things I wish I'd know before I went out into the real world"
 ---
 
-<p class="lead">Things I wish I’d know before I went out into the real world</p>
+#### Things I wish I'd know before I went out into the real world
 
 Any and all compliments can be handled by simply saying 'Thank you'.
 

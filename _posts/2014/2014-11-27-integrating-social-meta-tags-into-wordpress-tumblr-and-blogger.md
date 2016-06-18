@@ -17,7 +17,7 @@ Following tips will help you for integrating social meta tags into popular CMS s
 
 The WordPress publishing platform is one of the most popular and widely used CMS systems in the world. It provides rich plugin support for additional functionality, including various plugins for social media.
 
-Popular plugins in particular like [Jetpack](//wordpress.org/plugins/jetpack/installation) and [WordPress SEO by Yoast](//yoast.com/wordpress/plugins/seo) make it easy to integrate your WordPress site with social meta tags.
+Popular plugins in particular like <a href="http://wordpress.org/plugins/jetpack/installation" rel="nofollow">Jetpack</a> and <a href="http://yoast.com/wordpress/plugins/seo" rel="nofollow">WordPress SEO by Yoast</a> make it easy to integrate your WordPress site with social meta tags.
 
 Install WordPress SEO by Yoast, this plugin made everything easier:
 
@@ -51,7 +51,7 @@ First add following code in the `<head>` tag:
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
 ```
 
-And place the [following code](http://stackoverflow.com/questions/11493718/facebook-open-graph-protocol-on-tumblr) before `</head>` section:
+And place the <a href="http://stackoverflow.com/questions/11493718/facebook-open-graph-protocol-on-tumblr" rel="nofollow">following code</a> before `</head>` section:
 
 ```html
 <!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
@@ -127,7 +127,7 @@ And place the [following code](http://stackoverflow.com/questions/11493718/faceb
 <!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
 ```
 
-For Twitter card property also place the [following code](http://www.quora.com/Whats-the-best-way-to-implement-Twitter-Cards-on-a-Tumblr-blog) before </head> section:
+For Twitter card property also place the <a href="http://www.quora.com/Whats-the-best-way-to-implement-Twitter-Cards-on-a-Tumblr-blog" rel="nofollow">following code</a> before `</head>` section:
 
 ```html
 <!-- BEGIN TWITTER TAGS -->
@@ -320,7 +320,7 @@ For Google+ and Facebook authorship include the following code before `</head>` 
 
 Be sure to check one of your example posts via the different social media metadata validator.
 
-* For Facebook, test using the [Facebook debugger](//developers.facebook.com/tools/debug).
-* For Twitter, submit one of your example posts via the [Twitter card validator](//cards-dev.twitter.com/validator).
-* For Google+, test with the [rich snippets tester](//www.google.com/webmasters/tools/richsnippets).
-* If you use Pinterest a lot, you need to validate your rich pins by going to the [rich pin validator page](//developers.pinterest.com/tools/url-debugger/).
+* For Facebook, test using the <a href="http://developers.facebook.com/tools/debug" rel="nofollow">Facebook debugger</a>.
+* For Twitter, submit one of your example posts via the <a href="http://cards-dev.twitter.com/validator" rel="nofollow">Twitter card validator</a>.
+* For Google+, test with the <a href="http://www.google.com/webmasters/tools/richsnippets" rel="nofollow">rich snippets tester</a>.
+* If you use Pinterest a lot, you need to validate your rich pins by going to the <a href="http://developers.pinterest.com/tools/url-debugger/" rel="nofollow">rich pin validator page</a>.

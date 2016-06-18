@@ -9,7 +9,7 @@ If you've ever been frustrated by exceeding your data plan on a monthly basis, p
 
 ### Chrome's Data Saver extension on desktop
 
-Google <del>recently</del> launched (on March 23, 2015) an extension for Chrome desktop browser named [Data Saver](https://chrome.google.com/webstore/detail/data-saver/pfmgfdlgomnbgkofeojodiodmgpgmkac) <del>(currently in beta at the time of writing this post)</del> that reduces your data usage significantly .[^1]
+Google <del>recently</del> launched (on March 23, 2015) an extension for Chrome desktop browser named [Data Saver](http://chrome.google.com/webstore/detail/data-saver/pfmgfdlgomnbgkofeojodiodmgpgmkac){:rel="nofollow"} <del>(currently in beta at the time of writing this post)</del> that reduces your data usage significantly .[^1]
 
 Google's data compression proxy service not only save the user bandwidth, but also load pages faster, and increase security (since sites go through Google's servers, the company checks for malicious webpages) on your phone, tablet and desktop computer.
 
@@ -29,9 +29,9 @@ Google began testing its data compression service for browsers back in March 201
 
 ### Chrome's Data Saver on mobile
 
-Chrome's Data Saver feature is also available in the latest [Chrome browser for Android](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en) and [Chrome browser for iOS](https://itunes.apple.com/in/app/chrome-web-browser-by-google/id535886823?mt=8) which has been shown to **reduce the size of web pages by 50%**. To enable it, hop into Settings, tap Data Saver and turn it on.
+Chrome's Data Saver feature is also available in the latest [Chrome browser for Android](http://play.google.com/store/apps/details?id=com.android.chrome&hl=en){:rel="nofollow"} and [Chrome browser for iOS](http://itunes.apple.com/in/app/chrome-web-browser-by-google/id535886823?mt=8){:rel="nofollow"} which has been shown to **reduce the size of web pages by 50%**. To enable it, hop into Settings, tap Data Saver and turn it on.
 
 The feature is certainly much more useful on mobile: It can save you money if you're on a tight data plan, in addition to speeding up page loads and beefing up security. Chances are that browsing on the desktop is already quite speedy for most people, and Google's Safe Browsing feature is already built into Chrome for Windows, Mac, and Linux.
 
-[^1]: For more information about Google Chrome's Data Saver please visit the [Google support page](https://support.google.com/chrome/answer/2392284).
+[^1]: For more information about Google Chrome's Data Saver please visit the [Google support page](http://support.google.com/chrome/answer/2392284){:rel="nofollow"}.
 [^2]: Custom downloaded images may not worked if you've enabled the data compression tool. Thus, turn off the Chrome's Data Saver or simply download the images in Chrome's incognito window.

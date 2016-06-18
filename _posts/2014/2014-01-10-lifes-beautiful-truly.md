@@ -3,7 +3,9 @@ title: "Life's beautiful, truly!"
 date: 2014-01-10T09:36:13+05:45
 ---
 
-<p class="lead">This story contains some ‘tips’ that may bring you a beautiful life. Read them, live by them more fully, and you will surely experience a beautiful life!</p>
+This story contains some 'tips' that may bring you a beautiful life. Read them, live by them more fully, and you will surely experience a beautiful life!
+
+---
 
 Take a 10 to 30 minute walk every day and while you walk, smile.
 

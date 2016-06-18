@@ -57,8 +57,8 @@ module.exports = function (grunt) {
         // '<%= project.src %>/js/bootstrap/affix.js',
         '<%= project.src %>/js/nprogress.js',
         '<%= project.src %>/js/headroom.js',
-        '<%= project.src %>/js/bigfoot.js',
         '<%= project.src %>/js/anchor.js',
+        '<%= project.src %>/js/pil.js',
         '<%= project.src %>/js/scripts.js'
       ]
     },

@@ -5,7 +5,7 @@ last_modified_at: 2015-07-10T11:10:14+05:45
 excerpt: "Blocking unwanted sites and ads in all of your applications globally and speed up browsing with the hosts file on your PC."
 ---
 
-Browser extensions like [Adblock Plus](http://adblockplus.org/en/) are very popular to blocking various annoying ads. But these are only for browsers what if you want to block these annoying ads globally in your PC for every applications, so here's the hosts file to help you.
+Browser extensions like [Adblock Plus](http://adblockplus.org/en/){:rel="nofollow"} are very popular to blocking various annoying ads. But these are only for browsers what if you want to block these annoying ads globally in your PC for every applications, so here's the hosts file to help you.
 
 ### What is a hosts file?
 
@@ -32,7 +32,7 @@ The location of the hosts file in the file system hierarchy varies by operating 
 | Operating System              | Location
 |-------------------------------|-------------------------------------------------------
 | Linux                         | `/etc/hosts`
-| Mac OS X, iOS                 | `/etc/hosts` (a symbolic link to `/private/etc/hosts`)
+| macOS, iOS                    | `/etc/hosts` (a symbolic link to `/private/etc/hosts`)
 | Android                       | `/etc/hosts` (a symbolic link to `/system/etc/hosts`)
 | Windows                       | `%SystemRoot%\System32\drivers\etc\hosts`
 
@@ -114,11 +114,11 @@ If you have a hosts file already, make a backup of it to another directory just 
 
 You can create your own hosts file, adding different ad servers you hunt down to your list, but that's a lot of effort. A simpler solution is to use a community created hosts file. You can find pre-made lists of ad network files by googling or get a community provided file from following listed sites:
 
-* MVPs.org Hosts file at [http://winhelp2002.mvps.org/hosts.htm](http://winhelp2002.mvps.org/hosts.htm), updated monthly, or thereabouts.
-* Dan Pollock at [http://someonewhocares.org/hosts/](http://someonewhocares.org/hosts/), updated regularly.
-* Malware Domain List at [http://www.malwaredomainlist.com/](http://www.malwaredomainlist.com/), updated regularly.
-* Peter Lowe at [http://pgl.yoyo.org/adservers/](http://pgl.yoyo.org/adservers/), updated regularly.
-* hpHosts at [http://hosts-file.net/](http://hosts-file.net/), updated regularly
+* MVPs.org Hosts file at [http://winhelp2002.mvps.org/hosts.htm](http://winhelp2002.mvps.org/hosts.htm){:rel="nofollow"}, updated monthly, or thereabouts.
+* Dan Pollock at [http://someonewhocares.org/hosts/](http://someonewhocares.org/hosts/){:rel="nofollow"}, updated regularly.
+* Malware Domain List at [http://www.malwaredomainlist.com/](http://www.malwaredomainlist.com/){:rel="nofollow"}, updated regularly.
+* Peter Lowe at [http://pgl.yoyo.org/adservers/](http://pgl.yoyo.org/adservers/){:rel="nofollow"}, updated regularly.
+* hpHosts at [http://hosts-file.net/](http://hosts-file.net/){:rel="nofollow"}, updated regularly
 
 Don't worry about a larger file making your PC slower. There is nothing those hosts can do to load anything on your PC. Even the largest files will actually make your PC feel faster.
 

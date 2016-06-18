@@ -8,15 +8,15 @@ excerpt: "Optimistically loading web resources ahead of time for better performa
 
 ### Browser cache isn't enough
 
-One might argue that "we already have browser cache!, we don't need prefetch!". But Steve Souders points out in one of his [prebrowsing article](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/), browser cache offers no help in many situations:
+One might argue that "we already have browser cache!, we don't need prefetch!". But Steve Souders points out in one of his [prebrowsing article](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/){:rel="nofollow"}, browser cache offers no help in many situations:
 
 > **first visit** --- The cache only comes into play on subsequent visits to a site. The first time you visit a site it hasn't had time to cache any resources.
 >
-> **cleared** --- The cache gets cleared more than you think. In addition to occasional clearing by the user, the cache can also be cleared by anti-virus software and browser bugs. ([19% of Chrome](//plus.google.com/103382935642834907366/posts/hsfVHq6wKxG) users have their cache cleared at least once a week due to a bug.)
+> **cleared** --- The cache gets cleared more than you think. In addition to occasional clearing by the user, the cache can also be cleared by anti-virus software and browser bugs. ([19% of Chrome](http://plus.google.com/103382935642834907366/posts/hsfVHq6wKxG){:rel="nofollow"} users have their cache cleared at least once a week due to a bug.)
 >
 > **purged** --- Since the cache is shared by every website the user visits, it's possible for one website's resources to get purged from the cache to make room for another's.
 >
-> **expired** --- [69% of resources don't have any caching headers or are cacheable for less than one day](http://httparchive.org/interesting.php#caching). If the user revisits these pages and the browser determines the resource is expired, an HTTP request is needed to check for updates. Even if the response indicates the cached resource is still valid, these network delays still make pages load more slowly, especially on mobile.
+> **expired** --- [69% of resources don't have any caching headers or are cacheable for less than one day](http://httparchive.org/interesting.php#caching){:rel="nofollow"}. If the user revisits these pages and the browser determines the resource is expired, an HTTP request is needed to check for updates. Even if the response indicates the cached resource is still valid, these network delays still make pages load more slowly, especially on mobile.
 >
 > **revved** --- Even if the website's resources are in the cache from a previous visit, the website might have changed and uses different resources.
 
@@ -116,13 +116,13 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 <figure>
   <iframe src="//www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
-  <figcaption>Slides: SlideShare, <a href="//docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19">Preconnect, prefetch, prerender...</a> from <a href="//twitter.com/igrigorik">Ilya Grigorik</a>.</figcaption>
+  <figcaption>Slides: SlideShare, <a href="http://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19" rel="nofollow">Preconnect, prefetch, prerender...</a> from <a href="http://twitter.com/igrigorik" rel="nofollow">Ilya Grigorik</a>.</figcaption>
 </figure>
 
 ### Pre-browsing
 
 <figure>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Msqs1jIzgo4?rel=0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/Msqs1jIzgo4?rel=0" frameborder="0" allowfullscreen></iframe>
 
   <figcaption>Video: YouTube, Prebrowsing by Steve Souders at Velocity NY 2013</figcaption>
 </figure>
@@ -130,16 +130,16 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 <figure>
   <iframe src="//www.slideshare.net/slideshow/embed_code/27665184" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
- <figcaption>Slides: SlideShare, <a href="//www.slideshare.net/souders/prebrowsing-velocity-ny-2013">Prebrowsing - Velocity NY 2013</a> from <a href="//twitter.com/souders">Steve Souders</a>.</figcaption>
+ <figcaption>Slides: SlideShare, <a href="http://www.slideshare.net/souders/prebrowsing-velocity-ny-2013" rel="nofollow">Prebrowsing - Velocity NY 2013</a> from <a href="http://twitter.com/souders" rel="nofollow">Steve Souders</a>.</figcaption>
 </figure>
 
 {% comment %}
 <!--- ### Steve Souders | Pre-browsing | Fronteers 2013</a>
 
 <figure>
-  <iframe src="https://player.vimeo.com/video/77176315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe src="//player.vimeo.com/video/77176315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-  <figcaption><a href="https://vimeo.com/77176315">Steve Souders | Pre-browsing | Fronteers 2013</a>.</figcaption>
+  <figcaption><a href="http://vimeo.com/77176315" rel="nofollow">Steve Souders | Pre-browsing | Fronteers 2013</a>.</figcaption>
 </figure> --->
 {% endcomment %}
 
@@ -147,12 +147,12 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 
 ### Further resources
 
-* [Prebrowsing](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/) - Steve Souders
-* [Link prefetching](http://en.wikipedia.org/wiki/Link_prefetching) - Wikipedia
-* [DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching) - The Chromium Projects
-* [Pre-Resolve DNS](https://developers.google.com/speed/pagespeed/service/PreResolveDns) - Google Developers
-* [Web Developer's Guide to Prerendering in Chrome](https://developers.google.com/chrome/whitepapers/prerender) - Google Developers
-* [Link prefetching FAQ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ) - Mozilla Developer Network
-* [Controlling DNS prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching) - Mozilla Developer Network
-* [One Step Ahead: Improving Performance with Prebrowsing](http://alistapart.com/article/one-step-ahead-improving-performance-with-prebrowsing) - A List Apart
-* [Resource hints](http://w3c.github.io/resource-hints/) - W3C
+* [Prebrowsing](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/){:rel="nofollow"} - Steve Souders
+* [Link prefetching](http://en.wikipedia.org/wiki/Link_prefetching){:rel="nofollow"} - Wikipedia
+* [DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching){:rel="nofollow"} - The Chromium Projects
+* [Pre-Resolve DNS](http://developers.google.com/speed/pagespeed/service/PreResolveDns){:rel="nofollow"} - Google Developers
+* [Web Developer's Guide to Prerendering in Chrome](http://developers.google.com/chrome/whitepapers/prerender){:rel="nofollow"} - Google Developers
+* [Link prefetching FAQ](http://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ){:rel="nofollow"} - Mozilla Developer Network
+* [Controlling DNS prefetching](http://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching){:rel="nofollow"} - Mozilla Developer Network
+* [One Step Ahead: Improving Performance with Prebrowsing](http://alistapart.com/article/one-step-ahead-improving-performance-with-prebrowsing){:rel="nofollow"} - A List Apart
+* [Resource hints](http://w3c.github.io/resource-hints/){:rel="nofollow"} - W3C

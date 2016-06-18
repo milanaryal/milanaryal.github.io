@@ -2,9 +2,8 @@
 title: "Windows 10 keyboard shortcuts"
 date: 2015-08-02T09:32:45+05:45
 last_modified_at: 2015-08-02T14:00:42+05:45
+excerpt: "The list of Windows 10 keyboard shortcuts to improve your productivity."
 ---
-
-<p class="lead">The list of Windows 10 keyboard shortcuts to improve your productivity.</p>
 
 Here's the list of Windows 10 shortcuts, and --- in addition --- some of our favorite "old but gold" shortcuts known from previous versions of Windows:
 
@@ -83,6 +82,6 @@ Additional shortcuts (not just Windows keyboard shortcuts):
 | Alt + Enter                  | Show the properties of the currently selected file |
 | Ctrl + Shift + Enter         | Run the selected app as an administrator           |
 
-Find even more Windows 10 keyboard shortcuts [at this link](http://windows.microsoft.com/en-us/windows-10/keyboard-shortcuts).
+Find even more Windows 10 keyboard shortcuts [at this link](http://windows.microsoft.com/en-us/windows-10/keyboard-shortcuts){:rel="nofollow"}.
 
 I'm pretty sure there are much more keyboard shortcuts you can use to speed up your work with Windows 10. If I miss one of your favorite(s), please let me know! I will try to keep the above list up to date.

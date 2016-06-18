@@ -1,0 +1,103 @@
+//
+// Pager pagination
+//
+
+.pager {
+  padding-left: 0;
+  // margin: $line-height-computed 0;
+  list-style: none;
+  text-align: center;
+  @include clearfix;
+
+  margin: 20px 0 40px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: liga on;
+
+  li {
+    display: inline;
+
+    > a,
+    > span {
+      display: inline-block;
+      // padding: 5px 14px;
+      // background-color: $pager-bg;
+      // border: 1px solid $pager-border;
+      // border-radius: $pager-border-radius;
+
+      font-family: $theme-font-family-base;
+      // text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 400;
+      // letter-spacing: -.02em;
+      letter-spacing: 0;
+      padding: 12.5px 20px;
+      color: rgba(0,0,0,0.44);
+      background-color: rgba(0,0,0,0);
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 999em;
+
+      @media (min-width: 768px) {
+        font-size: 14px;
+        padding: 15px 25px;
+      }
+    }
+
+    > a:hover {
+      // text-decoration: none;
+      // background-color: $pager-hover-bg;
+
+      background-color: rgba(0,0,0,0);
+      color: rgba(0,0,0,0.6);
+      border-color: rgba(0,0,0,0.3);
+    }
+
+    > a:focus,
+    > a:active {
+      outline: 0;
+      background-color: rgba(0,0,0,0);
+      color: rgba(0,0,0,0.8);
+      border-color: rgba(0,0,0,0.6);
+    }
+  }
+
+  .next {
+    > a,
+    > span {
+      float: right;
+    }
+  }
+
+  .previous {
+    > a,
+    > span {
+      float: left;
+    }
+  }
+
+  /**
+  .disabled {
+    > a,
+    > a:hover,
+    > a:focus,
+    > span {
+      // color: $pager-disabled-color;
+      // background-color: $pager-bg;
+      // cursor: $cursor-disabled;
+
+      pointer-events: none;
+      opacity: 0.25;
+      cursor: default;
+    }
+  } **/
+
+  .fa-angle-left {
+    padding-right: 3px;
+  }
+
+  .fa-angle-right {
+    padding-left: 3px;
+  }
+}

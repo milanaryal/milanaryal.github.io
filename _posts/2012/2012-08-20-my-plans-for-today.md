@@ -37,7 +37,3 @@ And here I am, the sculptor who gets to do the shaping.
 What today will be like is up to me.
 
 I get to choose what kind of day I will have!
-
----
-
-*Written by Steve Maraboli*

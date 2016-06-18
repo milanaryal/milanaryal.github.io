@@ -1,9 +1,8 @@
 ---
 title: "Speak your heart"
 date: 2012-10-01T15:20:45+05:45
+excerpt: "That night was my big chance and all I did was just sit there..."
 ---
-
-<p class="lead">That night was my big chance and all I did was just sit there...</p>
 
 It all started when I was 16 years old. While I was playing outside, I met a boy. He was a boy who teased you and then you chased them and beat them up. After that first meeting in which I beat him up we kept on meeting and beating each other up at the fence.
 
@@ -50,10 +49,3 @@ Finally, the diary ended when it said, "today I will tell her I love her". It wa
 ---
 
 *So the moral of the story, if you love someone, don't wait till tomorrow to tell him/her. Maybe the next day will never come at all.*
-
----
-
-<figure>
-  <iframe width="560" height="315" src="//www.youtube.com/embed/aPpeaETF1qE?rel=0&amp;theme=light" frameborder="0" allowfullscreen></iframe>
-  <figcaption>Music: YouTube, <a href="https://youtu.be/aPpeaETF1qE" data-proofer-ignore>Lizz Wright</a></figcaption>
-</figure>

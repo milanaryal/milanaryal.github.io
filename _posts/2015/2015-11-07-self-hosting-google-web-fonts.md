@@ -4,7 +4,7 @@ date: 2015-11-07T12:36:32+05:45
 excerpt: "Self-hosting Google Fonts on your own server and taking control over the font files."
 ---
 
-Using web fonts from [Google Fonts](https://www.google.com/fonts), generally makes sense to take advantages of the files hosted on Google's CDN. However a lot of web developers prefer to host web fonts on their own servers, so that they have more control over the actual font files.
+Using web fonts from [Google Fonts](http://www.google.com/fonts){:rel="nofollow"}, generally makes sense to take advantages of the files hosted on Google's CDN. However a lot of web developers prefer to host web fonts on their own servers, so that they have more control over the actual font files.
 
 First lets check out the pros and cons of self-hosting Google web fonts ---
 
@@ -26,17 +26,17 @@ You have to work a little hard to self-host Google web fonts because Google does
 
 So to fix this problem following web tools will help you to host Google web fonts on your own server:
 
-#### [Google web fonts helper](http://google-webfonts-helper.herokuapp.com/fonts)
+#### [Google web fonts helper](http://google-webfonts-helper.herokuapp.com/fonts){:rel="nofollow"}
 
-Google web fonts helper is a free tool created by [Mario Ranftl](http://ranf.tl/2014/12/23/self-hosting-google-web-fonts/) which uses the Google Fonts API that does all the hard work for us to self-host Google web fonts in few easy steps. It also allows you to select more than one font variant, which saves a lot of time.
+Google web fonts helper is a free tool created by [Mario Ranftl](http://ranf.tl/2014/12/23/self-hosting-google-web-fonts/){:rel="nofollow"} which uses the Google Fonts API that does all the hard work for us to self-host Google web fonts in few easy steps. It also allows you to select more than one font variant, which saves a lot of time.
 
 All you need is to choose your font, choose browser support, copy the CSS and download the font files.
 
-#### [Localfont.com](http://www.localfont.com/)
+#### [Localfont.com](http://www.localfont.com/){:rel="nofollow"}
 
 This is a similar and alternative to Google web fonts helper. A little disadvantage about this web tool is that it does not provide to select more than one font variant at a time.
 
-#### [Font Squirrel web font generator](http://www.fontsquirrel.com/tools/webfont-generator)
+#### [Font Squirrel web font generator](http://www.fontsquirrel.com/tools/webfont-generator){:rel="nofollow"}
 
 If you need to convert a font for which you have the rights, there's Font Squirrel web font generator. This tool can convert a font to all the popular formats.
 

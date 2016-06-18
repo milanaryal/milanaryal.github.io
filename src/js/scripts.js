@@ -8,6 +8,11 @@
 ;(function ($, window, document, undefined) {
   'use strict';
 
+  var newURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
+  var msg = 'Welcome to: ';
+  console.log(msg + newURL);
+
+
   /**
    * ------------------------------------------------------------------------
    * Loading bar - nprogress.js
@@ -40,6 +45,15 @@
 
   /**
    * ------------------------------------------------------------------------
+   * Progressive image loading - pil.js
+   * ------------------------------------------------------------------------
+   */
+
+  Pil.init();
+
+
+  /**
+   * ------------------------------------------------------------------------
    * Navigation scripts to Show header on scroll-up - headroom.js
    * ------------------------------------------------------------------------
    */
@@ -65,24 +79,12 @@
 
   /**
    * ------------------------------------------------------------------------
-   * Footnotes - bigfoot.js
-   * ------------------------------------------------------------------------
-   */
-
-  var bigfoot = $.bigfoot({
-    deleteOnUnhover: false,
-    preventPageScroll: false
-  });
-
-
-  /**
-   * ------------------------------------------------------------------------
    * AnchorJS options and selector - anchor.js
    * ------------------------------------------------------------------------
    */
 
   anchors.options.placement = 'left';
-  anchors.add('.markdown-body>h2,.markdown-body>h3,.markdown-body>h4,.markdown-body>h5,.markdown-body>h6,.archive>h3');
+  anchors.add('.markdown-body>h3,.markdown-body>h4,.archive>h3');
 
 
   /**
@@ -129,11 +131,23 @@
 
     /**
      * ------------------------------------------------------------------------
+     * Footnotes header
+     * ------------------------------------------------------------------------
+     */
+
+    $('.footnotes ').prepend('<hr><h4 id="footnotes">Footnotes</h4>');
+
+
+    /**
+     * ------------------------------------------------------------------------
      * Random posts init
      * ------------------------------------------------------------------------
      */
 
     generateRandomPosts();
+
+    $('.random-posts').append('<div class="random-posts-footer"><a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a></div>');
+
 
     /**
      * ------------------------------------------------------------------------

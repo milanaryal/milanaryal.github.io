@@ -2,9 +2,8 @@
 title: "Adding a sticky 'scroll back to top' button to your website"
 date: 2015-08-11T22:55:01+05:45
 last_modified_at: 2015-08-15T17:21:49+05:45
+excerpt: "This elevator button allows users to smoothly scroll back to the top of the page."
 ---
-
-<p class="lead">This elevator button allows users to smoothly scroll back to the top of the page.</p>
 
 This resource is suitable for website with lots of page content. When a user scrolls past a certain point on the website, this helpful button appears, enabling users to easily return to the top of a page.
 
@@ -22,9 +21,7 @@ Insert the `.elevator-wrapper` at the bottom of your content, before the closing
 </body>
 ```
 
-<div class="alert alert-info">
-  <strong>Note:</strong> To enable elevator button on your page you should have jQuery and Font Awesome library installed.
-</div>
+**Note:** To enable elevator button on your page you should have jQuery and Font Awesome library installed.
 
 #### Adding style
 
@@ -134,20 +131,18 @@ Then add the following jQuery snippet on your script file. This script helps to 
 Here's a nice demo on CodePen:
 
 <figure>
-  <p data-height="268" data-theme-id="0" data-slug-hash="gpEdYM" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/gpEdYM/'>Elevator - Scroll back to top utility</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal'>@MilanAryal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+  <p data-height="268" data-theme-id="0" data-slug-hash="gpEdYM" data-default-tab="result" data-user="MilanAryal" class='codepen'>See the Pen <a href='http://codepen.io/MilanAryal/pen/gpEdYM/'>Elevator - Scroll back to top utility</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal' rel='me'>@MilanAryal</a>) on <a href='http://codepen.io' rel='nofollow'>CodePen</a>.</p>
 
   <figcaption><a href="http://codepen.io/MilanAryal/full/gpEdYM/">View on full mode</a></figcaption>
 </figure>
 
 Following are the resources links of this article:
 
-<p>
-  <a class="btn btn-default" href="http://codepen.io/MilanAryal/full/gpEdYM">Demo</a>
-  <a class="btn btn-default" href="http://codepen.io/MilanAryal/pen/gpEdYM.html">HTML</a>
-  <a class="btn btn-default" href="http://codepen.io/MilanAryal/pen/gpEdYM.css">CSS</a>
-  <a class="btn btn-default" href="http://codepen.io/MilanAryal/pen/gpEdYM.less">Less</a>
-  <a class="btn btn-default" href="http://codepen.io/MilanAryal/pen/gpEdYM.js">Script</a>
-</p>
+* [Demo](http://codepen.io/MilanAryal/full/gpEdYM)
+* [HTML](http://codepen.io/MilanAryal/pen/gpEdYM.html)
+* [CSS](http://codepen.io/MilanAryal/pen/gpEdYM.css)
+* [Less](http://codepen.io/MilanAryal/pen/gpEdYM.less)
+* [Script](http://codepen.io/MilanAryal/pen/gpEdYM.js)
 
 <!-- CodePen JS -->
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>

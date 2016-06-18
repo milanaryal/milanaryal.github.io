@@ -18,8 +18,8 @@ If your website is hosted on platform like GitHub Pages, Tumblr or Blogger you w
 
 Since, here's the following sites which helps you to simply redirect using `ALIAS`, `ANAME`, `CNAME` or `TXT` record:
 
-* [redirect.center](http://redirect.center/)
-* [redirect.name](http://redirect.name/)
+* [redirect.center](http://redirect.center/){:rel="nofollow"}
+* [redirect.name](http://redirect.name/){:rel="nofollow"}
 
 ### Using redirect.center
 
@@ -63,7 +63,7 @@ www.oldwebsite.com  IN  CNAME  www.newwebsite.com.opts-uri.redirect.center
 
 | Option	               | Description
 |------------------------|--------------------------------------------------------------------
-| opts-statuscode-{code} | HTTP Status Code to be used in the redirect. 302, [HTTP Status Code](http://httpstatus.es/)
+| opts-statuscode-{code} | HTTP Status Code to be used in the redirect. 302, [HTTP Status Code](http://httpstatus.es/){:rel="nofollow"}
 | opts-uri	             | Append URI (if any) to the target URL
 
 #### Redirect main domain
@@ -84,9 +84,7 @@ example.com           IN  A      54.84.55.102
 redirect.example.com  IN  CNAME  domain2.com.redirect.center
 ```
 
-<div class="alert alert-info" role="alert">
- <p>You can find updated usage instructions and examples here: <a class="alert-link" href="http://redirect.center/" onClick="ga('send', 'event', 'Click', 'Direct link', 'redirect.center');">redirect.center</a>.</p>
-</div>
+*You can find updated usage instructions and examples here: [redirect.center](http://redirect.center/){:rel="nofollow"}.*
 
 ---
 
@@ -136,12 +134,10 @@ example.com.           IN  A    45.55.72.95
 _redirect.example.com  IN  TXT  Redirects to http://domain2.com
 ```
 
-<div class="alert alert-info" role="alert">
- <p>You can find updated usage instructions and examples here: <a class="alert-link" href="http://redirect.name/" onClick="ga('send', 'event', 'Click', 'Direct link', 'redirect.name');">redirect.name</a>.</p>
-</div>
+You can find updated usage instructions and examples here: [redirect.name](http://redirect.name/){:rel="nofollow"}.
 
 ---
 
 ### Other alternatives
 
-A service that does similar to this is [EasyRedir](https://www.easyredir.com/free-url-redirects). There are certainly other options out there though, so I encourage you to have a look around.
+A service that does similar to this is [EasyRedir](http://www.easyredir.com/free-url-redirects){:rel="nofollow"}. There are certainly other options out there though, so I encourage you to have a look around.

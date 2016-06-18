@@ -4,24 +4,23 @@ date: 2015-08-19T12:24:31+05:45
 last_modified_at: 2016-04-02T16:33:41+05:45
 ---
 
-<p class="lead">Dropbox is a great way to post an image quickly on a forum or as free hosting for your low traffic website, but there are a few things to know.</p>
+Dropbox is a great way to post an image quickly on a forum or as free hosting for your low traffic website, but there are a few things to know.
 
 Whether to reduce your website bandwidth or for some other reasons, you may want to host your website assets with CDN. So here, Dropbox will also works for you as a CDN and the only thing you need to do is some simple tweaks.
 
-<div class="alert alert-info">
-  <h4>Invitation to Dropbox!</h4>
-  Haven’t join Dropbox yet? Sign up now with <a href="https://db.tt/vocH7o0j" class="alert-link">https://db.tt/vocH7o0j</a> link and install Dropbox on your desktop computer, you’ll get extra 500MB of bonus space.
-</div>
+> **Invitation to Dropbox!**
+>
+> Haven't join Dropbox yet? Sign up now with [https://db.tt/vocH7o0j](https://db.tt/vocH7o0j) link and install Dropbox on your desktop computer, you'll get extra 500MB of bonus space.
 
 Following are some few simple steps within which you will learn to host images or website assets with Dropbox on your webpages:
 
 ### Step 1: Get a share link to an image file
 
-There're various way of [getting share link](https://www.dropbox.com/help/167) to a file in a Dropbox, follow one of them as your comfort.
+There're various way of [getting share link](http://www.dropbox.com/help/167){:rel="nofollow"} to a file in a Dropbox, follow one of them as your comfort.
 
 #### First option: Share link on Desktop
 
-* Install the [Dropbox desktop application](https://www.dropbox.com/downloading) on your computer (if you haven't already).
+* Install the [Dropbox desktop application](http://www.dropbox.com/downloading){:rel="nofollow"} on your computer (if you haven't already).
 * Right-click on the file to open its contextual menu and select **Share Dropbox link**. The link will be copied and you can immediately paste it anywhere.
 
 <figure>
@@ -33,7 +32,7 @@ There're various way of [getting share link](https://www.dropbox.com/help/167) t
 
 #### Second option: Share link using the website
 
-* [Sign in](https://www.dropbox.com/login) to the Dropbox website and find the file or folder you'd like to link to.
+* [Sign in](http://www.dropbox.com/login){:rel="nofollow"} to the Dropbox website and find the file or folder you'd like to link to.
 * Hover the cursor over the file or folder and click the blue **Share** button that appears.
 
 <figure>
@@ -68,9 +67,7 @@ Replaced with a actual file path:
 https://dl.dropboxusercontent.com/s/chuuhnslrea6to3/20150819-dropbox-logotype-blue.png
 ```
 
-<div class="alert alert-info">
-  <strong>Tip:</strong> To get direct download link to a file uploaded on Dropbox you can use <code>?dl=1</code> as a query parameter in your URL. And to just bypass the preview page on Dropbox you can use use <code>?raw=1</code>.
-</div>
+**Tip:** To get direct download link to a file uploaded on Dropbox you can use `?dl=1` as a query parameter in your URL. And to just bypass the preview page on Dropbox you can use use `?raw=1`.
 
 ### Step 3: Now what?
 
@@ -94,14 +91,18 @@ will output as following:
   <figcaption>Dropbox, the Dropbox logo are trademarks of Dropbox Inc., registered in the U.S. and other countries.</figcaption>
 </figure>
 
-<div class="alert alert-info">
-  <h4>Host webpages for free within Dropbox API</h4>
-  There’re many free static HTML host powered by the Dropbox API. Some of them are <a href="https://updog.co/" class="alert-link">UpDog</a>, <a href="https://pancake.io/" class="alert-link">Pancake</a>, <a href="http://droppages.com/" class="alert-link">DropPages</a>, and <a href="https://www.kissr.com/" class="alert-link">KISSr</a>.
-</div>
+#### Host webpages for free within Dropbox API
+
+There're many free static HTML host powered by the Dropbox API. Some of them are:
+
+* [UpDog](http://updog.co/){:rel="nofollow"}
+* [Pancake](http://pancake.io/){:rel="nofollow"}
+* [DropPages](http://droppages.com/){:rel="nofollow"}
+* [KISSr](http://www.kissr.com/){:rel="nofollow"}.
 
 ### Is there a bandwidth limit for Dropbox public links?
 
-"There is a hard limit of 20GB/day for Basic (free) accounts and 200GB/day for paid accounts to all of your links together, after which they're temporarily disabled, and those who try to access them will see an error page instead of your files," [Dropbox explains](https://www.dropbox.com/help/4204).
+"There is a hard limit of 20GB/day for Basic (free) accounts and 200GB/day for paid accounts to all of your links together, after which they're temporarily disabled, and those who try to access them will see an error page instead of your files," [Dropbox explains](http://www.dropbox.com/help/4204){:rel="nofollow"}.
 
 Lets compare, you have images hosted on Dropbox which is around 250KB. That means images all together should have less than 80K impressions in a day for you to stay within the Dropbox traffic limits. And if another site hotlink to your static images, it may use up your "free bandwidth" quota even sooner.
 
@@ -111,4 +112,4 @@ Note that this is for share links, not for access via the API.
 
 #### References
 
-* [Using Dropbox to Host Images on your Website](https://ryanmo.co/2013/11/03/dropboxsharedlinks/) --- Ryan
+* [Using Dropbox to Host Images on your Website](http://ryanmo.co/2013/11/03/dropboxsharedlinks/){:rel="nofollow"} --- Ryan

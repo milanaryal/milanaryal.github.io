@@ -6,9 +6,9 @@ excerpt: "Steps to delete a Facebook profile and start it again from scratch."
 
 Facebook is a website, and all the data for your page is stored on various Facebook servers in giant data centres. It is not stored on your PC or on your phone: they are just ways to access it online.
 
-To [delete your Facebook page](https://www.facebook.com/help/224562897555674), you must log on to your account, then go to the "Delete my account" page at [facebook.com/help/delete_account](https://www.facebook.com/help/delete_account) and click the big blue button.
+To [delete your Facebook page](http://www.facebook.com/help/224562897555674){:rel="nofollow"}, you must log on to your account, then go to the "Delete my account" page at [facebook.com/help/delete_account](http://www.facebook.com/help/delete_account){:rel="nofollow"} and click the big blue button.
 
-The [Facebook help page](https://www.facebook.com/help/224562897555674) says:
+The [Facebook help page](http://www.facebook.com/help/224562897555674){:rel="nofollow"} says:
 
 > When you delete your account, people won't be able to see it on Facebook. It may take up to 90 days to delete all of the things you've posted, like your photos, status updates or other data stored in backup systems. While we are deleting this information, it is inaccessible to other people using Facebook.
 
@@ -28,4 +28,4 @@ Now you should eventually be able to create a new account, with your preferred e
 
 ---
 
-*A version of this article appears on March 17 2016 of [The Guardian](http://www.theguardian.com/technology/askjack/2016/mar/17/how-can-i-delete-my-facebook-account-and-start-afresh-with-a-new-one).*
+*A version of this article appears on March 17 2016 of [The Guardian](http://www.theguardian.com/technology/askjack/2016/mar/17/how-can-i-delete-my-facebook-account-and-start-afresh-with-a-new-one){:rel="nofollow"}.*

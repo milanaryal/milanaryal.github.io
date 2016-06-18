@@ -23,7 +23,7 @@ Example for output URL of above input URL:
 
 ```html
 {% raw %}
-<a href="https://github.com/username/username.github.io/edit/master/_posts/yyyy-mm-dd-your-post-title.md">
+<a href="http://github.com/username/username.github.io/edit/master/_posts/yyyy-mm-dd-your-post-title.md">
   Edit this page on GitHub
 </a>
 {% endraw %}
@@ -31,7 +31,7 @@ Example for output URL of above input URL:
 
 #### For a collection document
 
-[For a collection document](http://jekyllrb.com/docs/collections/#documents), you'll need to use `{% raw %}{{ page.relative_path }}{% endraw %}` instead of `{% raw %}{{ page.path }}{% endraw %}` to get the desired behavior.
+[For a collection document](http://jekyllrb.com/docs/collections/#documents){:rel="nofollow"}, you'll need to use `{% raw %}{{ page.relative_path }}{% endraw %}` instead of `{% raw %}{{ page.path }}{% endraw %}` to get the desired behavior.
 
 ```html
 {% raw %}
@@ -43,7 +43,7 @@ Example for output URL of above input URL:
 
 #### On Prose
 
-If you are using [Prose](https://github.com/prose/prose) to manage your content:
+If you are using [Prose](http://github.com/prose/prose){:rel="nofollow"} to manage your content:
 
 ```html
 {% raw %}

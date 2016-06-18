@@ -6,17 +6,15 @@ excerpt: "A simple application that helps you delete the oldest tweets from your
 
 Looking for the awesome Twitter Archive Eraser?
 
-[Twitter Archive Eraser](//martani.github.io/Twitter-Archive-Eraser) allows you to automatically delete tweets in bulk from your timeline, or erase your whole twitter archive if you would like so.
+<a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">Twitter Archive Eraser</a> allows you to automatically delete tweets in bulk from your timeline, or erase your whole twitter archive if you would like so.
 
-Several tools exist to help you delete your old tweets but, most of them do not work properly, if at all, due to Twitter API's limitations. Twitter imposes a limit of 3200 tweets ([the more recent ones that is](//dev.twitter.com/overview/general/things-every-developer-should-know)) that an application can access.
+Several tools exist to help you delete your old tweets but, most of them do not work properly, if at all, due to Twitter API's limitations. Twitter imposes a limit of 3200 tweets (<a href="http://dev.twitter.com/overview/general/things-every-developer-should-know" rel="nofollow">the more recent ones that is</a>) that an application can access.
 
 Twitter enabled the option for users to download their whole archive of tweets, which contains among other things the IDs of all the tweets of a user: the exact piece of information that can be used to erase tweet.
 
-Thus, a simple application called "[Twitter Archive Eraser](//martani.github.io/Twitter-Archive-Eraser)" developed by [Martani Fakhrou](//twitter.com/martani_net) that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so.
+Thus, a simple application called "<a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">Twitter Archive Eraser</a>" developed by <a href="http://twitter.com/martani_net">Martani Fakhrou</a> that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so.
 
-Download and setup the Twitter Archive Eraser app by visiting the link given below:
-
-<p><a class="btn btn-default" href="//martani.github.io/Twitter-Archive-Eraser" onClick="ga('send', 'event', 'Click', 'Direct link', 'Twitter Archive Eraser');">Direct link →</a></p>
+Download and setup the Twitter Archive Eraser app by visiting <a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">this link</a>.
 
 There is two kinds of download app available:
 
@@ -37,12 +35,11 @@ Note: You need to accept sharing several statistics to use Twitter Archive Erase
   <a href="//dl.dropboxusercontent.com/s/gvgkag10py1o3x7/20141029-twitter-archive-eraser-screenshot-step1.png">
     <img src="//dl.dropboxusercontent.com/s/gvgkag10py1o3x7/20141029-twitter-archive-eraser-screenshot-step1.png" alt="Step 1">
   </a>
-  <figcaption>Step 1</figcaption>
 </figure>
 
 #### Step 2
 
-After you download your Twitter archive (from  [twitter.com/settings/account](//twitter.com/settings/account) and you can load it directly as a zip file into Twitter Archive Eraser.
+After you download your Twitter archive (from <a href="http://twitter.com/settings/account" rel="nofollow">twitter.com/settings/account</a> and you can load it directly as a zip file into Twitter Archive Eraser.
 
 You can select which period of time you want to delete tweets from (grouped by month).
 
@@ -50,7 +47,6 @@ You can select which period of time you want to delete tweets from (grouped by m
   <a href="//dl.dropboxusercontent.com/s/i4knrf5fw4obltc/20141029-twitter-archive-eraser-screenshot-step2.png">
     <img src="//dl.dropboxusercontent.com/s/i4knrf5fw4obltc/20141029-twitter-archive-eraser-screenshot-step2.png" alt="Step 2">
   </a>
-  <figcaption>Step 2</figcaption>
 </figure>
 
 #### Step 3
@@ -67,7 +63,6 @@ You can pause/resume the deletion process and check/uncheck tweets in between.
   <a href="//dl.dropboxusercontent.com/s/jqjy2dvum412g0s/20141029-twitter-archive-eraser-screenshot-step3.png">
     <img src="//dl.dropboxusercontent.com/s/jqjy2dvum412g0s/20141029-twitter-archive-eraser-screenshot-step3.png" alt="Step 3">
   </a>
-  <figcaption>Step 3</figcaption>
 </figure>
 
 ### Common filtering expressions
@@ -83,13 +78,13 @@ Use the following filtering expressions to search for:
 * Tweets containing a number with 4 digits or more: `\d{4}`
 * Tweets containing the word 'hello': `hello`
 
-You can find the code of the application on github: [github.com/martani/Twitter-Archive-Eraser](//github.com/martani/Twitter-Archive-Eraser). Developer mentions that all the Twitter logic is done using the excellent [LinqToTwitter](http://linqtotwitter.codeplex.com) library.
+You can find the code of the application on github: <a href="http://github.com/martani/Twitter-Archive-Eraser" rel="nofollow">github.com/martani/Twitter-Archive-Eraser</a>. Developer mentions that all the Twitter logic is done using the excellent <a href="http://linqtotwitter.codeplex.com" rel="nofollow">LinqToTwitter</a> library.
 
 Sadly, this app works only with Windows OS and yet developer is not further planning to develop this app for any other OS like Mac or linux. But don't worry you can use apps like VMware or VirtualBox to switch to Windows and use the Windows apps.
 
 ### Video explaining how to use Twitter Archive Eraser
 
 <figure>
-  <iframe width="560" height="315" src="http://www.youtube.com/embed/a01T_WPkQuU?rel=0&amp;theme=light" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/a01T_WPkQuU?rel=0&amp;theme=light" frameborder="0" allowfullscreen></iframe>
   <figcaption>Video: Martani Fakhrou</figcaption>
 </figure>

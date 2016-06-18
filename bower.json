@@ -21,13 +21,11 @@
     "tests"
   ],
   "dependencies": {
-    "anchor-js": "~3.1.1",
-    "bigfoot": "~2.1.4",
-    "bootstrap": "~3.3.6",
+    "anchor-js": "~3.2.0",
     "bootstrap-sass": "~3.3.6",
     "font-awesome": "~4.6.3",
     "headroom.js": "~0.9.3",
-    "jquery": "~2.2.4",
+    "jquery": "~3.0.0",
     "nprogress": "~0.2.0",
     "primer-markdown": "~3.1.0"
   }

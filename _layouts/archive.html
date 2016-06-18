@@ -20,14 +20,14 @@ layout: default
 <main role="main" itemprop="mainContentOfPage">
   <article class="page-content">
     <!-- Archive page header -->
-    <header class="intro-header" style="background-image: url('{{ page_image }}')">
+    <header class="page-header" style="background-image: url('{{ page_image }}')">
       <div class="dark-background">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <div class="page-heading">
                 <h1 class="page-title" itemprop="name">{{ page_title }}</h1>
-                <hr class="intro-divider">
+                <hr class="page-heading-divider">
                 <span class="page-description" itemprop="description">{{ page_description }}</span>
               </div>
             </div>
@@ -39,7 +39,7 @@ layout: default
     <!-- Archive page content -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
           {{ content }}
         </div>
       </div>

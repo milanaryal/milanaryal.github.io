@@ -46,5 +46,5 @@ New CSS3 attributes with great examples and very easy to memorize.
 
 ### Further resources
 
-* [HTML 5 Cheat Sheet (PDF)](http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/) - Smashing Magazine
-* [CSS3 Cheat Sheet (PDF)](http://www.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/) - Smashing Magazine
+* <a href="http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/" rel="nofollow">HTML 5 Cheat Sheet (PDF)</a> - Smashing Magazine
+* <a href="http://www.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/" rel="nofollow">CSS3 Cheat Sheet (PDF)</a> - Smashing Magazine

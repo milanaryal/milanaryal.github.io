@@ -1,0 +1,204 @@
+//
+// Hero page
+//
+
+// Hero page container
+
+.hero-container {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -moz-perspective: 1000px;
+  -webkit-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+
+  font-size: 16px;
+  background: #d3959b; // fallback for old browsers if gradient is not supported
+  background: linear-gradient(to left top, #d3959b , #bfe6ba); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+
+  > * {
+    z-index: 1;
+  }
+
+  padding: 1.5em; // ~24px
+  padding-top: 0;
+
+  @media (max-width: 360px) {
+    padding: 0.75em; // ~12px
+    padding-top: 0;
+  }
+}
+
+
+// Hero page profile
+
+.hero-profile {
+  position: relative;
+  width: 27em; // ~432px
+  margin-top: 150px; // 66 + 24 + 60
+
+  @media (max-width: 767px) {
+    margin-top: 134px; // 50 + 24 + 60
+  }
+
+  @media (max-width: 360px) {
+    margin-top: 122px; // 50 + 12 + 60
+  }
+
+  padding: 0 3em 2em; // ~0 48px 32px;
+  background: white;
+  border-radius: 4px;
+  cursor: default;
+  opacity: 0.95;
+  text-align: center;
+
+  -moz-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  -moz-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+
+  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 0 2em 2em; // ~0 32px 32px
+  }
+
+  &.is-loading {
+    opacity: 0;
+		-moz-transform: rotateX(15deg);
+		-webkit-transform: rotateX(15deg);
+		-ms-transform: rotateX(15deg);
+		transform: rotateX(15deg);
+  }
+}
+
+.hero-avatar {
+  position: relative;
+  display: block;
+  margin-bottom: 1.25em; // ~20px
+}
+
+.hero-avatar-image {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: -60px;
+  // margin-bottom: 20px;
+  border-radius: 100%;
+  background: #eee;
+  border: 5px solid #fff;
+  box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+}
+
+.hero-title {
+  // font-family: $theme-font-family-base;
+  // font-weight: 700;
+  // font-style: normal;
+  font-size: 2em; // ~32px
+  // margin-left: -2.75px;
+  line-height: 1.2;
+  // letter-spacing: 0;
+  color: rgba(0,0,0,.8);
+  margin-bottom: .525em; // 8px
+  outline: 0;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.hero-description {
+  margin-bottom: 1.25em;
+  line-height: 1.4;
+
+  color: rgba(0,0,0,.6);
+  font-size: 16px;
+  outline: 0;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+
+// Hero page icons
+
+ul.hero-social {
+  cursor: default;
+  padding-left: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    padding: 0.675em 0.5em;
+  }
+
+  a.fa {
+    position: relative;
+    display: block;
+    width: 3.75em;
+    height: 3.75em;
+    border-radius: 100%;
+    border: solid 1px #c8cccf;
+    line-height: 3.75em;
+    overflow: hidden;
+    text-align: center;
+    text-indent: 3.75em;
+    white-space: nowrap;
+    text-transform: none !important;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      font-size: 1.85em;
+      line-height: inherit;
+      text-align: center;
+      text-indent: 0;
+      color: #fff;
+      text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+
+      @media (max-width: 480px) {
+        font-size: 1.5em;
+      }
+    }
+
+    &:hover {
+      border-color: #ff7496;
+
+      &::before {
+        text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+      }
+    }
+  }
+}

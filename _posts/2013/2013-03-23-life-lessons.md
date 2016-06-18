@@ -1,8 +1,9 @@
 ---
 title: "Life lessons"
 date: 2013-03-23T10:55:09+05:45
-excerpt: "No matter who tries to teach you lessons about life, you won't understand it until you have to go through them on your own."
 ---
+
+No matter who tries to teach you lessons about life, you won't understand it until you have to go through them on your own.
 
 * Don't go for looks, they can deceive. Don't go for wealth even that fades away. Go for someone who makes you smile.
 * There are moments in life when you really miss someone that you want to pick them up from your dreams and hug them. Hope you dream of that someone.
