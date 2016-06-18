@@ -8349,15 +8349,25 @@ ul.hero-social a.fa:hover::before {
 
 .markdown-body dl dt {
   padding: 0;
-  margin-top: 16px;
+  margin: 0;
   font-size: 1em;
   font-style: italic;
   font-weight: bold;
 }
 
 .markdown-body dl dd {
-  padding: 0 16px;
-  margin-bottom: 16px;
+  padding: 0 15px;
+  margin: 0;
+}
+
+.markdown-body dd + dt {
+  margin-top: 17px;
+}
+
+@media (max-width: 767px) {
+  .markdown-body dd + dt {
+    margin-top: 15px;
+  }
 }
 
 .markdown-body figure img {

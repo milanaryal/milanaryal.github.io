@@ -14,9 +14,7 @@ excerpt: "A collection of writings about web design and front-end development to
 
   {% if site.logo %}
     {% assign site_logo = site.logo.path | default: site.logo %}
-    {% if site_logo %}
-      {% assign site_logo = site_logo | escape %}
-    {% endif %}
+    {% assign site_logo = site_logo | escape %}
   {% endif %}
 
   {% if post.image %}
@@ -43,7 +41,7 @@ excerpt: "A collection of writings about web design and front-end development to
   <article class="post-preview clearfix" itemscope itemtype="https://schema.org/Article">
     <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'/index.html','/' }}">
     <span class="hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      {% if post_image %}
+      {% if post.image %}
         <link itemprop="url" href="{{ post_image }}">
         {% if post.image.width %}
           <meta itemprop="width" content="{{ post.image.width }}">
