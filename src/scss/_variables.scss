@@ -45,35 +45,16 @@ $social-github-color:            #333333;
 //
 // Markdown content Font, line-height, and color for body text, headings, and more.
 
-$markdown-brand-color:          darken($theme-brand-color, 6.5%); // #0c86e6
-$markdown-link-color:           $markdown-brand-color;
-$markdown-link-hover-color:     darken($markdown-link-color, 15%); // #095c9e
-
-$markdown-body-color:           rgba($theme-color-black, 0.95); // rgba(0, 0, 0, 0.95)
-$markdown-color-h1:             rgba($theme-color-black, 0.8); // rgba(0, 0, 0, 0.8)
-$markdown-color-h2:             rgba($theme-color-black, 0.8); // rgba(0, 0, 0, 0.8)
+$markdown-body-color:           rgba($theme-color-black, 0.8); // rgba(0, 0, 0, 0.8)
 $markdown-color-h3:             rgba($theme-color-black, 0.8); // rgba(0, 0, 0, 0.8)
 $markdown-color-h4:             rgba($theme-color-black, 0.44); // rgba(0, 0, 0, 0.44)
-$markdown-color-hr:             rgba($theme-color-black, 0.15); // rgba(0, 0, 0, 0.15)
+$markdown-color-hr:             rgba($theme-color-black, 0.6); // rgba(0, 0, 0, 0.6)
 $markdown-color-pre:            rgba($theme-color-black, 0.05); // rgba(0, 0, 0, 0.05)
 $markdown-text-muted:           rgba($theme-color-black, 0.44); // rgba(0, 0, 0, 0.44)
 
-$markdown-body-font-size:       22px;
-$markdown-lead-font-size:       32px;
-$markdown-font-size-h1:         60px; // 36 + 24 = 60
-$markdown-font-size-h2:         40px; // 36 + 4 = 40
-
-$markdown-font-size-h3:         32px; // 28 + 4 = 32
-$markdown-font-size-h4:         28px; // 24 + 4 = 28
-
-// $markdown-font-size-h3:         36px; // 32 + 4 = 36
-// $markdown-font-size-h4:         32px; // 28 + 4 = 32
-
-$markdown-font-size-h5:         28px; // ~28
-$markdown-font-size-h6:         28px;
-$markdown-font-size-pre:        16px;
-
-$markdown-margin:               30px; // All of our block level items should have the same margin
+$markdown-body-font-size:       19px;
+$markdown-font-size-h3:         31px; // 27 + 4 = 31
+$markdown-font-size-h4:         27px; // 23 + 4 = 28
 
 
 // NProgress

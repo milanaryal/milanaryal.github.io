@@ -136,9 +136,9 @@ Here's a nice demo on CodePen:
   <figcaption><a href="http://codepen.io/MilanAryal/full/gpEdYM/">View on full mode</a></figcaption>
 </figure>
 
-Following are the resources links of this article:
+Following are the code snippets link of this article:
 
-* [Demo](http://codepen.io/MilanAryal/full/gpEdYM)
+* [View demo](http://codepen.io/MilanAryal/full/gpEdYM)
 * [HTML](http://codepen.io/MilanAryal/pen/gpEdYM.html)
 * [CSS](http://codepen.io/MilanAryal/pen/gpEdYM.css)
 * [Less](http://codepen.io/MilanAryal/pen/gpEdYM.less)

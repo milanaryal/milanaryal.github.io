@@ -12,7 +12,7 @@ Several tools exist to help you delete your old tweets but, most of them do not 
 
 Twitter enabled the option for users to download their whole archive of tweets, which contains among other things the IDs of all the tweets of a user: the exact piece of information that can be used to erase tweet.
 
-Thus, a simple application called "<a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">Twitter Archive Eraser</a>" developed by <a href="http://twitter.com/martani_net">Martani Fakhrou</a> that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so.
+Thus, a simple application called "<a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">Twitter Archive Eraser</a>" developed by <a href="http://twitter.com/martani_net" rel="nofollow">Martani Fakhrou</a> that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so.
 
 Download and setup the Twitter Archive Eraser app by visiting <a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">this link</a>.
 

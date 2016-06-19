@@ -7470,6 +7470,7 @@ ul.hero-social a.fa:hover::before {
 
 .archive-body {
   margin-bottom: 50px;
+  font-size: 17px;
   color: rgba(0, 0, 0, .8);
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
@@ -8054,7 +8055,6 @@ ul.hero-social a.fa:hover::before {
   font-style: normal;
   font-weight: 400;
   line-height: 1.58;
-  color: rgba(0, 0, 0, .95);
   letter-spacing: -.003em;
   word-wrap: break-word;
   -webkit-transform: translateZ(0);
@@ -8099,7 +8099,7 @@ ul.hero-social a.fa:hover::before {
   }
 }
 
-.markdown-body.post-body > p:first-child:first-letter {
+.markdown-body.post-body > p:first-child::first-letter {
   position: relative;
   display: block;
   float: left;
@@ -8116,7 +8116,7 @@ ul.hero-social a.fa:hover::before {
 }
 
 @media (max-width: 767px) {
-  .markdown-body.post-body > p:first-child:first-letter {
+  .markdown-body.post-body > p:first-child::first-letter {
     padding-top: 3.5px;
     margin-right: 6px;
     margin-left: -4px;
@@ -8533,7 +8533,6 @@ del code {
 
 pre {
   padding: 20px;
-  margin-bottom: 30px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;

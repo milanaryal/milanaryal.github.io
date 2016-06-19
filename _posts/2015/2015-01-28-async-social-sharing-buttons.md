@@ -6,7 +6,7 @@ excerpt: "Asynchronously loading social sharing buttons JavaScript to improve pa
 
 Social sharing button are great easy resource to share the content of the site. Different social sites use different scripts to load the sharing button. If you go and copying every social sharing button scripts then it will be bunch of and may slow down your site. Thus, here's the simple asynchronously (async) loading JavaScript of every social media.
 
-<a class="btn btn-default" href="//dl.dropboxusercontent.com/s/xsh1zt6br3org8x/index.html" onClick="ga('send', 'event', 'Click', 'Demo', 'Async social sharing buttons');">Demo</a> <a class="btn btn-default" href="//dl.dropboxusercontent.com/s/qvcwolr16ws12a7/async-social-sharing-buttons.zip?dl=1" onClick="ga('send', 'event', 'Click', 'Download', 'Async social sharing buttons');">Download</a>
+[Demo](//dl.dropboxusercontent.com/s/xsh1zt6br3org8x/index.html){:class="btn btn-default"} [Download](//dl.dropboxusercontent.com/s/qvcwolr16ws12a7/async-social-sharing-buttons.zip?dl=1){:class="btn btn-default"}
 
 ### Asynchronously loading social JavaScript
 
@@ -83,4 +83,4 @@ You'll need the HTML in place for the scripts to put their stuff:
 <div class="g-plusone" data-size="medium" data-count="true"></div>
 ```
 
-<a class="btn btn-default" href="//dl.dropboxusercontent.com/s/xsh1zt6br3org8x/index.html" onClick="ga('send', 'event', 'Click', 'Demo', 'Async social sharing buttons');">Demo</a> <a class="btn btn-default" href="//dl.dropboxusercontent.com/s/qvcwolr16ws12a7/async-social-sharing-buttons.zip?dl=1" onClick="ga('send', 'event', 'Click', 'Download', 'Async social sharing buttons');">Download</a>
+[Demo](//dl.dropboxusercontent.com/s/xsh1zt6br3org8x/index.html){:class="btn btn-default"} [Download](//dl.dropboxusercontent.com/s/qvcwolr16ws12a7/async-social-sharing-buttons.zip?dl=1){:class="btn btn-default"}
