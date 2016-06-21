@@ -12,6 +12,7 @@ When you send someone one of the resulting anchor URLs, which includes the name 
 So here's the AnchorJS which is written by Bryan Braun, alternative to do it which is lighter in code and doesn't require the hefty jQuery library.
 
 ### Enable markdown auto-generated ID's for headings in Jekyll
+{:.no_toc}
 
 To add anchor link on headings first enable markdown auto-generated ID's in Jekyll `_config.yml` file.
 
@@ -38,20 +39,22 @@ Then markdown in Jekyll will auto generate ID's to the heading like the followin
 <h3 id="header-link-3">Header link 3</h3>
 ```
 
-You don't have to worry if you don't enable markdown auto-generated ID's, AnchorJS will also auto generate ID's on headers.
-
-AnchorJS do not add 'table of contents' but if you want to utilize this feature with markdown then just place `{% raw %}{:toc}{% endraw %}` somewhere above all the headings and place {% raw %}`{:.no_toc}`{% endraw %} where you want to disable the auto ID's to the desire headings.
-
-You can see the following example:
-
-```text
-{% raw %}
 ### Table of contents
 {:.no_toc}
 
 * Table of contents placeholder
 {:toc}
-{% endraw %}
+
+AnchorJS do not add 'table of contents' but if you want to have then if the markdown `auto_ids` options is set, just place `{:toc}` somewhere above all the headings and place `{:.no_toc}` to a header to exclude it from the table of contents. Now all headers (except the `{:.no_toc}` heading) will appear in the table of contents as they all will have an ID.
+
+You can see the following example:
+
+```text
+### Table of contents
+{:.no_toc}
+
+* Table of contents placeholder
+{:toc}
 ```
 
 ### Download AnchorJS
@@ -87,7 +90,7 @@ Or, even not downloading you can include various open source CDN library link:
 
 ### Using AnchorJS
 
-AnchorJS provides the different options for adding anchors to the page. This method accepts a selector as a parameter in the form of a string. The selector can be used to target specific elements that you want to add anchors to. Here's an example.
+AnchorJS provides the different options for adding anchors to the page. This method accepts a selector as a parameter in the form of a string. The selector can be used to target specific elements that you want to add anchors to. Here's an example:
 
 #### Placing the AnchorJS icon to the left position
 
@@ -126,6 +129,8 @@ This will place the default AnchorJS icon to the right and of course only add th
 
 })();
 ```
+
+**Note:** AnchorJS will auto generate ID's on headers (when DOM is ready) for missing headers ID's in the page and show icon on hover.
 
 #### Styling the AnchorJS icon
 
