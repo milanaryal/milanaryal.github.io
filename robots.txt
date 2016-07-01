@@ -1,11 +1,17 @@
 ---
 layout: null
+disallows:
+ - /search
+ - /404.html
+ - /writings/page*
+ - /fine-print/
 ---
 
 # robotstxt.org/
 # The robots exclusion protocol
 
 User-agent: *
-Disallow:
-Disallow: /search
+Disallow:{% for disallowed in page.disallows %}
+Disallow: {{ disallowed }}{% endfor %}
 Sitemap: {{ site.url }}/sitemap.xml
+Host: {{ site.url | remove:'https://' | remove:'http://' }}

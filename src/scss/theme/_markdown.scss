@@ -3,16 +3,15 @@
 //
 
 .markdown-body {
-  transform: translateZ(0);
-  word-wrap: break-word;
-
   font-family: $theme-font-family-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.58;
   letter-spacing: -.003em;
   // color: rgba(0,0,0,.8);
+  word-wrap: break-word;
+  transform: translateZ(0);
 
   @media (max-width: 767px) {
     font-size: 17px;
@@ -51,26 +50,25 @@
       }
 
       &::first-letter {
-        display: block;
         position: relative;
+        display: block;
         float: left;
-
-        font-family: $theme-font-family-sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 60px; // 64px
         padding-top: 7px;
-        margin-left: -5px;
         margin-right: 7px;
-        letter-spacing: -.03em;
-        line-height: .83;
         margin-bottom: -.08em;
+        margin-left: -5px;
+        font-family: $theme-font-family-sans-serif;
+        font-size: 60px; // 64px
+        font-style: normal;
+        font-weight: 700;
+        line-height: .83;
+        letter-spacing: -.03em;
 
         @media (max-width: 767px) {
-          font-size: 50px; // 54.85px
           padding-top: 3.5px;
-          margin-left: -4px;
           margin-right: 6px;
+          margin-left: -4px;
+          font-size: 50px; // 54.85px
         }
       }
     }
@@ -85,39 +83,37 @@
   }
 
   i, em {
-    font-feature-settings: "liga" on,"salt" on;
     -moz-font-feature-settings: "liga" on,"salt" on;
     -webkit-font-feature-settings: "liga" on,"salt" on;
+    font-feature-settings: "liga" on,"salt" on;
   }
 
-  &> h3, &> h4,
-  &> p,
-  &> blockquote,
-  &> ul, &> ol, &> dl,
-  &> .table-responsive {
+  > h3, > h4,
+  > p,
+  > blockquote,
+  > ul, > ol, > dl,
+  > .table-responsive {
     a {
       text-decoration: none;
       background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,.6) 50%);
+      background-position: 0 20px;
       background-repeat: repeat-x;
       background-size: 2px 2px;
-      background-position: 0 20px;
-
-      -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+      -webkit-tap-highlight-color: rgba(0,0,0,.3);
 
       @media (max-width: 767px) {
-        background-size: 2px 2px;
         background-position: 0 18px;
+        background-size: 2px 2px;
       }
     }
   }
 
-  &> figure figcaption,
-  &> .footnotes {
+  > figure figcaption,
+  > .footnotes {
     a {
       // color: inherit; // parent color for link
       text-decoration: underline;
-
-      -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+      -webkit-tap-highlight-color: rgba(0,0,0,.3);
 
       &:hover,
       &:focus {
@@ -129,75 +125,68 @@
 
   a:not([href]) {
     color: inherit;
-    text-decoration: none;
-
+    text-decoration: none !important;
     background-image: none !important;
   }
 
   h3 {
     margin-top: 47px;
-
-    font-family: $theme-font-family-sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 31px;
     margin-left: -2.25px;
+    font-family: $theme-font-family-sans-serif;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 1.15;
     letter-spacing: -.02em;
-
-    color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0,.8);
 
     @media (max-width: 767px) {
       margin-top: 39px;
-
-      font-size: 27px;
       margin-left: -1.75px;
+      font-size: 27px;
       line-height: 1.12;
       letter-spacing: -.022em;
     }
 
     a {
       background-image: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.8));
-      background-size: 2px 4px;
       background-position: 0 35px;
+      background-size: 2px 4px;
 
       @media (max-width: 767px) {
-        background-size: 2px 3px;
         background-position: 0 31px;
+        background-size: 2px 3px;
       }
     }
   }
 
   h4 {
     margin-top: 39px;
-
-    font-family: $theme-font-family-sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 27px;
     margin-left: -1.75px;
+    font-family: $theme-font-family-sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 1.22;
     letter-spacing: -.022em;
-
     color: rgba(0,0,0,.44);
 
     @media (max-width: 767px) {
       margin-top: 31px;
-
-      font-size: 23px;
       margin-left: -1.5px;
+      font-size: 23px;
       line-height: 1.18;
       letter-spacing: -.022em;
     }
 
     a {
       background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,.44) 50%);
-      background-size: 2px 3px;
       background-position: 0 31px;
+      background-size: 2px 3px;
 
       @media (max-width: 767px) {
-        background-size: 2px 3px;
         background-position: 0 27px;
+        background-size: 2px 3px;
       }
     }
   }
@@ -290,29 +279,28 @@
 
   figcaption {
     position: relative;
-    left: 0;
-    width: 100%;
     top: 0;
-    outline: 0;
+    left: 0;
     z-index: 300;
-
-    // display: block;
+    display: block;
+    width: 100%;
     margin-top: 10px;
     font-family: $theme-font-family-sans-serif;
-    font-weight: 400;
     font-size: 14px;
     font-style: normal;
-    font-feature-settings: "liga" on,"lnum" on;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: rgba(0,0,0,.6);
+    text-align: center;
+    outline: 0;
     -moz-font-feature-settings: "liga" on,"lnum" on;
     -webkit-font-feature-settings: "liga" on,"lnum" on;
-    line-height: 1.4;
-    text-align: center;
-    color: rgba(0,0,0,0.6);
-    letter-spacing: 0;
+    font-feature-settings: "liga" on,"lnum" on;
 
     @media (max-width: 991px) {
-      padding-left: 30px;
       padding-right: 30px;
+      padding-left: 30px;
       box-sizing: border-box;
     }
   }
@@ -320,10 +308,10 @@
   blockquote {
     padding: 0 0 3px 20px;
     font-style: italic;
-    border-left: 3px solid rgba(0,0,0,0.8);
-    font-feature-settings: "liga" on,"salt" on;
+    border-left: 3px solid rgba(0,0,0,.8);
     -moz-font-feature-settings: "liga" on,"salt" on;
     -webkit-font-feature-settings: "liga" on,"salt" on;
+    font-feature-settings: "liga" on,"salt" on;
 
     > :first-child {
       margin-top: 0;
@@ -336,11 +324,10 @@
 
   hr {
     display: block;
-    border: 0;
-    text-align: center;
-
     margin-top: 52px;
     margin-bottom: 42px;
+    text-align: center;
+    border: 0;
 
     @media (max-width: 767px) {
       margin-top: 44px;
@@ -348,24 +335,23 @@
     }
 
     &::before {
-      content: "\002e\002e\002e"; // ...
-      display: inline-block;
-      margin-left: .8em;
-      color: rgba(0,0,0,.6);
       position: relative;
       top: -25px;
-
+      display: inline-block;
+      margin-left: .8em;
       font-family: $theme-font-family-serif;
-      font-weight: 400;
-      font-style: italic;
       font-size: 21px;
+      font-style: italic;
+      font-weight: 400;
       letter-spacing: .8em;
+      color: rgba(0,0,0,.6);
+      content: "\002e\002e\002e"; // ...
     }
   }
 
   .btn {
     margin: 3px;
-    outline: 0 !important;
+    outline: 0;
   }
 
   //
@@ -391,8 +377,8 @@
     }
 
     ol {
-      margin-top: 10px;
       padding-left: 19px;
+      margin-top: 10px;
     }
 
     li {
@@ -409,7 +395,7 @@
   // Footnotes anchor link
   .footnote,
   .reversefootnote {
-    text-decoration: none !important; // do not underline link
+    text-decoration: none !important;
     background-image: none !important;
   }
 
@@ -419,11 +405,12 @@
   .footnote {
     &::before {
       display: inline-block;
-      content: " ";
-      margin-top: -79px;
       height: 79px;
-      visibility: hidden;
+      margin-top: -79px;
       pointer-events: none;
+      content: "";
+      visibility: hidden;
     }
   }
+
 } // .markdown-body

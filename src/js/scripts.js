@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Milan Aryal (http://milanaryal.com): scripts.js
+ * Milan Aryal (https://milanaryal.com): scripts.js
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -8,9 +8,9 @@
 ;(function ($, window, document, undefined) {
   'use strict';
 
-  var newURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
-  var msg = 'Welcome to: ';
-  console.log(msg + newURL);
+  var currentURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
+  var logMSG = 'Welcome to: ';
+  console.log(logMSG + currentURL);
 
 
   /**
@@ -28,7 +28,7 @@
   NProgress.start();
 
   // Progress percentage
-  NProgress.set(0.4);
+  // NProgress.set(0.4);
 
   // Increase randomly
   var interval = setInterval(function() { NProgress.inc(); }, 1000);
@@ -38,8 +38,8 @@
     clearInterval(interval);
     NProgress.done();
 
-    // finish hero page profile loading effect
-    $('.hero-profile').removeClass('is-loading');
+    // show hero page after page is fully loaded
+    $('.hero-container,.hero-profile').removeClass('is-loading');
   });
 
 
@@ -50,41 +50,6 @@
    */
 
   Pil.init();
-
-
-  /**
-   * ------------------------------------------------------------------------
-   * Navigation scripts to Show header on scroll-up - headroom.js
-   * ------------------------------------------------------------------------
-   */
-
-  // grab an element
-  var myElement = document.querySelector('.headroom');
-
-  if(window.location.hash) {
-    myElement.classList.add('headroom--unpinned');
-  }
-
-  // construct an instance of Headroom, passing the element
-  var headroom  = new Headroom(myElement, {
-    tolerance: {
-      down : 10,
-      up : 20
-    },
-    offset : 15
-  });
-  // initialise
-  headroom.init();
-
-
-  /**
-   * ------------------------------------------------------------------------
-   * AnchorJS options and selector - anchor.js
-   * ------------------------------------------------------------------------
-   */
-
-  anchors.options.placement = 'left';
-  anchors.add('.markdown-body>h3,.markdown-body>h4,.archive>h3');
 
 
   /**
@@ -129,24 +94,38 @@
   // is ready for JavaScript code to execute.
   $(function () { // BEGIN document ready function
 
-    /**
-     * ------------------------------------------------------------------------
-     * Footnotes header
-     * ------------------------------------------------------------------------
-     */
 
-    $('.footnotes ').prepend('<hr><h4 id="footnotes">Footnotes</h4>');
+    //
+    // Header navbar
+    //
 
+    // if url has a hash hide navbar
+    if (window.location.hash) {
+      $('.header-navbar').addClass('is-fixed');
+    }
 
-    /**
-     * ------------------------------------------------------------------------
-     * Random posts init
-     * ------------------------------------------------------------------------
-     */
-
-    generateRandomPosts();
-
-    $('.random-posts').append('<div class="random-posts-footer"><a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a></div>');
+    // primary navigation slide-in effect
+    $(window).on('scroll', {
+      previousTop: 0
+    },
+    function () {
+      var headerHeight = $('.header-navbar').height();
+      var currentTop = $(window).scrollTop();
+      // check if user is scrolling up
+      if (currentTop < this.previousTop ) {
+        // if scrolling up...
+        if (currentTop > 0 && $('.header-navbar').hasClass('is-fixed')) {
+          $('.header-navbar').addClass('is-visible');
+        } else {
+          $('.header-navbar').removeClass('is-visible is-fixed');
+        }
+      } else {
+        // if scrolling down...
+        $('.header-navbar').removeClass('is-visible');
+        if( currentTop > headerHeight && !$('.header-navbar').hasClass('is-fixed')) $('.header-navbar').addClass('is-fixed');
+      }
+      this.previousTop = currentTop;
+    });
 
 
     /**
@@ -180,6 +159,50 @@
 
     $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
     $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+
+
+    /**
+     * ------------------------------------------------------------------------
+     * Footnotes header
+     * ------------------------------------------------------------------------
+     */
+
+     var footnotesAnchor = '<a class="header-link" href="#footnotes" aria-hidden="true"><i class="fa fa-link" aria-hidden="true"></i></a>';
+
+    $('.footnotes ').prepend('<hr><h4 id="footnotes">' + footnotesAnchor + 'Footnotes</h4>');
+
+
+    /**
+     * ------------------------------------------------------------------------
+     * Markdown body header link
+     * ------------------------------------------------------------------------
+     */
+
+    var postHeader = '.markdown-body>h3,.markdown-body>h4,.archive>h3';
+
+    $(postHeader).filter('[id]').each(function () {
+      var header      = $(this),
+          headerID    = header.attr('id'),
+          anchorClass = 'header-link',
+          anchorIcon  = '<i class="fa fa-link" aria-hidden="true"></i>';
+
+      if (headerID) {
+        header.prepend($('<a />').addClass(anchorClass).attr({ 'href': '#' + headerID, 'aria-hidden': 'true' }).html(anchorIcon));
+      }
+
+      return this;
+    });
+
+
+    /**
+     * ------------------------------------------------------------------------
+     * Random posts init
+     * ------------------------------------------------------------------------
+     */
+
+    generateRandomPosts();
+
+    $('.random-posts').append('<div class="random-posts-footer"><a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a></div>');
 
 
     /**

@@ -4,16 +4,15 @@
 
 .pager {
   padding-left: 0;
-  // margin: $line-height-computed 0;
-  list-style: none;
+  margin: 20px 0 40px; // $line-height-computed 0;
   text-align: center;
+  list-style: none;
   @include clearfix;
 
-  margin: 20px 0 40px;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   -moz-font-feature-settings: liga on;
 
   li {
@@ -27,21 +26,21 @@
       // border: 1px solid $pager-border;
       // border-radius: $pager-border-radius;
 
+      padding: 12.5px 20px;
       font-family: $theme-font-family-base;
-      // text-transform: uppercase;
       font-size: 12px;
+      // text-transform: uppercase;
       font-weight: 400;
       // letter-spacing: -.02em;
       letter-spacing: 0;
-      padding: 12.5px 20px;
-      color: rgba(0,0,0,0.44);
+      color: rgba(0,0,0,.44);
       background-color: rgba(0,0,0,0);
-      border: 1px solid rgba(0,0,0,0.15);
+      border: 1px solid rgba(0,0,0,.15);
       border-radius: 999em;
 
       @media (min-width: 768px) {
-        font-size: 14px;
         padding: 15px 25px;
+        font-size: 14px;
       }
     }
 
@@ -49,17 +48,17 @@
       // text-decoration: none;
       // background-color: $pager-hover-bg;
 
+      color: rgba(0,0,0,.6);
       background-color: rgba(0,0,0,0);
-      color: rgba(0,0,0,0.6);
-      border-color: rgba(0,0,0,0.3);
+      border-color: rgba(0,0,0,.3);
     }
 
     > a:focus,
     > a:active {
-      outline: 0;
+      color: rgba(0,0,0,.8);
       background-color: rgba(0,0,0,0);
-      color: rgba(0,0,0,0.8);
-      border-color: rgba(0,0,0,0.6);
+      border-color: rgba(0,0,0,.6);
+      outline: 0;
     }
   }
 

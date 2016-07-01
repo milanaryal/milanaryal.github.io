@@ -1,6 +1,7 @@
 ---
 layout: default
 description: "I'm a student living in Kathmandu, Nepal who loves getting lost in web design, front-end development, and listening music a lot."
+image: "/assets/img/hero.jpg"
 permalink: /
 ---
 
@@ -19,9 +20,14 @@ permalink: /
   {% assign site_author_avatar = site_author_avatar | escape %}
 {% endif %}
 
-<!-- Wrapper -->
-<main class="hero-container clearfix" role="main" itemprop="mainContentOfPage">
-  <!-- Container -->
+{% assign page_image = page.image.path | default: page.image %}
+{% if page_image %}
+  {% assign page_image = page_image | escape %}
+{% endif %}
+
+<!-- Hero container -->
+<main class="hero-container is-loading" style="background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('{{ page_image }}');" role="main" itemprop="mainContentOfPage">
+  <!-- Hero profile -->
   <section class="hero-profile is-loading" itemscope itemtype="https://schema.org/Person">
     <link itemprop="url" href="/">
     <header>
@@ -44,9 +50,9 @@ permalink: /
 
     <footer>
       <ul class="hero-social">
-        {% if site.author.twitter %}<li><a itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}" class="fa fa-twitter">Twitter</a></li>{% endif %}
-        {% if site.author.instagram %}<li><a itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}" class="fa fa-instagram">Instagram</a></li>{% endif %}
-        {% if site.author.tumblr %}<li><a itemprop="sameAs" rel="me" href="http://{{ site.author.tumblr }}.tumblr.com" class="fa fa-tumblr">Tumblr</a></li>{% endif %}
+        {% if site.author.twitter %}<li><a itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}" class="fa fa-twitter"><span class="label">Twitter</span></a></li>{% endif %}
+        {% if site.author.instagram %}<li><a itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}" class="fa fa-instagram"><span class="label">Instagram</span></a></li>{% endif %}
+        {% if site.author.tumblr %}<li><a itemprop="sameAs" rel="me" href="http://{{ site.author.tumblr }}.tumblr.com" class="fa fa-tumblr"><span class="label">Tumblr</span></a></li>{% endif %}
       </ul>
 
       {% if site.author.facebook %}<link itemprop="sameAs" rel="me" href="//www.facebook.com/{{ site.author.facebook }}">{% endif %}

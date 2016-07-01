@@ -1,112 +1,112 @@
 /*!
- * Milan Aryal Gruntfile (http://milanaryal.com)
+ * Milan Aryal Gruntfile (https://milanaryal.com)
  * Copyright 2015 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
 
+// Getting started with Grunt:
+//
+// 1. Install Node.js
+// 2. $ npm install -g grunt-cli
+// 3. $ cd ./milanaryal.github.io
+// 4. $ npm install
+// 5. $ grunt
+//
+//
+// Grunt task(s):
+//
+// - Default task (test JS and SCSS)
+//   $ grunt
+//
+// - Only test JS
+//   $ grunt test-js
+//
+// - Only test SCSS
+//   $ grunt test-scss
+//
+// - Only distribute JS
+//   $ grunt dist-js
+//
+// - Only distribute JS
+//   $ grunt dist-css
+//
+// - Full distribution of JS, CSS, and Fonts
+//  $ grunt dist
+
 module.exports = function (grunt) {
   'use strict';
-
-  // Display the elapsed execution time of grunt tasks.
-  require('time-grunt')(grunt);
-  // Add vendor prefixes.
-  var autoprefixer = require('autoprefixer')({
-    browsers: [
-      'Chrome >= 35',
-      'Firefox >= 38',
-      'Edge >= 12',
-      'Explorer >= 9',
-      'iOS >= 8',
-      'Safari >= 8',
-      'Android 2.3',
-      'Android >= 4',
-      'Opera >= 12'
-    ]
-  });
 
   // Project configuration.
   grunt.initConfig({
 
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
-    project: {
-      src: 'src',
-      app: '',
-      assets: 'assets',
-      banner: '/*!\n' +
-              ' * <%= pkg.title %> (<%= pkg.homepage %>)\n' +
-              ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-              ' * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)\n' +
-              ' */\n',
-      css: [
-        '<%= project.src %>/scss/styles.scss'
-      ],
-      js: [
-        '<%= project.src %>/js/jquery.js',
-        '<%= project.src %>/js/bootstrap/transition.js',
-        // '<%= project.src %>/js/bootstrap/alert.js',
-        // '<%= project.src %>/js/bootstrap/button.js',
-        // '<%= project.src %>/js/bootstrap/carousel.js',
-        '<%= project.src %>/js/bootstrap/collapse.js',
-        // '<%= project.src %>/js/bootstrap/dropdown.js',
-        // '<%= project.src %>/js/bootstrap/modal.js',
-        '<%= project.src %>/js/bootstrap/tooltip.js',
-        // '<%= project.src %>/js/bootstrap/popover.js',
-        // '<%= project.src %>/js/bootstrap/scrollspy.js',
-        // '<%= project.src %>/js/bootstrap/tab.js',
-        // '<%= project.src %>/js/bootstrap/affix.js',
-        '<%= project.src %>/js/nprogress.js',
-        '<%= project.src %>/js/headroom.js',
-        '<%= project.src %>/js/anchor.js',
-        '<%= project.src %>/js/pil.js',
-        '<%= project.src %>/js/scripts.js'
-      ]
-    },
+    banner: '/*!\n' +
+            ' * <%= pkg.title %> (<%= pkg.homepage %>)\n' +
+            ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)\n' +
+            ' */\n',
 
     // Task(s) configuration.
     clean: {
       css: [
-        '<%= project.assets %>/css/styles.css',
-        '<%= project.assets %>/css/styles.css.map',
-        '<%= project.assets %>/css/styles.min.css',
-        '<%= project.assets %>/css/styles.min.css.map'
+        'assets/css'
       ],
       js: [
-        '<%= project.assets %>/js/scripts.js',
-        '<%= project.assets %>/js/scripts.min.js'
+        'assets/js'
       ],
       fonts: [
-        '<%= project.assets %>/fonts',
+        'assets/fonts'
       ]
     },
 
-    // JS build configuration
+    // JS build configuration.
     jshint: {
       options: {
-        jshintrc: '<%= project.src %>/js/.jshintrc'
+        jshintrc: 'src/js/.jshintrc'
       },
       core: {
-        src: ['<%= project.js %>', '!<%= project.src %>/js/jquery.js']
+        src: ['src/js/**/*.js', '!src/js/jquery.js', '!src/js/bootstrap/*.js']
       }
     },
 
     jscs: {
       options: {
-        config: '<%= project.src %>/js/.jscsrc'
+        config: 'src/js/.jscsrc',
+        options: {
+         requireCamelCaseOrUpperCaseIdentifiers: null
+       }
       },
       core: {
-        src: ['<%= project.js %>', '!<%= project.src %>/js/jquery.js']
+        src: ['src/js/**/*.js', '!src/js/jquery.js', '!src/js/bootstrap/*.js']
       }
     },
 
     concat: {
       options: {
-        banner: '<%= project.banner %>\n',
+        banner: '<%= banner %>\n',
         stripBanners: false
       },
       core: {
-        src: '<%= project.js %>',
-        dest: '<%= project.assets %>/js/scripts.js'
+        src: [
+          'src/js/jquery.js',
+          'src/js/bootstrap/transition.js',
+          // 'src/js/bootstrap/alert.js',
+          // 'src/js/bootstrap/button.js',
+          // 'src/js/bootstrap/carousel.js',
+          'src/js/bootstrap/collapse.js',
+          // 'src/js/bootstrap/dropdown.js',
+          // 'src/js/bootstrap/modal.js',
+          'src/js/bootstrap/tooltip.js',
+          // 'src/js/bootstrap/popover.js',
+          // 'src/js/bootstrap/scrollspy.js',
+          // 'src/js/bootstrap/tab.js',
+          // 'src/js/bootstrap/affix.js',
+          'src/js/nprogress.js',
+          'src/js/pil.js',
+          'src/js/scripts.js'
+        ],
+        dest: 'assets/js/scripts.js'
       }
     },
 
@@ -119,55 +119,24 @@ module.exports = function (grunt) {
         preserveComments: false
       },
       core: {
-        src: '<%= project.js %>',
-        dest: '<%= project.assets %>/js/scripts.min.js'
+        src: '<%= concat.core.dest %>',
+        dest: 'assets/js/scripts.min.js'
       }
     },
 
-    // CSS build configuration
+    // CSS build configuration.
     scsslint: {
       options: {
-        bundleExec: true,
-        config: '<%= project.src %>/scss/.scss-lint.yml',
+        bundleExec: false,
+        config: 'src/scss/.scss-lint.yml',
         reporterOutput: null
       },
-      src: ['<%= project.src %>/scss/*.scss', '!<%= project.src %>/scss/bootstrap/_normalize.scss']
+      src: ['src/scss/**/*.scss', '!src/scss/bootstrap/**/*.scss', '!src/scss/font-awesome/**/*.scss']
     },
 
-    sass: {
-      options: {
-        includePaths: ['scss'],
-        precision: 6,
-        sourceComments: false,
-        sourceMap: true,
-        outputStyle: 'expanded'
-      },
-      core: {
-        files: {
-          '<%= project.assets %>/css/styles.css': '<%= project.css %>'
-        }
-      }
-    },
-
-    postcss: {
-      core: {
-        options: {
-          map: true,
-          processors: [
-            autoprefixer
-          ]
-        },
-        src: '<%= project.assets %>/css/styles.css'
-      }
-    },
-
-    csscomb: {
-      options: {
-        config: '<%= project.src %>/scss/.csscomb.json'
-      },
-      core: {
-        src: '<%= project.assets %>/css/styles.css',
-        dest: '<%= project.assets %>/css/styles.css'
+    exec: {
+      postcss: {
+        command: 'npm run postcss'
       }
     },
 
@@ -175,37 +144,37 @@ module.exports = function (grunt) {
       options: {
         compatibility: 'ie9',
         keepSpecialComments: false,
-        // sourceMap: true,
+        sourceMap: false,
         advanced: true
       },
       core: {
-        src: '<%= project.assets %>/css/styles.css',
-        dest: '<%= project.assets %>/css/styles.min.css'
+        src: 'assets/css/styles.css',
+        dest: 'assets/css/styles.min.css'
       }
     },
 
     copy: {
       fonts: {
         expand: true,
-        cwd: '<%= project.src %>/fonts/',
+        cwd: 'src/fonts/',
         src: [
           '**/*'
         ],
-        dest: '<%= project.assets %>/fonts/'
+        dest: 'assets/fonts/'
       }
     },
 
     watch: {
-      scripts: {
-        files: ['<%= project.js %>'],
-        tasks: ['uglify'],
-        options: {
+      js: {
+        files: ['src/js/**/*.js'],
+        tasks: ['dist-js'],
+         options: {
           spawn: false
         }
       },
       sass: {
-        files: ['<%= project.css %>'],
-        tasks: ['sass'],
+        files: ['src/scss/**/*.scss'],
+        tasks: ['dist-css'],
         options: {
           spawn: false
         }
@@ -214,22 +183,37 @@ module.exports = function (grunt) {
 
   });
 
-  // Load multiple grunt tasks using globbing patterns.
-  require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
+
+  // Load necessary grunt tasks.
+  require('load-grunt-tasks')(grunt, { scope: 'devDependencies',
+    // Exclude Sass compilers. We choose the one to load later on.
+    pattern: ['grunt-*', '!grunt-sass', '!grunt-contrib-sass'] });
+
+  // Display the elapsed execution time of grunt tasks.
+  require('time-grunt')(grunt);
+
+  // Test JS.
+  grunt.registerTask('test-js', ['jshint', 'jscs']);
+
+  // JS distribution task.
+  grunt.registerTask('dist-js', ['concat', 'uglify']);
+
+  // Test SCSS.
+  grunt.registerTask('test-scss', ['scsslint']);
+
+  // CSS distribution task.
+  // Supported Compilers: sass (Ruby) and libsass.
+  (function (sassCompilerName) {
+    require('./src/grunt/sass-compile/' + sassCompilerName + '.js')(grunt);
+  })(process.env.SASS_COMPILER || 'libsass');
+  grunt.registerTask('sass-compile', ['sass']);
+
+  grunt.registerTask('dist-css', ['sass-compile', 'exec:postcss', 'cssmin']);
+
+  // Full distribution task.
+  grunt.registerTask('dist', ['clean', 'copy', 'dist-js', 'dist-css']);
 
   // Default task(s).
-  grunt.registerTask('default', [
-    'clean',
-    'jshint',
-    'jscs',
-    'concat',
-    'uglify',
-    'scsslint',
-    'sass',
-    'postcss',
-    'csscomb',
-    'cssmin',
-    'copy'
-  ]);
+  grunt.registerTask('default', ['test-js', 'test-scss']);
 
 };

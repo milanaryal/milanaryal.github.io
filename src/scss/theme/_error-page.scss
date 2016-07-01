@@ -4,27 +4,27 @@
 
 .error-page {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-color: white;
+  background-color: #fff;
 }
 
 .error-page-container {
   padding: 2em;
-  animation: fade-in 2s;
   transform: translateZ(0);
+  animation: fade-in 2s;
 }
 
 .error-page-message {
-  color: rgba(0,0,0,0.8);
   font-family: $theme-font-family-base;
-  font-weight: 700;
-  font-style: normal;
   font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.04em;
+  letter-spacing: -.04em;
+  color: rgba(0,0,0,.8);
 
   @media (min-width: 768px) {
     font-size: 32px;
@@ -42,24 +42,24 @@
 
 .error-page-message-small {
   margin-top: 10px;
-  color: rgba(0,0,0,0.44);
   // font-family: $theme-font-family-base;
-  font-weight: 400;
-  // font-style: normal;
   font-size: 16px;
-  letter-spacing: -0.02em;
+  // font-style: normal;
+  font-weight: 400;
+  letter-spacing: -.02em;
+  color: rgba(0,0,0,.44);
 
   @media (min-width: 768px) {
     font-size: 18px;
   }
 
   a {
-    color: rgba(0,0,0,0.44);
+    color: rgba(0,0,0,.44);
     text-decoration: underline;
 
     &:hover,
     &:active {
-      color: rgba(0,0,0,0.6);
+      color: rgba(0,0,0,.6);
       text-decoration: underline;
     }
   }

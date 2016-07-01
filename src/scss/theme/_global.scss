@@ -8,16 +8,16 @@ html {
 
 body {
   font-family: $theme-font-family-base;
-  letter-spacing: 0;
-  font-weight: 400;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
-  color: rgba(0,0,0,0.8);
   font-size: 1rem; // ~16px
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.4;
+  letter-spacing: 0;
+  color: rgba(0,0,0,.8);
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
 }
 
 
@@ -28,17 +28,17 @@ h2,
 h3,
 h4 {
   font-family: $theme-font-family-base;
-  letter-spacing: 0;
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
   line-height: 1.1;
+  letter-spacing: 0;
   color: inherit;
 }
 
 a {
   color: inherit;
-  background-color: transparent;
   text-decoration: none;
+  background-color: transparent;
   @include theme-anchor-transition();
 
   &:hover,
@@ -50,13 +50,13 @@ a {
 }
 
 ::-moz-selection {
-  background: darken(#2196f3, 6.5%);
-  color: white;
+  color: #fff;
   text-shadow: none;
+  background: darken(#2196f3, 6.5%);
 }
 
 ::selection {
-  background: darken(#2196f3, 6.5%);
-  color: white;
+  color: #fff;
   text-shadow: none;
+  background: darken(#2196f3, 6.5%);
 }

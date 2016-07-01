@@ -2,6 +2,7 @@
 layout: page
 title: "Fine print"
 description: "Website legal notice."
+image: "/assets/img/writings.jpg"
 permalink: /fine-print/
 ---
 

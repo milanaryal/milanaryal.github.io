@@ -1,5 +1,5 @@
 /*!
- * Milan Aryal (http://milanaryal.com)
+ * Milan Aryal (https://milanaryal.com)
  * Copyright 2016 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
@@ -11306,811 +11306,6 @@ return jQuery;
 });
 
 
-/*!
- * headroom.js v0.9.3 - Give your page some headroom. Hide your header until you need it
- * Copyright (c) 2016 Nick Williams - http://wicky.nillia.ms/headroom.js
- * License: MIT
- */
-
-(function(root, factory) {
-  'use strict';
-
-  if (typeof define === 'function' && define.amd) {
-    // AMD. Register as an anonymous module.
-    define([], factory);
-  }
-  else if (typeof exports === 'object') {
-    // COMMONJS
-    module.exports = factory();
-  }
-  else {
-    // BROWSER
-    root.Headroom = factory();
-  }
-}(this, function() {
-  'use strict';
-
-  /* exported features */
-  
-  var features = {
-    bind : !!(function(){}.bind),
-    classList : 'classList' in document.documentElement,
-    rAF : !!(window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame)
-  };
-  window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
-  
-  /**
-   * Handles debouncing of events via requestAnimationFrame
-   * @see http://www.html5rocks.com/en/tutorials/speed/animations/
-   * @param {Function} callback The callback to handle whichever event
-   */
-  function Debouncer (callback) {
-    this.callback = callback;
-    this.ticking = false;
-  }
-  Debouncer.prototype = {
-    constructor : Debouncer,
-  
-    /**
-     * dispatches the event to the supplied callback
-     * @private
-     */
-    update : function() {
-      this.callback && this.callback();
-      this.ticking = false;
-    },
-  
-    /**
-     * ensures events don't get stacked
-     * @private
-     */
-    requestTick : function() {
-      if(!this.ticking) {
-        requestAnimationFrame(this.rafCallback || (this.rafCallback = this.update.bind(this)));
-        this.ticking = true;
-      }
-    },
-  
-    /**
-     * Attach this as the event listeners
-     */
-    handleEvent : function() {
-      this.requestTick();
-    }
-  };
-  /**
-   * Check if object is part of the DOM
-   * @constructor
-   * @param {Object} obj element to check
-   */
-  function isDOMElement(obj) {
-    return obj && typeof window !== 'undefined' && (obj === window || obj.nodeType);
-  }
-  
-  /**
-   * Helper function for extending objects
-   */
-  function extend (object /*, objectN ... */) {
-    if(arguments.length <= 0) {
-      throw new Error('Missing arguments in extend function');
-    }
-  
-    var result = object || {},
-        key,
-        i;
-  
-    for (i = 1; i < arguments.length; i++) {
-      var replacement = arguments[i] || {};
-  
-      for (key in replacement) {
-        // Recurse into object except if the object is a DOM element
-        if(typeof result[key] === 'object' && ! isDOMElement(result[key])) {
-          result[key] = extend(result[key], replacement[key]);
-        }
-        else {
-          result[key] = result[key] || replacement[key];
-        }
-      }
-    }
-  
-    return result;
-  }
-  
-  /**
-   * Helper function for normalizing tolerance option to object format
-   */
-  function normalizeTolerance (t) {
-    return t === Object(t) ? t : { down : t, up : t };
-  }
-  
-  /**
-   * UI enhancement for fixed headers.
-   * Hides header when scrolling down
-   * Shows header when scrolling up
-   * @constructor
-   * @param {DOMElement} elem the header element
-   * @param {Object} options options for the widget
-   */
-  function Headroom (elem, options) {
-    options = extend(options, Headroom.options);
-  
-    this.lastKnownScrollY = 0;
-    this.elem             = elem;
-    this.tolerance        = normalizeTolerance(options.tolerance);
-    this.classes          = options.classes;
-    this.offset           = options.offset;
-    this.scroller         = options.scroller;
-    this.initialised      = false;
-    this.onPin            = options.onPin;
-    this.onUnpin          = options.onUnpin;
-    this.onTop            = options.onTop;
-    this.onNotTop         = options.onNotTop;
-    this.onBottom         = options.onBottom;
-    this.onNotBottom      = options.onNotBottom;
-  }
-  Headroom.prototype = {
-    constructor : Headroom,
-  
-    /**
-     * Initialises the widget
-     */
-    init : function() {
-      if(!Headroom.cutsTheMustard) {
-        return;
-      }
-  
-      this.debouncer = new Debouncer(this.update.bind(this));
-      this.elem.classList.add(this.classes.initial);
-  
-      // defer event registration to handle browser 
-      // potentially restoring previous scroll position
-      setTimeout(this.attachEvent.bind(this), 100);
-  
-      return this;
-    },
-  
-    /**
-     * Unattaches events and removes any classes that were added
-     */
-    destroy : function() {
-      var classes = this.classes;
-  
-      this.initialised = false;
-      this.elem.classList.remove(classes.unpinned, classes.pinned, classes.top, classes.notTop, classes.initial);
-      this.scroller.removeEventListener('scroll', this.debouncer, false);
-    },
-  
-    /**
-     * Attaches the scroll event
-     * @private
-     */
-    attachEvent : function() {
-      if(!this.initialised){
-        this.lastKnownScrollY = this.getScrollY();
-        this.initialised = true;
-        this.scroller.addEventListener('scroll', this.debouncer, false);
-  
-        this.debouncer.handleEvent();
-      }
-    },
-    
-    /**
-     * Unpins the header if it's currently pinned
-     */
-    unpin : function() {
-      var classList = this.elem.classList,
-        classes = this.classes;
-      
-      if(classList.contains(classes.pinned) || !classList.contains(classes.unpinned)) {
-        classList.add(classes.unpinned);
-        classList.remove(classes.pinned);
-        this.onUnpin && this.onUnpin.call(this);
-      }
-    },
-  
-    /**
-     * Pins the header if it's currently unpinned
-     */
-    pin : function() {
-      var classList = this.elem.classList,
-        classes = this.classes;
-      
-      if(classList.contains(classes.unpinned)) {
-        classList.remove(classes.unpinned);
-        classList.add(classes.pinned);
-        this.onPin && this.onPin.call(this);
-      }
-    },
-  
-    /**
-     * Handles the top states
-     */
-    top : function() {
-      var classList = this.elem.classList,
-        classes = this.classes;
-      
-      if(!classList.contains(classes.top)) {
-        classList.add(classes.top);
-        classList.remove(classes.notTop);
-        this.onTop && this.onTop.call(this);
-      }
-    },
-  
-    /**
-     * Handles the not top state
-     */
-    notTop : function() {
-      var classList = this.elem.classList,
-        classes = this.classes;
-      
-      if(!classList.contains(classes.notTop)) {
-        classList.add(classes.notTop);
-        classList.remove(classes.top);
-        this.onNotTop && this.onNotTop.call(this);
-      }
-    },
-  
-    bottom : function() {
-      var classList = this.elem.classList,
-        classes = this.classes;
-      
-      if(!classList.contains(classes.bottom)) {
-        classList.add(classes.bottom);
-        classList.remove(classes.notBottom);
-        this.onBottom && this.onBottom.call(this);
-      }
-    },
-  
-    /**
-     * Handles the not top state
-     */
-    notBottom : function() {
-      var classList = this.elem.classList,
-        classes = this.classes;
-      
-      if(!classList.contains(classes.notBottom)) {
-        classList.add(classes.notBottom);
-        classList.remove(classes.bottom);
-        this.onNotBottom && this.onNotBottom.call(this);
-      }
-    },
-  
-    /**
-     * Gets the Y scroll position
-     * @see https://developer.mozilla.org/en-US/docs/Web/API/Window.scrollY
-     * @return {Number} pixels the page has scrolled along the Y-axis
-     */
-    getScrollY : function() {
-      return (this.scroller.pageYOffset !== undefined)
-        ? this.scroller.pageYOffset
-        : (this.scroller.scrollTop !== undefined)
-          ? this.scroller.scrollTop
-          : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    },
-  
-    /**
-     * Gets the height of the viewport
-     * @see http://andylangton.co.uk/blog/development/get-viewport-size-width-and-height-javascript
-     * @return {int} the height of the viewport in pixels
-     */
-    getViewportHeight : function () {
-      return window.innerHeight
-        || document.documentElement.clientHeight
-        || document.body.clientHeight;
-    },
-  
-    /**
-     * Gets the physical height of the DOM element
-     * @param  {Object}  elm the element to calculate the physical height of which
-     * @return {int}     the physical height of the element in pixels
-     */
-    getElementPhysicalHeight : function (elm) {
-      return Math.max(
-        elm.offsetHeight,
-        elm.clientHeight
-      );
-    },
-  
-    /**
-     * Gets the physical height of the scroller element
-     * @return {int} the physical height of the scroller element in pixels
-     */
-    getScrollerPhysicalHeight : function () {
-      return (this.scroller === window || this.scroller === document.body)
-        ? this.getViewportHeight()
-        : this.getElementPhysicalHeight(this.scroller);
-    },
-  
-    /**
-     * Gets the height of the document
-     * @see http://james.padolsey.com/javascript/get-document-height-cross-browser/
-     * @return {int} the height of the document in pixels
-     */
-    getDocumentHeight : function () {
-      var body = document.body,
-        documentElement = document.documentElement;
-    
-      return Math.max(
-        body.scrollHeight, documentElement.scrollHeight,
-        body.offsetHeight, documentElement.offsetHeight,
-        body.clientHeight, documentElement.clientHeight
-      );
-    },
-  
-    /**
-     * Gets the height of the DOM element
-     * @param  {Object}  elm the element to calculate the height of which
-     * @return {int}     the height of the element in pixels
-     */
-    getElementHeight : function (elm) {
-      return Math.max(
-        elm.scrollHeight,
-        elm.offsetHeight,
-        elm.clientHeight
-      );
-    },
-  
-    /**
-     * Gets the height of the scroller element
-     * @return {int} the height of the scroller element in pixels
-     */
-    getScrollerHeight : function () {
-      return (this.scroller === window || this.scroller === document.body)
-        ? this.getDocumentHeight()
-        : this.getElementHeight(this.scroller);
-    },
-  
-    /**
-     * determines if the scroll position is outside of document boundaries
-     * @param  {int}  currentScrollY the current y scroll position
-     * @return {bool} true if out of bounds, false otherwise
-     */
-    isOutOfBounds : function (currentScrollY) {
-      var pastTop  = currentScrollY < 0,
-        pastBottom = currentScrollY + this.getScrollerPhysicalHeight() > this.getScrollerHeight();
-      
-      return pastTop || pastBottom;
-    },
-  
-    /**
-     * determines if the tolerance has been exceeded
-     * @param  {int} currentScrollY the current scroll y position
-     * @return {bool} true if tolerance exceeded, false otherwise
-     */
-    toleranceExceeded : function (currentScrollY, direction) {
-      return Math.abs(currentScrollY-this.lastKnownScrollY) >= this.tolerance[direction];
-    },
-  
-    /**
-     * determine if it is appropriate to unpin
-     * @param  {int} currentScrollY the current y scroll position
-     * @param  {bool} toleranceExceeded has the tolerance been exceeded?
-     * @return {bool} true if should unpin, false otherwise
-     */
-    shouldUnpin : function (currentScrollY, toleranceExceeded) {
-      var scrollingDown = currentScrollY > this.lastKnownScrollY,
-        pastOffset = currentScrollY >= this.offset;
-  
-      return scrollingDown && pastOffset && toleranceExceeded;
-    },
-  
-    /**
-     * determine if it is appropriate to pin
-     * @param  {int} currentScrollY the current y scroll position
-     * @param  {bool} toleranceExceeded has the tolerance been exceeded?
-     * @return {bool} true if should pin, false otherwise
-     */
-    shouldPin : function (currentScrollY, toleranceExceeded) {
-      var scrollingUp  = currentScrollY < this.lastKnownScrollY,
-        pastOffset = currentScrollY <= this.offset;
-  
-      return (scrollingUp && toleranceExceeded) || pastOffset;
-    },
-  
-    /**
-     * Handles updating the state of the widget
-     */
-    update : function() {
-      var currentScrollY  = this.getScrollY(),
-        scrollDirection = currentScrollY > this.lastKnownScrollY ? 'down' : 'up',
-        toleranceExceeded = this.toleranceExceeded(currentScrollY, scrollDirection);
-  
-      if(this.isOutOfBounds(currentScrollY)) { // Ignore bouncy scrolling in OSX
-        return;
-      }
-  
-      if (currentScrollY <= this.offset ) {
-        this.top();
-      } else {
-        this.notTop();
-      }
-  
-      if(currentScrollY + this.getViewportHeight() >= this.getScrollerHeight()) {
-        this.bottom();
-      }
-      else {
-        this.notBottom();
-      }
-  
-      if(this.shouldUnpin(currentScrollY, toleranceExceeded)) {
-        this.unpin();
-      }
-      else if(this.shouldPin(currentScrollY, toleranceExceeded)) {
-        this.pin();
-      }
-  
-      this.lastKnownScrollY = currentScrollY;
-    }
-  };
-  /**
-   * Default options
-   * @type {Object}
-   */
-  Headroom.options = {
-    tolerance : {
-      up : 0,
-      down : 0
-    },
-    offset : 0,
-    scroller: window,
-    classes : {
-      pinned : 'headroom--pinned',
-      unpinned : 'headroom--unpinned',
-      top : 'headroom--top',
-      notTop : 'headroom--not-top',
-      bottom : 'headroom--bottom',
-      notBottom : 'headroom--not-bottom',
-      initial : 'headroom'
-    }
-  };
-  Headroom.cutsTheMustard = typeof features !== 'undefined' && features.rAF && features.bind && features.classList;
-
-  return Headroom;
-}));
-/**
- * AnchorJS - v3.2.0 - 2016-06-10
- * https://github.com/bryanbraun/anchorjs
- * Copyright (c) 2016 Bryan Braun; Licensed MIT
- */
-
-/* eslint-env amd, node */
-
-'use strict';
-
-// https://github.com/umdjs/umd/blob/master/templates/returnExports.js
-(function (root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    // AMD. Register as an anonymous module.
-    define([], factory);
-  } else if (typeof module === 'object' && module.exports) {
-    // Node. Does not work with strict CommonJS, but
-    // only CommonJS-like environments that support module.exports,
-    // like Node.
-    module.exports = factory();
-  } else {
-    // Browser globals (root is window)
-    root.AnchorJS = factory();
-    root.anchors = new root.AnchorJS();
-  }
-}(this, function () {
-
-  function AnchorJS(options) {
-    this.options = options || {};
-    this.elements = [];
-
-    /**
-     * Assigns options to the internal options object, and provides defaults.
-     * @param {Object} opts - Options object
-     */
-    function _applyRemainingDefaultOptions(opts) {
-      opts.icon = opts.hasOwnProperty('icon') ? opts.icon : '\ue9cb'; // Accepts characters (and also URLs?), like  '#', '¶', '❡', or '§'.
-      opts.visible = opts.hasOwnProperty('visible') ? opts.visible : 'hover'; // Also accepts 'always' & 'touch'
-      opts.placement = opts.hasOwnProperty('placement') ? opts.placement : 'right'; // Also accepts 'left'
-      opts.class = opts.hasOwnProperty('class') ? opts.class : ''; // Accepts any class name.
-      // Using Math.floor here will ensure the value is Number-cast and an integer.
-      opts.truncate = opts.hasOwnProperty('truncate') ? Math.floor(opts.truncate) : 64; // Accepts any value that can be typecast to a number.
-    }
-
-    _applyRemainingDefaultOptions(this.options);
-
-    /**
-     * Checks to see if this device supports touch. Uses criteria pulled from Modernizr:
-     * https://github.com/Modernizr/Modernizr/blob/da22eb27631fc4957f67607fe6042e85c0a84656/feature-detects/touchevents.js#L40
-     * @return {Boolean} - true if the current device supports touch.
-     */
-    this.isTouchDevice = function() {
-      return !!(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
-    };
-
-    /**
-     * Add anchor links to page elements.
-     * @param  {String|Array|Nodelist} selector - A CSS selector for targeting the elements you wish to add anchor links
-     *                                            to. Also accepts an array or nodeList containing the relavant elements.
-     * @return {this}                           - The AnchorJS object
-     */
-    this.add = function(selector) {
-      var elements,
-          elsWithIds,
-          idList,
-          elementID,
-          i,
-          index,
-          count,
-          tidyText,
-          newTidyText,
-          readableID,
-          anchor,
-          visibleOptionToUse,
-          indexesToDrop = [];
-
-      // We reapply options here because somebody may have overwritten the default options object when setting options.
-      // For example, this overwrites all options but visible:
-      //
-      // anchors.options = { visible: 'always'; }
-      _applyRemainingDefaultOptions(this.options);
-
-      visibleOptionToUse = this.options.visible;
-      if (visibleOptionToUse === 'touch') {
-        visibleOptionToUse = this.isTouchDevice() ? 'always' : 'hover';
-      }
-
-      // Provide a sensible default selector, if none is given.
-      if (!selector) {
-        selector = 'h1, h2, h3, h4, h5, h6';
-      }
-
-      elements = _getElements(selector);
-
-      if (elements.length === 0) {
-        return false;
-      }
-
-      _addBaselineStyles();
-
-      // We produce a list of existing IDs so we don't generate a duplicate.
-      elsWithIds = document.querySelectorAll('[id]');
-      idList = [].map.call(elsWithIds, function assign(el) {
-        return el.id;
-      });
-
-      for (i = 0; i < elements.length; i++) {
-        if (this.hasAnchorJSLink(elements[i])) {
-          indexesToDrop.push(i);
-          continue;
-        }
-
-        if (elements[i].hasAttribute('id')) {
-          elementID = elements[i].getAttribute('id');
-        } else {
-          tidyText = this.urlify(elements[i].textContent);
-
-          // Compare our generated ID to existing IDs (and increment it if needed)
-          // before we add it to the page.
-          newTidyText = tidyText;
-          count = 0;
-          do {
-            if (index !== undefined) {
-              newTidyText = tidyText + '-' + count;
-            }
-
-            index = idList.indexOf(newTidyText);
-            count += 1;
-          } while (index !== -1);
-          index = undefined;
-          idList.push(newTidyText);
-
-          elements[i].setAttribute('id', newTidyText);
-          elementID = newTidyText;
-        }
-
-        readableID = elementID.replace(/-/g, ' ');
-
-        // The following code builds the following DOM structure in a more effiecient (albeit opaque) way.
-        // '<a class="anchorjs-link ' + this.options.class + '" href="#' + elementID + '" aria-label="Anchor link for: ' + readableID + '" data-anchorjs-icon="' + this.options.icon + '"></a>';
-        anchor = document.createElement('a');
-        anchor.className = 'anchorjs-link ' + this.options.class;
-        anchor.href = '#' + elementID;
-        anchor.setAttribute('aria-label', 'Anchor link for: ' + readableID);
-        anchor.setAttribute('data-anchorjs-icon', this.options.icon);
-
-        if (visibleOptionToUse === 'always') {
-          anchor.style.opacity = '1';
-        }
-
-        if (this.options.icon === '\ue9cb') {
-          anchor.style.fontFamily = 'anchorjs-icons';
-          anchor.style.fontStyle = 'normal';
-          anchor.style.fontVariant = 'normal';
-          anchor.style.fontWeight = 'normal';
-          anchor.style.lineHeight = 1;
-
-          // We set lineHeight = 1 here because the `anchorjs-icons` font family could otherwise affect the
-          // height of the heading. This isn't the case for icons with `placement: left`, so we restore
-          // line-height: inherit in that case, ensuring they remain positioned correctly. For more info,
-          // see https://github.com/bryanbraun/anchorjs/issues/39.
-          if (this.options.placement === 'left') {
-            anchor.style.lineHeight = 'inherit';
-          }
-        }
-
-        if (this.options.placement === 'left') {
-          anchor.style.position = 'absolute';
-          anchor.style.marginLeft = '-1em';
-          anchor.style.paddingRight = '0.5em';
-          elements[i].insertBefore(anchor, elements[i].firstChild);
-        } else { // if the option provided is `right` (or anything else).
-          anchor.style.paddingLeft = '0.375em';
-          elements[i].appendChild(anchor);
-        }
-      }
-
-      for (i = 0; i < indexesToDrop.length; i++) {
-        elements.splice(indexesToDrop[i] - i, 1);
-      }
-      this.elements = this.elements.concat(elements);
-
-      return this;
-    };
-
-    /**
-     * Removes all anchorjs-links from elements targed by the selector.
-     * @param  {String|Array|Nodelist} selector - A CSS selector string targeting elements with anchor links,
-     *                                       	  	OR a nodeList / array containing the DOM elements.
-     * @return {this}                           - The AnchorJS object
-     */
-    this.remove = function(selector) {
-      var index,
-          domAnchor,
-          elements = _getElements(selector);
-
-      for (var i = 0; i < elements.length; i++) {
-        domAnchor = elements[i].querySelector('.anchorjs-link');
-        if (domAnchor) {
-          // Drop the element from our main list, if it's in there.
-          index = this.elements.indexOf(elements[i]);
-          if (index !== -1) {
-            this.elements.splice(index, 1);
-          }
-          // Remove the anchor from the DOM.
-          elements[i].removeChild(domAnchor);
-        }
-      }
-      return this;
-    };
-
-    /**
-     * Removes all anchorjs links. Mostly used for tests.
-     */
-    this.removeAll = function() {
-      this.remove(this.elements);
-    };
-
-    /**
-     * Urlify - Refine text so it makes a good ID.
-     *
-     * To do this, we remove apostrophes, replace nonsafe characters with hyphens,
-     * remove extra hyphens, truncate, trim hyphens, and make lowercase.
-     *
-     * @param  {String} text - Any text. Usually pulled from the webpage element we are linking to.
-     * @return {String}      - hyphen-delimited text for use in IDs and URLs.
-     */
-    this.urlify = function(text) {
-      // Regex for finding the nonsafe URL characters (many need escaping): & +$,:;=?@"#{}|^~[`%!']./()*\
-      var nonsafeChars = /[& +$,:;=?@"#{}|^~[`%!'\]\.\/\(\)\*\\]/g,
-          urlText;
-
-      // The reason we include this _applyRemainingDefaultOptions is so urlify can be called independently,
-      // even after setting options. This can be useful for tests or other applications.
-      if (!this.options.truncate) {
-        _applyRemainingDefaultOptions(this.options);
-      }
-
-      // Note: we trim hyphens after truncating because truncating can cause dangling hyphens.
-      // Example string:                                  // " ⚡⚡ Don't forget: URL fragments should be i18n-friendly, hyphenated, short, and clean."
-      urlText = text.trim()                               // "⚡⚡ Don't forget: URL fragments should be i18n-friendly, hyphenated, short, and clean."
-                    .replace(/\'/gi, '')                  // "⚡⚡ Dont forget: URL fragments should be i18n-friendly, hyphenated, short, and clean."
-                    .replace(nonsafeChars, '-')           // "⚡⚡-Dont-forget--URL-fragments-should-be-i18n-friendly--hyphenated--short--and-clean-"
-                    .replace(/-{2,}/g, '-')               // "⚡⚡-Dont-forget-URL-fragments-should-be-i18n-friendly-hyphenated-short-and-clean-"
-                    .substring(0, this.options.truncate)  // "⚡⚡-Dont-forget-URL-fragments-should-be-i18n-friendly-hyphenated-"
-                    .replace(/^-+|-+$/gm, '')             // "⚡⚡-Dont-forget-URL-fragments-should-be-i18n-friendly-hyphenated"
-                    .toLowerCase();                       // "⚡⚡-dont-forget-url-fragments-should-be-i18n-friendly-hyphenated"
-
-      return urlText;
-    };
-
-    /**
-     * Determines if this element already has an AnchorJS link on it.
-     * Uses this technique: http://stackoverflow.com/a/5898748/1154642
-     * @param    {HTMLElemnt}  el - a DOM node
-     * @return   {Boolean}     true/false
-     */
-    this.hasAnchorJSLink = function(el) {
-      var hasLeftAnchor = el.firstChild && ((' ' + el.firstChild.className + ' ').indexOf(' anchorjs-link ') > -1),
-          hasRightAnchor = el.lastChild && ((' ' + el.lastChild.className + ' ').indexOf(' anchorjs-link ') > -1);
-
-      return hasLeftAnchor || hasRightAnchor || false;
-    };
-
-    /**
-     * Turns a selector, nodeList, or array of elements into an array of elements (so we can use array methods).
-     * It also throws errors on any other inputs. Used to handle inputs to .add and .remove.
-     * @param  {String|Array|Nodelist} input - A CSS selector string targeting elements with anchor links,
-     *                                       	 OR a nodeList / array containing the DOM elements.
-     * @return {Array} - An array containing the elements we want.
-     */
-    function _getElements(input) {
-      var elements;
-      if (typeof input === 'string' || input instanceof String) {
-        // See https://davidwalsh.name/nodelist-array for the technique transforming nodeList -> Array.
-        elements = [].slice.call(document.querySelectorAll(input));
-      // I checked the 'input instanceof NodeList' test in IE9 and modern browsers and it worked for me.
-      } else if (Array.isArray(input) || input instanceof NodeList) {
-        elements = [].slice.call(input);
-      } else {
-        throw new Error('The selector provided to AnchorJS was invalid.');
-      }
-      return elements;
-    }
-
-    /**
-     * _addBaselineStyles
-     * Adds baseline styles to the page, used by all AnchorJS links irregardless of configuration.
-     */
-    function _addBaselineStyles() {
-      // We don't want to add global baseline styles if they've been added before.
-      if (document.head.querySelector('style.anchorjs') !== null) {
-        return;
-      }
-
-      var style = document.createElement('style'),
-          linkRule =
-          ' .anchorjs-link {'                       +
-          '   opacity: 0;'                          +
-          '   text-decoration: none;'               +
-          '   -webkit-font-smoothing: antialiased;' +
-          '   -moz-osx-font-smoothing: grayscale;'  +
-          ' }',
-          hoverRule =
-          ' *:hover > .anchorjs-link,'              +
-          ' .anchorjs-link:focus  {'                +
-          '   opacity: 1;'                          +
-          ' }',
-          anchorjsLinkFontFace =
-          ' @font-face {'                           +
-          '   font-family: "anchorjs-icons";'       +
-          '   font-style: normal;'                  +
-          '   font-weight: normal;'                 + // Icon from icomoon; 10px wide & 10px tall; 2 empty below & 4 above
-          '   src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBTUAAAC8AAAAYGNtYXAWi9QdAAABHAAAAFRnYXNwAAAAEAAAAXAAAAAIZ2x5Zgq29TcAAAF4AAABNGhlYWQEZM3pAAACrAAAADZoaGVhBhUDxgAAAuQAAAAkaG10eASAADEAAAMIAAAAFGxvY2EAKACuAAADHAAAAAxtYXhwAAgAVwAAAygAAAAgbmFtZQ5yJ3cAAANIAAAB2nBvc3QAAwAAAAAFJAAAACAAAwJAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADpywPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAOAAAAAoACAACAAIAAQAg6cv//f//AAAAAAAg6cv//f//AAH/4xY5AAMAAQAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAACADEARAJTAsAAKwBUAAABIiYnJjQ/AT4BMzIWFxYUDwEGIicmND8BNjQnLgEjIgYPAQYUFxYUBw4BIwciJicmND8BNjIXFhQPAQYUFx4BMzI2PwE2NCcmNDc2MhcWFA8BDgEjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAEAAAABAACiToc1Xw889QALBAAAAAAA0XnFFgAAAADRecUWAAAAAAJTAsAAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAAlMAAQAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAACAAAAAoAAMQAAAAAACgAUAB4AmgABAAAABQBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADgAAAAEAAAAAAAIABwCfAAEAAAAAAAMADgBLAAEAAAAAAAQADgC0AAEAAAAAAAUACwAqAAEAAAAAAAYADgB1AAEAAAAAAAoAGgDeAAMAAQQJAAEAHAAOAAMAAQQJAAIADgCmAAMAAQQJAAMAHABZAAMAAQQJAAQAHADCAAMAAQQJAAUAFgA1AAMAAQQJAAYAHACDAAMAAQQJAAoANAD4YW5jaG9yanMtaWNvbnMAYQBuAGMAaABvAHIAagBzAC0AaQBjAG8AbgBzVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwYW5jaG9yanMtaWNvbnMAYQBuAGMAaABvAHIAagBzAC0AaQBjAG8AbgBzYW5jaG9yanMtaWNvbnMAYQBuAGMAaABvAHIAagBzAC0AaQBjAG8AbgBzUmVndWxhcgBSAGUAZwB1AGwAYQByYW5jaG9yanMtaWNvbnMAYQBuAGMAaABvAHIAagBzAC0AaQBjAG8AbgBzRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format("truetype");' +
-          ' }',
-          pseudoElContent =
-          ' [data-anchorjs-icon]::after {'          +
-          '   content: attr(data-anchorjs-icon);'   +
-          ' }',
-          firstStyleEl;
-
-      style.className = 'anchorjs';
-      style.appendChild(document.createTextNode('')); // Necessary for Webkit.
-
-      // We place it in the head with the other style tags, if possible, so as to
-      // not look out of place. We insert before the others so these styles can be
-      // overridden if necessary.
-      firstStyleEl = document.head.querySelector('[rel="stylesheet"], style');
-      if (firstStyleEl === undefined) {
-        document.head.appendChild(style);
-      } else {
-        document.head.insertBefore(style, firstStyleEl);
-      }
-
-      style.sheet.insertRule(linkRule, style.sheet.cssRules.length);
-      style.sheet.insertRule(hoverRule, style.sheet.cssRules.length);
-      style.sheet.insertRule(pseudoElContent, style.sheet.cssRules.length);
-      style.sheet.insertRule(anchorjsLinkFontFace, style.sheet.cssRules.length);
-    }
-  }
-
-  return AnchorJS;
-}));
-
 /*
  * Pil v0.1.0
  *
@@ -12190,7 +11385,7 @@ var Pil = (function(){
 })();
 /**
  * --------------------------------------------------------------------------
- * Milan Aryal (http://milanaryal.com): scripts.js
+ * Milan Aryal (https://milanaryal.com): scripts.js
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -12198,9 +11393,9 @@ var Pil = (function(){
 ;(function ($, window, document, undefined) {
   'use strict';
 
-  var newURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
-  var msg = 'Welcome to: ';
-  console.log(msg + newURL);
+  var currentURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
+  var logMSG = 'Welcome to: ';
+  console.log(logMSG + currentURL);
 
 
   /**
@@ -12218,7 +11413,7 @@ var Pil = (function(){
   NProgress.start();
 
   // Progress percentage
-  NProgress.set(0.4);
+  // NProgress.set(0.4);
 
   // Increase randomly
   var interval = setInterval(function() { NProgress.inc(); }, 1000);
@@ -12228,8 +11423,8 @@ var Pil = (function(){
     clearInterval(interval);
     NProgress.done();
 
-    // finish hero page profile loading effect
-    $('.hero-profile').removeClass('is-loading');
+    // show hero page after page is fully loaded
+    $('.hero-container,.hero-profile').removeClass('is-loading');
   });
 
 
@@ -12240,41 +11435,6 @@ var Pil = (function(){
    */
 
   Pil.init();
-
-
-  /**
-   * ------------------------------------------------------------------------
-   * Navigation scripts to Show header on scroll-up - headroom.js
-   * ------------------------------------------------------------------------
-   */
-
-  // grab an element
-  var myElement = document.querySelector('.headroom');
-
-  if(window.location.hash) {
-    myElement.classList.add('headroom--unpinned');
-  }
-
-  // construct an instance of Headroom, passing the element
-  var headroom  = new Headroom(myElement, {
-    tolerance: {
-      down : 10,
-      up : 20
-    },
-    offset : 15
-  });
-  // initialise
-  headroom.init();
-
-
-  /**
-   * ------------------------------------------------------------------------
-   * AnchorJS options and selector - anchor.js
-   * ------------------------------------------------------------------------
-   */
-
-  anchors.options.placement = 'left';
-  anchors.add('.markdown-body>h3,.markdown-body>h4,.archive>h3');
 
 
   /**
@@ -12319,24 +11479,38 @@ var Pil = (function(){
   // is ready for JavaScript code to execute.
   $(function () { // BEGIN document ready function
 
-    /**
-     * ------------------------------------------------------------------------
-     * Footnotes header
-     * ------------------------------------------------------------------------
-     */
 
-    $('.footnotes ').prepend('<hr><h4 id="footnotes">Footnotes</h4>');
+    //
+    // Header navbar
+    //
 
+    // if url has a hash hide navbar
+    if (window.location.hash) {
+      $('.header-navbar').addClass('is-fixed');
+    }
 
-    /**
-     * ------------------------------------------------------------------------
-     * Random posts init
-     * ------------------------------------------------------------------------
-     */
-
-    generateRandomPosts();
-
-    $('.random-posts').append('<div class="random-posts-footer"><a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a></div>');
+    // primary navigation slide-in effect
+    $(window).on('scroll', {
+      previousTop: 0
+    },
+    function () {
+      var headerHeight = $('.header-navbar').height();
+      var currentTop = $(window).scrollTop();
+      // check if user is scrolling up
+      if (currentTop < this.previousTop ) {
+        // if scrolling up...
+        if (currentTop > 0 && $('.header-navbar').hasClass('is-fixed')) {
+          $('.header-navbar').addClass('is-visible');
+        } else {
+          $('.header-navbar').removeClass('is-visible is-fixed');
+        }
+      } else {
+        // if scrolling down...
+        $('.header-navbar').removeClass('is-visible');
+        if( currentTop > headerHeight && !$('.header-navbar').hasClass('is-fixed')) $('.header-navbar').addClass('is-fixed');
+      }
+      this.previousTop = currentTop;
+    });
 
 
     /**
@@ -12370,6 +11544,50 @@ var Pil = (function(){
 
     $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
     $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+
+
+    /**
+     * ------------------------------------------------------------------------
+     * Footnotes header
+     * ------------------------------------------------------------------------
+     */
+
+     var footnotesAnchor = '<a class="header-link" href="#footnotes" aria-hidden="true"><i class="fa fa-link" aria-hidden="true"></i></a>';
+
+    $('.footnotes ').prepend('<hr><h4 id="footnotes">' + footnotesAnchor + 'Footnotes</h4>');
+
+
+    /**
+     * ------------------------------------------------------------------------
+     * Markdown body header link
+     * ------------------------------------------------------------------------
+     */
+
+    var postHeader = '.markdown-body>h3,.markdown-body>h4,.archive>h3';
+
+    $(postHeader).filter('[id]').each(function () {
+      var header      = $(this),
+          headerID    = header.attr('id'),
+          anchorClass = 'header-link',
+          anchorIcon  = '<i class="fa fa-link" aria-hidden="true"></i>';
+
+      if (headerID) {
+        header.prepend($('<a />').addClass(anchorClass).attr({ 'href': '#' + headerID, 'aria-hidden': 'true' }).html(anchorIcon));
+      }
+
+      return this;
+    });
+
+
+    /**
+     * ------------------------------------------------------------------------
+     * Random posts init
+     * ------------------------------------------------------------------------
+     */
+
+    generateRandomPosts();
+
+    $('.random-posts').append('<div class="random-posts-footer"><a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a></div>');
 
 
     /**

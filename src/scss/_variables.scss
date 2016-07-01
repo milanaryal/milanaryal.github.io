@@ -8,9 +8,9 @@
 // Theme content Font, line-height, and color for body text, headings, and more.
 
 $theme-brand-color:             #2196f3;
-$theme-color-white:             white; // #fff
-$theme-color-black:             black; // #000
-$theme-color-gray:              gray; // #808080
+$theme-color-white:             #fff; // white
+$theme-color-black:             #000; // black
+$theme-color-gray:              #808080; // gray
 
 $theme-brand-primary:           darken($theme-brand-color, 6.5%); // #0c86e6
 
@@ -22,35 +22,35 @@ $theme-font-family-base:         -apple-system, BlinkMacSystemFont, "Segoe UI", 
 
 // Social buttons
 //
-// Colors, backgrounds, and more.
+// Colors (http://brandcolors.net/, http://brand-colors.com/), backgrounds, and more.
 
 $social-disqus-color:            #2e9fff;
 $social-envelope-color:          #787878;
 $social-facebook-color:          #3b5998;
 $social-flickr-color:            #ff0084;
-$social-foursquare-color:        #0cbadf;
+$social-foursquare-color:        #0cbadf; // has multi colors
 $social-google-plus-color:       #dd4b39;
-$social-instagram-color:         #4e433c;
-$social-linkedin-color:          #4875b4;
-$social-pinterest-color:         #cb2027;
+$social-instagram-color:         #833ab4; // has multi colors
+$social-linkedin-color:          #0077b5; // has multi colors
+$social-pinterest-color:         #bd081c;
 $social-rss-color:               #fa9b39;
-$social-tumblr-color:            #2c4762;
+$social-tumblr-color:            #35465c;
 $social-twitter-color:           #55acee;
-$social-vimeo-color:             #1ab7ea;
-$social-youtube-color:           #ff3333;
-$social-github-color:            #333333;
+$social-vimeo-color:             #1ab7ea; // has multi colors
+$social-youtube-color:           #cd201f;
+$social-github-color:            #333; // has multi colors
 
 
 // Markdown
 //
 // Markdown content Font, line-height, and color for body text, headings, and more.
 
-$markdown-body-color:           rgba($theme-color-black, 0.8); // rgba(0, 0, 0, 0.8)
-$markdown-color-h3:             rgba($theme-color-black, 0.8); // rgba(0, 0, 0, 0.8)
-$markdown-color-h4:             rgba($theme-color-black, 0.44); // rgba(0, 0, 0, 0.44)
-$markdown-color-hr:             rgba($theme-color-black, 0.6); // rgba(0, 0, 0, 0.6)
-$markdown-color-pre:            rgba($theme-color-black, 0.05); // rgba(0, 0, 0, 0.05)
-$markdown-text-muted:           rgba($theme-color-black, 0.44); // rgba(0, 0, 0, 0.44)
+$markdown-body-color:           rgba($theme-color-black, .8); // rgba(0,0,0,.8)
+$markdown-color-h3:             rgba($theme-color-black, .8); // rgba(0,0,0,.8)
+$markdown-color-h4:             rgba($theme-color-black, .44); // rgba(0,0,0,.44)
+$markdown-color-hr:             rgba($theme-color-black, .6); // rgba(0,0,0,.6)
+$markdown-color-pre:            rgba($theme-color-black, .05); // rgba(0,0,0,.05)
+$markdown-text-muted:           rgba($theme-color-black, .44); // rgba(0,0,0,.44)
 
 $markdown-body-font-size:       19px;
 $markdown-font-size-h3:         31px; // 27 + 4 = 31

@@ -3,10 +3,10 @@
 //
 
 .archive-body {
-  font-size: 17px;
   margin-bottom: 50px;
+  font-size: 17px;
+  color: rgba(0,0,0,.8);
   transform: translateZ(0);
-  color: rgba(0,0,0,0.8);
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -23,22 +23,19 @@
 
 .archive-year {
   margin-top: 47px;
-
-  font-family: $theme-font-family-sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 31px;
   margin-left: -2.25px;
+  font-family: $theme-font-family-sans-serif;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 1.15;
   letter-spacing: -.02em;
-
-  color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,.8);
 
   @media (max-width: 767px) {
     margin-top: 39px;
-
-    font-size: 27px;
     margin-left: -1.75px;
+    font-size: 27px;
     line-height: 1.12;
     letter-spacing: -.022em;
   }
@@ -63,20 +60,20 @@
 .archive-title {
   a {
     text-decoration: none;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
 
     &:hover,
     &:focus {
-      color: rgba(0,0,0,0.8);
+      color: rgba(0,0,0,.8);
       text-decoration: none;
-      border-bottom: 1px solid rgba(0,0,0,0.7);
+      border-bottom: 1px solid rgba(0,0,0,.7);
     }
   }
 }
 
 .archive-date {
-  font-size: 0.9em;
-  color: rgba(0,0,0,0.6);
+  font-size: .9em;
+  color: rgba(0,0,0,.6);
   text-align: right;
 
   @media (max-width: 767px) {

@@ -2,7 +2,7 @@
 layout: page
 title: "Contact"
 description: "Have questions? I have answers (maybe)."
-image: "/assets/img/contact-bg.jpg"
+image: "/assets/img/contact.jpg"
 permalink: /contact/
 ---
 

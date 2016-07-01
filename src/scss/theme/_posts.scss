@@ -11,14 +11,14 @@
 }
 
 .post-meta {
+  padding-bottom: 10px;
   // display: block;
   font-family: $theme-font-family-base;
-  padding-bottom: 10px;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.1;
   // letter-spacing: 0;
-  color: rgba(0,0,0,0.44);
+  color: rgba(0,0,0,.44);
 
   @media (max-width: 767px) {
     font-size: 12px;
@@ -27,20 +27,18 @@
 
 .post-title {
   margin-top: 10px;
-
-  font-family: $theme-font-family-sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 35px;
   margin-left: -2.25px;
+  font-family: $theme-font-family-sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 1.15;
   letter-spacing: -.02em;
-
-  color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,.8);
 
   @media (max-width: 767px) {
-    font-size: 31px;
     margin-left: -1.75px;
+    font-size: 31px;
     line-height: 1.12;
     letter-spacing: -.022em;
   }
@@ -66,29 +64,28 @@
 
 .post-leading-figcaption {
   position: relative;
-  left: 0;
-  width: 100%;
   top: 0;
-  outline: 0;
+  left: 0;
   z-index: 300;
-
-  // display: block;
+  display: block;
+  width: 100%;
   margin-top: 10px;
   font-family: $theme-font-family-sans-serif;
-  font-weight: 400;
   font-size: 14px;
   font-style: normal;
-  font-feature-settings: "liga" on,"lnum" on;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: rgba(0,0,0,.6);
+  text-align: center;
+  outline: 0;
   -moz-font-feature-settings: "liga" on,"lnum" on;
   -webkit-font-feature-settings: "liga" on,"lnum" on;
-  line-height: 1.4;
-  text-align: center;
-  color: rgba(0,0,0,0.6);
-  letter-spacing: 0;
+  font-feature-settings: "liga" on,"lnum" on;
 
   @media (max-width: 991px) {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
     box-sizing: border-box;
   }
 }
@@ -102,7 +99,7 @@
   padding-bottom: 20px;
   font-size: 13px;
   line-height: 1.2;
-  color: rgba(0,0,0,0.44);
+  color: rgba(0,0,0,.44);
 
   a {
     &:hover {
@@ -115,35 +112,34 @@
 // Social share
 
 .social-share {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-
   padding-bottom: 20px;
+  padding-left: 0;
+  margin-left: -5px;
   font-size: 13px;
-  color: rgba(0,0,0,0.44);
+  color: rgba(0,0,0,.44);
+  list-style: none;
 
   > li {
     display: inline-block;
-    padding-left: 5px;
     padding-right: 5px;
+    padding-left: 5px;
   }
 }
 
 .btn-social-share {
   padding: 5px 10px;
   font-size: 13px;
-  border: none;
+  border: 0;
   border-radius: 4px;
   @include btn-social-share();
 
   .fa {
-    margin-right: 0.6em;
+    margin-right: .6em;
   }
 
   @media (max-width: 479px) {
-    padding: 5px 0;
     width: 35px;
+    padding: 5px 0;
 
     .fa {
       margin-right: 0;
@@ -160,20 +156,20 @@
 .post-footer-info-divider {
   margin: 25px 0;
   border: 0;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0,0,0,.05);
 }
 
 .author-card {
   position: relative;
-  width: 100%;
   display: inline-block;
-  vertical-align: top;
-  color: rgba(0,0,0,0.6);
-  text-align: left;
+  width: 100%;
   font-family: $theme-font-family-base;
-  letter-spacing: 0;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgba(0,0,0,.6);
+  text-align: left;
+  vertical-align: top;
 }
 
 .author-card-image-wrapper {
@@ -182,10 +178,10 @@
 
 .author-card-avatar-link {
   display: block;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .author-card-avatar {
@@ -193,40 +189,40 @@
   width: 60px;
   height: 60px;
   vertical-align: middle;
-  border-radius: 100%;
   background: #f0f0f0;
+  border-radius: 100%;
 }
 
 .author-card-content {
   display: table-cell;
-  vertical-align: middle;
-  padding-left: 15px;
   min-height: 80px;
+  padding-left: 15px;
   word-break: break-word;
   word-wrap: break-word;
+  vertical-align: middle;
 }
 
 .author-card-name {
   padding-right: 20px;
-  font-size: 18px;
-  color: rgba(0,0,0,0.8);
-  line-height: 1.1;
   margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 1.1;
+  color: rgba(0,0,0,.8);
 }
 
 .author-card-description {
   padding-right: 20px;
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 1.3;
-  margin-bottom: 4px;
 }
 
 // Disqus commenting system
 
 .comments {
-  margin: 50px 0;
   padding-top: 30px;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  margin: 50px 0;
+  border-top: 1px solid rgba(0,0,0,.1);
 
   a {
     color: #3f4549;
@@ -240,13 +236,13 @@
 
 .btn-disqus {
   display: block;
-  padding: 13px;
   width: 100%;
+  padding: 13px;
   font-size: 13px;
   border-radius: 4px;
 
   .fa {
-    margin-right: 0.6em;
+    margin-right: .6em;
   }
 }
 
@@ -269,15 +265,15 @@
 }
 
 .random-posts-heading {
-  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  margin: 0;
   font-size: 11px;
   // font-weight: 400;
   letter-spacing: .1em;
+  text-transform: uppercase;
   // color: rgba(0,0,0,0.44);
-  border-bottom: solid 1px rgba(0,0,0,0.15);
-  margin: 0;
-  padding-top: 50px;
-  padding-bottom: 15px;
+  border-bottom: solid 1px rgba(0,0,0,.15);
 
   @media (max-width: 767px) {
     padding-top: 20px;
@@ -287,8 +283,8 @@
 .random-post {
   position: relative;
   padding: 25px 0 32px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
   line-height: 1.1;
+  border-bottom: 1px solid rgba(0,0,0,.05);
 
   @media (max-width: 767px) {
     padding: 24px 0 17px;
@@ -302,9 +298,9 @@
 .random-post-title {
   // margin: 0;
   font-family: $theme-font-family-sans-serif;
-  letter-spacing: -0.022em;
-  line-height: 1.3;
   font-size: 26px;
+  line-height: 1.3;
+  letter-spacing: -.022em;
 
   @media (max-width: 767px) {
     font-size: 20px;
@@ -313,9 +309,9 @@
 
 .random-post-excerpt {
   margin: 2px 0 0;
-  line-height: 1.4;
   font-family: $theme-font-family-serif;
   font-size: 18px;
+  line-height: 1.4;
 
   @media (max-width: 767px) {
     font-size: 16px;
@@ -324,11 +320,11 @@
 
 .random-post-meta {
   margin-top: 10px;
-  vertical-align: top;
   font-size: 14px;
   line-height: 1.6;
+  color: rgba(0,0,0,.3);
   text-rendering: auto;
-  color: rgba(0,0,0,0.3);
+  vertical-align: top;
 
   @media (max-width: 767px) {
     font-size: 12px;
@@ -340,11 +336,11 @@
 }
 
 .btn-random {
-  font-size: 14px;
   padding: 12px 24px;
+  font-size: 14px;
 
   @media (max-width: 767px) {
-    font-size: 12px;
     padding: 10px 20px;
+    font-size: 12px;
   }
 }

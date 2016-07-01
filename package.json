@@ -1,33 +1,50 @@
 {
   "name": "milanaryal.github.io",
-  "main": "index.html",
-  "title": "Milan Aryal",
-  "homepage": "http://milanaryal.com",
-  "author": "Milan Aryal",
   "description": "Jekyll build for milanaryal.com",
+  "title": "Milan Aryal",
+  "homepage": "https://milanaryal.com",
+  "author": "Milan Aryal",
   "license": "MIT",
+  "main": "./_site/index.html",
   "repository": {
     "type": "git",
     "url": "https://github.com/MilanAryal/milanaryal.github.io.git"
   },
+  "bugs": {
+    "url": "https://github.com/MilanAryal/milanaryal.github.io/issues"
+  },
+  "scripts": {
+    "postcss": "postcss --config src/grunt/postcss.js --replace assets/css/*.css"
+  },
+  "dependencies": {
+    "bootstrap-sass": "3.3.6",
+    "font-awesome": "4.6.3",
+    "jquery": "3.0.0",
+    "nprogress": "0.2.0",
+    "primer-markdown": "3.1.2"
+  },
   "devDependencies": {
-    "autoprefixer": "*",
-    "grunt": "*",
-    "grunt-contrib-clean": "*",
-    "grunt-contrib-concat": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-csslint": "*",
-    "grunt-contrib-cssmin": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-sass": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-csscomb": "*",
-    "grunt-jscs": "*",
-    "grunt-postcss": "*",
-    "grunt-sass": "*",
-    "grunt-scss-lint": "*",
-    "load-grunt-tasks": "*",
-    "time-grunt": "*"
-  }
+    "autoprefixer": "^6.0.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^1.0.0",
+    "grunt-jscs": "^3.0.1",
+    "grunt-sass": "^1.0.0",
+    "grunt-scss-lint": "^0.3.8",
+    "load-grunt-tasks": "^3.5.0",
+    "postcss-cli": "^2.5.2",
+    "postcss-flexbugs-fixes": "^2.0.0",
+    "time-grunt": "^1.3.0"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "private": true
 }

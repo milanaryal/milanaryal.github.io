@@ -11,7 +11,6 @@ logo:
   path: "/assets/img/m-icon-blue-on-white.png"
   width: 300
   height: 300
-image: "/assets/img/home-bg.jpg"
 theme_color: "#2196f3"
 author:
   name: "Milan Aryal"
@@ -90,21 +89,25 @@ compress_html:
   endings: all
   profile: false
 include: ["_pages"]
-exclude:
-  - README.md
-  - LICENSE
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - src
-  - node_modules
-  - package.json
-  - Gruntfile.js
-  - vendor
-  - bower.json
 gems:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - Gruntfile.js
+  - package.json
+  - npm-debug.log
+  - node_modules
+  - vendor
+  - bundle
+  - ".bundle"
+  - ".sass-cache"
+  - src

@@ -1,8 +1,7 @@
-// Character encoding
-// @charset "utf-8";
+@charset "utf-8";
 
 /*!
- * Milan Aryal (http://milanaryal.com)
+ * Milan Aryal (https://milanaryal.com)
  * Copyright 2016 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
@@ -19,6 +18,7 @@
 // Core CSS
 @import "theme/reset";
 @import "theme/global";
+@import "theme/header-navbar";
 @import "theme/pages";
 @import "theme/buttons";
 @import "theme/pager";
@@ -32,9 +32,8 @@
 
 // Components w/ JavaScript
 @import "theme/nprogress";
-@import "theme/headroom";
 @import "theme/elevator";
-@import "theme/anchor";
+@import "theme/header-link";
 @import "theme/pil";
 
 // Custom CSS

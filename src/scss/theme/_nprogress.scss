@@ -3,7 +3,7 @@
 //
 
 #nprogress {
-  /* Make clicks pass-through */
+  // Make clicks pass-through
   pointer-events: none;
 
   .bar {
@@ -16,16 +16,16 @@
     background: $nprogress-color;
   }
 
+  // Fancy blur effect
   .peg {
-    /* Fancy blur effect */
     position: absolute;
-    right: 0px;
+    right: 0;
     display: block;
     width: 100px;
     height: 100%;
-    box-shadow: 0 0 10px $nprogress-color, 0 0 5px $nprogress-color;
     opacity: 1;
-    transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0, -4px);
+    box-shadow: 0 0 10px $nprogress-color, 0 0 5px $nprogress-color;
   }
 
   @media (max-width: 767px) {

@@ -1,0 +1,83 @@
+// Navigation
+
+.navbar {
+  margin-bottom: 0;
+  font-family: $theme-font-family-base;
+  background-color: #fff;
+  border-color: transparent;
+  // border-radius: 0;
+
+  @media (min-width: 768px) {
+    height: 65px;
+  }
+}
+
+.navbar-brand {
+  // font-size: 18px;
+  font-weight: 700;
+  color: rgba(0,0,0,.75) !important;
+
+  @media (min-width: 768px) {
+    height: 65px;
+    padding: 22px 0;
+    margin-left: 15px !important;
+  }
+}
+
+.navbar-nav {
+  li {
+    a {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: .1em;
+      color: rgba(0,0,0,.6);
+      text-transform: uppercase;
+
+      @media (min-width: 768px) {
+        padding: 24px 0 22px;
+        margin-right: 40px;
+      }
+
+      &:hover,
+      &:focus {
+        color: rgba(0,0,0,.9);
+      }
+    }
+  }
+}
+
+
+// Scrolling behavior
+
+.header-navbar {
+  // when the user scrolls, we hide the header in less than 768px viewpoint
+  &.is-fixed,
+  &.is-visible {
+    transform: translateY(-100%);
+  }
+}
+
+@media (min-width: 768px) {
+  .header-navbar {
+    // background-color: #fff;
+    // border-color: transparent;
+    transition: background-color 200ms linear,
+                border-color 200ms linear,
+                transform 200ms linear;
+    will-change: background-color,
+                 border-color,
+                 transform;
+
+    // when the user scrolls down, we hide the header right above the viewport
+    &.is-fixed {
+      transform: translateY(-100%);
+    }
+
+    // if the user changes the scrolling direction, we show the header
+    &.is-visible {
+      background-color: rgba(#fff, .97);
+      border-color: darken(#fff, 5%);
+      transform: translateY(0%);
+    }
+  }
+}

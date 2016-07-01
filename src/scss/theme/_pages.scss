@@ -2,60 +2,11 @@
 // Theme layout design
 //
 
-// Navigation
-
-.navbar {
-  margin-bottom: 0;
-  font-family: $theme-font-family-base;
-  background-color: white;
-  border-color: transparent;
-  // border-radius: 0;
-
-  @media (min-width: 768px) {
-    height: 65px;
-  }
-}
-
-.navbar-brand {
-  // font-size: 18px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.75) !important;
-
-  @media (min-width: 768px) {
-    height: 65px;
-    padding: 22px 0;
-    margin-left: 15px !important;
-  }
-}
-
-.navbar-nav {
-  li {
-    a {
-      text-transform: uppercase;
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      color: rgba(0, 0, 0, 0.6);
-
-      @media (min-width: 768px) {
-        padding: 24px 0 22px;
-        margin-right: 40px;
-      }
-
-      &:hover,
-      &:focus {
-        color: rgba(0, 0, 0, 0.9);
-      }
-    }
-  }
-}
-
-
 // Middot divider
 
 .middot-divider {
   display: inline-block;
-  padding: 0 0.42em;
+  padding: 0 .42em;
 }
 
 .middot-divider::after {
@@ -75,37 +26,41 @@
 }
 
 .page-header {
-  background: no-repeat center center;
-  background-color: $theme-color-gray;
-  background-attachment: scroll;
-  @include theme-background-cover();
-  // NOTE: Background images are set within the HTML using inline CSS!
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
   margin-bottom: 80px;
-}
-
-.page-heading {
-  padding: 75px 0;
-  text-align: center;
   color: #fff;
-  transform: translateZ(0);
+  text-align: center;
+  background-attachment: scroll;
+  background-color: #fff;
+  // NOTE: Background images are set within the HTML using inline CSS!
+  // background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('/assets/img/page.jpg');
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
 
   @media (min-width: 768px) {
-    padding: 150px 0;
+    height: 430px;
   }
 }
 
-.page-heading-divider {
+.page-intro-divider {
   max-width: 100px;
   margin: 15px auto;
+  border-color: #fff;
   border-width: 4px;
-  border-color: white;
 }
 
 .page-title {
   // margin-top: 0;
   font-family: $theme-font-family-sans-serif;
-  letter-spacing: -0.02em;
   font-size: 48px;
+  letter-spacing: -.02em;
+  text-shadow: 0 1px rgba(0,0,0,.2);
+  transform: translateZ(0);
 
   @media (min-width: 768px) {
     font-size: 72px;
@@ -114,11 +69,13 @@
 
 .page-description {
   display: block;
-  font-size: 20px;
-  line-height: 1.1;
-  font-family: $theme-font-family-sans-serif;
-  font-weight: 300;
   margin: 10px 0 0;
+  font-family: $theme-font-family-sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: rgba(255,255,255,.7);
+  transform: translateZ(0);
 
   @media (min-width: 768px) {
     font-size: 22px;
@@ -129,66 +86,54 @@
   margin-bottom: 50px;
 }
 
-// Darker backgrounded .page-header image to make readable text
-.dark-background {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  // Darken background (black 44% opacity)
-  background: rgba(0, 0, 0, 0.44);
-}
-
 
 // Site page footer
 
 .site-footer {
   padding: 50px 0 40px;
   // margin-top: 40px;
+  text-align: center;
   background-color: #fafafa;
 }
 
 .site-footer-social {
   padding-left: 0;
-  list-style: none;
   margin-left: -5px;
-  text-align: center;
+  list-style: none;
 
   > li {
     display: inline-block;
-    padding-left: 5px;
     padding-right: 5px;
+    padding-left: 5px;
   }
 
   a {
-    color: rgba(0,0,0,0.7);
+    color: rgba(0,0,0,.7);
 
     &:hover,
     &:focus {
-      color: rgba(0,0,0,0.8);
-      // color: $markdown-link-hover-color;
+      color: rgba(0,0,0,.8);
     }
   }
 }
 
 .site-footer-legal {
+  margin-top: 30px;
+  // margin-bottom: 0;
   font-family: $theme-font-family-base;
   font-size: 14px;
-  color: rgba(0,0,0,0.6);
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 0;
-
+  color: rgba(0,0,0,.6);
   text-rendering: auto;
   transform: translateZ(0);
 
   a {
     // text-decoration: underline;
-    // color: inherit; // parent color for link
+    // color: inherit;
+
     &:hover,
     &:focus {
       text-decoration: underline;
-    //  color: $markdown-link-hover-color;
+      // color: inherit;
     }
   }
 }
@@ -197,5 +142,5 @@
 // Search page input box
 
 .form-control {
-  border-color: rgba(0,0,0,0.15);
+  border-color: rgba(0,0,0,.15);
 }

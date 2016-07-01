@@ -3,7 +3,7 @@ layout: page
 title: "About"
 description: "This is what I do."
 excerpt: "I'm Milan, a student living in Kathmandu, Nepal who loves getting lost in web design, front-end development, and listening music a lot."
-image: "/assets/img/about-bg.jpg"
+image: "/assets/img/about.jpg"
 permalink: /about/
 ---
 
