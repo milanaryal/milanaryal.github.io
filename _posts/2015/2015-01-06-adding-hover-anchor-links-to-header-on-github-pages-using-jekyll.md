@@ -1,7 +1,7 @@
 ---
 title: "Adding hover anchor links to header on GitHub Pages using Jekyll"
 date: 2015-01-06T15:19:18+05:45
-last_modified_at: 2015-06-27T10:49:50+05:45
+last_modified_at: 2016-07-02T05:46:01+05:45
 excerpt: "Learn how to add deep anchor links to your docs using AnchorJS in Jekyll."
 ---
 
@@ -85,7 +85,7 @@ Or, even not downloading you can include various open source CDN library link:
 
 ```html
 <!-- make sure you include the latest version -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.0/anchor.min.js"></script>
 ```
 
 ### Using AnchorJS
@@ -98,7 +98,7 @@ This will place the default AnchorJS icon to the left and only add the link to y
 
 ```js
 /**
- * AnchorJS v1.1.1 options and selector
+ * AnchorJS v3.2.0 options and selector
  */
 
 (function () {
@@ -117,7 +117,7 @@ This will place the default AnchorJS icon to the right and of course only add th
 
 ```js
 /**
- * AnchorJS v1.1.1 options and selector
+ * AnchorJS v3.2.0 options and selector
  */
 
 (function () {
@@ -147,7 +147,7 @@ You can style the AnchorJS icon according to your need.
 }
 
 @media (max-width: 768px) {
-  /* do not display AnchorJS icon on less than 768px view point */
+  /* Do not display AnchorJS icon on less than 768px view point */
   .anchorjs-link {
     display: none;
   }
@@ -156,6 +156,7 @@ You can style the AnchorJS icon according to your need.
 *:hover > .anchorjs-link {
   opacity: .75;
   /* To fade links as they appear, change transition-property from 'color' to 'all' */
+  -webkit-transition: color .16s linear;
   transition: color .16s linear;
 }
 
@@ -167,3 +168,76 @@ You can style the AnchorJS icon according to your need.
 ```
 
 *You can find updated usage instructions and examples here: [bryanbraun.github.io/anchorjs](http://bryanbraun.github.io/anchorjs/){:rel="nofollow"}.*
+
+---
+
+### jQuery and Font Awesome alternative
+
+If you're using jQuery and Font awesome in your site and love coding less then here's the simple jQuery snippet to add anchor in your Markdown posts header.
+
+```js
+/**
+ * jQuery snippet to add anchor links to Markdown posts header
+ */
+
+$(function () {
+  'use strict';
+
+  /* selector */
+  var postHeader = '.markdown-body > h3, .markdown-body > h4';
+
+  $(postHeader).filter('[id]').each(function () {
+    var header      = $(this),
+        headerID    = header.attr('id'),
+        anchorClass = 'header-link',
+        anchorIcon  = '<i class="fa fa-link" aria-hidden="true"></i>';
+
+    if (headerID) {
+      header.prepend($('<a />').addClass(anchorClass).attr({ 'href': '#' + headerID, 'aria-hidden': 'true' }).html(anchorIcon));
+    }
+
+    return this;
+  });
+});
+```
+
+And, here's the CSS to position the header link icon:
+
+```css
+/*
+ * Header link placement and hover behavior
+ */
+
+.header-link {
+  position: absolute;
+  padding-right: .5em;
+  margin-left: -1em;
+  color: inherit !important;
+  text-decoration: none !important;
+  opacity: 0;
+}
+
+.header-link .fa {
+  font-size: 66%;
+  vertical-align: .1em;
+}
+
+/* do not display in less than 768px screen */
+@media (max-width: 767px) {
+  .header-link {
+    display: none !important;
+  }
+}
+
+*:hover > .header-link {
+  opacity: .75;
+  /* to fade links as they appear, change transition-property from 'color' to 'all' */
+  -webkit-transition: color .16s linear;
+  transition: color .16s linear;
+}
+
+*:hover > .header-link:hover,
+*:hover > .header-link:focus {
+  opacity: 1;
+}
+```

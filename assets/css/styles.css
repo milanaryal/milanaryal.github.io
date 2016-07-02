@@ -7330,7 +7330,7 @@ a:hover, a:focus {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #eeeeee;
+  background-color: #c2d0d7;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#8e9eab), to(#eef2f3));
   background-image: -webkit-linear-gradient(right bottom, #8e9eab, #eef2f3);
   background-image: -o-linear-gradient(right bottom, #8e9eab, #eef2f3);
@@ -8962,10 +8962,6 @@ kbd {
   margin: 0 auto;
   overflow: hidden;
   background-color: #eeeeee;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#8e9eab), to(#eef2f3));
-  background-image: -webkit-linear-gradient(right bottom, #8e9eab, #eef2f3);
-  background-image: -o-linear-gradient(right bottom, #8e9eab, #eef2f3);
-  background-image: linear-gradient(to left top, #8e9eab, #eef2f3);
 }
 
 .pil img:first-of-type {
