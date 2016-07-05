@@ -3,6 +3,7 @@ layout: null
 disallows:
  - /search
  - /404.html
+ - /posts.json
  - /writings/page*
  - /fine-print/
 ---

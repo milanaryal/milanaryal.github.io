@@ -8,7 +8,7 @@
   "main": "./_site/index.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MilanAryal/milanaryal.github.io.git"
+    "url": "git+https://github.com/MilanAryal/milanaryal.github.io.git"
   },
   "bugs": {
     "url": "https://github.com/MilanAryal/milanaryal.github.io/issues"

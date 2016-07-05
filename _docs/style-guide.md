@@ -5,7 +5,7 @@ description: "This is the style guide for Milan Aryal."
 
 > A living document of code detailing all the various colors, typographic elements, UI patterns, and components used on the website to maintain visual consistency.
 
-Articles in [Milan Aryal](http://milanaryal.com/) are written in Markdown which are generated in standard HTML using [Jekyll](http://jekyllrb.com/).
+Articles in [Milan Aryal](https://milanaryal.com/) are written in Markdown which are generated in standard HTML using [Jekyll](https://jekyllrb.com/).
 
 This style guide is written in Markdown, the raw file is available [here](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/_docs/style-guide.md).
 
