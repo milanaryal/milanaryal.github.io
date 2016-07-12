@@ -22,7 +22,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <nav class="collapse navbar-collapse navbar-top-collapse" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <ul class="nav navbar-nav navbar-right">
-          {% for nav_item in site.data.nav %}
+          {% for nav_item in site.nav %}
             <li>
               <a itemprop="url" href="{{ nav_item.url }}">
                 <span itemprop="name">{{ nav_item.title | smartify | strip_html | strip_newlines | escape_once }}</span>

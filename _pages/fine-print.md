@@ -4,6 +4,8 @@ title: "Fine print"
 description: "Website legal notice."
 image: "/assets/img/writings.jpg"
 permalink: /fine-print/
+sitemap: false
+robots: "noindex, follow"
 ---
 
 This is my personal website. The opinions expressed herein represent my own, and not those of any employer, group, or organization.

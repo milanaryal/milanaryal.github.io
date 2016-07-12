@@ -7,10 +7,16 @@ env:
 
 sudo: false
 cache: bundler
+bundler_args: --without development
+
+before_script:
+  - bundle exec github-pages versions
 
 script:
-  - bundle exec jekyll build
+  - JEKYLL_ENV=development bundle exec jekyll build --config _config.yml,_config_test.yml
   - bundle exec htmlproofer ./_site --only-4xx
+  - bundle exec github-pages health-check
+  - rm -rf ./_site
 
 branches:
   only:

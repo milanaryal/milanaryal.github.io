@@ -1,8 +1,8 @@
-# Jekyll config file http://jekyllrb.com/docs/configuration/
+# Jekyll configuration file (https://jekyllrb.com/docs/configuration/)
 
-# ----------------------------------------------------------------------
-# | Site settings                                                      |
-# ----------------------------------------------------------------------
+#
+# Site wide settings
+#
 
 name: "Milan Aryal"
 description: "Livin' on the edge of web standards."
@@ -11,6 +11,7 @@ logo:
   path: "/assets/img/m-icon-blue-on-white.png"
   width: 300
   height: 300
+image: "/assets/img/writings.jpg"
 theme_color: "#2196f3"
 author:
   name: "Milan Aryal"
@@ -35,8 +36,6 @@ author:
   country: Nepal
   postcode: 44600
 facebook:
-#  app_id: 1234
-#  publisher: 1234
   admins: 100001982813077
 twitter:
   username: MilanAryal
@@ -44,12 +43,24 @@ disqus_shortname: milanaryal
 google_cse_id: "000254926668963224856:z4vgwqv7kla"
 google_api_key: "AIzaSyB27uh5sPHJ156nRryf1yuJn6fjo_B7qvI"
 google_analytics_id: "UA-42092423-1"
+language: "en"
+nav:
+  -
+    title: "Writings"
+    url:   "/writings/"
+  -
+    title: "About"
+    url:   "/about/"
+  -
+    title: "Contact"
+    url:   "/contact/"
 
+#
+# Site build settings
+#
 
-# ----------------------------------------------------------------------
-# | Build settings                                                     |
-# ----------------------------------------------------------------------
-
+repository: "MilanAryal/milanaryal.github.io"
+branch: master
 encoding: "utf-8"
 timezone: Asia/Kathmandu
 locale: en_us
@@ -61,13 +72,10 @@ kramdown:
 highlighter: rouge
 gist:
   noscript: false
-permalink: /:year/:title/
+future: true
+permalink: /:title/
 paginate_path: /writings/page:num/
 paginate: 10
-collections:
-  docs:
-    output: true
-    permalink: /docs/:path/
 defaults:
   -
     scope:
@@ -76,25 +84,21 @@ defaults:
     values:
       layout: "post"
       comments: "true"
-  -
-    scope:
-      path: ""
-      type: "docs"
-    values:
-      layout: "page"
-      comments: "false"
+gems:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
 compress_html:
   clippings: all
   comments: all
   endings: all
+  ignore:
+    envs: development
   profile: false
 include: ["_pages"]
-gems:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-sitemap
 exclude:
   - README.md
   - LICENSE

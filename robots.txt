@@ -1,15 +1,12 @@
 ---
-layout: null
-disallows:
- - /search
- - /404.html
- - /posts.json
- - /writings/page*
- - /fine-print/
----
-
 # robotstxt.org/
 # The robots exclusion protocol
+
+layout: null
+disallows:
+  - "/*?"
+  - "/posts.json"
+---
 
 User-agent: *
 Disallow:{% for disallowed in page.disallows %}

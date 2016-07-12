@@ -7338,9 +7338,9 @@ a:hover, a:focus {
   content: "";
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 1.25s ease-in-out 0s, visibility 1.25s 0s;
-  -o-transition: opacity 1.25s ease-in-out 0s, visibility 1.25s 0s;
-  transition: opacity 1.25s ease-in-out 0s, visibility 1.25s 0s;
+  -webkit-transition: opacity 1.25s ease-in-out 0s, visibility 1.25s 0s;
+  -o-transition: opacity 1.25s ease-in-out 0s, visibility 1.25s 0s;
+  transition: opacity 1.25s ease-in-out 0s, visibility 1.25s 0s;
 }
 
 .hero-container.is-loading::before {
@@ -7378,11 +7378,11 @@ a:hover, a:focus {
   opacity: .99;
   -webkit-transform: perspective(1000px) rotateX(0deg);
           transform: perspective(1000px) rotateX(0deg);
-  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-  transition: opacity 1s ease, -webkit-transform 1s ease;
-  -o-transition: opacity 1s ease, transform 1s ease, -o-transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease, -o-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  -o-transition: opacity 1s ease, transform 1s ease, -o-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease, -o-transform 1s ease;
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
        -o-transform-origin: 50% 50%;
@@ -8895,15 +8895,15 @@ kbd {
   background-image: none;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -o-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -o-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
 }
 
 .elevator.elevator-is-visible, .elevator.elevator-fade-out, .elevator:hover {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-  -o-transition: opacity .3s 0s, visibility 0s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s;
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -o-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
 }
 
 .elevator.elevator-is-visible {
@@ -8968,9 +8968,9 @@ kbd {
   display: block;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: visibility 0s linear .5s, opacity .1s .4s;
-  -o-transition: visibility 0s linear .5s, opacity .1s .4s;
-  transition: visibility 0s linear .5s, opacity .1s .4s;
+  -webkit-transition: visibility 0s linear .5s, opacity .1s .4s;
+  -o-transition: visibility 0s linear .5s, opacity .1s .4s;
+  transition: visibility 0s linear .5s, opacity .1s .4s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -8978,9 +8978,9 @@ kbd {
 .pil-loaded img:first-of-type {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: visibility 0s linear 0s, opacity .4s 0s;
-  -o-transition: visibility 0s linear 0s, opacity .4s 0s;
-  transition: visibility 0s linear 0s, opacity .4s 0s;
+  -webkit-transition: visibility 0s linear 0s, opacity .4s 0s;
+  -o-transition: visibility 0s linear 0s, opacity .4s 0s;
+  transition: visibility 0s linear 0s, opacity .4s 0s;
 }
 
 .pil-thumb img {
@@ -8993,25 +8993,25 @@ kbd {
   margin: auto;
   -webkit-filter: blur(30px);
           filter: blur(30px);
-  -webkit-transition: visibility 0s linear 0s, opacity .4s 0s;
-  -o-transition: visibility 0s linear 0s, opacity .4s 0s;
-  transition: visibility 0s linear 0s, opacity .4s 0s;
+  -webkit-transition: visibility 0s linear 0s, opacity .4s 0s;
+  -o-transition: visibility 0s linear 0s, opacity .4s 0s;
+  transition: visibility 0s linear 0s, opacity .4s 0s;
 }
 
 .pil-thumb.pil-thumb-loaded img {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: visibility 0s linear 0s, opacity .4s 0s;
-  -o-transition: visibility 0s linear 0s, opacity .4s 0s;
-  transition: visibility 0s linear 0s, opacity .4s 0s;
+  -webkit-transition: visibility 0s linear 0s, opacity .4s 0s;
+  -o-transition: visibility 0s linear 0s, opacity .4s 0s;
+  transition: visibility 0s linear 0s, opacity .4s 0s;
 }
 
 .pil-loaded .pil-thumb img {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: visibility 0s linear .5s, opacity .1s .4s;
-  -o-transition: visibility 0s linear .5s, opacity .1s .4s;
-  transition: visibility 0s linear .5s, opacity .1s .4s;
+  -webkit-transition: visibility 0s linear .5s, opacity .1s .4s;
+  -o-transition: visibility 0s linear .5s, opacity .1s .4s;
+  transition: visibility 0s linear .5s, opacity .1s .4s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }

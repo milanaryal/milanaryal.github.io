@@ -1,9 +1,9 @@
 ---
-layout: null
----
-
 # humanstxt.org/
 # The humans responsible & technology colophon
+
+layout: null
+---
 
 # TEAM
   {% for contributor in site.github.contributors %}

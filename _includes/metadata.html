@@ -1,5 +1,11 @@
 {% comment %}<!-- Metadata for _includes/head.html and _layouts/post.html -->{% endcomment %}
 
+{% if site.github.build_revision %}
+  {% assign build_version = site.github.build_revision %}
+{% else %}
+  {% assign build_version = site.time | date: '%Y%m%d%H%M%S' %}
+{% endif %}
+
 {% if site.url %}
   {% assign site_url = site.url | append: site.baseurl %}
 {% endif %}
@@ -50,22 +56,17 @@
 
 {% if page.date %}
   {% assign date_published = page.date | date_to_xmlschema %}
-
   {% assign date_modified = page.last_modified_at | default: page.date %}
   {% if date_modified %}
     {% assign date_modified = date_modified | date_to_xmlschema %}
   {% endif %}
+{% endif %}
 
+{% if page.layout == 'post' %}
   {% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by:180 %}
   {% if reading_time <= 1 %}
     {% assign reading_time = '1' | append:' min read' %}
   {% else %}
     {% assign reading_time = reading_time | append:' min read' %}
   {% endif %}
-{% endif %}
-
-{% if site.github.build_revision %}
-  {% assign build_version = site.github.build_revision %}
-{% else %}
-  {% assign build_version = site.time | date: '%Y%m%d%H%M%S' %}
 {% endif %}

@@ -37,7 +37,7 @@
     {% endif %}
   {% endif %}
 
-  <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+  <meta property="og:type" content="{% if page.layout == 'post' and page.date %}article{% else %}website{% endif %}">
 
   {% if site.locale %}
     <meta property="og:locale" content="{{ site.locale }}">
@@ -69,7 +69,7 @@
     {% endif %}
   {% endif %}
 
-  {% if page.date %}
+  {% if page.layout == 'post' and page.date %}
     <meta property="article:modified_time" content="{{ date_modified }}">
     <meta property="article:published_time" content="{{ date_published }}">
 
@@ -88,7 +88,7 @@
 
     <meta name="twitter:site" content="@{{ site.twitter.username | replace:'@','' }}">
 
-    {% if page.date %}
+    {% if page.layout == 'post' and page.date %}
       {% if page.author.twitter %}
         <meta name="twitter:creator" content="@{{ page.author.twitter | replace:'@','' }}">
       {% endif %}
@@ -103,7 +103,12 @@
 
   <!-- SEO -->
   {% if page.robots %}
-    <meta name="robots" content="{{ page.robots }}">
+    {% unless paginator.page %}
+      <meta name="robots" content="{{ page.robots }}">
+    {% endunless %}
+    {% if paginator.page > 1 %}
+      <meta name="robots" content="{{ page.robots }}">
+    {% endif %}
   {% endif %}
 
   <link rel="canonical" href="{{ page_url }}">
