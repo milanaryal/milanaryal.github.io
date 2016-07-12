@@ -16,8 +16,8 @@ I really like the guiding principles of a GitHubber known as "The Zen of GitHub"
 
 #### In GitHub API
 
-* [An API endpoint to retrieve random Zen](http://api.github.com/zen){:rel="nofollow" data-proofer-ignore}
-* [Ms. Mona Lisa Octocat read the Zen herself](http://api.github.com/octocat){:rel="nofollow" data-proofer-ignore}
+* [An API endpoint to retrieve random Zen](http://api.github.com/zen){:rel="nofollow" data-proofer-ignore="true"}
+* [Ms. Mona Lisa Octocat read the Zen herself](http://api.github.com/octocat){:rel="nofollow" data-proofer-ignore="true"}
 
 ---
 
