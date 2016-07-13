@@ -151,18 +151,23 @@
   }
 }
 
-// Post author card
 
-.post-footer-info-divider {
+// Post footer section divider
+
+.post-footer-divider {
   margin: 25px 0;
   border: 0;
   border-top: 1px solid rgba(0,0,0,.05);
 }
 
+
+// Post author card
+
 .author-card {
   position: relative;
   display: inline-block;
   width: 100%;
+  margin-bottom: 25px;
   font-family: $theme-font-family-base;
   font-style: normal;
   font-weight: 400;
@@ -221,7 +226,7 @@
 
 .comments {
   padding-top: 30px;
-  margin: 50px 0;
+  margin: 25px 0 50px;
   border-top: 1px solid rgba(0,0,0,.1);
 
   a {

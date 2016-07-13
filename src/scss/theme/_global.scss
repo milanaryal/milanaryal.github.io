@@ -50,13 +50,9 @@ a {
 }
 
 ::-moz-selection {
-  color: #fff;
-  text-shadow: none;
-  background: darken(#2196f3, 6.5%);
+  background: #d6edff; // Gecko Browsers
 }
 
 ::selection {
-  color: #fff;
-  text-shadow: none;
-  background: darken(#2196f3, 6.5%);
+  background: #d6edff; // WebKit/Blink Browsers
 }
