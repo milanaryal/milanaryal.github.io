@@ -94,7 +94,6 @@ gems:
 compress_html:
   clippings: all
   comments: all
-  endings: all
   ignore:
     envs: development
   profile: false
