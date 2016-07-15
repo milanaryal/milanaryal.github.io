@@ -7756,16 +7756,16 @@ ul.hero-social a.fa .label {
   }
 }
 
-.post-leading-figure {
+.post-leadingFigure {
   margin: 47px auto;
 }
 
-.post-leading-figure .post-leading-image {
+.post-leadingFigure .post-leadingImage {
   margin: 0 auto;
 }
 
 @media (max-width: 991px) {
-  .post-leading-figure {
+  .post-leadingFigure {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
@@ -7773,12 +7773,12 @@ ul.hero-social a.fa .label {
 }
 
 @media (max-width: 767px) {
-  .post-leading-figure {
+  .post-leadingFigure {
     margin: 39px auto;
   }
 }
 
-.post-leading-figcaption {
+.post-leadingFigcaption {
   position: relative;
   top: 0;
   left: 0;
@@ -7800,7 +7800,7 @@ ul.hero-social a.fa .label {
 }
 
 @media (max-width: 991px) {
-  .post-leading-figcaption {
+  .post-leadingFigcaption {
     padding-right: 30px;
     padding-left: 30px;
     -webkit-box-sizing: border-box;
@@ -7812,7 +7812,7 @@ ul.hero-social a.fa .label {
   padding-top: 20px;
 }
 
-.post-meta-acknowledgments {
+.postMeta-acknowledgments {
   padding-top: 5px;
   padding-bottom: 20px;
   font-size: 13px;
@@ -7820,7 +7820,7 @@ ul.hero-social a.fa .label {
   color: rgba(0, 0, 0, 0.44);
 }
 
-.post-meta-acknowledgments a:hover {
+.postMeta-acknowledgments a:hover {
   text-decoration: underline;
 }
 
@@ -7870,31 +7870,32 @@ ul.hero-social a.fa .label {
   }
 }
 
-.post-footer-divider {
+.postFooter-divider {
   margin: 25px 0;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.author-card {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 25px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-  color: rgba(0, 0, 0, 0.6);
-  text-align: left;
-  vertical-align: top;
+.postAuthor-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
 }
 
-.author-card-image-wrapper {
-  display: table-cell;
+.postAuthor-cardAvatar {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
-.author-card-avatar-link {
+.postAuthor-cardAvatarLink {
   display: block;
   overflow: hidden;
   line-height: normal;
@@ -7902,42 +7903,39 @@ ul.hero-social a.fa .label {
   white-space: nowrap;
 }
 
-.author-card-avatar {
+.postAuthor-cardAvatarImage {
   display: inline-block;
   width: 60px;
   height: 60px;
   vertical-align: middle;
-  background: #f0f0f0;
   border-radius: 100%;
 }
 
-.author-card-content {
-  display: table-cell;
-  min-height: 80px;
+.postAuthor-cardContent {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   padding-left: 15px;
   word-break: break-word;
   word-wrap: break-word;
-  vertical-align: middle;
 }
 
-.author-card-name {
+.postAuthor-cardContentName {
   padding-right: 20px;
   margin-bottom: 4px;
   font-size: 18px;
-  line-height: 1.1;
-  color: rgba(0, 0, 0, 0.8);
 }
 
-.author-card-description {
+.postAuthor-cardContentBio {
   padding-right: 20px;
-  margin-bottom: 4px;
   font-size: 14px;
-  line-height: 1.3;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .comments {
   padding-top: 30px;
-  margin: 25px 0 50px;
+  margin-bottom: 50px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -7972,12 +7970,12 @@ ul.hero-social a.fa .label {
   }
 }
 
-.random-posts {
+.randomPosts {
   padding-bottom: 40px;
   background-color: #fafafa;
 }
 
-.random-posts-heading {
+.randomPosts-heading {
   padding-top: 50px;
   padding-bottom: 15px;
   margin: 0;
@@ -7988,12 +7986,12 @@ ul.hero-social a.fa .label {
 }
 
 @media (max-width: 767px) {
-  .random-posts-heading {
+  .randomPosts-heading {
     padding-top: 20px;
   }
 }
 
-.random-post {
+.randomPosts-item {
   position: relative;
   padding: 25px 0 32px;
   line-height: 1.1;
@@ -8001,16 +7999,16 @@ ul.hero-social a.fa .label {
 }
 
 @media (max-width: 767px) {
-  .random-post {
+  .randomPosts-item {
     padding: 24px 0 17px;
   }
 }
 
-.random-post:last-child {
+.randomPosts-item:last-child {
   border-bottom: 0;
 }
 
-.random-post-title {
+.randomPosts-itemTitle {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 26px;
   line-height: 1.3;
@@ -8018,12 +8016,12 @@ ul.hero-social a.fa .label {
 }
 
 @media (max-width: 767px) {
-  .random-post-title {
+  .randomPosts-itemTitle {
     font-size: 20px;
   }
 }
 
-.random-post-excerpt {
+.randomPosts-itemExcerpt {
   margin: 2px 0 0;
   font-family: "Lora", Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
@@ -8031,12 +8029,12 @@ ul.hero-social a.fa .label {
 }
 
 @media (max-width: 767px) {
-  .random-post-excerpt {
+  .randomPosts-itemExcerpt {
     font-size: 16px;
   }
 }
 
-.random-post-meta {
+.randomPosts-itemMeta {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.6;
@@ -8046,12 +8044,12 @@ ul.hero-social a.fa .label {
 }
 
 @media (max-width: 767px) {
-  .random-post-meta {
+  .randomPosts-itemMeta {
     font-size: 12px;
   }
 }
 
-.random-posts-footer {
+.randomPosts-footer {
   text-align: center;
 }
 

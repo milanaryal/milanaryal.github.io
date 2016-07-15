@@ -69,7 +69,7 @@
        var numberOfPosts = 5;
        var divRandomPosts = $('#random-posts');
 
-       divRandomPosts.append('<h3 class="random-posts-heading">Other writings</h3>');
+       divRandomPosts.append('<h3 class="randomPosts-heading">Other writings</h3>');
 
        while (counter < numberOfPosts) {
          var randomIndex = Math.floor(Math.random() * postsCount);
@@ -80,7 +80,7 @@
            var postDate = posts[randomIndex].date;
            var postExcerpt = posts[randomIndex].excerpt;
 
-           divRandomPosts.append('<div class="random-post"><a href="' + postURL + '"><div class="clearfix"><h3 class="random-post-title">' + postTitle + '</h3><p class="random-post-excerpt">' + postExcerpt + '</p></div></a><div class="random-post-meta">Posted on ' + postDate + '</div></div>');
+           divRandomPosts.append('<div class="randomPosts-item"><a href="' + postURL + '"><div class="clearfix"><h3 class="randomPosts-itemTitle">' + postTitle + '</h3><p class="randomPosts-itemExcerpt">' + postExcerpt + '</p></div></a><div class="randomPosts-itemMeta">Posted on ' + postDate + '</div></div>');
 
            randomIndexUsed.push(randomIndex);
            counter++;
@@ -202,7 +202,7 @@
 
     generateRandomPosts();
 
-    $('.random-posts').append('<div class="random-posts-footer"><a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a></div>');
+    $('.randomPosts').append('<div class="randomPosts-footer"><a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a></div>');
 
 
     /**

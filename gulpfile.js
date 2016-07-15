@@ -35,7 +35,7 @@ var COMPATIBILITY = [
   'Opera >= 12'
 ];
 
-// Scripts sources
+// Scripts source paths
 var SCRIPTS_SRC = [
   'src/js/jquery.js',
   'src/js/bootstrap/transition.js',
@@ -83,7 +83,7 @@ var banner = ['/*!',
 
 // Test scripts
 gulp.task('test:scripts', function () {
-  return gulp.src(['src/js/**/*.js', '!src/js/**/jquery.js'])
+  return gulp.src(['src/js/**/*.js', '!src/js/**/jquery.js', '!src/js/bootstrap/**'])
     .pipe(jshint('src/js/.jshintrc'))
     .pipe(jshint.reporter('default'));
 });
