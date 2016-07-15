@@ -6,7 +6,7 @@
 
 'use strict';
 
-// Gulp packages
+// Load plugins
 var gulp = require('gulp');
 var del = require('del');
 var watch = require('gulp-watch');
@@ -35,7 +35,7 @@ var COMPATIBILITY = [
   'Opera >= 12'
 ];
 
-// Scripts sources path
+// Scripts sources
 var SCRIPTS_SRC = [
   'src/js/jquery.js',
   'src/js/bootstrap/transition.js',
@@ -109,7 +109,7 @@ gulp.task('build:scripts', function () {
 gulp.task('build:styles', function () {
   return gulp.src('src/scss/styles.scss')
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(scss({ outputStyle: 'expanded' }))
+    .pipe(scss({ precision: 6, outputStyle: 'expanded' }))
     .pipe(prefix({ browsers: COMPATIBILITY }))
     .pipe(gulp.dest('assets/css'))
     .pipe(rename({ suffix: '.min' }))
