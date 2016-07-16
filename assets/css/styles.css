@@ -6968,36 +6968,31 @@ a:hover, a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.header-navbar.is-fixed, .header-navbar.is-visible {
+.header-navbar {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: background-color 500ms, border-color 500ms, -webkit-transform 500ms;
+  transition: background-color 500ms, border-color 500ms, -webkit-transform 500ms;
+  -o-transition: background-color 500ms, border-color 500ms, transform 500ms, -o-transform 500ms;
+  transition: background-color 500ms, border-color 500ms, transform 500ms;
+  transition: background-color 500ms, border-color 500ms, transform 500ms, -webkit-transform 500ms, -o-transform 500ms;
+  will-change: background-color, border-color, transform;
+}
+
+.header-navbar.is-hidden {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
        -o-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
-@media (min-width: 768px) {
-  .header-navbar {
-    -webkit-transition: background-color 200ms linear, border-color 200ms linear, -webkit-transform 200ms linear;
-    transition: background-color 200ms linear, border-color 200ms linear, -webkit-transform 200ms linear;
-    -o-transition: background-color 200ms linear, border-color 200ms linear, transform 200ms linear, -o-transform 200ms linear;
-    transition: background-color 200ms linear, border-color 200ms linear, transform 200ms linear;
-    transition: background-color 200ms linear, border-color 200ms linear, transform 200ms linear, -webkit-transform 200ms linear, -o-transform 200ms linear;
-    will-change: background-color, border-color, transform;
-  }
-  .header-navbar.is-fixed {
-    -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-         -o-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  .header-navbar.is-visible {
-    background-color: rgba(255, 255, 255, 0.97);
-    border-color: #f2f2f2;
-    -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-         -o-transform: translateY(0%);
-            transform: translateY(0%);
-  }
+.header-navbar.is-visible {
+  background-color: rgba(255, 255, 255, 0.97);
+  border-color: #f2f2f2;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+       -o-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .middot-divider {

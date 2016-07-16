@@ -99,9 +99,11 @@
     // Header navbar
     //
 
+    var headerNavbar = $('.header-navbar');
+
     // if url has a hash hide navbar
     if (window.location.hash) {
-      $('.header-navbar').addClass('is-fixed');
+      headerNavbar.addClass('is-hidden');
     }
 
     // primary navigation slide-in effect
@@ -109,20 +111,22 @@
       previousTop: 0
     },
     function () {
-      var headerHeight = $('.header-navbar').height();
+      //var navbarHeight = headerNavbar.height();
       var currentTop = $(window).scrollTop();
       // check if user is scrolling up
       if (currentTop < this.previousTop ) {
         // if scrolling up...
-        if (currentTop > 0 && $('.header-navbar').hasClass('is-fixed')) {
-          $('.header-navbar').addClass('is-visible');
+        if (currentTop > 0) {
+          headerNavbar.addClass('is-visible').removeClass('is-hidden');
         } else {
-          $('.header-navbar').removeClass('is-visible is-fixed');
+          headerNavbar.removeClass('is-visible');
         }
       } else {
         // if scrolling down...
-        $('.header-navbar').removeClass('is-visible');
-        if( currentTop > headerHeight && !$('.header-navbar').hasClass('is-fixed')) $('.header-navbar').addClass('is-fixed');
+        //if (currentTop > navbarHeight)
+        if (currentTop > 10) {
+          headerNavbar.addClass('is-hidden').removeClass('is-visible');
+        }
       }
       this.previousTop = currentTop;
     });
