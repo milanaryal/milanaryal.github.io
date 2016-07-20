@@ -14,7 +14,9 @@
 
 .navbar-brand {
   // font-size: 18px;
+  font-family: $theme-font-family-sans-serif;
   font-weight: 700;
+  letter-spacing: -.022em;
   color: rgba(0,0,0,.75) !important;
 
   @media (min-width: 768px) {
@@ -49,7 +51,7 @@
 
 // Scrolling behavior
 
-.header-navbar {
+.headerNavbar {
   // background-color: #fff;
   // border-color: transparent;
 

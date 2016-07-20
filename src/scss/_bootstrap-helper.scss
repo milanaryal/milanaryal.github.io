@@ -1,0 +1,21 @@
+//
+// Bootstrap custom utility class helper
+//
+
+// Remove the gutter padding from columns
+//
+// <div class="row no-gutter">
+//   <div class="col-md-4">
+//     ...
+//   </div>
+//   <div class="col-md-4">
+//     ...
+//   </div>
+//   <div class="col-md-4">
+//     ...
+//   </div>
+// </div>
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}

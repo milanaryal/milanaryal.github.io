@@ -4,20 +4,20 @@
 
 // Middot divider
 
-.middot-divider {
+.middotDivider {
   display: inline-block;
   padding: 0 .42em;
 }
 
-.middot-divider::after {
+.middotDivider::after {
   content: "\00b7"; // "·"
 }
 
 
 // Page header
 
-.page-content,
-.post-article {
+.pageContent,
+.postArticle {
   margin-top: 50px;
 
   @media (min-width: 768px) {
@@ -25,7 +25,7 @@
   }
 }
 
-.page-header {
+.pageHeader {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,14 +47,14 @@
   }
 }
 
-.page-intro-divider {
+.pageHeader-introDivider {
   max-width: 100px;
   margin: 15px auto;
   border-color: #fff;
   border-width: 4px;
 }
 
-.page-title {
+.pageHeader-title {
   // margin-top: 0;
   font-family: $theme-font-family-sans-serif;
   font-size: 48px;
@@ -67,7 +67,7 @@
   }
 }
 
-.page-description {
+.pageHeader-description {
   display: block;
   margin: 10px 0 0;
   font-family: $theme-font-family-sans-serif;
@@ -82,21 +82,21 @@
   }
 }
 
-.page-body {
+.pageBody {
   margin-bottom: 50px;
 }
 
 
 // Site page footer
 
-.site-footer {
+.siteFooter {
   padding: 50px 0 40px;
   // margin-top: 40px;
   text-align: center;
   background-color: #fafafa;
 }
 
-.site-footer-social {
+.siteFooter-social {
   padding-left: 0;
   margin-left: -5px;
   list-style: none;
@@ -117,7 +117,7 @@
   }
 }
 
-.site-footer-legal {
+.siteFooter-legal {
   margin-top: 30px;
   // margin-bottom: 0;
   font-family: $theme-font-family-base;

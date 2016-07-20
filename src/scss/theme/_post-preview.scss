@@ -2,7 +2,7 @@
 // Post preview
 //
 
-.post-preview {
+.postPreview {
   padding: 25px 0 30px;
   border-bottom: 1px solid rgba(0,0,0,.1);
   transform: translateZ(0);
@@ -16,7 +16,7 @@
   }
 }
 
-.post-preview-meta {
+.postPreview-meta {
   font-family: $theme-font-family-base;
   font-size: 12px;
   // line-height: 1.4;
@@ -28,7 +28,7 @@
   }
 }
 
-.post-preview-title {
+.postPreview-title {
   margin-top: 10px;
   // margin-bottom: 0;
   font-family: $theme-font-family-sans-serif;
@@ -41,7 +41,7 @@
   }
 }
 
-.post-preview-excerpt {
+.postPreview-excerpt {
   margin-top: 10px;
   margin-bottom: 0;
   font-family: $theme-font-family-serif;

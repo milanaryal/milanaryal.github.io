@@ -2,7 +2,7 @@
 // Markdown content
 //
 
-.markdown-body {
+.markdownBody {
   font-family: $theme-font-family-serif;
   font-size: 19px;
   font-style: normal;
@@ -19,7 +19,7 @@
     letter-spacing: -.004em;
   }
 
-  &.page-body {
+  &.pageBody {
 
     > *:first-child {
       margin-top: 0 !important;
@@ -30,7 +30,7 @@
     }
   }
 
-  &.post-body {
+  &.postBody {
     margin-bottom: 5px;
 
     > *:last-child {
@@ -413,4 +413,4 @@
     }
   }
 
-} // .markdown-body
+} // .markdownBody

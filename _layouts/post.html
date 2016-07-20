@@ -7,25 +7,26 @@ layout: default
 <main role="main" itemprop="mainContentOfPage">
 
   <!-- Post article -->
-  <article class="post-article" itemscope itemtype="https://schema.org/Article">
+  <article class="postArticle" itemscope itemtype="https://schema.org/Article">
 
     <!-- Post header -->
-    <header class="post-header">
+    <header class="postHeader">
       <div class="container">
+
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
 
             <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ page_url }}">
 
             <!-- Post meta -->
-            <div class="post-meta">
-              <time itemprop="datePublished" datetime="{{ date_published }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{{ reading_time }}</span>
+            <div class="postHeader-meta">
+              <time itemprop="datePublished" datetime="{{ date_published }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middotDivider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{{ reading_time }}</span>
             </div><!-- /.post-meta -->
 
             <meta itemprop="dateModified" content="{{ date_modified }}">
 
             <!-- Post title -->
-            <h1 class="post-title" itemprop="headline">{{ page_title }}</h1>
+            <h1 class="postHeader-title" itemprop="headline">{{ page_title }}</h1>
 
             <link itemprop="url" rel="bookmark" href="{{ page_url }}">
 
@@ -72,55 +73,77 @@ layout: default
         </div><!-- /.row -->
       </div><!-- /.container -->
 
-      <!-- Post leading image -->
-      {% if page_image %}
-        {% if page.image.caption %}
-          {% assign image_alternative_text = page.image.caption | smartify | strip_html | strip_newlines | escape_once %}
-        {% else %}
-          {% assign image_alternative_text = page_title %}
-        {% endif %}
-        <figure class="post-leadingFigure container">
-          <div class="pil" style="{% if page.image.width %}max-width: {{ page.image.width }}px;{% endif %}{% if page.image.height %}max-height: {{ page.image.height }}px;{% endif %}">
-            <img class="post-leadingImage img-responsive" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}{% if page.image.width %} data-full-width="{{ page.image.width }}"{% endif %}{% if page.image.height %} data-full-height="{{ page.image.height }}"{% endif %}>
-          </div>
-          {% if page.image.caption %}
-            <figcaption class="post-leadingFigcaption">{{ page.image.caption }}</figcaption>
-          {% endif %}
-        </figure>
+      <!-- Post header lead content -->
+      {% if page_image or page.video %}
+      <div class="container postHeader-lead">
+        <div class="row no-gutter">
+          <div class="col-xs-12">
+
+            <figure class="postHeader-leadFigure">
+              <!-- Post header lead image -->
+              {% if page_image %}
+                {% if page.image.caption %}
+                  {% assign image_alternative_text = page.image.caption | smartify | strip_html | strip_newlines | escape_once %}
+                {% else %}
+                  {% assign image_alternative_text = page_title %}
+                {% endif %}
+                <div class="pil" style="{% if page.image.width %}max-width: {{ page.image.width }}px;{% endif %}{% if page.image.height %}max-height: {{ page.image.height }}px;{% endif %}">
+                  <img class="postHeader-leadFigureImage img-responsive" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}{% if page.image.width %} data-full-width="{{ page.image.width }}"{% endif %}{% if page.image.height %} data-full-height="{{ page.image.height }}"{% endif %}>
+                </div>
+                {% if page.image.caption %}
+                  <figcaption class="postHeader-leadFigcaption">{{ page.image.caption }}</figcaption>
+                {% endif %}
+              {% endif %}
+
+              <!-- Post header lead video -->
+              {% if page.video %}
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="{{ page.video.path | default: page.video }}"></iframe>
+                </div>
+                {% if page.video.caption %}
+                  <figcaption class="postHeader-leadFigcaption">{{ page.video.caption }}</figcaption>
+                {% endif %}
+              {% endif %}
+            </figure>
+          </div><!-- /.col-* -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
       {% endif %}
-    </header><!-- /.post-header -->
+
+    </header><!-- /.postHeader -->
 
     <!-- Post body -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="post-body markdown-body clearfix" itemprop="articleBody">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <div class="postBody markdownBody clearfix" itemprop="articleBody">
             {{ content }}
-          </div><!-- /.post-body -->
+          </div><!-- /.postBody -->
         </div><!-- /.col-* -->
       </div><!-- /.row -->
     </div><!-- /.container -->
 
     <!-- Post footer -->
-    <footer class="post-footer">
+    <footer class="postFooter">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="postMeta-acknowledgments" about="{{ page_url }}">
+          <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <div class="postFooter-metaAcknowledgments" about="{{ page_url }}">
               <a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author and page.author != empty %}{{ page_author }}{% else %}by the author{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span>
               <div class="hidden">Except as otherwise <a href="{{ site_url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page_url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{{ page_author }}</span>.</div>
-            </div><!-- /.postMeta-acknowledgments -->
+            </div><!-- /.postFooter-metaAcknowledgments -->
           </div><!-- /.col-* -->
         </div><!-- /.row -->
       </div><!-- /.container -->
-    </footer><!-- /.post-footer -->
-  </article><!-- /.post-article -->
+    </footer><!-- /.postFooter -->
+  </article><!-- /.postArticle -->
 </main>
 
 <!-- Post footer section -->
 <section class="container">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
 
       <!-- Share buttons -->
       {% include social_share.html %}
@@ -141,7 +164,7 @@ layout: default
         {% if site_author_avatar %}
           {% assign site_author_avatar = site_author_avatar | escape %}
         {% endif %}
-        <hr class="postFooter-divider">
+        <hr class="postFooter-sectionDivider">
 
         <div class="postAuthor-card">
           <div class="postAuthor-cardAvatar">
@@ -167,7 +190,7 @@ layout: default
 
       <!-- Pager -->
       <nav class="clearfix">
-        <ul class="pager post-pager">
+        <ul class="pager postFooter-sectionPager">
           {% if page.previous.url %}
             <li class="previous">
               <a href="{{ page.previous.url | replace:'//','/' | replace:'/index.html','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title | markdownify | strip_html | strip_newlines | escape_once }}"><i class="fa fa-angle-left"></i> Previous</a>
@@ -188,7 +211,7 @@ layout: default
 <aside class="randomPosts">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
         <div id="random-posts"></div>
       </div><!-- /.col-* -->
     </div><!-- /.row -->
@@ -196,4 +219,4 @@ layout: default
 </aside><!-- /.randomPosts -->
 
 <!-- Elevator wrapper - Scroll back to top button -->
-<div class="elevator-wrapper"></div>
+<div class="elevatorWrapper"></div>

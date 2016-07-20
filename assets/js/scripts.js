@@ -11521,7 +11521,7 @@ var Pil = (function(){
     // Header navbar
     //
 
-    var headerNavbar = $('.header-navbar');
+    var headerNavbar = $('.headerNavbar');
 
     // if url has a hash hide navbar
     if (window.location.hash) {
@@ -11565,16 +11565,16 @@ var Pil = (function(){
 
     /**
      * ------------------------------------------------------------------------
-     * Responsive stuffs
+     * Add or wrap necessary classes to the elements
      * ------------------------------------------------------------------------
      */
 
     // make all images responsive
-    $('.markdown-body img').addClass('img-responsive');
+    $('.markdownBody img').addClass('img-responsive');
 
     // responsive table
-    $('.markdown-body>table').addClass('table table-hover');
-    $('.markdown-body>table').wrap('<div class="table-responsive"></div>');
+    $('.markdownBody table').addClass('table table-hover');
+    $('.markdownBody table').wrap('<div class="table-responsive"></div>');
 
     // responsive embed video
     $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
@@ -11586,16 +11586,12 @@ var Pil = (function(){
     $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
     $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
+    // default button
+    $('.markdownBody a[role="button"]').addClass('btn btn-default');
 
-    /**
-     * ------------------------------------------------------------------------
-     * Footnotes header
-     * ------------------------------------------------------------------------
-     */
-
-     var footnotesAnchor = '<a class="header-link" href="#footnotes" aria-hidden="true"><i class="fa fa-link" aria-hidden="true"></i></a>';
-
-    $('.footnotes ').prepend('<hr><h4 id="footnotes">' + footnotesAnchor + 'Footnotes</h4>');
+    // footnotes header
+    var footnotesAnchor = '<a class="js-headerLink" href="#footnotes" aria-hidden="true"><i class="fa fa-link" aria-hidden="true"></i></a>';
+    $('.footnotes').prepend('<hr><h4 id="footnotes">' + footnotesAnchor + 'Footnotes</h4>');
 
 
     /**
@@ -11604,12 +11600,12 @@ var Pil = (function(){
      * ------------------------------------------------------------------------
      */
 
-    var postHeader = '.markdown-body>h3,.markdown-body>h4,.archive>h3';
+    var postHeader = '.markdownBody>h3,.markdownBody>h4,.archiveBody .archiveYear';
 
     $(postHeader).filter('[id]').each(function () {
       var header      = $(this),
           headerID    = header.attr('id'),
-          anchorClass = 'header-link',
+          anchorClass = 'js-headerLink',
           anchorIcon  = '<i class="fa fa-link" aria-hidden="true"></i>';
 
       if (headerID) {
@@ -11628,6 +11624,7 @@ var Pil = (function(){
 
     generateRandomPosts();
 
+    // random posts section footer
     $('.randomPosts').append('<div class="randomPosts-footer"><a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a></div>');
 
 
@@ -11637,7 +11634,7 @@ var Pil = (function(){
      * ------------------------------------------------------------------------
      */
 
-    $('.elevator-wrapper').append('<div class="elevator"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-chevron-up fa-stack-1x fa-inverse" aria-hidden="true"></i></span></div>');
+    $('.elevatorWrapper').append('<div class="elevator"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-chevron-up fa-stack-1x fa-inverse" aria-hidden="true"></i></span></div>');
 
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,
@@ -11672,7 +11669,7 @@ var Pil = (function(){
      * ------------------------------------------------------------------------
      */
 
-    $('.share-popup').on('click', function () {
+    $('.socialShare-popup').on('click', function () {
       var width  = 670,
           height = 420,
           left   = ($(window).width()  - width)  / 2,

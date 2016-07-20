@@ -12,11 +12,11 @@ robots: "noindex, follow"
   {% assign site_name = site_name | smartify | strip_html | strip_newlines | escape_once %}
 {% endif %}
 
-<h3 class="search-heading"><i class="fa fa-search"></i> Search {{ site_name }} articles</h3>
+<h3 class="searchPage-heading"><i class="fa fa-search"></i> Search {{ site_name }} writings</h3>
 
-<div class="search-wrapper" id="cse-search">
+<div class="searchPage-body" id="cse-search">
   <!-- Google CSE search box begins  -->
-  <form class="search-form" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
+  <form class="searchPage-form" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
     <div class="row">
       <div class="col-xs-12">
         <div class="input-group input-group-lg">
@@ -42,7 +42,7 @@ robots: "noindex, follow"
     })();
   </script>
 
-  <div class="search-results">
+  <div class="searchPage-results">
     <gcse:searchresults-only linktarget="_parent"></gcse:searchresults-only>
   </div>
 </div><!-- ./search-box -->

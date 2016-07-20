@@ -7,7 +7,7 @@ redirect_from: "/2015/async-social-sharing-buttons/"
 
 Social sharing button are great easy resource to share the content of the site. Different social sites use different scripts to load the sharing button. If you go and copying every social sharing button scripts then it will be bunch of and may slow down your site. Thus, here's the simple asynchronously (async) loading JavaScript of every social media.
 
-[Demo](//dl.dropboxusercontent.com/s/6stjb9x82f0ucoo/index.html){:class="btn btn-default"} [Download](//dl.dropboxusercontent.com/s/mdwt8uvfinhk0gr/async-social-sharing-buttons.zip?dl=1){:class="btn btn-default"}
+[Demo](//dl.dropboxusercontent.com/s/6stjb9x82f0ucoo/index.html){:role="button"} [Download](//dl.dropboxusercontent.com/s/mdwt8uvfinhk0gr/async-social-sharing-buttons.zip?dl=1){:role="button"}
 
 ### Asynchronously loading social JavaScript
 
@@ -84,4 +84,4 @@ You'll need the HTML in place for the scripts to put their stuff:
 <div class="g-plusone" data-size="medium" data-count="true"></div>
 ```
 
-[Demo](//dl.dropboxusercontent.com/s/6stjb9x82f0ucoo/index.html){:class="btn btn-default"} [Download](//dl.dropboxusercontent.com/s/mdwt8uvfinhk0gr/async-social-sharing-buttons.zip?dl=1){:class="btn btn-default"}
+[Demo](//dl.dropboxusercontent.com/s/6stjb9x82f0ucoo/index.html){:role="button"} [Download](//dl.dropboxusercontent.com/s/mdwt8uvfinhk0gr/async-social-sharing-buttons.zip?dl=1){:role="button"}

@@ -2,7 +2,7 @@
 // Header link placement and hover behavior
 //
 
-.header-link {
+.js-headerLink {
   position: absolute;
   padding-right: .5em;
   margin-left: -1em;
@@ -23,7 +23,7 @@
 
 *:hover {
 
-  > .header-link {
+  > .js-headerLink {
     opacity: .75;
 
     // transition is in _global.sass for anchor
@@ -31,7 +31,7 @@
     // transition: all .16s linear;
   }
 
-  > .header-link {
+  > .js-headerLink {
     &:hover,
     &:focus {
       opacity: 1;

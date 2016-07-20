@@ -2,7 +2,7 @@
 // 404 error page content
 //
 
-.error-page {
+.errorPage {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,13 +11,13 @@
   background-color: #fff;
 }
 
-.error-page-container {
+.errorPage-content {
   padding: 2em;
   transform: translateZ(0);
   animation: fade-in 2s;
 }
 
-.error-page-message {
+.errorPage-message {
   font-family: $theme-font-family-base;
   font-size: 24px;
   font-style: normal;
@@ -31,7 +31,7 @@
   }
 }
 
-.error-page-message-lead {
+.errorPage-messageLead {
   margin-bottom: 10px;
   font-size: 32px;
 
@@ -40,7 +40,7 @@
   }
 }
 
-.error-page-message-small {
+.errorPage-messageSmall {
   margin-top: 10px;
   // font-family: $theme-font-family-base;
   font-size: 16px;

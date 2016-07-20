@@ -1,7 +1,7 @@
 <!-- Disqus commenting system (https://disqus.com/admin/universalcode/) -->
 
 <div class="comments clearfix">
-  <button id="btn-comment-js" class="btn btn-default btn-disqus" onclick="initDisqus_onClick()"><i class="fa fa-comment"></i><span class="disqus-comment-count" data-disqus-url="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">Leave a comment</span></button>
+  <button id="js-button-comment" class="btn btn-default btn-disqus" onclick="initDisqus_onClick()"><i class="fa fa-comment"></i><span class="disqus-comment-count" data-disqus-url="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">Leave a comment</span></button>
 
   <div id="disqus_thread"></div>
 
@@ -16,7 +16,7 @@
   };
 
   function initDisqus_onClick() {
-    document.getElementById('btn-comment-js').classList.add('hidden');
+    document.getElementById('js-button-comment').classList.add('hidden');
 
     var d = document, s = d.createElement('script');
 

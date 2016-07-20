@@ -2,7 +2,7 @@
 // Post page
 //
 
-.post-header {
+.postHeader {
   padding-top: 40px;
 
   @media (max-width: 767px) {
@@ -10,7 +10,7 @@
   }
 }
 
-.post-meta {
+.postHeader-meta {
   padding-bottom: 10px;
   // display: block;
   font-family: $theme-font-family-base;
@@ -25,7 +25,7 @@
   }
 }
 
-.post-title {
+.postHeader-title {
   margin-top: 10px;
   margin-left: -2.25px;
   font-family: $theme-font-family-sans-serif;
@@ -44,25 +44,26 @@
   }
 }
 
-.post-leadingFigure {
-  margin: 47px auto;
-
-  .post-leadingImage {
-    margin: 0 auto;
-  }
-
+// Post header lead container width 100% on small and medium screens
+.container.postHeader-lead {
   @media (max-width: 991px) {
     width: 100%;
-    padding-right: 0;
-    padding-left: 0;
   }
+}
+
+.postHeader-leadFigure {
+  margin: 47px auto;
 
   @media (max-width: 767px) {
     margin: 39px auto;
   }
+
+  .postHeader-leadFigureImage {
+    margin: 0 auto;
+  }
 }
 
-.post-leadingFigcaption {
+.postHeader-leadFigcaption {
   position: relative;
   top: 0;
   left: 0;
@@ -90,11 +91,11 @@
   }
 }
 
-.post-footer {
+.postFooter {
   padding-top: 20px;
 }
 
-.postMeta-acknowledgments {
+.postFooter-metaAcknowledgments {
   padding-top: 5px;
   padding-bottom: 20px;
   font-size: 13px;
@@ -111,7 +112,7 @@
 
 // Social share
 
-.social-share {
+.socialShare {
   padding-bottom: 20px;
   padding-left: 0;
   margin-left: -5px;
@@ -126,7 +127,7 @@
   }
 }
 
-.btn-social-share {
+.btn-socialShare {
   padding: 5px 10px;
   font-size: 13px;
   border: 0;
@@ -145,7 +146,7 @@
       margin-right: 0;
     }
 
-    .social-label {
+    .label {
       display: none !important;
     }
   }
@@ -154,7 +155,7 @@
 
 // Post footer section divider
 
-.postFooter-divider {
+.postFooter-sectionDivider {
   margin: 25px 0;
   border: 0;
   border-top: 1px solid rgba(0,0,0,.05);
@@ -240,7 +241,7 @@
 
 // Post pager
 
-.post-pager {
+.postFooter-sectionPager {
   margin-top: 0;
   margin-bottom: 60px;
 

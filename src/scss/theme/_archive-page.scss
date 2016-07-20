@@ -2,7 +2,7 @@
 // Archive page content
 //
 
-.archive-body {
+.archiveBody {
   margin-bottom: 50px;
   font-size: 17px;
   color: rgba(0,0,0,.8);
@@ -21,7 +21,7 @@
   }
 }
 
-.archive-year {
+.archiveYear {
   margin-top: 47px;
   margin-left: -2.25px;
   font-family: $theme-font-family-sans-serif;
@@ -41,7 +41,7 @@
   }
 }
 
-.archive-item {
+.archiveItem {
   margin-top: 15px;
 
   @media (max-width: 767px) {
@@ -49,7 +49,7 @@
   }
 }
 
-.archive-year + .archive-item {
+.archiveYear + .archiveItem {
   margin-top: 17px;
 
   @media (max-width: 767px) {
@@ -57,7 +57,7 @@
   }
 }
 
-.archive-title {
+.archiveTitle {
   a {
     text-decoration: none;
     border-bottom: 1px solid rgba(0,0,0,.1);
@@ -71,7 +71,7 @@
   }
 }
 
-.archive-date {
+.archiveDate {
   font-size: .9em;
   color: rgba(0,0,0,.6);
   text-align: right;
