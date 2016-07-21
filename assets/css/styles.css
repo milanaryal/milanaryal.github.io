@@ -6941,9 +6941,24 @@ a:hover, a:focus {
   }
 }
 
+.navbar-toggle {
+  border-color: #fff;
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.navbar-toggle .icon-bar {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.navbar-collapse {
+  border: 0;
+}
+
 @media (max-width: 767px) {
-  .navbar-default .navbar-collapse {
-    border: 0;
+  .navbar-collapse {
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
             box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   }
@@ -6954,7 +6969,7 @@ a:hover, a:focus {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: -.022em;
-  color: rgba(0, 0, 0, 0.75) !important;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 @media (min-width: 768px) {
@@ -6995,6 +7010,7 @@ a:hover, a:focus {
 
 .navbar-nav li a:hover, .navbar-nav li a:focus {
   color: rgba(0, 0, 0, 0.9);
+  background-color: #fff;
 }
 
 .headerNavbar {

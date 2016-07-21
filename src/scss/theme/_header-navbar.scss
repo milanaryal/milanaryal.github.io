@@ -12,10 +12,24 @@
   }
 }
 
-.navbar-default .navbar-collapse {
+.navbar-toggle {
+  border-color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0,0,0,.03);
+  }
+
+  .icon-bar {
+    background-color: rgba(0,0,0,.75);
+  }
+}
+
+.navbar-collapse {
+  border: 0;
+
   @media (max-width: 767px) {
-    border: 0;
-    box-shadow: 0 0 1px rgba(0,0,0,.15);
+    box-shadow: 0 0 1px rgba(0,0,0,.15); // inset 0 1px 0 hsla(0,0%,100%,.1)
   }
 }
 
@@ -26,7 +40,7 @@
   // font-size: 18px;
   font-weight: 700;
   letter-spacing: -.022em;
-  color: rgba(0,0,0,.75) !important;
+  color: rgba(0,0,0,.75);
 
   @media (min-width: 768px) {
     height: 65px;
@@ -63,6 +77,7 @@
       &:hover,
       &:focus {
         color: rgba(0,0,0,.9);
+        background-color: #fff;
       }
     }
   }
