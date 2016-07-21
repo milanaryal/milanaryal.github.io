@@ -21,6 +21,7 @@
 
 .navbar-brand {
   // height: 50px;
+  display: inline-block;
   font-family: $theme-font-family-sans-serif;
   // font-size: 18px;
   font-weight: 700;
@@ -29,8 +30,12 @@
 
   @media (min-width: 768px) {
     height: 65px;
-    padding: 23px 0 0;
+    padding: 20.5px 0 0;
     line-height: normal;
+  }
+
+  span {
+    display: inline-block;
   }
 }
 

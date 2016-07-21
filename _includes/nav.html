@@ -20,7 +20,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-top-collapse">
             <ul class="nav navbar-nav navbar-right">
-              {% for nav_item in site.data.nav %}
+              {% for nav_item in site.nav %}
                 <li>
                   <a href="{{ nav_item.url }}">{{ nav_item.title | smartify | strip_html | strip_newlines | escape_once }}</a>
                 </li>

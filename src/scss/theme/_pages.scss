@@ -14,16 +14,19 @@
 }
 
 
-// Page header
+// Page content
 
 .pageContent,
 .postArticle {
-  margin-top: 50px;
+  margin-top: 49px;
 
   @media (min-width: 768px) {
-    margin-top: 65px;
+    margin-top: 64px;
   }
 }
+
+
+// Page header
 
 .pageHeader {
   display: flex;
@@ -31,7 +34,7 @@
   justify-content: center;
   width: 100%;
   height: 300px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   color: #fff;
   text-align: center;
   background-attachment: scroll;
@@ -44,6 +47,7 @@
 
   @media (min-width: 768px) {
     height: 430px;
+    margin-bottom: 80px;
   }
 }
 
@@ -81,6 +85,9 @@
     font-size: 22px;
   }
 }
+
+
+// Page body
 
 .pageBody {
   margin-bottom: 50px;
