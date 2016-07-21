@@ -6929,15 +6929,23 @@ a:hover, a:focus {
 }
 
 .navbar {
-  margin-bottom: 0;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #fff;
-  border-color: transparent;
+  border: 0;
 }
 
 @media (min-width: 768px) {
   .navbar {
     height: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -6951,8 +6959,8 @@ a:hover, a:focus {
 @media (min-width: 768px) {
   .navbar-brand {
     height: 65px;
-    padding: 22px 0;
-    margin-left: 15px !important;
+    padding: 23px 0 0;
+    line-height: normal;
   }
 }
 
@@ -6964,10 +6972,19 @@ a:hover, a:focus {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .navbar-nav li a {
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-nav li a {
-    padding: 24px 0 22px;
-    margin-right: 40px;
+    height: 65px;
+    padding: 25px 0 0;
+    margin-left: 50px;
+    line-height: normal;
   }
 }
 
@@ -6978,12 +6995,12 @@ a:hover, a:focus {
 .headerNavbar {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
-  -webkit-transition: background-color 500ms, border-color 500ms, -webkit-transform 500ms;
-  transition: background-color 500ms, border-color 500ms, -webkit-transform 500ms;
-  -o-transition: background-color 500ms, border-color 500ms, transform 500ms, -o-transform 500ms;
-  transition: background-color 500ms, border-color 500ms, transform 500ms;
-  transition: background-color 500ms, border-color 500ms, transform 500ms, -webkit-transform 500ms, -o-transform 500ms;
-  will-change: background-color, border-color, transform;
+  -webkit-transition: background-color 500ms, -webkit-transform 500ms, -webkit-box-shadow 500ms;
+  transition: background-color 500ms, -webkit-transform 500ms, -webkit-box-shadow 500ms;
+  -o-transition: background-color 500ms, transform 500ms, box-shadow 500ms, -o-transform 500ms;
+  transition: background-color 500ms, transform 500ms, box-shadow 500ms;
+  transition: background-color 500ms, transform 500ms, box-shadow 500ms, -webkit-transform 500ms, -o-transform 500ms, -webkit-box-shadow 500ms;
+  will-change: background-color, transform, box-shadow;
 }
 
 .headerNavbar.is-hidden {
@@ -6995,11 +7012,12 @@ a:hover, a:focus {
 
 .headerNavbar.is-visible {
   background-color: rgba(255, 255, 255, 0.97);
-  border-color: #f2f2f2;
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
        -o-transform: translateY(0%);
           transform: translateY(0%);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
 .middotDivider {
@@ -7304,7 +7322,7 @@ a:hover, a:focus {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  min-height: calc(100vh - 66px);
+  min-height: calc(100vh - 65px);
   padding: 15px;
   background-attachment: fixed;
   background-color: #fff;
@@ -7316,7 +7334,7 @@ a:hover, a:focus {
 
 @media (max-width: 767px) {
   .hero-container {
-    min-height: calc(100vh - 51px);
+    min-height: calc(100vh - 50px);
   }
 }
 

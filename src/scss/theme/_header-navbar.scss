@@ -1,28 +1,36 @@
 // Navigation
 
 .navbar {
-  margin-bottom: 0;
+  // min-height: 50px; // dropdown menu height is greater in less than 768px
+  margin: 0;
   font-family: $theme-font-family-base;
   background-color: #fff;
-  border-color: transparent;
-  // border-radius: 0;
+  border: 0;
 
   @media (min-width: 768px) {
-    height: 65px;
+    height: 65px; // should be min-height if dropdown menu contents
+  }
+}
+
+.navbar-default .navbar-collapse {
+  @media (max-width: 767px) {
+    border: 0;
+    box-shadow: 0 0 1px rgba(0,0,0,.15);
   }
 }
 
 .navbar-brand {
-  // font-size: 18px;
+  // height: 50px;
   font-family: $theme-font-family-sans-serif;
+  // font-size: 18px;
   font-weight: 700;
   letter-spacing: -.022em;
   color: rgba(0,0,0,.75) !important;
 
   @media (min-width: 768px) {
     height: 65px;
-    padding: 22px 0;
-    margin-left: 15px !important;
+    padding: 23px 0 0;
+    line-height: normal;
   }
 }
 
@@ -35,9 +43,16 @@
       color: rgba(0,0,0,.6);
       text-transform: uppercase;
 
+      @media (max-width: 767px) {
+        line-height: 40px;
+        text-align: center;
+      }
+
       @media (min-width: 768px) {
-        padding: 24px 0 22px;
-        margin-right: 40px;
+        height: 65px;
+        padding: 25px 0 0;
+        margin-left: 50px;
+        line-height: normal;
       }
 
       &:hover,
@@ -52,17 +67,14 @@
 // Scrolling behavior
 
 .headerNavbar {
-  // background-color: #fff;
-  // border-color: transparent;
-
   //*** Force hardware acceleration ***//
   transform: translateZ(0);
   transition: background-color 500ms,
-              border-color 500ms,
-              transform 500ms;
+              transform 500ms,
+              box-shadow 500ms;
   will-change: background-color,
-               border-color,
-               transform;
+               transform,
+               box-shadow;
 
   // when the user scrolls down, we hide the header right above the viewport
   &.is-hidden {
@@ -72,7 +84,7 @@
   // if the user changes the scrolling direction, we show the header
   &.is-visible {
     background-color: rgba(#fff, .97);
-    border-color: darken(#fff, 5%);
     transform: translateY(0%);
+    box-shadow: 0 0 1px rgba(0,0,0,.15);
   }
 }
