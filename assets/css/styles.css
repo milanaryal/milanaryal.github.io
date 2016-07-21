@@ -6955,8 +6955,8 @@ a:hover, a:focus {
 
 @media (max-width: 767px) {
   .navbar-collapse {
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -7006,7 +7006,7 @@ a:hover, a:focus {
 
 .navbar-nav li a:hover, .navbar-nav li a:focus {
   color: rgba(0, 0, 0, 0.9);
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .headerNavbar {
