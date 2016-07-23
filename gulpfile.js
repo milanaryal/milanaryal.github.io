@@ -15,6 +15,7 @@ var rename = require('gulp-rename');
 var header = require('gulp-header');
 var pkg = require('./package.json');
 var jshint = require('gulp-jshint');
+var jscs = require('gulp-jscs');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var scssLint = require('gulp-scss-lint');
@@ -66,8 +67,8 @@ var JEKYLL_SRC = [
   'writings/**'
 ];
 
-// Make bundle command work for Windows platform
-var bundle = process.platform === 'win32' ? 'bundle.bat' : 'bundle';
+// Make npm command work on Windows platform
+var npm = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
 
 // Banner template for files header
 var banner = ['/*!',
@@ -99,7 +100,9 @@ gulp.task('clean:fonts', function () {
 gulp.task('test:scripts', function () {
   return gulp.src(['src/js/**/*.js', '!src/js/**/jquery.js', '!src/js/bootstrap/**'])
     .pipe(jshint('src/js/.jshintrc'))
-    .pipe(jshint.reporter('default'));
+    .pipe(jshint.reporter('default'))
+    .pipe(jscs({ configPath: 'src/js/.jscsrc' }))
+    .pipe(jscs.reporter());
 });
 
 // Test styles
@@ -151,7 +154,7 @@ gulp.task('clean:jekyll', function () {
 // Build the Jekyll site
 gulp.task('build:jekyll', ['default'], function (done) {
   browserSync.notify('Compiling Jekyll, please wait!');
-  return cp.spawn(bundle, ['exec', 'jekyll', 'build', '--config', '_config.yml,_config_dev.yml'], { stdio: 'inherit' })
+  return cp.spawn(npm, ['run', 'jekyll-build'], { stdio: 'inherit' })
     .on('close', done);
 });
 

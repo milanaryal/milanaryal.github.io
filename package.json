@@ -20,6 +20,7 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-flatten": "^0.3.0",
     "gulp-header": "^1.8.7",
+    "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
@@ -32,6 +33,7 @@
     "node": ">=4"
   },
   "scripts": {
+    "jekyll-build": "bundle exec jekyll build --config _config.yml,_config_dev.yml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
