@@ -28,10 +28,10 @@ $ npm install -g grunt-cli
 
 Lets break that down:
 
-* "npm" tells terminal/cmd what program we're commanding.
-* "install" is the command.
-* "-g" is an argument (a kind of optional bit of info) for the command short way of saying "--global" This means we're installing Grunt globally on our system. This is a good thing. You want to be able to use it everywhere.
-* "grunt-cli" is another argument. This time telling npm what you want to install. In this instance the Grunt Command Line Interface.
+* `npm` tells terminal/cmd what program we're commanding.
+* `install` is the command.
+* `-g` is an argument (a kind of optional bit of info) for the command short way of saying `--global` This means we're installing Grunt globally on our system. This is a good thing. You want to be able to use it everywhere.
+* `grunt-cli` is another argument. This time telling npm what you want to install. In this instance the Grunt Command Line Interface.
 
 You should close and reopen the terminal as well. That's a generic good practice to make sure things are working right. Kinda like restarting your computer after you install a new application was in the olden days.
 

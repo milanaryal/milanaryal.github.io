@@ -3,7 +3,7 @@ title: "Running Jekyll on Windows"
 date: 2016-07-22T07:53:11+05:45
 ---
 
-[Setting up Jekyll](https://jekyllrb.com/docs/windows/){:rel="nofollow"} is not as easy as installing on Linux or macOS. Several errors may occur if you do not correctly setup dependencies for Jekyll on Windows.
+[Setting up Jekyll on Windows](https://jekyllrb.com/docs/windows/){:rel="nofollow"} is not as easy as installing on Linux or macOS. Several errors may occur if you do not correctly setup dependencies for Jekyll on Windows.
 
 Here are some common errors or warnings which may occur while setting up Jekyll on windows:
 
@@ -49,5 +49,5 @@ Here's the solution to fix this warning and access GitHub Metadata on your Windo
 For security reason you can also access GitHub token with the following command line while building or serving Jekyll site:
 
 ```bash
-$ JEKYLL_GITHUB_TOKEN=abc123def456 [bundle exec] jekyll serve
+$ JEKYLL_GITHUB_TOKEN=abc123def456 bundle exec jekyll serve
 ```
