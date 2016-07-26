@@ -6961,7 +6961,7 @@ a:hover, a:focus {
   display: inline-block;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  letter-spacing: -.022em;
+  letter-spacing: -.05em;
   color: rgba(0, 0, 0, 0.75);
 }
 
@@ -7098,7 +7098,7 @@ a:hover, a:focus {
 .pageHeader-title {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 48px;
-  letter-spacing: -.02em;
+  letter-spacing: -.04em;
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
@@ -7117,6 +7117,7 @@ a:hover, a:focus {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.1;
+  letter-spacing: -.02em;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
@@ -7553,7 +7554,7 @@ ul.hero-social a.fa .label {
   font-style: normal;
   font-weight: 700;
   line-height: 1.15;
-  letter-spacing: -.02em;
+  letter-spacing: -.04em;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -7563,7 +7564,7 @@ ul.hero-social a.fa .label {
     margin-left: -1.75px;
     font-size: 27px;
     line-height: 1.12;
-    letter-spacing: -.022em;
+    letter-spacing: -.044em;
   }
 }
 
@@ -7720,7 +7721,7 @@ ul.hero-social a.fa .label {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   line-height: 1.12;
-  letter-spacing: -.022em;
+  letter-spacing: -.044em;
 }
 
 @media (min-width: 768px) {
@@ -7778,7 +7779,7 @@ ul.hero-social a.fa .label {
   font-style: normal;
   font-weight: 700;
   line-height: 1.15;
-  letter-spacing: -.02em;
+  letter-spacing: -.04em;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -7787,7 +7788,7 @@ ul.hero-social a.fa .label {
     margin-left: -1.75px;
     font-size: 31px;
     line-height: 1.12;
-    letter-spacing: -.022em;
+    letter-spacing: -.044em;
   }
 }
 
@@ -8045,25 +8046,28 @@ ul.hero-social a.fa .label {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 26px;
   line-height: 1.3;
-  letter-spacing: -.022em;
+  letter-spacing: -.04em;
 }
 
 @media (max-width: 767px) {
   .randomPosts-itemTitle {
     font-size: 20px;
+    letter-spacing: -.044em;
   }
 }
 
 .randomPosts-itemExcerpt {
   margin: 2px 0 0;
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.4;
+  letter-spacing: -.02em;
 }
 
 @media (max-width: 767px) {
   .randomPosts-itemExcerpt {
     font-size: 16px;
+    letter-spacing: -.022em;
   }
 }
 
@@ -8148,31 +8152,6 @@ ul.hero-social a.fa .label {
   }
 }
 
-.markdownBody.postBody > p:first-child::first-letter {
-  position: relative;
-  display: block;
-  float: left;
-  padding-top: 7px;
-  margin-right: 7px;
-  margin-bottom: -.08em;
-  margin-left: -5px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: .83;
-  letter-spacing: -.03em;
-}
-
-@media (max-width: 767px) {
-  .markdownBody.postBody > p:first-child::first-letter {
-    padding-top: 3.5px;
-    margin-right: 6px;
-    margin-left: -4px;
-    font-size: 50px;
-  }
-}
-
 .markdownBody.postBody > h4:first-child + p {
   margin-top: 29px !important;
 }
@@ -8243,7 +8222,7 @@ ul.hero-social a.fa .label {
   font-style: normal;
   font-weight: 700;
   line-height: 1.15;
-  letter-spacing: -.02em;
+  letter-spacing: -.04em;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -8253,7 +8232,7 @@ ul.hero-social a.fa .label {
     margin-left: -1.75px;
     font-size: 27px;
     line-height: 1.12;
-    letter-spacing: -.022em;
+    letter-spacing: -.044em;
   }
 }
 
@@ -8283,7 +8262,7 @@ ul.hero-social a.fa .label {
   font-style: normal;
   font-weight: 400;
   line-height: 1.22;
-  letter-spacing: -.022em;
+  letter-spacing: -.044em;
   color: rgba(0, 0, 0, 0.44);
 }
 
@@ -8293,7 +8272,6 @@ ul.hero-social a.fa .label {
     margin-left: -1.5px;
     font-size: 23px;
     line-height: 1.18;
-    letter-spacing: -.022em;
   }
 }
 
