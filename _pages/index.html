@@ -29,40 +29,42 @@ permalink: /
 <main class="hero-container is-loading" style="background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('{{ page_image }}');" role="main" itemprop="mainContentOfPage">
   <!-- Hero profile -->
   <section class="hero-profile is-loading" itemscope itemtype="https://schema.org/Person">
-    <link itemprop="url" href="/">
-    <header>
-      <span class="hero-avatar">
-        <img class="hero-avatarImage" itemprop="image" src="{{ site_author_avatar }}" alt="{{ site_author }}">
-      </span>
-      <h1 class="hero-title" itemprop="name">{{ site_author }}</h1>
-      <p class="hero-description" itemprop="description">{{ site_author_bio }}</p>
+    <div class="hero-profileInner">
+      <link itemprop="url" href="/">
+      <header>
+        <span class="hero-avatar">
+          <img class="hero-avatarImage" itemprop="image" src="{{ site_author_avatar }}" alt="{{ site_author }}">
+        </span>
+        <h1 class="hero-title" itemprop="name">{{ site_author }}</h1>
+        <p class="hero-description" itemprop="description">{{ site_author_bio }}</p>
 
-      {% if site.author %}
-        <span class="hidden" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          {% if site.author.street %}<meta itemprop="streetAddress" content="{{ site.author.street }}">{% endif %}
-          {% if site.author.locality %}<meta itemprop="addressLocality" content="{{ site.author.locality }}">{% endif %}
-          {% if site.author.region %}<meta itemprop="addressRegion" content="{{ site.author.region }}">{% endif %}
-          {% if site.author.country %}<meta itemprop="addressCountry" content="{{ site.author.country }}">{% endif %}
-          {% if site.author.postcode %}<meta itemprop="postalCode" content="{{ site.author.postcode }}">{% endif %}
-        </span><!-- /itemscope itemtype PostalAddress -->
-      {% endif %}
-    </header>
+        {% if site.author %}
+          <span class="hidden" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            {% if site.author.street %}<meta itemprop="streetAddress" content="{{ site.author.street }}">{% endif %}
+            {% if site.author.locality %}<meta itemprop="addressLocality" content="{{ site.author.locality }}">{% endif %}
+            {% if site.author.region %}<meta itemprop="addressRegion" content="{{ site.author.region }}">{% endif %}
+            {% if site.author.country %}<meta itemprop="addressCountry" content="{{ site.author.country }}">{% endif %}
+            {% if site.author.postcode %}<meta itemprop="postalCode" content="{{ site.author.postcode }}">{% endif %}
+          </span><!-- /itemscope itemtype PostalAddress -->
+        {% endif %}
+      </header>
 
-    <footer>
-      <ul class="hero-social">
-        {% if site.author.twitter %}<li><a itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}" class="fa fa-twitter"><span class="label">Twitter</span></a></li>{% endif %}
-        {% if site.author.instagram %}<li><a itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}" class="fa fa-instagram"><span class="label">Instagram</span></a></li>{% endif %}
-        {% if site.author.github %}<li><a itemprop="sameAs" rel="me" href="//github.com/{{ site.author.github }}" class="fa fa-github"><span class="label">GitHub</span></a></li>{% endif %}
-      </ul>
+      <footer>
+        <ul class="hero-social">
+          {% if site.author.twitter %}<li><a itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}" class="fa fa-twitter"><span class="label">Twitter</span></a></li>{% endif %}
+          {% if site.author.instagram %}<li><a itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}" class="fa fa-instagram"><span class="label">Instagram</span></a></li>{% endif %}
+          {% if site.author.github %}<li><a itemprop="sameAs" rel="me" href="//github.com/{{ site.author.github }}" class="fa fa-github"><span class="label">GitHub</span></a></li>{% endif %}
+        </ul>
 
-      {% if site.author.facebook %}<link itemprop="sameAs" rel="me" href="//www.facebook.com/{{ site.author.facebook }}">{% endif %}
-      {% if site.author.google_plus %}<link itemprop="sameAs" rel="me" href="//plus.google.com/+{{ site.author.google_plus }}">{% endif %}
-      {% if site.author.youtube %}<link itemprop="sameAs" rel="me" href="//www.youtube.com/{{ site.author.youtube }}">{% endif %}
-      {% if site.author.linkedin %}<link itemprop="sameAs" rel="me" href="//www.linkedin.com/in/{{ site.author.linkedin }}">{% endif %}
-      {% if site.author.pinterest %}<link itemprop="sameAs" rel="me" href="//www.pinterest.com/{{ site.author.pinterest }}">{% endif %}
-      {% if site.author.vine %}<link itemprop="sameAs" rel="me" href="//vine.co/{{ site.author.vine }}">{% endif %}
-      {% if site.author.keybase %}<link itemprop="sameAs" rel="me" href="//keybase.io/{{ site.author.keybase }}">{% endif %}
-      {% if site.author.tumblr %}<link itemprop="sameAs" rel="me" href="http://{{ site.author.tumblr }}.tumblr.com">{% endif %}
-    </footer>
+        {% if site.author.facebook %}<link itemprop="sameAs" rel="me" href="//www.facebook.com/{{ site.author.facebook }}">{% endif %}
+        {% if site.author.google_plus %}<link itemprop="sameAs" rel="me" href="//plus.google.com/+{{ site.author.google_plus }}">{% endif %}
+        {% if site.author.youtube %}<link itemprop="sameAs" rel="me" href="//www.youtube.com/{{ site.author.youtube }}">{% endif %}
+        {% if site.author.linkedin %}<link itemprop="sameAs" rel="me" href="//www.linkedin.com/in/{{ site.author.linkedin }}">{% endif %}
+        {% if site.author.pinterest %}<link itemprop="sameAs" rel="me" href="//www.pinterest.com/{{ site.author.pinterest }}">{% endif %}
+        {% if site.author.vine %}<link itemprop="sameAs" rel="me" href="//vine.co/{{ site.author.vine }}">{% endif %}
+        {% if site.author.keybase %}<link itemprop="sameAs" rel="me" href="//keybase.io/{{ site.author.keybase }}">{% endif %}
+        {% if site.author.tumblr %}<link itemprop="sameAs" rel="me" href="http://{{ site.author.tumblr }}.tumblr.com">{% endif %}
+      </footer>
+    </div><!-- /.hero-profileInner -->
   </section><!-- /.hero-content -->
 </main><!-- /.hero-container -->

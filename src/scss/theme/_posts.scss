@@ -110,6 +110,13 @@
 }
 
 
+// Post footer section
+
+.postFooter-section {
+  transform: translateZ(0);
+}
+
+
 // Social share
 
 .socialShare {
@@ -255,6 +262,7 @@
 .randomPosts {
   padding-bottom: 40px;
   background-color: #fafafa;
+  transform: translateZ(0);
 }
 
 .randomPosts-heading {

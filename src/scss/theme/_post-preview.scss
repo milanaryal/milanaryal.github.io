@@ -5,7 +5,6 @@
 .postPreview {
   padding: 25px 0 30px;
   border-bottom: 1px solid rgba(0,0,0,.1);
-  transform: translateZ(0);
 
   &:first-child {
     padding-top: 0;
@@ -48,7 +47,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -.004em;
+  letter-spacing: -.003em;
 
   @media (min-width: 768px) {
     font-size: 18px;

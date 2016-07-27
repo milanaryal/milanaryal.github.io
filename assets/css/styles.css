@@ -6930,6 +6930,8 @@ a:hover, a:focus {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #fff;
   border: 0;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 @media (min-width: 768px) {
@@ -7046,6 +7048,8 @@ a:hover, a:focus {
 .pageContent,
 .postArticle {
   margin-top: 49px;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 @media (min-width: 768px) {
@@ -7100,8 +7104,6 @@ a:hover, a:focus {
   font-size: 48px;
   letter-spacing: -.04em;
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 @media (min-width: 768px) {
@@ -7119,8 +7121,6 @@ a:hover, a:focus {
   line-height: 1.1;
   letter-spacing: -.02em;
   color: rgba(255, 255, 255, 0.7);
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 @media (min-width: 768px) {
@@ -7137,6 +7137,8 @@ a:hover, a:focus {
   padding: 50px 0 40px;
   text-align: center;
   background-color: #fafafa;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .siteFooter-social {
@@ -7165,8 +7167,6 @@ a:hover, a:focus {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
   text-rendering: auto;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 .siteFooter-legal a:hover, .siteFooter-legal a:focus {
@@ -7434,6 +7434,11 @@ a:hover, a:focus {
           transform: perspective(1000px) rotateX(15deg);
 }
 
+.hero-profileInner {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
 .hero-avatar {
   position: relative;
   display: block;
@@ -7528,8 +7533,6 @@ ul.hero-social a.fa .label {
   margin-bottom: 50px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 @media (min-width: 768px) {
@@ -7692,8 +7695,6 @@ ul.hero-social a.fa .label {
 .postPreview {
   padding: 25px 0 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 .postPreview:first-child {
@@ -7737,7 +7738,7 @@ ul.hero-social a.fa .label {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -.004em;
+  letter-spacing: -.003em;
 }
 
 @media (min-width: 768px) {
@@ -7856,6 +7857,11 @@ ul.hero-social a.fa .label {
 
 .postFooter-metaAcknowledgments a:hover {
   text-decoration: underline;
+}
+
+.postFooter-section {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .socialShare {
@@ -8007,6 +8013,8 @@ ul.hero-social a.fa .label {
 .randomPosts {
   padding-bottom: 40px;
   background-color: #fafafa;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .randomPosts-heading {
@@ -8108,17 +8116,15 @@ ul.hero-social a.fa .label {
   font-style: normal;
   font-weight: 400;
   line-height: 1.58;
-  letter-spacing: -.003em;
+  letter-spacing: -.002em;
   word-wrap: break-word;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 @media (max-width: 767px) {
   .markdownBody {
     font-size: 17px;
     line-height: 1.5;
-    letter-spacing: -.004em;
+    letter-spacing: -.003em;
   }
 }
 
@@ -8901,6 +8907,8 @@ kbd {
   background-image: none;
   opacity: 0;
   visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -o-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
