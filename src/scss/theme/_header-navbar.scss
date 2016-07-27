@@ -6,7 +6,6 @@
   font-family: $theme-font-family-base;
   background-color: #fff;
   border: 0;
-  transform: translateZ(0);
 
   @media (min-width: 768px) {
     height: 65px; // should be min-height if dropdown menu contents

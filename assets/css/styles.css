@@ -6930,8 +6930,6 @@ a:hover, a:focus {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #fff;
   border: 0;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 @media (min-width: 768px) {
@@ -7137,8 +7135,6 @@ a:hover, a:focus {
   padding: 50px 0 40px;
   text-align: center;
   background-color: #fafafa;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 .siteFooter-social {
@@ -7435,8 +7431,7 @@ a:hover, a:focus {
 }
 
 .hero-profileInner {
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  display: block;
 }
 
 .hero-avatar {
@@ -8013,8 +8008,6 @@ ul.hero-social a.fa .label {
 .randomPosts {
   padding-bottom: 40px;
   background-color: #fafafa;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 .randomPosts-heading {
@@ -8907,8 +8900,6 @@ kbd {
   background-image: none;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -o-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
