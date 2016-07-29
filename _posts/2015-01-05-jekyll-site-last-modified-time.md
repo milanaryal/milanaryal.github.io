@@ -6,7 +6,7 @@ redirect_from: "/2015/knowing-the-site-generated-time-by-jekyll-on-github-pages/
 excerpt: "Display the date and time that the website was last modified."
 ---
 
-If you are using [Jekyll](http://jekyllrb.com/){:rel="nofollow"} to generate your site or blog, you might want too know the last exact site modified/generated time as the Jekyll generate and keep the files in `_site` folder.
+If you are using [Jekyll](http://jekyllrb.com/){:rel="nofollow"} to generate your site or blog, you might want to know the last exact site modified/generated time as the Jekyll generate and keep the files in `_site` folder.
 
 I found the following liquid tag to do it:
 
