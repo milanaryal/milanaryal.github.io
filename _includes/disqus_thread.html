@@ -1,4 +1,7 @@
 <!-- Disqus commenting system (https://disqus.com/admin/universalcode/) -->
+<link rel="dns-prefetch" href="//{{ site.disqus_shortname }}.disqus.com">
+<link rel="preload" href="//{{ site.disqus_shortname }}.disqus.com/count.js" as="script">
+<link rel="preload" href="//{{ site.disqus_shortname }}.disqus.com/embed.js" as="script">
 
 <div class="comments clearfix">
   <button id="js-button-comment" class="btn btn-default btn-disqus" onclick="initDisqus_onClick()"><i class="fa fa-comment"></i><span class="disqus-comment-count" data-disqus-url="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">Leave a comment</span></button>

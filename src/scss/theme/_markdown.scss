@@ -3,7 +3,7 @@
 //
 
 .markdownBody {
-  font-family: $theme-font-family-serif;
+  font-family: $font-family-serif;
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
@@ -107,7 +107,7 @@
   h3 {
     margin-top: 47px;
     margin-left: -2.25px;
-    font-family: $theme-font-family-sans-serif;
+    font-family: $font-family-sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -138,7 +138,7 @@
   h4 {
     margin-top: 39px;
     margin-left: -1.75px;
-    font-family: $theme-font-family-sans-serif;
+    font-family: $font-family-sans-serif;
     font-size: 27px;
     font-style: normal;
     font-weight: 400;
@@ -260,7 +260,7 @@
     display: block;
     width: 100%;
     margin-top: 10px;
-    font-family: $theme-font-family-sans-serif;
+    font-family: $font-family-sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -314,7 +314,7 @@
       top: -25px;
       display: inline-block;
       margin-left: .8em;
-      font-family: $theme-font-family-serif;
+      font-family: $font-family-serif;
       font-size: 21px;
       font-style: italic;
       font-weight: 400;

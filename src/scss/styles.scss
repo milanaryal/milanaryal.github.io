@@ -6,23 +6,23 @@
 // Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
 //
 
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
 // Base and dependencies
 @import "bootstrap";
 @import "bootstrap-helper";
 @import "fonts";
 @import "font-awesome";
 
-// Core variables and mixins
-@import "variables";
-@import "mixins";
-
 // Core CSS
-@import "theme/reset";
+@import "theme/reboot";
 @import "theme/global";
-@import "theme/header-navbar";
-@import "theme/pages";
 @import "theme/buttons";
+@import "theme/header-navbar";
 @import "theme/pager";
+@import "theme/pages";
 @import "theme/hero-page";
 @import "theme/archive-page";
 @import "theme/error-page";

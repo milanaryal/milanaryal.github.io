@@ -16,7 +16,7 @@
 }
 
 .postPreview-meta {
-  font-family: $theme-font-family-base;
+  font-family: $font-family-base;
   font-size: 12px;
   // line-height: 1.4;
   // letter-spacing: 0;
@@ -30,7 +30,7 @@
 .postPreview-title {
   margin-top: 10px;
   // margin-bottom: 0;
-  font-family: $theme-font-family-sans-serif;
+  font-family: $font-family-sans-serif;
   font-size: 24px;
   line-height: 1.12;
   letter-spacing: -.044em;
@@ -43,7 +43,7 @@
 .postPreview-excerpt {
   margin-top: 10px;
   margin-bottom: 0;
-  font-family: $theme-font-family-serif;
+  font-family: $font-family-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;

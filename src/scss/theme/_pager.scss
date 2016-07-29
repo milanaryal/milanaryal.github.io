@@ -4,30 +4,23 @@
 
 .pager {
   padding-left: 0;
-  margin: 20px 0 40px; // $line-height-computed 0;
-  text-align: center;
-  list-style: none;
-  @include clearfix;
-
+  margin: 20px 0 40px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  text-align: center;
   text-rendering: optimizeLegibility;
+  list-style: none;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -moz-font-feature-settings: liga on;
+  @include clearfix;
 
   li {
     display: inline;
 
-    > a,
-    > span {
+    > a {
       display: inline-block;
-      // padding: 5px 14px;
-      // background-color: $pager-bg;
-      // border: 1px solid $pager-border;
-      // border-radius: $pager-border-radius;
-
       padding: 12.5px 20px;
-      font-family: $theme-font-family-base;
+      font-family: $font-family-base;
       font-size: 12px;
       // text-transform: uppercase;
       font-weight: 400;
@@ -46,8 +39,6 @@
 
     > a:hover {
       // text-decoration: none;
-      // background-color: $pager-hover-bg;
-
       color: rgba(0,0,0,.6);
       background-color: rgba(0,0,0,0);
       border-color: rgba(0,0,0,.3);
@@ -63,34 +54,16 @@
   }
 
   .next {
-    > a,
-    > span {
+    > a {
       float: right;
     }
   }
 
   .previous {
-    > a,
-    > span {
+    > a {
       float: left;
     }
   }
-
-  /**
-  .disabled {
-    > a,
-    > a:hover,
-    > a:focus,
-    > span {
-      // color: $pager-disabled-color;
-      // background-color: $pager-bg;
-      // cursor: $cursor-disabled;
-
-      pointer-events: none;
-      opacity: 0.25;
-      cursor: default;
-    }
-  } **/
 
   .fa-angle-left {
     padding-right: 3px;

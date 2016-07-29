@@ -1,66 +1,69 @@
 // Variables
 //
-// Custom varibles for the theme.
+// Custom variables for the theme.
+
+$brand-color:               #2196f3;
 
 
-// Theme
+// Bootstrap
 //
-// Theme content Font, line-height, and color for body text, headings, and more.
+// Override custom settings.
 
-$theme-brand-color:             #2196f3;
-$theme-color-white:             #fff; // white
-$theme-color-black:             #000; // black
-$theme-color-gray:              #808080; // gray
+$brand-primary:             darken($brand-color, 6.5%); // #0c86e6
+$text-color:                rgba(0,0,0,.8);
 
-$theme-brand-primary:           darken($theme-brand-color, 6.5%); // #0c86e6
+$font-family-sans-serif:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:         "Lora", Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:     Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-$theme-font-family-sans-serif:   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$theme-font-family-serif:        "Lora", Georgia, "Times New Roman", Times, serif !default;
-$theme-font-family-monospace:    Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$theme-font-family-base:         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-size-base:            16px;
+$font-size-large:           18px;
+$font-size-small:           12px;
+
+$line-height-base:          1.4;
+$line-height-computed:      20px;
+
+$link-color:                inherit;
+$link-hover-color:          inherit;
+$link-hover-decoration:     none;
+
+$blockquote-border-color:   $text-color;
+$hr-border:                 rgba(0,0,0,.05);
 
 
-// Social buttons
+// Font Awesome
 //
-// Colors (http://brandcolors.net/, http://brand-colors.com/), backgrounds, and more.
+// Override custom settings.
 
-$social-disqus-color:            #2e9fff;
-$social-envelope-color:          #787878;
-$social-facebook-color:          #3b5998;
-$social-flickr-color:            #ff0084;
-$social-foursquare-color:        #0cbadf; // has multi colors
-$social-google-plus-color:       #dd4b39;
-$social-instagram-color:         #833ab4; // has multi colors
-$social-linkedin-color:          #0077b5; // has multi colors
-$social-pinterest-color:         #bd081c;
-$social-rss-color:               #fa9b39;
-$social-tumblr-color:            #35465c;
-$social-twitter-color:           #55acee;
-$social-vimeo-color:             #1ab7ea; // has multi colors
-$social-youtube-color:           #cd201f;
-$social-github-color:            #333; // has multi colors
+$fa-font-size-base:         16px;
 
 
-// Markdown
+// Brand colors (http://brand-colors.com, http://brandcolors.net)
 //
-// Markdown content Font, line-height, and color for body text, headings, and more.
+// Official color codes for the world's biggest brands.
 
-$markdown-body-color:           rgba($theme-color-black, .8); // rgba(0,0,0,.8)
-$markdown-color-h3:             rgba($theme-color-black, .8); // rgba(0,0,0,.8)
-$markdown-color-h4:             rgba($theme-color-black, .44); // rgba(0,0,0,.44)
-$markdown-color-hr:             rgba($theme-color-black, .6); // rgba(0,0,0,.6)
-$markdown-color-pre:            rgba($theme-color-black, .05); // rgba(0,0,0,.05)
-$markdown-text-muted:           rgba($theme-color-black, .44); // rgba(0,0,0,.44)
-
-$markdown-body-font-size:       19px;
-$markdown-font-size-h3:         31px; // 27 + 4 = 31
-$markdown-font-size-h4:         27px; // 23 + 4 = 28
+$disqus-color:              #2e9fff;
+$envelope-color:            #787878;
+$facebook-color:            #3b5998;
+$flickr-color:              #ff0084;
+$foursquare-color:          #f94877; // has multi colors
+$google-plus-color:         #dc4e41;
+$instagram-color:           #833ab4; // has multi colors
+$linkedin-color:            #0077b5; // has multi colors
+$pinterest-color:           #bd081c;
+$rss-color:                 #f26522;
+$tumblr-color:              #35465c;
+$twitter-color:             #55acee;
+$vimeo-color:               #1ab7ea; // has multi colors
+$youtube-color:             #cd201f;
+$github-color:              #333;    // has multi colors
 
 
 // NProgress
 //
-// Loading bar custom config.
+// Loading bar custom settings.
 
-$nprogress-color:               #77b6ff !default; // last update #29d
-$nprogress-height:              2px !default;
-$nprogress-zindex:              1031 !default;
+$nprogress-color:           #77b6ff; // last update #29d
+$nprogress-height:          2px;
+$nprogress-zindex:          1031;

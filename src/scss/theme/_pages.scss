@@ -61,7 +61,7 @@
 
 .pageHeader-title {
   // margin-top: 0;
-  font-family: $theme-font-family-sans-serif;
+  font-family: $font-family-sans-serif;
   font-size: 48px;
   letter-spacing: -.04em;
   text-shadow: 0 1px rgba(0,0,0,.2);
@@ -74,7 +74,7 @@
 .pageHeader-description {
   display: block;
   margin: 10px 0 0;
-  font-family: $theme-font-family-sans-serif;
+  font-family: $font-family-sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.1;
@@ -86,6 +86,40 @@
   }
 }
 
+
+// Override styles for pagination
+
+.paginatorHeader {
+  height: 175px;
+
+  @media (min-width: 768px) {
+    height: 300px;
+  }
+}
+
+.paginatorHeader-introDivider {
+  border-width: 2px;
+
+  @media (min-width: 768px) {
+    border-width: 3px;
+  }
+}
+
+.paginatorHeader-title {
+  font-size: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 58px;
+  }
+}
+
+.paginatorHeader-description {
+  font-size: 18px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
 
 // Page body
 
@@ -127,7 +161,7 @@
 .siteFooter-legal {
   margin-top: 30px;
   // margin-bottom: 0;
-  font-family: $theme-font-family-base;
+  font-family: $font-family-base;
   font-size: 14px;
   color: rgba(0,0,0,.6);
   text-rendering: auto;
@@ -142,11 +176,4 @@
       // color: inherit;
     }
   }
-}
-
-
-// Search page input box
-
-.form-control {
-  border-color: rgba(0,0,0,.15);
 }

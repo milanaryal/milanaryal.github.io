@@ -130,7 +130,7 @@ layout: default
         <div class="row">
           <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
             <div class="postFooter-metaAcknowledgments" about="{{ page_url }}">
-              <a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author and page.author != empty %}{{ page_author }}{% else %}by the author{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span>
+              <a href="//creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a> by {% if page.author and page.author != empty %}{{ page_author }}{% else %}the author{% endif %}. <span title="You can distribute, remix, and build upon this work as long as you credit the author."><i class="fa fa-creative-commons"></i></span>
               <div class="hidden">Except as otherwise <a href="{{ site_url }}/fine-print/#license">noted</a>, the content of <a rel="cc:attributionURL" href="{{ page_url }}">this page</a> is licensed under the <a rel="license cc:license" itemprop="license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a> attributable to <span property="cc:attributionName">{{ page_author }}</span>.</div>
             </div><!-- /.postFooter-metaAcknowledgments -->
           </div><!-- /.col-* -->
@@ -187,22 +187,6 @@ layout: default
           {% include disqus_thread.html %}
         {% endif %}
       {% endif %}
-
-      <!-- Pager -->
-      <nav class="clearfix">
-        <ul class="pager postFooter-sectionPager">
-          {% if page.previous.url %}
-            <li class="previous">
-              <a href="{{ page.previous.url | replace:'//','/' | replace:'/index.html','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title | markdownify | strip_html | strip_newlines | escape_once }}"><i class="fa fa-angle-left"></i> Previous</a>
-            </li>
-          {% endif %}
-          {% if page.next.url %}
-            <li class="next">
-              <a href="{{ page.next.url | replace:'//','/' | replace:'/index.html','/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title | markdownify | strip_html | strip_newlines | escape_once }}">Next <i class="fa fa-angle-right"></i></a>
-            </li>
-          {% endif %}
-        </ul>
-      </nav>
     </div><!-- /.col-* -->
   </div><!-- /.row -->
 </section><!-- /.container -->
