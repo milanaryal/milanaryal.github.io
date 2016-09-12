@@ -9,9 +9,9 @@ permalink: /archives/
 <section class="archiveBody clearfix">
 {% for post in site.posts %}
 
-  {% assign site_name = site.title | default: site.name %}
-  {% if site_name %}
-    {% assign site_name = site_name | smartify | strip_html | strip_newlines | escape_once %}
+  {% assign site_title = site.title | default: site.name %}
+  {% if site_title %}
+    {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
   {% endif %}
 
   {% if site.logo %}
@@ -84,7 +84,7 @@ permalink: /archives/
       <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
         <link itemprop="url" href="{{ site_logo }}">
       </span>
-      <meta itemprop="name" content="{{ site_name }}">
+      <meta itemprop="name" content="{{ site_title }}">
     </span>
     <meta itemprop="dateModified" content="{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{ post.date | date_to_xmlschema }}{% endif %}">
 

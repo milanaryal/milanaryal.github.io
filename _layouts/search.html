@@ -7,9 +7,9 @@ layout: compress
 
   <head>
 
-    {% assign site_name = site.title | default: site.name %}
-    {% if site_name %}
-      {% assign site_name = site_name | smartify | strip_html | strip_newlines | escape_once %}
+    {% assign site_title = site.title | default: site.name %}
+    {% if site_title %}
+      {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
     {% endif %}
 
     {% if page.title %}
@@ -26,10 +26,10 @@ layout: compress
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{ page_title }} &mdash; {{ site_name }}</title>
+    <title>{{ page_title }} &mdash; {{ site_title }}</title>
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_name }}">
-    <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_name }}">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_title }}">
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_title }}">
     <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ build_version }}">
     <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ build_version }}">
     <style>

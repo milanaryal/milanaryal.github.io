@@ -7057,7 +7057,7 @@ a:hover, a:focus {
           transform: translateZ(0);
   -webkit-transition: background-color 500ms, -webkit-transform 500ms, -webkit-box-shadow 500ms;
   transition: background-color 500ms, -webkit-transform 500ms, -webkit-box-shadow 500ms;
-  -o-transition: background-color 500ms, transform 500ms, box-shadow 500ms, -o-transform 500ms;
+  -o-transition: background-color 500ms, box-shadow 500ms, -o-transform 500ms;
   transition: background-color 500ms, transform 500ms, box-shadow 500ms;
   transition: background-color 500ms, transform 500ms, box-shadow 500ms, -webkit-transform 500ms, -o-transform 500ms, -webkit-box-shadow 500ms;
   will-change: background-color, transform, box-shadow;
@@ -7425,7 +7425,7 @@ a:hover, a:focus {
           transform: perspective(1000px) rotateX(0deg);
   -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, -webkit-transform 1s ease;
-  -o-transition: opacity 1s ease, transform 1s ease, -o-transform 1s ease;
+  -o-transition: opacity 1s ease, -o-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
   transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease, -o-transform 1s ease;
   -webkit-transform-origin: 50% 50%;
