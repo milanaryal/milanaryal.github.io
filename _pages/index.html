@@ -39,12 +39,12 @@ permalink: /
         <p class="hero-description" itemprop="description">{{ site_author_bio }}</p>
 
         {% if site.author %}
-          <span class="hidden" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span class="hidden" itemprop="homeLocation" itemscope itemtype="https://schema.org/PostalAddress">
             {% if site.author.street %}<meta itemprop="streetAddress" content="{{ site.author.street }}">{% endif %}
             {% if site.author.locality %}<meta itemprop="addressLocality" content="{{ site.author.locality }}">{% endif %}
             {% if site.author.region %}<meta itemprop="addressRegion" content="{{ site.author.region }}">{% endif %}
-            {% if site.author.country %}<meta itemprop="addressCountry" content="{{ site.author.country }}">{% endif %}
             {% if site.author.postcode %}<meta itemprop="postalCode" content="{{ site.author.postcode }}">{% endif %}
+            {% if site.author.country %}<meta itemprop="addressCountry" content="{{ site.author.country }}">{% endif %}
           </span><!-- /itemscope itemtype PostalAddress -->
         {% endif %}
       </header>
