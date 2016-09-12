@@ -9,6 +9,10 @@ sudo: false
 cache: bundler
 bundler_args: --without development
 
+before_install:
+  - rm -rf vendor
+  - rm -f Gemfile.lock
+
 before_script:
   - bundle exec github-pages versions
 
