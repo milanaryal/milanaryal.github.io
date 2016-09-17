@@ -19,14 +19,10 @@ before_script:
   - bundle exec github-pages versions
 
 script:
-  - echo "Building site..."
   - JEKYLL_ENV=development bundle exec jekyll build --config _config.yml,_config_test.yml
-  - echo "Checking site..."
   - bundle exec htmlproofer ./_site --only-4xx
-  - echo "Checking DNS..."
   - bundle exec github-pages health-check
-  - echo "Cleaning up..."
-  - rm -rf ./_site
+  - bundle clean --force && rm -rf ./_site
 
 branches:
   only:
