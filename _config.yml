@@ -84,7 +84,6 @@ defaults:
       comments: "true"
 
 gems:
-  - jekyll-admin
   - jekyll-feed
   - jekyll-gist
   - jekyll-github-metadata
