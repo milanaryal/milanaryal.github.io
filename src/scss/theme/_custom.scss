@@ -65,3 +65,14 @@
     }
   }
 }
+
+
+.banner-ad {
+  padding-top: 10px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @media (max-width: 767px) {
+    padding-bottom: 35px;
+  }
+}
