@@ -14,8 +14,7 @@ var flatten = require('gulp-flatten');
 var rename = require('gulp-rename');
 var header = require('gulp-header');
 var pkg = require('./package.json');
-var jshint = require('gulp-jshint');
-var jscs = require('gulp-jscs');
+var eslint = require('gulp-eslint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var scssLint = require('gulp-scss-lint');
@@ -99,10 +98,8 @@ gulp.task('clean:fonts', function () {
 // Test scripts
 gulp.task('test:scripts', function () {
   return gulp.src(['src/js/**/*.js', '!src/js/**/jquery.js', '!src/js/bootstrap/**'])
-    .pipe(jshint('src/js/.jshintrc'))
-    .pipe(jshint.reporter('default'))
-    .pipe(jscs({ configPath: 'src/js/.jscsrc' }))
-    .pipe(jscs.reporter());
+    .pipe(eslint('src/js/.eslintrc.json'))
+    .pipe(eslint.format());
 });
 
 // Test styles
