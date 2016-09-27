@@ -324,4 +324,4 @@ Be sure to check one of your example posts via the different social media metada
 * For Facebook, test using the <a href="http://developers.facebook.com/tools/debug" rel="nofollow">Facebook debugger</a>.
 * For Twitter, submit one of your example posts via the <a href="http://cards-dev.twitter.com/validator" rel="nofollow">Twitter card validator</a>.
 * For Google+, test with the <a href="http://www.google.com/webmasters/tools/richsnippets" rel="nofollow">rich snippets tester</a>.
-* If you use Pinterest a lot, you need to validate your rich pins by going to the <a href="http://developers.pinterest.com/tools/url-debugger/" rel="nofollow">rich pin validator page</a>.
+* If you use Pinterest a lot, you need to validate your rich pins by going to the <a href="http://developers.pinterest.com/docs/rich-pins/validator/" rel="nofollow">rich pin validator page</a>.

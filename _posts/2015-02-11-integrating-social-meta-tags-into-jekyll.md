@@ -151,4 +151,4 @@ Be sure to check one of your example posts via the different social media metada
 * For Facebook, test using the [Facebook debugger](http://developers.facebook.com/tools/debug){:rel="nofollow"}.
 * For Twitter, submit one of your example posts via the [Twitter card validator](http://cards-dev.twitter.com/validator){:rel="nofollow"}.
 * For Google+, test with the [rich snippets tester](http://www.google.com/webmasters/tools/richsnippets){:rel="nofollow"}.
-* If you use Pinterest a lot, you need to validate your rich pins by going to the [rich pin validator page](http://developers.pinterest.com/tools/url-debugger/){:rel="nofollow"}.
+* If you use Pinterest a lot, you need to validate your rich pins by going to the [rich pin validator page](http://developers.pinterest.com/docs/rich-pins/validator/){:rel="nofollow"}.
