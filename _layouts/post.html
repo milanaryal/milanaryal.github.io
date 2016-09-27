@@ -17,10 +17,6 @@ layout: default
 
             <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ page_url }}">
 
-            <div class="banner-ad">
-              {% include banner_ad_tag.html %}
-            </div>
-
             <!-- Post meta -->
             <div class="postHeader-meta">
               <time itemprop="datePublished" datetime="{{ date_published }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="middotDivider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{{ reading_time }}</span>
