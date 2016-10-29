@@ -33,7 +33,7 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
-    <a rel="me" href="//www.snapchat.com/add/milanaryal">
+    <a rel="me" href="//snapchat.com/add/milanaryal">
       <i class="fa fa-snapchat" aria-hidden="true"></i><br>Snapchat
     </a>
   </li>
