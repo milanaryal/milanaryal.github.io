@@ -28,13 +28,13 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
-    <a rel="me" href="//google.com/+MilanAryal">
-      <i class="fa fa-google-plus" aria-hidden="true"></i><br>Google+
+     <a rel="me" href="//instagram.com/milanaryal">
+      <i class="fa fa-instagram" aria-hidden="true"></i><br>Instagram
     </a>
   </li>
   <li>
-    <a rel="me" href="//linkedin.com/in/MilanAryal">
-      <i class="fa fa-linkedin" aria-hidden="true"></i><br>LinkedIn
+    <a rel="me" href="//www.snapchat.com/add/milanaryal">
+      <i class="fa fa-snapchat" aria-hidden="true"></i><br>Snapchat
     </a>
   </li>
   <li>
@@ -48,18 +48,18 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
+    <a rel="me" href="//google.com/+MilanAryal">
+      <i class="fa fa-google-plus" aria-hidden="true"></i><br>Google+
+    </a>
+  </li>
+  <li>
+    <a rel="me" href="//linkedin.com/in/MilanAryal">
+      <i class="fa fa-linkedin" aria-hidden="true"></i><br>LinkedIn
+    </a>
+  </li>
+  <li>
     <a rel="me" href="//pinterest.com/milanaryal">
       <i class="fa fa-pinterest" aria-hidden="true"></i><br>Pinterest
-    </a>
-  </li>
-  <li>
-     <a rel="me" href="//instagram.com/milanaryal">
-      <i class="fa fa-instagram" aria-hidden="true"></i><br>Instagram
-    </a>
-  </li>
-  <li>
-    <a rel="me" href="//vine.co/MilanAryal">
-      <i class="fa fa-vine" aria-hidden="true"></i><br>Vine
     </a>
   </li>
   <li>
@@ -70,11 +70,6 @@ Join me on the following networks and/or websites:
   <li>
     <a rel="me" href="//medium.com/@MilanAryal">
       <i class="fa fa-medium" aria-hidden="true"></i><br>Medium
-    </a>
-  </li>
-  <li>
-    <a rel="me" href="//www.snapchat.com/add/milanaryal">
-      <i class="fa fa-snapchat" aria-hidden="true"></i><br>Snapchat
     </a>
   </li>
 </ul>
