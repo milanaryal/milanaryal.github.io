@@ -9,7 +9,7 @@ Looking for the awesome Twitter Archive Eraser?
 
 <a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">Twitter Archive Eraser</a> allows you to automatically delete tweets in bulk from your timeline, or erase your whole twitter archive if you would like so.
 
-Several tools exist to help you delete your old tweets but, most of them do not work properly, if at all, due to Twitter API's limitations. Twitter imposes a limit of 3200 tweets (<a href="http://dev.twitter.com/overview/general/things-every-developer-should-know" rel="nofollow">the more recent ones that is</a>) that an application can access.
+Several tools exist to help you delete your old tweets but, most of them do not work properly, if at all, due to Twitter API's limitations. Twitter imposes a limit of 3200 tweets (<a href="http://dev.twitter.com/basics/things-every-developer-should-know#there-are-pagination-limits" rel="nofollow">the more recent ones that is</a>) that an application can access.
 
 Twitter enabled the option for users to download their whole archive of tweets, which contains among other things the IDs of all the tweets of a user: the exact piece of information that can be used to erase tweet.
 
