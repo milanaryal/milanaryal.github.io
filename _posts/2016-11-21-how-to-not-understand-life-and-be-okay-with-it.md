@@ -1,7 +1,7 @@
 ---
 title: "how to not understand life and be okay with it"
 author: "alina guevara"
-excerpt: "maybe that's you, maybe it's not - but odds are, you can relate at least a little to the desire to be well-liked. who doesn't want to feel accepted, respected, and appreciated?"
+excerpt: "maybe that's you, maybe it's not -- but odds are, you can relate at least a little to the desire to be well-liked. who doesn't want to feel accepted, respected, and appreciated?"
 ---
 
 1. if you don't like your name don't use it
@@ -14,7 +14,7 @@ excerpt: "maybe that's you, maybe it's not - but odds are, you can relate at lea
 8. never empty your pockets
 9. light dead flowers on fire when you're feeling sad, let their smell fill your lungs and make you forget about life
 10. diet coca cola will make your head spin and your throat burn, drink it when you're feeling like things are going to get bad
-11. if a boy with pretty eyes asks you who you are, show him your scars and your freckles and your bruises and let him know that you are alive
+11. if a girl/boy with pretty eyes asks you who you are, show her/him your scars and your freckles and your bruises and let her/him know that you are alive
 12. the best people have electricity running through their veins and around their hearts, let them shock you
 13. forget how old you are, it does not matter
 14. if something or someone makes you want to run then do it, run until your legs go numb and your heart is about to explode and you forget how to breathe
