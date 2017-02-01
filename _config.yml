@@ -114,4 +114,5 @@ exclude:
   - bundle
   - ".bundle"
   - ".sass-cache"
+  - script
   - src

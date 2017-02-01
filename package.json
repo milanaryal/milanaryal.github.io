@@ -6,17 +6,17 @@
   "main": "gulpfile.js",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "font-awesome": "^4.6.3",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
     "nprogress": "^0.2.0",
-    "primer-markdown": "^3.3.1"
+    "primer-markdown": "^3.3.3"
   },
   "devDependencies": {
-    "browser-sync": "^2.17.5",
+    "browser-sync": "^2.18.6",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-concat": "^2.6.0",
+    "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-eslint": "^3.0.1",
     "gulp-flatten": "^0.3.1",
@@ -24,8 +24,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.4.0",
-    "gulp-uglify": "^2.0.0",
-    "gulp-watch": "^4.3.10"
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.11"
   },
   "engines": {
     "node": ">=4"

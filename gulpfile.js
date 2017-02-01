@@ -29,7 +29,7 @@ var COMPATIBILITY = [
   'Chrome >= 35',
   'Firefox >= 38',
   'Edge >= 12',
-  'Explorer >= 9',
+  'Explorer >= 10',
   'iOS >= 8',
   'Safari >= 8',
   'Android 2.3',

@@ -1,6 +1,6 @@
 /*!
  * Milan Aryal (https://milanaryal.com)
- * Copyright 2016 Milan Aryal
+ * Copyright 2017 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
 
