@@ -10,6 +10,7 @@ title () {
   echo ""
 }
 
+chmod ugo+x scripts/branding
 scripts/branding
 
 title "List dependency versions"
