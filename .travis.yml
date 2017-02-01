@@ -7,7 +7,7 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-script: script/cibuild
+script: "./script/cibuild"
 
 branches:
   only:
