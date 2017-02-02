@@ -13,7 +13,7 @@ One might argue that "we already have browser cache!, we don't need prefetch!". 
 
 > **first visit** --- The cache only comes into play on subsequent visits to a site. The first time you visit a site it hasn't had time to cache any resources.
 >
-> **cleared** --- The cache gets cleared more than you think. In addition to occasional clearing by the user, the cache can also be cleared by anti-virus software and browser bugs. ([19% of Chrome](https://plus.google.com/+WilliamChanPanda/posts/hsfVHq6wKxG){:rel="nofollow"} users have their cache cleared at least once a week due to a bug.)
+> **cleared** --- The cache gets cleared more than you think. In addition to occasional clearing by the user, the cache can also be cleared by anti-virus software and browser bugs. ([19% of Chrome](http://plus.google.com/103382935642834907366/posts/hsfVHq6wKxG){:rel="nofollow"} users have their cache cleared at least once a week due to a bug.)
 >
 > **purged** --- Since the cache is shared by every website the user visits, it's possible for one website's resources to get purged from the cache to make room for another's.
 >
