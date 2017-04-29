@@ -79,11 +79,13 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: "true"
+      comments: true
   - scope:
-      path:
-        - "uploads/"
-        - "writings/"
+      path: "uploads/"
+    values:
+      sitemap: false
+  - scope:
+      path: "writings/"
     values:
       sitemap: false
 
