@@ -80,6 +80,12 @@ defaults:
     values:
       layout: post
       comments: "true"
+  - scope:
+      path:
+        - "uploads/"
+        - "writings/"
+    values:
+      sitemap: false
 
 gems:
   - jekyll-feed
