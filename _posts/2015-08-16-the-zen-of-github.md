@@ -21,4 +21,4 @@ I really like the guiding principles of a GitHubber known as "The Zen of GitHub"
 
 ---
 
-*Read [a great write up](http://warpspire.com/posts/taste/){:rel="nofollow"} by Kyle Neath as to the how and why that GitHub Zen came to be.*
+*Read [a great write up](http://warpspire.com/posts/taste){:rel="nofollow"} by Kyle Neath as to the how and why that GitHub Zen came to be.*
