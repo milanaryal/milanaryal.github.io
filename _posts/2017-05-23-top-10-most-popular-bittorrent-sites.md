@@ -13,7 +13,9 @@ BitTorrent sites come and go but below I've compiled a list of the 10 most-visit
 
 **Tip:** Can't access one of the following site? Try using the proxy/mirror sites because it may be blocked by your ISP in your country or territory.
 
-| S.N. | BitTorrent site | Proxy/Mirror | Specialization | RSS | Launched | Alexa Rank (May 23, 2017) |
+The Alexa global ranking is accurate as of May 23, 2017.
+
+| S.N. | BitTorrent site | Proxy/Mirror | Specialization | RSS | Launched | Alexa Rank |
 |---|---|---|---|---|---|---|
 | 1. | ![The Pirate Bay favicon](https://unblocked-pw.github.io/ico/pirateproxy.ico){:width="16" height="16" style="display:inline-block!important;"} [The Pirate Bay](http://thepiratebay.org){:rel="nofollow"} | [pirateproxy.cc](http://pirateproxy.cc){:rel="nofollow"} | - | Yes | 15 September 2003 | 103 |
 | 2. | ![RARBG favicon](https://unblocked-pw.github.io/ico/rarbg.ico){:width="16" height="16" style="display:inline-block!important;"} [RARBG](http://rarbg.to){:rel="nofollow"} | [unblocked.cam](http://rarbg.unblocked.cam){:rel="nofollow"} | - | Yes | 2008 | 250 |
