@@ -27,7 +27,7 @@ BitTorrent sites come and go but below I've compiled a list of the 10 most-visit
 
 **Note**: All BitTorrent sites in above table are *working*, as of the last update to this page.
 
-> **Protip**: BitTorrent sites webpage may contain unwanted ads and pop-ups, so to get rid of this use best ad blocker like [uBlock Origin](http://github.com/gorhill/uBlock){:rel="nofollow"}, or [Adblock Plus](http://adblockplus.org/en/{:rel="nofollow"}) for your native browser.
+> **Protip**: BitTorrent sites webpage may contain unwanted ads and pop-ups, so to get rid of this use best ad blocker like [uBlock Origin](http://github.com/gorhill/uBlock){:rel="nofollow"}, or [Adblock Plus](http://adblockplus.org/en/){:rel="nofollow"} for your native browser.
 
 ---
 
