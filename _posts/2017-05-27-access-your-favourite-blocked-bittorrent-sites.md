@@ -26,7 +26,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 * [proxybay.pl](https://proxybay.pl/){:rel="nofollow"}
 * [avoidcensorship.org](https://avoidcensorship.org/){:rel="nofollow"}
 
-### Free Web proxy
+#### Bonus: Free Web proxy
 
 * [torrentunblock.com](https://torrentunblock.com/){:rel="nofollow"}
 * [vpnbook.com/webproxy](https://www.vpnbook.com/webproxy){:rel="nofollow"}
