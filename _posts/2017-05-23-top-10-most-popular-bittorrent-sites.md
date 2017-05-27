@@ -11,7 +11,7 @@ A lot of things happen over the year, with some torrent sites disappearing from 
 
 BitTorrent sites come and go but below I've compiled a list of the 10 most-visited BitTorrent sites out there. Only public and English language sites are included. The list is based on various traffic reports and I've display the Alexa rank for each.
 
-**Tip:** Can't access one of the following site? Try using the proxy/mirror sites because it may be blocked by your ISP in your country or territory.
+> Can't access one of the following site? Try using [the proxy/mirror sites]({{ site.url }}/access-your-favourite-blocked-bittorrent-sites/) because due to copyright issues (one of) your favourite BitTorrent site(s) may be blocked by your ISP in your country or territory.
 
 The Alexa global ranking is accurate as of May 23, 2017.
 
