@@ -4,7 +4,7 @@ date: 2017-06-05T07:00:00+05:45
 excerpt: "List of best free Chrome extensions you need most to exponentially increasing browser potential."
 ---
 
-[Google Chrome](http://www.google.com/chrome/browser/desktop/){:rel="nofollow"} is the most popular Web browser, with more than 50 percent of the market. Here's my list of personal favourite free Chrome extensions that I use everyday for potential Internet browsing.
+[Google Chrome](http://www.google.com/chrome/browser/desktop/){:rel="nofollow"} is the most popular Web browser, with more than 50 percent of the market. Here's my list of personal favourite free Chrome extensions you might be interested for potential Internet browsing.
 
 *Note:* Browser extensions are useful but using too many extensions may slow down your browser. So, use only esstential extensions you need most.
 
@@ -42,7 +42,7 @@ Stay focused with StayFocusd to increase your productivity by limiting the amoun
 
 #### 8. [Stylish](http://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en){:rel="nofollow"}
 
-This will help you to customise any website to your need. There are thousands of user styles in Stylish wesite with beautiful themes, skins, and free backgrounds for pupular site like Facebook, Twitter, and YouTube which can be installed in one click.
+This will help you to customise any website to your need. There are thousands of user styles in [Stylish wesite](http://userstyles.org/){:rel="nofollow"} with beautiful themes, skins, and free backgrounds for pupular site like Facebook, Twitter, and YouTube which can be installed in one click.
 
 #### 9. [Tampermonkey](http://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en){:rel="nofollow"}
 
