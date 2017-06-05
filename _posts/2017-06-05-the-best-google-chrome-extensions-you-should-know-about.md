@@ -56,4 +56,4 @@ The Great Suspender is a lightweight Chrome extension which helps to pause unuse
 
 #### 11. [uBlock Origin](http://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en){:rel="nofollow"}
 
-It is a lightweight best customisable ad blocker for Chrome out there.
+uBO is a lightweight best content-filtering (including ad-blocking) for Chrome out there. Check out [FilterLists](http://filterlists.com/){:rel="nofollow"} for a comprehensive list of filter lists from all over the web (click the Add link of a filter list to import that list into uBO).
