@@ -26,7 +26,7 @@ The Alexa global ranking is accurate as of *June 2, 2017*.
 | 7. | ![EZTV.AG favicon](https://unblocked-pw.github.io/ico/eztv.ico){:width="16" height="16" style="display:inline-block!important;"} [EZTV.AG](http://eztv.ag){:rel="nofollow"} | [unblocked.cam](http://eztv.unblocked.cam){:rel="nofollow"} | Television shows | Yes  | - | 1,023 |
 | 8. | ![LimeTorrents.cc favicon](https://unblocked-pw.github.io/ico/limetorrents.ico){:width="16" height="16" style="display:inline-block!important;"} [LimeTorrents.cc](http://www.limetorrents.cc){:rel="nofollow"} | [unblocked.cam](http://limetorrents.unblocked.cam){:rel="nofollow"} | - | Yes  | - | 1,780 |
 | 9. | ![TorrentDownloads favicon](https://unblocked-pw.github.io/ico/torrentdownloads.ico){:width="16" height="16" style="display:inline-block!important;"} [TorrentDownloads](http://www.torrentdownloads.me){:rel="nofollow"} | [unblocked.cam](http://torrentdownloads.unblocked.cam){:rel="nofollow"} | - | No  | - | 2,138 |
-| 10. | ![Zooqle favicon](https://unblocked-pw.github.io/ico/zooqle.ico){:width="16" height="16" style="display:inline-block!important;"} [Zooqle](http://zooqle.com){:rel="nofollow"} | [unblocked.cam](http://zooqle.unblocked.cam){:rel="nofollow"} | - | Yes  | - | 3,302 |
+| 10. | ![Zooqle favicon](https://unblocked-pw.github.io/ico/zooqle.ico){:width="16" height="16" style="display:inline-block!important;"} [Zooqle](http://zooqle.com){:rel="nofollow" data-proofer-ignore} | [unblocked.cam](http://zooqle.unblocked.cam){:rel="nofollow"} | - | Yes  | - | 3,302 |
 
 **Note**: All BitTorrent sites in above table are *working*, as of the last update to this page.
 
