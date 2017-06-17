@@ -37,7 +37,7 @@ kramdown:
 highlighter: rouge
 ```
 
-> All HTML is valid Markdown. If you're stuck not able to format your content how you would like (for example using tables) you can always use [plain HTML](http://htmldog.com/guides/html/beginner/){:rel="nofollow"} instead of Markdown.
+> All HTML is valid Markdown. If you're stuck not able to format your content how you would like (for example using tables) you can always use [plain HTML](http://html.com/tags/table/){:rel="nofollow"} instead of Markdown.
 
 ### Markdown style guide
 
