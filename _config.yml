@@ -54,7 +54,7 @@ nav:
 repository: MilanAryal/milanaryal.github.io
 branch: master
 encoding: utf-8
-#timezone: Asia/Kathmandu
+timezone: Asia/Kathmandu
 locale: en_us
 future: true
 

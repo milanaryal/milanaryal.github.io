@@ -5,29 +5,20 @@
 layout: null
 ---
 
-# TEAM
-  {% for contributor in site.github.contributors %}
-  Name: {{ contributor.login }}
-  Site: {{ contributor.html_url }}
-  {% endfor %}
-# THANKS
+/* DESIGN BY */
 
-  GitHub
-  Jekyll
-  Bootstrap
-  HTML5 Boilerplate
-  Google Fonts
-  Font Awesome
-  Other great open source project helped to build this site.
+  Name: Milan Aryal
+  Twitter: @MilanAryal
+  Location: Kathmandu, Nepal
 
-# TECHNOLOGY COLOPHON
-
-  Standards: HTML5, CSS3
-  Components: {% for dependency in site.github.versions %}{{ dependency[0] }}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}
-
-# SITE
+/* SITE */
 
   Last updated: {{ site.time | date: '%Y/%m/%d' }}
   Language: English / Nepali
-  Doctype: HTML5
-  IDE: Atom Editor, Sublime Text, Notepad++, GitHub, Photoshop, Illustrator
+  Standards: HTML5, CSS3
+  Components: Jekyll {{ jekyll.version }} <https://jekyllrb.com>
+  IDE: Atom Editor <https://atom.io>,
+       Git <https://git-scm.com>,
+       Gulp <http://gulpjs.com>,
+       Photoshop,
+       Illustrator
