@@ -6,7 +6,6 @@
   "main": "gulpfile.js",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "nprogress": "^0.2.0",
     "primer-markdown": "^3.3.7"
@@ -24,6 +23,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.4.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11"
   },

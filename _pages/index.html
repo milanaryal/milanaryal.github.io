@@ -26,7 +26,7 @@ permalink: /
 {% endif %}
 
 <!-- Hero container -->
-<main class="hero-container is-loading" style="background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('{{ page_image }}');" role="main" itemprop="mainContentOfPage">
+<main class="hero-container is-loading" style="background-image: linear-gradient(45deg, rgba(3,28,25,0.769) 0%, rgba(8,28,59,0.78) 100%), url('{{ page_image }}');" role="main" itemprop="mainContentOfPage">
   <!-- Hero profile -->
   <section class="hero-profile is-loading" itemscope itemtype="https://schema.org/Person">
     <div class="hero-profileInner">
@@ -51,9 +51,9 @@ permalink: /
 
       <footer>
         <ul class="hero-social">
-          {% if site.author.twitter %}<li><a itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}" class="fa fa-twitter"><span class="label">Twitter</span></a></li>{% endif %}
-          {% if site.author.instagram %}<li><a itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}" class="fa fa-instagram"><span class="label">Instagram</span></a></li>{% endif %}
-          {% if site.author.github %}<li><a itemprop="sameAs" rel="me" href="//github.com/{{ site.author.github }}" class="fa fa-github"><span class="label">GitHub</span></a></li>{% endif %}
+          {% if site.author.twitter %}<li><a itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}" class="icon-twitter"><svg aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg><span class="label">Twitter</span></a></li>{% endif %}
+          {% if site.author.instagram %}<li><a itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}" class="icon-instagram"><svg aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg><span class="label">Instagram</span></a></li>{% endif %}
+          {% if site.author.github %}<li><a itemprop="sameAs" rel="me" href="//github.com/{{ site.author.github }}" class="icon-github"><svg aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg><span class="label">GitHub</span></a></li>{% endif %}
         </ul>
 
         {% if site.author.facebook %}<link itemprop="sameAs" rel="me" href="//www.facebook.com/{{ site.author.facebook }}">{% endif %}

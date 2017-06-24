@@ -64,7 +64,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 27em; // ~432px
+  width: 31.25em; // ~500px
   padding: 0 3em 2em; // ~0 48px 32px;
 
   @media (max-width: 480px) {
@@ -75,7 +75,8 @@
   margin-top: 60px; // fill avatar -60px
   text-align: center;
   cursor: default;
-  background-color: rgba(255,255,255,.929);
+  //background-color: rgba(255,255,255,.929);
+  background-color: transparent;
   border-radius: .375rem; // ~6px
   opacity: .99;
   transform: perspective(1000px) rotateX(0deg);
@@ -95,7 +96,8 @@
 
 .hero-avatar {
   position: relative;
-  display: block;
+  //display: block;
+  display: none;
   margin-bottom: 1.25em; // ~20px
 }
 
@@ -112,25 +114,26 @@
 }
 
 .hero-title {
-  margin-bottom: .525em; // 8px
-  // margin-left: -2.75px;
-  // font-family: $font-family-base;
-  font-size: 2em; // ~32px
-  // font-style: normal;
-  // font-weight: 700;
+  margin-bottom: .5em;
+  font-family: "Source Sans Pro";
+  font-size: 3.25em;
+  font-weight: 300;
   line-height: 1.2;
-  // letter-spacing: 0;
-  color: rgba(0,0,0,.8);
+  letter-spacing: -.0075em;
+  color: #fff;
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
 }
 
 .hero-description {
-  margin-bottom: 1.25em;
-  font-size: 16px;
+  margin-bottom: 1.5em;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 300;
   line-height: 1.4;
-  color: rgba(0,0,0,.6);
+  letter-spacing: .0333em;
+  color: rgba(255,255,255,.9);
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
@@ -153,37 +156,40 @@ ul.hero-social {
     vertical-align: middle;
   }
 
-  a.fa {
-    display: block;
-    width: 2em;
-    height: 2em;
-    font-size: 1.5em;
-    line-height: 2em;
-    letter-spacing: 0;
-    color: #c8cccf;
-    text-align: center;
-    // text-decoration: none;
-    border: solid 1px #c8cccf;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.4em;
+    height: 3.4em;
+    color: rgba(255,255,255,.9);
+    border: solid 1px rgba(255,255,255,.9);
     border-radius: 100%;
 
-    &:hover {
-      color: #ff7496;
-      border: solid 1px #ff7496;
+    &.icon-twitter:hover {
+      //color: $twitter-color;
+      background-color: $twitter-color;
+      //border: solid 1px $twitter-color;
+
+      //svg {
+        //fill: #fff;
+      //}
     }
 
-    &.fa-twitter:hover {
-      color: $twitter-color;
-      border: solid 1px $twitter-color;
+    &.icon-instagram:hover {
+      background-color: $instagram-color;
     }
 
-    &.fa-instagram:hover {
-      color: $instagram-color;
-      border: solid 1px $instagram-color;
+    &.icon-github:hover {
+      background-color: $github-color;
     }
 
-    &.fa-github:hover {
-      color: $github-color;
-      border: solid 1px $github-color;
+    svg {
+      display: block;
+      width: 60%;
+      height: 60%;
+      transition: fill .25s ease;
+      fill: currentColor;
     }
 
     .label {

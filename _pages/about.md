@@ -19,57 +19,68 @@ Join me on the following networks and/or websites:
 <ul class="social-links">
   <li>
     <a rel="me" href="//twitter.com/MilanAryal">
-      <i class="fa fa-twitter" aria-hidden="true"></i><br>Twitter
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg>
+      <br><span class="label">Twitter</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//facebook.com/considermilan">
-      <i class="fa fa-facebook" aria-hidden="true"></i><br>Facebook
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-facebook"></use></svg>
+      <br><span class="label">Facebook</span>
     </a>
   </li>
   <li>
      <a rel="me" href="//instagram.com/milanaryal">
-      <i class="fa fa-instagram" aria-hidden="true"></i><br>Instagram
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg>
+      <br><span class="label">Instagram</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//snapchat.com/add/milanaryal">
-      <i class="fa fa-snapchat" aria-hidden="true"></i><br>Snapchat
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-snapchat"></use></svg>
+      <br><span class="label">Snapchat</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//github.com/MilanAryal">
-      <i class="fa fa-github" aria-hidden="true"></i><br>GitHub
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
+      <br><span class="label">GitHub</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//keybase.io/milanaryal">
-      <i class="fa fa-key" aria-hidden="true"></i><br>Keybase
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-key"></use></svg>
+      <br><span class="label">Keybase</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//google.com/+MilanAryal">
-      <i class="fa fa-google-plus" aria-hidden="true"></i><br>Google+
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-google-plus"></use></svg>
+      <br><span class="label">Google+</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//linkedin.com/in/MilanAryal">
-      <i class="fa fa-linkedin" aria-hidden="true"></i><br>LinkedIn
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-linkedin"></use></svg>
+      <br><span class="label">LinkedIn</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//pinterest.com/milanaryal">
-      <i class="fa fa-pinterest" aria-hidden="true"></i><br>Pinterest
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-pinterest"></use></svg>
+      <br><span class="label">Pinterest</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//milanaryal.tumblr.com">
-      <i class="fa fa-tumblr" aria-hidden="true"></i><br>Tumblr
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-tumblr"></use></svg>
+      <br><span class="label">Tumblr</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//medium.com/@MilanAryal">
-      <i class="fa fa-medium" aria-hidden="true"></i><br>Medium
+      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-medium"></use></svg>
+      <br><span class="label">Medium</span>
     </a>
   </li>
 </ul>
@@ -100,7 +111,7 @@ In case you were wondering, this site is:
 
 ...for more informations see [humans.txt](/humans.txt).
 
-If you enjoy the content found here, you might like to subscribe to my <i class="fa fa-feed" aria-hidden="true"></i> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
+If you enjoy the content found here, you might like to subscribe to my <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-feed"></use></svg> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
 ### Licensing
 

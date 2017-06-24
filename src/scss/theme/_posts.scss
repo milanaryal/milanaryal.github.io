@@ -107,6 +107,17 @@
       text-decoration: underline;
     }
   }
+
+  .icon-cc-by {
+    //vertical-align: middle;
+    //margin-top: -3px;
+    //margin-left: -1px;
+    //fill: rgba(0,0,0,.44);
+    //line-height: 21px;
+    width: 21px;
+    height: 21px;
+    margin-left: 4px;
+  }
 }
 
 
@@ -141,7 +152,7 @@
   border-radius: 4px;
   @include btn-social-share();
 
-  .fa {
+  .icon {
     margin-right: .6em;
   }
 
@@ -149,7 +160,7 @@
     width: 35px;
     padding: 5px 0;
 
-    .fa {
+    .icon {
       margin-right: 0;
     }
 
@@ -246,7 +257,7 @@
   font-size: 13px;
   border-radius: 4px;
 
-  .fa {
+  .icon {
     margin-right: .6em;
   }
 }

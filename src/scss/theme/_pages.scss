@@ -149,12 +149,31 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
     color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.7);
+    border-radius: 100%;
 
     &:hover,
     &:focus {
       color: rgba(0,0,0,.8);
+      background-color: rgba(0,0,0,.8);
     }
+
+    svg {
+      display: block;
+      width: 60%;
+      height: 60%;
+      fill: #fff;
+    }
+  }
+
+  .label {
+    display: none;
   }
 }
 

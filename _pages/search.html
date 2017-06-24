@@ -12,7 +12,7 @@ robots: "noindex, follow"
   {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
 {% endif %}
 
-<h3 class="searchPage-heading"><i class="fa fa-search"></i> Search {{ site_title }} writings</h3>
+<h3 class="searchPage-heading"><svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-search"></use></svg> Search {{ site_title }} writings</h3>
 
 <div class="searchPage-body" id="cse-search">
   <!-- Google CSE search box begins  -->
@@ -22,7 +22,7 @@ robots: "noindex, follow"
         <div class="input-group input-group-lg">
           <input type="text" class="form-control" id="q" name="q" placeholder="Search {{ site_title }}" tabindex="1" autocapitalize="off" autofocus autocomplete="off" spellcheck="false">
           <div class="input-group-btn">
-            <button type="submit" class="btn btn-default" tabindex="2"><i class="fa fa-search"></i></button>
+            <button type="submit" class="btn btn-default" tabindex="2"><svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-search"></use></svg></button>
           </div><!-- /.btn-group -->
         </div><!-- /.input-group -->
       </div><!-- /.col-xs-12 -->

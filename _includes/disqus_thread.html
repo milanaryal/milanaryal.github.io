@@ -4,7 +4,7 @@
 <link rel="preload" href="//{{ site.disqus_shortname }}.disqus.com/embed.js" as="script">
 
 <div class="comments clearfix">
-  <button id="js-button-comment" class="btn btn-default btn-disqus" onclick="initDisqus_onClick()"><i class="fa fa-comment"></i><span class="disqus-comment-count" data-disqus-url="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">Leave a comment</span></button>
+  <button id="js-button-comment" class="btn btn-default btn-disqus" onclick="initDisqus_onClick()"><svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-comment"></use></svg><span class="disqus-comment-count" data-disqus-url="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">Leave a comment</span></button>
 
   <div id="disqus_thread"></div>
 

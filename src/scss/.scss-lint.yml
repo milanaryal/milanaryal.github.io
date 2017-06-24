@@ -25,7 +25,6 @@ linters:
     convention: zero # or `none`
     exclude:
       - bootstrap/**/*.scss
-      - font-awesome/**/*.scss
 
   ChainedClasses:
     enabled: false
@@ -41,7 +40,6 @@ linters:
     exclude:
       - bootstrap/_normalize.scss
       - _bootstrap.scss
-      - _font-awesome.scss
       - styles.scss
     style: silent
 
@@ -108,7 +106,6 @@ linters:
     style: exclude_zero # or 'include_zero'
     exclude:
       - bootstrap/**/*.scss
-      - font-awesome/**/*.scss
 
   MergeableSelector:
     enabled: false
@@ -139,7 +136,6 @@ linters:
     separate_groups: false
     exclude:
       - bootstrap/**/*.scss
-      - font-awesome/**/*.scss
     order: recess
 
 
@@ -255,7 +251,6 @@ linters:
     excluded_identifiers: []
     exclude:
       - bootstrap/**/*.scss
-      - font-awesome/**/*.scss
 
   ZeroUnit:
     enabled: true

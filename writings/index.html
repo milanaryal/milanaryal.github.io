@@ -101,12 +101,12 @@ robots: "noindex, follow"
   <ul class="pager">
     {% if paginator.previous_page %}
       <li class="previous">
-        <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' | replace:'/index.html','/' }}"><i class="fa fa-angle-left"></i> <span itemprop="name">Previous</span></a>
+        <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' | replace:'/index.html','/' }}"><svg class="icon icon-angle-left" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-angle-left"></use></svg><span itemprop="name">Previous</span></a>
       </li>
     {% endif %}
     {% if paginator.next_page %}
       <li class="next">
-        <a itemprop="url" href="{{ paginator.next_page_path | replace:'//','/' | replace:'/index.html','/' }}"><span itemprop="name">Next</span> <i class="fa fa-angle-right"></i></a>
+        <a itemprop="url" href="{{ paginator.next_page_path | replace:'//','/' | replace:'/index.html','/' }}"><span itemprop="name">Next</span><svg class="icon icon-angle-right" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-angle-right"></use></svg></a>
       </li>
     {% endif %}
   </ul>

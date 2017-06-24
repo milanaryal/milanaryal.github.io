@@ -1,6 +1,6 @@
 /*!
  * Milan Aryal Gulpfile (https://milanaryal.com)
- * Copyright 2016 Milan Aryal
+ * Copyright 2017 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
 
@@ -21,6 +21,8 @@ var scssLint = require('gulp-scss-lint');
 var scss = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var minify = require('gulp-cssnano');
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
 var browserSync = require('browser-sync');
 var cp = require('child_process');
 
@@ -32,7 +34,6 @@ var COMPATIBILITY = [
   'Explorer >= 10',
   'iOS >= 8',
   'Safari >= 8',
-  'Android 2.3',
   'Android >= 4',
   'Opera >= 12'
 ];
@@ -80,7 +81,7 @@ var banner = ['/*!',
 
 // Remove pre-existing content from the folders
 gulp.task('clean', function () {
-  return del(['assets/js', 'assets/css', 'assets/fonts']);
+  return del(['assets/js', 'assets/css', 'assets/fonts', 'assets/icons']);
 });
 
 gulp.task('clean:scripts', function () {
@@ -93,6 +94,10 @@ gulp.task('clean:styles', function () {
 
 gulp.task('clean:fonts', function () {
   return del(['assets/fonts']);
+});
+
+gulp.task('clean:icons', function () {
+  return del(['assets/icons']);
 });
 
 // Test scripts
@@ -131,6 +136,16 @@ gulp.task('build:styles', function () {
     .pipe(gulp.dest('assets/css'));
 });
 
+// Process and minify icons
+gulp.task('build:icons', function () {
+  return gulp.src('src/icons/**/*.svg', { base: 'src/icons' })
+    .pipe(svgmin())
+    .pipe(rename({prefix: 'icon-'}))
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('assets/icons'));
+});
+
 // Copy fonts
 gulp.task('copy:fonts', function () {
   return gulp.src('src/fonts/**')
@@ -140,7 +155,7 @@ gulp.task('copy:fonts', function () {
 
 // Default task
 gulp.task('default', ['clean'], function () {
-  gulp.start('build:scripts', 'build:styles', 'copy:fonts');
+  gulp.start('build:scripts', 'build:styles', 'build:icons', 'copy:fonts');
 });
 
 // Remove pre-existing Jekyll build site content
