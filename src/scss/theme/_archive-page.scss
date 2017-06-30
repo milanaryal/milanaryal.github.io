@@ -71,11 +71,17 @@
 }
 
 .archiveDate {
-  font-size: .9em;
+  font-size: .876em;
+  font-style: italic;
   color: rgba(0,0,0,.6);
   text-align: right;
 
+  > time {
+    vertical-align: middle;
+  }
+
   @media (max-width: 767px) {
+    padding-bottom: 5px;
     text-align: left;
   }
 }
