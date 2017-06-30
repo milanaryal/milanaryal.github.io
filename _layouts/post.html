@@ -75,38 +75,33 @@ layout: default
       <!-- Post header lead content -->
       {% if page_image or page.video %}
       <div class="container postHeader-lead">
-        <div class="row no-gutter">
-          <div class="col-xs-12">
+        <figure class="postHeader-leadFigure">
+          <!-- Post header lead image -->
+          {% if page_image %}
+            {% if page.image.caption %}
+              {% assign image_alternative_text = page.image.caption | smartify | strip_html | strip_newlines | escape_once %}
+            {% else %}
+              {% assign image_alternative_text = page_title %}
+            {% endif %}
+            <div class="pil" style="{% if page.image.width %}max-width: {{ page.image.width }}px;{% endif %}{% if page.image.height %}max-height: {{ page.image.height }}px;{% endif %}">
+              <img class="postHeader-leadFigureImage img-responsive" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}{% if page.image.width %} data-full-width="{{ page.image.width }}"{% endif %}{% if page.image.height %} data-full-height="{{ page.image.height }}"{% endif %}>
+            </div>
+            {% if page.image.caption %}
+              <figcaption class="postHeader-leadFigcaption">{{ page.image.caption }}</figcaption>
+            {% endif %}
+          {% endif %}
 
-            <figure class="postHeader-leadFigure">
-              <!-- Post header lead image -->
-              {% if page_image %}
-                {% if page.image.caption %}
-                  {% assign image_alternative_text = page.image.caption | smartify | strip_html | strip_newlines | escape_once %}
-                {% else %}
-                  {% assign image_alternative_text = page_title %}
-                {% endif %}
-                <div class="pil" style="{% if page.image.width %}max-width: {{ page.image.width }}px;{% endif %}{% if page.image.height %}max-height: {{ page.image.height }}px;{% endif %}">
-                  <img class="postHeader-leadFigureImage img-responsive" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}{% if page.image.width %} data-full-width="{{ page.image.width }}"{% endif %}{% if page.image.height %} data-full-height="{{ page.image.height }}"{% endif %}>
-                </div>
-                {% if page.image.caption %}
-                  <figcaption class="postHeader-leadFigcaption">{{ page.image.caption }}</figcaption>
-                {% endif %}
-              {% endif %}
-
-              <!-- Post header lead video -->
-              {% if page.video %}
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="{{ page.video.path | default: page.video }}"></iframe>
-                </div>
-                {% if page.video.caption %}
-                  <figcaption class="postHeader-leadFigcaption">{{ page.video.caption }}</figcaption>
-                {% endif %}
-              {% endif %}
-            </figure>
-          </div><!-- /.col-* -->
-        </div><!-- /.row -->
+          <!-- Post header lead video -->
+          {% if page.video %}
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="{{ page.video.path | default: page.video }}"></iframe>
+            </div>
+            {% if page.video.caption %}
+              <figcaption class="postHeader-leadFigcaption">{{ page.video.caption }}</figcaption>
+            {% endif %}
+          {% endif %}
+        </figure>
       </div><!-- /.container -->
       {% endif %}
 

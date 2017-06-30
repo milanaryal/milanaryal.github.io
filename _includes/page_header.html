@@ -16,12 +16,8 @@
 <!-- Page header -->
 <header class="pageHeader{% if paginator.page > 1 %} paginatorHeader{% endif %}" style="background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('{{ page_image }}');">
   <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-        <h1 class="pageHeader-title{% if paginator.page > 1 %} paginatorHeader-title{% endif %}" itemprop="name">{{ page_title }}</h1>
-        <hr class="pageHeader-introDivider{% if paginator.page > 1 %} paginatorHeader-introDivider{% endif %}">
-        <span class="pageHeader-description{% if paginator.page > 1 %} paginatorHeader-description{% endif %}" itemprop="description">{{ page_description }}</span>
-      </div>
-    </div>
-  </div>
+    <h1 class="pageHeader-title{% if paginator.page > 1 %} paginatorHeader-title{% endif %}" itemprop="name">{{ page_title }}</h1>
+    <hr class="pageHeader-introDivider{% if paginator.page > 1 %} paginatorHeader-introDivider{% endif %}">
+    <span class="pageHeader-description{% if paginator.page > 1 %} paginatorHeader-description{% endif %}" itemprop="description">{{ page_description }}</span>
+  </div><!-- /.container -->
 </header>

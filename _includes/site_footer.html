@@ -1,62 +1,58 @@
 <!-- Footer -->
 <footer class="siteFooter" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
   <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-        <ul class="siteFooter-social">
-          <li>
-            <a href="/feed.xml">
-              <svg class="icon-feed" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-feed"></use></svg>
-              <span class="label">Feed</span>
-            </a>
-          </li>
-          {% if site.author.twitter %}
-          <li>
-            <a rel="me" href="//twitter.com/{{ site.author.twitter }}">
-              <svg class="icon-twitter" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg>
-              <span class="label">Twitter</span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.author.instagram %}
-          <li>
-            <a rel="me" href="//instagram.com/{{ site.author.instagram }}">
-              <svg class="icon-instagram" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg>
-              <span class="label">Instagram</span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.author.github %}
-          <li>
-            <a rel="me" href="//github.com/{{ site.author.github }}">
-              <svg class="icon-github" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
-              <span class="label">GitHub</span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.author.tumblr %}
-          <li>
-            <a rel="me" href="http://{{ site.author.tumblr }}.tumblr.com">
-              <svg class="icon-tumblr" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-tumblr"></use></svg>
-              <span class="label">Tumblr</span>
-            </a>
-          </li>
-          {% endif %}
-        </ul>
+    <ul class="siteFooter-social">
+      <li>
+        <a href="/feed.xml">
+          <svg class="icon-feed" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-feed"></use></svg>
+          <span class="label">Feed</span>
+        </a>
+      </li>
+      {% if site.author.twitter %}
+      <li>
+        <a rel="me" href="//twitter.com/{{ site.author.twitter }}">
+          <svg class="icon-twitter" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg>
+          <span class="label">Twitter</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if site.author.instagram %}
+      <li>
+        <a rel="me" href="//instagram.com/{{ site.author.instagram }}">
+          <svg class="icon-instagram" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg>
+          <span class="label">Instagram</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if site.author.github %}
+      <li>
+        <a rel="me" href="//github.com/{{ site.author.github }}">
+          <svg class="icon-github" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if site.author.tumblr %}
+      <li>
+        <a rel="me" href="http://{{ site.author.tumblr }}.tumblr.com">
+          <svg class="icon-tumblr" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-tumblr"></use></svg>
+          <span class="label">Tumblr</span>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
 
-        {% if site.author %}
-          {% assign site_author = site.author.name | default: site.author %}
-        {% endif %}
-        {% if site_author %}
-          {% assign site_author = site_author | smartify | strip_html | strip_newlines | escape_once %}
-        {% endif %}
+    {% if site.author %}
+      {% assign site_author = site.author.name | default: site.author %}
+    {% endif %}
+    {% if site_author %}
+      {% assign site_author = site_author | smartify | strip_html | strip_newlines | escape_once %}
+    {% endif %}
 
-        {% assign site_title = site.title | default: site.name %}
-        {% if site_title %}
-          {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
-        {% endif %}
-        <p class="siteFooter-legal">&copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> {% if site.author %}<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ site_author }}</span></span>{% else %}{{ site_title }}{% endif %}</p>
-      </div>
-    </div>
-  </div>
+    {% assign site_title = site.title | default: site.name %}
+    {% if site_title %}
+      {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
+    {% endif %}
+    <p class="siteFooter-legal">&copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> {% if site.author %}<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ site_author }}</span></span>{% else %}{{ site_title }}{% endif %}</p>
+  </div><!-- /.container -->
 </footer>

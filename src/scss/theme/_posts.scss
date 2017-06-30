@@ -44,8 +44,12 @@
   }
 }
 
-// Post header lead container width 100% on small and medium screens
+// Post header lead container
 .container.postHeader-lead {
+  padding-right: 0;
+  padding-left: 0;
+
+  // width 100% on small and medium screens
   @media (max-width: 991px) {
     width: 100%;
   }

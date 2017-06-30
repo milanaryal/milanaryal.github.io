@@ -4077,11 +4077,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 
-.no-gutter > [class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
-
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -4572,6 +4567,12 @@ a:hover, a:focus {
   padding: 50px 0 40px;
   text-align: center;
   background-color: #fafafa;
+}
+
+@media (min-width: 768px) {
+  .siteFooter {
+    padding: 60px 0 50px;
+  }
 }
 
 .siteFooter-social {
@@ -5118,6 +5119,11 @@ ul.hero-social a .label {
     line-height: 1.12;
     letter-spacing: -.044em;
   }
+}
+
+.container.postHeader-lead {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 @media (max-width: 991px) {
