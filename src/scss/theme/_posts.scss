@@ -3,10 +3,10 @@
 //
 
 .postHeader {
-  padding-top: 40px;
+  padding-top: 50px;
 
   @media (max-width: 767px) {
-    padding-top: 25px;
+    padding-top: 30px;
   }
 }
 
@@ -113,14 +113,9 @@
   }
 
   .icon-cc-by {
-    // vertical-align: middle;
-    // margin-top: -3px;
-    // margin-left: -1px;
-    // fill: rgba(0,0,0,.44);
-    // line-height: 21px;
-    width: 21px;
-    height: 21px;
     margin-left: 4px;
+    font-size: 21px;
+    vertical-align: bottom;
   }
 }
 
@@ -156,7 +151,7 @@
   border-radius: 4px;
   @include btn-social-share();
 
-  .icon {
+  .svg-icon {
     margin-right: .6em;
   }
 
@@ -164,7 +159,7 @@
     width: 35px;
     padding: 5px 0;
 
-    .icon {
+    .svg-icon {
       margin-right: 0;
     }
 
@@ -261,7 +256,7 @@
   font-size: 13px;
   border-radius: 4px;
 
-  .icon {
+  .svg-icon {
     margin-right: .6em;
   }
 }

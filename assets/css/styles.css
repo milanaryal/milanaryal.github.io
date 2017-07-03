@@ -4133,19 +4133,37 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url("../fonts/source-sans-pro-v10-latin-300.woff2") format("woff2"), url("../fonts/source-sans-pro-v10-latin-300.woff") format("woff");
 }
 
-.icon {
+.svg-icon {
   position: relative;
-  top: -.125em;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   width: 1em;
   height: 1em;
   line-height: 1;
-  vertical-align: middle;
   fill: currentColor;
+}
+
+.svg-icon svg {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon.svg-baseline svg {
+  position: absolute;
+  bottom: -.125em;
 }
 
 h1, h2, h3, h4, h5, h6, dl, dd, ol, ul, menu, figure, blockquote, p, pre, form {
   margin: 0;
+}
+
+[hidden] {
+  display: none !important;
 }
 
 html {
@@ -5082,12 +5100,12 @@ ul.hero-social a .label {
 }
 
 .postHeader {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 @media (max-width: 767px) {
   .postHeader {
-    padding-top: 25px;
+    padding-top: 30px;
   }
 }
 
@@ -5198,9 +5216,9 @@ ul.hero-social a .label {
 }
 
 .postFooter-metaAcknowledgments .icon-cc-by {
-  width: 21px;
-  height: 21px;
   margin-left: 4px;
+  font-size: 21px;
+  vertical-align: bottom;
 }
 
 .postFooter-section {
@@ -5237,7 +5255,7 @@ ul.hero-social a .label {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.btn-socialShare .icon {
+.btn-socialShare .svg-icon {
   margin-right: .6em;
 }
 
@@ -5246,7 +5264,7 @@ ul.hero-social a .label {
     width: 35px;
     padding: 5px 0;
   }
-  .btn-socialShare .icon {
+  .btn-socialShare .svg-icon {
     margin-right: 0;
   }
   .btn-socialShare .label {
@@ -5346,7 +5364,7 @@ ul.hero-social a .label {
   border-radius: 4px;
 }
 
-.btn-disqus .icon {
+.btn-disqus .svg-icon {
   margin-right: .6em;
 }
 
@@ -6228,7 +6246,6 @@ kbd {
   font-size: 22px;
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
-  cursor: pointer;
   background-image: none;
   opacity: 0;
   visibility: hidden;
@@ -6265,9 +6282,8 @@ kbd {
   }
 }
 
-.elevator .icon {
-  width: 2em;
-  height: 2em;
+.elevator .icon-chevron-up {
+  font-size: 2em;
 }
 
 .js-headerLink {
@@ -6280,7 +6296,7 @@ kbd {
   opacity: 0;
 }
 
-.js-headerLink .icon {
+.js-headerLink .icon-link {
   font-size: 66%;
 }
 
@@ -6394,9 +6410,8 @@ kbd {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.social-links a .icon {
-  width: 3.33em;
-  height: 3.33em;
+.social-links a .svg-icon {
+  font-size: 3.33em;
 }
 
 .pgp-key {

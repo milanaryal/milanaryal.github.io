@@ -16,7 +16,7 @@
   font-size: 22px;
   color: rgba(0,0,0,.7);
   text-decoration: none;
-  cursor: pointer;
+  // cursor: pointer; /* role="button" does the job */
   background-image: none;
   opacity: 0;
   visibility: hidden;
@@ -52,8 +52,7 @@
     font-size: 24px;
   }
 
-  .icon {
-    width:  2em;
-    height: 2em;
+  .icon-chevron-up {
+    font-size: 2em;
   }
 }

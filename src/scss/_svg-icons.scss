@@ -1,0 +1,24 @@
+//
+// SVG icons better alignment
+// (https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4)
+//
+
+.svg-icon {
+  position: relative;
+  display: inline-flex;
+  align-self: center;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  fill: currentColor;
+}
+
+.svg-icon svg {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon.svg-baseline svg {
+  position: absolute;
+  bottom: -.125em;
+}

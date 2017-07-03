@@ -19,68 +19,79 @@ Join me on the following networks and/or websites:
 <ul class="social-links">
   <li>
     <a rel="me" href="//twitter.com/MilanAryal">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg>
-      <br><span class="label">Twitter</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg>
+      </span><br><span class="label">Twitter</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//facebook.com/considermilan">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-facebook"></use></svg>
-      <br><span class="label">Facebook</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-facebook"></use></svg>
+      </span><br><span class="label">Facebook</span>
     </a>
   </li>
   <li>
      <a rel="me" href="//instagram.com/milanaryal">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg>
-      <br><span class="label">Instagram</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg>
+      </span><br><span class="label">Instagram</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//snapchat.com/add/milanaryal">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-snapchat"></use></svg>
-      <br><span class="label">Snapchat</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-snapchat"></use></svg>
+      </span><br><span class="label">Snapchat</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//github.com/MilanAryal">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
-      <br><span class="label">GitHub</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
+      </span><br><span class="label">GitHub</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//keybase.io/milanaryal">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-key"></use></svg>
-      <br><span class="label">Keybase</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-key"></use></svg>
+      </span><br><span class="label">Keybase</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//google.com/+MilanAryal">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-google-plus"></use></svg>
-      <br><span class="label">Google+</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-google-plus"></use></svg>
+      </span><br><span class="label">Google+</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//linkedin.com/in/MilanAryal">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-linkedin"></use></svg>
-      <br><span class="label">LinkedIn</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-linkedin"></use></svg>
+      </span><br><span class="label">LinkedIn</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//pinterest.com/milanaryal">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-pinterest"></use></svg>
-      <br><span class="label">Pinterest</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-pinterest"></use></svg>
+      </span><br><span class="label">Pinterest</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//milanaryal.tumblr.com">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-tumblr"></use></svg>
-      <br><span class="label">Tumblr</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-tumblr"></use></svg>
+      </span><br><span class="label">Tumblr</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//medium.com/@MilanAryal">
-      <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-medium"></use></svg>
-      <br><span class="label">Medium</span>
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-medium"></use></svg>
+      </span><br><span class="label">Medium</span>
     </a>
   </li>
 </ul>
@@ -111,7 +122,7 @@ In case you were wondering, this site is:
 
 ...for more informations see [humans.txt](/humans.txt).
 
-If you enjoy the content found here, you might like to subscribe to my <svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-feed"></use></svg> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
+If you enjoy the content found here, you might like to subscribe to my <span class="svg-icon icon-feed svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-feed"></use></svg></span> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
 ### Licensing
 

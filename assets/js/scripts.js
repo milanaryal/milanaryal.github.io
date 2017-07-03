@@ -11892,7 +11892,8 @@ var Pil = (function(){
     $('.markdownBody a[role="button"]').addClass('btn btn-default');
 
     // footnotes header
-    var footnotesAnchor = '<a class="js-headerLink" href="#footnotes" aria-hidden="true"><svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-link"></use></svg></a>';
+    var footnotesAnchor = '<a class="js-headerLink" href="#footnotes" aria-hidden="true"><span class="svg-icon icon-link"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-link"></use></svg></span></a>';
+
     $('.footnotes').prepend('<hr><h4 id="footnotes">' + footnotesAnchor + 'Footnotes</h4>');
 
 
@@ -11908,7 +11909,7 @@ var Pil = (function(){
       var header      = $(this),
           headerID    = header.attr('id'),
           anchorClass = 'js-headerLink',
-          anchorIcon  = '<svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-link"></use></svg>';
+          anchorIcon  = '<span class="svg-icon icon-link"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-link"></use></svg></span>';
 
       if (headerID) {
         header.prepend($('<a />').addClass(anchorClass).attr({ 'href': '#' + headerID, 'aria-hidden': 'true' }).html(anchorIcon));
@@ -11936,7 +11937,7 @@ var Pil = (function(){
      * ------------------------------------------------------------------------
      */
 
-    $('.elevatorWrapper').append('<div class="elevator"><svg class="icon" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-chevron-up"></use></svg></div>');
+    $('.elevatorWrapper').append('<div class="elevator" role="button"><span class="svg-icon icon-chevron-up svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-chevron-up"></use></svg></span></div>');
 
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,

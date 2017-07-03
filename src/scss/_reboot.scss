@@ -1,0 +1,14 @@
+//
+// Reboot
+//
+
+h1, h2, h3, h4, h5, h6, dl, dd, ol, ul, menu, figure, blockquote, p, pre, form {
+  margin: 0;
+}
+
+
+// Always hide an element with the `hidden` HTML attribute.
+// Needed for proper display in IE 10-.
+[hidden] {
+  display: none !important;
+}
