@@ -63,6 +63,8 @@
     font-feature-settings: "liga" on,"salt" on;
   }
 
+  // Crafting link underlines
+  // (https://medium.com/p/7c03a9274f9)
   > h3, > h4,
   > p,
   > blockquote,
@@ -70,16 +72,24 @@
   > .table-responsive {
     a {
       text-decoration: none;
-      background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,.6) 50%);
-      background-position: 0 20px;
+      background-image: linear-gradient(to bottom,rgba(0,0,0,.6) 50%,rgba(0,0,0,0) 50%);
+      background-position: 0 1.07em;
       background-repeat: repeat-x;
-      background-size: 2px 2px;
+      background-size: 2px .1em;
       -webkit-tap-highlight-color: rgba(0,0,0,.3);
 
-      @media (max-width: 767px) {
-        background-position: 0 18px;
+      @media (max-width: 991px) {
+        background-position: 0 1.03em;
         background-size: 2px 2px;
       }
+    }
+  }
+
+  > h3, > h4 {
+    a {
+      background-image: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.8));
+      background-position: 0 1.15em; // 0 1.05em;
+      background-size: 2px .115em;
     }
   }
 
@@ -119,19 +129,6 @@
       margin-top: 39px;
       margin-left: -1.75px;
       font-size: 25px;
-      line-height: 1.12;
-      letter-spacing: -.044em;
-    }
-
-    a {
-      background-image: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.8));
-      background-position: 0 34px;
-      background-size: 2px 4px;
-
-      @media (max-width: 767px) {
-        background-position: 0 29px;
-        background-size: 2px 3px;
-      }
     }
   }
 
@@ -139,30 +136,17 @@
     margin-top: 39px;
     margin-left: -1.75px;
     font-family: $font-family-sans-serif;
-    font-size: 27px;
+    font-size: 25px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.22;
     letter-spacing: -.044em;
-    color: rgba(0,0,0,.44);
+    color: rgba(0,0,0,.8);
 
     @media (max-width: 767px) {
       margin-top: 31px;
       margin-left: -1.5px;
-      font-size: 23px;
-      line-height: 1.18;
-      // letter-spacing: -.044em;
-    }
-
-    a {
-      background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,.44) 50%);
-      background-position: 0 31px;
-      background-size: 2px 3px;
-
-      @media (max-width: 767px) {
-        background-position: 0 27px;
-        background-size: 2px 3px;
-      }
+      font-size: 20px;
     }
   }
 

@@ -5105,7 +5105,7 @@ ul.hero-social a .label {
 
 @media (max-width: 767px) {
   .postHeader {
-    padding-top: 30px;
+    padding-top: 35px;
   }
 }
 
@@ -5535,24 +5535,32 @@ ul.hero-social a .label {
 .markdownBody > ul a, .markdownBody > ol a, .markdownBody > dl a,
 .markdownBody > .table-responsive a {
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.6) 50%);
-  background-image: -o-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.6) 50%);
-  background-position: 0 20px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
+  background-position: 0 1.07em;
   background-repeat: repeat-x;
-  background-size: 2px 2px;
+  background-size: 2px .1em;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .markdownBody > h3 a, .markdownBody > h4 a,
   .markdownBody > p a,
   .markdownBody > blockquote a,
   .markdownBody > ul a, .markdownBody > ol a, .markdownBody > dl a,
   .markdownBody > .table-responsive a {
-    background-position: 0 18px;
+    background-position: 0 1.03em;
     background-size: 2px 2px;
   }
+}
+
+.markdownBody > h3 a, .markdownBody > h4 a {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-position: 0 1.15em;
+  background-size: 2px .115em;
 }
 
 .markdownBody > figure figcaption a,
@@ -5590,23 +5598,6 @@ ul.hero-social a .label {
     margin-top: 39px;
     margin-left: -1.75px;
     font-size: 25px;
-    line-height: 1.12;
-    letter-spacing: -.044em;
-  }
-}
-
-.markdownBody h3 a {
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-  background-position: 0 34px;
-  background-size: 2px 4px;
-}
-
-@media (max-width: 767px) {
-  .markdownBody h3 a {
-    background-position: 0 29px;
-    background-size: 2px 3px;
   }
 }
 
@@ -5614,35 +5605,19 @@ ul.hero-social a .label {
   margin-top: 39px;
   margin-left: -1.75px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 27px;
+  font-size: 25px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.22;
   letter-spacing: -.044em;
-  color: rgba(0, 0, 0, 0.44);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 767px) {
   .markdownBody h4 {
     margin-top: 31px;
     margin-left: -1.5px;
-    font-size: 23px;
-    line-height: 1.18;
-  }
-}
-
-.markdownBody h4 a {
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.44) 50%);
-  background-image: -o-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.44) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.44) 50%);
-  background-position: 0 31px;
-  background-size: 2px 3px;
-}
-
-@media (max-width: 767px) {
-  .markdownBody h4 a {
-    background-position: 0 27px;
-    background-size: 2px 3px;
+    font-size: 20px;
   }
 }
 
