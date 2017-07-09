@@ -1,7 +1,7 @@
 ---
 title: "Top 10 most popular BitTorrent sites [of June 2017]"
 date: 2017-05-23T06:43:58+05:45
-last_modified_at: 2017-06-02T07:54:18+05:45
+last_modified_at: 2017-07-09T15:35:00+05:45
 excerpt: "An up-to-date list of the most popular BitTorrent sites out there."
 ---
 
@@ -13,20 +13,20 @@ BitTorrent sites come and go but below I've compiled a list of the 10 most-visit
 
 > Can't access one of the following site? Try using [the proxy/mirror sites]({{ site.url }}/access-your-favourite-blocked-bittorrent-sites/) because due to copyright issues (one of) your favourite BitTorrent site(s) may be blocked by your ISP in your country or territory.
 
-The Alexa global ranking is accurate as of *June 2, 2017*.
+The Alexa global ranking is accurate as of *July 9, 2017*.
 
-| S.N. | BitTorrent site | Proxy/Mirror | Specialization | RSS | Launched | Alexa Rank |
+| S.N. | BitTorrent site | Proxy/Mirror | Specialization | RSS | Alexa Rank |
 |---|---|---|---|---|---|---|
-| 1. | ![The Pirate Bay favicon](https://unblocked-pw.github.io/ico/pirateproxy.ico){:width="16" height="16" style="display:inline-block!important;"} [The Pirate Bay](http://thepiratebay.org){:rel="nofollow"} | [pirateproxy.cc](http://pirateproxy.cc){:rel="nofollow"} | - | Yes | 15 September 2003 | 101 |
-| 2. | ![RARBG favicon](https://unblocked-pw.github.io/ico/rarbg.ico){:width="16" height="16" style="display:inline-block!important;"} [RARBG](http://rarbg.to){:rel="nofollow"} | [unblocked.cam](http://rarbg.unblocked.cam){:rel="nofollow"} | - | Yes | 2008 | 247 |
-| 3. | ![YTS.AG favicon](https://unblocked-pw.github.io/ico/yts.ico){:width="16" height="16" style="display:inline-block!important;"} [YTS.AG](http://yts.ag){:rel="nofollow"} | [unblocked.cam](http://yts.unblocked.cam){:rel="nofollow"} | Movies | Yes | - | 265 |
-| 4. | ![Torrentz2 favicon](https://unblocked-pw.github.io/ico/torrentz.ico){:width="16" height="16" style="display:inline-block!important;"} [Torrentz2](http://torrentz2.eu){:rel="nofollow"} | [unblocked.cam](http://torrentz.unblocked.cam){:rel="nofollow"} | Metasearch engine | Yes  | - | 397 |
-| 5. | ![1337x favicon](https://unblocked-pw.github.io/ico/1337x.ico){:width="16" height="16" style="display:inline-block!important;"} [1337x](http://1337x.to){:rel="nofollow"} | [unblocked.cam](http://1337x.unblocked.cam){:rel="nofollow"} | - | No  | 2007 | 491 |
-| 6. | ![TorrentProject favicon](https://unblocked-pw.github.io/ico/torrentproject.ico){:width="16" height="16" style="display:inline-block!important;"} [TorrentProject](http://torrentproject.se){:rel="nofollow"} | [unblocked.cam](http://torrentproject.unblocked.cam){:rel="nofollow"} | DHT search engine | Yes  | - | 884 |
-| 7. | ![EZTV.AG favicon](https://unblocked-pw.github.io/ico/eztv.ico){:width="16" height="16" style="display:inline-block!important;"} [EZTV.AG](http://eztv.ag){:rel="nofollow"} | [unblocked.cam](http://eztv.unblocked.cam){:rel="nofollow"} | Television shows | Yes  | - | 1,023 |
-| 8. | ![LimeTorrents.cc favicon](https://unblocked-pw.github.io/ico/limetorrents.ico){:width="16" height="16" style="display:inline-block!important;"} [LimeTorrents.cc](http://www.limetorrents.cc){:rel="nofollow"} | [unblocked.cam](http://limetorrents.unblocked.cam){:rel="nofollow"} | - | Yes  | - | 1,780 |
-| 9. | ![TorrentDownloads favicon](https://unblocked-pw.github.io/ico/torrentdownloads.ico){:width="16" height="16" style="display:inline-block!important;"} [TorrentDownloads](http://www.torrentdownloads.me){:rel="nofollow"} | [unblocked.cam](http://torrentdownloads.unblocked.cam){:rel="nofollow"} | - | No  | - | 2,138 |
-| 10. | ![Zooqle favicon](https://unblocked-pw.github.io/ico/zooqle.ico){:width="16" height="16" style="display:inline-block!important;"} [Zooqle](http://zooqle.com){:rel="nofollow" data-proofer-ignore=""} | [unblocked.cam](http://zooqle.unblocked.cam){:rel="nofollow"} | - | Yes  | - | 3,302 |
+| 1. | ![The Pirate Bay favicon](https://unblocked-pw.github.io/ico/pirateproxy.ico){:width="16" height="16" style="display:inline-block!important;"} [The Pirate Bay](http://thepiratebay.org){:rel="nofollow"} | [pirateproxy.cc](http://pirateproxy.cc){:rel="nofollow"} | - | Yes | 99 |
+| 2. | ![RARBG favicon](https://unblocked-pw.github.io/ico/rarbg.ico){:width="16" height="16" style="display:inline-block!important;"} [RARBG](http://rarbg.to){:rel="nofollow"} | [unblocked.srl](http://rarbg.unblocked.srl){:rel="nofollow"} | - | Yes | 245 |
+| 3. | ![YTS.AG favicon](https://unblocked-pw.github.io/ico/yts.ico){:width="16" height="16" style="display:inline-block!important;"} [YTS.AG](http://yts.ag){:rel="nofollow"} | [unblocked.srl](http://yts.unblocked.srl){:rel="nofollow"} | Movies | Yes | 256 |
+| 4. | ![Torrentz2 favicon](https://unblocked-pw.github.io/ico/torrentz.ico){:width="16" height="16" style="display:inline-block!important;"} [Torrentz2](http://torrentz2.eu){:rel="nofollow"} | [unblocked.srl](http://torrentz.unblocked.srl){:rel="nofollow"} | Metasearch engine | Yes  | 300 |
+| 5. | ![1337x favicon](https://unblocked-pw.github.io/ico/1337x.ico){:width="16" height="16" style="display:inline-block!important;"} [1337x](http://1337x.to){:rel="nofollow"} | [unblocked.srl](http://1337x.unblocked.srl){:rel="nofollow"} | - | No  | 403 |
+| 6. | ![TorrentProject favicon](https://unblocked-pw.github.io/ico/torrentproject.ico){:width="16" height="16" style="display:inline-block!important;"} [TorrentProject](http://torrentproject.se){:rel="nofollow"} | [unblocked.srl](http://torrentproject.unblocked.srl){:rel="nofollow"} | DHT search engine | Yes  | 864 |
+| 7. | ![EZTV.AG favicon](https://unblocked-pw.github.io/ico/eztv.ico){:width="16" height="16" style="display:inline-block!important;"} [EZTV.AG](http://eztv.ag){:rel="nofollow"} | [unblocked.srl](http://eztv.unblocked.srl){:rel="nofollow"} | Television shows | Yes | 1,053 |
+| 8. | ![LimeTorrents.cc favicon](https://unblocked-pw.github.io/ico/limetorrents.ico){:width="16" height="16" style="display:inline-block!important;"} [LimeTorrents.cc](http://www.limetorrents.cc){:rel="nofollow"} | [unblocked.srl](http://limetorrents.unblocked.srl){:rel="nofollow"} | - | Yes | 1,510 |
+| 9. | ![TorrentDownloads favicon](https://unblocked-pw.github.io/ico/torrentdownloads.ico){:width="16" height="16" style="display:inline-block!important;"} [TorrentDownloads](http://www.torrentdownloads.me){:rel="nofollow"} | [unblocked.srl](http://torrentdownloads.unblocked.srl){:rel="nofollow"} | - | No | 2,007 |
+| 10. | ![Zooqle favicon](https://unblocked-pw.github.io/ico/zooqle.ico){:width="16" height="16" style="display:inline-block!important;"} [Zooqle](http://zooqle.com){:rel="nofollow" data-proofer-ignore=""} | [unblocked.srl](http://zooqle.unblocked.srl){:rel="nofollow"} | - | Yes | 2,802 |
 
 **Note**: All BitTorrent sites in above table are *working*, as of the last update to this page.
 
