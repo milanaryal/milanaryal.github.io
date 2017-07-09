@@ -1,5 +1,5 @@
 ---
-title: "Top 10 most popular BitTorrent sites [of June 2017]"
+title: "Top 10 most popular BitTorrent sites [of July 2017]"
 date: 2017-05-23T06:43:58+05:45
 last_modified_at: 2017-07-09T15:35:00+05:45
 excerpt: "An up-to-date list of the most popular BitTorrent sites out there."
