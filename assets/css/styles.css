@@ -6360,7 +6360,7 @@ kbd {
 }
 
 .social-links {
-  padding-left: 0;
+  padding-left: 0 !important;
   margin-bottom: 10px;
   margin-left: -10px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
