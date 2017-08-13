@@ -1,7 +1,7 @@
 ---
 title: "Access your favourite blocked BitTorrent sites"
 date: 2017-05-27T07:08:00+05:45
-last_modified_at: 2017-07-09T15:35:00+05:45
+last_modified_at: 2017-08-13T11:21:00+05:45
 excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your country or territory Internet censorship."
 ---
 
@@ -9,7 +9,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-* [unblocked.srl](https://unblocked.srl/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
+* [unblocked.pub](https://unblocked.pub/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
 * [torrents.me/proxy](https://torrents.me/proxy/){:rel="nofollow"}{:rel="nofollow"}
 * [proxyportal.me](https://proxyportal.me/){:rel="nofollow"}
 * [unblockall.xyz](https://unblockall.xyz/){:rel="nofollow"}
