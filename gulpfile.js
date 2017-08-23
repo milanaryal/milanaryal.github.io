@@ -54,7 +54,6 @@ var SCRIPTS_SRC = [
   // 'src/js/bootstrap/tab.js',
   // 'src/js/bootstrap/affix.js',
   'src/js/nprogress.js',
-  'src/js/pil.js',
   'src/js/svg4everybody.js',
   'src/js/scripts.js'
 ];

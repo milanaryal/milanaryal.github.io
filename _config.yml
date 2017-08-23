@@ -89,7 +89,7 @@ defaults:
     values:
       sitemap: false
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-github-metadata

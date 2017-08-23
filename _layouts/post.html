@@ -83,9 +83,7 @@ layout: default
             {% else %}
               {% assign image_alternative_text = page_title %}
             {% endif %}
-            <div class="pil" style="{% if page.image.width %}max-width: {{ page.image.width }}px;{% endif %}{% if page.image.height %}max-height: {{ page.image.height }}px;{% endif %}">
-              <img class="postHeader-leadFigureImage img-responsive" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}{% if page.image.width %} data-full-width="{{ page.image.width }}"{% endif %}{% if page.image.height %} data-full-height="{{ page.image.height }}"{% endif %}>
-            </div>
+              <img class="postHeader-leadFigureImage img-responsive" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}>
             {% if page.image.caption %}
               <figcaption class="postHeader-leadFigcaption">{{ page.image.caption }}</figcaption>
             {% endif %}
