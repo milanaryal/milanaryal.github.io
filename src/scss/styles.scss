@@ -18,7 +18,6 @@
 // Core CSS
 @import "reboot";
 @import "theme/global";
-@import "theme/buttons";
 @import "theme/header-navbar";
 @import "theme/pager";
 @import "theme/pages";
@@ -29,6 +28,7 @@
 @import "theme/posts";
 @import "theme/markdown";
 @import "theme/syntax";
+@import "theme/buttons";
 
 // Components w/ JavaScript
 @import "theme/nprogress";

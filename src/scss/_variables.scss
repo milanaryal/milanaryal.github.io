@@ -14,15 +14,7 @@ $text-color:                rgba(0,0,0,.8);
 
 $font-family-sans-serif:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif:         "Lora", Georgia, "Times New Roman", Times, serif;
-$font-family-monospace:     Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base:          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
-$font-size-base:            16px;
-$font-size-large:           18px;
-$font-size-small:           12px;
-
-$line-height-base:          1.4;
-$line-height-computed:      20px;
+$font-family-base:          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 $link-color:                inherit;
 $link-hover-color:          inherit;
@@ -31,12 +23,9 @@ $link-hover-decoration:     none;
 $blockquote-border-color:   $text-color;
 $hr-border:                 rgba(0,0,0,.05);
 
-
-// Font Awesome
-//
-// Override custom settings.
-
-$fa-font-size-base:         16px;
+//$theme-colors: (
+//  dark: #34495e
+//);
 
 
 // Brand colors (http://brand-colors.com, http://brandcolors.net)

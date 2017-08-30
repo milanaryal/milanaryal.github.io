@@ -55,8 +55,8 @@
 .pageHeader-introDivider {
   max-width: 100px;
   margin: 15px auto;
-  border-color: #fff;
-  border-width: 4px;
+  border: 0;
+  border-top: 4px solid #fff;
 }
 
 .pageHeader-title {

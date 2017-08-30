@@ -3,6 +3,15 @@
 //
 
 .btn {
+  box-shadow: none !important;
+
+  &:focus,
+  &:active, &:active:hover, &:active:focus {
+    box-shadow: none !important;
+  }
+}
+
+.btn-outline-default {
   padding: 15px 25px;
   font-family: $font-family-base;
   font-size: 14px;
@@ -20,19 +29,21 @@
   -moz-font-feature-settings: liga on;
 }
 
-.btn-lg {
+.btn-outline-default-lg {
   padding: 25px 35px;
   font-size: 16px;
 }
 
-.btn-default {
+.btn-outline-default {
   color: rgba(0,0,0,.44);
   background-color: transparent;
+  background-image: none;
   border-color: rgba(0,0,0,.15);
 
   &:hover {
     color: rgba(0,0,0,.6);
     background-color: transparent;
+    background-image: none;
     border-color: rgba(0,0,0,.3);
   }
 
@@ -40,6 +51,7 @@
   &:active, &:active:hover, &:active:focus {
     color: rgba(0,0,0,.8);
     background-color: transparent;
+    background-image: none;
     border-color: rgba(0,0,0,.6);
     outline: 0;
   }

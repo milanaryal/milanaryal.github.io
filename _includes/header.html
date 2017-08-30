@@ -1,35 +1,30 @@
-<!-- Navigation -->
-<header class="navbar{% if page.url == '/' %} navbar-static-top{% else %} navbar-fixed-top headerNavbar{% endif %}" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+<!-- Site header & navigation -->
+<header class="navbar navbar-expand-md navbar-light{% unless page.url == '/' %} fixed-top headroom{% endunless %}" role="banner" itemscope itemtype="https://schema.org/WPHeader">
   <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-
-          {% assign site_title = site.title | default: site.name %}
-          {% if site_title %}
-            {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
-          {% endif %}
-          <a class="navbar-brand" itemprop="url" href="/">
-            <span itemprop="name">{{ site_title }}</span>
-          </a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <nav class="collapse navbar-collapse navbar-top-collapse" itemscope itemtype="https://schema.org/SiteNavigationElement">
-        <ul class="nav navbar-nav navbar-right">
-          {% for nav_item in site.nav %}
-            <li>
-              <a itemprop="url" href="{{ nav_item.url }}">
-                <span itemprop="name">{{ nav_item.title | smartify | strip_html | strip_newlines | escape_once }}</span>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </nav><!-- /.navbar-collapse -->
-  </div><!-- /.container -->
+    {% assign site_title = site.title | default: site.name %}
+    {% if site_title %}
+      {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
+    {% endif %}
+    <a class="navbar-brand" itemprop="url" href="/"><span itemprop="name">{{ site_title }}</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="collapse navbar-collapse" id="navbarCollapse" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <ul class="navbar-nav mr-auto">
+        {% for nav_item in site.nav %}
+        <li class="nav-item">
+          <a class="nav-link" itemprop="url" href="{{ nav_item.url }}"><span itemprop="name">{{ nav_item.title | smartify | strip_html | strip_newlines | escape_once }}</span></a>
+        </li>
+        {% endfor %}
+      </ul>
+      <form class="form-inline mt-2 mt-md-0 mb-1 mb-md-0" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
+        <div class="input-group">
+          <input class="form-control" type="text" id="q" name="q" placeholder="Search" aria-label="Search" autocapitalize="off" autocomplete="off" spellcheck="false">
+          <span class="input-group-btn">
+            <button class="btn btn-outline-secondary" type="submit"><span class="svg-icon icon-search svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-search"></use></svg></span></button>
+          </span>
+        </div>
+      </form>
+    </nav>
+  </div>
 </header>

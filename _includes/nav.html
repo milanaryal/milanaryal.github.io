@@ -1,31 +1,22 @@
 <!-- Navigation -->
-<nav class="navbar navbar-fixed-top headerNavbar">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            {% assign site_title = site.title | default: site.name %}
-            {% if site_title %}
-              {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
-            {% endif %}
-            <a class="navbar-brand" href="/">{{ site_title }}</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              {% for nav_item in site.nav %}
-                <li>
-                  <a href="{{ nav_item.url }}">{{ nav_item.title | smartify | strip_html | strip_newlines | escape_once }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
+<nav class="navbar navbar-expand-md navbar-light{% unless page.url == '/' %} fixed-top headroom{% endunless %}">
+  <div class="container">
+    {% assign site_title = site.title | default: site.name %}
+    {% if site_title %}
+      {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
+    {% endif %}
+    <a class="navbar-brand" href="/">{{ site_title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        {% for nav_item in site.nav %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ nav_item.url }}">{{ nav_item.title | smartify | strip_html | strip_newlines | escape_once }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </nav>

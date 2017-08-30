@@ -1,110 +1,38 @@
-// Navigation
+//
+// Header navigation
+//
 
 .navbar {
-  // min-height: 50px; // dropdown menu height is greater in less than 768px
-  margin: 0;
-  font-family: $font-family-base;
   background-color: #fff;
-  border: 0;
-
   @media (min-width: 768px) {
     height: 65px; // should be min-height if dropdown menu contents
   }
 }
 
-.navbar-toggle {
-  // border-color: transparent;
-
-  &:hover,
-  &:focus {
-    background-color: rgba(0,0,0,.03);
+.nav-link {
+  @media (min-width: 768px) {
+    margin-left: 23px;
   }
-
-  .icon-bar {
-    background-color: rgba(0,0,0,.75);
-  }
-}
-
-.navbar-collapse {
-  border: 0;
 
   @media (max-width: 767px) {
-    box-shadow: 0 0 1px rgba(0,0,0,.1); // inset 0 1px 0 hsla(0,0%,100%,.1)
-  }
-}
-
-.navbar-brand {
-  // height: 50px;
-  display: inline-block;
-  font-family: $font-family-sans-serif;
-  // font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -.05em; // -.022em
-  color: rgba(0,0,0,.75);
-
-  @media (min-width: 768px) {
-    height: 65px;
-    padding: 20.5px 0 0;
-    line-height: normal;
-  }
-
-  span {
-    display: inline-block;
-  }
-}
-
-.navbar-nav {
-  li {
-    a {
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: .1em;
-      color: rgba(0,0,0,.6);
-      text-transform: uppercase;
-
-      @media (max-width: 767px) {
-        line-height: 40px;
-        text-align: center;
-      }
-
-      @media (min-width: 768px) {
-        height: 65px;
-        padding: 25px 0 0;
-        margin-left: 50px;
-        line-height: normal;
-      }
-
-      &:hover,
-      &:focus {
-        color: rgba(0,0,0,.9);
-        background-color: transparent;
-      }
-    }
+    line-height: 40px;
+    text-align: center;
   }
 }
 
 
 // Scrolling behavior
 
-.headerNavbar {
+.headroom {
   //*** Force hardware acceleration ***//
   transform: translateZ(0);
   transition: background-color 500ms,
-              transform 500ms,
               box-shadow 500ms;
   will-change: background-color,
-               transform,
                box-shadow;
+}
 
-  // when the user scrolls down, we hide the header right above the viewport
-  &.is-hidden {
-    transform: translateY(-100%);
-  }
-
-  // if the user changes the scrolling direction, we show the header
-  &.is-visible {
-    background-color: rgba(255,255,255,.97);
-    transform: translateY(0%);
-    box-shadow: 0 0 1px rgba(0,0,0,.15);
-  }
+.headroom--not-top {
+  background-color: rgba(255,255,255,.97);
+  box-shadow: 0 0 1px rgba(0,0,0,.15);
 }

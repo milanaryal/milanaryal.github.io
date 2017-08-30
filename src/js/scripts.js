@@ -94,42 +94,13 @@
   // is ready for JavaScript code to execute.
   $(function () { // BEGIN document ready function
 
+    /**
+     * ------------------------------------------------------------------------
+     *  Header navbar scrolling behavior - headroom.js
+     * ------------------------------------------------------------------------
+     */
 
-    //
-    // Header navbar
-    //
-
-    var headerNavbar = $('.headerNavbar');
-
-    // if url has a hash hide navbar
-    if (window.location.hash) {
-      headerNavbar.addClass('is-hidden');
-    }
-
-    // primary navigation slide-in effect
-    $(window).on('scroll', {
-      previousTop: 0
-    },
-    function () {
-      //var navbarHeight = headerNavbar.height();
-      var currentTop = $(window).scrollTop();
-      // check if user is scrolling up
-      if (currentTop < this.previousTop ) {
-        // if scrolling up...
-        if (currentTop > 0) {
-          headerNavbar.addClass('is-visible').removeClass('is-hidden');
-        } else {
-          headerNavbar.removeClass('is-visible');
-        }
-      } else {
-        // if scrolling down...
-        //if (currentTop > navbarHeight)
-        if (currentTop > 10) {
-          headerNavbar.addClass('is-hidden').removeClass('is-visible');
-        }
-      }
-      this.previousTop = currentTop;
-    });
+     $(".headroom").headroom();
 
 
     /**
@@ -148,11 +119,10 @@
      */
 
     // make all images responsive
-    $('.markdownBody img').addClass('img-responsive');
+    $('.markdownBody img').addClass('img-fluid');
 
     // responsive table
-    $('.markdownBody table').addClass('table table-hover');
-    $('.markdownBody table').wrap('<div class="table-responsive"></div>');
+    $('.markdownBody table').addClass('table table-responsive table-hover');
 
     // responsive embed video
     $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
@@ -165,7 +135,7 @@
     $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
     // default button
-    $('.markdownBody a[role="button"]').addClass('btn btn-default');
+    $('.markdownBody a[role="button"]').addClass('btn btn-outline-default');
 
     // footnotes header
     var footnotesAnchor = '<a class="js-headerLink" href="#footnotes" aria-hidden="true"><span class="svg-icon icon-link"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-link"></use></svg></span></a>';
@@ -204,7 +174,7 @@
     generateRandomPosts();
 
     // random posts section footer
-    $('.randomPosts').append('<div class="randomPosts-footer"><a class="btn btn-default btn-random" href="/archives/" role="button">More writings</a></div>');
+    $('.randomPosts').append('<div class="randomPosts-footer"><a class="btn btn-outline-default btn-random" href="/archives/" role="button">More writings</a></div>');
 
 
     /**
