@@ -20,6 +20,12 @@
   }
 }
 
+.form-inline {
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
 
 // Scrolling behavior
 

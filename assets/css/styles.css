@@ -6663,6 +6663,16 @@ a:hover, a:focus {
   }
 }
 
+@media (max-width: 767px) {
+  .form-inline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .headroom {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
