@@ -10,7 +10,8 @@ redirect_from: "/2012/speak-your-heart/"
 ---
 
 #### That night was my big chance and all I did was just sit there...
-{:.no_toc}
+
+---
 
 It all started when I was 16 years old. While I was playing outside, I met a boy. He was a boy who teased you and then you chased them and beat them up. After that first meeting in which I beat him up we kept on meeting and beating each other up at the fence.
 
