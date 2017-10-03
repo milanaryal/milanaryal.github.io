@@ -67,7 +67,7 @@ If you have any questions, comments, or would just like to say hello in general,
 
 <p class="pgp-key">
   <a href="//keybase.io/milanaryal/key.asc">
-    PGP: <code>9A68 F472 C067 D0DD 7877 E0C7 BD04 0021 477E 20C1</code>
+    PGP: <code>2171 85B2 389A 9A61 CA48  4397 983A A4D9 F0D5 8849</code>
   </a>
 </p>
 

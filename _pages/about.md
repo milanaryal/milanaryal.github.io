@@ -39,13 +39,6 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
-    <a rel="me" href="//snapchat.com/add/milanaryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-snapchat"></use></svg>
-      </span><br><span class="label">Snapchat</span>
-    </a>
-  </li>
-  <li>
     <a rel="me" href="//github.com/MilanAryal">
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
@@ -57,6 +50,13 @@ Join me on the following networks and/or websites:
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-key"></use></svg>
       </span><br><span class="label">Keybase</span>
+    </a>
+  </li>
+  <li>
+    <a rel="me" href="//snapchat.com/add/milanaryal">
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-snapchat"></use></svg>
+      </span><br><span class="label">Snapchat</span>
     </a>
   </li>
   <li>
@@ -98,7 +98,7 @@ Join me on the following networks and/or websites:
 
 <p class="pgp-key">
   <a href="//keybase.io/milanaryal/key.asc">
-    PGP: <code>9A68 F472 C067 D0DD 7877 E0C7 BD04 0021 477E 20C1</code>
+    PGP: <code>2171 85B2 389A 9A61 CA48  4397 983A A4D9 F0D5 8849</code>
   </a>
 </p>
 
