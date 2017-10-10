@@ -11,20 +11,20 @@ robots: "noindex, follow"
 
   <head>
 
-    {% assign site_title = site.title | default: site.name %}
-    {% if site_title %}
-      {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
-    {% endif %}
+    {%- assign site_title = site.title | default: site.name -%}
+    {%- if site_title -%}
+      {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
+    {%- endif -%}
 
-    {% if page.title %}
-      {% assign page_title = page.title | smartify | strip_html | strip_newlines | escape_once %}
-    {% endif %}
+    {%- if page.title -%}
+      {%- assign page_title = page.title | smartify | strip_html | strip_newlines | escape_once -%}
+    {%- endif -%}
 
-    {% if site.github.build_revision %}
-      {% assign build_version = site.github.build_revision %}
-    {% else %}
-      {% assign build_version = site.time | date: '%Y%m%d%H%M%S' %}
-    {% endif %}
+    {%- if site.github.build_revision -%}
+      {%- assign build_version = site.github.build_revision -%}
+    {%- else -%}
+      {%- assign build_version = site.time | date: '%Y%m%d%H%M%S' -%}
+    {%- endif -%}
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

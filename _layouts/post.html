@@ -78,11 +78,11 @@ layout: default
         <figure class="postHeader-leadFigure">
           <!-- Post header lead image -->
           {% if page_image %}
-            {% if page.image.caption %}
-              {% assign image_alternative_text = page.image.caption | smartify | strip_html | strip_newlines | escape_once %}
-            {% else %}
-              {% assign image_alternative_text = page_title %}
-            {% endif %}
+            {%- if page.image.caption -%}
+              {%- assign image_alternative_text = page.image.caption | smartify | strip_html | strip_newlines | escape_once -%}
+            {%- else -%}
+              {%- assign image_alternative_text = page_title -%}
+            {%- endif -%}
               <img class="postHeader-leadFigureImage img-fluid" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}>
             {% if page.image.caption %}
               <figcaption class="postHeader-leadFigcaption">{{ page.image.caption }}</figcaption>
@@ -142,20 +142,20 @@ layout: default
 
       <!-- Author card -->
       {% unless page.author %}
-        {% assign site_author = site.author.name | default: site.author | default: site.title | default: site.name %}
-        {% if site_author %}
-          {% assign site_author = site_author | smartify | strip_html | strip_newlines | escape_once %}
-        {% endif %}
+        {%- assign site_author = site.author.name | default: site.author | default: site.title | default: site.name -%}
+        {%- if site_author -%}
+          {%- assign site_author = site_author | smartify | strip_html | strip_newlines | escape_once -%}
+        {%- endif -%}
 
-        {% assign site_author_bio = site.author.bio | default: site.description %}
-        {% if site_author_bio %}
-          {% assign site_author_bio = site_author_bio | smartify | strip_html | strip_newlines | truncate: 160 | escape_once %}
-        {% endif %}
+        {%- assign site_author_bio = site.author.bio | default: site.description -%}
+        {%- if site_author_bio -%}
+          {%- assign site_author_bio = site_author_bio | smartify | strip_html | strip_newlines | truncate: 160 | escape_once -%}
+        {%- endif -%}
 
-        {% assign site_author_avatar = site.author.avatar | default: site.logo.path | default: site.logo %}
-        {% if site_author_avatar %}
-          {% assign site_author_avatar = site_author_avatar | escape %}
-        {% endif %}
+        {%- assign site_author_avatar = site.author.avatar | default: site.logo.path | default: site.logo -%}
+        {%- if site_author_avatar -%}
+          {%- assign site_author_avatar = site_author_avatar | escape -%}
+        {%- endif -%}
         <hr class="postFooter-sectionDivider">
 
         <div class="postAuthor-card">

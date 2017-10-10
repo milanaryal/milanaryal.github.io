@@ -1,35 +1,35 @@
-{% if site.url %}
-  {% assign site_url = site.url | append: site.baseurl %}
-{% endif %}
-{% assign site_url = site_url | default: site.github.url %}
+{%- if site.url -%}
+  {%- assign site_url = site.url | append: site.baseurl -%}
+{%- endif -%}
+{%- assign site_url = site_url | default: site.github.url -%}
 
-{% if page.url %}
- {% assign page_url = page.url | replace:'/index.html','/' | prepend: site_url | uri_escape %}
-{% endif %}
+{%- if page.url -%}
+ {%- assign page_url = page.url | replace:'/index.html','/' | prepend: site_url | uri_escape -%}
+{%- endif -%}
 
-{% if page.title %}
-  {% assign page_title = page.title | smartify | strip_html | strip_newlines | uri_escape %}
-{% endif %}
+{%- if page.title -%}
+  {%- assign page_title = page.title | smartify | strip_html | strip_newlines | uri_escape -%}
+{%- endif -%}
 
-{% capture twitter_share_link %}//twitter.com/intent/tweet?url={{ page_url }}&text={{ page_title }}{% if site.author.twitter %}&via={{ site.author.twitter }}{% endif %}{% endcapture %}
-{% if twitter_share_link %}
-  {% assign twitter_share_link = twitter_share_link | escape_once %}
-{% endif %}
+{%- capture twitter_share_link -%}//twitter.com/intent/tweet?url={{ page_url }}&text={{ page_title }}{%- if site.author.twitter -%}&via={{ site.author.twitter }}{%- endif -%}{%- endcapture -%}
+{%- if twitter_share_link -%}
+  {%- assign twitter_share_link = twitter_share_link | escape_once -%}
+{%- endif -%}
 
-{% capture facebook_share_link %}//www.facebook.com/sharer/sharer.php?u={{ page_url }}&t={{ page_title }}{% endcapture %}
-{% if facebook_share_link %}
-  {% assign facebook_share_link = facebook_share_link | escape_once %}
-{% endif %}
+{%- capture facebook_share_link -%}//www.facebook.com/sharer/sharer.php?u={{ page_url }}&t={{ page_title }}{%- endcapture -%}
+{%- if facebook_share_link -%}
+  {%- assign facebook_share_link = facebook_share_link | escape_once -%}
+{%- endif -%}
 
-{% capture google_plus_share_link %}//plus.google.com/share?url={{ page_url }}{% endcapture %}
-{% if google_plus_share_link %}
-  {% assign google_plus_share_link = google_plus_share_link | escape_once %}
-{% endif %}
+{%- capture google_plus_share_link -%}//plus.google.com/share?url={{ page_url }}{%- endcapture -%}
+{%- if google_plus_share_link -%}
+  {%- assign google_plus_share_link = google_plus_share_link | escape_once -%}
+{%- endif -%}
 
-{% capture email_share_link %}mailto:?subject={{ page_title }}&body={{ page_url }}{% endcapture %}
-{% if email_share_link %}
-  {% assign email_share_link = email_share_link | escape_once %}
-{% endif %}
+{%- capture email_share_link -%}mailto:?subject={{ page_title }}&body={{ page_url }}{%- endcapture -%}
+{%- if email_share_link -%}
+  {%- assign email_share_link = email_share_link | escape_once -%}
+{%- endif -%}
 
 <ul class="socialShare clearfix">
   <li>Share on:</li>

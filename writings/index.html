@@ -11,36 +11,36 @@ robots: "noindex, follow"
 <section class="clearfix">
 {% for post in paginator.posts %}
 
-  {% assign site_title = site.title | default: site.name %}
-  {% if site_title %}
-    {% assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once %}
-  {% endif %}
+  {%- assign site_title = site.title | default: site.name -%}
+  {%- if site_title -%}
+    {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
+  {%- endif -%}
 
-  {% if site.logo %}
-    {% assign site_logo = site.logo.path | default: site.logo %}
-    {% assign site_logo = site_logo | escape %}
-  {% endif %}
+  {%- if site.logo -%}
+    {%- assign site_logo = site.logo.path | default: site.logo -%}
+    {%- assign site_logo = site_logo | escape -%}
+  {%- endif -%}
 
-  {% if post.image %}
-    {% assign post_image = post.image.path | default: post.image %}
-    {% assign post_image = post_image | escape %}
-  {% endif %}
+  {%- if post.image -%}
+    {%- assign post_image = post.image.path | default: post.image -%}
+    {%- assign post_image = post_image | escape -%}
+  {%- endif -%}
 
-  {% if post.author %}
-    {% assign post_author = post.author.name | default: post.author %}
-  {% else %}
-    {% assign post_author = site.author.name | default: site.author %}
-  {% endif %}
-  {% if post_author %}
-    {% assign post_author = post_author | smartify | strip_html | strip_newlines | escape_once %}
-  {% endif %}
+  {%- if post.author -%}
+    {%- assign post_author = post.author.name | default: post.author -%}
+  {%- else -%}
+    {%- assign post_author = site.author.name | default: site.author -%}
+  {%- endif -%}
+  {%- if post_author -%}
+    {%- assign post_author = post_author | smartify | strip_html | strip_newlines | escape_once -%}
+  {%- endif -%}
 
-  {% assign reading_time = post.content | strip_html | number_of_words | plus:91 | divided_by:180 %}
-  {% if reading_time <= 1 %}
-    {% assign reading_time = '1' | append:' min read' %}
-  {% else %}
-    {% assign reading_time = reading_time | append:' min read' %}
-  {% endif %}
+  {%- assign reading_time = post.content | strip_html | number_of_words | plus:91 | divided_by:180 -%}
+  {%- if reading_time <= 1 -%}
+    {%- assign reading_time = '1' | append:' min read' -%}
+  {%- else -%}
+    {%- assign reading_time = reading_time | append:' min read' -%}
+  {%- endif -%}
 
   <article class="postPreview clearfix" itemscope itemtype="https://schema.org/Article">
     <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'/index.html','/' }}">
@@ -99,16 +99,16 @@ robots: "noindex, follow"
 {% if paginator.total_pages > 1 %}
 <nav class="clearfix" itemscope itemtype="https://schema.org/SiteNavigationElement">
   <ul class="pager">
-    {% if paginator.previous_page %}
+    {%- if paginator.previous_page -%}
       <li class="previous">
         <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' | replace:'/index.html','/' }}"><span class="svg-icon icon-angle-left svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-angle-left"></use></svg></span><span itemprop="name">Previous</span></a>
       </li>
-    {% endif %}
-    {% if paginator.next_page %}
+    {%- endif -%}
+    {%- if paginator.next_page -%}
       <li class="next">
         <a itemprop="url" href="{{ paginator.next_page_path | replace:'//','/' | replace:'/index.html','/' }}"><span itemprop="name">Next</span><span class="svg-icon icon-angle-right svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-angle-right"></use></svg></span></a>
       </li>
-    {% endif %}
+    {%- endif -%}
   </ul>
 </nav>
 {% endif %}

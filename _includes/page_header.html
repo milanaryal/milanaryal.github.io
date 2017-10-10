@@ -1,17 +1,17 @@
-{% assign page_title = page.title | default: site.title | default: site.name %}
-{% if page_title %}
-  {% assign page_title = page_title | smartify | strip_html | strip_newlines | escape_once %}
-{% endif %}
+{%- assign page_title = page.title | default: site.title | default: site.name -%}
+{%- if page_title -%}
+  {%- assign page_title = page_title | smartify | strip_html | strip_newlines | escape_once -%}
+{%- endif -%}
 
-{% assign page_description = page.description | default: site.description %}
-{% if page_description %}
-  {% assign page_description = page_description | smartify | strip_html | strip_newlines | escape_once %}
-{% endif %}
+{%- assign page_description = page.description | default: site.description -%}
+{%- if page_description -%}
+  {%- assign page_description = page_description | smartify | strip_html | strip_newlines | escape_once -%}
+{%- endif -%}
 
-{% assign page_image = page.image.path | default: page.image | default: site.image.path | default: site.image %}
-{% if page_image %}
-  {% assign page_image = page_image | escape %}
-{% endif %}
+{%- assign page_image = page.image.path | default: page.image | default: site.image.path | default: site.image -%}
+{%- if page_image -%}
+  {%- assign page_image = page_image | escape -%}
+{%- endif -%}
 
 <!-- Page header -->
 <header class="pageHeader{% if paginator.page > 1 %} paginatorHeader{% endif %}" style="background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('{{ page_image }}');">
