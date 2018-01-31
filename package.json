@@ -5,11 +5,11 @@
   "description": "Build assets for milanaryal.com",
   "main": "gulpfile.js",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta",
+    "bootstrap": "^4.0.0",
     "headroom.js": "^0.9.4",
     "jquery": "^3.2.1",
     "nprogress": "^0.2.0",
-    "popper.js": "^1.12.5",
+    "popper.js": "^1.13.0",
     "primer-markdown": "^3.4.1",
     "svg4everybody": "^2.1.9"
   },

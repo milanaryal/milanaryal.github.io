@@ -28,14 +28,9 @@ var cp = require('child_process');
 
 // Browsers compability
 var COMPATIBILITY = [
-  'Chrome >= 35',
-  'Firefox >= 38',
-  'Edge >= 12',
-  'Explorer >= 10',
-  'iOS >= 8',
-  'Safari >= 8',
-  'Android >= 4',
-  'Opera >= 12'
+  "> 1%",
+  "last 2 versions",
+  "IE 10"
 ];
 
 // Scripts source paths

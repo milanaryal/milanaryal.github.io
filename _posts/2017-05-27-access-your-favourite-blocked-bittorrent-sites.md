@@ -1,7 +1,7 @@
 ---
 title: "Access your favourite blocked BitTorrent sites"
 date: 2017-05-27T07:08:00+05:45
-last_modified_at: 2017-08-13T11:21:00+05:45
+last_modified_at: 2018-01-31T19:00:00+05:45
 excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your country or territory Internet censorship."
 ---
 
@@ -9,19 +9,18 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-* [unblocked.pub](https://unblocked.pub/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
+* [unblocked.vc](https://unblocked.vc/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
 * [torrents.me/proxy](https://torrents.me/proxy/){:rel="nofollow"}{:rel="nofollow"}
 * [proxyportal.me](https://proxyportal.me/){:rel="nofollow"}
-* [unblockall.xyz](https://unblockall.xyz/){:rel="nofollow"}
+* [unblockall.org](https://unblockall.org/){:rel="nofollow"}
 * [unblocker.cc](https://unblocker.cc/){:rel="nofollow"}, [unblocker.win](https://unblocker.win/){:rel="nofollow"}
 * [unblocktorrent.com](https://unblocktorrent.com/){:rel="nofollow"}
 * [unblocked.lol](http://unblocked.lol/){:rel="nofollow"}
 * [proxybunker.online](http://proxybunker.online/){:rel="nofollow"}
-* [unlockproj.accountant](https://unlockproj.accountant/){:rel="nofollow"}, [unlockproj.club](https://unlockproj.club/){:rel="nofollow"}, [unlockproj.cricket](https://unlockproj.cricket/){:rel="nofollow"}, [unlockproj.men](https://unlockproj.men/){:rel="nofollow"}, [unlockproj.faith](https://unlockproj.faith/){:rel="nofollow"}, [unlockproj.loan](https://unlockproj.loan/){:rel="nofollow"}, [unlockproj.party](https://unlockproj.party/){:rel="nofollow"}, [unlockproj.pro](https://unlockproj.pro/){:rel="nofollow"}, [unlockproj.review](https://unlockproj.review/){:rel="nofollow"}, [unlockproj.space](https://unlockproj.space/){:rel="nofollow"}, [Mirror on Github](https://unlockproject.github.io/unlockproject/){:rel="nofollow"}
 
 #### [The Pirate Bay](https://thepiratebay.org/){:rel="nofollow"} proxy sites and mirrors
 
-* [proxybay.one](https://proxybay.one/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
+* [proxybay.bz](https://proxybay.bz/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
 * [thepiratebay-proxylist.org](https://thepiratebay-proxylist.org/){:rel="nofollow"}
 * [themirrorbay.com](http://www.themirrorbay.com/){:rel="nofollow"}
 * [proxybay.pl](https://proxybay.pl/){:rel="nofollow"}
@@ -29,7 +28,6 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Bonus: Free Web proxy
 
-* [torrentunblock.com](https://torrentunblock.com/){:rel="nofollow"}
 * [vpnbook.com/webproxy](https://www.vpnbook.com/webproxy){:rel="nofollow"}
 * [proxysite.com](https://www.proxysite.com/){:rel="nofollow"}
 * [hide.me/en/proxy](https://hide.me/en/proxy){:rel="nofollow"}
