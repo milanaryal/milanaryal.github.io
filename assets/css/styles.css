@@ -8852,6 +8852,7 @@ kbd {
   font-size: 22px;
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
+  cursor: pointer;
   background-image: none;
   opacity: 0;
   visibility: hidden;
@@ -8983,4 +8984,9 @@ kbd {
 
 .pgp-key a:hover, .pgp-key a:focus {
   color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar .input-group-append .btn-outline-secondary,
+.searchPage-body .input-group-append .btn-outline-secondary {
+  border-color: #ced4da;
 }
