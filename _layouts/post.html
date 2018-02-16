@@ -78,14 +78,15 @@ layout: default
         <figure class="postHeader-leadFigure">
           <!-- Post header lead image -->
           {% if page_image %}
-            {%- if page.image.caption -%}
-              {%- assign image_alternative_text = page.image.caption | smartify | strip_html | strip_newlines | escape_once -%}
+            {%- assign image_caption = page.image.caption | smartify | strip_html | strip_newlines | escape_once -%}
+            {%- if image_caption -%}
+              {%- assign image_alternative_text = image_caption -%}
             {%- else -%}
               {%- assign image_alternative_text = page_title -%}
             {%- endif -%}
               <img class="postHeader-leadFigureImage img-fluid" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}>
-            {% if page.image.caption %}
-              <figcaption class="postHeader-leadFigcaption">{{ page.image.caption }}</figcaption>
+            {% if image_caption %}
+              <figcaption class="postHeader-leadFigcaption">{{ image_caption }}</figcaption>
             {% endif %}
           {% endif %}
 
@@ -95,8 +96,9 @@ layout: default
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="{{ page.video.path | default: page.video }}"></iframe>
             </div>
-            {% if page.video.caption %}
-              <figcaption class="postHeader-leadFigcaption">{{ page.video.caption }}</figcaption>
+            {%- assign video_caption = page.video.caption | smartify | strip_html | strip_newlines | escape_once -%}
+            {% if video_caption %}
+              <figcaption class="postHeader-leadFigcaption">{{ video_caption }}</figcaption>
             {% endif %}
           {% endif %}
         </figure>
