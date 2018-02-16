@@ -78,7 +78,9 @@ layout: default
         <figure class="postHeader-leadFigure">
           <!-- Post header lead image -->
           {% if page_image %}
-            {%- assign image_caption = page.image.caption | smartify | strip_html | strip_newlines | escape_once -%}
+            {%- if page.image.caption -%}
+              {%- assign image_caption = page.image.caption | smartify | strip_html | strip_newlines | escape_once -%}
+            {%- endif -%}
             {%- if image_caption -%}
               {%- assign image_alternative_text = image_caption -%}
             {%- else -%}
@@ -96,7 +98,9 @@ layout: default
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="{{ page.video.path | default: page.video }}"></iframe>
             </div>
-            {%- assign video_caption = page.video.caption | smartify | strip_html | strip_newlines | escape_once -%}
+            {%- if page.video.caption -%}
+              {%- assign video_caption = page.video.caption | smartify | strip_html | strip_newlines | escape_once -%}
+            {%- endif -%}
             {% if video_caption %}
               <figcaption class="postHeader-leadFigcaption">{{ video_caption }}</figcaption>
             {% endif %}
