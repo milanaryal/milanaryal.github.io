@@ -10,15 +10,6 @@ title () {
   echo ""
 }
 
-chmod +x scripts/branding
-scripts/branding
-
-title "Updating gems"
-bundle install
-
-title "Cleaning outdated dependencies"
-bundle clean --force
-
 title "List dependency versions"
 bundle exec github-pages versions
 

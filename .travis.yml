@@ -8,9 +8,10 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 before_script:
+  - bundle lock --add-platform x86-mingw32 x86-mswin32
   - bundle install
-  - bundle clean --force
   - chmod +x ./scripts/cibuild
+
 script: ./scripts/cibuild
 
 branches:
