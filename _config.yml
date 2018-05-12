@@ -81,11 +81,7 @@ defaults:
       layout: post
       comments: true
   - scope:
-      path: "uploads/"
-    values:
-      sitemap: false
-  - scope:
-      path: "writings/"
+      path: "uploads/**/*.pdf"
     values:
       sitemap: false
 
