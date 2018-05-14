@@ -1,8 +1,8 @@
-# [Milan Aryal](https://milanaryal.com)
+# [Milan Aryal](https://milanaryal.com.np)
 
 [![Build Status](https://travis-ci.org/MilanAryal/milanaryal.github.io.svg?branch=master)](https://travis-ci.org/MilanAryal/milanaryal.github.io)
 
-The uncompiled [Jekyll](https://jekyllrb.com) source code for [milanaryal.com](https://milanaryal.com).
+The uncompiled [Jekyll](https://jekyllrb.com) source code for [milanaryal.com.np](https://milanaryal.com.np).
 
 ## License
 

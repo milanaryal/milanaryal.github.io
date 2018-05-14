@@ -9,7 +9,7 @@ robots: "noindex, follow"
 
 > A living document of code detailing all the various colors, typographic elements, UI patterns, and components used on the website to maintain visual consistency.
 
-Articles in [Milan Aryal](//milanaryal.com/) are written in Markdown which are generated in standard HTML using [Jekyll](//jekyllrb.com/).
+Articles in [Milan Aryal](//milanaryal.com.np/) are written in Markdown which are generated in standard HTML using [Jekyll](//jekyllrb.com/).
 
 This style guide is written in Markdown, the raw file is available [here](//raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/_pages/style-guide.md).
 

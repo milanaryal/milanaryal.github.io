@@ -1,8 +1,8 @@
 {
   "name": "milanaryal.github.io",
   "title": "Milan Aryal",
-  "url": "https://milanaryal.com",
-  "description": "Build assets for milanaryal.com",
+  "url": "https://milanaryal.com.np",
+  "description": "Build assets for milanaryal.com.np",
   "main": "gulpfile.js",
   "dependencies": {
     "bootstrap": "^4.1.1",

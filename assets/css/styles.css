@@ -1,5 +1,5 @@
 /*!
- * Milan Aryal (https://milanaryal.com)
+ * Milan Aryal (https://milanaryal.com.np)
  * Copyright 2018 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
