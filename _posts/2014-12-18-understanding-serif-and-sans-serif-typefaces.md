@@ -1,7 +1,6 @@
 ---
 title: "Understanding serif and sans serif typefaces"
 date: 2014-12-18T13:25:03+05:45
-redirect_from: "/2014/understanding-serif-and-sans-serif-typefaces/"
 ---
 
 Here's a neat infographic that explains the differences between serif and sans serif typefaces/fonts. You'll learn when to use one over the other as well as examples and web usages.

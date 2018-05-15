@@ -2,7 +2,6 @@
 title: "Time is precious"
 date: 2016-02-19T23:51:28+05:45
 excerpt: "Make the most of the time you have, because you can never get it back."
-redirect_from: "/2016/time-is-precious/"
 ---
 
 Imagine there is a bank that credits your account each morning with $86,400. It carries over no balance from day to day. Every evening it deletes whatever part of the balance you failed to use during the day. What would you do?

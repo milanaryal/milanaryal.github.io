@@ -2,7 +2,6 @@
 title: "How do I delete my Facebook account and start afresh with a new one?"
 date: 2016-04-03T05:28:00+05:45
 excerpt: "Steps to delete a Facebook profile and start it again from scratch."
-redirect_from: "/2016/how-do-i-delete-my-facebook-account-and-start-afresh-with-a-new-one/"
 ---
 
 Facebook is a website, and all the data for your page is stored on various Facebook servers in giant data centres. It is not stored on your PC or on your phone: they are just ways to access it online.

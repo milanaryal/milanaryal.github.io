@@ -3,7 +3,6 @@ title: "How to tell if your email account has been hacked"
 date: 2014-04-07T18:50:33+05:45
 last_modified_at: 2015-07-20T18:30:35+05:45
 excerpt: "Recognize the signs your account has been compromised so you can take control of your account back."
-redirect_from: "/2014/how-to-tell-if-your-email-account-has-been-hacked/"
 ---
 
 You may suspect that your e-mail account has been hacked when you can't login to your account or you are getting undelivered or bounced messages for the e-mails you didn't even send or the people on your e-mail contact list are complaining of receiving e-mails that wasn't sent by you. There could only be one of the two reasons for this --- a virus or a hacker. You should know that your e-mail account has been compromised when you see yourself facing any of the symptoms stated below.

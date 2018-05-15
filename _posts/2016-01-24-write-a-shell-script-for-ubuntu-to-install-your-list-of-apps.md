@@ -2,7 +2,6 @@
 title: "Write a shell script for Ubuntu to install your list of apps"
 date: 2016-01-24T07:07:07+05:45
 excerpt: "Create a shell script to install your list of APT-Get apps on freshly set up Ubuntu OS."
-redirect_from: "/2016/write-a-shell-script-for-ubuntu-to-install-your-list-of-apps/"
 ---
 
 If you have freshly set up your Ubuntu OS on your machine, it's a pain to install each app by hand. So, here I want to share a technic to install a list of your required Apt-Get apps with a shell script file.

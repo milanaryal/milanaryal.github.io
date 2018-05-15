@@ -1,7 +1,6 @@
 ---
 title: "The first step"
 date: 2012-09-19T06:53:05+05:45
-redirect_from: "/2012/the-first-step/"
 ---
 
 Foolish people with all their other thoughts, have this one too --- they are always getting ready to live, but never living.

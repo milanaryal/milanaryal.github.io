@@ -3,9 +3,6 @@ title: "Syntax highlighting with prism.js"
 date: 2014-09-09T13:28:25+05:45
 last_modified_at: 2015-10-05T08:11:07+05:45
 excerpt: "Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind."
-redirect_from:
-  - "/2014/09/syntax-highlighter-prism.html"
-  - "/2014/syntax-highlighting-with-prism-js/"
 ---
 
 Last time I was searching for a good syntax highlighter for beautifully viewing the code snippets on my blog post. Among different syntax highlighter I found out <a href="http://prismjs.com" rel="nofollow">PrismJS</a> by <a href="http://lea.verou.me" rel="nofollow">Lea Verou</a> is pretty awesome.

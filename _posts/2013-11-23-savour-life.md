@@ -1,7 +1,6 @@
 ---
 title: "Savour life"
 date: 2013-11-23T06:53:08+05:45
-redirect_from: "/2013/savour-life/"
 ---
 
 Don't undermine your worth by comparing yourself with others, it is because we are different that each of us is special.

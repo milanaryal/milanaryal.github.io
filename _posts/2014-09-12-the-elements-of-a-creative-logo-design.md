@@ -2,7 +2,6 @@
 title: "The elements of a creative logo design"
 date: 2014-09-12T22:10:52+05:45
 excerpt: "Any business logo design is the visual reflection of its brand."
-redirect_from: "/2014/the-elements-of-a-creative-logo-design/"
 ---
 
 Any business logo design will be the visual reflection of its brand. Basically, it' s a graphical representation to show the particular selection of activities that will incorporate your opinion in the minds of your customers whilst coming across the organization. If a company is at its starting phase, the logo will highlight the types of products and services a customer should be expecting from them.

@@ -1,7 +1,6 @@
 ---
 title: "Know your inspirational rights"
 date: 2012-10-17T06:41:30+05:45
-redirect_from: "/2012/know-your-inspirational-rights/"
 ---
 
 You have the right to be you --- the way you are --- the way you want to be.

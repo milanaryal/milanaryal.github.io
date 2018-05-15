@@ -1,7 +1,6 @@
 ---
 title: "Live a full life"
 date: 2012-10-19T06:43:01+05:45
-redirect_from: "/2012/live-a-full-life/"
 ---
 
 10 ways to raise your consciousness and enjoy every moment of life ---

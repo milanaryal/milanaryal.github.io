@@ -2,7 +2,6 @@
 title: "Changed view"
 date: 2012-09-10T06:45:50+05:45
 excerpt: "Life is a gift - live it, enjoy it, celebrate it, and fulfill it."
-redirect_from: "/2012/changed-view/"
 ---
 
 There was a blind girl who hated herself just because she was blind. She hated everyone, except her loving boyfriend. He was always there for her. She said that if she could only see the world, she would marry her boyfriend.

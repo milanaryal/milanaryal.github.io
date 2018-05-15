@@ -1,7 +1,6 @@
 ---
 title: "Beginning today"
 date: 2016-05-07T14:32:42+05:45
-redirect_from: "/2016/beginning-today/"
 ---
 
 Beginning today I will no longer worry about yesterday. It is in the past and the past will never change. Only I can change by choosing to do so.

@@ -2,7 +2,6 @@
 title: "Hosting images with Dropbox on your website"
 date: 2015-08-19T12:24:31+05:45
 last_modified_at: 2016-04-02T16:33:41+05:45
-redirect_from: "/2015/hosting-images-with-dropbox-on-your-website/"
 ---
 
 Dropbox is a great way to post an image quickly on a forum or as free hosting for your low traffic website, but there are a few things to know.

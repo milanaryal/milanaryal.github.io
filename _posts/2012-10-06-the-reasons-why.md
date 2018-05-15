@@ -1,7 +1,6 @@
 ---
 title: "The reasons why"
 date: 2012-10-06T06:41:47+05:45
-redirect_from: "/2012/the-reasons-why/"
 ---
 
 Sometimes people come into your life and you know right away that they were meant to be there, to serve some sort of purpose, teach you a lesson, or help you figure out who you are or who you want to become. You never know who these people may be (possibly your roommate, neighbour, coworker, long lost friend, lover, or even a complete stranger), but when you lock eyes with them, you know at that very moment they will affect your life will affect your life in some profound way.

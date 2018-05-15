@@ -1,7 +1,6 @@
 ---
 title: "Getting started with Grunt"
 date: 2015-06-06T11:14:15+05:45
-redirect_from: "/2015/getting-started-with-grunt/"
 ---
 
 Here, we'll explore how to use [Grunt](http://gruntjs.com/){:rel="nofollow"} and what it can do in a project to speed up and change the way you develop websites.

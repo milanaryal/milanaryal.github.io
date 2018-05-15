@@ -2,7 +2,6 @@
 title: "Domain redirecting and URL forwarding with a simple DNS record"
 date: 2015-07-04T01:01:16+05:45
 excerpt: "Configure domain redirects and URL forwarding using ALIAS, ANAME, CNAME or TXT record."
-redirect_from: "/2015/domain-redirecting-and-url-forwarding-with-a-simple-dns-record/"
 ---
 
 DNS itself won't redirect the path portion of a URL.

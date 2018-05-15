@@ -1,7 +1,6 @@
 ---
 title: "Overcome study boredom"
 date: 2012-06-01T09:33:53+05:45
-redirect_from: "/2012/overcome-study-boredom/"
 ---
 
 For effective study habits, it is suggested that you set up a proper study space, adjust the light, get rid of all distractions and even take a few breaks. But after doing these things, you are nodding off, when you know there is work to be done. So, what can be done when this happens? Here are five tips for overcoming boredom and tiredness while studying.

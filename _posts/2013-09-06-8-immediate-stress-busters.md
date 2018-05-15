@@ -1,7 +1,6 @@
 ---
 title: "8 immediate stress busters"
 date: 2013-09-06T07:44:00+05:45
-redirect_from: "/2013/8-immediate-stress-busters/"
 ---
 
 Our lives are filled with family, work and community obligations. At some point, we feel as though we are 'running on empty'. Here are eight immediate stress busters to help 'fill up the tank'!

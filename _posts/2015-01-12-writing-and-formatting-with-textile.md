@@ -2,7 +2,6 @@
 title: "Writing and formatting with Textile"
 date: 2015-01-12T13:17:47+05:45
 last_modified_at: 2016-02-14T06:45:41+05:45
-redirect_from: "/2015/formatting-text-on-github-pages-and-jekyll-using-textile/"
 ---
 
 Textile is a lightweight markup language. Textile converts its marked-up text input to valid, well-formed XHTML and also inserts character entity references for apostrophes, opening and closing single and double quotation marks, ellipses and em dashes. The main advantage of Textile over pure HTML is the ease of creating elements like tables, lists and formatting paragraphs. Those new to Textitle, following guide will help you become familiar with the full list of shortcuts.

@@ -1,7 +1,6 @@
 ---
 title: "How to succeed"
 date: 2010-09-29T05:59:58+05:45
-redirect_from: "/2010/how-to-succeed/"
 ---
 
 a 15 point plan...

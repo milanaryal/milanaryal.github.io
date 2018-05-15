@@ -3,7 +3,6 @@ title: "Reduce data usage with Google Chrome's Data Saver"
 date: 2015-04-14T10:48:02+05:45
 last_modified_at: 2016-04-04T04:13:07+05:45
 excerpt: "Google Chrome's data compression tool can help you save your bandwidth, says Google."
-redirect_from: "/2015/reduce-data-usage-with-google-chromes-data-saver/"
 ---
 
 If you've ever been frustrated by exceeding your data plan on a monthly basis, popular web browser Google Chrome may just have a solution for you.

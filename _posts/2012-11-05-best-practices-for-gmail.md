@@ -2,7 +2,6 @@
 title: "Best practices for Gmail"
 date: 2012-11-05T19:12:49+05:45
 excerpt: "Understand its core features to keep communication organised and efficient"
-redirect_from: "/2012/best-practices-for-gmail/"
 ---
 
 Gmail is one of the most popular email services. Whether you use it for personal communication, work, or both, get more out of it by understanding how its core features work.

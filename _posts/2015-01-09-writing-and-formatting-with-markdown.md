@@ -2,7 +2,6 @@
 title: "Writing and formatting with Markdown"
 date: 2015-01-09T15:04:14+05:45
 last_modified_at: 2016-07-09T06:34:48+05:45
-redirect_from: "/2015/writing-on-github-pages-and-jekyll-using-markdown/"
 ---
 
 Readme file on GitHub uses GitHub Flavored Markdown (GFM) and blogging platform like Jekyll, Ghost, Tumblr (support editing posts in Markdown) and many other platforms also encouraging to write posts using Markdown. Markdown is a minimal syntax for marking up your documents with formatting, using punctuation and special characters. For those new to Markdown, this guide will help you become familiar with the full list of shortcuts. Here's the version of Markdown in a combination of standard Markdown, GitHub Flavored Markdown, and other useful features like footnotes.

@@ -1,7 +1,6 @@
 ---
 title: "Perfect the love we give"
 date: 2015-12-02T07:46:53+05:45
-redirect_from: "/2015/perfect-the-love-we-give/"
 ---
 
 No one can go back and make a brand new start. Anyone can start from now and make a brand new ending.

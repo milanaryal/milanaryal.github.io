@@ -2,7 +2,6 @@
 title: "8 common tech myths"
 date: 2012-12-06T10:42:26+05:45
 excerpt: "Using logic to overcome rooted beliefs"
-redirect_from: "/2012/8-biggest-tech-myths/"
 ---
 
 The tech world has certain myths and tales that have passed down for generations. It is time that some of them were deconstructed:

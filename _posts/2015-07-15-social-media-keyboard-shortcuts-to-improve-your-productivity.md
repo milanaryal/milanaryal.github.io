@@ -6,7 +6,6 @@ image:
   path: "/uploads/20150715-keyboard-1200x750.jpg"
   width: "1200"
   height: "750"
-redirect_from: "/2015/social-media-keyboard-shortcuts-to-improve-your-productivity/"
 ---
 
 Save yourself loads of time every day by speeding up your social network browsing with some lightning fast keyboard shortcuts!

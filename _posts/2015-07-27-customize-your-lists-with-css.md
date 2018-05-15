@@ -2,7 +2,6 @@
 title: "Customize your lists with CSS"
 date: 2015-07-27T16:20:55+05:45
 last_modified_at: 2015-07-27T19:09:10+05:45
-redirect_from: "/2015/custom-styling-lists-with-css/"
 ---
 
 This post will helps you to customize unordered and ordered lists according to our needs with the help of CSS.

@@ -6,7 +6,6 @@ image:
   width: "1200"
   height: "750"
 excerpt: "That night was my big chance and all I did was just sit there..."
-redirect_from: "/2012/speak-your-heart/"
 ---
 
 #### That night was my big chance and all I did was just sit there...

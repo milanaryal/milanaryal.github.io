@@ -2,7 +2,6 @@
 title: "HTML5 and CSS3 cheat sheet"
 date: 2014-03-04T05:29:59+05:45
 excerpt: "HTML5 and CSS3 cheat sheet for those who want to work with this latest script."
-redirect_from: "/2014/html5-and-css3-cheat-sheet/"
 ---
 
 On the journey to learn coding for web development lots of changes happened. Developing New version of HTML5 and CSS3 is one of them. But back then those version were not completed neither accepted by major web browsers. Now things have changed and HTML5 and CSS3 accepted by all web browsers and versions and we all know that now using HTML is much more easy with lots of option.

@@ -2,7 +2,6 @@
 title: "The essential elements of graphic design"
 date: 2014-09-06T18:22:05+05:45
 excerpt: "In order to come up with a well paying design one should consider facts and follow them."
-redirect_from: "/2014/the-essential-elements-of-graphic-design/"
 ---
 
 In the world graphic design has become one of the most important things. This is because it is very key in printing and web designing. Graphic design can be used in number of ways for product/service promotion, such as posters, banners, newsletters, logos, brochures, flyers, business cards, office stationery such as cash sale etc.

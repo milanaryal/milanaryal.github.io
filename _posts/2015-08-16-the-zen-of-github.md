@@ -2,7 +2,6 @@
 title: "The Zen of GitHub"
 date: 2015-08-16T17:27:56+05:45
 excerpt: "The guiding principles of a GitHubber."
-redirect_from: "/2015/the-zen-of-github/"
 ---
 
 I really like the guiding principles of a GitHubber known as "The Zen of GitHub", an ideas and culture of GitHub. So I thought to post it here for inspiration.

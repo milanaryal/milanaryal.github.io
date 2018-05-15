@@ -1,7 +1,6 @@
 ---
 title: "Practical knows-hows for life"
 date: 2014-12-05T20:21:09+05:45
-redirect_from: "/2014/practical-knows-hows-for-life/"
 ---
 
 #### Things I wish I'd know before I went out into the real world

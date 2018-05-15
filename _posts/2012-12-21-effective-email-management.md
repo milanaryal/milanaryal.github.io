@@ -2,7 +2,6 @@
 title: "Effective email management"
 date: 2012-12-21T19:22:25+05:45
 excerpt: "Being a little organised would help you minimise the time that you spend browsing your mails, making it easier for you to focus on your core job."
-redirect_from: "/2012/effective-email-management/"
 ---
 
 Those good old letter boxes are now on the verge of extinction! Email inboxes have taken charge, making letterboxes a nostalgic memory. Whether you like it or not, email has changed the way of communication to a great extent. Not only that, it has also made communication faster and less complicated, making it easier for people to stay in touch with each other sans the hassle of glue stamps and post-office visits.

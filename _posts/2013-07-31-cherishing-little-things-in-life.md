@@ -1,7 +1,6 @@
 ---
 title: "Cherishing little things in life"
 date: 2013-07-31T09:26:24+05:45
-redirect_from: "/2013/cherishing-little-things-in-life/"
 ---
 
 As we grow older, we lose appreciation for little things that add happiness in our lives. Here is a list of little things in life to cherish.

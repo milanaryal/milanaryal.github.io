@@ -2,7 +2,6 @@
 title: "9 best Facebook practice tips for businesses"
 date: 2012-05-14T09:42:59+05:45
 excerpt: "Paying attention to content does wonders for business"
-redirect_from: "/2012/9-best-fb-practice-tips/"
 ---
 
 Today, instant feedback can be obtained by giving fans opponents access to a Facebook (FB) page, blog comment box or a Twitter account. The tips below will help increase a company's engagement and interaction with fans so that they keep coming back and provide valuable feedback. This will drive inquiry and sales and keep you on top of your market segment with real time comments.

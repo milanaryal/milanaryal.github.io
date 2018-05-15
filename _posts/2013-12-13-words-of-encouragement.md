@@ -1,7 +1,6 @@
 ---
 title: "Words of encouragement"
 date: 2013-12-13T04:44:43+05:45
-redirect_from: "/2013/words-of-encouragement/"
 ---
 
 When things go wrong as they sometimes will, we all need words of encouragement. To spring back again to complete our fight and move on towards the path of our life. And here are some words of encouragement you never know how can they affect your life.

@@ -2,7 +2,6 @@
 title: "How to set up Gmail with a desktop mail clients"
 date: 2011-02-24T15:06:36+05:45
 last_modified_at: 2016-07-09T17:31:09+05:45
-redirect_from: "/2011/how-to-manage-gmail-account-from-microsoft-outlook/"
 ---
 
 We can set-up Gmail in different desktop email clients like Microsoft Outlook, Apple Mail, or Mozilla Thunderbird. In fact, any email address which lets you enable POP/IMAP can be set up in such mail clients. I recommend using IMAP if possible because it's the best way to make sure you can see all your mail at any time on all of your devices.

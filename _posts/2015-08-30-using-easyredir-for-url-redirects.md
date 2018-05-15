@@ -2,7 +2,6 @@
 title: "Using EasyRedir for URL redirects"
 author: "William Richards"
 date: 2015-08-30T19:52:01+05:45
-redirect_from: "/2015/using-easyredir-for-url-redirects/"
 ---
 
 #### A simple, easy to use service for managing URL and domain redirects.

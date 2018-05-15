@@ -2,7 +2,6 @@
 title: "Conserve your cell phone battery"
 date: 2012-08-17T08:28:23+05:45
 excerpt: "It will last much longer with these 10 easy steps"
-redirect_from: "/2012/conserve-your-cell-phone-battery/"
 ---
 
 Frequent power cuts take a toll on cell phone battery, but there are simple ways to make it last longer. Follow these easy procedures to make the best of it:

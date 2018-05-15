@@ -2,7 +2,6 @@
 title: "Accessing the secret codes on your iPhone or Android phone"
 date: 2015-04-03T11:08:07+05:45
 excerpt: "Learn how to access the secret hidden menus on your iPhone or Android phone."
-redirect_from: "/2015/accessing-the-secret-codes-on-your-iphone-or-android-phone/"
 ---
 
 Here are some codes you can dial into the phone app that will access hidden information and menus in the iPhone or Android phone.

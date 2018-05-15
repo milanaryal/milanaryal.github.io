@@ -2,7 +2,6 @@
 title: "Using multiple email addresses with your single Gmail address"
 date: 2016-04-24T05:21:00+05:45
 excerpt: "When you choose a Gmail address, you actually get more than just 'yourusername@gmail.com.'"
-redirect_from: "/2016/using-multiple-email-addresses-with-your-single-gmail-address/"
 ---
 
 When you choose a Gmail address, you actually get more than just `yourusername@gmail.com`. Gmail address gives you greater control over your inbox and save your time and headache.

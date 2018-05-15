@@ -2,7 +2,6 @@
 title: "Seventeen helpful steps"
 date: 2013-02-01T12:02:53+05:45
 excerpt: "Explore the simple life with these steps and believe life is simple."
-redirect_from: "/2013/seventeen-helpful-steps/"
 ---
 
 1. Never give up on anybody; miracles happen every day.

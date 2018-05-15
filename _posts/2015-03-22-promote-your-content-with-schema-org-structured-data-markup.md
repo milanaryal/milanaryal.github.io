@@ -2,7 +2,6 @@
 title: "Promote your content with schema.org structured data markup"
 date: 2015-03-22T19:09:44+05:45
 excerpt: "Learn how to use the schema.org vocabulary to improve the rich snippets on your search engine results."
-redirect_from: "/2015/promote-your-content-with-schema-org-structured-data-markup/"
 ---
 
 [Schema.org](http://schema.org/){:rel="nofollow"} is an initiative launched on 2 June 2011 by Bing, Google and Yahoo! (the operators of the then world's largest search engines) to "create and support a common set of schemas for structured data markup on web pages." On 1 November Yandex (whose search engine is the largest one in Russia) joined the initiative.

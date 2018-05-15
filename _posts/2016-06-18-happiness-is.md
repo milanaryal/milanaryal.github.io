@@ -5,7 +5,6 @@ image:
   path: "/uploads/20160617-group-of-young-people-enjoying-a-beach-party-1280x854.jpg"
   width: "1280"
   height: "854"
-redirect_from: "/2016/happiness-is/"
 ---
 
 As you read this list take a few moments to think about each one, before going on to the next one. They are simple ways to enjoy the joys of life.

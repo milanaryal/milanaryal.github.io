@@ -3,7 +3,6 @@ title: "Adding hover anchor links to header on GitHub Pages using Jekyll"
 date: 2015-01-06T15:19:18+05:45
 last_modified_at: 2016-07-02T05:46:01+05:45
 excerpt: "Learn how to add deep anchor links to your docs using AnchorJS in Jekyll."
-redirect_from: "/2015/adding-hover-anchor-links-to-header-on-github-pages-using-jekyll/"
 ---
 
 I really like how a markdown file on GitHub hovering over a heading produces a visible, clickable anchor link. Deep links are useful for linking to specific places in online books and documentation.

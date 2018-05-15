@@ -2,7 +2,6 @@
 title: "Stir up some loving"
 date: 2014-02-12T22:41:50+05:45
 excerpt: "Some famous quotations about love that might help you stir up some goodness about love, giving or receiving."
-redirect_from: "/2014/stir-up-some-loving/"
 ---
 
 Before celebrating this year's Valentine's Day here are some famous quotations about love that might help you stir up some goodness about love, giving or receiving.

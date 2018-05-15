@@ -3,7 +3,6 @@ title: "Windows 10 keyboard shortcuts"
 date: 2015-08-02T09:32:45+05:45
 last_modified_at: 2015-08-02T14:00:42+05:45
 excerpt: "The list of Windows 10 keyboard shortcuts to improve your productivity."
-redirect_from: "/2015/windows-10-keyboard-shortcuts/"
 ---
 
 Here's the list of Windows 10 shortcuts, and --- in addition --- some of our favorite "old but gold" shortcuts known from previous versions of Windows:

@@ -1,7 +1,6 @@
 ---
 title: "Direct linking to your files on Dropbox, Google Drive and OneDrive"
 date: 2015-10-05T07:58:46+05:45
-redirect_from: "/2015/direct-linking-to-your-files-on-dropbox-google-drive-and-onedrive/"
 ---
 
 #### Force a file or folder to download from cloud storage drive and skip the web viewer.

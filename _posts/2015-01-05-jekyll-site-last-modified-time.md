@@ -2,7 +2,6 @@
 title: "Jekyll site last modified time"
 date: 2015-01-05T17:08:17+05:45
 last_modified_at: 2016-07-10T09:58:56+05:45
-redirect_from: "/2015/knowing-the-site-generated-time-by-jekyll-on-github-pages/"
 excerpt: "Display the date and time that the website was last modified."
 ---
 

@@ -2,7 +2,6 @@
 title: "How to optimize Windows PC for better performance"
 date: 2015-06-01T10:15:40+05:45
 excerpt: "These quick and easy tips will help to make your Windows PC work faster."
-redirect_from: "/2015/how-to-optimize-windows-pc-for-better-performance/"
 ---
 
 Everyone wishes their computer worked faster. Here are some quick and easy tips to take the load off your computer and make it run more efficiently, for much longer. Some use full tips to make computer work faster are given below:
