@@ -26,7 +26,27 @@ If you have any questions, comments, or would just like to say hello in general,
       </span><br><span class="label">Facebook</span>
     </a>
   </li>
+  <li>
+     <a rel="me" href="//instagram.com/milanaryal">
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg>
+      </span><br><span class="label">Instagram</span>
+    </a>
+  </li>
+  <li>
+    <a rel="me" href="//github.com/MilanAryal">
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
+      </span><br><span class="label">GitHub</span>
+    </a>
+  </li>
   {% endif %}
 </ul>
+
+<p class="pgp-key">
+  <a href="//keybase.io/milanaryal/key.asc">
+    PGP: <code>310B 1544 4945 F1A3 108E  B0A7 B51C F15F F0E9 5927</code>
+  </a>
+</p>
 
 {% include google_maps.html %}

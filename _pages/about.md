@@ -58,13 +58,8 @@ Join me on the following networks and/or websites:
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-google-plus"></use></svg>
       </span><br><span class="label">Google+</span>
     </a>
-  </li>
-</ul>
-<!--
-. . .
--->
-<ul class="social-links">
-  <li>
+  </li><!--
+--><li>
     <a rel="me" href="//linkedin.com/in/MilanAryal">
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-linkedin"></use></svg>
