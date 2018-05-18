@@ -2,12 +2,12 @@
 layout: page
 title: "About"
 description: "This is what I do."
-excerpt: "I'm Milan Aryal, a student living in Kathmandu, Nepal who loves getting lost in developing web, watching movies, and travelling new places."
+excerpt: "I'm Milan Aryal, a student living in Kathmandu, Nepal who is passionate about front-end web development, travelling new places, watching movies, and listening music a lot."
 image: "/assets/img/about.jpg"
 permalink: /about/
 ---
 
-Hello, my name is Milan Aryal (मिलन अर्याल) and I'm a student living in Kathmandu, Nepal who loves getting lost in web design, front-end development, and listening music a lot.
+Hello, my name is Milan Aryal (मिलन अर्याल) and I'm a student living in Kathmandu, Nepal who is passionate about front-end web development, travelling new places, watching movies, and listening music a lot.
 
 > The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification.
 
@@ -53,19 +53,17 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
-    <a rel="me" href="//snapchat.com/add/milanaryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-snapchat"></use></svg>
-      </span><br><span class="label">Snapchat</span>
-    </a>
-  </li>
-  <li>
     <a rel="me" href="//google.com/+MilanAryal">
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-google-plus"></use></svg>
       </span><br><span class="label">Google+</span>
     </a>
   </li>
+</ul>
+<!--
+. . .
+-->
+<ul class="social-links">
   <li>
     <a rel="me" href="//linkedin.com/in/MilanAryal">
       <span class="svg-icon svg-baseline" aria-hidden="true">
@@ -78,6 +76,13 @@ Join me on the following networks and/or websites:
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-pinterest"></use></svg>
       </span><br><span class="label">Pinterest</span>
+    </a>
+  </li>
+  <li>
+    <a rel="me" href="//snapchat.com/add/milanaryal">
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-snapchat"></use></svg>
+      </span><br><span class="label">Snapchat</span>
     </a>
   </li>
   <li>
@@ -98,7 +103,7 @@ Join me on the following networks and/or websites:
 
 <p class="pgp-key">
   <a href="//keybase.io/milanaryal/key.asc">
-    PGP: <code>2171 85B2 389A 9A61 CA48  4397 983A A4D9 F0D5 8849</code>
+    PGP: <code>310B 1544 4945 F1A3 108E  B0A7 B51C F15F F0E9 5927</code>
   </a>
 </p>
 

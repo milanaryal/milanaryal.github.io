@@ -146,7 +146,7 @@ See more about version ranges in the [npm docs](http://docs.npmjs.com/misc/semve
 
 **`npm outdated`**
 
-If you would like to see which of your dependencies are out of date, use `npm outdated`: see [npm docs](http://www.npmjs.org/doc/cli/npm-outdated.html){:rel="nofollow"} for more info.
+If you would like to see which of your dependencies are out of date, use `npm outdated`: see [npm docs](http://docs.npmjs.com/cli/outdated){:rel="nofollow"} for more info.
 
 **`npm update`**
 
