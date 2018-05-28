@@ -86,6 +86,7 @@ defaults:
       sitemap: false
 
 plugins:
+  - jemoji
   - jekyll-feed
   - jekyll-gist
   - jekyll-github-metadata
