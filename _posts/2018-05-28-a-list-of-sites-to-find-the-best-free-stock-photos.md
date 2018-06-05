@@ -4,7 +4,7 @@ date: 2018-05-28T10:50:00+05:45
 excerpt: "A curated list of sites with high resolution stock photos you can use for different purpose."
 ---
 
-Here, I've curated a list sites with high resolution stock photos you can use for different purpose. You have probably bookmarked a few of these already.
+Here, I've curated a list of sites with high resolution stock photos you can use for different purpose. You have probably bookmarked a few of these already.
 
 Most of the photos you will find on these sites are free from copyright restrictions or licensed under creative commons public domain dedication. You can copy, modify, distribute and use for even for commercial purposes, all without asking permission. However, some photos may require attribution.
 
