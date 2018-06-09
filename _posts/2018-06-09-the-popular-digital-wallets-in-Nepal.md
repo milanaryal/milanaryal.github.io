@@ -34,8 +34,6 @@ iPay App is available for both [Android](https://play.google.com/store/apps/deta
 
 ### Other popular mobile wallet alternatives in Nepal
 
-#### 4. [Nepzy](https://www.nepzy.com){:rel="nofollow"} (for [Android](https://play.google.com/store/apps/details?id=com.itgc.nepzy){:rel="nofollow"} or [iOS](https://itunes.apple.com/in/app/nepzy/id1059692410?mt=8){:rel="nofollow"})
-
-#### 5. [QPay](http://www.qpay.com.np){:rel="nofollow"} (for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){:rel="nofollow"} or [iOS](https://itunes.apple.com/us/app/qpay-nepal/id1127765416?mt=8){:rel="nofollow"})
-
-#### 6. [IME Pay](http://www.imepay.com.np){:rel="nofollow"} (for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){:rel="nofollow"} or [iOS](https://itunes.apple.com/us/developer/ime-digital-solution-ltd/id1241888343){:rel="nofollow"})
+* [**Nepzy**](https://www.nepzy.com){:rel="nofollow"} (for [Android](https://play.google.com/store/apps/details?id=com.itgc.nepzy){:rel="nofollow"} or [iOS](https://itunes.apple.com/in/app/nepzy/id1059692410?mt=8){:rel="nofollow"})
+* [**QPay**](http://www.qpay.com.np){:rel="nofollow"} (for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){:rel="nofollow"} or [iOS](https://itunes.apple.com/us/app/qpay-nepal/id1127765416?mt=8){:rel="nofollow"})
+* [**IME Pay**](http://www.imepay.com.np){:rel="nofollow"} (for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){:rel="nofollow"} or [iOS](https://itunes.apple.com/us/developer/ime-digital-solution-ltd/id1241888343){:rel="nofollow"})
