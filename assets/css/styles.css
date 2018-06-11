@@ -8358,12 +8358,16 @@ ul.hero-social a .label {
   }
 }
 
-.markdownBody h3 + h4 {
-  margin-top: 1px;
+.markdownBody h3 + h4,
+.markdownBody h4 + h3 {
+  margin-top: 31;
 }
 
-.markdownBody h4 + h3 {
-  margin-top: 3px;
+@media (max-width: 767px) {
+  .markdownBody h3 + h4,
+  .markdownBody h4 + h3 {
+    margin-top: 23;
+  }
 }
 
 .markdownBody p,

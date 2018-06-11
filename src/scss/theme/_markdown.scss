@@ -150,12 +150,13 @@
     }
   }
 
-  h3 + h4 {
-    margin-top: 1px;
-  }
-
+  h3 + h4,
   h4 + h3 {
-    margin-top: 3px;
+    margin-top: 31;
+
+    @media (max-width: 767px) {
+      margin-top: 23;
+    }
   }
 
   p,
