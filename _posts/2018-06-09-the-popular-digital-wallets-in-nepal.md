@@ -1,8 +1,9 @@
 ---
 title: "The popular digital wallets in Nepal"
 date: 2018-06-09T13:21:00+05:45
-last_modified_at: 2018-06-11T10:07:00+05:45
+last_modified_at: 2018-06-13T18:37:00+05:45
 excerpt: "List of the top best online payment systems in Nepal (which are also known as mobile wallets or e-wallets)."
+redirect_from: /the-popular-digital-wallets-in-Nepal/
 ---
 
 In recent years, many digital wallets (also known as mobile wallets or e-wallets) are emerged significantly in Nepal. The era of cashless transactions is upon us. I have figured out stock of the different options of mobile wallets in Nepal, and some of the best are listed below.
