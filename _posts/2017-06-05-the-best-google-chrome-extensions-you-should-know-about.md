@@ -4,7 +4,7 @@ date: 2017-06-05T07:00:00+05:45
 excerpt: "List of best free Chrome extensions you need most to exponentially increasing browser potential."
 ---
 
-[Google Chrome](http://www.google.com/chrome/browser/desktop/){:rel="nofollow"} is the most popular Web browser, with more than 50 percent of the market. Here's my list of personal favourite free Chrome extensions you might be interested for potential Internet browsing.
+[Google Chrome](http://www.google.com/chrome/){:rel="nofollow"} is the most popular Web browser, with more than 50 percent of the market. Here's my list of personal favourite free Chrome extensions you might be interested for potential Internet browsing.
 
 *Note:* Browser extensions are useful but using too many extensions may slow down your browser. So, use only esstential extensions you need most.
 

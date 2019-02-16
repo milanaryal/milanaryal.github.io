@@ -81,7 +81,7 @@ These following photography resources are those who have declared their own usag
 * [Shutteroo](http://shutteroo.com/){:rel="nofollow"} - [&copy;](http://shutteroo.com/about/){:rel="nofollow"} Free high-resolution travel images.
 * [Split Shire](https://www.splitshire.com/){:rel="nofollow"} - [&copy;](https://www.splitshire.com/about/){:rel="nofollow"} Real photos for commercial use with no copyright restrictions and a real look.
 * [Startup Stock Photos](http://startupstockphotos.com/){:rel="nofollow"} - [&copy;](http://startupstockphotos.com/terms-of-use){:rel="nofollow"} Startup based photography.
-* [Tookapic](https://stock.tookapic.com/photos?filter=free){:rel="nofollow"} - [&copy;](https://tookapic.com/terms){:rel="nofollow"} Free listing from Tookapic.
+* [Tookapic](https://tookapic.com/photos?filter=free){:rel="nofollow"} - [&copy;](https://tookapic.com/terms){:rel="nofollow"} Free listing from Tookapic.
 
 ### Public Domain
 
