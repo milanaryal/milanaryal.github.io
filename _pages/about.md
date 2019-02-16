@@ -2,7 +2,7 @@
 layout: page
 title: "About"
 description: "This is what I do."
-excerpt: "I'm Milan Aryal, a student living in Kathmandu, Nepal who is passionate about stock market, front-end web development, travelling new places, watching movies, and listening music a lot."
+excerpt: "Passionate weblogger who writes about stock market, front-end web development, and positive living."
 image: "/assets/img/about.jpg"
 permalink: /about/
 ---
