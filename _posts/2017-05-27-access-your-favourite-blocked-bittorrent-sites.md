@@ -1,7 +1,7 @@
 ---
 title: "Access your favourite blocked BitTorrent sites"
 date: 2017-05-27T07:08:00+05:45
-last_modified_at: 2018-10-21T07:25:00+05:45
+last_modified_at: 2019-02-16T15:00:00+05:45
 excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your country or territory Internet censorship."
 ---
 
@@ -9,9 +9,9 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-* [unblocked.gdn](https://unblocked.gdn/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
+* [unblocked.cx](https://unblocked.cx/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
 * [torrents.me/proxy](https://torrents.me/proxy/){:rel="nofollow"}{:rel="nofollow"}
-* [proxyportal.eu](https://proxyportal.eu/){:rel="nofollow"}
+* [fux0r.ws](https://fux0r.ws/){:rel="nofollow"}
 * [unblockall.org](https://unblockall.org/){:rel="nofollow"}
 * [unblocker.cc](https://unblocker.cc/){:rel="nofollow"}, [unblocker.win](https://unblocker.win/){:rel="nofollow"}
 * [unblocktorrent.com](https://unblocktorrent.com/){:rel="nofollow"}
@@ -20,11 +20,9 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### [The Pirate Bay](https://thepiratebay.org/){:rel="nofollow"} proxy sites and mirrors
 
-* [proxybay.bz](https://proxybay.bz/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
+* [proxybay.cc](https://proxybay.cc/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
 * [thepiratebay-proxylist.se](https://thepiratebay-proxylist.se/){:rel="nofollow"}
 * [themirrorbay.com](http://www.themirrorbay.com/){:rel="nofollow"}
-* [proxybay.pl](https://proxybay.pl/){:rel="nofollow"}
-* [avoidcensorship.org](https://avoidcensorship.org/){:rel="nofollow"}
 
 #### Bonus: Free Web proxy
 
@@ -34,5 +32,6 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 * [hidester.com/proxy/](https://hidester.com/proxy/){:rel="nofollow"}
 * [whoer.net/webproxy](https://whoer.net/webproxy)
 * [proxy.toolur.com](https://proxy.toolur.com/){:rel="nofollow"}
+* [proxypedia.org](https://proxypedia.org/){:rel="nofollow"}
 
 _**Disclaimer & legal warning**: [This site]({{ site.url }}) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._

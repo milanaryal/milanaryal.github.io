@@ -110,7 +110,7 @@ I'd like to think that I'm very happy person, but I find the art that strikes me
 
 ### About the site
 
-In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, development, or the blogosphere among other web culture topics.
+In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the stock market, web industry, and positive living. <!-- In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, development, or the blogosphere among other web culture topics. -->
 
 In case you were wondering, this site is:
 
