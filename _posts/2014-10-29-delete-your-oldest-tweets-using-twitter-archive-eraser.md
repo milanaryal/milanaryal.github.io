@@ -83,9 +83,9 @@ Use the following filtering expressions to search for:
 * Tweets containing a number with 4 digits or more: `\d{4}`
 * Tweets containing the word 'hello': `hello`
 
-{%- comment -%}<!-- You can find the code of the application on github: <a href="http://github.com/martani/Twitter-Archive-Eraser" rel="nofollow">github.com/martani/Twitter-Archive-Eraser</a>. Developer mentions that all the Twitter logic is done using the excellent <a href="http://linqtotwitter.codeplex.com" rel="nofollow">LinqToTwitter</a> library.
+{% comment %}<!-- You can find the code of the application on github: <a href="http://github.com/martani/Twitter-Archive-Eraser" rel="nofollow">github.com/martani/Twitter-Archive-Eraser</a>. Developer mentions that all the Twitter logic is done using the excellent <a href="http://linqtotwitter.codeplex.com" rel="nofollow">LinqToTwitter</a> library.
 
-Sadly, this app works only with Windows OS and yet developer is not further planning to develop this app for any other OS like Mac or linux. But don't worry you can use apps like VMware or VirtualBox to switch to Windows and use the Windows apps. -->{%- endcomment -%}
+Sadly, this app works only with Windows OS and yet developer is not further planning to develop this app for any other OS like Mac or linux. But don't worry you can use apps like VMware or VirtualBox to switch to Windows and use the Windows apps. -->{% endcomment %}
 
 ### Video explaining how to use Twitter Archive Eraser
 
