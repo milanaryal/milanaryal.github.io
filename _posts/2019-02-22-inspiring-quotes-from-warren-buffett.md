@@ -9,11 +9,15 @@ excerpt: "An inspirational Warren Buffett advices that will help you to become a
   <figcaption>Photographer: Scott Eells/Bloomberg</figcaption>
 </figure>
 
-> I made my first investment at age eleven. I was wasting my life up until then.
+> "I made my first investment at age eleven. I was wasting my life up until then."
 >
 > --- Warren Buffett
 
 Warren Edward Buffett is an American investor, industrialist and philanthropist. He is widely regarded as one of the most successful investors in the world. Often called the "legendary investor, Warren Buffett", he is the primary shareholder, chairman and CEO of Berkshire Hathaway. He is consistently ranked among the world's wealthiest people. He was ranked as the world's wealthiest person in 2008 and is the third wealthiest person in the world as of 2011.
+
+> "I always knew I was going to be rich. I don't think I ever doubted it for a minute."
+>
+> --- Warren Buffett
 
 Buffett is called the "Oracle of Omaha" or the "Sage of Omaha" and is noted for his adherence to the value investing philosophy and for his personal frugality despite his immense wealth. Buffett is also a notable philanthropist, having pledged to give away 99 percent of his fortune to philanthropic causes, primarily via the Gates Foundation. He also serves as a member of the board of trustees at Grinnell College.
 
@@ -60,3 +64,17 @@ Here are some of his most memorable quotes of all time:
 19. "Never invest in a business you cannot understand."
 
 20. "Money is not everything. Make sure you earn a lot before speaking such nonsense."
+
+21. "The stock market is a device for transferring money from the impatient to the patient."
+
+22. "The greatest enemies of the equity investor are expenses and emotions."
+
+23. "Why not invest your assets in the companies you really like? As Mae West said, 'Too much of a good thing can be wonderful.'"
+
+24. "Look at market fluctuations as your friend rather than your enemy; profit from folly rather than participate in it."
+
+25. "Only buy something that you'd be perfectly happy to hold if the market shut down for 10 years."
+
+> "I never attempt to make money on the stock market. I buy on the assumption that they could close the market the next day and not reopen it for five years."
+>
+> --- Warren Buffett
