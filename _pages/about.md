@@ -2,12 +2,12 @@
 layout: page
 title: "About"
 description: "This is what I do."
-excerpt: "Passionate weblogger who writes about stock market, front-end web development, and positive living."
+excerpt: "Passionate weblogger who writes about capital market, front-end web development, and positive living."
 image: "/assets/img/about.jpg"
 permalink: /about/
 ---
 
-Hello, my name is Milan Aryal (मिलन अर्याल) and I'm a student living in Kathmandu, Nepal who is passionate about stock market, front-end web development, travelling new places, watching movies, and listening music a lot.
+Hello, my name is Milan Aryal (मिलन अर्याल) and I am living in Kathmandu, Nepal who is passionate about capital market, front-end web development, travelling new places, watching movies, and listening music a lot.
 
 > The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification.
 
