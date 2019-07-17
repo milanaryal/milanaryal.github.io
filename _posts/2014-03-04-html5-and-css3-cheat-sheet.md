@@ -75,7 +75,7 @@ Following you will find a beginner's essential CSS cheat sheet by [WebsiteSetup]
   </a>
 </figure>
 
-Download [**Image Files**](/uploads/20140304-css-cheat-sheet.zip?dl) or in [**PDF format**](/uploads/20140304-html5-and-css3-cheat-sheet.pdf)
+Download [**Image Files**](/uploads/20140304-css-cheat-sheet.zip?dl) or in [**PDF format**](/uploads/20140304-wsu-css-cheat-sheet.pdf)
 
 *Creative common courtesy from WebsiteSetup.org*
 
