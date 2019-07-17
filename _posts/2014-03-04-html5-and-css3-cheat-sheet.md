@@ -7,6 +7,8 @@ excerpt: "HTML5 and CSS3 cheat sheet for those who want to work with this latest
 
 On the journey to learn coding for web development lots of changes happened. Developing New version of HTML5 and CSS3 is one of them. But back then those version were not completed neither accepted by major web browsers. Now things have changed and HTML5 and CSS3 accepted by all web browsers and versions and we all know that now using HTML is much more easy with lots of option.
 
+---
+
 This is **HTML5 and CSS3 cheat sheet** by Code School for those who want to work with this latest script. This cheat sheet include a relative comparison between last version and new version of HTML5 and CSS3.
 
 ### HTML5 cheat sheet
@@ -47,7 +49,7 @@ New CSS3 attributes with great examples and very easy to memorize.
 
 ### Complete CSS Cheat Sheet
 
-Here's a beginner's essential CSS cheat sheet [WebsiteSetup](http://websitesetup.org) updated with new CSS3 tags.
+Following you will find a beginner's essential CSS cheat sheet by [WebsiteSetup](http://websitesetup.org) --- updated with new CSS3 tags.
 
 <figure>
   <a href="/uploads/20140304-css-cheat-sheet-p1.png">
