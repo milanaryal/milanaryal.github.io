@@ -1,6 +1,7 @@
 ---
 title: "HTML5 and CSS3 cheat sheet"
 date: 2014-03-04T05:29:59+05:45
+last_modified_at: 2019-07-17T21:05:00+05:45
 excerpt: "HTML5 and CSS3 cheat sheet for those who want to work with this latest script."
 ---
 
@@ -43,6 +44,38 @@ New CSS3 attributes with great examples and very easy to memorize.
 *Creative common courtesy from codeschool.com*
 
 ---
+
+### Complete CSS Cheat Sheet
+
+Here's a beginner's essential CSS cheat sheet [WebsiteSetup](http://websitesetup.org) updated with new CSS3 tags.
+
+<figure>
+  <a href="/uploads/20140304-css-cheat-sheet-p1.png">
+    <img src="/uploads/20140304-css-cheat-sheet-p1.png" alt="CSS3 cheat sheet">
+  </a>
+</figure>
+
+<figure>
+  <a href="/uploads/20140304-css-cheat-sheet-p2.png">
+    <img src="/uploads/20140304-css-cheat-sheet-p2.jpg" alt="CSS3 cheat sheet">
+  </a>
+</figure>
+
+<figure>
+  <a href="/uploads/20140304-css-cheat-sheet-p3.png">
+    <img src="/uploads/20140304-css-cheat-sheet-p3.png" alt="CSS3 cheat sheet">
+  </a>
+</figure>
+
+<figure>
+  <a href="/uploads/20140304-css-cheat-sheet-p4.png">
+    <img src="/uploads/20140304-css-cheat-sheet-p4.png" alt="CSS3 cheat sheet">
+  </a>
+</figure>
+
+Download [**Image Files**](/uploads/20140304-css-cheat-sheet.zip?dl) or in [**PDF format**](/uploads/20140304-html5-and-css3-cheat-sheet.pdf)
+
+*Creative common courtesy from WebsiteSetup.org*
 
 ### Further resources
 
