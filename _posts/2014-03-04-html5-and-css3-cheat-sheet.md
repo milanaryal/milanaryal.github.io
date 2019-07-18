@@ -39,8 +39,6 @@ New CSS3 attributes with great examples and very easy to memorize.
   </a>
 </figure>
 
----
-
 [**Download in PDF format**](/uploads/20140304-html5-and-css3-cheat-sheet.pdf)
 
 *Creative common courtesy from codeschool.com*
@@ -78,6 +76,8 @@ Following you will find a beginner's essential CSS cheat sheet by *WebsiteSetup*
 Download [**Image Files**](/uploads/20140304-css-cheat-sheet.zip?dl) or in [**PDF format**](/uploads/20140304-wsu-css-cheat-sheet.pdf)
 
 *Creative common courtesy from [WebsiteSetup.org](https://websitesetup.org/css3-cheat-sheet/){:rel="nofollow"}*
+
+---
 
 ### Further resources
 
