@@ -49,7 +49,7 @@ New CSS3 attributes with great examples and very easy to memorize.
 
 ### Complete CSS Cheat Sheet
 
-Following you will find a beginner's essential CSS cheat sheet by [WebsiteSetup](http://websitesetup.org) --- updated with new CSS3 tags.
+Following you will find a beginner's essential CSS cheat sheet by *WebsiteSetup* --- updated with new CSS3 tags.
 
 <figure>
   <a href="/uploads/20140304-css-cheat-sheet-p1.png">
@@ -77,7 +77,7 @@ Following you will find a beginner's essential CSS cheat sheet by [WebsiteSetup]
 
 Download [**Image Files**](/uploads/20140304-css-cheat-sheet.zip?dl) or in [**PDF format**](/uploads/20140304-wsu-css-cheat-sheet.pdf)
 
-*Creative common courtesy from WebsiteSetup.org*
+*Creative common courtesy from [WebsiteSetup.org](https://websitesetup.org/css3-cheat-sheet/){:rel="nofollow"}*
 
 ### Further resources
 
