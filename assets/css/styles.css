@@ -8939,6 +8939,7 @@ ul.hero-social a .label {
 .markdownBody > ul a, .markdownBody > ol a, .markdownBody > dl a,
 .markdownBody > .table-responsive a {
   text-decoration: underline;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 
 .markdownBody > figure figcaption a,
@@ -9773,6 +9774,7 @@ kbd {
   display: block;
   color: rgba(0, 0, 0, 0.7);
   background-image: none !important;
+  text-decoration: none !important;
 }
 
 .social-links a:hover, .social-links a:focus {
@@ -9792,6 +9794,7 @@ kbd {
 .pgp-key a {
   color: rgba(0, 0, 0, 0.7);
   background-image: none !important;
+  text-decoration: none !important;
 }
 
 .pgp-key a:hover, .pgp-key a:focus {
