@@ -64,32 +64,13 @@
   }
 
   // Crafting link underlines
-  // (https://medium.com/p/7c03a9274f9)
   > h3, > h4,
   > p,
   > blockquote,
   > ul, > ol, > dl,
   > .table-responsive {
     a {
-      text-decoration: none;
-      background-image: linear-gradient(to bottom,rgba(0,0,0,.6) 50%,rgba(0,0,0,0) 50%);
-      background-position: 0 1.07em;
-      background-repeat: repeat-x;
-      background-size: 2px .1em;
-      -webkit-tap-highlight-color: rgba(0,0,0,.3);
-
-      @media (max-width: 991px) {
-        background-position: 0 1.03em;
-        background-size: 2px 2px;
-      }
-    }
-  }
-
-  > h3, > h4 {
-    a {
-      background-image: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.8));
-      background-position: 0 1.15em; // 0 1.05em;
-      background-size: 2px .115em;
+      text-decoration: underline;
     }
   }
 

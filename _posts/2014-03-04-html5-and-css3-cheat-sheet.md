@@ -57,7 +57,7 @@ Following you will find a beginner's essential CSS cheat sheet by *WebsiteSetup*
 
 <figure>
   <a href="/uploads/20140304-css-cheat-sheet-p2.png">
-    <img src="/uploads/20140304-css-cheat-sheet-p2.jpg" alt="CSS3 cheat sheet">
+    <img src="/uploads/20140304-css-cheat-sheet-p2.png" alt="CSS3 cheat sheet">
   </a>
 </figure>
 

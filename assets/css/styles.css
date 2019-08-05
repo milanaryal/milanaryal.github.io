@@ -1894,6 +1894,11 @@ template {
   opacity: 1;
 }
 
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .form-control::-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -7742,6 +7747,10 @@ a:hover, a:focus {
   outline: 0;
 }
 
+::-moz-selection {
+  background: #d6edff;
+}
+
 ::selection {
   background: #d6edff;
 }
@@ -8929,31 +8938,7 @@ ul.hero-social a .label {
 .markdownBody > blockquote a,
 .markdownBody > ul a, .markdownBody > ol a, .markdownBody > dl a,
 .markdownBody > .table-responsive a {
-  text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0.6)), color-stop(50%, transparent));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
-  background-position: 0 1.07em;
-  background-repeat: repeat-x;
-  background-size: 2px .1em;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 991px) {
-  .markdownBody > h3 a, .markdownBody > h4 a,
-  .markdownBody > p a,
-  .markdownBody > blockquote a,
-  .markdownBody > ul a, .markdownBody > ol a, .markdownBody > dl a,
-  .markdownBody > .table-responsive a {
-    background-position: 0 1.03em;
-    background-size: 2px 2px;
-  }
-}
-
-.markdownBody > h3 a, .markdownBody > h4 a {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-  background-position: 0 1.15em;
-  background-size: 2px .115em;
+  text-decoration: underline;
 }
 
 .markdownBody > figure figcaption a,
