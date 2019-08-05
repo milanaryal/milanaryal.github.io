@@ -8,14 +8,14 @@ Here, I've curated a list of sites to download eBook for free of cost. In these 
 
 #### Z-Library
 
-Part of Z-Library project. The world's largest ebook library.
+Part of Z-Library project. The world's largest ebook library since 2009.
 
 *Mirror sites:*
 
-* [http://z-lib.org/](z-lib.org){:rel="nofollow"}
-* [http://b-ok.org/](b-ok.org){:rel="nofollow"}
-* [http://b-ok2.org/](b-ok2.org){:rel="nofollow"}
-* [http://b-ok.cc/](b-ok.cc){:rel="nofollow"}
+* [z-lib.org](http://z-lib.org/){:rel="nofollow"}
+* [b-ok.org](http://b-ok.org/){:rel="nofollow"}
+* [b-ok2.org](http://b-ok2.org/){:rel="nofollow"}
+* [b-ok.cc](http://b-ok.cc/){:rel="nofollow"}
 
 #### Library Genesis
 
@@ -23,10 +23,10 @@ Library Genesis (LibGen) is a digital library established on 11 March 2008.
 
 *Mirror sites:*
 
-* [http://gen.lib.rus.ec/](gen.lib.rus.ec){:rel="nofollow"}
-* [http://booksdescr.org/](booksdescr.org){:rel="nofollow"}
-* [http://libgen.me/](libgen.me){:rel="nofollow"}
-* [http://bookfi.net/](bookfi.net){:rel="nofollow"}
+* [gen.lib.rus.ec](http://gen.lib.rus.ec/){:rel="nofollow"}
+* [booksdescr.org](http://booksdescr.org/){:rel="nofollow"}
+* [libgen.me](http://libgen.me/){:rel="nofollow"}
+* [bookfi.net](http://bookfi.net/){:rel="nofollow"}
 
 ---
 
