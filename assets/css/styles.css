@@ -9773,8 +9773,8 @@ kbd {
 .social-links a {
   display: block;
   color: rgba(0, 0, 0, 0.7);
-  background-image: none !important;
   text-decoration: none !important;
+  background-image: none !important;
 }
 
 .social-links a:hover, .social-links a:focus {
@@ -9793,8 +9793,8 @@ kbd {
 
 .pgp-key a {
   color: rgba(0, 0, 0, 0.7);
-  background-image: none !important;
   text-decoration: none !important;
+  background-image: none !important;
 }
 
 .pgp-key a:hover, .pgp-key a:focus {
