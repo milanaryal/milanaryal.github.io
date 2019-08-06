@@ -21,11 +21,6 @@
   {%- assign facebook_share_link = facebook_share_link | escape_once -%}
 {%- endif -%}
 
-{%- capture google_plus_share_link -%}//plus.google.com/share?url={{ page_url }}{%- endcapture -%}
-{%- if google_plus_share_link -%}
-  {%- assign google_plus_share_link = google_plus_share_link | escape_once -%}
-{%- endif -%}
-
 {%- capture email_share_link -%}mailto:?subject={{ page_title }}&body={{ page_url }}{%- endcapture -%}
 {%- if email_share_link -%}
   {%- assign email_share_link = email_share_link | escape_once -%}
@@ -45,13 +40,6 @@
       <span class="svg-icon icon-facebook svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-facebook"></use></svg>
       </span><span class="label">Facebook</span>
-    </a>
-  </li>
-  <li>
-    <a class="btn btn-socialShare socialShare-popup" href="{{ google_plus_share_link }}" target="_blank" role="button" data-proofer-ignore="true">
-      <span class="svg-icon icon-google-plus svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-google-plus"></use></svg>
-      </span><span class="label">Google+</span>
     </a>
   </li>
   <li>
