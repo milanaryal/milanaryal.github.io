@@ -28,9 +28,11 @@ var cp = require('child_process');
 
 // Browsers compability
 var COMPATIBILITY = [
-  '> 1%',
-  'last 2 versions',
-  'IE 10'
+  '>= 1%',
+  'last 1 major version',
+  'not dead',
+  'Explorer 11',
+  'not ExplorerMobile <= 11'
 ];
 
 // Scripts source paths
@@ -126,7 +128,7 @@ gulp.task('build:styles', function () {
   return gulp.src('src/scss/styles.scss')
     .pipe(header(banner, { pkg : pkg }))
     .pipe(scss({ precision: 6, outputStyle: 'expanded' }))
-    .pipe(prefix({ browsers: COMPATIBILITY }))
+    .pipe(prefix({ overrideBrowserslist: COMPATIBILITY }))
     .pipe(gulp.dest('assets/css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minify({ discardComments: { removeAll: true } }))
@@ -197,7 +199,7 @@ gulp.task('rebuild:styles', function () {
   return gulp.src('src/scss/styles.scss')
     .pipe(header(banner, { pkg : pkg }))
     .pipe(scss({ precision: 6, outputStyle: 'expanded' }))
-    .pipe(prefix({ browsers: COMPATIBILITY }))
+    .pipe(prefix({ overrideBrowserslist: COMPATIBILITY }))
     .pipe(gulp.dest('./_site/assets/css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minify({ discardComments: { removeAll: true } }))
