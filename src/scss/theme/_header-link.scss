@@ -41,7 +41,8 @@
 
 // Offsetting an html anchor to adjust for fixed header
 // (https://css-tricks.com/hash-tag-links-padding/#article-header-id-1)
-.markdownBody {
+.markdownBody,
+.archiveBody {
   >h2[id]::before,
   >h3[id]::before,
   >h4[id]::before {

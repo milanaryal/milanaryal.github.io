@@ -8849,7 +8849,10 @@ kbd {
 
 .markdownBody > h2[id]::before,
 .markdownBody > h3[id]::before,
-.markdownBody > h4[id]::before {
+.markdownBody > h4[id]::before,
+.archiveBody > h2[id]::before,
+.archiveBody > h3[id]::before,
+.archiveBody > h4[id]::before {
   display: block;
   height: 6rem;
   margin-top: -6rem;

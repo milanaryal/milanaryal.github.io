@@ -9,14 +9,16 @@ permalink: /contact/
 If you have any questions, comments, or would just like to say hello in general, please don't hesitate to <span class="svg-icon icon-envelope-o svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-envelope-open"></use></svg></span> e-mail me at *considermilan at gmail dot com*. You can also contact me through these following social networks and I'll be sure to respond in a timely manner!
 
 <ul class="social-links">
-  {% if site.author.twitter %}
+  {% if site.author.telegram %}
   <li>
-    <a rel="me" href="//t.me/MilanAryal">
+    <a rel="me" href="//t.me/{{ site.author.telegram }}">
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-telegram"></use></svg>
       </span><br><span class="label">Telegram</span>
     </a>
   </li>
+  {% endif %}
+  {% if site.author.twitter %}
   <li>
     <a rel="me" href="//twitter.com/{{ site.author.twitter }}">
       <span class="svg-icon svg-baseline" aria-hidden="true">
@@ -33,15 +35,19 @@ If you have any questions, comments, or would just like to say hello in general,
       </span><br><span class="label">Facebook</span>
     </a>
   </li>
+  {% endif %}
+  {% if site.author.instagram %}
   <li>
-     <a rel="me" href="//instagram.com/milanaryal">
+     <a rel="me" href="//instagram.com/{{ site.author.instagram }}">
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg>
       </span><br><span class="label">Instagram</span>
     </a>
   </li>
+  {% endif %}
+  {% if site.author.github %}
   <li>
-    <a rel="me" href="//github.com/MilanAryal">
+    <a rel="me" href="//github.com/{{ site.author.github }}">
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
       </span><br><span class="label">GitHub</span>
