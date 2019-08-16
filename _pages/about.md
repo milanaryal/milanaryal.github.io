@@ -18,13 +18,6 @@ Join me on the following networks and/or websites:
 <!-- Social links -->
 <ul class="social-links">
   <li>
-    <a rel="me" href="//t.me/MilanAryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-telegram"></use></svg>
-      </span><br><span class="label">Telegram</span>
-    </a>
-  </li>
-  <li>
     <a rel="me" href="//twitter.com/MilanAryal">
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg>
@@ -58,7 +51,7 @@ Join me on the following networks and/or websites:
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-keybase"></use></svg>
       </span><br><span class="label">Keybase</span>
     </a>
-  </li><!--
+  </li>
   <li>
     <a rel="me" href="//linkedin.com/in/MilanAryal">
       <span class="svg-icon svg-baseline" aria-hidden="true">
@@ -67,12 +60,12 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
-    <a rel="me" href="//pinterest.com/milanaryal">
+    <a rel="me" href="//pinterest.com/MilanAryal">
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-pinterest"></use></svg>
       </span><br><span class="label">Pinterest</span>
     </a>
-  </li>
+  </li><!--
   <li>
     <a rel="me" href="//snapchat.com/add/milanaryal">
       <span class="svg-icon svg-baseline" aria-hidden="true">
