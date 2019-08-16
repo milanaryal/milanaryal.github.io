@@ -65,19 +65,19 @@ Join me on the following networks and/or websites:
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-pinterest"></use></svg>
       </span><br><span class="label">Pinterest</span>
     </a>
+  </li>
+  <li>
+    <a rel="me" href="//milanaryal.tumblr.com">
+      <span class="svg-icon svg-baseline" aria-hidden="true">
+        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-tumblr-square"></use></svg>
+      </span><br><span class="label">Tumblr</span>
+    </a>
   </li><!--
   <li>
     <a rel="me" href="//snapchat.com/add/milanaryal">
       <span class="svg-icon svg-baseline" aria-hidden="true">
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-snapchat"></use></svg>
       </span><br><span class="label">Snapchat</span>
-    </a>
-  </li>
-  <li>
-    <a rel="me" href="//milanaryal.tumblr.com">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-tumblr"></use></svg>
-      </span><br><span class="label">Tumblr</span>
     </a>
   </li>
   <li>
