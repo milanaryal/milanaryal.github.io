@@ -113,7 +113,7 @@ In case you were wondering, this site is:
 * Built on [Jekyll](http://jekyllrb.com/), the open source static site generator
 * Hosted on [GitHub Pages](http://pages.github.com/)
 
-...for more informations see [humans.txt](/humans.txt).
+...for more informations see [humans.txt](/humans.txt). You can find more about my Ubuntu OS development environment setup in my [config repo on GitHub](//github.com/MilanAryal/config).
 
 If you enjoy the content found here, you might like to subscribe to my <span class="svg-icon icon-feed svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-feed"></use></svg></span> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 

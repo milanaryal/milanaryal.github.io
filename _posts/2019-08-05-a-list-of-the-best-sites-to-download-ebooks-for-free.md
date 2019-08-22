@@ -28,6 +28,14 @@ Library Genesis (LibGen) is a digital library established on 11 March 2008.
 * [libgen.me](http://libgen.me/){:rel="nofollow"}
 * [bookfi.net](http://bookfi.net/){:rel="nofollow"}
 
+#### PDF Drive
+
+PDF Drive is a free search engine which allows you to search, preview and download millions of PDF files into your devices.
+
+*Mirror site(s):*
+
+* [pdfdrive.com](http://www.pdfdrive.com/){:rel="nofollow"}
+
 ---
 
 _**Disclaimer & legal warning**: [This site]({{ site.url }}) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._
