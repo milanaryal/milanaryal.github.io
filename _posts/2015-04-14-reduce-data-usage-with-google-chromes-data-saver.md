@@ -1,4 +1,5 @@
 ---
+redirect_to: "/the-best-google-chrome-extensions-you-should-know-about/"
 title: "Reduce data usage with Google Chrome's Data Saver"
 date: 2015-04-14T10:48:02+05:45
 last_modified_at: 2016-04-04T04:13:07+05:45
