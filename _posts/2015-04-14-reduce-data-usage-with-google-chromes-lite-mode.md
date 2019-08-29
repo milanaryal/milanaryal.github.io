@@ -26,7 +26,7 @@ If you're using Lite mode, keep in mind that:
 ### Enable Chrome's Lite mode on Android
 
 1. On your Android phone or tablet, open the Chrome app Chrome.
-2. At the top right, tap More More and then **Settings**.
+2. At the top right, tap More and then **Settings**.
 3. Under "Advanced," tap **Lite mode**.
 4. Turn on **Lite mode**.
 
@@ -35,7 +35,7 @@ If you're on a page that was simplified, you can go back to the original page wi
 #### See how much data you've saved
 
 1. On your Android phone or tablet, open the Chrome app Chrome.
-2. Tap More More and then **Settings**.
+2. Tap More and then **Settings**.
 3. Tap **Lite mode**. At the bottom, you'll see a list of the sites you've visited and how much data you've saved.
 
 ---
