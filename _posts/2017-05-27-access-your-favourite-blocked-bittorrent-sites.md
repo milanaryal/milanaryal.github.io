@@ -9,7 +9,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-* [unblocked.dk](https://unblocked.dk/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
+* [unblocked.nz](https://unblocked.nz/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
 * [torrents.me/proxy](https://torrents.me/proxy/){:rel="nofollow"}{:rel="nofollow"}
 * [proxyportal.eu](https://proxyportal.eu/){:rel="nofollow"}
 * [unblockall.org](https://unblockall.org/){:rel="nofollow"}
