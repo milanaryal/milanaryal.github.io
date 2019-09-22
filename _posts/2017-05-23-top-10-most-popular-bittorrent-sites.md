@@ -17,16 +17,16 @@ The Alexa global ranking is accurate as of *February 16, 2019*.
 
 | S.N. | BitTorrent site | Proxy/Mirror | Specialization | RSS | Alexa Rank |
 |---|---|---|---|---|---|---|
-| 1. | ![YTS.AM favicon](https://unblocked-pw.github.io/ico/yts.ico){:width="16" height="16" style="display:inline-block!important;"} [YTS.AM](http://yts.am){:rel="nofollow"} | [unblocked.dk](http://yts.unblocked.dk){:rel="nofollow"} | Movies | Yes | 182 |
-| 2. | ![1337x favicon](https://unblocked-pw.github.io/ico/1337x.ico){:width="16" height="16" style="display:inline-block!important;"} [1337x](http://1337x.to){:rel="nofollow"} | [unblocked.dk](http://1337x.unblocked.dk){:rel="nofollow"} | - | No  | 241 |
+| 1. | ![YTS.AM favicon](https://unblocked-pw.github.io/ico/yts.ico){:width="16" height="16" style="display:inline-block!important;"} [YTS.AM](http://yts.am){:rel="nofollow"} | [unblocked.nz](http://yts.unblocked.nz){:rel="nofollow"} | Movies | Yes | 182 |
+| 2. | ![1337x favicon](https://unblocked-pw.github.io/ico/1337x.ico){:width="16" height="16" style="display:inline-block!important;"} [1337x](http://1337x.to){:rel="nofollow"} | [unblocked.nz](http://1337x.unblocked.nz){:rel="nofollow"} | - | No  | 241 |
 | 3. | ![The Pirate Bay favicon](https://unblocked-pw.github.io/ico/pirateproxy.ico){:width="16" height="16" style="display:inline-block!important;"} [The Pirate Bay](http://thepiratebay.org){:rel="nofollow"} | [proxybay.cc](http://proxybay.cc/){:rel="nofollow"} | - | Yes | 263 |
-| 4. | ![RARBG favicon](https://unblocked-pw.github.io/ico/rarbg.ico){:width="16" height="16" style="display:inline-block!important;"} [RARBG](http://rarbg.to){:rel="nofollow"} | [unblocked.dk](http://rarbg.unblocked.dk){:rel="nofollow"} | - | Yes | 323 |
-| 5. | ![Torrentz2 favicon](https://unblocked-pw.github.io/ico/torrentz.ico){:width="16" height="16" style="display:inline-block!important;"} [Torrentz2](http://torrentz2.eu){:rel="nofollow"} | [unblocked.dk](http://torrentz2.unblocked.dk){:rel="nofollow"} | Search | No | 555 |
-| 6. | ![EZTV favicon](https://unblocked-pw.github.io/ico/eztv.ico){:width="16" height="16" style="display:inline-block!important;"} [EZTV](http://eztv.ag){:rel="nofollow"} | [unblocked.dk](http://eztv.unblocked.dk){:rel="nofollow"} | Television shows | Yes | 897 |
-| 7. | ![LimeTorrents favicon](https://unblocked-pw.github.io/ico/limetorrents.ico){:width="16" height="16" style="display:inline-block!important;"} [LimeTorrents](http://www.limetorrents.cc){:rel="nofollow"} | [unblocked.dk](http://limetorrents.unblocked.dk){:rel="nofollow"} | - | Yes | 1,017 |
-| 8. | ![Zooqle favicon](https://unblocked-pw.github.io/ico/zooqle.ico){:width="16" height="16" style="display:inline-block!important;"} [Zooqle](http://zooqle.com){:rel="nofollow" data-proofer-ignore=""} | [unblocked.dk](http://zooqle.unblocked.dk){:rel="nofollow"} | - | Yes | 1,901 |
-| 9. | ![TorrentDownloads favicon](https://unblocked-pw.github.io/ico/torrentdownloads.ico){:width="16" height="16" style="display:inline-block!important;"} [TorrentDownloads](http://www.torrentdownloads.me){:rel="nofollow"} | [unblocked.dk](http://torrentdownloads.unblocked.dk){:rel="nofollow"} | - | No | 2,262 |
-| 10. | ![ETTV favicon](https://unblocked-pw.github.io/ico/ettv.ico){:width="16" height="16" style="display:inline-block!important;"} [ETTV](http://www.ettv.tv){:rel="nofollow"} | [unblocked.dk](http://ettv.unblocked.dk){:rel="nofollow"} | - | No | 7,351 |
+| 4. | ![RARBG favicon](https://unblocked-pw.github.io/ico/rarbg.ico){:width="16" height="16" style="display:inline-block!important;"} [RARBG](http://rarbg.to){:rel="nofollow"} | [unblocked.nz](http://rarbg.unblocked.nz){:rel="nofollow"} | - | Yes | 323 |
+| 5. | ![Torrentz2 favicon](https://unblocked-pw.github.io/ico/torrentz.ico){:width="16" height="16" style="display:inline-block!important;"} [Torrentz2](http://torrentz2.eu){:rel="nofollow"} | [unblocked.nz](http://torrentz2.unblocked.nz){:rel="nofollow"} | Search | No | 555 |
+| 6. | ![EZTV favicon](https://unblocked-pw.github.io/ico/eztv.ico){:width="16" height="16" style="display:inline-block!important;"} [EZTV](http://eztv.ag){:rel="nofollow"} | [unblocked.nz](http://eztv.unblocked.nz){:rel="nofollow"} | Television shows | Yes | 897 |
+| 7. | ![LimeTorrents favicon](https://unblocked-pw.github.io/ico/limetorrents.ico){:width="16" height="16" style="display:inline-block!important;"} [LimeTorrents](http://www.limetorrents.cc){:rel="nofollow"} | [unblocked.nz](http://limetorrents.unblocked.nz){:rel="nofollow"} | - | Yes | 1,017 |
+| 8. | ![Zooqle favicon](https://unblocked-pw.github.io/ico/zooqle.ico){:width="16" height="16" style="display:inline-block!important;"} [Zooqle](http://zooqle.com){:rel="nofollow" data-proofer-ignore=""} | [unblocked.nz](http://zooqle.unblocked.nz){:rel="nofollow"} | - | Yes | 1,901 |
+| 9. | ![TorrentDownloads favicon](https://unblocked-pw.github.io/ico/torrentdownloads.ico){:width="16" height="16" style="display:inline-block!important;"} [TorrentDownloads](http://www.torrentdownloads.me){:rel="nofollow"} | [unblocked.nz](http://torrentdownloads.unblocked.nz){:rel="nofollow"} | - | No | 2,262 |
+| 10. | ![ETTV favicon](https://unblocked-pw.github.io/ico/ettv.ico){:width="16" height="16" style="display:inline-block!important;"} [ETTV](http://www.ettv.tv){:rel="nofollow"} | [unblocked.nz](http://ettv.unblocked.nz){:rel="nofollow"} | - | No | 7,351 |
 
 **Note**: All BitTorrent sites in above table are *working*, as of the last update to this page.
 
@@ -39,5 +39,15 @@ The Alexa global ranking is accurate as of *February 16, 2019*.
 * [Alexa](http://www.alexa.com/siteinfo){:rel="nofollow"}
 * [Top 10 Most Popular Torrent Sites of 2019](https://torrentfreak.com/top-10-most-popular-torrent-sites-of-2019/){:rel="nofollow"}, TorrentFreak
 * [Comparison of BitTorrent sites](http://en.wikipedia.org/wiki/Comparison_of_BitTorrent_sites){:rel="nofollow"}, Wikipedia
+
+---
+
+#### See also:
+
+* [The best sites to get subtitles for movies and TV shows]({{ site.url }}/the-best-sites-to-get-subtitles-for-movies-and-tv-shows/)
+* [Access your favourite blocked BitTorrent sites]({{ site.url }}/access-your-favourite-blocked-bittorrent-sites/)
+* [A list of sites to find the best free stock photos]({{ site.url }}/a-list-of-sites-to-find-the-best-free-stock-photos/)
+
+---
 
 _**Disclaimer & legal warning**: [This site]({{ site.url }}) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._

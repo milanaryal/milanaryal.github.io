@@ -47,3 +47,4 @@ _**Disclaimer & legal warning**: [This site]({{ site.url }}) does not allow or c
 * [A list of sites to find the best free stock photos]({{ site.url }}/a-list-of-sites-to-find-the-best-free-stock-photos/)
 * [Top 10 most popular BitTorrent sites]({{ site.url }}/top-10-most-popular-bittorrent-sites/)
 * [Access your favourite blocked BitTorrent sites]({{ site.url }}/access-your-favourite-blocked-bittorrent-sites/)
+* [The best sites to get subtitles for movies and TV shows]({{ site.url }}/the-best-sites-to-get-subtitles-for-movies-and-tv-shows/)
