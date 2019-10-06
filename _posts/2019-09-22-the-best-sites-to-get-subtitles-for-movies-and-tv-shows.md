@@ -8,13 +8,15 @@ There are many sites available to get subtitles for free. But, here are the list
 
 1. [Open Subtitles](http://www.opensubtitles.org/en/){:rel="nofollow"}
 2. [Subscene](http://subscene.com/){:rel="nofollow"}
-3. [DivX Subtitles](http://www.divxsubtitles.net/){:rel="nofollow"}
-4. [YIFY Subtitles](http://www.yifysubtitles.com/){:rel="nofollow"}
-5. [TV-Subs](http://www.tv-subs.com/){:rel="nofollow"}
-6. [TVsubtitles.net](http://www.tvsubtitles.net/){:rel="nofollow"}
-7. [Addic7ed](http://www.addic7ed.com/){:rel="nofollow"}
-8. [Podnapisi.NET](http://www.podnapisi.net/){:rel="nofollow"}
-9. [iSubtitles](http://isubtitles.org/){:rel="nofollow"}
+3. [Podnapisi.NET](http://www.podnapisi.net/){:rel="nofollow"}
+4. [SubDB](http://thesubdb.com){:rel="nofollow"} - the free subtitle database
+5. [DivX Subtitles](http://www.divxsubtitles.net/){:rel="nofollow"}
+6. [YIFY Subtitles](http://www.yifysubtitles.com/){:rel="nofollow"}
+7. [TV-Subs](http://www.tv-subs.com/){:rel="nofollow"}
+8. [TVsubtitles.net](http://www.tvsubtitles.net/){:rel="nofollow"}
+9. [Addic7ed](http://www.addic7ed.com/){:rel="nofollow"}
+10. [iSubtitles](http://isubtitles.org/){:rel="nofollow"}
+11. [Napisy24.pl](http://napisy24.pl/){:rel="nofollow"} - the Polish subtitles
 
 ---
 
