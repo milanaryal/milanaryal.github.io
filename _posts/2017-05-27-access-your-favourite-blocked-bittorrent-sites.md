@@ -1,7 +1,7 @@
 ---
 title: "Access your favourite blocked BitTorrent sites"
 date: 2017-05-27T07:08:00+05:45
-last_modified_at: 2019-08-05T09:09:00+05:45
+last_modified_at: 2020-03-12T06:15:00+05:45
 excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your country or territory Internet censorship."
 ---
 
@@ -9,26 +9,28 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-* [unblocked.nz](https://unblocked.nz/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
-* [torrents.me/proxy](https://torrents.me/proxy/){:rel="nofollow"}{:rel="nofollow"}
-* [proxyportal.eu](https://proxyportal.eu/){:rel="nofollow"}
+* [unblockit.red](https://unblockit.red/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
+* [torrents.io/proxy/](https://torrents.io/proxy/){:rel="nofollow"}{:rel="nofollow"}
 * [unblockall.org](https://unblockall.org/){:rel="nofollow"}
-* [unblocker.cc](https://unblocker.cc/){:rel="nofollow"}, [unblocker.win](https://unblocker.win/){:rel="nofollow"}
+* [unblocker.cc](https://unblocker.cc/){:rel="nofollow"}
 * [unblocktorrent.com](https://unblocktorrent.com/){:rel="nofollow"}
-* [unblocked.lol](http://unblocked.lol/){:rel="nofollow"}
-* [unblocked.to](https://unblocked.to/){:rel="nofollow"}
+* [unblocked.lol](http://unblocked.lol/){:rel="nofollow"}, [Mirror(s): [unblocked.to](https://unblocked.to/){:rel="nofollow"}]
 
 #### [The Pirate Bay](https://thepiratebay.org/){:rel="nofollow"} proxy sites and mirrors
 
-* [proxybay.app](https://proxybay.app/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
-* [thepiratebay-proxylist.se](https://thepiratebay-proxylist.se/){:rel="nofollow"}
+* [proxybay.uno](https://proxybay.uno/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
+* [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="nofollow"}
 * [themirrorbay.com](http://www.themirrorbay.com/){:rel="nofollow"}
 
-#### Bonus: Free Web proxy
+#### Free Web proxy
+
+A web proxy allows you to unblock any site on the Internet and to surf anonymously
 
 * [vpnbook.com/webproxy](https://www.vpnbook.com/webproxy){:rel="nofollow"}
-* [proxysite.com](https://www.proxysite.com/){:rel="nofollow"}
 * [hide.me/en/proxy](https://hide.me/en/proxy){:rel="nofollow"}
+* [proxfree.com](https://www.proxfree.com/){:rel="nofollow"}
+* [filterbypass.me](https://www.filterbypass.me/){:rel="nofollow"}
+* [proxysite.com](https://www.proxysite.com/){:rel="nofollow"}
 * [hidester.com/proxy/](https://hidester.com/proxy/){:rel="nofollow"}
 * [whoer.net/webproxy](https://whoer.net/webproxy)
 * [proxy.toolur.com](https://proxy.toolur.com/){:rel="nofollow"}
