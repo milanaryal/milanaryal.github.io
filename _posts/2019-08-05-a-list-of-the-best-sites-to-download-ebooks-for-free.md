@@ -24,7 +24,7 @@ Library Genesis (LibGen) is a digital library established on 11 March 2008.
 *Mirror sites:*
 
 * [gen.lib.rus.ec](http://gen.lib.rus.ec/){:rel="nofollow"}
-* [booksdescr.org](http://booksdescr.org/){:rel="nofollow"}
+* [libgen.lc](http://libgen.lc/){:rel="nofollow"}
 * [libgen.me](http://libgen.me/){:rel="nofollow"}
 * [bookfi.net](http://bookfi.net/){:rel="nofollow"}
 
