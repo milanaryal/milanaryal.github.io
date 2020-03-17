@@ -38,7 +38,7 @@ Market continues to go up, you are already earning and start to feel very confid
 
 #### Euphoria
 
-'You can't miss opportunities'. Market grows, investments turn into quick and easy profits. Everyone wants to jump in: Who doesn't want to make a ton of money risking as little as possible? The market is rising, isn't it?
+"You can't miss opportunities". Market grows, investments turn into quick and easy profits. Everyone wants to jump in: Who doesn't want to make a ton of money risking as little as possible? The market is rising, isn't it?
 
 At this point, the financial risk is at it maximum, like the possible financial gain.
 
@@ -85,6 +85,10 @@ Markets are turning positive once again, you start to be faithful again and you 
 ---
 
 ### The psychology of a bear market
+
+> “Unless you can watch your stock holding decline by 50% without becoming panic-stricken, you should not be in the stock market.”
+>
+> — Warren Buffett, the greatest investor of all time
 
 Everyone has a breaking point, and it's only in times of distress that we learn where that point is. The psychology of a bear market goes something like this:
 
