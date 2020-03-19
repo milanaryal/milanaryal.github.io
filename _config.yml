@@ -45,8 +45,8 @@ nav:
     url: "/writings/"
   - title: About
     url: "/about/"
-  - title: Contact
-    url: "/contact/"
+#  - title: Contact
+#    url: "/contact/"
 
 repository: MilanAryal/milanaryal.github.io
 branch: master
