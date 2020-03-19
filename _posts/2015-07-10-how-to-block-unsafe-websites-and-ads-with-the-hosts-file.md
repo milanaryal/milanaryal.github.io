@@ -1,7 +1,7 @@
 ---
 title: "How to block unsafe websites and ads with the hosts file"
 date: 2015-07-10T04:33:10+05:45
-last_modified_at: 2015-07-10T11:10:14+05:45
+last_modified_at: 2020-03-19T07:00:00+05:45
 excerpt: "Blocking unwanted sites and ads in all of your applications globally and speed up browsing with the hosts file on your PC."
 ---
 
@@ -114,11 +114,14 @@ If you have a hosts file already, make a backup of it to another directory just 
 
 You can create your own hosts file, adding different ad servers you hunt down to your list, but that's a lot of effort. A simpler solution is to use a community created hosts file. You can find pre-made lists of ad network files by googling or get a community provided file from following listed sites:
 
-* MVPs.org Hosts file at [http://winhelp2002.mvps.org/hosts.htm](http://winhelp2002.mvps.org/hosts.htm){:rel="nofollow"}, updated monthly, or thereabouts.
-* Dan Pollock at [http://someonewhocares.org/hosts/](http://someonewhocares.org/hosts/){:rel="nofollow"}, updated regularly.
-* Malware Domain List at [http://www.malwaredomainlist.com/](http://www.malwaredomainlist.com/){:rel="nofollow"}, updated regularly.
-* Peter Lowe at [http://pgl.yoyo.org/adservers/](http://pgl.yoyo.org/adservers/){:rel="nofollow"}, updated regularly.
-* hpHosts at [http://hosts-file.net/](http://hosts-file.net/){:rel="nofollow"}, updated regularly
+* [Dan Pollock's hosts file](https://someonewhocares.org/hosts/hosts){:rel="nofollow"} => [Home page](https://someonewhocares.org/hosts/){:rel="nofollow"}
+* [hpHosts' Ad and tracking servers](https://hosts-file.net/.%5Cad_servers.txt){:rel="nofollow"} => [Home page](https://hosts-file.net/){:rel="nofollow"}
+* [MVPS HOSTS](https://winhelp2002.mvps.org/hosts.txt){:rel="nofollow"} => [Home page](https://winhelp2002.mvps.org/){:rel="nofollow"}
+* [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext){:rel="nofollow"} => [Home page](https://pgl.yoyo.org/adservers/){:rel="nofollow"}
+
+For more reviewed lists, visit:
+
+* [Host Blacklists Reviewed](https://linuxreviews.org/Comparison_of_HOST_file_blacklists#Host_Blacklists_Reviewed){:rel="nofollow"}
 
 Don't worry about a larger file making your PC slower. There is nothing those hosts can do to load anything on your PC. Even the largest files will actually make your PC feel faster.
 

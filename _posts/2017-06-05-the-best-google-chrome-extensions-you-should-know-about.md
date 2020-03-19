@@ -77,10 +77,12 @@ Split Screen made easy. This Chrome extension takes your tabs and neatly arrange
 
 Microsoft's OneNote Web Clipper extension for Chrome lets users quickly clip all or part of a web page for easy reference and editing in OneNote, synced across your devices. The web clipper is a feature-packed tool that can trim away ads and clutter, adjust fonts, highlight text, or grab select images or videos that you can then refer back to in the OneNote app.
 
+#### 15. [HabitLab](http://chrome.google.com/webstore/detail/habitlab/obghclocpdgcekcognpkblghkedcpdgd?hl=en){:rel="nofollow"}
+
+Track your online usage, so you can better spend your time online. HabitLab is a Chrome extension to help you build better habits online. HabitLab aims to help people achieve their goals online (ie, waste less time on Facebook) by trying out different interventions in their browsers and seeing what works best.
+
+{% comment %}
 #### 15. [Floating for YouTube™ Extension](http://chrome.google.com/webstore/detail/floating-for-youtube-exte/egncdnniomonjgpjbapalkckojhkfddk?hl=en){:rel="nofollow"}
 
 Floating YouTube is a nifty free Google Chrome extension to watch YouTube videos in floating pop-up window. This extension requires Floating for YouTube™ app. You can download it [here](http://chrome.google.com/webstore/detail/jjphmlaoffndcnecccgemfdaaoighkel?hl=en){:rel="nofollow"}.
-
-#### 16. [HabitLab](http://chrome.google.com/webstore/detail/habitlab/obghclocpdgcekcognpkblghkedcpdgd?hl=en){:rel="nofollow"}
-
-Track your online usage, so you can better spend your time online. HabitLab is a Chrome extension to help you build better habits online. HabitLab aims to help people achieve their goals online (ie, waste less time on Facebook) by trying out different interventions in their browsers and seeing what works best.
+{% endcomment %}
