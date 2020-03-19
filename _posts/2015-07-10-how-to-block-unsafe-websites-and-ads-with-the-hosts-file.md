@@ -114,12 +114,12 @@ If you have a hosts file already, make a backup of it to another directory just 
 
 You can create your own hosts file, adding different ad servers you hunt down to your list, but that's a lot of effort. A simpler solution is to use a community created hosts file. You can find pre-made lists of ad network files by googling or get a community provided file from following listed sites:
 
-* [Dan Pollock's hosts file](https://someonewhocares.org/hosts/hosts){:rel="nofollow"} => [Home page](https://someonewhocares.org/hosts/){:rel="nofollow"}
-* [hpHosts' Ad and tracking servers](https://hosts-file.net/.%5Cad_servers.txt){:rel="nofollow"} => [Home page](https://hosts-file.net/){:rel="nofollow"}
-* [MVPS HOSTS](https://winhelp2002.mvps.org/hosts.txt){:rel="nofollow"} => [Home page](https://winhelp2002.mvps.org/){:rel="nofollow"}
-* [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext){:rel="nofollow"} => [Home page](https://pgl.yoyo.org/adservers/){:rel="nofollow"}
+* [Dan Pollock's hosts file](https://someonewhocares.org/hosts/hosts){:rel="nofollow"} => [*Home page*](https://someonewhocares.org/hosts/){:rel="nofollow"}
+* [hpHosts' Ad and tracking servers](https://hosts-file.net/.%5Cad_servers.txt){:rel="nofollow"} => [*Home page*](https://hosts-file.net/){:rel="nofollow"}
+* [MVPS HOSTS](https://winhelp2002.mvps.org/hosts.txt){:rel="nofollow"} => [*Home page*](https://winhelp2002.mvps.org/){:rel="nofollow"}
+* [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext){:rel="nofollow"} => [*Home page*](https://pgl.yoyo.org/adservers/){:rel="nofollow"}
 
-For more reviewed lists, visit:
+For more reviewed lists, *visit*:
 
 * [Host Blacklists Reviewed](https://linuxreviews.org/Comparison_of_HOST_file_blacklists#Host_Blacklists_Reviewed){:rel="nofollow"}
 

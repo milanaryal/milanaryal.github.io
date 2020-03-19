@@ -1,6 +1,7 @@
 ---
 title: "A list of sites to find the best free stock photos"
 date: 2018-05-28T10:50:00+05:45
+last_modified_at: 2020-03-19T07:50:00+05:45
 excerpt: "A curated list of sites with high resolution stock photos you can use for different purpose."
 ---
 
@@ -67,7 +68,7 @@ These following photography resources are those who have declared their own usag
 * [Compfight.com](http://compfight.com/){:rel="nofollow"} - [&copy;](https://www.flickr.com/creativecommons/){:rel="nofollow"} An image search engine tailored to efficiently locate images for blogs, comps, inspiration, and research.
 * [Death to the Stock Photo](http://join.deathtothestockphoto.com/){:rel="nofollow"} - [&copy;](http://www.mediafire.com/file/2ifplcw682487nz/Death+to+the+Stock+Photo+-+Photograph+End+User+License+%281-2014%29+%281%29.pdf){:rel="nofollow"} Free monthly photos for all your creative needs.
 * [Designer Pics](http://www.designerspics.com){:rel="nofollow"} - [&copy;](http://www.designerspics.com/faq-and-terms/){:rel="nofollow"} Free photographs for personal and commercial by [Jeshu John](https://twitter.com/jeshujohn){:rel="nofollow"}.
-* [Foodies Feed](https://www.foodiesfeed.com/){:rel="nofollow"} - [&copy;](https://www.foodiesfeed.com/faq/){:rel="nofollow"} Free food based images.
+* [Foodies Feed](https://www.foodiesfeed.com/){:rel="nofollow"} - [&copy;](https://www.foodiesfeed.com/license/){:rel="nofollow"} Free food based images.
 * [Freerange](https://freerangestock.com/){:rel="nofollow"} - [&copy;](https://freerangestock.com/licensing.php){:rel="nofollow"} Quality stock photos for commercial and non-commercial use. For free.
 * [Good Stock Photos](https://goodstock.photos/){:rel="nofollow"} - [&copy;](https://goodstock.photos/about/){:rel="nofollow"} One free to use photo added everyday.
 * [ISO Republic](https://isorepublic.com/){:rel="nofollow"} - [&copy;](https://isorepublic.com/terms/){:rel="nofollow"} ISO Republic provides exclusive free stock photos for creatives.
@@ -77,7 +78,7 @@ These following photography resources are those who have declared their own usag
 * [PhotoStockEditor](http://photostockeditor.com){:rel="nofollow"} - [&copy;](http://photostockeditor.com/#small-dialog){:rel="nofollow"} High-resolution weekly images for Personal & Commercial use.
 * [Pic Jumbo](https://picjumbo.com/){:rel="nofollow"} - [&copy;](https://picjumbo.com/faq-and-terms/){:rel="nofollow"} Totally free photos for your commercial & personal works.
 * [Picography](https://picography.co/){:rel="nofollow"} - [&copy;](https://picography.co/terms/){:rel="nofollow"} Free hi-resolution photos. Use them however you like.
-* [Rawpixel](https://www.rawpixel.com/){:rel="nofollow"} - [&copy;](https://www.rawpixel.com/free-image-license){:rel="nofollow"} Redefining stock imagery with authentically styled and unique stock photos (Subscribe required).
+* [Rawpixel](https://www.rawpixel.com/){:rel="nofollow"} - [&copy;](https://www.rawpixel.com/services/licenses){:rel="nofollow"} Redefining stock imagery with authentically styled and unique stock photos (Subscribe required).
 * [Shutteroo](http://shutteroo.com/){:rel="nofollow"} - [&copy;](http://shutteroo.com/about/){:rel="nofollow"} Free high-resolution travel images.
 * [Split Shire](https://www.splitshire.com/){:rel="nofollow"} - [&copy;](https://www.splitshire.com/about/){:rel="nofollow"} Real photos for commercial use with no copyright restrictions and a real look.
 * [Startup Stock Photos](http://startupstockphotos.com/){:rel="nofollow"} - [&copy;](http://startupstockphotos.com/terms-of-use){:rel="nofollow"} Startup based photography.
