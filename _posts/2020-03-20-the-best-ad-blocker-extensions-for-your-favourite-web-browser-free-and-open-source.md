@@ -14,3 +14,7 @@ If are annoyed with too much ads, popups, and malware while vising web pages or 
 | [Adblock Fast](https://adblockfast.com/){:rel="nofollow"} | Chromium, Android, iOS | Fast |
 
 *Popular Chromium based browser that support the above ad-blocker extensions are Chrome, Safari, Edge, Opera, Brave, Vivaldi, Yandex, ...et cetera.*
+
+---
+
+Check out [FilterLists](http://filterlists.com/){:rel="nofollow"} for a comprehensive list of filter lists from all over the web (click the Add link of a filter list to import that list into your favourite Ad-blocker).
