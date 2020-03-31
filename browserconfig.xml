@@ -1,9 +1,5 @@
 ---
-# Custom tiles for IE and/or Windows Start Screen
-#
-# References:
-# https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx
-# http://www.buildmypinnedsite.com
+# Custom tiles for Windows Start Screen
 
 layout: null
 sitemap: false
@@ -11,22 +7,10 @@ sitemap: false
 
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
-  <msapplication>
-    <tile>
-      <square70x70logo src="/ms-touch-icon-70x70.png"/>
-      <square150x150logo src="/ms-touch-icon-150x150.png"/>
-      <wide310x150logo src="/ms-touch-icon-310x310.png"/>
-      <square310x310logo src="/ms-touch-icon-310x150.png"/>
-      <TileColor>{{ site.theme_color }}</TileColor>
-    </tile>
-    <notification>
-      <polling-uri src="http://notifications.buildmypinnedsite.com/?feed={{site.url}}/feed.xml&amp;id=1"/>
-      <polling-uri2 src="http://notifications.buildmypinnedsite.com/?feed={{site.url}}/feed.xml&amp;id=2"/>
-      <polling-uri3 src="http://notifications.buildmypinnedsite.com/?feed={{site.url}}/feed.xml&amp;id=3"/>
-      <polling-uri4 src="http://notifications.buildmypinnedsite.com/?feed={{site.url}}/feed.xml&amp;id=4"/>
-      <polling-uri5 src="http://notifications.buildmypinnedsite.com/?feed={{site.url}}/feed.xml&amp;id=5"/>
-      <frequency>30</frequency>
-      <cycle>1</cycle>
-    </notification>
-  </msapplication>
+    <msapplication>
+        <tile>
+            <square150x150logo src="/mstile-150x150.png"/>
+            <TileColor>#000000</TileColor>
+        </tile>
+    </msapplication>
 </browserconfig>

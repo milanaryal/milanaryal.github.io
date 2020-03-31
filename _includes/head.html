@@ -5,7 +5,7 @@
   <!-- Basic page needs -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>{% if page_title %}{{ page_title }} &mdash; {{ site_title }}{% else %}{{ site_title }}{% endif %}</title>
+  <title>{% if page_title %}{{ page_title }} &ndash; {{ site_title }}{% else %}{{ site_title }}{% endif %}</title>
   <meta name="title" content="{% if page_title %}{{ page_title }}{% else %}{{ site_title }}{% endif %}">
   <meta name="description" content="{{ page_description }}">
 
@@ -146,25 +146,15 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ build_version }}">
 
-  <!-- Favicon -->
-  <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ build_version }}">
-
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="theme-color" content="{% if site.theme_color %}{{ site.theme_color }}{% else %}aliceblue{% endif %}">
-  <link rel="manifest" href="/manifest.json">
-
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="{{ site_title }}">
-  <link rel="mask-icon" sizes="any" href="/favicon.svg" color="{% if site.theme_color %}{{ site.theme_color }}{% else %}aliceblue{% endif %}">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
-  <!-- Pin to start screen for IE on Windows -->
-  <meta name="application-name" content="{{ site_title }}">
+  <!-- Favicon & startup configuration -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ build_version }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ build_version }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ build_version }}">
+  <link rel="manifest" href="/site.webmanifest?v={{ build_version }}">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ build_version }}" color="#333333">
+  <link rel="shortcut icon" href="/favicon.ico?v={{ build_version }}">
+  <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
 
 </head>
