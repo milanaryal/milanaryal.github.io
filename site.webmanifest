@@ -21,6 +21,6 @@
     ],
     "theme_color": "#000000",
     "background_color": "#000000",
-    "start_url": "{{ site.title }}/?source=android_homescreen",
+    "start_url": "{{ site.url }}/?source=android_homescreen",
     "display": "standalone"
 }
