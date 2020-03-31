@@ -86,14 +86,14 @@ Join me on the following networks and/or websites:
         <svg><use xlink:href="/assets/icons/icons.min.svg#icon-medium"></use></svg>
       </span><br><span class="label">Medium</span>
     </a>
-  </li>
+  </li>-->
 </ul>
 
 <p class="pgp-key">
   <a href="//keybase.io/milanaryal/key.asc">
     PGP: <code>310B 1544 4945 F1A3 108E  B0A7 B51C F15F F0E9 5927</code>
   </a>
-</p>-->
+</p>
 
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.
 
