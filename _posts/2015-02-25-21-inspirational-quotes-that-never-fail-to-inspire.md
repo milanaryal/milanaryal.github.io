@@ -1,4 +1,5 @@
 ---
+redirect_from: "/inspirational-quotes/"
 title: "21 inspirational quotes that never fail to inspire"
 date: 2015-02-25T12:58:08+05:45
 excerpt: "A compilation of 21 inspirational quotes by some famous people that never fail to inspire."
