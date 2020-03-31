@@ -101,7 +101,7 @@ excerpt: "The best times to post on social media, including Facebook, Twitter, G
 
 <p><a href="https://www.socialbro.com/" rel="nofollow" target="_blank">SocialBro</a> to see when your followers post and how far their influence travels. Find your strongest audience and grow your brand.</p>
 
-<p><a href="https://developers.facebook.com/docs/insights/" rel="nofollow" target="_blank">Insights</a> Facebook has their own useful analytics tool see statistics on any of your brand pages.</p>
+<p><a href="https://developers.facebook.com/docs/platforminsights/page" rel="nofollow" target="_blank">Insights</a> Facebook has their own useful analytics tool see statistics on any of your brand pages.</p>
 
 <p><a href="http://simplymeasured.com/freebies/instagram-analytics" rel="nofollow" target="_blank">SimplyMeasured</a> a free Instagram analytics tool.</p>
 

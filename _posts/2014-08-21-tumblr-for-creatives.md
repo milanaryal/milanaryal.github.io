@@ -1,5 +1,5 @@
 ---
-title: "Tumblr for Creatives"
+title: "Tumblr for creatives"
 date: 2014-08-21T22:10:00+05:45
 excerpt: "Tumblr is only getting more popular so get started as soon as possible."
 ---

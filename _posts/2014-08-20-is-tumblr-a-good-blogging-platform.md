@@ -1,5 +1,5 @@
 ---
-title: "Is tumblr a good blogging platform?"
+title: "Is Tumblr a good blogging platform?"
 date: 2014-08-20T23:16:00+05:45
 excerpt: "Tumblr is an easier and quick way to look at the personal blog and make interaction easier."
 ---
