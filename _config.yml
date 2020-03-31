@@ -3,17 +3,17 @@ description: "Livin' on the edge of web standards."
 url: https://milanaryal.com.np
 
 logo:
-  path: "/assets/img/m-icon-blue-on-white.png"
+  path: "/assets/img/m-icon-black-on-white.png"
   width: 300
   height: 300
 
 image: "/assets/img/writings.jpg"
-theme_color: "#2196f3"
+theme_color: "#000000"
 
 author:
   name: Milan Aryal
   uri: https://twitter.com/MilanAryal
-  avatar: "/assets/img/m-icon-white-on-blue.png"
+  avatar: "/assets/img/m-icon-white-on-black.png"
   bio: "I'm just a regular person who believes life is simple, and I like a simple life."
   facebook: considermilan
   twitter: MilanAryal
