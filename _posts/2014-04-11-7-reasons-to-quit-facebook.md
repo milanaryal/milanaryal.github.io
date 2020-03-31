@@ -1,5 +1,5 @@
 ---
-title: "7 reasons to quit facebook (in 2014)"
+title: "7 reasons to quit Facebook (in 2014)"
 date: 2014-04-11T23:30:00+05:45
 ---
 
