@@ -89,11 +89,11 @@
 
   > h3, > h4 {
     a {
-      border-bottom: 2px;
+      border-bottom: 2px dotted #777;
 
       &:hover,
       &:focus {
-        border-bottom: 2px;
+        border-bottom: 2px solid #999;
       }
     }
   }
@@ -102,7 +102,7 @@
     a {
       color: rgba(0,0,0,.6);
       text-decoration: none;
-      border-bottom: 1px solid rgba(0,0,0,.5);
+      border-bottom: 1px dotted rgba(0,0,0,.5);
 
       &:hover,
       &:focus {

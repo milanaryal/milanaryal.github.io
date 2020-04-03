@@ -8228,17 +8228,17 @@ ul.hero-social a .label {
 }
 
 .markdownBody > h3 a, .markdownBody > h4 a {
-  border-bottom: 2px;
+  border-bottom: 2px dotted #777;
 }
 
 .markdownBody > h3 a:hover, .markdownBody > h3 a:focus, .markdownBody > h4 a:hover, .markdownBody > h4 a:focus {
-  border-bottom: 2px;
+  border-bottom: 2px solid #999;
 }
 
 .markdownBody > figure figcaption a {
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
 }
 
 .markdownBody > figure figcaption a:hover, .markdownBody > figure figcaption a:focus {
