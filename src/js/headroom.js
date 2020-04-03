@@ -1,6 +1,6 @@
 /*!
- * headroom.js v0.10.3 - Give your page some headroom. Hide your header until you need it
- * Copyright (c) 2019 Nick Williams - http://wicky.nillia.ms/headroom.js
+ * headroom.js v0.11.0 - Give your page some headroom. Hide your header until you need it
+ * Copyright (c) 2020 Nick Williams - http://wicky.nillia.ms/headroom.js
  * License: MIT
  */
 
@@ -178,7 +178,9 @@
     var eventOptions = isPassiveSupported
       ? { passive: true, capture: false }
       : false;
+
     element.addEventListener("scroll", handleScroll, eventOptions);
+    update();
 
     return {
       destroy: function() {
@@ -355,15 +357,23 @@
     },
 
     addClass: function(className) {
-      this.elem.classList.add(this.classes[className]);
+      this.elem.classList.add.apply(
+        this.elem.classList,
+        this.classes[className].split(" ")
+      );
     },
 
     removeClass: function(className) {
-      this.elem.classList.remove(this.classes[className]);
+      this.elem.classList.remove.apply(
+        this.elem.classList,
+        this.classes[className].split(" ")
+      );
     },
 
     hasClass: function(className) {
-      return this.elem.classList.contains(this.classes[className]);
+      return this.classes[className].split(" ").every(function(cls) {
+        return this.classList.contains(cls);
+      }, this.elem);
     },
 
     update: function(details) {

@@ -68,24 +68,20 @@
   > p,
   > blockquote,
   > ul, > ol, > dl,
-  > .table-responsive {
-    a {
-      text-decoration: underline;
-      -webkit-tap-highlight-color: rgba(0,0,0,.3);
-    }
-  }
-
+  > .table-responsive,
   > figure figcaption,
   > .footnotes {
     a {
-      // color: inherit; // parent color for link
-      text-decoration: underline;
+      color: rgba(0,0,0,.7);
+      text-decoration: none;
+      border-bottom: 1px dotted #777;
       -webkit-tap-highlight-color: rgba(0,0,0,.3);
-
       &:hover,
       &:focus {
         // color: inherit;
-        text-decoration: underline;
+        color: rgba(0,0,0,.9);
+        text-decoration: none;
+        border-bottom: 1px solid #999;
       }
     }
   }

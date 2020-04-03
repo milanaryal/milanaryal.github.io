@@ -1,30 +1,30 @@
 /*!
  * Milan Aryal Gulpfile (https://milanaryal.com.np)
- * Copyright 2017 Milan Aryal
+ * Copyright 2020 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
 
 'use strict';
 
 // Load plugins
-var gulp = require('gulp');
-var del = require('del');
-var watch = require('gulp-watch');
-var flatten = require('gulp-flatten');
-var rename = require('gulp-rename');
-var header = require('gulp-header');
-var pkg = require('./package.json');
-var eslint = require('gulp-eslint');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var scssLint = require('gulp-scss-lint');
-var scss = require('gulp-sass');
-var prefix = require('gulp-autoprefixer');
-var minify = require('gulp-cssnano');
-var svgstore = require('gulp-svgstore');
-var svgmin = require('gulp-svgmin');
-var browserSync = require('browser-sync');
-var cp = require('child_process');
+const { src, dest, series, parallel, watch } = require('gulp');
+const del = require('del');
+const flatten = require('gulp-flatten');
+const rename = require('gulp-rename');
+const header = require('gulp-header');
+const pkg = require('./package.json');
+const eslint = require('gulp-eslint');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const scssLint = require('gulp-scss-lint');
+const scss = require('gulp-sass');
+scss.compiler = require('node-sass');
+const prefix = require('gulp-autoprefixer');
+const minify = require('gulp-cssnano');
+const svgstore = require('gulp-svgstore');
+const svgmin = require('gulp-svgmin');
+const browserSync = require('browser-sync').create();
+const cp = require('child_process');
 
 // Browsers compability
 var COMPATIBILITY = [
@@ -66,9 +66,6 @@ var JEKYLL_SRC = [
   'writings/**'
 ];
 
-// Make npm command work on Windows platform
-var npm = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
-
 // Banner template for files header
 var banner = ['/*!',
   ' * <%= pkg.title %> (<%= pkg.url %>)',
@@ -79,98 +76,93 @@ var banner = ['/*!',
 ].join('\n');
 
 // Remove pre-existing content from the folders
-gulp.task('clean', function () {
+function clean () {
   return del(['assets/js', 'assets/css', 'assets/fonts', 'assets/icons']);
-});
+}
 
-gulp.task('clean:scripts', function () {
+function cleanScripts () {
   return del(['assets/js']);
-});
+}
 
-gulp.task('clean:styles', function () {
+function cleanStyles () {
   return del(['assets/css']);
-});
+}
 
-gulp.task('clean:fonts', function () {
+function cleanFonts () {
   return del(['assets/fonts']);
-});
+}
 
-gulp.task('clean:icons', function () {
+function cleanIcons () {
   return del(['assets/icons']);
-});
+}
 
 // Test scripts
-gulp.task('test:scripts', function () {
-  return gulp.src(['src/js/**/*.js', '!src/js/**/jquery.js', '!src/js/bootstrap/**'])
+function testScripts () {
+  return src(['src/js/**/*.js', '!src/js/**/jquery.js', '!src/js/bootstrap/**'])
     .pipe(eslint('src/js/.eslintrc.json'))
     .pipe(eslint.format());
-});
+}
 
 // Test styles
-gulp.task('test:styles', function () {
-  return gulp.src(['src/scss/**/*.scss', '!src/scss/bootstrap/**', '!src/scss/font-awesome/**'])
+function testStyles () {
+  return src(['src/scss/**/*.scss', '!src/scss/bootstrap/**', '!src/scss/font-awesome/**'])
     .pipe(scssLint({ 'config': 'src/scss/.scss-lint.yml' }));
-});
+}
 
 // Concatenate and minify scripts
-gulp.task('build:scripts', function () {
-  return gulp.src(SCRIPTS_SRC)
+function buildScripts () {
+  return src(SCRIPTS_SRC)
     .pipe(concat('scripts.js'))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(gulp.dest('assets/js'))
+    .pipe(dest('assets/js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
-    .pipe(gulp.dest('assets/js'));
-});
+    .pipe(dest('assets/js'));
+}
 
 // Process and minify styles
-gulp.task('build:styles', function () {
-  return gulp.src('src/scss/styles.scss')
+function buildStyles () {
+  return src('src/scss/styles.scss')
     .pipe(header(banner, { pkg : pkg }))
     .pipe(scss({ precision: 6, outputStyle: 'expanded' }))
     .pipe(prefix({ overrideBrowserslist: COMPATIBILITY }))
-    .pipe(gulp.dest('assets/css'))
+    .pipe(dest('assets/css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minify({ discardComments: { removeAll: true } }))
-    .pipe(gulp.dest('assets/css'));
-});
+    .pipe(dest('assets/css'));
+}
 
-// Process and minify icons
-gulp.task('build:icons', function () {
-  return gulp.src('src/icons/**/*.svg', { base: 'src/icons' })
+// Process and minify SVG icons
+function buildIcons () {
+  return src('src/icons/**/*.svg', { base: 'src/icons' })
     .pipe(svgmin())
     .pipe(rename({prefix: 'icon-'}))
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('assets/icons'));
-});
+    .pipe(dest('assets/icons'));
+}
 
 // Copy fonts
-gulp.task('copy:fonts', function () {
-  return gulp.src('src/fonts/**')
+function copyFonts () {
+  return src('src/fonts/**')
     .pipe(flatten())
-    .pipe(gulp.dest('assets/fonts'));
-});
-
-// Default task
-gulp.task('default', ['clean'], function () {
-  gulp.start('build:scripts', 'build:styles', 'build:icons', 'copy:fonts');
-});
+    .pipe(dest('assets/fonts'));
+}
 
 // Remove pre-existing Jekyll build site content
-gulp.task('clean:jekyll', function () {
+function cleanJekyll () {
   return del(['./_site']);
-});
+}
 
 // Build the Jekyll site
-gulp.task('build:jekyll', ['default'], function (done) {
+function buildJekyll (done) {
   browserSync.notify('Compiling Jekyll, please wait!');
-  return cp.spawn(npm, ['run', 'jekyll-build'], { stdio: 'inherit' })
+  return cp.spawn('npm', ['run', 'jekyll-build'], { stdio: 'inherit' })
     .on('close', done);
-});
+}
 
 // Wait for Jekyll build, then launch the server
-gulp.task('browser-sync', ['clean:jekyll', 'build:jekyll'], function () {
+function syncJekyll () {
   browserSync({
     port: 4000,
     ui: {
@@ -180,44 +172,49 @@ gulp.task('browser-sync', ['clean:jekyll', 'build:jekyll'], function () {
       baseDir: './_site'
     },
   });
-});
+}
 
-// Rebuild scripts and do page reload
-gulp.task('rebuild:scripts', function () {
-  return gulp.src(SCRIPTS_SRC)
+// Rebuild scripts on Jekyll site and do page reload
+function reBuildScripts () {
+  return src(SCRIPTS_SRC)
     .pipe(concat('scripts.js'))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(gulp.dest('./_site/assets/js'))
+    .pipe(dest('./_site/assets/js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
-    .pipe(gulp.dest('./_site/assets/js'))
+    .pipe(dest('./_site/assets/js'))
     .pipe(browserSync.reload({ stream: true }));
-});
+}
 
-// Rebuild styles and do page reload
-gulp.task('rebuild:styles', function () {
-  return gulp.src('src/scss/styles.scss')
+// Rebuild styles on Jekyll site and do page reload
+function reBuildStyles () {
+  return src('src/scss/styles.scss')
     .pipe(header(banner, { pkg : pkg }))
     .pipe(scss({ precision: 6, outputStyle: 'expanded' }))
     .pipe(prefix({ overrideBrowserslist: COMPATIBILITY }))
-    .pipe(gulp.dest('./_site/assets/css'))
+    .pipe(dest('./_site/assets/css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minify({ discardComments: { removeAll: true } }))
-    .pipe(gulp.dest('./_site/assets/css'))
+    .pipe(dest('./_site/assets/css'))
     .pipe(browserSync.reload({ stream: true }));
-});
-
-// Rebuild Jekyll and do page reload
-gulp.task('rebuild:jekyll', ['build:jekyll'], function () {
-  browserSync.reload();
-});
+}
 
 // Watch changes
-gulp.task('watch', ['browser-sync'], function () {
+function watchFiles () {
   // Watch .js files
-  gulp.watch('src/js/**/*.js', ['rebuild:scripts']);
+  watch('src/js/**/*.js', series(cleanStyles, reBuildStyles));
   // Watch .scss files
-  gulp.watch('src/scss/**/*.scss', ['rebuild:styles']);
-  // Watch Jekyll uncompiled files
-  gulp.watch(JEKYLL_SRC, ['rebuild:jekyll']);
-});
+  watch('src/scss/**/*.scss', series(cleanScripts, reBuildScripts));
+  // Watch Jekyll uncompiled files and do page reload
+  watch(JEKYLL_SRC, series(cleanJekyll, buildJekyll)).on('change', browserSync.reload);
+}
+
+// Export tasks
+var build = series(clean, parallel(buildScripts, buildStyles, buildIcons, copyFonts));
+var buildJekyll = series (cleanJekyll, buildJekyll);
+var serveJekyll = series(buildJekyll, syncJekyll);
+
+exports.default = build;
+exports.buildJekyll = series(build, buildJekyll);
+exports.serveJekyll = serveJekyll;
+exports.watch = series(serveJekyll, watchFiles);
