@@ -58,14 +58,14 @@
 
 .archiveTitle {
   a {
-    border-bottom: .05em;
+    padding-bottom: .05em;
     color: rgba(0,0,0,.8);
     text-decoration: none;
     border-bottom: 1px dotted rgba(0,0,0,.3);
 
     &:hover,
     &:focus {
-      border-bottom: .05em;
+      padding-bottom: .05em;
       color: rgba(0,0,0,.9);
       text-decoration: none;
       border-bottom: 1px solid rgba(0,0,0,.7);

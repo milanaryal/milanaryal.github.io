@@ -7628,14 +7628,14 @@ ul.hero-social a .label {
 }
 
 .archiveTitle a {
-  border-bottom: .05em;
+  padding-bottom: .05em;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
 }
 
 .archiveTitle a:hover, .archiveTitle a:focus {
-  border-bottom: .05em;
+  padding-bottom: .05em;
   color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
@@ -8227,6 +8227,26 @@ ul.hero-social a .label {
   border-bottom: 1px solid #999;
 }
 
+.markdownBody > h3 a, .markdownBody > h4 a {
+  border-bottom: 2px;
+}
+
+.markdownBody > h3 a:hover, .markdownBody > h3 a:focus, .markdownBody > h4 a:hover, .markdownBody > h4 a:focus {
+  border-bottom: 2px;
+}
+
+.markdownBody > figure figcaption a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.markdownBody > figure figcaption a:hover, .markdownBody > figure figcaption a:focus {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
 .markdownBody a:not([href]) {
   color: inherit;
   text-decoration: none !important;
@@ -8492,6 +8512,7 @@ ul.hero-social a .label {
 .markdownBody .reversefootnote {
   text-decoration: none !important;
   background-image: none !important;
+  border-bottom: none !important;
 }
 
 .markdownBody .footnote::before {
@@ -8974,6 +8995,7 @@ kbd {
   color: inherit !important;
   text-decoration: none !important;
   background-image: none !important;
+  border-bottom: none !important;
   opacity: 0;
 }
 
@@ -9041,6 +9063,7 @@ kbd {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none !important;
   background-image: none !important;
+  border-bottom: none !important;
 }
 
 .social-links a:hover, .social-links a:focus {
@@ -9061,6 +9084,7 @@ kbd {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none !important;
   background-image: none !important;
+  border-bottom: none !important;
 }
 
 .pgp-key a:hover, .pgp-key a:focus {
