@@ -21,19 +21,10 @@ const scss = require('gulp-sass');
 scss.compiler = require('node-sass');
 const prefix = require('gulp-autoprefixer');
 const minify = require('gulp-cssnano');
-const svgstore = require('gulp-svgstore');
+const svgSprite = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
 const browserSync = require('browser-sync').create();
 const cp = require('child_process');
-
-// Browsers compability
-var COMPATIBILITY = [
-  '>= 1%',
-  'last 1 major version',
-  'not dead',
-  'Explorer 11',
-  'not ExplorerMobile <= 11'
-];
 
 // Scripts source paths
 var SCRIPTS_SRC = [
@@ -72,12 +63,11 @@ var banner = ['/*!',
   ' * Copyright ' + new Date().getFullYear() + ' <%= pkg.author %>',
   ' * Licensed under <%= pkg.license %> (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)',
   ' */',
-  '\n'
-].join('\n');
+  ''].join('\n');
 
 // Remove pre-existing content from the folders
 function clean () {
-  return del(['assets/js', 'assets/css', 'assets/fonts', 'assets/icons']);
+  return del(['assets/js', 'assets/css', 'assets/fonts', 'assets/svg']);
 }
 
 function cleanScripts () {
@@ -93,20 +83,20 @@ function cleanFonts () {
 }
 
 function cleanIcons () {
-  return del(['assets/icons']);
+  return del(['assets/svg']);
 }
 
 // Test scripts
 function testScripts () {
   return src(['src/js/**/*.js', '!src/js/**/jquery.js', '!src/js/bootstrap/**'])
-    .pipe(eslint('src/js/.eslintrc.json'))
+    .pipe(eslint('.eslintrc.json'))
     .pipe(eslint.format());
 }
 
 // Test styles
 function testStyles () {
   return src(['src/scss/**/*.scss', '!src/scss/bootstrap/**', '!src/scss/font-awesome/**'])
-    .pipe(scssLint({ 'config': 'src/scss/.scss-lint.yml' }));
+    .pipe(scssLint({ 'config': '.scss-lint.yml' }));
 }
 
 // Concatenate and minify scripts
@@ -117,6 +107,7 @@ function buildScripts () {
     .pipe(dest('assets/js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
+    .pipe(header(banner, { pkg : pkg }))
     .pipe(dest('assets/js'));
 }
 
@@ -125,21 +116,21 @@ function buildStyles () {
   return src('src/scss/styles.scss')
     .pipe(header(banner, { pkg : pkg }))
     .pipe(scss({ precision: 6, outputStyle: 'expanded' }))
-    .pipe(prefix({ overrideBrowserslist: COMPATIBILITY }))
+    .pipe(prefix())
     .pipe(dest('assets/css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minify({ discardComments: { removeAll: true } }))
+    .pipe(header(banner, { pkg : pkg }))
     .pipe(dest('assets/css'));
 }
 
 // Process and minify SVG icons
 function buildIcons () {
-  return src('src/icons/**/*.svg', { base: 'src/icons' })
+  return src('src/svg/**/*.svg', { base: 'src/sprite' })
     .pipe(svgmin())
     .pipe(rename({prefix: 'icon-'}))
-    .pipe(svgstore({ inlineSvg: true }))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(dest('assets/icons'));
+    .pipe(svgSprite({ inlineSvg: true }))
+    .pipe(dest('assets/svg'));
 }
 
 // Copy fonts
@@ -182,6 +173,7 @@ function reBuildScripts () {
     .pipe(dest('./_site/assets/js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
+    .pipe(header(banner, { pkg : pkg }))
     .pipe(dest('./_site/assets/js'))
     .pipe(browserSync.reload({ stream: true }));
 }
@@ -191,10 +183,11 @@ function reBuildStyles () {
   return src('src/scss/styles.scss')
     .pipe(header(banner, { pkg : pkg }))
     .pipe(scss({ precision: 6, outputStyle: 'expanded' }))
-    .pipe(prefix({ overrideBrowserslist: COMPATIBILITY }))
+    .pipe(prefix())
     .pipe(dest('./_site/assets/css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minify({ discardComments: { removeAll: true } }))
+    .pipe(header(banner, { pkg : pkg }))
     .pipe(dest('./_site/assets/css'))
     .pipe(browserSync.reload({ stream: true }));
 }

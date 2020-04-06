@@ -24,7 +24,7 @@ linters:
     enabled: true
     convention: zero # or `none`
     exclude:
-      - bootstrap/**/*.scss
+      - src/scss/bootstrap/**/*.scss
 
   ChainedClasses:
     enabled: false
@@ -38,9 +38,9 @@ linters:
   Comment:
     enabled: true
     exclude:
-      - bootstrap/_normalize.scss
-      - _bootstrap.scss
-      - styles.scss
+      - src/scss/bootstrap/_normalize.scss
+      - src/scss/_bootstrap.scss
+      - src/scss/styles.scss
     style: silent
 
   DebugStatement:
@@ -105,7 +105,7 @@ linters:
     enabled: true
     style: exclude_zero # or 'include_zero'
     exclude:
-      - bootstrap/**/*.scss
+      - src/scss/bootstrap/**/*.scss
 
   MergeableSelector:
     enabled: false
@@ -135,7 +135,7 @@ linters:
     min_properties: 2
     separate_groups: false
     exclude:
-      - bootstrap/**/*.scss
+      - src/scss/bootstrap/**/*.scss
     order: recess
 
 
@@ -250,7 +250,7 @@ linters:
     additional_identifiers: []
     excluded_identifiers: []
     exclude:
-      - bootstrap/**/*.scss
+      - src/scss/bootstrap/**/*.scss
 
   ZeroUnit:
     enabled: true

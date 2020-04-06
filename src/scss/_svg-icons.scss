@@ -1,24 +1,16 @@
 //
 // SVG icons better alignment
-// (https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4)
+// https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4
+// https://fontawesome.com/how-to-use/on-the-web/advanced/svg-symbols#issues
 //
 
-.svg-icon {
-  position: relative;
-  display: inline-flex;
-  align-self: center;
+.icon {
+  display: inline-block;
   width: 1em;
   height: 1em;
-  line-height: 1;
+//  overflow: visible; /* svg overflow are hidden as normalize.css */
+  font-size: inherit;
+  color: inherit;
+  vertical-align: -.125em;
   fill: currentColor;
-}
-
-.svg-icon svg {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-icon.svg-baseline svg {
-  position: absolute;
-  bottom: -.125em;
 }

@@ -4,14 +4,14 @@
     <ul class="siteFooter-social">
       <li>
         <a href="/feed.xml">
-          <svg class="icon-feed" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-feed"></use></svg>
+          <svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-rss"></use></svg>
           <span class="label">Feed</span>
         </a>
       </li>
       {% if site.author.twitter %}
       <li>
         <a rel="me" href="//twitter.com/{{ site.author.twitter }}">
-          <svg class="icon-twitter" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg>
+          <svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-twitter"></use></svg>
           <span class="label">Twitter</span>
         </a>
       </li>
@@ -19,7 +19,7 @@
       {% if site.author.facebook %}
       <li>
         <a rel="me" href="//facebook.com/{{ site.author.facebook }}">
-          <svg class="icon-facebook" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-facebook-f"></use></svg>
+          <svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-facebook-f"></use></svg>
           <span class="label">Facebook</span>
         </a>
       </li>
@@ -27,7 +27,7 @@
       {% if site.author.instagram %}
       <li>
         <a rel="me" href="//instagram.com/{{ site.author.instagram }}">
-          <svg class="icon-instagram" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg>
+          <svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-instagram"></use></svg>
           <span class="label">Instagram</span>
         </a>
       </li>
@@ -35,7 +35,7 @@
       {% if site.author.github %}
       <li>
         <a rel="me" href="//github.com/{{ site.author.github }}">
-          <svg class="icon-github" aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
+          <svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-github"></use></svg>
           <span class="label">GitHub</span>
         </a>
       </li>
@@ -53,6 +53,6 @@
     {%- if site_title -%}
       {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
     {%- endif -%}
-    <p class="siteFooter-legal">&copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> {% if site.author %}<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ site_author }}</span></span>{% else %}{{ site_title }}{% endif %}. Made with <strong style="color:#f42;">&hearts;</strong> in Nepal.</p>
+    <p class="siteFooter-legal"><svg class="icon icon-copyright" aria-label="copyright" role="img"><use xlink:href="{{ site.icon_path }}#icon-copyright"></use></svg>&nbsp;<span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span>&nbsp;{% if site.author %}<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ site_author }}</span></span>{% else %}{{ site_title }}{% endif %}<span>.</span>&nbsp;<svg class="icon icon-pencil-alt" aria-label="made" role="img"><use xlink:href="{{ site.icon_path }}#icon-pencil-alt"></use></svg>&nbsp;<span>with</span>&nbsp;<svg class="icon icon-heart" aria-label="love" role="img"><use xlink:href="{{ site.icon_path }}#icon-heart"></use></svg>&nbsp;<span>&amp;</span>&nbsp;<svg class="icon icon-coffee" aria-label="coffee" role="img"><use xlink:href="{{ site.icon_path }}#icon-coffee"></use></svg>&nbsp;<span>in</span>&nbsp;<span>Nepal</span><span>.</span></p>
   </div><!-- /.container -->
 </footer>

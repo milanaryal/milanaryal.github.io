@@ -7,6 +7,8 @@ logo:
   width: 300
   height: 300
 
+icon_path: "/assets/svg/sprite.svg"
+
 image: "/assets/img/writings.jpg"
 theme_color: "#000000"
 

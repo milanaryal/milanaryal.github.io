@@ -12,7 +12,7 @@ robots: "noindex, follow"
   {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
 
-<h3 class="searchPage-heading"><span class="svg-icon icon-search svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-search"></use></svg></span> Search {{ site_title }} writings</h3>
+<h3 class="searchPage-heading"><svg class="icon icon-search" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-search"></use></svg> Search {{ site_title }} writings</h3>
 
 <div class="searchPage-body" id="cse-search">
   <!-- Google CSE search box begins  -->
@@ -22,7 +22,7 @@ robots: "noindex, follow"
         <div class="input-group input-group-lg">
           <input type="text" class="form-control" id="q" name="q" placeholder="Search {{ site_title }}" aria-label="Search {{ site_title }}" tabindex="1" autocapitalize="off" autofocus autocomplete="off" spellcheck="false">
           <span class="input-group-append">
-            <button type="submit" class="btn btn-outline-secondary" tabindex="2"><span class="svg-icon icon-search svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-search"></use></svg></span></button>
+            <button type="submit" class="btn btn-outline-secondary" tabindex="2"><svg class="icon icon-search" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-search"></use></svg></button>
           </span><!-- /.btn-group -->
         </div><!-- /.input-group -->
       </div><!-- /.col-xs-12 -->

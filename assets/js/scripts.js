@@ -3,7 +3,6 @@
  * Copyright 2020 Milan Aryal
  * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
  */
-
 /*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
@@ -16000,7 +15999,7 @@ return Popper;
     $('.markdownBody a[role="button"]').addClass('btn btn-outline-default');
 
     // footnotes header
-    var footnotesAnchor = '<a class="js-headerLink" href="#footnotes" aria-hidden="true"><span class="svg-icon icon-link"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-link"></use></svg></span></a>';
+    var footnotesAnchor = '<a class="js-headerLink" href="#footnotes" aria-hidden="true"><svg class="icon icon-link"><use xlink:href="/assets/svg/sprite.svg#icon-link"></use></svg></a>';
 
     $('.footnotes').prepend('<hr><h4 id="footnotes">' + footnotesAnchor + 'Footnotes</h4>');
 
@@ -16017,7 +16016,7 @@ return Popper;
       var header      = $(this),
           headerID    = header.attr('id'),
           anchorClass = 'js-headerLink',
-          anchorIcon  = '<span class="svg-icon icon-link"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-link"></use></svg></span>';
+          anchorIcon  = '<svg class="icon icon-link"><use xlink:href="/assets/svg/sprite.svg#icon-link"></use></svg>';
 
       if (headerID) {
         header.prepend($('<a />').addClass(anchorClass).attr({ 'href': '#' + headerID, 'aria-hidden': 'true' }).html(anchorIcon));
@@ -16045,7 +16044,7 @@ return Popper;
      * ------------------------------------------------------------------------
      */
 
-    $('.elevatorWrapper').append('<div class="elevator" role="button"><span class="svg-icon icon-chevron-up svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-chevron-up"></use></svg></span></div>');
+    $('.elevatorWrapper').append('<div class="elevator" aria-hidden="true"><svg class="icon icon-chevron-up"><use xlink:href="/assets/svg/sprite.svg#icon-chevron-up"></use></svg></span></div>');
 
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,

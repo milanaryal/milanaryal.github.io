@@ -51,9 +51,9 @@ permalink: /
 
       <footer>
         <ul class="hero-social">
-          {% if site.author.twitter %}<li><a itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}" class="icon-twitter"><svg aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg><span class="label">Twitter</span></a></li>{% endif %}
-          {% if site.author.instagram %}<li><a itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}" class="icon-instagram"><svg aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg><span class="label">Instagram</span></a></li>{% endif %}
-          {% if site.author.github %}<li><a itemprop="sameAs" rel="me" href="//github.com/{{ site.author.github }}" class="icon-github"><svg aria-hidden="true"><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg><span class="label">GitHub</span></a></li>{% endif %}
+          {% if site.author.twitter %}<li><a class="icon-twitter" itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}"><svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-twitter"></use></svg><span class="label">Twitter</span></a></li>{% endif %}
+          {% if site.author.instagram %}<li><a class="icon-instagram" itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}"><svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-instagram"></use></svg><span class="label">Instagram</span></a></li>{% endif %}
+          {% if site.author.github %}<li><a class="icon-github" itemprop="sameAs" rel="me" href="//github.com/{{ site.author.github }}"><svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-github"></use></svg><span class="label">GitHub</span></a></li>{% endif %}
         </ul>
 
         {% if site.author.facebook %}<link itemprop="sameAs" rel="me" href="//www.facebook.com/{{ site.author.facebook }}">{% endif %}
@@ -61,7 +61,6 @@ permalink: /
         {% if site.author.linkedin %}<link itemprop="sameAs" rel="me" href="//www.linkedin.com/in/{{ site.author.linkedin }}">{% endif %}
         {% if site.author.pinterest %}<link itemprop="sameAs" rel="me" href="//www.pinterest.com/{{ site.author.pinterest }}">{% endif %}
         {% if site.author.keybase %}<link itemprop="sameAs" rel="me" href="//keybase.io/{{ site.author.keybase }}">{% endif %}
-        {% if site.author.tumblr %}<link itemprop="sameAs" rel="me" href="http://{{ site.author.tumblr }}.tumblr.com">{% endif %}
       </footer>
     </div><!-- /.hero-profileInner -->
   </section><!-- /.hero-content -->

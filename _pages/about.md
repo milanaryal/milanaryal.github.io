@@ -19,74 +19,39 @@ Join me on the following networks and/or websites:
 <ul class="social-links">
   <li>
     <a rel="me" href="//twitter.com/MilanAryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-twitter"></use></svg>
-      </span><br><span class="label">Twitter</span>
-    </a>
-  </li>
-  <li>
-    <a rel="me" href="//facebook.com/considermilan">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-facebook"></use></svg>
-      </span><br><span class="label">Facebook</span>
+      <svg class="icon icon-twitter" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-twitter"></use></svg><br><span class="label">Twitter</span>
     </a>
   </li>
   <li>
      <a rel="me" href="//instagram.com/MilanAryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-instagram"></use></svg>
-      </span><br><span class="label">Instagram</span>
+       <svg class="icon icon-instagram" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-instagram"></use></svg><br><span class="label">Instagram</span>
+    </a>
+  </li>
+  <li>
+    <a rel="me" href="//facebook.com/considermilan">
+      <svg class="icon icon-facebook" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-facebook"></use></svg><br><span class="label">Facebook</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//github.com/MilanAryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-github"></use></svg>
-      </span><br><span class="label">GitHub</span>
+      <svg class="icon icon-github" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-github"></use></svg><br><span class="label">GitHub</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//keybase.io/milanaryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-keybase"></use></svg>
-      </span><br><span class="label">Keybase</span>
+      <svg class="icon icon-keybase" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-keybase"></use></svg><br><span class="label">Keybase</span>
     </a>
   </li>
   <li>
     <a rel="me" href="//linkedin.com/in/MilanAryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-linkedin"></use></svg>
-      </span><br><span class="label">LinkedIn</span>
+      <svg class="icon icon-linkedin" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-linkedin"></use></svg><br><span class="label">LinkedIn</span>
     </a>
-  </li><!--
+  </li>
   <li>
     <a rel="me" href="//pinterest.com/MilanAryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-pinterest"></use></svg>
-      </span><br><span class="label">Pinterest</span>
+      <svg class="icon icon-pinterest" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-pinterest"></use></svg><br><span class="label">Pinterest</span>
     </a>
   </li>
-  <li>
-    <a rel="me" href="//milanaryal.tumblr.com">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-tumblr-square"></use></svg>
-      </span><br><span class="label">Tumblr</span>
-    </a>
-  </li>
-  <li>
-    <a rel="me" href="//snapchat.com/add/milanaryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-snapchat"></use></svg>
-      </span><br><span class="label">Snapchat</span>
-    </a>
-  </li>
-  <li>
-    <a rel="me" href="//medium.com/@MilanAryal">
-      <span class="svg-icon svg-baseline" aria-hidden="true">
-        <svg><use xlink:href="/assets/icons/icons.min.svg#icon-medium"></use></svg>
-      </span><br><span class="label">Medium</span>
-    </a>
-  </li>-->
 </ul>
 
 <p class="pgp-key">
@@ -105,7 +70,7 @@ I'd like to think that I'm very happy person, but I find the art that strikes me
 
 ### About the site
 
-In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the stock market, web industry, and positive living. <!-- In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, development, or the blogosphere among other web culture topics. -->
+In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the stock market, web development, and positive living. <!-- In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, development, or the blogosphere among other web culture topics. -->
 
 In case you were wondering, this site is:
 
@@ -117,7 +82,7 @@ In case you were wondering, this site is:
 
 ...for more informations see [humans.txt](/humans.txt). You can find more about my Ubuntu OS development environment setup in my [config repo on GitHub](//github.com/MilanAryal/config).
 
-If you enjoy the content found here, you might like to subscribe to my <span class="svg-icon icon-feed svg-baseline" aria-hidden="true"><svg><use xlink:href="/assets/icons/icons.min.svg#icon-feed"></use></svg></span> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
+If you enjoy the content found here, you might like to subscribe to my <svg class="icon icon-rss" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-rss"></use></svg> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
 ### Licensing
 
