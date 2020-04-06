@@ -46,7 +46,7 @@
       color: rgba(0,0,0,.8);
     }
 
-    .svg-icon {
+    .icon {
       font-size: 3.33em;
     }
   }
@@ -77,5 +77,30 @@
 .searchPage-body {
   .input-group-append .btn-outline-secondary {
     border-color: #ced4da;
+  }
+}
+
+
+// Site footer beautify
+
+.siteFooter-legal {
+  .icon-copyright {
+    margin-right: -.5px;
+  }
+
+  .icon-pencil-alt {
+    margin-right: 1px;
+    margin-left: 1.25px;
+  }
+
+  .icon-heart {
+    margin-right: 1px;
+    margin-left: 1px;
+  }
+
+  .icon-coffee {
+    width: 1.25em; // match icon size with the others
+    margin-right: 1px;
+    margin-left: 1px;
   }
 }
