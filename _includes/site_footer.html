@@ -16,14 +16,6 @@
         </a>
       </li>
       {% endif %}
-      {% if site.author.facebook %}
-      <li>
-        <a rel="me" href="//facebook.com/{{ site.author.facebook }}">
-          <svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-facebook-f"></use></svg>
-          <span class="label">Facebook</span>
-        </a>
-      </li>
-      {% endif %}
       {% if site.author.instagram %}
       <li>
         <a rel="me" href="//instagram.com/{{ site.author.instagram }}">
@@ -37,6 +29,14 @@
         <a rel="me" href="//github.com/{{ site.author.github }}">
           <svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-github"></use></svg>
           <span class="label">GitHub</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if site.author.facebook %}
+      <li>
+        <a rel="me" href="//facebook.com/{{ site.author.facebook }}">
+          <svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-facebook-f"></use></svg>
+          <span class="label">Facebook</span>
         </a>
       </li>
       {% endif %}

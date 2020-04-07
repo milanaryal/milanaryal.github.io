@@ -119,8 +119,9 @@
 
   .icon-creative-commons-by {
     margin-left: 5px;
-    font-size: 21px;
+    // font-size: 21px;
     // vertical-align: bottom;
+    font-size: 1.25em;
     vertical-align: -.215em;
   }
 }
@@ -150,6 +151,11 @@
   }
 }
 
+.socialShare-lead {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
 .btn-socialShare {
   padding: 5px 10px;
   font-size: 13px;
@@ -158,7 +164,7 @@
   @include btn-social-share();
 
   .icon {
-    margin-right: .6em;
+    margin-right: .5em;
   }
 
   @media (max-width: 479px) {

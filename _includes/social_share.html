@@ -21,13 +21,23 @@
   {%- assign facebook_share_link = facebook_share_link | escape_once -%}
 {%- endif -%}
 
+{%- capture linkedin_share_link -%}//www.linkedin.com/shareArticle?mini=true&url={{ page_url }}&title={{ page_title }}{%- endcapture -%}
+{%- if linkedin_share_link -%}
+  {%- assign linkedin_share_link = linkedin_share_link | escape_once -%}
+{%- endif -%}
+
+{%- capture pinterest_share_link -%}//pinterest.com/pin/create/button/?url={{ page_url }}&description={{ page_title }}{%- endcapture -%}
+{%- if pinterest_share_link -%}
+  {%- assign pinterest_share_link = pinterest_share_link | escape_once -%}
+{%- endif -%}
+
 {%- capture email_share_link -%}mailto:?subject={{ page_title }}&body={{ page_url }}{%- endcapture -%}
 {%- if email_share_link -%}
   {%- assign email_share_link = email_share_link | escape_once -%}
 {%- endif -%}
 
 <ul class="socialShare clearfix">
-  <li>Share on:</li>
+  <li class="socialShare-lead">Share on:</li>
   <li>
     <a class="btn btn-socialShare socialShare-popup" href="{{ twitter_share_link }}" target="_blank" role="button" data-proofer-ignore="true">
       <svg class="icon icon-twitter" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-twitter"></use></svg><span class="label">Twitter</span>
@@ -36,6 +46,16 @@
   <li>
     <a class="btn btn-socialShare socialShare-popup" href="{{ facebook_share_link }}" target="_blank" role="button" data-proofer-ignore="true">
       <svg class="icon icon-facebook" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-facebook"></use></svg><span class="label">Facebook</span>
+    </a>
+  </li>
+  <li>
+    <a class="btn btn-socialShare socialShare-popup" href="{{ linkedin_share_link }}" target="_blank" role="button" data-proofer-ignore="true">
+      <svg class="icon icon-linkedin" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-linkedin"></use></svg><span class="label">LinkedIn</span>
+    </a>
+  </li>
+  <li>
+    <a class="btn btn-socialShare socialShare-popup" href="{{ pinterest_share_link }}" target="_blank" role="button" data-proofer-ignore="true">
+      <svg class="icon icon-pinterest" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-pinterest"></use></svg><span class="label">Pinterest</span>
     </a>
   </li>
   <li>

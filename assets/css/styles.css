@@ -59,7 +59,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3476,7 +3476,7 @@ input[type="button"].btn-block {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7003,13 +7003,6 @@ a.text-dark:hover, a.text-dark:focus {
   src: local(""), url("../fonts/lora-v15-latin-700italic.woff2") format("woff2"), url("../fonts/lora-v15-latin-700italic.woff") format("woff");
 }
 
-@font-face {
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url("../fonts/source-sans-pro-v13-latin-300.woff2") format("woff2"), url("../fonts/source-sans-pro-v13-latin-300.woff") format("woff");
-}
-
 .icon {
   display: inline-block;
   width: 1em;
@@ -7029,7 +7022,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -7046,7 +7039,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
@@ -7085,9 +7078,15 @@ a:hover, a:focus {
   }
 }
 
+.navbar-brand {
+  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-size: 700;
+  letter-spacing: -.04em;
+}
+
 @media (min-width: 768px) {
   .nav-link {
-    margin-left: 23px;
+    margin-left: 30px;
   }
 }
 
@@ -7144,7 +7143,7 @@ a:hover, a:focus {
 .pager li > a {
   display: inline-block;
   padding: 12.5px 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
@@ -7378,7 +7377,7 @@ a:hover, a:focus {
 
 .siteFooter-legal {
   margin-top: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
   text-rendering: auto;
@@ -7494,7 +7493,7 @@ a:hover, a:focus {
 
 .hero-title {
   margin-bottom: .5em;
-  font-family: "Source Sans Pro";
+  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
   font-size: 3.25em;
   font-weight: 300;
   line-height: 1.2;
@@ -7508,7 +7507,7 @@ a:hover, a:focus {
 
 .hero-description {
   margin-bottom: 1.5em;
-  font-family: "Source Sans Pro";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
@@ -7679,7 +7678,7 @@ ul.hero-social a .label {
 }
 
 .errorPage-message {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -7743,7 +7742,7 @@ ul.hero-social a .label {
 }
 
 .postPreview-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.44);
 }
@@ -7796,7 +7795,7 @@ ul.hero-social a .label {
 
 .postHeader-meta {
   padding-bottom: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.1;
@@ -7901,7 +7900,7 @@ ul.hero-social a .label {
 
 .postFooter-metaAcknowledgments .icon-creative-commons-by {
   margin-left: 5px;
-  font-size: 21px;
+  font-size: 1.25em;
   vertical-align: -.215em;
 }
 
@@ -7924,6 +7923,11 @@ ul.hero-social a .label {
   padding-left: 5px;
 }
 
+.socialShare-lead {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
 .btn-socialShare {
   padding: 5px 10px;
   font-size: 13px;
@@ -7939,7 +7943,7 @@ ul.hero-social a .label {
 }
 
 .btn-socialShare .icon {
-  margin-right: .6em;
+  margin-right: .5em;
 }
 
 @media (max-width: 479px) {
@@ -8860,7 +8864,7 @@ kbd {
 
 .btn-outline-default {
   padding: 15px 25px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

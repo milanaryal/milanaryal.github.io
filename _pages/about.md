@@ -28,11 +28,6 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   <li>
-    <a rel="me" href="//facebook.com/considermilan">
-      <svg class="icon icon-facebook" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-facebook"></use></svg><br><span class="label">Facebook</span>
-    </a>
-  </li>
-  <li>
     <a rel="me" href="//github.com/MilanAryal">
       <svg class="icon icon-github" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-github"></use></svg><br><span class="label">GitHub</span>
     </a>
@@ -40,6 +35,11 @@ Join me on the following networks and/or websites:
   <li>
     <a rel="me" href="//keybase.io/milanaryal">
       <svg class="icon icon-keybase" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-keybase"></use></svg><br><span class="label">Keybase</span>
+    </a>
+  </li>
+  <li>
+    <a rel="me" href="//facebook.com/considermilan">
+      <svg class="icon icon-facebook" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-facebook"></use></svg><br><span class="label">Facebook</span>
     </a>
   </li>
   <li>
@@ -70,13 +70,14 @@ I'd like to think that I'm very happy person, but I find the art that strikes me
 
 ### About the site
 
-In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the stock market, web development, and positive living. <!-- In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the web industry, subjects such as design, development, or the blogosphere among other web culture topics. -->
+In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the stock market, web development, and positive living.
 
 In case you were wondering, this site is:
 
 * Designed and developed on a [Ubuntu OS](http://www.ubuntu.com/)
-* Developed with [Atom](http://atom.io/)
+* Developed with [Atom](http://atom.io/) text editor
 * Used [Bootstrap](http://getbootstrap.com/) framework
+* Used [Gulp](http://gulpjs.com/) as a task runner
 * Built on [Jekyll](http://jekyllrb.com/), the open source static site generator
 * Hosted on [GitHub Pages](http://pages.github.com/)
 
@@ -84,6 +85,8 @@ In case you were wondering, this site is:
 
 If you enjoy the content found here, you might like to subscribe to my <svg class="icon icon-rss" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-rss"></use></svg> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
-### Licensing
+---
+
+### [Licensing](/fine-print/)
 
 Except as otherwise noted, the content of this site is licensed under the <a rel="license cc:license" href="//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>, and code samples are licensed under the <a rel="license" href="//raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE">MIT license</a>.

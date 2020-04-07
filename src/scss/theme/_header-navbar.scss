@@ -9,9 +9,15 @@
   }
 }
 
+.navbar-brand {
+  font-family: $font-family-serif;
+  font-size: 700;
+  letter-spacing: -.04em;
+}
+
 .nav-link {
   @media (min-width: 768px) {
-    margin-left: 23px;
+    margin-left: 30px;
   }
 
   @media (max-width: 767px) {

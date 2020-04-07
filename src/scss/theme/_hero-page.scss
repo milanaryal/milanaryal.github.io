@@ -115,7 +115,7 @@
 
 .hero-title {
   margin-bottom: .5em;
-  font-family: "Source Sans Pro";
+  font-family: $font-family-serif;
   font-size: 3.25em;
   font-weight: 300;
   line-height: 1.2;
@@ -129,7 +129,7 @@
 
 .hero-description {
   margin-bottom: 1.5em;
-  font-family: "Source Sans Pro";
+  font-family: $font-family-sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
