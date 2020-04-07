@@ -8404,6 +8404,7 @@ ul.hero-social a .label {
 }
 
 .markdownBody figure img {
+  display: block;
   margin: 0 auto;
 }
 
