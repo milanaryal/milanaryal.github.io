@@ -75,7 +75,7 @@
 
 .archiveDate {
   font-size: .876em;
-  font-style: italic;
+// font-style: italic;
   color: rgba(0,0,0,.6);
   text-align: right;
 
@@ -84,7 +84,9 @@
   }
 
   @media (max-width: 767px) {
-    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-size: 14px;
     text-align: left;
   }
 }

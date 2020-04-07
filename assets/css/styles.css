@@ -7080,7 +7080,6 @@ a:hover, a:focus {
 
 .navbar-brand {
   font-family: "Lora", Georgia, "Times New Roman", Times, serif;
-  font-size: 700;
   letter-spacing: -.04em;
 }
 
@@ -7645,7 +7644,6 @@ ul.hero-social a .label {
 
 .archiveDate {
   font-size: .876em;
-  font-style: italic;
   color: rgba(0, 0, 0, 0.6);
   text-align: right;
 }
@@ -7656,7 +7654,9 @@ ul.hero-social a .label {
 
 @media (max-width: 767px) {
   .archiveDate {
-    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-size: 14px;
     text-align: left;
   }
 }
