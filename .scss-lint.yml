@@ -38,7 +38,6 @@ linters:
   Comment:
     enabled: true
     exclude:
-      - src/scss/bootstrap/_normalize.scss
       - src/scss/_bootstrap.scss
       - src/scss/styles.scss
     style: silent
