@@ -7946,7 +7946,7 @@ ul.hero-social a .label {
   margin-right: .5em;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .btn-socialShare {
     width: 35px;
     padding: 5px 0;
