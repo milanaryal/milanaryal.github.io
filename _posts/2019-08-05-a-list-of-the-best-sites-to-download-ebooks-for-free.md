@@ -2,31 +2,33 @@
 title: "A list of the best sites to download eBooks for free"
 excerpt: "A curated list of the most popular websites to download eBooks for free of cost."
 date: 2019-08-05T10:35:00+05:45
+last_modified_at: 2020-04-10T11:40:00+05:45
 ---
 
 Here, I've curated a list of sites to download eBook for free of cost. In these free sites, you will found most of the eBooks in PDF, EPub or Mobi format. You may have probably bookmarked a few of these already.
 
 #### Z-Library
 
-Part of Z-Library project. The world's largest ebook library since 2009.
+Part of Z-Library project. The world's largest e-book library since 2009.
 
-*Mirror sites:*
+*Mirror site(s):*
 
-* [z-lib.org](http://z-lib.org/){:rel="nofollow"}
-* [b-ok.org](http://b-ok.org/){:rel="nofollow"}
-* [b-ok2.org](http://b-ok2.org/){:rel="nofollow"}
-* [b-ok.cc](http://b-ok.cc/){:rel="nofollow"}
+* [z-lib.org](http://z-lib.org/){: rel="nofollow" }
+* [b-ok.org](http://b-ok.org/){: rel="nofollow" }
+* [b-ok2.org](http://b-ok2.org/){: rel="nofollow" }
+* [b-ok.xyz](http://b-ok.xyz/){: rel="nofollow" }
+* [b-ok.cc](http://b-ok.cc/){: rel="nofollow" }
 
 #### Library Genesis
 
 Library Genesis (LibGen) is a digital library established on 11 March 2008.
 
-*Mirror sites:*
+*Mirror site(s):*
 
-* [gen.lib.rus.ec](http://gen.lib.rus.ec/){:rel="nofollow"}
-* [libgen.lc](http://libgen.lc/){:rel="nofollow"}
-* [libgen.me](http://libgen.me/){:rel="nofollow"}
-* [bookfi.net](http://bookfi.net/){:rel="nofollow"}
+* [gen.lib.rus.ec](http://gen.lib.rus.ec/){: rel="nofollow" }
+* [libgen.lc](http://libgen.lc/){: rel="nofollow" }
+* [libgen.me](http://libgen.me/){: rel="nofollow" }
+* [bookfi.net](http://bookfi.net/){: rel="nofollow" }
 
 #### PDF Drive
 
@@ -34,7 +36,7 @@ PDF Drive is a free search engine which allows you to search, preview and downlo
 
 *Mirror site(s):*
 
-* [pdfdrive.com](http://www.pdfdrive.com/){:rel="nofollow"}
+* [pdfdrive.com](http://www.pdfdrive.com/){: rel="nofollow" }
 
 ---
 
