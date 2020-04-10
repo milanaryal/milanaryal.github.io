@@ -31,6 +31,11 @@
   {%- assign pinterest_share_link = pinterest_share_link | escape_once -%}
 {%- endif -%}
 
+{%- capture telegram_share_link -%}//t.me/share/url?url={{ page_url }}&text={{ page_title }}{%- endcapture -%}
+{%- if telegram_share_link -%}
+  {%- assign telegram_share_link = telegram_share_link | escape_once -%}
+{%- endif -%}
+
 {%- capture email_share_link -%}mailto:?subject={{ page_title }}&body={{ page_url }}{%- endcapture -%}
 {%- if email_share_link -%}
   {%- assign email_share_link = email_share_link | escape_once -%}
@@ -59,6 +64,11 @@
     </a>
   </li>
 --><li>
+    <a class="btn btn-socialShare socialShare-popup" href="{{ linkedin_share_link }}" target="_blank" role="button" data-proofer-ignore="true">
+      <svg class="icon icon-telegram" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-telegram"></use></svg><span class="label">Telegram</span>
+    </a>
+  </li>
+  <li>
     <a class="btn btn-socialShare" href="{{ email_share_link }}" role="button" data-proofer-ignore="true">
       <svg class="icon icon-envelope" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-envelope"></use></svg><span class="label">Email</span>
     </a>
