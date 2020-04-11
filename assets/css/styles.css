@@ -36,7 +36,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -59,7 +59,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3476,7 +3476,7 @@ input[type="button"].btn-block {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6955,24 +6955,17 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v17-latin-300.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-300.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url("../fonts/open-sans-v17-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-regular.woff") format("woff");
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/lato-v16-latin-regular.woff2") format("woff2"), url("../fonts/lato-v16-latin-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v17-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-700.woff") format("woff");
+  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/lato-v16-latin-700.woff2") format("woff2"), url("../fonts/lato-v16-latin-700.woff") format("woff");
 }
 
 @font-face {
@@ -7022,7 +7015,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -7039,7 +7032,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
@@ -7142,7 +7135,7 @@ a:hover, a:focus {
 .pager li > a {
   display: inline-block;
   padding: 12.5px 20px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
@@ -7243,7 +7236,7 @@ a:hover, a:focus {
 }
 
 .pageHeader-title {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 48px;
   letter-spacing: -.04em;
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
@@ -7258,9 +7251,9 @@ a:hover, a:focus {
 .pageHeader-description {
   display: block;
   margin: 10px 0 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.1;
   letter-spacing: -.02em;
   color: rgba(255, 255, 255, 0.7);
@@ -7376,7 +7369,7 @@ a:hover, a:focus {
 
 .siteFooter-legal {
   margin-top: 30px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
   text-rendering: auto;
@@ -7494,7 +7487,7 @@ a:hover, a:focus {
   margin-bottom: .5em;
   font-family: "Lora", Georgia, "Times New Roman", Times, serif;
   font-size: 3.25em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
   letter-spacing: -.0075em;
   color: #fff;
@@ -7506,9 +7499,9 @@ a:hover, a:focus {
 
 .hero-description {
   margin-bottom: 1.5em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4;
   letter-spacing: .0333em;
   color: rgba(255, 255, 255, 0.9);
@@ -7589,7 +7582,7 @@ ul.hero-social a .label {
 .archiveYear {
   margin-top: 47px;
   margin-left: -2.25px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -7678,7 +7671,7 @@ ul.hero-social a .label {
 }
 
 .errorPage-message {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -7742,7 +7735,7 @@ ul.hero-social a .label {
 }
 
 .postPreview-meta {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.44);
 }
@@ -7755,7 +7748,7 @@ ul.hero-social a .label {
 
 .postPreview-title {
   margin-top: 10px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   line-height: 1.12;
   letter-spacing: -.044em;
@@ -7795,7 +7788,7 @@ ul.hero-social a .label {
 
 .postHeader-meta {
   padding-bottom: 10px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.1;
@@ -7862,7 +7855,7 @@ ul.hero-social a .label {
   display: block;
   width: 100%;
   margin-top: 10px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -8082,7 +8075,7 @@ ul.hero-social a .label {
 }
 
 .randomPosts-itemTitle {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 26px;
   line-height: 1.3;
   letter-spacing: -.04em;
@@ -8097,7 +8090,7 @@ ul.hero-social a .label {
 
 .randomPosts-itemExcerpt {
   margin: 2px 0 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: -.02em;
@@ -8261,7 +8254,7 @@ ul.hero-social a .label {
 .markdownBody h3 {
   margin-top: 47px;
   margin-left: -2.25px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -8281,7 +8274,7 @@ ul.hero-social a .label {
 .markdownBody h4 {
   margin-top: 39px;
   margin-left: -1.75px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -8416,7 +8409,7 @@ ul.hero-social a .label {
   display: block;
   width: 100%;
   margin-top: 10px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -8865,7 +8858,7 @@ kbd {
 
 .btn-outline-default {
   padding: 15px 25px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -9052,7 +9045,7 @@ kbd {
   padding-left: 0 !important;
   margin-bottom: 10px;
   margin-left: -10px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 66%;
   text-align: center;
   list-style: none;
@@ -9081,7 +9074,7 @@ kbd {
 }
 
 .pgp-key {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 84%;
   text-align: center;
 }
