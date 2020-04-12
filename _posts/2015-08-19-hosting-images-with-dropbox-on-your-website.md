@@ -10,21 +10,21 @@ Whether to reduce your website bandwidth or for some other reasons, you may want
 
 > **Invitation to Dropbox!**
 >
-> Haven't join Dropbox yet? Sign up now with [https://db.tt/vocH7o0j](https://db.tt/vocH7o0j) link and install Dropbox on your desktop computer, you'll get extra 500MB of bonus space.
+> Haven't join Dropbox yet? Sign up now with [https://db.tt/pFyuOKMN](https://db.tt/pFyuOKMN){: rel="nofollow" } link and install Dropbox on your desktop computer, you'll get extra 500MB of bonus space.
 
 Following are some few simple steps within which you will learn to host images or website assets with Dropbox on your webpages:
 
 ### Step 1: Get a share link to an image file
 
-There're various way of [getting share link](http://www.dropbox.com/help/167){:rel="nofollow"} to a file in a Dropbox, follow one of them as your comfort.
+There're various way of [getting share link](http://www.dropbox.com/help/167){: rel="nofollow" } to a file in a Dropbox, follow one of them as your comfort.
 
 #### First option: Share link on Desktop
 
-* Install the [Dropbox desktop application](http://www.dropbox.com/downloading){:rel="nofollow"} on your computer (if you haven't already).
+* Install the [Dropbox desktop application](http://www.dropbox.com/downloading){: rel="nofollow" } on your computer (if you haven't already).
 * Right-click on the file to open its contextual menu and select **Share Dropbox link**. The link will be copied and you can immediately paste it anywhere.
 
 <figure>
-  <a href="//dl.dropboxusercontent.com/s/dem4lq19tmcgp1u/20150819-dropbox-share-link-on-desktop.png">
+  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/dem4lq19tmcgp1u/20150819-dropbox-share-link-on-desktop.png">
     <img src="//dl.dropboxusercontent.com/s/dem4lq19tmcgp1u/20150819-dropbox-share-link-on-desktop.png" alt="Share link from the Dropbox contextual menu" title="Share link from the Dropbox contextual menu">
   </a>
   <figcaption><strong>Share link</strong> from the Dropbox contextual menu.</figcaption>
@@ -32,11 +32,11 @@ There're various way of [getting share link](http://www.dropbox.com/help/167){:r
 
 #### Second option: Share link using the website
 
-* [Sign in](http://www.dropbox.com/login){:rel="nofollow"} to the Dropbox website and find the file or folder you'd like to link to.
+* [Sign in](http://www.dropbox.com/login){: rel="nofollow" } to the Dropbox website and find the file or folder you'd like to link to.
 * Hover the cursor over the file or folder and click the blue **Share** button that appears.
 
 <figure>
-  <a href="//dl.dropboxusercontent.com/s/e1n60amfrty1gt0/20150819-dropbox-bamboo-sharing-button-share-link-on-web.png">
+  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/e1n60amfrty1gt0/20150819-dropbox-bamboo-sharing-button-share-link-on-web.png">
     <img src="//dl.dropboxusercontent.com/s/e1n60amfrty1gt0/20150819-dropbox-bamboo-sharing-button-share-link-on-web.png" alt="Share link using the Dropbox website" title="Share link using the Dropbox website">
   </a>
 </figure>
@@ -75,7 +75,7 @@ Now an HTML markup like
 
 ```html
 <figure>
-  <a href="//dl.dropboxusercontent.com/s/kwyt8v55bhbj3vv/20150819-dropbox-logotype-blue.png">
+  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/kwyt8v55bhbj3vv/20150819-dropbox-logotype-blue.png">
     <img src="//dl.dropboxusercontent.com/s/kwyt8v55bhbj3vv/20150819-dropbox-logotype-blue.png" alt="Copyright Dropbox logo type blue">
   </a>
   <figcaption>Dropbox, the Dropbox logo are trademarks of Dropbox Inc., registered in the U.S. and other countries.</figcaption>
@@ -85,24 +85,26 @@ Now an HTML markup like
 will output as following:
 
 <figure>
-  <a href="//dl.dropboxusercontent.com/s/kwyt8v55bhbj3vv/20150819-dropbox-logotype-blue.png">
+  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/kwyt8v55bhbj3vv/20150819-dropbox-logotype-blue.png">
     <img src="//dl.dropboxusercontent.com/s/kwyt8v55bhbj3vv/20150819-dropbox-logotype-blue.png" alt="Copyright Dropbox logo type blue">
   </a>
   <figcaption>Dropbox, the Dropbox logo are trademarks of Dropbox Inc., registered in the U.S. and other countries.</figcaption>
 </figure>
 
+{% comment %}
 #### Host webpages for free within Dropbox API
 
 There're many free static HTML host powered by the Dropbox API. Some of them are:
 
-* [UpDog](http://updog.co/){:rel="nofollow"}
-* [Pancake](http://pancake.io/){:rel="nofollow"}
-* [DropPages](http://droppages.com/){:rel="nofollow"}
-* [KISSr](http://www.kissr.com/){:rel="nofollow"}.
+* [UpDog](http://updog.co/){: rel="nofollow" } <!-- discontinued -->
+* [Pancake](http://pancake.io/){: rel="nofollow" } <!-- site not loading -->
+* [DropPages](http://droppages.com/){: rel="nofollow" }
+* [KISSr](http://www.kissr.com/){: rel="nofollow" } <!-- spam -->
+{% endcomment %}
 
 ### Is there a bandwidth limit for Dropbox public links?
 
-"There is a hard limit of 20GB/day for Basic (free) accounts and 200GB/day for paid accounts to all of your links together, after which they're temporarily disabled, and those who try to access them will see an error page instead of your files," [Dropbox explains](http://www.dropbox.com/help/4204){:rel="nofollow"}.
+"There is a hard limit of 20GB/day for Basic (free) accounts and 200GB/day for paid accounts to all of your links together, after which they're temporarily disabled, and those who try to access them will see an error page instead of your files," [Dropbox explains](http://www.dropbox.com/help/4204){: rel="nofollow" }.
 
 Lets compare, you have images hosted on Dropbox which is around 250KB. That means images all together should have less than 80K impressions in a day for you to stay within the Dropbox traffic limits. And if another site hotlink to your static images, it may use up your "free bandwidth" quota even sooner.
 
@@ -112,4 +114,4 @@ Note that this is for share links, not for access via the API.
 
 #### References
 
-* [Using Dropbox to Host Images on your Website](http://ryanmo.co/2013/11/03/dropboxsharedlinks/){:rel="nofollow"} --- Ryan
+* [Using Dropbox to Host Images on your Website](http://ryanmo.co/2013/11/03/dropboxsharedlinks/){: rel="nofollow" } --- Ryan
