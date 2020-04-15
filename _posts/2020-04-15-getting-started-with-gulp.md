@@ -159,7 +159,7 @@ Use `npm update` to update all your dependencies to the latest versions. Or `npm
 
 ### Creating the `gulpfile.js`
 
-The `gulpfile.js` or `gulpfile.coffee` file is a valid JavaScript or CoffeeScript file that belongs in the root directory of your project, next to the `package.json` file, and should be committed with your project source.
+The `gulpfile.js` file is a valid JavaScript file that belongs in the root directory of your project, next to the `package.json` file, and should be committed with your project source.
 
 A `gulpfile.js` is comprised of the following parts:
 
@@ -222,7 +222,7 @@ $ npm install --save-dev del gulp gulp-autoprefixer gulp-concat gulp-csso gulp-r
 **Second step** to setup `gulpfile.js`:
 
 ```js
-// plugins for basic needs
+// plugins for basic need
 const { src, dest, series, parallel, watch } = require('gulp');
 const del = require('del');
 const rename = require('gulp-rename');;
@@ -242,7 +242,6 @@ const minify = require('gulp-csso');
 // private task function
 
 // remove pre-existing content from the folders
-
 function clean () {
   return del(['assets/js', 'assets/css']);
 }
