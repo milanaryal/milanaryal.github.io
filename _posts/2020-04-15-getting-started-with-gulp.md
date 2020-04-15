@@ -175,14 +175,19 @@ A `gulpfile.js` is comprised of the following parts:
  */
 
 // load the plugin(s)
-var gulp = require('gulp');
+const {src, dest} = require('gulp');
+const pluginName = require('gulp-plugin-name');
 
-// define tasks here (default task)
-exports.default = function () {
-
+// define task(s) here
+function taskName () {
   // gulp pipe (task config)
-
+  return src('src/filename.ext')
+    .pipe(pluginName( { options : here } ))
+    .pipe(dest('dest/filename.ext'));
 }
+
+// export default task
+exports.default = taskName;
 ```
 
 <br>
@@ -225,7 +230,7 @@ $ npm install --save-dev del gulp gulp-autoprefixer gulp-concat gulp-csso gulp-r
 // plugins for basic need
 const { src, dest, series, parallel, watch } = require('gulp');
 const del = require('del');
-const rename = require('gulp-rename');;
+const rename = require('gulp-rename');
 
 // plugins for js
 const concat = require('gulp-concat');
