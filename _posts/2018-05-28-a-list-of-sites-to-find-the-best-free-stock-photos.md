@@ -1,7 +1,7 @@
 ---
 title: "A list of sites to find the best free stock photos"
 date: 2018-05-28T10:50:00+05:45
-last_modified_at: 2020-03-19T07:50:00+05:45
+last_modified_at: 2020-04-15T11:58:00+05:45
 excerpt: "A curated list of sites with high resolution stock photos you can use for different purpose."
 ---
 
@@ -21,7 +21,6 @@ All the resources below have specifically specified that their content is [&copy
 * [Creative Commons Search](http://search.creativecommons.org/){:rel="nofollow"} - A meta search across several libaries to find adaptable / editable images
 * [Crow the Stone](http://crowthestone.tumblr.com/){:rel="nofollow"} - Free photos to use any way you want.
 * [Cupcake](http://cupcake.nilssonlee.se/){:rel="nofollow"} - Free do what ever you want photos by Jonas Nilsson Lee.
-* [Epicantus](http://epicantus.tumblr.com/){:rel="nofollow"} - Hi-resolution photos added every week.
 * [Fancy Crave](http://fancycrave.com/){:rel="nofollow"} - Two new images added every day.
 * [FindA.Photo](http://finda.photo/){:rel="nofollow"} - search through thousands of CC0 photos by keyword and color.
 * [Free Nature Stock](http://freenaturestock.com/){:rel="nofollow"} - Royalty-free, use them however you want, Nature Stock Photos.

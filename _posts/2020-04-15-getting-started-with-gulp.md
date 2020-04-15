@@ -301,7 +301,7 @@ exports.watch = watch;
 
 <br>
 
-Now, ***third step** or **final step** --- our **default task** (to clean/delete the existing old destination files and process, compile and, minify our Javascript and Sass files from source folder `src/` to our destination folder `assets/`) will be **run by default**, when the **following command line** is run at the root of your project file:
+Now, **third step** or **final step** --- our **default task** (to clean/delete the existing old destination files and process, compile and, minify our Javascript and Sass files from source folder `src/` to our destination folder `assets/`) will be **run by default**, when the **following command line** is run at the root of your project file:
 
 ```bash
 $ gulp
@@ -309,7 +309,9 @@ $ gulp
 
 <br>
 
-An incredibly active community of developers is building front-end plugins, you can explore them at [Gulp plugins library](https://gulpjs.com/plugins/){: rel="nofollow "}.
+An incredibly active community of developers is building front-end plugins, you can explore them at [Gulp plugins library](https://gulpjs.com/plugins/){: rel="nofollow" }.
+
+Or, using the "gulpplugin" and "gulpfriendly" keywords --- plugins can be browsed and searched on the [npm search page](https://www.npmjs.com/){: rel="nofollow" }.
 
 ---
 
