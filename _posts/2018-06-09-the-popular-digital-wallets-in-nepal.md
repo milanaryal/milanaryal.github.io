@@ -9,7 +9,7 @@ Over the last few years, many digital wallets (also known as mobile wallets or e
 
 ### Top 3 best digital wallets in Nepal
 
-These are three most popular payment systems in Nepal which are available for Androd, iOS, as well as Web version with best user interface.
+These are three most popular payment systems in Nepal which are available for Android, iOS, as well as Web version with best user interface.
 
 #### [eSewa](https://esewa.com.np/){: rel="nofollow" }
 
@@ -19,7 +19,7 @@ Launched in 2009, the users of eSewa can pay for utilities, recharge their mobil
 
 Similarly, merchants, service providers and retail outlets can receive payments for goods and services in their wallet instantly. This enables hassle-free, secure and immediate payments from customers.
 
-eSewa App is available for [Web](https://esewa.com.np/#/home){: rel="nofollow" }, [Android](https://play.google.com/store/apps/details?id=com.f1soft.esewa){: rel="nofollow" }, and [iOS](https://itunes.apple.com/us/app/esewa/id614370939?ls=1&mt=8){: rel="nofollow" } devices.
+eSewa App is available for [Web](https://esewa.com.np/){: rel="nofollow" }, [Android](https://play.google.com/store/apps/details?id=com.f1soft.esewa){: rel="nofollow" }, and [iOS](https://itunes.apple.com/us/app/esewa/id614370939?ls=1&mt=8){: rel="nofollow" } devices.
 
 #### [Khalti](https://khalti.com/){: rel="nofollow" }
 
@@ -51,11 +51,11 @@ iPay App is available for [Web](https://ipay.com.np/){: rel="nofollow" }, [Andro
 
 #### Mobile based alternative
 
-Following are the list of popular mobile based digital payment systems only available for Androd, or iOS.
+Following are the list of popular mobile based digital payment systems only available for Android, or iOS.
 
 * [**IME Pay**](http://www.imepay.com.np/){: rel="nofollow" } (available for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){: rel="nofollow" }, and [iOS](https://itunes.apple.com/np/app/ime-pay/id1241888344?mt=8){: rel="nofollow" })
 
-* [**PrabhuPAY**](https://prabhupay.com/){: rel="nofollow" } (available for [Android](https://play.google.com/store/apps/details?id=com.prabhutech.prabhupay&hl=en){: rel="nofollow" }), and [iOS](https://itunes.apple.com/np/app/prabhupay-mobile-wallet/id1451300760?mt=8){: rel="nofollow" }
+* [**PrabhuPAY**](https://prabhupay.com/){: rel="nofollow" } (available for [Android](https://play.google.com/store/apps/details?id=com.prabhutech.prabhupay&hl=en){: rel="nofollow" }, and [iOS](https://itunes.apple.com/np/app/prabhupay-mobile-wallet/id1451300760?mt=8){: rel="nofollow" })
 
 * [**QPay**](http://www.qpay.com.np/){: rel="nofollow" } (available for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){: rel="nofollow" }, and [iOS](https://itunes.apple.com/us/app/qpay-nepal/id1127765416?mt=8){: rel="nofollow" })
 
@@ -63,6 +63,6 @@ Following are the list of popular mobile based digital payment systems only avai
 
 Last but not least:
 
-[**EnetPay**](https://www.enetpayment.com/){: rel="nofollow" } (available for [Web](https://www.enetpayment.com/main){: rel="nofollow" }, [Android](https://play.google.com/store/apps/details?id=np.com.onlinepayment){: rel="nofollow" }, and [iOS](https://itunes.apple.com/US/app/id1374131281?mt=8){: rel="nofollow" })
+[**EnetPay**](https://www.enetpayment.com/){: rel="nofollow" } (available for [Web](https://www.enetpayment.com/){: rel="nofollow" }, [Android](https://play.google.com/store/apps/details?id=np.com.onlinepayment){: rel="nofollow" }, and [iOS](https://itunes.apple.com/US/app/id1374131281?mt=8){: rel="nofollow" })
 
 {%- comment -%}<!-- [**Nepzy**](https://www.nepzy.com){: rel="nofollow" } (for [Android](https://play.google.com/store/apps/details?id=com.itgc.nepzy){: rel="nofollow" } or [iOS](https://itunes.apple.com/in/app/nepzy/id1059692410?mt=8){: rel="nofollow" }) -->{%- endcomment -%}
