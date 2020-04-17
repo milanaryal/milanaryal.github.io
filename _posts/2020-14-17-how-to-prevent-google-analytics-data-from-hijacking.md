@@ -12,7 +12,9 @@ So, to overcome this issue --- here we will discuss few steps to do for preventi
 
 You can add a filter to your profile:
 
-1. Go to: *Home -> Select Site -> Admin (in the top right-hand corner) -> Filters (under "All Web Site Data")*
+1. Go to: `Filters`
+
+*Home __>__ Select Site __>__ Admin (in the bottom left-hand corner) __>__ Filters (under "All Web Site Data")*
 
 2. Click `New Filter`
 
@@ -28,9 +30,11 @@ You can add a filter to your profile:
 
 8. Select "No" for `Case Sensitive`
 
-The result should look something like this (*Google Analytics interfaces change periodically*):
+The result should look something like this:
 
 ![preventing google analytics data from hijacking](/uploads/20201417-google-analytics-filter-domain.png)
+
+*Note: Google Analytics interface changes periodically*
 
 <br>
 
