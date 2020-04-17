@@ -1,6 +1,6 @@
 ---
 title: "How to prevent Google Analytics data from hijacking"
-date: 2020-14-17T12:00:00+05:45
+date: 2020-04-17T12:25:00+05:45
 excerpt: "A simple filter on Google Analytics to prevent misleading of your website pageviews data."
 ---
 
