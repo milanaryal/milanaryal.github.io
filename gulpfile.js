@@ -28,36 +28,46 @@ const svgmin = require('gulp-svgmin');
 const browserSync = require('browser-sync').create();
 const cp = require('child_process');
 
-// Scripts source paths
-var SCRIPTS_SRC = [
-  'src/js/jquery.js',
-  'src/js/popper.js',
-  'src/js/bootstrap/util.js',
-  // 'src/js/bootstrap/alert.js',
-  // 'src/js/bootstrap/button.js',
-  // 'src/js/bootstrap/carousel.js',
-  'src/js/bootstrap/collapse.js',
-  // 'src/js/bootstrap/dropdown.js',
-  // 'src/js/bootstrap/modal.js',
-  // 'src/js/bootstrap/scrollspy.js',
-  // 'src/js/bootstrap/tab.js',
-  'src/js/bootstrap/tooltip.js',
-  // 'src/js/bootstrap/popover.js',
-  'src/js/svg4everybody.js',
-  'src/js/nprogress.js',
-  'src/js/headroom.js',
-  'src/js/jQuery.headroom.js',
-  'src/js/scripts.js'
-];
+var paths = {
+  scripts: {
+    src: [
+      'src/js/jquery.js',
+      'src/js/popper.js',
+      'src/js/bootstrap/util.js',
+      // 'src/js/bootstrap/alert.js',
+      // 'src/js/bootstrap/button.js',
+      // 'src/js/bootstrap/carousel.js',
+      'src/js/bootstrap/collapse.js',
+      // 'src/js/bootstrap/dropdown.js',
+      // 'src/js/bootstrap/modal.js',
+      // 'src/js/bootstrap/scrollspy.js',
+      // 'src/js/bootstrap/tab.js',
+      'src/js/bootstrap/tooltip.js',
+      // 'src/js/bootstrap/popover.js',
+      'src/js/svg4everybody.js',
+      'src/js/nprogress.js',
+      'src/js/headroom.js',
+      'src/js/jQuery.headroom.js',
+      'src/js/scripts.js'
+    ],
+    dest: 'assets/js/'
+  },
+  styles: {
+    src: 'src/scss/styles.scss',
+    dest: 'assets/css/'
+  },
+  jekyll: {
+    src: [
+      '_includes/**',
+      '_layouts/**',
+      '_pages/**',
+      '_posts/**',
+      'writings/**'
+    ],
+    dest: '_site/'
+  }
+};
 
-// Jekyll uncompiled files
-var JEKYLL_SRC = [
-  '_includes/**',
-  '_layouts/**',
-  '_pages/**',
-  '_posts/**',
-  'writings/**'
-];
 
 // Banner template for files header
 var banner = ['/*!',
@@ -74,23 +84,23 @@ var banner = ['/*!',
 
 // Remove pre-existing content from the folders
 function clean () {
-  return del(['assets/js', 'assets/css', 'assets/fonts', 'assets/svg']);
+  return del([paths.scripts.dest, paths.styles.dest, 'assets/fonts/', 'assets/svg/']);
 }
 
 function cleanJS () {
-  return del(['assets/js']);
+  return del([paths.scripts.dest]);
 }
 
 function cleanCSS () {
-  return del(['assets/css']);
+  return del([paths.styles.dest]);
 }
 
 function cleanFonts () {
-  return del(['assets/fonts']);
+  return del(['assets/fonts/']);
 }
 
 function cleanSVG () {
-  return del(['assets/svg']);
+  return del(['assets/svg/']);
 }
 
 
@@ -118,43 +128,43 @@ function testSCSS () {
 
 // Concatenate and minify scripts
 function js () {
-  return src(SCRIPTS_SRC)
+  return src(paths.scripts.src)
     .pipe(concat('scripts.js'))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest('assets/js'))
+    .pipe(dest(paths.scripts.dest))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify({ output: { comments: false } }))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest('assets/js'));
+    .pipe(dest(paths.scripts.dest));
 }
 
 // Process and minify styles
 function css () {
-  return src('src/scss/styles.scss')
+  return src(paths.styles.src)
     .pipe(header(banner, { pkg : pkg }))
     .pipe(sass.sync({ precision: 6, outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(postcss([ autoprefixer() ]))
-    .pipe(dest('assets/css'))
+    .pipe(dest(paths.styles.dest))
     .pipe(rename({ suffix: '.min' }))
     .pipe(postcss([ cssnano(), discardComments({ removeAll: true }) ]))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest('assets/css'));
+    .pipe(dest(paths.styles.dest));
 }
 
 // Process and minify SVG icons
 function svg () {
-  return src('src/svg/**/*.svg', { base: 'src/sprite' })
+  return src('src/svg/**/*.svg', { base: 'src/sprite/' })
     .pipe(svgmin())
     .pipe(rename({ prefix: 'icon-' }))
     .pipe(svgstore({ inlineSvg: true }))
-    .pipe(dest('assets/svg'));
+    .pipe(dest('assets/svg/'));
 }
 
 // Copy fonts
 function copyFonts () {
   return src('src/fonts/**')
     .pipe(flatten())
-    .pipe(dest('assets/fonts'));
+    .pipe(dest('assets/fonts/'));
 }
 
 
@@ -162,68 +172,68 @@ function copyFonts () {
  * Jekyll tasks
  */
 
+ // Remove existing Jekyll build site contents
+ function cleanSite () {
+   return del([paths.jekyll.dest]);
+ }
+
 // Remove script files in Jekyll site
-function jekyllCleanJS () {
-  return del(['./_site/assets/js']);
+function cleanSiteJS () {
+  return del(['_site/assets/js/']);
 }
 
 // Remove style files in Jekyll site
-function jekyllCleanCSS () {
-  return del(['./_site/assets/css']);
-}
-
-// Remove existing Jekyll build site contents
-function jekyllCleanSite () {
-  return del(['./_site']);
+function cleanSiteCSS () {
+  return del(['_site/assets/css/']);
 }
 
 // Build the Jekyll site
-function jekyllBuild (done) {
+function buildSite (done) {
   browserSync.notify('Compiling Jekyll, please wait!');
   return cp.spawn('npm', ['run', 'jekyll-build'], { stdio: 'inherit' })
     .on('close', done);
 }
 
 // Wait for Jekyll build, then launch the server
-function jekyllServe () {
+function serveSite () {
   browserSync({
     port: 4000,
     ui: {
       port: 4001
     },
     server: {
-      baseDir: './_site'
+      baseDir: '_site/'
     },
   });
 }
 
 // Rebuild JS on Jekyll site and do page reload
-function jekyllJS () {
+function siteJS () {
     // JS
-  return src(SCRIPTS_SRC)
+  return src(paths.scripts.src)
     .pipe(concat('scripts.js'))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest('./_site/assets/js'))
+    .pipe(dest('_site/assets/js/'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify({ output: { comments: false } }))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest('./_site/assets/js'))
+    .pipe(dest('_site/assets/js/'))
     // Browser reload
     .pipe(browserSync.reload({ stream: true }));
 }
 
 // Rebuild CSS on Jekyll site and do page reload
-function jekyllCSS () {
+function siteCSS () {
   // CSS
-  return src('src/scss/styles.scss')
+  return src(paths.styles.src)
   .pipe(header(banner, { pkg : pkg }))
   .pipe(sass.sync({ precision: 6, outputStyle: 'expanded' }).on('error', sass.logError))
   .pipe(postcss([ autoprefixer() ]))
-  .pipe(dest('./_site/assets/css'))
+  .pipe(dest('_site/assets/css/'))
   .pipe(rename({ suffix: '.min' }))
   .pipe(postcss([ cssnano(), discardComments({ removeAll: true }) ]))
   .pipe(header(banner, { pkg : pkg }))
-  .pipe(dest('./_site/assets/css'))
+  .pipe(dest('_site/assets/css/'))
   // Browser reload
   .pipe(browserSync.reload({ stream: true }));
 }
@@ -236,11 +246,11 @@ function jekyllCSS () {
 // Watch changes
 function watchFiles () {
   // Watch .js files
-  watch('src/js/**/*.js', series(jekyllCleanJS, jekyllJS));
+  watch('src/js/**/*.js', series(cleanSiteJS, siteJS));
   // Watch .scss files
-  watch('src/scss/**/*.scss', series(jekyllCleanCSS, jekyllCSS));
+  watch('src/scss/**/*.scss', series(cleanSiteCSS, siteCSS));
   // Watch Jekyll uncompiled files and do page reload
-  watch(JEKYLL_SRC, series(jekyllCleanSite, jekyllBuild)).on('change', browserSync.reload);
+  watch(paths.jekyll.src, series(cleanSite, buildSite)).on('change', browserSync.reload);
 }
 
 
@@ -249,11 +259,13 @@ function watchFiles () {
  */
 
 var build = series(clean, parallel(js, css, svg, copyFonts));
-var jekyllBuild = series (jekyllCleanSite, jekyllBuild);
-var jekyllServe = series(jekyllBuild, jekyllServe);
+var buildSite = series (build, parallel(cleanSite, buildSite));
+var serveSite = series(buildSite, serveSite);
 
 // Public working tasks
+exports.buildSite = buildSite;
+exports.serveSite = serveSite;
+exports.watch = series(serveSite, watchFiles);
+
+// Default task
 exports.default = build;
-exports.jekyllBuild = series(build, jekyllBuild);
-exports.jekyllServe = jekyllServe;
-exports.watch = series(jekyllServe, watchFiles);
