@@ -28,6 +28,7 @@ const svgmin = require('gulp-svgmin');
 const browserSync = require('browser-sync').create();
 const cp = require('child_process');
 
+// Paths to project folders
 var paths = {
   scripts: {
     src: [
@@ -68,7 +69,6 @@ var paths = {
   }
 };
 
-
 // Banner template for files header
 var banner = ['/*!',
   ' * <%= pkg.title %> (<%= pkg.url %>)',
@@ -84,23 +84,23 @@ var banner = ['/*!',
 
 // Remove pre-existing content from the folders
 function clean () {
-  return del([paths.scripts.dest, paths.styles.dest, 'assets/fonts/', 'assets/svg/']);
+  return del([ paths.scripts.dest, paths.styles.dest, 'assets/fonts/', 'assets/svg/' ]);
 }
 
 function cleanJS () {
-  return del([paths.scripts.dest]);
+  return del([ paths.scripts.dest ]);
 }
 
 function cleanCSS () {
-  return del([paths.styles.dest]);
+  return del([ paths.styles.dest ]);
 }
 
 function cleanFonts () {
-  return del(['assets/fonts/']);
+  return del([ 'assets/fonts/' ]);
 }
 
 function cleanSVG () {
-  return del(['assets/svg/']);
+  return del([ 'assets/svg/' ]);
 }
 
 
@@ -110,14 +110,14 @@ function cleanSVG () {
 
 // Test scripts
 function testJS () {
-  return src(['src/js/**/*.js', '!src/js/**/jquery.js', '!src/js/bootstrap/**'])
+  return src([ 'src/js/**/*.js', '!src/js/**/jquery.js', '!src/js/bootstrap/**' ])
     .pipe(eslint('.eslintrc.json'))
     .pipe(eslint.format());
 }
 
 // Test styles
 function testSCSS () {
-  return src(['src/scss/**/*.scss', '!src/scss/bootstrap/**'])
+  return src([ 'src/scss/**/*.scss', '!src/scss/bootstrap/**' ])
     .pipe(scssLint({ 'config': '.scss-lint.yml' }));
 }
 
@@ -174,23 +174,23 @@ function copyFonts () {
 
  // Remove existing Jekyll build site contents
  function cleanSite () {
-   return del([paths.jekyll.dest]);
+   return del([ paths.jekyll.dest ]);
  }
 
 // Remove script files in Jekyll site
 function cleanSiteJS () {
-  return del(['_site/assets/js/']);
+  return del([ '_site/assets/js/' ]);
 }
 
 // Remove style files in Jekyll site
 function cleanSiteCSS () {
-  return del(['_site/assets/css/']);
+  return del([ '_site/assets/css/' ]);
 }
 
 // Build the Jekyll site
 function buildSite (done) {
   browserSync.notify('Compiling Jekyll, please wait!');
-  return cp.spawn('npm', ['run', 'jekyll-build'], { stdio: 'inherit' })
+  return cp.spawn('npm', [ 'run', 'jekyll-build' ], { stdio: 'inherit' })
     .on('close', done);
 }
 
