@@ -2,10 +2,12 @@
 title: "A list of the best sites to download eBooks for free"
 excerpt: "A curated list of the most popular websites to download eBooks for free of cost."
 date: 2019-08-05T10:35:00+05:45
-last_modified_at: 2020-04-10T11:40:00+05:45
+last_modified_at: 2020-04-17T10:00:00+05:45
 ---
 
 Here, I've curated a list of sites to download eBook for free of cost. In these free sites, you will found most of the eBooks in PDF, EPub or Mobi format. You may have probably bookmarked a few of these already.
+
+<br>
 
 #### Z-Library
 
@@ -19,6 +21,18 @@ Part of Z-Library project. The world's largest e-book library since 2009.
 * [b-ok.xyz](http://b-ok.xyz/){: rel="nofollow" }
 * [b-ok.cc](http://b-ok.cc/){: rel="nofollow" }
 
+If Z-Library is censored or blocked in your location, you can use [TOR](https://b-ok.org/msgn/tor){: rel="nofollow" } to download it anyway.
+
+Z-Library TOR address is [http://zlibraryexau2g3p.onion](http://zlibraryexau2g3p.onion)
+
+How to use TOR?
+
+1. Tor is free to use. Simply [download and install the browser](https://torproject.org/download){: rel="nofollow" }, which is a modified version of Firefox available for Windows, Mac OS X, and Linux.
+2. Open an URL [http://zlibraryexau2g3p.onion](http://zlibraryexau2g3p.onion){: rel="nofollow" } in the TOR browser.
+3. Enjoy!
+
+<br>
+
 #### Library Genesis
 
 Library Genesis (LibGen) is a digital library established on 11 March 2008.
@@ -29,6 +43,8 @@ Library Genesis (LibGen) is a digital library established on 11 March 2008.
 * [libgen.lc](http://libgen.lc/){: rel="nofollow" }
 * [libgen.me](http://libgen.me/){: rel="nofollow" }
 * [bookfi.net](http://bookfi.net/){: rel="nofollow" }
+
+<br>
 
 #### PDF Drive
 
