@@ -5,7 +5,14 @@
 layout: null
 ---
 
-/* DESIGN BY */
+   _____  .__.__                     _____                       .__
+  /     \ |__|  | _____    ____     /  _  \_______ ___.__._____  |  |
+ /  \ /  \|  |  | \__  \  /    \   /  /_\  \_  __ <   |  |\__  \ |  |
+/    Y    \  |  |__/ __ \|   |  \ /    |    \  | \/\___  | / __ \|  |__
+\____|__  /__|____(____  /___|  / \____|__  /__|   / ____|(____  /____/
+        \/             \/     \/          \/       \/          \/
+
+/* AUTHOR */
 
   Name: Milan Aryal
   Twitter: @MilanAryal
@@ -16,9 +23,5 @@ layout: null
   Last updated: {{ site.time | date: '%Y/%m/%d' }}
   Language: English / Nepali
   Standards: HTML5, CSS3
-  Components: Jekyll {{ jekyll.version }} <https://jekyllrb.com>
-  IDE: Atom Editor <https://atom.io>,
-       Git <https://git-scm.com>,
-       Gulp <http://gulpjs.com>,
-       Photoshop,
-       Illustrator
+  Components: Jekyll {{ jekyll.version }}
+  IDE: Visual Studio Code, Atom Editor

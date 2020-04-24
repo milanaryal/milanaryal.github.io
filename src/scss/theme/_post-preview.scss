@@ -2,9 +2,9 @@
 // Post preview
 //
 
-.postPreview {
+.post-preview {
   padding: 25px 0 30px;
-  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 
   &:first-child {
     padding-top: 0;
@@ -15,19 +15,19 @@
   }
 }
 
-.postPreview-meta {
+.post-preview-meta {
   font-family: $font-family-base;
-  font-size: 12px;
+  font-size: 14.8px;
   // line-height: 1.4;
   // letter-spacing: 0;
-  color: rgba(0,0,0,.44);
+  color: rgba(0, 0, 0, .44);
 
   @media (min-width: 768px) {
-    font-size: 14px;
+    font-size: 15.8px;
   }
 }
 
-.postPreview-title {
+.post-preview-title {
   margin-top: 10px;
   // margin-bottom: 0;
   font-family: $font-family-sans-serif;
@@ -40,14 +40,14 @@
   }
 }
 
-.postPreview-excerpt {
+.post-preview-excerpt {
   margin-top: 10px;
   margin-bottom: 0;
   font-family: $font-family-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -.003em;
+  letter-spacing: -.0044em; // -.003em
 
   @media (min-width: 768px) {
     font-size: 18px;

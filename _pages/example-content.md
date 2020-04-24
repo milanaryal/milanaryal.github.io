@@ -1,8 +1,9 @@
 ---
 layout: page
 title: "Example content"
-description: "Just an example post."
-permalink: /example-content/
+tagline: "Just an example post."
+description: "Howdy! This is an example post that shows several types of HTML content supported in this theme."
+permalink: "/example-content/"
 sitemap: false
 robots: "noindex, follow"
 ---

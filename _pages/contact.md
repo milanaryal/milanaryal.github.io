@@ -1,9 +1,10 @@
 ---
 layout: page
 title: "Contact"
-description: "Have questions? I have answers (maybe)."
+tagline: "Have questions? I have answers (maybe)."
+description: "If you have any questions, comments, or would just like to say hello in general, please don't hesitate to text me!"
 image: "/assets/img/contact.jpg"
-permalink: /contact/
+permalink: "/contact/"
 ---
 
 If you have any questions, comments, or would just like to say hello in general, please don't hesitate to text me through these following social networks and I'll be sure to respond in a timely manner!

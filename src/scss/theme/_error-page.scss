@@ -2,7 +2,7 @@
 // 404 error page content
 //
 
-.errorPage {
+.o-error {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,27 +11,27 @@
   background-color: #fff;
 }
 
-.errorPage-content {
+.o-error-content {
   padding: 2em;
   transform: translateZ(0);
   animation: fade-in 2s;
 }
 
-.errorPage-message {
+.o-error-message {
   font-family: $font-family-base;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
+  color: rgba(0, 0, 0, .8);
   letter-spacing: -.04em;
-  color: rgba(0,0,0,.8);
 
   @media (min-width: 768px) {
     font-size: 32px;
   }
 }
 
-.errorPage-messageLead {
+.o-error-message--lead {
   margin-bottom: 10px;
   font-size: 32px;
 
@@ -40,26 +40,27 @@
   }
 }
 
-.errorPage-messageSmall {
+.o-error-message--small {
   margin-top: 10px;
   // font-family: $font-family-base;
   font-size: 16px;
   // font-style: normal;
   font-weight: 400;
+  color: rgba(0, 0, 0, .44);
   letter-spacing: -.02em;
-  color: rgba(0,0,0,.44);
+
 
   @media (min-width: 768px) {
     font-size: 18px;
   }
 
   a {
-    color: rgba(0,0,0,.44);
+    color: rgba(0, 0, 0, .44);
     text-decoration: underline;
 
     &:hover,
     &:active {
-      color: rgba(0,0,0,.6);
+      color: rgba(0, 0, 0, .6);
       text-decoration: underline;
     }
   }

@@ -8,14 +8,14 @@
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
 
   // if you have a 70px navbar => height: calc(100vh - 70px);
   // min-height: 100vh;
-  min-height: calc(100vh - 65px); // navbar height 65px
+  min-height: calc(100vh - 64px); // navbar height 64px
 
   @media (max-width: 767px) {
     min-height: calc(100vh - 56px); // navbar height 56px
@@ -23,12 +23,13 @@
 
   padding: 15px; // 1.25em ~20px
   // font-size: 16px;
-  background-attachment: fixed;
   background-color: #fff;
+
   // NOTE: Background images are set within the HTML using inline CSS!
   // background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('/assets/img/hero.jpg'); // rgba(0,0,0,0.753)
-  background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+  background-position: center, center;
   background-size: cover, cover;
 
   &::before {
@@ -39,18 +40,19 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-color: #c2d0d7; // silver
-    background-image: linear-gradient(to left top, #8e9eab , #eef2f3); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-    content: "";
-    opacity: 0;
     visibility: hidden;
-    transition: opacity 1.25s ease-in-out 0s,
-                visibility 1.25s 0s;
+    content: "";
+    background-color: #c2d0d7; // silver
+    background-image: linear-gradient(to left top, #8e9eab, #eef2f3); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+    opacity: 0;
+    transition:
+      opacity 1.25s ease-in-out 0s,
+      visibility 1.25s 0s;
   }
 
   &.is-loading::before {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -61,8 +63,8 @@
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 31.25em; // ~500px
   padding: 0 3em 2em; // ~0 48px 32px;
@@ -75,13 +77,18 @@
   margin-top: 60px; // fill avatar -60px
   text-align: center;
   cursor: default;
-  //background-color: rgba(255,255,255,.929);
-  background-color: transparent;
+
+  // background-color: rgba(255,255,255,.929);
+  // background-color: transparent;
+
+  background-color: rgba(255, 255, 255, .009);
+  border: 1px solid rgba(255, 255, 255, .9);
   border-radius: .375rem; // ~6px
   opacity: .99;
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
   transform: perspective(1000px) rotateX(0deg);
-  transition: opacity 1s ease,
-              transform 1s ease;
   transform-origin: 50% 50%;
 
   &.is-loading {
@@ -90,27 +97,26 @@
   }
 }
 
-.hero-profileInner {
+.hero-profile-inner {
   display: block;
 }
 
 .hero-avatar {
   position: relative;
-  //display: block;
-  display: none;
+  display: block;
   margin-bottom: 1.25em; // ~20px
 }
 
-.hero-avatarImage {
+.hero-avatar-img {
   display: block;
   width: 120px;
   height: 120px;
   margin: 0 auto; // center the avatar
   margin-top: -60px; // half avatar out of flex
   background: #eee;
-  border: 5px solid #fff;
+  // border: 5px solid #fff;
   border-radius: 100%;
-  box-shadow: 0 1px 1px rgba(136,153,166,.15);
+  box-shadow: 0 1px 1px rgba(136, 153, 166, .15);
 }
 
 .hero-title {
@@ -119,9 +125,9 @@
   font-size: 3.25em;
   font-weight: 400;
   line-height: 1.2;
-  letter-spacing: -.0075em;
   color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,.2);
+  text-shadow: 0 1px rgba(0, 0, 0, .2);
+  letter-spacing: -.0075em;
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
@@ -133,8 +139,8 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
+  color: rgba(255, 255, 255, .9);
   letter-spacing: .0333em;
-  color: rgba(255,255,255,.9);
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
@@ -163,8 +169,8 @@ ul.hero-social {
     justify-content: center;
     width: 3.4em;
     height: 3.4em;
-    color: rgba(255,255,255,.9);
-    border: solid 1px rgba(255,255,255,.9);
+    color: rgba(255, 255, 255, .9);
+    border: solid 1px rgba(255, 255, 255, .9);
     border-radius: 100%;
 
     &.icon-twitter:hover {
@@ -173,7 +179,7 @@ ul.hero-social {
       // border: solid 1px $twitter-color;
 
       // svg {
-        // fill: #fff;
+      // fill: #fff;
       // }
     }
 

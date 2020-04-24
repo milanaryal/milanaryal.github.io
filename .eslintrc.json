@@ -1,20 +1,44 @@
 {
-  "extends": "eslint:recommended",
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "script"
+  },
+  "extends": [
+    "plugin:unicorn/recommended",
+    "xo",
+    "xo/browser"
+  ],
   "rules": {
-    "no-alert": 0,
-    "no-bitwise": 0,
-    "camelcase": 1,
-    "curly": 1,
-    "eqeqeq": 0,
-    "no-eq-null": 0,
-    "guard-for-in": 1,
-    "no-empty": 1
-  },
-  "globals": {
-    "$": false
-  },
-  "env": {
-    "browser": true,
-    "node": true
+    "capitalized-comments": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "MemberExpression": "off",
+        "SwitchCase": 1
+      }
+    ],
+    "multiline-ternary": [
+      "error",
+      "always-multiline"
+    ],
+    "no-new": "off",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "strict": "error",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/no-for-loop": "off",
+    "unicorn/prefer-dataset": "off",
+    "unicorn/prefer-includes": "off",
+    "unicorn/prefer-node-append": "off",
+    "unicorn/prefer-query-selector": "off",
+    "unicorn/prevent-abbreviations": "off"
   }
 }

@@ -4,20 +4,20 @@
 
 // Middot divider
 
-.middotDivider {
+.u-middot-divider {
   display: inline-block;
   padding: 0 .42em;
 }
 
-.middotDivider::after {
+.u-middot-divider::after {
   content: "\00b7"; // "·"
 }
 
 
 // Page content
 
-.pageContent,
-.postArticle {
+.page-content,
+.post-content {
   margin-top: 49px;
   transform: translateZ(0);
 
@@ -29,57 +29,58 @@
 
 // Page header
 
-.pageHeader {
+.page-header {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 300px;
+  height: 380px;
   margin-bottom: 60px;
   color: #fff;
   text-align: center;
-  background-attachment: scroll;
   background-color: #fff;
   // NOTE: Background images are set within the HTML using inline CSS!
   // background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('/assets/img/page.jpg');
-  background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll;
+  background-position: center, center;
   background-size: cover, cover;
 
   @media (min-width: 768px) {
-    height: 430px;
+    height: 420px;
     margin-bottom: 80px;
   }
 }
 
-.pageHeader-introDivider {
+.page-header-intro-divider {
   max-width: 100px;
   margin: 15px auto;
   border: 0;
   border-top: 4px solid #fff;
 }
 
-.pageHeader-title {
+.page-header-title {
   // margin-top: 0;
   font-family: $font-family-sans-serif;
   font-size: 48px;
+  text-shadow: 0 1px rgba(0, 0, 0, .2);
   letter-spacing: -.04em;
-  text-shadow: 0 1px rgba(0,0,0,.2);
 
   @media (min-width: 768px) {
     font-size: 72px;
   }
 }
 
-.pageHeader-description {
+.page-header-tagline {
   display: block;
-  margin: 10px 0 0;
+  padding-top: 3px;
+  // margin: 10px 0 0;
   font-family: $font-family-sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.1;
+  color: rgba(255, 255, 255, .7);
   letter-spacing: -.02em;
-  color: rgba(255,255,255,.7);
 
   @media (min-width: 768px) {
     font-size: 22px;
@@ -89,15 +90,15 @@
 
 // Override styles for pagination
 
-.paginatorHeader {
-  height: 175px;
+.paginator-header {
+  height: 180px;
 
   @media (min-width: 768px) {
-    height: 300px;
+    height: 280px;
   }
 }
 
-.paginatorHeader-introDivider {
+.paginator-header-intro-divider {
   border-width: 2px;
 
   @media (min-width: 768px) {
@@ -105,7 +106,7 @@
   }
 }
 
-.paginatorHeader-title {
+.paginator-header-title {
   font-size: 40px;
 
   @media (min-width: 768px) {
@@ -113,7 +114,7 @@
   }
 }
 
-.paginatorHeader-description {
+.paginator-header-tagline {
   font-size: 18px;
 
   @media (min-width: 768px) {
@@ -123,14 +124,14 @@
 
 // Page body
 
-.pageBody {
-  margin-bottom: 50px;
+.page-body {
+  margin-bottom: 60px; // 50px
 }
 
 
 // Site page footer
 
-.siteFooter {
+.site-footer {
   padding: 50px 0 40px;
   // margin-top: 40px;
   text-align: center;
@@ -141,7 +142,7 @@
   }
 }
 
-.siteFooter-social {
+.site-footer-social {
   padding-left: 0;
   margin-left: -5px;
   list-style: none;
@@ -158,8 +159,8 @@
     justify-content: center;
     width: 2.5em;
     height: 2.5em;
-    color: rgba(0,0,0,.7);
-    background-color: rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .7);
     border-radius: 100%;
 
     @media (min-width: 768px) {
@@ -169,8 +170,8 @@
 
     &:hover,
     &:focus {
-      color: rgba(0,0,0,.8);
-      background-color: rgba(0,0,0,.8);
+      color: rgba(0, 0, 0, .8);
+      background-color: rgba(0, 0, 0, .8);
     }
 
     .svg {
@@ -186,16 +187,17 @@
   }
 }
 
-.siteFooter-legal {
+.site-footer-legal {
   margin-top: 30px;
   // margin-bottom: 0;
   font-family: $font-family-base;
-  font-size: 14px;
-  color: rgba(0,0,0,.6);
+  font-size: 14.8px;
+  color: rgba(0, 0, 0, .6);
   text-rendering: auto;
 
   @media (min-width: 768px) {
     margin-top: 40px;
+    font-size: 15.8px;
   }
 
   a {
@@ -208,4 +210,26 @@
       // color: inherit;
     }
   }
+
+  // white space for icon
+  .icon-copyright {
+    margin-right: -.5px;
+  }
+
+  .icon-pencil-alt {
+    margin-right: 1px;
+    margin-left: 1.25px;
+  }
+
+  .icon-heart {
+    margin-right: 1px;
+    margin-left: 1px;
+  }
+
+  .icon-coffee {
+    width: 1.25em; // match icon size with the others
+    margin-right: 1px;
+    margin-left: 1px;
+  }
+
 }

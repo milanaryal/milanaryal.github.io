@@ -10,7 +10,7 @@
   text-align: center;
   text-rendering: optimizeLegibility;
   list-style: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-font-feature-settings: liga on;
   @include clearfix;
 
@@ -21,35 +21,35 @@
       display: inline-block;
       padding: 12.5px 20px;
       font-family: $font-family-base;
-      font-size: 12px;
+      font-size: 16px; // 12px
       // text-transform: uppercase;
       font-weight: 400;
+      color: rgba(0, 0, 0, .44);
       // letter-spacing: -.02em;
       letter-spacing: 0;
-      color: rgba(0,0,0,.44);
       background-color: transparent;
       background-image: none;
-      border: 1px solid rgba(0,0,0,.15);
+      border: 1px solid rgba(0, 0, 0, .15);
       border-radius: 999em;
 
       @media (min-width: 768px) {
         padding: 15px 25px;
-        font-size: 14px;
+        // font-size: 14px;
       }
     }
 
     > a:hover {
       // text-decoration: none;
-      color: rgba(0,0,0,.6);
-      background-color: rgba(0,0,0,0);
-      border-color: rgba(0,0,0,.3);
+      color: rgba(0, 0, 0, .6);
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgba(0, 0, 0, .3);
     }
 
     > a:focus,
     > a:active {
-      color: rgba(0,0,0,.8);
-      background-color: rgba(0,0,0,0);
-      border-color: rgba(0,0,0,.6);
+      color: rgba(0, 0, 0, .8);
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgba(0, 0, 0, .6);
       outline: 0;
     }
   }

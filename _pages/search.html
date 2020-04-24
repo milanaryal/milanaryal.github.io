@@ -1,8 +1,9 @@
 ---
 layout: search
 title: "Search"
-description: "Search your query."
-permalink: /search/
+tagline: "Search your query."
+description: "Google optimise search engine to search available contents on this site."
+permalink: "/search/"
 sitemap: false
 robots: "noindex, follow"
 ---
@@ -12,11 +13,11 @@ robots: "noindex, follow"
   {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
 
-<h3 class="searchPage-heading"><svg class="icon icon-search" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-search"></use></svg> Search {{ site_title }} writings</h3>
+<h3 class="o-search-heading"><svg class="icon icon-search" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-search"></use></svg> Search {{ site_title }} writings</h3>
 
-<div class="searchPage-body" id="cse-search">
+<div class="o-search-body" id="cse-search">
   <!-- Google CSE search box begins  -->
-  <form class="searchPage-form" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
+  <form class="o-search-form" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
     <div class="row">
       <div class="col-lg-12">
         <div class="input-group input-group-lg">
@@ -42,7 +43,7 @@ robots: "noindex, follow"
     })();
   </script>
 
-  <div class="searchPage-results">
+  <div class="o-search-results">
     <gcse:searchresults-only linktarget="_parent"></gcse:searchresults-only>
   </div>
 </div><!-- ./search-box -->

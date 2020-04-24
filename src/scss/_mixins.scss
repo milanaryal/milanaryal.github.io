@@ -7,12 +7,12 @@
 }
 
 @mixin btn-social-share() {
-  color: rgba(0,0,0,.6);
-  background-color: rgba(0,0,0,.05);
+  color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, .05);
 
   &:focus,
   &:hover {
-    color: rgba(0,0,0,.6);
-    background-color: rgba(0,0,0,.1);
+    color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .1);
   }
 }

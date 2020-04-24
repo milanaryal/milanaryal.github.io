@@ -2,7 +2,7 @@
 // Elevator - Scroll back to top button
 //
 
-.elevatorWrapper {
+.elevator-wrapper {
   @media (max-width: 767px) {
     display: none !important;
   }
@@ -14,26 +14,28 @@
   bottom: 25px;
   display: inline-block;
   font-size: 22px;
-  color: rgba(0,0,0,.7);
+  color: rgba(0, 0, 0, .7);
   text-decoration: none;
   cursor: pointer;
+  visibility: hidden;
   background-image: none;
   opacity: 0;
-  visibility: hidden;
-  transition: opacity .3s 0s,
-              visibility 0s .3s;
+  transition:
+    opacity .3s 0s,
+    visibility 0s .3s;
 
   &.elevator-is-visible,
   &.elevator-fade-out,
   &:hover {
-    transition: opacity .3s 0s,
-                visibility 0s 0s;
+    transition:
+      opacity .3s 0s,
+      visibility 0s 0s;
   }
 
   // the button becomes visible
   &.elevator-is-visible {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
   }
 
   // if the user keeps scrolling down, the button is out of focus and becomes less visible
@@ -42,7 +44,7 @@
   }
 
   &:hover {
-    color: rgba(0,0,0,.8);
+    color: rgba(0, 0, 0, .8);
     opacity: 1;
   }
 

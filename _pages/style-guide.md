@@ -1,8 +1,9 @@
 ---
 layout: page
 title: "Style guide"
-description: "This is the style guide for Milan Aryal."
-permalink: /style-guide/
+tagline: "The style guide for Milan Aryal."
+description: "A living document of code detailing all the various components used on the website to maintain visual consistency."
+permalink: "/style-guide/"
 sitemap: false
 robots: "noindex, follow"
 ---

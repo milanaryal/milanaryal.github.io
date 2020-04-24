@@ -3,40 +3,19 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="{% if page.language %}{{ page.language }}{% else %}{{ site.language | replace:'-','_' }}{% endif %}">
+
+{%- capture theme_font_family_base -%}-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"{%- endcapture -%}
 
   <head>
 
-    {%- assign site_title = site.title | default: site.name -%}
-    {%- if site_title -%}
-      {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
-    {%- endif -%}
+    {% include head_no_seo.html %}
 
-    {%- if page.title -%}
-      {%- assign page_title = page.title | smartify | strip_html | strip_newlines | escape_once -%}
-    {%- endif -%}
-
-    {%- if site.github.build_revision -%}
-      {%- assign build_version = site.github.build_revision -%}
-    {%- else -%}
-      {%- assign build_version = site.time | date: '%Y%m%d%H%M%S' -%}
-    {%- endif -%}
-
-    {%- capture theme_font_family_base -%}-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"{%- endcapture -%}
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{ page_title }} &mdash; {{ site_title }}</title>
-    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_title }}">
-    <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_title }}">
-    <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ build_version }}">
-    <link rel="icon" sizes="16x16 32x32 64x64 128x128" href="/favicon.ico?v={{ build_version }}">
     <style>
       body {
         min-height: 100vh !important;
       }
-      .searchPage-heading {
+      .o-search-heading {
         margin-top: 100px;
         margin-bottom: 0;
         font-family: {{ theme_font_family_base }};
@@ -44,20 +23,20 @@ layout: compress
         font-size: 18px;
       }
       @media (min-width: 768px) {
-        .searchPage-heading {
+        .o-search-heading {
           margin-top: 222px;
           font-size: 20px;
         }
       }
-      .searchPage-body {
+      .o-search-body {
         margin: 30px 0 77px;
         font-family: {{ theme_font_family_base }};
       }
-      .searchPage-form {
+      .o-search-form {
         margin-bottom: 30px;
       }
-      .searchPage-results,
-      .searchPage-results * {
+      .o-search-results,
+      .o-search-results * {
         -webkit-box-sizing: content-box;
            -moz-box-sizing: content-box;
                 box-sizing: content-box;
@@ -132,20 +111,27 @@ layout: compress
         margin-top: 0 !important;
         font-size: 15px !important;
       }
-      .gsc-results .gsc-cursor-box {
-        display: block !important;
-        margin-top: 30px !important;
-        text-align: center !important;
-        background-color: #f5f6f5 !important;
-        border-radius: 3px !important;
-      }
-      .gsc-results .gsc-cursor-box .gsc-cursor {
-        display: block !important;
-        padding: 10px !important;
-      }
-      .gsc-results .gsc-cursor-box .gsc-cursor-page {
-        font-size: 1.15em !important;
-        padding: 4px 8px !important;
+      {% comment %}
+      /**
+      * GSC cursor box
+      */
+      {% endcomment %}
+      @media (min-width: 768px) {
+        .gsc-results .gsc-cursor-box {
+          display: block !important;
+          margin-top: 30px !important;
+          text-align: center !important;
+          background-color: #f5f6f5 !important;
+          border-radius: 3px !important;
+        }
+        .gsc-results .gsc-cursor-box .gsc-cursor {
+          display: block !important;
+          padding: 10px !important;
+        }
+        .gsc-results .gsc-cursor-box .gsc-cursor-page {
+          font-size: 1.15em !important;
+          padding: 4px 8px !important;
+        }
       }
       {% comment %}
       /**
@@ -156,6 +142,7 @@ layout: compress
       .gcsc-branding,
       .gsc-thumbnail,
       .gsc-location,
+      .gcsc-find-more-on-google-root,
       .gcsc-more-maybe-branding-root {
         display: none !important;
       }
@@ -165,7 +152,7 @@ layout: compress
 
   <body>
 
-    {% include nav.html %}
+    {% include nav_no_searchbox.html  %}
 
     <!-- Page content -->
     <section class="container">

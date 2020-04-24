@@ -1,10 +1,12 @@
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
 
   {% include metadata.html %}
 
   <!-- Basic page needs -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{% if page_title %}{{ page_title }} &mdash; {{ site_title }}{% else %}{{ site_title }}{% endif %}</title>
   <meta name="title" content="{% if page_title %}{{ page_title }}{% else %}{{ site_title }}{% endif %}">
   <meta name="description" content="{{ page_description }}">
@@ -12,6 +14,8 @@
   {% if page_author and page.date %}
     <meta name="author" content="{{ page_author }}">
   {% endif %}
+
+  <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
   <!-- Open Graph tags -->
   <meta property="og:title" content="{% if page_title %}{{ page_title }}{% else %}{{ site_title }}{% endif %}">
@@ -40,7 +44,7 @@
   <meta property="og:type" content="{% if page.layout == 'post' and page.date %}article{% else %}website{% endif %}">
 
   {% if site.locale %}
-    <meta property="og:locale" content="{{ site.locale }}">
+    <meta property="og:locale" content="{{ site.locale | replace:'-','_' }}">
   {% endif %}
 
   {% if site.facebook %}
@@ -86,16 +90,16 @@
       <meta name="twitter:card" content="summary">
     {% endif %}
 
-    <meta name="twitter:site" content="@{{ site.twitter.username | replace:'@','' }}">
+    <meta name="twitter:site" content="@{{ site.twitter.username | remove:'@' }}">
 
     {% if page.layout == 'post' and page.date %}
       {% if page.author.twitter %}
-        <meta name="twitter:creator" content="@{{ page.author.twitter | replace:'@','' }}">
+        <meta name="twitter:creator" content="@{{ page.author.twitter | remove:'@' }}">
       {% endif %}
 
       {% if site.author.twitter %}
         {% unless page.author %}
-          <meta name="twitter:creator" content="@{{ site.author.twitter | replace:'@','' }}">
+          <meta name="twitter:creator" content="@{{ site.author.twitter | remove:'@' }}">
         {% endunless %}
       {% endif %}
     {% endif %}
@@ -144,15 +148,17 @@
   <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_title }}">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v={{ build_version }}">
+  <link rel="stylesheet" href="/assets/css/main.min.css?v={{ build_version }}">
 
   <!-- Favicon & startup configuration -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ build_version }}">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ build_version }}">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ build_version }}">
   <link rel="manifest" href="/site.webmanifest?v={{ build_version }}">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ build_version }}" color="#171717">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ build_version }}" color="{{ site.theme_color }}">
   <link rel="shortcut icon" href="/favicon.ico?v={{ build_version }}">
-  <meta name="theme-color" content="#000000">
+  <meta name="msapplication-TileColor" content="{{ site.theme_color }}">
+  <meta name="msapplication-config" content="/browserconfig.xml?v={{ build_version }}">
+  <meta name="theme-color" content="{{ site.theme_color }}">
 
 </head>

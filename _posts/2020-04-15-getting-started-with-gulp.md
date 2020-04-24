@@ -315,7 +315,7 @@ $ gulp
 
 An incredibly active community of developers is building front-end plugins, you can explore them at [Gulp plugins library](https://gulpjs.com/plugins/){: rel="nofollow" }.
 
-Or, using the "gulpplugin" and "gulpfriendly" keywords --- plugins can be browsed and searched on the [npm search page](https://www.npmjs.com/){: rel="nofollow" }.
+Or, using the "[gulpplugin](https://npmsearch.com/?q=keywords:gulpplugin){: rel="nofollow" }" and "[gulpfriendly](https://npmsearch.com/?q=keywords:gulpfriendly){: rel="nofollow" }" keywords --- plugins can be browsed and searched on the [npm search page](https://www.npmjs.com/){: rel="nofollow" }.
 
 ---
 

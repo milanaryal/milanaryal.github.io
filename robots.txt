@@ -4,6 +4,7 @@
 
 layout: null
 disallows:
+  - "/redirects.json"
   - "/posts.json"
 ---
 

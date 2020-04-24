@@ -1,7 +1,7 @@
 ---
 title: "Top 10 most popular BitTorrent sites [Updated March 12, 2020]"
 date: 2017-05-23T06:43:58+05:45
-last_modified_at: 2020-03-12T07:07:00+05:45
+last_modified_at: 2020-04-24T15:25:00+05:45
 excerpt: "An up-to-date list of the most popular BitTorrent sites out there."
 ---
 

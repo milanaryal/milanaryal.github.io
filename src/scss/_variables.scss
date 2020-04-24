@@ -2,29 +2,31 @@
 //
 // Custom variables for the theme.
 
-$brand-color:               #2196f3;
+$brand-color:               #0074d9 !default; // #111111; #0074d9; #2196f3;
 
 
 // Bootstrap
 //
 // Override custom settings.
 
-$brand-primary:             darken($brand-color, 6.5%); // #0c86e6
-$text-color:                rgba(0,0,0,.8);
+$brand-primary:             darken($brand-color, 6.5%) !default;
+$text-color:                rgba(0, 0, 0, .8) !default;
 
-$font-family-sans-serif:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif:         "Lora", Georgia, "Times New Roman", Times, serif;
-$font-family-base:          $font-family-sans-serif;
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:    "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:         "PT Serif", Georgia, "Times New Roman", Times, serif !default;
+$font-family-base:          $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
 
-$link-color:                inherit;
-$link-hover-color:          inherit;
-$link-hover-decoration:     none;
+$link-color:                inherit !default;
+$link-hover-color:          inherit !default;
+$link-hover-decoration:     none !default;
 
-$blockquote-border-color:   $text-color;
-$hr-border:                 rgba(0,0,0,.05);
+$blockquote-border-color:   $text-color !default;
+$hr-border:                 rgba(0, 0, 0, .05) !default;
 
 //$theme-colors: (
-//  dark: #34495e
+//  dark: #34495e  !default;
 //);
 
 
@@ -32,27 +34,27 @@ $hr-border:                 rgba(0,0,0,.05);
 //
 // Official color codes for the world's biggest brands.
 
-$disqus-color:              #2e9fff;
-$envelope-color:            #787878;
-$facebook-color:            #3b5998;
-$flickr-color:              #ff0084;
-$foursquare-color:          #f94877; // has multi colors
-$google-plus-color:         #dc4e41;
-$instagram-color:           #833ab4; // has multi colors
-$linkedin-color:            #0077b5; // has multi colors
-$pinterest-color:           #bd081c;
-$rss-color:                 #f26522;
-$tumblr-color:              #35465c;
-$twitter-color:             #55acee;
-$vimeo-color:               #1ab7ea; // has multi colors
-$youtube-color:             #cd201f;
-$github-color:              #333;    // has multi colors
+$disqus-color:              #2e9fff !default;
+$envelope-color:            #787878 !default;
+$facebook-color:            #3b5998 !default;
+$flickr-color:              #ff0084 !default;
+$foursquare-color:          #f94877 !default; // has multi colors
+$google-plus-color:         #dc4e41 !default;
+$instagram-color:           #833ab4 !default; // has multi colors
+$linkedin-color:            #0077b5 !default; // has multi colors
+$pinterest-color:           #bd081c !default;
+$rss-color:                 #f26522 !default;
+$tumblr-color:              #35465c !default;
+$twitter-color:             #55acee !default;
+$vimeo-color:               #1ab7ea !default; // has multi colors
+$youtube-color:             #cd201f !default;
+$github-color:              #333 !default;    // has multi colors
 
 
 // NProgress
 //
 // Loading bar custom settings.
 
-$nprogress-color:           #77b6ff; // last update #29d
-$nprogress-height:          2px;
-$nprogress-zindex:          1031;
+$nprogress-color:           #0074d9 !default; // last update #29d, #77b6ff
+$nprogress-height:          2px !default;
+$nprogress-zindex:          1031 !default;

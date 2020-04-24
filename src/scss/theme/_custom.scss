@@ -4,7 +4,7 @@
 
 // Contact page Google Maps
 
-.mapWrapper {
+.map-wrapper {
   @media (max-width: 767px) {
     display: none !important;
   }
@@ -36,14 +36,14 @@
 
   a {
     display: block;
-    color: rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, .7);
     text-decoration: none !important;
     background-image: none !important;
     border-bottom: none !important;
 
     &:hover,
     &:focus {
-      color: rgba(0,0,0,.8);
+      color: rgba(0, 0, 0, .8);
     }
 
     .icon {
@@ -58,14 +58,14 @@
   text-align: center;
 
   a {
-    color: rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, .7);
     text-decoration: none !important;
     background-image: none !important;
     border-bottom: none !important;
 
     &:hover,
     &:focus {
-      color: rgba(0,0,0,.8);
+      color: rgba(0, 0, 0, .8);
     }
   }
 }
@@ -74,33 +74,8 @@
 // Bootstrap custom styles
 
 .navbar,
-.searchPage-body {
+.o-search-body {
   .input-group-append .btn-outline-secondary {
     border-color: #ced4da;
-  }
-}
-
-
-// Site footer beautify
-
-.siteFooter-legal {
-  .icon-copyright {
-    margin-right: -.5px;
-  }
-
-  .icon-pencil-alt {
-    margin-right: 1px;
-    margin-left: 1.25px;
-  }
-
-  .icon-heart {
-    margin-right: 1px;
-    margin-left: 1px;
-  }
-
-  .icon-coffee {
-    width: 1.25em; // match icon size with the others
-    margin-right: 1px;
-    margin-left: 1px;
   }
 }

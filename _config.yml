@@ -1,83 +1,89 @@
-title: Milan Aryal
-description: "Livin' on the edge of web standards."
-url: https://milanaryal.com.np
+# Jekyll configuration (https://jekyllrb.com/docs/configuration/)
+
+title: "Milan Aryal"
+tagline: "Livin' on the edge of web standards."
+description: "I'm just a regular person who believes life is simple, and I like a simple life."
+url: "https://milanaryal.com.np"
 
 logo:
-  path: "/assets/img/m-icon-black-on-white.png"
-  width: 300
-  height: 300
-
-icon_path: "/assets/svg/sprite.svg"
+  path: "/assets/img/open-graph.png"
+  width: "300"
+  height: "300"
 
 image: "/assets/img/writings.jpg"
-theme_color: "#000000"
-
-author:
-  name: Milan Aryal
-  uri: https://twitter.com/MilanAryal
-  avatar: "/assets/img/m-icon-white-on-black.png"
-  bio: "I'm just a regular person who believes life is simple, and I like a simple life."
-  facebook: considermilan
-  twitter: MilanAryal
-  telegram: MilanAryal
-  instagram: MilanAryal
-  github: MilanAryal
-  keybase: milanaryal
-  street: "Chandragiri 15"
-  locality: Kathmandu
-  region: Bagmati
-  postcode: 44600
-  country: Nepal
-
-facebook:
-  admins: 100001982813077
-
-twitter:
-  username: MilanAryal
-
-disqus_shortname: milanaryal
-google_cse_id: 000254926668963224856:z4vgwqv7kla
-google_api_key: AIzaSyB27uh5sPHJ156nRryf1yuJn6fjo_B7qvI
-google_analytics_id: UA-42092423-1
-google_analytics_id_2: UA-42092423-2
-language: en
+icon_path: "/assets/svg/sprite.svg"
+theme_color: "#111111"
 
 nav:
-  - title: Writings
+  - title: "Writings"
     url: "/writings/"
-  - title: About
+  - title: "About"
     url: "/about/"
-#  - title: Contact
+#  - title: "Contact"
 #    url: "/contact/"
+#  - title: "Random"
+#    url: "/random/"
 
-repository: MilanAryal/milanaryal.github.io
-branch: master
-encoding: utf-8
-timezone: Asia/Kathmandu
-locale: en_us
+author:
+  name: "Milan Aryal"
+  uri: "https://twitter.com/MilanAryal"
+  avatar: "/assets/img/avatar.png"
+  bio: "I'm just a regular person who believes life is simple, and I like a simple life."
+  facebook: "considermilan"
+  twitter: "MilanAryal"
+  telegram: "MilanAryal"
+  instagram: "MilanAryal"
+  github: "MilanAryal"
+  keybase: "milanaryal"
+  street: "Chandragiri 15"
+  locality: "Kathmandu"
+  region: "Bagmati"
+  postcode: "44600"
+  country: "Nepal"
+
+facebook:
+  admins: "100001982813077"
+
+twitter:
+  username: "MilanAryal"
+
+disqus_shortname: "milanaryal"
+google_cse_id: "000254926668963224856:z4vgwqv7kla"
+google_api_key: "AIzaSyB27uh5sPHJ156nRryf1yuJn6fjo_B7qvI"
+google_analytics_id: "UA-42092423-1"
+google_analytics_id_2: "UA-42092423-2"
+
+# HTML lang attribute format eg. en, en-US, en-GB ...
+language: "en"
+
+# Open Graph protocol format eg. en_US, en_GB ...
+locale: "en_US"
+
+repository: "MilanAryal/milanaryal.github.io"
+branch: "master"
+
+# Jekyll default configuration
+# Read: https://jekyllrb.com/docs/configuration/default/
+
+encoding: "utf-8"
 future: true
+timezone: "Asia/Kathmandu"
 
-markdown: kramdown
 kramdown:
-  input: GFM
-  hard_wrap: false
-  toc_levels: 1..3
-
-highlighter: rouge
+  toc_levels: [2, 3]
 
 gist:
   noscript: false
 
 paginate_path: "/writings/page:num/"
 paginate: 10
-
 permalink: "/:title/"
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: post
+      layout: "post"
       comments: true
   - scope:
       path: "uploads/**/*.pdf"
@@ -110,13 +116,26 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
-  - Gruntfile.js
+  - script
+  - scripts
+  - src
+  - gulpfile.js
   - package.json
+  - package-lock.json
   - npm-debug.log
   - node_modules
   - vendor
   - bundle
   - ".bundle"
   - ".sass-cache"
-  - script
-  - src
+  - ".jekyll-cache"
+  - ".jekyll-metadata"
+  - ".browserslistrc"
+  - ".editorconfig"
+  - ".eslintignore"
+  - ".eslintrc.json"
+  - ".gitattributes"
+  - ".gitignore"
+  - ".stylelintignore"
+  - ".stylelintrc.json"
+  - ".travis.yml"

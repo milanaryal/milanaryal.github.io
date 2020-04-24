@@ -1,0 +1,58 @@
+//
+// Header navigation
+//
+
+.navbar {
+  background-color: #fff;
+  @media (min-width: 768px) {
+    // should be min-height if dropdown menu contents
+    // 64px + 1px (borderbottom or box-shadow) = 65px
+    height: 64px;
+  }
+}
+
+.navbar-brand {
+  font-family: $font-family-serif;
+  // font-weight: 700;
+  letter-spacing: -.04em;
+}
+
+.nav-link {
+  @media (min-width: 768px) {
+    margin-left: 30px;
+  }
+
+  @media (max-width: 767px) {
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+.form-inline {
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+
+// Scrolling behavior
+
+.headroom {
+  transition:
+    background-color 500ms,
+    box-shadow 500ms;
+  //*** Force hardware acceleration ***//
+  transform: translateZ(0);
+  will-change:
+    background-color,
+    box-shadow;
+}
+
+.headroom--not-top {
+  background-color: rgba(255, 255, 255, .97);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15); // 0 0 1px rgba(0,0,0,.15);
+}
+
+.headroom--top {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+}

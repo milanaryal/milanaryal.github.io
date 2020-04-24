@@ -1,7 +1,7 @@
 ---
 title: "The best open-source BitTorrent clients"
 date: 2017-05-22T09:28:20+05:45
-last_modified_at: 2020-03-12T05:45:00+05:45
+last_modified_at: 2020-04-24T15:25:00+05:45
 excerpt: "An open-source and free of adware BitTorrent clients you should definitely check out."
 ---
 

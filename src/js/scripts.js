@@ -8,11 +8,6 @@
 ;(function ($, window, document, undefined) {
   'use strict';
 
-  var currentURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
-  var logMSG = 'Welcome to: ';
-  console.log(logMSG + currentURL);
-
-
   /**
    * ------------------------------------------------------------------------
    * Support SVG external content for older browsers - svg4everybody.js
@@ -60,7 +55,7 @@
 
    function generateRandomPosts() {
      $.getJSON('/posts.json', function(data) {
-       console.log('[posts.json loaded for random posts]');
+       console.log('Loaded [posts.json] for random posts.');
 
        var postsCount = data.length;
        var posts = data;
@@ -69,7 +64,7 @@
        var numberOfPosts = 5;
        var divRandomPosts = $('#random-posts');
 
-       divRandomPosts.append('<h3 class="randomPosts-heading">Other writings</h3>');
+       divRandomPosts.append('<h3 class="random-posts-heading">Other writings</h3>');
 
        while (counter < numberOfPosts) {
          var randomIndex = Math.floor(Math.random() * postsCount);
@@ -78,9 +73,9 @@
            var postTitle = posts[randomIndex].title;
            var postURL = posts[randomIndex].url;
            var postDate = posts[randomIndex].date;
-           var postExcerpt = posts[randomIndex].excerpt;
+           var postExcerpt = posts[randomIndex].summary;
 
-           divRandomPosts.append('<div class="randomPosts-item"><a href="' + postURL + '"><div class="clearfix"><h3 class="randomPosts-itemTitle">' + postTitle + '</h3><p class="randomPosts-itemExcerpt">' + postExcerpt + '</p></div></a><div class="randomPosts-itemMeta">Posted on ' + postDate + '</div></div>');
+           divRandomPosts.append('<div class="random-posts-item"><a href="' + postURL + '"><div class="clearfix"><h3 class="random-posts-item-title">' + postTitle + '</h3><p class="random-posts-item-excerpt">' + postExcerpt + '</p></div></a><div class="random-posts-item-meta">Posted on ' + postDate + '</div></div>');
 
            randomIndexUsed.push(randomIndex);
            counter++;
@@ -100,7 +95,7 @@
      * ------------------------------------------------------------------------
      */
 
-     $(".headroom").headroom();
+     $('.headroom').headroom();
 
 
     /**
@@ -119,10 +114,10 @@
      */
 
     // make all images responsive
-    $('.markdownBody img').addClass('img-fluid');
+    $('.markdown-body img').addClass('img-fluid');
 
     // responsive table
-    $('.markdownBody table').addClass('table table-responsive table-hover');
+    $('.markdown-body table').addClass('table table-responsive table-hover');
 
     // responsive embed video
     $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
@@ -135,10 +130,10 @@
     $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
     // default button
-    $('.markdownBody a[role="button"]').addClass('btn btn-outline-default');
+    $('.markdown-body a[role="button"]').addClass('btn btn-outline-default');
 
     // footnotes header
-    var footnotesAnchor = '<a class="js-headerLink" href="#footnotes" aria-hidden="true"><svg class="icon icon-link"><use xlink:href="/assets/svg/sprite.svg#icon-link"></use></svg></a>';
+    var footnotesAnchor = '<a class="js-anchor-link" href="#footnotes" aria-hidden="true"><svg class="icon icon-link"><use xlink:href="/assets/svg/sprite.svg#icon-link"></use></svg></a>';
 
     $('.footnotes').prepend('<hr><h4 id="footnotes">' + footnotesAnchor + 'Footnotes</h4>');
 
@@ -149,12 +144,12 @@
      * ------------------------------------------------------------------------
      */
 
-    var postHeader = '.markdownBody>h3,.markdownBody>h4,.archiveBody .archiveYear';
+    var postHeader = '.markdown-body>h3,.markdown-body>h4,.archive-body .archive-year';
 
     $(postHeader).filter('[id]').each(function () {
       var header      = $(this),
           headerID    = header.attr('id'),
-          anchorClass = 'js-headerLink',
+          anchorClass = 'js-anchor-link',
           anchorIcon  = '<svg class="icon icon-link"><use xlink:href="/assets/svg/sprite.svg#icon-link"></use></svg>';
 
       if (headerID) {
@@ -171,10 +166,12 @@
      * ------------------------------------------------------------------------
      */
 
+    $('.random-posts').removeAttr('hidden');
+
     generateRandomPosts();
 
     // random posts section footer
-    $('.randomPosts').append('<div class="randomPosts-footer"><a class="btn btn-outline-default btn-random" href="/archives/" role="button">More writings</a></div>');
+    $('.random-posts').append('<div class="random-posts-footer"><a class="btn btn-outline-default btn--random" href="/archives/" role="button">More writings</a></div>');
 
 
     /**
@@ -183,7 +180,9 @@
      * ------------------------------------------------------------------------
      */
 
-    $('.elevatorWrapper').append('<div class="elevator" aria-hidden="true"><svg class="icon icon-chevron-up"><use xlink:href="/assets/svg/sprite.svg#icon-chevron-up"></use></svg></span></div>');
+    $('.elevator-wrapper').removeAttr('hidden');
+
+    $('.elevator-wrapper').append('<div class="elevator" aria-hidden="true"><svg class="icon icon-chevron-up"><use xlink:href="/assets/svg/sprite.svg#icon-chevron-up"></use></svg></span></div>');
 
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,
@@ -218,7 +217,7 @@
      * ------------------------------------------------------------------------
      */
 
-    $('.socialShare-popup').on('click', function () {
+    $('.btn--social-share-popup').on('click', function () {
       var width  = 670,
           height = 420,
           left   = ($(window).width()  - width)  / 2,

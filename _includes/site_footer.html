@@ -1,7 +1,7 @@
 <!-- Footer -->
-<footer class="siteFooter" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+<footer class="site-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
   <div class="container">
-    <ul class="siteFooter-social">
+    <ul class="site-footer-social">
       <li>
         <a href="/feed.xml">
           <svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-rss"></use></svg>
@@ -53,6 +53,6 @@
     {%- if site_title -%}
       {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
     {%- endif -%}
-    <p class="siteFooter-legal"><svg class="icon icon-copyright" aria-label="copyright" role="img"><use xlink:href="{{ site.icon_path }}#icon-copyright"></use></svg>&nbsp;<span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span>&nbsp;{% if site.author %}<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ site_author }}</span></span>{% else %}{{ site_title }}{% endif %}<span>.</span>&nbsp;<svg class="icon icon-pencil-alt" aria-label="made" role="img"><use xlink:href="{{ site.icon_path }}#icon-pencil-alt"></use></svg>&nbsp;<span>with</span>&nbsp;<svg class="icon icon-heart" aria-label="love" role="img"><use xlink:href="{{ site.icon_path }}#icon-heart"></use></svg>&nbsp;<span>&amp;</span>&nbsp;<svg class="icon icon-coffee" aria-label="coffee" role="img"><use xlink:href="{{ site.icon_path }}#icon-coffee"></use></svg>&nbsp;<span>in</span>&nbsp;<span>Nepal</span><span>.</span></p>
+    <p class="site-footer-legal"><svg class="icon icon-copyright" aria-label="copyright" role="img"><use xlink:href="{{ site.icon_path }}#icon-copyright"></use></svg>&nbsp;<span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span>&nbsp;{% if site.author %}<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ site_author }}</span></span>{% else %}{{ site_title }}{% endif %}<span>.</span>&nbsp;<svg class="icon icon-pencil-alt" aria-label="made" role="img"><use xlink:href="{{ site.icon_path }}#icon-pencil-alt"></use></svg>&nbsp;<span>with</span>&nbsp;<svg class="icon icon-heart" aria-label="love" role="img"><use xlink:href="{{ site.icon_path }}#icon-heart"></use></svg>&nbsp;<span>&amp;</span>&nbsp;<svg class="icon icon-coffee" aria-label="coffee" role="img"><use xlink:href="{{ site.icon_path }}#icon-coffee"></use></svg>&nbsp;<span>in</span>&nbsp;<span>Nepal</span><span>.</span></p>
   </div><!-- /.container -->
 </footer>

@@ -1,9 +1,10 @@
 ---
 layout: page
 title: "Fine print"
-description: "Website legal notice."
+tagline: "Website legal notices."
+description: "Website legal notices about polices, terms, and conditions for using the site."
 image: "/assets/img/writings.jpg"
-permalink: /fine-print/
+permalink: "/fine-print/"
 sitemap: false
 robots: "noindex, follow"
 ---

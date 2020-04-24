@@ -1,8 +1,7 @@
 ---
 layout: default
-description: "I'm just a regular person who believes life is simple, and I like a simple life."
 image: "/assets/img/hero.jpg"
-permalink: /
+permalink: "/"
 ---
 
 {%- assign site_author = site.author.name | default: site.author | default: site.title | default: site.name -%}
@@ -29,11 +28,11 @@ permalink: /
 <main class="hero-container is-loading" style="background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('{{ page_image }}');" role="main" itemprop="mainContentOfPage">
   <!-- Hero profile -->
   <section class="hero-profile is-loading" itemscope itemtype="https://schema.org/Person">
-    <div class="hero-profileInner">
+    <div class="hero-profile-inner">
       <link itemprop="url" href="/">
       <header>
         <span class="hero-avatar">
-          <img class="hero-avatarImage" itemprop="image" src="{{ site_author_avatar }}" alt="{{ site_author }}">
+          <img class="hero-avatar-img" itemprop="image" src="{{ site_author_avatar }}" alt="{{ site_author }}">
         </span>
         <h1 class="hero-title" itemprop="name">{{ site_author }}</h1>
         <p class="hero-description" itemprop="description">{{ site_author_bio }}</p>
@@ -51,17 +50,17 @@ permalink: /
 
       <footer>
         <ul class="hero-social">
-          {% if site.author.twitter %}<li><a class="icon-twitter" itemprop="sameAs" rel="me" href="//twitter.com/{{ site.author.twitter }}"><svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-twitter"></use></svg><span class="label">Twitter</span></a></li>{% endif %}
-          {% if site.author.instagram %}<li><a class="icon-instagram" itemprop="sameAs" rel="me" href="//instagram.com/{{ site.author.instagram }}"><svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-instagram"></use></svg><span class="label">Instagram</span></a></li>{% endif %}
-          {% if site.author.github %}<li><a class="icon-github" itemprop="sameAs" rel="me" href="//github.com/{{ site.author.github }}"><svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-github"></use></svg><span class="label">GitHub</span></a></li>{% endif %}
+          {% if site.author.twitter %}<li><a class="icon-twitter" itemprop="sameAs" rel="me" href="https://twitter.com/{{ site.author.twitter }}"><svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-twitter"></use></svg><span class="label">Twitter</span></a></li>{% endif %}
+          {% if site.author.instagram %}<li><a class="icon-instagram" itemprop="sameAs" rel="me" href="https://instagram.com/{{ site.author.instagram }}"><svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-instagram"></use></svg><span class="label">Instagram</span></a></li>{% endif %}
+          {% if site.author.github %}<li><a class="icon-github" itemprop="sameAs" rel="me" href="https://github.com/{{ site.author.github }}"><svg class="svg" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-github"></use></svg><span class="label">GitHub</span></a></li>{% endif %}
         </ul>
 
-        {% if site.author.facebook %}<link itemprop="sameAs" rel="me" href="//www.facebook.com/{{ site.author.facebook }}">{% endif %}
-        {% if site.author.youtube %}<link itemprop="sameAs" rel="me" href="//www.youtube.com/{{ site.author.youtube }}">{% endif %}
-        {% if site.author.linkedin %}<link itemprop="sameAs" rel="me" href="//www.linkedin.com/in/{{ site.author.linkedin }}">{% endif %}
-        {% if site.author.pinterest %}<link itemprop="sameAs" rel="me" href="//www.pinterest.com/{{ site.author.pinterest }}">{% endif %}
-        {% if site.author.keybase %}<link itemprop="sameAs" rel="me" href="//keybase.io/{{ site.author.keybase }}">{% endif %}
+        {% if site.author.facebook %}<link itemprop="sameAs" rel="me" href="https://www.facebook.com/{{ site.author.facebook }}">{% endif %}
+        {% if site.author.youtube %}<link itemprop="sameAs" rel="me" href="https://www.youtube.com/{{ site.author.youtube }}">{% endif %}
+        {% if site.author.linkedin %}<link itemprop="sameAs" rel="me" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">{% endif %}
+        {% if site.author.pinterest %}<link itemprop="sameAs" rel="me" href="https://www.pinterest.com/{{ site.author.pinterest }}">{% endif %}
+        {% if site.author.keybase %}<link itemprop="sameAs" rel="me" href="https://keybase.io/{{ site.author.keybase }}">{% endif %}
       </footer>
-    </div><!-- /.hero-profileInner -->
+    </div><!-- /.hero-profile-inner -->
   </section><!-- /.hero-content -->
 </main><!-- /.hero-container -->

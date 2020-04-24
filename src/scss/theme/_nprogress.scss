@@ -23,9 +23,9 @@
     display: block;
     width: 100px;
     height: 100%;
+    box-shadow: 0 0 10px $nprogress-color, 0 0 5px $nprogress-color;
     opacity: 1;
     transform: rotate(3deg) translate(0, -4px);
-    box-shadow: 0 0 10px $nprogress-color, 0 0 5px $nprogress-color;
   }
 
   @media (max-width: 991px) {

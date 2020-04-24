@@ -6,9 +6,9 @@
   {%- for post in site.posts -%}{
     "title": "{{- post.title | smartify | strip_html | strip_newlines | escape_once | replace:'‘','&#8216;' | replace:'’','&#8217;' | replace:'“','&#8220;' | replace:'”','&#8221;' | replace:'–','&#8211;' | replace:'—','&#8212;' -}}",
     "url": "{{- post.url | replace:'/index.html','/' -}}",
-    "date": "{{- post.date | date: '%b %-d, %Y' -}}",
-    "modified": "{%- if post.last_modified_at -%}{{- post.last_modified_at | date: '%b %-d, %Y' -}}{%- else -%}{{- post.date | date: '%b %-d, %Y' -}}{%- endif -%}",
-    "reading-time": "{%- assign reading_time = post.content | strip_html | number_of_words | plus:91 | divided_by:180 -%}{%- if reading_time <= 1 -%}{{- '1' | append:' min read' -}}{%- else -%}{{- reading_time | append:' min read' -}}{%- endif -%}",
-    "excerpt": "{{- post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once | replace:'‘','&#8216;' | replace:'’','&#8217;' | replace:'“','&#8220;' | replace:'”','&#8221;' | replace:'–','&#8211;' | replace:'—','&#8212;' -}}"
+    "date_published": "{{- post.date | date: '%b %-d, %Y' -}}",
+    "date_modified": "{%- if post.last_modified_at -%}{{- post.last_modified_at | date: '%b %-d, %Y' -}}{%- else -%}{{- post.date | date: '%b %-d, %Y' -}}{%- endif -%}",
+    "reading_time": "{%- assign reading_time = post.content | strip_html | number_of_words | plus:91 | divided_by:180 -%}{%- if reading_time <= 1 -%}{{- '1' | append:' min read' -}}{%- else -%}{{- reading_time | append:' min read' -}}{%- endif -%}",
+    "summary": "{{- post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once | replace:'‘','&#8216;' | replace:'’','&#8217;' | replace:'“','&#8220;' | replace:'”','&#8221;' | replace:'–','&#8211;' | replace:'—','&#8212;' -}}"
   }{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}
 ]

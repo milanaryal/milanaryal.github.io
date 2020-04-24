@@ -22,13 +22,13 @@ Alternatively, try the following method to tell search engines that you have upd
 
 Type following URL in address bar of your browser
 
-```bash
+```text
 http://www.google.com/ping?sitemap=[URL/of/file]
 ```
 
 For example:
 
-```bash
+```text
 http://www.google.com/ping?sitemap=http://www.example.com/sitemap.xml
 ```
 
@@ -38,13 +38,13 @@ http://www.google.com/ping?sitemap=http://www.example.com/sitemap.xml
 
 Type following URL in address bar of your browser
 
-```bash
+```text
 http://www.bing.com/ping?sitemap=[URL/of/file]
 ```
 
 For example:
 
-```bash
+```text
 http://www.bing.com/ping?sitemap=http://www.exmaple.com/sitemap.xml
 ```
 
