@@ -52,7 +52,7 @@ var paths = {
       'src/js/vendor/headroom.js',
       'src/js/vendor/jQuery.headroom.js',
       'src/js/scripts.js',
-      'src/js/console.js'
+      'src/js/consolelog.js'
     ],
     dest: 'assets/js/'
   },

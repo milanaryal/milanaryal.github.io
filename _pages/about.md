@@ -74,11 +74,11 @@ In this site you'll find a recollection of thoughts and opinions based on my exp
 
 In case you were wondering, this site is:
 
-* Developed on [Ubuntu](https://www.ubuntu.com/) system
+* Developed on a [Ubuntu](https://www.ubuntu.com/) system in Nepal
 * Edited with [VS Code](https://code.visualstudio.com/) & [Atom](https://atom.io/)
-* Used [Bootstrap](https://getbootstrap.com/) framework
-* Used [npm](https://www.npmjs.com/) for compiling assets
-* Site generated with [Jekyll](https://jekyllrb.com/)
+* Based on [Bootstrap](https://getbootstrap.com/) framework
+* Built with [npm](https://www.npmjs.com/) to compile site assets
+* Generated with [Jekyll](https://jekyllrb.com/)
 * Hosted on [GitHub Pages](https://pages.github.com/)
 
 ...for more information see [humans.txt](/humans.txt). You can find more about my Ubuntu development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config).

@@ -8117,41 +8117,41 @@ ul.hero-social a .label {
   font-feature-settings: "liga" on, "salt" on;
 }
 
-.markdown-body h3 a:not([role="button"]),
-.markdown-body h4 a:not([role="button"]),
-.markdown-body p a:not([role="button"]),
-.markdown-body blockquote a:not([role="button"]),
-.markdown-body ul a:not([role="button"]),
-.markdown-body ol a:not([role="button"]),
-.markdown-body dl a:not([role="button"]),
-.markdown-body .table-responsive a:not([role="button"]),
-.markdown-body figcaption a:not([role="button"]),
-.markdown-body .footnotes a:not([role="button"]) {
+.markdown-body h3 a,
+.markdown-body h4 a,
+.markdown-body p a,
+.markdown-body blockquote a,
+.markdown-body ul a,
+.markdown-body ol a,
+.markdown-body dl a,
+.markdown-body .table-responsive a,
+.markdown-body figcaption a,
+.markdown-body .footnotes a {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.7);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 
-.markdown-body h3 a:not([role="button"]):hover, .markdown-body h3 a:not([role="button"]):focus,
-.markdown-body h4 a:not([role="button"]):hover,
-.markdown-body h4 a:not([role="button"]):focus,
-.markdown-body p a:not([role="button"]):hover,
-.markdown-body p a:not([role="button"]):focus,
-.markdown-body blockquote a:not([role="button"]):hover,
-.markdown-body blockquote a:not([role="button"]):focus,
-.markdown-body ul a:not([role="button"]):hover,
-.markdown-body ul a:not([role="button"]):focus,
-.markdown-body ol a:not([role="button"]):hover,
-.markdown-body ol a:not([role="button"]):focus,
-.markdown-body dl a:not([role="button"]):hover,
-.markdown-body dl a:not([role="button"]):focus,
-.markdown-body .table-responsive a:not([role="button"]):hover,
-.markdown-body .table-responsive a:not([role="button"]):focus,
-.markdown-body figcaption a:not([role="button"]):hover,
-.markdown-body figcaption a:not([role="button"]):focus,
-.markdown-body .footnotes a:not([role="button"]):hover,
-.markdown-body .footnotes a:not([role="button"]):focus {
+.markdown-body h3 a:hover, .markdown-body h3 a:focus,
+.markdown-body h4 a:hover,
+.markdown-body h4 a:focus,
+.markdown-body p a:hover,
+.markdown-body p a:focus,
+.markdown-body blockquote a:hover,
+.markdown-body blockquote a:focus,
+.markdown-body ul a:hover,
+.markdown-body ul a:focus,
+.markdown-body ol a:hover,
+.markdown-body ol a:focus,
+.markdown-body dl a:hover,
+.markdown-body dl a:focus,
+.markdown-body .table-responsive a:hover,
+.markdown-body .table-responsive a:focus,
+.markdown-body figcaption a:hover,
+.markdown-body figcaption a:focus,
+.markdown-body .footnotes a:hover,
+.markdown-body .footnotes a:focus {
   color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.9);
@@ -8176,6 +8176,16 @@ ul.hero-social a .label {
 .markdown-body figcaption a:hover, .markdown-body figcaption a:focus {
   color: rgba(0, 0, 0, 0.7);
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.markdown-body a[role="button"] {
+  border: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.markdown-body a[role="button"]:hover, .markdown-body a[role="button"]:focus {
+  border: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .markdown-body a:not([href]) {

@@ -77,7 +77,7 @@
   .table-responsive,
   figcaption,
   .footnotes {
-    a:not([role="button"]) {
+    a {
       color: rgba(0, 0, 0, .7);
       text-decoration: none;
       border-bottom: 1px dotted rgba(0, 0, 0, .7);
@@ -117,6 +117,17 @@
         // text-decoration: none;
         border-bottom: 1px solid rgba(0, 0, 0, .7);
       }
+    }
+  }
+
+  a[role="button"] {
+    border: 0;
+    border: 1px solid rgba(0, 0, 0, .15);
+
+    &:hover,
+    &:focus {
+      border: 0;
+      border: 1px solid rgba(0, 0, 0, .3);
     }
   }
 
