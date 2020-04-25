@@ -127,6 +127,7 @@ exclude:
   - vendor
   - bundle
   - ".bundle"
+  - ".cache"
   - ".sass-cache"
   - ".jekyll-cache"
   - ".jekyll-metadata"
