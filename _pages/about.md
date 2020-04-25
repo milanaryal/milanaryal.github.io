@@ -7,7 +7,7 @@ image: "/assets/img/about.jpg"
 permalink: "/about/"
 ---
 
-Hello --- I'm Milan Aryal (मिलन अर्याल), who is passionate about capital market and front-end web development based on Kathmandu, Nepal.
+Hello :simple_smile: I'm Milan Aryal (मिलन अर्याल), who is passionate about capital market and front-end web development based in Kathmandu, Nepal.
 
 > The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification.
 
@@ -89,4 +89,4 @@ If you enjoy the content found here, you might like to subscribe to my <svg clas
 
 ### [Licensing](/fine-print/)
 
-Except as otherwise noted, the content of this site is licensed under the <a rel="license cc:license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>, and code samples are licensed under the <a rel="license" href="https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE">MIT license</a>.
+Except as otherwise noted, the content of this site is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/){: rel="license cc:license" }, and code samples are licensed under the [MIT license](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE){: rel="license" }.
