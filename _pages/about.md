@@ -7,7 +7,7 @@ image: "/assets/img/about.jpg"
 permalink: "/about/"
 ---
 
-Hello :simple_smile: I'm Milan Aryal (मिलन अर्याल), who is passionate about capital market and front-end web development based in Kathmandu, Nepal.
+Hello --- I'm Milan Aryal (मिलन अर्याल), who is passionate about capital market and front-end web development based in Kathmandu, Nepal.
 
 > The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification.
 
@@ -60,6 +60,8 @@ Join me on the following networks and/or websites:
   </a>
 </p>
 
+---
+
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.
 
 Nothing brings me more pleasure than making something out of nothing. Even when the results are far from my ideal expectations, I find the whole ceremony of creativity completely enthralling.
@@ -82,6 +84,8 @@ In case you were wondering, this site is:
 * Hosted on [GitHub Pages](https://pages.github.com/)
 
 ...for more information see [humans.txt](/humans.txt). You can find more about my Ubuntu development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config).
+
+--
 
 If you enjoy the content found here, you might like to subscribe to my <svg class="icon icon-rss" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-rss"></use></svg> [feed](/feed.xml). Also feel free to send me any feedback, comments, or suggestions about the site.
 
