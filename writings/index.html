@@ -98,7 +98,7 @@ robots: "noindex, follow"
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <nav class="clearfix" itemscope itemtype="https://schema.org/SiteNavigationElement">
-  <ul class="pager">
+  <ul class="pager clearfix">
     {%- if paginator.previous_page -%}
       <li class="previous">
         <a itemprop="url" href="{{ paginator.previous_page_path | replace:'//','/' | replace:'/index.html','/' }}"><svg class="icon icon-angle-left" aria-hidden="true"><use xlink:href="{{ site.icon_path }}#icon-angle-left"></use></svg><span itemprop="name">Previous</span></a>

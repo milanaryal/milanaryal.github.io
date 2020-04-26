@@ -1801,6 +1801,11 @@ template {
   opacity: 1;
 }
 
+.form-control:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .form-control::-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -7031,15 +7036,11 @@ html {
 body {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: 0;
-  text-rendering: optimizeLegibility;
-  -moz-font-feature-settings: "liga" on;
 }
 
 h1,
@@ -7329,10 +7330,6 @@ ul.hero-social a .label {
   background-image: none;
   border-color: rgba(0, 0, 0, 0.15);
   border-radius: 999em;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-feature-settings: liga on;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -7491,7 +7488,7 @@ ul.hero-social a .label {
 .site-footer {
   padding: 50px 0 40px;
   text-align: center;
-  background-color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 @media (min-width: 768px) {
@@ -7551,7 +7548,6 @@ ul.hero-social a .label {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14.8px;
   color: rgba(0, 0, 0, 0.6);
-  text-rendering: auto;
 }
 
 @media (min-width: 768px) {
@@ -7615,7 +7611,7 @@ ul.hero-social a .label {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   line-height: 1.12;
-  letter-spacing: -.044em;
+  letter-spacing: -.04em;
 }
 
 @media (min-width: 768px) {
@@ -7643,19 +7639,9 @@ ul.hero-social a .label {
 .pager {
   padding-left: 0;
   margin: 20px 0 40px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   text-align: center;
-  text-rendering: optimizeLegibility;
   list-style: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -moz-font-feature-settings: liga on;
-}
-
-.pager::after {
-  display: block;
-  clear: both;
-  content: "";
 }
 
 .pager li {
@@ -7792,7 +7778,6 @@ ul.hero-social a .label {
   text-align: center;
   letter-spacing: 0;
   outline: 0;
-  font-feature-settings: "liga" on, "lnum" on;
 }
 
 @media (max-width: 991px) {
@@ -7967,7 +7952,7 @@ ul.hero-social a .label {
 
 .random-posts {
   padding-bottom: 40px;
-  background-color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .random-posts-heading {
@@ -8037,7 +8022,6 @@ ul.hero-social a .label {
   font-size: 15.8px;
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.3);
-  text-rendering: auto;
   vertical-align: top;
 }
 
@@ -8112,11 +8096,6 @@ ul.hero-social a .label {
   }
 }
 
-.markdown-body i,
-.markdown-body em {
-  font-feature-settings: "liga" on, "salt" on;
-}
-
 .markdown-body h3 a,
 .markdown-body h4 a,
 .markdown-body p a,
@@ -8159,12 +8138,14 @@ ul.hero-social a .label {
 
 .markdown-body h3 a,
 .markdown-body h4 a {
-  border-bottom: 2px dotted rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.8);
 }
 
 .markdown-body h3 a:hover, .markdown-body h3 a:focus,
 .markdown-body h4 a:hover,
 .markdown-body h4 a:focus {
+  color: rgba(0, 0, 0, 0.9);
   border-bottom: 2px solid rgba(0, 0, 0, 0.9);
 }
 
@@ -8179,8 +8160,10 @@ ul.hero-social a .label {
 }
 
 .markdown-body a[role="button"] {
+  margin: 3px;
   border: 0;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  outline: 0;
 }
 
 .markdown-body a[role="button"]:hover, .markdown-body a[role="button"]:focus {
@@ -8373,7 +8356,6 @@ ul.hero-social a .label {
   text-align: center;
   letter-spacing: 0;
   outline: 0;
-  font-feature-settings: "liga" on, "lnum" on;
 }
 
 @media (max-width: 991px) {
@@ -8388,7 +8370,6 @@ ul.hero-social a .label {
   padding: 0 0 3px 20px;
   font-style: italic;
   border-left: 3px solid rgba(0, 0, 0, 0.8);
-  font-feature-settings: "liga" on, "salt" on;
 }
 
 .markdown-body blockquote > :first-child {
@@ -8428,11 +8409,6 @@ ul.hero-social a .label {
   content: "\002e\002e\002e";
 }
 
-.markdown-body .btn {
-  margin: 3px;
-  outline: 0;
-}
-
 .markdown-body .emoji {
   display: inline-block;
   max-width: none;
@@ -8440,7 +8416,7 @@ ul.hero-social a .label {
 }
 
 .markdown-body .footnotes {
-  font-size: 15px;
+  font-size: 15.8px;
 }
 
 .markdown-body .footnotes h4 {

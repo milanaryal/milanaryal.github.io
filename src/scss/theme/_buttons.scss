@@ -28,12 +28,6 @@
   background-image: none;
   border-color: rgba(0, 0, 0, .15);
   border-radius: 999em;
-
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-feature-settings: liga on;
-
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &:hover {

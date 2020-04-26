@@ -135,7 +135,7 @@
   padding: 50px 0 40px;
   // margin-top: 40px;
   text-align: center;
-  background-color: #fafafa;
+  background-color: rgba(0, 0, 0, .04); // rgba(0, 0, 0, .02); #fafafa
 
   @media (min-width: 768px) {
     padding: 60px 0 50px;
@@ -193,7 +193,6 @@
   font-family: $font-family-base;
   font-size: 14.8px;
   color: rgba(0, 0, 0, .6);
-  text-rendering: auto;
 
   @media (min-width: 768px) {
     margin-top: 40px;

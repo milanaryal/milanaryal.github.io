@@ -4,6 +4,7 @@
 
 .navbar {
   background-color: #fff;
+
   @media (min-width: 768px) {
     // should be min-height if dropdown menu contents
     // 64px + 1px (borderbottom or box-shadow) = 65px

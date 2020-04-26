@@ -91,9 +91,6 @@
   text-align: center;
   letter-spacing: 0;
   outline: 0;
-  -moz-font-feature-settings: "liga" on, "lnum" on;
-  -webkit-font-feature-settings: "liga" on, "lnum" on;
-  font-feature-settings: "liga" on, "lnum" on;
 
   @media (max-width: 991px) {
     box-sizing: border-box;
@@ -285,7 +282,7 @@
 
 .random-posts {
   padding-bottom: 40px;
-  background-color: #fafafa;
+  background-color: rgba(0, 0, 0, .02); // #fafafa
 }
 
 .random-posts-heading {
@@ -350,7 +347,6 @@
   font-size: 15.8px; // 14px
   line-height: 1.6;
   color: rgba(0, 0, 0, .3);
-  text-rendering: auto;
   vertical-align: top;
 
   // @media (max-width: 767px) {
