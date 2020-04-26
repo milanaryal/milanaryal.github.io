@@ -15933,7 +15933,7 @@ return Popper;
          if (randomIndexUsed.indexOf(randomIndex) == '-1') {
            var postTitle = posts[randomIndex].title;
            var postURL = posts[randomIndex].url;
-           var postDate = posts[randomIndex].date;
+           var postDate = posts[randomIndex].date_published;
            var postExcerpt = posts[randomIndex].summary;
 
            divRandomPosts.append('<div class="random-posts-item"><a href="' + postURL + '"><div class="clearfix"><h3 class="random-posts-item-title">' + postTitle + '</h3><p class="random-posts-item-excerpt">' + postExcerpt + '</p></div></a><div class="random-posts-item-meta">Posted on ' + postDate + '</div></div>');
