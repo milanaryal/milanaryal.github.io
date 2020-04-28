@@ -7,7 +7,7 @@ image: "/assets/img/about.jpg"
 permalink: "/about/"
 ---
 
-Hello :smile: --- I'm Milan Aryal (मिलन अर्याल), who is passionate about capital market and front-end web development based in Kathmandu, Nepal.
+Hello --- I'm Milan Aryal (मिलन अर्याल), who is passionate about capital market and front-end web development based in Kathmandu, Nepal.
 
 > The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification.
 
