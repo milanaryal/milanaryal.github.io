@@ -7297,7 +7297,7 @@ ul.hero-social a.icon-github:hover {
   background-color: #333;
 }
 
-ul.hero-social a .svg {
+ul.hero-social a svg {
   display: block;
   width: 60%;
   height: 60%;
@@ -7532,7 +7532,7 @@ ul.hero-social a .label {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.site-footer-social a .svg {
+.site-footer-social a svg {
   display: block;
   width: 60%;
   height: 60%;
@@ -7567,7 +7567,7 @@ ul.hero-social a .label {
 
 .site-footer-legal .icon-pencil-alt {
   margin-right: 1px;
-  margin-left: 1.25px;
+  margin-left: 1.5px;
 }
 
 .site-footer-legal .icon-heart {
@@ -9070,6 +9070,13 @@ kbd {
 @media (max-width: 767px) {
   .map-wrapper {
     display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .map-wrapper {
+    margin-top: 30px;
+    margin-bottom: 15px;
   }
 }
 

@@ -10,6 +10,7 @@
     "watch": "gulp watch",
     "site-build": "gulp buildSite",
     "site-serve": "gulp serveSite",
+    "copy-fonts": "rm -rf assets/fonts/; cpy src/fonts/** assets/fonts/",
     "test-css": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache",
     "test-js": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
     "jekyll-build": "bundle exec jekyll build --config _config.yml,_config_dev.yml",
@@ -21,30 +22,27 @@
     "headroom.js": "^0.11.0",
     "jquery": "^3.4.1",
     "nprogress": "^0.2.0",
-    "popper.js": "^1.16.1",
-    "svg4everybody": "^2.1.9"
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "browser-sync": "^2.26.7",
+    "cpy-cli": "^3.1.0",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
     "eslint": "^6.8.0",
     "eslint-config-xo": "^0.29.1",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-unicorn": "^18.0.1",
+    "eslint-plugin-unicorn": "^19.0.1",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
     "gulp-concat": "^2.6.1",
-    "gulp-flatten": "^0.4.0",
     "gulp-header": "^2.0.9",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-svgmin": "^2.2.0",
-    "gulp-svgstore": "^7.0.1",
+    "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.0",
     "postcss-discard-comments": "^4.0.2",
     "stylelint": "^13.3.3",
     "stylelint-config-twbs-bootstrap": "^2.0.1"
@@ -53,11 +51,11 @@
     "type": "git",
     "url": "git+https://github.com/MilanAryal/milanaryal.github.io.git"
   },
-  "private": true,
-  "author": "Milan Aryal",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MilanAryal/milanaryal.github.io/issues"
   },
-  "homepage": "https://github.com/MilanAryal/milanaryal.github.io#readme"
+  "homepage": "https://github.com/MilanAryal/milanaryal.github.io#readme",
+  "author": "Milan Aryal",
+  "license": "MIT",
+  "private": true
 }

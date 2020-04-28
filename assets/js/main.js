@@ -14790,112 +14790,6 @@ return Popper;
 })));
 //# sourceMappingURL=tooltip.js.map
 
-!function(root, factory) {
-    "function" == typeof define && define.amd ? // AMD. Register as an anonymous module unless amdModuleId is set
-    define([], function() {
-        return root.svg4everybody = factory();
-    }) : "object" == typeof module && module.exports ? // Node. Does not work with strict CommonJS, but
-    // only CommonJS-like environments that support module.exports,
-    // like Node.
-    module.exports = factory() : root.svg4everybody = factory();
-}(this, function() {
-    /*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
-    function embed(parent, svg, target) {
-        // if the target exists
-        if (target) {
-            // create a document fragment to hold the contents of the target
-            var fragment = document.createDocumentFragment(), viewBox = !svg.hasAttribute("viewBox") && target.getAttribute("viewBox");
-            // conditionally set the viewBox on the svg
-            viewBox && svg.setAttribute("viewBox", viewBox);
-            // copy the contents of the clone into the fragment
-            for (// clone the target
-            var clone = target.cloneNode(!0); clone.childNodes.length; ) {
-                fragment.appendChild(clone.firstChild);
-            }
-            // append the fragment into the svg
-            parent.appendChild(fragment);
-        }
-    }
-    function loadreadystatechange(xhr) {
-        // listen to changes in the request
-        xhr.onreadystatechange = function() {
-            // if the request is ready
-            if (4 === xhr.readyState) {
-                // get the cached html document
-                var cachedDocument = xhr._cachedDocument;
-                // ensure the cached html document based on the xhr response
-                cachedDocument || (cachedDocument = xhr._cachedDocument = document.implementation.createHTMLDocument(""), 
-                cachedDocument.body.innerHTML = xhr.responseText, xhr._cachedTarget = {}), // clear the xhr embeds list and embed each item
-                xhr._embeds.splice(0).map(function(item) {
-                    // get the cached target
-                    var target = xhr._cachedTarget[item.id];
-                    // ensure the cached target
-                    target || (target = xhr._cachedTarget[item.id] = cachedDocument.getElementById(item.id)), 
-                    // embed the target into the svg
-                    embed(item.parent, item.svg, target);
-                });
-            }
-        }, // test the ready state change immediately
-        xhr.onreadystatechange();
-    }
-    function svg4everybody(rawopts) {
-        function oninterval() {
-            // while the index exists in the live <use> collection
-            for (// get the cached <use> index
-            var index = 0; index < uses.length; ) {
-                // get the current <use>
-                var use = uses[index], parent = use.parentNode, svg = getSVGAncestor(parent), src = use.getAttribute("xlink:href") || use.getAttribute("href");
-                if (!src && opts.attributeName && (src = use.getAttribute(opts.attributeName)), 
-                svg && src) {
-                    if (polyfill) {
-                        if (!opts.validate || opts.validate(src, svg, use)) {
-                            // remove the <use> element
-                            parent.removeChild(use);
-                            // parse the src and get the url and id
-                            var srcSplit = src.split("#"), url = srcSplit.shift(), id = srcSplit.join("#");
-                            // if the link is external
-                            if (url.length) {
-                                // get the cached xhr request
-                                var xhr = requests[url];
-                                // ensure the xhr request exists
-                                xhr || (xhr = requests[url] = new XMLHttpRequest(), xhr.open("GET", url), xhr.send(), 
-                                xhr._embeds = []), // add the svg and id as an item to the xhr embeds list
-                                xhr._embeds.push({
-                                    parent: parent,
-                                    svg: svg,
-                                    id: id
-                                }), // prepare the xhr ready state change event
-                                loadreadystatechange(xhr);
-                            } else {
-                                // embed the local id into the svg
-                                embed(parent, svg, document.getElementById(id));
-                            }
-                        } else {
-                            // increase the index when the previous value was not "valid"
-                            ++index, ++numberOfSvgUseElementsToBypass;
-                        }
-                    }
-                } else {
-                    // increase the index when the previous value was not "valid"
-                    ++index;
-                }
-            }
-            // continue the interval
-            (!uses.length || uses.length - numberOfSvgUseElementsToBypass > 0) && requestAnimationFrame(oninterval, 67);
-        }
-        var polyfill, opts = Object(rawopts), newerIEUA = /\bTrident\/[567]\b|\bMSIE (?:9|10)\.0\b/, webkitUA = /\bAppleWebKit\/(\d+)\b/, olderEdgeUA = /\bEdge\/12\.(\d+)\b/, edgeUA = /\bEdge\/.(\d+)\b/, inIframe = window.top !== window.self;
-        polyfill = "polyfill" in opts ? opts.polyfill : newerIEUA.test(navigator.userAgent) || (navigator.userAgent.match(olderEdgeUA) || [])[1] < 10547 || (navigator.userAgent.match(webkitUA) || [])[1] < 537 || edgeUA.test(navigator.userAgent) && inIframe;
-        // create xhr requests object
-        var requests = {}, requestAnimationFrame = window.requestAnimationFrame || setTimeout, uses = document.getElementsByTagName("use"), numberOfSvgUseElementsToBypass = 0;
-        // conditionally start the interval if the polyfill is active
-        polyfill && oninterval();
-    }
-    function getSVGAncestor(node) {
-        for (var svg = node; "svg" !== svg.nodeName.toLowerCase() && (svg = svg.parentNode); ) {}
-        return svg;
-    }
-    return svg4everybody;
-});
 /* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
  * @license MIT */
 
@@ -15871,15 +15765,6 @@ return Popper;
 
   /**
    * ------------------------------------------------------------------------
-   * Support SVG external content for older browsers - svg4everybody.js
-   * ------------------------------------------------------------------------
-   */
-
-  svg4everybody();
-
-
-  /**
-   * ------------------------------------------------------------------------
    * Loading bar - nprogress.js
    * ------------------------------------------------------------------------
    */
@@ -15994,7 +15879,7 @@ return Popper;
     $('.markdown-body a[role="button"]').addClass('btn btn-outline-default');
 
     // footnotes header
-    var footnotesAnchor = '<a class="js-anchor-link" href="#footnotes" aria-hidden="true"><svg class="icon icon-link"><use xlink:href="/assets/svg/sprite.svg#icon-link"></use></svg></a>';
+    var footnotesAnchor = '<a class="js-anchor-link" href="#footnotes" aria-hidden="true"><svg class="icon icon-link" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>';
 
     $('.footnotes').prepend('<hr><h4 id="footnotes">' + footnotesAnchor + 'Footnotes</h4>');
 
@@ -16011,7 +15896,7 @@ return Popper;
       var header      = $(this),
           headerID    = header.attr('id'),
           anchorClass = 'js-anchor-link',
-          anchorIcon  = '<svg class="icon icon-link"><use xlink:href="/assets/svg/sprite.svg#icon-link"></use></svg>';
+          anchorIcon = '<svg class="icon icon-link" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>';
 
       if (headerID) {
         header.prepend($('<a />').addClass(anchorClass).attr({ 'href': '#' + headerID, 'aria-hidden': 'true' }).html(anchorIcon));
@@ -16041,9 +15926,12 @@ return Popper;
      * ------------------------------------------------------------------------
      */
 
-    $('.elevator-wrapper').removeAttr('hidden');
+    var iconChevronUp = '<svg class="icon icon-chevron-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"/></svg>';
 
-    $('.elevator-wrapper').append('<div class="elevator" aria-hidden="true"><svg class="icon icon-chevron-up"><use xlink:href="/assets/svg/sprite.svg#icon-chevron-up"></use></svg></span></div>');
+    var divElevator = '<div class="elevator" aria-hidden="true">' + iconChevronUp + '</div>';
+
+    $('.elevator-wrapper').removeAttr('hidden');
+    $('.elevator-wrapper').append(divElevator);
 
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,

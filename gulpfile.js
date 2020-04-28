@@ -11,7 +11,6 @@ const { src, dest, series, parallel, watch } = require('gulp');
 const del = require('del');
 const rename = require('gulp-rename');
 const header = require('gulp-header');
-const flatten = require('gulp-flatten');
 const pkg = require('./package.json');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
@@ -21,8 +20,6 @@ const cssnano = require('cssnano');
 const discardComments = require('postcss-discard-comments');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
-const svgmin = require('gulp-svgmin');
-const svgstore = require('gulp-svgstore');
 const browserSync = require('browser-sync').create();
 const cp = require('child_process');
 
@@ -47,7 +44,6 @@ var paths = {
       // 'src/js/vendor/bootstrap/tab.js',
       'src/js/vendor/bootstrap/tooltip.js',
       // 'src/js/vendor/bootstrap/popover.js',
-      'src/js/vendor/svg4everybody.js',
       'src/js/vendor/nprogress.js',
       'src/js/vendor/headroom.js',
       'src/js/vendor/jQuery.headroom.js',
@@ -65,14 +61,6 @@ var paths = {
       'writings/**'
     ],
     dest: '_site/'
-  },
-  fonts: {
-    src: 'src/fonts/',
-    dest: 'assets/fonts/'
-  },
-  svg: {
-    src: 'src/svg/',
-    dest: 'assets/svg/'
   }
 };
 
@@ -91,7 +79,7 @@ var banner = ['/*!',
 
 // Remove pre-existing content from the folders
 function clean () {
-  return del([ paths.scripts.dest, paths.styles.dest, paths.fonts.dest, paths.svg.dest ]);
+  return del([ paths.styles.dest, paths.scripts.dest ]);
 }
 
 function cleanCSS () {
@@ -100,14 +88,6 @@ function cleanCSS () {
 
 function cleanJS () {
   return del([ paths.scripts.dest ]);
-}
-
-function cleanFonts () {
-  return del([ paths.fonts.dest ]);
-}
-
-function cleanSVG () {
-  return del([ paths.svg.dest ]);
 }
 
 
@@ -138,22 +118,6 @@ function js () {
     .pipe(uglify({ output: { comments: false } }))
     .pipe(header(banner, { pkg : pkg }))
     .pipe(dest(paths.scripts.dest));
-}
-
-// Process and minify SVG icons
-function svg () {
-  return src('src/svg/**/*.svg', { base: 'src/sprite/' })
-    .pipe(svgmin())
-    .pipe(rename({ prefix: 'icon-' }))
-    .pipe(svgstore({ inlineSvg: true }))
-    .pipe(dest(paths.svg.dest));
-}
-
-// Copy fonts
-function copyFonts () {
-  return src('src/fonts/**')
-    .pipe(flatten())
-    .pipe(dest(paths.fonts.dest));
 }
 
 
@@ -256,7 +220,7 @@ function watchFiles () {
  * Export tasks
  */
 
-var build = series(clean, parallel(css, js, svg, copyFonts));
+var build = series(clean, parallel(css, js));
 var buildSite = series (build, parallel(cleanSite, buildSite));
 var serveSite = series(buildSite, serveSite);
 

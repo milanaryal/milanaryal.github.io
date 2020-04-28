@@ -8,6 +8,11 @@
   @media (max-width: 767px) {
     display: none !important;
   }
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 // Set a size for our map container, the Google Map will take up 100% of this container
