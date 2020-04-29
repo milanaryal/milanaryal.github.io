@@ -10,8 +10,8 @@
   }
 
   @media (min-width: 768px) {
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 50px !important;
+    margin-bottom: 25px !important;
   }
 }
 
@@ -71,6 +71,15 @@
     &:hover,
     &:focus {
       color: rgba(0, 0, 0, .8);
+    }
+  }
+}
+
+.social-links--contact {
+  @media (min-width: 768px) {
+    li {
+      padding-right: 25px;
+      padding-left: 25px;
     }
   }
 }

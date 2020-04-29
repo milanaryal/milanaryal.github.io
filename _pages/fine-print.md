@@ -3,7 +3,7 @@ layout: page
 title: "Fine print"
 tagline: "Website legal notices."
 description: "Website legal notices about polices, terms, and conditions for using the site."
-image: "/assets/img/writings.jpg"
+image: "/assets/img/fine-print.jpg"
 permalink: "/fine-print/"
 sitemap: false
 robots: "noindex, follow"
@@ -17,4 +17,10 @@ This site is free to use and open sourced. This site is made in purpose of provi
 
 ### License
 
-Except as otherwise noted, the **content of this site** is licensed under the <a rel="license cc:license" href="//creativecommons.org/licenses/by/4.0/"><strong>Creative Commons Attribution 4.0 International license</strong></a>, and **code samples** are licensed under the <a rel="license" href="//raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE"><strong>MIT license</strong></a>.
+* Except where otherwise *noted*, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/){: target="_blank" rel="noopener license" } attributable to *Milan Aryal*.
+
+* All code samples available on this site are licensed under the [MIT license](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE){: target="_blank" rel="noopener license" }.
+
+* Header images are incorporates from [Unsplash](https://unsplash.com/license){: target="_blank" rel="noopener license" }.
+
+*Last Updated: April 29, 2020*

@@ -10,7 +10,12 @@ logo:
   width: "300"
   height: "300"
 
-image: "/assets/img/writings.jpg"
+# default header img for "/writings/"
+image:
+  path: "/assets/img/default.jpg"
+  width: "1500"
+  height: "500"
+
 theme_color: "#111111"
 
 nav:
@@ -58,12 +63,11 @@ language: "en"
 # Open Graph protocol format eg. en_US, en_GB ...
 locale: "en_US"
 
-repository: "MilanAryal/milanaryal.github.io"
-branch: "master"
-
 # Jekyll default configuration
 # Read: https://jekyllrb.com/docs/configuration/default/
 
+repository: "MilanAryal/milanaryal.github.io"
+branch: "master"
 encoding: "utf-8"
 future: true
 timezone: "Asia/Kathmandu"
@@ -90,7 +94,6 @@ defaults:
       sitemap: false
 
 plugins:
-  - jemoji
   - jekyll-feed
   - jekyll-gist
   - jekyll-github-metadata

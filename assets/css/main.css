@@ -9075,8 +9075,8 @@ kbd {
 
 @media (min-width: 768px) {
   .map-wrapper {
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 50px !important;
+    margin-bottom: 25px !important;
   }
 }
 
@@ -9132,6 +9132,13 @@ kbd {
 
 .pgp-key a:hover, .pgp-key a:focus {
   color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 768px) {
+  .social-links--contact li {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 
 .navbar .input-group-append .btn-outline-secondary,
