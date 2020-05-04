@@ -147,8 +147,8 @@
   <!-- Feed -->
   <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_title }}">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/main.min.css?v={{ build_version }}">
+  <!-- Critical CSS -->
+  {% include styles.html %}
 
   <!-- Favicon & startup configuration -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ build_version }}">

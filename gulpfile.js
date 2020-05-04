@@ -6,7 +6,7 @@
 
 'use strict';
 
-// Load plugins
+// Load plugin(s)
 const { src, dest, series, parallel, watch } = require('gulp');
 const del = require('del');
 const rename = require('gulp-rename');
@@ -27,7 +27,8 @@ const cp = require('child_process');
 var paths = {
   styles: {
     src: 'src/scss/main.scss',
-    dest: 'assets/css/'
+    dest: 'assets/css/',
+    include: '_includes/css/',
   },
   scripts: {
     src: [
@@ -54,13 +55,15 @@ var paths = {
   },
   jekyll: {
     src: [
-      '_includes/**',
-      '_layouts/**',
+      '_includes/**/*.html',
+      '_layouts/**/*.html',
       '_pages/**',
       '_posts/**',
-      'writings/**'
+      'writings/index.html'
     ],
-    dest: '_site/'
+    dest: '_site/',
+    css: '_site/assets/css/',
+    js: '_site/assets/css/'
   }
 };
 
@@ -74,16 +77,16 @@ var banner = ['/*!',
 
 
 /**
- * Cleaning tasks
+ * Cleaning task(s)
  */
 
 // Remove pre-existing content from the folders
 function clean () {
-  return del([ paths.styles.dest, paths.scripts.dest ]);
+  return del([ paths.styles.dest, paths.styles.include, paths.scripts.dest ]);
 }
 
 function cleanCSS () {
-  return del([ paths.styles.dest ]);
+  return del([ paths.styles.dest, paths.styles.include ]);
 }
 
 function cleanJS () {
@@ -92,18 +95,19 @@ function cleanJS () {
 
 
 /**
- * Compiling & bundling tasks
+ * Compiling & bundling task(s)
  */
 
  // Process and minify styles
  function css () {
    return src(paths.styles.src)
-     .pipe(header(banner, { pkg : pkg }))
      .pipe(sass.sync({ precision: 6, outputStyle: 'expanded' }).on('error', sass.logError))
      .pipe(postcss([ autoprefixer({ cascade: false }) ]))
+     .pipe(header(banner, { pkg : pkg }))
      .pipe(dest(paths.styles.dest))
      .pipe(rename({ suffix: '.min' }))
      .pipe(postcss([ cssnano(), discardComments({ removeAll: true }) ]))
+     .pipe(dest(paths.styles.include))
      .pipe(header(banner, { pkg : pkg }))
      .pipe(dest(paths.styles.dest));
  }
@@ -111,7 +115,7 @@ function cleanJS () {
 // Concatenate and minify scripts
 function js () {
   return src(paths.scripts.src)
-    .pipe(concat('main.js'))
+    .pipe(concat('bundle.js'))
     .pipe(header(banner, { pkg : pkg }))
     .pipe(dest(paths.scripts.dest))
     .pipe(rename({ suffix: '.min' }))
@@ -122,7 +126,7 @@ function js () {
 
 
 /**
- * Jekyll tasks
+ * Jekyll task(s)
  */
 
  // Remove existing Jekyll build site contents
@@ -132,12 +136,12 @@ function js () {
 
  // Remove style files in Jekyll site
  function cleanSiteCSS () {
-   return del([ '_site/assets/css/' ]);
+   return del([ paths.jekyll.css, paths.styles.include ]);
  }
 
 // Remove script files in Jekyll site
 function cleanSiteJS () {
-  return del([ '_site/assets/js/' ]);
+  return del([ paths.jekyll.js ]);
 }
 
 // Build the Jekyll site
@@ -159,8 +163,7 @@ function serveSite (done) {
       baseDir: paths.jekyll.dest
     },
     open: false
-  });
-  done();
+  }, done);
 }
 
 // BrowserSync Reload (callback)
@@ -173,14 +176,14 @@ function browserSyncReload (done) {
 function siteCSS () {
   // CSS
   return src(paths.styles.src)
-  .pipe(header(banner, { pkg : pkg }))
   .pipe(sass.sync({ precision: 6, outputStyle: 'expanded' }).on('error', sass.logError))
   .pipe(postcss([ autoprefixer({ cascade: false }) ]))
-  .pipe(dest('_site/assets/css/'))
+  .pipe(header(banner, { pkg : pkg }))
+  .pipe(dest(paths.jekyll.css))
   .pipe(rename({ suffix: '.min' }))
   .pipe(postcss([ cssnano(), discardComments({ removeAll: true }) ]))
   .pipe(header(banner, { pkg : pkg }))
-  .pipe(dest('_site/assets/css/'))
+  .pipe(dest(paths.jekyll.css))
   // Auto-inject into browsers
   .pipe(browserSync.stream());
 }
@@ -189,13 +192,13 @@ function siteCSS () {
 function siteJS () {
     // JS
   return src(paths.scripts.src)
-    .pipe(concat('main.js'))
+    .pipe(concat('bundle.js'))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest('_site/assets/js/'))
+    .pipe(dest(paths.jekyll.js))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify({ output: { comments: false } }))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest('_site/assets/js/'))
+    .pipe(dest(paths.jekyll.js))
     // Auto-inject into browsers
     .pipe(browserSync.stream());
 }
@@ -217,14 +220,14 @@ function watchFiles () {
 
 
 /**
- * Export tasks
+ * Export task(s)
  */
 
 var build = series(clean, parallel(css, js));
 var buildSite = series (build, parallel(cleanSite, buildSite));
 var serveSite = series(buildSite, serveSite);
 
-// Public working tasks
+// Public working task(s)
 exports.buildSite = buildSite;
 exports.serveSite = serveSite;
 exports.watch = parallel(watchFiles, serveSite);

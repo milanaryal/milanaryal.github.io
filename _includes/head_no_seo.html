@@ -22,5 +22,5 @@
 {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
 <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_title }}">
 <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_title }}">
-<link rel="stylesheet" href="/assets/css/main.min.css?v={{ build_version }}">
+{% include styles.html %}
 <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v={{ build_version }}">
