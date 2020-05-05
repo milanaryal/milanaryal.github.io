@@ -16,8 +16,6 @@ Then, resubmit (first time? you need to signup & then submit) the sitemap in Web
 
 Alternatively, try the following method to tell search engines that you have updated your website.
 
-<br>
-
 ### Ping Google Bot
 
 Type following URL in address bar of your browser
@@ -32,8 +30,6 @@ For example:
 http://www.google.com/ping?sitemap=http://www.example.com/sitemap.xml
 ```
 
-<br>
-
 ### Ping Bing Bot
 
 Type following URL in address bar of your browser
@@ -47,8 +43,6 @@ For example:
 ```text
 http://www.bing.com/ping?sitemap=http://www.exmaple.com/sitemap.xml
 ```
-
-<br>
 
 Please note that if you have sign-up for Webmaster Tools then Webmasters Bot automatically figures out frequency of your updates. If you update your site more often then search engines bot will check it more often. It's good to avoid pinging the same URL over and over within a short period of time.
 

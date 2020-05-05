@@ -11,8 +11,6 @@ date: 2020-03-17T03:40:00+05:45
   <figcaption>“Be greedy when others are fearful, and fearful when others are greedy.”—Warren Buffett</figcaption>
 </figure>
 
----
-
 ### The cycle of investor emotions
 
 This chart describes all the different emotional states typically experienced by the majority of market participants:

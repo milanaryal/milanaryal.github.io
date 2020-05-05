@@ -190,13 +190,9 @@ function taskName () {
 exports.default = taskName;
 ```
 
-<br>
-
 #### An example
 
 Following is an example to understanding the Gulp process to concat and uglify our Javascript files plus compiling our Sass to CSS and minify our stylesheets from our source folder `src/` to destination folder `assets/`.
-
-<br>
 
 **First step** to install necessary `devDependencies` on our `package.json` file:
 
@@ -221,8 +217,6 @@ You can simply install and save required `devDependencies` with the following co
 ```bash
 $ npm install --save-dev del gulp gulp-autoprefixer gulp-concat gulp-csso gulp-rename gulp-sass gulp-uglify-es node-sass
 ```
-
-<br>
 
 **Second step** to setup `gulpfile.js`:
 
@@ -303,15 +297,11 @@ exports.default = series(clean, parallel(js, css));
 exports.watch = watch;
 ```
 
-<br>
-
 Now, **third step** or **final step** --- our **default task** (to clean/delete the existing old destination files and process, compile and, minify our Javascript and Sass files from source folder `src/` to our destination folder `assets/`) will be **run by default**, when the **following command line** is run at the root of your project file:
 
 ```bash
 $ gulp
 ```
-
-<br>
 
 An incredibly active community of developers is building front-end plugins, you can explore them at [Gulp plugins library](https://gulpjs.com/plugins/){: rel="nofollow" }.
 

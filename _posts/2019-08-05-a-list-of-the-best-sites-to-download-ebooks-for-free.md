@@ -7,8 +7,6 @@ last_modified_at: 2020-04-17T10:00:00+05:45
 
 Here, I've curated a list of sites to download eBook for free of cost. In these free sites, you will found most of the eBooks in PDF, EPub or Mobi format. You may have probably bookmarked a few of these already.
 
-<br>
-
 #### Z-Library
 
 Part of Z-Library project. The world's largest e-book library since 2009.
@@ -31,8 +29,6 @@ How to use TOR?
 2. Open an URL [http://zlibraryexau2g3p.onion](http://zlibraryexau2g3p.onion){: rel="nofollow" } in the TOR browser.
 3. Enjoy!
 
-<br>
-
 #### Library Genesis
 
 Library Genesis (LibGen) is a digital library established on 11 March 2008.
@@ -44,8 +40,6 @@ Library Genesis (LibGen) is a digital library established on 11 March 2008.
 * [libgen.me](http://libgen.me/){: rel="nofollow" }
 * [bookfi.net](http://bookfi.net/){: rel="nofollow" }
 
-<br>
-
 #### PDF Drive
 
 PDF Drive is a free search engine which allows you to search, preview and download millions of PDF files into your devices.
@@ -53,8 +47,6 @@ PDF Drive is a free search engine which allows you to search, preview and downlo
 *Mirror site(s):*
 
 * [pdfdrive.com](http://www.pdfdrive.com/){: rel="nofollow" }
-
----
 
 _**Disclaimer & legal warning**: [This site]({{ site.url }}) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._
 

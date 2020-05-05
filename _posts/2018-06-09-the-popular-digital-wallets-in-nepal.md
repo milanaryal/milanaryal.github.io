@@ -37,8 +37,6 @@ Unlike other services CellPay is not a wallet based, it's like a digital debit c
 
 CellPay App is available for [Web](https://app.cellpay.com.np/){: rel="nofollow" }, [Android](https://play.google.com/store/apps/details?id=com.cellpay){: rel="nofollow" }, and [iOS](https://itunes.apple.com/us/app/cellpay/id1441280711?mt=8){: rel="nofollow" } devices.
 
-<br>
-
 ### Other popular digital wallet alternatives in Nepal
 
 #### [iPay](https://ipay.com.np/){: rel="nofollow" }
@@ -46,8 +44,6 @@ CellPay App is available for [Web](https://app.cellpay.com.np/){: rel="nofollow"
 iPay (powered by Muncha.com company) is also a quite popular payment system in Nepal.  It serves its customers to pay telephone bill, electricity bill, internet bill and other utility bills using iPay service.
 
 iPay App is available for [Web](https://ipay.com.np/){: rel="nofollow" }, [Android](https://play.google.com/store/apps/details?id=np.com.focusone.ipay){: rel="nofollow" }, and [iOS](https://itunes.apple.com/us/app/ipay-nepal/id1091094163?ls=1&mt=8){: rel="nofollow" } devices.
-
-<br>
 
 #### Mobile based alternative
 
@@ -58,8 +54,6 @@ Following are the list of popular mobile based digital payment systems only avai
 * [**PrabhuPAY**](https://prabhupay.com/){: rel="nofollow" } (available for [Android](https://play.google.com/store/apps/details?id=com.prabhutech.prabhupay&hl=en){: rel="nofollow" }, and [iOS](https://itunes.apple.com/np/app/prabhupay-mobile-wallet/id1451300760?mt=8){: rel="nofollow" })
 
 * [**QPay**](http://www.qpay.com.np/){: rel="nofollow" } (available for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){: rel="nofollow" }, and [iOS](https://itunes.apple.com/us/app/qpay-nepal/id1127765416?mt=8){: rel="nofollow" })
-
-<br>
 
 Last but not least:
 

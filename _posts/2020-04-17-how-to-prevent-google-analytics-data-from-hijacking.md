@@ -8,8 +8,6 @@ As we know anyone can view our website source code and find out our Google Analy
 
 So, to overcome this issue --- here we will discuss few steps to do for preventing analytics data from hijacking.
 
-<br>
-
 You can add a filter to your profile:
 
 1. Go to: `Filters`
@@ -35,8 +33,6 @@ The result should look something like this:
 ![preventing google analytics data from hijacking](/uploads/20201417-google-analytics-filter-domain.png)
 
 *Note: Google Analytics interface changes periodically*
-
-<br>
 
 ...for more information [about view filters](https://support.google.com/analytics/answer/1033162?hl=en){: rel="nofollow" }.
 

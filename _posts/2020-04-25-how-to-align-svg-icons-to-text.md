@@ -11,8 +11,6 @@ SVG icons are amazingly awesome but they simply don't align with our text. We ju
 
 This post is inspired by *Elliot Dahl*, [article on *Medium*](https://medium.com/p/d44b3d7b26b4){: rel="nofollow" }. He has described everything about the SVG icons to fit with text. Here, I have even simplify our code to markup with just fewer simple tags.
 
-<br>
-
 Here's a simple CSS code for our SVG icons:
 
 ```css
@@ -26,8 +24,6 @@ Here's a simple CSS code for our SVG icons:
   fill: currentColor;
 }
 ```
-
-<br>
 
 Following is just an example to markup our SVG icons:
 

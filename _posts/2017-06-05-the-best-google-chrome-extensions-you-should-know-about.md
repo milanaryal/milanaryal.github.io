@@ -9,8 +9,6 @@ excerpt: "A list of the best free Chrome extensions you need most to exponential
 
 > **Note:** Browser extensions are useful but using too many extensions may slow down your browser. So, use only essential extensions you need most.
 
-<br>
-
 #### [Google Dictionary (by Google)](https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja?hl=en){: rel="nofollow" }
 
 On a webpage, if you double click on any word this extension will help you to see its complete definition displayed in a bubble. This extension supports multiple languages and also can translate a foreign word to your default language.
@@ -75,8 +73,6 @@ DownThemAll is a powerful yet easy-to-use extension that adds new advanced downl
 
 ### Recommended by [Privacy Tools](https://www.privacytools.io/browsers/#addons){: rel="nofollow" }
 
-<br>
-
 #### [uBlock Origin: Block Ads and Trackers](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en){: rel="nofollow" }
 
 uBlock Origin is an efficient [wide-spectrum blocker](https://github.com/gorhill/uBlock/wiki/Blocking-mode){: rel="nofollow" } that is easy on memory, and yet can load and enforce thousands more filters than other popular blockers out there. It has no monetization strategy and is completely open source.
@@ -102,8 +98,6 @@ It's an addon that believes "I have read and agree to the Terms of Service" is t
 #### [Privacy Badger: Stop Tracking](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp?hl=en){: rel="nofollow" }
 
 Privacy Badger is a browser add-on that stops advertisers and other third-party trackers from secretly tracking where you go and what pages you look at on the web. It learns about trackers as you browse.
-
-<br>
 
 #### [Snowflake](https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie?hl=en){: rel="nofollow" }
 

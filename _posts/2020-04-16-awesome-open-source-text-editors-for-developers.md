@@ -6,8 +6,6 @@ excerpt: "A list of some best modern free and open source cross-platform code ed
 
 Here's a list of some best modern free and open source cross-platform code editors for developers.
 
-<br>
-
 ### [Visual Studio Code](https://code.visualstudio.com/){: rel="nofollow" }
 
 *Free and open source IDE based on the Electron/Atom Framework. Created by Microsoft.*
@@ -17,8 +15,6 @@ VS Code combines the streamlined UI of a modern editor with rich code assistance
 VS Code combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools.
 
 [VS Code source code on GitHub](https://github.com/microsoft/vscode){: rel="nofollow" }.
-
-<br>
 
 ### [Atom](https://atom.io/){: rel="nofollow" }
 
@@ -35,8 +31,6 @@ Features:
 
 [Atom source code on GitHub](https://github.com/atom/atom){: rel="nofollow" }.
 
-<br>
-
 ### [Brackets](http://brackets.io/){: rel="nofollow" }
 
 *A modern, open source text editor that understands web design. Created by Adobe.*
@@ -48,8 +42,6 @@ With focused visual tools and preprocessor support, Brackets is a modern text ed
 Brackets is a lightweight, yet powerful, modern text editor. We blend visual tools into the editor so you get the right amount of help when you want it without getting in the way of your creative process. You'll enjoy writing code in Brackets.
 
 [Brackets source code on GitHub](https://github.com/adobe/brackets){: rel="nofollow" }.
-
-<br>
 
 ---
 

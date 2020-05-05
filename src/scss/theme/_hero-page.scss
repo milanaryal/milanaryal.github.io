@@ -69,7 +69,7 @@
   width: 31.25em; // ~500px
   padding: 0 3em 2em; // ~0 48px 32px;
 
-  @media (max-width: 480px) {
+  @media (max-width: 479px) {
     width: 100%;
     padding: 0 2em 1.25em; // ~0 32px 20px
   }
@@ -117,6 +117,12 @@
   // border: 5px solid #fff;
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(136, 153, 166, .15);
+
+  @media (max-width: 479px) {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+  }
 }
 
 .hero-title {
@@ -131,6 +137,10 @@
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
+
+  @media (max-width: 479px) {
+    font-size: 2.25em;
+  }
 }
 
 .hero-description {
@@ -145,6 +155,10 @@
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
+
+  @media (max-width: 479px) {
+    font-size: 16px;
+  }
 }
 
 
@@ -173,6 +187,11 @@ ul.hero-social {
     color: rgba(255, 255, 255, .9);
     border: solid 1px rgba(255, 255, 255, .9);
     border-radius: 100%;
+
+    @media (max-width: 479px) {
+      width: 3em;
+      height: 3em;
+    }
 
     &.icon-twitter:hover {
       // color: $twitter-color;

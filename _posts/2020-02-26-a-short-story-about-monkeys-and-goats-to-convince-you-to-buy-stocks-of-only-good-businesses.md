@@ -3,7 +3,7 @@ title: "A short story about monkeys and goats, to convince you to buy stocks of 
 date: 2020-02-26T05:32:00+05:45
 ---
 
-> *Note, this story isn't quite the same as [the monkey story]({{ site.url }}/the-monkey-story-on-how-the-stock-markets-work/) you may have got in one of those chain-forwarded emails.*
+> Note, this story isn't quite the same as [the monkey story]({{ site.url }}/the-monkey-story-on-how-the-stock-markets-work/) you may have got in one of those chain-forwarded emails.
 
 There was this village where one day a man appeared and said that he wanted to buy monkeys. He said that he would pay Rs 100 per monkey. The villagers caught all the monkeys in the neighbourhood and sold them to him for a hundred rupees each. Soon another man appeared and said that he would pay Rs 200 for each monkey. But there weren't any more monkeys around. They were all owned by the first man. So the villagers went to him and said that they were willing to take the monkeys back and return his money. But the monkey owner was unwilling to sell. The villagers raised the offer price to Rs 150 per monkey, then Rs 175 and finally to Rs 199 but the man just didn't want to sell, even though he clearly didn't have any use for the monkeys. Eventually, just to see whether he would sell, they offered him Rs 200 but he still refused.
 

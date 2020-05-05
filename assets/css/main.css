@@ -7171,7 +7171,7 @@ a:hover, a:focus {
   background-color: #c2d0d7;
   background-image: linear-gradient(to left top, #8e9eab, #eef2f3);
   opacity: 0;
-  transition: opacity 1.25s ease-in-out 0s, visibility 1.25s 0s;
+  transition: opacity 1.25s ease-in-out 0s, visibility 1.25s 0s;
 }
 
 .hero-container.is-loading::before {
@@ -7195,12 +7195,12 @@ a:hover, a:focus {
   border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: .375rem;
   opacity: .99;
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
   transform: perspective(1000px) rotateX(0deg);
   transform-origin: 50% 50%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .hero-profile {
     width: 100%;
     padding: 0 2em 1.25em;
@@ -7233,6 +7233,14 @@ a:hover, a:focus {
   box-shadow: 0 1px 1px rgba(136, 153, 166, 0.15);
 }
 
+@media (max-width: 479px) {
+  .hero-avatar-img {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+  }
+}
+
 .hero-title {
   margin-bottom: .5em;
   font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
@@ -7247,6 +7255,12 @@ a:hover, a:focus {
   outline: 0;
 }
 
+@media (max-width: 479px) {
+  .hero-title {
+    font-size: 2.25em;
+  }
+}
+
 .hero-description {
   margin-bottom: 1.5em;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7259,6 +7273,12 @@ a:hover, a:focus {
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
+}
+
+@media (max-width: 479px) {
+  .hero-description {
+    font-size: 16px;
+  }
 }
 
 ul.hero-social {
@@ -7284,6 +7304,13 @@ ul.hero-social a {
   color: rgba(255, 255, 255, 0.9);
   border: solid 1px rgba(255, 255, 255, 0.9);
   border-radius: 100%;
+}
+
+@media (max-width: 479px) {
+  ul.hero-social a {
+    width: 3em;
+    height: 3em;
+  }
 }
 
 ul.hero-social a.icon-twitter:hover {
@@ -7726,7 +7753,7 @@ ul.hero-social a .label {
   margin-top: 10px;
   margin-left: -2.25px;
   font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
-  font-size: 40px;
+  font-size: 37.90px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
@@ -7737,7 +7764,7 @@ ul.hero-social a .label {
 @media (max-width: 767px) {
   .post-title {
     margin-left: -1.75px;
-    font-size: 30px;
+    font-size: 28.43px;
   }
 }
 
@@ -7996,13 +8023,13 @@ ul.hero-social a .label {
 .random-posts-item-title {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 26px;
-  line-height: 1.3;
+  line-height: 1.2;
   letter-spacing: -.04em;
 }
 
 @media (max-width: 767px) {
   .random-posts-item-title {
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: -.044em;
   }
 }
@@ -8050,7 +8077,8 @@ ul.hero-social a .label {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.58;
+  line-height: 1.65;
+  color: rgba(0, 0, 0, 0.8);
   letter-spacing: -.004em;
   word-wrap: break-word;
 }
@@ -8058,7 +8086,12 @@ ul.hero-social a .label {
 @media (max-width: 767px) {
   .markdown-body {
     font-size: 18px;
+    line-height: 1.58;
   }
+}
+
+.markdown-body.page-body {
+  margin-bottom: 60px;
 }
 
 .markdown-body.page-body > *:first-child {
@@ -8073,32 +8106,12 @@ ul.hero-social a .label {
   margin-bottom: 5px;
 }
 
+.markdown-body.post-body > *:first-child {
+  margin-top: 1.05em !important;
+}
+
 .markdown-body.post-body > *:last-child {
   margin-bottom: 0 !important;
-}
-
-.markdown-body.post-body > h4:first-child {
-  margin-top: 5px !important;
-}
-
-.markdown-body.post-body > p:first-child {
-  margin-top: 21px !important;
-}
-
-@media (max-width: 767px) {
-  .markdown-body.post-body > p:first-child {
-    margin-top: 17px !important;
-  }
-}
-
-.markdown-body.post-body > h4:first-child + p {
-  margin-top: 29px !important;
-}
-
-@media (max-width: 767px) {
-  .markdown-body.post-body > h4:first-child + p {
-    margin-top: 21px !important;
-  }
 }
 
 .markdown-body h3 a,
@@ -8108,7 +8121,7 @@ ul.hero-social a .label {
 .markdown-body ul a,
 .markdown-body ol a,
 .markdown-body dl a,
-.markdown-body .table-responsive a,
+.markdown-body table a,
 .markdown-body figcaption a,
 .markdown-body .footnotes a {
   color: rgba(0, 0, 0, 0.7);
@@ -8130,8 +8143,8 @@ ul.hero-social a .label {
 .markdown-body ol a:focus,
 .markdown-body dl a:hover,
 .markdown-body dl a:focus,
-.markdown-body .table-responsive a:hover,
-.markdown-body .table-responsive a:focus,
+.markdown-body table a:hover,
+.markdown-body table a:focus,
 .markdown-body figcaption a:hover,
 .markdown-body figcaption a:focus,
 .markdown-body .footnotes a:hover,
@@ -8184,10 +8197,10 @@ ul.hero-social a .label {
 }
 
 .markdown-body h3 {
-  margin-top: 47px;
+  margin-top: 2.75em;
   margin-left: -2.25px;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 30px;
+  font-size: 1.563em;
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
@@ -8197,17 +8210,15 @@ ul.hero-social a .label {
 
 @media (max-width: 767px) {
   .markdown-body h3 {
-    margin-top: 39px;
     margin-left: -1.75px;
-    font-size: 26px;
   }
 }
 
 .markdown-body h4 {
-  margin-top: 39px;
+  margin-top: 2.75rem;
   margin-left: -1.75px;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 26px;
+  font-size: 1.333em;
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
@@ -8217,21 +8228,7 @@ ul.hero-social a .label {
 
 @media (max-width: 767px) {
   .markdown-body h4 {
-    margin-top: 31px;
     margin-left: -1.5px;
-    font-size: 22px;
-  }
-}
-
-.markdown-body h3 + h4,
-.markdown-body h4 + h3 {
-  margin-top: 31px;
-}
-
-@media (max-width: 767px) {
-  .markdown-body h3 + h4,
-  .markdown-body h4 + h3 {
-    margin-top: 23px;
   }
 }
 
@@ -8240,23 +8237,19 @@ ul.hero-social a .label {
 .markdown-body ul,
 .markdown-body ol,
 .markdown-body dl,
-.markdown-body .table-responsive,
+.markdown-body table,
 .markdown-body pre,
 .markdown-body figure {
-  margin-top: 37px;
+  margin-top: 2em;
 }
 
-@media (max-width: 767px) {
-  .markdown-body p,
-  .markdown-body blockquote,
-  .markdown-body ul,
-  .markdown-body ol,
-  .markdown-body dl,
-  .markdown-body .table-responsive,
-  .markdown-body pre,
-  .markdown-body figure {
-    margin-top: 29px;
-  }
+.markdown-body h3 + h4,
+.markdown-body h4 + h3 {
+  margin-top: 2.75rem;
+}
+
+.markdown-body p + p {
+  margin-top: 1.75em;
 }
 
 .markdown-body h3 + p,
@@ -8264,52 +8257,26 @@ ul.hero-social a .label {
 .markdown-body h3 + ul,
 .markdown-body h3 + ol,
 .markdown-body h4 + ul,
-.markdown-body h4 + ol {
-  margin-top: 15px;
-}
-
-@media (max-width: 767px) {
-  .markdown-body h3 + p,
-  .markdown-body h4 + p,
-  .markdown-body h3 + ul,
-  .markdown-body h3 + ol,
-  .markdown-body h4 + ul,
-  .markdown-body h4 + ol {
-    margin-top: 11px;
-  }
-}
-
-.markdown-body p + p,
+.markdown-body h4 + ol,
 .markdown-body p + ul,
 .markdown-body p + ol {
-  margin-top: 29px;
-}
-
-@media (max-width: 767px) {
-  .markdown-body p + p,
-  .markdown-body p + ul,
-  .markdown-body p + ol {
-    margin-top: 21px;
-  }
+  margin-top: 1.15em;
 }
 
 .markdown-body ul,
 .markdown-body ol {
-  padding-left: 29px;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .markdown-body li {
-  margin-top: 13px;
+  padding-left: 0;
+  margin-top: .75em;
+  margin-left: 1.75em;
 }
 
 .markdown-body li p {
-  margin-top: 29px;
-}
-
-@media (max-width: 767px) {
-  .markdown-body li p {
-    margin-top: 21px;
-  }
+  margin: 0;
 }
 
 .markdown-body dl {
@@ -8325,18 +8292,12 @@ ul.hero-social a .label {
 }
 
 .markdown-body dl dd {
-  padding: 0 15px;
+  padding: 0 .75em;
   margin: 0;
 }
 
 .markdown-body dd + dt {
-  margin-top: 17px;
-}
-
-@media (max-width: 767px) {
-  .markdown-body dd + dt {
-    margin-top: 15px;
-  }
+  margin-top: .75em;
 }
 
 .markdown-body figure img {
@@ -8345,12 +8306,7 @@ ul.hero-social a .label {
 }
 
 .markdown-body figcaption {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 300;
-  display: block;
-  width: 100%;
+  padding: 0 1em;
   margin-top: 10px;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15.8px;
@@ -8363,18 +8319,11 @@ ul.hero-social a .label {
   outline: 0;
 }
 
-@media (max-width: 991px) {
-  .markdown-body figcaption {
-    box-sizing: border-box;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-}
-
 .markdown-body blockquote {
-  padding: 0 0 3px 20px;
+  padding: 0 1em;
   font-style: italic;
-  border-left: 3px solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 0.25em solid rgba(0, 0, 0, 0.7);
 }
 
 .markdown-body blockquote > :first-child {
@@ -8387,29 +8336,22 @@ ul.hero-social a .label {
 
 .markdown-body hr {
   display: block;
-  margin-top: 52px;
-  margin-bottom: 42px;
+  margin-top: 2.75rem;
+  margin-bottom: 2.75em;
   text-align: center;
   border: 0;
 }
 
-@media (max-width: 767px) {
-  .markdown-body hr {
-    margin-top: 44px;
-    margin-bottom: 34px;
-  }
-}
-
 .markdown-body hr::before {
   position: relative;
-  top: -25px;
+  top: -.9em;
   display: inline-block;
-  margin-left: .8em;
   font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
-  font-size: 21px;
+  font-size: 26px;
   font-style: italic;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
+  text-indent: .8em;
   letter-spacing: .8em;
   content: "\002e\002e\002e";
 }
@@ -8425,18 +8367,16 @@ ul.hero-social a .label {
 }
 
 .markdown-body .footnotes h4 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 21px;
+  margin: 0;
+  font-size: 16px;
 }
 
 .markdown-body .footnotes ol {
-  padding-left: 19px;
-  margin-top: 10px;
+  margin: 0;
 }
 
 .markdown-body .footnotes li {
-  margin-top: 9px;
+  margin-top: 10px;
 }
 
 .markdown-body .footnotes p {
