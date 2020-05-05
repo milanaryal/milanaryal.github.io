@@ -8266,13 +8266,16 @@ ul.hero-social a .label {
 .markdown-body ul,
 .markdown-body ol {
   padding-left: 0;
-  margin-left: 0;
+}
+
+.markdown-body > ul,
+.markdown-body > ol {
+  list-style-type: square;
 }
 
 .markdown-body li {
-  padding-left: 0;
   margin-top: .75em;
-  margin-left: 1.75em;
+  margin-left: 1.15em;
 }
 
 .markdown-body li p {
@@ -8918,10 +8921,10 @@ kbd {
   }
 }
 
-.js-anchor-link {
+.anchor {
   position: absolute;
-  padding-right: .5em;
-  margin-left: -1em;
+  padding-right: .575em;
+  margin-left: -1.15em;
   color: inherit !important;
   text-decoration: none !important;
   background-image: none !important;
@@ -8929,22 +8932,22 @@ kbd {
   opacity: 0;
 }
 
-.js-anchor-link .icon-link {
+.anchor .icon-link {
   font-size: 66%;
-  vertical-align: .1em;
+  vertical-align: .125em;
 }
 
 @media (max-width: 767px) {
-  .js-anchor-link {
+  .anchor {
     display: none !important;
   }
 }
 
-*:hover > .js-anchor-link {
+*:hover > .anchor {
   opacity: .75;
 }
 
-*:hover > .js-anchor-link:hover, *:hover > .js-anchor-link:focus {
+*:hover > .anchor:hover, *:hover > .anchor:focus {
   opacity: 1;
 }
 
@@ -9031,19 +9034,18 @@ kbd {
 }
 
 .social-links {
-  padding-left: 0 !important;
-  margin-bottom: 10px;
-  margin-left: -10px;
+  margin: 2em 0 !important;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 66%;
   text-align: center;
   list-style: none;
 }
 
-.social-links > li {
+.social-links li {
   display: inline-block;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 0;
 }
 
 .social-links a {
@@ -9062,6 +9064,13 @@ kbd {
   font-size: 3.33em;
 }
 
+@media (min-width: 768px) {
+  .social-links--contact li {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
 .pgp-key {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 84%;
@@ -9077,13 +9086,6 @@ kbd {
 
 .pgp-key a:hover, .pgp-key a:focus {
   color: rgba(0, 0, 0, 0.8);
-}
-
-@media (min-width: 768px) {
-  .social-links--contact li {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
 }
 
 .navbar .input-group-append .btn-outline-secondary,

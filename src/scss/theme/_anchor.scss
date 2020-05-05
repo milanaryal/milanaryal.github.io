@@ -2,10 +2,10 @@
 // Header anchor link placement and hover behavior
 //
 
-.js-anchor-link {
+.anchor {
   position: absolute;
-  padding-right: .5em;
-  margin-left: -1em;
+  padding-right: .575em; // margin-left/2; .5em, 4px, .2em;
+  margin-left: -1.15em; // -1em
   color: inherit !important;
   text-decoration: none !important; // do not underline link
   background-image: none !important;
@@ -14,7 +14,7 @@
 
   .icon-link {
     font-size: 66%;
-    vertical-align: .1em;
+    vertical-align: .125em; // .1em
   }
 
   @media (max-width: 767px) {
@@ -23,7 +23,7 @@
 }
 
 *:hover {
-  > .js-anchor-link {
+  > .anchor {
     opacity: .75;
     // transition is in _global.sass for anchor
     // transition: all .16s linear;

@@ -25,18 +25,17 @@
 // About and contact page social links
 
 .social-links {
-  padding-left: 0 !important;
-  margin-bottom: 10px;
-  margin-left: -10px;
+  margin: 2em 0 !important;
   font-family: $font-family-sans-serif;
   font-size: 66%;
   text-align: center;
   list-style: none;
 
-  > li {
+  li {
     display: inline-block;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
   }
 
   a {
@@ -57,6 +56,15 @@
   }
 }
 
+.social-links--contact {
+  @media (min-width: 768px) {
+    li {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+}
+
 .pgp-key {
   font-family: $font-family-sans-serif;
   font-size: 84%;
@@ -71,15 +79,6 @@
     &:hover,
     &:focus {
       color: rgba(0, 0, 0, .8);
-    }
-  }
-}
-
-.social-links--contact {
-  @media (min-width: 768px) {
-    li {
-      padding-right: 25px;
-      padding-left: 25px;
     }
   }
 }
