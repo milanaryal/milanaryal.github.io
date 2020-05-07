@@ -41,6 +41,11 @@
   a {
     display: block;
     color: rgba(0, 0, 0, .7);
+
+    @media (prefers-color-scheme: dark) {
+      color: rgba(255, 255, 255, .7);
+    }
+
     text-decoration: none !important;
     background-image: none !important;
     border-bottom: none !important;
@@ -48,12 +53,17 @@
     &:hover,
     &:focus {
       color: rgba(0, 0, 0, .8);
+
+      @media (prefers-color-scheme: dark) {
+        color: rgba(255, 255, 255, .8);
+      }
     }
 
     .icon {
       font-size: 3.33em;
     }
   }
+
 }
 
 .social-links--contact {
@@ -72,6 +82,11 @@
 
   a {
     color: rgba(0, 0, 0, .7);
+
+    @media (prefers-color-scheme: dark) {
+      color: rgba(255, 255, 255, .7);
+    }
+
     text-decoration: none !important;
     background-image: none !important;
     border-bottom: none !important;
@@ -79,6 +94,10 @@
     &:hover,
     &:focus {
       color: rgba(0, 0, 0, .8);
+
+      @media (prefers-color-scheme: dark) {
+        color: rgba(255, 255, 255, .8);
+      }
     }
   }
 }
@@ -88,7 +107,19 @@
 
 .navbar,
 .o-search-body {
+  .form-control {
+    @media (prefers-color-scheme: dark) {
+      color: #ccc;
+      background-color: #333;
+      border: 1px solid #333;
+    }
+  }
+
   .input-group-append .btn-outline-secondary {
     border-color: #ced4da;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: #333;
+    }
   }
 }

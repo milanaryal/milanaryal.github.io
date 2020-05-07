@@ -146,6 +146,38 @@ layout: compress
       .gcsc-more-maybe-branding-root {
         display: none !important;
       }
+      {% comment %}
+      /**
+      * Dark mode
+      */
+      {% endcomment %}
+      @media (prefers-color-scheme: dark) {
+        .gsc-selected-option-container {
+          color: rgba(255, 255, 255, .8) !important;
+          background-color: #333 !important;
+        }
+        .gsc-control-cse .gsc-option-menu {
+          background: #333 !important;
+        }
+        .gsc-option-menu-item-highlighted {
+          color: rgba(255, 255, 255, .8) !important;
+          background-color: #333 !important;
+          border-color: #333 !important;
+        }
+        .cse .gsc-control-cse, .gsc-control-cse {
+          background-color: transparent !important;
+          border: 1px solid transparent !important;
+        }
+        .gsc-cursor {
+          color: rgba(255, 255, 255, .8) !important;
+          fill: rgba(255, 255, 255, .8) !important;
+        }
+        .gsc-results .gsc-cursor-box {
+          color: rgba(255,255,255,0.8) !important;
+          background-color: #333 !important;
+          border: 1px solid #333 !important;
+        }
+      } /** @media (prefers-color-scheme: dark) {...} **/
     </style>
 
   </head>

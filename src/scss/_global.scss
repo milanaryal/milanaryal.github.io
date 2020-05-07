@@ -14,6 +14,12 @@ body {
   line-height: 1.4;
   color: rgba(0, 0, 0, .8);
   letter-spacing: 0;
+
+  // -- Font smoothing enabled -- //
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
 }
 
 // Typography
@@ -26,7 +32,7 @@ h4 {
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
-  color: inherit;
+  color: rgba(0, 0, 0, .84);
   letter-spacing: 0;
 }
 
@@ -45,9 +51,11 @@ a {
 }
 
 ::-moz-selection {
-  background: #7fdbff; // #d6edff; Gecko Browsers
+  color: #fff;
+  background: #111; // #7fdbff; // #d6edff; Gecko Browsers
 }
 
 ::selection {
-  background: #7fdbff; // #d6edff; WebKit/Blink Browsers
+  color: #fff;
+  background: #111; // #7fdbff; // #d6edff; WebKit/Blink Browsers
 }

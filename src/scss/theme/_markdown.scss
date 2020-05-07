@@ -5,10 +5,10 @@
 .markdown-body {
   font-family: $font-family-serif;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
+  // font-style: normal;
+  // font-weight: 400;
   line-height: 1.65;
-  color: rgba(0, 0, 0, .8);
+  // color: rgba(0, 0, 0, .8);
   letter-spacing: -.004em;
   word-wrap: break-word;
 
@@ -51,21 +51,21 @@
   ul,
   ol,
   dl,
-  table,
+  .table,
   figcaption,
   .footnotes {
     a {
-      color: rgba(0, 0, 0, .7);
-      text-decoration: none;
+      // color: rgba(0, 0, 0, .7);
+      // text-decoration: none;
       border-bottom: 1px dotted rgba(0, 0, 0, .7);
       -webkit-tap-highlight-color: rgba(0, 0, 0, .3);
 
       &:hover,
       &:focus {
         // color: inherit;
-        color: rgba(0, 0, 0, .9);
-        text-decoration: none;
-        border-bottom: 1px solid rgba(0, 0, 0, .9);
+        // color: rgba(0, 0, 0, .9);
+        // text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, .8);
       }
     }
   }
@@ -73,28 +73,13 @@
   h3,
   h4 {
     a {
-      color: rgba(0, 0, 0, .8);
-      border-bottom: 2px dotted rgba(0, 0, 0, .8);
+      // color: rgba(0, 0, 0, .8);
+      border-bottom: 2px dotted rgba(0, 0, 0, .7);
 
       &:hover,
       &:focus {
-        color: rgba(0, 0, 0, .9);
-        border-bottom: 2px solid rgba(0, 0, 0, .9);
-      }
-    }
-  }
-
-  figcaption {
-    a {
-      color: rgba(0, 0, 0, .6);
-      // text-decoration: none;
-      border-bottom: 1px dotted rgba(0, 0, 0, .6);
-
-      &:hover,
-      &:focus {
-        color: rgba(0, 0, 0, .7);
-        // text-decoration: none;
-        border-bottom: 1px solid rgba(0, 0, 0, .7);
+        // color: rgba(0, 0, 0, .9);
+        border-bottom: 2px solid rgba(0, 0, 0, .8);
       }
     }
   }
@@ -122,12 +107,12 @@
   h3 {
     margin-top: 2.75em;
     margin-left: -2.25px;
-    font-family: $font-family-sans-serif;
+    // font-family: $font-family-sans-serif;
     font-size: 1.563em;
-    font-style: normal;
-    font-weight: 700;
+    // font-style: normal;
+    // font-weight: 700;
     line-height: 1.2; // 1.15
-    color: rgba(0, 0, 0, .8);
+    // color: rgba(0, 0, 0, .8);
     letter-spacing: -.0022em; // -.04em
 
     @media (max-width: 767px) {
@@ -138,12 +123,12 @@
   h4 {
     margin-top: 2.75rem;
     margin-left: -1.75px;
-    font-family: $font-family-sans-serif;
+    // font-family: $font-family-sans-serif;
     font-size: 1.333em;
-    font-style: normal;
-    font-weight: 700;
+    // font-style: normal;
+    // font-weight: 700;
     line-height: 1.2; // 1.22
-    color: rgba(0, 0, 0, .8);
+    // color: rgba(0, 0, 0, .8);
     letter-spacing: -.0022em; // -.044em
 
     @media (max-width: 767px) {
@@ -236,6 +221,19 @@
     text-align: center;
     letter-spacing: 0;
     outline: 0;
+
+    a {
+      // color: rgba(0, 0, 0, .6);
+      // text-decoration: none;
+      border-bottom: 1px dotted rgba(0, 0, 0, .5);
+
+      &:hover,
+      &:focus {
+        // color: rgba(0, 0, 0, .7);
+        // text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, .6);
+      }
+    }
   }
 
   blockquote {
