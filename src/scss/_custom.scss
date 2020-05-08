@@ -13,6 +13,10 @@
     margin-top: 50px !important;
     margin-bottom: 25px !important;
   }
+
+  @media (prefers-color-scheme: dark) {
+    opacity: .75;
+  }
 }
 
 // Set a size for our map container, the Google Map will take up 100% of this container

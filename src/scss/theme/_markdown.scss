@@ -249,6 +249,15 @@
     > :last-child {
       margin-bottom: 0;
     }
+
+    a {
+      border-bottom: 1px dotted rgba(0, 0, 0, .6);
+
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid rgba(0, 0, 0, .7);
+      }
+    }
   }
 
   hr {

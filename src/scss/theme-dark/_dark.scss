@@ -112,7 +112,7 @@
   //
 
   .page-header {
-    background-color: #111;
+    background-color: #000;
     opacity: .75;
   }
 
@@ -252,10 +252,11 @@
     }
 
     .table {
-      color: rgba(255, 255, 255, .8);
+      color: #bbb;
 
       tr:hover {
-        background-color: rgba(255, 255, 255, .5);
+        color: #fff;
+        background-color: #000;
       }
     }
 
@@ -270,7 +271,7 @@
     figcaption,
     .footnotes {
       a {
-        border-bottom: 1px dotted rgba(255, 255, 255, .6);
+        border-bottom: 1px dotted rgba(255, 255, 255, .7);
         -webkit-tap-highlight-color: rgba(255, 255, 255, .3);
 
         &:hover,
@@ -304,8 +305,10 @@
 
     figcaption {
       color: rgba(255, 255, 255, .6);
-      a{
+
+      a {
         border-bottom: 1px dotted rgba(255, 255, 255, .5);
+
         &:hover,
         &:focus {
           border-bottom: 1px solid rgba(255, 255, 255, .6);
@@ -316,6 +319,15 @@
     blockquote {
       color: rgba(255, 255, 255, .7);
       border-left: .25em solid rgba(255, 255, 255, .7);
+
+      a {
+        border-bottom: 1px dotted rgba(255, 255, 255, .6);
+
+        &:hover,
+        &:focus {
+          border-bottom: 1px solid rgba(255, 255, 255, .7);
+        }
+      }
     }
 
     hr {

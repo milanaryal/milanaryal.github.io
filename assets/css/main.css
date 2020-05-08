@@ -8325,6 +8325,14 @@ ul.hero-social a .label {
   margin-bottom: 0;
 }
 
+.markdown-body blockquote a {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.6);
+}
+
+.markdown-body blockquote a:hover, .markdown-body blockquote a:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
 .markdown-body hr {
   display: block;
   margin-top: 2.75rem;
@@ -9016,6 +9024,12 @@ kbd {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  .map-wrapper {
+    opacity: .75;
+  }
+}
+
 #map-canvas {
   width: 100%;
   height: 350px;
@@ -9185,7 +9199,7 @@ kbd {
     border-color: rgba(255, 255, 255, 0.6);
   }
   .page-header {
-    background-color: #111;
+    background-color: #000;
     opacity: .75;
   }
   .site-footer {
@@ -9278,10 +9292,11 @@ kbd {
     opacity: 1;
   }
   .markdown-body .table {
-    color: rgba(255, 255, 255, 0.8);
+    color: #bbb;
   }
   .markdown-body .table tr:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    background-color: #000;
   }
   .markdown-body h3 a,
   .markdown-body h4 a,
@@ -9293,7 +9308,7 @@ kbd {
   .markdown-body .table a,
   .markdown-body figcaption a,
   .markdown-body .footnotes a {
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.7);
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
   }
   .markdown-body h3 a:hover, .markdown-body h3 a:focus,
@@ -9344,6 +9359,12 @@ kbd {
   .markdown-body blockquote {
     color: rgba(255, 255, 255, 0.7);
     border-left: 0.25em solid rgba(255, 255, 255, 0.7);
+  }
+  .markdown-body blockquote a {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
+  }
+  .markdown-body blockquote a:hover, .markdown-body blockquote a:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   }
   .markdown-body hr::before {
     color: rgba(255, 255, 255, 0.6);
