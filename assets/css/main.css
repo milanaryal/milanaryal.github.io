@@ -8947,6 +8947,15 @@ kbd {
   opacity: 1;
 }
 
+.markdown-body > h2[id],
+.markdown-body > h3[id],
+.markdown-body > h4[id],
+.archive-body > h2[id],
+.archive-body > h3[id],
+.archive-body > h4[id] {
+  pointer-events: none;
+}
+
 .markdown-body > h2[id]::before,
 .markdown-body > h3[id]::before,
 .markdown-body > h4[id]::before,
@@ -8958,6 +8967,11 @@ kbd {
   margin-top: -6rem;
   visibility: hidden;
   content: "";
+}
+
+.post-content-title {
+  display: block;
+  pointer-events: auto;
 }
 
 @media (max-width: 767px) {

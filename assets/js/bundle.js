@@ -16140,14 +16140,17 @@ return Popper;
     $('.markdown-body table').addClass('table table-responsive table-hover');
 
     // responsive embed video
-    $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
-    $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    var $youtubeIframe = $('iframe[src*="youtube.com"]');
+    $youtubeIframe.addClass('embed-responsive-item');
+    $youtubeIframe.wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
-    $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
-    $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    var $vimeoIframe = $('iframe[src*="vimeo.com"]');
+    $vimeoIframe.addClass('embed-responsive-item');
+    $vimeoIframe.wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
-    $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
-    $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+    var $slideshareIframe = $('iframe[src*="slideshare.net"]');
+    $slideshareIframe.addClass('embed-responsive-item');
+    $slideshareIframe.wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
     // default button
     $('.markdown-body a[role="button"]').addClass('btn btn-outline-default');
@@ -16179,6 +16182,8 @@ return Popper;
       return this;
     });
 
+    $(postHeader).wrapInner('<span class="post-content-title"></span>');
+
 
     /**
      * ------------------------------------------------------------------------
@@ -16188,6 +16193,7 @@ return Popper;
 
     $('.random-posts').removeAttr('hidden');
 
+    // init
     generateRandomPosts();
 
     // random posts section footer
@@ -16201,11 +16207,11 @@ return Popper;
      */
 
     var iconChevronUp = '<svg class="icon icon-chevron-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"/></svg>';
-
     var divElevator = '<div class="elevator" aria-hidden="true">' + iconChevronUp + '</div>';
+    var $elevatorWrapper = $('.elevator-wrapper');
 
-    $('.elevator-wrapper').removeAttr('hidden');
-    $('.elevator-wrapper').append(divElevator);
+    $elevatorWrapper.removeAttr('hidden').append(divElevator);
+
 
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,
@@ -16272,7 +16278,7 @@ return Popper;
 
   console.log('Hello world!');
 
-  var asciiArt___M = `%c
+  var asciiArtM = `%c
 ...............          ...............
 l0000000000000d.        .o00000O0000000l
 kMMMMMMMMMMMMMNl        cNMMMMMMMMMMMMMk
@@ -16292,11 +16298,11 @@ kMMMMMMMMMMk. .kMMMMMWl  .0MMMMMMMMMMMMk
 lOOOOOOOOOOl.  :kOOOOd.  .dOOOOOOOOOOOOl
 .............   ......   ...............\n\n`;
 
-  var site___URL = window.location.protocol + '//' + window.location.host;
-  var log___MSG = 'You are visiting URL:\n';
-  var current___URL = window.location.protocol + '//' + window.location.host + window.location.pathname;
+  var siteURL = window.location.protocol + '//' + window.location.host;
+  var logMSG = 'You are visiting URL:\n';
+  var currentURL = window.location.protocol + '//' + window.location.host + window.location.pathname;
 
-  console.log(asciiArt___M + site___URL, 'font-family:monospace');
-  console.log(log___MSG + current___URL);
+  console.log(asciiArtM + siteURL, 'font-family:monospace');
+  console.log(logMSG + currentURL);
 
 })(jQuery, window, document);

@@ -49,7 +49,7 @@ var paths = {
       'src/js/vendor/headroom.js',
       'src/js/vendor/jQuery.headroom.js',
       'src/js/scripts.js',
-      'src/js/consolelog.js'
+      'src/js/console.log.js'
     ],
     dest: 'assets/js/'
   },
@@ -63,7 +63,7 @@ var paths = {
     ],
     dest: '_site/',
     css: '_site/assets/css/',
-    js: '_site/assets/css/'
+    js: '_site/assets/js/'
   }
 };
 

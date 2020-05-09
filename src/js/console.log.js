@@ -7,7 +7,7 @@
 
   console.log('Hello world!');
 
-  var asciiArt___M = `%c
+  var asciiArtM = `%c
 ...............          ...............
 l0000000000000d.        .o00000O0000000l
 kMMMMMMMMMMMMMNl        cNMMMMMMMMMMMMMk
@@ -27,11 +27,11 @@ kMMMMMMMMMMk. .kMMMMMWl  .0MMMMMMMMMMMMk
 lOOOOOOOOOOl.  :kOOOOd.  .dOOOOOOOOOOOOl
 .............   ......   ...............\n\n`;
 
-  var site___URL = window.location.protocol + '//' + window.location.host;
-  var log___MSG = 'You are visiting URL:\n';
-  var current___URL = window.location.protocol + '//' + window.location.host + window.location.pathname;
+  var siteURL = window.location.protocol + '//' + window.location.host;
+  var logMSG = 'You are visiting URL:\n';
+  var currentURL = window.location.protocol + '//' + window.location.host + window.location.pathname;
 
-  console.log(asciiArt___M + site___URL, 'font-family:monospace');
-  console.log(log___MSG + current___URL);
+  console.log(asciiArtM + siteURL, 'font-family:monospace');
+  console.log(logMSG + currentURL);
 
 })(jQuery, window, document);
