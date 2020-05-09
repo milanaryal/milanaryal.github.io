@@ -1,7 +1,7 @@
 ---
 title: "Access your favourite blocked BitTorrent sites"
 date: 2017-05-27T07:08:00+05:45
-last_modified_at: 2020-04-24T15:25:00+05:45
+last_modified_at: 2020-05-09T13:22:00+05:45
 excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your country or territory Internet censorship."
 ---
 
@@ -9,7 +9,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-* [unblockit.one](https://unblockit.one/){: rel="nofollow" }, [Mirror on Github](https://unblocked-pw.github.io/){: rel="nofollow" }
+* [unblockit.me](https://unblockit.me/){: rel="nofollow" }, [Mirror on Github](https://unblocked-pw.github.io/){: rel="nofollow" }
 * [torrents.io/proxy/](https://torrents.io/proxy/){: rel="nofollow" }{: rel="nofollow" }
 * [unblockall.org](https://unblockall.org/){: rel="nofollow" }
 * [unblocker.cc](https://unblocker.cc/){: rel="nofollow" }
@@ -18,7 +18,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### [The Pirate Bay](https://thepiratebay.org/){: rel="nofollow" } proxy sites and mirrors
 
-* [proxybay.uno](https://proxybay.uno/){: rel="nofollow" }, [Mirror on Github](https://proxybay.github.io/){: rel="nofollow" }
+* [proxybay.page](https://proxybay.page/){: rel="nofollow" }, [Mirror on Github](https://proxybay.github.io/){: rel="nofollow" }
 * [piratebay-proxylist.com](https://piratebay-proxylist.com/){: rel="nofollow" }
 * [themirrorbay.com](http://www.themirrorbay.com/){: rel="nofollow" }
 
@@ -35,5 +35,15 @@ A web proxy allows you to unblock any site on the Internet and to surf anonymous
 * [whoer.net/webproxy](https://whoer.net/webproxy)
 * [proxy.toolur.com](https://proxy.toolur.com/){: rel="nofollow" }
 * [proxypedia.org](https://proxypedia.org/){: rel="nofollow" }
+
+---
+
+#### See also:
+
+* [Top 10 most popular BitTorrent sites]({{ site.url }}/top-10-most-popular-bittorrent-sites/)
+* [The best sites to get subtitles for movies and TV shows]({{ site.url }}/the-best-sites-to-get-subtitles-for-movies-and-tv-shows/)
+* [A list of the best sites to download eBooks for free]({{ site.url }}/a-list-of-the-best-sites-to-download-ebooks-for-free/)
+* [A list of sites to find the best free stock photos]({{ site.url }}/a-list-of-sites-to-find-the-best-free-stock-photos/)
+* [The best ad-blocker extensions for your favourite web browser, free and open-source]({{ site.url }}/the-best-ad-blocker-extensions-for-your-favourite-web-browser-free-and-open-source/)
 
 _**Disclaimer & legal warning**: [This site]({{ site.url }}) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._
