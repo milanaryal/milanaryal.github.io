@@ -44,15 +44,11 @@
   // stylelint-enable declaration-no-important
 
   // Crafting link underlines
-  h3,
-  h4,
   p,
-  blockquote,
   ul,
   ol,
   dl,
   .table,
-  figcaption,
   .footnotes {
     a {
       // color: rgba(0, 0, 0, .7);
@@ -75,6 +71,7 @@
     a {
       // color: rgba(0, 0, 0, .8);
       border-bottom: 2px dotted rgba(0, 0, 0, .7);
+      -webkit-tap-highlight-color: rgba(0, 0, 0, .3);
 
       &:hover,
       &:focus {
@@ -226,6 +223,7 @@
       // color: rgba(0, 0, 0, .6);
       // text-decoration: none;
       border-bottom: 1px dotted rgba(0, 0, 0, .5);
+      -webkit-tap-highlight-color: rgba(0, 0, 0, .3);
 
       &:hover,
       &:focus {
@@ -252,6 +250,7 @@
 
     a {
       border-bottom: 1px dotted rgba(0, 0, 0, .6);
+      -webkit-tap-highlight-color: rgba(0, 0, 0, .3);
 
       &:hover,
       &:focus {
@@ -308,17 +307,21 @@
     h4 {
       margin: 0;
       font-size: 16px;
+      pointer-events: none;
     }
+
     ol {
       margin: 0;
     }
+
     li {
       margin-top: 10px;
     }
+
     p {
       margin: 0;
     }
-  } // .footnotes
+  } // .footnotes {...}
 
 
   // Footnotes anchor link
@@ -326,21 +329,23 @@
   .reversefootnote {
     display: inline-block;
     font-weight: 700;
-    text-decoration: none !important;
-    background-image: none !important;
     border-bottom: none !important;
+  }
 
+  .footnote,
+  .footnotes h4,
+  .footnotes li {
     // Hash tag links that don't headbutt the browser window
     // https://css-tricks.com/hash-tag-links-padding/
     &::before {
       display: block;
       height: 79px;
       margin-top: -79px;
-      pointer-events: none;
+      // pointer-events: none;
       visibility: hidden;
       content: "";
-
     }
   }
+
 
 } // ./markdown

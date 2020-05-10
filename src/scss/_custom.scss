@@ -6,7 +6,7 @@
 
 .map-wrapper {
   @media (max-width: 767px) {
-    display: none !important;
+    display: none;
   }
 
   @media (min-width: 768px) {
@@ -45,14 +45,11 @@
   a {
     display: block;
     color: rgba(0, 0, 0, .7);
+    border-bottom: none !important;
 
     @media (prefers-color-scheme: dark) {
       color: rgba(255, 255, 255, .7);
     }
-
-    text-decoration: none !important;
-    background-image: none !important;
-    border-bottom: none !important;
 
     &:hover,
     &:focus {
@@ -86,14 +83,11 @@
 
   a {
     color: rgba(0, 0, 0, .7);
+    border-bottom: none !important;
 
     @media (prefers-color-scheme: dark) {
       color: rgba(255, 255, 255, .7);
     }
-
-    text-decoration: none !important;
-    background-image: none !important;
-    border-bottom: none !important;
 
     &:hover,
     &:focus {
