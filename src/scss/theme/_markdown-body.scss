@@ -52,18 +52,35 @@
       color: var(--link-hover-color);
       text-decoration: underline var(--link-hover-color);
     }
+
+    // stylelint-disable selector-no-qualifying-type
+    &.anchor,
+    &.footnote,
+    &.reversefootnote {
+      text-decoration: none;
+    }
+    // stylelint-enable selector-no-qualifying-type
   }
 
+  figcaption {
+    a {
+      // color: inherit;
+      text-decoration: underline var(--text-muted);
+
+      &:hover,
+      &:focus {
+        color: var(--link-hover-color);
+        text-decoration: underline var(--link-hover-color);
+      }
+    }
+  }
+
+  // stylelint-disable selector-no-qualifying-type
   a[role="button"] {
     margin: 3px;
     text-decoration: none;
-    outline: 0;
-
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
   }
+  // stylelint-enable selector-no-qualifying-type
 
   a:not([href]) {
     color: inherit;
@@ -177,6 +194,7 @@
     margin: 0 auto;
   }
 
+  // stylelint-disable no-duplicate-selectors
   figcaption {
     padding: 0 1em;
     margin-top: 10px;
@@ -193,18 +211,8 @@
     @media (max-width: 767px) {
       font-size: 14.8px;
     }
-
-    a {
-      // color: inherit;
-      text-decoration: underline var(--text-muted);
-
-      &:hover,
-      &:focus {
-        color: var(--link-hover-color);
-        text-decoration: underline var(--link-hover-color);
-      }
-    }
   }
+  // stylelint-enable no-duplicate-selectors
 
   blockquote {
     padding: 0 1em;
@@ -281,7 +289,6 @@
   .reversefootnote {
     display: inline-block;
     font-weight: 700;
-    border-bottom: none !important;
   }
 
   .footnote,

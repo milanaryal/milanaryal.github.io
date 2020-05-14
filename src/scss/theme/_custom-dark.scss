@@ -69,6 +69,25 @@
     }
   }
 
+  .hero-profile {
+    border: 1px solid rgba(255, 255, 255, .8);
+  }
+
+  .hero-title {
+    color: rgba(255, 255, 255, .8);
+  }
+
+  .hero-description {
+    color: rgba(255, 255, 255, .7);
+  }
+
+  ul.hero-social {
+    a {
+      color: rgba(255, 255, 255, .8);
+      border: solid 1px rgba(255, 255, 255, .8);
+    }
+  }
+
   // _buttons.scss
   //
 

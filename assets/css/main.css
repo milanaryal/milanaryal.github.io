@@ -7220,9 +7220,9 @@ a:hover, a:focus {
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-size: 18px;
   min-height: calc(100vh - 64px);
   padding: 15px;
+  font-size: 18px;
   background-color: #fff;
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed;
@@ -7271,7 +7271,7 @@ a:hover, a:focus {
   text-align: center;
   cursor: default;
   background-color: rgba(255, 255, 255, 0.009);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid #fff;
   border-radius: 4px;
   opacity: .99;
   transition: opacity 1s ease, transform 1s ease;
@@ -7326,7 +7326,7 @@ a:hover, a:focus {
   font-size: 3.25em;
   font-weight: 400;
   line-height: 1.2;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
   word-break: break-word;
   word-wrap: break-word;
@@ -7351,13 +7351,20 @@ a:hover, a:focus {
 
 .hero-description {
   margin-bottom: 1.5em;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 300;
   line-height: 1.4;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
+}
+
+@media (max-width: 767px) {
+  .hero-description {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -7387,8 +7394,8 @@ ul.hero-social a {
   justify-content: center;
   width: 3.4em;
   height: 3.4em;
-  color: rgba(255, 255, 255, 0.8);
-  border: solid 1px rgba(255, 255, 255, 0.8);
+  color: #fff;
+  border: solid 1px #fff;
   border-radius: 100%;
 }
 
@@ -8267,13 +8274,23 @@ ul.hero-social a .label {
   text-decoration: underline var(--link-hover-color);
 }
 
-.markdown-body a[role="button"] {
-  margin: 3px;
+.markdown-body a.anchor, .markdown-body a.footnote, .markdown-body a.reversefootnote {
   text-decoration: none;
-  outline: 0;
 }
 
-.markdown-body a[role="button"]:hover, .markdown-body a[role="button"]:focus {
+.markdown-body figcaption a {
+  -webkit-text-decoration: underline var(--text-muted);
+  text-decoration: underline var(--text-muted);
+}
+
+.markdown-body figcaption a:hover, .markdown-body figcaption a:focus {
+  color: var(--link-hover-color);
+  -webkit-text-decoration: underline var(--link-hover-color);
+  text-decoration: underline var(--link-hover-color);
+}
+
+.markdown-body a[role="button"] {
+  margin: 3px;
   text-decoration: none;
 }
 
@@ -8404,17 +8421,6 @@ ul.hero-social a .label {
   }
 }
 
-.markdown-body figcaption a {
-  -webkit-text-decoration: underline var(--text-muted);
-  text-decoration: underline var(--text-muted);
-}
-
-.markdown-body figcaption a:hover, .markdown-body figcaption a:focus {
-  color: var(--link-hover-color);
-  -webkit-text-decoration: underline var(--link-hover-color);
-  text-decoration: underline var(--link-hover-color);
-}
-
 .markdown-body blockquote {
   padding: 0 1em;
   font-style: italic;
@@ -8484,7 +8490,6 @@ ul.hero-social a .label {
 .markdown-body .reversefootnote {
   display: inline-block;
   font-weight: 700;
-  border-bottom: none !important;
 }
 
 .markdown-body .footnote::before,
@@ -9230,7 +9235,6 @@ kbd {
   padding-right: .575em;
   margin-left: -1.15em;
   color: inherit;
-  border-bottom: none !important;
   opacity: 0;
 }
 
@@ -9477,6 +9481,19 @@ kbd {
   .hero-container::before {
     background: #232526;
     background: linear-gradient(to right, #414345, #232526);
+  }
+  .hero-profile {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .hero-title {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .hero-description {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  ul.hero-social a {
+    color: rgba(255, 255, 255, 0.8);
+    border: solid 1px rgba(255, 255, 255, 0.8);
   }
   .btn-outline-default {
     color: rgba(255, 255, 255, 0.44);
