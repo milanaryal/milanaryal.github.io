@@ -2,18 +2,6 @@
 // Theme layout design
 //
 
-// Middot divider
-
-.u-middot-divider {
-  display: inline-block;
-  padding: 0 .42em;
-}
-
-.u-middot-divider::after {
-  content: "\00b7"; // "·"
-}
-
-
 // Page content
 
 .page-content,
@@ -29,7 +17,7 @@
 
 // Page header
 
-.page-header {
+.masthead {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +27,7 @@
   color: #fff;
   text-align: center;
   background-color: #fff;
-  // NOTE: Background images are set within the HTML using inline CSS!
+  // ** NOTE: Background images are set within the HTML using inline CSS! ** //
   // background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('/assets/img/page.jpg');
   background-repeat: no-repeat, no-repeat;
   background-attachment: scroll;
@@ -52,74 +40,81 @@
   }
 }
 
-.page-header-intro-divider {
+.half-rule {
   max-width: 100px;
   margin: 15px auto;
   border: 0;
-  border-top: 4px solid #fff;
-}
+  border-top: 3px solid #fff; // 4px
 
-.page-header-title {
-  // margin-top: 0;
-  font-family: $font-family-sans-serif;
-  font-size: 48px;
-  color: #fff;
-  text-shadow: 0 1px rgba(0, 0, 0, .2);
-  letter-spacing: -.04em;
-
-  @media (min-width: 768px) {
-    font-size: 72px;
+  @media (prefers-color-scheme: dark) {
+    border-top: 3px solid rgba(#fff, .8);
   }
 }
 
-.page-header-tagline {
+.page-title {
+  padding-bottom: 5px;
+  // margin-top: 0;
+  // font-family: $font-family-sans-serif;
+  font-family: $font-family-serif;
+  font-size: 50px; // 48px
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, .2);
+  // letter-spacing: -.002em;
+
+  // ** Font feature settings ** //
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
+
+  mask-image: url("/assets/img/dust-and-scratches.png");
+
+  @media (min-width: 768px) {
+    font-size: 78px; // 72 px
+  }
+}
+
+.page-tagline {
   display: block;
   padding-top: 3px;
   // margin: 10px 0 0;
-  font-family: $font-family-sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  // font-family: $font-family-sans-serif;
+  font-size: 22px; // 20px
+  font-weight: 300;
   line-height: 1.1;
   color: rgba(255, 255, 255, .7);
-  letter-spacing: -.02em;
+  // letter-spacing: -.02em;
+  word-break: break-word;
+  word-wrap: break-word;
 
   @media (min-width: 768px) {
-    font-size: 22px;
+    font-size: 24px; // 22px
   }
 }
 
 
 // Override styles for pagination
 
-.paginator-header {
-  height: 180px;
+.masthead--paginator {
+  height: 100px;
 
   @media (min-width: 768px) {
-    height: 280px;
+    height: 180px;
   }
 }
 
-.paginator-header-intro-divider {
-  border-width: 2px;
+.page-title--paginator {
+  font-size: 36px;
 
   @media (min-width: 768px) {
-    border-width: 3px;
+    font-size: 44px;
   }
 }
 
-.paginator-header-title {
-  font-size: 40px;
+.page-tagline--paginator {
+  font-size: 16px;
 
   @media (min-width: 768px) {
-    font-size: 58px;
-  }
-}
-
-.paginator-header-tagline {
-  font-size: 18px;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -144,14 +139,19 @@
 }
 
 .site-footer-social {
-  padding-left: 0;
-  margin-left: -5px;
+  padding-left: 0; // reset default left padding
   list-style: none;
 
   > li {
     display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+
+      @media (min-width: 768px) {
+        margin-right: 15px;
+      }
+    }
   }
 
   a {
@@ -186,14 +186,14 @@
   .label {
     display: none;
   }
-}
+} // .site-footer-social {...}
 
 .site-footer-legal {
   margin-top: 30px;
   // margin-bottom: 0;
-  font-family: $font-family-base;
+  // font-family: $font-family-base;
   font-size: 14.8px;
-  color: rgba(0, 0, 0, .6);
+  color: var(--text-muted); // rgba(0, 0, 0, .6);
 
   @media (min-width: 768px) {
     margin-top: 40px;
@@ -236,4 +236,4 @@
     margin-left: 1px;
   }
 
-}
+} // .site-footer-legal {...}

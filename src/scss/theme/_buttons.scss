@@ -15,12 +15,11 @@
 
 .btn-outline-default {
   padding: 15px 25px;
-  font-family: $font-family-base;
-  font-size: 16px; // 14px
-  font-weight: 400;
-  // letter-spacing: -.02em;
+  // font-family: $font-family-base;
+  font-size: 15.8px;
+  // font-weight: 400;
   color: rgba(0, 0, 0, .44);
-  letter-spacing: 0;
+  // letter-spacing: 0; // -.02em
   // text-transform: uppercase;
   background-color: transparent;
   background-image: none;
@@ -48,10 +47,11 @@
 
   @media (max-width: 767px) {
     padding: 11px 19px;
+    font-size: 14.8px;
   }
 }
 
 .btn-outline-default-lg {
   padding: 25px 35px;
-  font-size: 16.8px; // 16px
+  font-size: 16.8px;
 }

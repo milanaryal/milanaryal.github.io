@@ -58,6 +58,7 @@ permalink: "/archives/"
   {% endunless %}
 
   <article class="archive-item" itemscope itemtype="https://schema.org/Article">
+    <!-- Post hidden metadata -->
     <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ post.url | replace:'/index.html','/' }}">
     <span hidden="true" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
       {% if post.image %}
@@ -88,6 +89,7 @@ permalink: "/archives/"
       <meta itemprop="name" content="{{ site_title }}">
     </span>
     <meta itemprop="dateModified" content="{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{ post.date | date_to_xmlschema }}{% endif %}">
+    <!-- /Post hidden metadata -->
 
     <div class="row">
       <div class="col-sm-9 archive-title">

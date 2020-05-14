@@ -10,7 +10,7 @@ layout: default
   <article class="post-content" itemscope itemtype="https://schema.org/Article">
 
     <!-- Post header -->
-    <header class="post-header">
+    <header class="post-masthead">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-lg-8 mx-auto">
@@ -19,7 +19,9 @@ layout: default
 
             <!-- Post meta -->
             <div class="post-meta">
-              <time itemprop="datePublished" datetime="{{ date_published }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><span class="u-middot-divider"></span><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{{ reading_time }}</span>
+              <time itemprop="datePublished" datetime="{{ date_published }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><!--
+              --> &middot; <!--
+              --><span data-toggle="tooltip" data-placement="top" title="{{ content | strip_html | number_of_words | append:' words'}}">{{ reading_time }}</span>
             </div><!-- /.post-meta -->
 
             <meta itemprop="dateModified" content="{{ date_modified }}">

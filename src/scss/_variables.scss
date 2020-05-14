@@ -2,7 +2,45 @@
 //
 // Custom variables for the theme.
 
-$brand-color:               #0074d9 !default; // #111111; #0074d9; #2196f3;
+$brand-color:               #111 !default; // #111111; #0074d9; #2196f3;
+
+// Light theme
+
+$theme-colors-default: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors-default: map-merge(
+  (
+    "body-bg":                   #fff,
+    "body-color":                rgba(0, 0, 0, .8),
+    "heading-color":             rgba(0, 0, 0, .84),
+    "link-color":                rgba(0, 0, 0, .8),
+    "link-underline-color":      #aaa,
+    "link-hover-color":          #000,
+    "text-muted":                #888,
+    "text-muted-secondary":      #aaa,
+    "section-divider":           rgba(0, 0, 0, .1),
+    "section-divider-secondary": rgba(0, 0, 0, .05)
+  ),
+  $theme-colors-default
+);
+
+// Dark theme
+
+$theme-colors-dark: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors-dark: map-merge(
+  (
+    "body-bg":                   #222,
+    "body-color":                #cac3bc,
+    "heading-color":             #e8e4e0,
+    "link-color":                #cac3bc,
+    "link-underline-color":      #ddd,
+    "link-hover-color":          #fff,
+    "section-divider":           rgba(255, 255, 255, .1),
+    "section-divider-secondary": rgba(255, 255, 255, .05)
+  ),
+  $theme-colors-dark
+);
 
 
 // Bootstrap
@@ -13,8 +51,8 @@ $brand-primary:             darken($brand-color, 6.5%) !default;
 $text-color:                rgba(0, 0, 0, .8) !default;
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:    "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:         "PT Serif", Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:         "DM Serif Display", Georgia, serif !default;
 $font-family-base:          $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
@@ -24,10 +62,6 @@ $link-hover-decoration:     none !default;
 
 $blockquote-border-color:   $text-color !default;
 $hr-border:                 rgba(0, 0, 0, .05) !default;
-
-//$theme-colors: (
-//  dark: #34495e  !default;
-//);
 
 
 // Brand colors (http://brand-colors.com, http://brandcolors.net)

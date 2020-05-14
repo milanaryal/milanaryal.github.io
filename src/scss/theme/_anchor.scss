@@ -4,8 +4,8 @@
 
 .anchor {
   position: absolute;
-  padding-right: .575em; // margin-left/2; .5em, 4px, .2em;
-  margin-left: -1.15em; // -1em
+  padding-right: .575em; // margin-left value divide by 2
+  margin-left: -1.15em;
   color: inherit;
   border-bottom: none !important;
   opacity: 0;
@@ -14,21 +14,16 @@
     display: none;
   }
 
-  &:focus {
-    outline: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-
   .icon-link {
     font-size: 66%;
-    vertical-align: .125em; // .1em
+    vertical-align: .125em;
   }
 }
 
 *:hover {
   > .anchor {
     opacity: .75;
-    // transition is in _global.sass for anchor
+    // ** transition is in _global.sass for anchor ** //
     // transition: all .16s linear;
 
     &:hover,
@@ -40,6 +35,8 @@
 
 // Offsetting an html anchor to adjust for fixed header
 // (https://css-tricks.com/hash-tag-links-padding/#article-header-id-1)
+
+// stylelint-disable selector-no-qualifying-type
 .markdown-body,
 .archive-body {
   > h2[id],
@@ -63,3 +60,4 @@
   display: block;
   pointer-events: auto;
 }
+// stylelint-enable selector-no-qualifying-type

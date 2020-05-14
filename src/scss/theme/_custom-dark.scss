@@ -1,0 +1,209 @@
+//
+// Dark theme
+//
+
+@media (prefers-color-scheme: dark) {
+
+  // _global.scss
+  //
+
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+
+  ::selection {
+    color: #fff;
+    background: #000;
+  }
+
+  // _navbar.scss
+  //
+
+  .navbar {
+    color: rgba(255, 255, 255, .84);
+    background-color: #303030;
+
+    .icon-bars {
+      font-size: 30px;
+      color: rgba(255, 255, 255, .84);
+    }
+  }
+
+  .navbar-light .navbar-brand {
+    color: rgba(255, 255, 255, .8) !important;
+  }
+
+  .navbar-light .navbar-brand:focus,
+  .navbar-light .navbar-brand:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, .9);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .5);
+
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, .9);
+    }
+  }
+
+  .headroom--not-top {
+    background-color: rgba(#303030, .97);
+  }
+
+  // _hero-page.scss
+  //
+
+  .hero-container {
+    background-color: #111;
+
+    &::before {
+      background: #232526;  // fallback for old browsers
+      background: linear-gradient(to right, #414345, #232526); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+    }
+  }
+
+  // _buttons.scss
+  //
+
+  .btn-outline-default {
+    color: rgba(255, 255, 255, .44);
+    border-color: rgba(255, 255, 255, .15);
+
+    &:hover {
+      color: rgba(255, 255, 255, .6);
+      border-color: rgba(255, 255, 255, .3);
+    }
+
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+      color: rgba(255, 255, 255, .8);
+      border-color: rgba(255, 255, 255, .6);
+    }
+  }
+
+  // _pages.scss
+  //
+
+  .masthead {
+    background-color: #111;
+    opacity: .75;
+  }
+
+  .site-footer {
+    background-color: darken($white, 90%);
+
+    a {
+      color: rgba(0, 0, 0, .97);
+      background-color: rgba(255, 255, 255, .1);
+
+      svg {
+        fill: rgba(255, 255, 255, .7);
+      }
+    }
+  }
+
+  // _pager.scss
+  //
+
+  .pager {
+    li {
+      > a {
+        color: rgba(255, 255, 255, .44);
+        border: 1px solid rgba(255, 255, 255, .15);
+      }
+
+      > a:hover {
+        color: rgba(255, 255, 255, .6);
+        border-color: rgba(255, 255, 255, .3);
+      }
+
+      > a:focus,
+      > a:active {
+        color: rgba(255, 255, 255, .8);
+        border-color: rgba(255, 255, 255, .6);
+      }
+    }
+  }
+
+  // _posts.scss
+  //
+
+  .random-posts {
+    background-color: rgba(255, 255, 255, .02);
+  }
+
+  // _markdown.scss
+  //
+
+  .markdown-body {
+    .table {
+      color: #ddd;
+
+      tr:hover {
+        color: #fff;
+        background-color: #333;
+      }
+    }
+  }
+
+  // _archive-page.scss
+  //
+
+  .archive-title {
+    a {
+      color: rgba(255, 255, 255, .8);
+      border-bottom: 1px dotted rgba(255, 255, 255, .3);
+
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, .9);
+        border-bottom: 1px solid rgba(255, 255, 255, .7);
+      }
+    }
+  }
+
+  // _error-page.scss
+  //
+
+  .error-page {
+    background-color: #111;
+  }
+
+  .error-page-message {
+    color: #bbb;
+  }
+
+  .error-page-message--small {
+    color: #888;
+
+    a {
+      color: #888;
+
+      &:hover,
+      &:active {
+        color: #aaa;
+      }
+    }
+  }
+
+  // _elevator.scss
+  //
+
+  .elevator {
+    color: rgba(255, 255, 255, .7);
+
+    &:hover {
+      color: rgba(255, 255, 255, .8);
+    }
+  }
+
+} // @media (prefers-color-scheme: dark) {...}

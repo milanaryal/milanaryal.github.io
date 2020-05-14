@@ -15,7 +15,7 @@ layout: compress
       body {
         min-height: 100vh !important;
       }
-      .o-search-heading {
+      .search-page-heading {
         margin-top: 100px;
         margin-bottom: 0;
         font-family: {{ theme_font_family_base }};
@@ -23,20 +23,20 @@ layout: compress
         font-size: 18px;
       }
       @media (min-width: 768px) {
-        .o-search-heading {
+        .search-page-heading {
           margin-top: 222px;
           font-size: 20px;
         }
       }
-      .o-search-body {
+      .search-page-body {
         margin: 30px 0 77px;
         font-family: {{ theme_font_family_base }};
       }
-      .o-search-form {
+      .search-page-form {
         margin-bottom: 30px;
       }
-      .o-search-results,
-      .o-search-results * {
+      .search-page-results,
+      .search-page-results * {
         -webkit-box-sizing: content-box;
            -moz-box-sizing: content-box;
                 box-sizing: content-box;
@@ -176,6 +176,13 @@ layout: compress
           color: rgba(255,255,255,0.8) !important;
           background-color: #333 !important;
           border: 1px solid #333 !important;
+        }
+        .gsc-preview-reviews,
+        .gsc-control-cse .gs-snippet,
+        .gsc-control-cse .gs-promotion em,
+        .gsc-control-cse .gs-snippet,
+        .gsc-control-cse .gs-promotion em {
+          color: #666 !important;
         }
       } /** @media (prefers-color-scheme: dark) {...} **/
     </style>

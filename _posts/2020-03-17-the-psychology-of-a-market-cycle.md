@@ -6,10 +6,13 @@ date: 2020-03-17T03:40:00+05:45
 
 <figure>
   <a href="/uploads/20200317-the-psychology-of-a-market-cycle.png">
-    <img src="/uploads/20200317-the-psychology-of-a-market-cycle.png" alt="market cycle">
+    <img src="/uploads/20200317-the-psychology-of-a-market-cycle.png" alt="the psychology of a market cycle">
   </a>
-  <figcaption>“Be greedy when others are fearful, and fearful when others are greedy.”—Warren Buffett</figcaption>
 </figure>
+
+> "Be greedy when others are fearful, and fearful when others are greedy."
+>
+> --- Warren Buffett
 
 ### The cycle of investor emotions
 
@@ -84,9 +87,9 @@ Markets are turning positive once again, you start to be faithful again and you 
 
 ### The psychology of a bear market
 
-> “Unless you can watch your stock holding decline by 50% without becoming panic-stricken, you should not be in the stock market.”
+> "Unless you can watch your stock holding decline by 50% without becoming panic-stricken, you should not be in the stock market."
 >
-> — Warren Buffett, the greatest investor of all time
+> --- Warren Buffett, the greatest investor of all time
 
 Everyone has a breaking point, and it's only in times of distress that we learn where that point is. The psychology of a bear market goes something like this:
 
@@ -101,6 +104,6 @@ Everyone has a breaking point, and it's only in times of distress that we learn 
 
 #### References
 
-* <a href="/uploads/20200317-psychology-of-a-market-cycle.jpg">Psychology of a market cycle</a>, <a rel="nofollow" href="http://wallstreetcheatsheet.com/"><i>Wall Street Cheat Sheet</i></a>
-* <a rel="nofollow" href="https://moderntimesinvestors.com/investing/investor-emotion-cycle/">Investor emotion cycle</a>, <i>Modern Times Investors</i>
-* <a rel="nofollow" href="https://moderntimesinvestors.com/investing/investor-emotion-cycle/">The psychology of a bear market</a>, <em>Michael Batnick</em>
+* [Psychology of a market cycle](/uploads/20200317-psychology-of-a-market-cycle.jpg){: rel="nofollow" }, *Wall Street Cheat Sheet*
+* [Investor emotion cycle](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){: rel="nofollow" }, *Modern Times Investors*
+* [The psychology of a bear market](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){: rel="nofollow" }, *Michael Batnick*

@@ -29,10 +29,11 @@ permalink: "/"
   <!-- Hero profile -->
   <section class="hero-profile is-loading" itemscope itemtype="https://schema.org/Person">
     <div class="hero-profile-inner">
-      <link itemprop="url" href="/">
       <header>
         <span class="hero-avatar">
-          <img class="hero-avatar-img" itemprop="image" src="{{ site_author_avatar }}" alt="{{ site_author }}">
+          <a itemprop="url" href="/">
+            <img class="hero-avatar-img" itemprop="image" src="{{ site_author_avatar }}" alt="{{ site_author }}">
+          </a>
         </span>
         <h1 class="hero-title" itemprop="name">{{ site_author }}</h1>
         <p class="hero-description" itemprop="description">{{ site_author_bio }}</p>

@@ -4,7 +4,7 @@ excerpt: "A list of free and open-source best adblocker extensions to get rid of
 date: 2020-03-20T13:00:00+05:45
 ---
 
-If are annoyed with too much ads, popups, and malware while vising web pages or while watching videos, then here's a list of free and open-source best ad blocker extensions for your favourite web browser out there.
+If you are annoyed with too much ads, popups, and malware while vising web pages or while watching videos, then here's a list of free and open-source best ad blocker extensions for your favourite web browser out there.
 
 | Extensions | Compatibility | Tags | Ratings |
 |---|---|---|---|

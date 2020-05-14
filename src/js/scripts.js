@@ -55,7 +55,7 @@
        var numberOfPosts = 5;
        var divRandomPosts = $('#random-posts');
 
-       divRandomPosts.append('<h3 class="random-posts-heading">Other writings</h3>');
+       divRandomPosts.append('<h3 class="random-posts-heading">Read more</h3>');
 
        while (counter < numberOfPosts) {
          var randomIndex = Math.floor(Math.random() * postsCount);
@@ -169,7 +169,7 @@
     generateRandomPosts();
 
     // random posts section footer
-    $('.random-posts').append('<div class="random-posts-footer"><a class="btn btn-outline-default btn--random" href="/archives/" role="button">More writings</a></div>');
+    $('.random-posts').append('<div class="random-posts-footer"><a class="btn btn-outline-default btn--random" href="/archives/" role="button">' + 'View all' + '</a></div>');
 
 
     /**

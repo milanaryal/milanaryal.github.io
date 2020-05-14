@@ -83,7 +83,7 @@ kbd {
 // Pygments (GitHub theme)
 //
 
-// stylelint-disable declaration-block-single-line-max-declarations
+// stylelint-disable
 .highlight {
   .c { font-style: italic; color: #998; } // Comment
   .err { color: #a61717; background-color: #e3d2d2; } // Error
@@ -145,4 +145,4 @@ kbd {
   .vi { color: #008080; } // Name.Variable.Instance
   .il { color: #099; } // Literal.Number.Integer.Long
 }
-// stylelint-enable declaration-block-single-line-max-declarations
+// stylelint-enable

@@ -9,13 +9,14 @@
 @import "mixins";
 
 // Base and dependencies
-@import "fonts";
+@import "typeface";
 @import "bootstrap";
 
 // Global
-@import "reboot";
-@import "global";
-@import "svg-icons";
+@import "theme/root";
+@import "theme/reboot";
+@import "theme/global";
+@import "theme/svg-icons";
 
 // Core theme
 @import "theme/navbar";
@@ -25,8 +26,9 @@
 @import "theme/post-preview";
 @import "theme/pager";
 @import "theme/posts";
-@import "theme/markdown";
+@import "theme/markdown-body";
 @import "theme/syntax";
+@import "theme/syntax-dark";
 @import "theme/archive-page";
 @import "theme/error-page";
 
@@ -36,8 +38,6 @@
 @import "theme/elevator";
 
 // Custom
-@import "custom";
+@import "theme/custom";
+@import "theme/custom-dark";
 
-// -- Dark theme --
-@import "theme-dark/dark";
-@import "theme-dark/syntax";

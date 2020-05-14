@@ -6,16 +6,27 @@
   background-color: #fff;
 
   @media (min-width: 768px) {
-    // should be min-height if dropdown menu contents
-    // 64px + 1px (borderbottom or box-shadow) = 65px
+    // ** should be min-height if dropdown menu contents ** //
+    // ** 64px + 1px (borderbottom or box-shadow) = 65px ** //
     height: 64px;
   }
 }
 
 .navbar-brand {
   font-family: $font-family-serif;
-  // font-weight: 700;
+  font-weight: 400;
   letter-spacing: -.04em;
+
+  span {
+    // ** Font feature settings ** //
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
+    mask-image: url("/assets/img/dust-and-scratches.png");
+  }
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, .8) !important;
 }
 
 .nav-link {
@@ -35,6 +46,25 @@
   }
 }
 
+.navbar,
+.search-page-body {
+  .form-control {
+    @media (prefers-color-scheme: dark) {
+      color: #ccc;
+      background-color: #333;
+      border: 1px solid #333;
+    }
+  }
+
+  .input-group-append .btn-outline-secondary {
+    border-color: #ced4da;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: #333;
+    }
+  }
+}
+
 
 // Scrolling behavior
 
@@ -42,7 +72,7 @@
   transition:
     background-color 500ms,
     box-shadow 500ms;
-  //*** Force hardware acceleration ***//
+  // ** Force hardware acceleration ** //
   transform: translateZ(0);
   will-change:
     background-color,

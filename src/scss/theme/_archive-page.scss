@@ -4,10 +4,10 @@
 
 .archive-body {
   margin-bottom: 60px;
-  font-size: 18px;
-  color: rgba(0, 0, 0, .8);
+  font-size: 20px;
+  // color: rgba(0, 0, 0, .8);
 
-  @media (min-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 18px;
   }
 
@@ -25,13 +25,13 @@
 .archive-year {
   margin-top: 47px;
   margin-left: -2.25px;
-  font-family: $font-family-sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2; // 1.15
-  color: rgba(0, 0, 0, .8);
-  letter-spacing: -.0022em; // -.04em
+  font-family: $font-family-serif;
+  font-size: 34px; // 30px
+  // font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--heading-color);
+  // letter-spacing: -.04em;
 
   @media (max-width: 767px) {
     margin-top: 39px;
@@ -76,10 +76,10 @@
 }
 
 .archive-date {
-  font-size: .9em; // .876em
-  // font-style: italic;
-  color: rgba(0, 0, 0, .6);
+  font-size: .975em;
+  color: var(--text-muted);
   text-align: right;
+  cursor: default;
 
   > time {
     vertical-align: middle;
@@ -88,7 +88,7 @@
   @media (max-width: 767px) {
     padding-top: 5px;
     padding-bottom: 7px;
-    font-size: .7em; // 16.8px
+    font-size: .753em;
     text-align: left;
   }
 }
