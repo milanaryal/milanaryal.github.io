@@ -1,9 +1,16 @@
-# [Milan Aryal](https://milanaryal.com.np)
+<p align="center"><img style="border-radius:50%" width="180px" height="180px" alt="Milan Aryal" src="assets/img/monogram.png"></a></p>
+
+# [Milan Aryal](https://milanaryal.com.np/)
 
 [![Build Status](https://travis-ci.org/MilanAryal/milanaryal.github.io.svg?branch=master)](https://travis-ci.org/MilanAryal/milanaryal.github.io)
 
-The uncompiled [Jekyll](https://jekyllrb.com) source code for [milanaryal.com.np](https://milanaryal.com.np).
+The uncompiled [Jekyll](https://jekyllrb.com/) source code for [milanaryal.com.np](https://milanaryal.com.np/).
 
 ## License
 
-Despite being open sourced, all the content and code samples remain copyright of Milan Aryal. Except as otherwise noted, the content is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [MIT license](https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE).
+Despite being open sourced, the following directories and their contents remain copyright of *Milan Aryal*. You may not reuse anything therein without my permission:
+
+* `_posts/`
+* `uploads/`
+
+All other directories and files are licensed under the [MIT license](LICENSE.md).
