@@ -1,8 +1,6 @@
-<p align="center"><img style="border-radius:50%" width="180px" height="180px" alt="Milan Aryal" src="assets/img/monogram.png"></a></p>
+<p align="center"><img width="180px" height="180px" alt="Milan Aryal" src="assets/img/monogram.png" style="max-width:100%; border-radius:50%;"></a></p>
 
-# [Milan Aryal](https://milanaryal.com.np/)
-
-[![Build Status](https://travis-ci.org/MilanAryal/milanaryal.github.io.svg?branch=master)](https://travis-ci.org/MilanAryal/milanaryal.github.io)
+# [Milan Aryal](https://milanaryal.com.np/) [![Build Status](https://travis-ci.org/MilanAryal/milanaryal.github.io.svg?branch=master)](https://travis-ci.org/MilanAryal/milanaryal.github.io)
 
 The uncompiled [Jekyll](https://jekyllrb.com/) source code for [milanaryal.com.np](https://milanaryal.com.np/).
 
@@ -13,4 +11,4 @@ Despite being open sourced, the following directories and their contents remain 
 * `_posts/`
 * `uploads/`
 
-All other directories and files are licensed under the [MIT license](LICENSE.md).
+All other directories and files are licensed under the [MIT license](LICENSE).
