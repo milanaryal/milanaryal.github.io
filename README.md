@@ -1,4 +1,4 @@
-<p align="center"><img width="48px" height="48px" alt="Milan Aryal" src="favicon.ico"></p>
+<p align="center"><a href="https://milanaryal.com.np/"><img width="48px" height="48px" alt="Milan Aryal" src="favicon.ico"></a></p>
 
 # [Milan Aryal](https://milanaryal.com.np/)
 
