@@ -68,6 +68,7 @@
             var excerpt = post.e;
             var readTime = post.r;
             var date = post.d;
+            // Template
             var link = '<div class="random-posts-item clearfix">' +
                           '<a href="' + url + '">' +
                             '<h3 class="random-posts-item-title">' + title + '</h3>' +
