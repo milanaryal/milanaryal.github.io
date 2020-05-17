@@ -1,7 +1,7 @@
 ---
 title: "Access your favourite blocked BitTorrent sites"
 date: 2017-05-27T07:08:00+05:45
-last_modified_at: 2020-05-09T13:22:00+05:45
+last_modified_at: 2020-05-17T12:15:00+05:45
 excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your country or territory Internet censorship."
 ---
 
@@ -32,8 +32,7 @@ A web proxy allows you to unblock any site on the Internet and to surf anonymous
 * [filterbypass.me](https://www.filterbypass.me/){: rel="nofollow" }
 * [proxysite.com](https://www.proxysite.com/){: rel="nofollow" }
 * [hidester.com/proxy/](https://hidester.com/proxy/){: rel="nofollow" }
-* [whoer.net/webproxy](https://whoer.net/webproxy)
-* [proxy.toolur.com](https://proxy.toolur.com/){: rel="nofollow" }
+* [whoer.net/webproxy](https://whoer.net/webproxy){: rel="nofollow" }
 * [proxypedia.org](https://proxypedia.org/){: rel="nofollow" }
 
 ---

@@ -8,7 +8,7 @@
 {%- endif -%}
 
 {%- if page.title -%}
-  {%- assign page_title = page.title | smartify | strip_html | strip_newlines | uri_escape -%}
+  {%- assign page_title = page.title | smartify | strip_html | normalize_whitespace | uri_escape -%}
 {%- endif -%}
 
 {%- capture twitter_share_link -%}//twitter.com/intent/tweet?url={{ page_url }}&text={{ page_title }}{%- if site.author.twitter -%}&via={{ site.author.twitter }}{%- endif -%}{%- endcapture -%}

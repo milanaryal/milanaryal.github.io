@@ -57,8 +57,8 @@ google_api_key: "AIzaSyB27uh5sPHJ156nRryf1yuJn6fjo_B7qvI"
 google_analytics_id: "UA-42092423-1"
 google_analytics_id_2: "UA-42092423-2"
 
-# HTML lang attribute format eg. en, en-US, en-GB ...
-language: "en"
+# HTML language attribute format eg. en, en-US, en-GB ...
+lang: "en"
 
 # Open Graph protocol format eg. en_US, en_GB ...
 locale: "en_US"

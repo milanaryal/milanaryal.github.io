@@ -32,7 +32,7 @@ var paths = {
   },
   scripts: {
     src: [
-      'src/js/vendor/jquery.js',
+      'src/js/vendor/jquery.slim.js',
       'src/js/vendor/popper.js',
       'src/js/vendor/bootstrap/util.js',
       // 'src/js/vendor/bootstrap/alert.js',

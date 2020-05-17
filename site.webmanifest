@@ -5,8 +5,8 @@
 ---
 
 {
-  "name": "{{ site.title | smartify | strip_html | strip_newlines | escape_once }}",
-  "short_name": "{{ site.title | smartify | strip_html | strip_newlines | escape_once }}",
+  "name": "{{ site.title | smartify | strip_html | normalize_whitespace | escape_once }}",
+  "short_name": "{{ site.title | smartify | strip_html | normalize_whitespace | escape_once }}",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

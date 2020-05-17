@@ -7741,7 +7741,7 @@ ul.hero-social a .label {
 
 @media (min-width: 768px) {
   .post-preview-title {
-    font-size: 28px;
+    font-size: 26px;
     letter-spacing: -.04em;
   }
 }
@@ -8163,7 +8163,7 @@ ul.hero-social a .label {
 
 .random-posts-item-title {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: -.04em;
 }
@@ -8210,6 +8210,7 @@ ul.hero-social a .label {
 }
 
 .random-posts-footer {
+  padding-top: 20px;
   text-align: center;
 }
 

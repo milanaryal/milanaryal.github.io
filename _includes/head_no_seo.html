@@ -2,11 +2,11 @@
 
 {%- assign site_title = site.title | default: site.name -%}
 {%- if site_title -%}
-  {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
+  {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
 {%- if page.title -%}
-  {%- assign page_title = page.title | smartify | strip_html | strip_newlines | escape_once -%}
+  {%- assign page_title = page.title | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
 {%- if site.github.build_revision -%}

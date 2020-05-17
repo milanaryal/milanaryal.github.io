@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="{% if page.language %}{{ page.language }}{% else %}{{ site.language | replace:'-','_' }}{% endif %}">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang | replace:'-','_' }}{% endif %}">
 
 {%- capture theme_font_family_base -%}-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"{%- endcapture -%}
 

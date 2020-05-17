@@ -1,11 +1,11 @@
 {%- assign page_title = page.title | default: site.title | default: site.name -%}
 {%- if page_title -%}
-  {%- assign page_title = page_title | smartify | strip_html | strip_newlines | escape_once -%}
+  {%- assign page_title = page_title | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
 {%- assign page_tagline = page.tagline | default: site.tagline -%}
 {%- if page_tagline -%}
-  {%- assign page_tagline = page_tagline | smartify | strip_html | strip_newlines | escape_once -%}
+  {%- assign page_tagline = page_tagline | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
 {%- assign page_image = page.image.path | default: page.image | default: site.image.path | default: site.image -%}

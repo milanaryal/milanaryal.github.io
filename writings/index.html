@@ -12,7 +12,7 @@ robots: "noindex, follow"
 
   {%- assign site_title = site.title | default: site.name -%}
   {%- if site_title -%}
-    {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
+    {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
   {%- endif -%}
 
   {%- if site.logo -%}
@@ -31,10 +31,17 @@ robots: "noindex, follow"
     {%- assign post_author = site.author.name | default: site.author -%}
   {%- endif -%}
   {%- if post_author -%}
-    {%- assign post_author = post_author | smartify | strip_html | strip_newlines | escape_once -%}
+    {%- assign post_author = post_author | smartify | strip_html | normalize_whitespace | escape_once -%}
   {%- endif -%}
 
-  {%- assign reading_time = post.content | strip_html | number_of_words | plus:91 | divided_by:180 -%}
+  {%- assign total_words = post.content | strip_html | normalize_whitespace | number_of_words -%}
+  {%- if total_words <= 1 -%}
+    {%- assign total_words = '1' | append:' word' -%}
+  {%- else -%}
+    {%- assign total_words = total_words | append:' words' -%}
+  {%- endif -%}
+
+  {%- assign reading_time = post.content | strip_html | normalize_whitespace | number_of_words | plus:91 | divided_by:180 -%}
   {%- if reading_time <= 1 -%}
     {%- assign reading_time = '1' | append:' min read' -%}
   {%- else -%}
@@ -84,14 +91,14 @@ robots: "noindex, follow"
     <div class="post-preview-meta">
       <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}"{% if post.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ post.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ post.date | date: '%b %-d, %Y' }}</time><!--
       --> &middot; <!--
-      --><span data-toggle="tooltip" data-placement="top" title="{{ post.content | strip_html | number_of_words | append:' words'}}">{{ reading_time }}</span>
+      --><span data-toggle="tooltip" data-placement="top" title="{{ total_words }}">{{ reading_time }}</span>
     </div>
 
     <a itemprop="url" href="{{ post.url | replace:'/index.html','/' }}">
       <div class="clearfix">
-        <h2 class="post-preview-title" itemprop="headline">{{ post.title | smartify | strip_html | strip_newlines | escape_once }}</h2>
+        <h2 class="post-preview-title" itemprop="headline">{{ post.title | smartify | strip_html | normalize_whitespace | escape_once }}</h2>
         {% if post.excerpt and post.excerpt != empty %}
-          <p class="post-preview-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}</p>
+          <p class="post-preview-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 160 | escape_once }}</p>
         {% endif %}
       </div>
     </a>

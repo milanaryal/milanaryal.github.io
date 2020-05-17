@@ -12,7 +12,7 @@ permalink: "/archives/"
 
 {%- assign site_title = site.title | default: site.name -%}
 {%- if site_title -%}
-  {%- assign site_title = site_title | smartify | strip_html | strip_newlines | escape_once -%}
+  {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
 {%- if site.logo -%}
@@ -31,7 +31,7 @@ permalink: "/archives/"
   {%- assign post_author = site.author.name | default: site.author -%}
 {%- endif -%}
 {%- if post_author -%}
-  {%- assign post_author = post_author | smartify | strip_html | strip_newlines | escape_once -%}
+  {%- assign post_author = post_author | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
 {%- assign day = post.date | date: '%-d' -%}
@@ -94,7 +94,7 @@ permalink: "/archives/"
     <div class="row">
       <div class="col-sm-9 archive-title">
         <a itemprop="url" href="{{ post.url | replace:'/index.html','/' }}">
-          <span itemprop="headline">{{ post.title | smartify | strip_html | strip_newlines | escape_once }}</span>
+          <span itemprop="headline">{{ post.title | smartify | strip_html | normalize_whitespace | escape_once }}</span>
         </a>
       </div><!-- /.col-sm-9 .archive-title -->
       <div class="col-sm-3 archive-date">

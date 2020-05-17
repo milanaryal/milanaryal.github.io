@@ -4,8 +4,9 @@
 
 layout: null
 disallows:
-  - "/redirects.json"
   - "/posts.json"
+  - "/randomi.json"
+  - "/redirects.json"
 ---
 
 User-agent: *
