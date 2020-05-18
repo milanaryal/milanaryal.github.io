@@ -14105,7 +14105,7 @@ return Popper;
     var divElevator = '<div class="elevator" aria-hidden="true">' + iconChevronUp + '</div>';
     var $elevatorWrapper = $('.elevator-wrapper');
 
-    $elevatorWrapper.removeAttr('hidden').append(divElevator);
+    // $elevatorWrapper.removeAttr('hidden').append(divElevator);
 
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,
