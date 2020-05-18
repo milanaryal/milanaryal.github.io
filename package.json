@@ -10,10 +10,10 @@
     "watch": "gulp watch",
     "site-build": "gulp buildSite",
     "site-serve": "gulp serveSite",
+    "jekyll-build": "bundle exec jekyll build --config _config.yml,_config_dev.yml",
     "copy-fonts": "rm -rf assets/fonts/; cpy src/fonts/** assets/fonts/",
     "test-css": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache",
     "test-js": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
-    "jekyll-build": "bundle exec jekyll build --config _config.yml,_config_dev.yml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

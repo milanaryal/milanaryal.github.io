@@ -20,51 +20,83 @@
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("/assets/fonts/Inter-Light.woff2?v=3.13") format("woff2"), url("/assets/fonts/Inter-Light.woff?v=3.13") format("woff");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("/assets/fonts/open-sans-v17-latin-300.woff2") format("woff2"), url("/assets/fonts/open-sans-v17-latin-300.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url("/assets/fonts/Inter-LightItalic.woff2?v=3.13") format("woff2"), url("/assets/fonts/Inter-LightItalic.woff?v=3.13") format("woff");
+  src: local("Open Sans Light Italic"), local("OpenSans-LightItalic"), url("/assets/fonts/open-sans-v17-latin-300italic.woff2") format("woff2"), url("/assets/fonts/open-sans-v17-latin-300italic.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/fonts/Inter-Regular.woff2?v=3.13") format("woff2"), url("/assets/fonts/Inter-Regular.woff?v=3.13") format("woff");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("/assets/fonts/open-sans-v17-latin-regular.woff2") format("woff2"), url("/assets/fonts/open-sans-v17-latin-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/fonts/Inter-Italic.woff2?v=3.13") format("woff2"), url("/assets/fonts/Inter-Italic.woff?v=3.13") format("woff");
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("/assets/fonts/open-sans-v17-latin-italic.woff2") format("woff2"), url("/assets/fonts/open-sans-v17-latin-italic.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/assets/fonts/Inter-Bold.woff2?v=3.13") format("woff2"), url("/assets/fonts/Inter-Bold.woff?v=3.13") format("woff");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("/assets/fonts/open-sans-v17-latin-700.woff2") format("woff2"), url("/assets/fonts/open-sans-v17-latin-700.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("/assets/fonts/Inter-BoldItalic.woff2?v=3.13") format("woff2"), url("/assets/fonts/Inter-BoldItalic.woff?v=3.13") format("woff");
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("/assets/fonts/open-sans-v17-latin-700italic.woff2") format("woff2"), url("/assets/fonts/open-sans-v17-latin-700italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lora Regular"), local("Lora-Regular"), url("/assets/fonts/lora-v15-latin-regular.woff2") format("woff2"), url("/assets/fonts/lora-v15-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Lora Bold"), local("Lora-Bold"), url("/assets/fonts/lora-v15-latin-700.woff2") format("woff2"), url("/assets/fonts/lora-v15-latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lora Italic"), local("Lora-Italic"), url("/assets/fonts/lora-v15-latin-italic.woff2") format("woff2"), url("/assets/fonts/lora-v15-latin-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Lora Bold Italic"), local("Lora-BoldItalic"), url("/assets/fonts/lora-v15-latin-700italic.woff2") format("woff2"), url("/assets/fonts/lora-v15-latin-700italic.woff") format("woff");
 }
 
 /*!
@@ -92,7 +124,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3519,7 +3551,7 @@ input[type="button"].btn-block {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7028,7 +7060,9 @@ a.text-dark:hover, a.text-dark:focus {
   --text-muted-secondary: #aaa;
   --section-divider: rgba(0, 0, 0, 0.1);
   --section-divider-secondary: rgba(0, 0, 0, 0.05);
-  --font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-serif: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-family-serif-display: "DM Serif Display", Georgia, serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -7069,7 +7103,7 @@ html {
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -7088,7 +7122,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
@@ -7143,7 +7177,7 @@ a:hover, a:focus {
 }
 
 .navbar-brand {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: var(--font-family-serif-display);
   font-weight: 400;
   letter-spacing: -.04em;
 }
@@ -7324,7 +7358,7 @@ a:hover, a:focus {
 
 .hero-title {
   margin-bottom: .5em;
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: var(--font-family-serif-display);
   font-size: 3.25em;
   font-weight: 400;
   line-height: 1.2;
@@ -7536,7 +7570,7 @@ ul.hero-social a .label {
 
 .page-title {
   padding-bottom: 5px;
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: var(--font-family-serif-display);
   font-size: 50px;
   font-weight: 400;
   color: #fff;
@@ -7784,7 +7818,6 @@ ul.hero-social a .label {
 .pager li > a {
   display: inline-block;
   padding: 12.5px 20px;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14.8px;
   color: rgba(0, 0, 0, 0.44);
   background-color: transparent;
@@ -7841,7 +7874,6 @@ ul.hero-social a .label {
 
 .post-meta {
   padding-bottom: 10px;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 15.8px;
   font-weight: 400;
   line-height: 1.1;
@@ -7857,7 +7889,7 @@ ul.hero-social a .label {
 .post-title {
   margin-top: 10px;
   margin-left: -2.25px;
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: var(--font-family-serif-display);
   font-size: 37.9px;
   font-weight: 400;
   line-height: 1.2;
@@ -7907,10 +7939,7 @@ ul.hero-social a .label {
   display: block;
   width: 100%;
   margin-top: 10px;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.4;
   color: var(--text-muted);
   text-align: center;
@@ -7928,6 +7957,20 @@ ul.hero-social a .label {
 
 .post-footer {
   padding-top: 33px;
+}
+
+.post-modified {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: 15.8px;
+  line-height: 1.2;
+  color: var(--text-muted);
+}
+
+@media (max-width: 767px) {
+  .post-modified {
+    font-size: 14.8px;
+  }
 }
 
 .post-footer-meta-acknowledgments {
@@ -8141,8 +8184,8 @@ ul.hero-social a .label {
 
 @media (max-width: 767px) {
   .random-posts-heading {
-    font-size: 13px;
     padding-top: 20px;
+    font-size: 13px;
   }
 }
 
@@ -8164,7 +8207,6 @@ ul.hero-social a .label {
 }
 
 .random-posts-item-title {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: -.04em;
@@ -8229,9 +8271,11 @@ ul.hero-social a .label {
 }
 
 .markdown-body {
+  font-family: var(--font-family-serif);
   font-size: 18px;
   line-height: 1.65;
   word-wrap: break-word;
+  text-rendering: optimizeLegibility;
 }
 
 @media (max-width: 767px) {
@@ -8411,6 +8455,7 @@ ul.hero-social a .label {
 .markdown-body figcaption {
   padding: 0 1em;
   margin-top: 10px;
+  font-family: var(--font-family-sans-serif);
   font-size: 15.8px;
   line-height: 1.4;
   color: var(--text-muted);
@@ -8451,7 +8496,7 @@ ul.hero-social a .label {
   position: relative;
   top: -.9em;
   display: inline-block;
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: var(--font-family-serif);
   font-size: 26px;
   font-style: italic;
   font-weight: 400;
@@ -8509,7 +8554,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-family-monospace);
 }
 
 code {
@@ -9039,12 +9084,12 @@ kbd {
 
 .archive-body {
   margin-bottom: 60px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @media (max-width: 767px) {
   .archive-body {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -9059,7 +9104,7 @@ kbd {
 .archive-year {
   margin-top: 47px;
   margin-left: -2.25px;
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: var(--font-family-serif-display);
   font-size: 34px;
   font-weight: 400;
   line-height: 1.2;
@@ -9146,7 +9191,7 @@ kbd {
 
 .error-page-message {
   padding-bottom: 3px;
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: var(--font-family-serif-display);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -9179,7 +9224,7 @@ kbd {
 
 .error-page-message--small {
   margin-top: 10px;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-family-sans-serif);
   font-size: 16px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.44);
@@ -9305,11 +9350,11 @@ kbd {
   visibility: hidden;
   background-image: none;
   opacity: 0;
-  transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
 }
 
 .elevator.elevator-is-visible, .elevator.elevator-fade-out, .elevator:hover {
-  transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
 }
 
 .elevator.elevator-is-visible {
@@ -9364,7 +9409,7 @@ kbd {
 
 .social-links {
   margin: 2em 0 !important;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-family-sans-serif);
   font-size: 66%;
   text-align: center;
   list-style: none;
@@ -9411,7 +9456,7 @@ kbd {
 }
 
 .pgp-key {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-family-sans-serif);
   font-size: 84%;
   text-align: center;
 }

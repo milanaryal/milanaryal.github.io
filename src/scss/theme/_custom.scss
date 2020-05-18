@@ -30,7 +30,7 @@
 
 .social-links {
   margin: 2em 0 !important;
-  font-family: $font-family-sans-serif;
+  font-family: var(--font-family-sans-serif);
   font-size: 66%;
   text-align: center;
   list-style: none;
@@ -77,7 +77,7 @@
 }
 
 .pgp-key {
-  font-family: $font-family-sans-serif;
+  font-family: var(--font-family-sans-serif);
   font-size: 84%;
   text-align: center;
 
