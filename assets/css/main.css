@@ -7483,8 +7483,11 @@ ul.hero-social a .label {
 
 .btn-outline-default {
   padding: 15px 25px;
+  font-family: var(--font-family-sans-serif);
   font-size: 15.8px;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.44);
+  letter-spacing: 0;
   background-color: transparent;
   background-image: none;
   border-color: rgba(0, 0, 0, 0.15);

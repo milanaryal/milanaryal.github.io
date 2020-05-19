@@ -14123,7 +14123,8 @@ return Popper;
     });
 
     // smooth scroll to top
-    $back_to_top.on('click', function () {
+    $back_to_top.on('click', function (event) {
+      event.preventDefault();
       window.scroll({
         top: 0,
         left: 0,
