@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Critical CSS -->
-  {% include styles.html %}
-
   {% if jekyll.environment == "production" %}
     {% include preload.html %}
   {% endif %}
+
+  <!-- Critical CSS -->
+  {% include styles.html %}
 
   {% include metadata.html %}
 

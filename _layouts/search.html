@@ -5,7 +5,7 @@ layout: compress
 <!doctype html>
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang | replace:'-','_' }}{% endif %}">
 
-{%- capture theme_font_family_base -%}-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"{%- endcapture -%}
+{%- capture font_family_base -%}"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"{%- endcapture -%}
 
   <head>
 
@@ -18,7 +18,7 @@ layout: compress
       .search-page-heading {
         margin-top: 100px;
         margin-bottom: 0;
-        font-family: {{ theme_font_family_base }};
+        font-family: {{ font_family_base }};
         font-weight: normal;
         font-size: 18px;
       }
@@ -30,7 +30,7 @@ layout: compress
       }
       .search-page-body {
         margin: 30px 0 77px;
-        font-family: {{ theme_font_family_base }};
+        font-family: {{ font_family_base }};
       }
       .search-page-form {
         margin-bottom: 30px;
@@ -65,7 +65,7 @@ layout: compress
       .gs-result .gs-visibleUrl,
       .gs-snippet,
       .gsc-results .gsc-cursor-box {
-        font-family: {{ theme_font_family_base }} !important;
+        font-family: {{ font_family_base }} !important;
       }
       .cse .gsc-control-cse,
       .gsc-control-cse,

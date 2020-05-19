@@ -47,7 +47,7 @@ To generate the web fonts you have to download the `.ttf` (Google Fonts does pro
 
 *NPM packages for Open Source typefaces --- making it easier to self-host webfonts.*
 
-With typefaces as NPM packages, you could do something like `npm install --save typeface-open-sans` which would install a package containing both the font-face css and font files and then in your project’s entry file add `require('typeface-open-sans)` and... you're done.
+With typefaces as NPM packages, you could do something like `npm install --save typeface-open-sans` which would install a package containing both the font-face css and font files and then in your project's entry file add `require('typeface-open-sans)` and... you're done.
 
 #### [Openfonts](https://github.com/bedlaj/openfonts){: rel="nofollow" }
 
@@ -57,6 +57,6 @@ This project is fork of awesome project [typefaces](https://github.com/KyleAMath
 
 Each typeface package ships with all the necessary font files and css to self-host an open source typeface. All Google Fonts have been added as well.
 
-To add Open Sans, you could do something like `npm install --save @openfonts/open-sans_latin` then in your app or site's entry file `require("@openfonts/open-sans_latin")`. And that’s it! You’re now self-hosting Open Sans!
+To add Open Sans, you could do something like `npm install --save @openfonts/open-sans_latin` then in your app or site's entry file `require('@openfonts/open-sans_latin')`. And that's it! You're now self-hosting Open Sans!
 
 It should take < 5 minutes to swap out Google Fonts.
