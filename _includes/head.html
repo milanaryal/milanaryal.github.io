@@ -1,12 +1,19 @@
 <head>
 
-  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Critical CSS -->
+  {% include styles.html %}
+
+  {% if jekyll.environment == "production" %}
+    {% include preload.html %}
+  {% endif %}
 
   {% include metadata.html %}
 
   <!-- Basic page needs -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{% if page_title %}{{ page_title }} &mdash; {{ site_title }}{% else %}{{ site_title }}{% endif %}</title>
   <meta name="title" content="{% if page_title %}{{ page_title }}{% else %}{{ site_title }}{% endif %}">
   <meta name="description" content="{{ page_description }}">
@@ -146,9 +153,6 @@
 
   <!-- Feed -->
   <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_title }}">
-
-  <!-- Critical CSS -->
-  {% include styles.html %}
 
   <!-- Favicon & startup configuration -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ build_version }}">
