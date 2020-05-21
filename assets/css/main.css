@@ -383,6 +383,12 @@ legend {
   white-space: normal;
 }
 
+@media (max-width: 1200px) {
+  legend {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
+}
+
 progress {
   vertical-align: baseline;
 }
@@ -7053,9 +7059,11 @@ a.text-dark:hover, a.text-dark:focus {
   --body-bg: #fff;
   --body-color: rgba(0, 0, 0, 0.8);
   --heading-color: rgba(0, 0, 0, 0.84);
-  --link-color: rgba(0, 0, 0, 0.8);
-  --link-underline-color: #aaa;
-  --link-hover-color: #000;
+  --link-color: #00638a;
+  --link-underline-color: rgba(0, 0, 0, 0.3);
+  --link-hover-color: #00638a;
+  --anchor-color: rgba(0, 0, 0, 0.8);
+  --anchor-hover-color: #111;
   --text-muted: #888;
   --text-muted-secondary: #aaa;
   --section-divider: rgba(0, 0, 0, 0.1);
@@ -7070,10 +7078,12 @@ a.text-dark:hover, a.text-dark:focus {
   :root {
     --body-bg: #222;
     --body-color: #cac3bc;
-    --heading-color: #e8e4e0;
-    --link-color: #cac3bc;
-    --link-underline-color: #ddd;
-    --link-hover-color: #fff;
+    --heading-color: #d7d0c9;
+    --link-color: #a0bfd0;
+    --link-underline-color: #a0bfd0;
+    --link-hover-color: #baa6bd;
+    --anchor-color: #bbb;
+    --anchor-hover-color: #ddd;
     --section-divider: rgba(255, 255, 255, 0.1);
     --section-divider-secondary: rgba(255, 255, 255, 0.05);
   }
@@ -7258,7 +7268,6 @@ a:hover, a:focus {
   width: 100%;
   min-height: calc(100vh - 64px);
   padding: 15px;
-  font-size: 18px;
   background-color: #fff;
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed;
@@ -7269,7 +7278,6 @@ a:hover, a:focus {
 @media (max-width: 767px) {
   .hero-container {
     min-height: calc(100vh - 56px);
-    font-size: 16px;
   }
 }
 
@@ -7301,7 +7309,8 @@ a:hover, a:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 31.25em;
+  width: 100%;
+  max-width: 30.333em;
   padding: 0 3em 2em;
   margin-top: 60px;
   text-align: center;
@@ -7317,8 +7326,13 @@ a:hover, a:focus {
 
 @media (max-width: 479px) {
   .hero-profile {
-    width: 100%;
     padding: 0 2em 1.25em;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-profile {
+    max-width: 33.333em;
   }
 }
 
@@ -7359,7 +7373,7 @@ a:hover, a:focus {
 .hero-title {
   margin-bottom: .5em;
   font-family: var(--font-family-serif-display);
-  font-size: 3.25em;
+  font-size: 3.333rem;
   font-weight: 400;
   line-height: 1.2;
   color: #fff;
@@ -7373,21 +7387,15 @@ a:hover, a:focus {
   mask-image: url("/assets/img/dust-and-scratches.png");
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .hero-title {
-    font-size: 3.15em;
-  }
-}
-
-@media (max-width: 479px) {
-  .hero-title {
-    font-size: 2.65em;
+    font-size: calc(1.4583rem + 2.4996vw) ;
   }
 }
 
 .hero-description {
   margin-bottom: 1.5em;
-  font-size: 22px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.9);
@@ -7397,16 +7405,15 @@ a:hover, a:focus {
   outline: 0;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) {
   .hero-description {
-    font-size: 20px;
+    font-size: 1.125rem;
   }
 }
 
-@media (max-width: 479px) {
+@media (min-width: 768px) {
   .hero-description {
-    font-size: 16px;
-    letter-spacing: -.002em;
+    font-size: 1.25rem;
   }
 }
 
@@ -7430,22 +7437,15 @@ ul.hero-social a {
   justify-content: center;
   width: 3.4em;
   height: 3.4em;
+  font-size: 1rem;
   color: #fff;
   border: solid 1px #fff;
   border-radius: 100%;
 }
 
-@media (max-width: 767px) {
-  ul.hero-social a {
-    width: 3.1em;
-    height: 3.1em;
-  }
-}
-
 @media (max-width: 479px) {
   ul.hero-social a {
-    width: 3em;
-    height: 3em;
+    font-size: 0.875rem;
   }
 }
 
@@ -7574,7 +7574,7 @@ ul.hero-social a .label {
 .page-title {
   padding-bottom: 5px;
   font-family: var(--font-family-serif-display);
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 400;
   color: #fff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
@@ -7584,16 +7584,16 @@ ul.hero-social a .label {
   mask-image: url("/assets/img/dust-and-scratches.png");
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
   .page-title {
-    font-size: 78px;
+    font-size: calc(1.625rem + 4.5vw) ;
   }
 }
 
 .page-tagline {
   display: block;
   padding-top: 3px;
-  font-size: 22px;
+  font-size: 1.333rem;
   font-weight: 300;
   line-height: 1.1;
   color: rgba(255, 255, 255, 0.7);
@@ -7601,9 +7601,21 @@ ul.hero-social a .label {
   word-wrap: break-word;
 }
 
+@media (max-width: 1200px) {
+  .page-tagline {
+    font-size: calc(1.2583rem + 0.0996vw) ;
+  }
+}
+
 @media (min-width: 768px) {
   .page-tagline {
-    font-size: 24px;
+    font-size: 1.555rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .page-tagline {
+    font-size: calc(1.2805rem + 0.366vw) ;
   }
 }
 
@@ -7618,22 +7630,22 @@ ul.hero-social a .label {
 }
 
 .page-title--paginator {
-  font-size: 36px;
+  font-size: 2.75rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
   .page-title--paginator {
-    font-size: 44px;
+    font-size: calc(1.4rem + 1.8vw) ;
   }
 }
 
 .page-tagline--paginator {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
   .page-tagline--paginator {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -7773,14 +7785,19 @@ ul.hero-social a .label {
 
 .post-preview-title {
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 1.777rem;
   line-height: 1.12;
   letter-spacing: -.044em;
 }
 
+@media (max-width: 1200px) {
+  .post-preview-title {
+    font-size: calc(1.3027rem + 0.6324vw) ;
+  }
+}
+
 @media (min-width: 768px) {
   .post-preview-title {
-    font-size: 26px;
     letter-spacing: -.04em;
   }
 }
@@ -7893,7 +7910,7 @@ ul.hero-social a .label {
   margin-top: 10px;
   margin-left: -2.25px;
   font-family: var(--font-family-serif-display);
-  font-size: 37.9px;
+  font-size: 2.333rem;
   font-weight: 400;
   line-height: 1.2;
   font-variant-ligatures: common-ligatures;
@@ -7902,10 +7919,15 @@ ul.hero-social a .label {
   mask-image: url("/assets/img/dust-and-scratches.png");
 }
 
+@media (max-width: 1200px) {
+  .post-title {
+    font-size: calc(1.3583rem + 1.2996vw) ;
+  }
+}
+
 @media (max-width: 767px) {
   .post-title {
     margin-left: -1.75px;
-    font-size: 28.43px;
   }
 }
 
@@ -8210,14 +8232,19 @@ ul.hero-social a .label {
 }
 
 .random-posts-item-title {
-  font-size: 24px;
+  font-size: 1.555rem;
   line-height: 1.2;
   letter-spacing: -.04em;
 }
 
+@media (max-width: 1200px) {
+  .random-posts-item-title {
+    font-size: calc(1.2805rem + 0.366vw) ;
+  }
+}
+
 @media (max-width: 767px) {
   .random-posts-item-title {
-    font-size: 22px;
     letter-spacing: -.044em;
   }
 }
@@ -8275,16 +8302,16 @@ ul.hero-social a .label {
 
 .markdown-body {
   font-family: var(--font-family-serif);
-  font-size: 18px;
-  line-height: 1.65;
+  font-size: 20px;
+  line-height: 1.55;
+  letter-spacing: -.002em;
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
 }
 
 @media (max-width: 767px) {
   .markdown-body {
-    font-size: 16px;
-    line-height: 1.58;
+    font-size: 18px;
   }
 }
 
@@ -8313,6 +8340,7 @@ ul.hero-social a .label {
 }
 
 .markdown-body a {
+  color: var(--link-color);
   -webkit-text-decoration: underline var(--link-underline-color);
   text-decoration: underline var(--link-underline-color);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
@@ -8325,10 +8353,16 @@ ul.hero-social a .label {
 }
 
 .markdown-body a.anchor, .markdown-body a.footnote, .markdown-body a.reversefootnote {
+  color: var(--anchor-color);
   text-decoration: none;
 }
 
+.markdown-body a.anchor:hover, .markdown-body a.anchor:focus, .markdown-body a.footnote:hover, .markdown-body a.footnote:focus, .markdown-body a.reversefootnote:hover, .markdown-body a.reversefootnote:focus {
+  color: var(--anchor-hover-color);
+}
+
 .markdown-body figcaption a {
+  color: inherit;
   -webkit-text-decoration: underline var(--text-muted);
   text-decoration: underline var(--text-muted);
 }
@@ -8352,9 +8386,15 @@ ul.hero-social a .label {
 .markdown-body h3 {
   margin-top: 2.75em;
   margin-left: -2.25px;
-  font-size: 1.444em;
-  line-height: 1.2;
+  font-size: 1.777rem;
+  line-height: 1.12;
   letter-spacing: -.02em;
+}
+
+@media (max-width: 1200px) {
+  .markdown-body h3 {
+    font-size: calc(1.3027rem + 0.6324vw) ;
+  }
 }
 
 @media (max-width: 767px) {
@@ -8367,9 +8407,15 @@ ul.hero-social a .label {
 .markdown-body h4 {
   margin-top: 2.75rem;
   margin-left: -1.75px;
-  font-size: 1.333em;
-  line-height: 1.2;
+  font-size: 1.555rem;
+  line-height: 1.18;
   letter-spacing: -.02em;
+}
+
+@media (max-width: 1200px) {
+  .markdown-body h4 {
+    font-size: calc(1.2805rem + 0.366vw) ;
+  }
 }
 
 @media (max-width: 767px) {

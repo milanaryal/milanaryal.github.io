@@ -12,21 +12,14 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-
   // ** if you have a 70px navbar => height: calc(100vh - 70px); ** //
   // min-height: 100vh;
   min-height: calc(100vh - 64px); // navbar height 64px
-  padding: 15px; // 1.25em ~20px
-  font-size: 18px;
-
   @media (max-width: 767px) {
     min-height: calc(100vh - 56px); // navbar height 56px
-    font-size: 16px;
   }
-
-  // font-size: 16px;
+  padding: 15px; // 1.25em ~20px
   background-color: #fff;
-
   // ** NOTE: Background images are set within the HTML using inline CSS! ** //
   // background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('/assets/img/hero.jpg'); // rgba(0,0,0,0.753)
   background-repeat: no-repeat, no-repeat;
@@ -68,12 +61,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 31.25em; // ~500px
+  width: 100%;
+  max-width: 30.333em; // ~500px
   padding: 0 3em 2em; // ~0 48px 32px;
 
   @media (max-width: 479px) {
-    width: 100%;
     padding: 0 2em 1.25em; // ~0 32px 20px
+  }
+
+  @media (min-width: 768px) {
+    max-width: 33.333em;
   }
 
   margin-top: 60px; // fill avatar -60px
@@ -131,7 +128,7 @@
 .hero-title {
   margin-bottom: .5em;
   font-family: var(--font-family-serif-display);
-  font-size: 3.25em;
+  @include font-size(3.333rem); // font-size: 3.25em;
   font-weight: 400;
   line-height: 1.2;
   color: #fff;
@@ -144,22 +141,13 @@
   // ** Font feature settings ** //
   font-variant-ligatures: common-ligatures;
   font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
-
   mask-image: url("/assets/img/dust-and-scratches.png");
-
-  @media (max-width: 767px) {
-    font-size: 3.15em;
-  }
-
-  @media (max-width: 479px) {
-    font-size: 2.65em;
-  }
 }
 
 .hero-description {
   margin-bottom: 1.5em;
   // font-family: var(--font-family-sans-serif);
-  font-size: 22px;
+  @include font-size(1rem); // 16px
   font-weight: 300;
   line-height: 1.4;
   color: rgba(255, 255, 255, .9);
@@ -169,13 +157,12 @@
   word-wrap: break-word;
   outline: 0;
 
-  @media (max-width: 767px) {
-    font-size: 20px;
+  @media (min-width: 480px) {
+    @include font-size(1.125rem); // 18px
   }
 
-  @media (max-width: 479px) {
-    font-size: 16px;
-    letter-spacing: -.002em
+  @media (min-width: 768px) {
+    @include font-size(1.25rem); // 20px
   }
 }
 
@@ -202,18 +189,13 @@ ul.hero-social {
     justify-content: center;
     width: 3.4em;
     height: 3.4em;
+    @include font-size(1rem); // 16px
     color: #fff;
     border: solid 1px #fff;
     border-radius: 100%;
 
-    @media (max-width: 767px) {
-      width: 3.1em;
-      height: 3.1em;
-    }
-
     @media (max-width: 479px) {
-      width: 3em;
-      height: 3em;
+      @include font-size(.875rem); // 14px
     }
 
     &.icon-twitter:hover {

@@ -31,12 +31,13 @@
   margin-top: 10px;
   // margin-bottom: 0;
   // font-family: var(--font-family-sans-serif);
-  font-size: 24px;
+  // font-size: 24px;
+  @include font-size(1.777rem);
   line-height: 1.12;
   letter-spacing: -.044em;
 
   @media (min-width: 768px) {
-    font-size: 26px;
+    /// font-size: 26px;
     letter-spacing: -.04em;
   }
 }

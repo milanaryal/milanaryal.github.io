@@ -1,10 +1,6 @@
-{%- comment -%}<!-- Metadata for _includes/head.html and _layouts/post.html -->{%- endcomment -%}
+{%- comment -%}<!-- _includes/head.html, _includes/_head_no_seo.html, _layouts/post.html -->{%- endcomment -%}
 
-{%- if site.github.build_revision -%}
-  {%- assign build_version = site.github.build_revision -%}
-{%- else -%}
-  {%- assign build_version = site.time | date: '%Y%m%d%H%M%S' -%}
-{%- endif -%}
+{%- include build_version.html -%}
 
 {%- if site.url -%}
   {%- assign site_url = site.url | append: site.baseurl -%}

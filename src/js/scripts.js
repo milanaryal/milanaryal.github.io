@@ -119,7 +119,7 @@
     $('.markdown-body img').addClass('img-fluid');
 
     // responsive table
-    $('.markdown-body table').addClass('table table-responsive table-hover');
+    $('.markdown-body>table').addClass('table table-responsive table-hover');
 
     // responsive embed video
     var $youtubeIframe = $('iframe[src*="youtube.com"]');

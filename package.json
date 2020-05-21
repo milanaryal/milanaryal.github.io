@@ -10,7 +10,7 @@
     "watch": "gulp watch",
     "site-build": "gulp buildSite",
     "site-serve": "gulp serveSite",
-    "jekyll-build": "bundle exec jekyll build --config _config.yml,_config_dev.yml",
+    "jekyll-build": "bundle exec jekyll build --incremental --config _config.yml,_config_dev.yml",
     "copy-fonts": "rm -rf assets/fonts/; cpy src/fonts/** assets/fonts/",
     "test-css": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache",
     "test-js": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
@@ -24,7 +24,8 @@
     "headroom.js": "^0.11.0",
     "jquery": "^3.5.1",
     "nprogress": "^0.2.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "rfs": "^9.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
@@ -37,7 +38,7 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-unicorn": "^20.0.0",
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0",
+    "gulp-cli": "^2.2.1",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.9",
     "gulp-postcss": "^8.0.0",
@@ -46,7 +47,7 @@
     "gulp-uglify-es": "^2.0.0",
     "node-sass": "^4.14.1",
     "postcss-discard-comments": "^4.0.2",
-    "stylelint": "^13.3.3",
+    "stylelint": "^13.5.0",
     "stylelint-config-twbs-bootstrap": "^2.0.2"
   },
   "repository": {

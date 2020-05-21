@@ -1,8 +1,4 @@
-{%- if site.github.build_revision -%}
-  {%- assign build_version = site.github.build_revision -%}
-{%- else -%}
-  {%- assign build_version = site.time | date: '%Y%m%d%H%M%S' -%}
-{%- endif -%}
+{%- include build_version.html -%}
 
 <!-- Core JavaScript -->
 <script src="/assets/js/bundle.min.js?v={{ build_version }}"></script>
