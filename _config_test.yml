@@ -1,6 +1,0 @@
-# Override configuration for CI build
-url: "http://localhost:4000"
-github:
-  repository_nwo: "MilanAryal/milanaryal.github.io"
-  owner_url: "https://github.com/MilanAryal"
-  repository_url: "https://github.com/MilanAryal/milanaryal.github.io"

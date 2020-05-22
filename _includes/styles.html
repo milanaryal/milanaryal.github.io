@@ -1,9 +1,0 @@
-{%- comment -%}<!-- _includes/head.html, _includes/head_no_seo.html -->{%- endcomment -%}
-
-{%- include build_version.html -%}
-
-{% if jekyll.environment == "development" %}
-  <link rel="stylesheet" href="/assets/css/main.min.css?v={{ build_version }}">
-{% else %}
-  <style data-href="/assets/css/main.min.css?v={{ build_version }}">{% include css/main.min.css %}</style>
-{% endif %}
