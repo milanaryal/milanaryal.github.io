@@ -203,3 +203,8 @@ Procfile    text eol=lf
 ## EXECUTABLES
 *.exe binary
 *.pyc binary
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## SOURCE MAPS
+*.map binary
