@@ -1,6 +1,7 @@
 {%- comment -%}<!-- _includes/head.html, _includes/_head_no_seo.html, _layouts/post.html -->{%- endcomment -%}
 
 {%- include build_version.html -%}
+{%- include reading_time.html -%}
 
 {%- if site.url -%}
   {%- assign site_url = site.url | append: site.baseurl -%}
@@ -55,21 +56,5 @@
   {%- assign date_modified = page.last_modified_at | default: page.date -%}
   {%- if date_modified -%}
     {%- assign date_modified = date_modified | date_to_xmlschema -%}
-  {%- endif -%}
-{%- endif -%}
-
-{%- if page.layout == 'post' -%}
-  {%- assign total_words = content | strip_html | normalize_whitespace | number_of_words -%}
-  {%- if total_words <= 1 -%}
-    {%- assign total_words = '1' | append:' word' -%}
-  {%- else -%}
-    {%- assign total_words = total_words | append:' words' -%}
-  {%- endif -%}
-
-  {%- assign reading_time = content | strip_html | normalize_whitespace | number_of_words | plus:91 | divided_by:180 -%}
-  {%- if reading_time <= 1 -%}
-    {%- assign reading_time = '1' | append:' min read' -%}
-  {%- else -%}
-    {%- assign reading_time = reading_time | append:' min read' -%}
   {%- endif -%}
 {%- endif -%}

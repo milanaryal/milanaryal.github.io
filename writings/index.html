@@ -10,6 +10,8 @@ robots: "noindex, follow"
 <section class="clearfix">
 {% for post in paginator.posts %}
 
+  {%- include reading_time.html -%}
+
   {%- assign site_title = site.title | default: site.name -%}
   {%- if site_title -%}
     {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
@@ -32,20 +34,6 @@ robots: "noindex, follow"
   {%- endif -%}
   {%- if post_author -%}
     {%- assign post_author = post_author | smartify | strip_html | normalize_whitespace | escape_once -%}
-  {%- endif -%}
-
-  {%- assign total_words = post.content | strip_html | normalize_whitespace | number_of_words -%}
-  {%- if total_words <= 1 -%}
-    {%- assign total_words = '1' | append:' word' -%}
-  {%- else -%}
-    {%- assign total_words = total_words | append:' words' -%}
-  {%- endif -%}
-
-  {%- assign reading_time = post.content | strip_html | normalize_whitespace | number_of_words | plus:91 | divided_by:180 -%}
-  {%- if reading_time <= 1 -%}
-    {%- assign reading_time = '1' | append:' min read' -%}
-  {%- else -%}
-    {%- assign reading_time = reading_time | append:' min read' -%}
   {%- endif -%}
 
   <article class="post-preview clearfix" itemscope itemtype="https://schema.org/Article">

@@ -1,10 +1,11 @@
+{%- assign site_title = site.title | default: site.name -%}
+{%- if site_title -%}
+  {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- endif -%}
+
 <!-- Site header & navigation -->
 <header class="navbar navbar-expand-md navbar-light{% unless page.url == '/' %} fixed-top headroom{% endunless %}" role="banner" itemscope itemtype="https://schema.org/WPHeader">
   <div class="container">
-    {%- assign site_title = site.title | default: site.name -%}
-    {%- if site_title -%}
-      {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
-    {%- endif -%}
     <a class="navbar-brand" itemprop="url" href="/"><span itemprop="name">{{ site_title }}</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <!-- <span class="navbar-toggler-icon"></span> -->
