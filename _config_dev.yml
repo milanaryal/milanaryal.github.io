@@ -1,0 +1,4 @@
+# Override configuration for local development
+url: "http://localhost:4000"
+github:
+  url: "http://localhost:4000"

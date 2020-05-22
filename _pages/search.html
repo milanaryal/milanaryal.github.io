@@ -1,0 +1,49 @@
+---
+layout: search
+title: "Search"
+tagline: "Search your query."
+description: "Google optimise search engine to search available contents on this site."
+permalink: "/search/"
+sitemap: false
+robots: "noindex, follow"
+---
+
+{%- assign site_title = site.title | default: site.name -%}
+{%- if site_title -%}
+  {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- endif -%}
+
+<h3 class="search-page-heading"><svg class="icon icon-search" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg> Search {{ site_title }} writings</h3>
+
+<div class="search-page-body" id="cse-search">
+  <!-- Google CSE search box begins  -->
+  <form class="search-page-form" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" id="q" name="q" placeholder="Search {{ site_title }}" aria-label="Search {{ site_title }}" tabindex="1" autocapitalize="off" autofocus autocomplete="off" spellcheck="false">
+          <span class="input-group-append">
+            <button type="submit" class="btn btn-outline-secondary" tabindex="2"><svg class="icon icon-search" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></button>
+          </span><!-- /.btn-group -->
+        </div><!-- /.input-group -->
+      </div><!-- /.col-xs-12 -->
+    </div><!-- /.row -->
+  </form>
+
+  <script>
+    (function() {
+      var cx = '{{ site.google_cse_id }}';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+
+  <div class="search-page-results">
+    <gcse:searchresults-only linktarget="_parent"></gcse:searchresults-only>
+  </div>
+</div><!-- ./search-box -->

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -e
+
+title () {
+  echo ""
+  echo "-------------------------------"
+  echo $1
+  echo "-------------------------------"
+  echo ""
+}
+
+title "List dependency versions"
+bundle exec github-pages versions
+
+title "Checking DNS"
+bundle exec github-pages health-check
+
+title "Building site"
+bundle exec jekyll build --config _config.yml,_config_test.yml
+
+title "Checking HTML files"
+bundle exec htmlproofer --assume-extension --only-4xx --http-status-ignore "403,429" ./_site
+
+title "Cleaning up..."
+rm -rf _site

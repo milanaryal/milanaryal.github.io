@@ -1,0 +1,66 @@
+{
+  "name": "milanaryal.github.io",
+  "title": "Milan Aryal",
+  "url": "https://milanaryal.com.np",
+  "description": "Build assets for milanaryal.com.np",
+  "main": "gulpfile.js",
+  "scripts": {
+    "fresh": "rm -rf _site node_modules; npm install",
+    "build": "gulp",
+    "watch": "gulp watch",
+    "site-build": "gulp buildSite",
+    "site-serve": "gulp serveSite",
+    "jekyll-build": "bundle exec jekyll build --incremental --config _config.yml,_config_dev.yml",
+    "copy-css": "rm -rf _site/assets/css/; cpy assets/css/** _site/assets/css/",
+    "copy-js": "rm -rf _site/assets/js/; cpy assets/js/** _site/assets/js/",
+    "copy-fonts": "rm -rf assets/fonts/; cpy src/fonts/** assets/fonts/",
+    "test-css": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache",
+    "test-js": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@primer/css": "^14.3.0",
+    "@primer/octicons": "^9.6.0",
+    "bootstrap": "^4.5.0",
+    "headroom.js": "^0.11.0",
+    "jquery": "^3.5.1",
+    "nprogress": "^0.2.0",
+    "popper.js": "^1.16.1",
+    "rfs": "^9.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "cpy-cli": "^3.1.1",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "eslint": "^7.0.0",
+    "eslint-config-xo": "^0.29.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-unicorn": "^20.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.9",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "node-sass": "^4.14.1",
+    "postcss-discard-comments": "^4.0.2",
+    "stylelint": "^13.5.0",
+    "stylelint-config-twbs-bootstrap": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilanAryal/milanaryal.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MilanAryal/milanaryal.github.io/issues"
+  },
+  "homepage": "https://github.com/MilanAryal/milanaryal.github.io#readme",
+  "author": "Milan Aryal",
+  "license": "MIT",
+  "private": true
+}

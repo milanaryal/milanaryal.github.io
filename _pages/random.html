@@ -1,0 +1,16 @@
+---
+layout: compress
+permalink: "/random/"
+sitemap: false
+robots: "noindex, follow"
+---
+
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Randomizing…</title>
+{%- if page.robots -%}<meta name="robots" content="{{- page.robots -}}">{%- endif -%}
+<script>var posts=[];{%- for post in site.posts -%}posts.push("{{- post.url | replace:'/index.html','/' -}}"){%- unless forloop.last -%},{%- endunless -%}{%- endfor -%};var randomPost=posts[Math.floor(Math.random()*posts.length)];document.write('<meta http-equiv="refresh" content="1;url='),document.write(randomPost),document.write('">');</script>
+<h1>Randomizing…</h1>
+<script>document.write('<a href="'),document.write(randomPost),document.write('">Click here if you are not randomized.</a>');</script>
+</html>

@@ -1,0 +1,24 @@
+{%- assign site_title = site.title | default: site.name -%}
+{%- if site_title -%}
+  {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- endif -%}
+
+<!-- Navigation without search box for search page-->
+<nav class="navbar navbar-expand-md navbar-light{% unless page.url == '/' %} fixed-top headroom{% endunless %}">
+  <div class="container">
+    <a class="navbar-brand" href="/">{{ site_title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <svg class="icon icon-bars" width="30" height="30" viewBox="0 0 448 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        {% for nav_item in site.nav %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ nav_item.url }}">{{ nav_item.title | smartify | strip_html | normalize_whitespace | escape_once }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

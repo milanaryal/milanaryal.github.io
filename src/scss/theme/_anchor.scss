@@ -1,0 +1,62 @@
+//
+// Header anchor link placement and hover behavior
+//
+
+.anchor {
+  position: absolute;
+  padding-right: .575em; // margin-left value divide by 2
+  margin-left: -1.15em;
+  color: inherit;
+  opacity: 0;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  .icon-link {
+    font-size: 66%;
+    vertical-align: .125em;
+  }
+}
+
+*:hover {
+  > .anchor {
+    opacity: .75;
+    // ** transition is in _global.sass for anchor ** //
+    // transition: all .16s linear;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+// Offsetting an html anchor to adjust for fixed header
+// (https://css-tricks.com/hash-tag-links-padding/#article-header-id-1)
+
+// stylelint-disable selector-no-qualifying-type
+.markdown-body,
+.archive-body {
+  > h2[id],
+  > h3[id],
+  > h4[id] {
+    pointer-events: none;
+  }
+
+  > h2[id]::before,
+  > h3[id]::before,
+  > h4[id]::before {
+    display: block;
+    height: 6rem;
+    margin-top: -6rem;
+    visibility: hidden;
+    content: "";
+  }
+}
+
+.post-content-title {
+  display: block;
+  pointer-events: auto;
+}
+// stylelint-enable selector-no-qualifying-type

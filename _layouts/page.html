@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<main role="main" itemprop="mainContentOfPage">
+  <article class="page-content">
+
+    {% include page_masthead.html %}
+
+    <!-- Page content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto">
+          <div class="page-body markdown-body clearfix">
+
+            {{ content }}
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+</main>
+
+{% include site_footer.html %}

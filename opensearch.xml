@@ -1,0 +1,18 @@
+---
+# OpenSearch.org description document format
+
+layout: null
+sitemap: false
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>{{ site.title }}</ShortName>
+  <Description>Search {{ site.title }}</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image height="16" width="16" type="image/png">{{ site.url }}/favicon-16x16.png</Image>
+  <Image height="32" width="32" type="image/png">{{ site.url }}/favicon-32x32.png</Image>
+  <Image width="48" height="48" type="image/x-icon">{{ site.url }}/favicon.ico</Image>
+  <Url type="text/html" method="get" template="{{ site.url }}/search/?q={searchTerms}"/>
+  <moz:SearchForm>{{ site.url }}/search/</moz:SearchForm>
+</OpenSearchDescription>

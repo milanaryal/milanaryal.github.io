@@ -1,0 +1,20 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang | replace:'-','_' }}{% endif %}" prefix="og: http://ogp.me/ns#">
+
+  {% include head.html %}
+
+  <body itemscope itemtype="https://schema.org/WebPage">
+
+    {% include nav_head.html %}
+
+    {{ content }}
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>

@@ -1,0 +1,7 @@
+{%- comment -%}<!-- _layouts/metadata.html, _layouts/scripts.html, _layouts/styles.html -->{%- endcomment -%}
+
+{%- if site.github.build_revision and jekyll.environment == "production" -%}
+  {%- assign build_version = site.github.build_revision -%}
+{%- else -%}
+  {%- assign build_version = site.time | date: '%Y%m%d%H%M%S' -%}
+{%- endif -%}
