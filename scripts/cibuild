@@ -10,6 +10,7 @@ title () {
   echo ""
 }
 
+export CI=1
 scripts/branding
 
 title "List dependency versions"
