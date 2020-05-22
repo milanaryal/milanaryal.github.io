@@ -1,3 +1,5 @@
+# https://git-scm.com/docs/gitattributes#_end_of_line_conversion
+
 ## GITATTRIBUTES FOR WEB PROJECTS
 #
 # These settings are for any web project.
@@ -14,6 +16,15 @@
 ##   text and leave all files detected as binary untouched.
 ##   This will handle all files NOT defined below.
 * text=auto
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+## ALL FILES
+* text eol=lf
+## .DOT FILES
+.* text eol=lf
+#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 ## SOURCE CODE
 *.bat      text eol=crlf
@@ -139,7 +150,7 @@ Procfile    text eol=lf
 *.png  binary
 *.psb  binary
 *.psd  binary
-*.svg  text
+*.svg  text eol=lf
 *.svgz binary
 *.tif  binary
 *.tiff binary
