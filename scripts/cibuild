@@ -10,6 +10,8 @@ title () {
   echo ""
 }
 
+scripts/branding
+
 title "List dependency versions"
 bundle exec github-pages versions
 
