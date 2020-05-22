@@ -75,79 +75,24 @@ var banner = ['/*!',
   ' */',
   ''].join('\n');
 
-
-/**
- * Cleaning task(s)
- */
-
-// Remove pre-existing content from the folders
-function clean () {
-  return del([ paths.styles.dest, paths.styles.include, paths.scripts.dest ]);
-}
-
-function cleanCSS () {
-  return del([ paths.styles.dest, paths.styles.include ]);
-}
-
-function cleanJS () {
-  return del([ paths.scripts.dest ]);
-}
-
-
-/**
- * Compiling & bundling task(s)
- */
-
- // Process and minify styles
- function css () {
-   return src(paths.styles.src)
-     .pipe(sass.sync({ precision: 6, outputStyle: 'expanded' }).on('error', sass.logError))
-     .pipe(postcss([ autoprefixer({ cascade: false }) ]))
-     .pipe(header(banner, { pkg : pkg }))
-     .pipe(dest(paths.styles.dest))
-     .pipe(rename({ suffix: '.min' }))
-     .pipe(postcss([ cssnano(), discardComments({ removeAll: true }) ]))
-     .pipe(dest(paths.styles.include))
-     .pipe(header(banner, { pkg : pkg }))
-     .pipe(dest(paths.styles.dest));
- }
-
-// Concatenate and minify scripts
-function js () {
-  return src(paths.scripts.src)
-    .pipe(concat('bundle.js'))
-    .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest(paths.scripts.dest))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify({ output: { comments: false } }))
-    .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest(paths.scripts.dest));
-}
-
-
-/**
- * Jekyll task(s)
- */
-
- // Remove existing Jekyll build site contents
- function cleanSite () {
-   return del([ paths.jekyll.dest ]);
- }
-
- // Remove style files in Jekyll site
- function cleanSiteCSS () {
-   return del([ paths.jekyll.css, paths.styles.include ]);
- }
-
-// Remove script files in Jekyll site
-function cleanSiteJS () {
-  return del([ paths.jekyll.js ]);
-}
-
 // Build the Jekyll site
 function buildSite (done) {
   browserSync.notify('Compiling Jekyll, please wait!');
   return cp.spawn('npm', [ 'run', 'jekyll-build' ], { stdio: 'inherit' })
+    .on('close', done);
+}
+
+// Copy compiled CSS to the Jekyll site
+function copyCSS (done) {
+  browserSync.notify('Compiling CSS, please wait!');
+  return cp.spawn('npm', [ 'run', 'copy-css' ], { stdio: 'inherit' })
+    .on('close', done);
+}
+
+// Copy compiled JS to the Jekyll site
+function copyJS (done) {
+  browserSync.notify('Compiling JS, please wait!');
+  return cp.spawn('npm', [ 'run', 'copy-js' ], { stdio: 'inherit' })
     .on('close', done);
 }
 
@@ -172,52 +117,62 @@ function browserSyncReload (done) {
   done();
 }
 
-// Rebuild CSS on Jekyll site and do page reload
-function siteCSS () {
-  // CSS
-  return src(paths.styles.src)
-  .pipe(sass.sync({ precision: 6, outputStyle: 'expanded' }).on('error', sass.logError))
-  .pipe(postcss([ autoprefixer({ cascade: false }) ]))
-  .pipe(header(banner, { pkg : pkg }))
-  .pipe(dest(paths.jekyll.css))
-  .pipe(rename({ suffix: '.min' }))
-  .pipe(postcss([ cssnano(), discardComments({ removeAll: true }) ]))
-  .pipe(header(banner, { pkg : pkg }))
-  .pipe(dest(paths.jekyll.css))
-  // Auto-inject into browsers
-  .pipe(browserSync.stream());
+/**
+ * Cleaning task(s)
+ */
+
+// Remove pre-existing content from the assets folders
+function clean () {
+  return del([ paths.styles.dest, paths.styles.include, paths.scripts.dest ]);
 }
 
-// Rebuild JS on Jekyll site and do page reload
-function siteJS () {
-    // JS
+// Remove pre-existing Jekyll compiled site folder
+function cleanSite () {
+  return del([ paths.jekyll.dest ]);
+}
+
+/**
+ * Compiling & bundling task(s)
+ */
+
+// Process and minify styles
+function css () {
+  return src(paths.styles.src)
+    .pipe(sass.sync({ precision: 6, outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(postcss([ autoprefixer({ cascade: false }) ]))
+    .pipe(header(banner, { pkg : pkg }))
+    .pipe(dest(paths.styles.dest))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(postcss([ cssnano(), discardComments({ removeAll: true }) ]))
+    .pipe(dest(paths.styles.include))
+    .pipe(header(banner, { pkg : pkg }))
+    .pipe(dest(paths.styles.dest));
+}
+
+// Concatenate and minify scripts
+function js () {
   return src(paths.scripts.src)
     .pipe(concat('bundle.js'))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest(paths.jekyll.js))
+    .pipe(dest(paths.scripts.dest))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify({ output: { comments: false } }))
     .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest(paths.jekyll.js))
-    // Auto-inject into browsers
-    .pipe(browserSync.stream());
+    .pipe(dest(paths.scripts.dest));
 }
-
 
 /**
  * Watching task for changes in src files
  */
 
-// Watch changes
 function watchFiles () {
   // Watch .scss files
-  watch('src/scss/**/*.scss', series(cleanSiteCSS, siteCSS));
+  watch('src/scss/**/*.scss', series(css, copyCSS, browserSyncReload));
   // Watch .js files
-  watch('src/js/**/*.js', series(cleanSiteJS, siteJS));
+  watch('src/js/**/*.js', series(js, copyJS, browserSyncReload));
   // Watch Jekyll uncompiled files and do page reload
   watch(paths.jekyll.src, series(buildSite, browserSyncReload));
 }
-
 
 /**
  * Export task(s)

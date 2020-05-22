@@ -11,6 +11,8 @@
     "site-build": "gulp buildSite",
     "site-serve": "gulp serveSite",
     "jekyll-build": "bundle exec jekyll build --incremental --config _config.yml,_config_dev.yml",
+    "copy-css": "rm -rf _site/assets/css/; cpy assets/css/** _site/assets/css/",
+    "copy-js": "rm -rf _site/assets/js/; cpy assets/js/** _site/assets/js/",
     "copy-fonts": "rm -rf assets/fonts/; cpy src/fonts/** assets/fonts/",
     "test-css": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache",
     "test-js": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
