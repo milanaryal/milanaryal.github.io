@@ -1,8 +1,9 @@
 ---
-title: "Implementing Medium inspired estimated reading time into Jekyll"
+title: "Jekyll estimated reading time using Liquid tags"
 date: 2015-02-19T22:26:57+05:45
-last_modified_at: 2020-05-25T17:30:00+05:45
-excerpt: "Estimating the reading time for a article based on standard reading speed."
+last_modified_at: 2020-05-25T21:50:00+05:45
+excerpt: "Implementing Medium inspired estimated reading time for an article or a blog post based on standard reading speed in Jekyll generated static sites."
+redirect_from: "/implementing-medium-inspired-estimated-reading-time-into-jekyll/"
 ---
 
 [Medium](http://medium.com/the-story/read-time-and-you-bc2048ab620c){: rel="nofollow" } a simple feature estimated reading time (ERT) is really great. When people see a headline that piques their interest --- and know in advance that it only takes a couple of minutes to read --- they're more likely to click the link.
@@ -41,11 +42,11 @@ A much faster way to get the estimated reading time of your article is to let a 
 
 ---
 
-### Jekyll estimated reading time using Liquid tags
+### Implementing Medium inspired estimated reading time in Jekyll using pure Liquid tags
 
-With the help of Liquid tags we can have estimated reading time into Jekyll without using any plugins.
+With the help of Liquid tags we can have estimated reading time in Jekyll without using any plugins.
 
-First thing is to count post content words. With `strip_html` We remove all html tags and count total words.
+First thing do to is counting total words in our post content. For this we use native Liquid tag `strip_html` to remove all HTML tags and count our actual total words with `number_of_words` filter tag.
 
 ```liquid
 {% raw %}{% assign words = content | strip_html | number_of_words %}{% endraw %}
@@ -73,7 +74,7 @@ So, to correct our data we do a little more hacks. Here we add 91 to the total c
 
 What some of the following Liquid tags do for us:
 
-* `content`: Your post content[^content] in a page.
+* `content`: Your content[^content] in a page or post.
 * `strip_html`: Remove all the HTML tags in a page content.
 * `number_of_words`: Count all the words in a content.
 * `append: ' min read'`: Helps to append `min read` to our output.
@@ -128,18 +129,19 @@ If you want more like to work our code in our post layout as well as paginator p
 {%- endif -%}{% endraw %}
 ```
 
-And then include (or in other words import) our metadata in your post layout as:
+And then include (or in other words import) our metadata in your post layout as[^whitespace_control]
 
 ```Liquid
 {% raw %}{% include reading_time.html %}{% endraw %}
 ```
 
-Now, if you markup `{% raw %}{{ reading_time }}{% endraw %}` inside your html tags, then it will output as `1 min read` or `2 min read` accordingly to your contents.
+Now, if you markup `{% raw %}{{ reading_time }}{% endraw %}` inside your HTML tags, then it will output as `1 min read` or `2 min read` accordingly to your contents.
 
 Also, more of it marking up `{% raw %}{{ total_words }}{% endraw %}` will output your content total words something like `170 words`. Hope, you will like it!
 
 [^ertmath]: Estimated reading time equals to total content words divided by average reading words per minute.
 [^content]: If you're implementing estimated reading time in paginator i.e. `{% raw %}{% for post in paginator.posts %}{% endraw %}` condition you should change `content` to `post.content`.
+[^whitespace_control]: If you are wondering hyphen in your liquid tags {% raw %}{{-, -}}, {%-, and -%}{% endraw %} helps to strip whitespace from the left or right side of a rendered tag.
 
 {% comment -%}<!-- ############################ OLD DATA ############################ -->
 
