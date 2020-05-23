@@ -1,7 +1,7 @@
 ---
 title: "A list of sites to find the best free stock photos"
 date: 2018-05-28T10:50:00+05:45
-last_modified_at: 2020-04-15T11:58:00+05:45
+last_modified_at: 2020-05-25T17:40:00+05:45
 excerpt: "A curated list of sites with high resolution stock photos you can use for different purpose."
 ---
 
@@ -103,7 +103,6 @@ The photographs on the following resources require Attribution unless otherwise 
 * [IM Creator](http://imcreator.com/free){:rel="nofollow"} - Also includes Website templates and icons. Some ([CC0-licensed](https://creativecommons.org/publicdomain/zero/1.0/){:rel="nofollow"} works, check the license before use.
 * [NASA Jet Propulsion Laboratory](https://www.jpl.nasa.gov/spaceimages/){:rel="nofollow"}) - [&copy;](https://www.jpl.nasa.gov/imagepolicy/) Graphics and photos of space and spaceflight.
 * [PhotoEverywhere](http://photoeverywhere.co.uk/){:rel="nofollow"} - [&copy;](https://creativecommons.org/licenses/by/2.5/){:rel="nofollow"} Globe-trot our collection of high resolution Travel Stock Images More than 3600 photos that are Free to use and ready for instant download.
-* [Superfamous](https://superfamous.com/Images){:rel="nofollow"} - [&copy;](https://creativecommons.org/licenses/by/3.0/){:rel="nofollow"} Superfamous CC BY 3.0 licensed images by [Folkert Gorter](https://twitter.com/folkertgorter){:rel="nofollow"}.
 * [UKBlackTech](http://ukblacktech.com/stockphotos/){:rel="nofollow"} - [&copy;](https://creativecommons.org/licenses/by/4.0/){:rel="nofollow"} Photographers of British based BAME (Black, Asian, and minority ethnic) people in tech.
 * [Women of Color in Tech](https://www.flickr.com/photos/wocintechchat/){:rel="nofollow"} - [&copy;](https://creativecommons.org/licenses/by/2.0/){:rel="nofollow"} Licensed picture from Women of Color in Tech.
 
