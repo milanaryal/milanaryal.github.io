@@ -2,7 +2,7 @@
 //
 // Custom variables for the theme.
 
-$brand-color:               #111 !default; // #111111; #0074d9; #2196f3;
+$brand-color:               #111 !default;
 
 // Light theme
 
@@ -13,15 +13,16 @@ $theme-colors-default: map-merge(
     "body-bg":                   #fff,
     "body-color":                rgba(0, 0, 0, .8),
     "heading-color":             rgba(0, 0, 0, .84),
-    "link-color":                #00638a, // rgba(0, 0, 0, .8)
-    "link-underline-color":      rgba(0, 0, 0, .3), // #aaa,
-    "link-hover-color":          #00638a, // #000
+    "link-color":                #00638a,
+    "link-underline-color":      rgba(0, 0, 0, .3),
+    "link-hover-color":          #00638a,
     "anchor-color":              rgba(0, 0, 0, .8),
     "anchor-hover-color":        #111,
     "text-muted":                #888,
     "text-muted-secondary":      #aaa,
     "section-divider":           rgba(0, 0, 0, .1),
-    "section-divider-secondary": rgba(0, 0, 0, .05)
+    "section-divider-secondary": rgba(0, 0, 0, .05),
+    "blockquote-border":         rgba(0, 0, 0, .8)
   ),
   $theme-colors-default
 );
@@ -34,17 +35,19 @@ $theme-colors-dark: map-merge(
   (
     "body-bg":                   #222,
     "body-color":                #cac3bc,
-    "heading-color":      darken(#e8e4e0, 7.777%), // #e8e4e0,
-    "link-color":                #a0bfd0, // #cac3bc,
-    "link-underline-color":      #a0bfd0, // #cac3bc, // #ddd,
-    "link-hover-color":          #baa6bd, // #fff,
+    "heading-color":      darken(#e8e4e0, 5.555%),
+    "link-color":                #a0bfd0,
+    "link-underline-color":      #a0bfd0,
+    "link-hover-color":          #baa6bd,
     "anchor-color":              #bbb,
     "anchor-hover-color":        #ddd,
     "section-divider":           rgba(255, 255, 255, .1),
-    "section-divider-secondary": rgba(255, 255, 255, .05)
+    "section-divider-secondary": rgba(255, 255, 255, .05),
+    "blockquote-border":         rgba(255, 255, 255, .1)
   ),
   $theme-colors-dark
 );
+
 
 
 // Bootstrap

@@ -3,7 +3,7 @@
 
 .markdown-body {
   font-family: var(--font-family-serif);
-  font-size: 20px;
+  font-size: 19px;
   // font-style: normal;
   // font-weight: 400;
   line-height: 1.55; // 32px; 1.65; 1.58
@@ -14,7 +14,7 @@
   text-rendering: optimizeLegibility; // enable common ligatures and kerning
 
   @media (max-width: 767px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   // stylelint-disable declaration-no-important
@@ -225,9 +225,10 @@
 
   blockquote {
     padding: 0 1em;
+    font-size: 95%;
     font-style: italic;
     color: var(--body-color);
-    border-left: .25em solid var(--body-color); // 3px solid rgba(0, 0, 0, .8)
+    border-left: .25em solid var(--blockquote-border); // 3px solid rgba(0, 0, 0, .8)
 
     > :first-child {
       margin-top: 0;
