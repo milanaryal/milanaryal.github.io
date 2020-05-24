@@ -8227,9 +8227,60 @@ ul.hero-social a .label {
   margin-left: 1.5px;
 }
 
+@-webkit-keyframes heartbeat {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10%,
+  30% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  20%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10%,
+  30% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  20%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
 .site-footer-legal .icon-heart {
   margin-right: 1px;
   margin-left: 1px;
+  -webkit-animation: heartbeat 1.33s ease-in-out infinite;
+  animation: heartbeat 1.33s ease-in-out infinite;
+}
+
+.site-footer-legal .icon-heart:hover {
+  -webkit-animation: none;
+  animation: none;
 }
 
 .site-footer-legal .icon-coffee {
