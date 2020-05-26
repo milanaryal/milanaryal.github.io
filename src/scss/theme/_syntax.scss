@@ -76,7 +76,7 @@ code {
 del code { text-decoration: inherit; }
 
 pre {
-  padding: 20px;
+  // padding: 20px;
   // margin: 0;
   overflow: auto;
   font-size: 85%;
@@ -125,13 +125,15 @@ kbd {
 
 .highlight pre {
   // width: 100%;
+  padding: .75rem 15px;
   margin-right: -15px;
   margin-left: -15px;
 
   @media (min-width: 480px) {
+    padding-left: calc(15px - .25rem);
     margin-right: 0;
     margin-left: 0;
-    border-left: 0.25rem solid var(--code-snippet-border);
+    border-left: .25rem solid var(--code-snippet-border);
   }
 }
 

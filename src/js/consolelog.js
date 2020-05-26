@@ -1,13 +1,6 @@
-//
-// Playing with console
-//
+console.log('Hello world!');
 
-;(function ($, window, document, undefined) {
-  'use strict';
-
-  console.log('Hello world!');
-
-  var asciiArtM = `%c
+var asciiArtM = `%c
 ...............          ...............
 l0000000000000d.        .o00000O0000000l
 kMMMMMMMMMMMMMNl        cNMMMMMMMMMMMMMk
@@ -27,11 +20,9 @@ kMMMMMMMMMMk. .kMMMMMWl  .0MMMMMMMMMMMMk
 lOOOOOOOOOOl.  :kOOOOd.  .dOOOOOOOOOOOOl
 .............   ......   ...............\n\n`;
 
-  var siteURL = window.location.protocol + '//' + window.location.host;
-  var logMSG = 'You are visiting URL:\n';
-  var currentURL = window.location.protocol + '//' + window.location.host + window.location.pathname;
+var siteURL = window.location.protocol + '//' + window.location.host;
+var logMSG = 'You are visiting URL:\n';
+var currentURL = window.location.protocol + '//' + window.location.host + window.location.pathname;
 
-  console.log(asciiArtM + siteURL, 'font-family:monospace');
-  console.log(logMSG + currentURL);
-
-})(jQuery, window, document);
+console.log(asciiArtM + siteURL, 'font-family:monospace');
+console.log(logMSG + currentURL);

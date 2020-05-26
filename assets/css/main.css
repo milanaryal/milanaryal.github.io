@@ -7514,7 +7514,8 @@ a.text-dark:hover, a.text-dark:focus {
   --text-muted-secondary: #aaa;
   --section-divider: rgba(0, 0, 0, 0.1);
   --section-divider-secondary: rgba(0, 0, 0, 0.05);
-  --blockquote-border: rgba(0, 0, 0, 0.8);
+  --blockquote-border: #e5e5e5;
+  --blockquote-bg: #fafafa;
   --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-serif: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
   --font-family-serif-display: "DM Serif Display", Georgia, serif;
@@ -7534,6 +7535,7 @@ a.text-dark:hover, a.text-dark:focus {
     --section-divider: rgba(255, 255, 255, 0.1);
     --section-divider-secondary: rgba(255, 255, 255, 0.05);
     --blockquote-border: rgba(255, 255, 255, 0.1);
+    --blockquote-bg: rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -7558,6 +7560,13 @@ form {
 
 html {
   font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -8876,6 +8885,17 @@ ul.hero-social a .label {
   margin-bottom: 0 !important;
 }
 
+.markdown-body img {
+  border-radius: .25rem;
+}
+
+@media (min-width: 480px) {
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border-radius: .25rem;
+  }
+}
+
 .markdown-body a {
   color: var(--link-color);
   -webkit-text-decoration: underline var(--link-underline-color);
@@ -9056,11 +9076,23 @@ ul.hero-social a .label {
 }
 
 .markdown-body blockquote {
-  padding: 0 1em;
-  font-size: 95%;
+  padding: .75rem 15px;
+  margin-right: -15px;
+  margin-left: -15px;
+  font-size: 85%;
   font-style: italic;
   color: var(--body-color);
-  border-left: 0.25em solid var(--blockquote-border);
+  background: var(--blockquote-bg);
+  border: 0;
+}
+
+@media (min-width: 480px) {
+  .markdown-body blockquote {
+    padding-left: calc(15px - .25rem);
+    margin-right: 0;
+    margin-left: 0;
+    border-left: 0.25rem solid var(--code-snippet-border);
+  }
 }
 
 .markdown-body blockquote > :first-child {
@@ -9106,7 +9138,6 @@ ul.hero-social a .label {
 .markdown-body .footnotes h4 {
   margin: 0;
   font-size: 16px;
-  pointer-events: none;
 }
 
 .markdown-body .footnotes ol {
@@ -9127,14 +9158,18 @@ ul.hero-social a .label {
   font-weight: 700;
 }
 
-.markdown-body .footnote::before,
-.markdown-body .footnotes h4::before,
-.markdown-body .footnotes li::before {
+.markdown-body .footnote::before {
   display: block;
   height: 79px;
   margin-top: -79px;
+  pointer-events: none;
   visibility: hidden;
   content: "";
+}
+
+.markdown-body .footnotes h4,
+.markdown-body .footnotes li {
+  scroll-margin-top: 79px;
 }
 
 :root {
@@ -9212,7 +9247,6 @@ del code {
 }
 
 pre {
-  padding: 20px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
@@ -9257,12 +9291,14 @@ kbd {
 }
 
 .highlight pre {
+  padding: .75rem 15px;
   margin-right: -15px;
   margin-left: -15px;
 }
 
 @media (min-width: 480px) {
   .highlight pre {
+    padding-left: calc(15px - .25rem);
     margin-right: 0;
     margin-left: 0;
     border-left: 0.25rem solid var(--code-snippet-border);
@@ -9833,25 +9869,7 @@ kbd {
 .archive-body > h2[id],
 .archive-body > h3[id],
 .archive-body > h4[id] {
-  pointer-events: none;
-}
-
-.markdown-body > h2[id]::before,
-.markdown-body > h3[id]::before,
-.markdown-body > h4[id]::before,
-.archive-body > h2[id]::before,
-.archive-body > h3[id]::before,
-.archive-body > h4[id]::before {
-  display: block;
-  height: 6rem;
-  margin-top: -6rem;
-  visibility: hidden;
-  content: "";
-}
-
-.post-content-title {
-  display: block;
-  pointer-events: auto;
+  scroll-margin-top: 2.75em;
 }
 
 @media (max-width: 767px) {

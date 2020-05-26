@@ -43,6 +43,17 @@
   }
   // stylelint-enable declaration-no-important
 
+  img {
+    border-radius: .25rem;
+  }
+
+  @media (min-width: 480px) {
+    pre,
+    blockquote {
+      border-radius: .25rem;
+    }
+  }
+
   a {
     color: var(--link-color);
     text-decoration: underline var(--link-underline-color);
@@ -224,11 +235,24 @@
   // stylelint-enable no-duplicate-selectors
 
   blockquote {
-    padding: 0 1em;
-    font-size: 95%;
+    // padding: 0 1em;
+    // padding: 1em 1.2em;
+    padding: .75rem 15px;
+    margin-right: -15px;
+    margin-left: -15px;
+    font-size: 85%; // .9em
     font-style: italic;
     color: var(--body-color);
-    border-left: .25em solid var(--blockquote-border); // 3px solid rgba(0, 0, 0, .8)
+    background: var(--blockquote-bg);
+    // border-left: .25rem solid var(--blockquote-border); // 3px solid rgba(0, 0, 0, .8)
+    border: 0;
+
+    @media (min-width: 480px) {
+      padding-left: calc(15px - .25rem);
+      margin-right: 0;
+      margin-left: 0;
+      border-left: .25rem solid var(--code-snippet-border);
+    }
 
     > :first-child {
       margin-top: 0;
@@ -277,7 +301,6 @@
     h4 {
       margin: 0;
       font-size: 16px;
-      pointer-events: none;
     }
 
     ol {
@@ -301,19 +324,22 @@
     font-weight: 700;
   }
 
-  .footnote,
-  .footnotes h4,
-  .footnotes li {
+  .footnote {
     // Hash tag links that don't headbutt the browser window
     // https://css-tricks.com/hash-tag-links-padding/
     &::before {
       display: block;
       height: 79px;
       margin-top: -79px;
-      // pointer-events: none;
+      pointer-events: none;
       visibility: hidden;
       content: "";
     }
+  }
+
+  .footnotes h4,
+  .footnotes li {
+    scroll-margin-top: 79px;
   }
 
 

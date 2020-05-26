@@ -1,13 +1,4 @@
-/*!
- * Milan Aryal Gulpfile (https://milanaryal.com.np)
- * Copyright 2020 Milan Aryal
- * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
- */
-
-'use strict';
-
-// Load plugin(s)
-const { src, dest, series, parallel, watch } = require('gulp');
+const { gulp, src, dest, series, parallel, watch } = require('gulp');
 const del = require('del');
 const rename = require('gulp-rename');
 const header = require('gulp-header');
@@ -18,40 +9,14 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const discardComments = require('postcss-discard-comments');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify-es').default;
 const browserSync = require('browser-sync').create();
 const cp = require('child_process');
 
-// Paths to project folders
-var paths = {
+const paths = {
   styles: {
     src: 'src/scss/main.scss',
     dest: 'assets/css/',
     include: '_includes/css/',
-  },
-  scripts: {
-    src: [
-      'src/js/vendor/jquery.slim.js',
-      'src/js/vendor/popper.js',
-      'src/js/vendor/bootstrap/util.js',
-      // 'src/js/vendor/bootstrap/alert.js',
-      // 'src/js/vendor/bootstrap/button.js',
-      // 'src/js/vendor/bootstrap/carousel.js',
-      'src/js/vendor/bootstrap/collapse.js',
-      // 'src/js/vendor/bootstrap/dropdown.js',
-      // 'src/js/vendor/bootstrap/modal.js',
-      // 'src/js/vendor/bootstrap/scrollspy.js',
-      // 'src/js/vendor/bootstrap/tab.js',
-      'src/js/vendor/bootstrap/tooltip.js',
-      // 'src/js/vendor/bootstrap/popover.js',
-      'src/js/vendor/nprogress.js',
-      'src/js/vendor/headroom.js',
-      'src/js/vendor/jQuery.headroom.js',
-      'src/js/scripts.js',
-      'src/js/console.log.js'
-    ],
-    dest: 'assets/js/'
   },
   jekyll: {
     src: [
@@ -67,8 +32,7 @@ var paths = {
   }
 };
 
-// Banner template for files header
-var banner = ['/*!',
+const banner = ['/*!',
   ' * <%= pkg.title %> (<%= pkg.url %>)',
   ' * Copyright ' + new Date().getFullYear() + ' <%= pkg.author %>',
   ' * Licensed under <%= pkg.license %> (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)',
@@ -76,7 +40,7 @@ var banner = ['/*!',
   ''].join('\n');
 
 // Build the Jekyll site
-function buildSite (done) {
+function jekyllBuild (done) {
   browserSync.notify('Compiling Jekyll, please wait!');
   return cp.spawn('npm', [ 'run', 'jekyll-build' ], { stdio: 'inherit' })
     .on('close', done);
@@ -89,6 +53,13 @@ function copyCSS (done) {
     .on('close', done);
 }
 
+// Bundle JS with Webpack
+function js (done) {
+  browserSync.notify('Bundling JS with Webpack, please wait!');
+  return cp.spawn('npm', [ 'run', 'js' ], { stdio: 'inherit' })
+    .on('close', done);
+}
+
 // Copy compiled JS to the Jekyll site
 function copyJS (done) {
   browserSync.notify('Compiling JS, please wait!');
@@ -98,7 +69,7 @@ function copyJS (done) {
 
 // Wait for Jekyll build, then launch the server
 // BrowserSync (callback)
-function serveSite (done) {
+function browserSyncServer (done) {
   browserSync.init({
     port: 4000,
     ui: {
@@ -123,7 +94,7 @@ function browserSyncReload (done) {
 
 // Remove pre-existing content from the assets folders
 function clean () {
-  return del([ paths.styles.dest, paths.styles.include, paths.scripts.dest ]);
+  return del([ paths.styles.dest, paths.styles.include ]);
 }
 
 // Remove pre-existing Jekyll compiled site folder
@@ -149,42 +120,30 @@ function css () {
     .pipe(dest(paths.styles.dest));
 }
 
-// Concatenate and minify scripts
-function js () {
-  return src(paths.scripts.src)
-    .pipe(concat('bundle.js'))
-    .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest(paths.scripts.dest))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify({ output: { comments: false } }))
-    .pipe(header(banner, { pkg : pkg }))
-    .pipe(dest(paths.scripts.dest));
-}
-
 /**
  * Watching task for changes in src files
  */
 
 function watchFiles () {
-  // Watch .scss files
-  watch('src/scss/**/*.scss', series(css, copyCSS, browserSyncReload));
-  // Watch .js files
-  watch('src/js/**/*.js', series(js, copyJS, browserSyncReload));
+  // Watch .scss files and do page reload
+  watch('src/**/*.scss', series(css, copyCSS, browserSyncReload));
+  // Watch .js files and do page reload
+  watch('src/**/*.js', series(js, copyJS, browserSyncReload));
   // Watch Jekyll uncompiled files and do page reload
-  watch(paths.jekyll.src, series(buildSite, browserSyncReload));
+  watch(paths.jekyll.src, series(jekyllBuild, browserSyncReload));
 }
 
 /**
  * Export task(s)
  */
 
-var build = series(clean, parallel(css, js));
-var buildSite = series (build, parallel(cleanSite, buildSite));
-var serveSite = series(buildSite, serveSite);
+const build = series(clean, parallel(css, js));
+const buildSite = series (build, parallel(cleanSite, jekyllBuild));
+const serveSite = series(buildSite, browserSyncServer);
 
 // Public working task(s)
-exports.buildSite = buildSite;
-exports.serveSite = serveSite;
+exports.site = buildSite;
+exports.serve = serveSite;
 exports.watch = parallel(watchFiles, serveSite);
 
 // Default task

@@ -22,7 +22,8 @@ $theme-colors-default: map-merge(
     "text-muted-secondary":      #aaa,
     "section-divider":           rgba(0, 0, 0, .1),
     "section-divider-secondary": rgba(0, 0, 0, .05),
-    "blockquote-border":         rgba(0, 0, 0, .8)
+    "blockquote-border":         #e5e5e5,
+    "blockquote-bg":             #fafafa
   ),
   $theme-colors-default
 );
@@ -43,12 +44,11 @@ $theme-colors-dark: map-merge(
     "anchor-hover-color":        #ddd,
     "section-divider":           rgba(255, 255, 255, .1),
     "section-divider-secondary": rgba(255, 255, 255, .05),
-    "blockquote-border":         rgba(255, 255, 255, .1)
+    "blockquote-border":         rgba(255, 255, 255, .1),
+    "blockquote-bg":             rgba(0, 0, 0, .1)
   ),
   $theme-colors-dark
 );
-
-
 
 // Bootstrap
 //
@@ -71,13 +71,11 @@ $link-hover-decoration:     none !default;
 $blockquote-border-color:   $text-color !default;
 $hr-border:                 rgba(0, 0, 0, .05) !default;
 
-
 // Bootstrap Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-responsive-font-sizes:                true !default;
-
 
 // Brand colors (http://brand-colors.com, http://brandcolors.net)
 //
@@ -98,7 +96,6 @@ $twitter-color:             #55acee !default;
 $vimeo-color:               #1ab7ea !default; // has multi colors
 $youtube-color:             #cd201f !default;
 $github-color:              #333 !default;    // has multi colors
-
 
 // NProgress
 //

@@ -33,7 +33,6 @@
 }
 
 // Offsetting an html anchor to adjust for fixed header
-// (https://css-tricks.com/hash-tag-links-padding/#article-header-id-1)
 
 // stylelint-disable selector-no-qualifying-type
 .markdown-body,
@@ -41,22 +40,7 @@
   > h2[id],
   > h3[id],
   > h4[id] {
-    pointer-events: none;
+    scroll-margin-top: 2.75em;
   }
-
-  > h2[id]::before,
-  > h3[id]::before,
-  > h4[id]::before {
-    display: block;
-    height: 6rem;
-    margin-top: -6rem;
-    visibility: hidden;
-    content: "";
-  }
-}
-
-.post-content-title {
-  display: block;
-  pointer-events: auto;
 }
 // stylelint-enable selector-no-qualifying-type
