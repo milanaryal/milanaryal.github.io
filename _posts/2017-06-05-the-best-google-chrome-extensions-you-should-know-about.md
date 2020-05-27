@@ -1,7 +1,7 @@
 ---
 title: "The best Google Chrome extensions you should know about"
 date: 2017-06-05T07:00:00+05:45
-last_modified_at: 2020-04-24T15:25:00+05:45
+last_modified_at: 2020-05-27T19:00:00+05:45
 excerpt: "A list of the best free Chrome extensions you need most to exponentially increasing browser potential."
 ---
 
@@ -87,6 +87,10 @@ HTTPS Everywhere automatically makes websites use the more secure HTTPS connecti
 
 Decentraleyes emulates Content Delivery Networks locally by intercepting requests, finding the required resource, and injecting it into the environment. This all happens instantaneously, automatically, and no prior configuration is required.
 
+#### [ClearURLs](https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk?hl=en){: rel="nofollow" }
+
+ClearURLs will automatically remove tracking elements from URLs to help protect your privacy when browse through the Internet.
+
 #### [Cookie AutoDelete: Automatically Delete Cookies](https://chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh?hl=en){: rel="nofollow" }
 
 Cookie AutoDelete automatically removes cookies, lingering sessions, and other information that can be used to spy on you when they are no longer used by open browser tabs.
@@ -98,6 +102,10 @@ It's an addon that believes "I have read and agree to the Terms of Service" is t
 #### [Privacy Badger: Stop Tracking](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp?hl=en){: rel="nofollow" }
 
 Privacy Badger is a browser add-on that stops advertisers and other third-party trackers from secretly tracking where you go and what pages you look at on the web. It learns about trackers as you browse.
+
+#### [DuckDuckGo Privacy Essentials](https://chrome.google.com/webstore/detail/duckduckgo-privacy-essent/bkdgflcldnnnapblkhphbgpggdiikppg){: rel="nofollow" }
+
+Privacy, simplified. Protect your data as you search and browse. DuckDuckGo is an Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs. With their roots as the search engine that doesn't track you, they've expanded what they do to protect you no matter where the Internet takes you.
 
 #### [Snowflake](https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie?hl=en){: rel="nofollow" }
 

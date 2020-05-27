@@ -20,7 +20,7 @@ These days, Tor mainly focuses its attention on its browser and the development 
 * Tor is free to use. Simply download and install the browser, which is a modified version of Firefox available for Windows, macOS, and Linux.
 
 **Other alternatives**
-* Brave browser [private window with Tor](https://support.brave.com/hc/en-us/articles/36001812149){: rel="nofollow" }
+* Brave browser [private window with Tor](https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor-){: rel="nofollow" }
 
 #### Access hidden wikis and more
 
@@ -33,8 +33,8 @@ Hidden Wiki is basically a website that contains a collection of deep web URLs (
 
 You can volunteer the Tor project by installing [Snowflake](https://snowflake.torproject.org/){: rel="nofollow" } extension in your browser.
 
-* [Install in Firefox](https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/){: rel="nofollow" }
-* [Install in Chrome](https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie){: rel="nofollow" }
+* [Install Snowflake in Firefox](https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/){: rel="nofollow" }
+* [Install Snowflake in Chrome](https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie){: rel="nofollow" }
 
 If you have an uncensored connection, running this extension volunteers your connection to be used as a Snowflake proxy to help users unable to connect to the Tor network. Your IP will not be visible to the sites users visit using your proxy, as this extension will not make you an exit node.
 
