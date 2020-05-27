@@ -123,6 +123,7 @@ exclude:
   - src
   - gulpfile.js
   - webpack.config.js
+  - postcss.config.js
   - package.json
   - package-lock.json
   - npm-debug.log

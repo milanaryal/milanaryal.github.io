@@ -1,8 +1,8 @@
-//
-// Milan Aryal (https://milanaryal.com.np)
-// Copyright 2020 Milan Aryal
-// Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
-//
+/*!
+ * Milan Aryal (https://milanaryal.com.np)
+ * Copyright 2020 Milan Aryal
+ * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
+ */
 
 // Core variables and mixins
 @import "variables";
@@ -10,7 +10,7 @@
 
 // Base and dependencies
 @import "typeface";
-@import "bootstrap";
+@import "bootstrap"; // ~
 
 // Global
 @import "theme/root";
