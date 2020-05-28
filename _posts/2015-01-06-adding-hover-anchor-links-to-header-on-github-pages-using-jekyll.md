@@ -11,7 +11,7 @@ When you send someone one of the resulting anchor URLs, which includes the name 
 
 #### Jekyll default Kramdown Markdown auto produces header ID's
 
-As of the Jekyll new version 3.x.x, Jekyll runs with the following configuration options by default which done our job to add ID's to your post headers (H2, H3, H4, ..).
+Starting with version 3, Jekyll runs with the following configuration options by default which done our job to add ID's to your post headers (H2, H3, H4, ..).
 
 ```yml
 # Jekyll Default Configuration

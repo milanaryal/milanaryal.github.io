@@ -23,5 +23,5 @@ layout: null
   Last updated: {{ site.time | date: '%Y/%m/%d' }}
   Language: English / Nepali
   Standards: HTML5, CSS3
-  Components: Jekyll {{ jekyll.version }}
+  Components: Jekyll v{{ jekyll.version }}
   IDE: Visual Studio Code, Atom Editor
