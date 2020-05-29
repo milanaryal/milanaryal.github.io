@@ -16,16 +16,16 @@
 @import "theme/root";
 @import "theme/reboot";
 @import "theme/global";
-@import "theme/svg-icons";
+@import "theme/svg-icon";
 
 // Core theme
 @import "theme/navbar";
 @import "theme/hero-page";
-@import "theme/buttons";
-@import "theme/pages";
+@import "theme/button";
+@import "theme/page";
 @import "theme/post-preview";
 @import "theme/pager";
-@import "theme/posts";
+@import "theme/post";
 @import "theme/markdown-body";
 @import "theme/syntax";
 @import "theme/archive-page";

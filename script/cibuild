@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-chmod +x ./scripts/branding
-./scripts/branding
+chmod +x script/branding
+script/branding
 
 set -e
 

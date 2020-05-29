@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, './assets/js/'),
-    filename: 'bundle.min.js'
+    filename: 'bundle.js'
   },
   module: {
     rules: [

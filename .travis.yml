@@ -5,11 +5,11 @@ rvm:
   - 2.5.8
 
 before_script:
-  - chmod +x ./scripts/cibuild
+  - chmod +x ./script/cibuild
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-script: ./scripts/cibuild
+script: ./script/cibuild
 
 branches:
   only:

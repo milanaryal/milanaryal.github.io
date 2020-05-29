@@ -1,7 +1,7 @@
 import './bootstrap'
 import './headroom'
 
-// should be on last
+// should be at last
 import './onready'
 import './onload'
 import './consolelog'

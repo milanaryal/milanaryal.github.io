@@ -3,7 +3,7 @@
 {%- include build_version.html -%}
 
 {% if jekyll.environment == "development" %}
-  <link rel="stylesheet" href="/assets/css/style.min.css?v={{ build_version }}">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{ build_version }}">
 {% else %}
-  <style data-href="/assets/css/style.min.css?v={{ build_version }}">{% include static/style.min.css %}</style>
+  <style data-href="/assets/css/style.css?v={{ build_version }}">{% include static/style.css %}</style>
 {% endif %}
