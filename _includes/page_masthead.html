@@ -7,7 +7,7 @@
 
 {%- if paginator.page > 1 -%}
   {%- capture page_title -%}
-    Page {{ paginator.page }} of {{ paginator.total_posts }} for {{ page_title }}
+    Page {{ paginator.page }} of {{ paginator.total_pages }} for {{ page_title }}
   {%- endcapture -%}
 {%- endif -%}
 
