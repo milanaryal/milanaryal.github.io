@@ -11,11 +11,32 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-lg-8 mx-auto">
+
+        {% if page.blog %}
+
+          {{ content }}
+
+        {% elsif page.archive %}
+
+        <div class="archive h-feed">
+          <a class="u-url p-name" style="display: none;" href="/archive/">Blog Archive</a>
+          <div class="archive-content clearfix">
+
+            {{ content }}
+
+          </div><!-- /.archive-content -->
+        </div><!-- /.archive -->
+
+        {% else %}
+
         <div class="page-content markdown-body clearfix">
 
           {{ content }}
 
-        </div>
+        </div> <!-- /.page-content -->
+
+        {% endif %}
+
       </div>
     </div>
   </div>

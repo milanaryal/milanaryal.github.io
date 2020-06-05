@@ -2,14 +2,13 @@
 title: "Archive"
 tagline: "The compiled weblog posts."
 description: "A year wise weblog all compiled posts about stock market, front-end web development, and positive living."
-layout: archive
+layout: page
+archive: true
 feature_image: "/assets/img/archive.jpg"
 permalink: "/archive/"
 redirect_from: "/archives/"
 ---
 
-<div class="archive-content clearfix h-feed">
-<a class="u-url p-name" style="display: none;" href="/archive/">Blog Archive</a>
 {% for post in site.posts %}
 
   {% unless post.next %}
@@ -37,4 +36,3 @@ redirect_from: "/archives/"
   </article>
 
 {% endfor %}
-</div><!-- /.archive-body -->
