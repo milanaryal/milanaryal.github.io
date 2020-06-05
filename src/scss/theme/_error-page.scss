@@ -8,7 +8,7 @@
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 .error-page-content {
@@ -33,7 +33,6 @@
   font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
 
   mask-image: url("/assets/img/dust-and-scratches.png");
-  transform: rotate(-1deg);
 
   @media (min-width: 768px) {
     font-size: 32px;
@@ -43,6 +42,7 @@
 .error-page-message--lead {
   margin-bottom: 10px;
   font-size: 42px; // 32px
+  transform: rotate(-1deg);
 
   @media (min-width: 768px) {
     font-size: 80px; // 60px

@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang | replace:'-','_' }}{% endif %}">
+<html lang="{{ page.lang | replace:'-','_' | default: site.lang | default:'en' | downcase }}">
 
 {%- capture font_family_base -%}"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"{%- endcapture -%}
 
@@ -28,7 +28,7 @@ layout: compress
           font-size: 20px;
         }
       }
-      .search-page-body {
+      .search-page-content {
         margin: 30px 0 77px;
         font-family: {{ font_family_base }};
       }
@@ -152,6 +152,21 @@ layout: compress
       */
       {% endcomment %}
       @media (prefers-color-scheme: dark) {
+        .gsc-expansionArea,
+        .gsc-webResult.gsc-result,
+        .gsc-results .gsc-imageResult {
+          background: transparent !important;
+        }
+        .gsc-results .gsc-cursor-box .gsc-cursor-page {
+          border-color: #333 !important;
+          background-color: #333 !important;
+          color: #bbb !important;
+        }
+        .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+          border-color: transparent !important;
+          background-color: transparent !important;
+          color: #ccc !important;
+        }
         .gsc-selected-option-container {
           color: rgba(255, 255, 255, .8) !important;
           background-color: #333 !important;
@@ -191,10 +206,10 @@ layout: compress
 
   <body>
 
-    {% include nav_no_searchbox.html  %}
+    {% include search_page_header.html  %}
 
     <!-- Page content -->
-    <section class="container">
+    <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto">
 
@@ -202,7 +217,7 @@ layout: compress
 
         </div>
       </div>
-    </section>
+    </div>
 
     {% include scripts.html %}
 

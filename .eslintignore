@@ -1,4 +1,4 @@
 **/*.min.js
-**/assets/
 **/vendor/
-gulpfile.js
+assets/
+_site/

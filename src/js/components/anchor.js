@@ -6,7 +6,7 @@
 
 export default function anchor () {
 
-  const postHeader = '.markdown-body>h3,.markdown-body>h4,.archive-body .archive-year';
+  const postHeader = '.markdown-body>h3,.markdown-body>h4,.archive-content .archive-year';
 
   $(postHeader).filter('[id]').each(function () {
     var header      = $(this),

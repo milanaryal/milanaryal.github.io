@@ -25,6 +25,13 @@
   @media (min-width: 768px) {
     font-size: 15.8px;
   }
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 .post-preview-title {

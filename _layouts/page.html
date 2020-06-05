@@ -2,25 +2,24 @@
 layout: default
 ---
 
-<main role="main" itemprop="mainContentOfPage">
-  <article class="page-content">
+<!-- Page -->
+<main class="page{%if page.permalink %} page-{{ page.permalink | slugify }}{% endif %}" id="main" role="main">
 
-    {% include page_masthead.html %}
+  {% include page_masthead.html %}
 
-    <!-- Page content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto">
-          <div class="page-body markdown-body clearfix">
+  <!-- Page content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto">
+        <div class="page-content markdown-body clearfix">
 
-            {{ content }}
+          {{ content }}
 
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-  </article>
-</main>
+</main><!-- /.page -->
 
 {% include site_footer.html %}

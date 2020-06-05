@@ -19,9 +19,8 @@
     min-height: calc(100vh - 56px); // navbar height 56px
   }
   padding: 15px; // 1.25em ~20px
-  background-color: #fff;
-  // ** NOTE: Background images are set within the HTML using inline CSS! ** //
-  // background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('/assets/img/hero.jpg'); // rgba(0,0,0,0.753)
+  background-color: #fafafa;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .001), rgba(0, 0, 0, .001)), url("/assets/img/hero.jpg");
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed;
   background-position: center, center;
@@ -76,8 +75,8 @@
   margin-top: 60px; // fill avatar -60px
   text-align: center;
   cursor: default;
-  background-color: rgba(255, 255, 255, .009);
-  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, .009);
+  border: 1px solid #111;
   border-radius: 4px;
   opacity: .99;
   transition:
@@ -131,8 +130,8 @@
   @include font-size(3.333rem); // font-size: 3.25em;
   font-weight: 400;
   line-height: 1.2;
-  color: #fff;
-  text-shadow: 0 1px rgba(0, 0, 0, .2);
+  color: #111;
+  text-shadow: 0 1px rgba(255, 255, 255, .2); // dark => text-shadow: 0 1px rgba(0, 0, 0, .2);
   // letter-spacing: -.002em; // -.0075em;
   word-break: break-word;
   word-wrap: break-word;
@@ -150,8 +149,8 @@
   @include font-size(1rem); // 16px
   font-weight: 300;
   line-height: 1.4;
-  color: rgba(255, 255, 255, .9);
-  text-shadow: 0 1px rgba(0, 0, 0, .4);
+  color: rgba(0, 0, 0, .9);
+  text-shadow: 0 1px rgba(255, 255, 255, .4); // dark => text-shadow: 0 1px rgba(0, 0, 0, .4);
   // letter-spacing: -.002em; // .0333em;
   word-break: break-word;
   word-wrap: break-word;
@@ -190,12 +189,20 @@ ul.hero-social {
     width: 3.4em;
     height: 3.4em;
     @include font-size(1rem); // 16px
-    color: #fff;
-    border: solid 1px #fff;
+    color: #222;
+    border: solid 1px #222;
     border-radius: 100%;
 
     @media (max-width: 479px) {
       @include font-size(.875rem); // 14px
+    }
+
+    &:hover {
+      border-color: #fafafa;
+
+      svg {
+        fill: #fafafa;
+      }
     }
 
     &.icon-twitter:hover {

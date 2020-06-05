@@ -2,12 +2,40 @@
 layout: default
 ---
 
-{% include metadata.html %}
+{%- include reading_time.html -%}
 
-<main role="main" itemprop="mainContentOfPage">
+{%- if site.url -%}
+  {%- assign site_url = site.url | append: site.baseurl -%}
+{%- endif -%}
+{%- assign site_url = site_url | default: site.github.url -%}
 
-  <!-- Post article content -->
-  <article class="post-content" itemscope itemtype="https://schema.org/Article">
+{%- if page.url -%}
+  {%- assign page_url = page.url | replace:'/index.html','/' | prepend: site_url -%}
+{%- endif -%}
+
+{%- if page.title -%}
+  {%- assign page_title = page.title | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- endif -%}
+
+{%- if page.image -%}
+  {%- assign page_image = page.image.path | default: page.image -%}
+  {%- unless page_image contains '://' -%}
+    {%- assign page_image = page_image | prepend: site_url -%}
+  {%- endunless -%}
+  {%- assign page_image = page_image | escape -%}
+{%- endif -%}
+
+{%- if page.date -%}
+  {%- assign date_published = page.date | date_to_xmlschema -%}
+  {%- assign date_modified = page.last_modified_at | default: page.date -%}
+  {%- if date_modified -%}
+    {%- assign date_modified = date_modified | date_to_xmlschema -%}
+  {%- endif -%}
+{%- endif -%}
+
+<main id="main" role="main">
+  <!-- Post -->
+  <article class="post post-{{ page.id | slugify }} entry h-entry" id="post-{{ page.id | slugify }}">
 
     <!-- Post header -->
     <header class="post-masthead">
@@ -15,60 +43,22 @@ layout: default
         <div class="row">
           <div class="col-md-10 col-lg-8 mx-auto">
 
-            <meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage" itemid="{{ page_url }}">
-
             <!-- Post meta -->
             <div class="post-meta">
-              <time itemprop="datePublished" datetime="{{ date_published }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ page.last_modified_at | date: '%b %-d, %Y' }}"{% endif %}>{{ page.date | date: '%b %-d, %Y' }}</time><!--
+              <a class="u-url u-uid" rel="bookmark" href="{{ page_url }}"><time datetime="{{ date_published }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ date_modified | date: '%b %-d, %Y' }}"{% endif %}>{{ date_published | date: '%b %-d, %Y' }}</time></a><!--
               --> &middot; <!--
               --><span data-toggle="tooltip" data-placement="top" title="{{ total_words }}">{{ reading_time }}</span>
             </div><!-- /.post-meta -->
 
-            <meta itemprop="dateModified" content="{{ date_modified }}">
-
             <!-- Post title -->
-            <h1 class="post-title" itemprop="headline">{{ page_title }}</h1>
+            <h1 class="post-title entry-title p-name">{{ page_title }}</h1>
 
-            <link itemprop="url" rel="bookmark" href="{{ page_url }}">
-
-            <span hidden="true" itemprop="author" itemscope itemtype="https://schema.org/Person">
-              <meta itemprop="name" content="{{ page_author }}">
-            </span>
-
-            <meta itemprop="description" content="{{ page_description }}">
-
-            <span hidden="true" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              {% if page_image %}
-                <link itemprop="url" href="{{ page_image }}">
-                {% if page.image.width %}
-                  <meta itemprop="width" content="{{ page.image.width }}">
-                {% endif %}
-                {% if page.image.height %}
-                  <meta itemprop="height" content="{{ page.image.height }}">
-                {% endif %}
-              {% else %}
-                <link itemprop="url" href="{{ site_logo }}">
-                {% if site.logo.width %}
-                  <meta itemprop="width" content="{{ site.logo.width }}">
-                {% endif %}
-                {% if site.logo.height %}
-                  <meta itemprop="height" content="{{ site.logo.height }}">
-                {% endif %}
-              {% endif %}
-            </span>
-
-            <span hidden="true" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-              <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                <link itemprop="url" href="{{ site_logo }}">
-                {% if site.logo.width %}
-                  <meta itemprop="width" content="{{ site.logo.width }}">
-                {% endif %}
-                {% if site.logo.height %}
-                  <meta itemprop="height" content="{{ site.logo.height }}">
-                {% endif %}
-              </span>
-              <meta itemprop="name" content="{{ site_title }}">
-            </span>
+            {%- comment -%}
+              <!-- http://microformats.org/wiki/h-entry -->
+            {%- endcomment -%}
+            {%- if page.excerpt and page.excerpt != empty -%}
+              <p style="display: none;" class="entry-summary p-summary">{{ page.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 160 | escape_once }}</p>
+            {%- endif -%}
 
           </div><!-- /.col-* -->
         </div><!-- /.row -->
@@ -113,13 +103,13 @@ layout: default
 
     </header><!-- /.postHeader -->
 
-    <!-- Post body -->
+    <!-- Post content -->
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto">
-          <div class="post-body markdown-body clearfix" itemprop="articleBody">
+          <div class="post-content markdown-body clearfix post-body entry-body entry-content e-content">
             {{ content }}
-          </div><!-- /.post-body -->
+          </div><!-- /.post-content -->
         </div><!-- /.col-* -->
       </div><!-- /.row -->
     </div><!-- /.container -->
@@ -132,21 +122,50 @@ layout: default
 
             <!-- Post last modified date meta -->
             {% if page.last_modified_at %}
-              <div class="post-modified">Last modified at {{ page.last_modified_at | date: '%b %-d, %Y' }}</div>
+              <div class="post-modified">Last modified at <time datetime="{{ date_modified }}">{{ date_modified | date: '%b %-d, %Y' }}</time></div>
             {% endif %}<!-- /.post-modified -->
 
             <div class="post-footer-meta-acknowledgments" about="{{ page_url }}">
-              <a href="/fine-print/#license" rel="license" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license by {% if page.author and page.author != empty %}{{ page_author }}{% else %}the author{% endif %}.">Some rights reserved</a><svg class="icon icon-creative-commons-by" width="21" height="21" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><title>You can distribute, remix, and build upon this work as long as you credit the author.</title><path d="M314.9 194.4v101.4h-28.3v120.5h-77.1V295.9h-28.3V194.4c0-4.4 1.6-8.2 4.6-11.3 3.1-3.1 6.9-4.7 11.3-4.7H299c4.1 0 7.8 1.6 11.1 4.7 3.1 3.2 4.8 6.9 4.8 11.3zm-101.5-63.7c0-23.3 11.5-35 34.5-35s34.5 11.7 34.5 35c0 23-11.5 34.5-34.5 34.5s-34.5-11.5-34.5-34.5zM247.6 8C389.4 8 496 118.1 496 256c0 147.1-118.5 248-248.4 248C113.6 504 0 394.5 0 256 0 123.1 104.7 8 247.6 8zm.8 44.7C130.2 52.7 44.7 150.6 44.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3z"/></svg>
+              <a href="/fine-print/#license" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license by the author.">Some rights reserved</a><!--
+              --><svg class="icon icon-creative-commons-by" width="21" height="21" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><title>You can distribute, remix, and build upon this work as long as you credit the author.</title><path d="M314.9 194.4v101.4h-28.3v120.5h-77.1V295.9h-28.3V194.4c0-4.4 1.6-8.2 4.6-11.3 3.1-3.1 6.9-4.7 11.3-4.7H299c4.1 0 7.8 1.6 11.1 4.7 3.1 3.2 4.8 6.9 4.8 11.3zm-101.5-63.7c0-23.3 11.5-35 34.5-35s34.5 11.7 34.5 35c0 23-11.5 34.5-34.5 34.5s-34.5-11.5-34.5-34.5zM247.6 8C389.4 8 496 118.1 496 256c0 147.1-118.5 248-248.4 248C113.6 504 0 394.5 0 256 0 123.1 104.7 8 247.6 8zm.8 44.7C130.2 52.7 44.7 150.6 44.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3z"/></svg>
             </div><!-- /.post-footer-meta-acknowledgments -->
+
+            {%- comment -%}
+              <!-- http://microformats.org/wiki/h-entry -->
+            {%- endcomment -%}
+
+            {%- assign page_author = page.author.name | default: page.author | default: site.author.name | default: site.author %}
+            {%- if page_author -%}
+              {%- assign page_author = page_author | smartify | strip_html | normalize_whitespace | escape_once -%}
+            {%- endif -%}
+
+            {%- if page.author -%}
+              {%- assign author_avatar = page.author.avatar | default: site.logo -%}
+            {%- else -%}
+              {%- assign author_avatar = site.author.avatar | default: site.logo -%}
+            {%- endif -%}
+
+            {%- if page.date -%}
+              {%- capture full_date_published -%}
+                {{ date_published | date: '%a, %b %-d, %Y' }} at {{ date_published| date: '%-I:%M%P %Z' }}
+              {%- endcapture -%}
+
+              {%- capture full_date_modified -%}
+                {{ date_modified | date: '%a, %b %-d, %Y' }} at {{ date_modified | date: '%-I:%M%P %Z' }}
+              {%- endcapture -%}
+            {%- endif -%}
+            <p style="display: none;">Written by <span class="p-author h-card"><img style="display: none;" class="u-photo" src="{{ site.author.avatar }}" alt="{{ page_author }}'s profile image"> <a class="p-name u-url" href="{{ site.url }}/">{{ site.author.name }}</a></span> on <time class="published dt-published" datetime="{{ date_published }}">{{ full_date_published }}</time>, and last updated on <time class="updated dt-updated" datetime="{{ date_modified }}">{{ full_date_modified }}</time>.</p>
+
           </div><!-- /.col-* -->
         </div><!-- /.row -->
       </div><!-- /.container -->
     </footer><!-- /.post-footer -->
+
   </article><!-- /.post -->
 </main>
 
 <!-- Post footer section -->
-<section class="container post-footer-section">
+<div class="container post-footer-section">
   <div class="row">
     <div class="col-md-10 col-lg-8 mx-auto">
 
@@ -187,31 +206,33 @@ layout: default
       {% endunless %}
 
       <!-- Disqus -->
-      {% if site.disqus_shortname and page.comments != 'false' %}
+      {% if site.disqus_shortname and page.comments != "false" %}
         {% if jekyll.environment == "production" %}
           {% include disqus_thread.html %}
         {% endif %}
       {% endif %}
     </div><!-- /.col-* -->
   </div><!-- /.row -->
-</section><!-- /.container -->
+</div><!-- /.container -->
 
 <!-- Random posts -->
-<aside class="random-posts" hidden="true">
+<div class="random-posts" hidden="true">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-lg-8 mx-auto">
-        <h3 class="random-posts-heading">Read more</h3>
+        <h4 class="random-posts-heading">Read more</h4>
 
         <div id="random-posts"></div>
 
         <div class="random-posts-footer">
-          <a class="btn btn-outline-default btn--random" href="/archives/" role="button">Archives</a>
+          <a class="btn btn-outline-default btn--random" href="/random/" role="button"><svg class="icon icon-random" width="1em" height="1em" aria-hidden="true" role="img"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"/></svg> Random</a><!--
+          --> <!--
+          --><a class="btn btn-outline-default btn--archive" href="/archive/" role="button"><svg  class="icon icon-archive" width="1em" height="1em" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg> Archive</a>
         </div>
       </div><!-- /.col-* -->
     </div><!-- /.row -->
   </div><!-- /.container -->
-</aside><!-- /.random-posts -->
+</div><!-- /.random-posts -->
 
 <!-- Elevator wrapper - Scroll back to top button -->
 <div class="elevator-wrapper" hidden="true" aria-hidden="true"></div>

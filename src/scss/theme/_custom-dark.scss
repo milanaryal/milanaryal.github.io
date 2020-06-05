@@ -62,6 +62,7 @@
 
   .hero-container {
     background-color: #111;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .44), rgba(0, 0, 0, .44)), url("/assets/img/hero-dark.jpg");
 
     &::before {
       background: #232526;  // fallback for old browsers
@@ -70,15 +71,18 @@
   }
 
   .hero-profile {
+    background-color: rgba(255, 255, 255, .009);
     border: 1px solid rgba(255, 255, 255, .8);
   }
 
   .hero-title {
     color: rgba(255, 255, 255, .8);
+    text-shadow: 0 1px rgba(0, 0, 0, .2);
   }
 
   .hero-description {
     color: rgba(255, 255, 255, .7);
+    text-shadow: 0 1px rgba(0, 0, 0, .4);
   }
 
   ul.hero-social {
@@ -126,29 +130,6 @@
 
       svg {
         fill: rgba(255, 255, 255, .7);
-      }
-    }
-  }
-
-  // _pager.scss
-  //
-
-  .pager {
-    li {
-      > a {
-        color: rgba(255, 255, 255, .44);
-        border: 1px solid rgba(255, 255, 255, .15);
-      }
-
-      > a:hover {
-        color: rgba(255, 255, 255, .6);
-        border-color: rgba(255, 255, 255, .3);
-      }
-
-      > a:focus,
-      > a:active {
-        color: rgba(255, 255, 255, .8);
-        border-color: rgba(255, 255, 255, .6);
       }
     }
   }

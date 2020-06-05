@@ -2,8 +2,8 @@
 // Page layout
 //
 
-.page-content,
-.post-content {
+.page,
+.post {
   margin-top: 49px;
   transform: translateZ(0);
 
@@ -107,9 +107,9 @@
   }
 }
 
-// Page body
+// Page body content
 
-.page-body {
+.page-content {
   margin-bottom: 60px; // 50px
 }
 
@@ -239,6 +239,7 @@
     animation: heartbeat 1.33s ease-in-out infinite;
 
     &:hover {
+      color: #ca1243;
       animation: none;
     }
   }

@@ -11,148 +11,57 @@
   <!-- Critical CSS -->
   {% include styles.html %}
 
-  {% include metadata.html %}
+  {% include build_version.html %}
+
+  {%- assign site_title = site.title | default: site.name -%}
+  {%- if site_title -%}
+    {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
+  {%- endif -%}
+
+  {%- if page.title -%}
+    {%- assign page_title = page.title | smartify | strip_html | normalize_whitespace | escape_once -%}
+  {%- endif -%}
 
   <!-- Basic page needs -->
-  <title>{% if page_title %}{{ page_title }} &mdash; {{ site_title }}{% else %}{{ site_title }}{% endif %}</title>
-  <meta name="title" content="{% if page_title %}{{ page_title }}{% else %}{{ site_title }}{% endif %}">
-  <meta name="description" content="{{ page_description }}">
-
-  {% if page_author and page.date %}
-    <meta name="author" content="{{ page_author }}">
-  {% endif %}
-
-  <meta name="generator" content="Jekyll v{{ jekyll.version }}">
-
-  <!-- Open Graph tags -->
-  <meta property="og:title" content="{% if page_title %}{{ page_title }}{% else %}{{ site_title }}{% endif %}">
-  <meta property="og:site_title" content="{{ site_title }}">
-  <meta property="og:url" content="{{ page_url }}">
-  <meta property="og:description" content="{{ page_description }}">
-
-  {% if page_image and page.date %}
-    <meta property="og:image" content="{{ page_image }}">
-    {% if page.image.width %}
-      <meta property="og:image:width" content="{{ page.image.width }}">
-    {% endif %}
-    {% if page.image.height %}
-      <meta property="og:image:height" content="{{ page.image.height }}">
-    {% endif %}
+  {% if page.permalink == '/' %}
+    <title>{{ site_title }} | {{ site.tagline }}</title>
+    {% seo title=false %}
   {% else %}
-    <meta property="og:image" content="{{ site_logo }}">
-    {% if site.logo.width %}
-      <meta property="og:image:width" content="{{ site.logo.width }}">
-    {% endif %}
-    {% if site.logo.height %}
-      <meta property="og:image:height" content="{{ site.logo.height }}">
-    {% endif %}
+    {% seo %}
   {% endif %}
 
-  <meta property="og:type" content="{% if page.layout == 'post' and page.date %}article{% else %}website{% endif %}">
+  {%- if page.image and page.image != "" -%}
+    {%- assign hasImage = true -%}
+  {% elsif page.image.path and page.image.path != "" %}
+    {%- assign hasImage = true -%}
+  {% else %}
+    {%- assign hasImage = false -%}
+    {%- assign thumbnail = page.thumbnail.path | default: page.thumbnail | default: site.logo -%}
+  {%- endif -%}
 
-  {% if site.locale %}
-    <meta property="og:locale" content="{{ site.locale | replace:'-','_' }}">
-  {% endif %}
-
-  {% if site.facebook %}
-    {% if site.facebook.admins %}
-      <meta property="fb:admins" content="{{ site.facebook.admins }}">
+  {% unless hasImage %}
+    <meta property="og:image" content="{{ thumbnail | absolute_url }}">
+    {% if page.thumbnail.width %}
+      <meta property="og:image:width" content="{{ page.thumbnail.width }}">
     {% endif %}
-
-    {% if site.facebook.publisher %}
-      <meta property="article:publisher" content="{{ site.facebook.publisher }}">
+    {% if page.thumbnail.height %}
+      <meta property="og:image:height" content="{{ page.thumbnail.height }}">
     {% endif %}
-
-    {% if site.facebook.app_id %}
-      <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
-    {% endif %}
-
-    {% if page.date %}
-      {% if page.author.facebook %}
-        <meta property="article:author" content="https://www.facebook.com/{{ page.author.facebook }}">
-      {% endif %}
-
-      {% if site.author.facebook %}
-        {% unless page.author %}
-          <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
-        {% endunless %}
-      {% endif %}
-    {% endif %}
-  {% endif %}
-
-  {% if page.layout == 'post' and page.date %}
-    <meta property="article:modified_time" content="{{ date_modified }}">
-    <meta property="article:published_time" content="{{ date_published }}">
-
-    {% for post in site.related_posts limit:3 %}
-      <meta property="og:see_also" content="{{ post.url | replace:'/index.html','/' | prepend: site_url }}">
-    {% endfor %}
-  {% endif %}
-
-  <!-- Twitter card property -->
-  {% if site.twitter %}
-    {% if page_image and page.date %}
-      <meta name="twitter:card" content="summary_large_image">
-    {% else %}
-      <meta name="twitter:card" content="summary">
-    {% endif %}
-
-    <meta name="twitter:site" content="@{{ site.twitter.username | remove:'@' }}">
-
-    {% if page.layout == 'post' and page.date %}
-      {% if page.author.twitter %}
-        <meta name="twitter:creator" content="@{{ page.author.twitter | remove:'@' }}">
-      {% endif %}
-
-      {% if site.author.twitter %}
-        {% unless page.author %}
-          <meta name="twitter:creator" content="@{{ site.author.twitter | remove:'@' }}">
-        {% endunless %}
-      {% endif %}
-    {% endif %}
-  {% endif %}
-
-  <!-- SEO -->
-  {% if page.robots %}
-    {% unless paginator.page %}
-      <meta name="robots" content="{{ page.robots }}">
-    {% endunless %}
-    {% if paginator.page > 1 %}
-      <meta name="robots" content="{{ page.robots }}">
-    {% endif %}
-  {% endif %}
-
-  <link rel="canonical" href="{{ page_url }}">
-
-  {% if paginator.previous_page %}
-    <link rel="prev" href="{{ paginator.previous_page_path | replace:'/index.html','/' | prepend: site_url }}">
-  {% endif %}
-
-  {% if paginator.next_page %}
-    <link rel="next" href="{{ paginator.next_page_path | replace:'/index.html','/' | prepend: site_url }}">
-  {% endif %}
-
-  {% if page.url == '/' %}
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "{{ site_title }}",
-      "url": "{{ site_url }}/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "{{ site_url }}/search/?q={searchTerms}",
-        "query-input": "required name=searchTerms"
-      }
-    }
-    </script>
-  {% endif %}
-
-  <!-- Open Search description -->
-  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_title }}">
+  {% endunless %}
 
   <!-- Feed -->
-  <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_title }}">
+  {% feed_meta %}
+
+  <!-- robotstxt.org  -->
+  {% if page.robots %}
+    <meta name="robots" content="{{ page.robots }}">
+  {% endif %}
+
+  <!-- humanstxt.org -->
+  <link type="text/plain" rel="author" href="{{ 'humans.txt' | absolute_url }}" />
+
+  <!-- Open Search description -->
+  <link type="application/opensearchdescription+xml" rel="search" href="{{ 'opensearch.xml' | absolute_url }}" title="{{ site_title }}" />
 
   <!-- Favicon & startup configuration -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ build_version }}">
@@ -164,5 +73,7 @@
   <meta name="msapplication-TileColor" content="{{ site.theme_color }}">
   <meta name="msapplication-config" content="/browserconfig.xml?v={{ build_version }}">
   <meta name="theme-color" content="{{ site.theme_color }}">
+
+  {% include about_json_ld.html %}
 
 </head>

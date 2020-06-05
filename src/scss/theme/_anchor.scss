@@ -9,7 +9,7 @@
   color: inherit;
   opacity: 0;
 
-  @media (max-width: 767px) {
+  @media (max-width: 479px) {
     display: none;
   }
 
@@ -36,7 +36,7 @@
 
 // stylelint-disable selector-no-qualifying-type
 .markdown-body,
-.archive-body {
+.archive-content {
   > h2[id],
   > h3[id],
   > h4[id] {

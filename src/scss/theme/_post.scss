@@ -23,6 +23,13 @@
   @media (max-width: 767px) {
     font-size: 14.8px;
   }
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 .post-title {
@@ -396,14 +403,25 @@
 .random-posts-footer {
   padding-top: 20px;
   text-align: center;
-}
 
-.btn--random {
-  padding: 12px 24px;
-  font-size: 15.8px;
+  .btn {
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 15.8px;
+    border: 0;
 
-  @media (max-width: 767px) {
-    padding: 10px 20px;
-    font-size: 14.8px;
+    @media (max-width: 767px) {
+      padding: 3px;
+      font-size: 14.8px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

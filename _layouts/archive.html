@@ -2,23 +2,22 @@
 layout: default
 ---
 
-<main role="main" itemprop="mainContentOfPage">
-  <article class="page-content">
+<!-- Archive page -->
+<main class="page{%if page.permalink %} page-{{ page.permalink | slugify }}{% endif %}" id="main" role="main">
 
-    {% include page_masthead.html %}
+  {% include page_masthead.html %}
 
-    <!-- Archive page content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto">
+  <!-- Archive page content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto">
 
-          {{ content }}
+        {{ content }}
 
-        </div>
       </div>
     </div>
+  </div>
 
-  </article>
 </main>
 
 {% include site_footer.html %}

@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Style guide"
 tagline: "The style guide for Milan Aryal."
 description: "A living document of code detailing all the various components used on the website to maintain visual consistency."
+layout: page
 permalink: "/style-guide/"
 sitemap: false
 robots: "noindex, follow"

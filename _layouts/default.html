@@ -3,13 +3,13 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang | replace:'-','_' }}{% endif %}" prefix="og: http://ogp.me/ns#">
+<html lang="{{ page.lang | replace:'-','_' | default: site.lang | default:'en' | downcase }}" prefix="og: http://ogp.me/ns#">
 
   {% include head.html %}
 
-  <body itemscope itemtype="https://schema.org/WebPage">
+  <body>
 
-    {% include nav_head.html %}
+    {% include site_header.html %}
 
     {{ content }}
 

@@ -47,7 +47,7 @@
 }
 
 .navbar,
-.search-page-body {
+.search-page-content {
   .form-control {
     @media (prefers-color-scheme: dark) {
       color: #ccc;
@@ -62,6 +62,16 @@
     @media (prefers-color-scheme: dark) {
       border-color: #333;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-nav {
+    margin-left: 25px;
+  }
+
+  .nav-link {
+    margin-left: 35px;
   }
 }
 

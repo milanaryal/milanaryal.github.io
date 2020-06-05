@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Example content"
 tagline: "Just an example post."
 description: "Howdy! This is an example post that shows several types of HTML content supported in this theme."
+layout: page
 permalink: "/example-content/"
 sitemap: false
 robots: "noindex, follow"

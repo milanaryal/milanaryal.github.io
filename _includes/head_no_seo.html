@@ -1,6 +1,15 @@
 {%- comment -%}<!-- _layouts/error.html, _layouts/search.html -->{%- endcomment -%}
 
-{% include metadata.html %}
+{%- include build_version.html -%}
+
+{%- assign site_title = site.title | default: site.name -%}
+{%- if site_title -%}
+  {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- endif -%}
+
+{%- if page.title -%}
+  {%- assign page_title = page.title | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- endif -%}
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,7 +17,7 @@
 <!-- Critical CSS -->
 {% include styles.html %}
 
-<title>{{ page_title }} &mdash; {{ site_title }}</title>
+<title>{{ page_title }} | {{ site_title }}</title>
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
 <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_title }}">

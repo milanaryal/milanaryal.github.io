@@ -3,27 +3,39 @@
   {%- assign page_title = page_title | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
-{%- assign page_tagline = page.tagline | default: site.tagline -%}
-{%- if page_tagline -%}
-  {%- assign page_tagline = page_tagline | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- if paginator.page > 1 -%}
+  {%- capture page_title -%}
+    Page {{ paginator.page }} of {{ paginator.total_posts }} for {{ page_title }}
+  {%- endcapture -%}
 {%- endif -%}
 
-{%- assign page_image = page.image.path | default: page.image | default: site.image.path | default: site.image -%}
+{%- if page.tagline -%}
+  {%- assign page_tagline = page.tagline | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- endif -%}
+
+{%- assign page_image = page.feature_image.path | default: page.feature_image -%}
 {%- if page_image -%}
   {%- assign page_image = page_image | escape -%}
+  {%- unless page_image contains "://" -%}
+    {%- assign page_image = page_image | escape | absolute_url -%}
+  {%- endunless -%}
 {%- endif -%}
 
 <!-- Page masthead -->
-<header class="masthead{% if paginator.page > 1 %} masthead--paginator{% endif %}" style="background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('{{ page_image }}');">
+<div class="masthead{% if paginator.page > 1 %} masthead--paginator{% endif %}" style="background-image: linear-gradient(to top, rgba(0,0,0,.44), rgba(0,0,0,.44)), url('{{ page_image }}');">
   <div class="container">
 
-    <h1 class="page-title{% if paginator.page > 1 %} page-title--paginator{% endif %}" itemprop="name">{{ page_title }}</h1>
+    <h1 class="page-title{% if paginator.page > 1 %} page-title--paginator{% endif %}">{{ page_title }}</h1>
 
-    {% unless paginator.page > 1 %}
+    {% if page_tagline %}
+
+      {% unless paginator.page > 1 %}
         <hr class="half-rule">
-    {% endunless %}
 
-    <span class="page-tagline{% if paginator.page > 1 %} page-tagline--paginator{% endif %}" itemprop="description">{{ page_tagline }}</span>
+        <p class="page-tagline{% if paginator.page > 1 %} page-tagline--paginator{% endif %}">{{ page_tagline }}</p>
+      {% endunless %}
+
+    {% endif %}
 
   </div><!-- /.container -->
-</header>
+</div>
