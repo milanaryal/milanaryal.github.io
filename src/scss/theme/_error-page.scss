@@ -40,8 +40,12 @@
 }
 
 .error-page-message--lead {
-  margin-bottom: 10px;
+  margin-bottom: 20px; // 10px
   font-size: 42px; // 32px
+  color: #fafafa;
+  text-align: center;
+  background-color: #222;
+  border-radius: 4px;
   transform: rotate(-1deg);
 
   @media (min-width: 768px) {

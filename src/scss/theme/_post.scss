@@ -258,9 +258,11 @@
     font-size: 18.8px;
   }
 
-  &:hover,
-  &:focus {
-    text-decoration: underline var(--body-color);
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: underline var(--body-color);
+    }
   }
 }
 

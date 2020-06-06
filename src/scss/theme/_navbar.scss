@@ -3,7 +3,7 @@
 //
 
 .navbar {
-  background-color: #fff;
+  background-color: #fafafa;
 
   @media (min-width: 768px) {
     // ** should be min-height if dropdown menu contents ** //
@@ -49,6 +49,8 @@
 .navbar,
 .search-page-content {
   .form-control {
+    background-color: #fafafa;
+
     @media (prefers-color-scheme: dark) {
       color: #ccc;
       background-color: #333;
@@ -90,7 +92,7 @@
 }
 
 .headroom--not-top {
-  background-color: rgba(255, 255, 255, .97);
+  background-color: rgba(#fafafa, .97); // rgba(255, 255, 255, .97);
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15); // 0 0 1px rgba(0,0,0,.15);
 }
 

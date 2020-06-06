@@ -10,7 +10,7 @@ $theme-colors-default: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors-default: map-merge(
   (
-    "body-bg":                   #fff,
+    "body-bg":                   #fafafa,
     "body-color":                rgba(0, 0, 0, .8),
     "heading-color":             rgba(0, 0, 0, .84),
     "link-color":                #00638a,
@@ -23,7 +23,9 @@ $theme-colors-default: map-merge(
     "section-divider":           rgba(0, 0, 0, .1),
     "section-divider-secondary": rgba(0, 0, 0, .05),
     "blockquote-border":         #e5e5e5,
-    "blockquote-bg":             #fafafa
+    "blockquote-bg":             #fff,
+    "pre-bg":                    #fff,
+    "code-snippet-border":       rgba(0, 0, 0, .05)
   ),
   $theme-colors-default
 );
@@ -45,7 +47,9 @@ $theme-colors-dark: map-merge(
     "section-divider":           rgba(255, 255, 255, .1),
     "section-divider-secondary": rgba(255, 255, 255, .05),
     "blockquote-border":         rgba(255, 255, 255, .1),
-    "blockquote-bg":             rgba(0, 0, 0, .1)
+    "blockquote-bg":             rgba(0, 0, 0, .1),
+    "pre-bg":                    rgba(0, 0, 0, .1),
+    "code-snippet-border":       rgba(255, 255, 255, .1)
   ),
   $theme-colors-dark
 );

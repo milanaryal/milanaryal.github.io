@@ -48,6 +48,13 @@ layout: compress
       * https://cse.google.com/cse/style/look/v2/default.css
       */
       {% endcomment %}
+      .gsc-control-cse,
+      .gsc-expansionArea,
+      .gsc-webResult.gsc-result,
+      .gsc-results .gsc-imageResult {
+        background: transparent !important;
+        border: transparent !important;
+      }
       .cse .gsc-control-cse,
       .gsc-control-cse,
       .gsc-table-result,
@@ -152,11 +159,6 @@ layout: compress
       */
       {% endcomment %}
       @media (prefers-color-scheme: dark) {
-        .gsc-expansionArea,
-        .gsc-webResult.gsc-result,
-        .gsc-results .gsc-imageResult {
-          background: transparent !important;
-        }
         .gsc-results .gsc-cursor-box .gsc-cursor-page {
           border-color: #333 !important;
           background-color: #333 !important;
