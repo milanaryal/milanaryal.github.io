@@ -36,7 +36,7 @@ webpack-demo
 + |- dist/
 ```
 
-Running a command `npx webpack src/index.js dist/bundle.js`, do our job bundling our assets in `dist/` folder and if you check out the newly created bundle.js, you will see that webpack has created some wrapper around our own code.
+Running a command `npx webpack src/index.js dist/bundle.js`, do our job bundling our assets in `dist/` folder and if you check out the newly created bundle.js, you will see that Webpack has created some wrapper around our own code.
 
 #### Defining a config file
 
@@ -61,7 +61,7 @@ module.exports = {
 
 **Entry**
 
-There are multiple ways to define the entry property in your webpack configuration.
+There are multiple ways to define the entry property in your Webpack configuration.
 
 Single Entry (Shorthand) Syntax:
 
@@ -83,7 +83,7 @@ module.exports = {
 
 **Output**
 
-Configuring the output configuration options tells webpack how to write the compiled files to disk. Note that, while there can be multiple entry points, only one output configuration is specified
+Configuring the output configuration options tells Webpack how to write the compiled files to disk. Note that, while there can be multiple entry points, only one output configuration is specified
 
 **Loader**
 
@@ -91,7 +91,7 @@ A loader is just a JavaScript module that exports a function. The loader runner 
 
 **Plugins**
 
-The plugins option is used to customize the webpack build process in a variety of ways. webpack comes with a variety built-in plugins available under webpack.[plugin-name].
+The plugins option is used to customize the Webpack build process in a variety of ways. Webpack comes with a variety built-in plugins available under webpack.[plugin-name].
 
 Example configuration for Terser Webpack plugin, Clean distribute path plugin, and Webpack native Progress plugin:
 
@@ -117,7 +117,7 @@ module.exports = {
 }
 ```
 
-#### Webpack Integration with jQuery
+#### Webpack integration with jQuery
 
 It is very easy to include jQuery plugin in our project, you just need to install it with the single npm install cli:
 
@@ -244,7 +244,7 @@ module.exports = {
 };
 ```
 
-Now, simply you can run webpack using `npx webpack`.
+Now, simply you can run Webpack using `npx webpack`.
 
 Or,
 
@@ -266,5 +266,5 @@ And, `npm run build`. And you are done!
 * [Getting started with WebPack official guides](https://webpack.js.org/guides/getting-started/){: rel="nofollow" }
 * [Essential Webpack plugins list](https://webpack.js.org/plugins/){: rel="nofollow" }
 * [Third party Webpack plugins list](https://github.com/webpack-contrib/awesome-webpack#webpack-plugins){: rel="nofollow" }
-* [Webpack 4 Tutorial - Getting Started for Beginners](https://youtu.be/TzdEpgONurw){: rel="nofollow" }, on YouTube by DesignCourse
-* [Learn Webpack Course](https://www.youtube.com/playlist?list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8){: rel="nofollow" }, on YouTube by Colt Steele
+* [Webpack 4 Tutorial - Getting Started for Beginners](https://youtu.be/TzdEpgONurw){: rel="nofollow" }, *on YouTube by Gary Simon*
+* [Learn Webpack Course](https://www.youtube.com/playlist?list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8){: rel="nofollow" }, *on YouTube by Colt Steele*
