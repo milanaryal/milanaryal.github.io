@@ -20,11 +20,12 @@
 }
 
 // Set a size for our map container, the Google Map will take up 100% of this container
+// stylelint-disable selector-max-id
 #map-canvas {
   width: 100%;
   height: 350px;
 }
-
+// stylelint-enable selector-max-id
 
 // About and contact page social links
 

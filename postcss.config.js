@@ -1,6 +1,6 @@
-const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
-const discardComments = require('postcss-discard-comments');
+const autoprefixer = require('autoprefixer')
+const cssnano = require('cssnano')
+const discardComments = require('postcss-discard-comments')
 
 module.exports = {
   plugins:

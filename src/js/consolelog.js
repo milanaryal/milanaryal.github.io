@@ -1,4 +1,4 @@
-console.log('Hello world!');
+console.log('Hello world!')
 
 var asciiArtM = `%c
 ...............          ...............
@@ -18,11 +18,15 @@ kMMMMMMMMMMMMMNl        cNMMMMMMMMMMMMMk
 lOXWMMMMN0Ol. cNMMMMMM0. .dOKWMMMMMMWXOl
 kMMMMMMMMMMk. .kMMMMMWl  .0MMMMMMMMMMMMk
 lOOOOOOOOOOl.  :kOOOOd.  .dOOOOOOOOOOOOl
-.............   ......   ...............\n\n`;
+.............   ......   ...............\n\n`
 
-var siteURL = window.location.protocol + '//' + window.location.host;
-var logMSG = 'You are visiting URL:\n';
-var currentURL = window.location.protocol + '//' + window.location.host + window.location.pathname;
+var siteURL = window.location.protocol + '//' + window.location.host
+var logMSG = 'You are visiting URL:\n'
+var currentURL =
+  window.location.protocol +
+  '//' +
+  window.location.host +
+  window.location.pathname
 
-console.log(asciiArtM + siteURL, 'font-family:monospace');
-console.log(logMSG + currentURL);
+console.log(asciiArtM + siteURL, 'font-family:monospace')
+console.log(logMSG + currentURL)

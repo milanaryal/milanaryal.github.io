@@ -1,0 +1,6 @@
+**/*.min.css
+**/vendor/
+assets/
+_includes/
+_site/
+**/_variables.scss

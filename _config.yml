@@ -140,28 +140,14 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
+  - bundle
+  - ".bundle"
   - script
-  - scripts
+  - vendor
   - src
-  - webpack.config.js
-  - postcss.config.js
+  - node_modules
   - package.json
   - package-lock.json
   - npm-debug.log
-  - node_modules
-  - vendor
-  - bundle
-  - ".bundle"
-  - ".cache"
-  - ".sass-cache"
-  - ".jekyll-cache"
-  - ".jekyll-metadata"
-  - ".browserslistrc"
-  - ".editorconfig"
-  - ".eslintignore"
-  - ".eslintrc.json"
-  - ".gitattributes"
-  - ".gitignore"
-  - ".stylelintignore"
-  - ".stylelintrc.json"
-  - ".travis.yml"
+  - webpack.config.js
+  - postcss.config.js

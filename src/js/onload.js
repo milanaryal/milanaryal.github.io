@@ -6,8 +6,6 @@
 
 // conditions when page fully loaded
 $(window).on('load', function () {
-
   // show hero page after page is fully loaded
-  $('.hero-container,.hero-profile').removeClass('is-loading');
-
-});
+  $('.hero-container,.hero-profile').removeClass('is-loading')
+})

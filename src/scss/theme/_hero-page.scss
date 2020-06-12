@@ -39,9 +39,7 @@
     background-color: #c2d0d7; // fallback
     background-image: linear-gradient(to left top, #8e9eab, #eef2f3);
     opacity: 0;
-    transition:
-      opacity 1.25s ease-in-out 0s,
-      visibility 1.25s 0s;
+    transition: visibility 1.25s 0s, opacity 1.25s ease-in-out 0s;
   }
 
   &.is-loading::before {
@@ -49,7 +47,6 @@
     opacity: 1;
   }
 }
-
 
 // Hero page profile
 
@@ -79,9 +76,7 @@
   border: 1px solid #111;
   border-radius: 4px;
   opacity: .99;
-  transition:
-    opacity 1s ease,
-    transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
   transform: perspective(1000px) rotateX(0deg);
   transform-origin: 50% 50%;
 
@@ -165,9 +160,9 @@
   }
 }
 
-
 // Hero page icons
 
+// stylelint-disable selector-no-qualifying-type
 ul.hero-social {
   padding-left: 0;
   margin: .175em 0;
@@ -200,9 +195,11 @@ ul.hero-social {
     &:hover {
       border-color: #fafafa;
 
+      // stylelint-disable selector-max-type
       svg {
         fill: #fafafa;
       }
+      // stylelint-enable selector-max-type
     }
 
     &.icon-twitter:hover {
@@ -223,6 +220,7 @@ ul.hero-social {
       background-color: $github-color;
     }
 
+    // stylelint-disable selector-max-type
     svg {
       display: block;
       width: 60%;
@@ -230,9 +228,11 @@ ul.hero-social {
       transition: fill .25s ease;
       fill: currentColor;
     }
+    // stylelint-enable selector-max-type
 
     .label {
       display: none;
     }
   }
 }
+// stylelint-enable selector-no-qualifying-type

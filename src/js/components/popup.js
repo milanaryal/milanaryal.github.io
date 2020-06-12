@@ -4,9 +4,9 @@
  * ------------------------------------------------------------------------
  */
 
-export default function socialSharePopup () {
-
+export default function socialSharePopup() {
   $('.btn--social-share-popup').on('click', function () {
+    // prettier-ignore
     var width  = 670,
         height = 420,
         left   = ($(window).width()  - width)  / 2,
@@ -18,9 +18,8 @@ export default function socialSharePopup () {
                   ',top='    + top    +
                   ',left='   + left;
 
-    window.open(url, '', opts);
+    window.open(url, '', opts)
 
-    return false;
-  });
-
+    return false
+  })
 }

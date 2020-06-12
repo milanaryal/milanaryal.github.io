@@ -77,18 +77,13 @@
   }
 }
 
-
 // Scrolling behavior
 
 .headroom {
-  transition:
-    background-color 500ms,
-    box-shadow 500ms;
+  transition: background-color 500ms, box-shadow 500ms;
   // ** Force hardware acceleration ** //
   transform: translateZ(0);
-  will-change:
-    background-color,
-    box-shadow;
+  will-change: background-color, box-shadow;
 }
 
 .headroom--not-top {

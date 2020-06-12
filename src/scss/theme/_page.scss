@@ -12,7 +12,6 @@
   }
 }
 
-
 // Page header
 
 .masthead {
@@ -84,7 +83,6 @@
   }
 }
 
-
 // Override styles for pagination
 
 .masthead--paginator {
@@ -112,7 +110,6 @@
 .page-content {
   margin-bottom: 60px; // 50px
 }
-
 
 // Site page footer
 
@@ -217,11 +214,11 @@
   @keyframes heartbeat {
     0%,
     100% {
-        transform: scale(1);
+      transform: scale(1);
     }
     10%,
     30% {
-        transform: scale(.9);
+      transform: scale(.9);
     }
     20%,
     40%,
@@ -229,7 +226,7 @@
     60%,
     70%,
     80% {
-        transform: scale(1.1);
+      transform: scale(1.1);
     }
   }
 
