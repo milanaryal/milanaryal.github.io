@@ -92,5 +92,3 @@ If you enjoy the content found here, you might like to subscribe to my <span sty
 ### [Licensing](/fine-print/)
 
 Except as otherwise noted, the content of this site is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/){: target="_blank" rel="noopener nofollow" }, and code samples are licensed under the [MIT license](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE){: target="_blank" rel="noopener" }.
-
-*Incase, if you are looking for a [contact page](/contact/).*

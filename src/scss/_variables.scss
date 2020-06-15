@@ -81,7 +81,7 @@ $hr-border:                 rgba(0, 0, 0, .05) !default;
 
 $enable-responsive-font-sizes:                true !default;
 
-// Brand colors (http://brand-colors.com, http://brandcolors.net)
+// Brand colors (http://brandcolors.net), (https://brand-colors.re.im)
 //
 // Official color codes for the world's biggest brands.
 
@@ -100,11 +100,5 @@ $twitter-color:             #55acee !default;
 $vimeo-color:               #1ab7ea !default; // has multi colors
 $youtube-color:             #cd201f !default;
 $github-color:              #333 !default;    // has multi colors
-
-// NProgress
-//
-// Loading bar custom settings.
-
-$nprogress-color:           #0074d9 !default; // last update #29d, #77b6ff
-$nprogress-height:          2px !default;
-$nprogress-zindex:          1031 !default;
+$telegram-color:            #08c !default;
+$facebook-messenger-color:  #0084ff !default;

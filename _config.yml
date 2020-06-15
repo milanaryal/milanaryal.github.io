@@ -13,10 +13,8 @@ nav:
     url: "/blog/"
   - title: "About"
     url: "/about/"
-#  - title: "Contact"
-#    url: "/contact/"
-#  - title: "Random"
-#    url: "/random/"
+  - title: "Contact"
+    url: "/contact/"
 
 author:
   name: "Milan Aryal"
