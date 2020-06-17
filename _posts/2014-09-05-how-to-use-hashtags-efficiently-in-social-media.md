@@ -20,7 +20,7 @@ There are literally billions of posts on Facebook daily. So how to you plan to g
 
 Moreover, you can search for topics relevant to your business and provide your expert suggestions in conversations or as comments. This is easy marketing to gain more customers. Hashtags can lower the effort required to search for new audience that can be potential leads.
 
-**2. Promote your brand effectively:** Creating unique hashtags for your Facebook page can help you amplify your promotion process. Face the reality no one would want to share a long post solely promoting your product.  You can break down your product information into several smaller easy to share posts marked with the same hashtag. This ensures that your information is shared in larger numbers and is still filed under a common tag.
+**2. Promote your brand effectively:** Creating unique hashtags for your Facebook page can help you amplify your promotion process. Face the reality no one would want to share a long post solely promoting your product. You can break down your product information into several smaller easy to share posts marked with the same hashtag. This ensures that your information is shared in larger numbers and is still filed under a common tag.
 
 **3. Think cross platform:** The most fascinating feature of Facebook hashtags is that it feeds you results not only from Facebook but from Twitter, Instagram, Google+, Pinterest and LinkedIn as well. So you can market your ideas across several social media platforms, still all your posts will be linked together. So even if you post an update on Google+, you can get responses from Facebook or Twitter. Isn’t it amazing?
 

@@ -13,9 +13,9 @@ If you have not bookmarked my new web address then do bookmark [https://milanary
 
 ---
 
-Thanks for the following web resources to maintain [my new Website](https://milanaryal.com.np) at no cost ($0).
+Thanks for the following web resources to maintain [my new Website](https://milanaryal.com.np) at no cost (\$0).
 
-* Mercantile Communications Pvt. Ltd. Nepal's official [.np Domain Registration](https://register.com.np){: rel="nofollow" }
-* [Cloudflare](https://www.cloudflare.com){: rel="nofollow" } free DNS management
-* [GitHub Pages](https://pages.github.com){: rel="nofollow" } for web hosting
-* Blogging with [Jekyll](https://jekyllrb.com){: rel="nofollow" }
+- Mercantile Communications Pvt. Ltd. Nepal's official [.np Domain Registration](https://register.com.np){:rel="nofollow"}
+- [Cloudflare](https://www.cloudflare.com){:rel="nofollow"} free DNS management
+- [GitHub Pages](https://pages.github.com){:rel="nofollow"} for web hosting
+- Blogging with [Jekyll](https://jekyllrb.com){:rel="nofollow"}

@@ -1,9 +1,15 @@
 {
-  "printWidth": 80,
-  "trailingComma": "es5",
-  "semi": false,
-  "singleQuote": true,
   "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "parser": "babel",
+        "printWidth": 80,
+        "trailingComma": "es5",
+        "semi": false,
+        "singleQuote": true
+      }
+    },
     {
       "files": "*.{css,scss}",
       "options": {
@@ -15,6 +21,7 @@
       "files": "*.md",
       "options": {
         "parser": "markdown",
+        "semi": true,
         "singleQuote": false
       }
     },
@@ -29,6 +36,13 @@
       "files": "*.json",
       "options": {
         "parser": "json",
+        "singleQuote": false
+      }
+    },
+    {
+      "files": "*.yml",
+      "options": {
+        "parser": "yaml",
         "singleQuote": false
       }
     }

@@ -16,20 +16,14 @@ Study participants, all of whom were over the age of 16, had normal color vision
 
 The results:
 
-* In order for men to see the same color hue as women, they had to view a slightly longer wavelength.
-* Men had more trouble than women discerning specific colors in the center of the spectrum.
-* Men were better able than women to see images that changed rapidly.
+- In order for men to see the same color hue as women, they had to view a slightly longer wavelength.
+- Men had more trouble than women discerning specific colors in the center of the spectrum.
+- Men were better able than women to see images that changed rapidly.
 
-"As with other senses, such as hearing and the olfactory system, there are marked sex differences in vision between men and women," study leader *Israel Abramov* said in a news release.
+"As with other senses, such as hearing and the olfactory system, there are marked sex differences in vision between men and women," study leader _Israel Abramov_ said in a news release.
 
 ### Color naming: men keep it simple
 
 What may be simply "purple" to a man, could be grape, plum or any other fruit-like variant to a woman.
 
-{% capture figure %}
 [![How men and women see colors](/uploads/20140618-how-men-and-women-see-colors.png)](/uploads/20140618-how-men-and-women-see-colors.png)
-{% endcapture %}
-
-<figure>
-  {{ figure | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}
-</figure>

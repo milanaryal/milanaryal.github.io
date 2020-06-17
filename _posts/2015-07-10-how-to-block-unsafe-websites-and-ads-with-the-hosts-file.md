@@ -5,13 +5,13 @@ last_modified_at: 2020-04-15T11:55:00+05:45
 excerpt: "Blocking unwanted sites and ads in all of your applications globally and speed up browsing with the hosts file on your PC."
 ---
 
-Browser extensions like [uBlock Origin](https://github.com/gorhill/uBlock){: rel="nofollow" } and, [AdBlock](https://getadblock.com/){: rel="nofollow" } are very popular to blocking various annoying ads. But these are only for browsers what if you want to block these annoying ads globally in your PC for every applications, so here's the hosts file to help you.
+Browser extensions like [uBlock Origin](https://github.com/gorhill/uBlock){:rel="nofollow"} and, [AdBlock](https://getadblock.com/){:rel="nofollow"} are very popular to blocking various annoying ads. But these are only for browsers what if you want to block these annoying ads globally in your PC for every applications, so here's the hosts file to help you.
 
 ### What is a hosts file?
 
 A hosts file, named `hosts` (with no file extension), is a plain-text file used by all operating systems to map hostnames to IP addresses.
 
-In most operating systems, the `hosts` file is preferential to `DNS`.  Therefore if a host name is resolved by the `hosts` file, the request never leaves your computer.
+In most operating systems, the `hosts` file is preferential to `DNS`. Therefore if a host name is resolved by the `hosts` file, the request never leaves your computer.
 
 #### File content
 
@@ -29,12 +29,12 @@ This example only contains entries for the loopback addresses of the system and 
 
 The location of the hosts file in the file system hierarchy varies by operating system. It is usually named hosts, without an extension. To modify your current `hosts` file, look for it in the following places and modify it with a text editor.
 
-| Operating System              | Location
-|-------------------------------|-------------------------------------------------------
-| Linux                         | `/etc/hosts`
-| macOS, iOS                    | `/etc/hosts` (a symbolic link to `/private/etc/hosts`)
-| Android                       | `/etc/hosts` (a symbolic link to `/system/etc/hosts`)
-| Windows                       | `%SystemRoot%\System32\drivers\etc\hosts`
+| Operating System | Location                                               |
+| ---------------- | ------------------------------------------------------ |
+| Linux            | `/etc/hosts`                                           |
+| macOS, iOS       | `/etc/hosts` (a symbolic link to `/private/etc/hosts`) |
+| Android          | `/etc/hosts` (a symbolic link to `/system/etc/hosts`)  |
+| Windows          | `%SystemRoot%\System32\drivers\etc\hosts`              |
 
 ### Blocking with hosts file
 
@@ -114,16 +114,16 @@ If you have a hosts file already, make a backup of it to another directory just 
 
 You can create your own hosts file, adding different ad servers you hunt down to your list, but that's a lot of effort. A simpler solution is to use a community created hosts file. You can find pre-made lists of ad network files by googling or get a community provided file from following listed sites:
 
-* [Dan Pollock's hosts file](https://someonewhocares.org/hosts/hosts){: rel="nofollow" } -- [*Home page*](https://someonewhocares.org/hosts/){: rel="nofollow" }
-* [MVPS HOSTS](https://winhelp2002.mvps.org/hosts.txt){: rel="nofollow" } -- [*Home page*](https://winhelp2002.mvps.org/){: rel="nofollow" }
-* [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext){: rel="nofollow" } -- [*Home page*](https://pgl.yoyo.org/adservers/){: rel="nofollow" }
+- [Dan Pollock's hosts file](https://someonewhocares.org/hosts/hosts){:rel="nofollow"} -- [_Home page_](https://someonewhocares.org/hosts/){:rel="nofollow"}
+- [MVPS HOSTS](https://winhelp2002.mvps.org/hosts.txt){:rel="nofollow"} -- [_Home page_](https://winhelp2002.mvps.org/){:rel="nofollow"}
+- [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext){:rel="nofollow"} -- [_Home page_](https://pgl.yoyo.org/adservers/){:rel="nofollow"}
 
-For more reviewed lists, *visit*:
+For more reviewed lists, _visit_:
 
-* [Host Blacklists Reviewed](https://linuxreviews.org/Comparison_of_HOST_file_blacklists#Host_Blacklists_Reviewed){: rel="nofollow" }
+- [Host Blacklists Reviewed](https://linuxreviews.org/Comparison_of_HOST_file_blacklists#Host_Blacklists_Reviewed){:rel="nofollow"}
 
 Don't worry about a larger file making your PC slower. There is nothing those hosts can do to load anything on your PC. Even the largest files will actually make your PC feel faster.
 
 ---
 
-*Currently free websites that depend on advertising revenue would quickly disappear with we blocked all advertising. Please consider whitelisting the domain. Thank you <3*
+_Currently free websites that depend on advertising revenue would quickly disappear with we blocked all advertising. Please consider whitelisting the domain. Thank you <3_

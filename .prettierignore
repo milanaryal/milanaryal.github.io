@@ -4,3 +4,5 @@ assets/
 _includes/
 _site/
 **/_variables.scss
+posts.json
+randomi.json

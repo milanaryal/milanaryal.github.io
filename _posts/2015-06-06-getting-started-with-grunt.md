@@ -27,10 +27,10 @@ $ npm install -g grunt-cli
 
 Lets break that down:
 
-* `npm` tells terminal/cmd what program we're commanding.
-* `install` is the command.
-* `-g` is an argument (a kind of optional bit of info) for the command short way of saying `--global` This means we're installing Grunt globally on our system. This is a good thing. You want to be able to use it everywhere.
-* `grunt-cli` is another argument. This time telling npm what you want to install. In this instance the Grunt Command Line Interface.
+- `npm` tells terminal/cmd what program we're commanding.
+- `install` is the command.
+- `-g` is an argument (a kind of optional bit of info) for the command short way of saying `--global` This means we're installing Grunt globally on our system. This is a good thing. You want to be able to use it everywhere.
+- `grunt-cli` is another argument. This time telling npm what you want to install. In this instance the Grunt Command Line Interface.
 
 You should close and reopen the terminal as well. That's a generic good practice to make sure things are working right. Kinda like restarting your computer after you install a new application was in the olden days.
 
@@ -48,9 +48,9 @@ The `package.json` file belongs in the root directory of your project, next to t
 
 There are a few ways to create a `package.json` file for your project:
 
-* Most [grunt-init](http://gruntjs.com/project-scaffolding){:rel="nofollow"} templates will automatically create a project-specific `package.json` file.
-* The [npm init](http://docs.npmjs.com/cli/init){:rel="nofollow"} command will create a basic `package.json` file.
-* Start with the example below, and expand as needed, following this [specification](http://docs.npmjs.com/files/package.json){:rel="nofollow"}.
+- Most [grunt-init](http://gruntjs.com/project-scaffolding){:rel="nofollow"} templates will automatically create a project-specific `package.json` file.
+- The [npm init](http://docs.npmjs.com/cli/init){:rel="nofollow"} command will create a basic `package.json` file.
+- Start with the example below, and expand as needed, following this [specification](http://docs.npmjs.com/files/package.json){:rel="nofollow"}.
 
 ```json
 {
@@ -158,10 +158,10 @@ The `Gruntfile.js` or `Gruntfile.coffee` file is a valid JavaScript or CoffeeScr
 
 A `Gruntfile` is comprised of the following parts:
 
-* The "wrapper" function
-* Project and task configuration
-* Loading Grunt plugins and tasks
-* Custom tasks
+- The "wrapper" function
+- Project and task configuration
+- Loading Grunt plugins and tasks
+- Custom tasks
 
 ```js
 /*!
@@ -219,32 +219,31 @@ Now we're ready to use it. To use it we need to start configuring Grunt and tell
  */
 
 module.exports = function (grunt) {
-  'use strict';
+  "use strict";
 
   // Project configuration.
   grunt.initConfig({
-
     // Metadata.
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON("package.json"),
 
     // Task(s) configuration.
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner:
+          '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
       },
       build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    }
+        src: "src/<%= pkg.name %>.js",
+        dest: "build/<%= pkg.name %>.min.js",
+      },
+    },
   });
 
   // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks("grunt-contrib-uglify");
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
-
+  grunt.registerTask("default", ["uglify"]);
 };
 ```
 
@@ -260,7 +259,7 @@ An incredibly active community of developers is building front-end plugins, you 
 
 This is the basic foundation for learning Grunt, you can learn more by the following links:
 
-* The [getting started](http://gruntjs.com/getting-started/){:rel="nofollow"} with grunt guide
-* The [installing grunt](http://gruntjs.com/installing-grunt/){:rel="nofollow"} guide
-* The [configuring tasks](http://gruntjs.com/configuring-tasks/){:rel="nofollow"} guide
-* The [creating tasks](http://gruntjs.com/creating-tasks/){:rel="nofollow"} guide
+- The [getting started](http://gruntjs.com/getting-started/){:rel="nofollow"} with grunt guide
+- The [installing grunt](http://gruntjs.com/installing-grunt/){:rel="nofollow"} guide
+- The [configuring tasks](http://gruntjs.com/configuring-tasks/){:rel="nofollow"} guide
+- The [creating tasks](http://gruntjs.com/creating-tasks/){:rel="nofollow"} guide

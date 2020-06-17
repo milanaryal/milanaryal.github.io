@@ -14,7 +14,7 @@ To get started, just [sign up for a free trial EasyRedir account](http://dashboa
 
 <figure>
   <a href="/uploads/20150830-easyredir-sign-up-form-screen-shot-2015-08-29-at-9-15-49-am.png">
-    <img src="/uploads/20150830-easyredir-sign-up-form-screen-shot-2015-08-29-at-9-15-49-am.png" alt="EasyRedir sign up form">
+    <img src="/uploads/20150830-easyredir-sign-up-form-screen-shot-2015-08-29-at-9-15-49-am.png" alt="EasyRedir sign up form" />
   </a>
 </figure>
 
@@ -22,7 +22,7 @@ After you create your account you're prompted to set up your first redirect. It'
 
 <figure>
   <a href="/uploads/20150830-easyredir-set-up-form-screen-shot-2015-08-29-at-9-19-29-am.png">
-    <img src="/uploads/20150830-easyredir-set-up-form-screen-shot-2015-08-29-at-9-19-29-am.png?" alt="EasyRedir set up form">
+    <img src="/uploads/20150830-easyredir-set-up-form-screen-shot-2015-08-29-at-9-19-29-am.png?" alt="EasyRedir set up form" />
   </a>
 </figure>
 
@@ -30,7 +30,7 @@ Once you enter that information EasyRedir will tell you how to configure the DNS
 
 <figure>
   <a href="/uploads/20150830-easyredir-configuration-screen-shot-2015-08-29-at-9-22-07-am.png">
-    <img src="/uploads/20150830-easyredir-configuration-screen-shot-2015-08-29-at-9-22-07-am.png" alt="EasyRedir configuration">
+    <img src="/uploads/20150830-easyredir-configuration-screen-shot-2015-08-29-at-9-22-07-am.png" alt="EasyRedir configuration" />
   </a>
 </figure>
 

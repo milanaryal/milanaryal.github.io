@@ -7,7 +7,7 @@ Webpack is an awesome bundler for javascript and friends. Developing web apps, W
 
 If you have used task runner like Gulp or Grunt, you may feel Webpack a little confusing but with time and practice you will explore it even powerful and awesome.
 
-Webpack bundle our all assets like javascript, stylesheet, images, etc. but here as a starter I will only cover javascript part. After you learn using Webpack plugins you can easily and config any plugins to bundler your other assets for your web project. 
+Webpack bundle our all assets like javascript, stylesheet, images, etc. but here as a starter I will only cover javascript part. After you learn using Webpack plugins you can easily and config any plugins to bundler your other assets for your web project.
 
 #### Installing Webpack
 
@@ -44,18 +44,18 @@ From Webpack 4, it is zero configuration but for the complex settings we need a 
 
 ```js
 module.exports = {
-  entry: './path/to/my/entry/file.js',
+  entry: "./path/to/my/entry/file.js",
   output: {
     // ...
   },
   module: {
     rules: [
       // ...
-    ]
+    ],
   },
   plugins: [
     // ...
-  ]
+  ],
 };
 ```
 
@@ -67,7 +67,7 @@ Single Entry (Shorthand) Syntax:
 
 ```js
 module.exports = {
-  entry: './path/to/my/entry/file.js'
+  entry: "./path/to/my/entry/file.js",
 };
 ```
 
@@ -76,8 +76,8 @@ The single entry syntax for the entry property is a shorthand for:
 ```js
 module.exports = {
   entry: {
-    main: './path/to/my/entry/file.js'
-  }
+    main: "./path/to/my/entry/file.js",
+  },
 };
 ```
 
@@ -128,7 +128,7 @@ npm install --save jquery
 and import it on our index.js file:
 
 ```js
-import $ from 'jquery';
+import $ from "jquery";
 ```
 
 **Alternatively, use `webpack.ProvidePlugin`**
@@ -141,8 +141,8 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
-      jQuery: "jquery"
-    })
+      jQuery: "jquery",
+    }),
   ],
   // ...
 };
@@ -156,10 +156,10 @@ If you want to use slim version of jQuery you can enforce it in our project with
 module.exports = {
   // ...
   resolve: {
-    extensions: ['.js'],
+    extensions: [".js"],
     alias: {
-      'jquery': 'jquery/dist/jquery.slim.js',
-    }
+      jquery: "jquery/dist/jquery.slim.js",
+    },
   },
   // ...
 };
@@ -188,17 +188,17 @@ Import your scripts in your `src/index.js` file something like:
 Simple `webpack.config.js` file in your project root folder to bundle our scripts in folder `dist/`:
 
 ```js
-const webpack = require('webpack');
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+const webpack = require("webpack");
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   // mode: 'production',
-  entry: './src/js/index.js',
+  entry: "./src/js/index.js",
   output: {
-    path: path.resolve(__dirname, './dist/'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, "./dist/"),
+    filename: "bundle.js",
   },
   module: {
     rules: [
@@ -206,40 +206,40 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      }
-    ]
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+    ],
   },
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin(
-      {
+    minimizer: [
+      new TerserPlugin({
         terserOptions: {
           output: {
             comments: false,
           },
         },
         extractComments: false,
-      })
+      }),
     ],
   },
   plugins: [
     new webpack.ProgressPlugin(),
     new webpack.ProvidePlugin({
       $: "jquery",
-      jQuery: "jquery"
+      jQuery: "jquery",
     }),
     new CleanWebpackPlugin(),
   ],
   resolve: {
-    extensions: ['.js'],
+    extensions: [".js"],
     alias: {
-      'jquery': 'jquery/dist/jquery.slim.js',
-    }
+      jquery: "jquery/dist/jquery.slim.js",
+    },
   },
 };
 ```
@@ -254,7 +254,7 @@ You can use npm scripts with the following setup:
 {
   "scripts": {
     "build": "webpack --mode=production --config webpack.config.js",
-    "dev": "webpack --mode=development --config webpack.config.js",
+    "dev": "webpack --mode=development --config webpack.config.js"
   }
 }
 ```
@@ -263,8 +263,8 @@ And, `npm run build`. And you are done!
 
 #### Further resources
 
-* [Getting started with WebPack official guides](https://webpack.js.org/guides/getting-started/){: rel="nofollow" }
-* [Essential Webpack plugins list](https://webpack.js.org/plugins/){: rel="nofollow" }
-* [Third party Webpack plugins list](https://github.com/webpack-contrib/awesome-webpack#webpack-plugins){: rel="nofollow" }
-* [Webpack 4 Tutorial - Getting Started for Beginners](https://youtu.be/TzdEpgONurw){: rel="nofollow" }, *on YouTube by Gary Simon*
-* [Learn Webpack Course](https://www.youtube.com/playlist?list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8){: rel="nofollow" }, *on YouTube by Colt Steele*
+- [Getting started with WebPack official guides](https://webpack.js.org/guides/getting-started/){:rel="nofollow"}
+- [Essential Webpack plugins list](https://webpack.js.org/plugins/){:rel="nofollow"}
+- [Third party Webpack plugins list](https://github.com/webpack-contrib/awesome-webpack#webpack-plugins){:rel="nofollow"}
+- [Webpack 4 Tutorial - Getting Started for Beginners](https://youtu.be/TzdEpgONurw){:rel="nofollow"}, _on YouTube by Gary Simon_
+- [Learn Webpack Course](https://www.youtube.com/playlist?list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8){:rel="nofollow"}, _on YouTube by Colt Steele_

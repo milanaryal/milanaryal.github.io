@@ -8,12 +8,6 @@ If you're using [Bootstrap](http://getbootstrap.com/){:rel="nofollow"} to develo
 
 Mostly everything in these posts are coming directly from the documentation itself. So hopefully some of these you immediately recognize and others you'll wonder how you missed that.
 
-### Table of contents
-{:.no_toc}
-
-* Table of contents placeholder
-{:toc}
-
 ### Responsive images with Bootstrap
 
 Working with larger images may be a problem for smaller devices. Bootstrap uses a class of `.img-responsive` to make any image responsive:
@@ -29,7 +23,7 @@ Working with larger images may be a problem for smaller devices. Bootstrap uses 
 This combination of `max-width: 100%` and `height: auto` will ensure the images scale down proportionally in smaller devices, while staying within the parent element's constraints on larger devices.
 
 ```html
-<img src="..." class="img-responsive" alt="Responsive image">
+<img src="..." class="img-responsive" alt="Responsive image" />
 ```
 
 #### Responsive images with Bootstrap using jQuery
@@ -38,7 +32,7 @@ Let suppose on your blog you have already posted 600+ posts and what if you want
 
 ```js
 $(document).ready(function () {
-  $('img').addClass('img-responsive');
+  $("img").addClass("img-responsive");
 });
 ```
 
@@ -96,12 +90,18 @@ When Bootstrap 3.2 came out, it came out with an additional helper class to make
 ```html
 <!-- 16:9 aspect ratio -->
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+  <iframe
+    class="embed-responsive-item"
+    src="//www.youtube.com/embed/ePbKGoIGAXY"
+  ></iframe>
 </div>
 
 <!-- 4:3 aspect ratio -->
 <div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+  <iframe
+    class="embed-responsive-item"
+    src="//www.youtube.com/embed/ePbKGoIGAXY"
+  ></iframe>
 </div>
 ```
 
@@ -123,19 +123,23 @@ Following jQuery snippet will help you to find YouTube or Vimeo videos and also 
 
 ```js
 $(document).ready(function () {
-
   // For embed YouTube videos
-  $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-  $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
+  $('iframe[src*="youtube.com"]').wrap(
+    '<div class="embed-responsive embed-responsive-16by9"></div>'
+  );
+  $('iframe[src*="youtube.com"]').addClass("embed-responsive-item");
 
   // For embed Vimeo videos
-  $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-  $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
+  $('iframe[src*="vimeo.com"]').wrap(
+    '<div class="embed-responsive embed-responsive-16by9"></div>'
+  );
+  $('iframe[src*="vimeo.com"]').addClass("embed-responsive-item");
 
   // For SlideShare slides
-  $('iframe[src*="slideshare.net"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-  $('iframe[src*="slideshare.net"]').addClass('embed-responsive-item');
-
+  $('iframe[src*="slideshare.net"]').wrap(
+    '<div class="embed-responsive embed-responsive-16by9"></div>'
+  );
+  $('iframe[src*="slideshare.net"]').addClass("embed-responsive-item");
 });
 ```
 
@@ -176,11 +180,9 @@ Here we're using jQuery method to add the necessary Bootstrap classes to have re
 
 ```js
 $(document).ready(function () {
-  $('table').wrap('<div class="table-responsive"></div>');
-  $('table').addClass('table');
+  $("table").wrap('<div class="table-responsive"></div>');
+  $("table").addClass("table");
 });
 ```
-
----
 
 Hope that helps someone!

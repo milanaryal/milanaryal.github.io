@@ -16,7 +16,13 @@ Services such as YouTube provide code that you can copy and paste into your own 
 
 ```html
 <!-- Copy & Pasted from YouTube -->
-<iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M" frameborder="0" allowfullscreen></iframe>
+<iframe
+  width="560"
+  height="315"
+  src="//www.youtube.com/embed/Y1xs_xPb46M"
+  frameborder="0"
+  allowfullscreen
+></iframe>
 ```
 
 This iframe enables external content to be displayed on your website, because it includes a URL that points to the source of the streamed content.
@@ -33,23 +39,29 @@ With <a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video"
 ```html
 <div class="video-wrapper">
   <!-- Copy & Pasted from YouTube -->
-  <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M" frameborder="0" allowfullscreen></iframe>
+  <iframe
+    width="560"
+    height="315"
+    src="//www.youtube.com/embed/Y1xs_xPb46M"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
 </div>
 ```
 
 ```css
 .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
 .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 ```
 
@@ -63,18 +75,18 @@ We can again look to Thierry's solution for adding additional CSS and imposing a
 
 ```css
 .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
 .video-wrapper object,
-.video-wrapper embed,  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.video-wrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 ```
 
@@ -104,7 +116,7 @@ A more current solution is to use just a script -- such as <a href="http://toddm
   <!-- html above -->
   <script src="dist/fluidvids.js"></script>
   <script>
-  // fluidvids module available
+    // fluidvids module available
   </script>
 </body>
 ```
@@ -115,8 +127,8 @@ Pass in your configuration:
 // fluidvids module available
 <script>
   fluidvids.init({
-    selector: ['iframe', 'object'], // runs querySelectorAll()
-    players: ['www.youtube.com', 'player.vimeo.com'] // players to support
+    selector: ["iframe", "object"], // runs querySelectorAll()
+    players: ["www.youtube.com", "player.vimeo.com"], // players to support
   });
 </script>
 ```
@@ -124,14 +136,14 @@ Pass in your configuration:
 To add other services like SlideShare to FluidVids:
 
 ```js
-players: ['www.youtube.com', 'player.vimeo.com', 'www.slideshare.net'] // players to support
+players: ["www.youtube.com", "player.vimeo.com", "www.slideshare.net"]; // players to support
 ```
 
 That's all you need to do to make videos resize on all devices that support JavaScript. It works not only for YouTube, but for Vimeo and even SlideShare too. The problem, however, is that if you users don't have JavaScript support or the JavaScript hasn't loaded yet or JavaScript hasn't loaded correctly, the only fallback you can use is to add the following to your style sheet:
 
 ```css
 iframe {
-    max-width: 100%;
+  max-width: 100%;
 }
 ```
 
@@ -144,11 +156,28 @@ If you're developing a responsive website using a content management system, the
 We can just use <a href="http://embedresponsively.com" rel="nofollow">EmbedResponsively.com</a> to generate the copy-paste-code with one click.
 
 ```css
-.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 ```
 
 ```html
-<div class="embed-container"> <!-- Your iframe content here --> </div>
+<div class="embed-container"><!-- Your iframe content here --></div>
 ```
 
 ### Putting it all together

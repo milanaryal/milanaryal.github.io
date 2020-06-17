@@ -13,7 +13,9 @@ If you're hosting the site on GitHub Pages using Jekyll, they inject the source 
 
 ```html
 {% raw %}
-<a href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.path }}">
+<a
+  href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.path }}"
+>
   Edit this page on GitHub
 </a>
 {% endraw %}
@@ -23,7 +25,9 @@ Example for output URL of above input URL:
 
 ```html
 {% raw %}
-<a href="http://github.com/username/username.github.io/edit/master/_posts/yyyy-mm-dd-your-post-title.md">
+<a
+  href="http://github.com/username/username.github.io/edit/master/_posts/yyyy-mm-dd-your-post-title.md"
+>
   Edit this page on GitHub
 </a>
 {% endraw %}
@@ -35,7 +39,9 @@ Example for output URL of above input URL:
 
 ```html
 {% raw %}
-<a href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.relative_path }}">
+<a
+  href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.relative_path }}"
+>
   Edit this page on GitHub
 </a>
 {% endraw %}
@@ -47,7 +53,9 @@ If you are using [Prose](http://github.com/prose/prose){:rel="nofollow"} to mana
 
 ```html
 {% raw %}
-<a href="http://prose.io/#{{ site.repo }}/edit/{{ site.branch }}/{{ page.path }}">
+<a
+  href="http://prose.io/#{{ site.repo }}/edit/{{ site.branch }}/{{ page.path }}"
+>
   Edit this page
 </a>
 {% endraw %}
@@ -61,7 +69,9 @@ You can add link of a source code of a post or doc on GitHub.
 
 ```html
 {% raw %}
-<a href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.path }}">
+<a
+  href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.path }}"
+>
   View source
 </a>
 {% endraw %}
@@ -71,7 +81,9 @@ You can add link of a source code of a post or doc on GitHub.
 
 ```html
 {% raw %}
-<a href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.relative_path }}">
+<a
+  href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.relative_path }}"
+>
   View source
 </a>
 {% endraw %}
@@ -85,7 +97,9 @@ Like ways you can also add view revision history link which shows all the commit
 
 ```html
 {% raw %}
-<a href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.path }}">
+<a
+  href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.path }}"
+>
   View revision history
 </a>
 {% endraw %}
@@ -95,7 +109,9 @@ Like ways you can also add view revision history link which shows all the commit
 
 ```html
 {% raw %}
-<a href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.relative_path }}">
+<a
+  href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.relative_path }}"
+>
   View revision history
 </a>
 {% endraw %}

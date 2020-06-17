@@ -24,9 +24,9 @@ One might argue that "we already have browser cache!, we don't need prefetch!". 
 
 Browsers can analyze patterns to predict where users are going to go next, and start DNS resolution and TCP handshakes as soon as users hover over links. But to get the most out of these improvements, we can enable prebrowsing on our web pages, with three techniques at our disposal:
 
-* DNS prefetching
-* Link/resource prefetching
-* Prerendering
+- DNS prefetching
+- Link/resource prefetching
+- Prerendering
 
 ### DNS prefetching
 
@@ -35,7 +35,7 @@ DNS is the protocol that converts human readable domains `http://www.google.com`
 To improve the speed of redirects, content authors can add the following tag to their page:
 
 ```html
-<link rel="dns-prefetch" href="//host_name_to_prefetch.com">
+<link rel="dns-prefetch" href="//host_name_to_prefetch.com" />
 ```
 
 For example:
@@ -43,11 +43,11 @@ For example:
 ```html
 <html>
   <head>
-    <link rel="dns-prefetch" href="//www.domain1.com">
-    <link rel="dns-prefetch" href="//www.domain2.com">
+    <link rel="dns-prefetch" href="//www.domain1.com" />
+    <link rel="dns-prefetch" href="//www.domain2.com" />
   </head>
   <body>
-    <img src="www.domain1.com/image1.jpeg">
+    <img src="www.domain1.com/image1.jpeg" />
     <script src="www.domain2.com/script1.js"></script>
   </body>
 </html>
@@ -60,9 +60,9 @@ Link prefetching is a browser mechanism, which utilizes browser idle time to dow
 Standard link prefetching (executed by most modern browsers):
 
 ```html
-<link rel="prefetch" href="/css/style.css">
-<link rel="prefetch" href="/js/scripts.js">
-<link rel="prefetch" href="/img/big.jpeg">
+<link rel="prefetch" href="/css/style.css" />
+<link rel="prefetch" href="/js/scripts.js" />
+<link rel="prefetch" href="/img/big.jpeg" />
 ```
 
 ### Prerendering
@@ -72,42 +72,42 @@ Prerendering extends the concept of prefetching. Instead of just downloading the
 You can trigger prerendering by inserting a link element with a rel of "prerender", for example:
 
 ```html
-<link rel="prerender" href="http://example.org/index.html">
+<link rel="prerender" href="http://example.org/index.html" />
 ```
 
 Situations in which prerendering is aborted:
 
-* The URL initiates a download
-* HTMLAudio or Video in the page
-* POST, PUT, and DELETE XMLHTTPRequests
-* HTTP Authentication
-* HTTPS pages
-* Pages that trigger the malware warning
-* Popup/window creation
-* Detection of high resource utilization
-* Developer Tools is open
+- The URL initiates a download
+- HTMLAudio or Video in the page
+- POST, PUT, and DELETE XMLHTTPRequests
+- HTTP Authentication
+- HTTPS pages
+- Pages that trigger the malware warning
+- Popup/window creation
+- Detection of high resource utilization
+- Developer Tools is open
 
 ### Inject prefetch hints at runtime
 
 You can trigger the prefetch hints when you predict that a user action will require the download of additional content:
 
 ```js
-var hint =document.createElement("link")
-hint.setAttribute("rel","prerender")
-hint.setAttribute("href","next-page.html")
-document.getElementsByTagName("head")[0].appendChild(hint)
+var hint = document.createElement("link");
+hint.setAttribute("rel", "prerender");
+hint.setAttribute("href", "next-page.html");
+document.getElementsByTagName("head")[0].appendChild(hint);
 ```
 
 ### Browser support
 
 | Browser | dns-prefetch | subresource | prefetch | prerender |
-|---------|--------------|-------------|----------|-----------|
+| ------- | ------------ | ----------- | -------- | --------- |
 | Firefox | 3.5+         | n/a         | 3.5+     | n/a       |
 | Chrome  | 1.0+         | 1.0+        | 1.0+     | 13+       |
 | Safari  | 5.01+        | n/a         | n/a      | n/a       |
 | IE      | 9+(prefetch) | n/a         | 10+      | 11+       |
 
-*Internet Explorer 9 supports DNS pre-fetching, but calls it prefetch. In Internet Explorer 10+, dns-prefetch and prefetch are equivalent, resulting in a DNS pre-fetch in both cases.*
+_Internet Explorer 9 supports DNS pre-fetching, but calls it prefetch. In Internet Explorer 10+, dns-prefetch and prefetch are equivalent, resulting in a DNS pre-fetch in both cases._
 
 ---
 
@@ -134,6 +134,7 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 </figure>
 
 {% comment %}
+
 <!--- ### Steve Souders | Pre-browsing | Fronteers 2013</a>
 
 <figure>
@@ -141,18 +142,19 @@ document.getElementsByTagName("head")[0].appendChild(hint)
 
   <figcaption><a href="http://vimeo.com/77176315" rel="nofollow">Steve Souders | Pre-browsing | Fronteers 2013</a>.</figcaption>
 </figure> --->
+
 {% endcomment %}
 
 ---
 
 ### Further resources
 
-* [Prebrowsing](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/){:rel="nofollow"} - Steve Souders
-* [Link prefetching](http://en.wikipedia.org/wiki/Link_prefetching){:rel="nofollow"} - Wikipedia
-* [DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching){:rel="nofollow"} - The Chromium Projects
-* [Pre-Resolve DNS](http://developers.google.com/speed/pagespeed/service/PreResolveDns){:rel="nofollow"} - Google Developers
-* [Web Developer's Guide to Prerendering in Chrome](http://developers.google.com/chrome/whitepapers/prerender){:rel="nofollow"} - Google Developers
-* [Link prefetching FAQ](http://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ){:rel="nofollow"} - Mozilla Developer Network
-* [Controlling DNS prefetching](http://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching){:rel="nofollow"} - Mozilla Developer Network
-* [One Step Ahead: Improving Performance with Prebrowsing](http://alistapart.com/article/one-step-ahead-improving-performance-with-prebrowsing){:rel="nofollow"} - A List Apart
-* [Resource hints](http://w3c.github.io/resource-hints/){:rel="nofollow"} - W3C
+- [Prebrowsing](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/){:rel="nofollow"} - Steve Souders
+- [Link prefetching](http://en.wikipedia.org/wiki/Link_prefetching){:rel="nofollow"} - Wikipedia
+- [DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching){:rel="nofollow"} - The Chromium Projects
+- [Pre-Resolve DNS](http://developers.google.com/speed/pagespeed/service/PreResolveDns){:rel="nofollow"} - Google Developers
+- [Web Developer's Guide to Prerendering in Chrome](http://developers.google.com/chrome/whitepapers/prerender){:rel="nofollow"} - Google Developers
+- [Link prefetching FAQ](http://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ){:rel="nofollow"} - Mozilla Developer Network
+- [Controlling DNS prefetching](http://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching){:rel="nofollow"} - Mozilla Developer Network
+- [One Step Ahead: Improving Performance with Prebrowsing](http://alistapart.com/article/one-step-ahead-improving-performance-with-prebrowsing){:rel="nofollow"} - A List Apart
+- [Resource hints](http://w3c.github.io/resource-hints/){:rel="nofollow"} - W3C

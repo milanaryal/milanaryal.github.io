@@ -15,7 +15,7 @@ The average screen size of a laptop is 12.1 to 14.4 inches. But, if you tend to 
 
 #### Battery life
 
-Working on a laptop that  has a battery which keeps draining can be painful. That’s why it is important to put your cash in a system that gives good battery backup. For instance, if you have your eyes on a 15 inch laptop then make sure it gives at least 4 hours’ power conveyance and for a portable notebook, it should be minimum 6 hours. Really powerful laptops can give you battery life anywhere between 10 to 20 hours.
+Working on a laptop that has a battery which keeps draining can be painful. That’s why it is important to put your cash in a system that gives good battery backup. For instance, if you have your eyes on a 15 inch laptop then make sure it gives at least 4 hours’ power conveyance and for a portable notebook, it should be minimum 6 hours. Really powerful laptops can give you battery life anywhere between 10 to 20 hours.
 
 #### Display
 
@@ -27,7 +27,7 @@ Ever tried working on a laptop that takes ages to download a page and works at a
 
 #### RAM
 
-Memory is the most important thing to consider when buying a laptop. Even the cheapest of laptops these days comes with  1 GB RAM. So, don’t settle for anything less and buy a laptop with  4 GB minimum, as it will enable you to run multiple applications without slowing down the system.
+Memory is the most important thing to consider when buying a laptop. Even the cheapest of laptops these days comes with 1 GB RAM. So, don’t settle for anything less and buy a laptop with 4 GB minimum, as it will enable you to run multiple applications without slowing down the system.
 
 #### Keyboard
 

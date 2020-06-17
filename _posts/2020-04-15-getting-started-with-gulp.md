@@ -4,7 +4,7 @@ date: 2020-04-15T09:00:00+05:45
 excerpt: "Explore how to use Gulp and what it can do in a project to speed up and change the way you develop websites."
 ---
 
-Here, we'll explore how to use [Gulp](https://gulpjs.com/){: rel="nofollow" } (the streaming build system) and what it can do in a project to speed up and change the way you develop websites.
+Here, we'll explore how to use [Gulp](https://gulpjs.com/){:rel="nofollow"} (the streaming build system) and what it can do in a project to speed up and change the way you develop websites.
 
 Mostly everything in these posts are coming directly from the documentation itself. So hopefully some of these you immediately recognize and others you'll wonder how you missed that.
 
@@ -12,7 +12,7 @@ Mostly everything in these posts are coming directly from the documentation itse
 
 > Gulp is an open-source JavaScript toolkit created by Eric Schoffstall used as a streaming build system (similar to a more package-focussed Make) in front-end web development.
 >
-> --- [Wikipedia](https://en.wikipedia.org/wiki/Gulp.js){: rel="nofollow" }
+> --- [Wikipedia](https://en.wikipedia.org/wiki/Gulp.js){:rel="nofollow"}
 
 Built on top of Node.js, Gulp is a task-based command-line tool that speeds up workflows by reducing the effort required to prepare assets for production. It does this by wrapping up jobs into tasks that are compiled automatically as you go along. Basically, you can use Gulp on most tasks that you consider to be gulp work and would normally have to manually configure and run yourself.
 
@@ -22,7 +22,7 @@ Well, the list is exhaustive. Suffice it to say, Gulp can handle most things you
 
 ### Setting up Gulp from scratch
 
-The first thing to do in order to use Gulp is to set up [Node.js](https://nodejs.org/){: rel="nofollow" } on your system. When you install Node.js, you also get [npm](https://www.npmjs.com/){: rel="nofollow" }, a package manager for JavaScript, and is the default for Node.js.
+The first thing to do in order to use Gulp is to set up [Node.js](https://nodejs.org/){:rel="nofollow"} on your system. When you install Node.js, you also get [npm](https://www.npmjs.com/){:rel="nofollow"}, a package manager for JavaScript, and is the default for Node.js.
 
 Once Node.js is installed, just run this command in the terminal:
 
@@ -32,10 +32,10 @@ $ npm install -g gulp-cli
 
 Lets break that down:
 
-* `npm` tells terminal/cmd what program we're commanding.
-* `install` is the command.
-* `-g` is an argument (a kind of optional bit of info) for the command short way of saying `--global` This means we're installing Gulp globally on our system. This is a good thing. You want to be able to use it everywhere.
-* `gulp-cli` is another argument. This time telling npm what you want to install. In this instance the Gulp Command Line Interface.
+- `npm` tells terminal/cmd what program we're commanding.
+- `install` is the command.
+- `-g` is an argument (a kind of optional bit of info) for the command short way of saying `--global` This means we're installing Gulp globally on our system. This is a good thing. You want to be able to use it everywhere.
+- `gulp-cli` is another argument. This time telling npm what you want to install. In this instance the Gulp Command Line Interface.
 
 You should close and reopen the terminal as well. That's a generic good practice to make sure things are working right. Kinda like restarting your computer after you install a new application was in the olden days.
 
@@ -53,8 +53,8 @@ The `package.json` file belongs in the root directory of your project, next to t
 
 There are a few ways to create a `package.json` file for your project:
 
-* The [`npm init`](https://docs.npmjs.com/cli/init){: rel="nofollow" } command will create a basic `package.json` file.
-* Start with the example below, and expand as needed, following this [specification](https://docs.npmjs.com/files/package.json){: rel="nofollow" }.
+- The [`npm init`](https://docs.npmjs.com/cli/init){:rel="nofollow"} command will create a basic `package.json` file.
+- Start with the example below, and expand as needed, following this [specification](https://docs.npmjs.com/files/package.json){:rel="nofollow"}.
 
 ```json
 {
@@ -147,11 +147,11 @@ Or if you just always want the latest version use `*`:
 }
 ```
 
-See more about version ranges in the [npm docs](https://docs.npmjs.com/misc/semver){: rel="nofollow" } or npm's [semantic versioning parser](https://github.com/npm/node-semver){: rel="nofollow" }.
+See more about version ranges in the [npm docs](https://docs.npmjs.com/misc/semver){:rel="nofollow"} or npm's [semantic versioning parser](https://github.com/npm/node-semver){:rel="nofollow"}.
 
 **`npm outdated`**
 
-If you would like to see which of your dependencies are out of date, use `npm outdated`: see [npm docs](https://docs.npmjs.com/cli/outdated){: rel="nofollow" } for more info.
+If you would like to see which of your dependencies are out of date, use `npm outdated`: see [npm docs](https://docs.npmjs.com/cli/outdated){:rel="nofollow"} for more info.
 
 **`npm update`**
 
@@ -163,10 +163,10 @@ The `gulpfile.js` file is a valid JavaScript file that belongs in the root direc
 
 A `gulpfile.js` is comprised of the following parts:
 
-* Loading gulp plugins
-* The "wrapper" function
-* Project and task configuration
-* Custom public tasks
+- Loading gulp plugins
+- The "wrapper" function
+- Project and task configuration
+- Custom public tasks
 
 ```js
 /*!
@@ -175,15 +175,15 @@ A `gulpfile.js` is comprised of the following parts:
  */
 
 // load the plugin(s)
-const {src, dest} = require('gulp');
-const pluginName = require('gulp-plugin-name');
+const { src, dest } = require("gulp");
+const pluginName = require("gulp-plugin-name");
 
 // define task(s) here
-function taskName () {
+function taskName() {
   // gulp pipe (task config)
-  return src('src/filename.ext')
-    .pipe(pluginName( { options : here } ))
-    .pipe(dest('dest/filename.ext'));
+  return src("src/filename.ext")
+    .pipe(pluginName({ options: here }))
+    .pipe(dest("dest/filename.ext"));
 }
 
 // export default task
@@ -222,27 +222,27 @@ $ npm install --save-dev del gulp gulp-autoprefixer gulp-concat gulp-csso gulp-r
 
 ```js
 // plugins for basic need
-const { src, dest, series, parallel, watch } = require('gulp');
-const del = require('del');
-const rename = require('gulp-rename');
+const { src, dest, series, parallel, watch } = require("gulp");
+const del = require("del");
+const rename = require("gulp-rename");
 
 // plugins for js
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify-es').default;
+const concat = require("gulp-concat");
+const uglify = require("gulp-uglify-es").default;
 
 // plugins for css
-const sass = require('gulp-sass');
-sass.compiler = require('node-sass');
-const prefix = require('gulp-autoprefixer');
-const minify = require('gulp-csso');
+const sass = require("gulp-sass");
+sass.compiler = require("node-sass");
+const prefix = require("gulp-autoprefixer");
+const minify = require("gulp-csso");
 ```
 
 ```js
 // private task function
 
 // remove pre-existing content from the folders
-function clean () {
-  return del(['assets/js', 'assets/css']);
+function clean() {
+  return del(["assets/js", "assets/css"]);
 }
 ```
 
@@ -250,13 +250,13 @@ function clean () {
 // private task function
 
 // concatenate js files and uglify
-function js () {
-  return src('src/js/**/*.js')
-    .pipe(concat('scripts.js'))
-    .pipe(dest('assets/js'))
-    .pipe(rename({ suffix: '.min' }))
+function js() {
+  return src("src/js/**/*.js")
+    .pipe(concat("scripts.js"))
+    .pipe(dest("assets/js"))
+    .pipe(rename({ suffix: ".min" }))
     .pipe(uglify({ output: { comments: false } }))
-    .pipe(dest('assets/js'));
+    .pipe(dest("assets/js"));
 }
 ```
 
@@ -264,14 +264,18 @@ function js () {
 // private task function
 
 // compile scss to css and minify
-function css () {
-  return src('src/scss/styles.scss')
-    .pipe(sass.sync({ precision: 6, outputStyle: 'expanded' }).on('error', sass.logError))
+function css() {
+  return src("src/scss/styles.scss")
+    .pipe(
+      sass
+        .sync({ precision: 6, outputStyle: "expanded" })
+        .on("error", sass.logError)
+    )
     .pipe(prefix())
-    .pipe(dest('assets/css'))
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(dest("assets/css"))
+    .pipe(rename({ suffix: ".min" }))
     .pipe(minify({ comments: false }))
-    .pipe(dest('assets/css'));
+    .pipe(dest("assets/css"));
 }
 ```
 
@@ -303,9 +307,9 @@ Now, **third step** or **final step** --- our **default task** (to clean/delete 
 $ gulp
 ```
 
-An incredibly active community of developers is building front-end plugins, you can explore them at [Gulp plugins library](https://gulpjs.com/plugins/){: rel="nofollow" }.
+An incredibly active community of developers is building front-end plugins, you can explore them at [Gulp plugins library](https://gulpjs.com/plugins/){:rel="nofollow"}.
 
-Or, using the "[gulpplugin](https://npmsearch.com/?q=keywords:gulpplugin){: rel="nofollow" }" and "[gulpfriendly](https://npmsearch.com/?q=keywords:gulpfriendly){: rel="nofollow" }" keywords --- plugins can be browsed and searched on the [npm search page](https://www.npmjs.com/){: rel="nofollow" }.
+Or, using the "[gulpplugin](https://npmsearch.com/?q=keywords:gulpplugin){:rel="nofollow"}" and "[gulpfriendly](https://npmsearch.com/?q=keywords:gulpfriendly){:rel="nofollow"}" keywords --- plugins can be browsed and searched on the [npm search page](https://www.npmjs.com/){:rel="nofollow"}.
 
 ---
 
@@ -313,7 +317,7 @@ Or, using the "[gulpplugin](https://npmsearch.com/?q=keywords:gulpplugin){: rel=
 
 This is the basic foundation for learning Gulp, you can learn and explore more by the following links:
 
-* The [getting started](https://gulpjs.com/docs/en/getting-started/quick-start/){: rel="nofollow" } with official Gulp guide
-* The [creating tasks](https://gulpjs.com/docs/en/getting-started/creating-tasks){: rel="nofollow" } guide
-* The [using plugins](https://gulpjs.com/docs/en/getting-started/using-plugins){: rel="nofollow" } guide
-* The [concepts](https://gulpjs.com/docs/en/api/concepts){: rel="nofollow" } to understanding the API docs.
+- The [getting started](https://gulpjs.com/docs/en/getting-started/quick-start/){:rel="nofollow"} with official Gulp guide
+- The [creating tasks](https://gulpjs.com/docs/en/getting-started/creating-tasks){:rel="nofollow"} guide
+- The [using plugins](https://gulpjs.com/docs/en/getting-started/using-plugins){:rel="nofollow"} guide
+- The [concepts](https://gulpjs.com/docs/en/api/concepts){:rel="nofollow"} to understanding the API docs.

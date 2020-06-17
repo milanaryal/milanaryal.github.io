@@ -76,12 +76,12 @@ In this site you'll find a recollection of thoughts and opinions based on my exp
 
 In case you were wondering, this site is:
 
-* Developed on a [Ubuntu](https://www.ubuntu.com/) system in Nepal
-* Edited with [VS Code](https://code.visualstudio.com/) & [Atom](https://atom.io/)
-* Based on [Bootstrap](https://getbootstrap.com/) framework
-* Built with [npm](https://www.npmjs.com/) to compile site assets
-* Generated with [Jekyll](https://jekyllrb.com/)
-* Hosted on [GitHub Pages](https://pages.github.com/)
+- Developed on a [Ubuntu](https://www.ubuntu.com/) system in Nepal
+- Edited with [VS Code](https://code.visualstudio.com/) & [Atom](https://atom.io/)
+- Based on [Bootstrap](https://getbootstrap.com/) framework
+- Built with [npm](https://www.npmjs.com/) to compile site assets
+- Generated with [Jekyll](https://jekyllrb.com/)
+- Hosted on [GitHub Pages](https://pages.github.com/)
 
 ...for more information see [humans.txt](/humans.txt). You can find more about my Ubuntu development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config).
 
@@ -91,4 +91,4 @@ If you enjoy the content found here, you might like to subscribe to my <span sty
 
 ### [Licensing](/fine-print/)
 
-Except as otherwise noted, the content of this site is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/){: target="_blank" rel="noopener nofollow" }, and code samples are licensed under the [MIT license](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE){: target="_blank" rel="noopener" }.
+Except as otherwise noted, the content of this site is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/){:target="\_blank" rel="noopener nofollow"}, and code samples are licensed under the [MIT license](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/LICENSE){:target="\_blank" rel="noopener"}.

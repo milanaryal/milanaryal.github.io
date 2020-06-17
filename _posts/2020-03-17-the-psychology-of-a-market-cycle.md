@@ -6,7 +6,7 @@ date: 2020-03-17T03:40:00+05:45
 
 <figure>
   <a href="/uploads/20200317-the-psychology-of-a-market-cycle.png">
-    <img src="/uploads/20200317-the-psychology-of-a-market-cycle.png" alt="the psychology of a market cycle">
+    <img src="/uploads/20200317-the-psychology-of-a-market-cycle.png" alt="the psychology of a market cycle" />
   </a>
 </figure>
 
@@ -20,7 +20,7 @@ This chart describes all the different emotional states typically experienced by
 
 <figure>
   <a href="/uploads/20200317-the-cycle-of-investor-emotions.png">
-    <img src="/uploads/20200317-the-cycle-of-investor-emotions.png" alt="investor emotion cycle">
+    <img src="/uploads/20200317-the-cycle-of-investor-emotions.png" alt="investor emotion cycle" />
   </a>
   <figcaption>Investor emotion cycle, <a rel="nofollow" href="https://moderntimesinvestors.com/investing/investor-emotion-cycle/"><i>Modern Times Investors</i></a></figcaption>
 </figure>
@@ -59,7 +59,7 @@ At some point you have to compare your perception with the reality, maybe you ha
 
 All chances of making a profit are lost at this point, you are really concerned about your investment and you strongly hope for anything that will bring our positions back into gain territory.
 
-####  Panic
+#### Panic
 
 This is the period with the most emotional impact, where you feel helpless and really don't know what to do, feeling without any degree of control on the situation, on your investments and on markets.
 
@@ -95,7 +95,7 @@ Everyone has a breaking point, and it's only in times of distress that we learn 
 
 <figure>
   <a href="/uploads/20200317-the-psychology-of-a-bear-market.jpg">
-    <img src="/uploads/20200317-the-psychology-of-a-bear-market.jpg" alt="bear market cycle">
+    <img src="/uploads/20200317-the-psychology-of-a-bear-market.jpg" alt="bear market cycle" />
   </a>
   <figcaption>The psychology of a bear market, <a rel="nofollow" href="https://moderntimesinvestors.com/investing/investor-emotion-cycle/"><i>Michael Batnick</i></a></figcaption>
 </figure>
@@ -104,6 +104,6 @@ Everyone has a breaking point, and it's only in times of distress that we learn 
 
 #### References
 
-* [Psychology of a market cycle](/uploads/20200317-psychology-of-a-market-cycle.jpg){: rel="nofollow" }, *Wall Street Cheat Sheet*
-* [Investor emotion cycle](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){: rel="nofollow" }, *Modern Times Investors*
-* [The psychology of a bear market](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){: rel="nofollow" }, *Michael Batnick*
+- [Psychology of a market cycle](/uploads/20200317-psychology-of-a-market-cycle.jpg){:rel="nofollow"}, _Wall Street Cheat Sheet_
+- [Investor emotion cycle](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){:rel="nofollow"}, _Modern Times Investors_
+- [The psychology of a bear market](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){:rel="nofollow"}, _Michael Batnick_

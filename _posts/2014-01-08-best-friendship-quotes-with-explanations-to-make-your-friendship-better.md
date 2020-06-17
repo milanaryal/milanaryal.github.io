@@ -23,7 +23,7 @@ Well, nobody can deny the fact that friendship makes life worth living. No matte
 
 Since a very long, the entire world had been obsessed with power and the subjugation of fellow human beings. Constant enmity with one another had led to devastating wars that have killed millions. Friendship is the concept that could definitely make the world a better place to live in. Fellow feeling for each other makes us realize how important it is to coexist in peace and live in harmony.
 
->Friendship needs no words.
+> Friendship needs no words.
 >
 > --- <cite>Dag Hammerskjold</cite>
 

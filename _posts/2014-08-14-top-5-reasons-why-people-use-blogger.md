@@ -4,9 +4,9 @@ date: 2014-08-14T15:42:00+05:45
 excerpt: "Blogger is one of the most popular blog publishing platform by Google."
 ---
 
-I’m sure that those who have been using the Internet for a while are familiar with or have come across the free blog platform – Blogger (blogger.com). To put it simply, Blogger is a blog-publishing platform, hosted by Google that allows you to create a blog and maintain it without any charges. All blogs registered under Blogger will be hosted by Google’s servers at the *blogspot.com* subdomain.
+I’m sure that those who have been using the Internet for a while are familiar with or have come across the free blog platform – Blogger (blogger.com). To put it simply, Blogger is a blog-publishing platform, hosted by Google that allows you to create a blog and maintain it without any charges. All blogs registered under Blogger will be hosted by Google’s servers at the _blogspot.com_ subdomain.
 
-Besides Blogger, there are many free blog providers available such as *WordPress.com, Xanga, Tumblr* and etc, which all have their boons and banes. But one thing that they have in common is that they allow you to start a blog for free, and play around with the layout and customize it to make it personal, informational, or commercial as well as let you keep track of your followers.
+Besides Blogger, there are many free blog providers available such as _WordPress.com, Xanga, Tumblr_ and etc, which all have their boons and banes. But one thing that they have in common is that they allow you to start a blog for free, and play around with the layout and customize it to make it personal, informational, or commercial as well as let you keep track of your followers.
 
 Though Blogger is one of the most popular blog publishing tools around, it has its limitations. Firstly, it is a rarity for professional blogs to be hosted on Blogspot domains. Hence, to some people, some Blogspot blogs may be deemed unprofessional. Many spamblogs also originate from Blogger, as it is the most common and esay to use blogging platform. Compared to other hosting providers, there are less original themes and widgets provided by Blogger. You also can’t sell your domain in the future, as your site is hosted on a subdomain (blogspot.com).
 
@@ -28,7 +28,7 @@ If you intend to monetize your blog, the **easiest way is through Blogger**. As 
 
 #### Personalised domain on Blogger
 
-Some bloggers who are more ambitious usually will think of registering their custom domain, i.e. **use a .com domain name**. When it comes to blogging under your own domain, Blogger offers you a better deal compared to other blog hosting platforms. When you hook your domain to your Blogger blog, you will not be subjected to any charges, while WordPress.com charges you $12 for each domain you incorporate. If you happen to have many domains, this may cost you a lot of money. Hence, comparatively, Blogger seems to offer a better option!
+Some bloggers who are more ambitious usually will think of registering their custom domain, i.e. **use a .com domain name**. When it comes to blogging under your own domain, Blogger offers you a better deal compared to other blog hosting platforms. When you hook your domain to your Blogger blog, you will not be subjected to any charges, while WordPress.com charges you \$12 for each domain you incorporate. If you happen to have many domains, this may cost you a lot of money. Hence, comparatively, Blogger seems to offer a better option!
 
 #### More traffic on Blogger
 

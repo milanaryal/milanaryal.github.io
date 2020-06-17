@@ -26,7 +26,7 @@ Header 3
 h3. Header 3
 ```
 
-This is *italicized*
+This is _italicized_
 
 ```text
 This is _italicized_
@@ -38,8 +38,8 @@ This is **bold**
 This is *bold*
 ```
 
-* Bulleted item 1
-* Bulleted item 2
+- Bulleted item 1
+- Bulleted item 2
 
 ```text
 * Bulleted item 1
@@ -54,13 +54,13 @@ This is *bold*
 # Bulleted item 2
 ```
 
-[text link](http://milanaryal.com)
+[text link](https://milanaryal.com.np)
 
 ```text
-"text link":http://milanaryal.com
+"text link":https://milanaryal.com.np
 ```
 
-*Embed an image:*
+_Embed an image:_
 
 ```text
 !http://www.example.com/image.png!
@@ -72,7 +72,7 @@ Blockquoted Text
 bq. Blockquoted Text
 ```
 
-*Embed Code:*
+_Embed Code:_
 
 To get this:
 
@@ -98,4 +98,4 @@ Do this:
 
 ### Further resources
 
-* [Textile Reference Manual](http://redcloth.org/textile){:rel="nofollow"}
+- [Textile Reference Manual](http://redcloth.org/textile){:rel="nofollow"}

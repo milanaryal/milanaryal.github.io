@@ -4,7 +4,7 @@ date: 2016-02-19T23:51:28+05:45
 excerpt: "Make the most of the time you have, because you can never get it back."
 ---
 
-Imagine there is a bank that credits your account each morning with $86,400. It carries over no balance from day to day. Every evening it deletes whatever part of the balance you failed to use during the day. What would you do?
+Imagine there is a bank that credits your account each morning with \$86,400. It carries over no balance from day to day. Every evening it deletes whatever part of the balance you failed to use during the day. What would you do?
 
 Draw out every cent, of course! Each of us has such a bank. Its name is 'time'. Every morning, it credits you with 86,400 seconds. Every night it writes off, as lost, whatever of this you have failed to invest to good purpose. It carries over no balance. It allows no overdraft. Each day it opens a new account for you. Each night it burns the remains of the day. If you fail to use the day's deposits, the loss is yours.
 

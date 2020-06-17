@@ -11,54 +11,54 @@ Here, I've curated a list of sites to download eBook for free of cost. In these 
 
 Part of Z-Library project. The world's largest e-book library since 2009.
 
-*Mirror site(s):*
+_Mirror site(s):_
 
-* [z-lib.org](http://z-lib.org/){: rel="nofollow" }
-* [b-ok.org](http://b-ok.org/){: rel="nofollow" }
-* [b-ok2.org](http://b-ok2.org/){: rel="nofollow" }
-* [b-ok.xyz](http://b-ok.xyz/){: rel="nofollow" }
-* [b-ok.cc](http://b-ok.cc/){: rel="nofollow" }
-* [zlibrary.unblockit.me](https://zlibrary.unblockit.me/){: rel="nofollow" }
+- [z-lib.org](http:/z-lib.org/){:rel="nofollow"}
+- [b-ok.org](http:/b-ok.org/){:rel="nofollow"}
+- [b-ok2.org](http:/b-ok2.org/){:rel="nofollow"}
+- [b-ok.xyz](http:/b-ok.xyz/){:rel="nofollow"}
+- [b-ok.cc](http:/b-ok.cc/){:rel="nofollow"}
+- [zlibrary.unblockit.me](https:/zlibrary.unblockit.me/){:rel="nofollow"}
 
-If Z-Library is censored or blocked in your location, you can use [TOR](https://b-ok.org/msgn/tor){: rel="nofollow" } to download it anyway.
+If Z-Library is censored or blocked in your location, you can use [TOR](https:/b-ok.org/msgn/tor){:rel="nofollow"} to download it anyway.
 
-Z-Library TOR address is [http://zlibraryexau2g3p.onion](http://zlibraryexau2g3p.onion)
+Z-Library TOR address is [http:/zlibraryexau2g3p.onion](http:/zlibraryexau2g3p.onion)
 
 How to use TOR?
 
-1. Tor is free to use. Simply [download and install the browser](https://torproject.org/download){: rel="nofollow" }, which is a modified version of Firefox available for Windows, Mac OS X, and Linux.
-2. Open an URL [http://zlibraryexau2g3p.onion](http://zlibraryexau2g3p.onion){: rel="nofollow" } in the TOR browser.
+1. Tor is free to use. Simply [download and install the browser](https:/torproject.org/download){:rel="nofollow"}, which is a modified version of Firefox available for Windows, Mac OS X, and Linux.
+2. Open an URL [http:/zlibraryexau2g3p.onion](http:/zlibraryexau2g3p.onion){:rel="nofollow"} in the TOR browser.
 3. Enjoy!
 
 #### Library Genesis
 
 Library Genesis (LibGen) is a digital library established on 11 March 2008.
 
-*Mirror site(s):*
+_Mirror site(s):_
 
-* [gen.lib.rus.ec](http://gen.lib.rus.ec/){: rel="nofollow" }
-* [libgen.lc](http://libgen.lc/){: rel="nofollow" }
-* [libgen.me](http://libgen.me/){: rel="nofollow" }
-* [libgen.unblockit.me](https://libgen.unblockit.me/){: rel="nofollow" }
+- [gen.lib.rus.ec](http:/gen.lib.rus.ec/){:rel="nofollow"}
+- [libgen.lc](http:/libgen.lc/){:rel="nofollow"}
+- [libgen.me](http:/libgen.me/){:rel="nofollow"}
+- [libgen.unblockit.me](https:/libgen.unblockit.me/){:rel="nofollow"}
 
-- [bookfi.net](http://bookfi.net/){: rel="nofollow" }
+* [bookfi.net](http:/bookfi.net/){:rel="nofollow"}
 
 #### PDF Drive
 
 PDF Drive is a free search engine which allows you to search, preview and download millions of PDF files into your devices.
 
-*Mirror site(s):*
+_Mirror site(s):_
 
-* [pdfdrive.com](http://www.pdfdrive.com/){: rel="nofollow" }
+- [pdfdrive.com](http:/www.pdfdrive.com/){:rel="nofollow"}
 
-_**Disclaimer & legal warning**: [This site]({{ site.url }}) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._
+_**Disclaimer & legal warning**: [This site](/) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._
 
 ---
 
-#### See also:
+#### Related posts
 
-* [A list of sites to find the best free stock photos]({{ site.url }}/a-list-of-sites-to-find-the-best-free-stock-photos/)
-* [Top 10 most popular BitTorrent sites]({{ site.url }}/top-10-most-popular-bittorrent-sites/)
-* [Access your favourite blocked BitTorrent sites]({{ site.url }}/access-your-favourite-blocked-bittorrent-sites/)
-* [The best sites to get subtitles for movies and TV shows]({{ site.url }}/the-best-sites-to-get-subtitles-for-movies-and-tv-shows/)
-* [The best ad-blocker extensions for your favourite web browser, free and open-source]({{ site.url }}/the-best-ad-blocker-extensions-for-your-favourite-web-browser-free-and-open-source/)
+- [A list of sites to find the best free stock photos](/a-list-of-sites-to-find-the-best-free-stock-photos/)
+- [Top 10 most popular BitTorrent sites](/top-10-most-popular-bittorrent-sites/)
+- [Access your favourite blocked BitTorrent sites](/access-your-favourite-blocked-bittorrent-sites/)
+- [The best sites to get subtitles for movies and TV shows](/the-best-sites-to-get-subtitles-for-movies-and-tv-shows/)
+- [The best ad-blocker extensions for your favourite web browser, free and open-source](/the-best-ad-blocker-extensions-for-your-favourite-web-browser-free-and-open-source/)

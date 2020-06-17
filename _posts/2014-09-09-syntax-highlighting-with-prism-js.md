@@ -11,10 +11,10 @@ Yet not sure what I mean by a syntax highlighter or what it does? Here's an exam
 
 ```html
 <script language="javascript">
-  var today= new Date()
+  var today = new Date();
 </script>
-  ....
-<body onload=alert(today)>
+....
+<body onload="alert(today)"></body>
 ```
 
 PrismJS is a light weight and works on most of all the platform whether it is your own hosted site or any other popular CMS platform like WordPress, Blogger or Tumblr.
@@ -32,15 +32,15 @@ Then, you will need to link the `prism.css` and `prism.js` files in your index p
 ```html
 <!DOCTYPE html>
 <html>
-<head>
- ...
+  <head>
+    ...
     <link href="themes/prism.css" rel="stylesheet" />
-</head>
-<body>
- ...
+  </head>
+  <body>
+    ...
     <!-- after all your content -->
     <script src="prism.js"></script>
-</body>
+  </body>
 </html>
 ```
 
@@ -53,8 +53,6 @@ Easily highlight your code on WordPress with WP PrismJS. Simply <a href="http://
 ### Installing on Blogger/Tumblr
 
 To install PrismJS on your Blogger/Tumblr blog you can upload `prism.css` and `prism.js` files on <a href="http://www.dropbox.com/" rel="nofollow">Dropbox</a> because we cannot host file in the Blogger/Tumblr site. Then as same process above go to template edit and inculde `prism.css` file link before the `</head>` tag and `prism.js` file link before `</body>` tag.
-
-**See also:** [How to host assets with Dropbox on your website]({% post_url 2015-08-19-hosting-images-with-dropbox-on-your-website %})
 
 If you don't like to upload the file and want to use PrismJS default theme then you can include the following two files link to install PrismJS:
 

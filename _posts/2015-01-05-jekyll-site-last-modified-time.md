@@ -28,7 +28,9 @@ And you can add this in the end of your website source code:
 Which output as:
 
 {% comment %}
+
 <!-- Last modified at: 2015-01-05 18:06:54 +0545 -->
+
 {% endcomment %}
 
 ```text
@@ -46,7 +48,9 @@ If you are hosting your site on GitHub Pages and using Jekyll:
 Which output in following format:
 
 {% comment %}
+
 <!-- Proudly Hosted on GitHub | Generated 2015-01-05 18:06:54 +0545 | Revision 8b10cc6954163643f53d0b503888578e143d7e57 -->
+
 {% endcomment %}
 
 ```text

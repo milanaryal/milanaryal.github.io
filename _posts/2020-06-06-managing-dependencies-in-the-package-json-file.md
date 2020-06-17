@@ -9,7 +9,7 @@ Learn to manage and update all the npm dependencies saved in the package.json fi
 
 #### Requirements
 
-Install [Node.js](https://nodejs.org/en/download/package-manager/){: rel="nofollow" } on your machine.
+Install [Node.js](https://nodejs.org/en/download/package-manager/){:rel="nofollow"} on your machine.
 
 If you install a package using `npm install <packagename>`, the latest available version of the package is downloaded and store in the `node_modules` folder, and a corresponding entry is added to the `package.json` and `package-lock.json` files that are present in your current folder.
 
@@ -17,11 +17,11 @@ If you install a package using `npm install <packagename>`, the latest available
 
 aliases: `npm i`, `npm add`
 
-* -P, --save-prod: Package will appear in your dependencies.
-* -d, --save: Package will appear in your dependencies.
-* -D, --save-dev: Package will appear in your devDependencies.
-* -E, --save-exact: Saved dependencies will be configured with an exact version rather than using npm's default semver range operator.
-* --no-save: Prevents saving to dependencies.
+- -P, --save-prod: Package will appear in your dependencies.
+- -d, --save: Package will appear in your dependencies.
+- -D, --save-dev: Package will appear in your devDependencies.
+- -E, --save-exact: Saved dependencies will be configured with an exact version rather than using npm's default semver range operator.
+- --no-save: Prevents saving to dependencies.
 
 To stable our project with changes in dependencies version, it is necessary to learn to manage the exact dependency version that you need in your project --- which I am gonna discuss below.
 
@@ -87,11 +87,11 @@ Or if you just always want the latest version use `*`:
 }
 ```
 
-See more about version ranges in the [npm docs](https://docs.npmjs.com/misc/semver){: rel="nofollow" } or npm's [semantic versioning parser](https://github.com/npm/node-semver){: rel="nofollow" }.
+See more about version ranges in the [npm docs](https://docs.npmjs.com/misc/semver){:rel="nofollow"} or npm's [semantic versioning parser](https://github.com/npm/node-semver){:rel="nofollow"}.
 
 **`npm outdated`**
 
-If you would like to see which of your dependencies are out of date, use `npm outdated`: see [npm docs](https://docs.npmjs.com/cli/outdated){: rel="nofollow" } for more info.
+If you would like to see which of your dependencies are out of date, use `npm outdated`: see [npm docs](https://docs.npmjs.com/cli/outdated){:rel="nofollow"} for more info.
 
 **`npm update`**
 
@@ -119,9 +119,9 @@ Use `npm update` to update all your dependencies to the latest versions. Or `npm
 
 `npm ls --depth=0` - only draws out the top of the dependency tree
 
-`npm install` -  will install both "dependencies" and "devDependencies"
+`npm install` - will install both "dependencies" and "devDependencies"
 
-`npm install --production` -  will only install "dependencies"
+`npm install --production` - will only install "dependencies"
 
 `npm install --dev` - will only install "devDependencies"
 
@@ -153,4 +153,4 @@ For npm < 5.2.0, you can install npx package manually by running the following c
 
 #### Resources
 
-* [Getting started with npm](https://docs.npmjs.com/){: rel="nofollow" }
+- [Getting started with npm](https://docs.npmjs.com/){:rel="nofollow"}

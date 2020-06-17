@@ -14,7 +14,7 @@ However, when a person has a good experience on a specific website with their mo
 
 <figure>
   <a href="/uploads/20140922-responsive-web-design.png">
-    <img src="/uploads/20140922-responsive-web-design.png" alt="Responsive web design">
+    <img src="/uploads/20140922-responsive-web-design.png" alt="Responsive web design" />
   </a>
 </figure>
 
@@ -38,8 +38,8 @@ Now thanks to CSS3 and other developments users are able to enjoy their favorite
 
 Now let's have a look on the several benefits of Responsive web design for your business.
 
-* Drive traffic to your business from all kind of users using desktop, personal computer or any kind of mobile devices. It will increase the total percent of your business traffic by mobile audiences.
-* Responsive web design for your business allow you to manage the complete website with one set of links which will as a result will increase your website visibility in all major kind of search engines including Google, yahoo and Bing.
-* Improve in sales and conversion rates of your business --- Responsive web design boost conversion rates which is the ultimate requirement of any kind of online business. Responsive Web design is also user and search engine friendly.
-* Save time and money which is required on mobile website development.
-* Responsive web design will attract more number of customers to your site and this will take your business to next level of success.
+- Drive traffic to your business from all kind of users using desktop, personal computer or any kind of mobile devices. It will increase the total percent of your business traffic by mobile audiences.
+- Responsive web design for your business allow you to manage the complete website with one set of links which will as a result will increase your website visibility in all major kind of search engines including Google, yahoo and Bing.
+- Improve in sales and conversion rates of your business --- Responsive web design boost conversion rates which is the ultimate requirement of any kind of online business. Responsive Web design is also user and search engine friendly.
+- Save time and money which is required on mobile website development.
+- Responsive web design will attract more number of customers to your site and this will take your business to next level of success.

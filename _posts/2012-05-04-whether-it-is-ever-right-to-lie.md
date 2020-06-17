@@ -15,4 +15,4 @@ Our instincts tell us it is wrong to lie and our instincts are right. It is wron
 
 ---
 
-*Ethics is the study of right and wrong. The Philosopher Immanuel Kant is the leader of the Bergen Ethical Culture Society.*
+_Ethics is the study of right and wrong. The Philosopher Immanuel Kant is the leader of the Bergen Ethical Culture Society._

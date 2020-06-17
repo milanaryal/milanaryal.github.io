@@ -10,13 +10,13 @@ To use Gmail in mail clients, first of all, you will need to enable POP/IMAP in 
 
 Next, open Outlook, go to Tools and click on email accounts, select the 'Add New Account' and click next. Then select POP/IMAP in the type of server. Then you will need to enter the specifications for Gmail. Enter your own username and password and fill out the following details in the respective fields:
 
-####  Incoming Mail POP (Post Office Protocol) Server
+#### Incoming Mail POP (Post Office Protocol) Server
 
 POP creates local copies of emails and deletes the originals from the server, the emails are tied to that specific machine, and cannot be accessed via any webmail or any separate client on other computers.
 
 Server: `pop.gmail.com`  
 Port: 995  
-Requires SSL: Yes  
+Requires SSL: Yes
 
 #### Incoming Mail IMAP (Internet Message Access Protocol) Server
 
@@ -24,7 +24,7 @@ Compared to POP, IMAP allows users to log into many different email clients or w
 
 Server: `imap.gmail.com`  
 Port: 993  
-Requires SSL: Yes  
+Requires SSL: Yes
 
 #### Outgoing Mail SMTP (Simple Mail Transfer Protocol) Server
 
@@ -44,4 +44,4 @@ Requires authentication: Yes
 
 #### Other resources
 
-* [Use Gmail with Outlook, Apple Mail, or other mail clients](https://support.google.com/mail/topic/3398031?hl=en) --- Gmail Help
+- [Use Gmail with Outlook, Apple Mail, or other mail clients](https://support.google.com/mail/topic/3398031?hl=en) --- Gmail Help

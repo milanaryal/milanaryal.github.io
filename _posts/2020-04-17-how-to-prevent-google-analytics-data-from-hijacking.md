@@ -12,7 +12,7 @@ You can add a filter to your profile:
 
 1. Go to: `Filters`
 
-*Home __>__ Select Site __>__ Admin (in the bottom left-hand corner) __>__ Filters (under "All Web Site Data")*
+_Home **>** Select Site **>** Admin (in the bottom left-hand corner) **>** Filters (under "All Web Site Data")_
 
 2. Click `New Filter`
 
@@ -32,12 +32,12 @@ The result should look something like this:
 
 ![preventing google analytics data from hijacking](/uploads/20201417-google-analytics-filter-domain.png)
 
-*Note: Google Analytics interface changes periodically*
+_Note: Google Analytics interface changes periodically_
 
-...for more information [about view filters](https://support.google.com/analytics/answer/1033162?hl=en){: rel="nofollow" }.
+...for more information [about view filters](https://support.google.com/analytics/answer/1033162?hl=en){:rel="nofollow"}.
 
 ---
 
 #### References
 
-* [Webmasters Stackexchange](https://webmasters.stackexchange.com/questions/56713/could-somebody-hijack-my-google-analytics-for-a-site){: rel="nofollow" }
+- [Webmasters Stackexchange](https://webmasters.stackexchange.com/questions/56713/could-somebody-hijack-my-google-analytics-for-a-site){:rel="nofollow"}

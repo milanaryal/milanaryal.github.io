@@ -16,11 +16,15 @@ This style guide is written in Markdown, the raw file is available [here](//raw.
 
 ---
 
+<!-- prettier-ignore-start -->
+
 ### Table of contents
 {:.no_toc}
 
 * Table of contents placeholder
 {:toc}
+
+<!-- prettier-ignore-end -->
 
 ---
 
@@ -28,23 +32,27 @@ This style guide is written in Markdown, the raw file is available [here](//raw.
 
 Following are the header tags for the body content. H1 and H2 are reserved on the front matter with main title and subtitle respectively. H5 and H6 tags are depreciated in this site.
 
+<!-- prettier-ignore-start -->
+
 ### This is an h3 heading
 {:.no_toc}
 
 #### This is an h4 heading
 {:.no_toc}
 
-### [H3 heading with an anchor link]({{ site.url }}/docs/style-guide/)
+### [H3 heading with an anchor link](/docs/style-guide/)
 {:.no_toc}
 
-#### [H4 heading with an anchor link]({{ site.url }}/docs/style-guide/)
+#### [H4 heading with an anchor link](/docs/style-guide/)
 {:.no_toc}
+
+<!-- prettier-ignore-end -->
 
 ---
 
 ### Body copy
 
-This is an **ordinary paragraph** that is *long enough* to wrap to [multiple lines]({{ site.url }}/docs/style-guide/) so that you can see how the `line spacing` looks.
+This is an **ordinary paragraph** that is _long enough_ to wrap to [multiple lines](/docs/style-guide/) so that you can see how the `line spacing` looks.
 
 Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 
@@ -66,11 +74,11 @@ For quoting blocks of content from another source within your document.
 
 #### Unordered
 
-* Lorem ipsum dolor sit amet
-* Consectetur adipiscing elit
-* Integer molestie lorem at massa
-* Facilisis in pretium nisl aliquet
-* Nulla volutpat aliquam velit
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit
+- Integer molestie lorem at massa
+- Facilisis in pretium nisl aliquet
+- Nulla volutpat aliquam velit
 
 #### Ordered
 
@@ -79,7 +87,6 @@ For quoting blocks of content from another source within your document.
 3. Integer molestie lorem at massa
 4. Facilisis in pretium nisl aliquet
 5. Nulla volutpat aliquam velit
-
 
 ---
 
@@ -95,17 +102,21 @@ For example, `<section>` should be wrapped as inline.
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Example title</title>
+    <title>
+      Example title
+    </title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>
+      Hello, world!
+    </h1>
 
     <!-- JS -->
     <script src="/assets/js/scripts.min.js"></script>
@@ -117,11 +128,11 @@ For example, `<section>` should be wrapped as inline.
 
 ### Table
 
-| #   | First name | Last name | Username |
-|:--- |:----------:|:---------:|:--------:|
-| 1   | Milan      | Aryal     | @MilanAryal |
-| 2   | Kshitiz    | Aryal     | @KshitizAryal |
-| 3   | Larry      | the Bird  | @Twitter |
+| #   | First name | Last name |   Username    |
+| :-- | :--------: | :-------: | :-----------: |
+| 1   |   Milan    |   Aryal   |  @MilanAryal  |
+| 2   |  Kshitiz   |   Aryal   | @KshitizAryal |
+| 3   |   Larry    | the Bird  |   @Twitter    |
 
 ---
 

@@ -18,10 +18,10 @@ So, schema.org vocabulary defines a standard set of type names and property name
 
 In order for rich snippets to be shown for a recipe, the markup must contain at least two of the following:
 
-* image
-* at least one of prepTime, cookTime, totalTime, or ingredients
-* nutritionInformation
-* review
+- image
+- at least one of prepTime, cookTime, totalTime, or ingredients
+- nutritionInformation
+- review
 
 Following is the example in Google search results showing rich snippets for recipe results:
 
@@ -35,15 +35,15 @@ Schema.org can be used with RDFa and JSON-LD, but it is not supported by microfo
 
 Schema.org markup helps your website rank better for all kinds of content types. There is data markup for...
 
-* Articles
-* Local businesses
-* Restaurants
-* TV episodes and ratings
-* Book Reviews
-* Movies
-* Software Applications
-* Events
-* Products
+- Articles
+- Local businesses
+- Restaurants
+- TV episodes and ratings
+- Book Reviews
+- Movies
+- Software Applications
+- Events
+- Products
 
 There are hundreds of markup types --- from toy stores to medical dose schedules. If you have any type of data on your website, there's a good chance that it's going to have an associated itemscope and itemtype.
 
@@ -78,5 +78,5 @@ Here are a few notes schema.org suggests you to keep in mind when adding schema.
 
 ### Related tools
 
-* [Google's structured data markup helper](http://www.google.com/webmasters/markup-helper/u/0/){:rel="nofollow"} -- This tool will help you create basic schema.org markup for several use cases.
-* [Google's structured data testing tool](http://developers.google.com/structured-data/testing-tool/){:rel="nofollow"} -- Use this tool to test whether your rich snippets are properly configured.
+- [Google's structured data markup helper](http://www.google.com/webmasters/markup-helper/u/0/){:rel="nofollow"} -- This tool will help you create basic schema.org markup for several use cases.
+- [Google's structured data testing tool](http://developers.google.com/structured-data/testing-tool/){:rel="nofollow"} -- Use this tool to test whether your rich snippets are properly configured.

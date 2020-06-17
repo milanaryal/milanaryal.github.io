@@ -19,4 +19,4 @@ Our lives are filled with family, work and community obligations. At some point,
 
 **7. Do a quick posture check:** Hold your head and shoulders upright and avoid stooping or slumping. Bad posture can lead to muscle tension, pain, and increased stress.
 
-**8. Reward yourself:** Plan something rewarding to end a stressful day --- a relaxing bath or an hour with a good book. --- *Agencies*
+**8. Reward yourself:** Plan something rewarding to end a stressful day --- a relaxing bath or an hour with a good book. --- _Agencies_

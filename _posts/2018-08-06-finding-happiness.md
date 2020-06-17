@@ -23,4 +23,4 @@ And this is the purpose of human life.
 
 ---
 
-*Finding Happiness on Imgur / [ApplyBurnHeal](https://imgur.com/gallery/sojpMIq){:rel="nofollow"}*
+_Finding Happiness on Imgur / [ApplyBurnHeal](https://imgur.com/gallery/sojpMIq){:rel="nofollow"}_

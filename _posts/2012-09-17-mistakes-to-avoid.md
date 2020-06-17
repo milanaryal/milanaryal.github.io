@@ -41,4 +41,4 @@ Don't be too hard on yourself. There are plenty of people willing to do that for
 
 ### 8. Waiting, and waiting some more
 
-Stop waiting for tomorrow; you will never get today back. It doesn't matter what you've done in the past. It doesn't matter how low or unworthy you feel right now. The simple fact that you're alive makes you worthy. Life is too short for excuses. Stop settling. Stop procrastinating step forward. If you are not sure exactly which way to go, it is always wise to follow your heart. --- *Agencies*
+Stop waiting for tomorrow; you will never get today back. It doesn't matter what you've done in the past. It doesn't matter how low or unworthy you feel right now. The simple fact that you're alive makes you worthy. Life is too short for excuses. Stop settling. Stop procrastinating step forward. If you are not sure exactly which way to go, it is always wise to follow your heart. --- _Agencies_

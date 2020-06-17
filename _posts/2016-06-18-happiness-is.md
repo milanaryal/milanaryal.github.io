@@ -57,4 +57,4 @@ As you read this list take a few moments to think about each one, before going o
 
 ---
 
-*So what have you done lately to help yourself feel good? Try some, you might like them!*
+_So what have you done lately to help yourself feel good? Try some, you might like them!_

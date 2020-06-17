@@ -32,4 +32,4 @@ Colours can even change our heart rate, blood pressure and respiration, as resea
 
 **Purple:** Purple reminds people of royalty and luxury. It's also the colour of magic. However, since purple rarely occurs in nature, it's also seen to be a nice, subtle addition to any outfit.
 
-**White:** This colour is associated with cleanliness and perfection. It is always a safe choice for a shirt or scarf, but too much white denotes timidity and sterility --- not good for workplace relations. --- *Agencies*
+**White:** This colour is associated with cleanliness and perfection. It is always a safe choice for a shirt or scarf, but too much white denotes timidity and sterility --- not good for workplace relations. --- _Agencies_

@@ -7,7 +7,7 @@ Here's a neat infographic that explains the differences between serif and sans s
 
 <figure>
   <a href="/uploads/20141218-serif-vs-sans-the-final-battle-infographic.jpg">
-    <img src="/uploads/20141218-serif-vs-sans-the-final-battle-infographic.jpg" alt="The differences between serif and sans serif fonts." title="The differences between serif and sans serif fonts.">
+    <img src="/uploads/20141218-serif-vs-sans-the-final-battle-infographic.jpg" alt="The differences between serif and sans serif fonts." title="The differences between serif and sans serif fonts." />
   </a>
   <figcaption>For free fonts and dingbats, check <a href="http://www.urbanfonts.com" rel="nofollow">UrbanFonts.com</a></figcaption>
 </figure>

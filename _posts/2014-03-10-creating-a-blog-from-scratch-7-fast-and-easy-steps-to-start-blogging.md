@@ -14,11 +14,11 @@ First thing you should do is to search on the topic you interested or have exper
 
 #### 2) Buy a domain name
 
-Then go to domain marketplace such as *GoDaddy* or *Namecheap*, choose the relevant domain name related to your blog example if you interested in blogging on drawing I suggest that you buy domain name such as “drawingapicture.com, drawingforfun.com, howtodrawing.com”. The cost for buying a .com name is around $10–$40 depend on the domain marketplace.
+Then go to domain marketplace such as _GoDaddy_ or _Namecheap_, choose the relevant domain name related to your blog example if you interested in blogging on drawing I suggest that you buy domain name such as “drawingapicture.com, drawingforfun.com, howtodrawing.com”. The cost for buying a .com name is around $10–$40 depend on the domain marketplace.
 
 #### 3) Open a hosting account
 
-Then you need to link the blog together with its hosting account. You can open a hosting account for just around $10 monthly and it can be used for multiple domain names.
+Then you need to link the blog together with its hosting account. You can open a hosting account for just around \$10 monthly and it can be used for multiple domain names.
 
 #### 4) Choose blog platform
 
@@ -34,6 +34,6 @@ Then make sure you create content that is relevant to your blog, let say if you�
 
 #### 7) Monetize your blog
 
-How you can make money with your blog is to add some affiliate link from CPA Program, PPS Program, you can also promote an eBook on your blog. Other way that you can make money from  is to set up a page that consist an ecommerce store, many of the bloggers will use amazon associates and include it in their own blog. It is free to set up an *amazon.com*.
+How you can make money with your blog is to add some affiliate link from CPA Program, PPS Program, you can also promote an eBook on your blog. Other way that you can make money from is to set up a page that consist an ecommerce store, many of the bloggers will use amazon associates and include it in their own blog. It is free to set up an _amazon.com_.
 
 Creating a blog from scratch is not hard if you follow the steps that I mention above. These are the steps that is still used until today that make all the bloggers success in blogging.

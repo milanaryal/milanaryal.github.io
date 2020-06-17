@@ -18,7 +18,7 @@ The design of a logo is not effective unless of course it incorporates outstandi
 
 ### Icons
 
-Creative Logo designers generally apply the concept of symbology provide a feeling of belonging. By using it continuously, your consumers will start to see your brand name in the reflection of symbols used in the logo. It will position your brand well in the customer' s mind and they will be able to recall it increasingly.  Accumulation of constantly applied designs can serve as a familiar plus unique brand' s artwork expressions. This can be an incontrovertible fact that brands which has been doing great to create a sense belonging are related to buying develop the maximum value above time.
+Creative Logo designers generally apply the concept of symbology provide a feeling of belonging. By using it continuously, your consumers will start to see your brand name in the reflection of symbols used in the logo. It will position your brand well in the customer' s mind and they will be able to recall it increasingly. Accumulation of constantly applied designs can serve as a familiar plus unique brand' s artwork expressions. This can be an incontrovertible fact that brands which has been doing great to create a sense belonging are related to buying develop the maximum value above time.
 
 ### Typography
 
@@ -34,7 +34,7 @@ Here are the 6 qualities that every good logo should possess:
 
 <figure>
   <a href="/uploads/20140912-logo-design-tips-for-dummies-what-your-logo-should-be.gif">
-    <img src="/uploads/20140912-logo-design-tips-for-dummies-what-your-logo-should-be.gif" alt="The 6 qualities that every good logo should possess">
+    <img src="/uploads/20140912-logo-design-tips-for-dummies-what-your-logo-should-be.gif" alt="The 6 qualities that every good logo should possess" />
   </a>
   <figcaption>Logo design tips for dummies: what your logo should be?</figcaption>
 </figure>

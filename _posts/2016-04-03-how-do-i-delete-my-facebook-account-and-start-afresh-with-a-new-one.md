@@ -28,4 +28,4 @@ Now you should eventually be able to create a new account, with your preferred e
 
 ---
 
-*A version of this article appears on March 17 2016 of [The Guardian](http://www.theguardian.com/technology/askjack/2016/mar/17/how-can-i-delete-my-facebook-account-and-start-afresh-with-a-new-one){:rel="nofollow"}.*
+_A version of this article appears on March 17 2016 of [The Guardian](http://www.theguardian.com/technology/askjack/2016/mar/17/how-can-i-delete-my-facebook-account-and-start-afresh-with-a-new-one){:rel="nofollow"}._

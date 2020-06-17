@@ -6,7 +6,7 @@ excerpt: "Twitter is perfect place to keep your business heard by massive users 
 
 It is undeniable that Twitter is one of popular social media websites. It offers fast information through 140 characters. Many companies start to pay attention to the use of Twitter for their business. They even create account for their company and share information about the company itself, the products, services and other related stuff.
 
-You can use Twitter to promote your business. It allows you to post something short but has sharp information to keep in touch with your customer or gain new potential customers. Twitter is perfect place to keep your business heard by massive users on it. Even if you are new or a seasoned pro to Twitter, here we have simple ways to optimize your company’s Twitter profile through some simple SEO campaign. Fancy to know?  Here is how to optimize your Twitter and get better rank in Google’s eyes as well as promote your business.
+You can use Twitter to promote your business. It allows you to post something short but has sharp information to keep in touch with your customer or gain new potential customers. Twitter is perfect place to keep your business heard by massive users on it. Even if you are new or a seasoned pro to Twitter, here we have simple ways to optimize your company’s Twitter profile through some simple SEO campaign. Fancy to know? Here is how to optimize your Twitter and get better rank in Google’s eyes as well as promote your business.
 
 #### Your account name and user name should reflect your business
 

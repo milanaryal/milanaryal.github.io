@@ -15,4 +15,4 @@ Think of what understanding this great orchestration could mean for relationship
 
 ---
 
-*Abstract from the book: Life, the Truth, and Being Free*
+_Abstract from the book: Life, the Truth, and Being Free_

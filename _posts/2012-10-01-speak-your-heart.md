@@ -56,4 +56,4 @@ Finally, the diary ended when it said, "today I will tell her I love her". It wa
 
 ---
 
-*So the moral of the story, if you love someone, don't wait till tomorrow to tell him/her. Maybe the next day will never come at all.*
+_So the moral of the story, if you love someone, don't wait till tomorrow to tell him/her. Maybe the next day will never come at all._

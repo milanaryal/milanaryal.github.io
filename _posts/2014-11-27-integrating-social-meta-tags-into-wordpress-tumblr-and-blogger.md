@@ -23,7 +23,7 @@ Install WordPress SEO by Yoast, this plugin made everything easier:
 
 <figure>
   <a href="/uploads/20141127-wordpress-dashboard-screenshot-yoast-wordpress-seo.png">
-    <img src="/uploads/20141127-wordpress-dashboard-screenshot-yoast-wordpress-seo.png" alt="Installing WordPress SEO by Yoast">
+    <img src="/uploads/20141127-wordpress-dashboard-screenshot-yoast-wordpress-seo.png" alt="Installing WordPress SEO by Yoast" />
   </a>
 </figure>
 
@@ -47,11 +47,17 @@ By default, Tumblr has social meta tags enabled, and "smart suggests" the meta d
 
 First add following code in the `<head>` tag:
 
+<!-- prettier-ignore-start -->
+
 ```html
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
 ```
 
+<!-- prettier-ignore-end -->
+
 And place the <a href="http://stackoverflow.com/questions/11493718/facebook-open-graph-protocol-on-tumblr" rel="nofollow">following code</a> before `</head>` section:
+
+<!-- prettier-ignore-start -->
 
 ```html
 <!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
@@ -125,9 +131,13 @@ And place the <a href="http://stackoverflow.com/questions/11493718/facebook-open
     <meta property="og:image" content="{PortraitURL-64}"/>
 {/block:IndexPage}
 <!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
-```
+``` 
+
+<!-- prettier-ignore-end -->
 
 For Twitter card property also place the <a href="http://www.quora.com/Whats-the-best-way-to-implement-Twitter-Cards-on-a-Tumblr-blog" rel="nofollow">following code</a> before `</head>` section:
+
+<!-- prettier-ignore-start -->
 
 ```html
 <!-- BEGIN TWITTER TAGS -->
@@ -211,17 +221,25 @@ For Twitter card property also place the <a href="http://www.quora.com/Whats-the
 <!-- END TWITTER TAGS -->
 ```
 
+<!-- prettier-ignore-end -->
+
 ### Blogger
 
 Google's Blogger is a great platform for publishing rich content. To add some social meta tags follow the following process.
 
 First add `xmlns:og='http://ogp.me/ns#'` in the `<HTML>` tag. Note that there may already exist some code.
 
+<!-- prettier-ignore-start -->
+
 ```html
 <HTML xmlns:og='http://ogp.me/ns#'>
 ```
 
+<!-- prettier-ignore-end -->
+
 And place the following code before `</head>` section:
+
+<!-- prettier-ignore-start -->
 
 ```html
 <!-- Open Graph metatags -->
@@ -267,7 +285,11 @@ And place the following code before `</head>` section:
     <!-- /Open Graph metatags -->
 ```
 
+<!-- prettier-ignore-end -->
+
 For Twitter card property also place the following before `</head>` section:
+
+<!-- prettier-ignore-start -->
 
 ```html
 <!-- Twitter card metatags -->
@@ -302,7 +324,11 @@ For Twitter card property also place the following before `</head>` section:
     <!-- /Twitter card metatags -->
 ```
 
+<!-- prettier-ignore-end -->
+
 For Google+ and Facebook authorship include the following code before `</head>` section:
+
+<!-- prettier-ignore-start -->
 
 ```html
 <!-- Facebook admins and app ID -->
@@ -314,13 +340,15 @@ For Google+ and Facebook authorship include the following code before `</head>` 
 <link href='https://plus.google.com/YOUR_GOOGLE+_PAGE_ID_HERE' rel='publisher'/>
 ```
 
+<!-- prettier-ignore-end -->
+
 ---
 
 ### Validating
 
 Be sure to check one of your example posts via the different social media metadata validator.
 
-* For Facebook, test using the <a href="http://developers.facebook.com/tools/debug" rel="nofollow">Facebook debugger</a>.
-* For Twitter, submit one of your example posts via the <a href="http://cards-dev.twitter.com/validator" rel="nofollow">Twitter card validator</a>.
-* For Google+, test with the <a href="http://www.google.com/webmasters/tools/richsnippets" rel="nofollow">rich snippets tester</a>.
-* If you use Pinterest a lot, you need to validate your rich pins by going to the <a href="http://developers.pinterest.com/docs/rich-pins/validator/" rel="nofollow">rich pin validator page</a>.
+- For Facebook, test using the <a href="http://developers.facebook.com/tools/debug" rel="nofollow">Facebook debugger</a>.
+- For Twitter, submit one of your example posts via the <a href="http://cards-dev.twitter.com/validator" rel="nofollow">Twitter card validator</a>.
+- For Google+, test with the <a href="http://www.google.com/webmasters/tools/richsnippets" rel="nofollow">rich snippets tester</a>.
+- If you use Pinterest a lot, you need to validate your rich pins by going to the <a href="http://developers.pinterest.com/docs/rich-pins/validator/" rel="nofollow">rich pin validator page</a>.

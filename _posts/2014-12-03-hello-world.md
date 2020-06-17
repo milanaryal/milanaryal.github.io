@@ -12,7 +12,7 @@ I've finally migrated this site to [GitHub Pages](http://pages.github.com){:rel=
 
 Over time, I grew to really dislike how heavy-weight other CMS platform is. I dislike how WYSIWYG editors make it really hard to see what HTML is being generated and tend to bloat the code that is produced. I found different CMS platform uses more and more plugins which make our site weight heavy and slow. In CMS platform, I was not able to do more of what I want to do.
 
-So when I came to learned about Jekyll, I found out that it is the great alternative. I like the idea that my entire blog is a set of static files. Besides its simplicity and light weighted, it makes backups so much easier and avoids most common security concerns caused by running dynamic websites. I could even write my posts in [Markdown](http://en.wikipedia.org/wiki/Markdown){:rel="nofollow"} or [Textile](http://en.wikipedia.org/wiki/Textile_(markup_language)){:rel="nofollow"} which is the easiest way of writing blog posts.
+So when I came to learned about Jekyll, I found out that it is the great alternative. I like the idea that my entire blog is a set of static files. Besides its simplicity and light weighted, it makes backups so much easier and avoids most common security concerns caused by running dynamic websites. I could even write my posts in [Markdown](http://en.wikipedia.org/wiki/Markdown){:rel="nofollow"} or [Textile](<http://en.wikipedia.org/wiki/Textile_(markup_language)>){:rel="nofollow"} which is the easiest way of writing blog posts.
 
 I think this is the future of blogging with Jekyll which gives us great control to our static contents.
 

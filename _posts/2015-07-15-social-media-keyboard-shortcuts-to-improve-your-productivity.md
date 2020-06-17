@@ -18,7 +18,7 @@ These shortcuts allow you to bypass the need for mouse clicks and movements and 
 
 <figure>
   <a href="/uploads/20150715-twitter-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-twitter-keyboard-shortcuts.jpg" alt="Twitter keyboard shortcuts">
+    <img src="/uploads/20150715-twitter-keyboard-shortcuts.jpg" alt="Twitter keyboard shortcuts" />
   </a>
 </figure>
 
@@ -26,7 +26,7 @@ These shortcuts allow you to bypass the need for mouse clicks and movements and 
 
 <figure>
   <a href="/uploads/20150715-medium-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-medium-keyboard-shortcuts.jpg" alt="Medium keyboard shortcuts">
+    <img src="/uploads/20150715-medium-keyboard-shortcuts.jpg" alt="Medium keyboard shortcuts" />
   </a>
 </figure>
 
@@ -36,7 +36,7 @@ For Windows users, use `Ctrl + Alt + the number`.
 
 <figure>
   <a href="/uploads/20150715-facebook-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-facebook-keyboard-shortcuts.jpg" alt="Facebook keyboard shortcuts">
+    <img src="/uploads/20150715-facebook-keyboard-shortcuts.jpg" alt="Facebook keyboard shortcuts" />
   </a>
 </figure>
 
@@ -44,7 +44,7 @@ For Windows users, use `Ctrl + Alt + the number`.
 
 <figure>
   <a href="/uploads/20150715-youtube-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-youtube-keyboard-shortcuts.jpg" alt="YouTube keyboard shortcuts">
+    <img src="/uploads/20150715-youtube-keyboard-shortcuts.jpg" alt="YouTube keyboard shortcuts" />
   </a>
 </figure>
 
@@ -52,7 +52,7 @@ For Windows users, use `Ctrl + Alt + the number`.
 
 <figure>
   <a href="/uploads/20150715-tumblr-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-tumblr-keyboard-shortcuts.jpg" alt="Tumblr keyboard shortcuts">
+    <img src="/uploads/20150715-tumblr-keyboard-shortcuts.jpg" alt="Tumblr keyboard shortcuts" />
   </a>
 </figure>
 
@@ -60,7 +60,7 @@ For Windows users, use `Ctrl + Alt + the number`.
 
 <figure>
   <a href="/uploads/20150715-google-plus-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-google-plus-keyboard-shortcuts.jpg" alt="Google Plus keyboard shortcuts">
+    <img src="/uploads/20150715-google-plus-keyboard-shortcuts.jpg" alt="Google Plus keyboard shortcuts" />
   </a>
 </figure>
 

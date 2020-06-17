@@ -6,12 +6,7 @@ excerpt: "An infographic which provides a visual to show how the different parts
 
 This infographic provides a visual to show how the different parts of the brain function. The infographic illustrates the brains, nose and throat functions in Lamen's terms so that it is clear to the reader.
 
-<figure>
-  <a href="/uploads/20140706-the-wonders-within-your-head_w1500.jpg">
-    <img src="/uploads/20140706-the-wonders-within-your-head_w1500.jpg" alt="The wonders within your head">
-  </a>
-  <figcaption>The wonders within your head</figcaption>
-</figure>
+[![The wonders within your head](/uploads/20140706-the-wonders-within-your-head_w1500.jpg)](/uploads/20140706-the-wonders-within-your-head_w1500.jpg)
 
 #### Transcript
 

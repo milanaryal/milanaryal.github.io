@@ -4,11 +4,7 @@
     "ecmaVersion": 6,
     "sourceType": "script"
   },
-  "extends": [
-    "plugin:unicorn/recommended",
-    "xo",
-    "xo/browser"
-  ],
+  "extends": ["plugin:unicorn/recommended", "xo", "xo/browser"],
   "rules": {
     "capitalized-comments": "off",
     "indent": [
@@ -19,19 +15,10 @@
         "SwitchCase": 1
       }
     ],
-    "multiline-ternary": [
-      "error",
-      "always-multiline"
-    ],
+    "multiline-ternary": ["error", "always-multiline"],
     "no-new": "off",
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
-    "semi": [
-      "error",
-      "never"
-    ],
+    "object-curly-spacing": ["error", "always"],
+    "semi": ["error", "never"],
     "strict": "error",
     "unicorn/no-for-loop": "off",
     "unicorn/no-null": "off",

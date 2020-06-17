@@ -21,23 +21,26 @@ According to Jekyll wiki,
 
 > Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through [Markdown](http://daringfireball.net/projects/markdown/){:rel="nofollow"} (or [Textile](http://redcloth.org/textile){:rel="nofollow"}) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind [GitHub Pages](http://pages.github.com/){:rel="nofollow"}, which means you can use Jekyll to host your project's page, blog, or website from GitHub's servers for free.
 
-GitHub Pages uses the [following dependencies](http://pages.github.com/versions/){:rel="nofollow"}:
+GitHub Pages uses the [following dependencies](http://pages.github.com/versions/){:rel="nofollow"}, mainly:
 
-- {% for dependency in site.github.versions %}{{ dependency[0] }}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}
+- ruby => language
+- liquid => template
+- kramdown => markdown processor
+- rouge => syntax highlight
 
 ### Who are using Jekyll?
 
 Here are some websites/blog that were created with Jekyll:
 
-* [Jekyll](http://jekyllrb.com/){:rel="nofollow"} - itself and most of the GitHub's subpages
-* [HealthCare.gov](http://www.healthcare.gov/){:rel="nofollow"} - landing page and content subpages
-* [Bootstrap](http://getbootstrap.com/){:rel="nofollow"}
-* [Font Awesome](http://fontawesome.io/){:rel="nofollow"}
-* [Mark Dotto](http://markdotto.com/){:rel="nofollow"}
-* [Zach Holman](http://zachholman.com/){:rel="nofollow"}
-* [Todd Motto](http://toddmotto.com/){:rel="nofollow"}
+- [Tom Preston-Werner](https://tom.preston-werner.com/){:rel="nofollow"} - founder of Jekyll
+- [Jekyll](http://jekyllrb.com/){:rel="nofollow"} - itself and most of the GitHub's subpages
+- [HealthCare.gov](http://www.healthcare.gov/){:rel="nofollow"} - landing page and content subpages
+- [Bootstrap](http://getbootstrap.com/){:rel="nofollow"}
+- [Mark Dotto](http://markdotto.com/){:rel="nofollow"} - founder of Boostrap
+- [Font Awesome](http://fontawesome.io/){:rel="nofollow"}
+- [Ben Balter](https://ben.balter.com/){:rel="nofollow"}
 
-... and many other awesome projects and blogs are using Jekyll and hosted on GitHub Pages.
+...and many other awesome projects and blogs are using Jekyll and hosted on GitHub Pages.
 
 ### Getting Started
 
@@ -59,12 +62,11 @@ Download and install [GitHub Desktop app](http://desktop.github.com/){:rel="nofo
 
 Download and setup a good themes from the following popular sites:
 
-* [Jekyll Themes Wiki](http://github.com/jekyll/jekyll/wiki/Themes){:rel="nofollow"}
-* [Jekyll Themes](http://jekyllthemes.org/){:rel="nofollow"} - a Jekyll theme collection site
-* [Poole](http://getpoole.com/){:rel="nofollow"}
-* [Jekyll Now](http://www.jekyllnow.com/){:rel="nofollow"}
-* There're other many theme collection site for Jekyll.
-
+- [Jekyll Themes Wiki](http://github.com/jekyll/jekyll/wiki/Themes){:rel="nofollow"}
+- [Jekyll Themes](http://jekyllthemes.org/){:rel="nofollow"} - a Jekyll theme collection site
+- [Poole](http://getpoole.com/){:rel="nofollow"}
+- [Jekyll Now](http://www.jekyllnow.com/){:rel="nofollow"}
+- There're other many theme collection site for Jekyll.
 
 ### Jekyll directory structure
 
@@ -114,9 +116,9 @@ A basic Jekyll site usually looks something like this:
 
 #### Step 4
 
-* With the help of GitHub Desktop app, clone your `username.github.io` and sync/push your theme.
-* Congratulation! You are done.
-* Now after few minutes (less than 15 min) you'll see your changes at your `http://username.githun.io`.
+- With the help of GitHub Desktop app, clone your `username.github.io` and sync/push your theme.
+- Congratulation! You are done.
+- Now after few minutes (less than 15 min) you'll see your changes at your `http://username.githun.io`.
 
 ### Setting up a custom domain with GitHub Pages
 
@@ -126,18 +128,18 @@ Follow the following process to setup custom domain name with your GitHub Pages.
 
 With your DNS provider, create A records that resolve to the following IP addresses:
 
-| Name         | Type    | Record         |
-|--------------|---------|----------------|
-| example.com  | A       | 192.30.252.153 |
-| example.com  | A       | 192.30.252.154 |
+| Name        | Type | Record         |
+| ----------- | ---- | -------------- |
+| example.com | A    | 192.30.252.153 |
+| example.com | A    | 192.30.252.154 |
 
 #### Configuring a www subdomain
 
 Again add following CNAME record to your DNS provider:
 
-| Name         | Type    | Record             |
-|--------------|---------|--------------------|
-| www          | CNAME   | username.github.io |
+| Name | Type  | Record             |
+| ---- | ----- | ------------------ |
+| www  | CNAME | username.github.io |
 
 **Note:** Do not use wildcard DNS records (e.g. `*.example.com`) with GitHub Pages! A wildcard DNS record will allow anyone to host a GitHub Pages site at one of your subdomains.
 
@@ -145,8 +147,8 @@ Again add following CNAME record to your DNS provider:
 
 Now push a CNAME (with out any extention) file name in your GitHub Pages with your desire redirect:
 
-* If your CNAME file contains `example.com`, then `www.example.com` will redirect to `example.com`.
-* If your CNAME file contains `www.example.com`, then `example.com` will redirect to `www.example.com`.
+- If your CNAME file contains `example.com`, then `www.example.com` will redirect to `example.com`.
+- If your CNAME file contains `www.example.com`, then `example.com` will redirect to `www.example.com`.
 
 ### Publish your first blog post
 
@@ -159,7 +161,7 @@ title: Blogging Like a Hacker
 ---
 ```
 
-*Note: For the proper setup, don't use `tab` use `space` instead.*
+_Note: For the proper setup, don't use `tab` use `space` instead._
 
 Thanks to Liquid (Jekyll uses the Liquid templating language to process templates) that you can add your desire front matter:
 

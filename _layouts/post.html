@@ -78,7 +78,7 @@ layout: default
             {%- else -%}
               {%- assign image_alternative_text = page_title -%}
             {%- endif -%}
-              <img class="post-lead-img img-fluid" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}>
+              <img class="post-lead-img img-fluid" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %} />
             {% if image_caption %}
               <figcaption class="post-lead-figcaption">{{ image_caption }}</figcaption>
             {% endif %}
@@ -154,7 +154,7 @@ layout: default
                 {{ date_modified | date: '%a, %b %-d, %Y' }} at {{ date_modified | date: '%-I:%M%P %Z' }}
               {%- endcapture -%}
             {%- endif -%}
-            <p style="display: none;">Written by <span class="p-author h-card"><img style="display: none;" class="u-photo" src="{{ site.author.avatar }}" alt="{{ page_author }}'s profile image"> <a class="p-name u-url" href="{{ site.url }}/">{{ site.author.name }}</a></span> on <time class="published dt-published" datetime="{{ date_published }}">{{ full_date_published }}</time>, and last updated on <time class="updated dt-updated" datetime="{{ date_modified }}">{{ full_date_modified }}</time>.</p>
+            <p style="display: none;">Written by <span class="p-author h-card"><img style="display: none;" class="u-photo" src="{{ site.author.avatar }}" alt="{{ page_author }}'s profile image" /> <a class="p-name u-url" href="{{ site.url }}/">{{ site.author.name }}</a></span> on <time class="published dt-published" datetime="{{ date_published }}">{{ full_date_published }}</time>, and last updated on <time class="updated dt-updated" datetime="{{ date_modified }}">{{ full_date_modified }}</time>.</p>
 
           </div><!-- /.col-* -->
         </div><!-- /.row -->
@@ -193,7 +193,7 @@ layout: default
         <div class="post-author-card">
           <div class="post-author-card-avatar">
             <a class="post-author-card-avatar-link" href="{{ site_url }}/">
-              <img class="post-author-card-avatar-img" src="{{ site_author_avatar }}" alt="{{ site_author }}">
+              <img class="post-author-card-avatar-img" src="{{ site_author_avatar }}" alt="{{ site_author }}" />
             </a>
           </div><!-- /.post-author-card-avatar -->
           <div class="post-author-card-content">

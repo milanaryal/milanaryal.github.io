@@ -1,74 +1,75 @@
 ---
 title: "Hosting static website on GitLab with GitLab Pages"
 date: 2020-06-16T14:00:00+05:45
+excerpt: "Learn how to host and deploy your static website on GitLab.com with GitLab Pages."
 ---
 
-[GitLab](https://gitlab.com/){: rel="nofollow" } makes it incredibly easy to build, deploy, and host your static website via their free GitLab Pages service, which provides native support for [numerous Static Site Generators (SSG)](https://gitlab.com/pages){: rel="nofollow" }, such as Gatsby, Next.js, Nuxt, Jekyll, Hugo, Hexo, Middleman and Pelican.
+[GitLab](https://gitlab.com/){:rel="nofollow"} makes it incredibly easy to build, deploy, and host your static website via their free GitLab Pages service, which provides native support for [numerous Static Site Generators (SSG)](https://gitlab.com/pages){:rel="nofollow"}, such as Gatsby, Next.js, Nuxt, Jekyll, Hugo, Hexo, Middleman and Pelican.
 
 ### Assumptions
 
 - Working familiarity with Git for version control
-- A [GitLab account](https://gitlab.com/users/sign_in){: rel="nofollow" }
-- A [staticgen](https://www.staticgen.com/){: rel="nofollow" } website on your local machine that you are ready to publish
+- A [GitLab account](https://gitlab.com/users/sign_in){:rel="nofollow"}
+- A [staticgen](https://www.staticgen.com/){:rel="nofollow"} website on your local machine that you are ready to publish
 
 ### Create `.gitlab-ci.yml`
 
 In the root directory of your site project folder, create a `.gitlab-ci.yml` file. The `.gitlab-ci.yml` configures the GitLab CI on how to build your page. Simply add the content below.
 
-#### [GitLab CI for Plain HTML website](https://gitlab.com/pages/gatsby){: rel="nofollow" }
+#### [GitLab CI for Plain HTML website](https://gitlab.com/pages/gatsby){:rel="nofollow"}
 
-This project's static Pages are built by [GitLab CI](https://gitlab.com/pages/plain-html){: rel="nofollow" }, following the steps
-defined in [.gitlab-ci.yml](https://gitlab.com/pages/plain-html/-/blob/master/.gitlab-ci.yml){: rel="nofollow" }:
+This project's static Pages are built by [GitLab CI](https://gitlab.com/pages/plain-html){:rel="nofollow"}, following the steps
+defined in [.gitlab-ci.yml](https://gitlab.com/pages/plain-html/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
 
 ```yml
 image: node
 
 pages:
   script:
-  - npm install
-  - npm install gatsby-cli
-  - node_modules/.bin/gatsby build --prefix-paths
+    - npm install
+    - npm install gatsby-cli
+    - node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
-    - public
+      - public
   cache:
     paths:
       - node_modules
   only:
-  - master
+    - master
 ```
 
 The above example expects to put all your HTML files in the `public/` directory.
 
-#### [GitLab CI for Gatsby website](https://gitlab.com/pages/gatsby){: rel="nofollow" }
+#### [GitLab CI for Gatsby website](https://gitlab.com/pages/gatsby){:rel="nofollow"}
 
-This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gitlab-ci/){: rel="nofollow" }, following the steps
-defined in [.gitlab-ci.yml](https://gitlab.com/pages/gatsby/-/blob/master/.gitlab-ci.yml){: rel="nofollow" }:
+This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gitlab-ci/){:rel="nofollow"}, following the steps
+defined in [.gitlab-ci.yml](https://gitlab.com/pages/gatsby/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
 
 ```yml
 image: node
 
 pages:
   script:
-  - npm install
-  - npm install gatsby-cli
-  - node_modules/.bin/gatsby build --prefix-paths
+    - npm install
+    - npm install gatsby-cli
+    - node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
-    - public
+      - public
   cache:
     paths:
       - node_modules
   only:
-  - master
+    - master
 ```
 
 The above example expects to put all your HTML files in the `public/` directory.
 
 #### [GitLab CI for Jekyll website](https://gitlab.com/pages/jekyll)
 
-This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gitlab-ci/){: rel="nofollow" }, following the steps
-defined in [.gitlab-ci.yml](https://gitlab.com/pages/jekyll/-/blob/master/.gitlab-ci.yml){: rel="nofollow" }:
+This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gitlab-ci/){:rel="nofollow"}, following the steps
+defined in [.gitlab-ci.yml](https://gitlab.com/pages/jekyll/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
 
 ```yml
 image: ruby:latest
@@ -78,21 +79,21 @@ variables:
 
 pages:
   script:
-  - bundle install
-  - bundle exec jekyll build -d public
+    - bundle install
+    - bundle exec jekyll build -d public
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
 ```
 
 The above example expects to put all your HTML files in the `public/` directory.
 
-#### [GitLab CI for Hugo website](https://gitlab.com/pages/hugo){: rel="nofollow" }
+#### [GitLab CI for Hugo website](https://gitlab.com/pages/hugo){:rel="nofollow"}
 
-This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gitlab-ci/){: rel="nofollow" }, following the steps
-defined in [.gitlab-ci.yml](https://gitlab.com/pages/hugo/-/blob/master/.gitlab-ci.yml){: rel="nofollow" }:
+This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gitlab-ci/){:rel="nofollow"}, following the steps
+defined in [.gitlab-ci.yml](https://gitlab.com/pages/hugo/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
 
 ```yml
 # All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
@@ -103,27 +104,27 @@ variables:
 
 test:
   script:
-  - hugo
+    - hugo
   except:
-  - master
+    - master
 
 pages:
   script:
-  - hugo
+    - hugo
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
 ```
 
 The above example expects to put all your HTML files in the `public/` directory.
 
 #### GitLab Pages examples
 
-*Example websites hosted by GitLab Pages*
+_Example websites hosted by GitLab Pages_
 
-Check out the [GitLab Pages official group](https://gitlab.com/pages){: rel="nofollow" } for a list of example projects, where you can explore some good options for Static Site Generators for Ruby, NodeJS and Python environments.
+Check out the [GitLab Pages official group](https://gitlab.com/pages){:rel="nofollow"} for a list of example projects, where you can explore some good options for Static Site Generators for Ruby, NodeJS and Python environments.
 
 ### Push your website project to GitLab
 
@@ -154,4 +155,4 @@ After the build has passed, your new website is available at `https://<YourUsern
 
 ### Next steps
 
-GitLab supports using custom CNAME's and TLS certificates. For more details on GitLab Pages, see the [GitLab Pages setup documentation](https://about.gitlab.com/blog/2016/04/07/gitlab-pages-setup/#custom-domains){: rel="nofollow" }.
+GitLab supports using custom CNAME's and TLS certificates. For more details on GitLab Pages, see the [GitLab Pages setup documentation](https://about.gitlab.com/blog/2016/04/07/gitlab-pages-setup/#custom-domains){:rel="nofollow"}.

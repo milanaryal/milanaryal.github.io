@@ -17,27 +17,29 @@ To load in a JavaScript file asynchronously you can use the following code.
 Some of these services already (smartly) provide their scripts in an async fashion, this just combines them into more efficient, organized, and understandable code.
 
 ```js
-(function(doc, script) {
+(function (doc, script) {
   var js,
-  fjs = doc.getElementsByTagName(script)[0],
-  frag = doc.createDocumentFragment(),
-  add = function(url, id) {
-    if (doc.getElementById(id)) {return;}
-    js = doc.createElement(script);
-    js.src = url;
-    id && (js.id = id);
-    frag.appendChild( js );
-  };
+    fjs = doc.getElementsByTagName(script)[0],
+    frag = doc.createDocumentFragment(),
+    add = function (url, id) {
+      if (doc.getElementById(id)) {
+        return;
+      }
+      js = doc.createElement(script);
+      js.src = url;
+      id && (js.id = id);
+      frag.appendChild(js);
+    };
 
   // Google+ button
-  add('//apis.google.com/js/plusone.js');
+  add("//apis.google.com/js/plusone.js");
   // Facebook SDK
-  add('//connect.facebook.net/en_US/sdk.js#xfbml=1', 'facebook-jssdk');
+  add("//connect.facebook.net/en_US/sdk.js#xfbml=1", "facebook-jssdk");
   // Twitter SDK
-  add('//platform.twitter.com/widgets.js');
+  add("//platform.twitter.com/widgets.js");
 
   fjs.parentNode.insertBefore(frag, fjs);
-}(document, 'script'));
+})(document, "script");
 ```
 
 This will create a new script tag, add in the social media JavaScript in the src attribute and add the tag inside the head of the document.
@@ -58,9 +60,9 @@ Just simple following code before `</body>` to load jQuery library:
 After the jQuery library script paste the following code (inside another tag `<script> // your code here </script>`):
 
 ```js
-$(document).ready(function() {
-  $.getScript('//apis.google.com/js/plusone.js');
-  $.getScript('//platform.twitter.com/widgets.js');
+$(document).ready(function () {
+  $.getScript("//apis.google.com/js/plusone.js");
+  $.getScript("//platform.twitter.com/widgets.js");
   $.getScript("//connect.facebook.net/en_US/sdk.js#xfbml=1", function () {
     FB.init({ status: true, cookie: true, xfbml: true });
   });
@@ -73,11 +75,23 @@ You'll need the HTML in place for the scripts to put their stuff:
 
 ```html
 <!-- For Twitter -->
-<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
+<a
+  href="https://twitter.com/share"
+  class="twitter-share-button"
+  data-count="horizontal"
+  >Tweet</a
+>
 
 <!-- For Facebook -->
 <div id="fb-root"></div>
-<div class="fb-like" data-send="false" data-layout="button_count" data-width="1" data-show-faces="false" data-action="recommend"></div>
+<div
+  class="fb-like"
+  data-send="false"
+  data-layout="button_count"
+  data-width="1"
+  data-show-faces="false"
+  data-action="recommend"
+></div>
 
 <!-- For Google+ -->
 <div class="g-plusone" data-size="medium" data-count="true"></div>

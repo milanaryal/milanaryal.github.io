@@ -8,7 +8,7 @@ Everyone wishes their computer worked faster. Here are some quick and easy tips 
 
 ### Use anti-virus
 
-A computer virus makes computer slower. Having an anti-virus software on your computer will help to remove  any viruses or clutter programs from slowing down your computer. If your computer is not protected by an anti-virus, you could be at serious risk. It is highly recommended that you have to use anti-virus software in your computer. There are many anti-virus in the market. Good companies are: Norton, Kaspersky, McAfee, Avast, AVG, etc.
+A computer virus makes computer slower. Having an anti-virus software on your computer will help to remove any viruses or clutter programs from slowing down your computer. If your computer is not protected by an anti-virus, you could be at serious risk. It is highly recommended that you have to use anti-virus software in your computer. There are many anti-virus in the market. Good companies are: Norton, Kaspersky, McAfee, Avast, AVG, etc.
 
 ### Delete unnecessary files
 
@@ -16,7 +16,7 @@ Deleting files that you never use and will no longer have used for can help free
 
 ### Defragment hard disk
 
-Although you delete a file, it might not delete the whole file and leave fragments behind. Defragmentation can help  eliminate these fragments and free up space and clutter on your computer. To defragment for Windows, click the start button > go to all programs > and go to system tools and select defragment.
+Although you delete a file, it might not delete the whole file and leave fragments behind. Defragmentation can help eliminate these fragments and free up space and clutter on your computer. To defragment for Windows, click the start button > go to all programs > and go to system tools and select defragment.
 
 ### Empty the Recycle Bin
 
@@ -38,8 +38,8 @@ Do you really need your Weather Bug application set to "autostart" so that it lo
 
 Delete all unwanted temporary files from the folder in your Windows directory. To do this following methods:
 
-* Open run command window from the start menu or simply press `win key + r` and then type: `%temp%` and press enter key. Then, delete all the displaying files.
-* Open run command window from the start menu or simply press `win key + r` and then type: `prefetch` then press enter key. Then, delete all the displaying files.
+- Open run command window from the start menu or simply press `win key + r` and then type: `%temp%` and press enter key. Then, delete all the displaying files.
+- Open run command window from the start menu or simply press `win key + r` and then type: `prefetch` then press enter key. Then, delete all the displaying files.
 
 You can Download a program such as CCleaner.com to perform this task on a daily basis.
 
@@ -53,9 +53,9 @@ Windows updates are important, and by skipping them or forgetting to stay up-to-
 
 To speed up computer follow these steps:
 
-* Step 1: Open run command by simply pressing `win key + r`. Then, type `cmd` and press enter.
-* Step 2: The command prompt window will appear.
-* Step 3: Type the command `CHKNTFS/T:4`.
+- Step 1: Open run command by simply pressing `win key + r`. Then, type `cmd` and press enter.
+- Step 2: The command prompt window will appear.
+- Step 3: Type the command `CHKNTFS/T:4`.
 
 This command would set the `AUTOCHK` initiation count time down to 4.
 
@@ -67,7 +67,7 @@ one troublesome issue with Windows OS is that the boot up process can sometimes 
 
 #### Disable unnecessary start up processes
 
-* Step 1: Open run command by simply pressing `win key + r`. Then, type `msconfig` and press enter.
-* Step 2: Click on the "Startup" tab on the window that appears.
-* Step 3: Look through the enabled start up processes, and uncheck those which are unnecessary. Unnecessary processes are ones started up by programs that you've installed yourself or that your system does not need to run, such as video players, music players, and instant messengers. You should not uncheck boxes for your displays drivers, sound drivers, anti-virus or other system devices.
-* Click apply the changes, then click on OK button and then, restart your computer.
+- Step 1: Open run command by simply pressing `win key + r`. Then, type `msconfig` and press enter.
+- Step 2: Click on the "Startup" tab on the window that appears.
+- Step 3: Look through the enabled start up processes, and uncheck those which are unnecessary. Unnecessary processes are ones started up by programs that you've installed yourself or that your system does not need to run, such as video players, music players, and instant messengers. You should not uncheck boxes for your displays drivers, sound drivers, anti-virus or other system devices.
+- Click apply the changes, then click on OK button and then, restart your computer.

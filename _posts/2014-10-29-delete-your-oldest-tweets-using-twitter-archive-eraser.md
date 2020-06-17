@@ -38,7 +38,7 @@ Note: You need to accept sharing several statistics to use Twitter Archive Erase
 
 <figure>
   <a href="/uploads/20141029-twitter-archive-eraser-screenshot-step1.png">
-    <img src="/uploads/20141029-twitter-archive-eraser-screenshot-step1.png" alt="Step 1">
+    <img src="/uploads/20141029-twitter-archive-eraser-screenshot-step1.png" alt="Step 1" />
   </a>
 </figure>
 
@@ -50,7 +50,7 @@ You can select which period of time you want to delete tweets from (grouped by m
 
 <figure>
   <a href="/uploads/20141029-twitter-archive-eraser-screenshot-step2.png">
-    <img src="/uploads/20141029-twitter-archive-eraser-screenshot-step2.png" alt="Step 2">
+    <img src="/uploads/20141029-twitter-archive-eraser-screenshot-step2.png" alt="Step 2" />
   </a>
 </figure>
 
@@ -66,7 +66,7 @@ You can pause/resume the deletion process and check/uncheck tweets in between.
 
 <figure>
   <a href="/uploads/20141029-twitter-archive-eraser-screenshot-step3.png">
-    <img src="/uploads/20141029-twitter-archive-eraser-screenshot-step3.png" alt="Step 3">
+    <img src="/uploads/20141029-twitter-archive-eraser-screenshot-step3.png" alt="Step 3" />
   </a>
 </figure>
 
@@ -74,18 +74,14 @@ You can pause/resume the deletion process and check/uncheck tweets in between.
 
 Use the following filtering expressions to search for:
 
-* Retweets: `^RT`
-* Replies: `^@\w+`
-* Reply to user martani\_net: `^@martani_net`
-* Mentions: `@\w+`
-* Mentions of user martnai\_net: `@martani_net`
-  *This will possibly return Retweets also*
-* Tweets containing a number with 4 digits or more: `\d{4}`
-* Tweets containing the word 'hello': `hello`
-
-{% comment %}<!-- You can find the code of the application on github: <a href="http://github.com/martani/Twitter-Archive-Eraser" rel="nofollow">github.com/martani/Twitter-Archive-Eraser</a>. Developer mentions that all the Twitter logic is done using the excellent <a href="http://linqtotwitter.codeplex.com" rel="nofollow">LinqToTwitter</a> library.
-
-Sadly, this app works only with Windows OS and yet developer is not further planning to develop this app for any other OS like Mac or linux. But don't worry you can use apps like VMware or VirtualBox to switch to Windows and use the Windows apps. -->{% endcomment %}
+- Retweets: `^RT`
+- Replies: `^@\w+`
+- Reply to user martani_net: `^@martani_net`
+- Mentions: `@\w+`
+- Mentions of user martnai\*net: `@martani_net` <br>
+  _This will possibly return Retweets also_
+- Tweets containing a number with 4 digits or more: `\d{4}`
+- Tweets containing the word 'hello': `hello`
 
 ### Video explaining how to use Twitter Archive Eraser
 

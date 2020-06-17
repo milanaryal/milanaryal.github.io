@@ -18,8 +18,8 @@ If your website is hosted on platform like GitHub Pages, Tumblr or Blogger you w
 
 Since, here's the following sites which helps you to simply redirect using `ALIAS`, `ANAME`, `CNAME` or `TXT` record:
 
-* [redirect.center](http://redirect.center/){:rel="nofollow"}
-* [redirect.name](http://redirect.name/){:rel="nofollow"}
+- [redirect.center](http://redirect.center/){:rel="nofollow"}
+- [redirect.name](http://redirect.name/){:rel="nofollow"}
 
 ### Using redirect.center
 
@@ -33,7 +33,7 @@ Specify the destination domain as a subdomain of `example.com`. A simple subdoma
 google.example.com  IN  CNAME  google.com.redirect.center
 ```
 
-If you want to redirect any unmatched subdomains to your main domain or another domain then you can also enter wildcard record (*):
+If you want to redirect any unmatched subdomains to your main domain or another domain then you can also enter wildcard record (\*):
 
 ```text
 *.example.com  IN  CNAME  example.com.redirect.center
@@ -61,10 +61,10 @@ www.oldwebsite.com  IN  CNAME  www.newwebsite.com.opts-uri.redirect.center
 
 `redirect.center` provides options to allow for the flexibility most situations will need.
 
-| Option	               | Description
-|------------------------|--------------------------------------------------------------------
-| opts-statuscode-{code} | HTTP Status Code to be used in the redirect. 302, [HTTP Status Code](http://httpstatus.es/){:rel="nofollow"}
-| opts-uri	             | Append URI (if any) to the target URL
+| Option                 | Description                                                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------ |
+| opts-statuscode-{code} | HTTP Status Code to be used in the redirect. 302, [HTTP Status Code](http://httpstatus.es/){:rel="nofollow"} |
+| opts-uri               | Append URI (if any) to the target URL                                                                        |
 
 #### Redirect main domain
 
@@ -84,7 +84,7 @@ example.com           IN  A      54.84.55.102
 redirect.example.com  IN  CNAME  domain2.com.redirect.center
 ```
 
-*You can find updated usage instructions and examples here: [redirect.center](http://redirect.center/){:rel="nofollow"}.*
+_You can find updated usage instructions and examples here: [redirect.center](http://redirect.center/){:rel="nofollow"}._
 
 ---
 
@@ -103,7 +103,7 @@ _redirect.google.example.com  IN  TXT    Redirects to https://www.google.com
 
 #### Options to redirect
 
-Wildcard matches (*) are also supported by `redirect.name`. Any unmatched paths will redirect to specfic page, so it's recommended that you add a wildcard catch-all path when redirecting specific paths.
+Wildcard matches (\*) are also supported by `redirect.name`. Any unmatched paths will redirect to specfic page, so it's recommended that you add a wildcard catch-all path when redirecting specific paths.
 
 ```text
 google.example.com            IN  CNAME  alias.redirect.name
@@ -112,9 +112,9 @@ _redirect.google.example.com  IN  TXT    Redirects from /* to https://www.google
 
 Your `TXT` record value should have a human-readable format format like one of the following:
 
-* `Redirects to [target]`, where `target` is the target URL
-* `Redirects from [path] to [target]`, where `path` is a path to match on the hostname
-* `Redirects permanently to [target]`, where `permanently` redirects with a `301` status code (defaults to `302` otherwise)
+- `Redirects to [target]`, where `target` is the target URL
+- `Redirects from [path] to [target]`, where `path` is a path to match on the hostname
+- `Redirects permanently to [target]`, where `permanently` redirects with a `301` status code (defaults to `302` otherwise)
 
 #### Redirect main domain
 

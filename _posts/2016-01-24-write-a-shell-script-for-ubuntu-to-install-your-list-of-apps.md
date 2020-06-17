@@ -8,9 +8,9 @@ If you have freshly set up your Ubuntu OS on your machine, it's a pain to instal
 
 Our shell script file can do the following things respectively:
 
-* Add different repos (PPAs and other sources)
-* Update apps sources
-* Install our apps
+- Add different repos (PPAs and other sources)
+- Update apps sources
+- Install our apps
 
 Here's the simple steps to follow:
 

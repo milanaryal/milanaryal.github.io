@@ -16,13 +16,13 @@ The *quick* brown fox, jumped **over** the lazy [dog](https://en.wikipedia.org/w
 
 becomes
 
-The *quick* brown fox, jumped **over** the lazy [dog](https://en.wikipedia.org/wiki/Dog){:rel="nofollow"}.
+The _quick_ brown fox, jumped **over** the lazy [dog](https://en.wikipedia.org/wiki/Dog){:rel="nofollow"}.
 
 ### Writing on GitHub Pages and Jekyll using Markdown
 
 > **Starting May 1st, 2016, GitHub Pages will only support [kramdown](http://kramdown.gettalong.org/){:rel="nofollow"}, Jekyll's default Markdown engine.**
 >
-> [*Learn more*](http://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0){:rel="nofollow"}
+> [_Learn more_](http://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0){:rel="nofollow"}
 
 #### Configure default Kramdown Markdown for Jekyll
 
@@ -42,18 +42,18 @@ highlighter: rouge
 
 The most common formatting options have keyboard shortcuts to make them easier to add:
 
-|Result | Markdown |
-|---|---|
-| **Bold** | `**text**` or `__text__`|
-| *Emphasize* | `*text*` or `_text_` |
-| [Link]({{ page.url }}#markdown-style-guide) | `[title](http://)` |
-| `Inline Code` | <code>`code`</code> |
-| Image | `![alt](http://)` |
-| List | `* item` |
-| Blockquote | `> quote` |
-| H1 | `# Heading` |
-| H2 | `## Heading` |
-| H3 | `### Heading` |
+| Result                                                              | Markdown                 |
+| ------------------------------------------------------------------- | ------------------------ |
+| **Bold**                                                            | `**text**` or `__text__` |
+| _Emphasize_                                                         | `*text*` or `_text_`     |
+| [Link](/writing-and-formatting-with-markdown/#markdown-style-guide) | `[title](http://)`       |
+| `Inline Code`                                                       | <code>`code`</code>      |
+| Image                                                               | `![alt](http://)`        |
+| List                                                                | `* item`                 |
+| Blockquote                                                          | `> quote`                |
+| H1                                                                  | `# Heading`              |
+| H2                                                                  | `## Heading`             |
+| H3                                                                  | `### Heading`            |
 
 ### Headers
 
@@ -90,7 +90,7 @@ Footnotes can be added to the body of your text using placeholders like this: `[
 
 ```text
 [^1]: This is my first footnote
-[^n]: Visit http://milanaryal.com
+[^n]: Visit https://milanaryal.com.np
 [^n]: A final footnote
 ```
 
@@ -103,7 +103,7 @@ For code blocks, if extensions enabled Kramdown supports both standard Markdown 
 Standard Markdown works by indenting code lines with 4 spaces:
 
 <pre><code>    &lt;header>
-      &lt;h1>{% raw %}{{title}}{% endraw %}&lt;/h1>
+      &lt;h1>{title}&lt;/h1>
     &lt;/header>
 </code></pre>
 
@@ -111,7 +111,7 @@ GFM uses triple back-ticks <code>```</code> before and after the code block:
 
 <pre><code>```
 &lt;header>
-  &lt;h1>{% raw %}{{title}}{% endraw %}&lt;/h1>
+  &lt;h1>{title}&lt;/h1>
 &lt;/header>
 ```
 </code></pre>
@@ -121,7 +121,7 @@ GFM uses triple back-ticks <code>```</code> before and after the code block:
 #### Link Markdown example
 
 ```text
-This is a paragraph that contains a [link to milanaryal.com](http://milanaryal.com).
+This is a paragraph that contains a [link to milanaryal.com.np](https://milanaryal.com.np).
 ```
 
 #### List Markdown example
@@ -149,9 +149,9 @@ from the text my post.
 
 ### Further references
 
-* [Daring Fireball: Markdown syntax documentation](http://daringfireball.net/projects/markdown/syntax){:rel="nofollow"}
-* [Redcarpet Markdown](http://github.com/vmg/redcarpet){:rel="nofollow"}
-* [Kramdown Markdown](http://github.com/gettalong/kramdown){:rel="nofollow"}
-* [GitHub Flavored Markdown](http://help.github.com/articles/github-flavored-markdown/){:rel="nofollow"}
-* [Markdown cheatsheet](http://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet){:rel="nofollow"}
-* [GitHub guides: Mastering Markdown](http://guides.github.com/features/mastering-markdown/){:rel="nofollow"}
+- [Daring Fireball: Markdown syntax documentation](http://daringfireball.net/projects/markdown/syntax){:rel="nofollow"}
+- [Redcarpet Markdown](http://github.com/vmg/redcarpet){:rel="nofollow"}
+- [Kramdown Markdown](http://github.com/gettalong/kramdown){:rel="nofollow"}
+- [GitHub Flavored Markdown](http://help.github.com/articles/github-flavored-markdown/){:rel="nofollow"}
+- [Markdown cheatsheet](http://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet){:rel="nofollow"}
+- [GitHub guides: Mastering Markdown](http://guides.github.com/features/mastering-markdown/){:rel="nofollow"}

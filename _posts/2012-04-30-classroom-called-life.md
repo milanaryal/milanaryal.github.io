@@ -32,11 +32,11 @@ At 46 I learned children and grandparents are natural allies.
 
 At 47 I learned no matter what happens, or how bad it seems today, life does go on, and it will be better tomorrow.
 
-At 48 I learned singing *Amazing Grace* can lift my spirits for hours.
+At 48 I learned singing _Amazing Grace_ can lift my spirits for hours.
 
 At 49 I learned motel mattresses are better on the side away from the phone.
 
- At 50 I learned you can tell a lot about a man by the way he handles three things --- a rainy day, lost luggage, and tangled Christmas tree lights.
+At 50 I learned you can tell a lot about a man by the way he handles three things --- a rainy day, lost luggage, and tangled Christmas tree lights.
 
 At 51 I learned keeping a vegetable garden is worth a medicine cabinet full of pills.
 
@@ -68,4 +68,4 @@ At 92 I learned you should pass this on to someone you care about. Sometimes the
 
 ---
 
-*This is a fantasy fiction story, if it meets with someone's life then it will only be a coincidence.*
+_This is a fantasy fiction story, if it meets with someone's life then it will only be a coincidence._

@@ -80,7 +80,8 @@ First reset the default lists CSS settings.
 /**
  * Global list reset
  */
-ul, ol {
+ul,
+ol {
   padding: 0;
   list-style: none;
   list-style-image: none;
@@ -151,14 +152,14 @@ If you want to normalize the default unstyled and inline list Bootstrap CSS for 
 /**
  * Normalizing unstyled and inline list
  */
- .list-unstyled > li,
- .list-inline > li {
-   margin: 0;
-   padding: 0;
- }
- .list-unstyled > li:before,
- .list-inline > li:before {
-   content: normal;
+.list-unstyled > li,
+.list-inline > li {
+  margin: 0;
+  padding: 0;
+}
+.list-unstyled > li:before,
+.list-inline > li:before {
+  content: normal;
 }
 ```
 
@@ -192,7 +193,8 @@ If you love SCSS like me, then here's what we do.
 //
 // Global list reset
 //
-ul, ol {
+ul,
+ol {
   padding: 0;
   list-style: none;
   list-style-image: none;
@@ -205,9 +207,9 @@ ul, ol {
   counter-reset: post; // let counter = post
   margin-bottom: 30px;
   > li {
-   margin-left: 30px;
-   margin-bottom: 12px;
-   padding-top: 2px;
+    margin-left: 30px;
+    margin-bottom: 12px;
+    padding-top: 2px;
   }
   > li:before {
     position: absolute;
@@ -243,7 +245,7 @@ ol.post-list {
 }
 ```
 
-*You should style the elements according to your need.*
+_You should style the elements according to your need._
 
 ### Some custom styled lists examples on CodePen
 

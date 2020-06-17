@@ -21,10 +21,10 @@ Pros:
 
 Cons:
 
-- They place ads on all free websites. Did you really think it was free without a catch? If you don’t want your users to see ads, then you can pay them $29.97 per year to keep your site ad-free.
-- You are NOT allowed to sell ads on your site unless you receive 25,000 pageviews per month. In which case, you have to apply to try their feature called Ad control. The approval process doesn’t cost you any money, but you have to split your revenues 50/50 with them *Ouch*
-- You can’t use any other plugins other than WordPress own plugins. Yup WordPress is well known for it’s flexibility due to the plugins. WordPress.com does not allow you to use plugins! If you want to use plugins, then you have to move to their VIP program which starts at $3750 per month. No joke.
-- You cannot use custom themes. Yup, you have to be stuck with their choice of themes which is being used on hundreds of millions of sites. They do offer a “design upgrade” which should really be called CSS upgrade for $30 per year. Meaning, you can change the color of your site. But if you want to add something really custom, you cannot.
+- They place ads on all free websites. Did you really think it was free without a catch? If you don’t want your users to see ads, then you can pay them \$29.97 per year to keep your site ad-free.
+- You are NOT allowed to sell ads on your site unless you receive 25,000 pageviews per month. In which case, you have to apply to try their feature called Ad control. The approval process doesn’t cost you any money, but you have to split your revenues 50/50 with them _Ouch_
+- You can’t use any other plugins other than WordPress own plugins. Yup WordPress is well known for it’s flexibility due to the plugins. WordPress.com does not allow you to use plugins! If you want to use plugins, then you have to move to their VIP program which starts at \$3750 per month. No joke.
+- You cannot use custom themes. Yup, you have to be stuck with their choice of themes which is being used on hundreds of millions of sites. They do offer a “design upgrade” which should really be called CSS upgrade for \$30 per year. Meaning, you can change the color of your site. But if you want to add something really custom, you cannot.
 - You are restricted to their analytics. You cannot use custom analytics software because you cannot add custom codes.
 - They can delete your site at anytime if they think it violates their Terms of Service.
 - They will change your theme without your permission if the founder doesn’t like the theme developer (yup it happened).

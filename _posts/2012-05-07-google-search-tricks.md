@@ -10,7 +10,7 @@ Not many users know the little tricks that can be used to get more out of a simp
 
 2. Search within numerical ranges using the '..' operator. Say, for example, you want to look for information about Nepali blogs and their progress 2009 till 2010, you could use this search: 'Nepali Blogs' 2009..2010.
 
-3. Use Google to crunch numbers by using its built-in-calculator --- try entering a calculation like 110*(654/8+3). Yes, your computer also has a calculator, but if you spend most of your day inside a browser, typing your calculation into the browser's search box is quicker than firing up your calculator app.
+3. Use Google to crunch numbers by using its built-in-calculator --- try entering a calculation like 110\*(654/8+3). Yes, your computer also has a calculator, but if you spend most of your day inside a browser, typing your calculation into the browser's search box is quicker than firing up your calculator app.
 
 4. Get quick currency conversions through Google, simply by typing in the two currencies. For example: Type 5,000 Pakistani rupees in dollars to get the result. However, it only has the more mainstream currencies.
 

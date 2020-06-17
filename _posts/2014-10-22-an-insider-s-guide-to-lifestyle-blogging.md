@@ -50,4 +50,4 @@ A causal meet up is a great to meet readers and other bloggers. Plan something a
 
 ---
 
-*Based on an independent survey of fashion, beauty and lifestyle bloggers.*
+_Based on an independent survey of fashion, beauty and lifestyle bloggers._

@@ -23,4 +23,4 @@ A walk outside will help stimulate your body. If you can't get outside, do a few
 
 #### Change your schedule
 
-You've taken a nap, had some coffee, cooled down, done some exercise and you still want to nod off. Stop what you are doing and go to bed. Study another time for maximum effectiveness. When nothing seems to keep you awake your body is telling you to get some needed rest. Listen, you'll be better off for it. --- *Agencies*
+You've taken a nap, had some coffee, cooled down, done some exercise and you still want to nod off. Stop what you are doing and go to bed. Study another time for maximum effectiveness. When nothing seems to keep you awake your body is telling you to get some needed rest. Listen, you'll be better off for it. --- _Agencies_

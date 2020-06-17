@@ -27,7 +27,6 @@ A sitemap is needed in conjunction with your robots.txt file to initially submit
 
 This is possibly the most important aspect of on site SEO. It's imperative that you have unique and informative page titles for each of your site's pages. The title of the page should include the main keyword that page is targeting plus a very brief description of what the page is about. Remember this is the title that will be visible above your listing in the search engines so don't just list a dozen keywords, it also has to entice the user to click on your link.
 
-
 ### 4. Meta descriptions
 
 The meta description is the excerpt that will appear under your listing in the search result and a similar rule applies here to the page titles. The search engines will display up to 160 characters so make sure that it grabs the attention of the user whilst also incorporating a couple of your main keywords / phrases for that page. If at all possible make sure that each page has a unique meta description.
