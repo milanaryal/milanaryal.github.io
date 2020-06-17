@@ -1,7 +1,7 @@
 ---
 title: "Access your favourite blocked BitTorrent sites"
 date: 2017-05-27T07:08:00+05:45
-last_modified_at: 2020-05-17T12:15:00+05:45
+last_modified_at: 2020-06-17T17:00:00+05:45
 excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your country or territory Internet censorship."
 ---
 
@@ -9,7 +9,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-- [unblockit.me](https://unblockit.me/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
+- [unblockit.pw](https://unblockit.pw/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
 - [torrents.io/proxy/](https://torrents.io/proxy/){:rel="nofollow"}
 - [unblockall.org](https://unblockall.org/){:rel="nofollow"}
 - [unblocker.cc](https://unblocker.cc/){:rel="nofollow"}
@@ -18,7 +18,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### [The Pirate Bay](https://thepiratebay.org/){:rel="nofollow"} proxy sites and mirrors
 
-- [proxybay.page](https://proxybay.page/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
+- [proxybay.id](https://proxybay.id/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
 - [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="nofollow"}
 - [themirrorbay.com](http://www.themirrorbay.com/){:rel="nofollow"}
 
