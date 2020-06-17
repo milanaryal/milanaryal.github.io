@@ -40,10 +40,10 @@ Following are the header tags for the body content. H1 and H2 are reserved on th
 #### This is an h4 heading
 {:.no_toc}
 
-### [H3 heading with an anchor link](/docs/style-guide/)
+### [H3 heading with an anchor link](/style-guide/)
 {:.no_toc}
 
-#### [H4 heading with an anchor link](/docs/style-guide/)
+#### [H4 heading with an anchor link](/style-guide/)
 {:.no_toc}
 
 <!-- prettier-ignore-end -->
@@ -52,7 +52,7 @@ Following are the header tags for the body content. H1 and H2 are reserved on th
 
 ### Body copy
 
-This is an **ordinary paragraph** that is _long enough_ to wrap to [multiple lines](/docs/style-guide/) so that you can see how the `line spacing` looks.
+This is an **ordinary paragraph** that is _long enough_ to wrap to [multiple lines](/style-guide/) so that you can see how the `line spacing` looks.
 
 Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 
@@ -111,7 +111,7 @@ For example, `<section>` should be wrapped as inline.
     </title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/styles.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <h1>
@@ -119,7 +119,7 @@ For example, `<section>` should be wrapped as inline.
     </h1>
 
     <!-- JS -->
-    <script src="/assets/js/scripts.min.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
 ```

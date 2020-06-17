@@ -32,7 +32,7 @@ Out of the box wordpress is semi-easy to use, there are definitely a lot of opti
 - This platform provides you with the best opportunity to get started and it is also considered as a platform that is user-friendly.
 - Provides you with the ability to store image files, video files, and other types of file formats.
 
-Be sure to know the differences between WordPress.com and WordPress.org [here](/free-wordpress-com-vs-self-hosted-wordpress-org/).
+Be sure to know the differences between WordPress.com and WordPress.org [here](/free-wordpress-dot-com-vs-self-hosted-wordpress-dot-org/).
 
 #### Cost
 
