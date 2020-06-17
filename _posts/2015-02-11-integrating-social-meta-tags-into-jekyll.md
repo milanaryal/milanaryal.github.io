@@ -104,52 +104,65 @@ Make sure you have the following `_config.yml` and post front matter setting to 
 
 Site `_config.yml` setting:
 
-```rb
-name:           "your site name"
-description:    "your site description"
-url:            "http://yoursitename.com" # URL of site, include http://, do not include a trailing slash
-baseurl:        "/base" # does not include hostname
-logo:           your site logo path # /assets/img/logo.png [best 300px X 300px]
-timezone:       your timezone # eg. Asia/Kathmandu
-locale:         your locale language # eg. en_us
+```yml
+name: "your site name"
+description: "your site description"
+url: "http://yoursitename.com" # URL of site, include http://, do not include a trailing slash
+baseurl: "/base" # does not include hostname
+logo: your site logo path # /assets/img/logo.png [best 300px X 300px]
+timezone: your timezone # eg. Asia/Kathmandu
+locale: your locale language # eg. en_us
 author:
-  facebook:     username # site author facebook page
-  twitter:      username # site author twitter page
+  facebook: username # site author facebook page
+  twitter: username # site author twitter page
 facebook:
-  app_id:       1234 # site facebook app id
-  publisher:    1234 # site facebook page id
-  admins:       1234 # site admin facebook profile id
+  app_id: 1234 # site facebook app id
+  publisher: 1234 # site facebook page id
+  admins: 1234 # site admin facebook profile id
 twitter:
-  username:     username # site twitter page
+  username: username # site twitter page
 ```
 
 Post front matter:
 
-```rb
+```yml
 ---
-layout:           post
-title:            "your post title"
-date:             2015-02-11T13:04:19+05:45 # XML Schema Date/Time
+layout: post
+title: "your post title"
+date: 2015-02-11T13:04:19+05:45 # XML Schema Date/Time
 last_modified_at: 2015-03-15T05:20:00+05:45 # last page modified date/time
-image:            your post featured image path # /assets/img/image.jpg
-excerpt:          "for meta description" # Optional for overring content excerpt
-categories:       your post categories # ["category1"] - best is to have one category in a post
-tags:             your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
+image: your post featured image path # /assets/img/image.jpg
+excerpt: "for meta description" # Optional for overring content excerpt
+categories: your post categories # ["category1"] - best is to have one category in a post
+tags: your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
 ---
+
 ```
 
 ---
 
-#### Jekyll now have a dedicated SEO plugin to better index your site's content [Update May 10, 2016]
+### Jekyll SEO Tag
 
-If your blog or product landing page is using using Jekyll or GitHub Pages, [it can now be optimized for SEO](http://github.com/blog/2162-better-discoverability-for-github-pages-sites){:rel="nofollow"}. To enable the Jekyll SEO tag plugin, you must add the following line to your site's `_config.yml` file:
+> **Update May 10, 2016**
+>
+> Jekyll now have a dedicated SEO plugin to better index your site's content
+
+If your blog or product landing page is using using Jekyll or GitHub Pages, [it can now be optimized for SEO](http://github.com/blog/2162-better-discoverability-for-github-pages-sites){:rel="nofollow"}.
+
+To enable the Jekyll SEO tag plugin, you need to add the following to your site's `Gemfile`:
 
 ```ruby
-gems:
+gem 'jekyll-seo-tag'
+```
+
+Also, add the following line to your site's `_config.yml` file (_note that if you are using a Jekyll version less than `3.5.0`, use the gems key instead of `plugins`_):
+
+```yml
+plugins:
   - jekyll-seo-tag
 ```
 
-And by adding a simple `{% raw %}{% seo %}{% endraw %}` tag right before `</head>`, Jekyll will automatically add SEO metadata to each page. It even accounts for the page title, in addition to the description, canonical URL, next (and previous) URL and post metadata.
+Now by adding a simple `{% raw %}{% seo %}{% endraw %}` tag right before `</head>`, Jekyll will automatically add SEO metadata to each page. It even accounts for the page title, in addition to the description, canonical URL, next (and previous) URL and post metadata.
 
 When you share a post to Facebook, LinkedIn, Twitter or other social networks, the tag makes sure content is displayed richly. The functionality comes courtesy of the [Jekyll SEO plugin](http://github.com/jekyll/jekyll-seo-tag){:rel="nofollow"} (GitHub Pages compatible), which GitHub says "provides a battle-tested template of crowdsourced best-practices."
 
@@ -163,7 +176,3 @@ Be sure to check one of your example posts via the different social media metada
 - For Twitter, submit one of your example posts via the [Twitter card validator](http://cards-dev.twitter.com/validator){:rel="nofollow"}.
 - For Google+, test with the [rich snippets tester](http://www.google.com/webmasters/tools/richsnippets){:rel="nofollow"}.
 - If you use Pinterest a lot, you need to validate your rich pins by going to the [rich pin validator page](http://developers.pinterest.com/docs/rich-pins/validator/){:rel="nofollow"}.
-
-> **Update June 16th, 2020**
->
-> [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag){:rel="nofollow"}: A Jekyll plugin to add metadata tags for search engines and social networks to better index and display your site's content.

@@ -21,6 +21,6 @@
   ],
   "theme_color": "{{ site.theme_color }}",
   "background_color": "{{ site.theme_color }}",
-  "start_url": "{{ site.url }}/?source=android_homescreen",
+  "start_url": "{{ '?source=android_homescreen' | absolute_url }}",
   "display": "standalone"
 }

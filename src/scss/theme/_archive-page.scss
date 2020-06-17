@@ -22,7 +22,8 @@
   // stylelint-enable declaration-no-important
 }
 
-.archive-year {
+// stylelint-disable selector-no-qualifying-type
+h3.archive-year {
   margin-top: 47px;
   margin-left: -2.25px;
   font-family: var(--font-family-serif-display);
@@ -50,13 +51,14 @@
   }
 }
 
-.archive-year + .archive-item {
+h3.archive-year + .archive-item {
   margin-top: 17px;
 
   @media (max-width: 767px) {
     margin-top: 15px;
   }
 }
+// stylelint-enable selector-no-qualifying-type
 
 .archive-title {
   a {

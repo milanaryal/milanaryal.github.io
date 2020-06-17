@@ -12,5 +12,5 @@ disallows:
 User-agent: *
 Disallow:{% for disallowed in page.disallows %}
 Disallow: {{ disallowed }}{% endfor %}
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: {{ 'sitemap.xml' | absolute_url }}
 Host: {{ site.url | remove:'https://' | remove:'http://' }}

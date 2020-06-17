@@ -1,10 +1,5 @@
-{%- if site.url -%}
-  {%- assign site_url = site.url | append: site.baseurl -%}
-{%- endif -%}
-{%- assign site_url = site_url | default: site.github.url -%}
-
 {%- if page.url -%}
- {%- assign page_url = page.url | replace:'/index.html','/' | prepend: site_url | uri_escape -%}
+ {%- assign page_url = page.url | replace:'/index.html','/' | absolute_url | uri_escape -%}
 {%- endif -%}
 
 {%- if page.title -%}

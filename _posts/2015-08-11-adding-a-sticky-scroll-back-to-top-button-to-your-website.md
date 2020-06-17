@@ -21,7 +21,7 @@ Insert the `.elevator-wrapper` at the bottom of your content, before the closing
 </body>
 ```
 
-**Note:** To enable elevator button on your page you should have jQuery and Font Awesome library installed.
+**Note:** To enable elevator button on your page you should have **jQuery** and **Font Awesome** library installed.
 
 #### Adding style
 
@@ -31,6 +31,7 @@ Add the following style for the elevator button or you can further change accord
 /**
  * Elevator - Scroll back to top utility CSS
  */
+
 .elevator {
   position: fixed;
   right: 20px;

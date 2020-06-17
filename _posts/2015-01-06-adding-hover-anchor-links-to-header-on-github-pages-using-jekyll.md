@@ -24,14 +24,16 @@ kramdown:
 Something like this Jekyll auto add ID's to your post content headers when the site is compiled.
 
 ```html
+...
+
+
 <h2 id="title2">Title2</h2>
 
 <h3 id="title3">Title3</h3>
 
 <h4 id="title4">Title4</h2>
 
-.
-.
+...
 ```
 
 ### Vanilla Javascript to add anchor links to Jekyll Markdown posts header
@@ -69,7 +71,7 @@ If you're using jQuery for your site and love coding less then here's the simple
 $(document).ready(function () {
 
   /* selector */
-  var postHeader = '.markdown-body>h3,.markdown-body>h4,.archive-body .archive-year';
+  var postHeader = '.markdown-body > h3, .markdown-body > h4';
 
   $(postHeader).filter('[id]').each(function () {
     var header      = $(this),
@@ -117,7 +119,8 @@ $(document).ready(function () {
 }
 
 /* Offsetting an html anchor to adjust for fixed header */
-h1[id] h2[id],
+h1[id],
+h2[id],
 h3[id],
 h4[id],
 h5[id] {
