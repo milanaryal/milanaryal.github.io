@@ -4,7 +4,7 @@
 
 .anchor {
   position: absolute;
-  padding-right: .575em; // margin-left value divide by 2
+  padding-right: 0.575em; // margin-left value divide by 2
   margin-left: -1.15em;
   color: inherit;
   opacity: 0;
@@ -15,13 +15,13 @@
 
   .icon-link {
     font-size: 66%;
-    vertical-align: .125em;
+    vertical-align: 0.125em;
   }
 }
 
 *:hover {
   > .anchor {
-    opacity: .75;
+    opacity: 0.75;
     // ** transition is in _global.sass for anchor ** //
     // transition: all .16s linear;
 

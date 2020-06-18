@@ -78,7 +78,7 @@ Use the following filtering expressions to search for:
 - Replies: `^@\w+`
 - Reply to user martani_net: `^@martani_net`
 - Mentions: `@\w+`
-- Mentions of user martnai\*net: `@martani_net` <br>
+- Mentions of user martnai\*net: `@martani_net` <br />
   _This will possibly return Retweets also_
 - Tweets containing a number with 4 digits or more: `\d{4}`
 - Tweets containing the word 'hello': `hello`

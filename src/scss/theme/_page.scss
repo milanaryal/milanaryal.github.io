@@ -44,7 +44,7 @@
   border-top: 3px solid #fff; // 4px
 
   @media (prefers-color-scheme: dark) {
-    border-top: 3px solid rgba(#fff, .8);
+    border-top: 3px solid rgba(#fff, 0.8);
   }
 }
 
@@ -55,7 +55,7 @@
   @include font-size(5rem); // 50..78px
   font-weight: 400;
   color: #fff;
-  text-shadow: 0 1px rgba(0, 0, 0, .2);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
   // letter-spacing: -.002em;
 
   // ** Font feature settings ** //
@@ -73,7 +73,7 @@
   @include font-size(1.333rem);
   font-weight: 300;
   line-height: 1.1;
-  color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, 0.7);
   // letter-spacing: -.02em;
   word-break: break-word;
   word-wrap: break-word;
@@ -117,7 +117,7 @@
   padding: 50px 0 40px;
   // margin-top: 40px;
   text-align: center;
-  background-color: rgba(0, 0, 0, .04); // rgba(0, 0, 0, .02); #fafafa
+  background-color: rgba(0, 0, 0, 0.04); // rgba(0, 0, 0, .02); #fafafa
 
   @media (min-width: 768px) {
     padding: 60px 0 50px;
@@ -146,8 +146,8 @@
     justify-content: center;
     width: 2.5em;
     height: 2.5em;
-    color: rgba(0, 0, 0, .7);
-    background-color: rgba(0, 0, 0, .7);
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 100%;
 
     @media (min-width: 768px) {
@@ -157,8 +157,8 @@
 
     &:hover,
     &:focus {
-      color: rgba(0, 0, 0, .8);
-      background-color: rgba(0, 0, 0, .8);
+      color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
     svg {
@@ -203,7 +203,7 @@
 
   // white space for icon
   .icon-copyright {
-    margin-right: -.5px;
+    margin-right: -0.5px;
   }
 
   .icon-pencil-alt {
@@ -218,7 +218,7 @@
     }
     10%,
     30% {
-      transform: scale(.9);
+      transform: scale(0.9);
     }
     20%,
     40%,
@@ -246,5 +246,4 @@
     margin-right: 1px;
     margin-left: 1px;
   }
-
 } // .site-footer-legal {...}

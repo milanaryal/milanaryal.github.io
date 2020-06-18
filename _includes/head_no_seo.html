@@ -11,15 +11,15 @@
   {%- assign page_title = page.title | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 <!-- Critical CSS -->
 {% include styles.html %}
 
 <title>{{ page_title }} | {{ site_title }}</title>
-<meta name="generator" content="Jekyll v{{ jekyll.version }}">
-{% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
-<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_title }}">
-<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_title }}">
-<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v={{ build_version }}">
+<meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+{% if page.robots %}<meta name="robots" content="{{ page.robots }}" />{% endif %}
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site_title }}" />
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site_title }}" />
+<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v={{ build_version }}" />

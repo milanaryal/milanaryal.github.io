@@ -14,18 +14,18 @@
   bottom: 1.5rem;
   display: inline-block;
   font-size: 1.3rem;
-  color: rgba(0, 0, 0, .7);
+  color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   cursor: pointer;
   visibility: hidden;
   background-image: none;
   opacity: 0;
-  transition: visibility 0s .3s, opacity .3s 0s;
+  transition: visibility 0s 0.3s, opacity 0.3s 0s;
 
   &.elevator-is-visible,
   &.elevator-fade-out,
   &:hover {
-    transition: visibility 0s 0s, opacity .3s 0s;
+    transition: visibility 0s 0s, opacity 0.3s 0s;
   }
 
   // the button becomes visible
@@ -36,11 +36,11 @@
 
   // if the user keeps scrolling down, the button is out of focus and becomes less visible
   &.elevator-fade-out {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   &:hover {
-    color: rgba(0, 0, 0, .8);
+    color: rgba(0, 0, 0, 0.8);
     opacity: 1;
   }
 
@@ -51,7 +51,7 @@
   }
 
   .icon-arrow-up {
-    padding: .1rem;
+    padding: 0.1rem;
     // font-size: 1.5rem;
   }
 }

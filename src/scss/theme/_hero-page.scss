@@ -20,7 +20,12 @@
   }
   padding: 15px; // 1.25em ~20px
   background-color: #fafafa;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, .001), rgba(0, 0, 0, .001)), url("/assets/img/hero-20200605.jpg");
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.001),
+      rgba(0, 0, 0, 0.001)
+    ),
+    url("/assets/img/hero-20200605.jpg");
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed;
   background-position: center, center;
@@ -72,10 +77,10 @@
   margin-top: 60px; // fill avatar -60px
   text-align: center;
   cursor: default;
-  background-color: rgba(0, 0, 0, .009);
+  background-color: rgba(0, 0, 0, 0.009);
   border: 1px solid #111;
   border-radius: 4px;
-  opacity: .99;
+  opacity: 0.99;
   transition: opacity 1s ease, transform 1s ease;
   transform: perspective(1000px) rotateX(0deg);
   transform-origin: 50% 50%;
@@ -103,7 +108,7 @@
     height: 120px;
     background: #111;
     border-radius: 100%;
-    box-shadow: 0 1px 1px rgba(136, 153, 166, .15);
+    box-shadow: 0 1px 1px rgba(136, 153, 166, 0.15);
   }
 }
 
@@ -120,13 +125,13 @@
 }
 
 .hero-title {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   font-family: var(--font-family-serif-display);
   @include font-size(3.333rem); // font-size: 3.25em;
   font-weight: 400;
   line-height: 1.2;
   color: #111;
-  text-shadow: 0 1px rgba(255, 255, 255, .2); // dark => text-shadow: 0 1px rgba(0, 0, 0, .2);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.2); // dark => text-shadow: 0 1px rgba(0, 0, 0, .2);
   // letter-spacing: -.002em; // -.0075em;
   word-break: break-word;
   word-wrap: break-word;
@@ -144,8 +149,8 @@
   @include font-size(1rem); // 16px
   font-weight: 300;
   line-height: 1.4;
-  color: rgba(0, 0, 0, .9);
-  text-shadow: 0 1px rgba(255, 255, 255, .4); // dark => text-shadow: 0 1px rgba(0, 0, 0, .4);
+  color: rgba(0, 0, 0, 0.9);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4); // dark => text-shadow: 0 1px rgba(0, 0, 0, .4);
   // letter-spacing: -.002em; // .0333em;
   word-break: break-word;
   word-wrap: break-word;
@@ -165,7 +170,7 @@
 // stylelint-disable selector-no-qualifying-type
 ul.hero-social {
   padding-left: 0;
-  margin: .175em 0;
+  margin: 0.175em 0;
   // margin-top: .675em;
   letter-spacing: 0;
   list-style: none;
@@ -173,7 +178,7 @@ ul.hero-social {
 
   > li {
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
     vertical-align: middle;
   }
 
@@ -189,7 +194,7 @@ ul.hero-social {
     border-radius: 100%;
 
     @media (max-width: 479px) {
-      @include font-size(.875rem); // 14px
+      @include font-size(0.875rem); // 14px
     }
 
     &:hover {
@@ -225,7 +230,7 @@ ul.hero-social {
       display: block;
       width: 60%;
       height: 60%;
-      transition: fill .25s ease;
+      transition: fill 0.25s ease;
       fill: currentColor;
     }
     // stylelint-enable selector-max-type

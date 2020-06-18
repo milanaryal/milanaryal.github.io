@@ -41,11 +41,11 @@
   // font-size: 24px;
   @include font-size(1.777rem);
   line-height: 1.12;
-  letter-spacing: -.044em;
+  letter-spacing: -0.044em;
 
   @media (min-width: 768px) {
     /// font-size: 26px;
-    letter-spacing: -.04em;
+    letter-spacing: -0.04em;
   }
 }
 
@@ -63,10 +63,10 @@
   font-size: 16px;
   // font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -.022em;
+  letter-spacing: -0.022em;
 
   @media (min-width: 768px) {
     font-size: 18px;
-    letter-spacing: -.02em;
+    letter-spacing: -0.02em;
   }
 }

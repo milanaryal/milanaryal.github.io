@@ -1,6 +1,7 @@
 {
   "extends": ["stylelint-config-twbs-bootstrap/scss"],
   "rules": {
+    "number-leading-zero": "always",
     "property-blacklist": [
       "border-radius",
       "border-top-left-radius",

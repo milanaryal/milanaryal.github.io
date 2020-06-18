@@ -53,8 +53,8 @@ samp {
 // Inline code snippets
 code {
   padding: 0;
-  padding-top: .2em;
-  padding-bottom: .2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
   margin: 0;
   font-size: 85%;
   background-color: var(--pre-bg); // rgba(0, 0, 0, .04);
@@ -62,14 +62,18 @@ code {
 
   &::before,
   &::after {
-    letter-spacing: -.2em; // this creates padding
+    letter-spacing: -0.2em; // this creates padding
     content: "\00a0";
   }
 
-  br { display: none; }
+  br {
+    display: none;
+  }
 }
 
-del code { text-decoration: inherit; }
+del code {
+  text-decoration: inherit;
+}
 
 pre {
   // padding: 20px;
@@ -121,15 +125,15 @@ kbd {
 
 .highlight pre {
   // width: 100%;
-  padding: .75rem 15px;
+  padding: 0.75rem 15px;
   margin-right: -15px;
   margin-left: -15px;
 
   @media (min-width: 480px) {
-    padding-left: calc(15px - .25rem);
+    padding-left: calc(15px - 0.25rem);
     margin-right: 0;
     margin-left: 0;
-    border-left: .25rem solid var(--code-snippet-border);
+    border-left: 0.25rem solid var(--code-snippet-border);
   }
 }
 

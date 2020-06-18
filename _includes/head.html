@@ -1,8 +1,8 @@
 <head>
 
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   {% if jekyll.environment == "production" %}
     {% include preload.html %}
@@ -40,12 +40,12 @@
   {%- endif -%}
 
   {% unless hasImage %}
-    <meta property="og:image" content="{{ thumbnail | absolute_url }}">
+    <meta property="og:image" content="{{ thumbnail | absolute_url }}" />
     {% if page.thumbnail.width %}
-      <meta property="og:image:width" content="{{ page.thumbnail.width }}">
+      <meta property="og:image:width" content="{{ page.thumbnail.width }}" />
     {% endif %}
     {% if page.thumbnail.height %}
-      <meta property="og:image:height" content="{{ page.thumbnail.height }}">
+      <meta property="og:image:height" content="{{ page.thumbnail.height }}" />
     {% endif %}
   {% endunless %}
 
@@ -54,7 +54,7 @@
 
   <!-- robotstxt.org  -->
   {% if page.robots %}
-    <meta name="robots" content="{{ page.robots }}">
+    <meta name="robots" content="{{ page.robots }}" />
   {% endif %}
 
   <!-- humanstxt.org -->
@@ -64,15 +64,15 @@
   <link type="application/opensearchdescription+xml" rel="search" href="{{ 'opensearch.xml' | absolute_url }}" title="{{ site_title }}" />
 
   <!-- Favicon & startup configuration -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ build_version }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ build_version }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ build_version }}">
-  <link rel="manifest" href="/site.webmanifest?v={{ build_version }}">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ build_version }}" color="{{ site.theme_color }}">
-  <link rel="shortcut icon" href="/favicon.ico?v={{ build_version }}">
-  <meta name="msapplication-TileColor" content="{{ site.theme_color }}">
-  <meta name="msapplication-config" content="/browserconfig.xml?v={{ build_version }}">
-  <meta name="theme-color" content="{{ site.theme_color }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ build_version }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ build_version }}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ build_version }}" />
+  <link rel="manifest" href="/site.webmanifest?v={{ build_version }}" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ build_version }}" color="{{ site.theme_color }}" />
+  <link rel="shortcut icon" href="/favicon.ico?v={{ build_version }}" />
+  <meta name="msapplication-TileColor" content="{{ site.theme_color }}" />
+  <meta name="msapplication-config" content="/browserconfig.xml?v={{ build_version }}" />
+  <meta name="theme-color" content="{{ site.theme_color }}" />
 
   {% include about_json_ld.html %}
 
