@@ -1,10 +1,12 @@
 ---
-title: "Hosting static website on GitLab with GitLab Pages"
+title: "Deploying and Hosting static website on GitLab with GitLab Pages"
 date: 2020-06-16T14:00:00+05:45
-excerpt: "Learn how to host and deploy your static website on GitLab.com with GitLab Pages."
+last_modified_at: 2020-06-18T11:50:00+05:45
+excerpt: "Learn how to deploy and host your modern static website on GitLab.com with GitLab Pages for free."
+redirect_from: "/hosting-on-gitlab-with-gitlab-pages/"
 ---
 
-[GitLab](https://gitlab.com/){:rel="nofollow"} makes it incredibly easy to build, deploy, and host your static website via their free GitLab Pages service, which provides native support for [numerous Static Site Generators (SSG)](https://gitlab.com/pages){:rel="nofollow"}, such as Gatsby, Next.js, Nuxt, Jekyll, Hugo, Hexo, Middleman and Pelican.
+[GitLab](https://gitlab.com/){:rel="nofollow"} makes it incredibly easy to build, deploy, and host your modern static website via their free GitLab Pages service, which provides native support for [numerous Static Site Generators (SSG)](https://gitlab.com/pages){:rel="nofollow"}, such as Gatsby, Next.js, Nuxt, Jekyll, Hugo, Hexo, Middleman and Pelican.
 
 ### Assumptions
 
@@ -16,25 +18,21 @@ excerpt: "Learn how to host and deploy your static website on GitLab.com with Gi
 
 In the root directory of your site project folder, create a `.gitlab-ci.yml` file. The `.gitlab-ci.yml` configures the GitLab CI on how to build your page. Simply add the content below.
 
-#### [GitLab CI for Plain HTML website](https://gitlab.com/pages/gatsby){:rel="nofollow"}
+#### [GitLab CI for Plain HTML website](https://gitlab.com/pages/plain-html){:rel="nofollow"}
 
 This project's static Pages are built by [GitLab CI](https://gitlab.com/pages/plain-html){:rel="nofollow"}, following the steps
 defined in [.gitlab-ci.yml](https://gitlab.com/pages/plain-html/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
 
 ```yml
-image: node
+image: alpine:latest
 
 pages:
+  stage: deploy
   script:
-    - npm install
-    - npm install gatsby-cli
-    - node_modules/.bin/gatsby build --prefix-paths
+    - echo 'Nothing to do...'
   artifacts:
     paths:
       - public
-  cache:
-    paths:
-      - node_modules
   only:
     - master
 ```
@@ -47,19 +45,24 @@ This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gi
 defined in [.gitlab-ci.yml](https://gitlab.com/pages/gatsby/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
 
 ```yml
-image: node
+image: node:latest
+
+# This folder is cached between builds
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+cache:
+  paths:
+    - node_modules/
+    # Enables git-lab CI caching. Both .cache and public must be cached, otherwise builds will fail.
+    - .cache/
+    - public/
 
 pages:
   script:
     - npm install
-    - npm install gatsby-cli
-    - node_modules/.bin/gatsby build --prefix-paths
+    - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
       - public
-  cache:
-    paths:
-      - node_modules
   only:
     - master
 ```
@@ -96,17 +99,10 @@ This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gi
 defined in [.gitlab-ci.yml](https://gitlab.com/pages/hugo/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
 
 ```yml
-# All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
-image: registry.gitlab.com/pages/hugo:latest
+image: monachus/hugo
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-
-test:
-  script:
-    - hugo
-  except:
-    - master
 
 pages:
   script:
