@@ -1,12 +1,12 @@
 ---
-title: "Deploying and Hosting static website on GitLab with GitLab Pages"
+title: "Deploying and hosting static sites with GitLab Pages"
 date: 2020-06-16T14:00:00+05:45
-last_modified_at: 2020-06-18T11:50:00+05:45
-excerpt: "Learn how to deploy and host your modern static website on GitLab.com with GitLab Pages for free."
+last_modified_at: 2020-06-18T14:00:00+05:45
+excerpt: "Learn how to deploy and host your modern static websites on GitLab.com with GitLab Pages for free."
 redirect_from: "/hosting-on-gitlab-with-gitlab-pages/"
 ---
 
-[GitLab](https://gitlab.com/){:rel="nofollow"} makes it incredibly easy to build, deploy, and host your modern static website via their free GitLab Pages service, which provides native support for [numerous Static Site Generators (SSG)](https://gitlab.com/pages){:rel="nofollow"}, such as Gatsby, Next.js, Nuxt, Jekyll, Hugo, Hexo, Middleman and Pelican.
+[GitLab](https://gitlab.com/){:rel="nofollow"} makes it incredibly easy to build, deploy, and host your modern static websites via their free GitLab Pages service, which provides native support for [numerous Static Site Generators (SSG)](https://gitlab.com/pages){:rel="nofollow"}, such as Gatsby, Next.js, Nuxt, Jekyll, Hugo, Hexo, Middleman and Pelican.
 
 ### Assumptions
 
@@ -18,7 +18,7 @@ redirect_from: "/hosting-on-gitlab-with-gitlab-pages/"
 
 In the root directory of your site project folder, create a `.gitlab-ci.yml` file. The `.gitlab-ci.yml` configures the GitLab CI on how to build your page. Simply add the content below.
 
-#### [GitLab CI for Plain HTML website](https://gitlab.com/pages/plain-html){:rel="nofollow"}
+#### [GitLab CI for Plain HTML sites](https://gitlab.com/pages/plain-html){:rel="nofollow"}
 
 This project's static Pages are built by [GitLab CI](https://gitlab.com/pages/plain-html){:rel="nofollow"}, following the steps
 defined in [.gitlab-ci.yml](https://gitlab.com/pages/plain-html/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
@@ -39,7 +39,7 @@ pages:
 
 The above example expects to put all your HTML files in the `public/` directory.
 
-#### [GitLab CI for Gatsby website](https://gitlab.com/pages/gatsby){:rel="nofollow"}
+#### [GitLab CI for Gatsby sites](https://gitlab.com/pages/gatsby){:rel="nofollow"}
 
 This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gitlab-ci/){:rel="nofollow"}, following the steps
 defined in [.gitlab-ci.yml](https://gitlab.com/pages/gatsby/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
@@ -69,7 +69,7 @@ pages:
 
 The above example expects to put all your HTML files in the `public/` directory.
 
-#### [GitLab CI for Jekyll website](https://gitlab.com/pages/jekyll)
+#### [GitLab CI for Jekyll sites](https://gitlab.com/pages/jekyll)
 
 This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gitlab-ci/){:rel="nofollow"}, following the steps
 defined in [.gitlab-ci.yml](https://gitlab.com/pages/jekyll/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
@@ -93,7 +93,7 @@ pages:
 
 The above example expects to put all your HTML files in the `public/` directory.
 
-#### [GitLab CI for Hugo website](https://gitlab.com/pages/hugo){:rel="nofollow"}
+#### [GitLab CI for Hugo sites](https://gitlab.com/pages/hugo){:rel="nofollow"}
 
 This project's static Pages are built by [GitLab CI](https://about.gitlab.com/gitlab-ci/){:rel="nofollow"}, following the steps
 defined in [.gitlab-ci.yml](https://gitlab.com/pages/hugo/-/blob/master/.gitlab-ci.yml){:rel="nofollow"}:
@@ -122,7 +122,7 @@ _Example websites hosted by GitLab Pages_
 
 Check out the [GitLab Pages official group](https://gitlab.com/pages){:rel="nofollow"} for a list of example projects, where you can explore some good options for Static Site Generators for Ruby, NodeJS and Python environments.
 
-### Push your website project to GitLab
+### Push your site project to GitLab
 
 Next, create a new repository on GitLab. It is not necessary to make the repository public. In addition, you might want to add `public/` (and `_site/` for Jekyll) to your `.gitignore` file, as there is no need to push compiled assets to GitLab or keep your output website in version control.
 
