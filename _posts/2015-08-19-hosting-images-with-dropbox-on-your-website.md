@@ -24,7 +24,7 @@ There're various way of [getting share link](http://www.dropbox.com/help/167){:r
 - Right-click on the file to open its contextual menu and select **Share Dropbox link**. The link will be copied and you can immediately paste it anywhere.
 
 <figure>
-  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/dem4lq19tmcgp1u/20150819-dropbox-share-link-on-desktop.png">
+  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/dem4lq19tmcgp1u/20150819-dropbox-share-link-on-desktop.png" data-proofer-ignore="">
     <img src="//dl.dropboxusercontent.com/s/dem4lq19tmcgp1u/20150819-dropbox-share-link-on-desktop.png" alt="Share link from the Dropbox contextual menu" title="Share link from the Dropbox contextual menu" />
   </a>
   <figcaption><strong>Share link</strong> from the Dropbox contextual menu.</figcaption>
@@ -36,7 +36,7 @@ There're various way of [getting share link](http://www.dropbox.com/help/167){:r
 - Hover the cursor over the file or folder and click the blue **Share** button that appears.
 
 <figure>
-  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/e1n60amfrty1gt0/20150819-dropbox-bamboo-sharing-button-share-link-on-web.png">
+  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/e1n60amfrty1gt0/20150819-dropbox-bamboo-sharing-button-share-link-on-web.png" data-proofer-ignore="">
     <img src="//dl.dropboxusercontent.com/s/e1n60amfrty1gt0/20150819-dropbox-bamboo-sharing-button-share-link-on-web.png" alt="Share link using the Dropbox website" title="Share link using the Dropbox website" />
   </a>
 </figure>
@@ -94,7 +94,7 @@ Now an HTML markup like
 will output as following:
 
 <figure>
-  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/kwyt8v55bhbj3vv/20150819-dropbox-logotype-blue.png">
+  <a rel="nofollow" href="//dl.dropboxusercontent.com/s/kwyt8v55bhbj3vv/20150819-dropbox-logotype-blue.png" data-proofer-ignore="">
     <img src="//dl.dropboxusercontent.com/s/kwyt8v55bhbj3vv/20150819-dropbox-logotype-blue.png" alt="Copyright Dropbox logo type blue" />
   </a>
   <figcaption>Dropbox, the Dropbox logo are trademarks of Dropbox Inc., registered in the U.S. and other countries.</figcaption>
