@@ -5,7 +5,7 @@
 [
   {%- for post in site.posts -%}{
     "title": "{{- post.title | smartify | strip_html | normalize_whitespace | escape_once -}}",
-    "url": "{{- post.url | replace:'/index.html','/' -}}",
+    "url": "{{- post.url | replace:'/index.html','/' | relative_url -}}",
     "date_published": "{{- post.date | date: '%b %-d, %Y' -}}",
     "date_modified": "{%- if post.last_modified_at -%}{{- post.last_modified_at | date: '%b %-d, %Y' -}}{%- else -%}{{- post.date | date: '%b %-d, %Y' -}}{%- endif -%}",
     "total_words": "{%- assign total_words = post.content | strip_html | normalize_whitespace | number_of_words -%}{%- if total_words <= 1 -%}{{- '1' | append:' word' -}}{%- else -%}{{- total_words | append:' words' -}}{%- endif -%}",

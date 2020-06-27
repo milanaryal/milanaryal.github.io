@@ -13,6 +13,6 @@ sitemap: false
   <Image height="16" width="16" type="image/png">{{ 'favicon-16x16.png' | absolute_url }}</Image>
   <Image height="32" width="32" type="image/png">{{ 'favicon-32x32.png' | absolute_url }}</Image>
   <Image width="48" height="48" type="image/x-icon">{{ 'favicon.ico' | absolute_url }}</Image>
-  <Url type="text/html" method="get" template="{{ absolute_url }}/search/?q={searchTerms}"/>
-  <moz:SearchForm>{{ '/search/' | absolute_url }}</moz:SearchForm>
+  <Url type="text/html" method="get" template="{{ '/' | absolute_url }}search/?q={searchTerms}"/>
+  <moz:SearchForm>{{ 'search/' | absolute_url }}</moz:SearchForm>
 </OpenSearchDescription>
