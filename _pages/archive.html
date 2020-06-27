@@ -24,7 +24,7 @@ redirect_from: "/archives/"
   <article class="archive-item h-entry">
     <div class="row">
       <div class="col-sm-9 archive-title">
-        <a class="u-url p-name" href="{{ post.url | replace:'/index.html','/' }}">
+        <a class="u-url p-name" href="{{ post.url | replace:'/index.html','/' | relative_url }}">
           {{ post.title | smartify | strip_html | normalize_whitespace | escape_once }}
         </a>
       </div><!-- /.col-sm-9 .archive-title -->

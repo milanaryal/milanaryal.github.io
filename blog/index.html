@@ -17,7 +17,7 @@ redirect_from: "/writings/"
   {%- endif -%}
 
   {%- if post.url -%}
-    {%- assign post_url = post.url | replace:'/index.html','/' -%}
+    {%- assign post_url = post.url | replace:'/index.html','/' | relative_url -%}
   {%- endif -%}
 
   {%- if post.excerpt and post.excerpt != empty -%}
@@ -31,7 +31,7 @@ redirect_from: "/writings/"
   {%- endif -%}
   {%- if author -%}
     {%- capture post_author -%}
-      <span style="display: none;">Written by <a class="p-author h-card" href="{{ '/' | absolute_url }}">{{ author }}</a> on <!-- --></span>
+      <span style="display: none;">Written by <a class="p-author h-card" href="{{ '/' | relative_url }}">{{ author }}</a> on <!-- --></span>
     {%- endcapture -%}
   {%- endif -%}
   {%- comment -%}### POST_MODIFIED ###{%- endcomment -%}
@@ -66,15 +66,15 @@ redirect_from: "/writings/"
 <nav class="pager clearfix">
 
   {% unless paginator.page > 1 %}
-  <a class="btn btn-outline-default btn--archive float-left" href="{{ '/archive/' | absolute_url }}" role="button"><svg  class="icon icon-archive" width="1em" height="1em" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg> Archive</a>
+  <a class="btn btn-outline-default btn--archive float-left" href="{{ '/archive/' | relative_url }}" role="button"><svg  class="icon icon-archive" width="1em" height="1em" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg> Archive</a>
   {% endunless %}
 
   {% if paginator.previous_page %}
-  <a class="btn btn-outline-default float-left" href="{{ paginator.previous_page_path | absolute_url }}" role="button"><svg class="icon icon-angle-left" width="1em" height="1em" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg> Newer</a>
+  <a class="btn btn-outline-default float-left" href="{{ paginator.previous_page_path | relative_url }}" role="button"><svg class="icon icon-angle-left" width="1em" height="1em" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg> Newer</a>
   {% endif %}
 
   {% if paginator.next_page %}
-  <a class="btn btn-outline-default float-right" href="{{ paginator.next_page_path | absolute_url }}" role="button">Older </span><svg class="icon icon-angle-right" width="1em" height="1em" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a>
+  <a class="btn btn-outline-default float-right" href="{{ paginator.next_page_path | relative_url }}" role="button">Older </span><svg class="icon icon-angle-right" width="1em" height="1em" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a>
   {% endif %}
 
 </nav>

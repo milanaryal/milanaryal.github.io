@@ -19,7 +19,7 @@
 {%- if page_image -%}
   {%- assign page_image = page_image | escape -%}
   {%- unless page_image contains "://" -%}
-    {%- assign page_image = page_image | escape | absolute_url -%}
+    {%- assign page_image = page_image | escape | relative_url -%}
   {%- endunless -%}
 {%- endif -%}
 
