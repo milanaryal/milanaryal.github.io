@@ -11,18 +11,15 @@
   <!-- Critical CSS -->
   {% include styles.html %}
 
-  {% include build_version.html %}
+  {%- include build_version.html -%}
 
   {%- assign site_title = site.title | default: site.name -%}
   {%- if site_title -%}
     {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
   {%- endif -%}
 
-  {%- if page.title -%}
-    {%- assign page_title = page.title | smartify | strip_html | normalize_whitespace | escape_once -%}
-  {%- endif -%}
+  {%- comment -%}<!-- Begin Jekyll SEO tag -->{%- endcomment -%}
 
-  <!-- Basic page needs -->
   {% if page.permalink == '/' %}
     <title>{{ site_title }} | {{ site.tagline }}</title>
     {% seo title=false %}
@@ -49,11 +46,13 @@
     {% endif %}
   {% endunless %}
 
+  {%- comment -%}<!-- End Jekyll SEO tag -->{%- endcomment -%}
+
   <!-- Feed -->
   {% feed_meta %}
 
-  <!-- robotstxt.org  -->
   {% if page.robots %}
+    <!-- robotstxt.org  -->
     <meta name="robots" content="{{ page.robots }}" />
   {% endif %}
 
@@ -67,11 +66,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ build_version }}" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ build_version }}" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ build_version }}" />
-  <link rel="manifest" href="/site.webmanifest?v={{ build_version }}" />
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ build_version }}" color="{{ site.theme_color }}" />
   <link rel="shortcut icon" href="/favicon.ico?v={{ build_version }}" />
   <meta name="msapplication-TileColor" content="{{ site.theme_color }}" />
-  <meta name="msapplication-config" content="/browserconfig.xml?v={{ build_version }}" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
   <meta name="theme-color" content="{{ site.theme_color }}" />
 
   {% include about_json_ld.html %}

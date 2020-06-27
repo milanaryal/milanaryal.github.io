@@ -20,10 +20,13 @@ title "Checking DNS"
 bundle exec github-pages health-check
 
 title "Building site"
-bundle exec jekyll build --config _config.yml,_config_test.yml
+bundle exec jekyll build --config _config.yml,_config_test.yml --profile
+
+title "Checking Jekyll configuration"
+bundle exec jekyll doctor
 
 title "Checking HTML files"
-bundle exec htmlproofer --assume-extension --only-4xx --http-status-ignore "403,429" ./_site
+bundle exec htmlproofer ./_site --allow-hash-href --assume-extension --check-external-hash --check-favicon --check-img-http --check-opengraph --disable-external --empty-alt-ignore --internal-domains "milanaryal.com.np" --http-status-ignore "403,429" --only-4xx
 
 title "Cleaning up..."
 bundle exec jekyll clean

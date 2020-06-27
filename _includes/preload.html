@@ -19,5 +19,8 @@
   <link rel="preload" href="/assets/fonts/lora-v15-latin-italic.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="/assets/fonts/lora-v15-latin-700.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="/assets/fonts/lora-v15-latin-700italic.woff2" as="font" crossorigin="anonymous" />
+{% endif %}
+
+{% if page.date and page.layout == "post" %}
   <link rel="preload" href="/randomi.json" as="fetch" crossorigin="anonymous" />
 {% endif %}

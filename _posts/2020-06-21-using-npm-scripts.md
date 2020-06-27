@@ -23,10 +23,10 @@ npm install prettier --save-dev
 ```json
 {
   "scripts": {
-    "format": "prettier src/{scss/*.scss,js/*.js} --write",
+    "format": "prettier src/{scss/*.scss,js/*.js} --write"
   },
   "devDependencies": {
-    "prettier": "^2.0.5",
+    "prettier": "^2.0.5"
   }
 }
 ```
@@ -44,7 +44,7 @@ npm install stylelint stylelint-config-twbs-bootstrap --save-dev
 ```json
 {
   "scripts": {
-    "lint-css": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache",
+    "lint-css": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache"
   },
   "devDependencies": {
     "stylelint": "^13.6.0",
@@ -66,7 +66,7 @@ npm install node-sass --save-dev
 ```json
 {
   "scripts": {
-    "css-compile": "node-sass --include-path node_modules src/scss/main.scss -o dist/css/",
+    "css-compile": "node-sass --include-path node_modules src/scss/main.scss -o dist/css/"
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
@@ -123,7 +123,7 @@ npm run css-compile && npm run css-prefix
 npm run css
 ```
 
-Or, 
+Or,
 
 ```bash
 install install npm-run-all --save-dev
@@ -153,11 +153,11 @@ Hope, it helps!
 
 #### Additional resources
 
-* [Bootstrap npm starter template](https://github.com/twbs/bootstrap-npm-starter){:rel="nofollow"}: Starter template for new Bootstrap-powered npm projects.
-* [npm build boilerplate](https://github.com/damonbauer/npm-build-boilerplate){:rel="nofollow"}: A collection of packages that build a website using npm scripts.
+- [Bootstrap npm starter template](https://github.com/twbs/bootstrap-npm-starter){:rel="nofollow"}: Starter template for new Bootstrap-powered npm projects.
+- [npm build boilerplate](https://github.com/damonbauer/npm-build-boilerplate){:rel="nofollow"}: A collection of packages that build a website using npm scripts.
 
 #### External articles and blog posts about using npm scripts
 
-* [Why npm Scripts?](https://css-tricks.com/why-npm-scripts/){:rel="nofollow"}: By Damon Bauer on CSS-Tricks
-* [Using Npm Scripts as a Build Tool](https://deliciousbrains.com/npm-build-script/){:rel="nofollow"}: By Gilbert Pellegrom on Delicious Brains
-* [How to Use npm as a Build Tool](https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/){:rel="nofollow"}: By Keith Cirkel
+- [Why npm Scripts?](https://css-tricks.com/why-npm-scripts/){:rel="nofollow"}: By Damon Bauer on CSS-Tricks
+- [Using Npm Scripts as a Build Tool](https://deliciousbrains.com/npm-build-script/){:rel="nofollow"}: By Gilbert Pellegrom on Delicious Brains
+- [How to Use npm as a Build Tool](https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/){:rel="nofollow"}: By Keith Cirkel

@@ -7,6 +7,7 @@
   padding-right: 0.575em; // margin-left value divide by 2
   margin-left: -1.15em;
   color: inherit;
+  visibility: hidden;
   opacity: 0;
 
   @media (max-width: 479px) {
@@ -21,9 +22,9 @@
 
 *:hover {
   > .anchor {
+    visibility: visible;
     opacity: 0.75;
-    // ** transition is in _global.sass for anchor ** //
-    // transition: all .16s linear;
+    transition: all 0.16s linear;
 
     &:hover,
     &:focus {
