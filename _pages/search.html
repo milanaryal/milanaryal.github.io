@@ -17,7 +17,7 @@ robots: "noindex, follow"
 
 <div class="search-page-content" id="cse-search">
   <!-- Google CSE search box begins  -->
-  <form class="search-page-form" id="cse_{{ site.google_cse_id }}" action="/search/" role="search">
+  <form class="search-page-form" id="cse_{{ site.google_cse_id }}" action="{{ 'search/' | relative_url }}" role="search">
     <div class="row">
       <div class="col-lg-12">
         <div class="input-group input-group-lg">

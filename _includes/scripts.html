@@ -3,7 +3,7 @@
 {%- include build_version.html -%}
 
 <!-- Core JavaScript -->
-<script src="/assets/js/bundle.js?v={{ build_version }}"></script>
+<script src="{{ 'assets/js/bundle.js' | relative_url }}?v={{ build_version }}"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {% if site.google_analytics_id and jekyll.environment == "production" %}
@@ -14,7 +14,7 @@
   gtag('js', new Date());
 
   gtag('config', '{{ site.google_analytics_id }}');
-  {% if page.url == "/404.html" %}
+  {% if page.permalink == "/404.html" %}
   gtag('config', '{{ site.google_analytics_id_2 }}', {
     'page_title' : '404 Response',
     'page_location': window.location.href,

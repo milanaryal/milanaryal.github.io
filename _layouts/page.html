@@ -19,7 +19,7 @@ layout: default
         {% elsif page.archive %}
 
         <div class="archive h-feed">
-          <a class="u-url p-name" style="display: none;" href="/archive/">Blog Archive</a>
+          <a class="u-url p-name" style="display: none;" href="{{ 'archive/' | relative_url }}">Blog Archive</a>
           <div class="archive-content clearfix">
 
             {{ content }}

@@ -12,7 +12,7 @@ robots: "noindex, follow"
 <style>*{color:#222;background:#fafafa}a{color:#00638a}@media (prefers-color-scheme: dark){*{color:#bbb;background:#222}a{color:#a0bfd0}}</style>
 <title>Randomizing&hellip;</title>
 {%- if page.robots -%}<meta name="robots" content="{{- page.robots -}}">{%- endif -%}
-<script>var posts=[];{%- for post in site.posts -%}posts.push("{{- post.url | replace:'/index.html','/' -}}"){%- unless forloop.last -%},{%- endunless -%}{%- endfor -%};var randomPost=posts[Math.floor(Math.random()*posts.length)];document.write('<meta http-equiv="refresh" content="1;url='),document.write(randomPost),document.write('">');</script>
+<script>var posts=[];{%- for post in site.posts -%}posts.push("{{- post.url | replace:'/index.html','/' | relative_url -}}"){%- unless forloop.last -%},{%- endunless -%}{%- endfor -%};var randomPost=posts[Math.floor(Math.random()*posts.length)];document.write('<meta http-equiv="refresh" content="1;url='),document.write(randomPost),document.write('">');</script>
 <h1>Randomizing&hellip;</h1>
 <script>document.write('<a href="'),document.write(randomPost),document.write('">Click here if you are not randomized.</a>');</script>
 </html>

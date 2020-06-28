@@ -4,7 +4,7 @@
 {%- endif -%}
 
 <!-- Navigation without search box for search page-->
-<nav class="navbar navbar-expand-md navbar-light{% unless page.url == '/' %} fixed-top headroom{% endunless %}">
+<nav class="navbar navbar-expand-md navbar-light{% unless page.permalink == '/' %} fixed-top headroom{% endunless %}">
   <div class="container">
     <a class="navbar-brand" href="/">{{ site_title }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
