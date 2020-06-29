@@ -1,7 +1,7 @@
 ---
 title: "Modern static sites deployment service provider [for free]"
 date: 2020-06-29T10:00:00+05:45
-excerpt: "A list of best websites which offer free continuous deployment with Git for modern static websites."
+excerpt: "A list of best websites which offer free continuous deployment with Git for modern static and Jamstack websites."
 ---
 
 Here's a list of best websites which offer free continuous deployment service with Git for modern static and Jamstack websites.
