@@ -462,6 +462,8 @@ nbproject
 Gemfile.lock
 package-lock.json
 
+# WSL
+*.Identifier
 
 # ----------------------------------------------------------------------
 # | Git exclude files                                                  |

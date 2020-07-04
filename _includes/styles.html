@@ -5,5 +5,7 @@
 {% if jekyll.environment == "development" %}
   <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}?v={{ build_version }}" />
 {% else %}
-  <style data-href="{{ 'assets/css/style.css' | relative_url }}?v={{ build_version }}">{% include static/style.css %}</style>
+  <style data-href="{{ 'assets/css/style.css' | relative_url }}?v={{ build_version }}">
+    {%- include static/style.css -%}
+  </style>
 {% endif %}
