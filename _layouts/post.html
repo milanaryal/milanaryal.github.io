@@ -12,7 +12,7 @@ layout: default
   {%- assign page_title = page.title | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
-{%- if page.image -%}
+{%- if page.image and page.image != empty -%}
   {%- assign page_image = page.image.path | default: page.image -%}
   {%- unless page_image contains '://' -%}
     {%- assign page_image = page_image | relative_url -%}
@@ -59,8 +59,8 @@ layout: default
         </div><!-- /.row -->
       </div><!-- /.container -->
 
-      <!-- Post header lead content -->
       {% if page_image or page.video %}
+      <!-- Post header lead content -->
       <div class="container post-lead">
         <figure class="post-lead-figure">
           <!-- Post header lead image -->
@@ -80,7 +80,7 @@ layout: default
           {% endif %}
 
           <!-- Post header lead video -->
-          {% if page.video %}
+          {% if page.video and page.video != empty %}
             <!-- 16:9 aspect ratio -->
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="{{ page.video.path | default: page.video }}"></iframe>
