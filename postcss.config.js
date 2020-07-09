@@ -4,9 +4,16 @@ const cssnano = require('cssnano')
 const discardComments = require('postcss-discard-comments')
 
 const purgecssConfig = {
-  content: ['!(_site|node_modules)/**/*.+(html|js|md)', '*.html'],
-  whitelist: ['highlight', 'tooltip'],
-  whitelistPatterns: [/tooltip/, /bs-tooltip/],
+  content: [
+    '!(_site|node_modules)/**/*.+(html|js|md)',
+    '*.html',
+    'node_modules/bootstrap/js/dist/util.js',
+    'node_modules/bootstrap/js/dist/collapse.js',
+    'node_modules/bootstrap/js/dist/tooltip.js',
+    'node_modules/headroom.js/dist/headroom.js',
+  ],
+  whitelist: ['markdown-body', 'highlight'],
+  whitelistPatterns: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
   whitelistPatternsChildren: [
     /markdown-body/,
     /highlight/,
