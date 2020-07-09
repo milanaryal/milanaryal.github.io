@@ -20,27 +20,26 @@
   }
 }
 
-*:hover {
-  > .anchor {
-    visibility: visible;
-    opacity: 0.75;
-    transition: all 0.16s linear;
-
-    &:hover,
-    &:focus {
-      opacity: 1;
-    }
-  }
-}
-
-// Offsetting an html anchor to adjust for fixed header
-
 // stylelint-disable selector-no-qualifying-type
 .markdown-body,
 .archive-content {
+  *:hover {
+    > .anchor {
+      visibility: visible;
+      opacity: 0.75;
+      transition: all 0.16s linear;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+
   > h2[id],
   > h3[id],
   > h4[id] {
+    // Offsetting an html anchor to adjust for fixed header
     scroll-margin-top: 2.75em;
   }
 }

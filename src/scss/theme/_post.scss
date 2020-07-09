@@ -349,6 +349,15 @@
   &:last-child {
     border-bottom: 0;
   }
+
+  a {
+    &:hover,
+    &:focus {
+      .random-posts-item-title {
+        text-decoration: underline var(--body-color);
+      }
+    }
+  }
 }
 
 .random-posts-item-title {
@@ -362,13 +371,6 @@
   @media (max-width: 767px) {
     // font-size: 22px;
     letter-spacing: -0.044em;
-  }
-}
-
-*:hover,
-*:focus {
-  > .random-posts-item-title {
-    text-decoration: underline var(--body-color);
   }
 }
 

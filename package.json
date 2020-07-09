@@ -32,12 +32,7 @@
     "lint": "npm-run-all lint-*",
     "lint-css": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache || true",
     "lint-js": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives . || true",
-    "format": "npm-run-all format-*",
-    "format-css": "prettier \"src/**/*.scss\" --write",
-    "format-js": "prettier \"src/**/*.js\" --write",
-    "format-md": "prettier \"**/*.md\" --write",
-    "format-json": "prettier \"**/*.json\" --write",
-    "format-yml": "prettier \"**/*.yml\" --write",
+    "format": "prettier --write \"**/*.{js,scss,json,yml,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -54,6 +49,7 @@
     "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.1",
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.7",

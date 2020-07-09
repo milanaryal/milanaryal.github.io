@@ -13,6 +13,15 @@
   &:last-child {
     border-bottom: 0;
   }
+
+  a {
+    &:hover,
+    &:focus {
+      .post-preview-title {
+        text-decoration: underline var(--body-color);
+      }
+    }
+  }
 }
 
 .post-preview-meta {
@@ -46,13 +55,6 @@
   @media (min-width: 768px) {
     /// font-size: 26px;
     letter-spacing: -0.04em;
-  }
-}
-
-*:hover,
-*:focus {
-  > .post-preview-title {
-    text-decoration: underline var(--body-color);
   }
 }
 
