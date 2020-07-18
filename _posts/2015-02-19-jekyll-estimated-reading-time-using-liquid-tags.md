@@ -87,8 +87,7 @@ Now simply if you markup `{% raw %}{{ reading_time }}{% endraw %}` in your post 
 If you want more like to work our code in our post layout as well as paginator posts or any other pages then the following snippet will help you out. To get things organised put the following code in Jekyll `_includes/` folder naming it `reading_time.html`.
 
 ```liquid
-{% raw %}{%- comment -%}<!-- _layouts/post.html, blog/index.html -->{%- endcomment -%}
-
+{% raw %}
 {%- comment -%}
   According to [Wikipedia](http://en.wikipedia.org/wiki/Words_per_minute),
   an average person can read 180 words per minute in a computer monitor.
@@ -97,13 +96,13 @@ If you want more like to work our code in our post layout as well as paginator p
 {%- assign words_per_minute = site.words_per_minute | default:'180' -%}
 
 {%- if post.content -%}
-  {%- comment -%}##### FOR POST IN PAGINATOR.POSTS #####{%- endcomment -%}
+  {%- comment -%}### FOR POST IN PAGINATOR.POSTS ###{%- endcomment -%}
   {%- assign post_content = post.content -%}
 {%- elsif page.content -%}
-  {%- comment -%}##### FOR PAGE WITHIN LAYOUT FILE #####{%- endcomment -%}
+  {%- comment -%}### FOR PAGE WITHIN LAYOUT FILE ###{%- endcomment -%}
   {%- assign post_content = page.content -%}
 {%- elsif content -%}
-  {%- comment -%}##### FALLBACK FOR WITHIN POST LAYOUT #####{%- endcomment -%}
+  {%- comment -%}### FALLBACK FOR WITHIN POST LAYOUT ###{%- endcomment -%}
   {%- assign post_content = content -%}
 {%- endif -%}
 
@@ -112,14 +111,14 @@ If you want more like to work our code in our post layout as well as paginator p
 {%- endif -%}
 
 {%- if words %}
-  {%- comment -%}##### TOTAL_WORDS #####{%- endcomment -%}
+  {%- comment -%}### TOTAL_WORDS ###{%- endcomment -%}
   {%- if words <= 1 -%}
     {%- assign total_words = '1' | append:' word' -%}
   {%- else -%}
     {%- assign total_words = words | append:' words' -%}
   {%- endif -%}
 
-  {%- comment -%}##### READING_TIME #####{%- endcomment -%}
+  {%- comment -%}### READING_TIME ###{%- endcomment -%}
   {%- assign wpm = words_per_minute -%}
   {%- assign wpm_i = wpm | divided_by:2 | plus:1 -%}
   {%- assign read_time = words | plus: wpm_i | divided_by: wpm -%}
@@ -128,7 +127,8 @@ If you want more like to work our code in our post layout as well as paginator p
   {%- else -%}
     {%- assign reading_time = read_time | append:' min read' -%}
   {%- endif -%}
-{%- endif -%}{% endraw %}
+{%- endif -%}
+{% endraw %}
 ```
 
 And then include (or in other words import) our metadata in your post layout as[^whitespace_control]

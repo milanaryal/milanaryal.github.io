@@ -10,7 +10,7 @@ redirect_from: "/writings/"
 <div class="clearfix">
 {% for post in paginator.posts %}
 
-  {%- include reading_time.html -%}
+  {%- include reading_time.html content=post.content -%}
 
   {%- if post.title -%}
     {%- assign post_title = post.title | smartify | strip_html | normalize_whitespace | escape_once -%}

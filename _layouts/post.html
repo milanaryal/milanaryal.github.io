@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{%- include reading_time.html -%}
+{%- include reading_time.html content=page.content -%}
 
 {%- if page.url -%}
   {%- assign page_url = page.url | replace:'/index.html','/' | relative_url -%}
