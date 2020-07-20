@@ -312,6 +312,50 @@
   }
 }
 
+// Post pager
+
+.post-pager {
+  margin-top: 1px;
+  margin-bottom: 60px;
+
+  .post-pager-previous,
+  .post-pager-next {
+    width: 48%;
+  }
+
+  .post-pager-title {
+    margin-bottom: 5px;
+    @media (min-width: 768px) {
+      margin-bottom: 7px;
+    }
+    font-size: 13.8px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+  }
+
+  a {
+    display: block;
+    font-family: var(--font-family-serif-display);
+    font-size: 16.8px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--heading-color);
+    text-decoration: none;
+    letter-spacing: -0.004em;
+    text-rendering: optimizeLegibility;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
 // Random posts
 
 .random-posts {
