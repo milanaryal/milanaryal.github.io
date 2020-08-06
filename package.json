@@ -37,16 +37,13 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.14.0",
-    "@primer/css": "15.0.0",
-    "@primer/octicons": "10.0.0",
-    "bootstrap": "4.5.0",
+    "bootstrap": "4.5.1",
     "headroom.js": "0.11.0",
     "jquery": "3.5.1",
-    "popper.js": "1.16.1",
-    "rfs": "9.0.3"
+    "popper.js": "1.16.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.0",
+    "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@fullhuman/postcss-purgecss": "^2.3.0",
@@ -69,7 +66,7 @@
     "rimraf": "^3.0.2",
     "stylelint": "^13.6.1",
     "stylelint-config-twbs-bootstrap": "^2.0.3",
-    "terser-webpack-plugin": "^3.0.8",
+    "terser-webpack-plugin": "^4.0.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
