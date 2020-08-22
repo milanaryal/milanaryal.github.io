@@ -172,7 +172,7 @@ To cover up all following is the simple example to bundle our ES6 scripts for ou
 Install your devDependencies:
 
 ```js
-npm install --save webpack webpack-cli @babel/core @babel/preset-env babel-loader clean-webpack-plugin terser-webpack-plugin
+npm install --save-dev webpack webpack-cli @babel/core @babel/preset-env babel-loader clean-webpack-plugin terser-webpack-plugin
 ```
 
 Import your scripts in your `src/index.js` file something like:
