@@ -106,17 +106,13 @@ For example, `<section>` should be wrapped as inline.
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>
-      Example title
-    </title>
+    <title>Example title</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <h1>
-      Hello, world!
-    </h1>
+    <h1>Hello, world!</h1>
 
     <!-- JS -->
     <script src="/assets/js/script.js"></script>
