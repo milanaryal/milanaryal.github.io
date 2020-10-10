@@ -1,7 +1,7 @@
 ---
 title: "C-ASBA service charge for Banks in Nepal"
 date: 2020-03-22T13:00:00+05:45
-last_modified_at: 2020-09-27T09:00:00+05:45
+last_modified_at: 2020-10-10T19:00:00+05:45
 ---
 
 Investors can buy primary and rights shares online with the Centralised Application Supported by Blocked Amount (C-ASBA) process which has been implemented on February 23, 2018 in Nepal. C-ASBA is an advanced form of ASBA interface which is claimed to be more user friendly.
@@ -12,7 +12,7 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 
 ### List of Banks in Nepal with C-ASBA application charges (per application)
 
-> _Last updated at **September 27, 2020**_; for current updated data visit your respective Bank's website for standard charge sheet.
+> _Last updated at **October 10, 2020**_; for current updated data visit your respective Bank's website for standard charge sheet.
 
 | Symbol | Bank Name                        | Charge (in rupees) |
 | ------ | -------------------------------- | ------------------ |
@@ -26,7 +26,7 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 | HBL    | Himalayan Bank                   | Free               |
 | KBL    | Kumari Bank                      | Rs. 20             |
 | LBL    | Laxmi Bank                       | Rs. 25             |
-| MBL    | Machhapuchhre Bank               | Free               |
+| MBL    | Machhapuchhre Bank               | Rs. 10             |
 | MEGA   | Mega Bank                        | Free               |
 | NABIL  | Nabil Bank                       | Free               |
 | NBB    | Nepal Bangladesh Bank            | Free               |
@@ -35,7 +35,7 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 | NIB    | Nepal Investment Bank            | Rs. 20             |
 | NICA   | NIC Asia Bank                    | Free               |
 | NMB    | NMB Bank                         | Rs. 20             |
-| PCBL   | Prime Commercial Bank            | Free               |
+| PCBL   | Prime Commercial Bank            | Rs. 25             |
 | PRVU   | Prabhu Bank                      | Re. 1              |
 | RBB    | Rastriya Banijya Bank            | Free               |
 | SANIMA | Sanima Bank                      | Free               |
@@ -46,7 +46,9 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 
 | Symbol | Others               | Charge (in rupees) |
 | ------ | -------------------- | ------------------ |
-| MNBBL  | Muktinath Bikas Bank | Free               |
+| MNBBL  | Muktinath Bikas Bank | Rs. 10             |
+| MLBL   | Mahalaxmi Bikas Bank | Rs. 10             |
+| GBBL   | Garima Bikas Bank    | Free               |
 | ICFC   | ICFC Finance         | Rs. 25             |
 
 <!--
