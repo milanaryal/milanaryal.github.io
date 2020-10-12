@@ -12,14 +12,11 @@ const purgecssConfig = {
     'node_modules/bootstrap/js/dist/tooltip.js',
     'node_modules/headroom.js/dist/headroom.js',
   ],
-  whitelist: ['markdown-body', 'highlight'],
-  whitelistPatterns: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
-  whitelistPatternsChildren: [
-    /markdown-body/,
-    /highlight/,
-    /tooltip/,
-    /bs-tooltip/,
-  ],
+  safelist: {
+    standard: ['markdown-body', 'highlight'],
+    deep: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
+    greedy: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
+  },
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 }
 
