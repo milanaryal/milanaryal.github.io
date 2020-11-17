@@ -1,7 +1,7 @@
 ---
 title: "C-ASBA service charge for Banks in Nepal"
 date: 2020-03-22T13:00:00+05:45
-last_modified_at: 2020-10-10T19:00:00+05:45
+last_modified_at: 2020-11-17T14:00:00+05:45
 ---
 
 Investors can buy primary and rights shares online with the Centralised Application Supported by Blocked Amount (C-ASBA) process which has been implemented on February 23, 2018 in Nepal. C-ASBA is an advanced form of ASBA interface which is claimed to be more user friendly.
@@ -12,13 +12,13 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 
 ### List of Banks in Nepal with C-ASBA application charges (per application)
 
-> _Last updated at **October 10, 2020**_; for current updated data visit your respective Bank's website for standard charge sheet.
+> _Last updated at **November 17, 2020**_; for current updated data visit your respective Bank's website for standard charge sheet.
 
 | Symbol | Bank Name                        | Charge (in rupees) |
 | ------ | -------------------------------- | ------------------ |
 | ADBL   | Agricultural Devleopment Bank    | Rs. 10             |
 | BOKL   | Bank Of Kathmandu                | Free               |
-| CBL    | Civil Bank                       | Free               |
+| CBL    | Civil Bank                       | Rs. 10             |
 | CCBL   | Century Commercial Bank          | Free               |
 | CZBIL  | Citizen Bank                     | Rs. 20             |
 | EBL    | Everest Bank                     | Rs. 20             |
