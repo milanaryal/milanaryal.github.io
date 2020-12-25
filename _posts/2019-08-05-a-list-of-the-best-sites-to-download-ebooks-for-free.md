@@ -19,7 +19,7 @@ _Mirror site(s):_
 - [b-ok.xyz](http://b-ok.xyz/){:rel="nofollow"}
 - [b-ok.cc](http://b-ok.cc/){:rel="nofollow"}
 - [b-ok.asia](http://b-ok.asia/){:rel="nofollow"}
-- [zlibrary.unblockit.pw](http://zlibrary.unblockit.pw/){:rel="nofollow"}
+- [zlibrary.unblockit.dev](http://zlibrary.unblockit.dev/){:rel="nofollow"}
 
 If Z-Library is censored or blocked in your location, you can use [TOR](http://b-ok.org/msgn/tor){:rel="nofollow"} to download it anyway.
 
