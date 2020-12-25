@@ -17,7 +17,7 @@ BitTorrent sites come and go but below I've compiled a list of the 10 most-visit
 
 | S.N. | BitTorrent site                                                      | Proxy/Mirror                                                             | Specialization   | RSS | Alexa Rank |
 | ---- | -------------------------------------------------------------------- | ------------------------------------------------------------------------ | ---------------- | --- | ---------- |
-| 1.   | [The Pirate Bay](http://thepiratebay.org/){:rel="nofollow"}          | [proxybay.id](http://proxybay.id/){:rel="nofollow"}                      | -                | Yes | 192        |
+| 1.   | [The Pirate Bay](http://thepiratebay.org/){:rel="nofollow"}          | [proxybay.buzz](http://proxybay.buzz/){:rel="nofollow"}                  | -                | Yes | 192        |
 | 2.   | [YTS.MX](http://yts.mx/){:rel="nofollow"}                            | [unblockit.dev](http://yts.unblockit.dev/){:rel="nofollow"}              | Movies           | Yes | 610        |
 | 3.   | [1337x](http://1337x.to/){:rel="nofollow"}                           | [unblockit.dev](http://1337x.unblockit.dev/){:rel="nofollow"}            | -                | No  | 315        |
 | 4.   | [RARBG](http://rarbg.to/){:rel="nofollow"}                           | [unblockit.dev](http://rarbg.unblockit.dev/){:rel="nofollow"}            | -                | Yes | 476        |
