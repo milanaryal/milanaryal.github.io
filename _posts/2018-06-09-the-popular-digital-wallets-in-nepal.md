@@ -1,7 +1,7 @@
 ---
 title: "The popular digital wallets in Nepal"
 date: 2018-06-09T13:21:00+05:45
-last_modified_at: 2020-04-16T10:00:00+05:45
+last_modified_at: 2021-02-17T19:00:00+05:45
 excerpt: "A list of the most popular and best digital mobile wallets payment systems in Nepal."
 ---
 
@@ -38,6 +38,14 @@ Unlike other services CellPay is not a wallet based, it's like a digital debit c
 CellPay App is available for [Web](https://app.cellpay.com.np/){:rel="nofollow"}, [Android](https://play.google.com/store/apps/details?id=com.cellpay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/us/app/cellpay/id1441280711?mt=8){:rel="nofollow"} devices.
 
 ### Other popular digital wallet alternatives in Nepal
+
+#### [PayWell Nepal](https://www.paywellnepal.com.np/){:rel="nofollow"}
+
+'PayWell Nepal Pvt. Ltd.' was registered under the Company's Act of Nepal, on the 18th of April 2019 and authorized by the Nepal Rastra Bank (Central Bank Of Nepal) for PSP (Payment Service Provider) operation; serving as a Digital Wallet company that facilitates online payment through the use of 5G, 4G, 3G, Wi-Fi, NFC (Near Field Communication) and Internet services.
+
+PayWell Nepal allows its users to access utility and retail bill payments, remittance, P2P (Person to Person) transfer such as, sending and receiving money and also cash withdrawal from Banks, ATM and Cash Point Agents through the means of mobile phones, computers and laptops. Your mobile phones are basically wallets that store your money for mobile financial freedom.
+
+PayWell Nepal App is available for [Web](https://www.paywellnepal.com.np/client/default.asp){:rel="nofollow"}, [Android](https://play.google.com/store/apps/details?id=com.paywell.nepal&hl=en_US){:rel="nofollow"}, and [iOS](https://apps.apple.com/us/app/paywell-nepal/id1463318612){:rel="nofollow"} devices.
 
 #### [iPay](https://ipay.com.np/){:rel="nofollow"}
 
