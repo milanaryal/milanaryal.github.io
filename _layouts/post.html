@@ -117,7 +117,7 @@ layout: default
 
             <!-- Post last modified date meta -->
             {% if page.last_modified_at %}
-              <div class="post-modified">Last modified at <time datetime="{{ date_modified }}">{{ date_modified | date: '%b %-d, %Y' }}</time></div>
+              <div class="post-modified">Last modified at <time datetime="{{ date_modified }}">{{ date_modified | date: date_to_string: 'ordinal', 'US' }}</time></div>
             {% endif %}<!-- /.post-modified -->
 
             <div class="post-footer-meta-acknowledgments" about="{{ page_url }}">
