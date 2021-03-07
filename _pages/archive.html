@@ -29,10 +29,10 @@ redirect_from: "/archives/"
         </a>
       </div><!-- /.col-sm-9 .archive-title -->
       <div class="col-sm-3 archive-date">
-        <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string: 'ordinal', 'US' }}</time>
+        <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
       </div><!-- /.col-sm-3 .archive-title -->
     </div><!-- /.row -->
-  {% if post.last_modified_at %}<time class="dt-updated" style="display: none;" datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date_to_string: 'ordinal', 'US' }}</time>{% endif %}
+  {% if post.last_modified_at %}<time class="dt-updated" style="display: none;" datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: '%b %-d, %Y' }}</time>{% endif %}
   </article>
 
 {% endfor %}
