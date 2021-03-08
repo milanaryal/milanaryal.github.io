@@ -1,7 +1,7 @@
 ---
 title: "Useful websites related to stock market of Nepal"
 date: 2021-03-02T15:00:00+05:45
-last_modified_at: 2021-03-03T23:00:00+05:45
+last_modified_at: 2021-03-08T09:00:00+05:45
 excerpt: "Nepal stock market related list of useful websites that you might like to read for daily up-to-date information."
 ---
 
@@ -16,6 +16,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 ### Nepal stock exchange related regulatory authority websites
 
 - [Ministry of Finance - Government of Nepal](https://mof.gov.np/en/)
+- [Inland Revenue Department - Government of Nepal](https://ird.gov.np/)
 - [Securities Board of Nepal (SEBON)](http://www.sebon.gov.np/)
 - [Nepal Rastra Bank (NRB)](https://www.nrb.org.np/)
 - [Beema Samiti - Nepal Insurance Board](https://nib.gov.np/)
@@ -54,6 +55,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [Dekha Padhi](https://www.dekhapadhi.com/){:rel="nofollow"}
 - [eAarthik](https://www.eaarthik.com/){:rel="nofollow"}
 - [Financial Notices](https://www.financialnotices.com/){:rel="nofollow"}
+- [Gyanmandu](https://www.gyanmandu.com/){:rel="nofollow"}
 - [Insurance Khabar](https://insurancekhabar.com/){:rel="nofollow"}
 - [Investing Nepal](https://www.investingnepal.com/){:rel="nofollow"}
 - [Lagani Khabar](https://laganikhabar.com/){:rel="nofollow"}
@@ -80,6 +82,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [Janata Samachar](https://www.janatasamachar.com/){:rel="nofollow"}
 - [Hamra Kura](https://hamrakura.com/){:rel="nofollow"}
 - [Hamro Khabar Pati](http://hamrokhabarpati.com/){:rel="nofollow"}
+- [Himal Khabar](https://www.himalkhabar.com/){:rel="nofollow"}
 - [Himal Post](https://www.himalpost.com/){:rel="nofollow"}
 - [Kathmandu Today](http://www.kathmandutoday.com/){:rel="nofollow"}
 - [Kathmandu Pati](https://www.kathmandupati.com/){:rel="nofollow"}
@@ -89,6 +92,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [Naya Page](https://www.nayapage.com/){:rel="nofollow"}
 - [Nepal Khabar](https://nepalkhabar.com/){:rel="nofollow"}
 - [Nepal Live](https://nepallive.com/){:rel="nofollow"}
+- [Nepali Times](https://www.nepalitimes.com/){:rel="nofollow"}
 - [News Karobar](https://www.newskarobar.com/){:rel="nofollow"}
 - [News24 Nepal](https://www.news24nepal.tv/){:rel="nofollow"}
 - [News Of Nepal](https://www.newsofnepal.com/){:rel="nofollow"}
