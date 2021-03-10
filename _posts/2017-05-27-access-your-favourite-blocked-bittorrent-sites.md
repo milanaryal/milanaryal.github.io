@@ -11,7 +11,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 - [proxybay.ltda](https://proxybay.ltda/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
 - [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="nofollow"}
-- [piratebayztemzmv.onion](http://piratebayztemzmv.onion/) {[_TOR URL_](/why-you-should-know-about-tor/)}
+- [piratebayztemzmv.onion](http://piratebayztemzmv.onion/) - [_TOR URL_](/why-you-should-know-about-tor/)
 
 #### Top proxy sites and mirrors
 
