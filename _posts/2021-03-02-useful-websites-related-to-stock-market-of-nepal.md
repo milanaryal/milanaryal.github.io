@@ -21,6 +21,9 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [Nepal Rastra Bank (NRB)](https://www.nrb.org.np/)
 - [Beema Samiti - Nepal Insurance Board](https://nib.gov.np/)
 - [CDS & Clearing Ltd.](https://cdsc.com.np/)
+- [Mero Share](https://meroshare.cdsc.com.np/)
+- [IPO Allotment Result](https://iporesult.cdsc.com.np/)
+- [connectIPS](https://www.connectips.com/)
 
 ### NEPSE online technical analysis chart [for free]
 

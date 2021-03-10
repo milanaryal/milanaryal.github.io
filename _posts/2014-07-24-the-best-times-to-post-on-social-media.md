@@ -103,7 +103,9 @@ excerpt: "The best times to post on social media, including Facebook, Twitter, G
 
 <p><a href="https://developers.facebook.com/docs/platforminsights/page" rel="nofollow" target="_blank">Insights</a> Facebook has their own useful analytics tool see statistics on any of your brand pages.</p>
 
-<p><a href="http://simplymeasured.com/freebies/instagram-analytics" rel="nofollow" target="_blank">SimplyMeasured</a> a free Instagram analytics tool.</p>
+<a href="https://help.instagram.com/1533933820244654" rel="nofollow" target="_blank">Insights on Instagram</a>, a free Instagram analytics tool.</p>
+
+<!-- <p><a href="http://simplymeasured.com/freebies/instagram-analytics" rel="nofollow" target="_blank">SimplyMeasured</a> a free Instagram analytics tool.</p> -->
 
 <p>&nbsp;</p>
 

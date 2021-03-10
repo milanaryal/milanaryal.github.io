@@ -142,7 +142,7 @@ Or if you just always want the latest version use `*`:
 }
 ```
 
-See more about version ranges in the [npm docs](http://docs.npmjs.com/misc/semver){:rel="nofollow"} or npm's [semantic versioning parser](http://github.com/isaacs/node-semver){:rel="nofollow"}.
+See more about version ranges in the [npm docs](http://docs.npmjs.com/cli/v6/using-npm/semver){:rel="nofollow"} or npm's [semantic versioning parser](http://github.com/isaacs/node-semver){:rel="nofollow"}.
 
 **`npm outdated`**
 
