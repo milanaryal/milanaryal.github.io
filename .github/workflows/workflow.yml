@@ -1,0 +1,38 @@
+name: My workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.1 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: List dependency versions
+        run: bundle exec github-pages versions
+
+      - name: Checking DNS # Should have CNAME file
+        run: bundle exec github-pages health-check
+
+      - name: Building site
+        run: bundle exec jekyll build --config _config.yml,_config_test.yml --profile
+
+      - name: Checking Jekyll configuration
+        run: bundle exec jekyll doctor
+
+      - name: Checking HTML files
+        run: bundle exec htmlproofer ./_site --allow-hash-href --assume-extension --check-external-hash --check-favicon --check-img-http --check-opengraph --internal-domains "milanaryal.com.np" --http-status-ignore "403,429" --only-4xx --file_ignore "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" || true
+
+      - name: Cleaning up
+        run: bundle exec jekyll clean

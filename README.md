@@ -12,7 +12,11 @@
 
 # [Milan Aryal](https://milanaryal.com.np/)
 
-[![Build Status](https://travis-ci.org/MilanAryal/milanaryal.github.io.svg?branch=master)](https://travis-ci.org/MilanAryal/milanaryal.github.io)
+[![Build Status](https://github.com/MilanAryal/milanaryal.github.io/actions/workflows/workflow.yml/badge.svg?branch=master)](https://github.com/MilanAryal/milanaryal.github.io/actions/workflows/workflow.yml)
+[![Made with Jekyll](https://img.shields.io/badge/Jekyll-v3.9.0-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com/)
+[![Hosted with GitHub Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/)
+[![Made with GitHub Actions](https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white)](https://github.com/features/actions)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
 
 The uncompiled [Jekyll](https://jekyllrb.com/) source code for my personal weblog ([milanaryal.com.np](https://milanaryal.com.np/)).
 
