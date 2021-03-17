@@ -1,7 +1,7 @@
 ---
 title: "Useful websites related to stock market of Nepal"
 date: 2021-03-02T15:00:00+05:45
-last_modified_at: 2021-03-08T09:00:00+05:45
+last_modified_at: 2021-03-17T12:15:00+05:45
 excerpt: "Nepal stock market related list of useful websites that you might like to read for daily up-to-date information."
 ---
 
@@ -15,15 +15,31 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 
 ### Nepal stock exchange related regulatory authority websites
 
-- [Ministry of Finance - Government of Nepal](https://mof.gov.np/en/)
-- [Inland Revenue Department - Government of Nepal](https://ird.gov.np/)
 - [Securities Board of Nepal (SEBON)](http://www.sebon.gov.np/)
-- [Nepal Rastra Bank (NRB)](https://www.nrb.org.np/)
-- [Beema Samiti - Nepal Insurance Board](https://nib.gov.np/)
 - [CDS & Clearing Ltd.](https://cdsc.com.np/)
 - [Mero Share](https://meroshare.cdsc.com.np/)
 - [IPO Allotment Result](https://iporesult.cdsc.com.np/)
 - [connectIPS](https://www.connectips.com/)
+
+### Important websites of Nepal
+
+- [Ministry of Finance](https://mof.gov.np/en/)
+- [Nepal Rastra Bank (NRB)](https://www.nrb.org.np/)
+- [Nepal Insurance Board (Beema Samiti)](https://nib.gov.np/)
+- [Company Register Office](http://www.ocr.gov.np/)
+- [Inland Revenue Department](https://ird.gov.np/)
+- Credit Information Bureau of Nepal (Karja Suchana Kendra Limited)
+- [Deposit and Credit Guarantee Corporation](https://dcgc.org.np/)
+- [Department of Cooperative](http://deoc.gov.np/)
+- [National Cooperative Bank](https://ncbl.coop/)
+- [General Post Office](http://gpo.gov.np/)
+- [Central Bureau of Statistics](https://cbs.gov.np/)
+- [Nepal Law Commission](http://www.lawcommission.gov.np/)
+- [Citizen Ivestment Trust (Nagarik Lagani Kosh)](http://nlk.org.np/)
+- [Employee Provident Fund](https://epfnepal.com.np/)
+- [Pension Management Office](https://pension.gov.np/)
+- [Nepal Bankers' Association](http://nepalbankers.com.np/)
+- [Development Bankers' Association](https://dban.com.np/)
 
 ### NEPSE online technical analysis chart [for free]
 
@@ -67,6 +83,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [NepseKhabar](https://nepsekhabar.com/){:rel="nofollow"}
 - [New Business Age (ENG)](https://www.newbusinessage.com/){:rel="nofollow"}
 - [Note Bazar](https://notebazar.com/){:rel="nofollow"}
+- [Sahakari Khabar](https://www.sahakarikhabar.com/){:rel="nofollow"}
 - [Share Sansar (ENG)](https://www.sharesansar.com/){:rel="nofollow"}
 - [Share Bazar Nepal](https://www.sharebazarnepal.com.np/){:rel="nofollow"}
 - [Urja Khabar](https://www.urjakhabar.com/){:rel="nofollow"}
