@@ -7,7 +7,7 @@ I use continuous integration (CI) to test build status of my Jekyll blog in GitH
 
 > For those who aren't familiar with Continuous Integration (CI) or Continuous Delivery(CD), it's a automating software workflows to build or test the software based on certain triggers in your GitHub repository.
 
-Travis CI has served me very well but with the notice from _travis-ci.org_ to [shutting down the website soon](https://ropensci.org/blog/2020/11/19/moving-away-travis/){:rel="nofollow"}, I planned to mirate to GitHub Actions (the native CI/CD system from GitHub).
+Travis CI has served me very well but with a notice from _travis-ci.org_ to [shutting down the website soon](https://ropensci.org/blog/2020/11/19/moving-away-travis/){:rel="nofollow"}, I planned to mirate to GitHub Actions (the native CI/CD system from GitHub).
 
 #### Step 1: Remove Travis CI from the project folder
 
@@ -52,12 +52,12 @@ notifications:
   email: false
 ```
 
-- Removed Travis CI "Build Status" badge in the README file.
+- Removed Travis CI "Build Status" badge in a README file.
 - Loged into the Travis CI website and disabled the GitHub repository from using Travis.
 
 #### Step 2: Create GitHub Actions workflow in the project folder
 
-Now, migrating to GitHub Actions here's the `.workflow.yml` file code snippet I created in the `.github/workflows` directory of my project folder.
+Now, migrating to GitHub Actions here's a `.workflow.yml` file code snippet I created in the `.github/workflows` directory of my project folder.
 
 ```yml
 name: My workflow
@@ -100,7 +100,7 @@ jobs:
         run: bundle exec jekyll clean
 ```
 
-- Added GitHub Actions "Build Status" badge in the README file.
+- Added GitHub Actions "Build Status" badge in a README file.
 
 #### Step 3: Push commit
 
@@ -108,7 +108,7 @@ Finnally, I push commit to GitHub and I can see the build status results in 'act
 
 ---
 
-For any references following code snnipet is the `Gemfile` of my Jekyll blog to build site in the GitHub Pages environment:
+For any references following code snnipet is a `Gemfile` of my Jekyll blog to build site in the GitHub Pages environment:
 
 ```text
 # frozen_string_literal: true
