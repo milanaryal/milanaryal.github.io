@@ -1,7 +1,7 @@
 ---
 title: "Blogging with Jekyll and GitHub Pages"
 date: 2014-12-30T19:47:46+05:45
-last_modified_at: "2016-01-13T06:09:30+05:45"
+last_modified_at: "2021-03-18T11:50:00+05:45"
 excerpt: "Transform your plain text into static websites and blogs."
 ---
 
@@ -128,10 +128,12 @@ Follow the following process to setup custom domain name with your GitHub Pages.
 
 With your DNS provider, create A records that resolve to the following IP addresses:
 
-| Name        | Type | Record         |
-| ----------- | ---- | -------------- |
-| example.com | A    | 192.30.252.153 |
-| example.com | A    | 192.30.252.154 |
+| Name        | Type | Record          |
+| ----------- | ---- | --------------- |
+| example.com | A    | 185.199.108.153 |
+| example.com | A    | 185.199.109.153 |
+| example.com | A    | 185.199.110.153 |
+| example.com | A    | 185.199.111.153 |
 
 #### Configuring a www subdomain
 
@@ -201,3 +203,10 @@ gems:
 This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](http://jekyllrb.com/){:rel="nofollow"}.
 
 Happy Jekyll'ing!
+
+#### Further resources
+
+- [Jekyll default configuration](https://jekyllrb.com/docs/configuration/default/){:rel="nofollow"}, _Jekyll Docs_
+- [Some Jekyll configuration settings that cannot be changed for GitHub Pages sites](https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll){:rel="nofollow"}, _GitHub Docs_
+- [GitHub Pages sites usage limits](https://docs.github.com/en/github/working-with-github-pages/about-github-pages#usage-limits){:rel="nofollow"}, _GitHub Docs_
+- [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site){:rel="nofollow"}, _GitHub Docs_

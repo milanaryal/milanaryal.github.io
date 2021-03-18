@@ -63,9 +63,9 @@ google_analytics_id_2: "UA-42092423-2"
 
 repository: "MilanAryal/milanaryal.github.io"
 branch: "master"
-encoding: "utf-8"
-future: true
 timezone: "Asia/Kathmandu"
+future: true
+theme: null
 
 kramdown:
   toc_levels: [2, 3]
@@ -126,7 +126,7 @@ compress_html:
   clippings: all
   comments: all
   ignore:
-    envs: development
+    envs: [development]
   profile: false
 
 include:
