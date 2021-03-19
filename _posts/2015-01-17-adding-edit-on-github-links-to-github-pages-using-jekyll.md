@@ -1,6 +1,7 @@
 ---
 title: "Adding 'Edit on GitHub' links to GitHub Pages using Jekyll"
 date: 2015-01-17T01:00:53+05:45
+last_modified_at: 2021-03-18T21:00:00+05:45
 ---
 
 If you're using Jekyll on GitHub Pages you can have your Jekyll blog posts or collection document pages with extra "Edit on GitHub", "View source" and even "View revision history" links. Here's how you can have those:
@@ -14,7 +15,7 @@ If you're hosting the site on GitHub Pages using Jekyll, they inject the source 
 ```html
 {% raw %}
 <a
-  href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.path }}"
+  href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}"
 >
   Edit this page on GitHub
 </a>
@@ -26,7 +27,7 @@ Example for output URL of above input URL:
 ```html
 {% raw %}
 <a
-  href="http://github.com/username/username.github.io/edit/master/_posts/yyyy-mm-dd-your-post-title.md"
+  href="http://github.com/username/username.github.io/edit/main/_posts/yyyy-mm-dd-your-post-title.md"
 >
   Edit this page on GitHub
 </a>
@@ -40,7 +41,7 @@ Example for output URL of above input URL:
 ```html
 {% raw %}
 <a
-  href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.relative_path }}"
+  href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.relative_path }}"
 >
   Edit this page on GitHub
 </a>
@@ -54,7 +55,7 @@ If you are using [Prose](http://github.com/prose/prose){:rel="nofollow"} to mana
 ```html
 {% raw %}
 <a
-  href="http://prose.io/#{{ site.repo }}/edit/{{ site.branch }}/{{ page.path }}"
+  href="http://prose.io/#{{ site.github.repository_nwo }}/edit/{{ site.github.source.branch }}/{{ page.path }}"
 >
   Edit this page
 </a>
@@ -70,7 +71,7 @@ You can add link of a source code of a post or doc on GitHub.
 ```html
 {% raw %}
 <a
-  href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.path }}"
+  href="{{ site.github.repository_url }}/blob/{{ site.github.source.branch }}/{{ page.path }}"
 >
   View source
 </a>
@@ -82,7 +83,7 @@ You can add link of a source code of a post or doc on GitHub.
 ```html
 {% raw %}
 <a
-  href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.relative_path }}"
+  href="{{ site.github.repository_url }}/blob/{{ site.github.source.branch }}/{{ page.relative_path }}"
 >
   View source
 </a>
@@ -98,7 +99,7 @@ Like ways you can also add view revision history link which shows all the commit
 ```html
 {% raw %}
 <a
-  href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.path }}"
+  href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}"
 >
   View revision history
 </a>
@@ -110,7 +111,7 @@ Like ways you can also add view revision history link which shows all the commit
 ```html
 {% raw %}
 <a
-  href="{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.relative_path }}"
+  href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.relative_path }}"
 >
   View revision history
 </a>

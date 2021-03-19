@@ -1,4 +1,6 @@
-# Jekyll configuration (https://jekyllrb.com/docs/configuration/)
+# Jekyll configuration › https://jekyllrb.com/docs/configuration/
+
+# --------------- Site settings ---------------
 
 title: "Milan Aryal"
 tagline: "Livin' on the edge"
@@ -52,17 +54,14 @@ google_api_key: "AIzaSyB27uh5sPHJ156nRryf1yuJn6fjo_B7qvI"
 google_analytics_id: "UA-42092423-1"
 google_analytics_id_2: "UA-42092423-2"
 
-# HTML language attribute format eg. en, en-US, en-GB ...
+# HTML language attribute format › eg. en, en-US, en-GB
 # lang: "en"
 
-# Open Graph protocol format eg. en_US, en_GB ...
+# Open Graph protocol format › eg. en_US, en_GB
 # locale: "en_US"
 
-# Jekyll default configuration
-# Read: https://jekyllrb.com/docs/configuration/default/
+# --------------- Build settings ---------------
 
-repository: "MilanAryal/milanaryal.github.io"
-branch: "master"
 timezone: "Asia/Kathmandu"
 future: true
 theme: null
@@ -115,13 +114,12 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-gist
-  - jekyll-github-metadata
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# HTML compression (https://jch.penibelst.de/)
+# HTML compression › https://jch.penibelst.de/
 compress_html:
   clippings: all
   comments: all
@@ -133,20 +131,20 @@ include:
   - "_pages"
 
 exclude:
-  - README.md
-  - LICENSE
+  - ".bundle"
+  - bundle
   - CNAME
   - Gemfile
   - Gemfile.lock
-  - Rakefile
-  - bundle
-  - ".bundle"
-  - script
-  - vendor
-  - src
+  - LICENSE
   - node_modules
+  - npm-debug.log
   - package.json
   - package-lock.json
-  - npm-debug.log
-  - webpack.config.js
   - postcss.config.js
+  - README.md
+  - Rakefile
+  - script
+  - src
+  - vendor
+  - webpack.config.js
