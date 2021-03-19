@@ -65,7 +65,10 @@ name: My workflow
 on:
   push:
     branches:
-      - master
+      - main
+    paths-ignore:
+      - "LICENSE"
+      - "README.md"
 
 jobs:
   test:
