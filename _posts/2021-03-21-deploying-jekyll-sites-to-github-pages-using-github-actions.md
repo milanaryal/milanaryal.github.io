@@ -1,14 +1,14 @@
 ---
 title: "Deploying Jekyll [v4.x.x] sites to GitHub Pages using GitHub Actions"
 date: 2021-03-21T11:30:00+05:45
-excerpt: "Using GitHub Actions learn how to publish your Jekyll websites onto GitHub Pages with your custom dependencies and versions."
+excerpt: "Using GitHub Actions, learn how to publish your Jekyll websites onto GitHub Pages with your custom dependencies and versions."
 ---
 
 The GitHub Pages (`github-pages` gem only supports specific versions of Jekyll and Jekyll plugins. Latest version of Jekyll `v4.x.x` build time for your site is incredibly faster than older versions. So, to overcome the [GitHub Pages dependencies and versions](https://pages.github.com/versions/){:rel="nofollow"} we are going to use GitHub Actions to deploy your site onto GitHub Pages with your scpecfic version of Jekyll and Jekyll plugins.
 
 Also, using GitHub Actions we can use any Jekyll plugins irrespective of them being on the supported versions list, even `*.rb` files placed in the `_plugins` directory of your site.
 
-> This is the updated post directly from _Jekyll documentaions_ site with much simpler procedures.
+> **Note**: This is the updated post directly from _Jekyll documentaions_ site with much simpler procedures.
 
 ### Workspace setup
 
@@ -16,7 +16,7 @@ The first and foremost requirement is a Jekyll project hosted at GitHub. Choose 
 
 We're only going to cover builds from the `main` branch in this page. Therefore, ensure that you are working on the `main` branch. If necessary, you may create it based on your default branch. When the Action builds your site, the contents of the _destination_ directory will be automatically pushed to the `gh-pages` branch with a commit, ready to be used for serving.
 
-> The Action we're using here will create (or reset an existing) `gh-pages` branch on every successful deploy. So, if you have an existing `gh-pages` branch that is used to deploy your production build, ensure to make a backup of the contents into a different branch so that you can rollback easily if necessary.
+> **Warning**: The Action we're using here will create (or reset an existing) `gh-pages` branch on every successful deploy. So, if you have an existing `gh-pages` branch that is used to deploy your production build, ensure to make a backup of the contents into a different branch so that you can rollback easily if necessary.
 
 Following is the contents of `Gemfile` for our project:
 
@@ -34,6 +34,11 @@ end
 ```
 
 ### Setting up the Action
+
+GitHub Actions are registered for a repository by using a YAML file inside the directory path `.github/workflows` (note the dot at the start). Here we shall employ Jekyll Actions from the Marketplace for its simplicity.
+
+Create a **workflow file**, say `deploy.yml`, using either the GitHub interface or by pushing a YAML file to the workflow directory path manually. The base contents are:
+
 
 ```yml
 name: deploy
