@@ -128,7 +128,7 @@ source "https://rubygems.org"
 gem "github-pages", :group => :jekyll_plugins
 ```
 
-> **Tip**: the GitHub Pages (`github-pages` gem) will automatically generate a default stylesheet, `/_site/assets/css/style.css`, that's about 3k lines long, and that you may not want or need for your site. I recommend setting the theme to null (`theme: null` in your Jekyll `_config.yml` file) so you have control over your styling, but this is up to you.
+> **Tip**: The GitHub Pages (`github-pages` gem) will automatically generate a default stylesheet, `/_site/assets/css/style.css`, that's about 3k lines long, and that you may not want or need for your site. I recommend setting the theme to null (`theme: null` in your Jekyll `_config.yml` file) so you have control over your styling, but this is up to you.
 
 ### Step 4: Commit your changes
 
@@ -177,7 +177,7 @@ Now push a CNAME (with out any extention) file name in your GitHub Pages with yo
 ```rb
 ---
 layout: post
-title: Blogging Like a Hacker
+title: "Blogging Like a Hacker"
 ---
 ```
 
