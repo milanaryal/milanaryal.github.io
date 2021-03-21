@@ -18,9 +18,9 @@ We're only going to cover builds from the `main` branch in this page. Therefore,
 
 > The Action we're using here will create (or reset an existing) `gh-pages` branch on every successful deploy. So, if you have an existing `gh-pages` branch that is used to deploy your production build, ensure to make a backup of the contents into a different branch so that you can rollback easily if necessary.
 
-Following is the contents of `Gemfile` for out project:
+Following is the contents of `Gemfile` for our project:
 
-```ruby
+```rb
 # frozen_string_literal: true
 
 source "https://rubygems.org"

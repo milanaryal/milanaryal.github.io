@@ -113,7 +113,7 @@ Finnally, I push commit to GitHub and I can see the build status results in 'act
 
 For any references following code snnipet is a `Gemfile` of my Jekyll blog to build site in the GitHub Pages environment:
 
-```text
+```ruby
 # frozen_string_literal: true
 
 source "https://rubygems.org"

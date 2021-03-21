@@ -1,11 +1,13 @@
 ---
 title: "Blogging with Jekyll and GitHub Pages"
 date: 2014-12-30T19:47:46+05:45
-last_modified_at: "2021-03-18T11:50:00+05:45"
+last_modified_at: "2021-03-21T11:50:00+05:45"
 excerpt: "Transform your plain text into static websites and blogs."
 ---
 
 I recently migrated my blog to [GitHub Pages](http://pages.github.com){:rel="nofollow"} using an awesome open source project [Jekyll](http://jekyllrb.com){:rel="nofollow"}. It's really fun blogging with Jekyll. If you are not enjoying blogging with other CMS platform then you should really try Jekyll.
+
+> **ALSO SEE**: [Deploying Jekyll [v4.x.x] sites to GitHub Pages using GitHub Actions](/deploying-jekyll-sites-to-github-pages-using-gitbub-actions/)
 
 After reading a lot of documentation, I found following quickest way to set up a Jekyll powered blog on GitHub Pages:
 
@@ -50,15 +52,15 @@ Install Jekyll locally via the command line, create a new boilerplate website us
 
 Or, here're the simple steps to blog with Jekyll on GitHub Pages without touching the single command line:
 
-#### Step 1
+### Step 1: Create repository
 
 Make [GitHub](http://github.com){:rel="nofollow"} account and create repo `username.github.io`, remember your repo username must be match with GitHub account username.
 
-#### Step 2
+### Step 2: Download GitHub Desktop
 
 Download and install [GitHub Desktop app](http://desktop.github.com/){:rel="nofollow"} (Currently available for Mac and Windows)
 
-#### Step 3
+### Step 3: Setup Jekyll workplace
 
 Download and setup a good themes from the following popular sites:
 
@@ -68,7 +70,7 @@ Download and setup a good themes from the following popular sites:
 - [Jekyll Now](http://www.jekyllnow.com/){:rel="nofollow"}
 - There're other many theme collection site for Jekyll.
 
-### Jekyll directory structure
+#### Jekyll directory structure
 
 A basic Jekyll site usually looks something like this:
 
@@ -114,13 +116,27 @@ A basic Jekyll site usually looks something like this:
 └── sitemap.xml # Site map for the website.
 ```
 
-#### Step 4
+#### Configuring Jekyll with GitHub Pages
+
+Following is the contents of `Gemfile` at the root of our project:
+
+```rb
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+gem "github-pages", :group => :jekyll_plugins
+```
+
+> **Tip**: the GitHub Pages (`github-pages` gem) will automatically generate a default stylesheet, `/_site/assets/css/style.css`, that's about 3k lines long, and that you may not want or need for your site. I recommend setting the theme to null (`theme: null` in your Jekyll `_config.yml` file) so you have control over your styling, but this is up to you.
+
+### Step 4: Commit your changes
 
 - With the help of GitHub Desktop app, clone your `username.github.io` and sync/push your theme.
 - Congratulation! You are done.
 - Now after few minutes (less than 15 min) you'll see your changes at your `http://username.githun.io`.
 
-### Setting up a custom domain with GitHub Pages
+### Step 5: Setting up a custom domain with GitHub Pages
 
 Follow the following process to setup custom domain name with your GitHub Pages.
 
@@ -152,6 +168,8 @@ Now push a CNAME (with out any extention) file name in your GitHub Pages with yo
 - If your CNAME file contains `example.com`, then `www.example.com` will redirect to `example.com`.
 - If your CNAME file contains `www.example.com`, then `example.com` will redirect to `www.example.com`.
 
+---
+
 ### Publish your first blog post
 
 [The front matter](http://jekyllrb.com/docs/frontmatter/){:rel="nofollow"} is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
@@ -169,17 +187,17 @@ Thanks to Liquid (Jekyll uses the Liquid templating language to process template
 
 ```rb
 ---
-layout:
-title:
-subtitle:
-date:
 author:
 categories:
-tags:
-id:
+date:
 excerpt:
+id:
+image:
+layout:
 permalink:
-featured_image:
+subtitle:
+tags:
+title:
 ---
 ```
 
@@ -203,6 +221,8 @@ gems:
 This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](http://jekyllrb.com/){:rel="nofollow"}.
 
 Happy Jekyll'ing!
+
+---
 
 #### Further resources
 
