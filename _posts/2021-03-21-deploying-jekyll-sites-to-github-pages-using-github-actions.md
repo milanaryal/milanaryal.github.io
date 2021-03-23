@@ -39,6 +39,8 @@ GitHub Actions are registered for a repository by using a YAML file inside the d
 
 Create a **workflow file**, say `deploy.yml`, using either the GitHub interface or by pushing a YAML file to the workflow directory path manually. The base contents are:
 
+{% raw %}
+
 ```yml
 name: deploy
 
@@ -72,6 +74,8 @@ jobs:
         with:
           token: ${{ secrets.JEKYLL_PAT }}
 ```
+
+{% endraw %}
 
 The above workflow can be explained as the following:
 
