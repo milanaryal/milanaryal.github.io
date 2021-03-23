@@ -22,4 +22,4 @@ Despite being open sourced, the following directories and their contents remain 
 - `_posts/`
 - `uploads/`
 
-All other directories and files are licensed under the [MIT license](LICENSE).
+All other directories and files are licensed under the [MIT license](LICENSE) (where applicable).

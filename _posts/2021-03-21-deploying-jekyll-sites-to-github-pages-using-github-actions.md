@@ -1,5 +1,5 @@
 ---
-title: "Deploying Jekyll [v4.x.x] sites to GitHub Pages using GitHub Actions"
+title: "Deploying Jekyll [v4] sites to GitHub Pages using GitHub Actions"
 date: 2021-03-21T11:30:00+05:45
 excerpt: "Using GitHub Actions, learn how to publish your Jekyll websites onto GitHub Pages with your custom dependencies and versions."
 ---
@@ -38,7 +38,6 @@ end
 GitHub Actions are registered for a repository by using a YAML file inside the directory path `.github/workflows` (note the dot at the start). Here we shall employ Jekyll Actions from the Marketplace for its simplicity.
 
 Create a **workflow file**, say `deploy.yml`, using either the GitHub interface or by pushing a YAML file to the workflow directory path manually. The base contents are:
-
 
 ```yml
 name: deploy
@@ -119,8 +118,9 @@ Be sure **not to edit** the `gh-pages` branch directly, as any changes will be l
 
 Popular Jekyll GitHub Actions on the GitHub Marketplace:
 
-- [Jekyll Action](https://github.com/marketplace/actions/jekyll-actions){:rel="nofollow"}
-- [Jekyll Action TS](https://github.com/marketplace/actions/jekyll-action-ts){:rel="nofollow"}
+- [jekyll-actions](https://github.com/marketplace/actions/jekyll-actions){:rel="nofollow"}
+- [jekyll-action-ts](https://github.com/marketplace/actions/jekyll-action-ts){:rel="nofollow"}
+- [jekyll-deploy-gh-pages](https://github.com/marketplace/actions/jekyll-deploy-gh-pages){:rel="nofollow"}
 
 Jekyll official documentaions:
 
