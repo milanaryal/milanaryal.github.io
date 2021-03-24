@@ -130,6 +130,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [Shikhar News](https://shikharnews.com/){:rel="nofollow"}
 - [Singha Darbar](https://www.singhadarbar.com/){:rel="nofollow"}
 - [Sourya Online](https://www.souryaonline.com/){:rel="nofollow"}
+- [Swasthya Khabar](https://swasthyakhabar.com/){:rel="nofollow"}
 - [Tesro Aankha](https://www.tesroaankha.com/){:rel="nofollow"}
 - [Thaha Khabar](http://thahakhabar.com/){:rel="nofollow"}
 - [Top Nepal News](http://www.topnepalnews.com/){:rel="nofollow"}
