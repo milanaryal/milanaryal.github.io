@@ -3,8 +3,13 @@
 //
 
 @media (prefers-color-scheme: dark) {
-  // _global.scss
+  // _reboot.scss
   //
+
+  ::selection {
+    color: #fff;
+    background: #000;
+  }
 
   img {
     opacity: 0.75;
@@ -13,11 +18,6 @@
 
   img:hover {
     opacity: 1;
-  }
-
-  ::selection {
-    color: #fff;
-    background: #000;
   }
 
   // _navbar.scss

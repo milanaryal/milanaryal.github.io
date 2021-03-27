@@ -14,7 +14,7 @@ layout: default
 
 {%- if page.image and page.image != empty -%}
   {%- assign page_image = page.image.path | default: page.image -%}
-  {%- unless page_image contains '://' -%}
+  {%- unless page_image contains "://" -%}
     {%- assign page_image = page_image | relative_url -%}
   {%- endunless -%}
   {%- assign page_image = page_image | escape -%}

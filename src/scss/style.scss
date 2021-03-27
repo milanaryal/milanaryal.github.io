@@ -1,10 +1,15 @@
 /*!
  * Milan Aryal (https://milanaryal.com.np)
- * Copyright 2020 Milan Aryal
- * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
+ * Copyright 2021 Milan Aryal
+ * Licensed under MIT (https://github.com/MilanAryal/milanaryal.github.io/blob/main/LICENSE)
  */
 
-// Core variables and mixins
+// Bootstrap configuration
+@import "bootstrap/scss/functions"; // Required
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+
+// Custom configuration
 @import "variables";
 @import "mixins";
 
@@ -12,13 +17,12 @@
 @import "typeface";
 @import "bootstrap"; // ~
 
-// Global
+// Global components
 @import "theme/root";
 @import "theme/reboot";
-@import "theme/global";
 @import "theme/svg-icon";
 
-// Core theme
+// Core components & layout
 @import "theme/navbar";
 @import "theme/hero-page";
 @import "theme/button";
@@ -35,6 +39,6 @@
 @import "theme/anchor";
 @import "theme/elevator";
 
-// Custom
+// Custom styles
 @import "theme/custom";
 @import "theme/custom-dark";

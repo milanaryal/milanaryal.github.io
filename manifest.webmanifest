@@ -8,7 +8,7 @@
 {
   "name": "{{ site.title | smartify | strip_html | normalize_whitespace | escape_once }}",
   "short_name": "{{ site.title | smartify | strip_html | normalize_whitespace | escape_once }}",
-  "start_url": "{{ '?source=android_homescreen' | relative_url }}",
+  "start_url": "{{ '?utm_source=android_homescreen&utm_medium=shortcut' | relative_url }}",
   "background_color": "{{ site.theme_color }}",
   "theme_color": "{{ site.theme_color }}",
   "display": "standalone",

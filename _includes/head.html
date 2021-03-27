@@ -1,3 +1,10 @@
+{% include build_version.html -%}
+
+{%- assign site_title = site.title | default: site.name -%}
+{%- if site_title -%}
+  {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- endif %}
+
 <head>
 
   <!-- Required meta tags -->
@@ -11,50 +18,8 @@
   <!-- Critical CSS -->
   {% include styles.html %}
 
-  {%- include build_version.html -%}
-
-  {%- assign site_title = site.title | default: site.name -%}
-  {%- if site_title -%}
-    {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
-  {%- endif -%}
-
-  {%- comment -%}<!-- Begin Jekyll SEO tag -->{%- endcomment -%}
-
-  {% if page.permalink == '/' %}
-    <title>{{ site_title }} &bull; {{ site.tagline }}</title>
-    {% seo title=false %}
-  {% else %}
-    {% seo %}
-  {% endif %}
-
-  {%- if page.image and page.image != empty -%}
-    {%- assign hasImage = true -%}
-  {% elsif page.image.path and page.image.path != empty %}
-    {%- assign hasImage = true -%}
-  {% else %}
-    {%- assign hasImage = false -%}
-
-    {%- assign thumbnail = page.thumbnail.path | default: page.thumbnail | default: site.logo -%}
-    {%- unless thumbnail contains '://' -%}
-      {%- assign thumbnail = thumbnail | absolute_url -%}
-    {%- endunless -%}
-    {%- assign thumbnail = thumbnail | escape -%}
-  {%- endif -%}
-
-  {% unless hasImage %}
-    <meta property="og:image" content="{{ thumbnail }}" />
-    {% if page.thumbnail.width %}
-      <meta property="og:image:width" content="{{ page.thumbnail.width }}" />
-    {% endif %}
-    {% if page.thumbnail.height %}
-      <meta property="og:image:height" content="{{ page.thumbnail.height }}" />
-    {% endif %}
-    <meta property="twitter:image" content="{{ thumbnail }}" />
-  {% endunless %}
-
-  {% include about_json_ld.html %}
-
-  {%- comment -%}<!-- End Jekyll SEO tag -->{%- endcomment -%}
+  {% comment %}<!-- Jekyll SEO tag -->{% endcomment %}
+  {% include seo_tag.html %}
 
   <!-- Feed -->
   {% feed_meta %}

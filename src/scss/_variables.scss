@@ -68,6 +68,11 @@ $font-family-serif-display: "DM Serif Display", Georgia, serif !default;
 $font-family-base:          $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
+// $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
+// $font-size-base effects the font size of the body text
+$font-size-root:              null !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
 $link-color:                inherit !default;
 $link-hover-color:          inherit !default;
 $link-hover-decoration:     none !default;
@@ -79,7 +84,8 @@ $hr-border:                 rgba(0, 0, 0, .05) !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-responsive-font-sizes:                true !default;
+$enable-responsive-font-sizes: true !default;
+$enable-smooth-scroll:         true !default;
 
 // Brand colors (http://brandcolors.net), (https://brand-colors.re.im)
 //

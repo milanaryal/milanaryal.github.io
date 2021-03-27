@@ -14,12 +14,12 @@
   gtag('js', new Date());
 
   gtag('config', '{{ site.google_analytics_id }}');
-  {% if page.permalink == "/404.html" %}
-  gtag('config', '{{ site.google_analytics_id_2 }}', {
+  {% if page.permalink == "/404.html" -%}
+  gtag('config', '{{ site.google_analytics_alternative_id }}', {
     'page_title' : '404 Response',
     'page_location': window.location.href,
     'page_path': window.location.pathname
   });
-  {% endif %}
+  {%- endif %}
 </script>
 {% endif %}
