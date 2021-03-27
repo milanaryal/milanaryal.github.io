@@ -7,7 +7,7 @@ excerpt: "Transform your plain text into static websites and blogs."
 
 I recently migrated my blog to [GitHub Pages](http://pages.github.com){:rel="nofollow"} using an awesome open source project [Jekyll](http://jekyllrb.com){:rel="nofollow"}. It's really fun blogging with Jekyll. If you are not enjoying blogging with other CMS platform then you should really try Jekyll.
 
-> **ALSO SEE**: [Deploying Jekyll [v4.x.x] sites to GitHub Pages using GitHub Actions](/deploying-jekyll-sites-to-github-pages-using-gitbub-actions/)
+> **ALSO SEE**: [Deploying Jekyll [v4.x.x] sites to GitHub Pages using GitHub Actions](/deploying-jekyll-sites-to-github-pages-using-github-actions/)
 
 After reading a lot of documentation, I found following quickest way to set up a Jekyll powered blog on GitHub Pages:
 
