@@ -1,7 +1,7 @@
 ---
 title: "C-ASBA service charge for Banks in Nepal"
 date: 2020-03-22T13:00:00+05:45
-last_modified_at: 2020-11-17T14:00:00+05:45
+last_modified_at: 2021-04-02T10:00:00+05:45
 ---
 
 Investors can buy primary and rights shares online with the Centralised Application Supported by Blocked Amount (C-ASBA) process which has been implemented on February 23, 2018 in Nepal. C-ASBA is an advanced form of ASBA interface which is claimed to be more user friendly.
@@ -12,7 +12,7 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 
 ### List of Banks in Nepal with C-ASBA application charges (per application)
 
-> _Last updated at **November 17, 2020**_; for current updated data visit your respective Bank's website for standard charge sheet.
+> _Last updated at **{{ page.last_modified_at | date: '%B %-d, %Y' }}**_; for current updated data visit your respective Bank's website for standard charge sheet.
 
 | Symbol | Bank Name                        | Charge (in rupees) |
 | ------ | -------------------------------- | ------------------ |
@@ -36,7 +36,7 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 | NICA   | NIC Asia Bank                    | Free               |
 | NMB    | NMB Bank                         | Rs. 20             |
 | PCBL   | Prime Commercial Bank            | Rs. 25             |
-| PRVU   | Prabhu Bank                      | Re. 1              |
+| PRVU   | Prabhu Bank                      | Rs. 10             |
 | RBB    | Rastriya Banijya Bank            | Free               |
 | SANIMA | Sanima Bank                      | Free               |
 | SBI    | Nepal SBI Bank                   | Rs. 25             |
@@ -57,6 +57,8 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 >
 > _Mero Share application is the online system developed by CDSC through which the shareholders can apply application for IPO/FPO/Rights issues once they are registered through C-ASBA._
 
-Application Supported by Blocked Amount (ASBA) is a process for applying to public/rights issues submitted by investors by blocking the application money in their bank account while subscribing to the issue. C-ASBA will ensure centralized posting and verification of bank account numbers and DMAT account numbers ease monitoring of double application for issue managers and share registrars, cancellation of application upon double applications and prepare a final report for securities allocation. Mero Share application is the on-line system developed by CDSC through which the shareholders can apply application for IPO/FPO/Rights issues once they are registered through C-ASBA. C-ASBA is also provided by . . . from all over its branches inside and outside Kathmandu. To avail the facility, just fill up the C-ASBA registration form and submit to any nearest EBL branches.
-
 -->
+
+Application Supported by Blocked Amount (ASBA) is a process for applying to public/rights issues submitted by investors by blocking the application money in their bank account while subscribing to the issue. C-ASBA will ensure centralized posting and verification of bank account numbers and DMAT account numbers ease monitoring of double application for issue managers and share registrars, cancellation of application upon double applications and prepare a final report for securities allocation. Mero Share application is the on-line system developed by CDSC through which the shareholders can apply application for IPO/FPO/Rights issues once they are registered through C-ASBA.
+
+C-ASBA is provided by (almost every) Banks in Nepal from all over its branches inside and outside Kathmandu. To avail the facility, just fill up the C-ASBA registration form and submit to (your) any nearest (Bank) branches.
