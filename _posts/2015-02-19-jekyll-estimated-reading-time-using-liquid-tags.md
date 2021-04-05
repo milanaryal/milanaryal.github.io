@@ -48,29 +48,41 @@ With the help of Liquid tags we can have estimated reading time in Jekyll withou
 
 First thing do to is counting total words in our post content. For this we use native Liquid tag `strip_html` to remove all HTML tags and count our actual total words with `number_of_words` filter tag.
 
+{% raw %}
+
 ```liquid
-{% raw %}{% assign words = content | strip_html | number_of_words %}{% endraw %}
+{% assign words = content | strip_html | number_of_words %}
 ```
+
+{% endraw %}
 
 Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension){:rel="nofollow"} of 180 words per minute (WPM) so here we divide the total content words with 180 (but you can have your own average WPM).
 
+{% raw %}
+
 ```liquid
-{% raw %}{% assign reading_time = words | divided_by: 180 %}{% endraw %}
+{% assign reading_time = words | divided_by: 180 %}
 ```
 
-With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method `{% raw %}{{ reading_time | round }}{% endraw %}` so we can not get our value in rounded figure. Here we only get our value as 1.6 = 1 or 2.4 = 2.
+{% endraw %}
+
+With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method {% raw %}`{{ reading_time | round }}`{% endraw %} so we can not get our value in rounded figure. Here we only get our value as 1.6 = 1 or 2.4 = 2.
 
 So, to correct our data we do a little more hacks. Here we add 91 to the total content words and divide it by 180.
 
+{% raw %}
+
 ```liquid
-{% raw %}{% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by:180 %}
+{% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by:180 %}
 
 {% if reading_time <= 1 %}
   {% assign reading_time = '1' | append:' min read' %}
 {% else %}
   {% assign reading_time = reading_time | append:' min read' %}
-{% endif %}{% endraw %}
+{% endif %}
 ```
+
+{% endraw %}
 
 What some of the following Liquid tags do for us:
 
@@ -80,14 +92,15 @@ What some of the following Liquid tags do for us:
 - `append: ' min read'`: Helps to append `min read` to our output.
 - `divided_by: 180`: Divide the total content words by 180.
 
-Now simply if you markup `{% raw %}{{ reading_time }}{% endraw %}` in your post layout, then it will output as `1 min read` or `2 min read` accordingly to your contents.
+Now simply if you markup {% raw %}`{{ reading_time }}`{% endraw %} in your post layout, then it will output as `1 min read` or `2 min read` accordingly to your contents.
 
 ---
 
 If you want more like to work our code in our post layout as well as paginator posts or any other pages then the following snippet will help you out. To get things organised put the following code in Jekyll `_includes/` folder naming it `reading_time.html`.
 
-```liquid
 {% raw %}
+
+```liquid
 {%- comment -%}
   According to [Wikipedia](http://en.wikipedia.org/wiki/Words_per_minute),
   an average person can read 180 words per minute in a computer monitor.
@@ -128,19 +141,24 @@ If you want more like to work our code in our post layout as well as paginator p
     {%- assign reading_time = read_time | append:' min read' -%}
   {%- endif -%}
 {%- endif -%}
-{% endraw %}
 ```
+
+{% endraw %}
 
 And then include (or in other words import) our metadata in your post layout as[^whitespace_control]
 
+{% raw %}
+
 ```Liquid
-{% raw %}{% include reading_time.html %}{% endraw %}
+{% include reading_time.html %}
 ```
 
-Now, if you markup `{% raw %}{{ reading_time }}{% endraw %}` inside your HTML tags, then it will output as `1 min read` or `2 min read` accordingly to your contents.
+{% endraw %}
 
-Also, more of it marking up `{% raw %}{{ total_words }}{% endraw %}` will output your content total words something like `170 words`. Hope, you will like it!
+Now, if you markup {% raw %}`{{ reading_time }}`{% endraw %} inside your HTML tags, then it will output as `1 min read` or `2 min read` accordingly to your contents.
+
+Also, more of it marking up {% raw %}`{{ total_words }}`{% endraw %} will output your content total words something like `170 words`. Hope, you will like it!
 
 [^ertmath]: Estimated reading time equals to total content words divided by average reading words per minute.
-[^content]: If you're implementing estimated reading time in paginator i.e. `{% raw %}{% for post in paginator.posts %}{% endraw %}` condition you should change `content` to `post.content`.
+[^content]: If you're implementing estimated reading time in paginator i.e. {% raw %}`{% for post in paginator.posts %}`{% endraw %} condition you should change `content` to `post.content`.
 [^whitespace_control]: If you are wondering hyphen in your liquid tags {% raw %}{{-, -}}, {%-, and -%}{% endraw %} helps to strip whitespace from the left or right side of a rendered tag.

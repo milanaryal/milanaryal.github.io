@@ -20,7 +20,7 @@ These days, Tor mainly focuses its attention on its browser and the development 
 
 - Tor is free to use. Simply download and install the browser, which is a modified version of Firefox available for Windows, macOS, and Linux.
 
-**Other alternatives**
+**Other alternatives:**
 
 - Brave browser [private window with Tor](https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor-){:rel="nofollow"}
 

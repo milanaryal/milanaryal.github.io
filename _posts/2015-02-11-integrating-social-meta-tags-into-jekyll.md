@@ -12,9 +12,10 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 ### Integrating Open Graph into Jekyll
 
 <!-- prettier-ignore-start -->
+{% raw %}
 
 ```html
-{% raw %}<meta property="og:title" content="{% if page.title %}{{ page.title | smartify | strip_html | normalize_whitespace | escape_once }}{% else %}{{ site.name }}{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title | smartify | strip_html | normalize_whitespace | escape_once }}{% else %}{{ site.name }}{% endif %}">
 <meta property="og:type" content="{% if page.layout == 'post' and page.date %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ page.url | replace:'/index.html','/' | absolute_url }}">
 <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.logo | absolute_url }}{% endif %}">
@@ -53,17 +54,19 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
   {% for tag in page.tags %}
   <meta property="article:tag" content="{{ tag }}">
   {% endfor %}
-{% endif %}{% endraw %}
+{% endif %}
 ```
 
+{% endraw %}
 <!-- prettier-ignore-end -->
 
 ### Integrating Twitter cards into Jekyll
 
 <!-- prettier-ignore-start -->
+{% raw %}
 
 ```html
-{% raw %}<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@{{ site.twitter.username | remove:'@' }}">
 {% if page.layout == 'post' and page.date %}
   <meta name="twitter:creator" content="@{{ site.author.twitter | remove:'@' }}">
@@ -71,17 +74,19 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 <meta name="twitter:title" content="{% if page.title %}{{ page.title | smartify | strip_html | normalize_whitespace | escape_once }}{% else %}{{ site.name }}{% endif %}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.logo | absolute_url }}{% endif %}">
-<meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | absolute_url }}">{% endraw %}
+<meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | absolute_url }}">
 ```
 
+{% endraw %}
 <!-- prettier-ignore-end -->
 
 ### Optimizing for search engine into Jekyll
 
 <!-- prettier-ignore-start -->
+{% raw %}
 
 ```html
-{% raw %}<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
 
 {% if page.robots %}
   <meta name="robots" content="{{ page.robots }}">
@@ -95,9 +100,10 @@ A lot of these will even cross-share the tags. For example, Google+ will actuall
 
 {% if paginator.next_page %}
   <link rel="next" href="{{ paginator.next_page_path | replace:'/index.html','/' | absolute_url }}">
-{% endif %}{% endraw %}
+{% endif %}
 ```
 
+{% endraw %}
 <!-- prettier-ignore-end -->
 
 Make sure you have the following `_config.yml` and post front matter setting to implement the above social meta tags (or you can change according to your use):
@@ -151,7 +157,7 @@ If your blog or product landing page is using using Jekyll or GitHub Pages, [it 
 
 To enable the Jekyll SEO tag plugin, you need to add the following to your site's `Gemfile`:
 
-```ruby
+```rb
 gem 'jekyll-seo-tag'
 ```
 
@@ -162,7 +168,7 @@ plugins:
   - jekyll-seo-tag
 ```
 
-Now by adding a simple `{% raw %}{% seo %}{% endraw %}` tag right before `</head>`, Jekyll will automatically add SEO metadata to each page. It even accounts for the page title, in addition to the description, canonical URL, next (and previous) URL and post metadata.
+Now by adding a simple {% raw %}`{% seo %}`{% endraw %} tag right before `</head>`, Jekyll will automatically add SEO metadata to each page. It even accounts for the page title, in addition to the description, canonical URL, next (and previous) URL and post metadata.
 
 When you share a post to Facebook, LinkedIn, Twitter or other social networks, the tag makes sure content is displayed richly. The functionality comes courtesy of the [Jekyll SEO plugin](http://github.com/jekyll/jekyll-seo-tag){:rel="nofollow"} (GitHub Pages compatible), which GitHub says "provides a battle-tested template of crowdsourced best-practices."
 

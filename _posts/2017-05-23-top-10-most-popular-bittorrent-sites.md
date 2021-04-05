@@ -13,7 +13,7 @@ BitTorrent websites come and go but below I've compiled a list of the ten most-v
 
 > Can't access one of the following site? Try using [the mirror/proxy sites](/access-your-favourite-blocked-bittorrent-sites/) because due to copyright issues (one of) your favourite BitTorrent site(s) may be blocked by your ISP in your country or territory.
 
-[The Alexa global ranking](https://www.alexa.com/siteinfo){:rel="nofollow"} is accurate as of _March 10, 2021_.
+[The Alexa global ranking](https://www.alexa.com/siteinfo){:rel="nofollow"} is accurate as of _{{ page.last_modified_at | date: '%B %-d, %Y' }}_.
 
 | S.N. | Site                                                                  | Mirror                                                                    | Specialization | RSS | Alexa Rank |
 | ---- | --------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------- | --- | ---------- |

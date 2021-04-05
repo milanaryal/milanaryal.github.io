@@ -25,7 +25,7 @@ Since, here's the following sites which helps you to simply redirect using `ALIA
 
 You just have to do is to point a domain to `redirect.center` server and `redirect.center` will perform a DNS lookup and redirect the user to your specified destination.
 
-#### Redirect subdomains
+#### Redirect subdomains using redirect.center
 
 Specify the destination domain as a subdomain of `example.com`. A simple subdomain redirect of `google.example.com` to `google.com`:
 
@@ -43,7 +43,7 @@ If you want to redirect any unmatched subdomains to your main domain or another 
 *.example.com  IN  CNAME  domain2.com.redirect.center
 ```
 
-#### Options to redirect
+#### Options to redirect using redirect.center
 
 Options can be specified as part of a `CNAME`.
 
@@ -66,7 +66,7 @@ www.oldwebsite.com  IN  CNAME  www.newwebsite.com.opts-uri.redirect.center
 | opts-statuscode-{code} | HTTP Status Code to be used in the redirect. 302, [HTTP Status Code](http://httpstatus.es/){:rel="nofollow"} |
 | opts-uri               | Append URI (if any) to the target URL                                                                        |
 
-#### Redirect main domain
+#### Redirect main domain using redirect.center
 
 A root domain (eg: `example.com`) cannot be a `CNAME`, a workaround for this is supported: point the `A` record for the root domain to the `redirect.center` server (`54.84.55.102`) and then create a `CNAME` matching the root domain (using `CNAME` or `TXT` options as described above).
 
@@ -92,7 +92,7 @@ _You can find updated usage instructions and examples here: [redirect.center](ht
 
 Everything is configured by DNS. Just point your domain to the service `alias.redirect.name`, add a DNS record to configure your redirect(s), and you're good to go.
 
-#### Redirect subdomains
+#### Redirect subdomains using redirect.name
 
 Specify the destination domain as a subdomain of `example.com`. A simple subdomain redirect of `google.example.com` to `google.com`:
 
@@ -101,7 +101,7 @@ google.example.com            IN  CNAME  alias.redirect.name
 _redirect.google.example.com  IN  TXT    Redirects to https://www.google.com
 ```
 
-#### Options to redirect
+#### Options to redirect using redirect.name
 
 Wildcard matches (\*) are also supported by `redirect.name`. Any unmatched paths will redirect to specfic page, so it's recommended that you add a wildcard catch-all path when redirecting specific paths.
 
@@ -116,7 +116,7 @@ Your `TXT` record value should have a human-readable format format like one of t
 - `Redirects from [path] to [target]`, where `path` is a path to match on the hostname
 - `Redirects permanently to [target]`, where `permanently` redirects with a `301` status code (defaults to `302` otherwise)
 
-#### Redirect main domain
+#### Redirect main domain using redirect.name
 
 For apex/naked domains, it is recommended that you use an `ALIAS` or `ANAME` record type if your DNS provider supports it. Otherwise, use a plain `A` record, keeping in mind that the IP address may change (or more may be added).
 

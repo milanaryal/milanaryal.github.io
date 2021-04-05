@@ -51,14 +51,10 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 | GBBL   | Garima Bikas Bank    | Free               |
 | ICFC   | ICFC Finance         | Rs. 25             |
 
-<!--
+Application Supported by Blocked Amount (ASBA) is a process for applying to public/rights issues submitted by investors by blocking the application money in their bank account while subscribing to the issue.
 
-> _**Note:**_ Issues applied though Mero Share online application is free of cost for different Banks in Nepal.
->
-> _Mero Share application is the online system developed by CDSC through which the shareholders can apply application for IPO/FPO/Rights issues once they are registered through C-ASBA._
+C-ASBA will ensure centralized posting and verification of bank account numbers and DMAT account numbers ease monitoring of double application for issue managers and share registrars, cancellation of application upon double applications and prepare a final report for securities allocation.
 
--->
-
-Application Supported by Blocked Amount (ASBA) is a process for applying to public/rights issues submitted by investors by blocking the application money in their bank account while subscribing to the issue. C-ASBA will ensure centralized posting and verification of bank account numbers and DMAT account numbers ease monitoring of double application for issue managers and share registrars, cancellation of application upon double applications and prepare a final report for securities allocation. Mero Share application is the on-line system developed by CDSC through which the shareholders can apply application for IPO/FPO/Rights issues once they are registered through C-ASBA.
+Mero Share application is the on-line system developed by CDSC through which the shareholders can apply application for IPO/FPO/Rights issues once they are registered through C-ASBA.
 
 C-ASBA is provided by (almost every) Banks in Nepal from all over its branches inside and outside Kathmandu. To avail the facility, just fill up the C-ASBA registration form and submit to (your) any nearest (Bank) branches.

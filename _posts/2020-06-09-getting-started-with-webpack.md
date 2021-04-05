@@ -9,7 +9,7 @@ If you have used task runner like Gulp or Grunt, you may feel Webpack a little c
 
 Webpack bundle our all assets like javascript, stylesheet, images, etc. but here as a starter I will only cover javascript part. After you learn using Webpack plugins you can easily and config any plugins to bundler your other assets for your web project.
 
-#### Installing Webpack
+### Installing Webpack
 
 Install with npm:
 
@@ -25,7 +25,7 @@ yarn add webpack --dev
 
 > See also: [Managing Node.js dependencies version in the package.json file](/managing-dependencies-in-the-package-json-file/)
 
-#### Basic project structure
+### Basic project structure
 
 ```text
 webpack-demo
@@ -38,7 +38,7 @@ webpack-demo
 
 Running a command `npx webpack src/index.js dist/bundle.js`, do our job bundling our assets in `dist/` folder and if you check out the newly created bundle.js, you will see that Webpack has created some wrapper around our own code.
 
-#### Defining a config file
+### Defining a config file
 
 From Webpack 4, it is zero configuration but for the complex settings we need a configuration file. Webpack basic `webpack.config.js` template for bundling JavaScript:
 
@@ -59,7 +59,7 @@ module.exports = {
 };
 ```
 
-**Entry**
+#### Entry
 
 There are multiple ways to define the entry property in your Webpack configuration.
 
@@ -81,15 +81,15 @@ module.exports = {
 };
 ```
 
-**Output**
+#### Output
 
 Configuring the output configuration options tells Webpack how to write the compiled files to disk. Note that, while there can be multiple entry points, only one output configuration is specified
 
-**Loader**
+#### Loader
 
 A loader is just a JavaScript module that exports a function. The loader runner calls this function and passes the result of the previous loader or the resource file into it.
 
-**Plugins**
+#### Plugins
 
 The plugins option is used to customize the Webpack build process in a variety of ways. Webpack comes with a variety built-in plugins available under webpack.[plugin-name].
 
@@ -117,7 +117,7 @@ module.exports = {
 }
 ```
 
-#### Webpack integration with jQuery
+### Webpack integration with jQuery
 
 It is very easy to include jQuery plugin in our project, you just need to install it with the single npm install cli:
 
@@ -148,7 +148,7 @@ module.exports = {
 };
 ```
 
-**Using jQuery slim version in Webpack**
+#### Using jQuery slim version in Webpack
 
 If you want to use slim version of jQuery you can enforce it in our project with the following config and plus make sure you have included above `webpack.ProvidePlugin` rules:
 
@@ -261,7 +261,7 @@ You can use npm scripts with the following setup:
 
 And, `npm run build`. And you are done!
 
-#### Further resources
+### Further resources
 
 - [Getting started with WebPack official guides](https://webpack.js.org/guides/getting-started/){:rel="nofollow"}
 - [Essential Webpack plugins list](https://webpack.js.org/plugins/){:rel="nofollow"}

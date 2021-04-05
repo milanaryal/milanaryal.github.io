@@ -131,7 +131,7 @@ And place the <a href="http://stackoverflow.com/questions/11493718/facebook-open
     <meta property="og:image" content="{PortraitURL-64}"/>
 {/block:IndexPage}
 <!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
-``` 
+```
 
 <!-- prettier-ignore-end -->
 

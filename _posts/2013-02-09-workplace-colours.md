@@ -10,7 +10,7 @@ Colours can even change our heart rate, blood pressure and respiration, as resea
 
 ### Best colours to wear at office
 
-**Green:** This colour denotes freshness, safety and harmony. It's also associated with money and the “go” signal for a traffic light-both great characteristics in the workplace. The colour green is restful on the eyes and produces the latest amount of eyestrain, making this a good choice for people who sit in front of a screen for many hours.
+**Green:** This colour denotes freshness, safety and harmony. It's also associated with money and the "go" signal for a traffic light-both great characteristics in the workplace. The colour green is restful on the eyes and produces the latest amount of eyestrain, making this a good choice for people who sit in front of a screen for many hours.
 
 **Blue:** This is the colour of truth and wisdom. It also has a calming effect and is linked to intellect. It's also the most stable colour. So if you have a volatile or drama-filled workplace, blue is a great colour to wear to counteract the tension.
 

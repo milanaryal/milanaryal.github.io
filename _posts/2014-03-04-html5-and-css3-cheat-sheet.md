@@ -41,7 +41,7 @@ New CSS3 attributes with great examples and very easy to memorize.
 
 [**Download in PDF format**](/uploads/20140304-html5-and-css3-cheat-sheet.pdf)
 
-_Creative common courtesy from codeschool.com_
+--- Creative common courtesy from _codeschool.com_
 
 ---
 
@@ -75,7 +75,7 @@ Following you will find a beginner's essential CSS cheat sheet by _WebsiteSetup_
 
 Download [**Image Files**](/uploads/20140304-css-cheat-sheet.zip?dl) or in [**PDF format**](/uploads/20140304-wsu-css-cheat-sheet.pdf)
 
-_Creative common courtesy from [WebsiteSetup.org](https://websitesetup.org/css3-cheat-sheet/){:rel="nofollow"}_
+--- Creative common courtesy from _[WebsiteSetup.org](https://websitesetup.org/css3-cheat-sheet/){:rel="nofollow"}_
 
 ---
 

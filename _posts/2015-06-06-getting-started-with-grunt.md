@@ -22,7 +22,7 @@ The first thing to do in order to use Grunt is to set up [Node.js](http://nodejs
 Once Node.js is installed, just run this command in the terminal:
 
 ```bash
-$ npm install -g grunt-cli
+npm install -g grunt-cli
 ```
 
 Lets break that down:
@@ -37,7 +37,7 @@ You should close and reopen the terminal as well. That's a generic good practice
 To make sure Grunt has been properly installed, you can run the following one-liner command again:
 
 ```bash
-$ grunt --version
+grunt --version
 ```
 
 The next step is to create a `package.json` file and a `Gruntfile` in the root directory of your project.
@@ -69,13 +69,13 @@ This is how Node does dependencies. Node has a package manager called npm (node 
 Once that `package.json` file is in place, go to the terminal and navigate to the root directory of your project folder using following command:
 
 ```bash
-$ cd ~/path/to/project
+cd ~/path/to/project
 ```
 
 Then run the following command:
 
 ```bash
-$ npm install
+npm install
 ```
 
 This tells npm which dependencies to install and places them in a `node_modules` folder.
@@ -250,7 +250,7 @@ module.exports = function (grunt) {
 The `uglify` task will be run by default, when the following command line is run at the root of your project file:
 
 ```bash
-$ grunt
+grunt
 ```
 
 An incredibly active community of developers is building front-end plugins, you can explore them at [Grunt plugins library](http://gruntjs.com/plugins/){:rel="nofollow"}.

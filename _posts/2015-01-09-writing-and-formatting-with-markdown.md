@@ -107,13 +107,13 @@ Standard Markdown works by indenting code lines with 4 spaces:
     &lt;/header>
 </code></pre>
 
-GFM uses triple back-ticks <code>```</code> before and after the code block:
+GFM uses triple back-ticks <code>&#96;&#96;&#96;</code> before and after the code block:
 
-<pre><code>```
+<pre><code>&#96;&#96;&#96;
 &lt;header>
   &lt;h1>{title}&lt;/h1>
 &lt;/header>
-```
+&#96;&#96;&#96;
 </code></pre>
 
 ### Examples

@@ -8,6 +8,9 @@ on:
       - "LICENSE"
       - "README.md"
 
+env:
+  RUBY_VERSION: 2.7.1
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -19,8 +22,14 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.1 # Not needed with a .ruby-version file
+          ruby-version: ${{ env.RUBY_VERSION }} # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: Version info
+        run: |
+          ruby --version
+          gem --version
+          bundle --version
 
       - name: List dependency versions
         run: bundle exec github-pages versions
@@ -34,9 +43,12 @@ jobs:
       - name: Building site
         run: bundle exec jekyll build --config _config.yml,_config_dev.yml --profile --trace --verbose
 
+      - name: Checking Markdown files
+        run: bundle exec mdl --ignore-front-matter --style "./.mdl_style.rb" "./_posts" || true
+
       - name: Checking HTML files
         run: |
-          bundle exec htmlproofer ./_site \
+          bundle exec htmlproofer "./_site" \
           --allow-hash-href \
           --assume-extension \
           --check-external-hash \

@@ -5,8 +5,6 @@ date: 2015-01-02T22:16:12+05:45
 
 The most popular (i.e., the most visited) websites have in common that they are dynamic websites. Their development typically involves server side coding, client side coding and database technology. The programming languages applied to deliver similar dynamic web content however vary vastly between sites.
 
-**Programming languages used in most popular websites**
-
 | Websites      | Front-end (Client-side) | Back-end (Server-side)                       | Database             |
 | ------------- | ----------------------- | -------------------------------------------- | -------------------- |
 | Google.com    | JavaScript              | C, C++, Go, Java, Python                     | BigTabele, MariaDb   |
@@ -25,7 +23,7 @@ The most popular (i.e., the most visited) websites have in common that they are 
 | Ask.com       |                         |                                              |                      |
 | Wordpress.com | JavaScript              | PHP                                          | MySQL                |
 
-_Source: [Wikipedia](http://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites){:rel="nofollow"}_
+Source: _[Wikipedia](http://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites){:rel="nofollow"}_
 
 \*data on programming languages are based on:
 

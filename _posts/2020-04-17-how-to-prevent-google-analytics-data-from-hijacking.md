@@ -10,29 +10,21 @@ So, to overcome this issue --- here we will discuss few steps to do for preventi
 
 You can add a filter to your profile:
 
-1. Go to: `Filters`
-
-_Home **>** Select Site **>** Admin (in the bottom left-hand corner) **>** Filters (under "All Web Site Data")_
-
+1. Go to: `Filters` <br />
+   _Home **>** Select Site **>** Admin (in the bottom left-hand corner) **>** Filters (under "All Web Site Data")_
 2. Click `New Filter`
-
 3. Add a filter name like "Mitigate Hijacking"
-
 4. Click `Custom Filter`
-
 5. Click `Include`
-
 6. Select "Hostname" in `Filter Field`
-
 7. Add your domain with escape character for the dot, like: `example\.com`
-
 8. Select "No" for `Case Sensitive`
 
 The result should look something like this:
 
 ![preventing google analytics data from hijacking](/uploads/20201417-google-analytics-filter-domain.png)
 
-_Note: Google Analytics interface changes periodically_
+**Note**: _Google Analytics interface changes periodically_
 
 ...for more information [about view filters](https://support.google.com/analytics/answer/1033162?hl=en){:rel="nofollow"}.
 

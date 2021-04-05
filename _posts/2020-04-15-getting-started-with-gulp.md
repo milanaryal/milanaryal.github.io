@@ -27,7 +27,7 @@ The first thing to do in order to use Gulp is to set up [Node.js](https://nodejs
 Once Node.js is installed, just run this command in the terminal:
 
 ```bash
-$ npm install -g gulp-cli
+npm install -g gulp-cli
 ```
 
 Lets break that down:
@@ -42,7 +42,7 @@ You should close and reopen the terminal as well. That's a generic good practice
 To make sure Gulp has been properly installed, you can run the following one-liner command again:
 
 ```bash
-$ gulp --version
+gulp --version
 ```
 
 The next step is to create a `package.json` file and a `gulpfile.js` in the root directory of your project.
@@ -74,13 +74,13 @@ This is how Node does dependencies. Node has a package manager called npm (node 
 Once that `package.json` file is in place, go to the terminal and navigate to the root directory of your project folder using following command:
 
 ```bash
-$ cd ~/path/to/project
+cd ~/path/to/project
 ```
 
 Then run the following command:
 
 ```bash
-$ npm install
+npm install
 ```
 
 This tells `npm` which dependencies to install and places them in a `node_modules` folder.
@@ -215,7 +215,7 @@ Following is an example to understanding the Gulp process to concat and uglify o
 You can simply install and save required `devDependencies` with the following command:
 
 ```bash
-$ npm install --save-dev del gulp gulp-autoprefixer gulp-concat gulp-csso gulp-rename gulp-sass gulp-uglify-es node-sass
+npm install --save-dev del gulp gulp-autoprefixer gulp-concat gulp-csso gulp-rename gulp-sass gulp-uglify-es node-sass
 ```
 
 **Second step** to setup `gulpfile.js`:
@@ -304,7 +304,7 @@ exports.watch = watch;
 Now, **third step** or **final step** --- our **default task** (to clean/delete the existing old destination files and process, compile and, minify our Javascript and Sass files from source folder `src/` to our destination folder `assets/`) will be **run by default**, when the **following command line** is run at the root of your project file:
 
 ```bash
-$ gulp
+gulp
 ```
 
 An incredibly active community of developers is building front-end plugins, you can explore them at [Gulp plugins library](https://gulpjs.com/plugins/){:rel="nofollow"}.

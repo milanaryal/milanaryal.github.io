@@ -41,8 +41,7 @@ _Mirror site(s):_
 - [libgen.lc](http://libgen.lc/){:rel="nofollow"}
 - [libgen.me](http://libgen.me/){:rel="nofollow"}
 - [libgen.unblockit.me](http://libgen.unblockit.me/){:rel="nofollow"}
-
-* [bookfi.net](http://bookfi.net/){:rel="nofollow"}
+- [bookfi.net](http://bookfi.net/){:rel="nofollow"}
 
 #### PDF Drive
 

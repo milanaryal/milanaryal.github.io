@@ -14,32 +14,32 @@ Next, open Outlook, go to Tools and click on email accounts, select the 'Add New
 
 POP creates local copies of emails and deletes the originals from the server, the emails are tied to that specific machine, and cannot be accessed via any webmail or any separate client on other computers.
 
-Server: `pop.gmail.com`  
-Port: 995  
+Server: `pop.gmail.com`
+Port: 995
 Requires SSL: Yes
 
 #### Incoming Mail IMAP (Internet Message Access Protocol) Server
 
 Compared to POP, IMAP allows users to log into many different email clients or webmail interfaces and view the same emails, because the emails are kept on remote email servers until the user deletes them. In a world where we now check our email on web interfaces, email clients, and on mobile phones, IMAP has become extremely popular.
 
-Server: `imap.gmail.com`  
-Port: 993  
+Server: `imap.gmail.com`
+Port: 993
 Requires SSL: Yes
 
 #### Outgoing Mail SMTP (Simple Mail Transfer Protocol) Server
 
 SMTP is an Internet standard for electronic mail (email) transmission. SMTP by default uses TCP port 25. The protocol for mail submission is the same, but uses port 587. SMTP connections secured by SSL, known as SMTPS, default to port 465 (nonstandard, but sometimes used for legacy reasons).
 
-Server: `smtp.gmail.com`  
-Port: 465 or 587  
-Requires SSL: Yes  
+Server: `smtp.gmail.com`
+Port: 465 or 587
+Requires SSL: Yes
 Requires authentication: Yes
 
 #### Your login info
 
-Full Name or Display Name: [your name]  
-Email address: Your full email address (name@domain.com)  
-Password: Your account's password  
+Full Name or Display Name: [your name]
+Email address: Your full email address (name@domain.com)
+Password: Your account's password
 Requires authentication: Yes
 
 #### Other resources

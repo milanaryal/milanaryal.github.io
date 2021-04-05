@@ -118,9 +118,7 @@ The above example expects to put all your HTML files in the `public/` directory.
 
 #### GitLab Pages examples
 
-_Example websites hosted by GitLab Pages_
-
-Check out the [GitLab Pages official group](https://gitlab.com/pages){:rel="nofollow"} for a list of example projects, where you can explore some good options for Static Site Generators for Ruby, NodeJS and Python environments.
+_Example websites hosted by GitLab Pages:_ Check out the [GitLab Pages official group](https://gitlab.com/pages){:rel="nofollow"} for a list of example projects, where you can explore some good options for Static Site Generators for Ruby, NodeJS and Python environments.
 
 ### Push your site project to GitLab
 

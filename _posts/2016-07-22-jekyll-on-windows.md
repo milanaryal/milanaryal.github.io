@@ -49,5 +49,5 @@ Here's the solution to fix this warning and access GitHub Metadata on your Windo
 For security reason you can also access GitHub token with the following command line while building or serving Jekyll site:
 
 ```bash
-$ JEKYLL_GITHUB_TOKEN=abc123def456 bundle exec jekyll serve
+JEKYLL_GITHUB_TOKEN=abc123def456 bundle exec jekyll serve
 ```

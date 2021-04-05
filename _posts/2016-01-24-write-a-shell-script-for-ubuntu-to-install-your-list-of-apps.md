@@ -71,13 +71,13 @@ Now open the Terminal with shortcut key `Ctrl+Alt+T`.
 Give execute permission to your script:
 
 ```bash
-$ chmod +x /path/to/install-apps.sh
+chmod +x /path/to/install-apps.sh
 ```
 
 And to run your script:
 
 ```bash
-$ /path/to/install-apps.sh
+/path/to/install-apps.sh
 ```
 
 Since `.` refers to the current directory: if `install-apps.sh` is in the current directory, you can simplify this to:
