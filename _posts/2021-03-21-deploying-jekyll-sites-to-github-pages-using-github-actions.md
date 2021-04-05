@@ -23,7 +23,7 @@ Following is the contents of `Gemfile` for our project:
 ```rb
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.2'
 
@@ -125,6 +125,7 @@ Popular Jekyll GitHub Actions on the GitHub Marketplace:
 - [jekyll-actions](https://github.com/marketplace/actions/jekyll-actions){:rel="nofollow"}
 - [jekyll-action-ts](https://github.com/marketplace/actions/jekyll-action-ts){:rel="nofollow"}
 - [jekyll-deploy-gh-pages](https://github.com/marketplace/actions/jekyll-deploy-gh-pages){:rel="nofollow"}
+- [github-pages-action](https://github.com/marketplace/actions/github-pages-action){:rel="nofollow"}
 
 Jekyll official documentaions:
 
