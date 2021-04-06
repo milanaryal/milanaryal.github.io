@@ -20,7 +20,13 @@
   }
 
   .btn--archive {
-    padding-left: 1px;
-    border: 0;
+    // padding-left: 1px;
+    // border: 0;
+    border-radius: 4px;
+
+    .icon-archive {
+      padding-right: 1px;
+      margin-left: -1px;
+    }
   }
 }

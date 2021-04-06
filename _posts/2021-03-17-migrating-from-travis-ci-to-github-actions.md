@@ -5,7 +5,7 @@ date: 2021-03-17T14:00:00+05:45
 
 I use continuous integration (CI) to test build status of my Jekyll blog in GitHub Pages environment.
 
-> For those who aren't familiar with Continuous Integration (CI) or Continuous Delivery(CD), it's a automating software workflows to build or test the software based on certain triggers in your GitHub repository.
+> For those who aren't familiar with Continuous Integration (CI) or Continuous Delivery (CD), it's a automating software workflows to build or test the software based on certain triggers in your GitHub repository.
 
 Travis CI has served me very well but with a notice from _travis-ci.org_ to [shutting down the website soon](https://ropensci.org/blog/2020/11/19/moving-away-travis/){:rel="nofollow"}, I planned to mirate to GitHub Actions (the native CI/CD system from GitHub).
 
@@ -59,6 +59,8 @@ notifications:
 
 Now, migrating to GitHub Actions here's a `.workflow.yml` file code snippet I created in the `.github/workflows` directory of my project folder.
 
+{% raw %}
+
 ```yml
 name: My workflow
 
@@ -69,6 +71,9 @@ on:
     paths-ignore:
       - "LICENSE"
       - "README.md"
+
+env:
+  RUBY_VERSION: 2.7.1
 
 jobs:
   test:
@@ -81,8 +86,14 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.1 # Not needed with a .ruby-version file
+          ruby-version: ${{ env.RUBY_VERSION }} # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: Version info
+        run: |
+          ruby --version
+          gem --version
+          bundle --version
 
       - name: List dependency versions
         run: bundle exec github-pages versions
@@ -102,6 +113,8 @@ jobs:
       - name: Cleaning up
         run: bundle exec jekyll clean
 ```
+
+{% endraw %}
 
 - Added GitHub Actions "Build Status" badge in a README file.
 
