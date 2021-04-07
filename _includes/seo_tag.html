@@ -40,5 +40,7 @@
 {% endunless %}
 
 {%- comment -%}<!-- Site author JSON-LD -->{%- endcomment -%}
-  {% include about_json_ld.html %}
+  {% if page.permalink == "/" or page.permalink == "/about/" %}
+    {% include about_json_ld.html %}
+  {% endif %}
 {%- comment -%}<!-- /Site author JSON-LD -->{%- endcomment -%}

@@ -11,21 +11,21 @@ $theme-colors-default: () !default;
 $theme-colors-default: map-merge(
   (
     "body-bg":                   #fafafa,
-    "body-color":                rgba(0, 0, 0, .8),
-    "heading-color":             rgba(0, 0, 0, .84),
+    "body-color":                rgba(0, 0, 0, 0.8),
+    "heading-color":             rgba(0, 0, 0, 0.84),
     "link-color":                #00638a,
-    "link-underline-color":      rgba(0, 0, 0, .3),
+    "link-underline-color":      rgba(0, 0, 0, 0.3),
     "link-hover-color":          #00638a,
-    "anchor-color":              rgba(0, 0, 0, .8),
+    "anchor-color":              rgba(0, 0, 0, 0.8),
     "anchor-hover-color":        #111,
     "text-muted":                #888,
     "text-muted-secondary":      #aaa,
-    "section-divider":           rgba(0, 0, 0, .1),
-    "section-divider-secondary": rgba(0, 0, 0, .05),
+    "section-divider":           rgba(0, 0, 0, 0.1),
+    "section-divider-secondary": rgba(0, 0, 0, 0.05),
     "blockquote-border":         #e5e5e5,
     "blockquote-bg":             #fff,
     "pre-bg":                    #fff,
-    "code-snippet-border":       rgba(0, 0, 0, .05)
+    "code-snippet-border":       rgba(0, 0, 0, 0.05)
   ),
   $theme-colors-default
 );
@@ -44,12 +44,12 @@ $theme-colors-dark: map-merge(
     "link-hover-color":          #baa6bd,
     "anchor-color":              #bbb,
     "anchor-hover-color":        #ddd,
-    "section-divider":           rgba(255, 255, 255, .1),
-    "section-divider-secondary": rgba(255, 255, 255, .05),
-    "blockquote-border":         rgba(255, 255, 255, .1),
-    "blockquote-bg":             rgba(0, 0, 0, .1),
-    "pre-bg":                    rgba(0, 0, 0, .1),
-    "code-snippet-border":       rgba(255, 255, 255, .1)
+    "section-divider":           rgba(255, 255, 255, 0.1),
+    "section-divider-secondary": rgba(255, 255, 255, 0.05),
+    "blockquote-border":         rgba(255, 255, 255, 0.1),
+    "blockquote-bg":             rgba(0, 0, 0, 0.1),
+    "pre-bg":                    rgba(0, 0, 0, 0.1),
+    "code-snippet-border":       rgba(255, 255, 255, 0.1)
   ),
   $theme-colors-dark
 );
@@ -59,7 +59,7 @@ $theme-colors-dark: map-merge(
 // Override custom settings.
 
 $brand-primary:             darken($brand-color, 6.5%) !default;
-$text-color:                rgba(0, 0, 0, .8) !default;
+$text-color:                rgba(0, 0, 0, 0.8) !default;
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:    "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -78,7 +78,7 @@ $link-hover-color:          inherit !default;
 $link-hover-decoration:     none !default;
 
 $blockquote-border-color:   $text-color !default;
-$hr-border:                 rgba(0, 0, 0, .05) !default;
+$hr-border:                 rgba(0, 0, 0, 0.05) !default;
 
 // Bootstrap Options
 //
