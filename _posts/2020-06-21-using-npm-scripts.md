@@ -14,7 +14,7 @@ Other task manager needs different plugins to work and over the time some plugin
 
 Using packages CLI is easy to work with and proper documentation can be found on the respective packages homepage. Popular framework like Bootstrap... are using npm scripts and recommends to use it. Following, I have setup some of the examples as a demo for regular different types of task in the web projects:
 
-#### Formating prettier code style
+#### Formatting prettier code style
 
 ```bash
 npm install prettier --save-dev

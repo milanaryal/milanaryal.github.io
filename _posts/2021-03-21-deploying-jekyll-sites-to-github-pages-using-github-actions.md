@@ -4,15 +4,15 @@ date: 2021-03-21T11:30:00+05:45
 excerpt: "Using GitHub Actions, learn how to publish your Jekyll websites onto GitHub Pages with your custom dependencies and versions."
 ---
 
-The GitHub Pages (`github-pages` gem only supports specific versions of Jekyll and Jekyll plugins. Latest version of Jekyll `v4.x.x` build time for your site is incredibly faster than older versions. So, to overcome the [GitHub Pages dependencies and versions](https://pages.github.com/versions/){:rel="nofollow"} we are going to use GitHub Actions to deploy your site onto GitHub Pages with your scpecfic version of Jekyll and Jekyll plugins.
+The GitHub Pages (`github-pages` gem only supports specific versions of Jekyll and Jekyll plugins. Latest version of Jekyll `v4.x.x` build time for your site is incredibly faster than older versions. So, to overcome the [GitHub Pages dependencies and versions](https://pages.github.com/versions/){:rel="nofollow"} we are going to use GitHub Actions to deploy your site onto GitHub Pages with your specific version of Jekyll and Jekyll plugins.
 
 Also, using GitHub Actions we can use any Jekyll plugins irrespective of them being on the supported versions list, even `*.rb` files placed in the `_plugins` directory of your site.
 
-> **Note**: This is the updated post directly from _Jekyll documentaions_ site with much simpler procedures.
+> **Note**: This is the updated post directly from _Jekyll documentations_ site with much simpler procedures.
 
 ### Workspace setup
 
-The first and foremost requirement is a Jekyll project hosted at GitHub. Choose an existing Jekyll project or follow the [quickstart](https://jekyllrb.com/docs/){:rel="nofollow"} and push the repository to GitHub if it is not hosted there already.
+The first and foremost requirement is a Jekyll project hosted at GitHub. Choose an existing Jekyll project or follow the [quick start](https://jekyllrb.com/docs/){:rel="nofollow"} and push the repository to GitHub if it is not hosted there already.
 
 We're only going to cover builds from the `main` branch in this page. Therefore, ensure that you are working on the `main` branch. If necessary, you may create it based on your default branch. When the Action builds your site, the contents of the _destination_ directory will be automatically pushed to the `gh-pages` branch with a commit, ready to be used for serving.
 
@@ -127,6 +127,6 @@ Popular Jekyll GitHub Actions on the GitHub Marketplace:
 - [jekyll-deploy-gh-pages](https://github.com/marketplace/actions/jekyll-deploy-gh-pages){:rel="nofollow"}
 - [github-pages-action](https://github.com/marketplace/actions/github-pages-action){:rel="nofollow"}
 
-Jekyll official documentaions:
+Jekyll official documentations:
 
-- [Build and host the Jekyll site with GitHub Pages uing GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/){:rel="nofollow"}
+- [Build and host the Jekyll site with GitHub Pages using GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/){:rel="nofollow"}

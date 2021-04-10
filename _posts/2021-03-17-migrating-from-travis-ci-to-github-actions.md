@@ -7,7 +7,7 @@ I use continuous integration (CI) to test build status of my Jekyll blog in GitH
 
 > For those who aren't familiar with Continuous Integration (CI) or Continuous Delivery (CD), it's a automating software workflows to build or test the software based on certain triggers in your GitHub repository.
 
-Travis CI has served me very well but with a notice from _travis-ci.org_ to [shutting down the website soon](https://ropensci.org/blog/2020/11/19/moving-away-travis/){:rel="nofollow"}, I planned to mirate to GitHub Actions (the native CI/CD system from GitHub).
+Travis CI has served me very well but with a notice from _travis-ci.org_ to [shutting down the website soon](https://ropensci.org/blog/2020/11/19/moving-away-travis/){:rel="nofollow"}, I planned to migrate to GitHub Actions (the native CI/CD system from GitHub).
 
 #### Step 1: Remove Travis CI from the project folder
 
@@ -53,7 +53,7 @@ notifications:
 ```
 
 - Removed Travis CI "Build Status" badge in a README file.
-- Loged into the Travis CI website and disabled the GitHub repository from using Travis.
+- Logged into the Travis CI website and disabled the GitHub repository from using Travis.
 
 #### Step 2: Create GitHub Actions workflow in the project folder
 
@@ -120,11 +120,11 @@ jobs:
 
 #### Step 3: Push commit
 
-Finnally, I push commit to GitHub and I can see the build status results in 'actions' tab of my project folder in GitHub website.
+Finally, I push commit to GitHub and I can see the build status results in 'actions' tab of my project folder in GitHub website.
 
 ---
 
-For any references following code snnipet is a `Gemfile` of my Jekyll blog to build site in the GitHub Pages environment:
+For any references following code snippet is a `Gemfile` of my Jekyll blog to build site in the GitHub Pages environment:
 
 ```rb
 # frozen_string_literal: true

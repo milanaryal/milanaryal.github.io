@@ -8,7 +8,7 @@ _What the heck is Ping?_ Pinging (in SEO) refers to sending auto-generated notif
 
 After changes (or adding new post) to your site, change the 'last modified date' of updated pages in your sitemap. If you are using CMS platform like WordPress, you can use sitemap plugins to do this automatically.
 
-Then, resubmit (first time? you need to signup & then submit) the sitemap in Webmaster Tools --- both [Google Webmasters](https://www.google.com/webmasters/){:rel="nofollow"}, and [Bing Webmasters](https://www.bing.com/toolbox/webmaster){:rel="nofollow"}.
+Then, resubmit (first time? you need to sign up & then submit) the sitemap in Webmaster Tools --- both [Google Webmasters](https://www.google.com/webmasters/){:rel="nofollow"}, and [Bing Webmasters](https://www.bing.com/toolbox/webmaster){:rel="nofollow"}.
 
 ---
 

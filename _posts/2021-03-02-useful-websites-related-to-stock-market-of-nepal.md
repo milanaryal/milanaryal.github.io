@@ -35,7 +35,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [General Post Office](http://gpo.gov.np/)
 - [Central Bureau of Statistics](https://cbs.gov.np/)
 - [Nepal Law Commission](http://www.lawcommission.gov.np/)
-- [Citizen Ivestment Trust (Nagarik Lagani Kosh)](http://nlk.org.np/)
+- [Citizen Investment Trust (Nagarik Lagani Kosh)](http://nlk.org.np/)
 - [Employee Provident Fund](https://epfnepal.com.np/)
 - [Pension Management Office](https://pension.gov.np/)
 - [Nepal Bankers' Association](http://nepalbankers.com.np/)
