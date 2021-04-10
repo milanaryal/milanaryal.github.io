@@ -6,7 +6,7 @@ excerpt: "The ultimate guide for the colours that you should (and shouldn't) wea
 
 Having trouble picking out what to wear to work? Focusing on colours might not only help you narrow down your choices, but may also benefit your career. Research has shown that colours can greatly affect our moods and the way other people respond to us.
 
-Colours can even change our heart rate, blood pressure and respiration, as researchers Keith Jacobs and FrackHustmyer discovered in 1974. With that in mind, here's the ultimate guide for the colours that you should (and shouldn't) wear to work.
+Colours can even change our heart rate, blood pressure and respiration, as researchers Keith Jacobs and Frack Hustmyer discovered in 1974. With that in mind, here's the ultimate guide for the colours that you should (and shouldn't) wear to work.
 
 ### Best colours to wear at office
 

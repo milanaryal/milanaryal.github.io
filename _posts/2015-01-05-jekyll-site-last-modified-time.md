@@ -57,6 +57,4 @@ Which output in following format:
 <!-- Proudly Hosted on GitHub | Generated 2015-01-05 18:06:54 +0545 | Revision 8b10cc6954163643f53d0b503888578e143d7e57 -->
 ```
 
----
-
 Happy Jekyll'ing!

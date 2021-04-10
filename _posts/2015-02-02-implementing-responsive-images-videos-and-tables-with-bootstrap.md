@@ -46,7 +46,7 @@ If you're hosting video yourself that means using `<video>` then adding `.img-re
 
 #### Responsive embed videos with Bootstrap
 
-Last year I wrote about "[Making fluid and responsive embedded videos]({% post_url 2014-11-22-making-fluid-and-responsive-embedded-videos %})" with different methods but now Bootstrap can do that with even easy methods.
+Last year I wrote about "[Making fluid and responsive embedded videos](/making-fluid-and-responsive-embedded-videos/)" with different methods but now Bootstrap can do that with even easy methods.
 
 Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device.
 
