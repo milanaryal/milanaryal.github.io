@@ -3,7 +3,6 @@ title: "Deploying and hosting static sites with GitLab Pages"
 date: 2020-06-16T14:00:00+05:45
 last_modified_at: 2020-06-18T14:00:00+05:45
 excerpt: "Learn how to deploy and host your modern static websites on GitLab.com with GitLab Pages for free."
-redirect_from: "/hosting-on-gitlab-with-gitlab-pages/"
 ---
 
 [GitLab](https://gitlab.com/){:rel="nofollow"} makes it incredibly easy to build, deploy, and host your modern static websites via their free GitLab Pages service, which provides native support for [numerous Static Site Generators (SSG)](https://gitlab.com/pages){:rel="nofollow"}, such as Gatsby, Next.js, Nuxt, Jekyll, Hugo, Hexo, Middleman and Pelican.

@@ -61,7 +61,7 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Bundle caching
+      - name: Caching for Bundler
         uses: actions/cache@v2
         with:
           path: vendor/bundle
@@ -120,13 +120,17 @@ Be sure **not to edit** the `gh-pages` branch directly, as any changes will be l
 
 ### Further resources
 
-Popular Jekyll GitHub Actions on the GitHub Marketplace:
+Jekyll official documentations:
+
+- [Build and host the Jekyll site with GitHub Pages using GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/){:rel="nofollow"}
+
+Popular 'Jekyll build & deploy to GitHub Pages' Actions on the GitHub Marketplace:
 
 - [jekyll-actions](https://github.com/marketplace/actions/jekyll-actions){:rel="nofollow"}
 - [jekyll-action-ts](https://github.com/marketplace/actions/jekyll-action-ts){:rel="nofollow"}
 - [jekyll-deploy-gh-pages](https://github.com/marketplace/actions/jekyll-deploy-gh-pages){:rel="nofollow"}
-- [github-pages-action](https://github.com/marketplace/actions/github-pages-action){:rel="nofollow"}
 
-Jekyll official documentations:
+Popular 'deploy to GitHub Pages' Actions on the GitHub Marketplace:
 
-- [Build and host the Jekyll site with GitHub Pages using GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/){:rel="nofollow"}
+- [actions-gh-pages](https://github.com/marketplace/actions/github-pages-action){:rel="nofollow"}
+- [deploy-to-github-pages](https://github.com/marketplace/actions/deploy-to-github-pages){:rel="nofollow"}
