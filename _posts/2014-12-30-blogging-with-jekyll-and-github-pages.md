@@ -1,8 +1,8 @@
 ---
 title: "Blogging with Jekyll and GitHub Pages"
 date: 2014-12-30T19:47:46+05:45
-last_modified_at: "2021-03-21T11:50:00+05:45"
-excerpt: "Transform your plain text into static websites and blogs."
+last_modified_at: "2021-04-10T10:50:00+05:45"
+excerpt: "Jekyll is a static site generator that transform your plain text into static websites and blogs."
 ---
 
 I recently migrated my blog to [GitHub Pages](http://pages.github.com){:rel="nofollow"} using an awesome open source project [Jekyll](http://jekyllrb.com){:rel="nofollow"}. It's really fun blogging with Jekyll. If you are not enjoying blogging with other CMS platform then you should really try Jekyll.
@@ -32,17 +32,14 @@ GitHub Pages uses the [following dependencies](http://pages.github.com/versions/
 
 ### Who are using Jekyll?
 
-Here are some websites/blog that were created with Jekyll:
+Many awesome projects and blogs are using Jekyll and hosted on GitHub Pages. Here are some websites/blog that are created with Jekyll:
 
-- [Tom Preston-Werner](https://tom.preston-werner.com/){:rel="nofollow"} - founder of Jekyll
-- [Jekyll](http://jekyllrb.com/){:rel="nofollow"} - itself and most of the GitHub's subpages
-- [HealthCare.gov](http://www.healthcare.gov/){:rel="nofollow"} - landing page and content subpages
-- [Bootstrap](http://getbootstrap.com/){:rel="nofollow"}
-- [Mark Dotto](http://markdotto.com/){:rel="nofollow"} - founder of Boostrap
-- [Font Awesome](http://fontawesome.io/){:rel="nofollow"}
-- [Ben Balter](https://ben.balter.com/){:rel="nofollow"}
-
-...and many other awesome projects and blogs are using Jekyll and hosted on GitHub Pages.
+- [Jekyll](http://jekyllrb.com/){:rel="nofollow"} - _Official Jekyll website_
+- [Tom Preston-Werner](https://tom.preston-werner.com/){:rel="nofollow"} - _founder of Jekyll_
+- [Mark Dotto](http://markdotto.com/){:rel="nofollow"} - _GitHub staff and founder of Boostrap_
+- [Ben Balter](https://ben.balter.com/){:rel="nofollow"} - _GitHub Staff_
+- [Parker Moore](https://byparker.com/){:rel="nofollow"} - _GitHub Staff_
+- Visit Jekyll [showcase](https://jekyllrb.com/showcase/){:rel="nofollow"} for more Jekyll powered websites
 
 ### Getting Started
 
@@ -212,17 +209,27 @@ GitHub Pages officially supports several [Jekyll plugins](http://help.github.com
 ```rb
 gems:
   - jekyll-feed
+  - jekyll-gist
   - jekyll-mentions
   - jekyll-redirect-from
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
 ```
 
-This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](http://jekyllrb.com/){:rel="nofollow"}.
+GitHub Pages use `jekyll-github-metadata` plugin that is enabled by default and cannot be disabled. To overcome some issues while building site locally you can have following additional configuration in your `_config.yml` file.
 
-Happy Jekyll'ing!
+```yml
+baseurl: ""
+theme: null
+
+repository: "username/repo-name"
+branch: main
+```
 
 ---
+
+This is simple proccess to blog with Jekyll on GitHub Pages. You can learn more about Jekyll at [jekyllrb.com](https://jekyllrb.com/docs/){:rel="nofollow"}.
 
 #### Further resources
 
@@ -230,3 +237,5 @@ Happy Jekyll'ing!
 - [Some Jekyll configuration settings that cannot be changed for GitHub Pages sites](https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll){:rel="nofollow"}, _GitHub Docs_
 - [GitHub Pages sites usage limits](https://docs.github.com/en/github/working-with-github-pages/about-github-pages#usage-limits){:rel="nofollow"}, _GitHub Docs_
 - [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site){:rel="nofollow"}, _GitHub Docs_
+
+Happy Jekyll'ing!
