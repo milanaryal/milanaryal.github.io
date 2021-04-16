@@ -1,5 +1,5 @@
 **/*.min.css
 **/vendor/
-assets/
-_includes/
 _site/
+src/_includes/
+src/assets/

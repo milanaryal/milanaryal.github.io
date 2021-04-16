@@ -1,0 +1,111 @@
+// Variables
+//
+// Custom variables for the theme.
+
+$brand-color:               #111 !default;
+
+// Light theme
+
+$theme-colors-default: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors-default: map-merge(
+  (
+    "body-bg":                   #fafafa,
+    "body-color":                rgba(0, 0, 0, 0.8),
+    "heading-color":             rgba(0, 0, 0, 0.84),
+    "link-color":                #00638a,
+    "link-underline-color":      rgba(0, 0, 0, 0.3),
+    "link-hover-color":          #00638a,
+    "anchor-color":              rgba(0, 0, 0, 0.8),
+    "anchor-hover-color":        #111,
+    "text-muted":                #888,
+    "text-muted-secondary":      #aaa,
+    "section-divider":           rgba(0, 0, 0, 0.1),
+    "section-divider-secondary": rgba(0, 0, 0, 0.05),
+    "blockquote-border":         #e5e5e5,
+    "blockquote-bg":             #fff,
+    "pre-bg":                    #fff,
+    "code-snippet-border":       rgba(0, 0, 0, 0.05)
+  ),
+  $theme-colors-default
+);
+
+// Dark theme
+
+$theme-colors-dark: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors-dark: map-merge(
+  (
+    "body-bg":                   #222,
+    "body-color":                #cac3bc,
+    "heading-color":      darken(#e8e4e0, 5.555%),
+    "link-color":                #a0bfd0,
+    "link-underline-color":      #a0bfd0,
+    "link-hover-color":          #baa6bd,
+    "anchor-color":              #bbb,
+    "anchor-hover-color":        #ddd,
+    "section-divider":           rgba(255, 255, 255, 0.1),
+    "section-divider-secondary": rgba(255, 255, 255, 0.05),
+    "blockquote-border":         rgba(255, 255, 255, 0.1),
+    "blockquote-bg":             rgba(0, 0, 0, 0.1),
+    "pre-bg":                    rgba(0, 0, 0, 0.1),
+    "code-snippet-border":       rgba(255, 255, 255, 0.1)
+  ),
+  $theme-colors-dark
+);
+
+// Bootstrap
+//
+// Override custom settings.
+
+$brand-primary:             darken($brand-color, 6.5%) !default;
+$text-color:                rgba(0, 0, 0, 0.8) !default;
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:    "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, serif !default;
+$font-family-serif-display: "DM Serif Display", Georgia, serif !default;
+$font-family-base:          $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
+
+// $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
+// $font-size-base effects the font size of the body text
+$font-size-root:              null !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$link-color:                inherit !default;
+$link-hover-color:          inherit !default;
+$link-hover-decoration:     none !default;
+
+$blockquote-border-color:   $text-color !default;
+$hr-border:                 rgba(0, 0, 0, 0.05) !default;
+
+// Bootstrap Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-responsive-font-sizes: true !default;
+$enable-smooth-scroll:         true !default;
+
+// Brand colors (http://brandcolors.net), (https://brand-colors.re.im)
+//
+// Official color codes for the world's biggest brands.
+
+$disqus-color:              #2e9fff !default;
+$envelope-color:            #787878 !default;
+$facebook-color:            #3b5998 !default;
+$flickr-color:              #ff0084 !default;
+$foursquare-color:          #f94877 !default; // has multi colors
+$google-plus-color:         #dc4e41 !default;
+$instagram-color:           #833ab4 !default; // has multi colors
+$linkedin-color:            #0077b5 !default; // has multi colors
+$pinterest-color:           #bd081c !default;
+$rss-color:                 #f26522 !default;
+$social-telegram-color:     #0088cc !default;
+$tumblr-color:              #35465c !default;
+$twitter-color:             #55acee !default;
+$vimeo-color:               #1ab7ea !default; // has multi colors
+$youtube-color:             #cd201f !default;
+$github-color:              #333 !default;    // has multi colors
+$telegram-color:            #08c !default;
+$facebook-messenger-color:  #0084ff !default;

@@ -1,4 +1,4 @@
 **/*.min.js
 **/vendor/
-assets/
 _site/
+src/assets/

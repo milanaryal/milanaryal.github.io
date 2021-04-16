@@ -5,8 +5,7 @@ const discardComments = require('postcss-discard-comments')
 
 const purgecssConfig = {
   content: [
-    '!(_site|node_modules)/**/*.+(html|js|md)',
-    '*.html',
+    './src/**/*.+(html|js|md)',
     'node_modules/bootstrap/js/dist/util.js',
     'node_modules/bootstrap/js/dist/collapse.js',
     'node_modules/bootstrap/js/dist/tooltip.js',

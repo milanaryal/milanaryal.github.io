@@ -5,14 +5,17 @@ on:
     branches:
       - main
     paths-ignore:
-      - "LICENSE"
-      - "README.md"
+      - "**"
+      - "!.github/workflows/**"
+      - "!_config.yml"
+      - "!src/**"
 
 env:
-  RUBY_VERSION: 2.7.1
+  RUBY_VERSION: 2.7
 
 jobs:
-  test:
+  build:
+    name: build
     runs-on: ubuntu-latest
 
     steps:
@@ -31,20 +34,30 @@ jobs:
           gem --version
           bundle --version
 
-      - name: List dependency versions
-        run: bundle exec github-pages versions
-
-      - name: Checking DNS # Should have CNAME file
-        run: bundle exec github-pages health-check
-
       - name: Checking Jekyll configuration
         run: bundle exec jekyll doctor
 
-      - name: Building site
-        run: bundle exec jekyll build --config _config.yml,_config_dev.yml --profile --trace --verbose
-
       - name: Checking Markdown files
-        run: bundle exec mdl --ignore-front-matter --style "./.mdl_style.rb" "./_posts" || true
+        run: bundle exec mdl --ignore-front-matter --style "./.mdl_style.rb" "./src/_posts" || true
+
+      - name: Building site
+        run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace --verbose
+
+      - name: Install minify deb package on Ubuntu
+        run: sudo apt-get -y install minify
+
+      # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
+      - name: Minify HTML files
+        run: |
+          minify -r -o "./_site" --match=\.html \
+          --html-keep-default-attrvals \
+          --html-keep-document-tags \
+          --html-keep-end-tags \
+          "./_site" --verbose
+
+      - name: Minify JSON files
+        run: |
+          minify -r -o "./_site" --match=\.json "./_site" --verbose || true
 
       - name: Checking HTML files
         run: |
@@ -61,5 +74,44 @@ jobs:
           --file_ignore "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" \
           || true
 
+      - name: Upload site
+        uses: actions/upload-artifact@v2
+        if: success() && github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main'
+        with:
+          name: site
+          path: ./_site/
+          if-no-files-found: error
+
       - name: Cleaning up
         run: bundle exec jekyll clean
+
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+
+      - name: Download site
+        uses: actions/download-artifact@v2
+        with:
+          name: site
+          path: ./_site/
+
+      - name: List files and folders
+        run: ls "./"
+
+      - name: List site files and folders
+        run: ls "./_site/"
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: success()
+        with:
+          allow_empty_commit: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./_site/

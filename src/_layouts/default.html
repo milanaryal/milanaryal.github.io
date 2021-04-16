@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ page.lang | replace:'-','_' | default: site.lang | default:'en' | downcase }}" prefix="og: http://ogp.me/ns#">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include site_header.html %}
+
+    {{ content }}
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>

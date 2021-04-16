@@ -15,6 +15,9 @@
   "MD013": false,
   "MD024": false,
   "MD026": false,
+  "MD029": {
+    "style": "ordered"
+  },
   "MD033": false,
   "MD035": {
     "style": "---"

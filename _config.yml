@@ -20,17 +20,20 @@ nav:
 
 author:
   name: "Milan Aryal"
+  email: null
   uri: "https://twitter.com/MilanAryal"
   avatar: "/assets/img/avatar.png"
   bio: "I'm just a regular person who believes life is simple, and I like a simple life."
   gender: "Male"
   nationality: "Nepal"
-  facebook: "considermilan"
-  twitter: "MilanAryal"
-  telegram: "MilanAryal"
-  instagram: "MilanAryal"
+  facebook: null
   github: "MilanAryal"
-  keybase: "milanaryal"
+  instagram: "MilanAryal"
+  keybase: "MilanAryal"
+  linkedin: "MilanAryal"
+  telegram: "MilanAryal"
+  twitter: "MilanAryal"
+  pinterest: "MilanAryal"
 
 # SEO
 twitter:
@@ -42,11 +45,9 @@ social:
   links:
     - https://twitter.com/MilanAryal
     - https://github.com/MilanAryal
-    - https://keybase.io/milanaryal
     - https://www.instagram.com/milanaryal
     - https://www.pinterest.com/milanaryal
     - https://www.linkedin.com/in/milanaryal
-    - https://www.facebook.com/considermilan
 
 disqus_shortname: "milanaryal"
 google_cse_id: "000254926668963224856:z4vgwqv7kla"
@@ -62,19 +63,22 @@ google_analytics_alternative_id: "UA-42092423-2"
 
 # --------------- Build settings ---------------
 
+# Where things are
+source: src
+
 timezone: "Asia/Kathmandu"
 future: true
-theme: null
 
 kramdown:
   toc_levels: [2, 3]
 
-gist:
-  noscript: false
-
 paginate_path: "/blog/:num/"
 paginate: 10
 permalink: "/:title/"
+
+collections:
+  pages:
+    output: true
 
 defaults:
   - scope:
@@ -101,11 +105,16 @@ defaults:
         width: 1500
         height: 500
   - scope:
-      path: ""
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"
       comments: true
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "page"
   - scope:
       path: "uploads/**/*.pdf"
     values:
@@ -113,38 +122,7 @@ defaults:
 
 plugins:
   - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-
-# HTML compression › https://jch.penibelst.de/
-compress_html:
-  clippings: all
-  comments: all
-  ignore:
-    envs: [development]
-  profile: false
-
-include:
-  - "_pages"
-
-exclude:
-  - ".bundle"
-  - bundle
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - node_modules
-  - npm-debug.log
-  - package.json
-  - package-lock.json
-  - postcss.config.js
-  - README.md
-  - Rakefile
-  - script
-  - src
-  - vendor
-  - webpack.config.js

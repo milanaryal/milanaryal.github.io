@@ -1,0 +1,14 @@
+---
+# robotstxt.org/
+# The robots exclusion protocol
+
+layout: null
+disallows:
+  - "/randomi.json"
+  - "/redirects.json"
+---
+
+User-agent: *
+Disallow:{% for disallowed in page.disallows %}
+Disallow: {{ disallowed }}{% endfor %}
+Sitemap: {{ 'sitemap.xml' | absolute_url }}

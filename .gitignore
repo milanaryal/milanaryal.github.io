@@ -353,5 +353,6 @@ package-lock.json
 # | Exclude                                                            |
 # ----------------------------------------------------------------------
 
-# !uploads/*.zip
-!uploads/20140304-css-cheat-sheet.zip
+# For example:
+# Wild card › !uploads/*.zip
+# Specific  › !src/uploads/20140304-css-cheat-sheet.zip

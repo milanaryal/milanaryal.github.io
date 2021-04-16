@@ -1,8 +1,7 @@
 **/*.min.css
 **/vendor/
-assets/
-_includes/
-_site/
 **/_variables.scss
-posts.json
-randomi.json
+_site/
+src/_includes/
+src/assets/
+src/randomi.json
