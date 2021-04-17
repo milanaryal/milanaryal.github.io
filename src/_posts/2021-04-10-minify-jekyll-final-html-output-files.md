@@ -31,7 +31,7 @@ sudo apt-get -y install minify
 - [Usage](https://github.com/tdewolff/minify/tree/master/cmd/minify#usage){:rel="nofollow"}
 
 ```bash
-minify -r -o "./_site" --match=\.html --html-keep-conditional-comments --html-keep-default-attrvals --html-keep-document-tags --html-keep-end-tags --html-keep-quotes "./_site"
+minify --recursive --output "./_site/" --match=\.html --html-keep-conditional-comments --html-keep-default-attrvals --html-keep-document-tags --html-keep-end-tags --html-keep-quotes "./_site/" --verbose
 ```
 
 #### Minify XML files
@@ -39,7 +39,7 @@ minify -r -o "./_site" --match=\.html --html-keep-conditional-comments --html-ke
 You can also minify `*.XML` files with following command line:
 
 ```bash
-minify -r -o "./_site" --match=\.xml --xml-keep-whitespace "./_site" || true
+minify --recursive --output "./_site/" --match=\.xml --xml-keep-whitespace "./_site/" --verbose || true
 ```
 
 #### Minify JSON files
@@ -47,7 +47,7 @@ minify -r -o "./_site" --match=\.xml --xml-keep-whitespace "./_site" || true
 You can also minify `*.json` files with following command line:
 
 ```bash
-minify -r -o "./_site" --match=\.json "./_site" || true
+minify --recursive --output "./_site/" --match=\.json "./_site/" --verbose || true
 ```
 
 ### Build, minify and deploy Jekyll site into GitHub Pages using GitHub Actions
@@ -97,21 +97,21 @@ jobs:
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
         run: |
-          minify -r -o "./_site" --match=\.html \
+          minify --recursive --output "./_site/" --match=\.html \
           --html-keep-conditional-comments \
           --html-keep-default-attrvals \
           --html-keep-document-tags \
           --html-keep-end-tags \
           --html-keep-quotes \
-          "./_site"
+          "./_site/" --verbose
 
       - name: Minify XML files
         run: |
-          minify -r -o "./_site" --match=\.xml --xml-keep-whitespace "./_site" || true
+          minify --recursive --output "./_site/" --match=\.xml --xml-keep-whitespace "./_site/" --verbose || true
 
       - name: Minify JSON files
         run: |
-          minify -r -o "./_site" --match=\.json "./_site" || true
+          minify --recursive --output "./_site/" --match=\.json "./_site/" --verbose || true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
