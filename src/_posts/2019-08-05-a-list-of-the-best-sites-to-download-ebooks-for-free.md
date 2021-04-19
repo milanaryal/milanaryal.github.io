@@ -14,12 +14,16 @@ Part of Z-Library project. The world's largest e-book library since 2009.
 _Mirror site(s):_
 
 - [z-lib.org](http://z-lib.org/){:rel="nofollow"}
-- [b-ok.org](http://b-ok.org/){:rel="nofollow"}
-- [b-ok2.org](http://b-ok2.org/){:rel="nofollow"}
-- [b-ok.xyz](http://b-ok.xyz/){:rel="nofollow"}
-- [b-ok.cc](http://b-ok.cc/){:rel="nofollow"}
+- [2lib.org](http://2lib.org/){:rel="nofollow"}
 - [b-ok.asia](http://b-ok.asia/){:rel="nofollow"}
-- [zlibrary.unblockit.dev](http://zlibrary.unblockit.dev/){:rel="nofollow"}
+
+_Following sites may redirect(s):_
+
+- [b-ok.org](http://b-ok.org/){:rel="nofollow"}
+- [b-ok.cc](http://b-ok.cc/){:rel="nofollow"}
+- [b-ok.xyz](http://b-ok.xyz/){:rel="nofollow"}
+- [b-ok2.org](http://b-ok2.org/){:rel="nofollow"}
+- [zlibrary.unblockit.club](http://zlibrary.unblockit.club/){:rel="nofollow"}
 
 If Z-Library is censored or blocked in your location, you can use [TOR](http://b-ok.org/msgn/tor){:rel="nofollow"} to download it anyway.
 

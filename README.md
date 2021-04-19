@@ -10,7 +10,7 @@
 </p>
 <div align="center">
 
-[![Build Status](https://github.com/MilanAryal/milanaryal.github.io/actions/workflows/workflow.yml/badge.svg?branch=main)](https://github.com/MilanAryal/milanaryal.github.io/actions/workflows/workflow.yml)
+[![Build Status](https://github.com/MilanAryal/milanaryal.github.io/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MilanAryal/milanaryal.github.io/actions?workflow=CI)
 
 </div><br />
 

@@ -57,12 +57,12 @@ notifications:
 
 #### Step 2: Create GitHub Actions workflow in the project folder
 
-Now, migrating to GitHub Actions here's a `.workflow.yml` file code snippet I created in the `.github/workflows` directory of my project folder.
+Now, migrating to GitHub Actions here's a `ci.yml` file code snippet I created in the `.github/workflows` (note the dot at the start) directory of my project folder.
 
 {% raw %}
 
 ```yml
-name: My workflow
+name: CI
 
 on:
   push:
