@@ -10,14 +10,6 @@ logo: "/assets/img/open-graph.png"
 theme_color: "#000000"
 words_per_minute: 180
 
-nav:
-  - title: "Blog"
-    url: "/blog/"
-  - title: "About"
-    url: "/about/"
-  - title: "Contact"
-    url: "/contact/"
-
 author:
   name: "Milan Aryal"
   email: null
@@ -29,8 +21,8 @@ author:
   facebook: null
   github: "MilanAryal"
   instagram: "MilanAryal"
-  keybase: "MilanAryal"
-  linkedin: "MilanAryal"
+  keybase: null
+  linkedin: null
   telegram: "MilanAryal"
   twitter: "MilanAryal"
   pinterest: "MilanAryal"
@@ -44,10 +36,8 @@ social:
   name: "Milan Aryal"
   links:
     - https://twitter.com/MilanAryal
+    - https://www.instagram.com/milanaryal/
     - https://github.com/MilanAryal
-    - https://www.instagram.com/milanaryal
-    - https://www.pinterest.com/milanaryal
-    - https://www.linkedin.com/in/milanaryal
 
 disqus_shortname: "milanaryal"
 google_cse_id: "000254926668963224856:z4vgwqv7kla"

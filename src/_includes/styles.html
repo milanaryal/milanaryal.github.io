@@ -6,6 +6,6 @@
   <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}?v={{ build_version }}" />
 {% else %}
   <style data-href="{{ 'assets/css/style.css' | relative_url }}?v={{ build_version }}">
-    {%- include style.css -%}
+    {%- include css/style.css -%}
   </style>
 {% endif %}

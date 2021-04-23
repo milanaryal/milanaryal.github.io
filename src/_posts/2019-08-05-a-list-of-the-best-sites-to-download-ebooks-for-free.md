@@ -11,14 +11,15 @@ Here, I've curated a list of sites to download eBook for free of cost. In these 
 
 Part of Z-Library project. The world's largest e-book library since 2009.
 
+- [z-lib.org](http://z-lib.org/){:rel="nofollow"} - _Homepage_
+- [2lib.org](http://2lib.org/){:rel="nofollow"} - _Books_
+- [booksc.org](http://booksc.org/) - _Articles_
+
 _Mirror site(s):_
 
-- [z-lib.org](http://z-lib.org/){:rel="nofollow"}
-- [2lib.org](http://2lib.org/){:rel="nofollow"}
 - [b-ok.asia](http://b-ok.asia/){:rel="nofollow"}
-
-_Following sites may redirect(s):_
-
+- [b-ok.africa](http://b-ok.africa/){:rel="nofollow"}
+- [book4you.org](http://book4you.org/){:rel="nofollow"}
 - [b-ok.org](http://b-ok.org/){:rel="nofollow"}
 - [b-ok.cc](http://b-ok.cc/){:rel="nofollow"}
 - [b-ok.xyz](http://b-ok.xyz/){:rel="nofollow"}
