@@ -1,6 +1,7 @@
 ---
 title: "Managing Node.js dependencies version in the package.json file"
 date: 2020-06-06T18:00:00+05:45
+last_modified_at: 2021-04-24T15:00:00+05:45
 ---
 
 Learn to manage and update all the npm dependencies saved in the package.json file, to their latest available version.
@@ -154,3 +155,45 @@ For npm < 5.2.0, you can install npx package manually by running the following c
 #### Resources
 
 - [Getting started with npm](https://docs.npmjs.com/){:rel="nofollow"}
+
+---
+
+### How to update our projects all npm packages to latest version
+
+If we update a package using `npm update` command, npm will update the minor and patch versions in our project `node_modules` folder but not in our `package.json` because of versioning rules like `~2.6.1` or `^2.6.1`.
+
+To update all packages version number in `package.json` file to its latest (major) stable version, we need to install a new global package called [npm-check-updates](https://www.npmjs.com/package/npm-check-updates){:rel="nofollow"}.
+
+Installation:
+
+```bash
+npm install -g npm-check-updates
+```
+
+> On most flavors of Linux, macOS, and Bash on Ubuntu on Windows (WSL), add `sudo` before `npm` command to install global npm package.
+
+To check our project `package.json` file:
+
+```bash
+ncu
+```
+
+Upgrade a project's package version in `package.json` file:
+
+```bash
+ncu -u
+```
+
+Now, run `npm install` to install new versions (update installed packages and `package-lock.json`):
+
+```bash
+npm install
+```
+
+To check global packages:
+
+```bash
+ncu -g
+```
+
+You may also want to consider [npm-check](https://github.com/dylang/npm-check){:rel="nofollow"} with similar purpose, but different features.

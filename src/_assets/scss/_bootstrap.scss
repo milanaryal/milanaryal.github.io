@@ -7,9 +7,11 @@
 
 // ~ @import vendor from "node_modules"
 
-// @import "bootstrap/scss/functions";
-// @import "bootstrap/scss/variables";
-// @import "bootstrap/scss/mixins";
+// Bootstrap configuration
+@import "bootstrap/scss/functions"; // Required
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+
 // @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot"; // Required
 // @import "bootstrap/scss/type";
