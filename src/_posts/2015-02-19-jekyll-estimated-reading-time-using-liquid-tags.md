@@ -140,7 +140,7 @@ And then include (or in other words import) our metadata in your post layout as[
 
 {% raw %}
 
-```Liquid
+```liquid
 {%- include reading_time.html content=page.content -%}
 ```
 
