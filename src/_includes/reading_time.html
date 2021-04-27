@@ -5,7 +5,7 @@
   an average person can read 180 words per minute in a computer monitor.
 {%- endcomment -%}
 
-{%- assign words_per_minute = site.words_per_minute | default:'180' -%}
+{%- assign words_per_minute = site.words_per_minute | default: 180 -%}
 
 {%- assign post_content = include.content -%}
 
@@ -16,18 +16,17 @@
 {%- if words %}
   {%- comment -%}### TOTAL_WORDS ###{%- endcomment -%}
   {%- if words <= 1 -%}
-    {%- assign total_words = '1' | append:' word' -%}
+    {%- assign total_words = 1 | append: ' word' -%}
   {%- else -%}
-    {%- assign total_words = words | append:' words' -%}
+    {%- assign total_words = words | append: ' words' -%}
   {%- endif -%}
 
   {%- comment -%}### READING_TIME ###{%- endcomment -%}
-  {%- assign wpm = words_per_minute -%}
-  {%- assign wpm_i = wpm | divided_by:2 | plus:1 -%}
-  {%- assign read_time = words | plus: wpm_i | divided_by: wpm -%}
+  {%- assign wpm = words_per_minute | times: 1.0 -%}
+  {%- assign read_time = words | divided_by: wpm | round -%}
   {%- if read_time <= 1 -%}
-    {%- assign reading_time = '1' | append:' min read' -%}
+    {%- assign reading_time = 1 | append: ' min read' -%}
   {%- else -%}
-    {%- assign reading_time = read_time | append:' min read' -%}
+    {%- assign reading_time = read_time | append: ' min read' -%}
   {%- endif -%}
 {%- endif -%}

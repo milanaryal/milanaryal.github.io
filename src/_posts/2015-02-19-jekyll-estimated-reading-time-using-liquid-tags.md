@@ -1,7 +1,7 @@
 ---
 title: "Jekyll estimated reading time using Liquid tags"
 date: 2015-02-19T22:26:57+05:45
-last_modified_at: 2020-05-25T21:50:00+05:45
+last_modified_at: 2021-04-27T23:00:00+05:45
 excerpt: "Implementing Medium inspired estimated reading time for an article or a blog post based on standard reading speed in Jekyll generated static sites."
 redirect_from: "/implementing-medium-inspired-estimated-reading-time-into-jekyll/"
 ---
@@ -66,19 +66,19 @@ Wikipedia suggests a [proofreading speed on screen](http://en.wikipedia.org/wiki
 
 {% endraw %}
 
-With the release of Jekyll 2.2.0 it depreciated the liquid tag rounding method {% raw %}`{{ reading_time | round }}`{% endraw %} so we can not get our value in rounded figure. Here we only get our value as 1.6 = 1 or 2.4 = 2.
+If the divisor is an integer, the result of Liquid filter tag `divided_by` is rounded down to the nearest whole number, so we can not get our value in rounded figure i.e. we only get our value as 1.6 = 1 or 2.9 = 2.
 
-So, to correct our data we do a little more hacks. Here we add 91 to the total content words and divide it by 180.
+To get rounded figure (i.e. 1.6 = 2 or 2.9 = 3) we do a little tricks with liquid filter tag by simply adding `.0` in our divisor to convert it to a float.
 
 {% raw %}
 
 ```liquid
-{% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by:180 %}
+{% assign reading_time = content | strip_html | number_of_words | divided_by: 180.0 | round %}
 
 {% if reading_time <= 1 %}
-  {% assign reading_time = '1' | append:' min read' %}
+  {% assign reading_time = 1 | append: ' min read' %}
 {% else %}
-  {% assign reading_time = reading_time | append:' min read' %}
+  {% assign reading_time = reading_time | append: ' min read' %}
 {% endif %}
 ```
 
@@ -91,6 +91,7 @@ What some of the following Liquid tags do for us:
 - `number_of_words`: Count all the words in a content.
 - `append: ' min read'`: Helps to append `min read` to our output.
 - `divided_by: 180`: Divide the total content words by 180.
+- `round`: Rounds a number to the nearest integer.
 
 Now simply if you markup {% raw %}`{{ reading_time }}`{% endraw %} in your post layout, then it will output as `1 min read` or `2 min read` accordingly to your contents.
 
@@ -106,18 +107,9 @@ If you want more like to work our code in our post layout as well as paginator p
   an average person can read 180 words per minute in a computer monitor.
 {%- endcomment -%}
 
-{%- assign words_per_minute = site.words_per_minute | default:'180' -%}
+{%- assign words_per_minute = site.words_per_minute | default: 180 -%}
 
-{%- if post.content -%}
-  {%- comment -%}### FOR POST IN PAGINATOR.POSTS ###{%- endcomment -%}
-  {%- assign post_content = post.content -%}
-{%- elsif page.content -%}
-  {%- comment -%}### FOR PAGE WITHIN LAYOUT FILE ###{%- endcomment -%}
-  {%- assign post_content = page.content -%}
-{%- elsif content -%}
-  {%- comment -%}### FALLBACK FOR WITHIN POST LAYOUT ###{%- endcomment -%}
-  {%- assign post_content = content -%}
-{%- endif -%}
+{%- assign post_content = include.content -%}
 
 {%- if post_content -%}
   {%- assign words = post_content | strip_html | number_of_words -%}
@@ -126,19 +118,18 @@ If you want more like to work our code in our post layout as well as paginator p
 {%- if words %}
   {%- comment -%}### TOTAL_WORDS ###{%- endcomment -%}
   {%- if words <= 1 -%}
-    {%- assign total_words = '1' | append:' word' -%}
+    {%- assign total_words = 1 | append: ' word' -%}
   {%- else -%}
-    {%- assign total_words = words | append:' words' -%}
+    {%- assign total_words = words | append: ' words' -%}
   {%- endif -%}
 
   {%- comment -%}### READING_TIME ###{%- endcomment -%}
-  {%- assign wpm = words_per_minute -%}
-  {%- assign wpm_i = wpm | divided_by:2 | plus:1 -%}
-  {%- assign read_time = words | plus: wpm_i | divided_by: wpm -%}
+  {%- assign wpm = words_per_minute | times: 1.0 -%}
+  {%- assign read_time = words | divided_by: wpm | round -%}
   {%- if read_time <= 1 -%}
-    {%- assign reading_time = '1' | append:' min read' -%}
+    {%- assign reading_time = 1 | append: ' min read' -%}
   {%- else -%}
-    {%- assign reading_time = read_time | append:' min read' -%}
+    {%- assign reading_time = read_time | append: ' min read' -%}
   {%- endif -%}
 {%- endif -%}
 ```
@@ -150,7 +141,7 @@ And then include (or in other words import) our metadata in your post layout as[
 {% raw %}
 
 ```Liquid
-{% include reading_time.html %}
+{%- include reading_time.html content=page.content -%}
 ```
 
 {% endraw %}
