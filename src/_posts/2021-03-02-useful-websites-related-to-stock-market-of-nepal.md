@@ -47,6 +47,13 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [NepseData](https://nepsedata.com/chart/){:rel="nofollow"}
 - [NepseChart](https://chart.nepsechart.com/){:rel="nofollow"}
 
+### NEPSE online technical analysis chart [for paid]
+
+- [Merolagani Data Analytics](https://merolagani.com/ServiceDetails.aspx?ServiceId=1){:rel="nofollow"}
+- [ShareSansar SS Pro](https://pro.sharesansar.com/){:rel="nofollow"}
+- [Smart Wealth Pro](https://www.smartwealthpro.com/){:rel="nofollow"}
+- [systemxlite](https://www.systemxlite.com/){:rel="nofollow"}
+
 ### Popular online business news portals of Nepal
 
 - [Ajako Artha](https://www.ajakoartha.com/){:rel="nofollow"}
@@ -80,6 +87,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [Lagani Khabar](https://laganikhabar.com/){:rel="nofollow"}
 - [Mero Lagani](https://www.merolagani.com/){:rel="nofollow"}
 - [Nepali Paisa](http://nepalipaisa.com/){:rel="nofollow"}
+- [Nepse Alpha](https://www.nepsealpha.com/){:rel="nofollow"}
 - [NepseKhabar](https://nepsekhabar.com/){:rel="nofollow"}
 - [New Business Age (ENG)](https://www.newbusinessage.com/){:rel="nofollow"}
 - [Note Bazar](https://notebazar.com/){:rel="nofollow"}
@@ -92,6 +100,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 
 - [Baahrakhari](https://baahrakhari.com/){:rel="nofollow"}
 - [Bigul News](https://bigulnews.com/){:rel="nofollow"}
+- [Central Khabar](https://centralkhabar.com/){:rel="nofollow"}
 - [Dainiki](https://www.dainiki.com/){:rel="nofollow"}
 - [Desh Ko News](https://www.deshkonews.com/){:rel="nofollow"}
 - [Desh Sanchar](https://deshsanchar.com/){:rel="nofollow"}
