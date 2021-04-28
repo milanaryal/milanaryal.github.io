@@ -219,7 +219,7 @@
     padding: 0 1em;
     margin-top: 10px;
     font-family: var(--font-family-sans-serif);
-    font-size: 15.8px;
+    font-size: 16px;
     // font-style: normal;
     // font-weight: 400;
     line-height: 1.4;
@@ -229,7 +229,7 @@
     outline: 0;
 
     @media (max-width: 767px) {
-      font-size: 14.8px;
+      font-size: 15px;
     }
   }
   // stylelint-enable no-duplicate-selectors
@@ -292,10 +292,10 @@
   } // hr {...}
 
   .footnotes {
-    font-size: 15.8px;
+    font-size: 16px;
 
     @media (max-width: 767px) {
-      font-size: 14.8px;
+      font-size: 15px;
     }
 
     h4 {

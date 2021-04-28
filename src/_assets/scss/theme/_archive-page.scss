@@ -78,7 +78,7 @@ h3.archive-year + .archive-item {
 }
 
 .archive-date {
-  font-size: 15.8px; // 0.975em
+  font-size: 16px; // 0.975em
   color: var(--text-muted);
   text-align: right;
   cursor: default;
@@ -90,7 +90,7 @@ h3.archive-year + .archive-item {
   @media (max-width: 767px) {
     padding-top: 5px;
     padding-bottom: 7px;
-    font-size: 14.8px; // 0.753em
+    font-size: 15px; // 0.753em
     text-align: left;
   }
 }
