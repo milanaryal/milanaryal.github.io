@@ -62,7 +62,7 @@ $brand-primary:             darken($brand-color, 6.5%) !default;
 $text-color:                rgba(0, 0, 0, 0.8) !default;
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:    "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, serif !default;
 $font-family-serif-display: "DM Serif Display", Georgia, serif !default;
 $font-family-base:          $font-family-sans-serif !default;

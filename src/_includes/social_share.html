@@ -31,7 +31,7 @@
   {%- assign email_share_link = email_share_link | escape_once -%}
 {%- endif -%}
 
-<ul class="social-share clearfix">
+<ul class="social-share clearfix user-select-none">
   <li class="social-share-lead">Share this:</li><li>
     <a class="btn btn--social-share btn--social-share-popup" href="{{ twitter_share_link }}" target="_blank" rel="noopener nofollow" role="button" data-proofer-ignore="true">
       {% include icons/twitter.svg width="1em" height="1em" class="icon icon-twitter" %}<span class="label">Twitter</span>

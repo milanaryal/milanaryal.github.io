@@ -187,7 +187,7 @@ layout: default
         <hr class="post-footer-section-divider">
 
         <div class="post-author-card">
-          <div class="post-author-card-avatar">
+          <div class="post-author-card-avatar user-select-none">
             <a class="post-author-card-avatar-link" href="{{ '/' | relative_url }}">
               <img class="post-author-card-avatar-img" src="{{ site_author_avatar }}" alt="{{ site_author }}" />
             </a>
@@ -255,7 +255,7 @@ layout: default
 
         <div id="random-posts"></div>
 
-        <div class="random-posts-footer">
+        <div class="random-posts-footer user-select-none">
           <a class="btn btn-outline-default btn--random" href="{{ 'random/' | relative_url }}" role="button">
             {% include icons/random.svg width="1em" height="1em" class="icon icon-random" %}<!--
             -->&nbsp;<span class="label">Random</span>
