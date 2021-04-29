@@ -24,9 +24,15 @@ $animate-duration: 1s !default;
   }
 }
 
+/*
 .animate--heartbeat {
   animation-name: heartbeat;
   animation-duration: $animate-duration * 1.3;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+}
+*/
+
+.animate--heartbeat {
+  animation: heartbeat $animate-duration * 1.3 ease-in-out infinite;
 }
