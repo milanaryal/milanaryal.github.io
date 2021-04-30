@@ -4,6 +4,7 @@
 
 // Hero page container
 
+// stylelint-disable declaration-colon-newline-after, indentation, value-list-comma-newline-after, value-list-comma-space-after
 .hero-container {
   position: relative;
   z-index: 1;
@@ -52,6 +53,7 @@
     opacity: 1;
   }
 }
+// stylelint-enable declaration-colon-newline-after, indentation, value-list-comma-newline-after, value-list-comma-space-after
 
 // Hero page profile
 

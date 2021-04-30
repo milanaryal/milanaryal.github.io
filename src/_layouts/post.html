@@ -123,7 +123,7 @@ layout: default
             <div class="post-footer-meta-acknowledgments" about="{{ page_url }}">
               <a href="/fine-print/#license" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license by the author.">Some rights reserved</a><!--
 
-              -->{% include icons/creative-commons-by.svg width="21" height="21" class="icon icon-creative-commons-by" title="You can distribute, remix, and build upon this work as long as you credit the author." %}
+              -->{% include icons/creative-commons-by.svg width="21" height="21" class="icon icon-creative-commons-by p-1px" title="You can distribute, remix, and build upon this work as long as you credit the author." %}
             </div><!-- /.post-footer-meta-acknowledgments -->
 
             {% comment %}
@@ -203,9 +203,7 @@ layout: default
 
       <!-- Disqus -->
       {% if site.disqus_shortname and page.comments != "false" %}
-        {% if jekyll.environment == "production" %}
-          {% include disqus_thread.html %}
-        {% endif %}
+        {% include disqus_thread.html %}
       {% endif %}
     </div><!-- /.col-* -->
   </div><!-- /.row -->
@@ -257,14 +255,14 @@ layout: default
 
         <div class="random-posts-footer user-select-none">
           <a class="btn btn-outline-default btn--random" href="{{ 'random/' | relative_url }}" role="button">
-            {% include icons/random.svg width="1em" height="1em" class="icon icon-random" %}<!--
+            {% include icons/random.svg width="1em" height="1em" class="icon icon-random p-1px" %}<!--
             -->&nbsp;<span class="label">Random</span>
           </a><!--
 
           -->&nbsp;<!--
 
           --><a class="btn btn-outline-default btn--archive" href="{{ 'archive/' | relative_url }}" role="button">
-            {% include icons/archive.svg width="1em" height="1em" class="icon icon-archive" %}<!--
+            {% include icons/archive.svg width="1em" height="1em" class="icon icon-archive p-1px" %}<!--
             -->&nbsp;<span class="label">Archive</span>
           </a>
         </div>

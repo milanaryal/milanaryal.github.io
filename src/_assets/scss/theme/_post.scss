@@ -279,6 +279,7 @@
   padding-top: 30px;
   margin-bottom: 80px;
   overflow-x: hidden;
+  color: var(--body-color);
   border-top: 1px solid var(--section-divider); // rgba(0, 0, 0, .1);
 
   @media (max-width: 767px) {
@@ -286,11 +287,11 @@
   }
 
   a {
-    color: var(--section-divider);
+    color: var(--link-color);
 
     &:hover,
     &:focus {
-      color: var(--text-muted);
+      color: var(--link-hover-color);
     }
   }
 }
@@ -298,7 +299,8 @@
 .btn--disqus {
   display: block;
   width: 100%;
-  padding: 13px;
+  padding-top: 12px;
+  padding-bottom: 13px;
   font-size: 16px;
   border-radius: 4px !important;
 
@@ -307,7 +309,7 @@
   }
 
   .icon {
-    margin-right: 0.6em;
+    margin-right: 5px; // 0.6em
   }
 }
 

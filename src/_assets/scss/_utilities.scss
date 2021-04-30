@@ -1,6 +1,11 @@
-// ----------------------------------------------------------------------
-// https://developer.mozilla.org/en-US/docs/Web/CSS/user-select
+// stylelint-disable declaration-no-important
 
 .user-select-none {
   user-select: none !important;
 }
+
+.p-1px {
+  padding: 1px !important;
+}
+
+// stylelint-enable declaration-no-important

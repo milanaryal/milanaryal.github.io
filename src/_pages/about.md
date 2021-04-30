@@ -117,7 +117,7 @@ In case you were wondering, this site is:
 
 ...for more information see [humans.txt](/humans.txt). You can find more about my development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config).
 
-If you enjoy the content found here, you might like to subscribe to my <span style="display: inline-block;">{% include icons/rss.svg width="1em" height="1em" class="icon icon-rss" %}&nbsp;[feed](/feed.xml){: title="Atom Feed"}.</span> Also feel free to send me any feedback, comments, or suggestions about the site.
+If you enjoy the content found here, you might like to subscribe to my <span style="display: inline-block;">{% include icons/rss.svg width="1em" height="1em" class="icon icon-rss p-1px" %}&nbsp;[feed](/feed.xml){: title="Atom Feed"}.</span> Also feel free to send me any feedback, comments, or suggestions about the site.
 
 ---
 

@@ -59,6 +59,7 @@
   // _hero-page.scss
   //
 
+  // stylelint-disable declaration-colon-newline-after, indentation, value-list-comma-newline-after, value-list-comma-space-after
   .hero-container {
     background-color: #111;
     background-image: linear-gradient(
@@ -77,6 +78,7 @@
       ); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
     }
   }
+  // stylelint-enable declaration-colon-newline-after, indentation, value-list-comma-newline-after, value-list-comma-space-after
 
   .hero-profile {
     background-color: rgba(255, 255, 255, 0.009);
