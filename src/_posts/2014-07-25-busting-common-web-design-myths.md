@@ -9,5 +9,5 @@ We take all those common web design myths that you have heard & bust them! Find 
   <a href="/uploads/20140725-busting-common-web-design-myths.jpg">
     <img alt="Busting common web design myths" src="/uploads/20140725-busting-common-web-design-myths.jpg" />
   </a>
-  <figcaption>Image: <a rel="nofollow" href="http://www.basekit.com/"></a></figcaption>
+  <figcaption>Image: BaseKit</figcaption>
 </figure>

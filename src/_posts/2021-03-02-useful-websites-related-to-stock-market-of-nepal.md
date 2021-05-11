@@ -105,6 +105,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - [Desh Ko News](https://www.deshkonews.com/){:rel="nofollow"}
 - [Desh Sanchar](https://deshsanchar.com/){:rel="nofollow"}
 - [eKantipur](https://ekantipur.com/){:rel="nofollow"}
+- [Farakdhar](https://farakdhar.com/){:rel="nofollow"}
 - [Gaun Sahar](https://www.gaunsahar.com/){:rel="nofollow"}
 - [Image Khabar](https://www.imagekhabar.com/){:rel="nofollow"}
 - [Janaboli](https://www.janaboli.com/){:rel="nofollow"}
