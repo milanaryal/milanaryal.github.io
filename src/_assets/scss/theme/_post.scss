@@ -181,7 +181,7 @@
   padding: 5px 10px;
   font-size: 14px;
   border: 0;
-  border-radius: 4px;
+  border-radius: 0.25rem; // 4px
   @include btn-social-share();
 
   .icon {
@@ -272,6 +272,7 @@
 
 .comments {
   padding-top: 30px;
+  padding-bottom: 0.25rem;
   margin-bottom: 80px;
   overflow-x: hidden;
   color: var(--body-color);
@@ -297,7 +298,7 @@
   padding-top: 12px;
   padding-bottom: 13px;
   font-size: 16px;
-  border-radius: 4px !important;
+  border-radius: 0.25rem !important; // 4px
 
   @media (max-width: 767px) {
     font-size: 15px;

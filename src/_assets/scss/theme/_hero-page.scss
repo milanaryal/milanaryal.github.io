@@ -81,7 +81,7 @@
   cursor: default;
   background-color: rgba(0, 0, 0, 0.009);
   border: 1px solid #111;
-  border-radius: 4px;
+  border-radius: 0.25rem; // 4px
   opacity: 0.99;
   transition: opacity 1s ease, transform 1s ease;
   transform: perspective(1000px) rotateX(0deg);
