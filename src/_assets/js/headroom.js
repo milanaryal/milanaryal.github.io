@@ -1,9 +1,11 @@
 import Headroom from 'headroom.js'
 
-const selector = document.querySelector('.headroom')
+document.addEventListener('DOMContentLoaded', (event) => {
+  const selector = document.querySelector('.headroom')
 
-if (selector !== null) {
-  const headroom = new Headroom(selector)
+  if (selector !== null) {
+    const headroom = new Headroom(selector)
 
-  headroom.init()
-}
+    headroom.init()
+  }
+})

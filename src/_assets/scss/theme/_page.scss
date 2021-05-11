@@ -37,17 +37,6 @@
   }
 }
 
-.half-rule {
-  max-width: 100px;
-  margin: 15px auto;
-  border: 0;
-  border-top: 3px solid #fff; // 4px
-
-  @media (prefers-color-scheme: dark) {
-    border-top: 3px solid rgba(#fff, 0.8);
-  }
-}
-
 .page-title {
   padding-bottom: 5px;
   // margin-top: 0;
@@ -68,7 +57,7 @@
 .page-tagline {
   display: block;
   padding-top: 3px;
-  // margin: 10px 0 0;
+  margin: 10px 0 0;
   // font-family: var(--font-family-sans-serif);
   @include font-size(1.333rem);
   font-weight: 300;

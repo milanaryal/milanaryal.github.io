@@ -100,8 +100,6 @@ I'd like to think that I'm very happy person, but I find the art that strikes me
 {: align="center"}
 *Life is good*😊
 
----
-
 ### About the site
 
 In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the stock market, web development, and positive living.

@@ -1,10 +1,13 @@
 {
   "root": true,
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "script"
-  },
-  "extends": ["plugin:unicorn/recommended", "xo", "xo/browser"],
+  "extends": [
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:unicorn/recommended",
+    "xo",
+    "xo/browser",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "capitalized-comments": "off",
     "indent": [
@@ -15,16 +18,31 @@
         "SwitchCase": 1
       }
     ],
+    "max-params": ["warn", 5],
     "multiline-ternary": ["error", "always-multiline"],
-    "no-new": "off",
+    "new-cap": [
+      "error",
+      {
+        "properties": false
+      }
+    ],
+    "no-console": "error",
     "object-curly-spacing": ["error", "always"],
     "semi": ["error", "never"],
-    "strict": "error",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/explicit-length-check": "off",
+    "unicorn/no-array-callback-reference": "off",
+    "unicorn/no-array-for-each": "off",
     "unicorn/no-for-loop": "off",
     "unicorn/no-null": "off",
+    "unicorn/no-unused-properties": "error",
+    "unicorn/no-useless-undefined": "off",
     "unicorn/prefer-dom-node-append": "off",
     "unicorn/prefer-dom-node-dataset": "off",
+    "unicorn/prefer-dom-node-remove": "off",
+    "unicorn/prefer-module": "off",
     "unicorn/prefer-query-selector": "off",
+    "unicorn/prefer-spread": "off",
     "unicorn/prevent-abbreviations": "off"
   }
 }

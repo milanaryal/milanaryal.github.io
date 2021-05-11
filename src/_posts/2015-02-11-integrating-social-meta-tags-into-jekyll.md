@@ -142,7 +142,6 @@ excerpt: "for meta description" # Optional for overring content excerpt
 categories: your post categories # ["category1"] - best is to have one category in a post
 tags: your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
 ---
-
 ```
 
 ---

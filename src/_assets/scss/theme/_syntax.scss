@@ -54,13 +54,13 @@ samp {
 
 // Inline code snippets
 code {
-  padding: 0;
+  padding: 0; // don't add padding, gives scrollbars
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   margin: 0;
-  font-size: 85%;
+  // font-size: 85%;
   background-color: var(--pre-bg); // rgba(0, 0, 0, .04);
-  border-radius: 3px; // don't add padding, gives scrollbars
+  border-radius: 0.25rem; // 3px;
 
   &::before,
   &::after {
@@ -81,12 +81,12 @@ pre {
   // padding: 20px;
   // margin: 0;
   overflow: auto;
-  font-size: 85%;
+  // font-size: 85%;
   line-height: 1.45;
   word-break: normal;
   word-wrap: normal;
   background-color: var(--pre-bg); // #f7f7f7
-  border-radius: 3px;
+  border-radius: 0.25rem; // 3px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -97,7 +97,7 @@ pre code {
   padding: 0;
   margin: 0;
   overflow: initial;
-  font-size: 85%; // 100%
+  // font-size: 100%;
   line-height: inherit;
   word-break: normal;
   word-wrap: normal;
@@ -121,18 +121,18 @@ kbd {
   background-color: #fcfcfc;
   border: solid 1px #ccc;
   border-bottom-color: #bbb;
-  border-radius: 3px;
+  border-radius: 0.25rem; // 3px;
   box-shadow: inset 0 -1px 0 #bbb;
 }
 
 .highlight pre {
   // width: 100%;
-  padding: 0.75rem 15px;
-  margin-right: -15px;
-  margin-left: -15px;
+  padding: 0.75rem; // 0.75rem 15px;
+  margin-right: -0.75rem; // -15px;
+  margin-left: -0.75rem; // -15px;
 
   @media (min-width: 480px) {
-    padding-left: calc(15px - 0.25rem);
+    padding-left: 0.75rem - 0.25rem; // calc(15px - 0.25rem);
     margin-right: 0;
     margin-left: 0;
     border-left: 0.25rem solid var(--code-snippet-border);

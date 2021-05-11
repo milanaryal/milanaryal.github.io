@@ -202,20 +202,15 @@
   }
 }
 
-// Post footer section divider
-
-.post-footer-section-divider {
-  margin: 25px 0;
-  border: 0;
-  border-top: 1px solid var(--section-divider-secondary); // rgba(0, 0, 0, .05);
-}
-
 // Post author card
 
 .post-author-card {
   display: flex;
   align-items: center;
+  padding-top: 25px;
+  margin-top: 25px;
   margin-bottom: 50px;
+  border-top: 1px solid var(--section-divider-secondary); // rgba(0, 0, 0, .05);
 }
 
 .post-author-card-avatar {
@@ -340,7 +335,7 @@
     font-family: var(--font-family-serif-display);
     font-size: 17px;
     @media (min-width: 768px) {
-      font-size: 18px;
+      font-size: 19px;
     }
     font-style: normal;
     font-weight: 400;

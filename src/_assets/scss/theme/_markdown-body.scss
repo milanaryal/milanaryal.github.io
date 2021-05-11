@@ -237,10 +237,10 @@
   blockquote {
     // padding: 0 1em;
     // padding: 1em 1.2em;
-    padding: 0.75rem 15px;
+    padding: 0.75rem; // 0.75rem 15px;
     margin-right: -15px;
     margin-left: -15px;
-    font-size: 85%; // .9em
+    font-size: 0.875em; // 85%; // .9em
     font-style: italic;
     color: var(--body-color);
     background: var(--blockquote-bg);
@@ -248,7 +248,7 @@
     border: 0;
 
     @media (min-width: 480px) {
-      padding-left: calc(15px - 0.25rem);
+      padding-left: 0.75rem - 0.25rem; // calc(15px - 0.25rem);
       margin-right: 0;
       margin-left: 0;
       border-left: 0.25rem solid var(--code-snippet-border);
@@ -264,32 +264,20 @@
   }
 
   hr {
-    display: block;
-    margin-top: 2.75rem; // 42px;
-    margin-bottom: 2.75em; // 52px;
-    text-align: center;
-    border: 0;
+    max-width: 100px;
+    height: 0.25rem; // 2px
+    margin-top: 2.75rem; // rem // 42px;
+    margin-right: auto;
+    margin-bottom: 2.75em; // em // 52px;
+    margin-left: auto;
+    border-radius: 0.25rem; // 2px
+    color: var(--rule);
 
     // @media (max-width: 767px) {
     //  margin-top: 34px;
     //  margin-bottom: 44px;
     // }
-
-    &::before {
-      position: relative;
-      top: -0.9em;
-      display: inline-block;
-      // margin-left: .8em;
-      font-family: var(--font-family-serif);
-      font-size: 26px; // 21px; 28px;
-      font-style: italic;
-      font-weight: 400;
-      color: var(--text-muted);
-      text-indent: 0.8em;
-      letter-spacing: 0.8em;
-      content: "\002e\002e\002e"; // ...
-    }
-  } // hr {...}
+  }
 
   .footnotes {
     font-size: 16px;

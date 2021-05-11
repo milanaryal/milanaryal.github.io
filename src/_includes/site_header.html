@@ -6,15 +6,15 @@
 {%- endif -%}
 
 <!-- Site header & navigation -->
-<header class="navbar navbar-expand-md navbar-light{% unless page.permalink == '/' %} fixed-top headroom{% endunless %} user-select-none" role="banner">
+<header class="navbar navbar-expand-md navbar-light{% unless page.permalink == '/' %} fixed-top headroom{% endunless %} d-print-none user-select-none" role="banner">
   <div class="container">
     <a class="navbar-brand" href="/">{{ site_title }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-navigation" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-navigation" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <!-- <span class="navbar-toggler-icon"></span> -->
       {% include icons/bars.svg width="30" height="30" class="icon icon-bars" %}
     </button>
     <nav class="collapse navbar-collapse" id="site-navigation" aria-label="Site navigation" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav me-auto">
         {% for nav_item in site.data.nav %}
         <li class="nav-item" itemprop="name">
           <a class="nav-link{% if page.title == nav_item.title or page.permalink == nav_item.url %} active{% endif %}" itemprop="url" href="{{ nav_item.url }}">{{ nav_item.title | smartify | strip_html | normalize_whitespace | escape_once }}</a>
@@ -24,11 +24,9 @@
       <form class="form-inline mt-2 mt-md-0 mb-1 mb-md-0" id="cse_{{ site.google_cse_id }}" action="{{ 'search/' | relative_url }}" role="search">
         <div class="input-group">
           <input class="form-control" type="text" id="q" name="q" placeholder="Search" aria-label="Search" autocapitalize="off" autocomplete="off" spellcheck="false">
-          <span class="input-group-append">
-            <button class="btn btn-outline-secondary" type="submit">
-              {% include icons/search.svg width="1em" height="1em" class="icon icon-search" %}
-            </button>
-          </span>
+          <button class="btn btn-outline-secondary" type="submit">
+            {% include icons/search.svg width="1em" height="1em" class="icon icon-search" %}
+          </button>
         </div>
       </form>
     </nav>

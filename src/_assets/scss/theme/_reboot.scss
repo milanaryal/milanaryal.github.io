@@ -5,22 +5,6 @@
 // Normalization of HTML elements
 
 // ----------------------------------------------------------------------
-// Root
-//
-// Ability to the value of the root font sizes, affecting the value of `rem`.
-// null by default, thus nothing is generated.
-
-:root {
-  font-size: $font-size-root;
-
-  @if $enable-smooth-scroll {
-    @media (prefers-reduced-motion: no-preference) {
-      scroll-behavior: smooth;
-    }
-  }
-}
-
-// ----------------------------------------------------------------------
 // https://developer.mozilla.org/en-US/docs/Web/CSS/::selection
 
 ::selection {

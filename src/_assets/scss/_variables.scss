@@ -3,6 +3,8 @@
 // Custom variables for the theme.
 
 $brand-color:               #111 !default;
+$brand-primary:             darken($brand-color, 6.5%) !default;
+$text-color:                rgba(0, 0, 0, 0.8) !default;
 
 // Light theme
 
@@ -20,6 +22,7 @@ $theme-colors-default: map-merge(
     "anchor-hover-color":        #111,
     "text-muted":                #888,
     "text-muted-secondary":      #aaa,
+    "rule":                      rgba(0, 0, 0, 0.5),
     "section-divider":           rgba(0, 0, 0, 0.1),
     "section-divider-secondary": rgba(0, 0, 0, 0.05),
     "blockquote-border":         #e5e5e5,
@@ -44,6 +47,7 @@ $theme-colors-dark: map-merge(
     "link-hover-color":          #baa6bd,
     "anchor-color":              #bbb,
     "anchor-hover-color":        #ddd,
+    "rule":                      rgba(255, 255, 255, 0.5),
     "section-divider":           rgba(255, 255, 255, 0.1),
     "section-divider-secondary": rgba(255, 255, 255, 0.05),
     "blockquote-border":         rgba(255, 255, 255, 0.1),
@@ -58,20 +62,12 @@ $theme-colors-dark: map-merge(
 //
 // Override custom settings.
 
-$brand-primary:             darken($brand-color, 6.5%) !default;
-$text-color:                rgba(0, 0, 0, 0.8) !default;
-
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, serif !default;
-$font-family-serif-display: "DM Serif Display", Georgia, serif !default;
+$font-family-serif-display: "DM Serif Display", Georgia, Cambria, "Times New Roman", Times, serif !default;
 $font-family-base:          $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
-
-// $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
-// $font-size-base effects the font size of the body text
-$font-size-root:              null !default;
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 
 $link-color:                inherit !default;
 $link-hover-color:          inherit !default;
@@ -80,12 +76,7 @@ $link-hover-decoration:     none !default;
 $blockquote-border-color:   $text-color !default;
 $hr-border:                 rgba(0, 0, 0, 0.05) !default;
 
-// Bootstrap Options
-//
-// Quickly modify global styling by enabling or disabling optional features.
-
-$enable-responsive-font-sizes: true !default;
-$enable-smooth-scroll:         true !default;
+$code-color:                inherit !default;
 
 // Brand colors (http://brandcolors.net), (https://brand-colors.re.im)
 //

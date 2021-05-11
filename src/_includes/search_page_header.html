@@ -7,12 +7,12 @@
 <nav class="navbar navbar-expand-md navbar-light{% unless page.permalink == '/' %} fixed-top headroom{% endunless %} user-select-none">
   <div class="container">
     <a class="navbar-brand" href="/">{{ site_title }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <!-- <span class="navbar-toggler-icon"></span> -->
       {% include icons/bars.svg width="30" height="30" class="icon icon-bars" %}
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav me-auto">
         {% for nav_item in site.data.nav %}
         <li class="nav-item">
           <a class="nav-link" href="{{ nav_item.url }}">{{ nav_item.title | smartify | strip_html | normalize_whitespace | escape_once }}</a>

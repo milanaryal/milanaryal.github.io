@@ -40,9 +40,9 @@ layout: default
 
             <!-- Post meta -->
             <div class="post-meta">
-              <a class="u-url u-uid" rel="bookmark" href="{{ page_url }}"><time datetime="{{ date_published }}"{% if page.last_modified_at %} data-toggle="tooltip" data-placement="top" title="Updated {{ date_modified | date: '%b %-d, %Y' }}"{% endif %}>{{ date_published | date: '%b %-d, %Y' }}</time></a><!--
+              <a class="u-url u-uid" rel="bookmark" href="{{ page_url }}"><time datetime="{{ date_published }}"{% if page.last_modified_at %} data-bs-toggle="tooltip" data-bs-placement="top" title="Updated {{ date_modified | date: '%b %-d, %Y' }}"{% endif %}>{{ date_published | date: '%b %-d, %Y' }}</time></a><!--
               --> &middot; <!--
-              --><span data-toggle="tooltip" data-placement="top" title="{{ total_words }}">{{ reading_time }}</span>
+              --><span data-bs-toggle="tooltip" data-bs-placement="top" title="{{ total_words }}">{{ reading_time }}</span>
             </div><!-- /.post-meta -->
 
             <!-- Post title -->
@@ -121,9 +121,9 @@ layout: default
             {% endif %}<!-- /.post-modified -->
 
             <div class="post-footer-meta-acknowledgments" about="{{ page_url }}">
-              <a href="/fine-print/#license" data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license by the author.">Some rights reserved</a><!--
+              <a href="/fine-print/#license" data-bs-toggle="tooltip" data-bs-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license by the author.">Some rights reserved</a><!--
 
-              -->{% include icons/creative-commons-by.svg width="21" height="21" class="icon icon-creative-commons-by p-1px" title="You can distribute, remix, and build upon this work as long as you credit the author." %}
+              -->{% include icons/creative-commons-by.svg width="21" height="21" class="icon icon-creative-commons-by" title="You can distribute, remix, and build upon this work as long as you credit the author." %}
             </div><!-- /.post-footer-meta-acknowledgments -->
 
             {% comment %}
@@ -184,7 +184,6 @@ layout: default
         {%- if site_author_avatar -%}
           {%- assign site_author_avatar = site_author_avatar | escape -%}
         {%- endif -%}
-        <hr class="post-footer-section-divider">
 
         <div class="post-author-card">
           <div class="post-author-card-avatar user-select-none">
@@ -210,13 +209,13 @@ layout: default
 </div><!-- /.container -->
 
 <!-- Pager -->
-<nav class="post-pager">
+<nav class="post-pager d-print-none">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-lg-8 mx-auto">
 
         {% if page.previous.url %}
-        <div class="post-pager-previous float-left text-left">
+        <div class="post-pager-previous float-start text-start">
           <div class="post-pager-title">
             {% include icons/angle-left.svg width="1em" height="1em" class="icon icon-angle-left" %}<!--
             -->&nbsp;Previous<span class="d-none d-md-inline"> post</span>
@@ -228,7 +227,7 @@ layout: default
         {% endif %}
 
         {% if page.next.url %}
-        <div class="post-pager-next float-right text-right">
+        <div class="post-pager-next float-end text-end">
           <div class="post-pager-title">Next<span class="d-none d-md-inline"> post</span><!--
           -->&nbsp;{% include icons/angle-right.svg width="1em" height="1em" class="icon icon-angle-right" %}
           </div>
@@ -244,7 +243,7 @@ layout: default
 </nav><!-- /.post-pager -->
 
 <!-- Random posts -->
-<div class="random-posts" hidden="true">
+<div class="random-posts d-print-none" hidden="true">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-lg-8 mx-auto">
@@ -273,7 +272,7 @@ layout: default
 </div><!-- /.random-posts -->
 
 <!-- Elevator - scroll back to top button -->
-<div id="elevator" class="elevator" hidden="true" aria-hidden="true">
+<div id="elevator" class="elevator d-print-none user-select-none" hidden="true" aria-hidden="true">
   <span class="elevator-button" role="button">
     {% include icons/arrow-up.svg width="1em" height="1em" class="icon icon-arrow-up" %}
   </span>
