@@ -6,9 +6,6 @@
   position: absolute;
   padding-right: 0.575em; // margin-left value divide by 2
   margin-left: -1.15em;
-  color: inherit;
-  visibility: hidden;
-  opacity: 0;
 
   @media (max-width: 479px) {
     display: none;
@@ -16,29 +13,32 @@
 
   .icon-link {
     font-size: 66%;
+    color: inherit;
     vertical-align: 0.125em;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
 // stylelint-disable selector-no-qualifying-type
 .markdown-body,
 .archive-content {
-  *:hover {
-    > .anchor {
+  *:hover > .anchor {
+    .icon-link {
       visibility: visible;
       opacity: 0.75;
       transition: all 0.16s linear;
+    }
 
-      &:hover,
-      &:focus {
-        opacity: 1;
-      }
+    &:hover .icon-link,
+    &:focus .icon-link {
+      opacity: 1;
     }
   }
 
-  > h2[id],
-  > h3[id],
-  > h4[id] {
+  h2:target,
+  h3:target,
+  h4:target {
     // Offsetting an html anchor to adjust for fixed header
     scroll-margin-top: 2.75em;
   }

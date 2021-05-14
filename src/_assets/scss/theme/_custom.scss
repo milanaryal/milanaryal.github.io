@@ -32,6 +32,7 @@ figure.map-wrapper {
 // About and contact page social links
 
 ul.social-links {
+  // stylelint-disable-next-line declaration-no-important
   margin: 2.75em 0 3.75em !important;
   font-family: var(--font-family-sans-serif);
   font-size: 66%;

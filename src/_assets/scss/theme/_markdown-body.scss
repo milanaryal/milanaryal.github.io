@@ -308,25 +308,17 @@
   // Footnotes anchor link
   .footnote,
   .reversefootnote {
-    display: inline-block;
     font-weight: 700;
   }
 
-  .footnote {
-    // Hash tag links that don't headbutt the browser window
-    // https://css-tricks.com/hash-tag-links-padding/
-    &::before {
-      display: block;
-      height: 79px;
-      margin-top: -79px;
-      pointer-events: none;
-      visibility: hidden;
-      content: "";
+  // stylelint-disable selector-no-qualifying-type
+  sup:target[role="doc-noteref"],
+  li:target[role="doc-endnote"] {
+    scroll-margin-top: 65px;
+
+    @media (max-width: 767px) {
+      scroll-margin-top: 55px;
     }
   }
-
-  .footnotes h4,
-  .footnotes li {
-    scroll-margin-top: 79px;
-  }
+  // stylelint-enable selector-no-qualifying-type
 } // ./markdown {...}
