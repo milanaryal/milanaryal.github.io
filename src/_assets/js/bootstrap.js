@@ -29,7 +29,7 @@ $(function () {
   $('.markdown-body img').addClass('img-fluid')
 
   // responsive table
-  $('.markdown-body>table').addClass('table table-hover table-responsive')
+  $('.markdown-body>table').addClass('table table-striped table-responsive')
 
   // responsive embed video
   $('iframe[src*="youtube.com"]').wrap('<div class="ratio ratio-16x9" />')

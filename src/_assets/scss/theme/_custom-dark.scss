@@ -157,12 +157,10 @@
 
   .markdown-body {
     .table {
+      --bs-table-striped-bg: #333;
+      --bs-table-striped-color: #fff;
       color: #ddd;
-
-      tr:hover {
-        color: #fff;
-        background-color: #333;
-      }
+      border-color: #333;
     }
   }
 
