@@ -12,9 +12,27 @@ const purgecssConfig = {
     'node_modules/headroom.js/dist/headroom.js',
   ],
   safelist: {
-    standard: ['markdown-body', 'highlight'],
-    deep: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
-    greedy: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
+    standard: [
+      'markdown-body',
+      'highlight',
+      'table',
+      'table-striped',
+      'table-responsive',
+    ],
+    deep: [
+      /markdown-body/,
+      /highlight/,
+      /tooltip/,
+      /bs-tooltip/,
+      /table-striped/,
+    ],
+    greedy: [
+      /markdown-body/,
+      /highlight/,
+      /tooltip/,
+      /bs-tooltip/,
+      /table-striped/,
+    ],
   },
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 }
