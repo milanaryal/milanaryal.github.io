@@ -7,9 +7,9 @@ sitemap: false
 robots: "noindex, follow"
 ---
 
-_Howdy! This is an example post that shows several types of HTML content supported in this theme._
+> Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 
-Cum sociis natoque penatibus et magnis <a rel="nofollow" href="#" data-proofer-ignore>dis parturient montes</a>, nascetur ridiculus mus. _Aenean eu leo quam._ Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+Cum sociis natoque penatibus et magnis [dis parturient montes](#main){: data-proofer-ignore="true"}, nascetur ridiculus mus. _Aenean eu leo quam._ Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
 > Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
@@ -102,49 +102,23 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![placeholder](//placehold.it/800x400 "Large example image")
+![placeholder](//via.placeholder.com/800x400 "Large example image")
 
-![placeholder](//placehold.it/400x200 "Medium example image")
+![placeholder](//via.placeholder.com/400x200 "Medium example image")
 
-![placeholder](//placehold.it/200x200 "Small example image")
+![placeholder](//via.placeholder.com/200x200 "Small example image")
 
 ### Tables
 
 Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
+| Name    | Upvotes | Downvotes |
+| ------- | ------- | --------- |
+| Alice   | 10      | 11        |
+| Bob     | 4       | 3         |
+| Charlie | 7       | 9         |
+| ===     | ===     | ===       |
+| Totals  | 21      | 23        |
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 

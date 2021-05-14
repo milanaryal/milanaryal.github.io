@@ -9,16 +9,16 @@ robots: "noindex, follow"
 
 > A living document of code detailing all the various colors, typographic elements, UI patterns, and components used on the website to maintain visual consistency.
 
-Articles in [Milan Aryal](//milanaryal.com.np/) are written in Markdown which are generated in standard HTML using [Jekyll](//jekyllrb.com/).
+Posts in [Milan Aryal](//milanaryal.com.np/)'s blog are written in Markdown which are generated in standard HTML using [Jekyll](//jekyllrb.com/).
 
-This style guide is written in Markdown, the raw file is available [here](//raw.githubusercontent.com/MilanAryal/milanaryal.github.io/master/_pages/style-guide.md).
+This style guide is written in Markdown, the raw file is available [here](//raw.githubusercontent.com/MilanAryal/milanaryal.github.io/main/src/_pages/style-guide.md).
 
 ---
 
 <!-- prettier-ignore-start -->
 
 ### Table of contents
-{:.no_toc}
+{: .no_toc}
 
 * Table of contents placeholder
 {:toc}
@@ -34,16 +34,16 @@ Following are the header tags for the body content. H1 and H2 are reserved on th
 <!-- prettier-ignore-start -->
 
 ### This is an h3 heading
-{:.no_toc}
+{: .no_toc}
 
 #### This is an h4 heading
-{:.no_toc}
+{: .no_toc}
 
 ### [H3 heading with an anchor link](/style-guide/)
-{:.no_toc}
+{: .no_toc}
 
 #### [H4 heading with an anchor link](/style-guide/)
-{:.no_toc}
+{: .no_toc}
 
 <!-- prettier-ignore-end -->
 
@@ -135,13 +135,14 @@ For example, `<section>` should be wrapped as inline.
 
 #### Default image shape
 
-![Milan Aryal](//placehold.it/800x400)
+![placeholder](//via.placeholder.com/800x400)
 
 #### Image with caption
 
 <figure>
-  <img src="//placehold.it/800x400" alt="Milan Aryal">
-    <figcaption>Image caption</figcaption>
+  <img src="//via.placeholder.com/800x400" alt="placeholder" />
+  
+  <figcaption>Image caption</figcaption>
 </figure>
 
 ---
@@ -150,11 +151,11 @@ For example, `<section>` should be wrapped as inline.
 
 #### Default button
 
-<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-outline-default">Default</button>
 
 #### Default button with link
 
-[Link]({{ page.url }}#buttons){:role="button" class="btn btn-default"}
+[Link]({{ page.url }}#buttons){: role="button" class="btn" data-proofer-ignore="true"}
 
 ---
 
@@ -162,18 +163,19 @@ For example, `<section>` should be wrapped as inline.
 
 Any YouTube or Vimeo videos, and SlideShare slides are responsive in the website.
 
-#### Example YouTube video embed
+#### Example of YouTube video embed
 
 <figure>
   <!-- Copy & Pasted from YouTube -->
-  <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M?rel=0&amp;hd=1&amp;theme=light" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M?rel=0&amp;hd=1&amp;theme=light" frameborder="0" allowfullscreen="true"></iframe>
+  
   <figcaption>Whatever YouTube iframe embed code you paste within the you'll see it presented in a fluid 16:9 box.</figcaption>
 </figure>
 
-#### Example SlideShare slide embed
+#### Example of SlideShare slide embed
 
 <figure>
-  <iframe src="//www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+  <iframe src="//www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen="true"></iframe>
 
-  <figcaption>Slides: SlideShare, <a href="//docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19">Preconnect, prefetch, prerender...</a> from <a href="//twitter.com/igrigorik">Ilya Grigorik</a>.</figcaption>
+  <figcaption>Slides: SlideShare, <a href="//docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19" rel="nofollow">Preconnect, prefetch, prerender...</a> from <a href="//twitter.com/igrigorik" rel="nofollow">Ilya Grigorik</a>.</figcaption>
 </figure>

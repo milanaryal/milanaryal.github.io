@@ -281,37 +281,26 @@
   }
 
   .footnotes {
-    font-size: 16px;
-
-    @media (max-width: 767px) {
-      font-size: 15px;
-    }
+    font-size: 0.875em;
 
     h4 {
-      margin: 0;
-      font-size: 16px;
+      font-size: 0.875em;
     }
 
+    h4,
     ol {
-      margin: 0;
-    }
-
-    li {
-      margin-top: 10px;
-    }
-
-    p {
       margin: 0;
     }
   } // .footnotes {...}
 
-  // Footnotes anchor link
-  .footnote,
-  .reversefootnote {
+  // stylelint-disable selector-no-qualifying-type
+  a[href^="#fn:"],
+  a[href^="#fnref:"] {
+    display: inline-block;
+    margin-left: 0.1rem;
     font-weight: 700;
   }
 
-  // stylelint-disable selector-no-qualifying-type
   sup:target[role="doc-noteref"],
   li:target[role="doc-endnote"] {
     scroll-margin-top: 65px;
