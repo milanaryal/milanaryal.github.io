@@ -6,33 +6,14 @@ const discardComments = require('postcss-discard-comments')
 const purgecssConfig = {
   content: [
     './src/**/*.+(html|js|md)',
-    'node_modules/bootstrap/js/dist/util.js',
     'node_modules/bootstrap/js/dist/collapse.js',
     'node_modules/bootstrap/js/dist/tooltip.js',
     'node_modules/headroom.js/dist/headroom.js',
   ],
   safelist: {
-    standard: [
-      'markdown-body',
-      'highlight',
-      'table',
-      'table-striped',
-      'table-responsive',
-    ],
-    deep: [
-      /markdown-body/,
-      /highlight/,
-      /tooltip/,
-      /bs-tooltip/,
-      /table-striped/,
-    ],
-    greedy: [
-      /markdown-body/,
-      /highlight/,
-      /tooltip/,
-      /bs-tooltip/,
-      /table-striped/,
-    ],
+    standard: ['markdown-body', 'highlight'],
+    deep: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
+    greedy: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
   },
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 }

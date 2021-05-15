@@ -10,7 +10,7 @@
     "build": "npm-run-all clean css js",
     "clean": "rimraf \"src/assets/{css/,js/}\" \"src/_includes/css/style.css\"",
     "css": "npm-run-all css-*",
-    "css-compile": "sass --load-path node_modules --style compressed --no-charset --no-source-map --no-error-css \"src/_assets/scss/style.scss\" \"src/assets/css/style.css\"",
+    "css-compile": "sass --load-path node_modules --no-charset --no-source-map --no-error-css \"src/_assets/scss/style.scss\" \"src/assets/css/style.css\"",
     "css-postcss": "NODE_ENV=production postcss --replace \"src/assets/css/style.css\"",
     "css-include": "rimraf \"src/_includes/css/style.css\" && cpy \"src/assets/css/style.css\" \"src/_includes/css/\"",
     "cssdev": "npm-run-all cssdev-*",
