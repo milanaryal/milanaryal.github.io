@@ -28,6 +28,7 @@ $theme-colors-default: map-merge(
     "blockquote-border":         #e5e5e5,
     "blockquote-bg":             #fff,
     "pre-bg":                    #fff,
+    "code-color":                rgba(212, 73, 80, 1),
     "code-snippet-border":       rgba(0, 0, 0, 0.05)
   ),
   $theme-colors-default
@@ -53,6 +54,7 @@ $theme-colors-dark: map-merge(
     "blockquote-border":         rgba(255, 255, 255, 0.1),
     "blockquote-bg":             rgba(0, 0, 0, 0.1),
     "pre-bg":                    rgba(0, 0, 0, 0.1),
+    "code-color":                #e5c07b,
     "code-snippet-border":       rgba(255, 255, 255, 0.1)
   ),
   $theme-colors-dark
@@ -76,7 +78,7 @@ $link-hover-decoration:     none !default;
 $blockquote-border-color:   $text-color !default;
 $hr-border:                 rgba(0, 0, 0, 0.05) !default;
 
-$code-color:                inherit !default;
+$code-color:                var(--code-color) !default;
 
 // Brand colors (http://brandcolors.net), (https://brand-colors.re.im)
 //
