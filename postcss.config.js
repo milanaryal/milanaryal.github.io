@@ -10,10 +10,24 @@ const purgecssConfig = {
     'node_modules/bootstrap/js/dist/tooltip.js',
     'node_modules/headroom.js/dist/headroom.js',
   ],
+  // https://purgecss.com/safelisting.html#patterns
+  // https://regexr.com/
   safelist: {
-    standard: ['markdown-body', 'highlight'],
-    deep: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
-    greedy: [/markdown-body/, /highlight/, /tooltip/, /bs-tooltip/],
+    standard: [
+      /^markdown-body$/,
+      /^highlight$/,
+      /^table$/,
+      /^table-responsive$/,
+    ],
+    deep: [
+      /^markdown-body$/,
+      /^highlight$/,
+      /^table$/,
+      /^table-striped$/,
+      /tooltip/,
+      /bs-tooltip/,
+    ],
+    greedy: [/^markdown-body$/, /^highlight$/, /tooltip/, /bs-tooltip/],
   },
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 }
