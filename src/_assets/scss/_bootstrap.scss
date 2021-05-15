@@ -16,7 +16,13 @@
 
 // Layout & components
 // @import "bootstrap/scss/root";
+
+/*! purgecss start ignore */
+
 @import "bootstrap/scss/reboot"; // Required
+
+/*! purgecss end ignore */
+
 // @import "bootstrap/scss/type";
 @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";

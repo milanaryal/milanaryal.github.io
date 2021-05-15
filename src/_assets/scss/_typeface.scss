@@ -1,4 +1,6 @@
-// stylelint-disable font-family-name-quotes, declaration-colon-newline-after, value-list-comma-space-after, value-list-comma-newline-after
+/*! purgecss start ignore */
+
+// stylelint-disable font-family-name-quotes
 
 // Browser support
 // WOFF2: Chrome 26+, Opera 23+, Firefox 39+
@@ -151,4 +153,6 @@
     url("/assets/fonts/lora-v17-latin-700italic.woff") format("woff");
 }
 
-// stylelint-enable font-family-name-quotes, declaration-colon-newline-after, value-list-comma-space-after, value-list-comma-newline-after
+// stylelint-enable font-family-name-quotes
+
+/*! purgecss end ignore */
