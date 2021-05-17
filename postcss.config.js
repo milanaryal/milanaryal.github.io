@@ -5,11 +5,12 @@ const discardComments = require('postcss-discard-comments')
 
 const purgecssConfig = {
   content: [
-    './src/**/*.+(html|js|md)',
-    'node_modules/bootstrap/js/dist/collapse.js',
-    'node_modules/bootstrap/js/dist/tooltip.js',
-    'node_modules/headroom.js/dist/headroom.js',
+    './src/**/*.{html,js,md}',
+    './node_modules/bootstrap/js/dist/collapse.js',
+    './node_modules/bootstrap/js/dist/tooltip.js',
+    './node_modules/headroom.js/dist/headroom.js',
   ],
+  defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
   // https://purgecss.com/safelisting.html#patterns
   // https://regexr.com/
   safelist: {
@@ -29,7 +30,6 @@ const purgecssConfig = {
     ],
     greedy: [/^markdown-body$/, /^highlight$/, /tooltip/, /bs-tooltip/],
   },
-  defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 }
 
 module.exports = {

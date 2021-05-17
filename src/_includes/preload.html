@@ -1,6 +1,8 @@
 <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch -->
 
-<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+{% if jekyll.environment == "production" %}
+  <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+{% endif %}
 
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content -->
 
@@ -9,10 +11,6 @@
 <link rel="preload" href="/assets/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" crossorigin="anonymous" />
 <link rel="preload" href="/assets/fonts/open-sans-v18-latin-300.woff2" as="font" crossorigin="anonymous" />
 <link rel="preload" href="/assets/fonts/open-sans-v18-latin-regular.woff2" as="font" crossorigin="anonymous" />
-
-{% unless page.url == "/" %}
-  <link rel="preload" href="/assets/fonts/open-sans-v18-latin-700.woff2" as="font" crossorigin="anonymous" />
-{% endunless %}
 
 {% if page.date or page.layout == "page" %}
   <link rel="preload" href="/assets/fonts/lora-v17-latin-regular.woff2" as="font" crossorigin="anonymous" />

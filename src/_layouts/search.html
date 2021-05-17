@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="{{ page.lang | replace:'-','_' | default: site.lang | default:'en' | downcase }}">
 
-{%- capture font_family_base -%}"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"{%- endcapture -%}
-
 {%- capture style -%}
 <style>
+  :root {
+    --font-family-sans-serif: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
   body {
     min-height: 100vh !important;
   }
   .search-page-heading {
     margin-top: 100px;
     margin-bottom: 0;
-    font-family: {{ font_family_base }};
+    font-family: var(--font-family-sans-serif) !important;
     font-weight: normal;
     font-size: 18px;
   }
@@ -23,7 +24,7 @@
   }
   .search-page-content {
     margin: 30px 0 77px;
-    font-family: {{ font_family_base }};
+    font-family: var(--font-family-sans-serif) !important;
   }
   .search-page-form {
     margin-bottom: 30px;
@@ -65,7 +66,7 @@
   .gs-result .gs-visibleUrl,
   .gs-snippet,
   .gsc-results .gsc-cursor-box {
-    font-family: {{ font_family_base }} !important;
+    font-family: var(--font-family-sans-serif) !important;
   }
   .cse .gsc-control-cse,
   .gsc-control-cse,

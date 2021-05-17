@@ -1,5 +1,6 @@
 ---
 layout: null
+posts_limit: 500
 permalink: "/random/"
 sitemap: false
 robots: "noindex, follow"
@@ -36,7 +37,8 @@ robots: "noindex, follow"
   {%- endif -%}
   <script>
     var posts=[];
-      {%- for post in site.posts -%}
+      {%- assign posts_limit = page.posts_limit | default: 10 -%}
+      {%- for post in site.posts limit: posts_limit -%}
         posts.push("{{- post.url | replace:'/index.html','/' | relative_url -}}")
         {%- unless forloop.last -%},{%- endunless -%}
       {%- endfor -%};

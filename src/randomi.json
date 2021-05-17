@@ -1,9 +1,11 @@
 ---
 layout: null
+posts_limit: 50
 ---
 
 [
-  {%- for post in site.posts limit:69 -%}{
+  {%- assign posts_limit = page.posts_limit | default: 10 -%}
+  {%- for post in site.posts limit: posts_limit -%}{
     "t": "{{- post.title | smartify | strip_html | normalize_whitespace | escape_once -}}",
     "u": "{{- post.url | replace:'/index.html','/' | relative_url -}}",
     "d": "{{- post.date | date: '%b %-d, %Y' -}}",
