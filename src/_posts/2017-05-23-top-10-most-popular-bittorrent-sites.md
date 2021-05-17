@@ -15,18 +15,18 @@ BitTorrent websites come and go but below I've compiled a list of the ten most-v
 
 [The Alexa global ranking](https://www.alexa.com/siteinfo){:rel="nofollow"} is accurate as of _{{ page.last_modified_at | date: '%B %-d, %Y' }}_.
 
-| S.N. | Site                                                                  | Mirror                                                                    | Specialization | RSS | Alexa Rank |
-| ---- | --------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------- | --- | ---------- |
-| 1.   | [The Pirate Bay](https://thepiratebay.org/){:rel="nofollow"}          | [proxybay.how](https://proxybay.how/){:rel="nofollow"}                    | -              | Yes | 341        |
-| 2.   | [YTS.MX](https://yts.mx/){:rel="nofollow"}                            | [unblockit.club](https://yts.unblockit.club/){:rel="nofollow"}            | Movies         | Yes | 404        |
-| 3.   | [1337x](https://1337x.to/){:rel="nofollow"}                           | [unblockit.club](https://1337x.unblockit.club/){:rel="nofollow"}          | -              | No  | 414        |
-| 4.   | [NYAA](https://nyaa.si/){:rel="nofollow"}                             | [unblockit.club](http://nyaa.unblockit.club/){:rel="nofollow"}            | Anime          | Yes | 749        |
-| 5.   | [RARBG](https://rarbg.to/){:rel="nofollow"}                           | [unblockit.club](https://rarbg.unblockit.club/){:rel="nofollow"}          | -              | Yes | 839        |
-| 6.   | [FitGirl Repacks](https://fitgirl-repacks.site/){:rel="nofollow"}     | [unblockit.club](https://fitgirlrepacks.unblockit.club/){:rel="nofollow"} | Games          | No  | 2,278      |
-| 7.   | [LimeTorrents](https://www.limetorrents.info/){:rel="nofollow"}       | [unblockit.club](https://limetorrents.unblockit.club/){:rel="nofollow"}   | -              | Yes | 2,772      |
-| 8.   | [EZTV](https://eztv.re/){:rel="nofollow"}                             | [unblockit.club](https://eztv.unblockit.club/){:rel="nofollow"}           | TV series      | Yes | 3,072      |
-| 9.   | [Torrent Galaxy](https://torrentgalaxy.to/){:rel="nofollow"}          | [proxygalaxy.pw](https://proxygalaxy.pw/){:rel="nofollow"}                | -              | Yes | 4,609      |
-| 10.  | [Zooqle](https://zooqle.com/){:rel="nofollow" data-proofer-ignore=""} | [unblockit.club](https://zooqle.unblockit.club/){:rel="nofollow"}         | Search         | Yes | 6,449      |
+| S.N. | Site                                                                  | Mirror                                                                  | Specialization | RSS | Alexa Rank |
+| ---- | --------------------------------------------------------------------- | ----------------------------------------------------------------------- | -------------- | --- | ---------- |
+| 1.   | [The Pirate Bay](https://thepiratebay.org/){:rel="nofollow"}          | [proxybay.how](https://proxy-bay.co/){:rel="nofollow"}                  | -              | Yes | 341        |
+| 2.   | [YTS.MX](https://yts.mx/){:rel="nofollow"}                            | [unblockit.onl](https://yts.unblockit.onl/){:rel="nofollow"}            | Movies         | Yes | 404        |
+| 3.   | [1337x](https://1337x.to/){:rel="nofollow"}                           | [unblockit.onl](https://1337x.unblockit.onl/){:rel="nofollow"}          | -              | No  | 414        |
+| 4.   | [NYAA](https://nyaa.si/){:rel="nofollow"}                             | [unblockit.onl](http://nyaa.unblockit.onl/){:rel="nofollow"}            | Anime          | Yes | 749        |
+| 5.   | [RARBG](https://rarbg.to/){:rel="nofollow"}                           | [unblockit.onl](https://rarbg.unblockit.onl/){:rel="nofollow"}          | -              | Yes | 839        |
+| 6.   | [FitGirl Repacks](https://fitgirl-repacks.site/){:rel="nofollow"}     | [unblockit.onl](https://fitgirlrepacks.unblockit.onl/){:rel="nofollow"} | Games          | No  | 2,278      |
+| 7.   | [LimeTorrents](https://www.limetorrents.info/){:rel="nofollow"}       | [unblockit.onl](https://limetorrents.unblockit.onl/){:rel="nofollow"}   | -              | Yes | 2,772      |
+| 8.   | [EZTV](https://eztv.re/){:rel="nofollow"}                             | [unblockit.onl](https://eztv.unblockit.onl/){:rel="nofollow"}           | TV series      | Yes | 3,072      |
+| 9.   | [Torrent Galaxy](https://torrentgalaxy.to/){:rel="nofollow"}          | [proxygalaxy.pw](https://proxygalaxy.pw/){:rel="nofollow"}              | -              | Yes | 4,609      |
+| 10.  | [Zooqle](https://zooqle.com/){:rel="nofollow" data-proofer-ignore=""} | [unblockit.onl](https://zooqle.unblockit.onl/){:rel="nofollow"}         | Search         | Yes | 6,449      |
 
 **Note**: All BitTorrent sites in above table are _working_, as of the last update to this page.
 

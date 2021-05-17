@@ -9,13 +9,13 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### [The Pirate Bay](https://thepiratebay.org/){:rel="nofollow"} proxy sites and mirrors
 
-- [proxybay.how](https://proxybay.how/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
+- [proxy-bay.co]https://proxy-bay.co/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
 - [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="nofollow"}
 - [piratebayztemzmv.onion](http://piratebayztemzmv.onion/) - [_TOR URL_](/why-you-should-know-about-tor/)
 
 #### Top proxy sites and mirrors
 
-- [unblockit.club](https://unblockit.club/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
+- [unblockit.onl](https://unblockit.onl/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
 - [unblocked.to](https://unblocked.to/){:rel="nofollow"}
 - [unblockproject.cyou](https://unblockproject.cyou/){:rel="nofollow"}
 - [unblockninja.com](https://unblockninja.com/){:rel="nofollow"}
