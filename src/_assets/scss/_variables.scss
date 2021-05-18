@@ -65,11 +65,10 @@ $theme-colors-dark: map-merge(
 // Override custom settings.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, serif !default;
 $font-family-serif-display: "DM Serif Display", Georgia, Cambria, "Times New Roman", Times, serif !default;
-$font-family-base:          $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
+$font-family-base:           var(--font-family-sans-serif) !default;
 
 $link-color:                inherit !default;
 $link-hover-color:          inherit !default;

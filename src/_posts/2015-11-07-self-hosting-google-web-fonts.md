@@ -1,7 +1,7 @@
 ---
 title: "Self-hosting Google web fonts"
 date: 2015-11-07T12:36:32+05:45
-last_modified_at: 2020-05-18T18:00:00+05:45
+last_modified_at: 2021-05-18T18:00:00+05:45
 excerpt: "Self-hosting Google Fonts on your own server and taking control over the font files."
 ---
 
@@ -43,7 +43,23 @@ To generate the web fonts you have to download the `.ttf` (Google Fonts does pro
 
 ### Download Google web fonts using `npm`
 
-#### [Typefaces](https://github.com/KyleAMathews/typefaces){:rel="nofollow"}
+#### [Fontsource](https://fontsource.org/){:rel="nofollow"}
+
+> Self-host Open Source fonts in neatly bundled NPM packages.
+
+Each typeface package ships with all the necessary font files and css to self-host an open source typeface. All Google Fonts have been added as well.
+
+For example, to add typeface Open Sans, you could do something like:
+
+```bash
+npm install @fontsource/open-sans
+```
+
+```bash
+yarn add @fontsource/open-sans
+```
+
+#### <del>[Typefaces](https://github.com/KyleAMathews/typefaces){:rel="nofollow"}</del>
 
 > NPM packages for Open Source typefaces --- making it easier to self-host webfonts.
 

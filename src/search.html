@@ -13,7 +13,7 @@ robots: "noindex, follow"
   {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
-<h3 class="search-page-heading user-select-none">{% include icons/search.svg width="1em" height="1em" class="icon icon-search" %}&nbsp;Search <span style="display: inline-block; padding: 0 1.7px; font-family: 'DM Serif Display', 'Lora', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; letter-spacing: -0.04em;">{{ site_title }}</span> Weblog</h3>
+<h3 class="search-page-heading user-select-none">{% include icons/search.svg width="1em" height="1em" class="icon icon-search" %}&nbsp;Search <span style="display: inline-block; padding: 0 1.7px; font-family: 'DM Serif Display', 'Lora', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: 400; letter-spacing: -0.04em;">{{ site_title }}</span> Weblog</h3>
 
 <div class="search-page-content" id="cse-search">
   <!-- Google CSE search box begins  -->

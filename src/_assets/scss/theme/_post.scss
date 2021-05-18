@@ -334,13 +334,13 @@
 
   a {
     display: block;
-    font-family: var(--font-family-serif-display);
-    font-size: 17px;
+    // font-family: var(--font-family-sans-serif);
+    font-size: 16px;
     @media (min-width: 768px) {
-      font-size: 19px;
+      font-size: 18px;
     }
-    font-style: normal;
-    font-weight: 400;
+    // font-style: normal;
+    // font-weight: 400;
     line-height: 1.2;
     color: var(--heading-color);
     text-decoration: none;

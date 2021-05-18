@@ -17,12 +17,9 @@
   font-weight: 400;
   letter-spacing: -0.04em;
 
-  span {
-    // ** Font feature settings ** //
-    font-variant-ligatures: common-ligatures;
-    font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
-    mask-image: url("/assets/img/dust-and-scratches.png");
-  }
+  // ** Font feature settings ** //
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
 }
 
 .navbar-light .navbar-brand {
