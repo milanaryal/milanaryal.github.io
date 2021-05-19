@@ -67,7 +67,7 @@ With <a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video"
 
 <figure>
   <!-- Copy & Pasted from YouTube -->
-  <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M?rel=0&amp;hd=1&amp;theme=light" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M?rel=0&amp;hd=1&amp;theme=light" frameborder="0" allowfullscreen="true"></iframe>
   <figcaption>Whatever YouTube iframe embed code you paste within the <code>.video-wrapper</code>, you'll see it presented in a fluid 16:9 box.</figcaption>
 </figure>
 
@@ -116,7 +116,7 @@ A more current solution is to use just a script -- such as <a href="http://toddm
   <!-- html above -->
   <script src="dist/fluidvids.js"></script>
   <script>
-    // fluidvids module available
+    /* fluidvids module available */
   </script>
 </body>
 ```
@@ -124,11 +124,13 @@ A more current solution is to use just a script -- such as <a href="http://toddm
 Pass in your configuration:
 
 ```html
-// fluidvids module available
+<!-- fluidvids module available -->
 <script>
   fluidvids.init({
-    selector: ["iframe", "object"], // runs querySelectorAll()
-    players: ["www.youtube.com", "player.vimeo.com"], // players to support
+    /* runs querySelectorAll() */
+    selector: ["iframe", "object"],
+    /* players to support */
+    players: ["www.youtube.com", "player.vimeo.com"],
   });
 </script>
 ```
@@ -136,7 +138,8 @@ Pass in your configuration:
 To add other services like SlideShare to FluidVids:
 
 ```js
-players: ["www.youtube.com", "player.vimeo.com", "www.slideshare.net"]; // players to support
+/* players to support */
+players: ["www.youtube.com", "player.vimeo.com", "www.slideshare.net"];
 ```
 
 That's all you need to do to make videos resize on all devices that support JavaScript. It works not only for YouTube, but for Vimeo and even SlideShare too. The problem, however, is that if you users don't have JavaScript support or the JavaScript hasn't loaded yet or JavaScript hasn't loaded correctly, the only fallback you can use is to add the following to your style sheet:
