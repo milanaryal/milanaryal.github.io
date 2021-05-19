@@ -198,18 +198,21 @@ layout: default
             <p class="post-author-card-content-bio">{{ site_author_bio }}</p>
           </div><!-- /.post-author-card-content -->
         </div><!-- /.post-author-card -->
+        {% unless site.disqus_shortname and page.comments != 'false' %}
+          <hr class="section-divider" />
+        {% endunless %}
       {% endunless %}
 
       <!-- Disqus -->
       {% if site.disqus_shortname and page.comments != "false" %}
-        {% include disqus_thread.html %}
+        {% include disqus_thread.html class="comments mb-5 pb-4 d-print-none clearfix" %}
       {% endif %}
     </div><!-- /.col-* -->
   </div><!-- /.row -->
 </div><!-- /.container -->
 
 <!-- Pager -->
-<nav class="post-pager d-print-none">
+<nav class="post-pager{% unless site.disqus_shortname and page.comments != 'false' %} mt-5{% endunless %} d-print-none">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-lg-8 mx-auto">

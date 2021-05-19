@@ -207,6 +207,7 @@
 .post-author-card {
   display: flex;
   align-items: center;
+  min-height: 80px;
   padding-top: 25px;
   margin-top: 25px;
   margin-bottom: 50px;
@@ -268,52 +269,13 @@
   }
 }
 
-// Disqus commenting system
-
-.comments {
-  padding-top: 30px;
-  padding-bottom: 0.25rem;
-  margin-bottom: 80px;
-  overflow-x: hidden;
-  color: var(--body-color);
-  border-top: 1px solid var(--section-divider); // rgba(0, 0, 0, .1);
-
-  @media (max-width: 767px) {
-    margin-bottom: 60px;
-  }
-
-  a {
-    color: var(--link-color);
-
-    &:hover,
-    &:focus {
-      color: var(--link-hover-color);
-    }
-  }
-}
-
-.btn--disqus {
-  display: block;
-  width: 100%;
-  padding-top: 12px;
-  padding-bottom: 13px;
-  font-size: 16px;
-  // stylelint-disable-next-line declaration-no-important
-  border-radius: 0.25rem !important; // 4px
-
-  @media (max-width: 767px) {
-    font-size: 15px;
-  }
-
-  .icon {
-    margin-right: 5px; // 0.6em
-  }
+.section-divider {
+  color: var(--section-divider);
 }
 
 // Post pager
 
 .post-pager {
-  margin-top: 1px;
   margin-bottom: 60px;
 
   .post-pager-previous,

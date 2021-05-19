@@ -4,7 +4,7 @@
 <!-- <link rel="preload" href="https://{{ site.disqus_shortname }}.disqus.com/count.js" as="script" /> -->
 <!-- <link rel="preload" href="https://{{ site.disqus_shortname }}.disqus.com/embed.js" as="script" /> -->
 
-<div class="comments d-print-none clearfix">
+<div class="{{ include.class }}">
   <button id="js-button-comment" class="btn btn-outline-default btn--disqus" onclick="initDisqus_onClick()">
     {% include icons/comment.svg width="1em" height="1em" class="icon icon-comment p-1px" %}<!--
     --><span class="disqus-comment-count" data-disqus-url="{{ page.url | replace:'/index.html','/' | absolute_url }}">Leave a comment</span>
@@ -15,7 +15,7 @@
   <noscript><p>Please enable JavaScript to view the comments.</p></noscript>
 </div><!-- /.comments -->
 
-<script id="dsq-count-scr" src="https://{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" data-proofer-ignore="true" async src="https://{{ site.disqus_shortname }}.disqus.com/count.js"></script>
 
 <script>
   var disqus_config = function () {
