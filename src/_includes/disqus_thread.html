@@ -1,8 +1,8 @@
 <!-- Disqus commenting system (https://disqus.com/admin/universalcode/) -->
 
-<!-- <link rel="dns-prefetch" href="//{{ site.disqus_shortname }}.disqus.com" /> -->
-<!-- <link rel="preload" href="//{{ site.disqus_shortname }}.disqus.com/count.js" as="script" /> -->
-<!-- <link rel="preload" href="//{{ site.disqus_shortname }}.disqus.com/embed.js" as="script" /> -->
+<!-- <link rel="dns-prefetch" href="https://{{ site.disqus_shortname }}.disqus.com/" /> -->
+<!-- <link rel="preload" href="https://{{ site.disqus_shortname }}.disqus.com/count.js" as="script" /> -->
+<!-- <link rel="preload" href="https://{{ site.disqus_shortname }}.disqus.com/embed.js" as="script" /> -->
 
 <div class="comments d-print-none clearfix">
   <button id="js-button-comment" class="btn btn-outline-default btn--disqus" onclick="initDisqus_onClick()">
@@ -15,7 +15,7 @@
   <noscript><p>Please enable JavaScript to view the comments.</p></noscript>
 </div><!-- /.comments -->
 
-<script id="dsq-count-scr" src="//{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="https://{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
 
 <script>
   var disqus_config = function () {
@@ -27,7 +27,7 @@
 
     var d = document, s = d.createElement('script');
 
-    s.src = '//{{ site.disqus_shortname }}.disqus.com/embed.js';
+    s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
 
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);

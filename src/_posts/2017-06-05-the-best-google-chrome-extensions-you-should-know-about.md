@@ -45,9 +45,14 @@ Whenever you find yourself with too many tabs, click the OneTab icon to convert 
 
 This extension will help you to save up to 95% of RAM.
 
+<!-- https://github.com/greatsuspender/thegreatsuspender/issues/1263 -->
+<!--
+
 #### [The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en){:rel="nofollow"}
 
 The Great Suspender is a lightweight Chrome extension which helps to pause unused tabs after a user-specified amount of time, saving precious RAM.
+
+-->
 
 #### [Tab Resize - split screen layouts](https://chrome.google.com/webstore/detail/tab-resize-split-screen-l/bkpenclhmiealbebdopglffmfdiilejc?hl=en){:rel="nofollow"}
 
