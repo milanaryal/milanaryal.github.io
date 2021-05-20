@@ -47,8 +47,8 @@ For example:
     <link rel="dns-prefetch" href="//www.domain2.com" />
   </head>
   <body>
-    <img src="www.domain1.com/image1.jpeg" />
-    <script src="www.domain2.com/script1.js"></script>
+    <img src="http://www.domain1.com/image1.jpeg" />
+    <script src="http://www.domain2.com/script1.js"></script>
   </body>
 </html>
 ```
@@ -109,12 +109,10 @@ document.getElementsByTagName("head")[0].appendChild(hint);
 
 _Internet Explorer 9 supports DNS pre-fetching, but calls it prefetch. In Internet Explorer 10+, dns-prefetch and prefetch are equivalent, resulting in a DNS pre-fetch in both cases._
 
----
-
 ### Preconnect, prefetch, prerender
 
 <figure>
-  <iframe src="//www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+  <iframe src="https://www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
 
   <figcaption>Slides: SlideShare, <a href="http://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19" rel="nofollow">Preconnect, prefetch, prerender...</a> from <a href="http://twitter.com/igrigorik" rel="nofollow">Ilya Grigorik</a>.</figcaption>
 </figure>
@@ -122,30 +120,24 @@ _Internet Explorer 9 supports DNS pre-fetching, but calls it prefetch. In Intern
 ### Pre-browsing
 
 <figure>
-  <iframe width="560" height="315" src="//www.youtube.com/embed/Msqs1jIzgo4?rel=0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Msqs1jIzgo4?rel=0" frameborder="0" allowfullscreen></iframe>
 
   <figcaption>Video: YouTube, Prebrowsing by Steve Souders at Velocity NY 2013</figcaption>
 </figure>
 
 <figure>
-  <iframe src="//www.slideshare.net/slideshow/embed_code/27665184" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+  <iframe src="https://www.slideshare.net/slideshow/embed_code/27665184" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
 
  <figcaption>Slides: SlideShare, <a href="http://www.slideshare.net/souders/prebrowsing-velocity-ny-2013" rel="nofollow">Prebrowsing - Velocity NY 2013</a> from <a href="http://twitter.com/souders" rel="nofollow">Steve Souders</a>.</figcaption>
 </figure>
 
-{% comment %}
-
-<!--- ### Steve Souders | Pre-browsing | Fronteers 2013</a>
+### Steve Souders | Pre-browsing | Fronteers 2013
 
 <figure>
-  <iframe src="//player.vimeo.com/video/77176315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/77176315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
   <figcaption><a href="http://vimeo.com/77176315" rel="nofollow">Steve Souders | Pre-browsing | Fronteers 2013</a>.</figcaption>
-</figure> --->
-
-{% endcomment %}
-
----
+</figure>
 
 ### Further resources
 
