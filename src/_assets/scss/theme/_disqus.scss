@@ -3,13 +3,13 @@
 .comments {
   padding-top: 30px;
   // padding-bottom: 0.25rem;
-  // margin-bottom: 80px;
+  margin-bottom: 60px;
   overflow-x: hidden;
   color: var(--body-color);
   border-top: 1px solid var(--section-divider); // rgba(0, 0, 0, .1);
 
-  @media (max-width: 767px) {
-    margin-bottom: 60px;
+  @media (min-width: 768px) {
+    margin-bottom: 80px;
   }
 
   a {
@@ -27,12 +27,12 @@
   width: 100%;
   padding-top: 12px;
   padding-bottom: 13px;
-  font-size: 16px;
+  font-size: 15px;
   // stylelint-disable-next-line declaration-no-important
   border-radius: 0.25rem !important; // 4px
 
-  @media (max-width: 767px) {
-    font-size: 15px;
+  @media (min-width: 768px) {
+    font-size: 16px;
   }
 
   .icon {

@@ -14,9 +14,9 @@
 }
 
 .btn-outline-default {
-  padding: 15px 25px;
+  padding: 11px 19px;
   font-family: var(--font-family-sans-serif);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.44);
   letter-spacing: 0; // -.02em
@@ -25,7 +25,7 @@
   // background-image: none;
   // border: 1px solid rgba(0, 0, 0, .15);
   border-color: rgba(0, 0, 0, 0.15);
-  border-radius: 999em;
+  border-radius: 99em;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &:hover {
@@ -47,9 +47,9 @@
     outline: 0;
   }
 
-  @media (max-width: 767px) {
-    padding: 11px 19px;
-    font-size: 15px;
+  @media (min-width: 768px) {
+    padding: 15px 25px;
+    font-size: 16px;
   }
 }
 

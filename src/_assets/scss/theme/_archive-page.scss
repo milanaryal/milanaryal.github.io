@@ -4,11 +4,11 @@
 
 .archive-content {
   margin-bottom: 60px;
-  font-size: 18px;
+  font-size: 16px;
   // color: rgba(0, 0, 0, .8);
 
-  @media (max-width: 767px) {
-    font-size: 16px;
+  @media (min-width: 768px) {
+    font-size: 18px;
   }
 
   // stylelint-disable declaration-no-important
@@ -24,40 +24,41 @@
 
 // stylelint-disable selector-no-qualifying-type
 h3.archive-year {
-  margin-top: 47px;
-  margin-left: -2.25px;
+  margin-top: 39px;
+  margin-left: -1.75px;
   font-family: var(--font-family-serif-display);
-  font-size: 34px; // 30px
+  font-size: 26px;
   // font-style: normal;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.12;
   color: var(--heading-color);
-  // letter-spacing: -.04em;
+  letter-spacing: -0.044em;
 
-  @media (max-width: 767px) {
-    margin-top: 39px;
-    margin-left: -1.75px;
-    font-size: 26px;
-    // line-height: 1.12;
-    // letter-spacing: -.044em;
+  @media (min-width: 768px) {
+    margin-top: 47px;
+    margin-left: -2.25px;
+    font-size: 34px; // 30px
+    line-height: 1.2;
+    letter-spacing: -0.04em;
   }
 }
 
 .archive-item {
-  margin-top: 15px;
+  margin-top: 13px;
 
-  @media (max-width: 767px) {
-    margin-top: 13px;
+  @media (min-width: 768px) {
+    margin-top: 15px;
   }
 }
 
 h3.archive-year + .archive-item {
-  margin-top: 17px;
+  margin-top: 15px;
 
-  @media (max-width: 767px) {
-    margin-top: 15px;
+  @media (min-width: 768px) {
+    margin-top: 17px;
   }
 }
+
 // stylelint-enable selector-no-qualifying-type
 
 .archive-title {
@@ -78,19 +79,20 @@ h3.archive-year + .archive-item {
 }
 
 .archive-date {
-  font-size: 16px; // 0.975em
+  padding-top: 5px;
+  padding-bottom: 7px;
+  font-size: 0.875em;
   color: var(--text-muted);
-  text-align: right;
+  text-align: left;
   cursor: default;
 
   > time {
     vertical-align: middle;
   }
 
-  @media (max-width: 767px) {
-    padding-top: 5px;
-    padding-bottom: 7px;
-    font-size: 15px; // 0.753em
-    text-align: left;
+  @media (min-width: 576px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: right;
   }
 }

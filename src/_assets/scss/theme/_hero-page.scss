@@ -14,11 +14,11 @@
   width: 100%;
   // ** if you have a 70px navbar => height: calc(100vh - 70px); ** //
   // min-height: 100vh;
-  min-height: calc(100vh - 64px); // navbar height 64px
-  @media (max-width: 767px) {
-    min-height: calc(100vh - 56px); // navbar height 56px
+  min-height: calc(100vh - 54px); // navbar height 54px
+  @media (min-width: 768px) {
+    min-height: calc(100vh - 64px); // navbar height 64px
   }
-  padding: 15px; // 1.25em ~20px
+  padding: 0.75rem; // 15px; // 1.25em ~20px
   background-color: #fafafa;
   background-image: linear-gradient(
       to top,
@@ -62,18 +62,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 30.333em; // ~500px
-  padding: 0 3em 2em; // ~0 48px 32px;
-
-  @media (max-width: 479px) {
-    padding: 0 2em 1.25em; // ~0 32px 20px
-  }
-
-  @media (min-width: 768px) {
-    max-width: 33.333em;
-  }
-
+  width: 500px; // 30.333rem
+  max-width: 100%;
+  // padding: 0 1.75rem 1.25rem; // ~0 32px 20px
+  padding: 0 2rem 3.125rem; // 3.125rem 2rem;
   margin-top: 60px; // fill avatar -60px
   text-align: center;
   cursor: default;
@@ -85,9 +77,25 @@
   transform: perspective(1000px) rotateX(0deg);
   transform-origin: 50% 50%;
 
+  @media (min-width: 768px) {
+    // padding: 0 3rem 2rem; // ~0 48px 32px;
+    padding: 0 2.5rem 3.125rem; // 3.125rem 2.5rem
+  }
+
   &.is-loading {
     opacity: 0;
     transform: perspective(1000px) rotateX(15deg);
+  }
+
+  hr {
+    width: 19%;
+    color: #111;
+    opacity: 0.7;
+    border-radius: 0.25rem;
+
+    @media (prefers-color-scheme: dark) {
+      color: #fff;
+    }
   }
 }
 
@@ -99,7 +107,7 @@
   position: relative;
   display: block;
   margin-top: -60px; // half avatar out of flex
-  margin-bottom: 1.25em; // ~20px
+  margin-bottom: 1.25rem; // ~20px
 
   a {
     // ** helps to hide boader on img opacity ** //
@@ -125,14 +133,14 @@
 }
 
 .hero-title {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   font-family: var(--font-family-serif-display);
-  @include font-size(3.333rem); // font-size: 3.25em;
+  @include font-size(3.333rem); // font-size: 3.25rem;
   font-weight: 400;
   line-height: 1.2;
   color: #111;
   text-shadow: 0 1px rgba(255, 255, 255, 0.2); // dark => text-shadow: 0 1px rgba(0, 0, 0, .2);
-  // letter-spacing: -.002em; // -.0075em;
+  // letter-spacing: -.002rem; // -.0075rem;
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
@@ -144,19 +152,19 @@
 }
 
 .hero-description {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   // font-family: var(--font-family-sans-serif);
   @include font-size(1rem); // 16px
   font-weight: 300;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.9);
   text-shadow: 0 1px rgba(255, 255, 255, 0.4); // dark => text-shadow: 0 1px rgba(0, 0, 0, .4);
-  // letter-spacing: -.002em; // .0333em;
+  // letter-spacing: -.002rem; // .0333rem;
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
 
-  @media (min-width: 480px) {
+  @media (min-width: 576px) {
     @include font-size(1.125rem); // 18px
   }
 
@@ -171,14 +179,14 @@
 ul.hero-social {
   padding-left: 0;
   margin: 0.175em 0;
-  // margin-top: .675em;
+  // margin-top: .675rem;
   letter-spacing: 0;
   list-style: none;
   cursor: default;
 
   > li {
     display: inline-block;
-    padding: 0.5em;
+    padding: 0.5rem;
     vertical-align: middle;
   }
 
@@ -186,15 +194,15 @@ ul.hero-social {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3.4em;
-    height: 3.4em;
-    @include font-size(1rem); // 16px
+    width: 3.33em; // 3.4em
+    height: 3.33em; // 3.4em
+    @include font-size(0.875rem); // 14px
     color: #222;
     border: solid 1px #222;
     border-radius: 100%;
 
-    @media (max-width: 479px) {
-      @include font-size(0.875rem); // 14px
+    @media (min-width: 576px) {
+      @include font-size(1rem); // 16px
     }
 
     &:hover {

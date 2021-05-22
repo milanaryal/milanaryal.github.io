@@ -4,7 +4,7 @@ date: 2021-03-21T11:30:00+05:45
 excerpt: "Using GitHub Actions, learn how to publish your Jekyll websites onto GitHub Pages with your custom dependencies and versions."
 ---
 
-The GitHub Pages (`github-pages` gem only supports specific versions of Jekyll and Jekyll plugins. Latest version of Jekyll `v4.x.x` build time for your site is incredibly faster than older versions. So, to overcome the [GitHub Pages dependencies and versions](https://pages.github.com/versions/){:rel="nofollow"} we are going to use GitHub Actions to deploy your site onto GitHub Pages with your specific version of Jekyll and Jekyll plugins.
+The GitHub Pages (`github-pages` gem) only supports specific versions of Jekyll and Jekyll plugins. Latest version of Jekyll `v4.x.x` build time for your site is incredibly faster than older versions. So, to overcome the [GitHub Pages dependencies and versions](https://pages.github.com/versions/){:rel="nofollow"} we are going to use GitHub Actions to deploy your site onto GitHub Pages with your specific version of Jekyll and Jekyll plugins.
 
 Also, using GitHub Actions we can use any Jekyll plugins irrespective of them being on the supported versions list, even `*.rb` files placed in the `_plugins` directory of your site.
 

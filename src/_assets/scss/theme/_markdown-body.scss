@@ -3,7 +3,7 @@
 
 .markdown-body {
   font-family: var(--font-family-serif);
-  font-size: 19px;
+  font-size: 17px;
   // font-style: normal;
   // font-weight: 400;
   line-height: 1.55; // 32px; 1.65; 1.58
@@ -13,8 +13,8 @@
 
   text-rendering: optimizeLegibility; // enable common ligatures and kerning
 
-  @media (max-width: 767px) {
-    font-size: 17px;
+  @media (min-width: 768px) {
+    font-size: 19px;
   }
 
   // stylelint-disable declaration-no-important
@@ -107,7 +107,7 @@
 
   h3 {
     margin-top: 2.75em;
-    margin-left: -2.25px;
+    margin-left: -1.75px;
     // font-family: var(--font-family-sans-serif);
     // font-size: 1.444em; // 1.563em
     @include font-size(1.777rem);
@@ -115,17 +115,17 @@
     // font-weight: 700;
     line-height: 1.12; // 1.2; 1.15
     // color: rgba(0, 0, 0, .8);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.022em;
 
-    @media (max-width: 767px) {
-      margin-left: -1.75px;
-      letter-spacing: -0.022em;
+    @media (min-width: 768px) {
+      margin-left: -2.25px;
+      letter-spacing: -0.02em;
     }
   }
 
   h4 {
     margin-top: 2.75rem;
-    margin-left: -1.75px;
+    margin-left: -1.5px;
     // font-family: var(--font-family-sans-serif);
     // font-size: 1.333em;
     @include font-size(1.555rem);
@@ -133,11 +133,11 @@
     // font-weight: 700;
     line-height: 1.18; // 1.2, 1.22
     // color: rgba(0, 0, 0, .8);
-    letter-spacing: -0.02em; // -.044em,
+    letter-spacing: -0.022em;
 
-    @media (max-width: 767px) {
-      margin-left: -1.5px;
-      letter-spacing: -0.022em;
+    @media (min-width: 768px) {
+      margin-left: -1.75px;
+      letter-spacing: -0.02em; // -.044em,
     }
   }
 
@@ -219,7 +219,7 @@
     padding: 0 1em;
     margin-top: 10px;
     font-family: var(--font-family-sans-serif);
-    font-size: 16px;
+    font-size: 15px;
     // font-style: normal;
     // font-weight: 400;
     line-height: 1.4;
@@ -228,8 +228,8 @@
     // letter-spacing: 0;
     outline: 0;
 
-    @media (max-width: 767px) {
-      font-size: 15px;
+    @media (min-width: 768px) {
+      font-size: 16px;
     }
   }
   // stylelint-enable no-duplicate-selectors
@@ -264,8 +264,8 @@
   }
 
   hr {
-    width: 25%;
-    max-width: 100px;
+    width: 100px;
+    max-width: 25%;
     height: 0.25rem; // 2px
     margin-top: 2.75rem; // rem // 42px;
     margin-right: auto;
@@ -274,7 +274,7 @@
     color: var(--rule);
     border-radius: 0.25rem; // 2px
 
-    // @media (max-width: 767px) {
+    // @media (max-width: 767.5px) {
     //  margin-top: 34px;
     //  margin-bottom: 44px;
     // }
@@ -303,10 +303,10 @@
 
   sup:target[role="doc-noteref"],
   li:target[role="doc-endnote"] {
-    scroll-margin-top: 65px;
+    scroll-margin-top: 55px;
 
-    @media (max-width: 767px) {
-      scroll-margin-top: 55px;
+    @media (min-width: 768px) {
+      scroll-margin-top: 65px;
     }
   }
   // stylelint-enable selector-no-qualifying-type

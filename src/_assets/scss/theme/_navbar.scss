@@ -32,14 +32,14 @@
     margin-left: 30px;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 767.5px) {
     line-height: 40px;
     text-align: center;
   }
 }
 
 .form-inline {
-  @media (max-width: 767px) {
+  @media (max-width: 767.5px) {
     flex-direction: column;
   }
 }

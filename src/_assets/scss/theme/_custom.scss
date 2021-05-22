@@ -7,11 +7,10 @@
 // Contact page Google Maps
 
 figure.map-wrapper {
-  @media (max-width: 767px) {
-    display: none;
-  }
+  display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
+    display: block;
     margin-top: 85px; // 60px
     margin-bottom: 25px;
   }
