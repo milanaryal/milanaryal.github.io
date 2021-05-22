@@ -58,7 +58,16 @@
 }
 
 // Post header lead container
-// .container.post-lead { }
+.container.post-lead {
+  // has gutter zero class (.gx-0)
+  // padding-right: 0;
+  // padding-left: 0;
+
+  // max-width 100% on small and medium screens
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+}
 
 .post-lead-figure {
   margin: 47px auto;
@@ -70,6 +79,10 @@
 
 .post-lead-img {
   margin: 0 auto;
+
+  @media (min-width: 992px) {
+    border-radius: 0.25rem;
+  }
 }
 
 .post-lead-figcaption {
