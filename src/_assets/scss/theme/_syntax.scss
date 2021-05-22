@@ -127,12 +127,12 @@ kbd {
 
 .highlight pre {
   // width: 100%;
-  padding: 0.75rem; // 0.75rem 15px;
-  margin-right: -0.75rem; // -15px;
-  margin-left: -0.75rem; // -15px;
+  padding: $bs--gutter-x; // 0.75rem 15px;
+  margin-right: -$bs--gutter-x; // -0.75rem; // -15px;
+  margin-left: -$bs--gutter-x; // -0.75rem; // -15px;
 
-  @media (min-width: 480px) {
-    padding-left: 0.75rem - 0.25rem; // calc(15px - 0.25rem);
+  @media (min-width: 576px) {
+    padding-left: $bs--gutter-x - 0.25rem; // calc($bs--gutter-x - $border-left);
     margin-right: 0;
     margin-left: 0;
     border-left: 0.25rem solid var(--code-snippet-border);
