@@ -120,23 +120,21 @@ _Internet Explorer 9 supports DNS pre-fetching, but calls it prefetch. In Intern
 ### Pre-browsing
 
 <figure>
+  <iframe src="https://www.slideshare.net/slideshow/embed_code/27665184" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+
+ <figcaption>Slides: SlideShare, <a href="http://www.slideshare.net/souders/prebrowsing-velocity-ny-2013" rel="nofollow">Prebrowsing - Velocity NY 2013</a> from <a href="http://twitter.com/souders" rel="nofollow">Steve Souders</a>.</figcaption>
+</figure>
+
+<figure>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/Msqs1jIzgo4?rel=0" frameborder="0" allowfullscreen></iframe>
 
   <figcaption>Video: YouTube, Prebrowsing by Steve Souders at Velocity NY 2013</figcaption>
 </figure>
 
 <figure>
-  <iframe src="https://www.slideshare.net/slideshow/embed_code/27665184" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
-
- <figcaption>Slides: SlideShare, <a href="http://www.slideshare.net/souders/prebrowsing-velocity-ny-2013" rel="nofollow">Prebrowsing - Velocity NY 2013</a> from <a href="http://twitter.com/souders" rel="nofollow">Steve Souders</a>.</figcaption>
-</figure>
-
-### Steve Souders | Pre-browsing | Fronteers 2013
-
-<figure>
   <iframe src="https://player.vimeo.com/video/77176315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-  <figcaption><a href="http://vimeo.com/77176315" rel="nofollow">Steve Souders | Pre-browsing | Fronteers 2013</a>.</figcaption>
+  <figcaption>Video: Vimeo, <a href="http://vimeo.com/77176315" rel="nofollow">Steve Souders | Pre-browsing | Fronteers 2013</a>.</figcaption>
 </figure>
 
 ### Further resources

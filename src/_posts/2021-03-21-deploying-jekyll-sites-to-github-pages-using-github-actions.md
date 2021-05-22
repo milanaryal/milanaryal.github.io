@@ -129,6 +129,7 @@ Popular 'Jekyll build & deploy to GitHub Pages' Actions on the GitHub Marketplac
 - [jekyll-actions](https://github.com/marketplace/actions/jekyll-actions){:rel="nofollow"}
 - [jekyll-action-ts](https://github.com/marketplace/actions/jekyll-action-ts){:rel="nofollow"}
 - [jekyll-deploy-gh-pages](https://github.com/marketplace/actions/jekyll-deploy-gh-pages){:rel="nofollow"}
+- [jekyll-deploy-action](https://github.com/marketplace/actions/jekyll-deploy-action){:rel="nofollow"}
 
 Popular 'deploy to GitHub Pages' Actions on the GitHub Marketplace:
 

@@ -8,8 +8,6 @@ excerpt: "Telegram is a cloud-based mobile and desktop messaging app with a focu
 
 With Telegram, you can send messages, photos, videos and files of any type (doc, zip, mp3, etc), as well as create groups for up to 200,000 people or channels for broadcasting to unlimited audiences. You can write to your phone contacts and find people by their usernames. As a result, Telegram is like SMS and email combined --- and can take care of all your personal or business messaging needs. In addition to this, Telegram support end-to-end encrypted voice calls.
 
----
-
 Telegram is the best choice. It's having best UI. It's open-source, secure and lightening fast. The best part of telegram is, you can use it from any device, like: desktop, tablets and from browser.
 
 Best of Telegram:
@@ -30,8 +28,6 @@ Best of Telegram:
 14. Quality of image
 15. Group Capacity
 
----
-
 ### Why switch to Telegram?
 
 1. **Private**: Telegram messages are heavily encrypted and can self-destruct.
@@ -49,8 +45,6 @@ Best of Telegram:
 7. **Secure**: Telegram keeps your messages safe from hacker attacks.
 
 8. **Powerful**: Telegram has no limits on the size of your media and chats.
-
----
 
 ### What can you do with Telegram?
 

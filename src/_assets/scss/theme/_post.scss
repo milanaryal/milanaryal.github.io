@@ -58,15 +58,7 @@
 }
 
 // Post header lead container
-.container.post-lead {
-  padding-right: 0;
-  padding-left: 0;
-
-  // width 100% on small and medium screens
-  @media (max-width: 991px) {
-    width: 100%;
-  }
-}
+// .container.post-lead { }
 
 .post-lead-figure {
   margin: 47px auto;

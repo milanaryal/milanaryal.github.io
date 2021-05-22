@@ -26,7 +26,6 @@ Something like this Jekyll auto add ID's to your post content headers when the s
 ```html
 ...
 
-
 <h2 id="title2">Title2</h2>
 
 <h3 id="title3">Title3</h3>
