@@ -27,12 +27,11 @@
   line-height: 1.1;
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: -0.04em;
-
   // ** Font feature settings ** //
   font-variant-ligatures: common-ligatures;
   font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
-
-  mask-image: url("/assets/img/dust-and-scratches.png");
+  // ** Mask image with a URL **//
+  @include theme-mask-image();
 
   @media (min-width: 768px) {
     font-size: 32px;

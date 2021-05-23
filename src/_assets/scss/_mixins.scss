@@ -6,7 +6,7 @@
   transition: all 200ms ease;
 }
 
-@mixin btn-social-share() {
+@mixin theme-btn-social-share() {
   color: var(--text-muted); // rgba(0, 0, 0, .6);
   background-color: var(--section-divider-secondary); // rgba(0, 0, 0, .05);
 
@@ -15,4 +15,8 @@
     color: var(--text-muted); // rgba(0, 0, 0, .6);
     background-color: var(--section-divider); // rgba(0, 0, 0, .1);
   }
+}
+
+@mixin theme-mask-image() {
+  mask-image: url("/assets/img/dust-and-scratches.png");
 }

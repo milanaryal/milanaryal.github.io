@@ -144,11 +144,11 @@
   word-break: break-word;
   word-wrap: break-word;
   outline: 0;
-
   // ** Font feature settings ** //
   font-variant-ligatures: common-ligatures;
   font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
-  mask-image: url("/assets/img/dust-and-scratches.png");
+  // ** Mask image with a URL **//
+  @include theme-mask-image();
 }
 
 .hero-description {

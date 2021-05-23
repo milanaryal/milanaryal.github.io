@@ -6,11 +6,10 @@
   font-size: 17px;
   // font-style: normal;
   // font-weight: 400;
-  line-height: 1.55; // 32px; 1.65; 1.58
+  line-height: 1.55; // 1.58; 1.65; calc(32px / 21px);
   // color: rgba(0, 0, 0, .8);
   letter-spacing: -0.002em; // -.004em
   word-wrap: break-word;
-
   text-rendering: optimizeLegibility; // enable common ligatures and kerning
 
   @media (min-width: 768px) {
