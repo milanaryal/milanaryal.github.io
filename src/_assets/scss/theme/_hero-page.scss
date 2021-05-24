@@ -11,7 +11,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw; // cause a horizontal scroll bar, if height > 100vh
+  min-width: 320px;
+  max-width: 100%; // 100vw bugfix, https://codepen.io/CiTA/pen/zYBmYBJ
   // ** if you have a 70px navbar => height: calc(100vh - 70px); ** //
   // min-height: 100vh;
   min-height: calc(100vh - 54px); // navbar height 54px
@@ -19,6 +21,7 @@
     min-height: calc(100vh - 64px); // navbar height 64px
   }
   padding: 0.75rem; // 15px; // 1.25em ~20px
+  overflow-x: hidden; // don't create horizontal scrollbar
   background-color: #fafafa;
   background-image: linear-gradient(
       to top,
@@ -35,10 +38,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 0;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100vw; // 100% of viewport width
+    height: 100vh; // 100% of viewport height
     visibility: hidden;
     content: "";
     background-color: #c2d0d7; // fallback
@@ -57,9 +60,11 @@
 
 .hero-profile {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
   align-items: center;
   justify-content: center;
   width: 500px; // 30.333rem
@@ -90,8 +95,8 @@
   hr {
     width: 19%;
     color: #111;
-    opacity: 0.7;
     border-radius: 0.25rem;
+    opacity: 0.7;
 
     @media (prefers-color-scheme: dark) {
       color: #fff;
@@ -100,7 +105,11 @@
 }
 
 .hero-profile-inner {
+  position: relative;
+  z-index: 1;
   display: block;
+  max-width: 100%;
+  border-radius: inherit;
 }
 
 .hero-avatar {
@@ -110,7 +119,7 @@
   margin-bottom: 1.25rem; // ~20px
 
   a {
-    // ** helps to hide boader on img opacity ** //
+    // ** helps to hide border on img opacity ** //
     display: inline-block;
     width: 120px;
     height: 120px;
