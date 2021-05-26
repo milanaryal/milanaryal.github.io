@@ -6,17 +6,17 @@
 
 export default function socialSharePopup() {
   $('.btn--social-share-popup').on('click', function () {
+    const width = 670
+    const height = 420
+    const left = ($(window).width() - width) / 2
+    const top = ($(window).height() - height) / 2
+    const url = this.href
     // prettier-ignore
-    var width  = 670,
-        height = 420,
-        left   = ($(window).width()  - width)  / 2,
-        top    = ($(window).height() - height) / 2,
-        url    = this.href,
-        opts   = 'status=1' +
-                  ',width='  + width  +
-                  ',height=' + height +
-                  ',top='    + top    +
-                  ',left='   + left;
+    const opts = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left
 
     window.open(url, '', opts)
 

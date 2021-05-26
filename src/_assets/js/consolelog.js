@@ -1,6 +1,10 @@
+/* eslint no-console: off  */
+
+// custom console
+
 console.log('Hello world!')
 
-var asciiArtM = `%c
+const asciiArtM = `%c
 ...............          ...............
 l0000000000000d.        .o00000O0000000l
 kMMMMMMMMMMMMMNl        cNMMMMMMMMMMMMMk
@@ -20,9 +24,9 @@ kMMMMMMMMMMk. .kMMMMMWl  .0MMMMMMMMMMMMk
 lOOOOOOOOOOl.  :kOOOOd.  .dOOOOOOOOOOOOl
 .............   ......   ...............\n\n`
 
-var siteURL = window.location.protocol + '//' + window.location.host
-var logMSG = 'You are visiting URL:\n'
-var currentURL =
+const siteURL = window.location.protocol + '//' + window.location.host
+const logMSG = 'You are visiting URL:\n'
+const currentURL =
   window.location.protocol +
   '//' +
   window.location.host +

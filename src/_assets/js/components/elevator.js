@@ -8,24 +8,24 @@ export default function elevator() {
   $('.elevator').removeAttr('hidden')
 
   // browser window scroll (in pixels) after which the "back to top" link is shown
-  var offset = 300,
-    // browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-    offset_opacity = 1200,
-    // grab the "back to top" link
-    $back_to_top = $('.elevator-button')
+  const OFFSET = 300
+  // browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+  const OFFSET_OPACITY = 1200
+  // grab the "back to top" link
+  const $BACK_TO_TOP = $('.elevator-button')
 
   // hide or show the "back to top" link
-  $(window).scroll(function () {
-    $(this).scrollTop() > offset
-      ? $back_to_top.addClass('elevator-is-visible')
-      : $back_to_top.removeClass('elevator-is-visible elevator-fade-out')
-    if ($(this).scrollTop() > offset_opacity) {
-      $back_to_top.addClass('elevator-fade-out')
+  $(window).on('scroll', function () {
+    $(this).scrollTop() > OFFSET
+      ? $BACK_TO_TOP.addClass('elevator-is-visible')
+      : $BACK_TO_TOP.removeClass('elevator-is-visible elevator-fade-out')
+    if ($(this).scrollTop() > OFFSET_OPACITY) {
+      $BACK_TO_TOP.addClass('elevator-fade-out')
     }
   })
 
   // smooth scroll to top
-  $back_to_top.on('click', function (event) {
+  $BACK_TO_TOP.on('click', function (event) {
     event.preventDefault()
     window.scroll({
       top: 0,

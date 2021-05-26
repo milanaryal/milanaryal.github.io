@@ -10,32 +10,33 @@ export default function generateRandomPosts() {
       return response.json()
     })
     .then(function (json) {
-      var element = $('#random-posts')
-      var contents = ''
-      var numberOfPosts = 5
+      const element = $('#random-posts')
+      const numberOfPosts = 5
 
-      console.log('Loaded [randomi.json] for random posts.')
+      // console.log('Loaded [randomi.json] for random posts.')
 
-      for (var count = 0; count < numberOfPosts; ++count) {
+      let contents = ''
+
+      for (let count = 0; count < numberOfPosts; ++count) {
         // Generate an random index
-        var index = Math.floor(Math.random() * json.length)
+        const index = Math.floor(Math.random() * json.length)
         // Get the post
-        var post = json[index]
+        const post = json[index]
         // Random post metadata
-        var url = post.u
-        var title = post.t
-        var excerpt = post.e
-        var readTime = post.r
-        var date = post.d
+        const url = post.u
+        const title = post.t
+        const excerpt = post.e
+        const readTime = post.r
+        const date = post.d
         // Template
         // prettier-ignore
-        var link = '<div class="random-posts-item clearfix">' +
+        const link = '<div class="random-posts-item clearfix">' +
                         '<a href="' + url + '">' +
                           '<h3 class="random-posts-item-title">' + title + '</h3>' +
                           '<p class="random-posts-item-excerpt">' + excerpt + '</p>' +
                         '</a>' +
                         '<div class="random-posts-item-meta">' + readTime + ' &middot; Posted ' + date + '</div>' +
-                      '</div>';
+                      '</div>'
         contents = contents + link
         json.splice(index, 1)
       }

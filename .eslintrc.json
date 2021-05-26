@@ -1,5 +1,8 @@
 {
   "root": true,
+  "globals": {
+    "$": true
+  },
   "extends": [
     "plugin:import/errors",
     "plugin:import/warnings",
