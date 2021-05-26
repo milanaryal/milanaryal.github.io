@@ -11,7 +11,7 @@
     <a class="navbar-brand d-inline-block" href="/">{{ site_title }}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-navigation" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <!-- <span class="navbar-toggler-icon"></span> -->
-      {% include icons/bars.svg width="30" height="30" class="icon icon-bars" %}
+      {% include_cached icons/bars.svg width="30" height="30" class="icon icon-bars" %}
     </button>
     <nav class="collapse navbar-collapse" id="site-navigation" aria-label="Site navigation" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
       <ul class="navbar-nav me-auto">
@@ -25,7 +25,7 @@
         <div class="input-group">
           <input class="form-control" type="text" id="q" name="q" placeholder="Search" aria-label="Search" autocapitalize="off" autocomplete="off" spellcheck="false">
           <button class="btn btn-outline-secondary" type="submit">
-            {% include icons/search.svg width="1em" height="1em" class="icon icon-search" %}
+            {% include_cached icons/search.svg width="1em" height="1em" class="icon icon-search" %}
           </button>
         </div>
       </form>

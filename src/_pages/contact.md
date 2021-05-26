@@ -13,7 +13,7 @@ If you have any questions, comments, or would just like to say hello in general,
   {% if site.author.telegram %}
   <li>
     <a rel="me" href="https://t.me/{{ site.author.telegram }}">
-      {% include icons/telegram.svg height="1em" class="icon icon-telegram" %}
+      {% include_cached icons/telegram.svg height="1em" class="icon icon-telegram" %}
       <br />
       <span class="label">Telegram</span>
     </a>
@@ -22,7 +22,7 @@ If you have any questions, comments, or would just like to say hello in general,
   {% if site.author.twitter %}
   <li>
     <a rel="me" href="https://twitter.com/{{ site.author.twitter }}">
-      {% include icons/twitter.svg height="1em" class="icon icon-twitter" %}
+      {% include_cached icons/twitter.svg height="1em" class="icon icon-twitter" %}
       <br />
       <span class="label">Twitter</span>
     </a>
@@ -31,7 +31,7 @@ If you have any questions, comments, or would just like to say hello in general,
   {% if site.author.facebook %}
   <li>
     <a rel="me" href="https://m.me/{{ site.author.facebook }}">
-      {% include icons/facebook-messenger.svg height="1em" class="icon icon-facebook-messenger" %}
+      {% include_cached icons/facebook-messenger.svg height="1em" class="icon icon-facebook-messenger" %}
       <br />
       <span class="label">Messenger</span>
     </a>
