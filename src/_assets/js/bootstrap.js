@@ -29,7 +29,9 @@ $(function () {
   $('.markdown-body img').addClass('img-fluid')
 
   // responsive table
-  $('.markdown-body>table').addClass('table table-striped table-responsive')
+  $('.markdown-body>table')
+    .addClass('table table-striped')
+    .wrap('table-responsive')
 
   // responsive embed video
   $('iframe[src*="youtube.com"]').wrap('<div class="ratio ratio-16x9" />')
