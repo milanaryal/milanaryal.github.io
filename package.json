@@ -17,7 +17,7 @@
     "cssdev-clean": "rimraf \"src/assets/css/**\"",
     "cssdev-compile": "sass --load-path node_modules --style expanded --no-charset --source-map --embed-sources --no-error-css \"src/_assets/scss/style.scss\" \"src/assets/css/style.css\"",
     "cssdev-postcss": "NODE_ENV=development postcss --replace \"src/assets/css/style.css\" --map",
-    "js": "webpack",
+    "js": "webpack --stats errors-only",
     "copy-fonts": "rimraf \"src/assets/fonts/**\" && cpy \"src/_assets/fonts/**\" \"src/assets/fonts/\"",
     "site": "npm-run-all site-*",
     "site-clean": "bundle exec jekyll clean",
@@ -40,8 +40,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@fontsource/dm-serif-display": "^4.3.0",
-    "@fontsource/lora": "^4.3.0",
+    "@fontsource/dm-serif-display": "^4.4.0",
+    "@fontsource/lora": "^4.4.0",
     "@popperjs/core": "2.9.2",
     "bootstrap": "5.0.1",
     "headroom.js": "0.12.0",
@@ -51,7 +51,7 @@
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
     "@fullhuman/postcss-purgecss": "^4.0.3",
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
     "chokidar-cli": "^2.1.0",
@@ -78,7 +78,7 @@
     "stylelint-config-twbs-bootstrap": "^2.2.0",
     "stylelint-prettier": "^1.2.0",
     "terser-webpack-plugin": "^5.1.2",
-    "webpack": "^5.37.1",
+    "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
   },
   "main": "_site/index.html",

@@ -82,8 +82,8 @@ layout: default
           <!-- Post header lead video -->
           {% if page.video and page.video != empty %}
             <!-- 16:9 aspect ratio -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="{{ page.video.path | default: page.video }}"></iframe>
+            <div class="ratio ratio-16x9">
+              <iframe src="{{ page.video.path | default: page.video }}" frameborder="0" allowfullscreen></iframe>
             </div>
             {%- if page.video.caption -%}
               {%- assign video_caption = page.video.caption | smartify | strip_html | normalize_whitespace | escape_once -%}
