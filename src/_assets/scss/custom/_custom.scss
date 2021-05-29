@@ -7,16 +7,11 @@
 // Contact page Google Maps
 
 figure.map-wrapper {
-  display: none;
+  margin-top: 60px;
 
   @media (min-width: 576px) {
-    display: block;
     margin-top: 85px; // 60px
     margin-bottom: 25px;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    opacity: 0.75;
   }
 }
 
@@ -24,7 +19,12 @@ figure.map-wrapper {
 // stylelint-disable selector-max-id
 #map-canvas {
   width: 100%;
+  min-width: 575px;
   height: 350px;
+
+  @media (prefers-color-scheme: dark) {
+    opacity: 0.75;
+  }
 }
 // stylelint-enable selector-max-id
 
