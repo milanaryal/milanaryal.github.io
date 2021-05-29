@@ -1,0 +1,214 @@
+body {
+  min-height: 100vh !important;
+}
+
+.search-page-heading {
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-family: var(--font-family-sans-serif) !important;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .search-page-heading {
+    margin-top: 222px;
+    font-size: 20px;
+  }
+}
+
+.search-page-content {
+  margin: 30px 0 77px;
+  font-family: var(--font-family-sans-serif) !important;
+}
+.search-page-form {
+  margin-bottom: 30px;
+}
+
+.search-page-results,
+.search-page-results * {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+{% comment -%}
+/**
+* Google custom search engine results
+* Overring styles for Google CSE default theme v2
+* https://cse.google.com/cse/style/look/v2/default.css
+*/
+{%- endcomment %}
+
+.gsc-control-cse,
+.gsc-expansionArea,
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+  background: transparent !important;
+  border: transparent !important;
+}
+
+.cse .gsc-control-cse,
+.gsc-control-cse,
+.gsc-table-result,
+.gsc-thumbnail-inside,
+.gsc-url-top,
+.gsc-results .gsc-cursor-box {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.gsc-control-cse,
+.gsc-control-cse .gsc-table-result,
+.gsc-completion-container,
+.gs-result .gs-title,
+.gs-result .gs-title *,
+.gs-result .gs-visibleUrl,
+.gs-snippet,
+.gsc-results .gsc-cursor-box {
+  font-family: var(--font-family-sans-serif) !important;
+}
+
+.cse .gsc-control-cse,
+.gsc-control-cse,
+.gsc-control-cse .gsc-table-result {
+  display: block !important;
+  width: auto !important;
+  font-size: 16px !important;
+}
+
+.gsc-control-cse {
+  padding: 1em 0 !important;
+}
+
+.gsc-above-wrapper-area {
+  margin-bottom: 23px !important;
+}
+
+.gsc-result-info {
+  padding-left: 0 !important;
+}
+
+.gsc-results,
+.gsc-webResult {
+  display: block !important;
+  padding: 0 !important;
+  width: auto !important;
+}
+
+.gsc-webResult .gsc-result,
+.gsc-webResult.gsc-result {
+  border: 0 !important;
+}
+
+.gsc-webResult .gsc-result {
+  padding: 0 !important;
+  margin-bottom: 25px !important;
+}
+
+.gs-result .gs-title,
+.gs-result .gs-title * {
+  height: auto !important;
+  font-size: 18px !important;
+}
+
+.gs-result .gs-visibleUrl {
+  margin: 3px 0 3px !important;
+  padding-bottom: 0 !important;
+  font-size: 16px !important;
+}
+
+.gs-snippet {
+  margin-top: 0 !important;
+  font-size: 15px !important;
+}
+
+{% comment -%}
+/**
+* GSC cursor box
+*/
+{%- endcomment %}
+
+@media (min-width: 768px) {
+  .gsc-results .gsc-cursor-box {
+    display: block !important;
+    margin-top: 30px !important;
+    text-align: center !important;
+    background-color: #f5f6f5 !important;
+    border-radius: 3px !important;
+  }
+  .gsc-results .gsc-cursor-box .gsc-cursor {
+    display: block !important;
+    padding: 10px !important;
+  }
+  .gsc-results .gsc-cursor-box .gsc-cursor-page {
+    font-size: 1.15em !important;
+    padding: 4px 8px !important;
+  }
+}
+
+{% comment -%}
+/**
+* Do't show the following itmes on Google custom search engine results
+*/
+{%- endcomment %}
+
+.gsc-adBlock,
+.gcsc-branding,
+.gsc-thumbnail,
+.gsc-location,
+.gcsc-find-more-on-google-root,
+.gcsc-more-maybe-branding-root {
+  display: none !important;
+}
+
+{% comment -%}
+/**
+* Dark mode
+*/
+{%- endcomment %}
+
+@media (prefers-color-scheme: dark) {
+  .gsc-results .gsc-cursor-box .gsc-cursor-page {
+    border-color: #333 !important;
+    background-color: #333 !important;
+    color: #bbb !important;
+  }
+  .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    border-color: transparent !important;
+    background-color: transparent !important;
+    color: #ccc !important;
+  }
+  .gsc-selected-option-container {
+    color: rgba(255, 255, 255, .8) !important;
+    background-color: #333 !important;
+  }
+  .gsc-control-cse .gsc-option-menu {
+    background: #333 !important;
+  }
+  .gsc-option-menu-item-highlighted {
+    color: rgba(255, 255, 255, .8) !important;
+    background-color: #333 !important;
+    border-color: #333 !important;
+  }
+  .cse .gsc-control-cse, .gsc-control-cse {
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+  }
+  .gsc-cursor {
+    color: rgba(255, 255, 255, .8) !important;
+    fill: rgba(255, 255, 255, .8) !important;
+  }
+  .gsc-results .gsc-cursor-box {
+    color: rgba(255,255,255,0.8) !important;
+    background-color: #333 !important;
+    border: 1px solid #333 !important;
+  }
+  .gsc-preview-reviews,
+  .gsc-control-cse .gs-snippet,
+  .gsc-control-cse .gs-promotion em,
+  .gsc-control-cse .gs-snippet,
+  .gsc-control-cse .gs-promotion em {
+    color: #666 !important;
+  }
+} {%- comment -%}/** @media (prefers-color-scheme: dark) {...} **/{%- endcomment %}

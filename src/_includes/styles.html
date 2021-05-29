@@ -10,8 +10,14 @@
   </style>
 {% endif %}
 
-{% if page.permalink == "/404.html" %}
+{% if page.permalink == "/404.html" or page.layout == "error" %}
   <style>
     {%- include css/glitch.css -%}
+  </style>
+{% endif %}
+
+{% if page.permalink == "/search/" or page.layout == "search" %}
+  <style>
+    {%- include css/search.css -%}
   </style>
 {% endif %}

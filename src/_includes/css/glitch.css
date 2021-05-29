@@ -615,6 +615,7 @@
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
 }
+
 .animate--glitch {
   -webkit-animation: glitch 2s steps(100) infinite;
   animation: glitch 2s steps(100) infinite;

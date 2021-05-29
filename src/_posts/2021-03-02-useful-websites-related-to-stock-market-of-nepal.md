@@ -1,7 +1,7 @@
 ---
 title: "Useful websites related to stock market of Nepal"
 date: 2021-03-02T15:00:00+05:45
-last_modified_at: 2021-03-17T12:15:00+05:45
+last_modified_at: 2021-05-29T10:45:00+05:45
 excerpt: "Nepal stock market related list of useful websites that you might like to read for daily up-to-date information."
 ---
 
@@ -31,6 +31,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 - Credit Information Bureau of Nepal (Karja Suchana Kendra Limited)
 - [Deposit and Credit Guarantee Corporation](https://dcgc.org.np/)
 - [Department of Cooperative](http://deoc.gov.np/)
+- [Electricity Regulatory Commission](http://erc.gov.np/)
 - [National Cooperative Bank](https://ncbl.coop/)
 - [General Post Office](http://gpo.gov.np/)
 - [Central Bureau of Statistics](https://cbs.gov.np/)
