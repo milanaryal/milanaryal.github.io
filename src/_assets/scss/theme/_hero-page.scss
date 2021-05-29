@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw; // cause a horizontal scroll bar, if height > 100vh
-  min-width: 320px;
+  min-width: 280px; // 320px
   max-width: 100%; // 100vw bugfix, https://codepen.io/CiTA/pen/zYBmYBJ
   // ** if you have a 70px navbar => height: calc(100vh - 70px); ** //
   // min-height: 100vh;
