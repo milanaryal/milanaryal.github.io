@@ -24,38 +24,38 @@ permalink: "/"
 {%- endif -%}
 
 <!-- Hero container -->
-<main class="hero-container user-select-none is-loading" id="main" role="main">
+<main class="hero-container d-flex flex-column align-items-center justify-content-center user-select-none is-loading" id="main" role="main">
   <!-- Hero profile -->
-  <section class="hero-profile clearfix is-loading">
+  <section class="hero-profile d-flex flex-shrink-0 flex-grow-0 align-items-center justify-content-center clearfix is-loading">
     <div class="hero-profile-inner">
       <header>
-        <span class="hero-avatar">
-          <a href="/">
-            <img class="hero-avatar-img" src="{{ site_author_avatar }}" alt="{{ site_author }}" />
+        <span class="hero-avatar d-block">
+          <a class="d-inline-block" href="/">
+            <img class="hero-avatar-img d-block" src="{{ site_author_avatar }}" alt="{{ site_author }}" />
           </a>
         </span>
-        <h1 class="hero-title d-inline-block">{{ site_author }}</h1>
+        <h1 class="hero-title">{{ site_author }}</h1>
         <p class="hero-description">{{ site_author_bio }}</p>
       </header>
       <hr class="mx-auto" />
       <footer>
         <ul class="hero-social">
           {% if site.author.twitter %}<li>
-            <a class="icon-twitter" rel="me" href="https://twitter.com/{{ site.author.twitter }}" aria-label="Twitter">
+            <a class="icon-twitter d-flex align-items-center justify-content-center" rel="me" href="https://twitter.com/{{ site.author.twitter }}" aria-label="Twitter">
               {% include_cached icons/twitter.svg width="1em" height="1em" class="svg" %}
               <span class="label">Twitter</span>
             </a>
           </li>{% endif %}<!--
 
           -->{% if site.author.instagram %}<li>
-            <a class="icon-instagram" rel="me" href="https://instagram.com/{{ site.author.instagram }}" aria-label="Instagram">
+            <a class="icon-instagram d-flex align-items-center justify-content-center" rel="me" href="https://instagram.com/{{ site.author.instagram }}" aria-label="Instagram">
               {% include_cached icons/instagram.svg width="1em" height="1em" class="svg" %}
               <span class="label">Instagram</span>
             </a>
           </li>{% endif %}<!--
 
           -->{% if site.author.github %}<li>
-            <a class="icon-github" rel="me" href="https://github.com/{{ site.author.github }}" aria-label="GitHub">
+            <a class="icon-github d-flex align-items-center justify-content-center" rel="me" href="https://github.com/{{ site.author.github }}" aria-label="GitHub">
               {% include_cached icons/github.svg width="1em" height="1em" class="svg" %}
               <span class="label">GitHub</span>
             </a>
