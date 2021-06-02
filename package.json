@@ -34,7 +34,7 @@
     "lint-js": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives . || true",
     "lint-md": "markdownlint-cli2 \"**/*.md\" \"!**/node_modules/**\" \"!src/_pages/style-guide.md\" \"!README.md\" || true",
     "lint-mdl": "bundle exec mdl --ignore-front-matter --style \"./.mdl_style.rb\" \"./src/_posts/\" || true",
-    "lint-site": "JEKYLL_ENV=production bundle exec jekyll build --profile --trace && linkinator \"./_site\" --recurse --skip \"^(?!http://localhost)\" --verbosity error",
+    "lint-site": "JEKYLL_ENV=production bundle exec jekyll build --profile --trace && linkinator \"./_site\" --recurse --verbosity error",
     "minify-icons": "minify --match=\\.svg --type=svg --recursive --output \"./src/_includes/icons/\" \"./src/_includes/icons/\" --verbose",
     "format": "prettier --write \"**/*.{js,scss,json,yml,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
