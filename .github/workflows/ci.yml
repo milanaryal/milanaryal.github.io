@@ -43,11 +43,12 @@ jobs:
       - name: Building site
         run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace --verbose
 
-      # - name: Install minify deb package on Ubuntu
-      #   run: sudo apt-get -y install minify
+      # - name: Install Minify deb package on Ubuntu
+      #   if: matrix.os == 'ubuntu-latest'
+      #   run: apt-get update && apt-get install --no-install-recommends --yes minify
 
       # https://github.com/tdewolff/homebrew-tap/
-      - name: Install minify using Homebrew
+      - name: Install Minify using Homebrew
         run: brew install tdewolff/tap/minify
 
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
