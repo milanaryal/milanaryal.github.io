@@ -1,6 +1,7 @@
 ---
 title: "Minify Jekyll's final HTML output files"
 date: 2021-04-10 06:00:00 +0545
+last_modified_at: "2021-06-07T08:00:00+05:45"
 excerpt: "Compress and minify HTML files after they have been generated locally with a static website generator like Jekyll."
 ---
 
@@ -31,7 +32,7 @@ sudo apt-get -y install minify
 - [Usage](https://github.com/tdewolff/minify/tree/master/cmd/minify#usage){:rel="nofollow"}
 
 ```bash
-minify --recursive --output "./_site/" --match=\.html --html-keep-conditional-comments --html-keep-default-attrvals --html-keep-document-tags --html-keep-end-tags --html-keep-quotes "./_site/" --verbose
+minify --type=html --recursive --output "./" --match=\.html --html-keep-conditional-comments --html-keep-default-attrvals --html-keep-document-tags --html-keep-end-tags --html-keep-quotes "./_site/" --verbose
 ```
 
 #### Minify XML files
@@ -39,7 +40,7 @@ minify --recursive --output "./_site/" --match=\.html --html-keep-conditional-co
 You can also minify `*.XML` files with following command line:
 
 ```bash
-minify --recursive --output "./_site/" --match=\.xml --xml-keep-whitespace "./_site/" --verbose || true
+minify --type=xml --recursive --output "./" --match=\.xml --xml-keep-whitespace "./_site/" --verbose || true
 ```
 
 #### Minify JSON files
@@ -47,7 +48,7 @@ minify --recursive --output "./_site/" --match=\.xml --xml-keep-whitespace "./_s
 You can also minify `*.json` files with following command line:
 
 ```bash
-minify --recursive --output "./_site/" --match=\.json "./_site/" --verbose || true
+minify --type=json --recursive --output "./" --match=\.json "./_site/" --verbose || true
 ```
 
 ### Build, minify and deploy Jekyll site into GitHub Pages using GitHub Actions
@@ -91,27 +92,28 @@ jobs:
       - name: Building site
         run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace
 
-      - name: Install minify deb package on Ubuntu
-        run: sudo apt-get -y install minify
+      # - name: Install Minify deb package on Ubuntu
+      #   if: matrix.os == 'ubuntu-latest'
+      #   run: apt-get update && apt-get install --no-install-recommends --yes minify
+
+      # https://github.com/tdewolff/homebrew-tap/
+      - name: Install Minify using Homebrew
+        run: brew install tdewolff/tap/minify
 
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
         run: |
-          minify --recursive --output "./_site/" --match=\.html \
+          minify --type=html --recursive --output "./" --match=\.html "./_site/" \
           --html-keep-conditional-comments \
           --html-keep-default-attrvals \
           --html-keep-document-tags \
           --html-keep-end-tags \
           --html-keep-quotes \
-          "./_site/" --verbose
-
-      - name: Minify XML files
-        run: |
-          minify --recursive --output "./_site/" --match=\.xml --xml-keep-whitespace "./_site/" --verbose || true
+          --verbose
 
       - name: Minify JSON files
         run: |
-          minify --recursive --output "./_site/" --match=\.json "./_site/" --verbose || true
+          minify --type=json --recursive --output "./" --match=\.json "./_site/" --verbose || true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

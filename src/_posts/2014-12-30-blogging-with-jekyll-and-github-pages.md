@@ -1,7 +1,7 @@
 ---
 title: "Blogging with Jekyll and GitHub Pages"
 date: 2014-12-30T19:47:46+05:45
-last_modified_at: "2021-04-10T10:50:00+05:45"
+last_modified_at: "2021-06-07T08:00:00+05:45"
 excerpt: "Jekyll is a static site generator that transform your plain text into static websites and blogs."
 ---
 
@@ -204,17 +204,46 @@ Now if you set your permalink as `/:year/:month/:title/` in `_config.yml` then a
 
 ### Using Jekyll Plugins with GitHub Pages
 
-GitHub Pages officially supports several [Jekyll plugins](http://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/){:rel="nofollow"}. Add a list of enabled gems (plugins) to your site's `_config.yml` file, such as:
+GitHub Pages officially supports several [Jekyll plugins](http://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/){:rel="nofollow"}.
+
+A list of essential plugins (gems) in your Jekyll site's `_config.yml` file, such as:
 
 ```rb
-gems:
+plugins:
   - jekyll-feed
   - jekyll-gist
+  - jekyll-github-metadata
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
+```
+
+[A list of plugins allowed by GitHub Pages](https://github.com/github/pages-gem/blob/master/lib/github-pages/plugins.rb){:rel="nofollow"}:
+
+```rb
+plugins:
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-octicons
+  - jekyll-remote-theme
 ```
 
 GitHub Pages use `jekyll-github-metadata` plugin that is enabled by default and cannot be disabled. To overcome some issues while building site locally you can have following additional configuration in your `_config.yml` file.
