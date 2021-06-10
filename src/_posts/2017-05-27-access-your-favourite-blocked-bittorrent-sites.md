@@ -7,15 +7,19 @@ excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your c
 
 Many countries have blocked access to BitTorrent websites due to copyright issues. You can use a proxy site to bypass any ISP block for blocked sites. Here's a list of list of [most popular BitTorrent sites](/top-10-most-popular-bittorrent-sites/) fast proxies and mirrors.
 
-#### [The Pirate Bay](https://thepiratebay.org/){:rel="noopener noreferrer nofollow"} proxy sites and mirrors
+#### The Pirate Bay proxy sites and mirrors
 
-- [proxy-bay.co](https://proxy-bay.co/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, [Mirror on Github](https://proxybay.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [thepiratebay.org](https://thepiratebay.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+  [proxy-bay.co](https://proxy-bay.co/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+  [Mirror on Github](https://proxybay.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [piratebayztemzmv.onion](http://piratebayztemzmv.onion/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - [_TOR URL_](/why-you-should-know-about-tor/)
+- [piratebayztemzmv.onion](http://piratebayztemzmv.onion/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+  _[TOR URL](/why-you-should-know-about-tor/)_
 
 #### Top proxy sites and mirrors
 
-- [unblockit.li](https://unblockit.li/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [unblockit.li](https://unblockit.li/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+  [Mirror on Github](https://unblocked-pw.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [unblocked.to](https://unblocked.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [unblockproject.cyou](https://unblockproject.cyou/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [unblockninja.com](https://unblockninja.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
