@@ -7,32 +7,32 @@ excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your c
 
 Many countries have blocked access to BitTorrent websites due to copyright issues. You can use a proxy site to bypass any ISP block for blocked sites. Here's a list of list of [most popular BitTorrent sites](/top-10-most-popular-bittorrent-sites/) fast proxies and mirrors.
 
-#### [The Pirate Bay](https://thepiratebay.org/){:rel="nofollow"} proxy sites and mirrors
+#### [The Pirate Bay](https://thepiratebay.org/){:rel="noopener noreferrer nofollow"} proxy sites and mirrors
 
-- [proxy-bay.co](https://proxy-bay.co/){:rel="nofollow"}, [Mirror on Github](https://proxybay.github.io/){:rel="nofollow"}
-- [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="nofollow"}
-- [piratebayztemzmv.onion](http://piratebayztemzmv.onion/) - [_TOR URL_](/why-you-should-know-about-tor/)
+- [proxy-bay.co](https://proxy-bay.co/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, [Mirror on Github](https://proxybay.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [piratebayztemzmv.onion](http://piratebayztemzmv.onion/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - [_TOR URL_](/why-you-should-know-about-tor/)
 
 #### Top proxy sites and mirrors
 
-- [unblockit.onl](https://unblockit.onl/){:rel="nofollow"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="nofollow"}
-- [unblocked.to](https://unblocked.to/){:rel="nofollow"}
-- [unblockproject.cyou](https://unblockproject.cyou/){:rel="nofollow"}
-- [unblockninja.com](https://unblockninja.com/){:rel="nofollow"}
-- [torrends.to/proxy/](https://torrends.to/proxy/){:rel="nofollow"}
+- [unblockit.li](https://unblockit.li/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, [Mirror on Github](https://unblocked-pw.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [unblocked.to](https://unblocked.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [unblockproject.cyou](https://unblockproject.cyou/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [unblockninja.com](https://unblockninja.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [torrends.to/proxy/](https://torrends.to/proxy/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 #### Free Web proxy
 
 A web proxy allows you to unblock any site on the Internet and to surf anonymously
 
-- [vpnbook.com/webproxy](https://www.vpnbook.com/webproxy){:rel="nofollow"}
-- [hide.me/en/proxy](https://hide.me/en/proxy){:rel="nofollow"}
-- [proxfree.com](https://www.proxfree.com/){:rel="nofollow"}
-- [filterbypass.me](https://www.filterbypass.me/){:rel="nofollow"}
-- [proxysite.com](https://www.proxysite.com/){:rel="nofollow"}
-- [hidester.com/proxy/](https://hidester.com/proxy/){:rel="nofollow"}
-- [whoer.net/webproxy](https://whoer.net/webproxy){:rel="nofollow"}
-- [proxypedia.org](https://proxypedia.org/){:rel="nofollow"}
+- [vpnbook.com/webproxy](https://www.vpnbook.com/webproxy){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [hide.me/en/proxy](https://hide.me/en/proxy){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [proxfree.com](https://www.proxfree.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [filterbypass.me](https://www.filterbypass.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [proxysite.com](https://www.proxysite.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [hidester.com/proxy/](https://hidester.com/proxy/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [whoer.net/webproxy](https://whoer.net/webproxy){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [proxypedia.org](https://proxypedia.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 ---
 

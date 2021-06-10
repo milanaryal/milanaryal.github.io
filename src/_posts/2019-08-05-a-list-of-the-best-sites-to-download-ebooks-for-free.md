@@ -11,29 +11,29 @@ Here, I've curated a list of sites to download eBook for free of cost. In these 
 
 Part of Z-Library project. The world's largest e-book library since 2009.
 
-- [z-lib.org](http://z-lib.org/){:rel="nofollow"} - _Homepage_
-- [2lib.org](http://2lib.org/){:rel="nofollow"} - _Books_
-- [booksc.org](http://booksc.org/) - _Articles_
+- [z-lib.org](http://z-lib.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Homepage_
+- [2lib.org](http://2lib.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Books_
+- [booksc.org](http://booksc.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Articles_
 
 _Mirror site(s):_
 
-- [b-ok.asia](http://b-ok.asia/){:rel="nofollow"}
-- [b-ok.africa](http://b-ok.africa/){:rel="nofollow"}
-- [book4you.org](http://book4you.org/){:rel="nofollow"}
-- [b-ok.org](http://b-ok.org/){:rel="nofollow"}
-- [b-ok.cc](http://b-ok.cc/){:rel="nofollow"}
-- [b-ok.xyz](http://b-ok.xyz/){:rel="nofollow"}
-- [b-ok2.org](http://b-ok2.org/){:rel="nofollow"}
-- [zlibrary.unblockit.onl](http://zlibrary.unblockit.onl/){:rel="nofollow"}
+- [b-ok.asia](http://b-ok.asia/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [b-ok.africa](http://b-ok.africa/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [book4you.org](http://book4you.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [b-ok.org](http://b-ok.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [b-ok.cc](http://b-ok.cc/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [b-ok.xyz](http://b-ok.xyz/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [b-ok2.org](http://b-ok2.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [zlibrary.unblockit.li](http://zlibrary.unblockit.li/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
-If Z-Library is censored or blocked in your location, you can use [TOR](http://b-ok.org/msgn/tor){:rel="nofollow"} to download it anyway.
+If Z-Library is censored or blocked in your location, you can use [TOR](http://b-ok.org/msgn/tor){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} to download it anyway.
 
-Z-Library TOR address is [http://zlibraryexau2g3p.onion](http://zlibraryexau2g3p.onion){:rel="nofollow"}
+Z-Library TOR address is [http://zlibraryexau2g3p.onion](http://zlibraryexau2g3p.onion){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 How to use TOR?
 
-1. Tor is free to use. Simply [download and install the browser](http://torproject.org/download){:rel="nofollow"}, which is a modified version of Firefox available for Windows, Mac OS X, and Linux.
-2. Open an URL [http://zlibraryexau2g3p.onion](http://zlibraryexau2g3p.onion){:rel="nofollow"} in the TOR browser.
+1. Tor is free to use. Simply [download and install the browser](http://torproject.org/download){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, which is a modified version of Firefox available for Windows, Mac OS X, and Linux.
+2. Open an URL [http://zlibraryexau2g3p.onion](http://zlibraryexau2g3p.onion){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} in the TOR browser.
 3. Enjoy!
 
 #### Library Genesis
@@ -42,11 +42,11 @@ Library Genesis (LibGen) is a digital library established on 11 March 2008.
 
 _Mirror site(s):_
 
-- [gen.lib.rus.ec](http://gen.lib.rus.ec/){:rel="nofollow"}
-- [libgen.lc](http://libgen.lc/){:rel="nofollow"}
-- [libgen.me](http://libgen.me/){:rel="nofollow"}
-- [libgen.unblockit.me](http://libgen.unblockit.me/){:rel="nofollow"}
-- [bookfi.net](http://bookfi.net/){:rel="nofollow"}
+- [gen.lib.rus.ec](http://gen.lib.rus.ec/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [libgen.lc](http://libgen.lc/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [libgen.me](http://libgen.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [libgen.unblockit.me](http://libgen.unblockit.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [bookfi.net](http://bookfi.net/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 #### PDF Drive
 
@@ -54,7 +54,7 @@ PDF Drive is a free search engine which allows you to search, preview and downlo
 
 _Mirror site(s):_
 
-- [pdfdrive.com](http://www.pdfdrive.com/){:rel="nofollow"}
+- [pdfdrive.com](http://www.pdfdrive.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 _**Disclaimer & legal warning**: [This site](/) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._
 
