@@ -1,18 +1,15 @@
 {%- comment -%}<!-- _layouts/head.html -->{%- endcomment -%}
 
-{%- assign site_title = site.title | default: site.name -%}
-{%- if site_title -%}
-  {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
-{%- endif -%}
-
-{%- comment -%}<!-- Begin Jekyll SEO tag -->{%- endcomment -%}
-  {% if page.permalink == "/" %}
-    <title>{{ site_title }} &bull; {{ site.tagline }}</title>
-    {% seo title=false %}
-  {% else %}
-    {% seo %}
-  {% endif %}
-{%- comment -%}<!-- End Jekyll SEO tag -->{%- endcomment -%}
+{% if page.permalink == "/" %}
+  {%- assign site_title = site.title | default: site.name -%}
+  {%- if site_title -%}
+    {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
+  {%- endif -%}
+  <title>{{ site_title }} &bull; {{ site.tagline }}</title>
+  {% seo title=false %}
+{% else %}
+  {% seo %}
+{% endif %}
 
 {%- if page.image and page.image != empty -%}
   {%- assign hasImage = true -%}
@@ -20,7 +17,6 @@
   {%- assign hasImage = true -%}
 {% else %}
   {%- assign hasImage = false -%}
-
   {%- assign thumbnail = page.thumbnail.path | default: page.thumbnail | default: site.logo -%}
   {%- unless thumbnail contains "://" -%}
     {%- assign thumbnail = thumbnail | absolute_url -%}
@@ -39,8 +35,7 @@
   <meta property="twitter:image" content="{{ thumbnail }}" />
 {% endunless %}
 
-{%- comment -%}<!-- Site author JSON-LD -->{%- endcomment -%}
-  {% if page.permalink == "/" or page.permalink == "/about/" %}
-    {% include about_json_ld.html %}
-  {% endif %}
-{%- comment -%}<!-- /Site author JSON-LD -->{%- endcomment -%}
+{% if page.permalink == "/" or page.permalink == "/about/" %}
+  <!-- Site author JSON-LD -->
+  {% include about_json_ld.html %}
+{% endif %}
