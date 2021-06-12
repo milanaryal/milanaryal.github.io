@@ -295,7 +295,7 @@
   // stylelint-disable selector-no-qualifying-type
   a[href^="#fn:"],
   a[href^="#fnref:"] {
-    display: inline-block;
+    // display: inline-block; // bugs the link inside </sup>
     margin-left: 0.1rem;
     font-weight: 700;
   }

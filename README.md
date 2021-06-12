@@ -16,7 +16,7 @@
 
 # [Milan Aryal](https://milanaryal.com.np/)
 
-The uncompiled [Jekyll](https://jekyllrb.com/) source code for my personal weblog (_[milanaryal.com.np](https://milanaryal.com.np/)_).
+The uncompiled [Jekyll](https://jekyllrb.com/) source code for my personal weblog <https://milanaryal.com.np/>.
 
 ## License
 

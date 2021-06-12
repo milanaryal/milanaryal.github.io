@@ -2,7 +2,7 @@
   "private": true,
   "name": "milanaryal.github.io",
   "title": "Milan Aryal",
-  "url": "https://milanaryal.com.np",
+  "url": "https://milanaryal.com.np/",
   "description": "Build assets for milanaryal.com.np",
   "scripts": {
     "start": "npm run fresh && npm run build",
