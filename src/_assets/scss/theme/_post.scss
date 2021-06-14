@@ -219,33 +219,33 @@
 
 .post-author-card-avatar {
   flex: 0 0 auto;
-}
 
-.post-author-card-avatar-link {
-  display: block;
-  overflow: hidden;
-  line-height: normal;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+  a {
+    // display: block;
+    overflow: hidden;
+    line-height: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-.post-author-card-avatar-img {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  vertical-align: middle;
-  border-radius: 100%;
-}
+  img {
+    // display: inline-block;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    border-radius: 100%;
+  }
+} // .post-author-card-avatar { ... }
 
-.post-author-card-content {
+.post-author-card-body {
   flex: 1 1 auto;
   padding-left: 15px;
+  padding-right: 20px;
   word-break: break-word;
   word-wrap: break-word;
 }
 
-.post-author-card-content-name {
-  padding-right: 20px;
+.post-author-card-title {
   margin-bottom: 4px;
   font-size: 19px;
 
@@ -261,9 +261,8 @@
   }
 }
 
-.post-author-card-content-bio {
+.post-author-card-text {
   max-width: 450px;
-  padding-right: 20px;
   font-size: 16px;
   color: var(--text-muted);
 

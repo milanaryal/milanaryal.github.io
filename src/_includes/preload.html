@@ -6,6 +6,10 @@
 
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content -->
 
+{% if page.permalink == "/" %}
+  <link rel="preload" href="/assets/img/avatar.png" as="image" crossorigin="anonymous" />
+{% endif %}
+
 <link rel="preload" href="/assets/img/dust-and-scratches.png" as="image" crossorigin="anonymous" />
 
 <link rel="preload" href="/assets/fonts/dm-serif-display-latin-400-normal.woff2" as="font" crossorigin="anonymous" />

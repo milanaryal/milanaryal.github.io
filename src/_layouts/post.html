@@ -187,17 +187,18 @@ layout: default
 
         <div class="post-author-card d-flex align-items-center">
           <div class="post-author-card-avatar user-select-none">
-            <a class="post-author-card-avatar-link" href="{{ '/' | relative_url }}">
-              <img class="post-author-card-avatar-img" src="{{ site_author_avatar }}" width="80" height="80" alt="{{ site_author }}" />
+            <a class="d-block" href="{{ '/' | relative_url }}">
+              <img class="d-inline-block img-fluid" src="{{ site_author_avatar }}" width="80" height="80" alt="{{ site_author }}" />
             </a>
           </div><!-- /.post-author-card-avatar -->
-          <div class="post-author-card-content">
-            <h4 class="post-author-card-content-name">
+          <div class="post-author-card-body">
+            <h4 class="post-author-card-title">
               <a href="{{ '/' | relative_url }}">{{ site_author }}</a>
             </h4>
-            <p class="post-author-card-content-bio">{{ site_author_bio }}</p>
-          </div><!-- /.post-author-card-content -->
+            <p class="post-author-card-text">{{ site_author_bio }}</p>
+          </div><!-- /.post-author-card-body -->
         </div><!-- /.post-author-card -->
+
         {% unless site.disqus_shortname and page.comments != 'false' %}
           <hr class="rule" />
         {% endunless %}
