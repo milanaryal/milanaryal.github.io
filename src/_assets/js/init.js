@@ -13,7 +13,7 @@ import generateRandomPosts from './components/randomize'
 // is ready for JavaScript code to execute.
 // Shorthand for $(document).ready(function() { ... });
 $(function () {
-  // BEGIN document ready function
+  // ** BEGIN document ready function ** //
 
   // init - anchor header links
   anchor()
@@ -32,4 +32,6 @@ $(function () {
 
   // footnotes header
   $('.footnotes').prepend('<hr /><h4>Footnotes</h4>')
-}) // END document ready function
+
+  // ** END document ready function ** //
+})

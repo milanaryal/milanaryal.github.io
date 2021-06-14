@@ -69,36 +69,27 @@
       ),
       url("/assets/img/hero-dark-20200605.jpg");
 
-    &::before {
-      background: #232526; // fallback for old browsers
-      background: linear-gradient(
-        to right,
-        #414345,
-        #232526
-      ); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+    .card {
+      background-color: rgba(#222, 0.828);
+      border-color: #222;
     }
-  }
 
-  .hero-profile {
-    background-color: rgba(255, 255, 255, 0.009);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-  }
+    .card-title {
+      color: rgba(255, 255, 255, 0.8);
+      text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    }
 
-  .hero-title {
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
-  }
-
-  .hero-description {
-    color: rgba(255, 255, 255, 0.7);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+    .card-text {
+      color: #888;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+    }
   }
 
   // stylelint-disable selector-no-qualifying-type
   ul.hero-social {
     a {
       color: rgba(255, 255, 255, 0.8);
-      border: solid 1px rgba(255, 255, 255, 0.8);
+      // border: solid 1px rgba(255, 255, 255, 0.8);
     }
   }
   // stylelint-enable selector-no-qualifying-type
