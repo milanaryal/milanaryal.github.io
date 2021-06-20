@@ -173,7 +173,7 @@
 
   ul,
   ol {
-    padding-left: 0; // reset default left padding
+    padding-left: $bs--gutter-x; // reset default left padding
   }
 
   li {

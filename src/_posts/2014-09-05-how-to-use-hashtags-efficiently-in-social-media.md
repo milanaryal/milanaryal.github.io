@@ -24,7 +24,7 @@ Moreover, you can search for topics relevant to your business and provide your e
 
 **3. Think cross platform:** The most fascinating feature of Facebook hashtags is that it feeds you results not only from Facebook but from Twitter, Instagram, Google+, Pinterest and LinkedIn as well. So you can market your ideas across several social media platforms, still all your posts will be linked together. So even if you post an update on Google+, you can get responses from Facebook or Twitter. Isn’t it amazing?
 
-#### #HashtagTips
+#### \#HashtagTips
 
 - Use short hashtags #MyBlog.
 - Avoid long and complicated hashtags like #seotipsforyourbusiness.
