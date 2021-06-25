@@ -26,20 +26,21 @@
 h3.archive-year {
   margin-top: 39px;
   margin-left: -1.75px;
-  font-family: var(--font-family-serif-display);
-  font-size: 26px;
+  // font-family: var(--font-sans-serif);
+  @include font-size(2.125rem);
+  // font-size: 26px;
   // font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.12;
   color: var(--heading-color);
-  // letter-spacing: -0.044em;
+  letter-spacing: -0.044em;
 
   @media (min-width: 768px) {
     margin-top: 47px;
     margin-left: -2.25px;
-    font-size: 34px; // 30px
+    // font-size: 34px; // 30px
     line-height: 1.2;
-    // letter-spacing: -0.04em;
+    letter-spacing: -0.04em;
   }
 }
 

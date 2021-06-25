@@ -14,7 +14,7 @@ $theme-colors-default: map-merge(
   (
     "body-bg":                   #fafafa,
     "body-color":                rgba(0, 0, 0, 0.8),
-    "heading-color":             rgba(0, 0, 0, 0.84),
+    "heading-color":             rgba(0, 0, 0, 0.78), // rgba(0, 0, 0, 0.84)
     "link-color":                #00638a,
     "link-underline-color":      rgba(0, 0, 0, 0.3),
     "link-hover-color":          #00638a,
@@ -65,10 +65,10 @@ $theme-colors-dark: map-merge(
 // Override custom settings.
 
 // stylelint-disable value-keyword-case
-$font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, serif !default;
-$font-family-serif-display: "DM Serif Display", Georgia, Cambria, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 // stylelint-enable value-keyword-case
-$font-family-base:           var(--font-family-sans-serif) !default;
+$font-family-base:           var(--font-sans-serif) !default;
 
 $link-color:                inherit !default;
 $link-hover-color:          inherit !default;

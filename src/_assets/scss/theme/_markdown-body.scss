@@ -2,8 +2,8 @@
 // container with .markdown-body on it should render generally well.
 
 .markdown-body {
-  font-family: var(--font-family-serif);
-  font-size: 17px;
+  font-family: var(--font-serif);
+  font-size: 18px;
   // font-style: normal;
   // font-weight: 400;
   line-height: 1.55; // 1.58; 1.65; calc(32px / 21px);
@@ -13,7 +13,7 @@
   text-rendering: optimizeLegibility; // enable common ligatures and kerning
 
   @media (min-width: 768px) {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   // stylelint-disable declaration-no-important
@@ -107,11 +107,11 @@
   h3 {
     margin-top: 2.75em;
     margin-left: -1.75px;
-    // font-family: var(--font-family-sans-serif);
+    // font-family: var(--font-sans-serif);
     // font-size: 1.444em; // 1.563em
     @include font-size(1.777rem);
     // font-style: normal;
-    // font-weight: 700;
+    font-weight: 800;
     line-height: 1.12; // 1.2; 1.15
     // color: rgba(0, 0, 0, .8);
     letter-spacing: -0.022em;
@@ -125,11 +125,11 @@
   h4 {
     margin-top: 2.75rem;
     margin-left: -1.5px;
-    // font-family: var(--font-family-sans-serif);
+    // font-family: var(--font-sans-serif);
     // font-size: 1.333em;
     @include font-size(1.555rem);
     // font-style: normal;
-    // font-weight: 700;
+    font-weight: 700;
     line-height: 1.18; // 1.2, 1.22
     // color: rgba(0, 0, 0, .8);
     letter-spacing: -0.022em;
@@ -212,7 +212,7 @@
   figcaption {
     padding: 0 1em;
     margin-top: 10px;
-    font-family: var(--font-family-sans-serif);
+    font-family: var(--font-sans-serif);
     font-size: 15px;
     // font-style: normal;
     // font-weight: 400;
@@ -234,8 +234,9 @@
     padding: $bs--gutter-x; // 0.75rem 15px;
     margin-right: -$bs--gutter-x; // -0.75rem; // -15px;
     margin-left: -$bs--gutter-x; // -0.75rem; // -15px;
+    font-family: var(--font-sans-serif);
     font-size: 0.875em; // 85%; // .9em
-    font-style: italic;
+    // font-style: italic;
     color: var(--body-color);
     background: var(--blockquote-bg);
     // border-left: .25rem solid var(--blockquote-border); // 3px solid rgba(0, 0, 0, .8)
