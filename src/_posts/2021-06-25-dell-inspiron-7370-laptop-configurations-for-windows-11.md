@@ -38,7 +38,7 @@ Restart laptop and keep pressing F2 until BIOS setup will appear. Then setup fol
 
 - Enable PTT Security
 
-**[Note](https://stackoverflow.com/questions/64075223/are-intels-ptt-and-tpm-equivalent){:rel="nofollow"}**: The Intel PTT (Platform Trust Technology) fully supports all Microsoft's requirements for firmware TPM (Trusted Platform Module) version 2.0 specification.
+> **[Note](https://stackoverflow.com/questions/64075223/are-intels-ptt-and-tpm-equivalent){:rel="nofollow"}**: The Intel PTT (Platform Trust Technology) fully supports all Microsoft's requirements for firmware TPM (Trusted Platform Module) version 2.0 specification.
 
 On Windows, you can check TPM by running `tpm.msc` command prompt.
 
@@ -49,10 +49,11 @@ With the above setup, your PC (Dell Inspiron 7370) meets all the system requirem
 - Boot Mode: UEFI
 - Secure Boot: Enabled
 - Legacy ROM: Disabled
+- TPM 2.0 / Intel PTT: Enabled
 - Boot Sequence: Set the Hard/SSD Drive (with the Operating System installed) as the First Boot Device
 - SATA Operations: AHCI (RAID ON if system has a RAID CARD or if RAID is configured on the system)
 
-**Tip**: While starting/restarting your PC press "F2 for BIOS setup" and "F12 for Boot Menu"
+> **Tip**: While starting/restarting your PC press "F2 for BIOS setup" and "F12 for Boot Menu".
 
 [Drivers & Downloads](https://www.dell.com/support/home/en-us?app=drivers){:rel="nofollow"}
 

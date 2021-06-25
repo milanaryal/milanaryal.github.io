@@ -19,12 +19,20 @@ First build Jekyll final production site with the following command line:
 JEKYLL_ENV=production bundle exec jekyll build --profile --trace
 ```
 
-#### Install minify deb package on Ubuntu
+#### Install Minify 
 
 - [CLI installation](https://github.com/tdewolff/minify/tree/master/cmd/minify#installation){:rel="nofollow"}
 
+Deb package on Ubuntu 
+
 ```bash
-sudo apt-get -y install minify
+sudo apt-get update && sudo apt-get -y install minify
+```
+
+Using Homebrew on MacOS
+
+```bash
+brew install tdewolff/tap/minify
 ```
 
 #### Minify HTML files
