@@ -45,7 +45,7 @@
     "@fontsource/inter": "^4.4.5",
     "@fontsource/lora": "^4.4.5",
     "@popperjs/core": "2.9.2",
-    "bootstrap": "5.0.1",
+    "bootstrap": "5.0.2",
     "headroom.js": "0.12.0",
     "jquery": "3.6.0"
   },
