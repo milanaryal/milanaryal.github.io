@@ -38,7 +38,7 @@ jobs:
         run: bundle exec jekyll doctor
 
       - name: Checking Markdown files
-        run: bundle exec mdl --ignore-front-matter --style "./.mdl_style.rb" "./src/_posts/" || true
+        run: bundle exec mdl --ignore-front-matter --style .mdl_style.rb src/_posts || true
 
       - name: Building site
         run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace --verbose
@@ -54,7 +54,7 @@ jobs:
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
         run: |
-          minify --type=html --recursive --output "./" --match=\.html "./_site/" \
+          minify --type=html --recursive --output . --match=\.html ./_site/ \
           --html-keep-default-attrvals \
           --html-keep-document-tags \
           --html-keep-end-tags \
@@ -62,13 +62,13 @@ jobs:
 
       - name: Minify JSON files
         run: |
-          minify --type=json --recursive --output "./" --match=\.json "./_site/" --verbose || true \
+          minify --type=json --recursive --output . --match=\.json ./_site/ --verbose || true \
           && \
-          minify --type=json --output "./" "./_site/manifest.webmanifest" --verbose || true
+          minify --type=json --output . ./_site/manifest.webmanifest --verbose || true
 
       - name: Checking HTML files
         run: |
-          bundle exec htmlproofer "./_site/" \
+          bundle exec htmlproofer ./_site \
           --allow-hash-href \
           --assume-extension \
           --check-external-hash \
@@ -109,10 +109,10 @@ jobs:
           path: ./_site/
 
       - name: List files and folders
-        run: ls "./"
+        run: ls .
 
       - name: List site files and folders
-        run: ls "./_site/"
+        run: ls ./_site/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
