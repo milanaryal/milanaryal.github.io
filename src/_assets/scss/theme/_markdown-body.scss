@@ -173,15 +173,15 @@
 
   ul,
   ol {
-    padding-left: $bs--gutter-x; // reset default left padding
+    padding-left: 2em; // reset default left padding
   }
 
-  li {
-    margin-top: 0.75em;
-    margin-left: 1.15em;
-    p {
-      margin: 0;
-    }
+  li > p {
+    margin-top: 1.15em; // 0.75em
+  }
+
+  li + li {
+    margin-top: 0.75em; // 0.25em
   }
 
   dl {
