@@ -1,7 +1,6 @@
 const purgecss = require('@fullhuman/postcss-purgecss')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
-const discardComments = require('postcss-discard-comments')
 
 const purgecssConfig = {
   content: [
@@ -39,8 +38,9 @@ module.exports = {
           // NODE_ENV=production
           purgecss(purgecssConfig),
           autoprefixer({ cascade: false }),
-          cssnano({ preset: 'default' }),
-          discardComments({ removeAll: true }),
+          cssnano({
+            preset: ['default', { discardComments: { removeAll: true } }],
+          }),
         ]
       : [
           // NODE_ENV=development
