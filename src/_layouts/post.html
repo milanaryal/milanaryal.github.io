@@ -83,7 +83,7 @@ layout: default
           {% if page.video and page.video != empty %}
             <!-- 16:9 aspect ratio -->
             <div class="ratio ratio-16x9">
-              <iframe src="{{ page.video.path | default: page.video }}" frameborder="0" allowfullscreen></iframe>
+              <iframe src="{{ page.video.path | default: page.video }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             {%- if page.video.caption -%}
               {%- assign video_caption = page.video.caption | smartify | strip_html | normalize_whitespace | escape_once -%}

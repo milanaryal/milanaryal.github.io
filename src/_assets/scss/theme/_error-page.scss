@@ -26,11 +26,6 @@
   line-height: 1.1;
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: -0.044em;
-  // ** Font feature settings ** //
-  font-variant-ligatures: common-ligatures;
-  font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
-  // ** Mask image with a URL **//
-  @include theme-mask-image();
 
   @media (min-width: 768px) {
     font-size: 32px;
@@ -47,6 +42,11 @@
   background-color: #222;
   border-radius: 0.25rem;
   transform: rotate(-1deg);
+  // ** Font feature settings ** //
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
+  // ** Mask image with a URL **//
+  @include theme-mask-image();
 
   @media (min-width: 768px) {
     font-size: 60px;

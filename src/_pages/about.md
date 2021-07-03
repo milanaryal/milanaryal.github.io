@@ -98,7 +98,7 @@ Nothing brings me more pleasure than making something out of nothing. Even when 
 I'd like to think that I'm very happy person, but I find the art that strikes me truest is the sad, depressing sort, I love hip-hop and R&B music, post-apocalyptic fiction, and movie trailers that can make me squirt tears in under two minutes. Go figure.
 
 {: align="center"}
-*Life is good*😊
+Life is good😊
 
 ### About the site
 
