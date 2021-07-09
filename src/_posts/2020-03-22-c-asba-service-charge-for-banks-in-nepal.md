@@ -6,8 +6,6 @@ last_modified_at: 2021-07-09T00:00:00+05:45
 
 Investors can buy primary and rights shares online with the Centralised Application Supported by Blocked Amount (C-ASBA) process which has been implemented on February 23, 2018 in Nepal. C-ASBA is an advanced form of ASBA interface which is claimed to be more user friendly.
 
-C-ASBA will ensure centralized posting and verification of bank account numbers and DMAT account numbers ease monitoring of double application for issue managers and share registrars, cancellation of application upon double applications and prepare a final report for securities allocation.
-
 Here are the list of Banks in Nepal with their C-ASBA service charge per application.
 
 ### List of Banks in Nepal with C-ASBA application charges (per application)
