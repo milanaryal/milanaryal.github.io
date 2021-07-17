@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "./src/assets/css/style.css",
+      "maxSize": "55kB",
+      "compression": "none"
+    },
+    {
+      "path": "./src/assets/fonts/*.{woff,woff2}",
+      "maxSize": "60kB",
+      "compression": "none"
+    },
+    {
+      "path": "./src/assets/img/*.{gif,jpg,png}",
+      "maxSize": "75kB",
+      "compression": "none"
+    },
+    {
+      "path": "./src/assets/js/bundle.js",
+      "maxSize": "125kB",
+      "compression": "none"
+    }
+  ]
+}
