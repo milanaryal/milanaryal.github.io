@@ -3,6 +3,25 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 
+const isProd = process.env.NODE_ENV === 'production'
+const minimizeTrue = {
+  minimize: true,
+  minimizer: [
+    new TerserPlugin({
+      terserOptions: {
+        output: {
+          comments: false,
+        },
+      },
+      extractComments: false,
+    }),
+  ],
+}
+const minimizeFalse = {
+  minimize: false,
+}
+const optimizationOptions = isProd ? minimizeTrue : minimizeFalse
+
 module.exports = {
   mode: 'production',
   entry: './src/_assets/js/index.js',
@@ -21,19 +40,7 @@ module.exports = {
       },
     ],
   },
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new TerserPlugin({
-        terserOptions: {
-          output: {
-            comments: false,
-          },
-        },
-        extractComments: false,
-      }),
-    ],
-  },
+  optimization: optimizationOptions,
   plugins: [
     new webpack.ProgressPlugin(),
     new webpack.ProvidePlugin({
