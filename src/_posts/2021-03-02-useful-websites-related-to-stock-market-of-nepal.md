@@ -23,7 +23,7 @@ excerpt: "Nepal stock market related list of useful websites that you might like
 
 ### Important websites of Nepal
 
-- [Ministry of Finance](https://mof.gov.np/en/)
+- [Ministry of Finance](https://mof.gov.np/)
 - [Nepal Rastra Bank (NRB)](https://www.nrb.org.np/)
 - [Nepal Insurance Board (Beema Samiti)](https://nib.gov.np/)
 - [Company Register Office](http://www.ocr.gov.np/)
