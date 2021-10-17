@@ -1,7 +1,7 @@
 ---
 title: "C-ASBA service charge for Banks in Nepal"
 date: 2020-03-22T13:00:00+05:45
-last_modified_at: 2021-07-21T00:00:00+05:45
+last_modified_at: 2021-10-17T00:00:00+05:45
 ---
 
 Investors can buy primary and rights shares online with the Centralised Application Supported by Blocked Amount (C-ASBA) process which has been implemented on February 23, 2018 in Nepal. C-ASBA is an advanced form of ASBA interface which is claimed to be more user friendly.
@@ -17,7 +17,9 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 | SCB    | Standard Chartered Bank          | Rs. 100            |
 | CCBL   | Century Commercial Bank          | Rs. 25             |
 | LBL    | Laxmi Bank                       | Rs. 25             |
+| NBL    | Nepal Bank                       | Rs. 25/Year        |
 | SBI    | Nepal SBI Bank                   | Rs. 25             |
+| PCBL   | Prime Commercial Bank            | Rs. 25             |
 | CZBIL  | Citizen Bank                     | Rs. 20             |
 | EBL    | Everest Bank                     | Rs. 20             |
 | HBL    | Himalayan Bank                   | Rs. 20             |
@@ -30,12 +32,10 @@ Here are the list of Banks in Nepal with their C-ASBA service charge per applica
 | MBL    | Machhapuchhre Bank               | Rs. 10             |
 | NBB    | Nepal Bangladesh Bank            | Rs. 10             |
 | PRVU   | Prabhu Bank                      | Rs. 10             |
-| PCBL   | Prime Commercial Bank            | Rs. 10             |
 | SRBL   | Sunrise Bank                     | Rs. 10             |
 | GBIME  | Global IME Bank                  | Free               |
 | MEGA   | Mega Bank                        | Free               |
 | NABIL  | Nabil Bank                       | Free               |
-| NBL    | Nepal Bank                       | Free               |
 | NCCB   | Nepal Credit And Commercial Bank | Free               |
 | NICA   | NIC Asia Bank                    | Free               |
 | SANIMA | Sanima Bank                      | Free               |
