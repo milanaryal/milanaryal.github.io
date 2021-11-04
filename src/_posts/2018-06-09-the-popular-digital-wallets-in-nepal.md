@@ -1,7 +1,7 @@
 ---
 title: "The popular digital wallets in Nepal"
 date: 2018-06-09T13:21:00+05:45
-last_modified_at: 2021-02-17T19:00:00+05:45
+last_modified_at: 2021-11-04T19:00:00+05:45
 excerpt: "A list of the most popular and best digital mobile wallets payment systems in Nepal."
 ---
 
@@ -37,7 +37,7 @@ Unlike other services CellPay is not a wallet based, it's like a digital debit c
 
 CellPay App is available for [Web](https://app.cellpay.com.np/){:rel="nofollow"}, [Android](https://play.google.com/store/apps/details?id=com.cellpay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/us/app/cellpay/id1441280711?mt=8){:rel="nofollow"} devices.
 
-### Other popular digital wallet alternatives in Nepal
+### List of (web and mobile based) popular digital wallets in Nepal
 
 #### [PayWell Nepal](https://www.paywellnepal.com.np/){:rel="nofollow"}
 
@@ -53,18 +53,26 @@ iPay (powered by Muncha.com company) is also a quite popular payment system in N
 
 iPay App is available for [Web](https://ipay.com.np/){:rel="nofollow"}, [Android](https://play.google.com/store/apps/details?id=np.com.focusone.ipay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/us/app/ipay-nepal/id1091094163?ls=1&mt=8){:rel="nofollow"} devices.
 
-#### Mobile based alternative
+- **[EnetPay](https://www.enetpayment.com/){:rel="nofollow"}** (available for [Web](https://www.enetpayment.com/){:rel="nofollow"}, [Android](https://play.google.com/store/apps/details?id=np.com.onlinepayment){:rel="nofollow"}, and [iOS](https://itunes.apple.com/US/app/id1374131281?mt=8){:rel="nofollow"})
+
+- **[Moru](https://moru.com.np/){:rel="nofollow"}** (available for [Android](https://bit.ly/2SMSQB2){:rel="nofollow"}, and [iOS](https://apple.co/3lHSacu){:rel="nofollow"})
+
+- **[iCash](https://icash.com.np/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.silkinv.icash&hl=en&gl=US){:rel="nofollow"}, and [iOS](https://apps.apple.com/us/app/icash-mobile-payment/id1543688814){:rel="nofollow"})
+
+- **[d-पैसा](https://www.dpaisa.com/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.dpaisa){:rel="nofollow"}, and [iOS](https://apps.apple.com/us/app/dpaisa-digital-payment-nepal/id1555859739){:rel="nofollow"})
+
+### List of mobile based popular digital wallets in Nepal
 
 Following are the list of popular mobile based digital payment systems only available for Android, or iOS.
 
 - [**IME Pay**](http://www.imepay.com.np/){:rel="nofollow"} (available for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/ime-pay/id1241888344?mt=8){:rel="nofollow"})
 
-- [**PrabhuPAY**](https://prabhupay.com/){:rel="nofollow"} (available for [Android](https://play.google.com/store/apps/details?id=com.prabhutech.prabhupay&hl=en){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/prabhupay-mobile-wallet/id1451300760?mt=8){:rel="nofollow"})
+> **Invitation**
+>
+> Join IME Pay -- a simple and convenient payment service provider, and get rewarded on registering with IME Pay. Use my code (`CS1151419`) and we'll both get 100 reward points.
+>
+> Play Store: https://appurl.io/lXasKFM_X
 
-- [**QPay**](http://www.qpay.com.np/){:rel="nofollow"} (available for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/us/app/qpay-nepal/id1127765416?mt=8){:rel="nofollow"})
+- **[PrabhuPAY](https://prabhupay.com/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.prabhutech.prabhupay&hl=en){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/prabhupay-mobile-wallet/id1451300760?mt=8){:rel="nofollow"})
 
-Last but not least:
-
-[**EnetPay**](https://www.enetpayment.com/){:rel="nofollow"} (available for [Web](https://www.enetpayment.com/){:rel="nofollow"}, [Android](https://play.google.com/store/apps/details?id=np.com.onlinepayment){:rel="nofollow"}, and [iOS](https://itunes.apple.com/US/app/id1374131281?mt=8){:rel="nofollow"})
-
-<!-- [**Nepzy**](https://www.nepzy.com){:rel="nofollow"} (for [Android](https://play.google.com/store/apps/details?id=com.itgc.nepzy){:rel="nofollow"} or [iOS](https://itunes.apple.com/in/app/nepzy/id1059692410?mt=8){:rel="nofollow"}) -->
+- **[QPay](http://www.qpay.com.np/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/us/app/qpay-nepal/id1127765416?mt=8){:rel="nofollow"})
