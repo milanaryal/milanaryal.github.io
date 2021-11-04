@@ -53,6 +53,8 @@ iPay (powered by Muncha.com company) is also a quite popular payment system in N
 
 iPay App is available for [Web](https://ipay.com.np/){:rel="nofollow"}, [Android](https://play.google.com/store/apps/details?id=np.com.focusone.ipay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/us/app/ipay-nepal/id1091094163?ls=1&mt=8){:rel="nofollow"} devices.
 
+#### Other popular digital wallet alternatives in Nepal
+
 - **[EnetPay](https://www.enetpayment.com/){:rel="nofollow"}** (available for [Web](https://www.enetpayment.com/){:rel="nofollow"}, [Android](https://play.google.com/store/apps/details?id=np.com.onlinepayment){:rel="nofollow"}, and [iOS](https://itunes.apple.com/US/app/id1374131281?mt=8){:rel="nofollow"})
 
 - **[Moru](https://moru.com.np/){:rel="nofollow"}** (available for [Android](https://bit.ly/2SMSQB2){:rel="nofollow"}, and [iOS](https://apple.co/3lHSacu){:rel="nofollow"})
@@ -65,13 +67,13 @@ iPay App is available for [Web](https://ipay.com.np/){:rel="nofollow"}, [Android
 
 Following are the list of popular mobile based digital payment systems only available for Android, or iOS.
 
-- [**IME Pay**](http://www.imepay.com.np/){:rel="nofollow"} (available for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/ime-pay/id1241888344?mt=8){:rel="nofollow"})
-
 > **Invitation**
 >
 > Join IME Pay -- a simple and convenient payment service provider, and get rewarded on registering with IME Pay. Use my code (`CS1151419`) and we'll both get 100 reward points.
 >
-> Play Store: https://appurl.io/lXasKFM_X
+> Play Store: <https://appurl.io/lXasKFM_X>
+
+- **[IME Pay](http://www.imepay.com.np/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/ime-pay/id1241888344?mt=8){:rel="nofollow"})
 
 - **[PrabhuPAY](https://prabhupay.com/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.prabhutech.prabhupay&hl=en){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/prabhupay-mobile-wallet/id1451300760?mt=8){:rel="nofollow"})
 
