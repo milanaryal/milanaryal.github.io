@@ -71,10 +71,15 @@ Following are the list of popular mobile based digital payment systems only avai
 >
 > Join IME Pay -- a simple and convenient payment service provider, and get rewarded on registering with IME Pay. Use my code (`CS1151419`) and we'll both get 100 reward points.
 >
-> Play Store: <https://appurl.io/lXasKFM_X>
+> Play Store: <https://appurl.io/lXasKFM_X>{:rel="nofollow"}
 
 - **[IME Pay](http://www.imepay.com.np/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/ime-pay/id1241888344?mt=8){:rel="nofollow"})
 
 - **[PrabhuPAY](https://prabhupay.com/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.prabhutech.prabhupay&hl=en){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/prabhupay-mobile-wallet/id1451300760?mt=8){:rel="nofollow"})
 
 - **[QPay](http://www.qpay.com.np/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/us/app/qpay-nepal/id1127765416?mt=8){:rel="nofollow"})
+
+Last but not least:
+
+- [CG Pay](https://cgpay.com.np/){:rel="nofollow"}
+- [Thaili](https://www.thaili.com.np/){:rel="nofollow"}
