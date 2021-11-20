@@ -73,7 +73,11 @@ Following are the list of popular mobile based digital payment systems only avai
 >
 > Play Store: <https://appurl.io/lXasKFM_X>{:rel="nofollow"}
 
-- **[IME Pay](http://www.imepay.com.np/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/ime-pay/id1241888344?mt=8){:rel="nofollow"}) <br /> **You can now earn interest on the amount in your IME Pay Digital Wallet.** You can upgrade to "Superwallet" if your KYC is verified and a balance above Rs. 1000 is maintained. The accrued interest is added directly to your IME Pay wallet every three months, based on the Nepali Calendar. <br /> IME Pay has extended its facilities reaching every corner of Nepal; providing financial services to the unbanked population. With this facility, IME Pay in enabling rural populations to keep their money safe and secure while earning interest, despite the low accessibility of banking services.
+- **[IME Pay](http://www.imepay.com.np/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/ime-pay/id1241888344?mt=8){:rel="nofollow"}) <br />
+  <br />
+  **You can now earn interest on the amount in your IME Pay Digital Wallet.** You can upgrade to "Superwallet" if your KYC is verified and a balance above Rs. 1000 is maintained. The accrued interest is added directly to your IME Pay wallet every three months, based on the Nepali Calendar. <br />
+  <br />
+  IME Pay has extended its facilities reaching every corner of Nepal; providing financial services to the unbanked population. With this facility, IME Pay in enabling rural populations to keep their money safe and secure while earning interest, despite the low accessibility of banking services.
 
 - **[PrabhuPAY](https://prabhupay.com/){:rel="nofollow"}** (available for [Android](https://play.google.com/store/apps/details?id=com.prabhutech.prabhupay&hl=en){:rel="nofollow"}, and [iOS](https://itunes.apple.com/np/app/prabhupay-mobile-wallet/id1451300760?mt=8){:rel="nofollow"})
 

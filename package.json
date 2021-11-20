@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.3",
@@ -63,7 +63,7 @@
     "chokidar-cli": "^3.0.0",
     "clean-webpack-plugin": "^4.0.0",
     "cpy-cli": "^3.1.1",
-    "cssnano": "^5.0.10",
+    "cssnano": "^5.0.11",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-xo": "^0.39.0",
@@ -83,7 +83,7 @@
     "stylelint-config-twbs-bootstrap": "^2.2.4",
     "stylelint-prettier": "^2.0.0",
     "terser-webpack-plugin": "^5.2.5",
-    "webpack": "^5.64.0",
+    "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1"
   },
   "main": "_site/index.html",
