@@ -10,7 +10,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 #### The Pirate Bay proxy sites and mirrors
 
 - [thepiratebay.org](https://thepiratebay.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
-  [proxy-bay.co](https://proxy-bay.co/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+  [proxy-bay.me](https://proxy-bay.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [Mirror on Github](https://proxybay.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [piratebayztemzmv.onion](http://piratebayztemzmv.onion/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
@@ -18,8 +18,11 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-- [unblockit.kim](https://unblockit.kim/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
-  [Mirror on Github](https://unblocked-pw.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [unblockit.bz](https://unblockit.bz/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+  [unblockit.pages.dev](https://unblockit.pages.dev){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+  [Mirror on GitLab](https://unblock_it.gitlab.io/site/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} <br />
+  [Reddit](https://reddit.com/r/unblockit){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+  [Telegram](https://t.me/unblockit1){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
 - [unblocked.to](https://unblocked.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [unblockproject.cyou](https://unblockproject.cyou/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [unblockninja.com](https://unblockninja.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
