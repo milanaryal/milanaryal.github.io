@@ -80,7 +80,7 @@
     "sass": "^1.45.0",
     "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-twbs-bootstrap": "^2.2.4",
+    "stylelint-config-twbs-bootstrap": "^3.0.0",
     "stylelint-prettier": "^2.0.0",
     "terser-webpack-plugin": "^5.2.5",
     "webpack": "^5.65.0",
