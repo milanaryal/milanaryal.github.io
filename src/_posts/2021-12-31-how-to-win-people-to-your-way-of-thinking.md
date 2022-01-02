@@ -15,7 +15,7 @@ The only way to get the best of an argument is to avoid it.
 Show respect for the other person's opinions. Never say, "You're wrong."
 
 #### Principle 3
- 
+
 If you are wrong, admit it quickly and emphatically.
 
 #### Principle 4
