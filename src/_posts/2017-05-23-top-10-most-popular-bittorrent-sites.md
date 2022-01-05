@@ -1,7 +1,7 @@
 ---
-title: "Top 10 most popular BitTorrent sites [Updated Mar 10, 2021]"
+title: "Top 10 most popular BitTorrent sites [Updated January 2022]"
 date: 2017-05-23T06:43:58+05:45
-last_modified_at: 2021-03-10T10:00:00+05:45
+last_modified_at: 2022-01-05T00:00:00+05:45
 excerpt: "An up-to-date list of the most popular BitTorrent websites out there."
 ---
 
@@ -17,16 +17,16 @@ BitTorrent websites come and go but below I've compiled a list of the ten most-v
 
 | S.N. | Site                                                                                                             | Mirror                                                                                                               | Specialization | RSS | Alexa Rank |
 | ---- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------- | --- | ---------- |
-| 1.   | [The Pirate Bay](https://thepiratebay.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}      | [proxy-bay.me](https://proxy-bay.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                | -              | Yes | 341        |
-| 2.   | [YTS.MX](https://yts.mx/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                        | [unblockit.tv](https://yts.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}            | Movies         | Yes | 404        |
-| 3.   | [1337x](https://1337x.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                       | [unblockit.tv](https://1337x.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}          | -              | No  | 414        |
-| 4.   | [NYAA](https://nyaa.si/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                         | [unblockit.tv](http://nyaa.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}            | Anime          | Yes | 749        |
-| 5.   | [RARBG](https://rarbg.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                       | [unblockit.tv](https://rarbg.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}          | -              | Yes | 839        |
-| 6.   | [FitGirl Repacks](https://fitgirl-repacks.site/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} | [unblockit.tv](https://fitgirlrepacks.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} | Games          | No  | 2,278      |
-| 7.   | [LimeTorrents](https://www.limetorrents.info/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}   | [unblockit.tv](https://limetorrents.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}   | -              | Yes | 2,772      |
-| 8.   | [EZTV](https://eztv.re/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                         | [unblockit.tv](https://eztv.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}           | TV series      | Yes | 3,072      |
-| 9.   | [Torrent Galaxy](https://torrentgalaxy.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}      | [proxygalaxy.pw](https://proxygalaxy.pw/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}            | -              | Yes | 4,609      |
-| 10.  | [Zooqle](https://zooqle.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                    | [unblockit.tv](https://zooqle.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}         | Search         | Yes | 6,449      |
+| 1.   | [The Pirate Bay](https://thepiratebay.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}      | [proxy-bay.me](https://proxy-bay.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                | -              | Yes | 332        |
+| 2.   | [YTS.MX](https://yts.mx/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                        | [unblockit.tv](https://yts.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}            | Movies         | Yes | 402        |
+| 3.   | [1337x](https://1337x.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                       | [unblockit.tv](https://1337x.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}          | -              | No  | 433        |
+| 4.   | [RARBG](https://rarbg.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                       | [unblockit.tv](https://rarbg.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}          | -              | Yes | 1,064      |
+| 5.   | [NYAA](https://nyaa.si/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                         | [unblockit.tv](http://nyaa.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}            | Anime          | Yes | 1,109      |
+| 6.   | [FitGirl Repacks](https://fitgirl-repacks.site/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} | [unblockit.tv](https://fitgirlrepacks.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} | Games          | No  | 2,604      |
+| 7.   | [EZTV](https://eztv.re/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                         | [unblockit.tv](https://eztv.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}           | TV series      | Yes | 3,664      |
+| 8.   | [LimeTorrents](https://www.limetorrents.pro/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}    | [unblockit.tv](https://limetorrents.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}   | -              | Yes | 4,472      |
+| 9.   | [Torrent Galaxy](https://torrentgalaxy.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}      | [proxygalaxy.pw](https://proxygalaxy.pw/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}            | -              | Yes | 6,110      |
+| 10.  | [Zooqle](https://zooqle.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}                    | [unblockit.tv](https://zooqle.unblockit.tv/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}         | Search         | Yes | 12,359     |
 
 **Note**: All BitTorrent sites in above table are _working_, as of the last update to this page.
 
