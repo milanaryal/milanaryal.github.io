@@ -10,7 +10,7 @@ Following steps will help you to remove your phone number details from the Truec
 
 ### [How do I unlist my phone number?](https://support.truecaller.com/support/solutions/articles/81000392599-how-do-i-unlist-my-phone-number){:rel="nofollow"}
 
-You can opt-out from the Truecaller database through this [link](https://www.truecaller.com/unlisting){:rel="nofollow"}.
+You can opt-out from the Truecaller database through **[this link](https://www.truecaller.com/unlisting){:rel="nofollow"}**.
 
 Note: If you have used Truecaller on your phone, please deactivate your account first:
 

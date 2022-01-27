@@ -36,8 +36,10 @@ In this post, I have tried to collect all of the essential numbers/codes for the
 | Namaste Credit   | NAMASTE CREDIT deactivate | STOP to 1477                               | SMS    |
 | MCA              | MCA Activate              | \*1400\*1\#                                | Dial   |
 | MCA              | MCA Deactivate            | \*1400\*2\#                                | Dial   |
-| FNF              | FNF Activate              | FNFSUB9841xxxxxx to 1415                   | SMS    |
-| FNF              | FNF ADD                   | FNFADD01488xxxx to 1415                    | SMS    |
+| FNF              | FNF Activate              | FNFSUB\*9841xxxxxx to 1415                 | SMS    |
+| FNF              | FNF Add                   | FNFADD\*01488xxxx to 1415                  | SMS    |
+| FNF              | FNF Delete                | FNFDEL\*9841xxxxxx to 1415                 | SMS    |
+| FNF              | FNF Inquiry               | FNFINQ to 1415                             | SMS    |
 
 ### Ncell useful USSD and short codes
 
