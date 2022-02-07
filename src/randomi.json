@@ -10,6 +10,6 @@ posts_limit: 50
     "u": "{{- post.url | replace:'/index.html','/' | relative_url -}}",
     "d": "{{- post.date | date: '%b %-d, %Y' -}}",
     "r": "{%- assign reading_time = post.content | strip_html | normalize_whitespace | number_of_words | plus:91 | divided_by:180 -%}{%- if reading_time <= 1 -%}{{- '1' | append:' min read' -}}{%- else -%}{{- reading_time | append:' min read' -}}{%- endif -%}",
-    "e": "{{- post.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 80 | escape_once -}}"
+    "e": "{%- assign post_summary = post.description | default: post.excerpt -%}{{- post_summary | markdownify | strip_html | normalize_whitespace | truncate: 80 | escape_once -}}"
   }{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}
 ]
