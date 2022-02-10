@@ -1,6 +1,6 @@
 ---
 title: "Style guide"
-tagline: "The style guide for Milan Aryal."
+tagline: "A living style guide."
 description: "A living document of code detailing all the various components used on the website to maintain visual consistency."
 permalink: "/style-guide/"
 sitemap: false
