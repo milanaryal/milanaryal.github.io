@@ -1,7 +1,7 @@
 ---
 title: "Useful short codes of mobile network operators [Namaste, Ncell, & Smart Cell] in Nepal"
+description: "A list of the essential USSD and short codes of mobile service providers operating in Nepal."
 date: 2022-01-02 00:00:00 +0545
-excerpt: "A list of the essential USSD and short codes of mobile service providers operating in Nepal."
 ---
 
 Short codes are used to dial or send a message for subscribing offers, packages and additional functionalities/features of mobile network operators. There are several USSD codes, SMS codes and calling numbers.

@@ -1,8 +1,8 @@
 ---
 title: "Minify Jekyll's final HTML output files"
+description: "Compress and minify HTML files after they have been generated locally with a static website generator like Jekyll."
 date: 2021-04-10 06:00:00 +0545
-last_modified_at: "2021-06-07T08:00:00+05:45"
-excerpt: "Compress and minify HTML files after they have been generated locally with a static website generator like Jekyll."
+last_modified_at: 2021-06-07 08:00:00 +0545
 ---
 
 Site assets minifying (or in another word compressing) helps to decrease site load and speed up browser loading time. Just like with CSS and JavaScript, HTML output can be compressed and minified by removing whitespace, new lines, comments and even removing certain optional closing tags, making for smaller file sizes.

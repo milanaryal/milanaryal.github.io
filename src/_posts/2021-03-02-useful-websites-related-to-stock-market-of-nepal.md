@@ -1,8 +1,8 @@
 ---
 title: "Useful websites related to stock market of Nepal"
-date: 2021-03-02T15:00:00+05:45
-last_modified_at: 2021-05-29T10:45:00+05:45
-excerpt: "Nepal stock market related list of useful websites that you might like to read for daily up-to-date information."
+description: "Nepal stock market related list of useful websites that you might like to read for daily up-to-date information."
+date: 2021-03-02 15:00:00 +0545
+last_modified_at: 2021-05-29 10:45:00 +0545
 ---
 
 ### Nepal stock exchange official websites

@@ -1,8 +1,7 @@
 ---
-redirect_from: "/dell-inspiron-7370-laptop-configurations-for-windows-11/"
 title: "Dell Inspiron 7370 Laptop configuration for Windows 11"
-date: 2021-06-25 11:00:00 +05:45
-excerpt: "Learn configuring the UEFI (BIOS) of Dell Inspiron 13 7000 7370 Laptop for Microsoft Windows 11 operating system."
+description: "Learn configuring the UEFI (BIOS) of Dell Inspiron 13 7000 7370 Laptop for Microsoft Windows 11 operating system."
+date: 2021-06-25 11:00:00 +0545
 ---
 
 Last night (June 24, 2021 8:45-9:45PM GMT+05:45), Microsoft unveiled next generation Windows 11 with following minimum system requirements.

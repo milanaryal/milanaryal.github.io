@@ -1,7 +1,7 @@
 ---
 title: "How to compress images using Imagemin"
+description: "Learn how to compress JPEG and PNG image files using NPM package Imagemin in easy steps."
 date: 2021-04-23 23:00:00 +0545
-excerpt: "Learn how to compress JPEG and PNG image files using NPM package Imagemin in easy steps."
 ---
 
 In this post, we will learn to compress popular images format like JPEG, PNG,... in _Node.js_ development environment.

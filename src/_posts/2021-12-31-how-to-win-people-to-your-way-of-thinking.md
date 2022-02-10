@@ -1,7 +1,7 @@
 ---
 title: "How to win people to your way of thinking"
-date: 2021-12-31 00:00:00 +05:45
-excerpt: "12 tips to become more persuasive."
+description: "12 tips to become more persuasive."
+date: 2021-12-31 00:00:00 +0545
 ---
 
 <!--- In a nutshell, win people to your way of thinking. --->

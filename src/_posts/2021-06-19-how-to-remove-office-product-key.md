@@ -1,7 +1,7 @@
 ---
 title: "How to remove Office 2019/16 product key on Windows"
-date: 2021-06-20 07:00:00 +05:45
-excerpt: "Lean how to remove Microsoft Office 2019 (or Office 2016) product key with simple command shell scripts."
+description: "Lean how to remove Microsoft Office 2019 (or Office 2016) product key with simple command shell scripts."
+date: 2021-06-20 07:00:00 +0545
 ---
 
 1\. Open a PowerShell (or command prompt) as Administrator

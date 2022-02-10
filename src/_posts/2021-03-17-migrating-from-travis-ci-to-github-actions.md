@@ -1,6 +1,6 @@
 ---
 title: "Migrating from Travis CI to GitHub Actions [for GitHub Pages and Jekyll]"
-date: 2021-03-17T14:00:00+05:45
+date: 2021-03-17 14:00:00 +0545
 ---
 
 I use continuous integration (CI) to test build status of my Jekyll blog in GitHub Pages environment.

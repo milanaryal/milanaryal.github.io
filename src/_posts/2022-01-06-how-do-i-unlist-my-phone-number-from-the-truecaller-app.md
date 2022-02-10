@@ -1,6 +1,6 @@
 ---
 title: "How do I unlist my phone number from the Truecaller app?"
-excerpt: "Learn how to quickly unlist your phone number from Truecaller database server."
+description: "Learn how to quickly unlist your phone number from Truecaller database server."
 date: 2022-01-06 00:00:00 +0545
 ---
 

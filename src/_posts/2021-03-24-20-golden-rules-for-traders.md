@@ -1,7 +1,7 @@
 ---
 title: "20 golden rules for traders"
-date: 2021-03-24T10:00:00+05:45
-excerpt: "A list of the best 20 forex and stock trading rules for successful traders out there."
+description: "A list of the best 20 forex and stock trading rules for successful traders out there."
+date: 2021-03-24 10:00:00 +0545
 ---
 
 **Want to trade successfully?** Just choose the good positions and avoid the bad ones. Poor trade selection takes a heavy toll as it bleeds your confidence and wallet. You face many crossroads during each market day. Without a system of discipline for your decision-making, impulse and emotion will undermine skills as you chase the wrong stocks at the worst times.
