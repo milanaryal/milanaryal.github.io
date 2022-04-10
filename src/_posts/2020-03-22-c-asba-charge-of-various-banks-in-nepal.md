@@ -3,7 +3,7 @@ redirect_from: "/c-asba-service-charge-for-banks-in-nepal/"
 title: "C-ASBA charge of various Banks in Nepal"
 description: "The list of various Banks in Nepal with their C-ASBA service charges per application."
 date: 2020-03-22 13:00:00 +0545
-last_modified_at: 2022-03-26 20:20:00 +0545
+last_modified_at: 2022-04-10 20:30:00 +0545
 ---
 
 Investors can buy primary and rights shares online with the C-ASBA process which has been implemented on February 23, 2018 (Falgun 11, 2074) in Nepal. C-ASBA is an advanced form of ASBA interface which is claimed to be more user friendly.
@@ -49,9 +49,10 @@ Here are the list of various Banks in Nepal with their C-ASBA service charges pe
 | Symbol | Bank Name            | Charge (in rupees) |
 | ------ | -------------------- | ------------------ |
 | ICFC   | ICFC Finance         | Rs. 25             |
-| MNBBL  | Muktinath Bikas Bank | Rs. 10             |
+| GBBL   | Garima Bikas Bank    | Rs. 10             |
 | MLBL   | Mahalaxmi Bikas Bank | Rs. 10             |
-| GBBL   | Garima Bikas Bank    | Free               |
+| MNBBL  | Muktinath Bikas Bank | Rs. 10             |
+| MFIL   | Manjushree Finance   | Free               |
 
 **Note:**
 
