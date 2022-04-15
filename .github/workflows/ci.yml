@@ -82,7 +82,7 @@ jobs:
           || true
 
       - name: Upload site
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success() && github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main'
         with:
           name: site
