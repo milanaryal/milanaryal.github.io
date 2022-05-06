@@ -10,15 +10,12 @@ Nepal Telecommunications Authority (NTA) brings directives to all mobile network
 
 With the implementation of common shortcodes, you do not need to remember the shortcodes for all mobile network operators. You can use the same short code in any network to get the balance information in mobile, balance recharge, and balance transfer.
 
-NTA has made such arrangements in telecommunication services by issuing shortcode and toll-free number management procedures 2077 BS.
-
-| Purpose          | Common Short Code (USSD) | Method |
+| Service          | Common Short Code (USSD) | Method |
 | ---------------- | ------------------------ | ------ |
 | Balance Recharge | \*122\#                  | Dial   |
 | Balance Transfer | \*133\#                  | Dial   |
 | Balance Inquiry  | \*144\#                  | Dial   |
 
-#### References
+NTA has made such arrangements in telecommunication services by issuing [shortcode and toll-free number management procedures 2077 BS](https://drive.google.com/file/d/1gvzyk_Cd1RAnN1w0V0cVCFLkkw_DIwl4/view){:rel="nofollow"}.
 
-- <https://drive.google.com/file/d/1gvzyk_Cd1RAnN1w0V0cVCFLkkw_DIwl4/view>{:rel="nofollow"}
-- <https://www.nepalitelecom.com/telcos-common-short-codes-nepal>{:rel="nofollow"}
+_Reference: <https://www.nepalitelecom.com/telcos-common-short-codes-nepal>{:rel="nofollow"}_
