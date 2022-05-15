@@ -16,7 +16,7 @@ With the implementation of common shortcodes, you do not need to remember the sh
 | Balance Transfer | 133               |
 | Balance Inquiry  | 144               |
 
-For example, dial USSD code `\*144\#` to check balance for all available SIM card networks in Nepal.
+For example, dial USSD code `*144#` to check balance for all available SIM card networks in Nepal.
 
 NTA has made such arrangements in telecommunication services by issuing shortcode and toll-free number management [procedures 2077 BS](https://drive.google.com/file/d/1gvzyk_Cd1RAnN1w0V0cVCFLkkw_DIwl4/view){:rel="nofollow"}.
 

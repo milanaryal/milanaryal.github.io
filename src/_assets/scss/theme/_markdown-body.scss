@@ -176,6 +176,12 @@
     padding-left: 2em; // reset default left padding
   }
 
+  ul li {
+    padding-inline-start: 1.5ch;
+    // margin-bottom: 0.25rem;
+    list-style-type: "—";
+  }
+
   li > p {
     margin-top: 1.15em; // 0.75em
   }

@@ -44,8 +44,8 @@
   // color: rgba(0, 0, 0, .8);
   letter-spacing: -0.03em; // -.002em, -0.03em
   // ** Font feature settings ** //
-  font-variant-ligatures: common-ligatures;
   font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
+  font-variant-ligatures: common-ligatures;
   // ** Mask image with a URL **//
   @include theme-mask-image();
 
