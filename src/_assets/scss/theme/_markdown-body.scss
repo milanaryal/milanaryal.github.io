@@ -176,10 +176,24 @@
     padding-left: 2em; // reset default left padding
   }
 
+  ol li {
+    padding-inline-start: 1.3ch;
+
+    @media (min-width: 768px) {
+      padding-inline-start: 1.3ch;
+    }
+  }
+
   ul li {
-    padding-inline-start: 1.5ch;
+    padding-inline-start: 1.3ch;
     // margin-bottom: 0.25rem;
-    list-style-type: "—";
+    list-style-type: "–";
+
+    @media (min-width: 768px) {
+      padding-inline-start: 1.5ch;
+      // margin-bottom: 0.25rem;
+      list-style-type: "—";
+    }
   }
 
   li > p {
