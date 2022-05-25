@@ -63,7 +63,6 @@ All the resources below have specifically specified that their content is [&copy
 
 These following photography resources are those who have declared their own usage and restriction terms. These can be found by clicking the _(license)_ link next to the resource.
 
-- [Bara Art](http://www.bara-art.com/){:rel="nofollow"} - [&copy;](http://www.bara-art.com/about/){:rel="nofollow"} The world always needs high quality photography! Here they are for you, so make something awesome out of them.
 - [Compfight.com](http://compfight.com/){:rel="nofollow"} - [&copy;](https://www.flickr.com/creativecommons/){:rel="nofollow"} An image search engine tailored to efficiently locate images for blogs, comps, inspiration, and research.
 - [Death to the Stock Photo](http://join.deathtothestockphoto.com/){:rel="nofollow"} - [&copy;](http://www.mediafire.com/file/2ifplcw682487nz/Death+to+the+Stock+Photo+-+Photograph+End+User+License+%281-2014%29+%281%29.pdf){:rel="nofollow"} Free monthly photos for all your creative needs.
 - [Designer Pics](http://www.designerspics.com){:rel="nofollow"} - [&copy;](http://www.designerspics.com/faq-and-terms/){:rel="nofollow"} Free photographs for personal and commercial by [Jeshu John](https://twitter.com/jeshujohn){:rel="nofollow"}.
@@ -80,7 +79,7 @@ These following photography resources are those who have declared their own usag
 - [Rawpixel](https://www.rawpixel.com/){:rel="nofollow"} - [&copy;](https://www.rawpixel.com/services/licenses){:rel="nofollow"} Redefining stock imagery with authentically styled and unique stock photos (Subscribe required).
 - [Shutteroo](http://shutteroo.com/){:rel="nofollow"} - [&copy;](http://shutteroo.com/about/){:rel="nofollow"} Free high-resolution travel images.
 - [Split Shire](https://www.splitshire.com/){:rel="nofollow"} - [&copy;](https://www.splitshire.com/about/){:rel="nofollow"} Real photos for commercial use with no copyright restrictions and a real look.
-- [Startup Stock Photos](http://startupstockphotos.com/){:rel="nofollow"} - [&copy;](http://startupstockphotos.com/terms-of-use){:rel="nofollow"} Startup based photography.
+- [Startup Stock Photos](http://startupstockphotos.com/){:rel="nofollow"} - [&copy;](https://startupstockphotos.com/terms/){:rel="nofollow"} Startup based photography.
 - [Tookapic](https://tookapic.com/photos?filter=free){:rel="nofollow"} - [&copy;](https://tookapic.com/terms){:rel="nofollow"} Free listing from Tookapic.
 
 ### Public Domain

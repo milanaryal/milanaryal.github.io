@@ -46,6 +46,3 @@ If your access to the Tor network is blocked, this extension will not assist you
 
 - [Tor (anonymity network)](<https://en.wikipedia.org/wiki/Tor_(anonymity_network)>){:rel="nofollow"}, _Wikipedia_
 - [The Tor Project](https://en.wikipedia.org/wiki/The_Tor_Project){:rel="nofollow"}, _Wikipedia_
-- [Slicing onions: Part 1 -- Myth-busting Tor](https://write.privacytools.io/my-thoughts-on-security/slicing-onions-part-1-myth-busting-tor){:rel="nofollow"}, _PrivacyTools_
-- [Slicing Onions: Part 2 -- Onion recipes; VPN not required.](https://write.privacytools.io/my-thoughts-on-security/slicing-onions-part-2-onion-recipes-vpn-not-required){:rel="nofollow"}, _PrivacyTools_
-- [7 Things You Should Know About Tor](https://write.privacytools.io/my-thoughts-on-security/slicing-onions-part-1-myth-busting-tor){:rel="nofollow"}, _EFF_

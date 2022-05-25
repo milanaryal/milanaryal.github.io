@@ -91,6 +91,6 @@ yarn build
 
 - [Parcel examples](https://github.com/parcel-bundler/examples){:rel="nofollow"}: Parcel examples using various tools and frameworks.
 - [Awesome Parcel](https://github.com/parcel-bundler/awesome-parcel){:rel="nofollow"}: A curated list of awesome Parcel resources, libraries, tools and boilerplates.
-- [Getting Started](https://parceljs.org/getting_started.html){:rel="nofollow"}: Parcel Official documentation
-- [Parcel CLI](https://parceljs.org/cli.html){:rel="nofollow"}: Parcel Official documentation using CLI
+- [Getting Started](https://parceljs.org/docs/){:rel="nofollow"}: Parcel Official documentation
+- [Parcel CLI](https://parceljs.org/features/cli/){:rel="nofollow"}: Parcel Official documentation using CLI
 - [The Parcel Bundler](https://youtu.be/OK6akGZCC88){:rel="nofollow"}: Tutorial on YouTube by Gary Simon

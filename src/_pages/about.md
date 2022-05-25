@@ -6,9 +6,11 @@ feature_image: "/assets/img/about.jpg"
 permalink: "/about/"
 ---
 
-Hey --- this is Milan Aryal (मिलन अर्याल), who is passionate about capital market and front-end web development based in Kathmandu, Nepal.
+Hey --- this is Milan Aryal (मिलन अर्याल), who is passionate about capital market (esp. [stock trading](<https://en.wikipedia.org/wiki/Trade_(finance)>){:rel="nofollow"}) and front-end web development (esp. [Jamstack](https://en.wikipedia.org/wiki/Jamstack){:rel="nofollow"}) based in Kathmandu, Nepal.
 
 > The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification.
+
+If you want to ask any questions, or would just like to say hello in general, my [contact page](/contact/) has all those details.
 
 ### Follow me across the interwebs
 
@@ -110,8 +112,7 @@ In case you were wondering, this site is:
 - Coded with [Visual Studio Code](https://code.visualstudio.com/)
 - Based on [Bootstrap](https://getbootstrap.com/) framework
 - Built with [npm](https://www.npmjs.com/) to compile site assets
-- Generated with [Jekyll](https://jekyllrb.com/)
-- Hosted on [GitHub Pages](https://pages.github.com/)
+- Generated with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/)
 
 ...for more information see [humans.txt](/humans.txt). You can find more about my development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config).
 

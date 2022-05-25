@@ -76,7 +76,7 @@ DownThemAll is a powerful yet easy-to-use extension that adds new advanced downl
 
 ---
 
-### Recommended by [Privacy Tools](https://www.privacytools.io/browsers/#addons){:rel="nofollow"}
+### Recommended by [Privacy Tools](https://www.privacytools.io/#browser-addons){:rel="nofollow"}
 
 #### [uBlock Origin: Block Ads and Trackers](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en){:rel="nofollow"}
 

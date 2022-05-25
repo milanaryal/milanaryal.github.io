@@ -27,7 +27,7 @@ Those who need older programs will still be able to run them in virtualization m
 
 ### Configure Dell Inspiron 7370 Laptop for Windows 11
 
-> Original Equipment Manufacturer (OEM): [Dell Inspiron 13 7000 7370 Laptop](https://www.amazon.com/Dell-Inspiron-7000-7370-Laptop/dp/B0764N2QL3){:rel="nofollow"} -- (13.3" Touchscreen IPS FHD (1920x1080), 8th Gen Intel Quad-Core i5-8250U/i7-8550U, 256/512GB SSD, 8/16GB DDR4, Backlit Keyboard, ..[see detailed specs](https://www.cnet.com/products/dell-inspiron-7370-13-3-core-i7-8550u-16-gb-ram-512-gb-ssd/){:rel="nofollow"}) is compatible for Windows 11 or, if your device is already running Windows 10, you can use the [PC Health Check app](https://www.microsoft.com/windows/windows-11#pchealthcheck){:rel="nofollow"} to assess compatibility.
+> Original Equipment Manufacturer (OEM): [Dell Inspiron 13 7000 7370 Laptop](https://www.amazon.com/Dell-Inspiron-7000-7370-Laptop/dp/B0764N2QL3){:rel="nofollow"} -- (13.3" Touchscreen IPS FHD (1920x1080), 8th Gen Intel Quad-Core i5-8250U/i7-8550U, 256/512GB SSD, 8/16GB DDR4, Backlit Keyboard, ..[see detailed specs](https://laptopmedia.com/laptop-specs/dell-inspiron-7370/){:rel="nofollow"}) is compatible for Windows 11 or, if your device is already running Windows 10, you can use the [PC Health Check app](https://www.microsoft.com/windows/windows-11#pchealthcheck){:rel="nofollow"} to assess compatibility.
 
 #### Settings
 

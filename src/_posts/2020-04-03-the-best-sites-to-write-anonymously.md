@@ -35,6 +35,5 @@ Similar kind of other best anonymous publishing platform out there:
 - [Rentry.co](https://rentry.co/){:rel="nofollow"}
 - [Notepin.co](https://notepin.co/write){:rel="nofollow"}
 - [Throbe](https://thro.be/write.php?new=new){:rel="nofollow"}
-- [David Partson’s Encrypted Page Maker](https://davidpartson024.github.io/no_host/encryptedPageMaker.html){:rel="nofollow"}
 - [Novni](https://novni.com/write-anonymously){:rel="nofollow"}
 - [Pastebin](https://pastebin.com/){:rel="nofollow"}
