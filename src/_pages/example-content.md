@@ -17,7 +17,7 @@ Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur puru
 
 ### Inline HTML elements
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](//developer.mozilla.org/en-US/docs/Web/HTML/Element).
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
 - **To bold text**, use `<strong>`.
 - _To italicize text_, use `<em>`.
@@ -102,11 +102,11 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![placeholder](//via.placeholder.com/800x400 "Large example image")
+![placeholder](https://via.placeholder.com/800x400 "Large example image")
 
-![placeholder](//via.placeholder.com/400x200 "Medium example image")
+![placeholder](https://via.placeholder.com/400x200 "Medium example image")
 
-![placeholder](//via.placeholder.com/200x200 "Small example image")
+![placeholder](https://via.placeholder.com/200x200 "Small example image")
 
 ### Tables
 

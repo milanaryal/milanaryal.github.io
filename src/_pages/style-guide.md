@@ -9,9 +9,9 @@ robots: "noindex, follow"
 
 > A living document of code detailing all the various colors, typographic elements, UI patterns, and components used on the website to maintain visual consistency.
 
-Posts in [Milan Aryal](//milanaryal.com.np/)'s blog are written in Markdown which are generated in standard HTML using [Jekyll](//jekyllrb.com/).
+Posts in [Milan Aryal](https://milanaryal.com.np/)'s blog are written in Markdown which are generated in standard HTML using [Jekyll](https://jekyllrb.com/).
 
-This style guide is written in Markdown, the raw file is available [here](//raw.githubusercontent.com/MilanAryal/milanaryal.github.io/main/src/_pages/style-guide.md).
+This style guide is written in Markdown, the raw file is available [here](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/main/src/_pages/style-guide.md).
 
 ---
 
@@ -135,12 +135,12 @@ For example, `<section>` should be wrapped as inline.
 
 #### Default image shape
 
-![placeholder](//via.placeholder.com/800x400)
+![placeholder](https://via.placeholder.com/800x400)
 
 #### Image with caption
 
 <figure>
-  <img src="//via.placeholder.com/800x400" alt="placeholder" />
+  <img src="https://via.placeholder.com/800x400" alt="placeholder" />
   
   <figcaption>Image caption</figcaption>
 </figure>
@@ -167,7 +167,7 @@ Any YouTube or Vimeo videos, and SlideShare slides are responsive in the website
 
 <figure>
   <!-- Copy & Pasted from YouTube -->
-  <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M?rel=0&amp;hd=1&amp;theme=light" frameborder="0" allowfullscreen="true"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Y1xs_xPb46M?rel=0&amp;hd=1&amp;theme=light" frameborder="0" allowfullscreen="true"></iframe>
   
   <figcaption>Whatever YouTube iframe embed code you paste within the you'll see it presented in a fluid 16:9 box.</figcaption>
 </figure>
@@ -175,7 +175,7 @@ Any YouTube or Vimeo videos, and SlideShare slides are responsive in the website
 #### Example of SlideShare slide embed
 
 <figure>
-  <iframe src="//www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen="true"></iframe>
+  <iframe src="https://www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen="true"></iframe>
 
-  <figcaption>Slides: SlideShare, <a href="//docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19" rel="nofollow">Preconnect, prefetch, prerender...</a> from <a href="//twitter.com/igrigorik" rel="nofollow">Ilya Grigorik</a>.</figcaption>
+  <figcaption>Slides: SlideShare, <a href="https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19" rel="nofollow">Preconnect, prefetch, prerender...</a> from <a href="https://twitter.com/igrigorik" rel="nofollow">Ilya Grigorik</a>.</figcaption>
 </figure>

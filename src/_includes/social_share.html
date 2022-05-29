@@ -6,22 +6,22 @@
   {%- assign page_title = page.title | smartify | strip_html | normalize_whitespace | uri_escape -%}
 {%- endif -%}
 
-{%- capture twitter_share_link -%}//twitter.com/intent/tweet?url={{ page_url }}&text={{ page_title }}{%- if site.author.twitter -%}&via={{ site.author.twitter }}{%- endif -%}{%- endcapture -%}
+{%- capture twitter_share_link -%}https://twitter.com/intent/tweet?url={{ page_url }}&text={{ page_title }}{%- if site.author.twitter -%}&via={{ site.author.twitter }}{%- endif -%}{%- endcapture -%}
 {%- if twitter_share_link -%}
   {%- assign twitter_share_link = twitter_share_link | escape_once -%}
 {%- endif -%}
 
-{%- capture facebook_share_link -%}//www.facebook.com/sharer/sharer.php?u={{ page_url }}&t={{ page_title }}{%- endcapture -%}
+{%- capture facebook_share_link -%}https://www.facebook.com/sharer/sharer.php?u={{ page_url }}&t={{ page_title }}{%- endcapture -%}
 {%- if facebook_share_link -%}
   {%- assign facebook_share_link = facebook_share_link | escape_once -%}
 {%- endif -%}
 
-{%- capture linkedin_share_link -%}//www.linkedin.com/shareArticle?mini=true&url={{ page_url }}&title={{ page_title }}{%- endcapture -%}
+{%- capture linkedin_share_link -%}https://www.linkedin.com/shareArticle?mini=true&url={{ page_url }}&title={{ page_title }}{%- endcapture -%}
 {%- if linkedin_share_link -%}
   {%- assign linkedin_share_link = linkedin_share_link | escape_once -%}
 {%- endif -%}
 
-{%- capture telegram_share_link -%}//t.me/share/url?url={{ page_url }}&text={{ page_title }}{%- endcapture -%}
+{%- capture telegram_share_link -%}https://t.me/share/url?url={{ page_url }}&text={{ page_title }}{%- endcapture -%}
 {%- if telegram_share_link -%}
   {%- assign telegram_share_link = telegram_share_link | escape_once -%}
 {%- endif -%}

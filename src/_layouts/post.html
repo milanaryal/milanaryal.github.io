@@ -49,7 +49,7 @@ layout: default
             <h1 class="post-title entry-title p-name">{{ page_title }}</h1>
 
             {% comment %}
-              <!-- http://microformats.org/wiki/h-entry -->
+            <!-- https://microformats.org/wiki/h-entry -->
             {% endcomment %}
             {% assign page_summary = page.description | default: page.excerpt %}
             {% if page_summary and page_summary != empty %}
@@ -128,7 +128,7 @@ layout: default
             </div><!-- /.post-footer-meta-acknowledgments -->
 
             {% comment %}
-              <!-- http://microformats.org/wiki/h-entry -->
+              <!-- https://microformats.org/wiki/h-entry -->
             {% endcomment %}
 
             {%- assign page_author = page.author.name | default: page.author | default: site.author.name | default: site.author %}
