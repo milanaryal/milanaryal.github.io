@@ -15,17 +15,17 @@ This is **HTML5 and CSS3 cheat sheet** by _Code School_ for those who want to wo
 
 New HTML5 tags with descriptions. Comparison between old version of HTML and HTML5.
 
-![HTML5 cheat sheet](/uploads/20140304-html5-cheat-sheet-p1.png)
+![HTML5 cheat sheet - Page 1 of 2](https://user-images.githubusercontent.com/9361180/171993023-5feada1a-d9de-4331-bc23-47e14551394c.png)
 
 Complete HTML5 tags updated version for your to easily memorize and use...
 
-![HTML5 cheat sheet](/uploads/20140304-html5-cheat-sheet-p2.png)
+![HTML5 cheat sheet - Page 2 of 2](https://user-images.githubusercontent.com/9361180/171993199-baeeebf7-ed45-4d0d-b3bc-ee9cf58f3946.png)
 
 ### CSS3 cheat sheet
 
 New CSS3 attributes with great examples and very easy to memorize.
 
-![CSS3 cheat sheet](/uploads/20140304-css3-cheat-sheet.png)
+![CSS3 cheat sheet](https://user-images.githubusercontent.com/9361180/171993306-a2829290-0bbc-45a0-a481-691b2c757d8f.png)
 
 [**Download in PDF format**](https://www.dropbox.com/s/uxyszu9uxo978ik/20140304-html5-and-css3-cheat-sheet.pdf?raw=1), creative common courtesy from _codeschool.com_.
 
@@ -35,13 +35,13 @@ New CSS3 attributes with great examples and very easy to memorize.
 
 Following you will find a beginner's essential CSS cheat sheet by _WebsiteSetup_ --- updated with new CSS3 tags.
 
-![CSS3 cheat sheet](/uploads/20140304-css-cheat-sheet-p1.png)
+![CSS3 cheat sheet - Page 1 of 4](/uploads/20140304-css-cheat-sheet-p1.png)
 
-![CSS3 cheat sheet](/uploads/20140304-css-cheat-sheet-p2.png)
+![CSS3 cheat sheet - Page 2 of 4](/uploads/20140304-css-cheat-sheet-p2.png)
 
-![CSS3 cheat sheet](/uploads/20140304-css-cheat-sheet-p3.png)
+![CSS3 cheat sheet - Page 3 of 4](/uploads/20140304-css-cheat-sheet-p3.png)
 
-![CSS3 cheat sheet](/uploads/20140304-css-cheat-sheet-p4.png)
+![CSS3 cheat sheet - Page 4 of 4](/uploads/20140304-css-cheat-sheet-p4.png)
 
 Download [**Image files**](https://www.dropbox.com/s/9sw100xvnplng8q/20140304-css-cheat-sheet.zip?dl=1) or in [**PDF format**](https://www.dropbox.com/s/126wkqz071jc7hz/20140304-wsu-css-cheat-sheet.pdf?raw=1), creative common courtesy from _[WebsiteSetup.org](https://websitesetup.org/css3-cheat-sheet/){:rel="nofollow"}_.
 
