@@ -14,10 +14,8 @@ First, just login your **[Xbox account](http://www.xbox.com/en-US/live){:rel="no
 
 Secondly, in your new browser tab go to **[social.xbox.com](http://social.xbox.com/en-us/changegamertag){:rel="nofollow"}** and you will get a page as follows.
 
-<figure>
-  <img src="/uploads/20190806-change-xbox-gamertag.png" alt="Change your Xbox Live gamertag for free" />
-  <figcaption>Change Xbox Gamertag</figcaption>
-</figure>
+![Change your Xbox Live gamertag for free](/uploads/20190806-change-xbox-gamertag.png)
+_Change Xbox Gamertag_
 
 Type your desired new gamertag in the input box and click next. Now you are done for your additional new Xbox Live gamertag for free of cost with these simple process.
 

@@ -61,29 +61,40 @@
   // padding-right: 0;
   // padding-left: 0;
 
+  max-width: 853px;
+
   // max-width 100% on small and medium screens
-  @media (max-width: 991.98px) {
+  @media (max-width: 853.98px) {
+    // 991.98px
     max-width: 100%;
   }
 }
 
-.post-lead-figure {
+.post-lead-content {
   margin: 39px auto;
 
   @media (min-width: 768px) {
     margin: 47px auto;
+  }
+
+  @media (min-width: 854px) {
+    // 992px
+    iframe {
+      border-radius: 0.25rem;
+    }
   }
 }
 
 .post-lead-img {
   margin: 0 auto;
 
-  @media (min-width: 992px) {
+  @media (min-width: 854px) {
+    // 992px
     border-radius: 0.25rem;
   }
 }
 
-.post-lead-figcaption {
+.post-lead-caption {
   position: relative;
   top: 0;
   left: 0;

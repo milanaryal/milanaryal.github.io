@@ -65,11 +65,7 @@ With <a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video"
 }
 ```
 
-<figure>
-  <!-- Copy & Pasted from YouTube -->
-  <iframe width="560" height="315" src="//www.youtube.com/embed/Y1xs_xPb46M?rel=0&amp;hd=1&amp;theme=light" frameborder="0" allowfullscreen="true"></iframe>
-  <figcaption>Whatever YouTube iframe embed code you paste within the <code>.video-wrapper</code>, you'll see it presented in a fluid 16:9 box.</figcaption>
-</figure>
+{% include embed.html src="youtube" id="Y1xs_xPb46M" caption="Whatever YouTube iframe embed code you paste within the `.video-wrapper`, you'll see it presented in a fluid 16:9 box." %}
 
 We can again look to Thierry's solution for adding additional CSS and imposing aspect ratio.
 

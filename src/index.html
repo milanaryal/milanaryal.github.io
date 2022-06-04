@@ -8,6 +8,11 @@ permalink: "/"
   {%- assign site_author = site_author | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
+{%- assign site_author_pronoun = site.author.pronoun | default: site.pronoun -%}
+{%- if site_author -%}
+  {%- assign site_author_pronoun = site_author_pronoun | downcase | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- endif -%}
+
 {%- assign site_author_bio = site.author.bio | default: site.description -%}
 {%- if site_author_bio -%}
   {%- assign site_author_bio = site_author_bio | smartify | strip_html | normalize_whitespace | truncate: 160 | escape_once -%}
@@ -36,9 +41,9 @@ permalink: "/"
       <div class="col-sm-8">
         <div class="card-body ps-sm-4 text-center text-sm-start">
 
-          <h1 class="card-title mt-2 mt-sm-0 mb-3">{{ site_author }}</h1>
+          <h1 class="card-title mt-2 mt-sm-0">{{ site_author }}</h1>
 
-          <p class="card-text mb-3">{{ site_author_bio }}</p>
+          <p class="card-text mb-3">{% if site_author_pronoun %}<span class="fw-light">{{ site_author_pronoun }} &mdash; </span>{% endif %}{{ site_author_bio }}</p>
 
           <ul class="hero-social">
             {% if site.author.twitter %}<li>

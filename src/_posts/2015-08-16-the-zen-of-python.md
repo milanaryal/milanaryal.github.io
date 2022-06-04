@@ -6,9 +6,5 @@ excerpt: "The guiding principles of a Pythonista."
 
 The guiding principles of a Pythonista by Tim Peters' renowned "The Zen of Python", an easter egg inside the official Python interpreter.
 
-<figure>
-  <a href="/uploads/20150816-the-zen-of-python.jpg">
-    <img src="/uploads/20150816-the-zen-of-python.jpg" alt="The Zen of Python" title="The Zen of Python" />
-  </a>
-  <figcaption><a href="http://legacy.python.org/dev/peps/pep-0020/" rel="nofollow">The Zen of Python</a></figcaption>
-</figure>
+![The Zen of Python](/uploads/20150816-the-zen-of-python.jpg "The Zen of Python")
+_[The Zen of Python](https://legacy.python.org/dev/peps/pep-0020/){:rel="nofollow"}_

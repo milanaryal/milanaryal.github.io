@@ -6,8 +6,6 @@ excerpt: "Asynchronously loading social sharing buttons JavaScript to improve pa
 
 Social sharing button are great easy resource to share the content of the site. Different social sites use different scripts to load the sharing button. If you go and copying every social sharing button scripts then it will be bunch of and may slow down your site. Thus, here's the simple asynchronously (async) loading JavaScript of every social media.
 
-[Demo](//dl.dropboxusercontent.com/s/6stjb9x82f0ucoo/index.html){:role="button"} [Download](//dl.dropboxusercontent.com/s/mdwt8uvfinhk0gr/async-social-sharing-buttons.zip?dl=1){:role="button"}
-
 ### Asynchronously loading social JavaScript
 
 Asynchronously, this means that the JavaScript will load and run but will not effect the rest of the page from loading. This means that your page will only slow down a little bit because of the social media buttons, but they still need to make HTTP requests and use up bandwidth on your page.
@@ -46,9 +44,9 @@ This will create a new script tag, add in the social media JavaScript in the src
 
 ### Asynchronously loading social JavaScript using jQuery
 
-If you prefer to use jQuery when working with JavaScript, because it just makes things so much easier. [jQuery has a handy method called getScript()](http://api.jquery.com/jQuery.getScript/){:rel="nofollow"} which does the above but with fewer lines of code.
+If you prefer to use jQuery when working with JavaScript, because it just makes things so much easier. [jQuery has a handy method called getScript()](https://api.jquery.com/jQuery.getScript/){:rel="nofollow"} which does the above but with fewer lines of code.
 
-First make sure you have [load recent jQuery library](http://developers.google.com/speed/libraries/devguide#jquery){:rel="nofollow"}.
+First make sure you have [load recent jQuery library](https://developers.google.com/speed/libraries/devguide#jquery){:rel="nofollow"}.
 
 Just simple following code before `</body>` to load jQuery library:
 
@@ -97,4 +95,7 @@ You'll need the HTML in place for the scripts to put their stuff:
 <div class="g-plusone" data-size="medium" data-count="true"></div>
 ```
 
-[Demo](//dl.dropboxusercontent.com/s/6stjb9x82f0ucoo/index.html){:role="button"} [Download](//dl.dropboxusercontent.com/s/mdwt8uvfinhk0gr/async-social-sharing-buttons.zip?dl=1){:role="button"}
+Resources:
+
+- [View demo](https://dl.dropboxusercontent.com/s/6stjb9x82f0ucoo/index.html)
+- [Download assets](https://dl.dropboxusercontent.com/s/mdwt8uvfinhk0gr/async-social-sharing-buttons.zip?dl=1)

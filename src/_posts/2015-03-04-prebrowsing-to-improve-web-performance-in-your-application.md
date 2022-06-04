@@ -111,40 +111,24 @@ _Internet Explorer 9 supports DNS pre-fetching, but calls it prefetch. In Intern
 
 ### Preconnect, prefetch, prerender
 
-<figure>
-  <iframe src="https://www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
-
-  <figcaption>Slides: SlideShare, <a href="http://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19" rel="nofollow">Preconnect, prefetch, prerender...</a> from <a href="http://twitter.com/igrigorik" rel="nofollow">Ilya Grigorik</a>.</figcaption>
-</figure>
+{% include embed.html src="slideshare" id="45418162" caption="[Preconnect, prefetch, prerender...](http://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19){:rel='nofollow'} presentation by [Ilya Grigorik](http://twitter.com/igrigorik){:rel='nofollow'}." %}
 
 ### Pre-browsing
 
-<figure>
-  <iframe src="https://www.slideshare.net/slideshow/embed_code/27665184" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+{% include embed.html src="slideshare" id="27665184" %}
 
- <figcaption>Slides: SlideShare, <a href="http://www.slideshare.net/souders/prebrowsing-velocity-ny-2013" rel="nofollow">Prebrowsing - Velocity NY 2013</a> from <a href="http://twitter.com/souders" rel="nofollow">Steve Souders</a>.</figcaption>
-</figure>
+{% include embed.html src="youtube" id="Msqs1jIzgo4" %}
 
-<figure>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Msqs1jIzgo4?rel=0" frameborder="0" allowfullscreen></iframe>
-
-  <figcaption>Video: YouTube, Prebrowsing by Steve Souders at Velocity NY 2013</figcaption>
-</figure>
-
-<figure>
-  <iframe src="https://player.vimeo.com/video/77176315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-  <figcaption>Video: Vimeo, <a href="http://vimeo.com/77176315" rel="nofollow">Steve Souders | Pre-browsing | Fronteers 2013</a>.</figcaption>
-</figure>
+{% include embed.html src="vimeo" id="77176315" %}
 
 ### Further resources
 
-- [Prebrowsing](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/){:rel="nofollow"} - Steve Souders
-- [Link prefetching](http://en.wikipedia.org/wiki/Link_prefetching){:rel="nofollow"} - Wikipedia
-- [DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching){:rel="nofollow"} - The Chromium Projects
-- [Pre-Resolve DNS](http://developers.google.com/speed/pagespeed/service/PreResolveDns){:rel="nofollow"} - Google Developers
-- [Web Developer's Guide to Prerendering in Chrome](http://developers.google.com/chrome/whitepapers/prerender){:rel="nofollow"} - Google Developers
-- [Link prefetching FAQ](http://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ){:rel="nofollow"} - Mozilla Developer Network
-- [Controlling DNS prefetching](http://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching){:rel="nofollow"} - Mozilla Developer Network
-- [One Step Ahead: Improving Performance with Prebrowsing](http://alistapart.com/article/one-step-ahead-improving-performance-with-prebrowsing){:rel="nofollow"} - A List Apart
-- [Resource hints](http://w3c.github.io/resource-hints/){:rel="nofollow"} - W3C
+- [Prebrowsing](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/){:rel="nofollow"} - _Steve Souders_
+- [Link prefetching](http://en.wikipedia.org/wiki/Link_prefetching){:rel="nofollow"} - _Wikipedia_
+- [DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching){:rel="nofollow"} - _The Chromium Projects_
+- [Pre-Resolve DNS](http://developers.google.com/speed/pagespeed/service/PreResolveDns){:rel="nofollow"} - _Google Developers_
+- [Web Developer's Guide to Prerendering in Chrome](http://developers.google.com/chrome/whitepapers/prerender){:rel="nofollow"} - _Google Developers_
+- [Link prefetching FAQ](http://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ){:rel="nofollow"} - _Mozilla Developer Network_
+- [Controlling DNS prefetching](http://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching){:rel="nofollow"} - _Mozilla Developer Network_
+- [One Step Ahead: Improving Performance with Prebrowsing](http://alistapart.com/article/one-step-ahead-improving-performance-with-prebrowsing){:rel="nofollow"} - _A List Apart_
+- [Resource hints](http://w3c.github.io/resource-hints/){:rel="nofollow"} - _W3C_

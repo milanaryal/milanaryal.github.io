@@ -42,17 +42,6 @@
   }
   // stylelint-enable declaration-no-important
 
-  img {
-    border-radius: 0.25rem;
-  }
-
-  @media (min-width: 576px) {
-    pre,
-    blockquote {
-      border-radius: 0.25rem;
-    }
-  }
-
   a {
     color: var(--link-color);
     text-decoration: underline var(--link-underline-color);
@@ -79,8 +68,9 @@
     // stylelint-enable selector-no-qualifying-type
   }
 
-  p img + em,
-  figcaption {
+  img + em,
+  figcaption,
+  .embed-caption {
     a {
       color: inherit;
       text-decoration: underline var(--text-muted);
@@ -148,7 +138,8 @@
   dl,
   table,
   pre,
-  figure {
+  figure,
+  .embed {
     margin-top: 2em;
   }
 
@@ -224,15 +215,29 @@
     margin-top: 0.75em;
   }
 
-  p img,
-  figure img {
+  img {
     display: block;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
+    border-radius: 0.25rem;
+  }
+
+  iframe {
+    border-radius: 0.25rem;
+  }
+
+  @media (min-width: 576px) {
+    pre,
+    blockquote {
+      border-radius: 0.25rem;
+    }
   }
 
   // stylelint-disable no-duplicate-selectors
-  p img + em,
-  figcaption {
+  img + em,
+  figcaption,
+  .embed-caption {
     display: block;
     padding: 0 1em;
     margin-top: 10px;

@@ -139,11 +139,8 @@ For example, `<section>` should be wrapped as inline.
 
 #### Image with caption
 
-<figure>
-  <img src="https://via.placeholder.com/800x400" alt="placeholder" />
-  
-  <figcaption>Image caption</figcaption>
-</figure>
+![placeholder](https://via.placeholder.com/800x400 "Image title")
+_Image caption_
 
 ---
 
@@ -165,17 +162,11 @@ Any YouTube or Vimeo videos, and SlideShare slides are responsive in the website
 
 #### Example of YouTube video embed
 
-<figure>
-  <!-- Copy & Pasted from YouTube -->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Y1xs_xPb46M?rel=0&amp;hd=1&amp;theme=light" frameborder="0" allowfullscreen="true"></iframe>
-  
-  <figcaption>Whatever YouTube iframe embed code you paste within the you'll see it presented in a fluid 16:9 box.</figcaption>
-</figure>
+{% include embed.html src="youtube" id="Y1xs_xPb46M" caption="Whatever YouTube iframe embed code you paste within the you'll see it presented in a fluid 16:9 box." %}
 
 #### Example of SlideShare slide embed
 
-<figure>
-  <iframe src="https://www.slideshare.net/slideshow/embed_code/45418162" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen="true"></iframe>
-
-  <figcaption>Slides: SlideShare, <a href="https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19" rel="nofollow">Preconnect, prefetch, prerender...</a> from <a href="https://twitter.com/igrigorik" rel="nofollow">Ilya Grigorik</a>.</figcaption>
-</figure>
+{% capture slide_caption -%}
+[Pre-browsing](https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/present?slide=id.p19){:rel="nofollow"} presentation by [Ilya Grigorik](https://twitter.com/igrigorik){:rel="nofollow"}.
+{%- endcapture %}
+{% include embed.html src="slideshare" id="45418162" caption=slide_caption %}

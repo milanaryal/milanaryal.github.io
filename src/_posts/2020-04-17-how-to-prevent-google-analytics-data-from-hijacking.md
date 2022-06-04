@@ -22,7 +22,7 @@ You can add a filter to your profile:
 
 The result should look something like this:
 
-![preventing google analytics data from hijacking](/uploads/20201417-ga-filter-domain.png)
+![preventing google analytics data from hijacking](/uploads/20200417-ga-filter-domain.png)
 
 **Note**: _Google Analytics interface changes periodically_
 

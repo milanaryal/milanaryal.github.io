@@ -36,12 +36,8 @@ Do the following steps to fix this error on your local environment (please do no
 4. Now click OK and Apply.
 5. System reboot may needed to work for first time.
 
-<figure>
-  <a href="/uploads/20160722-setting-environment-variables-on-windows.jpg">
-    <img src="/uploads/20160722-setting-environment-variables-on-windows.jpg" alt="Setting environment variables on Windows">
-  </a>
-  <figcaption>Setting environment variables on Windows</figcaption>
-</figure>
+![Setting environment variables on Windows](/uploads/20160722-setting-environment-variables-on-windows.jpg)
+_Setting environment variables on Windows_
 
 #### Fixing Jekyll GitHub Metadata warning on Windows
 

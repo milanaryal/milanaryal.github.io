@@ -28,12 +28,23 @@ layout: default
   {%- endif -%}
 {%- endif -%}
 
+{%- if page.video and page.video != empty -%}
+  {%- capture page_video -%}
+    https://www.youtube-nocookie.com/embed/{{ page.video.id | default: page.video }}?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;hd=1&amp;theme=light
+  {%- endcapture -%}
+  {%- assign page_video = page_video | strip | escape_once -%}
+  {%- if page.video.caption -%}
+    {%- assign video_caption = page.video.caption | smartify | strip_html | normalize_whitespace | escape_once -%}
+  {%- endif -%}
+{%- endif -%}
+
 <main id="main" role="main">
   <!-- Post -->
   <article class="post post-{{ page.id | slugify }} entry h-entry" id="post-{{ page.id | slugify }}">
 
     <!-- Post header -->
     <header class="post-masthead">
+      <!-- #############% -->
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-lg-8 mx-auto">
@@ -59,41 +70,34 @@ layout: default
           </div><!-- /.col-* -->
         </div><!-- /.row -->
       </div><!-- /.container -->
+      <!-- %############# -->
 
-      {% if page_image or page.video %}
+      {% if page_image or page_video %}
       <!-- Post header lead content -->
       <div class="container gx-0 post-lead">
-        <figure class="post-lead-figure">
+        <div class="post-lead-content">
           <!-- Post header lead image -->
           {% if page_image %}
             {%- if page.image.caption -%}
               {%- assign image_caption = page.image.caption | smartify | strip_html | normalize_whitespace | escape_once -%}
             {%- endif -%}
-            {%- if image_caption -%}
-              {%- assign image_alternative_text = image_caption -%}
-            {%- else -%}
-              {%- assign image_alternative_text = page_title -%}
-            {%- endif -%}
+            {%- assign image_alternative_text = image_caption | default: page_title -%}
               <img class="post-lead-img img-fluid" src="{{ page_image }}" alt="{{ image_alternative_text }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %} />
             {% if image_caption %}
-              <figcaption class="post-lead-figcaption">{{ image_caption }}</figcaption>
+              <div class="post-lead-caption">{{ image_caption }}</div>
             {% endif %}
           {% endif %}
-
           <!-- Post header lead video -->
-          {% if page.video and page.video != empty %}
+          {% if page_video %}
             <!-- 16:9 aspect ratio -->
             <div class="ratio ratio-16x9">
-              <iframe src="{{ page.video.path | default: page.video }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="853" height="480" src="{{ page_video }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
             </div>
-            {%- if page.video.caption -%}
-              {%- assign video_caption = page.video.caption | smartify | strip_html | normalize_whitespace | escape_once -%}
-            {%- endif -%}
             {% if video_caption %}
-              <figcaption class="post-lead-figcaption">{{ video_caption }}</figcaption>
+              <div class="post-lead-caption">{{ video_caption }}</div>
             {% endif %}
           {% endif %}
-        </figure>
+        </div><!-- /.post-lead-content -->
       </div><!-- /.container -->
       {% endif %}
 

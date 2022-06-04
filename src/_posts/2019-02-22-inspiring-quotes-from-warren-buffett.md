@@ -4,10 +4,8 @@ date: 2019-02-22T01:00:00+05:45
 excerpt: "An inspirational Warren Buffett advices that will help you to become a smarter and successful investor on stock market."
 ---
 
-<figure>
-  <img src="/uploads/20190221-warren-buffett.jpg" alt="Warren Buffett">
-  <figcaption>Photographer: Scott Eells/Bloomberg</figcaption>
-</figure>
+![Warren Buffett](/uploads/20190222-warren-buffett.jpg)
+_Photographer: Scott Eells/Bloomberg_
 
 > "I made my first investment at age eleven. I was wasting my life up until then."
 >

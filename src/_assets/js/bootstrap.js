@@ -26,20 +26,23 @@ $(function () {
   // ** BEGIN document ready function ** //
 
   // make all images responsive
-  $('.markdown-body img').addClass('img-fluid')
+  // $('.markdown-body img').addClass('img-fluid')
 
+  // select </table> with child combinator (>)
+  // to avoid select of `.gist .gist-file` </table>
+  const table = $('.markdown-body > table')
   // responsive table
-  const table = $('.markdown-body table')
   table.addClass('table table-striped')
   table.wrap('<div class="table-responsive" />')
 
   // responsive embed video
-  $('iframe[src*="youtube.com"]').wrap('<div class="ratio ratio-16x9" />')
-  $('iframe[src*="vimeo.com"]').wrap('<div class="ratio ratio-16x9" />')
-  $('iframe[src*="slideshare.net"]').wrap('<div class="ratio ratio-16x9" />')
+  // $('iframe[src*="youtube-nocookie.com"]').wrap('<div class="ratio ratio-16x9" />')
+  // $('iframe[src*="youtube.com"]').wrap('<div class="ratio ratio-16x9" />')
+  // $('iframe[src*="vimeo.com"]').wrap('<div class="ratio ratio-16x9" />')
+  // $('iframe[src*="slideshare.net"]').wrap('<div class="ratio ratio-16x9" />')
 
   // default button
-  $('.markdown-body a[role="button"]').addClass('btn btn-outline-default')
+  // $('.markdown-body a[role="button"]').addClass('btn btn-outline-default')
 
   // ** END document ready function ** //
 })

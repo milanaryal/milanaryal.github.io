@@ -7,19 +7,19 @@ excerpt: "A simple application that helps you delete the oldest tweets from your
 
 > **UPDATE: 17th February 2019**
 >
-> "Twitter Archive Eraser" is no longer a open sourced software. And available in different <a href="https://martani.github.io/Twitter-Archive-Eraser/" rel="nofollow">pricing plans</a> for paid users.
+> "Twitter Archive Eraser" is no longer a open sourced software. And available in different <a href="https://martani.github.io/Twitter-Archive-Eraser/" rel="nofollow noopener noreferrer">pricing plans</a> for paid users.
 
 Looking for the awesome Twitter Archive Eraser?
 
-<a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">Twitter Archive Eraser</a> allows you to automatically delete tweets in bulk from your timeline, or erase your whole twitter archive if you would like so.
+<a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow noopener noreferrer">Twitter Archive Eraser</a> allows you to automatically delete tweets in bulk from your timeline, or erase your whole twitter archive if you would like so.
 
-Several tools exist to help you delete your old tweets but, most of them do not work properly, if at all, due to Twitter API's limitations. Twitter imposes a limit of 3200 tweets (<a href="http://dev.twitter.com/basics/things-every-developer-should-know#there-are-pagination-limits" rel="nofollow">the more recent ones that is</a>) that an application can access.
+Several tools exist to help you delete your old tweets but, most of them do not work properly, if at all, due to Twitter API's limitations. Twitter imposes a limit of 3200 tweets (<a href="http://dev.twitter.com/basics/things-every-developer-should-know#there-are-pagination-limits" rel="nofollow noopener noreferrer">the more recent ones that is</a>) that an application can access.
 
 Twitter enabled the option for users to download their whole archive of tweets, which contains among other things the IDs of all the tweets of a user: the exact piece of information that can be used to erase tweet.
 
-Thus, a simple application called "<a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">Twitter Archive Eraser</a>" developed by <a href="http://twitter.com/martani_net" rel="nofollow">Martani Fakhrou</a> that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so.
+Thus, a simple application called "<a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow noopener noreferrer">Twitter Archive Eraser</a>" developed by <a href="http://twitter.com/martani_net" rel="nofollow noopener noreferrer">Martani Fakhrou</a> that helps you delete the oldest tweets from your timeline, or erase the whole archive too if you would like so.
 
-Download and setup the Twitter Archive Eraser app by visiting <a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow">this link</a>.
+Download and setup the Twitter Archive Eraser app by visiting <a href="http://martani.github.io/Twitter-Archive-Eraser" rel="nofollow noopener noreferrer">this link</a>.
 
 There is two kinds of download app available:
 
@@ -36,23 +36,15 @@ In this step, you give Twitter Archive Eraser access to your twitter account so 
 
 Note: You need to accept sharing several statistics to use Twitter Archive Eraser.
 
-<figure>
-  <a href="/uploads/20141029-twitter-archive-eraser-screenshot-step1.png">
-    <img src="/uploads/20141029-twitter-archive-eraser-screenshot-step1.png" alt="Step 1" />
-  </a>
-</figure>
+![Step 1](/uploads/20141029-twitter-archive-eraser-screenshot-step1.png)
 
 #### Step 2
 
-After you download your Twitter archive (from <a href="http://twitter.com/settings/account" rel="nofollow">twitter.com/settings/account</a> and you can load it directly as a zip file into Twitter Archive Eraser.
+After you download your Twitter archive (from <a href="http://twitter.com/settings/account" rel="nofollow noopener noreferrer">twitter.com/settings/account</a> and you can load it directly as a zip file into Twitter Archive Eraser.
 
 You can select which period of time you want to delete tweets from (grouped by month).
 
-<figure>
-  <a href="/uploads/20141029-twitter-archive-eraser-screenshot-step2.png">
-    <img src="/uploads/20141029-twitter-archive-eraser-screenshot-step2.png" alt="Step 2" />
-  </a>
-</figure>
+![Step 2](/uploads/20141029-twitter-archive-eraser-screenshot-step2.png)
 
 #### Step 3
 
@@ -64,11 +56,7 @@ You can also choose the degree of parallelism you want: that is how many tweets 
 
 You can pause/resume the deletion process and check/uncheck tweets in between.
 
-<figure>
-  <a href="/uploads/20141029-twitter-archive-eraser-screenshot-step3.png">
-    <img src="/uploads/20141029-twitter-archive-eraser-screenshot-step3.png" alt="Step 3" />
-  </a>
-</figure>
+![Step 3](/uploads/20141029-twitter-archive-eraser-screenshot-step3.png)
 
 ### Common filtering expressions
 
@@ -85,7 +73,4 @@ Use the following filtering expressions to search for:
 
 ### Video explaining how to use Twitter Archive Eraser
 
-<figure>
-  <iframe width="560" height="315" src="//www.youtube.com/embed/a01T_WPkQuU?rel=0&amp;theme=light" frameborder="0" allowfullscreen></iframe>
-  <figcaption>Video: Martani Fakhrou</figcaption>
-</figure>
+{% include embed.html src="youtube" id="a01T_WPkQuU" caption="Video: Martani Fakhrou" %}

@@ -6,18 +6,14 @@ excerpt: "The guiding principles of a GitHubber."
 
 I really like the guiding principles of a GitHubber known as "The Zen of GitHub", an ideas and culture of GitHub. So I thought to post it here for inspiration.
 
-<figure>
-  <a href="/uploads/20150816-the-zen-of-github.jpg">
-    <img src="/uploads/20150816-the-zen-of-github.jpg" alt="The Zen of GitHub" title="The Zen of GitHub" />
-  </a>
-  <figcaption>Image: Dribbble, <a href="http://dribbble.com/shots/808470-The-Zen-of-GitHub" rel="nofollow">Kyle Neath</a></figcaption>
-</figure>
+![The Zen of GitHub](/uploads/20150816-the-zen-of-github.jpg "The Zen of GitHub")
+_Image: Dribbble, [Kyle Neath](https://dribbble.com/shots/808470-The-Zen-of-GitHub){:rel="nofollow"}_
 
 #### In GitHub API
 
-- [An API endpoint to retrieve random Zen](http://api.github.com/zen){:rel="nofollow" data-proofer-ignore="true"}
-- [Ms. Mona Lisa Octocat read the Zen herself](http://api.github.com/octocat){:rel="nofollow" data-proofer-ignore="true"}
+- [An API endpoint to retrieve random Zen](https://api.github.com/zen){:rel="nofollow noopener noreferrer" data-proofer-ignore="true"}
+- [Ms. Mona Lisa Octocat read the Zen herself](https://api.github.com/octocat){:rel="nofollow noopener noreferrer" data-proofer-ignore="true"}
 
 ---
 
-_Read [a great write up](http://warpspire.com/posts/taste){:rel="nofollow"} by Kyle Neath as to the how and why that GitHub Zen came to be._
+_Read [a great write up](https://warpspire.com/posts/taste){:rel="nofollow"} by Kyle Neath as to the how and why that GitHub Zen came to be._

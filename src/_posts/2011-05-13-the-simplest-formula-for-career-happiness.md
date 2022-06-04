@@ -16,6 +16,6 @@ But sometimes, it doesn't have to be as tough as we're making it.
 
 We were reminded of that fact when we came across this brilliant --- and brilliantly simple --- infographic showing that happiness (at work or otherwise) is entirely in our hands.
 
-[![Are you happy?](/uploads/20110513-are-you-happy.jpg)](/uploads/20110513-are-you-happy.jpg)
+![Are you happy?](/uploads/20110513-are-you-happy.jpg)
 
 OK, we know it's not always as simple this. But, we think it's a good reminder that, any time we're feeling less-than-thrilled with something going on, that we each have the power --- and the responsibility --- to make a change.

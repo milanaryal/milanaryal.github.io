@@ -4,11 +4,7 @@ excerpt: "The feelings appearing as the market fluctuates."
 date: 2020-03-17T03:40:00+05:45
 ---
 
-<figure>
-  <a href="/uploads/20200317-the-psychology-of-a-market-cycle.png">
-    <img src="/uploads/20200317-the-psychology-of-a-market-cycle.png" alt="the psychology of a market cycle" />
-  </a>
-</figure>
+![the psychology of a market cycle](/uploads/20200317-the-psychology-of-a-market-cycle.png)
 
 > "Be greedy when others are fearful, and fearful when others are greedy."
 >
@@ -18,12 +14,8 @@ date: 2020-03-17T03:40:00+05:45
 
 This chart describes all the different emotional states typically experienced by the majority of market participants:
 
-<figure>
-  <a href="/uploads/20200317-the-cycle-of-investor-emotions.png">
-    <img src="/uploads/20200317-the-cycle-of-investor-emotions.png" alt="investor emotion cycle" />
-  </a>
-  <figcaption>Investor emotion cycle, <a rel="nofollow" href="https://moderntimesinvestors.com/investing/investor-emotion-cycle/"><i>Modern Times Investors</i></a></figcaption>
-</figure>
+![investor emotion cycle](/uploads/20200317-the-cycle-of-investor-emotions.png)
+_Investor emotion cycle, [Modern Times Investors](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){:rel="nofollow"}_
 
 #### Optimism
 
@@ -93,17 +85,15 @@ Markets are turning positive once again, you start to be faithful again and you 
 
 Everyone has a breaking point, and it's only in times of distress that we learn where that point is. The psychology of a bear market goes something like this:
 
-<figure>
-  <a href="/uploads/20200317-the-psychology-of-a-bear-market.jpg">
-    <img src="/uploads/20200317-the-psychology-of-a-bear-market.jpg" alt="bear market cycle" />
-  </a>
-  <figcaption>The psychology of a bear market, <a rel="nofollow" href="https://moderntimesinvestors.com/investing/investor-emotion-cycle/"><i>Michael Batnick</i></a></figcaption>
-</figure>
+![bear market cycle](/uploads/20200317-the-psychology-of-a-bear-market.jpg)
+_The psychology of a bear market, [Michael Batnick](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){:rel="nofollow"}_
 
 ---
 
 #### References
 
-- [Psychology of a market cycle](/uploads/20200317-psychology-of-a-market-cycle.jpg){:rel="nofollow"}, _Wall Street Cheat Sheet_
+![Psychology of a market cycle](/uploads/20200317-psychology-of-a-market-cycle.jpg)
+_Wall Street Cheat Sheet_
+
 - [Investor emotion cycle](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){:rel="nofollow"}, _Modern Times Investors_
 - [The psychology of a bear market](https://moderntimesinvestors.com/investing/investor-emotion-cycle/){:rel="nofollow"}, _Michael Batnick_

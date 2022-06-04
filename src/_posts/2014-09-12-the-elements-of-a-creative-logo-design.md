@@ -32,9 +32,5 @@ In the current fast-paced world, customization is now a fundamental portion of v
 
 Here are the 6 qualities that every good logo should possess:
 
-<figure>
-  <a href="/uploads/20140912-logo-design-tips-for-dummies-what-your-logo-should-be.gif">
-    <img src="/uploads/20140912-logo-design-tips-for-dummies-what-your-logo-should-be.gif" alt="The 6 qualities that every good logo should possess" />
-  </a>
-  <figcaption>Logo design tips for dummies: what your logo should be?</figcaption>
-</figure>
+![The 6 qualities that every good logo should possess](/uploads/20140912-logo-design-tips-for-dummies-what-your-logo-should-be.gif)
+_Logo design tips for dummies: what your logo should be?_

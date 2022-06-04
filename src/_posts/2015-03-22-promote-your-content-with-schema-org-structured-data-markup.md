@@ -53,9 +53,11 @@ A full list of items you can mark up with schema.org is available [here](http://
 
 The following is an example of how to mark up a HTML5 webpage using the schema.org schemas and microdata. In order to mark up the data the attribute `itemtype` along with the url of the schema is used. The attribute `itemscope` defines the scope of the itemtype. The kind of the current item can be defined by using the attribute `itemprop`.
 
-<figure>
-  <script src="https://gist.github.com/ee861d7a065cc05868d9.js?file=schema-org-structured-data-markup-using-microdata.html"></script>
-</figure>
+<!--
+<script src="https://gist.github.com/ee861d7a065cc05868d9.js?file=schema-org-structured-data-markup-using-microdata.html"></script>
+-->
+
+{% include embed.html src="gist" id="ee861d7a065cc05868d9" %}
 
 ### Expected types, text, and URLs
 

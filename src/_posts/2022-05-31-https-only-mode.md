@@ -16,7 +16,7 @@ Settings > Privacy & Security > _Scroll to Bottom_ > _Enable_ HTTPS-Only Mode
 
 ![firefox-enable-https-only-mode](/uploads/20220531-firefox-enable-https-only-mode.gif)
 
-Mozilla Blog: _https://blog.mozilla.org/security/2020/11/17/firefox-83-introduces-https-only-mode/_
+Mozilla Blog: _<https://blog.mozilla.org/security/2020/11/17/firefox-83-introduces-https-only-mode/>{:rel="nofollow"}_
 
 ### Set up HTTPS-only mode on Chrome
 
@@ -52,6 +52,6 @@ Brave have for years used HTTPS redirects provided by _HTTPS Everywhere’s_ Rul
 
 Settings > Shields > Upgrade connections to HTTPS
 
-Brave Shields Basics: _https://support.brave.com/hc/en-us/articles/360022806212-How-do-I-use-Shields-while-browsing_
+Brave Shields Basics: _<https://support.brave.com/hc/en-us/articles/360022806212-How-do-I-use-Shields-while-browsing>{:rel="nofollow"}_
 
-Reference: _https://www.eff.org/https-everywhere/set-https-default-your-browser_
+Reference: _<https://www.eff.org/https-everywhere/set-https-default-your-browser>{:rel="nofollow"}_

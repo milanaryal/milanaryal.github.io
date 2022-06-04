@@ -4,7 +4,7 @@ date: 2015-02-02T05:52:33+05:45
 excerpt: "Making responsive images, videos and tables for your fluid layout using Bootstrap CSS."
 ---
 
-If you're using [Bootstrap](http://getbootstrap.com/){:rel="nofollow"} to develop your site (and if you're not, try it, it's great) you can have almost every stuffs responsive on your site. But for now here we're only going to talk about responsive images, responsive videos (also embed videos) and responsive tables using Bootstrap (should have install Bootstrap 3 and above).
+If you're using [Bootstrap](https://getbootstrap.com/){:rel="nofollow"} to develop your site (and if you're not, try it, it's great) you can have almost every stuffs responsive on your site. But for now here we're only going to talk about responsive images, responsive videos (also embed videos) and responsive tables using Bootstrap (should have install Bootstrap 3 and above).
 
 Mostly everything in these posts are coming directly from the documentation itself. So hopefully some of these you immediately recognize and others you'll wonder how you missed that.
 
@@ -107,11 +107,7 @@ When Bootstrap 3.2 came out, it came out with an additional helper class to make
 
 Notice how the `iframe` doesn't include `frameborder="0"`. This is because Bootstrap will actually normalize any ugly outlines for you with this helper class.
 
-<figure>
-  <iframe height='350' scrolling='no' src='//codepen.io/MilanAryal/embed/myByRw/' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MilanAryal/pen/myByRw/'>myByRw</a> by Milan Aryal (<a href='http://codepen.io/MilanAryal' rel='me'>@MilanAryal</a>) on <a href='http://codepen.io' rel='nofollow'>CodePen</a>.
-  </iframe>
-    <figcaption>Responsive video embeds that maintain aspect ratio</figcaption>
-</figure>
+{% include embed.html src="codepen" id="myByRw" user="MilanAryal" %}
 
 This method also works to have responsive `iframe` object for like SlideShare.
 

@@ -16,52 +16,28 @@ These shortcuts allow you to bypass the need for mouse clicks and movements and 
 
 #### Twitter keyboard shortcuts
 
-<figure>
-  <a href="/uploads/20150715-twitter-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-twitter-keyboard-shortcuts.jpg" alt="Twitter keyboard shortcuts" />
-  </a>
-</figure>
+![Twitter keyboard shortcuts](/uploads/20150715-twitter-keyboard-shortcuts.jpg)
 
 #### Medium keyboard shortcuts
 
-<figure>
-  <a href="/uploads/20150715-medium-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-medium-keyboard-shortcuts.jpg" alt="Medium keyboard shortcuts" />
-  </a>
-</figure>
+![Medium keyboard shortcuts](/uploads/20150715-medium-keyboard-shortcuts.jpg)
 
 For Windows users, use `Ctrl + Alt + the number`.
 
 #### Facebook keyboard shortcuts
 
-<figure>
-  <a href="/uploads/20150715-facebook-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-facebook-keyboard-shortcuts.jpg" alt="Facebook keyboard shortcuts" />
-  </a>
-</figure>
+![Facebook keyboard shortcuts](/uploads/20150715-facebook-keyboard-shortcuts.jpg)
 
 #### YouTube keyboard shortcuts
 
-<figure>
-  <a href="/uploads/20150715-youtube-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-youtube-keyboard-shortcuts.jpg" alt="YouTube keyboard shortcuts" />
-  </a>
-</figure>
+![YouTube keyboard shortcuts](/uploads/20150715-youtube-keyboard-shortcuts.jpg)
 
 #### Tumblr keyboard shortcuts
 
-<figure>
-  <a href="/uploads/20150715-tumblr-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-tumblr-keyboard-shortcuts.jpg" alt="Tumblr keyboard shortcuts" />
-  </a>
-</figure>
+![Tumblr keyboard shortcuts](/uploads/20150715-tumblr-keyboard-shortcuts.jpg)
 
 #### Google Plus keyboard shortcuts
 
-<figure>
-  <a href="/uploads/20150715-google-plus-keyboard-shortcuts.jpg">
-    <img src="/uploads/20150715-google-plus-keyboard-shortcuts.jpg" alt="Google Plus keyboard shortcuts" />
-  </a>
-</figure>
+![Google Plus keyboard shortcuts](/uploads/20150715-google-plus-keyboard-shortcuts.jpg)
 
 Have a good social life :)

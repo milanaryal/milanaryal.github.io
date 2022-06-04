@@ -6,17 +6,17 @@ excerpt: "A list of free best sites to download subtitles for movies and TV show
 
 There are many sites available to get subtitles for free. But, here are the list of best curated free sites to download subtitles for movies and TV shows:
 
-1. [Open Subtitles](http://www.opensubtitles.org/en/){:rel="nofollow"}
-2. [Subscene](http://subscene.com/){:rel="nofollow"}
-3. [Podnapisi.NET](http://www.podnapisi.net/){:rel="nofollow"}
-4. [SubDB](http://thesubdb.com){:rel="nofollow"} - the free subtitle database
-5. [DivX Subtitles](http://www.divxsubtitles.net/){:rel="nofollow"}
-6. [YIFY Subtitles](http://www.yifysubtitles.com/){:rel="nofollow"}
-7. [TV-Subs](http://www.tv-subs.com/){:rel="nofollow"}
-8. [TVsubtitles.net](http://www.tvsubtitles.net/){:rel="nofollow"}
-9. [Addic7ed](http://www.addic7ed.com/){:rel="nofollow"}
-10. [iSubtitles](http://isubtitles.org/){:rel="nofollow"}
-11. [Napisy24.pl](http://napisy24.pl/){:rel="nofollow"} - the Polish subtitles
+1. [Open Subtitles](http://www.opensubtitles.org/en/){:rel="nofollow noopener noreferrer"}
+2. [Subscene](http://subscene.com/){:rel="nofollow noopener noreferrer"}
+3. [Podnapisi.NET](http://www.podnapisi.net/){:rel="nofollow noopener noreferrer"}
+4. [SubDB](http://thesubdb.com){:rel="nofollow noopener noreferrer"} - the free subtitle database
+5. [DivX Subtitles](http://www.divxsubtitles.net/){:rel="nofollow noopener noreferrer"}
+6. [YIFY Subtitles](http://www.yifysubtitles.com/){:rel="nofollow noopener noreferrer"}
+7. [TV-Subs](http://www.tv-subs.com/){:rel="nofollow noopener noreferrer"}
+8. [TVsubtitles.net](http://www.tvsubtitles.net/){:rel="nofollow noopener noreferrer"}
+9. [Addic7ed](http://www.addic7ed.com/){:rel="nofollow noopener noreferrer"}
+10. [iSubtitles](http://isubtitles.org/){:rel="nofollow noopener noreferrer"}
+11. [Napisy24.pl](http://napisy24.pl/){:rel="nofollow noopener noreferrer"} - the Polish subtitles
 
 ---
 
