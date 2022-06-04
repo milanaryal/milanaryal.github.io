@@ -15,17 +15,17 @@ This is **HTML5 and CSS3 cheat sheet** by _Code School_ for those who want to wo
 
 New HTML5 tags with descriptions. Comparison between old version of HTML and HTML5.
 
-![HTML5 cheat sheet](/uploads/20140304-html5-cheat-sheet.jpg)
+![HTML5 cheat sheet](/uploads/20140304-html5-cheat-sheet-p1.png)
 
 Complete HTML5 tags updated version for your to easily memorize and use...
 
-![HTML5 cheat sheet](/uploads/20140304-html5-cheat-sheet2.jpg)
+![HTML5 cheat sheet](/uploads/20140304-html5-cheat-sheet-p2.png)
 
 ### CSS3 cheat sheet
 
 New CSS3 attributes with great examples and very easy to memorize.
 
-![CSS3 cheat sheet](/uploads/20140304-css3-cheat-sheet.jpg)
+![CSS3 cheat sheet](/uploads/20140304-css3-cheat-sheet.png)
 
 [**Download in PDF format**](https://www.dropbox.com/s/uxyszu9uxo978ik/20140304-html5-and-css3-cheat-sheet.pdf?raw=1), creative common courtesy from _codeschool.com_.
 
