@@ -30,11 +30,11 @@ Some of these services already (smartly) provide their scripts in an async fashi
     };
 
   // Google+ button
-  add("//apis.google.com/js/plusone.js");
+  add("https://apis.google.com/js/plusone.js");
   // Facebook SDK
-  add("//connect.facebook.net/en_US/sdk.js#xfbml=1", "facebook-jssdk");
+  add("https://connect.facebook.net/en_US/sdk.js#xfbml=1", "facebook-jssdk");
   // Twitter SDK
-  add("//platform.twitter.com/widgets.js");
+  add("https://platform.twitter.com/widgets.js");
 
   fjs.parentNode.insertBefore(frag, fjs);
 })(document, "script");
@@ -52,16 +52,16 @@ Just simple following code before `</body>` to load jQuery library:
 
 ```html
 <!-- make sure you include the latest version -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 ```
 
-After the jQuery library script paste the following code (inside another tag `<script> // your code here </script>`):
+After the jQuery library script paste the following code (inside another tag `<script> /* your code here */ </script>`):
 
 ```js
 $(document).ready(function () {
-  $.getScript("//apis.google.com/js/plusone.js");
-  $.getScript("//platform.twitter.com/widgets.js");
-  $.getScript("//connect.facebook.net/en_US/sdk.js#xfbml=1", function () {
+  $.getScript("https://apis.google.com/js/plusone.js");
+  $.getScript("https://platform.twitter.com/widgets.js");
+  $.getScript("https://connect.facebook.net/en_US/sdk.js#xfbml=1", function () {
     FB.init({ status: true, cookie: true, xfbml: true });
   });
 });
@@ -94,8 +94,3 @@ You'll need the HTML in place for the scripts to put their stuff:
 <!-- For Google+ -->
 <div class="g-plusone" data-size="medium" data-count="true"></div>
 ```
-
-Resources:
-
-- [View demo](https://dl.dropboxusercontent.com/s/6stjb9x82f0ucoo/index.html)
-- [Download assets](https://dl.dropboxusercontent.com/s/mdwt8uvfinhk0gr/async-social-sharing-buttons.zip?dl=1)
