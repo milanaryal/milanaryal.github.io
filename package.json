@@ -45,8 +45,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@fontsource/inter": "^4.5.10",
-    "@fontsource/lora": "^4.5.9",
+    "@fontsource/inter": "^4.5.11",
+    "@fontsource/lora": "^4.5.10",
     "@popperjs/core": "2.11.5",
     "bootstrap": "5.1.3",
     "headroom.js": "0.12.0",

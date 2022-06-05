@@ -21,20 +21,18 @@
         https://drive.google.com/file/d/{{- embed_id -}}/preview
       {%- when "slideshare" -%}
         https://www.slideshare.net/slideshow/embed_code/{{- embed_id -}}
-      {%- when "gist" -%}
-        https://gist.github.com/{{- embed_creator -}}/{{- embed_id -}}.pibb?scroll=true
       {%- when "codepen" -%}
         https://codepen.io/{{- embed_creator -}}/embed/{{- embed_id -}}?default-tab=html%2Cresult
     {%- endcase -%}
   {%- endcapture -%}
 {%- endif -%}
 
-{% unless embed_src == empty %}
+{% unless embed_src == empty and embed_provider == "gist" %}
   {%- assign embed_src = embed_src | strip | escape_once -%}
   {%- capture iframe -%}
     {% if embed_provider == "youtube" or embed_provider == "google-drive" or embed_provider == "vimeo" %}
       <iframe src="{{ embed_src }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-    {% elsif embed_provider == "codepen" or embed_provider == "gist" %}
+    {% elsif embed_provider == "codepen" %}
       <iframe src="{{ embed_src }}" loading="lazy" allowtransparency="true" allow="fullscreen" allowfullscreen="true"></iframe>
     {% else %}
       <iframe src="{{ embed_src }}" allow="fullscreen" allowfullscreen="true"></iframe>
@@ -52,3 +50,21 @@
     {% endif %}
   </div>
 {% endunless %}
+
+{% if embed_provider == "gist" %}
+  <div class="embed">
+    <style>
+      .gist .gist-file,
+      .gist .gist-data {
+        border: 0 !important;
+      }
+      .gist .gist-data {
+        border-left: 0.25rem solid #f7f7f7 !important;
+      }
+      .gist .blob-wrapper {
+        padding: 0.75rem 0.75rem 0.75rem 0 !important;
+      }
+    </style>
+    <script src="https://gist.github.com/{{- embed_creator -}}/{{- embed_id -}}.js"></script>
+  </div>
+{% endif %}
