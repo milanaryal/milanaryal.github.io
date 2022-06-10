@@ -5,21 +5,35 @@
 <!-- Core JavaScript -->
 <script src="{{ 'assets/js/bundle.js' | relative_url }}?v={{ build_version }}"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
 {% if site.google_analytics_id and jekyll.environment == "production" %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{- google_analytics_id -}}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{ site.google_analytics_id }}');
-  {% if page.permalink == "/404.html" -%}
-  gtag('config', '{{ site.google_analytics_alternative_id }}', {
-    'page_title' : '404 Response',
-    'page_location': window.location.href,
-    'page_path': window.location.pathname
-  });
-  {%- endif %}
+  gtag('config', '{{- google_analytics_id -}}');
+</script>
+{% endif %}
+
+{% unless site.url != "https://milanaryal.com.np" %}
+  {%- comment -%}
+    <!--
+      Please replace with your own site
+      Goolge Analytics Measurement ID (G-XXXXXXXXXX)
+    -->
+  {%- endcomment -%}
+  {%- assign GA_MEASUREMENT_ID = "G-4T5FBFVD6P" -%}
+{% endunless %}
+{% if GA_MEASUREMENT_ID and jekyll.environment == "production" %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{- GA_MEASUREMENT_ID -}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{- GA_MEASUREMENT_ID -}}');
 </script>
 {% endif %}

@@ -43,8 +43,7 @@ social:
 disqus_shortname: null
 google_cse_id: "000254926668963224856:z4vgwqv7kla"
 google_api_key: "AIzaSyB27uh5sPHJ156nRryf1yuJn6fjo_B7qvI"
-google_analytics_id: "UA-42092423-1"
-google_analytics_alternative_id: "UA-42092423-2"
+google_analytics_id: null
 
 # HTML language attribute format › eg. en, en-US, en-GB
 # lang: "en"
