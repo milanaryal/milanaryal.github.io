@@ -393,4 +393,4 @@ package-lock.json
 
 # For example:
 # Wild card › !uploads/*.zip
-# Specific  › !src/uploads/20140304-css-cheat-sheet.zip
+# Specific  › !src/uploads/filename.zip
