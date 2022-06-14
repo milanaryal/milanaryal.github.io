@@ -17,12 +17,12 @@ layout: null
   "cacheDigest": "{{ build_version }}",
   "icons": [
     {
-      "src": "{{ 'assets/img/android-chrome-192x192.png' | relative_url }}?v={{ build_version }}",
+      "src": "{{ 'assets/img/android-chrome-192x192.png?v=' | append: build_version | relative_url }}",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "{{ 'assets/img/android-chrome-512x512.png' | relative_url }}?v={{ build_version }}",
+      "src": "{{ 'assets/img/android-chrome-512x512.png?v=' | append: build_version | relative_url }}",
       "sizes": "512x512",
       "type": "image/png"
     }

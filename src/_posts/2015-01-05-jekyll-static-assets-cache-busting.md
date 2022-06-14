@@ -1,9 +1,8 @@
 ---
-redirect_from: "/jekyll-site-last-modified-time/"
 title: "Jekyll static assets cache busting"
 date: 2015-01-05T17:08:17+05:45
-last_modified_at: 2021-04-10T09:00:56+05:45
-excerpt: "Implementing cache busting each time you make a change will allow the user's browser to download the latest assets, therefore you get no site assets breakages until a hard refresh."
+last_modified_at: 2022-06-14T21:15:00+05:45
+excerpt: "Implementing cache busting, each time you make a change will allow the user's browser to download the latest site assets."
 ---
 
 For implementing cache busing into Jekyll HTML output linked assets we can use Jekyll site time tag. Following we have discussed it briefly.
@@ -103,6 +102,21 @@ Then where ever you need include it on the top of your page and tag {% raw %}{{ 
 <script src="{{ 'assets/js/bundle.js' | relative_url }}?v={{ build_version }}"></script>
 ```
 
+Or,
+
+```html
+{% include build_version.html %}
+
+<!-- Critical CSS -->
+<link
+  rel="stylesheet"
+  href="{{ 'assets/css/style.css?v=' | append: build_version | relative_url }}"
+/>
+
+<!-- Core JavaScript -->
+<script src="{{ 'assets/js/bundle.js?v=' | append: build_version | relative_url }}"></script>
+```
+
 {% endraw %}
 
 #### Building Jekyll site using GitHub Actions
@@ -114,6 +128,17 @@ To add cache busting, you can also simply append the `site.date` global to the e
 ```html
 <link
   href="{{ 'assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}"
+  rel="stylesheet"
+/>
+```
+
+Or,
+
+```html
+{% assign build_version = site.time | date: '%s' %}
+
+<link
+  href="{{ 'assets/css/style.css?v=' | append: build_version | relative_url }}"
   rel="stylesheet"
 />
 ```

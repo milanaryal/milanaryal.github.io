@@ -3,7 +3,7 @@
 {%- include build_version.html -%}
 
 <!-- Core JavaScript -->
-<script src="{{ 'assets/js/bundle.js' | relative_url }}?v={{ build_version }}"></script>
+<script src="{{ 'assets/js/bundle.js?v=' | append: build_version | relative_url }}"></script>
 
 {% if site.google_analytics_id and jekyll.environment == "production" %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
