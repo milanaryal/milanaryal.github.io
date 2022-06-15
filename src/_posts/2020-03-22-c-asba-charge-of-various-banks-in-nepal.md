@@ -29,7 +29,7 @@ Here are the list of various Banks in Nepal with their C-ASBA service charges pe
 | NMB    | NMB Bank                         | Rs. 20             |
 | SANIMA | Sanima Bank                      | Rs. 20             |
 | GBIME  | Global IME Bank                  | Rs. 15             |
-| ADBL   | Agricultural Devleopment Bank    | Rs. 10             |
+| ADBL   | Agricultural Development Bank    | Rs. 10             |
 | BOKL   | Bank Of Kathmandu                | Rs. 10             |
 | MBL    | Machhapuchhre Bank               | Rs. 10             |
 | NBB    | Nepal Bangladesh Bank            | Rs. 10             |

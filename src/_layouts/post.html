@@ -30,7 +30,7 @@ layout: default
 
 {%- if page.video and page.video != empty -%}
   {%- capture page_video -%}
-    https://www.youtube-nocookie.com/embed/{{ page.video.id | default: page.video }}?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;hd=1&amp;theme=light
+    https://www.youtube-nocookie.com/embed/{{ page.video.id | default: page.video }}?modestbranding=1&amp;rel=0
   {%- endcapture -%}
   {%- assign page_video = page_video | strip | escape_once -%}
   {%- if page.video.caption -%}

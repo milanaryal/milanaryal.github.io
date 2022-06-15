@@ -14,7 +14,7 @@
   {%- capture embed_src -%}
     {%- case embed_provider -%}
       {%- when "youtube" -%}
-        https://www.youtube-nocookie.com/embed/{{- embed_id -}}?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;hd=1&amp;theme=light
+        https://www.youtube-nocookie.com/embed/{{- embed_id -}}?modestbranding=1&amp;rel=0
       {%- when "vimeo" -%}
         https://player.vimeo.com/video/{{- embed_id -}}?dnt=true
       {%- when "google-drive" -%}
