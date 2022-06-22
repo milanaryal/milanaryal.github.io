@@ -12,7 +12,7 @@ Here's how:
 
 First, just login your **[Xbox account](http://www.xbox.com/en-US/live){:rel="nofollow"}** from your web browser.
 
-Secondly, in your new browser tab go to **[social.xbox.com](http://social.xbox.com/en-us/changegamertag){:rel="nofollow"}** and you will get a page as follows.
+Secondly, in your new browser tab go to **[social.xbox.com](http://social.xbox.com/en-us/changegamertag){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}** and you will get a page as follows.
 
 ![Change your Xbox Live gamertag for free](/uploads/20190806-change-xbox-gamertag.png)
 _Change Xbox Gamertag_

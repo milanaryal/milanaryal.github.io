@@ -8,7 +8,7 @@ excerpt: "The best times to post on social media, including Facebook, Twitter, G
 
 <p>Some people have wondered if it really matters at what time social media posts are made. Just think about it &#8211; If you post an incredible piece of content, but no one&#8217;s there to read it, how much has it accomplished? Post at the wrong time and accomplish nothing. Post at the right time and you could grow your online presence by leaps and bounds. It&#8217;s especially important if you&#8217;re doing <strong>social media marketing</strong>.</p>
 
-<strong>Summary:</strong>
+<p><strong>Summary:</strong></p>
 
 <p>Best times to post on Facebook:</p>
 
@@ -18,30 +18,35 @@ excerpt: "The best times to post on social media, including Facebook, Twitter, G
 </ul>
 
 <p>Best times to post on Twitter:</p>
+
 <ul>
 <li>Best times &#8211; 1-3PM, especially on weekends</li>
 <li>Worst times &#8211; 8PM-8AM</li>
 </ul>
 
 <p>Best times to post on Google+:</p>
+
 <ul>
 <li>Best times &#8211; 9-11AM</li>
 <li>Worst times &#8211; 6PM-7AM</li>
 </ul>
 
 <p>Best times to post on LinkedIn:</p>
+
 <ul>
 <li>Best times: 7-8:30AM, 5-6PM</li>
 <li>Worst times &#8211; Monday and Friday, and 9AM-5PM</li>
 </ul>
 
 <p>Best times to post on Pinterest:</p>
+
 <ul>
 <li>Best times &#8211; Saturday morning, 2-4PM and 8-11PM</li>
 <li>Worst times &#8211; 5-7PM and 1-7AM</li>
 </ul>
 
 <p>Best times to post on Blogs:</p>
+
 <ul>
 <li>Best times &#8211; Monday, Friday, and Saturday at 11AM</li>
 <li>Worst times &#8211; 11PM-8AM</li>
@@ -67,8 +72,7 @@ excerpt: "The best times to post on social media, including Facebook, Twitter, G
 
 <p>&nbsp;</p>
 
-<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/IllNeverForget?src=hash">#IllNeverForget</a> the first time I tried <a href="https://twitter.com/hashtag/DoritosLocosTacos?src=hash">#DoritosLocosTacos</a>.</p>&mdash; Taco Bell (@TacoBell) <a href="https://twitter.com/TacoBell/statuses/259150502519009280">October 19, 2012</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/IllNeverForget?src=hash&amp;ref_src=twsrc%5Etfw">#IllNeverForget</a> the first time I tried <a href="https://twitter.com/hashtag/DoritosLocosTacos?src=hash&amp;ref_src=twsrc%5Etfw">#DoritosLocosTacos</a>.</p>&mdash; Taco Bell (@tacobell) <a href="https://twitter.com/tacobell/status/259150502519009280?ref_src=twsrc%5Etfw">October 19, 2012</a></blockquote>
 
 <p>&nbsp;</p>
 
@@ -80,8 +84,7 @@ excerpt: "The best times to post on social media, including Facebook, Twitter, G
 
 <p>&nbsp;</p>
 
-<blockquote class="twitter-tweet" lang="en"><p>Power out? No problem. <a href="http://t.co/dnQ7pOgC">pic.twitter.com/dnQ7pOgC</a></p>&mdash; Oreo Cookie (@Oreo) <a href="https://twitter.com/Oreo/statuses/298246571718483968">February 4, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Power out? No problem. <a href="http://t.co/dnQ7pOgC">pic.twitter.com/dnQ7pOgC</a></p>&mdash; OREO Cookie (@Oreo) <a href="https://twitter.com/Oreo/status/298246571718483968?ref_src=twsrc%5Etfw">February 4, 2013</a></blockquote>
 
 <p>&nbsp;</p>
 
@@ -103,7 +106,7 @@ excerpt: "The best times to post on social media, including Facebook, Twitter, G
 
 <p><a href="https://developers.facebook.com/docs/platforminsights/page" rel="nofollow" target="_blank">Insights</a> Facebook has their own useful analytics tool see statistics on any of your brand pages.</p>
 
-<a href="https://help.instagram.com/1533933820244654" rel="nofollow" target="_blank">Insights on Instagram</a>, a free Instagram analytics tool.</p>
+<p><a href="https://help.instagram.com/1533933820244654" rel="nofollow" target="_blank">Insights on Instagram</a>, a free Instagram analytics tool.</p>
 
 <!-- <p><a href="http://simplymeasured.com/freebies/instagram-analytics" rel="nofollow" target="_blank">SimplyMeasured</a> a free Instagram analytics tool.</p> -->
 
@@ -132,3 +135,6 @@ excerpt: "The best times to post on social media, including Facebook, Twitter, G
 <p>Improving your Social Media strategy is an important first step in building a stronger relationship with your customers.</p>
 
 <p>Happy posting!</p>
+
+<!-- Twitter embed Tweet widgets script -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

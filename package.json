@@ -63,7 +63,7 @@
     "chokidar-cli": "^3.0.0",
     "clean-webpack-plugin": "^4.0.0",
     "cpy-cli": "^4.1.0",
-    "cssnano": "^5.1.11",
+    "cssnano": "^5.1.12",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-xo": "^0.41.0",
