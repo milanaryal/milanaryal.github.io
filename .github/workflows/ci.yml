@@ -64,7 +64,7 @@ jobs:
         run: |
           minify --type=json --recursive --output . --match=\.json ./_site/ --verbose || true \
           && \
-          minify --type=json --recursive --output . ./_site/manifest.webmanifest --verbose || true
+          minify --type=json ./_site/manifest.webmanifest --verbose || true
 
       - name: Checking HTML files
         run: |
