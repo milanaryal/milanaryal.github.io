@@ -14,35 +14,35 @@ Here are the list of various Banks in Nepal with their C-ASBA service charges pe
 
 ### C-ASBA charge of Commercial Banks in Nepal
 
-| Symbol | Bank Name                        | Charge (in rupees) |
-| ------ | -------------------------------- | ------------------ |
-| SCB    | Standard Chartered Bank          | Rs. 100            |
-| CCBL   | Century Commercial Bank          | Rs. 25             |
-| LBL    | Laxmi Bank                       | Rs. 25             |
-| SBI    | Nepal SBI Bank                   | Rs. 25             |
-| CZBIL  | Citizen Bank                     | Rs. 20             |
-| CBL    | Civil Bank                       | Rs. 20             |
-| EBL    | Everest Bank                     | Rs. 20             |
-| HBL    | Himalayan Bank                   | Rs. 20             |
-| KBL    | Kumari Bank                      | Rs. 20             |
-| NIB    | Nepal Investment Bank            | Rs. 20             |
-| NMB    | NMB Bank                         | Rs. 20             |
-| SANIMA | Sanima Bank                      | Rs. 20             |
-| GBIME  | Global IME Bank                  | Rs. 15             |
-| ADBL   | Agricultural Development Bank    | Rs. 10             |
-| BOKL   | Bank Of Kathmandu                | Rs. 10             |
-| MBL    | Machhapuchhre Bank               | Rs. 10             |
-| NBB    | Nepal Bangladesh Bank            | Rs. 10             |
-| NBL    | Nepal Bank                       | Rs. 10             |
-| NCCB   | Nepal Credit And Commercial Bank | Rs. 10             |
-| PRVU   | Prabhu Bank                      | Rs. 10             |
-| PCBL   | Prime Commercial Bank            | Rs. 10             |
-| SBL    | Siddhartha Bank                  | Rs. 10             |
-| SRBL   | Sunrise Bank                     | Rs. 10             |
-| MEGA   | Mega Bank                        | Free               |
-| NABIL  | Nabil Bank                       | Free               |
-| NICA   | NIC Asia Bank                    | Free               |
-| RBB    | Rastriya Banijya Bank            | Free               |
+| Symbol | Bank Name                      | Charge (in rupees) |
+| ------ | ------------------------------ | ------------------ |
+| SCB    | Standard Chartered Bank        | Rs. 100            |
+| CCBL   | Century Commercial Bank        | Rs. 25             |
+| LBL    | Laxmi Bank                     | Rs. 25             |
+| SBI    | Nepal SBI Bank                 | Rs. 25             |
+| CZBIL  | Citizen Bank                   | Rs. 20             |
+| CBL    | Civil Bank                     | Rs. 20             |
+| EBL    | Everest Bank                   | Rs. 20             |
+| HBL    | Himalayan Bank                 | Rs. 20             |
+| KBL    | Kumari Bank                    | Rs. 20             |
+| NIB    | Nepal Investment Bank          | Rs. 20             |
+| NMB    | NMB Bank                       | Rs. 20             |
+| SANIMA | Sanima Bank                    | Rs. 20             |
+| GBIME  | Global IME Bank                | Rs. 15             |
+| ADBL   | Agricultural Development Bank  | Rs. 10             |
+| BOKL   | Bank of Kathmandu              | Rs. 10             |
+| MBL    | Machhapuchchhre Bank           | Rs. 10             |
+| NBB    | Nepal Bangladesh Bank          | Rs. 10             |
+| NBL    | Nepal Bank                     | Rs. 10             |
+| NCCB   | Nepal Credit and Commerce Bank | Rs. 10             |
+| PRVU   | Prabhu Bank                    | Rs. 10             |
+| PCBL   | Prime Commercial Bank          | Rs. 10             |
+| SBL    | Siddhartha Bank                | Rs. 10             |
+| SRBL   | Sunrise Bank                   | Rs. 10             |
+| MEGA   | Mega Bank                      | Free               |
+| NABIL  | Nabil Bank                     | Free               |
+| NICA   | NIC Asia Bank                  | Free               |
+| RBB    | Rastriya Banijya Bank          | Free               |
 
 ### C-ASBA charge of Development Banks & Finances in Nepal
 
