@@ -3,7 +3,7 @@ redirect_from: "/c-asba-service-charge-for-banks-in-nepal/"
 title: "C-ASBA charge of various Banks in Nepal"
 description: "The list of various Banks in Nepal with their C-ASBA service charges per application."
 date: 2020-03-22 13:00:00 +0545
-last_modified_at: 2022-05-06 11:30:00 +0545
+last_modified_at: 2022-06-30 00:00:00 +0545
 ---
 
 Investors can buy primary and rights shares online with the C-ASBA process which has been implemented on February 23, 2018 (Falgun 11, 2074) in Nepal. C-ASBA is an advanced form of ASBA interface which is claimed to be more user friendly.
@@ -19,6 +19,7 @@ Here are the list of various Banks in Nepal with their C-ASBA service charges pe
 | SCB    | Standard Chartered Bank        | Rs. 100            |
 | CCBL   | Century Commercial Bank        | Rs. 25             |
 | LBL    | Laxmi Bank                     | Rs. 25             |
+| MEGA   | Mega Bank                      | Rs. 25             |
 | SBI    | Nepal SBI Bank                 | Rs. 25             |
 | CZBIL  | Citizen Bank                   | Rs. 20             |
 | CBL    | Civil Bank                     | Rs. 20             |
@@ -39,7 +40,6 @@ Here are the list of various Banks in Nepal with their C-ASBA service charges pe
 | PCBL   | Prime Commercial Bank          | Rs. 10             |
 | SBL    | Siddhartha Bank                | Rs. 10             |
 | SRBL   | Sunrise Bank                   | Rs. 10             |
-| MEGA   | Mega Bank                      | Free               |
 | NABIL  | Nabil Bank                     | Free               |
 | NICA   | NIC Asia Bank                  | Free               |
 | RBB    | Rastriya Banijya Bank          | Free               |
