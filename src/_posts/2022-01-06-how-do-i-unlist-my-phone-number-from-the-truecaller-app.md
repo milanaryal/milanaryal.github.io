@@ -18,7 +18,7 @@ Note: If you have used Truecaller on your phone, please deactivate your account 
 - **On iPhone:** Tap on the profile avatar (upper left) > Settings > Privacy Center.
   It can take up to 24 hours before your number gets removed. Numbers marked as spam cannot be unlisted.
 
-### [I've unlisted a number but it's still searchable](https://support.truecaller.com/support/solutions/articles/81000392601-i-ve-unlisted-a-number-but-it-s-still-searchable){:rel="nofollow"}
+### I've unlisted a number but it's still searchable
 
 If your number is still searchable on Truecaller after you have deactivated & _unlisted_, it can be due to the following reasons:
 

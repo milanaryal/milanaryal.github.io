@@ -1,6 +1,6 @@
 # Override configuration for local development
 url: "http://localhost:4000"
-google_analytics_id: ""
+google_analytics_id: null
 
 # Local server
 host: localhost # same as default value '127.0.0.1' but reads better

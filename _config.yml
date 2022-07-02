@@ -44,9 +44,9 @@ social:
     - https://github.com/MilanAryal
 
 disqus_shortname: null
-google_cse_id: "000254926668963224856:z4vgwqv7kla"
-google_api_key: "AIzaSyB27uh5sPHJ156nRryf1yuJn6fjo_B7qvI"
 google_analytics_id: null
+google_api_key: "AIzaSyB27uh5sPHJ156nRryf1yuJn6fjo_B7qvI"
+google_cse_id: "000254926668963224856:z4vgwqv7kla"
 
 # HTML language attribute format › eg. en, en-US, en-GB
 # lang: "en"
