@@ -55,31 +55,31 @@ jobs:
       - name: Minify HTML files
         run: |
           minify --type=html --recursive --output . --match=\.html ./_site/ \
-          --html-keep-default-attrvals \
-          --html-keep-document-tags \
-          --html-keep-end-tags \
-          --verbose
+            --html-keep-default-attrvals \
+            --html-keep-document-tags \
+            --html-keep-end-tags \
+            --verbose
 
       - name: Minify JSON files
         run: |
           minify --type=json --recursive --output . --match=\.json ./_site/ --verbose || true \
-          && \
-          minify --type=json --output ./_site/ ./_site/manifest.webmanifest --verbose || true
+            && \
+            minify --type=json --output ./_site/ ./_site/manifest.webmanifest --verbose || true
 
       - name: Checking HTML files
         run: |
           bundle exec htmlproofer ./_site \
-          --allow-hash-href \
-          --assume-extension \
-          --check-external-hash \
-          --check-favicon \
-          --check-img-http \
-          --check-opengraph \
-          --internal-domains "milanaryal.com.np" \
-          --http-status-ignore "403,429" \
-          --only-4xx \
-          --file_ignore "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" \
-          || true
+            --allow-hash-href \
+            --assume-extension \
+            --check-external-hash \
+            --check-favicon \
+            --check-img-http \
+            --check-opengraph \
+            --internal-domains "milanaryal.com.np" \
+            --http-status-ignore "403,429" \
+            --only-4xx \
+            --file_ignore "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" \
+            || true
 
       - name: Upload site
         uses: actions/upload-artifact@v3
