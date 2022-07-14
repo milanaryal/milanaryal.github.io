@@ -57,12 +57,14 @@ PayWell Nepal App is available for [Web](https://www.paywellnepal.com.np/client/
 
 Following are the list of popular mobile based digital payment systems only available for Android, or iOS.
 
-> Invitation --- Hi, earn Rs.25 using IME Pay. Try using my referral code: `CS1151419` or link: <https://app.imepay.com.np/links/pxZR4PyCJqgd3Axt6>{:rel="nofollow noopener noreferrer"}
+> IME Pay Invitation --- Hi, earn Rs.25 using IME Pay. Try using my referral code: `CS1151419` or link: <https://app.imepay.com.np/links/pxZR4PyCJqgd3Axt6>{:rel="nofollow noopener noreferrer"}
 
 - **[IME Pay](http://www.imepay.com.np/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://play.google.com/store/apps/details?id=com.swifttechnology.imepay){:rel="nofollow noopener noreferrer"}, and [iOS](https://itunes.apple.com/np/app/ime-pay/id1241888344?mt=8){:rel="nofollow noopener noreferrer"}) <br />
   You can now earn interest on the amount in your IME Pay digital wallet. You can upgrade to "Superwallet" if your KYC is verified and a balance above Rs. 1000 is maintained. The accrued interest is added directly to your IME Pay wallet every three months, based on the Nepali Calendar. The IME Visa debit (physical and virtual) card gives you another way to pay, and it's always right in your wallet.
 
 - **[PrabhuPAY](https://prabhupay.com/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://play.google.com/store/apps/details?id=com.prabhutech.prabhupay&hl=en){:rel="nofollow noopener noreferrer"}, and [iOS](https://itunes.apple.com/np/app/prabhupay-mobile-wallet/id1451300760?mt=8){:rel="nofollow noopener noreferrer"})
+
+> Namaste Pay Invitation --- Hi, earn Rs.25 using Namaste Pay. To accept the invitation and register click <http://onelink.to/8dgufr>{:rel="nofollow noopener noreferrer"}. Or, Use `SE60B1RO` in referral code option while registering in Namaste Pay to get Rs.25 on your Namaste Paisa Wallet.
 
 - **[Namaste Pay](https://www.namastepay.com/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://play.google.com/store/apps/details?id=app.namasteypay.consumer){:rel="nofollow noopener noreferrer"}, and [iOS](https://apps.apple.com/np/app/namaste-pay/id1592488606){:rel="nofollow noopener noreferrer"})
 
