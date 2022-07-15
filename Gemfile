@@ -17,6 +17,6 @@ group :jekyll_plugins do
 end
 
 group :linter do
-  gem "html-proofer", "~> 3.19"
+  gem "html-proofer", "~> 4.1"
   gem "mdl", "~> 0.11"
 end
