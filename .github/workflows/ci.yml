@@ -68,17 +68,10 @@ jobs:
 
       - name: Checking HTML files
         run: |
-          bundle exec htmlproofer ./_site \
-            --allow-hash-href \
-            --assume-extension \
-            --check-external-hash \
-            --check-favicon \
-            --check-img-http \
-            --check-opengraph \
-            --internal-domains "milanaryal.com.np" \
-            --http-status-ignore "403,429" \
+          bundle exec htmlproofer ./_site/ \
+            --ignore_files "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" \
+            --ignore_status_codes "403,429" \
             --only-4xx \
-            --file_ignore "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" \
             || true
 
       - name: Upload site
