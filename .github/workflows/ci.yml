@@ -69,7 +69,7 @@ jobs:
       - name: Checking HTML files
         run: |
           bundle exec htmlproofer ./_site/ \
-            --enforce_https "false"
+            --enforce_https "false" \
             --ignore_files "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" \
             --ignore_status_codes "403,429" \
             --only-4xx \
