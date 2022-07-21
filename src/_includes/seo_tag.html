@@ -1,74 +1,55 @@
 {%- comment -%}<!-- _layouts/head.html -->{%- endcomment -%}
 
-{% if page.permalink == "/" %}
-  {%- assign site_title = site.title | default: site.name -%}
-  {%- if site_title -%}
-    {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
-  {%- endif -%}
-  <title>{{- site_title -}}</title>
-  {% seo title=false %}
-{% else %}
-  {% seo %}
-{% endif %}
-
-{%- if page.image and page.image != empty -%}
-  {%- assign hasImage = true -%}
-{% elsif page.image.path and page.image.path != empty %}
-  {%- assign hasImage = true -%}
-{% else %}
-  {%- assign hasImage = false -%}
-  {%- assign thumbnail = page.thumbnail.path | default: page.thumbnail | default: site.logo -%}
-  {%- unless thumbnail contains "://" -%}
-    {%- assign thumbnail = thumbnail | absolute_url -%}
-  {%- endunless -%}
-  {%- assign thumbnail = thumbnail | escape -%}
+{%- assign site_title = site.title | default: site.name -%}
+{%- if site_title -%}
+  {%- assign site_title = site_title | smartify | strip_html | normalize_whitespace | escape_once -%}
 {%- endif -%}
 
-{% unless hasImage %}
-  <meta property="og:image" content="{{ thumbnail }}" />
-  {% if page.thumbnail.width %}
-    <meta property="og:image:width" content="{{ page.thumbnail.width }}" />
-  {% endif %}
-  {% if page.thumbnail.height %}
-    <meta property="og:image:height" content="{{ page.thumbnail.height }}" />
-  {% endif %}
-  <meta property="twitter:image" content="{{ thumbnail }}" />
-{% endunless %}
+{%- assign page_title = page.title | default: site_title -%}
+{%- assign page_title = page_title | smartify | strip_html | normalize_whitespace | escape_once -%}
+{%- assign page_author = page.author.name | default: page.author | default: site.author.name | default: site.author -%}
 
-{% if page.permalink == "/" or page.permalink == "/about/" %}
-  <!-- Site author JSON-LD -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person"
+{%- assign page_description = page.description | default: page.excerpt | default: site.description -%}
+{%- assign page_description = page_description | markdownify | strip_html | normalize_whitespace | truncate: 160 | escape_once -%}
 
-      {%- if site.author -%},
-        "name": {{- site.author.name | default: site.author | jsonify -}}
-      {%- endif -%}
+{%- assign page_url = page.url | replace:"/index.html","/" | absolute_url -%}
+{%- assign page_locale = page.locale | default: site.locale | default: "en_US" -%}
 
-      {%- if site.author.gender -%},
-        "gender": {{- site.author.gender | jsonify -}}
-      {%- endif -%}
+{%- assign page_image = "/assets/img/logo.png" | absolute_url -%}
+{%- assign page_image_width = "300" -%}
+{%- assign page_image_height = "300" -%}
+{%- assign page_image_alt = page_title -%}
+{%- assign site_logo = page_image -%}
 
-      {%- if site.author.bio -%},
-        "description": {{- site.author.bio | smartify | strip_html | normalize_whitespace | escape_once | jsonify -}}
-      {%- endif -%}
-
-      {%- if site.author.avatar -%},
-        "image": {{- site.author.avatar | absolute_url | jsonify -}}
-      {%- endif -%}
-
-      {%- if site.author.nationality -%},
-        "nationality": {{- site.author.nationality | jsonify -}}
-      {%- endif -%}
-
-      {%- if site.url -%},
-        "url": {{- "/" | absolute_url | jsonify -}}
-      {%- endif -%}
-
-      {%- if site.social -%},
-        "sameAs": {{- site.social.links | jsonify -}}
-      {%- endif -%}
-    }
-    </script>
+<!-- Site SEO tag -->
+{% if page.permalink == "/" %}
+  <title>{{- site_title -}}</title>
+{% elsif paginator.page > 1 %}
+  {%- capture page_title -%}
+    Page {{ paginator.page }} of {{ paginator.total_pages }} for {{ page_title }}
+  {%- endcapture -%}
+  <title>{{- page_title }} | {{ site_title -}}</title>
+{% else %}
+  <title>{{- page_title }} | {{ site_title -}}</title>
 {% endif %}
+
+<meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+<meta name="author" content="{{ page_author }}" />
+<meta name="description" content="{{ page_description }}" />
+<link rel="canonical" href="{{ page_url }}" />
+
+{% if paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}" />
+{% endif %}
+{% if paginator.next_page %}
+  <link rel="next" href="{{ paginator.next_page_path | absolute_url }}" />
+{% endif %}
+
+<!-- Open Graph -->
+{% include seo_opengraph.html %}
+
+<!-- Twitter Cards -->
+{% include seo_twitter_cards.html %}
+
+<!-- Schema JSON-LD -->
+{% include seo_schema.html %}

@@ -1,0 +1,35 @@
+<!-- Site author JSON-LD -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person"
+
+    {%- if site.author -%},
+      "name": {{- site.author.name | default: site.author | jsonify -}}
+    {%- endif -%}
+
+    {%- if site.author.gender -%},
+      "gender": {{- site.author.gender | jsonify -}}
+    {%- endif -%}
+
+    {%- if site.author.bio -%},
+      "description": {{- site.author.bio | smartify | strip_html | normalize_whitespace | escape_once | jsonify -}}
+    {%- endif -%}
+
+    {%- if site.author.avatar -%},
+      "image": {{- site.author.avatar | absolute_url | jsonify -}}
+    {%- endif -%}
+
+    {%- if site.author.nationality -%},
+      "nationality": {{- site.author.nationality | jsonify -}}
+    {%- endif -%}
+
+    {%- if site.url -%},
+      "url": {{- "/" | absolute_url | jsonify -}}
+    {%- endif -%}
+
+    {%- if site.social -%},
+      "sameAs": {{- site.social.links | jsonify -}}
+    {%- endif -%}
+  }
+</script>

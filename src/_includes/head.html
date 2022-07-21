@@ -18,13 +18,13 @@
 
   {% include seo_tag.html %}
 
-  <!-- Feed -->
-  {% feed_meta %}
-
   {% if page.robots %}
     <!-- robotstxt.org  -->
     <meta name="robots" content="{{ page.robots }}" />
   {% endif %}
+
+  <!-- Feed -->
+  <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | absolute_url }}" title="{{ site_title }}" />
 
   <!-- humanstxt.org -->
   <link type="text/plain" rel="author" href="{{ 'humans.txt' | absolute_url }}" />

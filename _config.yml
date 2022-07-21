@@ -9,7 +9,7 @@ description: >
   and I like a simple life. I am based in Kathmandu, Nepal.
 
 url: "https://milanaryal.com.np"
-logo: "/assets/img/open-graph.png"
+logo: "/assets/img/logo.png"
 theme_color: "#000000"
 words_per_minute: 180
 
@@ -31,13 +31,9 @@ author:
   twitter: "MilanAryal"
   pinterest: "MilanAryal"
 
-# SEO
-twitter:
-  username: "MilanAryal"
-  card: summary
-# SEO JSON-LD
 social:
   name: "Milan Aryal"
+  twitter: "MilanAryal"
   links:
     - https://twitter.com/MilanAryal
     - https://www.instagram.com/milanaryal/
@@ -76,25 +72,14 @@ collections:
 defaults:
   - scope:
       path: ""
-    values:
-      twitter:
-        card: summary
-      thumbnail:
-        path: "/assets/img/open-graph.png"
-        width: 300
-        height: 300
-  - scope:
-      path: ""
       type: "pages"
     values:
-      twitter:
-        card: summary
       image:
-        path: "/assets/img/open-graph.png"
+        path: "/assets/img/logo.png"
         width: 300
         height: 300
       feature_image:
-        path: "/assets/img/default.jpg"
+        path: "/assets/img/feature.jpg"
         width: 1500
         height: 500
   - scope:
@@ -102,7 +87,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true
+      comments: false
   - scope:
       path: "_pages"
       type: "pages"
@@ -118,5 +103,4 @@ plugins:
   - jekyll-include-cache
   - jekyll-paginate
   - jekyll-redirect-from
-  - jekyll-seo-tag
   - jekyll-sitemap

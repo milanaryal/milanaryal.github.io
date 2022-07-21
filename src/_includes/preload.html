@@ -1,26 +1,11 @@
 <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch -->
-
 {% if jekyll.environment == "production" %}
   <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
 {% endif %}
 
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content -->
-
-{% if page.permalink == "/" %}
-  <link rel="preload" href="/assets/img/avatar.png" as="image" />
-{% endif %}
-
-{% unless page.permalink == "/" %}
-  <link rel="preload" href="/assets/img/dust-and-scratches.png" as="image" crossorigin="anonymous" />
-{% endunless %}
-
 <link rel="preload" href="/assets/fonts/inter-latin-variable-wghtOnly-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-
 {% if page.date or page.layout == "page" %}
   <link rel="preload" href="/assets/fonts/lora-latin-variable-wghtOnly-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" href="/assets/fonts/lora-latin-variable-wghtOnly-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-{% endif %}
-
-{% if page.date and page.layout == "post" %}
-  <link rel="preload" href="/randomi.json" as="fetch" crossorigin="anonymous" />
 {% endif %}

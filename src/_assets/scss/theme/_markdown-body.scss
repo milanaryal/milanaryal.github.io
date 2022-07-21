@@ -296,6 +296,8 @@
     margin-bottom: 2.75em; // em // 52px;
     margin-left: auto;
     color: var(--rule);
+    background-color: currentColor;
+    border: 0;
     border-radius: 0.25rem; // 2px
 
     // @media (max-width: 767.98px) {

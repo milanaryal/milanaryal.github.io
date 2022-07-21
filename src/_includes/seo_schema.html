@@ -1,0 +1,8 @@
+{% if page.permalink == "/" or page.permalink == "/about/" %}
+  {% include schema/website.html %}
+  {% include schema/site_author.html %}
+{% elsif page.date %}
+  {% include schema/blogposting.html %}
+{% else %}
+  {% include schema/webpage.html %}
+{% endif %}

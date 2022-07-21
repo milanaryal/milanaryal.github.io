@@ -1,0 +1,32 @@
+{% if site.google_analytics_id and jekyll.environment == "production" %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{- google_analytics_id -}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{- google_analytics_id -}}');
+</script>
+{% endif %}
+
+{% unless site.url != "https://milanaryal.com.np" %}
+  {%- comment -%}
+    <!--
+      Please replace with your own site
+      Goolge Analytics Measurement ID (G-XXXXXXXXXX)
+    -->
+  {%- endcomment -%}
+  {%- assign GA_MEASUREMENT_ID = "G-4T5FBFVD6P" -%}
+{% endunless %}
+{% if GA_MEASUREMENT_ID and jekyll.environment == "production" %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{- GA_MEASUREMENT_ID -}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{- GA_MEASUREMENT_ID -}}');
+</script>
+{% endif %}
