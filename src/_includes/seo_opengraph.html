@@ -2,6 +2,13 @@
 <meta property="og:description" content="{{ page_description }}" />
 <meta property="og:url" content="{{ page_url }}" />
 <meta property="og:image" content="{{ page_image }}" />
+
+{% if page.permalink == "/" or page.permalink == "/about/" %}
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:image:alt" content="{{ site_title }}" />
+{% endif %}
+
 <meta property="og:locale" content="{{ page_locale }}" />
 <meta property="og:site_name" content="{{ site_title }}" />
 
