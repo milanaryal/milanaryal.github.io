@@ -15,11 +15,15 @@
 {%- assign page_url = page.url | replace:"/index.html","/" | absolute_url -%}
 {%- assign page_locale = page.locale | default: site.locale | default: "en_US" -%}
 
-{%- assign page_image = "/assets/img/logo.png" | absolute_url -%}
-{%- assign page_image_width = "300" -%}
-{%- assign page_image_height = "300" -%}
-{%- assign page_image_alt = page_title -%}
-{%- assign site_logo = page_image -%}
+{%- if page.image and page.image != empty -%}
+  {%- assign page_image = page.image.path | default: page.image -%}
+  {%- unless page_image contains "://" -%}
+    {%- assign page_image = page_image | absolute_url -%}
+  {%- endunless -%}
+  {%- assign page_image = page_image | escape -%}
+{%- endif -%}
+{%- assign site_logo = site.logo | absolute_url -%}
+{%- assign page_image = page_image | default: site_logo -%}
 
 <!-- Site SEO tag -->
 {% if page.permalink == "/" %}
