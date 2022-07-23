@@ -290,12 +290,14 @@
   hr {
     width: 19%;
     max-width: 100px;
-    height: 0.25rem; // 2px
+    // height: 0.25rem; // 2px
     margin-top: 2.75rem; // rem // 42px;
     margin-right: auto;
     margin-bottom: 2.75em; // em // 52px;
     margin-left: auto;
     color: var(--rule);
+    // background-color: currentColor;
+    // border: 0;
     border-top: 0.25rem solid;
     border-radius: 0.25rem; // 2px
 
