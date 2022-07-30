@@ -1,0 +1,118 @@
+# Workflow for building and deploying a Jekyll site to GitHub Pages
+name: pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - "**"
+      - "!.github/workflows/**"
+      - "!_config.yml"
+      - "!src/**"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1" # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+
+      - name: Version info
+        run: |
+          ruby --version
+          gem --version
+          bundle --version
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v1
+
+      - name: Checking Jekyll configuration
+        run: bundle exec jekyll doctor
+
+      - name: Checking Markdown files
+        run: bundle exec mdl --ignore-front-matter --style .mdl_style.rb src/_posts || true
+
+      - name: Build with Jekyll
+        run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace --verbose # defaults output to '/_site'
+
+      # - name: Install Minify deb package on Ubuntu
+      #   if: matrix.os == 'ubuntu-latest'
+      #   run: apt-get update && apt-get install --no-install-recommends --yes minify
+
+      # https://github.com/tdewolff/homebrew-tap/
+      - name: Install Minify using Homebrew
+        run: |
+          brew install go
+          brew install tdewolff/tap/minify
+
+      # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
+      - name: Minify HTML files
+        run: |
+          minify --type=html --recursive --output . --match=\.html ./_site/ \
+            --html-keep-default-attrvals \
+            --html-keep-document-tags \
+            --html-keep-end-tags \
+            --verbose
+
+      - name: Minify JSON files
+        run: |
+          minify --type=json --recursive --output . --match=\.json ./_site/ --verbose || true \
+            && \
+            minify --type=json --output ./_site/ ./_site/manifest.webmanifest --verbose || true
+
+      - name: Checking HTML files
+        run: |
+          bundle exec htmlproofer ./_site/ \
+            --enforce_https "false" \
+            --ignore_files "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" \
+            --ignore_status_codes "403,429" \
+            --only-4xx \
+            || true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1 # This will automatically upload an artifact from the '/_site' directory
+        if: success() && github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main'
+        with:
+          path: ./_site/
+
+      - name: Cleaning up
+        run: bundle exec jekyll clean
+
+  # Deployment job
+  deploy:
+    name: deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+        if: success()
