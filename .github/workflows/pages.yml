@@ -36,9 +36,10 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1" # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
+          # Not needed with a .ruby-version file
+          ruby-version: "3.1"
+          # Runs 'bundle install' and caches installed gems automatically
+          bundler-cache: true
 
       - name: Version info
         run: |
@@ -57,7 +58,10 @@ jobs:
         run: bundle exec mdl --ignore-front-matter --style .mdl_style.rb src/_posts || true
 
       - name: Build with Jekyll
-        run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace --verbose # defaults output to '/_site'
+        # Defaults output to '/_site'
+        # run: bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }}
+        # run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace --verbose
+        run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace
 
       # - name: Install Minify deb package on Ubuntu
       #   if: matrix.os == 'ubuntu-latest'
@@ -94,7 +98,8 @@ jobs:
             || true
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1 # This will automatically upload an artifact from the '/_site' directory
+        # This will automatically upload an artifact from the '/_site' directory
+        uses: actions/upload-pages-artifact@v1
         if: success() && github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main'
         with:
           path: ./_site/

@@ -21,7 +21,7 @@ Join me on the following networks and/or websites:
   {% if site.author.twitter %}
   <li>
     <a rel="me" href="https://twitter.com/{{ site.author.twitter }}">
-      {% include_cached icons/twitter.svg width="1em" height="1em" class="icon icon-twitter" %}
+      {% include icons/twitter.svg width="1em" height="1em" class="icon icon-twitter" %}
       <br />
       <span class="label">Twitter</span>
     </a>
@@ -30,7 +30,7 @@ Join me on the following networks and/or websites:
   {% if site.author.instagram %}
   <li>
      <a rel="me" href="https://instagram.com/{{ site.author.instagram }}">
-       {% include_cached icons/instagram.svg width="1em" height="1em" class="icon icon-instagram" %}
+       {% include icons/instagram.svg width="1em" height="1em" class="icon icon-instagram" %}
        <br />
        <span class="label">Instagram</span>
     </a>
@@ -39,7 +39,7 @@ Join me on the following networks and/or websites:
   {% if site.author.github %}
   <li>
     <a rel="me" href="https://github.com/{{ site.author.github }}">
-      {% include_cached icons/github.svg width="1em" height="1em" class="icon icon-github" %}
+      {% include icons/github.svg width="1em" height="1em" class="icon icon-github" %}
       <br />
       <span class="label">GitHub</span>
     </a>
@@ -48,7 +48,7 @@ Join me on the following networks and/or websites:
   {% if site.author.keybase %}
   <li>
     <a rel="me" href="https://keybase.io/{{ site.author.keybase }}">
-      {% include_cached icons/keybase.svg width="1em" height="1em" class="icon icon-keybase" %}
+      {% include icons/keybase.svg width="1em" height="1em" class="icon icon-keybase" %}
       <br />
       <span class="label">Keybase</span>
     </a>
@@ -57,7 +57,7 @@ Join me on the following networks and/or websites:
   {% if site.author.facebook %}
   <li>
     <a rel="me" href="https://facebook.com/{{ site.author.facebook }}">
-      {% include_cached icons/facebook.svg width="1em" height="1em" class="icon icon-facebook" %}
+      {% include icons/facebook.svg width="1em" height="1em" class="icon icon-facebook" %}
       <br />
       <span class="label">Facebook</span>
     </a>
@@ -66,7 +66,7 @@ Join me on the following networks and/or websites:
   {% if site.author.linkedin %}
   <li>
     <a rel="me" href="https://linkedin.com/in/{{ site.author.linkedin }}">
-      {% include_cached icons/linkedin.svg width="1em" height="1em" class="icon icon-linkedin" %}
+      {% include icons/linkedin.svg width="1em" height="1em" class="icon icon-linkedin" %}
       <br />
       <span class="label">LinkedIn</span>
     </a>
@@ -75,7 +75,7 @@ Join me on the following networks and/or websites:
   {% if site.author.pinterest %}
   <li>
     <a rel="me" href="https://pinterest.com/{{ site.author.pinterest }}">
-      {% include_cached icons/pinterest.svg width="1em" height="1em" class="icon icon-pinterest" %}
+      {% include icons/pinterest.svg width="1em" height="1em" class="icon icon-pinterest" %}
       <br />
       <span class="label">Pinterest</span>
     </a>
@@ -116,7 +116,7 @@ In case you were wondering, this site is:
 
 ...for more information see [humans.txt](/humans.txt). You can find more about my development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config).
 
-If you enjoy the content found here, you might like to subscribe to my <span class="d-inline-block">{% include_cached icons/rss.svg width="1em" height="1em" class="icon icon-rss p-1px" %}&nbsp;[feed](/feed.xml){: title="Atom Feed"}.</span> Also feel free to send me any feedback, comments, or suggestions about the site.
+If you enjoy the content found here, you might like to subscribe to my <span class="d-inline-block">{% include icons/rss.svg width="1em" height="1em" class="icon icon-rss p-1px" %}&nbsp;[feed](/feed.xml){: title="Atom Feed"}.</span> Also feel free to send me any feedback, comments, or suggestions about the site.
 
 ---
 

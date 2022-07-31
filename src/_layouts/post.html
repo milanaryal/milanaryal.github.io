@@ -128,7 +128,7 @@ layout: default
             <div class="post-footer-meta-acknowledgments" about="{{ page_url }}">
               <a href="/fine-print/#license" data-bs-toggle="tooltip" data-bs-placement="top" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license by the author.">Some rights reserved</a><!--
 
-              -->{% include_cached icons/creative-commons-by.svg width="21" height="21" class="icon icon-creative-commons-by" title="You can distribute, remix, and build upon this work as long as you credit the author." %}
+              -->{% include icons/creative-commons-by.svg width="21" height="21" class="icon icon-creative-commons-by" title="You can distribute, remix, and build upon this work as long as you credit the author." %}
             </div><!-- /.post-footer-meta-acknowledgments -->
 
             {% comment %}
@@ -226,7 +226,7 @@ layout: default
         {% if page.previous.url %}
         <div class="post-pager-previous float-start text-start">
           <div class="post-pager-title">
-            {% include_cached icons/angle-left.svg width="1em" height="1em" class="icon icon-angle-left" %}<!--
+            {% include icons/angle-left.svg width="1em" height="1em" class="icon icon-angle-left" %}<!--
             -->&nbsp;Previous<span class="d-none d-md-inline"> post</span>
           </div>
           <a rel="prev" href="{{ page.previous.url | relative_url }}">
@@ -238,7 +238,7 @@ layout: default
         {% if page.next.url %}
         <div class="post-pager-next float-end text-end">
           <div class="post-pager-title">Next<span class="d-none d-md-inline"> post</span><!--
-          -->&nbsp;{% include_cached icons/angle-right.svg width="1em" height="1em" class="icon icon-angle-right" %}
+          -->&nbsp;{% include icons/angle-right.svg width="1em" height="1em" class="icon icon-angle-right" %}
           </div>
           <a rel="next" href="{{ page.next.url | relative_url }}">
             {{ page.next.title | smartify | strip_html | normalize_whitespace | escape_once }}
@@ -263,14 +263,14 @@ layout: default
 
         <div class="random-posts-footer user-select-none">
           <a class="btn btn-outline-default btn--random" href="{{ 'random/' | relative_url }}" role="button">
-            {% include_cached icons/random.svg width="1em" height="1em" class="icon icon-random p-1px" %}<!--
+            {% include icons/random.svg width="1em" height="1em" class="icon icon-random p-1px" %}<!--
             -->&nbsp;<span class="label">Random</span>
           </a><!--
 
           -->&nbsp;<!--
 
           --><a class="btn btn-outline-default btn--archive" href="{{ 'archive/' | relative_url }}" role="button">
-            {% include_cached icons/archive.svg width="1em" height="1em" class="icon icon-archive p-1px" %}<!--
+            {% include icons/archive.svg width="1em" height="1em" class="icon icon-archive p-1px" %}<!--
             -->&nbsp;<span class="label">Archive</span>
           </a>
         </div>
@@ -283,6 +283,6 @@ layout: default
 <!-- Elevator - scroll back to top button -->
 <div id="elevator" class="elevator d-none d-sm-block d-print-none user-select-none" hidden="true" aria-hidden="true">
   <span class="elevator-button" role="button">
-    {% include_cached icons/arrow-up.svg width="1em" height="1em" class="icon icon-arrow-up" %}
+    {% include icons/arrow-up.svg width="1em" height="1em" class="icon icon-arrow-up" %}
   </span>
 </div>

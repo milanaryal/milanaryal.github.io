@@ -101,7 +101,6 @@ defaults:
 
 plugins:
   - jekyll-feed
-  - jekyll-include-cache
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap

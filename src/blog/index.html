@@ -68,14 +68,14 @@ redirect_from: "/writings/"
 
   {% unless paginator.page > 1 %}
   <a class="btn btn-outline-default btn--archive float-start" href="{{ 'archive/' | relative_url }}" role="button">
-    {% include_cached icons/archive.svg width="1em" height="1em" class="icon icon-archive p-1px" %}<!--
+    {% include icons/archive.svg width="1em" height="1em" class="icon icon-archive p-1px" %}<!--
     -->&nbsp;<span class="label">Archive</span>
   </a>
   {% endunless %}
 
   {% if paginator.previous_page %}
   <a class="btn btn-outline-default float-start" href="{{ paginator.previous_page_path | relative_url }}" role="button">
-    {% include_cached icons/angle-left.svg width="1em" height="1em" class="icon icon-angle-left" %}<!--
+    {% include icons/angle-left.svg width="1em" height="1em" class="icon icon-angle-left" %}<!--
     -->&nbsp;<span class="label">Newer</span>
   </a>
   {% endif %}
@@ -83,7 +83,7 @@ redirect_from: "/writings/"
   {% if paginator.next_page %}
   <a class="btn btn-outline-default float-end" href="{{ paginator.next_page_path | relative_url }}" role="button">
     <span class="label">Older</span>&nbsp;<!--
-    -->{% include_cached icons/angle-right.svg width="1em" height="1em" class="icon icon-angle-right" %}
+    -->{% include icons/angle-right.svg width="1em" height="1em" class="icon icon-angle-right" %}
   </a>
   {% endif %}
 

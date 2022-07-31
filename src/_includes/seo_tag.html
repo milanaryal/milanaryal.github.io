@@ -35,6 +35,12 @@
 {% endif %}
 
 <meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+
+{% if page.robots %}
+  <!-- robotstxt.org  -->
+  <meta name="robots" content="{{ page.robots }}" />
+{% endif %}
+
 <meta name="author" content="{{ page_author }}" />
 <meta name="description" content="{{ page_description }}" />
 <link rel="canonical" href="{{ page_url }}" />

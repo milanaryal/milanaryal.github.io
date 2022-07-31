@@ -6,7 +6,7 @@
 
 <div class="{{ include.class }}">
   <button id="js-button-comment" class="btn btn-outline-default btn--disqus" onclick="initDisqus_onClick()">
-    {% include_cached icons/comment.svg width="1em" height="1em" class="icon icon-comment p-1px" %}<!--
+    {% include icons/comment.svg width="1em" height="1em" class="icon icon-comment p-1px" %}<!--
     --><span class="disqus-comment-count" data-disqus-url="{{ page.url | replace:'/index.html','/' | absolute_url }}">Leave a comment</span>
   </button>
 
