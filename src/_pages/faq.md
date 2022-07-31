@@ -23,6 +23,6 @@ Try [Google Translate.](https://translate.google.com/?sl=auto&tl=en&text=%E0%A4%
 
 He/him/his.
 
-#### Are you Nepalese?
+#### Where are you from?
 
-Yes, born and raised.
+I am from Kathmandu, Nepal.
