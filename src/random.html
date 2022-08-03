@@ -6,12 +6,12 @@ sitemap: false
 robots: "noindex, follow"
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="{{ page.lang | replace:'-','_' | default: site.lang | default:'en' | downcase }}">
   <meta charset="utf-8" />
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1"
+    content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1"
   />
   <style>
     * {

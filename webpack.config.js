@@ -22,12 +22,16 @@ const minimizeFalse = {
 }
 const optimizationOptions = isProd ? minimizeTrue : minimizeFalse
 
+const prodFilename = 'bundle.min.js'
+const devFilename = 'bundle.js'
+const outputFilename = isProd ? prodFilename : devFilename
+
 module.exports = {
   mode: 'production',
   entry: './src/_assets/js/index.js',
   output: {
     path: path.resolve(__dirname, './src/assets/js/'),
-    filename: 'bundle.js',
+    filename: outputFilename,
   },
   module: {
     rules: [

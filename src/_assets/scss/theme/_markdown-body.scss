@@ -16,6 +16,11 @@
     font-size: 20px;
   }
 
+  @media (min-width: 992px) {
+    padding-right: 30px;
+    padding-left: 6px;
+  }
+
   // stylelint-disable declaration-no-important
   &.page-content {
     margin-bottom: 60px;

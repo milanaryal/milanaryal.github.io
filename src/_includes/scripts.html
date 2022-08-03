@@ -3,6 +3,10 @@
 {%- include build_version.html -%}
 
 <!-- Core JavaScript -->
-<script src="{{ 'assets/js/bundle.js?v=' | append: build_version | relative_url }}"></script>
+{% if jekyll.environment == "production" %}
+  <script src="{{ 'assets/js/bundle.min.js?v=' | append: build_version | relative_url }}"></script>
+{% else %}
+  <script src="{{ 'assets/js/bundle.js?v=' | append: build_version | relative_url }}"></script>
+{% endif %}
 
 {% include google_analytics.html %}
