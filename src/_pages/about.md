@@ -10,7 +10,7 @@ Hey --- this is Milan Aryal (मिलन अर्याल), who is passionate
 
 > The name Milan (pronounced MEE-lahn), means dear, loving and gracious in Slavic; in Ancient Roman, eager and laborious; and in Sanskrit, unification.
 
-If you want to ask any questions ([FAQ](/faq/)), or would just like to say hello in general, my [contact page](/contact/) has all those details.
+If you want to ask any questions ([Q&A](/qna/)), or would just like to say hello in general, my [contact page](/contact/) has all those details.
 
 ### Follow me across the interwebs
 

@@ -178,5 +178,5 @@ Be sure **not to edit** the GitHub Actions workflow, as any changes will be lost
 Further resources:
 
 - [Starter Workflows](https://github.com/actions/starter-workflows/tree/main/pages), _GitHub Actions_
-- [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow)
+- [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow), _GitHub Docs_
 - [GitHub Pages: Custom GitHub Actions Workflows (beta)](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/), _GitHub Blog_

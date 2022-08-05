@@ -1,9 +1,9 @@
 ---
-title: "FAQ"
-tagline: "A frequently asked questions."
+title: "Q&A"
+tagline: "Questions & answers"
 description: "A list of frequently asked questions with answers."
 layout: "minimal"
-permalink: "/faq/"
+permalink: "/qna/"
 sitemap: false
 ---
 
