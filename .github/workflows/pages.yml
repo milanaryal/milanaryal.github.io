@@ -28,7 +28,9 @@ concurrency:
 jobs:
   # Build job
   build:
+    name: build
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -61,10 +63,12 @@ jobs:
         # Defaults output to '/_site'
         # run: bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }}
         # run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace --verbose
-        run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace
+        run: bundle exec jekyll build --profile --trace
+        env:
+          JEKYLL_ENV: production
 
       # - name: Install Minify deb package on Ubuntu
-      #   if: matrix.os == 'ubuntu-latest'
+      #   if: ${{ matrix.os == 'ubuntu-latest' }}
       #   run: apt-get update && apt-get install --no-install-recommends --yes minify
 
       # https://github.com/tdewolff/homebrew-tap/
@@ -101,7 +105,7 @@ jobs:
       - name: Upload artifact
         # This will automatically upload an artifact from the '/_site' directory
         uses: actions/upload-pages-artifact@v1
-        if: success() && github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main'
+        if: ${{ success() && github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main' }}
         with:
           path: ./_site/
 
@@ -116,9 +120,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    if: github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main'
+    if: ${{ github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main' }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        if: success()
+        if: ${{ success() }}
