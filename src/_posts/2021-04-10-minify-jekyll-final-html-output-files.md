@@ -30,7 +30,8 @@ Deb package on Ubuntu
 ```bash
 sudo apt-get update && sudo apt-get -y install minify
 ```
-_Note: may be outdated_
+
+Note: _may be outdated_
 
 Using Homebrew on MacOS
 

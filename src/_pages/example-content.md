@@ -9,7 +9,7 @@ robots: "noindex, follow"
 
 > Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 
-Cum sociis natoque penatibus et magnis [dis parturient montes](#main){: data-proofer-ignore="true"}, nascetur ridiculus mus. _Aenean eu leo quam._ Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+Cum sociis natoque penatibus et magnis [dis parturient montes](/example-content/#main){: data-proofer-ignore="true"}, nascetur ridiculus mus. _Aenean eu leo quam._ Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
 > Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
