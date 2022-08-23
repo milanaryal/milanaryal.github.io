@@ -1,7 +1,7 @@
 ---
-title: "Q&A"
-tagline: "Questions & answers"
-description: "A list of frequently asked questions with answers."
+title: "Questions & answers"
+tagline: "General knowledge virtual quiz"
+description: "Get to know about Milan Aryal with a list of questions and answers."
 layout: "minimal"
 permalink: "/qna/"
 sitemap: false
@@ -26,3 +26,7 @@ He/him/his.
 #### Where are you from?
 
 I am from Kathmandu, Nepal.
+
+#### Why do you build this site?
+
+This is my personal weblog and portfolio, with content that mostly focusses on my work, interests and hobbies.

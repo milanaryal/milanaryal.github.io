@@ -104,6 +104,8 @@ Life is good😊
 
 ### About the site
 
+> The personal weblog and portfolio of Milan Aryal, with content that mostly focusses on his work, interests and hobbies.
+
 In this site you'll find a recollection of thoughts and opinions based on my experience regarding subjects and issues that are of interest to is all in the stock market, web development, and positive living.
 
 In case you were wondering, this site is:
@@ -111,7 +113,7 @@ In case you were wondering, this site is:
 - Designed and developed on a [WSL: Ubuntu](https://ubuntu.com/wsl) system in _Nepal_
 - Coded with [Visual Studio Code](https://code.visualstudio.com/)
 - Based on [Bootstrap](https://getbootstrap.com/) framework
-- Built with [npm](https://www.npmjs.com/) to compile site assets
+- Built with [npm](https://www.npmjs.com/) packages to compile site assets
 - Generated with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/)
 
 ...for more information see [humans.txt](/humans.txt). You can find more about my development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config).
