@@ -3,58 +3,66 @@ redirect_from: "/c-asba-service-charge-for-banks-in-nepal/"
 title: "C-ASBA charge of various Banks in Nepal"
 description: "The list of various Banks in Nepal with their C-ASBA service charges per application."
 date: 2020-03-22 13:00:00 +0545
-last_modified_at: 2022-06-30 00:00:00 +0545
+last_modified_at: 2022-08-23 00:00:00 +0545
 ---
 
 Investors can buy primary and rights shares online with the C-ASBA process which has been implemented on February 23, 2018 (Falgun 11, 2074) in Nepal. C-ASBA is an advanced form of ASBA interface which is claimed to be more user friendly.
 
-> Last updated at **{{ page.last_modified_at | date: '%B %-d, %Y' }}**; for current updated data visit your respective Bank's website for standard charges sheet.
+> Update August 22, 2022: SEBON revises the IPO assurance fees; the maximum fees for filling up IPO is reduced to Rs. 5.
+>
+> --- [ShareSansar](https://www.sharesansar.com/newsdetail/sebon-revises-the-ipo-assurance-fees-the-maximum-fees-for-filling-up-ipo-is-reduced-to-rs-5-2022-08-22){:rel="nofollow"} / [Merolagani](https://merolagani.com/NewsDetail.aspx?newsID=84087){:rel="nofollow"}
+
+<!--
+
+> Last updated at **June 30, 2022**; for current updated data visit your respective Bank's website for standard charges sheet.
+
+-->
 
 Here are the list of various Banks in Nepal with their C-ASBA service charges per application.
 
 ### C-ASBA charge of Commercial Banks in Nepal
 
-| Symbol | Bank Name                      | Charge (in rupees) |
-| ------ | ------------------------------ | ------------------ |
-| SCB    | Standard Chartered Bank        | Rs. 100            |
-| CCBL   | Century Commercial Bank        | Rs. 25             |
-| LBL    | Laxmi Bank                     | Rs. 25             |
-| MEGA   | Mega Bank                      | Rs. 25             |
-| SBI    | Nepal SBI Bank                 | Rs. 25             |
-| CZBIL  | Citizen Bank                   | Rs. 20             |
-| CBL    | Civil Bank                     | Rs. 20             |
-| EBL    | Everest Bank                   | Rs. 20             |
-| HBL    | Himalayan Bank                 | Rs. 20             |
-| KBL    | Kumari Bank                    | Rs. 20             |
-| NIB    | Nepal Investment Bank          | Rs. 20             |
-| NMB    | NMB Bank                       | Rs. 20             |
-| SANIMA | Sanima Bank                    | Rs. 20             |
-| GBIME  | Global IME Bank                | Rs. 15             |
-| ADBL   | Agricultural Development Bank  | Rs. 10             |
-| BOKL   | Bank of Kathmandu              | Rs. 10             |
-| MBL    | Machhapuchchhre Bank           | Rs. 10             |
-| NBB    | Nepal Bangladesh Bank          | Rs. 10             |
-| NBL    | Nepal Bank                     | Rs. 10             |
-| NCCB   | Nepal Credit and Commerce Bank | Rs. 10             |
-| PRVU   | Prabhu Bank                    | Rs. 10             |
-| PCBL   | Prime Commercial Bank          | Rs. 10             |
-| SBL    | Siddhartha Bank                | Rs. 10             |
-| SRBL   | Sunrise Bank                   | Rs. 10             |
-| NABIL  | Nabil Bank                     | Free               |
-| NICA   | NIC Asia Bank                  | Free               |
-| RBB    | Rastriya Banijya Bank          | Free               |
+| Symbol | Bank Name                      | Charge (in rupees)       |
+| ------ | ------------------------------ | ------------------------ |
+| SCB    | Standard Chartered Bank        | <del>Rs. 100</del> Rs. 5 |
+| CCBL   | Century Commercial Bank        | <del>Rs. 25</del> Rs. 5  |
+| LBL    | Laxmi Bank                     | <del>Rs. 25</del> Rs. 5  |
+| MEGA   | Mega Bank                      | <del>Rs. 25</del> Rs. 5  |
+| SBI    | Nepal SBI Bank                 | <del>Rs. 25</del> Rs. 5  |
+| CZBIL  | Citizen Bank                   | <del>Rs. 20</del> Rs. 5  |
+| CBL    | Civil Bank                     | <del>Rs. 20</del> Rs. 5  |
+| EBL    | Everest Bank                   | <del>Rs. 20</del> Rs. 5  |
+| HBL    | Himalayan Bank                 | <del>Rs. 20</del> Rs. 5  |
+| KBL    | Kumari Bank                    | <del>Rs. 20</del> Rs. 5  |
+| NIB    | Nepal Investment Bank          | <del>Rs. 20</del> Rs. 5  |
+| NMB    | NMB Bank                       | <del>Rs. 20</del> Rs. 5  |
+| SANIMA | Sanima Bank                    | <del>Rs. 20</del> Rs. 5  |
+| GBIME  | Global IME Bank                | <del>Rs. 15</del> Rs. 5  |
+| ADBL   | Agricultural Development Bank  | <del>Rs. 10</del> Rs. 5  |
+| BOKL   | Bank of Kathmandu              | <del>Rs. 10</del> Rs. 5  |
+| MBL    | Machhapuchchhre Bank           | <del>Rs. 10</del> Rs. 5  |
+| NBB    | Nepal Bangladesh Bank          | <del>Rs. 10</del> Rs. 5  |
+| NBL    | Nepal Bank                     | <del>Rs. 10</del> Rs. 5  |
+| NCCB   | Nepal Credit and Commerce Bank | <del>Rs. 10</del> Rs. 5  |
+| PRVU   | Prabhu Bank                    | <del>Rs. 10</del> Rs. 5  |
+| PCBL   | Prime Commercial Bank          | <del>Rs. 10</del> Rs. 5  |
+| SBL    | Siddhartha Bank                | <del>Rs. 10</del> Rs. 5  |
+| SRBL   | Sunrise Bank                   | <del>Rs. 10</del> Rs. 5  |
+| NABIL  | Nabil Bank                     | Free                     |
+| NICA   | NIC Asia Bank                  | Free                     |
+| RBB    | Rastriya Banijya Bank          | Free                     |
 
 ### C-ASBA charge of Development Banks & Finances in Nepal
 
-| Symbol | Bank Name              | Charge (in rupees) |
-| ------ | ---------------------- | ------------------ |
-| ICFC   | ICFC Finance           | Rs. 25             |
-| KSBBL  | Kamana Sewa Bikas Bank | Rs. 20             |
-| GBBL   | Garima Bikas Bank      | Rs. 10             |
-| LBBL   | Lumbini Bikas Bank     | Rs. 10             |
-| MLBL   | Mahalaxmi Bikas Bank   | Rs. 10             |
-| MNBBL  | Muktinath Bikas Bank   | Rs. 10             |
-| MFIL   | Manjushree Finance     | Free               |
+| Symbol | Bank Name              | Charge (in rupees)      |
+| ------ | ---------------------- | ----------------------- |
+| ICFC   | ICFC Finance           | <del>Rs. 25</del> Rs. 5 |
+| KSBBL  | Kamana Sewa Bikas Bank | <del>Rs. 20</del> Rs. 5 |
+| GBBL   | Garima Bikas Bank      | <del>Rs. 10</del> Rs. 5 |
+| LBBL   | Lumbini Bikas Bank     | <del>Rs. 10</del> Rs. 5 |
+| MLBL   | Mahalaxmi Bikas Bank   | <del>Rs. 10</del> Rs. 5 |
+| MNBBL  | Muktinath Bikas Bank   | <del>Rs. 10</del> Rs. 5 |
+| MFIL   | Manjushree Finance     | Free                    |
 
 **Note:**
 
