@@ -1,7 +1,7 @@
 ---
 title: "The wonders within your head"
+description: "An infographic which provides a visual to show how the different parts of the brain function."
 date: 2014-07-06T09:42:00+05:45
-excerpt: "An infographic which provides a visual to show how the different parts of the brain function."
 ---
 
 This infographic provides a visual to show how the different parts of the brain function. The infographic illustrates the brains, nose and throat functions in Lamen's terms so that it is clear to the reader.

@@ -1,7 +1,7 @@
 ---
 title: "The importance of whitespace in web design"
+description: "We often forget the one aspect in web designing that has a lot of advantage and gives a better look to the overall appearance, the whitespace!"
 date: 2014-06-26T21:24:00+05:45
-excerpt: "We often forget the one aspect in web designing that has a lot of advantage and gives a better look to the overall appearance, the whitespace!"
 ---
 
 We throw in a lot of cool elements when designing a website. We often forget the one aspect in web designing that has a lot of advantage and gives a better look to the overall appearance- The white Space! It is also known as negative space. But there is a lot of positive stuff that goes around this negative spacing. Let us discuss some here.

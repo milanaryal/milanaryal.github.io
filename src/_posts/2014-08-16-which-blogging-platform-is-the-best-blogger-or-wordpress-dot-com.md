@@ -1,7 +1,7 @@
 ---
 title: "Which blogging platform is the best? Blogger.com or WordPress.com?"
+description: "This comparison will help you to choose between Blogger and WordPress.com to start blogging."
 date: 2014-08-16T16:49:00+05:45
-excerpt: "This comparison will help you to choose between Blogger and WordPress.com to start blogging."
 ---
 
 If you are new to blogging, or perhaps even thinking about starting a new blog you may have questioned yourself at one time or another on what to blog about, that alone is a huge question for one to ask. Starting a blog can either be a lot of work, can take a lot of planning and be a challenge, it really comes down to what you want out of the blog in the end.

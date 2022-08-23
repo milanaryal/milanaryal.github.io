@@ -1,7 +1,7 @@
 ---
 title: "Async social sharing buttons"
+description: "Asynchronously loading social sharing buttons JavaScript to improve page speed of your site."
 date: 2015-01-28T23:01:59+05:45
-excerpt: "Asynchronously loading social sharing buttons JavaScript to improve page speed of your site."
 ---
 
 Social sharing button are great easy resource to share the content of the site. Different social sites use different scripts to load the sharing button. If you go and copying every social sharing button scripts then it will be bunch of and may slow down your site. Thus, here's the simple asynchronously (async) loading JavaScript of every social media.

@@ -1,7 +1,7 @@
 ---
 title: "Why you should know about Tor?"
+description: "The name Tor is derived from the acronym for the original software project name 'The Onion Router'."
 date: 2020-05-27T18:00:00+05:45
-excerpt: "The name Tor is derived from the acronym for the original software project name 'The Onion Router'."
 ---
 
 Tor (originally called The Onion Router because it layers your traffic like an onion) is a free software program that you load onto your computer (like a browser) that hides your IP address every time you send or request data on the Internet. The process is layered with heavy-duty encryption, which means your data is layered with privacy protection.

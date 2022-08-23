@@ -1,7 +1,7 @@
 ---
 title: "Classroom called life"
+description: "Life is a classroom."
 date: 2012-04-30T09:21:36+05:45
-excerpt: "Life is a classroom."
 ---
 
 At 5 I learned our dog doesn't want to eat my broccoli either.

@@ -1,7 +1,7 @@
 ---
 title: "Using npm scripts as a build tool"
+description: "Learn how to use npm scrips to compile assets for your web projects with spending less time on setting up the configurations."
 date: 2020-06-21T08:00:00+05:45
-excerpt: "Learn how to use npm scrips to compile assets for your web projects with spending less time on setting up the configurations."
 ---
 
 I have used build tools like Grunt, and Gulp --- which eased my work for compiling assets for my web projects. Over the time using such build tools I spent more time on configuring the build tool rather than in my web projects. So, to overcome this issue I started using npm scripts as a build tool and this time I can focus more time on my work.

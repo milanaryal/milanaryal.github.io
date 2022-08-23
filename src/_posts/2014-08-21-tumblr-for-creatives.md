@@ -1,7 +1,7 @@
 ---
 title: "Tumblr for creatives"
+description: "Tumblr is only getting more popular so get started as soon as possible."
 date: 2014-08-21T22:10:00+05:45
-excerpt: "Tumblr is only getting more popular so get started as soon as possible."
 ---
 
 Artists are not exactly famed for having money. Most spend their cash on supplies and multi-packs of noodles. Luxuries like new clothes, fancy mobiles and delicious ice cream have become distant, nostalgic memories. It’s not a great situation to be in but it’s been the case for years and years (unless you’re one of the lucky few with rich parents willing to finance every project you ever conceive no matter how awful). Unfortunately nowadays a website is essential for artists who want a good chance of getting their work noticed. This can be expensive and also very complicated if you have no training in web design. Luckily, in 2007, Tumblr (tumblr.com) emerged from the depths of the internet to save the day.

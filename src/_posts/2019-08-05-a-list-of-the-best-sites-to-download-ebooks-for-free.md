@@ -1,6 +1,6 @@
 ---
 title: "A list of the best sites to download eBooks for free"
-excerpt: "A curated list of the most popular websites to download eBooks for free of cost."
+description: "A curated list of the most popular websites to download eBooks for free of cost."
 date: 2019-08-05T10:35:00+05:45
 last_modified_at: 2020-06-17T17:00:00+05:45
 ---

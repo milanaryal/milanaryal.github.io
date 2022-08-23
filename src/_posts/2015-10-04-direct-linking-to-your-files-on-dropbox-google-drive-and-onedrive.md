@@ -3,7 +3,7 @@ title: "Direct linking to your files on Dropbox, Google Drive and OneDrive"
 date: 2015-10-05T07:58:46+05:45
 ---
 
-#### Force a file or folder to download from cloud storage drive and skip the web viewer.
+> Force a file or folder to download from cloud storage drive and skip the web viewer.
 
 A direct link is a web address (URL) that lets you link directly to a file. This is different from a regular web link, which will direct the user to a cloud storage drive page.
 

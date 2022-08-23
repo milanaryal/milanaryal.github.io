@@ -1,8 +1,8 @@
 ---
 title: "Access your favourite blocked BitTorrent sites"
+description: "Most popular BitTorrent sites proxies and mirrors for bypassing your country or territory Internet censorship."
 date: 2017-05-27T07:08:00+05:45
 last_modified_at: 2021-03-10T11:00:00+05:45
-excerpt: "Most popular BitTorrent sites proxies and mirrors for bypassing your country or territory Internet censorship."
 ---
 
 Many countries have blocked access to BitTorrent websites due to copyright issues. You can use a proxy site to bypass any ISP block for blocked sites. Here's a list of list of [most popular BitTorrent sites](/top-10-most-popular-bittorrent-sites/) fast proxies and mirrors.

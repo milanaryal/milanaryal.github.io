@@ -1,7 +1,8 @@
 ---
 title: "how to not understand life and be okay with it"
+description: "maybe that's you, maybe it's not -- but odds are, you can relate at least a little to the desire to be well-liked. who doesn't want to feel accepted, respected, and appreciated?"
 author: "alina guevara"
-excerpt: "maybe that's you, maybe it's not -- but odds are, you can relate at least a little to the desire to be well-liked. who doesn't want to feel accepted, respected, and appreciated?"
+date: 2016-11-21
 ---
 
 1. if you don't like your name don't use it

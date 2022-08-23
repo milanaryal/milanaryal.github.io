@@ -1,7 +1,7 @@
 ---
 title: "Is Tumblr a good blogging platform?"
+description: "Tumblr is an easier and quick way to look at the personal blog and make interaction easier."
 date: 2014-08-20T23:16:00+05:45
-excerpt: "Tumblr is an easier and quick way to look at the personal blog and make interaction easier."
 ---
 
 Tumblr (tumblr.com) is a relatively new microblogging platform with fast increasing popularity. The main reason for that can be explained in a single word: simplicity. The most used software for creating and managing a blog in recent years is, undoubtedly, WordPress. But it quickly expanded its functionality beyond the needs of the regular blogger and currently is a full-featured CMS (content management system). While in the beginning those were exciting additions, it soon became an increasingly difficult and confusing software. Bloggers simply didn’t need all that power and flexibility. Ten and more template files, needed to render and display blog pages, are certainly more than needed.

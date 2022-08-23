@@ -1,6 +1,6 @@
 ---
 title: "The best free and public DNS resolvers"
-excerpt: "A list of publicly available fast and secure DNS resolvers service provider for free of cost."
+description: "A list of publicly available fast and secure DNS resolvers service provider for free of cost."
 date: 2020-07-05T03:30:00+05:45
 ---
 

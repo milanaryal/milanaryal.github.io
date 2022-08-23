@@ -1,8 +1,8 @@
 ---
 title: "Jekyll estimated reading time using Liquid tags"
+description: "Implementing Medium inspired estimated reading time for an article or a blog post based on standard reading speed in Jekyll generated static sites."
 date: 2015-02-19T22:26:57+05:45
 last_modified_at: 2021-04-27T23:00:00+05:45
-excerpt: "Implementing Medium inspired estimated reading time for an article or a blog post based on standard reading speed in Jekyll generated static sites."
 redirect_from: "/implementing-medium-inspired-estimated-reading-time-into-jekyll/"
 ---
 

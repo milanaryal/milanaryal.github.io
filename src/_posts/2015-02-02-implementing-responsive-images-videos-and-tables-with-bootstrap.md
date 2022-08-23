@@ -1,7 +1,7 @@
 ---
 title: "Implementing responsive images, videos and tables with Bootstrap"
+description: "Making responsive images, videos and tables for your fluid layout using Bootstrap CSS."
 date: 2015-02-02T05:52:33+05:45
-excerpt: "Making responsive images, videos and tables for your fluid layout using Bootstrap CSS."
 ---
 
 If you're using [Bootstrap](https://getbootstrap.com/){:rel="nofollow"} to develop your site (and if you're not, try it, it's great) you can have almost every stuffs responsive on your site. But for now here we're only going to talk about responsive images, responsive videos (also embed videos) and responsive tables using Bootstrap (should have install Bootstrap 3 and above).

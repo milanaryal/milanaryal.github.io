@@ -1,7 +1,7 @@
 ---
 title: "What is Gravatar and its benefits"
+description: "Gravatar is definitely a great helping hand to build your brand on this virtual world."
 date: 2014-08-08T23:43:00+05:45
-excerpt: "Gravatar is definitely a great helping hand to build your brand on this virtual world."
 ---
 
 > "Gravatar is a service for providing globally unique avatars and was created by Tom Preston-Werner. Since 2007, it has been owned by Automattic, having integrated it into their WordPress.com blogging platform."

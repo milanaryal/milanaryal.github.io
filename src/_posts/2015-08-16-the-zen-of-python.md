@@ -1,7 +1,7 @@
 ---
 title: "The Zen of Python"
+description: "The guiding principles of a Pythonista."
 date: 2015-08-16T17:27:53+05:45
-excerpt: "The guiding principles of a Pythonista."
 ---
 
 The guiding principles of a Pythonista by Tim Peters' renowned "The Zen of Python", an easter egg inside the official Python interpreter.

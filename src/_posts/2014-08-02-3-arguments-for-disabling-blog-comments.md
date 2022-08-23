@@ -1,7 +1,7 @@
 ---
 title: "3 arguments for disabling blog comments"
+description: "Discover 3 surprising reasons as to why you may want to consider disallowing your readers from leaving comments on your blog!"
 date: 2014-08-02T18:43:00+05:45
-excerpt: "Discover 3 surprising reasons as to why you may want to consider disallowing your readers from leaving comments on your blog!"
 ---
 
 Are blog comments something you look forward to moderating or do you feel they are holding you back from more important tasks? Blog commenting has long been considered a way to allow your readers to take a more active ‘role’ in the growth and development of your site! For the site administrator however this means they must also take the time to review and respond to each comment left! Is the time invested in reviewing your readers remarks and responses to what you’ve posted better put to use in some other area?

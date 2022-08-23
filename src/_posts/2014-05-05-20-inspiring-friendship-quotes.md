@@ -1,7 +1,7 @@
 ---
 title: "20 inspiring friendship quotes"
+description: "Here are 20 famous quotes on friendship inspiration."
 date: 2014-05-05T04:42:00+05:45
-excerpt: "Here are 20 famous quotes on friendship inspiration."
 ---
 
 ![best-friends-friendship-quote](/uploads/20140505-best-friends-friendship-quote.jpg)

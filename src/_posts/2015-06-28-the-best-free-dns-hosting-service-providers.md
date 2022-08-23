@@ -1,8 +1,8 @@
 ---
 title: "The best free DNS hosting service providers"
+description: "List of the DNS management service providers who offers for free of charge."
 date: 2015-06-28T18:21:41+05:45
 last_modified_at: 2016-01-13T05:09:30+05:45
-excerpt: "List of the DNS management service providers who offers for free of charge."
 ---
 
 For people whose registrars don't provide DNS (Domain Name System) hosting with domain registration then here's the list who offers it free of charge.

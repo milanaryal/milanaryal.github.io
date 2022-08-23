@@ -1,8 +1,8 @@
 ---
 title: "Jekyll static assets cache busting"
+description: "Implementing cache busting, each time you make a change will allow the user's browser to download the latest site assets."
 date: 2015-01-05T17:08:17+05:45
 last_modified_at: 2022-06-14T21:15:00+05:45
-excerpt: "Implementing cache busting, each time you make a change will allow the user's browser to download the latest site assets."
 ---
 
 For implementing cache busing into Jekyll HTML output linked assets we can use Jekyll site time tag. Following we have discussed it briefly.

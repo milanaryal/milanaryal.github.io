@@ -1,7 +1,7 @@
 ---
 title: "10 tricks job interviewers use"
+description: "Relax, but do realise that this is not a cosy chat with a friend"
 date: 2012-06-05T06:57:30+05:45
-excerpt: "Relax, but do realise that this is not a cosy chat with a friend"
 ---
 
 With more job candidates coming to interviews with prepared and rehearsed answers, savvy interviewers are developing ways of getting beneath the surface so that they can find out what you are really like.

@@ -1,8 +1,8 @@
 ---
 title: "How to block unsafe websites and ads with the hosts file"
+description: "Blocking unwanted sites and ads in all of your applications globally and speed up browsing with the hosts file on your PC."
 date: 2015-07-10T04:33:10+05:45
 last_modified_at: 2020-04-15T11:55:00+05:45
-excerpt: "Blocking unwanted sites and ads in all of your applications globally and speed up browsing with the hosts file on your PC."
 ---
 
 Browser extensions like [uBlock Origin](https://github.com/gorhill/uBlock){:rel="nofollow"} and, [AdBlock](https://getadblock.com/){:rel="nofollow"} are very popular to blocking various annoying ads. But these are only for browsers what if you want to block these annoying ads globally in your PC for every applications, so here's the hosts file to help you.

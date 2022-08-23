@@ -1,7 +1,7 @@
 ---
 title: "Creating a blog from scratch --- 7 fast and easy steps to start blogging"
+description: "This is the 7 easy and fast steps to start blogging and make money from it."
 date: 2014-03-10T18:53:00+05:45
-excerpt: "This is the 7 easy and fast steps to start blogging and make money from it."
 ---
 
 Creating a blog from scratch? How you can setup your blog and start making money? This is the 7 easy and fast steps to start blogging and make money from it.

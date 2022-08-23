@@ -1,7 +1,7 @@
 ---
 title: "Free WordPress.com V/S Self-Hosted WordPress.org"
+description: "WordPress.com or WordPress.org? If you're new to WordPress, it's a common question which needs a little explanation since the two get confused."
 date: 2014-08-15T12:02:00+05:45
-excerpt: "WordPress.com or WordPress.org? If you're new to WordPress, it's a common question which needs a little explanation since the two get confused."
 ---
 
 WordPress is such a huge platform that myths and questions always surrounded this community. One question that haunts every WordPress lover is whether to start [a free WordPress blog or hosting your own WordPress blog](https://wordpress.com/support/com-vs-org/){:rel="nofollow"}? You must be confused that what are the difference between these two, further is the explanation.

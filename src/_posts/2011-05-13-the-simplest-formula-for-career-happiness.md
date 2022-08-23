@@ -1,7 +1,7 @@
 ---
 title: "The simplest formula for career happiness"
+description: "Happiness (at work or otherwise) is entirely in our hands."
 date: 2011-05-13T11:47:37+05:45
-excerpt: "Happiness (at work or otherwise) is entirely in our hands."
 ---
 
 > Happiness is a state of being that is envied by those not happy and enjoyed by those who are happy. Is happiness really as easy as it looks though? This infographic helps you to find happiness in just a few simple steps.

@@ -1,7 +1,7 @@
 ---
 title: "Inspirational quotes on design"
+description: "Real wisdom, from some of the worlds greatest design legends."
 date: 2014-11-04T08:51:26+05:45
-excerpt: "Real wisdom, from some of the worlds greatest design legends."
 ---
 
 > Design is what you do when you want to express yourself.

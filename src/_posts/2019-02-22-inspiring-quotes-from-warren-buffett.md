@@ -1,7 +1,7 @@
 ---
 title: "Inspiring quotes from Warren Buffett, the greatest investor of all time"
+description: "An inspirational Warren Buffett advices that will help you to become a smarter and successful investor on stock market."
 date: 2019-02-22T01:00:00+05:45
-excerpt: "An inspirational Warren Buffett advices that will help you to become a smarter and successful investor on stock market."
 ---
 
 ![Warren Buffett](/uploads/20190222-warren-buffett.jpg)

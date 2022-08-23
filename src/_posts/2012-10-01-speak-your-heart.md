@@ -5,12 +5,9 @@ image:
   path: "https://cdn-images-1.medium.com/max/1200/1*jyhuyP1QzU5a28rUbp7KwA.jpeg"
   width: "1200"
   height: "750"
-excerpt: "That night was my big chance and all I did was just sit there..."
 ---
 
-#### That night was my big chance and all I did was just sit there...
-
----
+> That night was my big chance and all I did was just sit there...
 
 It all started when I was 16 years old. While I was playing outside, I met a boy. He was a boy who teased you and then you chased them and beat them up. After that first meeting in which I beat him up we kept on meeting and beating each other up at the fence.
 

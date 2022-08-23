@@ -1,7 +1,7 @@
 ---
 title: "9 Google search tricks"
+description: "Use these cool shortcuts to find things better and faster"
 date: 2012-05-07T05:51:59+05:45
-excerpt: "Use these cool shortcuts to find things better and faster"
 ---
 
 Not many users know the little tricks that can be used to get more out of a simple Google search. Following are the top nine Google search tricks:

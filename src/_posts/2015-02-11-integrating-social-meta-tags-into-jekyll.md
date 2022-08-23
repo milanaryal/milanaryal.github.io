@@ -1,8 +1,8 @@
 ---
 title: "Integrating social meta tags into Jekyll"
+description: "A guide to add metadata tags for search engines and social networks to better index and display your site's content."
 date: 2015-02-11T13:04:19+05:45
 last_modified_at: 2020-06-16T19:00:00+05:45
-excerpt: "A guide to add metadata tags for search engines and social networks to better index and display your site's content."
 ---
 
 Social media meta tags allows us to optimize for sharing Twitter, Facebook, Google+ and Pinerest by defining exactly how titles, descriptions, images and more appear in social streams. There're various ways but following social meta tags is the best method to integrating into Jekyll.

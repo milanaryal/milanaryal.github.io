@@ -1,8 +1,8 @@
 ---
-redirect_from: "/inspirational-quotes/"
 title: "21 inspirational quotes that never fail to inspire"
+description: "A compilation of 21 inspirational quotes by some famous people that never fail to inspire."
 date: 2015-02-25T12:58:08+05:45
-excerpt: "A compilation of 21 inspirational quotes by some famous people that never fail to inspire."
+redirect_from: "/inspirational-quotes/"
 ---
 
 In daily life, we come across many words. Some words leave a lasting impression on our mind. Here is a compilation of 21 inspirational quotes by some famous people that never fail to inspire me or anyone, for that matter.

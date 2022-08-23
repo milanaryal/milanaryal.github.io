@@ -1,8 +1,8 @@
 ---
 title: "A list of sites to find the best free stock photos"
+description: "A curated list of sites with high resolution stock photos you can use for different purpose."
 date: 2018-05-28T10:50:00+05:45
 last_modified_at: 2020-05-25T17:40:00+05:45
-excerpt: "A curated list of sites with high resolution stock photos you can use for different purpose."
 ---
 
 Here, I've curated a list of sites with high resolution stock photos you can use for different purpose. You have probably bookmarked a few of these already.

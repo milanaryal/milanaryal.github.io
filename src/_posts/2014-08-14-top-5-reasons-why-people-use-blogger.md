@@ -1,7 +1,7 @@
 ---
 title: "Top 5 reasons why people use Blogger.com"
+description: "Blogger is one of the most popular blog publishing platform by Google."
 date: 2014-08-14T15:42:00+05:45
-excerpt: "Blogger is one of the most popular blog publishing platform by Google."
 ---
 
 I’m sure that those who have been using the Internet for a while are familiar with or have come across the free blog platform – Blogger (blogger.com). To put it simply, Blogger is a blog-publishing platform, hosted by Google that allows you to create a blog and maintain it without any charges. All blogs registered under Blogger will be hosted by Google’s servers at the _blogspot.com_ subdomain.

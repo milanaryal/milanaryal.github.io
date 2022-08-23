@@ -1,8 +1,8 @@
 ---
 title: "Self-hosting Google web fonts"
+description: "Self-hosting Google Fonts on your own server and taking control over the font files."
 date: 2015-11-07T12:36:32+05:45
 last_modified_at: 2021-05-18T18:00:00+05:45
-excerpt: "Self-hosting Google Fonts on your own server and taking control over the font files."
 ---
 
 Using web fonts from [Google Fonts](http://www.google.com/fonts){:rel="nofollow"}, generally makes sense to take advantages of the files hosted on Google's CDN. However a lot of web developers prefer to host web fonts on their own servers, so that they have more control over the actual font files.

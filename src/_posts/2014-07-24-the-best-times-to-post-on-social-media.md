@@ -1,7 +1,7 @@
 ---
 title: "The best times to post on social media"
+description: "The best times to post on social media, including Facebook, Twitter, Google+, LinkedIn, Pinterest, and blogs."
 date: 2014-07-24T23:51:00+05:45
-excerpt: "The best times to post on social media, including Facebook, Twitter, Google+, LinkedIn, Pinterest, and blogs."
 ---
 
 <p>Let&#8217;s not lie. Timing is huge.</p>

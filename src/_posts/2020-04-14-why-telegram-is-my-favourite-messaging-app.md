@@ -1,7 +1,7 @@
 ---
 title: "Why Telegram is my favourite messaging app?"
+description: "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
 date: 2020-04-14T17:25:00+05:45
-excerpt: "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
 ---
 
 [Telegram](https://telegram.org/){:rel="nofollow"} is a messaging app with a focus on speed and security, it's super-fast, simple and free. You can use Telegram on all your devices at the same time --- your messages sync seamlessly across any number of your phones, tablets or computers.

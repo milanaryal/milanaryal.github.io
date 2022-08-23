@@ -1,7 +1,7 @@
 ---
 title: "How to use #hashtags efficiently in social media?"
+description: "Hashtags, if used correctly, can be really profitable to your marketing strategy."
 date: 2014-09-05T20:40:00+05:45
-excerpt: "Hashtags, if used correctly, can be really profitable to your marketing strategy."
 ---
 
 After Twitter, the social media giant Facebook has adopted Hashtags. Most people, especially business owners, are particularly excited as well as confused about the proper usage of this new Facebook feature. You too can easily get carried away, and #start #overusing #or #misusing #hashtags. So to make sure that you do not get carried away like this here is an end to end guide for the proper usage of Facebook hashtags.

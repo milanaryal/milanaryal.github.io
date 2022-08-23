@@ -1,7 +1,7 @@
 ---
 title: "Cast away boredom"
+description: "Some tips to re-frame the moment, even if you can’t escape a situation, by re-framing your emotions about it, you can transform it."
 date: 2013-11-02T07:17:03+05:45
-excerpt: "Some tips to re-frame the moment, even if you can’t escape a situation, by re-framing your emotions about it, you can transform it."
 ---
 
 One thing that can be a source of unhappiness is boredom. And there might be situations and activities at your workplace at that might bore you. Here are some tips to re-frame the moment, even if you can't escape a situation, by re-framing your emotions about it, you can transform it.

@@ -1,8 +1,8 @@
 ---
 title: "Blogging with Jekyll and GitHub Pages"
+description: "Jekyll is a static site generator that transform your plain text into static websites and blogs."
 date: 2014-12-30T19:47:46+05:45
 last_modified_at: "2021-06-07T08:00:00+05:45"
-excerpt: "Jekyll is a static site generator that transform your plain text into static websites and blogs."
 ---
 
 I recently migrated my blog to [GitHub Pages](http://pages.github.com){:rel="nofollow"} using an awesome open source project [Jekyll](http://jekyllrb.com){:rel="nofollow"}. It's really fun blogging with Jekyll. If you are not enjoying blogging with other CMS platform then you should really try Jekyll.

@@ -1,6 +1,6 @@
 ---
 title: "The best ad-blocker extensions for your favourite web browser, free and open-source"
-excerpt: "A list of free and open-source best adblocker extensions to get rid of annoyed ads."
+description: "A list of free and open-source best adblocker extensions to get rid of annoyed ads."
 date: 2020-03-20T13:00:00+05:45
 ---
 

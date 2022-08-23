@@ -1,7 +1,7 @@
 ---
 title: "Seventeen helpful steps"
+description: "Explore the simple life with these steps and believe life is simple."
 date: 2013-02-01T12:02:53+05:45
-excerpt: "Explore the simple life with these steps and believe life is simple."
 ---
 
 1. Never give up on anybody; miracles happen every day.

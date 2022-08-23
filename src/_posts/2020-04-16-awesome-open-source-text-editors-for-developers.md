@@ -1,7 +1,7 @@
 ---
 title: "Awesome open source text editors for developers"
+description: "A list of some best modern free and open source cross-platform code editors for developers."
 date: 2020-04-16T15:00:00+05:45
-excerpt: "A list of some best modern free and open source cross-platform code editors for developers."
 ---
 
 Here's a list of some best modern free and open source cross-platform code editors for developers.

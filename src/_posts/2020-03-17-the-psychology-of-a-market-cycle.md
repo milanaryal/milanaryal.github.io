@@ -1,6 +1,6 @@
 ---
 title: "The psychology of a market cycle"
-excerpt: "The feelings appearing as the market fluctuates."
+description: "The feelings appearing as the market fluctuates."
 date: 2020-03-17T03:40:00+05:45
 ---
 

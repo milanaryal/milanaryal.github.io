@@ -1,7 +1,7 @@
 ---
 title: "How men and women see colors"
+description: "Men and women do not see colors the same way because the male and female brains process information about color differently."
 date: 2014-06-18T19:58:16+05:45
-excerpt: "Men and women do not see colors the same way because the male and female brains process information about color differently."
 ---
 
 SHE SAYS: "Honey, which shade of blue do you prefer? Aqua, cobalt or navy?"

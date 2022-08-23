@@ -1,7 +1,7 @@
 ---
 title: "5 more reasons to love WordPress.org"
+description: "Let's take a look and see the true benefits behind using WordPress as a CMS."
 date: 2014-08-07T23:45:00+05:45
-excerpt: "Let's take a look and see the true benefits behind using WordPress as a CMS."
 ---
 
 Yep you read the post title right, “5 more reasons to love WordPress” the keyword being _more_ because who out there doesn’t love this wonderful platform. WordPress was originally released in 2003 as a blogging platform, at the time blogging wasn’t entirely popular but was starting to become a hobby as the internet was on the verge of its grown spurt. Today we are going to take a look at how far WordPress has come and why it is the best platform to not only run a blog on, but an entire website as well.

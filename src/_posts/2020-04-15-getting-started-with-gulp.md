@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Gulp [v4.x.x]"
+description: "Explore how to use Gulp and what it can do in a project to speed up and change the way you develop websites."
 date: 2020-04-15T09:00:00+05:45
-excerpt: "Explore how to use Gulp and what it can do in a project to speed up and change the way you develop websites."
 ---
 
 Here, we'll explore how to use [Gulp](https://gulpjs.com/){:rel="nofollow"} (the streaming build system) and what it can do in a project to speed up and change the way you develop websites.

@@ -1,8 +1,8 @@
 ---
 title: "The best Google Chrome extensions you should know about"
+description: "A list of the best free Chrome extensions you need most to exponentially increasing browser potential."
 date: 2017-06-05T07:00:00+05:45
 last_modified_at: 2020-05-27T19:00:00+05:45
-excerpt: "A list of the best free Chrome extensions you need most to exponentially increasing browser potential."
 ---
 
 [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"} is the most popular Web browser, with more than 50 percent of the market. Here's my list of personal favourite free and open-source Chrome extensions you might be interested for potential Internet browsing.

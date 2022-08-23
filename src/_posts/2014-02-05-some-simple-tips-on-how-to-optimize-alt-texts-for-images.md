@@ -1,7 +1,7 @@
 ---
 title: "Some simple tips on how to optimize alt texts for images"
+description: "Here's a simple tips to beginner to optimize SEO image alt tags for images."
 date: 2014-02-05T14:20:00+05:45
-excerpt: "Here's a simple tips to beginner to optimize SEO image alt tags for images."
 ---
 
 One area where web designers and search engine optimization (SEO) professionals usually butt heads is over the use of images as text instead of actual plain text, usually done in the navigation or other important elements of a website. This can cripple an SEO implementation by limiting the effectiveness of elements that could have been textually based, as text is much more effective for interlinking. This is just one area where image alt text can be very useful.

@@ -1,7 +1,7 @@
 ---
 title: "How to optimize Twitter SEO for your business"
+description: "Twitter is perfect place to keep your business heard by massive users on it."
 date: 2014-04-12T02:06:00+05:45
-excerpt: "Twitter is perfect place to keep your business heard by massive users on it."
 ---
 
 It is undeniable that Twitter is one of popular social media websites. It offers fast information through 140 characters. Many companies start to pay attention to the use of Twitter for their business. They even create account for their company and share information about the company itself, the products, services and other related stuff.

@@ -1,7 +1,7 @@
 ---
 title: "10 dangerous things users do online"
+description: "Protect yourself from getting hacked, phised or burgled"
 date: 2012-06-04T19:47:29+05:45
-excerpt: "Protect yourself from getting hacked, phised or burgled"
 ---
 
 Researchers at internet security service provider CyberDefender look at some of the most dangerous things users do online. They also offer advice on how to avoid these negative habits.

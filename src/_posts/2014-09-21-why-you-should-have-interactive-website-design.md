@@ -1,7 +1,7 @@
 ---
 title: "Why you should have interactive website design?"
+description: "Interaction design just like user experience design has evolved to facilitate the interaction between the environment and its people."
 date: 2014-09-21T09:24:10+05:45
-excerpt: "Interaction design just like user experience design has evolved to facilitate the interaction between the environment and its people."
 ---
 
 Interactivity means the degree of interaction between objects. In web design these objects are a client and a website. The reaction of the visual website elements on the mouse cursor moving can also be called interactivity. For example, have you ever seen a horizontal photo strip that moves right or left depending on your mouse position, or corners of the page that rise up encouraging you to turn it?

@@ -1,7 +1,7 @@
 ---
 title: "Finding happiness"
+description: "Bet you would've never thought a balloon could teach you a better lesson than a human could...well read on, because it happens."
 date: 2018-08-06T08:26:00+05:45
-excerpt: "Bet you would've never thought a balloon could teach you a better lesson than a human could...well read on, because it happens."
 ---
 
 Once a group of 50 people was attending a seminar.

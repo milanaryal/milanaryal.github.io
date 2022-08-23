@@ -1,7 +1,7 @@
 ---
 title: "8 common tech myths"
+description: "Using logic to overcome rooted beliefs"
 date: 2012-12-06T10:42:26+05:45
-excerpt: "Using logic to overcome rooted beliefs"
 ---
 
 The tech world has certain myths and tales that have passed down for generations. It is time that some of them were deconstructed:

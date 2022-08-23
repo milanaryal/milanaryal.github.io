@@ -1,14 +1,14 @@
 ---
 title: "An insider's guide to lifestyle blogging"
+description: "Fancy becoming a blogger? This insider's guide will take you through everything you need to know."
 date: 2014-10-22T12:11:00+05:45
-excerpt: "Fancy becoming a blogger? This insider's guide will take you through everything you need to know."
 ---
 
 All over the internet there are thousands of blogs devoted to fashion, beauty, lifestyle and everything in between. The message is clear — there’s never been a better time to be a blogger.
 
 But what makes a blog stand out from the pack? We have the inside scoop to help take your blog to the next level, from the people who know the best — other bloggers.
 
-Be consistent. A posting schedule will help your readers know when to check your blog. More than half of bloggers [surveyed] post on a weekly basis, 10.3 hours per week average time spent blogging.
+Be consistent. A posting schedule will help your readers know when to check your blog. More than half of bloggers (surveyed) post on a weekly basis, 10.3 hours per week average time spent blogging.
 
 #### Choose quality over quantity
 

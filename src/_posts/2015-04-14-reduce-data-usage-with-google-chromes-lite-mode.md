@@ -1,8 +1,8 @@
 ---
 title: "Reduce data usage with Google Chrome's Lite mode"
+description: "Google Chrome's data compression tool can help you save your bandwidth, says Google."
 date: 2015-04-14T10:48:02+05:45
 last_modified_at: 2019-08-29T07:00:00+05:45
-excerpt: "Google Chrome's data compression tool can help you save your bandwidth, says Google."
 ---
 
 If you've ever been frustrated by exceeding your data plan on a monthly basis, popular web browser Google Chrome may just have a solution for you.

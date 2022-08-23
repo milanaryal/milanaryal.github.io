@@ -1,7 +1,7 @@
 ---
 title: "How to align SVG icons to text"
+description: "With just simple CSS code, align SVG icons to text and forget the font icons."
 date: 2020-04-25T08:30:00+05:45
-excerpt: "With just simple CSS code, align SVG icons to text and forget the font icons."
 ---
 
 Font icons are awesome but they carry so much icons that we don't need and it just slow down our webpages and waste of our bandwidth. To solve this issues, we use SVG icons as an alternative.

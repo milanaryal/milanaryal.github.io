@@ -1,8 +1,8 @@
 ---
 title: "Top 10 most popular BitTorrent sites [Updated January 2022]"
+description: "An up-to-date list of the most popular BitTorrent websites out there."
 date: 2017-05-23T06:43:58+05:45
 last_modified_at: 2022-01-05T00:00:00+05:45
-excerpt: "An up-to-date list of the most popular BitTorrent websites out there."
 ---
 
 A lot of things happen over the year, with some BitTorrent websites disappearing from the scene and others taking their place.

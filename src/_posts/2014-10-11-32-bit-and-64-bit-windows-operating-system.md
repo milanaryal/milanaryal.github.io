@@ -1,7 +1,7 @@
 ---
 title: "32-bit [x86] and 64-bit [x64] Windows: Everything you need to know"
+description: "Learn about the various aspects of the 32-bit and 64-bit versions of Windows."
 date: 2014-10-11T11:21:00+05:45
-excerpt: "Learn about the various aspects of the 32-bit and 64-bit versions of Windows."
 ---
 
 Mostly, all the PC users are aware of the 32-bit (x86) and 64-bit (x64) operating system (OS) architecture versions of existence, but they hardly pay attention towards the difference between the two. Keeping the bigger-is-better philosophy aside, sometimes you might consider that which OS version you should actually install and how it will be affecting the performance of your PC? Some tech geeks may recommend that you should you use a 64-bit version of Windows, but here comes a big question --- why? According to some researchers and PC experts, the 64-bit version is more efficient and rates higher on performance over than the less capable 32-bit version.

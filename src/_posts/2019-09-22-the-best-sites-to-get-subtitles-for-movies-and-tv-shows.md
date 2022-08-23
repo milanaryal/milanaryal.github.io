@@ -1,7 +1,7 @@
 ---
 title: "The best sites to get subtitles for movies and TV shows"
+description: "A list of free best sites to download subtitles for movies and TV shows."
 date: 2019-09-22T13:30:00+05:45
-excerpt: "A list of free best sites to download subtitles for movies and TV shows."
 ---
 
 There are many sites available to get subtitles for free. But, here are the list of best curated free sites to download subtitles for movies and TV shows:

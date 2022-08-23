@@ -1,7 +1,7 @@
 ---
 title: "How to extend laptop battery life"
+description: "Some basic suggestions for ensuring laptop computer maximum battery life."
 date: 2015-06-02T08:45:28+05:45
-excerpt: "Some basic suggestions for ensuring laptop computer maximum battery life."
 ---
 
 When you travel with your laptop, you would want long battery life. It's extremely important when you're on the plane, in a meeting, or on the road, or in a classroom, where you have all the time to be productive, but the battery couldn't last as long as your concentration --- ouch.

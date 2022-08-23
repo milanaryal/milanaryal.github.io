@@ -1,7 +1,7 @@
 ---
 title: "Ping your sitemap to the major search engines"
+description: "Inform Google Bot and Bing Bot about changes to your websites by submitting your XML sitemap URL."
 date: 2020-04-18T07:15:00+05:45
-excerpt: "Inform Google Bot and Bing Bot about changes to your websites by submitting your XML sitemap URL."
 ---
 
 _What the heck is Ping?_ Pinging (in SEO) refers to sending auto-generated notifications (XML sitemap) to search engine spiders telling them that the page has been updated and needs to be re-crawled.

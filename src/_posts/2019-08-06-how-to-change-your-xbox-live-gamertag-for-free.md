@@ -1,6 +1,6 @@
 ---
 title: "How to change your Xbox Live gamertag for free"
-excerpt: "With a simple hack change your additional Xbox Live gamertag for absolutely free of cost."
+description: "With a simple hack change your additional Xbox Live gamertag for absolutely free of cost."
 date: 2019-08-06T16:52:00+05:45
 ---
 

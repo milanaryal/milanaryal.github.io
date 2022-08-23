@@ -1,7 +1,7 @@
 ---
 title: "Why is WordPress.org free --- its facts and secrets"
+description: "WordPress is definitely comes at free, but remember that it is not copyright free."
 date: 2014-08-03T17:20:00+05:45
-excerpt: "WordPress is definitely comes at free, but remember that it is not copyright free."
 ---
 
 It is always a well-known fact that _WordPress.org_ is an open source that comes at zero cost for your website and blog needs. Here, open source is all about the kind of freedom you will get through it like you are free to modify, free to build upon, and free to redistribute too. Many people definitely get a doubt here as, why they are offering it free and why there is no price tag attached to this software. Here, few things one should know is being open source is not all about its free usage and it involves valuable contribution from the talent pool of the community too. It will allow and accept contribution from everyone in this world and uses their contribution for improvising the product successfully. Here, major inside activity will take place in the form of support to the core development team of this project in many ways through reporting bugs, through contributing patches and through suggesting additions. This is resulting into improved versions for the WordPress one after one.

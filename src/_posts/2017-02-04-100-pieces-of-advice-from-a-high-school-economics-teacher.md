@@ -1,7 +1,7 @@
 ---
 title: "100 pieces of advice from a high school economics teacher"
+description: "An Econ teacher gave his senior highschool students his personal list of wisest words...and they make a lot of sense."
 date: 2017-02-04T08:06:24+05:45
-excerpt: "An Econ teacher gave his senior highschool students his personal list of wisest words...and they make a lot of sense."
 ---
 
 An economics teacher decided he wanted to leave his senior high school students with his personal list of wise words as they graduated and entered the adult world. These make a lot of sense. Enjoy, and implement if possible!
