@@ -17,7 +17,7 @@ Previously, we can select useful options in **Privacy Settings** that can help u
 
 #### 3. Our parents know about Facebook.
 
-Facebook is no longer for the young people. Besides, the number of _dads, moms, grandparents \_or \_aunts_ joining in Facebook is gradually increasing. It means that whenever posting any status or any photo, we will easily get our parents' keen and curious eyes. Of course, they do that because they just want to take care of us. However, we have no freedom when using this social network.
+Facebook is no longer for the young people. Besides, the number of _dads, moms, grandparents_ or _aunts_ joining in Facebook is gradually increasing. It means that whenever posting any status or any photo, we will easily get our parents' keen and curious eyes. Of course, they do that because they just want to take care of us. However, we have no freedom when using this social network.
 
 #### 4. We easily feel pessimistic when using Facebook.
 
@@ -29,7 +29,7 @@ One of the other **reasons to leave Facebook** is **Ads**. At first, **advertise
 
 #### 6. Our health will decrease.
 
-Some scientists say that spending too much time on Facebook will cause some bad impacts on the users' health, including the mind and the body. Moreover, we can easily get some symptoms as _eating disorder \_and \_psychophysiological disorder_ or even be _stressful_, _feel less positive, depression_, etc. In addition, almost Facebookers are online at night. It makes the parts in the body work too much and leads to some bad cases about health.
+Some scientists say that spending too much time on Facebook will cause some bad impacts on the users' health, including the mind and the body. Moreover, we can easily get some symptoms as _eating disorder_ and _psychophysiological disorder_ or even be _stressful, feel less positive, depression_, etc. In addition, almost Facebookers are online at night. It makes the parts in the body work too much and leads to some bad cases about health.
 
 #### 7. The number of "real" friends is truly less.
 

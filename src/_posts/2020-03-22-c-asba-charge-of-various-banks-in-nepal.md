@@ -10,7 +10,7 @@ Investors can buy primary and rights shares online with the C-ASBA process which
 
 > Update August 22, 2022: SEBON revises the IPO assurance fees; the maximum fees for filling up IPO is reduced to Rs. 5.
 >
-> --- [ShareSansar](https://www.sharesansar.com/newsdetail/sebon-revises-the-ipo-assurance-fees-the-maximum-fees-for-filling-up-ipo-is-reduced-to-rs-5-2022-08-22){:rel="nofollow"} / [Merolagani](https://merolagani.com/NewsDetail.aspx?newsID=84087){:rel="nofollow"}
+> --- [SEBON](https://sebon.gov.np/news/%E0%A4%A7%E0%A4%BF%E0%A4%A4%E0%A5%8B%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%B0-%E0%A4%96%E0%A4%B0%E0%A4%BF%E0%A4%A6-%E0%A4%B8%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%9C%E0%A4%A8%E0%A4%BF%E0%A4%95-%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B6%E0%A4%A8-%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AC%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A5%80-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A5%87%E0%A4%B6%E0%A4%BF%E0%A4%95%E0%A4%BE-%E0%A5%A8%E0%A5%A6%E0%A5%AD%E0%A5%A9-%E0%A4%AE%E0%A4%BE-%E0%A4%A4%E0%A5%87%E0%A4%B8%E0%A5%8D%E0%A4%B0%E0%A5%8B-%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8-%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%AE%E0%A4%BE-%E0%A5%A4){:rel="nofollow"} / [ShareSansar](https://www.sharesansar.com/newsdetail/sebon-revises-the-ipo-assurance-fees-the-maximum-fees-for-filling-up-ipo-is-reduced-to-rs-5-2022-08-22){:rel="nofollow"} / [Merolagani](https://merolagani.com/NewsDetail.aspx?newsID=84087){:rel="nofollow"}
 
 <!--
 
