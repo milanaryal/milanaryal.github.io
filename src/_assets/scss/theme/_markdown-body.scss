@@ -47,6 +47,15 @@
   }
   // stylelint-enable declaration-no-important
 
+  table {
+    font-family: var(--font-sans-serif);
+    font-size: 0.875em; // 85%; // .9em
+    color: var(--body-color);
+    background: var(--blockquote-bg);
+    border: transparent;
+    border-radius: 0.25rem;
+  }
+
   a {
     color: var(--link-color);
     text-decoration: underline var(--link-underline-color);
