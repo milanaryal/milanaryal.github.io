@@ -4,8 +4,14 @@
 {% endif %}
 
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content -->
+<link rel="preload" href="/assets/fonts/inter-latin-variable-full-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+{% comment %}
+
 <link rel="preload" href="/assets/fonts/inter-latin-variable-wghtOnly-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 {% if page.date or page.layout == "page" %}
   <link rel="preload" href="/assets/fonts/lora-latin-variable-wghtOnly-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" href="/assets/fonts/lora-latin-variable-wghtOnly-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 {% endif %}
+
+{% endcomment %}

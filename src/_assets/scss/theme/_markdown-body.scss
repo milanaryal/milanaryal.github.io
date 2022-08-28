@@ -2,8 +2,9 @@
 // container with .markdown-body on it should render generally well.
 
 .markdown-body {
-  font-family: var(--font-serif);
-  font-size: 18px;
+  // font-family: var(--font-serif);
+  font-family: var(--font-sans-serif);
+  font-size: 17px;
   // font-style: normal;
   // font-weight: 400;
   line-height: 1.55; // 1.58; 1.65; calc(32px / 21px);
@@ -13,7 +14,8 @@
   text-rendering: optimizeLegibility; // enable common ligatures and kerning
 
   @media (min-width: 768px) {
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 1.6;
   }
 
   @media (min-width: 992px) {
@@ -49,7 +51,7 @@
 
   table {
     font-family: var(--font-sans-serif);
-    font-size: 0.875em; // 85%; // .9em
+    // font-size: 0.875em; // 85%; // .9em
     color: var(--body-color);
     background: var(--blockquote-bg);
     border: transparent;
@@ -110,14 +112,14 @@
   }
 
   h3 {
-    margin-top: 2.75em;
+    margin-top: 2.5em; // 2.75em
     margin-left: -1.75px;
     // font-family: var(--font-sans-serif);
     // font-size: 1.444em; // 1.563em
-    @include font-size(1.777rem);
+    @include font-size(1.618rem); // 1.777rem
     // font-style: normal;
     font-weight: 800;
-    line-height: 1.12; // 1.2; 1.15
+    line-height: 1.15; // 1.2; 1.15; 1.12;
     // color: rgba(0, 0, 0, .8);
     letter-spacing: -0.022em;
 
@@ -128,14 +130,14 @@
   }
 
   h4 {
-    margin-top: 2.75rem;
+    margin-top: 2.618rem; // 2.75rem
     margin-left: -1.5px;
     // font-family: var(--font-sans-serif);
     // font-size: 1.333em;
-    @include font-size(1.555rem);
+    @include font-size(1.382rem); // @include font-size(1.5rem);
     // font-style: normal;
-    font-weight: 700;
-    line-height: 1.18; // 1.2, 1.22
+    font-weight: 600;
+    line-height: 1.2; // 1.2, 1.22, 1.18
     // color: rgba(0, 0, 0, .8);
     letter-spacing: -0.022em;
 
@@ -159,11 +161,11 @@
 
   h3 + h4,
   h4 + h3 {
-    margin-top: 2.75rem;
+    margin-top: 2.5rem; // 2.75rem
   }
 
   p + p {
-    margin-top: 1.75em;
+    margin-top: 1.618em; // 1.75em
   }
 
   h3 + p,
@@ -278,7 +280,7 @@
     margin-right: -$bs--gutter-x; // -0.75rem; // -15px;
     margin-left: -$bs--gutter-x; // -0.75rem; // -15px;
     font-family: var(--font-sans-serif);
-    font-size: 0.875em; // 85%; // .9em
+    // font-size: 0.875em; // 85%; // .9em
     // font-style: italic;
     color: var(--body-color);
     background: var(--blockquote-bg);
@@ -305,9 +307,9 @@
     width: 19%;
     max-width: 100px;
     // height: 0.25rem; // 2px
-    margin-top: 2.75rem; // rem // 42px;
+    margin-top: 2.618rem; // rem // 42px; // 2.75rem
     margin-right: auto;
-    margin-bottom: 2.75em; // em // 52px;
+    margin-bottom: 2.618em; // em // 52px; // 2.75em
     margin-left: auto;
     color: var(--rule);
     // background-color: currentColor;

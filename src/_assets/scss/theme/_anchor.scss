@@ -40,7 +40,11 @@
   h3:target,
   h4:target {
     // Offsetting an html anchor to adjust for fixed header
-    scroll-margin-top: 2.75em;
+    scroll-margin-top: 64px; // 2.75em
+
+    @media (min-width: 768px) {
+      scroll-margin-top: 74px;
+    }
   }
 }
 // stylelint-enable selector-no-qualifying-type
