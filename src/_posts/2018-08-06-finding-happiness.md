@@ -15,7 +15,7 @@ At the end of 5 minutes no one could find their own balloon.
 Now each one was asked to randomly collect a balloon and give it to the person whose name was written on it.
 Within minutes everyone had their own balloon.
 
-The speaker began--- exactly this is happening in our lives. Everyone is frantically looking for happiness all around, not knowing where it is.
+The speaker began --- exactly this is happening in our lives. Everyone is frantically looking for happiness all around, not knowing where it is.
 
 Our happiness lies in the happiness of other people. Give them their happiness; you will get your own happiness.
 

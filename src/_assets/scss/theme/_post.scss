@@ -40,7 +40,7 @@
   @include font-size(2.618rem); // 2.333rem, 2.777rem
   // font-style: normal;
   font-weight: 900;
-  line-height: 1.15; // 1.15, 1.2
+  line-height: 1.25; // 1.15, 1.2
   // color: rgba(0, 0, 0, .8);
   letter-spacing: -0.03em; // -.002em, -0.03em
   // ** Font feature settings ** //
@@ -52,6 +52,7 @@
   @media (min-width: 768px) {
     margin-left: -2.25px;
     // font-size: 37.9px; // ~2.369em (37.90px)
+    line-height: 1.2; // 1.2
   }
 }
 

@@ -40,7 +40,7 @@
     margin-bottom: 5px;
 
     > *:first-child {
-      margin-top: 1.05em !important;
+      margin-top: 1.15em !important; // 1.05em
     }
 
     > *:last-child {
@@ -119,12 +119,13 @@
     @include font-size(1.618rem); // 1.777rem
     // font-style: normal;
     font-weight: 800;
-    line-height: 1.15; // 1.2; 1.15; 1.12;
+    line-height: 1.25; // 1.2; 1.15; 1.12;
     // color: rgba(0, 0, 0, .8);
     letter-spacing: -0.022em;
 
     @media (min-width: 768px) {
       margin-left: -2.25px;
+      line-height: 1.2;
       letter-spacing: -0.02em;
     }
   }
@@ -136,13 +137,14 @@
     // font-size: 1.333em;
     @include font-size(1.382rem); // @include font-size(1.5rem);
     // font-style: normal;
-    font-weight: 600;
-    line-height: 1.2; // 1.2, 1.22, 1.18
+    font-weight: 700;
+    line-height: 1.25; // 1.2, 1.22, 1.18
     // color: rgba(0, 0, 0, .8);
     letter-spacing: -0.022em;
 
     @media (min-width: 768px) {
       margin-left: -1.75px;
+      line-height: 1.2;
       letter-spacing: -0.02em; // -.044em,
     }
   }
@@ -161,11 +163,11 @@
 
   h3 + h4,
   h4 + h3 {
-    margin-top: 2.5rem; // 2.75rem
+    margin-top: 2.382rem; // 2.5, 2.75rem
   }
 
   p + p {
-    margin-top: 1.618em; // 1.75em
+    margin-top: 1.75em;
   }
 
   h3 + p,

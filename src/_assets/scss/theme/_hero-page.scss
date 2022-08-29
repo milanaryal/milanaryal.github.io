@@ -50,14 +50,10 @@
 
   .card-title {
     @include font-size(2.236rem);
-    font-weight: 800;
+    font-weight: 400;
     line-height: 1.2;
     color: #111;
     text-shadow: 0 1px rgba(255, 255, 255, 0.2); // dark => text-shadow: 0 1px rgba(0, 0, 0, .2);
-
-    @media (min-width: 768px) {
-      font-weight: 900;
-    }
   }
 
   .card-text {
