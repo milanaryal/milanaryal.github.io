@@ -14,7 +14,7 @@
   text-rendering: optimizeLegibility; // enable common ligatures and kerning
 
   @media (min-width: 768px) {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.6;
   }
 
@@ -112,11 +112,11 @@
   }
 
   h3 {
-    margin-top: 2.5em; // 2.75em
+    margin-top: calc(1.682rem + 0.5em); // 2.75em
     margin-left: -1.75px;
     // font-family: var(--font-sans-serif);
     // font-size: 1.444em; // 1.563em
-    @include font-size(1.618rem); // 1.777rem
+    @include font-size(1.682rem); // 1.777rem
     // font-style: normal;
     font-weight: 800;
     line-height: 1.25; // 1.2; 1.15; 1.12;
@@ -131,7 +131,7 @@
   }
 
   h4 {
-    margin-top: 2.618rem; // 2.75rem
+    margin-top: calc(1.382rem + 0.5em); // 2.75rem
     margin-left: -1.5px;
     // font-family: var(--font-sans-serif);
     // font-size: 1.333em;
@@ -163,7 +163,7 @@
 
   h3 + h4,
   h4 + h3 {
-    margin-top: 2.382rem; // 2.5, 2.75rem
+    margin-top: 1.75em; // 2.5, 2.75rem
   }
 
   p + p {
@@ -309,7 +309,7 @@
     width: 19%;
     max-width: 100px;
     // height: 0.25rem; // 2px
-    margin-top: 2.618rem; // rem // 42px; // 2.75rem
+    margin-top: 2.382em; // rem // 42px; // 2.75rem
     margin-right: auto;
     margin-bottom: 2.618em; // em // 52px; // 2.75em
     margin-left: auto;
