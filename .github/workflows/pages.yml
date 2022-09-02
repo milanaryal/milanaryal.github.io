@@ -60,7 +60,7 @@ jobs:
         run: bundle exec mdl --ignore-front-matter --style .mdl_style.rb src/_posts || true
 
       - name: Build with Jekyll
-        # Defaults output to '/_site'
+        # Outputs to the './_site' directory by default
         # run: bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }}
         # run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace --verbose
         run: bundle exec jekyll build --profile --trace
@@ -103,7 +103,7 @@ jobs:
             || true
 
       - name: Upload artifact
-        # This will automatically upload an artifact from the '/_site' directory
+        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
         if: ${{ success() && github.repository == 'MilanAryal/milanaryal.github.io' && github.ref == 'refs/heads/main' }}
         with:
