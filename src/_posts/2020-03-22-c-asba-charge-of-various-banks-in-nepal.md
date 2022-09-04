@@ -2,7 +2,7 @@
 title: "C-ASBA charge of various Banks in Nepal"
 description: "The list of various Banks in Nepal with their C-ASBA service charges per application."
 date: 2020-03-22 13:00:00 +0545
-last_modified_at: 2022-08-30 00:00:00 +0545
+last_modified_at: 2022-09-04 00:00:00 +0545
 redirect_from: "/c-asba-service-charge-for-banks-in-nepal/"
 ---
 
@@ -45,12 +45,12 @@ Here are the list of various Banks in Nepal with their C-ASBA service charges pe
 | NCCB   | Nepal Credit and Commerce Bank | <del>Rs. 10</del> Rs. 5  |
 | PRVU   | Prabhu Bank                    | <del>Rs. 10</del> Rs. 5  |
 | PCBL   | Prime Commercial Bank          | <del>Rs. 10</del> Rs. 5  |
-| SBL    | Siddhartha Bank                | <del>Rs. 10</del> Rs. 5  |
 | SRBL   | Sunrise Bank                   | <del>Rs. 10</del> Rs. 5  |
 | NABIL  | Nabil Bank                     | Free                     |
 | NBL    | Nepal Bank                     | <del>Rs. 10</del> Free   |
 | NICA   | NIC Asia Bank                  | Free                     |
 | RBB    | Rastriya Banijya Bank          | Free                     |
+| SBL    | Siddhartha Bank                | <del>Rs. 10</del> Free   |
 
 ### C-ASBA charge of Development Banks & Finances in Nepal
 
