@@ -22,12 +22,12 @@ body {
   line-height: 1.4;
   color: var(--body-color);
   letter-spacing: 0;
+  font-kerning: normal;
   background-color: var(--body-bg);
   // ** Font feature settings  ** //
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
-  font-kerning: normal;
 }
 
 h1,
@@ -59,7 +59,7 @@ h4 {
   line-height: 1.1;
   color: var(--heading-color);
   letter-spacing: 0;
-  text-rendering: optimizeLegibility; // enable common ligatures and kerning
+  text-rendering: optimizelegibility; // enable common ligatures and kerning
 }
 
 a {

@@ -11,7 +11,7 @@
   // color: rgba(0, 0, 0, .8);
   letter-spacing: -0.002em; // -.004em
   word-wrap: break-word;
-  text-rendering: optimizeLegibility; // enable common ligatures and kerning
+  text-rendering: optimizelegibility; // enable common ligatures and kerning
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -314,7 +314,7 @@
     margin-bottom: 2.618em; // em // 52px; // 2.75em
     margin-left: auto;
     color: var(--rule);
-    // background-color: currentColor;
+    // background-color: currentcolor;
     // border: 0;
     border-top: 0.25rem solid;
     border-radius: 0.25rem; // 2px
