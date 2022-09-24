@@ -13,7 +13,7 @@ A list of websites that are helpful for regular updates about exam routine, noti
 
 - [tuexam.edu.np](https://tuexam.edu.np/): Office of the Controller of Examinations
 
-#### Office of Dean
+#### Office of the Dean
 
 - [fomecd.edu.np](https://www.fomecd.edu.np/): Examination Controller Division
 - [tudoms.org](https://tudoms.org/): MBS/MPA Dissertation Results
@@ -28,7 +28,7 @@ A list of websites that are helpful for regular updates about exam routine, noti
 - [www.nlc.edu.np](https://www.nlc.edu.np/): Nepal Law Campus
 - [ioe.edu.np](https://ioe.edu.np/): Institute of Engineering (IOE)
 
-...[more](http://tribhuvan-university.edu.np/campuses)
+... [more](http://tribhuvan-university.edu.np/campuses)
 
 ### Useful soical media accounts
 
