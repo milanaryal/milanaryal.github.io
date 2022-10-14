@@ -11,7 +11,7 @@ group :jekyll_plugins do
 end
 
 group :test, :development do
-  gem "html-proofer", "~> 4.1"
+  gem "html-proofer", "~> 5.0"
   gem "mdl", "~> 0.11"
   gem "webrick", "~> 1.7" # https://github.com/jekyll/jekyll/issues/8523
 end
