@@ -76,7 +76,7 @@ jobs:
         # brew install tdewolff/tap/minify
         run: |
           wget -O ${{ runner.temp }}/minify.rb https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/main/script/minify.rb \
-          && brew install ${{ runner.temp }}/minify.rb
+          && brew install --build-from-source ${{ runner.temp }}/minify.rb
 
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
