@@ -75,10 +75,10 @@ jobs:
       - name: Install Minify using Homebrew
         # brew install tdewolff/tap/minify
         run: |
-          mkdir $HOME/src \
-          cd $HOME/src \
-          git clone https://github.com/tdewolff/minify.git \
-          cd minify \
+          mkdir $HOME/src
+          cd $HOME/src
+          git clone https://github.com/tdewolff/minify.git
+          cd minify
           make install
 
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
