@@ -74,8 +74,8 @@ jobs:
       # https://github.com/tdewolff/homebrew-tap/
       - name: Install Minify using Homebrew
         run: |
-          brew install go && brew unlink go && brew link --overwrite go && brew link --overwrite --dry-run go || true
           brew install tdewolff/tap/minify || true
+          brew unlink go && brew link --overwrite go && brew link --overwrite --dry-run go || true
 
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
