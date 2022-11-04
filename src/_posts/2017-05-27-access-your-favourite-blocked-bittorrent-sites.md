@@ -18,7 +18,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-- [unblockit.blue](https://unblockit.blue/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+- [unblockit.nz](https://unblockit.nz/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [unblockit.pages.dev](https://unblockit.pages.dev){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [Mirror on GitLab](https://unblock_it.gitlab.io/site/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} <br />
   [Reddit](https://reddit.com/r/unblockit){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
