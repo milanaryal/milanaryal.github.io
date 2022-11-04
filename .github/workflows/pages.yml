@@ -73,7 +73,8 @@ jobs:
 
       # https://github.com/tdewolff/homebrew-tap/
       - name: Install Minify using Homebrew
-        run: brew install tdewolff/tap/minify
+        # brew install tdewolff/tap/minify
+        run: brew install https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/main/script/minify.rb
 
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
