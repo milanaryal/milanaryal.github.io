@@ -110,7 +110,7 @@ In this site you'll find a recollection of thoughts and opinions based on my exp
 
 In case you were wondering, this site is:
 
-- Designed and developed on a [WSL: Ubuntu](https://ubuntu.com/wsl) system in _Nepal_
+- Designed and developed on a [Mac](https://www.apple.com/mac/) system in _Nepal_
 - Coded with [Visual Studio Code](https://code.visualstudio.com/)
 - Based on [Bootstrap](https://getbootstrap.com/) framework
 - Built with [npm](https://www.npmjs.com/) packages to compile site assets
