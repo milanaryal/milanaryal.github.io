@@ -80,6 +80,7 @@ jobs:
           git clone https://github.com/tdewolff/minify.git
           cd minify
           make install
+          go install github.com/tdewolff/minify/v2/cmd/minify@latest
 
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
