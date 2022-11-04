@@ -75,8 +75,8 @@ jobs:
       - name: Install Minify using Homebrew
         # brew install tdewolff/tap/minify
         run: |
-        wget -O ${{ runner.temp }}/minify.rb https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/main/script/minify.rb \
-        && brew install --HEAD -s ${{ runner.temp }}/minify.rb
+          wget -O ${{ runner.temp }}/minify.rb https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/main/script/minify.rb \
+          && brew install --HEAD -s ${{ runner.temp }}/minify.rb
 
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
