@@ -74,9 +74,8 @@ jobs:
       # Setup Go using Homebrew
       - name: Install Go using Homebrew
         run: |
-          brew unlink go || true
           brew install go || true
-          brew link --overwrite go && brew link --overwrite --dry-run go || true
+          brew unlink go && brew link --overwrite --dry-run go || true
 
       # https://github.com/tdewolff/homebrew-tap/
       - name: Install Minify using Homebrew
