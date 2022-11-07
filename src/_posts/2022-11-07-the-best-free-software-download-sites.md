@@ -25,18 +25,22 @@ A list of alternative websites to download free and opensource software applicat
 | [Portapps](https://portapps.io/){:rel="nofollow"}          | Windows     |
 | [PortableApps](https://portableapps.com/){:rel="nofollow"} | Windows     |
 
-| Essential Apps                                                               | OS Platform                       |
-| ---------------------------------------------------------------------------- | --------------------------------- |
-| [Anydesk](https://anydesk.com/en){:rel="nofollow"}                           | Windows, Mac, Linux, Android, iOS |
-| [CCleaner](https://www.ccleaner.com/ccleaner/builds){:rel="nofollow"}        | Windows                           |
-| [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                | Windows                           |
-| [Nimblenote](https://nimblenote.app/){:rel="nofollow"}                       | Windows, Mac, Linux               |
-| [OBS Studio](https://obsproject.com/){:rel="nofollow"}                       | Windows, Mac, Linux               |
-| [Rufus](https://rufus.ie/en/){:rel="nofollow"}                               | Windows                           |
-| [ShareX](https://getsharex.com/){:rel="nofollow"}                            | Windows                           |
-| [VLC media player](https://www.videolan.org/vlc/index.html){:rel="nofollow"} | Windows, Mac, Linux, Android, iOS |
+| Essential Apps                                                                      | OS Platform                       |
+| ----------------------------------------------------------------------------------- | --------------------------------- |
+| [Anydesk](https://anydesk.com/en){:rel="nofollow"}                                  | Windows, Mac, Linux, Android, iOS |
+| [CCleaner](https://www.ccleaner.com/ccleaner/builds){:rel="nofollow"}               | Windows                           |
+| [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/browsers/){:rel="nofollow"} | Windows, Mac, Linux, Android, iOS |
+| [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                    | Windows, Mac, Linux, Android, iOS |
+| [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                       | Windows                           |
+| [Microsoft Edge](https://www.microsoft.com/en-us/edge){:rel="nofollow"}             | Windows, Mac, Linux, Android, iOS |
+| [Nimblenote](https://nimblenote.app/){:rel="nofollow"}                              | Windows, Mac, Linux               |
+| [OBS Studio](https://obsproject.com/){:rel="nofollow"}                              | Windows, Mac, Linux               |
+| [Rufus](https://rufus.ie/en/){:rel="nofollow"}                                      | Windows                           |
+| [ShareX](https://getsharex.com/){:rel="nofollow"}                                   | Windows                           |
+| [Visual Studio Code](https://code.visualstudio.com/){:rel="nofollow"}               | Windows, Mac, Linux, Web          |
+| [VLC media player](https://www.videolan.org/vlc/index.html){:rel="nofollow"}        | Windows, Mac, Linux, Android, iOS |
 
 #### Resources
 
-- [Free and Open Source](https://alternativeto.net/list/15116/free-and-open-source/){:rel="nofollow"}
-- [The Complete Suite of Programs Needed After New Windows Installation [V2.0: Advanced]](https://alternativeto.net/list/10598/the-complete-suite-of-programs-needed-after-new-windows-install-v2-0-advanced-/){:rel="nofollow"}
+- [Free and Open Source](https://alternativeto.net/list/15116/free-and-open-source/){:rel="nofollow"}, _AlternativeTo_
+- [The Complete Suite of Programs Needed After New Windows Installation [V2.0: Advanced]](https://alternativeto.net/list/10598/the-complete-suite-of-programs-needed-after-new-windows-install-v2-0-advanced-/){:rel="nofollow"}, _AlternativeTo_
