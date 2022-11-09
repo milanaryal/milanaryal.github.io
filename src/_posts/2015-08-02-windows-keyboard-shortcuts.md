@@ -1,13 +1,15 @@
 ---
-title: "Windows 10 keyboard shortcuts"
-description: "The list of Windows 10 keyboard shortcuts to improve your productivity."
+title: "Windows keyboard shortcuts"
+description: "The list of essential keyboard shortcuts in Windows to improve your productivity."
 date: 2015-08-02T09:32:45+05:45
-last_modified_at: 2015-08-02T14:00:42+05:45
+last_modified_at: 2022-11-09T00:00:00+05:45
 ---
+
+Keyboard shortcuts are keys or combinations of keys that provide an alternative way to do something that you'd typically do with a mouse. If you are trying to take a screenshot or screengrab, see [How to take and annotate screenshots](https://support.microsoft.com/en-us/windows/how-to-take-and-annotate-screenshots-on-windows-10-ca08e124-cc30-2579-3e55-6db63e36fbb9){:rel="nofollow"}.
 
 Here's the list of Windows 10 shortcuts, and --- in addition --- some of our favorite "old but gold" shortcuts known from previous versions of Windows:
 
-| Windows 10 keyboard shortcut     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Keyboard shortcut                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Win                              | Show the Windows 10 Start Menu                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Win + Tab                        | Launch Windows 10 _Task View_                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -27,7 +29,7 @@ Here's the list of Windows 10 shortcuts, and --- in addition --- some of our fav
 
 And, of course, these "old but gold" shortcuts known from previous Windows versions still work:
 
-| Windows 10 keyboard shortcut | Description                                                                                                                                                                                       |
+| Keyboard shortcut            | Description                                                                                                                                                                                       |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Win + D                      | Show Windows desktop                                                                                                                                                                              |
 | Win + E                      | Open _Windows Explorer_                                                                                                                                                                           |
@@ -43,7 +45,7 @@ And, of course, these "old but gold" shortcuts known from previous Windows versi
 
 Additional shortcuts (not just Windows keyboard shortcuts):
 
-| Windows 10 keyboard shortcut       | Description                                                                                                                                                                     |
+| Keyboard shortcut                  | Description                                                                                                                                                                     |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Win + ⬇️Down arrow                 | Minimize current window                                                                                                                                                         |
 | Win + ⬆️Up arrow                   | Maximize current window                                                                                                                                                         |
@@ -82,6 +84,6 @@ Additional shortcuts (not just Windows keyboard shortcuts):
 | Alt + Enter                        | Show the properties of the currently selected file                                                                                                                              |
 | Ctrl + Shift + Enter               | Run the selected app as an administrator                                                                                                                                        |
 
-Find even more Windows 10 keyboard shortcuts [at this link](https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts){:rel="nofollow"}.
+Find even more Windows keyboard shortcuts [at this link](https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts){:rel="nofollow"}.
 
-I'm pretty sure there are much more keyboard shortcuts you can use to speed up your work with Windows 10. If I miss one of your favorite(s), please let me know! I will try to keep the above list up to date.
+I'm pretty sure there are much more keyboard shortcuts you can use to speed up your work with Windows OS. If I miss one of your favorite(s), please let me know! I will try to keep the above list up to date.

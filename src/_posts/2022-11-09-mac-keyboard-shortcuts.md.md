@@ -1,6 +1,6 @@
 ---
 title: "Mac keyboard shortcuts"
-description: "The list of essential Mac shortcuts to improve your productivity."
+description: "The list of essential keyboard shortcuts in Mac to improve your productivity."
 date: 2022-11-09 00:00:00 +0545
 ---
 
