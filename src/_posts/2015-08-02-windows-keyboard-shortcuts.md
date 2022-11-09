@@ -7,7 +7,7 @@ last_modified_at: 2022-11-09T00:00:00+05:45
 
 Keyboard shortcuts are keys or combinations of keys that provide an alternative way to do something that you'd typically do with a mouse. If you are trying to take a screenshot or screengrab, see [How to take and annotate screenshots](https://support.microsoft.com/en-us/windows/how-to-take-and-annotate-screenshots-on-windows-10-ca08e124-cc30-2579-3e55-6db63e36fbb9){:rel="nofollow"}.
 
-Here's the list of Windows 10 shortcuts, and --- in addition --- some of our favorite "old but gold" shortcuts known from previous versions of Windows:
+To improve your productivity, here's the list of essential keyboard shortcuts in Windows 10, and --- in addition --- some of our favorite "old but gold" shortcuts known from previous versions of Windows:
 
 | Keyboard shortcut                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

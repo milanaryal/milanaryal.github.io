@@ -6,6 +6,8 @@ date: 2022-11-09 00:00:00 +0545
 
 Keyboard shortcuts are keys or combinations of keys that provide an alternative way to do something that you’d typically do with a mouse, trackpad, or other input device. If you are trying to take a screenshot or screengrab, see [How to take and annotate screenshots](https://support.apple.com/kb/HT201361){:rel="nofollow"}.
 
+To improve your productivity, here’s the list of essential keyboard shortcuts in Mac:
+
 - **Command-X**: Cut the selected item and copy it to the Clipboard.
 - **Command-C**: Copy the selected item to the Clipboard. This also works for files in the Finder.
 - **Command-V**: Paste the contents of the Clipboard into the current document or app. This also works for files in the Finder.
@@ -36,4 +38,4 @@ Keyboard shortcuts are keys or combinations of keys that provide an alternative 
 - **Shift-Command-Q**: Log out of your macOS user account. You will be asked to confirm. To log out immediately without confirming, press **Option-Shift-Command-Q**.
 - **Power button**: Press to turn on your Mac or wake it from sleep. Press and hold for 1.5 seconds to put your Mac to sleep.\* Continue holding to force your Mac to turn off.
 
-_Resources: Apple official docs for [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236){:rel="nofollow"}. Or, other shortcuts on Mac: Choose Apple menu > System Settings, click Keyboard, then click [Shortcuts](https://support.apple.com/guide/mac-help/use-global-keyboard-shortcuts-mchlp2262/mac){:rel="nofollow"}._
+_Resources: Visit Apple official docs for more [keyboard shortcuts in Mac](https://support.apple.com/en-us/HT201236){:rel="nofollow"}. Or, other shortcuts on Mac: Choose Apple menu > System Settings, click Keyboard, then click [Shortcuts](https://support.apple.com/guide/mac-help/use-global-keyboard-shortcuts-mchlp2262/mac){:rel="nofollow"}._
