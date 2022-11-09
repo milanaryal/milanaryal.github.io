@@ -18,6 +18,6 @@ Every tool you need to use PDFs, at your fingertips. All are 100% FREE and easy 
 
 You can also search more [online PDF tools](https://www.google.com/search?q=online+pdf+tools&hl=en){:rel="nofollow"} on Google.
 
-### PDFSummary
+### PDF Summary
 
 PDF (Portable Document Format) file format is an electronic file format developed by Adobe. This file format is independent of the operating system platform, that is, the PDF file is universal whether it is in Windows, Unix or Apple’s Mac OS operating system. This feature makes it an ideal document format for electronic document distribution and digital information dissemination on the Internet. More and more e-books, product descriptions, company announcements, web materials, e-mails begin to use PDF format files. PDF format files have now become the de facto industry standard for digitizing information.
