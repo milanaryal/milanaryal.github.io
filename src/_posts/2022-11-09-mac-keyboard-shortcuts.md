@@ -31,6 +31,7 @@ To improve your productivity, here’s the list of essential keyboard shortcuts 
 - **Shift-Command-N**: Create a new folder in the Finder.
 - **Command-Comma (,)**: Open preferences for the front app.
 - **Command-Delete**: Move the selected item to the Trash.
+- **Option-Command-Delete**: Permanently delete selected item, bypassing the Trash.
 - **Shift-Command-Delete**: Empty the Trash.
 - **Option-Shift-Command-Delete**: Empty the Trash without confirmation dialog.
 - **Command-Q**: Quit current app.
