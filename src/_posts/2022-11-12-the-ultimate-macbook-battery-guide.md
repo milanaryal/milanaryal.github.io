@@ -23,57 +23,53 @@ To take care of your devices with battery it is highly recommended that you rech
 - System Settings > Appearance > Click "Auto"
 
 ![mac-screenshot-appearance](/uploads/20221112-mac-screenshot-appearance.png)
-_Appearance_
 
 - **Show battery percentage on control center**
 - System Settings > Control Center > Turn On "Show Percentage"
 
 ![mac-screenshot-show-battery-percentage](/uploads/20221112-mac-screenshot-show-battery-percentage.png)
-_Show Battery Percentage_
 
 - **Turn off location servies access**
 - System Settings > Privacy & Security > Location Services
 
-![mac-screenshot-location-services](/upload/20221112-mac-screenshot-location-services.png)
-_Location Services_
+![mac-screenshot-location-services](/uploads/20221112-mac-screenshot-location-services.png)
 
 - **Turn off share mac analytics**
 - System Settings > Privacy & Security > Analytics & Improvements
 
-![mac-screenshot-share-mac-analytics](/upload/20221112-mac-screenshot-share-mac-analytics.png)
-_Share Mac Analytics_
+![mac-screenshot-share-mac-analytics](/uploads/20221112-mac-screenshot-share-mac-analytics.png)
 
 - **Turn off automatically adjust brightness**
 - System Settings > Display > Maintain Low Brightness
 - System Settings > Display > Turn Off "Automatically adjust brightness"
 
-![mac-screenshot-automatically-adjust-brightness](/upload/20221112-mac-screenshot-automatically-adjust-brightness.png)
-_Automatically adjust brightness_
+![mac-screenshot-automatically-adjust-brightness](/uploads/20221112-mac-screenshot-automatically-adjust-brightness.png)
+
+- **Customise night shift**
+- System Settings > Display > Night Shift...
+
+![mac-screenshot-night-shift](/uploads/20221112-mac-screenshot-night-shift.png)
 
 - **Turn on low power mode**
-- System Settings > Battery > Turn On "Low Power Mode"
+- System Settings > Battery > Turn On "Low Power Mode - Only on Battery"
 
-![mac-screenshot-low-power-mode](/upload/20221112-mac-screenshot-low-power-mode.png)
-_Low Power Mode_
+![mac-screenshot-low-power-mode](/uploads/20221112-mac-screenshot-low-power-mode.png)
 
 - **Turn on optimised battery charging**
 - System Settings > Battery > Battery Health (Click info symbol ℹ️) > Turn On "Optimized Battery Charging"
 
-![mac-screenshot-optimized-battery-charging](/upload/20221112-mac-screenshot-optimized-battery-charging.png)
-_Optimized Battery Charging_
+![mac-screenshot-optimized-battery-charging](/uploads/20221112-mac-screenshot-optimized-battery-charging.png)
 
 - **Turn on optimise video streaming while on battery**
 - System Settings > Battery > Options > Turn On "Optimize video streaming while on battery"
 
-![mac-screenshot-optimize-video-streaming-while-on-battery](/upload/20221112-mac-screenshot-optimize-video-streaming-while-on-battery.png)
-_Optimize video streaming while on battery_
+![mac-screenshot-optimize-video-streaming-while-on-battery](/uploads/20221112-mac-screenshot-optimize-video-streaming-while-on-battery.png)
 
 - **Turn off keyboard brightness**
 - System Settings > Keyboard > Turn Off "Adjust keyboard brightness in low light"
 - System Settings > Keyboard > Maintain low keyboard brighness
 
 ![mac-screenshot-adjust-keyboard-brightness-in-low-light](/uploads/20221112-mac-screenshot-adjust-keyboard-brightness-in-low-light.png)
-_AMaintain low keyboard brighness_
 
 ### Resources
 
