@@ -9,13 +9,17 @@ Best tips to save battery life on any MacBook, so that you can know how to maxim
 - Use a high-quality charger, eg. the stock MacBook charger or from a good brand.
 - It's fine to leave MacBook attached to the charger 90% of the time.
 - Disconnect it occasionally and use the battery (eg. disconnect overnight, or use the battery until it drains to 10-15% (or 20-25%) every now and then.)
-- If you mainly use battery power, charge it in bursts (if you can) to keep the battery percentage between 20% and 80% (or 25% and 85%).
+- If you mainly use battery power, charge it in bursts (if you can) to keep the battery percentage between 20% and 80% (or the sweet spot to keep your battery charged is at between 25% and 85%).
 - Although the battery might say it's at "100%", in reality it's actualy less than that. Apple designed the batteries this way with a "soft limit" to maximise longevity.
 - Even if you fail to follow any of these guidlines, you probably won't experience a significant drop in battrey health due to modern li-ion batteries and software (with the exception of head and using a good charger).
 
 ### Never discharge the battery below 10%
 
 To take care of your devices with battery it is highly recommended that you recharge them when they are at 15-20% (or 20-25%) capacity. And of course, nothing happens if one day you completely drain the battery. The problem occurs when it is a repetitive action.
+
+### Store it half-charged when you store it long term
+
+Do not fully charge or fully discharge your device's battery --- charge it to around 50%. If you store a device when its battery is fully discharged, the battery could fall into a deep discharge state, which renders it incapable of holding a charge. Conversely, if you store it fully charged for an extended period of time, the battery may lose some capacity, leading to shorter battery life.
 
 ### Configure Mac settings to optimise battery health
 
@@ -75,5 +79,6 @@ To take care of your devices with battery it is highly recommended that you rech
 
 - [Determine battery cycle count for Mac laptops](https://support.apple.com/en-us/HT201585){:rel="nofollow"}, _Apple_
 - [Get help with your Mac laptop battery](https://support.apple.com/en-us/HT204054){:rel="nofollow"}, _Apple_
+- [Maximizing Battery Life and Lifespan](https://www.apple.com/batteries/maximizing-performance/#macbooktips){:rel="nofollow"} Tips for MacBook, _Apple_
 
-_Screenshot from macOS Ventura Version 13_
+_Screenshots from macOS Ventura Version 13_

@@ -25,12 +25,15 @@ A list of alternative websites to download free and opensource software applicat
 | [Portapps](https://portapps.io/){:rel="nofollow"}          | Windows     |
 | [PortableApps](https://portableapps.com/){:rel="nofollow"} | Windows     |
 
+### Download essential apps
+
 | Essential Apps                                                                      | OS Platform                       |
 | ----------------------------------------------------------------------------------- | --------------------------------- |
 | [Anydesk](https://anydesk.com/en){:rel="nofollow"}                                  | Windows, Mac, Linux, Android, iOS |
 | [CCleaner](https://www.ccleaner.com/ccleaner/builds){:rel="nofollow"}               | Windows                           |
 | [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/browsers/){:rel="nofollow"} | Windows, Mac, Linux, Android, iOS |
 | [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                    | Windows, Mac, Linux, Android, iOS |
+| [IINA](https://iina.io/){:rel="nofollow"}                                           | Mac                               |
 | [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                       | Windows                           |
 | [Microsoft Edge](https://www.microsoft.com/en-us/edge){:rel="nofollow"}             | Windows, Mac, Linux, Android, iOS |
 | [Nimblenote](https://nimblenote.app/){:rel="nofollow"}                              | Windows, Mac, Linux               |
