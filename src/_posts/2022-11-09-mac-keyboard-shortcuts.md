@@ -39,4 +39,4 @@ To improve your productivity, here’s the list of essential keyboard shortcuts 
 - **Shift-Command-Q**: Log out of your macOS user account. You will be asked to confirm. To log out immediately without confirming, press **Option-Shift-Command-Q**.
 - **Power button**: Press to turn on your Mac or wake it from sleep. Press and hold for 1.5 seconds to put your Mac to sleep.\* Continue holding to force your Mac to turn off.
 
-_Resources: Visit Apple official docs for more [keyboard shortcuts in Mac](https://support.apple.com/en-us/HT201236){:rel="nofollow"}. Or, other shortcuts on Mac: Choose Apple menu > System Settings, click Keyboard, then click [Shortcuts](https://support.apple.com/guide/mac-help/use-global-keyboard-shortcuts-mchlp2262/mac){:rel="nofollow"}._
+_Resources: Visit Apple official docs for more [keyboard shortcuts in Mac](https://support.apple.com/en-us/HT201236){:rel="nofollow"}. Or, other shortcuts on Mac: Choose Apple menu  > System Settings, click Keyboard, then click [Shortcuts](https://support.apple.com/guide/mac-help/use-global-keyboard-shortcuts-mchlp2262/mac){:rel="nofollow"}._

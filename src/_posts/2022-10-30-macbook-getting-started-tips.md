@@ -10,7 +10,7 @@ This tutorial was performed on an _M1 Mac using macOS Ventura_, but should gener
 
 ### Show battery percentage in menu bar
 
-To change these settings, choose Apple menu > System Settings, then click "Control Center" in the sidebar. (You may need to scroll down.) > Turn On "Show Percentage" on Battery section.
+To change these settings, choose Apple menu  > System Settings, then click "Control Center" in the sidebar. (You may need to scroll down.) > Turn On "Show Percentage" on Battery section.
 
 ![mac-screenshot-show-battery-percentage](/uploads/20221030-mac-screenshot-show-battery-percentage.png)
 
@@ -18,7 +18,7 @@ To change these settings, choose Apple menu > System Settings, then click "Contr
 
 On your Mac, do one of the following:
 
-- On your Mac, choose Apple menu > System Settings, then click "Desktop & Dock" in the sidebar. (You may need to scroll down.) Go to "Windows & Apps" on the right, then turn "Stage Manager" on.
+- On your Mac, choose Apple menu  > System Settings, then click "Desktop & Dock" in the sidebar. (You may need to scroll down.) Go to "Windows & Apps" on the right, then turn "Stage Manager" on.
 - Click "Control Centre" in the menu bar, then click "Stage Manager" to turn it on.
 
 ![mac-screenshot-stage-manager](/uploads/20221030-mac-screenshot-stage-manager.png)
@@ -27,13 +27,13 @@ On your Mac, do one of the following:
 
 To sync Google mail, contacts and calendar with macOS add Google account.
 
-To add Google account, choose Apple menu > System Settings, then click "Internet Accounts" in the sidebar. > Click "Add Account..." and follow the steps.
+To add Google account, choose Apple menu  > System Settings, then click "Internet Accounts" in the sidebar. > Click "Add Account..." and follow the steps.
 
 ![mac-screenshot-internet-accounts](/uploads/20221030-mac-screenshot-internet-accounts.png)
 
 ### Tap the trackpad to perform a click
 
-To change these settings, choose Apple menu > System Settings, then click "Trackpad" in the sidebar. (You may need to scroll down.) > [i] Turn On "Tap to click (Tap with one finger)" [ii] Also, for "Secondary click" choose "Click or Tap with Two Fingers".
+To change these settings, choose Apple menu  > System Settings, then click "Trackpad" in the sidebar. (You may need to scroll down.) > [i] Turn On "Tap to click (Tap with one finger)" [ii] Also, for "Secondary click" choose "Click or Tap with Two Fingers".
 
 ![mac-screenshot-tap-to-click](/uploads/20221030-mac-screenshot-tap-to-click.png)
 
