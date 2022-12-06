@@ -556,5 +556,9 @@ Nepalese numbers follow the Indo-Arabic number system. The ten-digit symbol is t
 
 References:
 
-- [Numbers in Nepali language](https://en.wikipedia.org/wiki/Numbers_in_Nepali_language), _Wikipedia_
-- [देवनागरी सङ्ख्या पद्धति](https://ne.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%B8%E0%A4%99%E0%A5%8D%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE_%E0%A4%AA%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%A4%E0%A4%BF), _Wikipedia - NE_
+- [देवनागरी सङ्ख्या पद्धति](https://ne.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%B8%E0%A4%99%E0%A5%8D%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE_%E0%A4%AA%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%A4%E0%A4%BF){:rel="nofollow"}, _Wikipedia - NE_
+- [Numbers in Nepali language](https://en.wikipedia.org/wiki/Numbers_in_Nepali_language){:rel="nofollow"}, _Wikipedia_
+- [Nepali numbers](https://nepalilanguage.org/numbers/){:rel="nofollow"}, _Nepali Language_
+- [Nepali Numbers From 1 To Billion - An Easy Guide](https://ling-app.com/ne/nepali-numbers-and-counting/){:rel="nofollow"}, _Ling_
+- [Nepali numbers (नेपाली गणना)](https://omniglot.com/language/numbers/nepali.htm){:rel="nofollow"}, _Omniglot_
+- [Devanagari Numerials](https://barala.com.np/number-words.php){:rel="nofollow"} (Also Nepali Numbers Converter), _Barala_

@@ -10,7 +10,9 @@ Whether to reduce your website bandwidth or for some other reasons, you may want
 
 > **Invitation to Dropbox!**
 >
-> Haven't join Dropbox yet? Sign up now with [https://db.tt/pFyuOKMN](https://db.tt/pFyuOKMN){:rel="nofollow"} link and install Dropbox on your desktop computer, you'll get extra 500MB of bonus space.
+> Haven't join Dropbox yet? Sign up now with the Dropbox invitation link and install Dropbox on your desktop computer, you'll get extra 500MB of bonus space: <https://www.dropbox.com/referrals/AAAmt0PisKWhPpDshYs46Cj-cdpdBh0Xa60?src=global9>{:rel="nofollow"}.
+
+<!-- Old short referal link but still works: https://db.tt/pFyuOKMN -->
 
 Following are some few simple steps within which you will learn to host images or website assets with Dropbox on your webpages:
 
