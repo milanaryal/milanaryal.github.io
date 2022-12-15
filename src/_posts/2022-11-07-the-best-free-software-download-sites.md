@@ -30,6 +30,7 @@ A list of alternative websites to download free and opensource software applicat
 | Essential Apps                                                                      | OS Platform                       |
 | ----------------------------------------------------------------------------------- | --------------------------------- |
 | [Anydesk](https://anydesk.com/en){:rel="nofollow"}                                  | Windows, Mac, Linux, Android, iOS |
+| [AppCleaner](https://freemacsoft.net/appcleaner/){:rel="nofollow"}                  | Mac                               |
 | [CCleaner](https://www.ccleaner.com/ccleaner/builds){:rel="nofollow"}               | Windows                           |
 | [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/browsers/){:rel="nofollow"} | Windows, Mac, Linux, Android, iOS |
 | [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                    | Windows, Mac, Linux, Android, iOS |
