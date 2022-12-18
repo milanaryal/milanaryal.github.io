@@ -27,22 +27,27 @@ A list of alternative websites to download free and opensource software applicat
 
 ### Download essential apps
 
-| Essential Apps                                                                      | OS Platform                       |
-| ----------------------------------------------------------------------------------- | --------------------------------- |
-| [Anydesk](https://anydesk.com/en){:rel="nofollow"}                                  | Windows, Mac, Linux, Android, iOS |
-| [AppCleaner](https://freemacsoft.net/appcleaner/){:rel="nofollow"}                  | Mac                               |
-| [CCleaner](https://www.ccleaner.com/ccleaner/builds){:rel="nofollow"}               | Windows                           |
-| [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/browsers/){:rel="nofollow"} | Windows, Mac, Linux, Android, iOS |
-| [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                    | Windows, Mac, Linux, Android, iOS |
-| [IINA](https://iina.io/){:rel="nofollow"}                                           | Mac                               |
-| [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                       | Windows                           |
-| [Microsoft Edge](https://www.microsoft.com/en-us/edge){:rel="nofollow"}             | Windows, Mac, Linux, Android, iOS |
-| [Nimblenote](https://nimblenote.app/){:rel="nofollow"}                              | Windows, Mac, Linux               |
-| [OBS Studio](https://obsproject.com/){:rel="nofollow"}                              | Windows, Mac, Linux               |
-| [Rufus](https://rufus.ie/en/){:rel="nofollow"}                                      | Windows                           |
-| [ShareX](https://getsharex.com/){:rel="nofollow"}                                   | Windows                           |
-| [Visual Studio Code](https://code.visualstudio.com/){:rel="nofollow"}               | Windows, Mac, Linux, Web          |
-| [VLC media player](https://www.videolan.org/vlc/index.html){:rel="nofollow"}        | Windows, Mac, Linux, Android, iOS |
+| Essential Apps                                                                                           | OS Platform                        |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| [Anydesk](https://anydesk.com/en){:rel="nofollow"}                                                       | Windows, Mac, Linux, Android, iOS  |
+| [AppCleaner](https://freemacsoft.net/appcleaner/){:rel="nofollow"}                                       | Mac                                |
+| [CCleaner](https://www.ccleaner.com/ccleaner/builds){:rel="nofollow"}                                    | Windows, Mac                       |
+| [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/browsers/){:rel="nofollow"}                      | Windows, Mac, Linux, Android, iOS  |
+| [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                                         | Windows, Mac, Linux, Android, iOS  |
+| [IINA](https://iina.io/){:rel="nofollow"}                                                                | Mac                                |
+| [Keka](https://www.keka.io/en/)                                                                          | Mac                                |
+| [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                                            | Windows                            |
+| [Microsoft Edge](https://www.microsoft.com/en-us/edge){:rel="nofollow"}                                  | Windows, Mac, Linux, Android, iOS  |
+| [Nimblenote](https://nimblenote.app/){:rel="nofollow"}                                                   | Windows, Mac, Linux                |
+| [OBS Studio](https://obsproject.com/){:rel="nofollow"}                                                   | Windows, Mac, Linux                |
+| [Rufus](https://rufus.ie/en/){:rel="nofollow"}                                                           | Windows                            |
+| [ShareX](https://getsharex.com/){:rel="nofollow"}                                                        | Windows                            |
+| [The Unarchiver](https://macpaw.com/the-unarchiver){:rel="nofollow"}                                     | Mac                                |
+| [Titanium Software - Maintenance](https://www.titanium-software.fr/en/maintenance.html){:rel="nofollow"} | Operating System Utilities for Mac |
+| [Titanium Software - OnyX](https://www.titanium-software.fr/en/onyx.html){:rel="nofollow"}               | Operating System Utilities for Mac |
+| [unar](https://theunarchiver.com/command-line){:rel="nofollow"}                                          | Homebrew                           |
+| [Visual Studio Code](https://code.visualstudio.com/){:rel="nofollow"}                                    | Windows, Mac, Linux, Web           |
+| [VLC media player](https://www.videolan.org/vlc/index.html){:rel="nofollow"}                             | Windows, Mac, Linux, Android, iOS  |
 
 #### Resources
 

@@ -29,6 +29,7 @@ To improve your productivity, here’s the list of essential keyboard shortcuts 
 - **Command-Tab**: Switch to the next most recently used app among your open apps.
 - **Shift-Command-5**: Take a screenshot or make a screen recording. Or use **Shift-Command-3** or **Shift-Command-4** for screenshots. [Learn more about screenshots](https://support.apple.com/kb/HT201361){:rel="nofollow"}.
 - **Shift-Command-N**: Create a new folder in the Finder.
+- **Command-Shift-Dot (.)**: Show or hide hidden files in the Finder.
 - **Command-Comma (,)**: Open preferences for the front app.
 - **Command-Delete**: Move the selected item to the Trash.
 - **Option-Command-Delete**: Permanently delete selected item, bypassing the Trash.
