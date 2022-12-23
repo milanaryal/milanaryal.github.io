@@ -11,8 +11,8 @@ Whether to reduce your website bandwidth or for some other reasons, you may want
 > **Invitation to Dropbox!**
 >
 > Haven't join Dropbox yet? Sign up now with the Dropbox invitation link and install Dropbox on your desktop computer, you'll get extra 500 MB of bonus space: <https://www.dropbox.com/referrals/AADapKnBJpLqYvSvMcBxGAk9N4iiYHh7hJI?src=global9>{:rel="nofollow"}.
->
-> After setting-up Dropbox on desktop computer follow [getting started checklist](https://www.dropbox.com/gs){:rel="nofollow"} to earned extra 250 MB bonus space. You can get up to 16 GB bonus space on Dropbox by referring your friends with [your invitation links](https://www.dropbox.com/account/referrals){:rel="nofollow"}.
+
+_Tip: After setting-up Dropbox on your desktop computer follow [getting started checklist](https://www.dropbox.com/gs){:rel="nofollow"} to earn extra 250 MB bonus space. You can get up to 16 GB bonus space on Dropbox by referring your friends with [your invitation links](https://www.dropbox.com/account/referrals){:rel="nofollow"}._
 
 <!-- Old A/C short referal link but still works:
 - <https://db.tt/pFyuOKMN>

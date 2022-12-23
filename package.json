@@ -53,7 +53,7 @@
     "jquery": "3.6.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
+    "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.13",
