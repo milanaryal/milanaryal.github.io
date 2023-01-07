@@ -45,6 +45,7 @@ A list of alternative websites to download free and opensource software applicat
 | [The Unarchiver](https://macpaw.com/the-unarchiver){:rel="nofollow"}                                     | Mac                                |
 | [Titanium Software - Maintenance](https://www.titanium-software.fr/en/maintenance.html){:rel="nofollow"} | Operating System Utilities for Mac |
 | [Titanium Software - OnyX](https://www.titanium-software.fr/en/onyx.html){:rel="nofollow"}               | Operating System Utilities for Mac |
+| [Tor Browser](https://www.torproject.org/){:rel="nofollow"}                                              | Windows, Mac, Linux, Android       |
 | [unar](https://theunarchiver.com/command-line){:rel="nofollow"}                                          | Homebrew                           |
 | [Visual Studio Code](https://code.visualstudio.com/){:rel="nofollow"}                                    | Windows, Mac, Linux, Web           |
 | [VLC media player](https://www.videolan.org/vlc/index.html){:rel="nofollow"}                             | Windows, Mac, Linux, Android, iOS  |

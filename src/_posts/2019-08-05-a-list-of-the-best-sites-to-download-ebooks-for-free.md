@@ -2,7 +2,7 @@
 title: "A list of the best sites to download eBooks for free"
 description: "A curated list of the most popular websites to download eBooks for free of cost."
 date: 2019-08-05T10:35:00+05:45
-last_modified_at: 2020-06-17T17:00:00+05:45
+last_modified_at: 2023-01-07T00:00:00+05:45
 ---
 
 Here, I've curated a list of sites to download eBook for free of cost. In these free sites, you will found most of the eBooks in PDF, EPub or Mobi format. You may have probably bookmarked a few of these already.
@@ -32,13 +32,13 @@ _Mirror site(s):_
 
 Part of Z-Library project. The world's largest e-book library since 2009.
 
-Z-Library website is currently available only in Tor and I2P network. You can find out more and download [Tor](https://www.torproject.org/) or [https://github.com/PurpleI2P/i2pdbrowser/releases](I2P) browser.
+Z-Library website is currently available only in Tor and I2P network. You can find out more and download [Tor](https://www.torproject.org/){:rel="nofollow"} or [I2P](https://github.com/PurpleI2P/i2pdbrowser/releases){:rel="nofollow"} browser.
 
-Tor site: <http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/>
+Tor site: <http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
-I2P site: <http://kkd7tiqf5lv3olqfdnkw4znmmmmnjo2xqlxrp5ntthp6juowaiha.b32.i2p/>
+I2P site: <http://kkd7tiqf5lv3olqfdnkw4znmmmmnjo2xqlxrp5ntthp6juowaiha.b32.i2p/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
-Android APK: [Download](https://singlelogin.me/soft/zlibrary-app-latest.apk)
+Android APK: [Download](https://singlelogin.me/soft/zlibrary-app-latest.apk){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 How to use TOR?
 
