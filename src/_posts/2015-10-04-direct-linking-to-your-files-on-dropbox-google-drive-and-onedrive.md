@@ -115,3 +115,8 @@ Becomes:
 ```text
 https://onedrive.live.com/download?resid=FILE_ID
 ```
+
+> **Invitation**
+>
+> Sign into **Microsoft OneDrive** (with your Microsoft account) with the following Microsoft OneDrive invitation link to **receive an extra 500 MB of free storage** on Microsoft OneDrive:
+> <https://onedrive.live.com?invref=8276ca569c4bc513&invscr=90>
