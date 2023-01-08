@@ -42,7 +42,7 @@ Android APK: [Download](https://singlelogin.me/soft/zlibrary-app-latest.apk){:re
 
 How to use TOR?
 
-1. Tor is free to use. Simply [download and install the browser](http://torproject.org/download){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, which is a modified version of Firefox available for Windows, Mac OS X, and Linux.
+1. Tor is free to use. Simply [download and install the browser](http://torproject.org/download){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, which is a modified version of Firefox available for Windows, macOS, Linux, and Android.
 2. Open an URL <http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} in the TOR browser.
 3. Enjoy!
 

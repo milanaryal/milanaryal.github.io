@@ -84,7 +84,7 @@ Open a Terminal and run:
 sudo /etc/init.d/nscd restart
 ```
 
-#### Flush DNS Cache on Mac OS X
+#### Flush DNS Cache on Mac
 
 Open a Terminal and run:
 
