@@ -81,4 +81,4 @@ Do not fully charge or fully discharge your device's battery --- charge it to ar
 - [Get help with your Mac laptop battery](https://support.apple.com/en-us/HT204054){:rel="nofollow"}, _Apple_
 - [Maximizing Battery Life and Lifespan](https://www.apple.com/batteries/maximizing-performance/#macbooktips){:rel="nofollow"} Tips for MacBook, _Apple_
 
-_Screenshots from macOS Ventura Version 13_
+_Screenshots from macOS Ventura Version 13._

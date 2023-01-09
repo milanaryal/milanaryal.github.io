@@ -10,4 +10,4 @@ Looking to reset your computer to its factory settings? _MacOS Ventura_ makes it
 3. Click "Transfer or Reset" on the right.
 4. Click "Erase All Content and Settings". [Don't see this button](https://support.apple.com/en-us/HT212749#dontseeit){:rel="nofollow"}?
 
-_Read more: [Erase your Mac and reset it to factory settings](https://support.apple.com/en-us/HT212749){:rel="nofollow"}, Apple_
+Read more: [Erase your Mac and reset it to factory settings](https://support.apple.com/en-us/HT212749){:rel="nofollow"}, _Apple_

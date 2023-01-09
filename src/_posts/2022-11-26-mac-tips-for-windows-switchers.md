@@ -81,4 +81,4 @@ Check out some equivalents of popular Windows alt shortcuts on a Mac, which migh
 </tbody>
 </table>
 
-_References: (i) [Apple Support Communities](https://support.apple.com/en-us/HT204216){:rel="nofollow"}, and (ii) [Parallels Desktop Blogs](https://www.parallels.com/blogs/alt-key-on-a-mac/){:rel="nofollow"}_
+References: (i) [Apple Support Communities](https://support.apple.com/en-us/HT204216){:rel="nofollow"}, and (ii) [Parallels Desktop Blogs](https://www.parallels.com/blogs/alt-key-on-a-mac/){:rel="nofollow"}

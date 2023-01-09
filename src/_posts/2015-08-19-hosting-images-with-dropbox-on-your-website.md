@@ -15,6 +15,7 @@ Whether to reduce your website bandwidth or for some other reasons, you may want
 _Tip: After setting-up Dropbox on your desktop computer follow [getting started checklist](https://www.dropbox.com/gs){:rel="nofollow"} to earn extra 250 MB bonus space. You can get up to 16 GB bonus space on Dropbox by referring your friends with [your invitation links](https://www.dropbox.com/account/referrals){:rel="nofollow"}._
 
 <!-- Old A/C short referal link but still works:
+
 - <https://db.tt/pFyuOKMN>
 - <https://www.dropbox.com/referrals/AAAmt0PisKWhPpDshYs46Cj-cdpdBh0Xa60?src=global9> -->
 
