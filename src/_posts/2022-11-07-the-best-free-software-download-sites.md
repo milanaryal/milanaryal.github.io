@@ -1,6 +1,7 @@
 ---
 title: "The best free software download sites"
 date: 2022-11-07 00:00:00 +0545
+last_modified_at: 2023-01-21 00:00:00 +0545
 ---
 
 A list of alternative websites to download free and opensource software applications for Windows, Mac, Linux, Android and iOS platform.
@@ -25,15 +26,24 @@ A list of alternative websites to download free and opensource software applicat
 | [Portapps](https://portapps.io/){:rel="nofollow"}          | Windows     |
 | [PortableApps](https://portableapps.com/){:rel="nofollow"} | Windows     |
 
+| CLI Package Manager                                                         | OS Platform |
+| --------------------------------------------------------------------------- | ----------- |
+| [Homebrew Cask](https://github.com/Homebrew/homebrew-cask){:rel="nofollow"} | Mac         |
+| [Chocolatey](https://chocolatey.org/){:rel="nofollow"}                      | Windows     |
+| [Scoop](https://scoop.sh/){:rel="nofollow"}                                 | Windows     |
+| [Snapcraft](https://snapcraft.io/){:rel="nofollow"}                         | Linux       |
+
 ### Download essential apps
 
 | Essential Apps                                                                                           | OS Platform                        |
 | -------------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | [Anydesk](https://anydesk.com/en){:rel="nofollow"}                                                       | Windows, Mac, Linux, Android, iOS  |
 | [AppCleaner](https://freemacsoft.net/appcleaner/){:rel="nofollow"}                                       | Mac                                |
+| [Audacity](https://www.audacityteam.org/){:rel="nofollow"}                                               | Windows, Mac, Linux                |
 | [CCleaner](https://www.ccleaner.com/ccleaner/builds){:rel="nofollow"}                                    | Windows, Mac                       |
 | [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/browsers/){:rel="nofollow"}                      | Windows, Mac, Linux, Android, iOS  |
 | [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                                         | Windows, Mac, Linux, Android, iOS  |
+| [GIMP](https://www.gimp.org/){:rel="nofollow"}                                                           | Windows, Mac, Linux                |
 | [IINA](https://iina.io/){:rel="nofollow"}                                                                | Mac                                |
 | [Keka](https://www.keka.io/en/)                                                                          | Mac                                |
 | [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                                            | Windows                            |
