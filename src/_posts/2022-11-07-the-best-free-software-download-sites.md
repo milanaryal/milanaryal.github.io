@@ -1,7 +1,7 @@
 ---
 title: "The best free software download sites"
 date: 2022-11-07 00:00:00 +0545
-last_modified_at: 2023-01-21 00:00:00 +0545
+last_modified_at: 2023-02-05 00:00:00 +0545
 ---
 
 A list of alternative websites to download free and opensource software applications for Windows, Mac, Linux, Android and iOS platform.
@@ -26,12 +26,14 @@ A list of alternative websites to download free and opensource software applicat
 | [Portapps](https://portapps.io/){:rel="nofollow"}          | Windows     |
 | [PortableApps](https://portableapps.com/){:rel="nofollow"} | Windows     |
 
-| CLI Package Manager                                                         | OS Platform |
-| --------------------------------------------------------------------------- | ----------- |
-| [Homebrew Cask](https://github.com/Homebrew/homebrew-cask){:rel="nofollow"} | Mac         |
-| [Chocolatey](https://chocolatey.org/){:rel="nofollow"}                      | Windows     |
-| [Scoop](https://scoop.sh/){:rel="nofollow"}                                 | Windows     |
-| [Snapcraft](https://snapcraft.io/){:rel="nofollow"}                         | Linux       |
+| CLI Package Manager                                                                          | OS Platform    |
+| -------------------------------------------------------------------------------------------- | -------------- |
+| [Homebrew Cask](https://github.com/Homebrew/homebrew-cask){:rel="nofollow"}                  | Mac            |
+| [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/){:rel="nofollow"} | Windows        |
+| [Chocolatey](https://chocolatey.org/){:rel="nofollow"}                                       | Windows        |
+| [Scoop](https://scoop.sh/){:rel="nofollow"}                                                  | Windows        |
+| [Snapcraft](https://snapcraft.io/){:rel="nofollow"}                                          | Linux          |
+| Apt (aka. Apt-Get)                                                                           | Debian, Ubuntu |
 
 ### Download essential apps
 
@@ -45,9 +47,10 @@ A list of alternative websites to download free and opensource software applicat
 | [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                                         | Windows, Mac, Linux, Android, iOS  |
 | [GIMP](https://www.gimp.org/){:rel="nofollow"}                                                           | Windows, Mac, Linux                |
 | [IINA](https://iina.io/){:rel="nofollow"}                                                                | Mac                                |
-| [Keka](https://www.keka.io/en/)                                                                          | Mac                                |
+| [Keka](https://www.keka.io/en/){:rel="nofollow"}                                                         | Mac                                |
 | [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                                            | Windows                            |
 | [Microsoft Edge](https://www.microsoft.com/en-us/edge){:rel="nofollow"}                                  | Windows, Mac, Linux, Android, iOS  |
+| [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/){:rel="nofollow"}             | Windows                            |
 | [Nimblenote](https://nimblenote.app/){:rel="nofollow"}                                                   | Windows, Mac, Linux                |
 | [OBS Studio](https://obsproject.com/){:rel="nofollow"}                                                   | Windows, Mac, Linux                |
 | [Rufus](https://rufus.ie/en/){:rel="nofollow"}                                                           | Windows                            |
