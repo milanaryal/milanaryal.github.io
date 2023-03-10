@@ -1,7 +1,7 @@
 ---
 title: "The best free software download sites"
 date: 2022-11-07 00:00:00 +0545
-last_modified_at: 2023-02-05 00:00:00 +0545
+last_modified_at: 2023-03-10 00:00:00 +0545
 ---
 
 A list of alternative websites to download free and opensource software applications for Windows, Mac, Linux, Android and iOS platform.
@@ -43,6 +43,7 @@ A list of alternative websites to download free and opensource software applicat
 | [AppCleaner](https://freemacsoft.net/appcleaner/){:rel="nofollow"}                                       | Mac                                |
 | [Audacity](https://www.audacityteam.org/){:rel="nofollow"}                                               | Windows, Mac, Linux                |
 | [CCleaner](https://www.ccleaner.com/ccleaner/builds){:rel="nofollow"}                                    | Windows, Mac                       |
+| [CodeEdit](https://www.codeedit.app/){:rel="nofollow"}                                                   | Mac                                |
 | [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/browsers/){:rel="nofollow"}                      | Windows, Mac, Linux, Android, iOS  |
 | [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                                         | Windows, Mac, Linux, Android, iOS  |
 | [GIMP](https://www.gimp.org/){:rel="nofollow"}                                                           | Windows, Mac, Linux                |
@@ -59,6 +60,7 @@ A list of alternative websites to download free and opensource software applicat
 | [Titanium Software - Maintenance](https://www.titanium-software.fr/en/maintenance.html){:rel="nofollow"} | Operating System Utilities for Mac |
 | [Titanium Software - OnyX](https://www.titanium-software.fr/en/onyx.html){:rel="nofollow"}               | Operating System Utilities for Mac |
 | [Tor Browser](https://www.torproject.org/){:rel="nofollow"}                                              | Windows, Mac, Linux, Android       |
+| [Transmission](https://transmissionbt.com/){:rel="nofollow"}                                             | Mac, Linux, Windows                |
 | [unar](https://theunarchiver.com/command-line){:rel="nofollow"}                                          | Homebrew                           |
 | [Visual Studio Code](https://code.visualstudio.com/){:rel="nofollow"}                                    | Windows, Mac, Linux, Web           |
 | [VLC media player](https://www.videolan.org/vlc/index.html){:rel="nofollow"}                             | Windows, Mac, Linux, Android, iOS  |
