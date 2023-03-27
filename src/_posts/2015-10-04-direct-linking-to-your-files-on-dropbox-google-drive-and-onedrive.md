@@ -116,7 +116,15 @@ Becomes:
 https://onedrive.live.com/download?resid=FILE_ID
 ```
 
+> **Invitation to Dropbox!**
+>
+> Haven't join Dropbox yet? Sign up now with the Dropbox invitation link and install Dropbox on your desktop computer, you'll get extra 500 MB of bonus space: <https://www.dropbox.com/referrals/AADapKnBJpLqYvSvMcBxGAk9N4iiYHh7hJI?src=global9>{:rel="nofollow"}.
+
+<!-- 
+
 > **Invitation**
 >
 > Sign into **Microsoft OneDrive** (with your Microsoft account) with the following Microsoft OneDrive invitation link to **receive an extra 500 MB of free storage** on Microsoft OneDrive:
 > <https://onedrive.live.com?invref=8276ca569c4bc513&invscr=90>
+
+-->
