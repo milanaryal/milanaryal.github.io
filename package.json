@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.15",
-    "@fontsource/lora": "^4.5.13",
+    "@fontsource/lora": "^5.0.1",
     "@popperjs/core": "2.11.7",
     "bootstrap": "5.2.3",
     "headroom.js": "0.12.0",
