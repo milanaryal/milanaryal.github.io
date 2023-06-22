@@ -89,7 +89,7 @@
   .embed-caption {
     a {
       color: inherit;
-      text-decoration: underline var(--text-muted);
+      text-decoration: underline var(--body-secondary-color);
 
       &:hover,
       &:focus {
@@ -264,7 +264,7 @@
     font-style: normal;
     // font-weight: 400;
     line-height: 1.4;
-    color: var(--text-muted);
+    color: var(--body-secondary-color);
     text-align: center;
     // letter-spacing: 0;
     outline: 0;

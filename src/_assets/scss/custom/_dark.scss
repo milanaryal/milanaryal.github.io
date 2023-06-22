@@ -33,18 +33,18 @@
     }
   }
 
-  .navbar-light .navbar-brand {
+  .navbar .navbar-brand {
     // stylelint-disable-next-line declaration-no-important
     color: rgba(255, 255, 255, 0.8) !important;
   }
 
-  .navbar-light .navbar-brand:focus,
-  .navbar-light .navbar-brand:hover,
-  .navbar-light .navbar-nav .nav-link.active {
+  .navbar .navbar-brand:focus,
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-nav .nav-link.active {
     color: rgba(255, 255, 255, 0.9);
   }
 
-  .navbar-light .navbar-nav .nav-link {
+  .navbar .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.5);
 
     &:hover,

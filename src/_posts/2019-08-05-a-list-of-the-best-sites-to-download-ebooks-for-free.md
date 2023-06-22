@@ -2,10 +2,38 @@
 title: "A list of the best sites to download eBooks for free"
 description: "A curated list of the most popular websites to download eBooks for free of cost."
 date: 2019-08-05T10:35:00+05:45
-last_modified_at: 2023-01-07T00:00:00+05:45
+last_modified_at: 2023-06-21T00:00:00+05:45
 ---
 
 Here, I've curated a list of sites to download eBook for free of cost. In these free sites, you will found most of the eBooks in PDF, EPub or Mobi format. You may have probably bookmarked a few of these already.
+
+#### Z-Library
+
+Part of [Z-Library](https://en.wikipedia.org/wiki/Z-Library){:rel="nofollow"} project. The world's largest e-book library since 2009.
+
+_Mirror site(s):_
+
+- [zlibrary-global.se](https://zlibrary-global.se/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [singlelogin.re](https://{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}singlelogin.re/)
+- [singlelogin.site](https://singlelogin.site/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [Official Telegram channel](http://t.me/zlibrary_official)
+
+<!-- zlibrary.unblockit.ink -->
+<!-- Readme: https://zlibrary-global.se/blog/38 -->
+
+In case the singlelogin login page isn't available to you, please use TOR/I2P to log in to your account, copy the URL of your personal domain and use it in your regular browser. You can find out more and download [Tor](https://www.torproject.org/){:rel="nofollow"} or [I2P](https://github.com/PurpleI2P/i2pdbrowser/releases){:rel="nofollow"} browser.
+
+Tor site: <http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+
+I2P site: <http://zlib24th6ptyb4ibzn3tj2cndqafs6rhm4ed4gruxztaaco35lka.b32.i2p/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+
+Android APK: [Download](https://singlelogin.me/soft/zlibrary-app-latest.apk){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+
+How to use TOR?
+
+1. Tor is free to use. Simply [download and install the browser](http://torproject.org/download){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, which is a modified version of Firefox available for Windows, macOS, Linux, and Android.
+2. Open an URL <http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} in the TOR browser.
+3. Enjoy!
 
 #### Library Genesis
 
@@ -17,7 +45,7 @@ _Mirror site(s):_
 - [libgen.lc](https://libgen.lc/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [libgen.me](https://libgen.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [libgen.rs](http://libgen.rs/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [libgen.unblockit.ink](https://libgen.unblockit.ink/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [libgen.unblockit.mov](https://libgen.unblockit.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [bookfi.net](https://bookfi.net/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 #### PDF Drive
@@ -28,40 +56,25 @@ _Mirror site(s):_
 
 - [pdfdrive.com](http://www.pdfdrive.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
-#### Z-Library
+#### Anna's Archive
 
-Part of Z-Library project. The world's largest e-book library since 2009.
-
-Z-Library website is currently available only in Tor and I2P network. You can find out more and download [Tor](https://www.torproject.org/){:rel="nofollow"} or [I2P](https://github.com/PurpleI2P/i2pdbrowser/releases){:rel="nofollow"} browser.
-
-Tor site: <http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-
-I2P site: <http://kkd7tiqf5lv3olqfdnkw4znmmmmnjo2xqlxrp5ntthp6juowaiha.b32.i2p/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-
-Android APK: [Download](https://singlelogin.me/soft/zlibrary-app-latest.apk){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-
-How to use TOR?
-
-1. Tor is free to use. Simply [download and install the browser](http://torproject.org/download){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, which is a modified version of Firefox available for Windows, macOS, Linux, and Android.
-2. Open an URL <http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} in the TOR browser.
-3. Enjoy!
+The world’s largest open-source open-data library.
 
 _Mirror site(s):_
 
-- [singlelogin.me](https://singlelogin.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [b-ok.africa](http://b-ok.africa/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [zlibrary.unblockit.ink](http://zlibrary.unblockit.ink/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [annas-archive.org](https://annas-archive.org/)
+- [annas-archive.gs](https://annas-archive.gs/)
 
 ### More sites
 
-- [annasarchive](https://annasarchive.unblockit.ink/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [ebook3000](https://ebook3000.unblockit.ink/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [ebook777](https://ebook777.unblockit.ink/)
-- [ebookee](https://ebookee.unblockit.ink/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [freebookspot](https://freebookspot.unblockit.ink/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [gutenberg](https://gutenberg.unblockit.ink/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [magazinelib](https://magazinelib.unblockit.ink/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [scihub](https://scihub.unblockit.ink/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [annasarchive](https://annasarchive.unblockit.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [ebook3000](https://ebook3000.unblockit.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [ebook777](https://ebook777.unblockit.mov/)
+- [ebookee](https://ebookee.unblockit.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [freebookspot](https://freebookspot.unblockit.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [gutenberg](https://gutenberg.unblockit.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [magazinelib](https://magazinelib.unblockit.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [scihub](https://scihub.unblockit.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 _**Disclaimer & legal warning**: [This site](/) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._
 
@@ -82,8 +95,6 @@ _**Disclaimer & legal warning**: [This site](/) does not allow or condone illega
 -->
 
 ---
-
-https://www.dropbox.com/referrals/AADapKnBJpLqYvSvMcBxGAk9N4iiYHh7hJI?src=global9
 
 #### Related posts
 

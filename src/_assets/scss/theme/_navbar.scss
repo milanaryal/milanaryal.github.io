@@ -10,6 +10,11 @@
     // ** 64px + 1px (borderbottom or box-shadow) = 65px ** //
     height: 64px;
   }
+
+  .navbar-brand {
+    // stylelint-disable-next-line declaration-no-important
+    color: rgba(0, 0, 0, 0.8) !important;
+  }
 }
 
 .navbar-brand {
@@ -19,11 +24,6 @@
   // ** Font feature settings ** //
   font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
   font-variant-ligatures: common-ligatures;
-}
-
-.navbar-light .navbar-brand {
-  // stylelint-disable-next-line declaration-no-important
-  color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .nav-link {

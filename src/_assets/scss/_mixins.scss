@@ -7,12 +7,12 @@
 }
 
 @mixin theme-btn-social-share() {
-  color: var(--text-muted); // rgba(0, 0, 0, .6);
+  color: var(--body-secondary-color); // rgba(0, 0, 0, .6);
   background-color: var(--section-divider-secondary); // rgba(0, 0, 0, .05);
 
   &:focus,
   &:hover {
-    color: var(--text-muted); // rgba(0, 0, 0, .6);
+    color: var(--body-secondary-color); // rgba(0, 0, 0, .6);
     background-color: var(--section-divider); // rgba(0, 0, 0, .1);
   }
 }

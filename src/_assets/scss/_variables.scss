@@ -2,6 +2,7 @@
 //
 // Custom variables for the theme.
 
+$enable-dark-mode:          false;
 $brand-color:               #111 !default;
 $brand-primary:             darken($brand-color, 6.5%) !default;
 $text-color:                rgba(0, 0, 0, 0.8) !default;
@@ -20,15 +21,15 @@ $theme-colors-default: map-merge(
     "link-hover-color":          #00638a,
     "anchor-color":              rgba(0, 0, 0, 0.8),
     "anchor-hover-color":        #111,
-    "text-muted":                #888,
-    "text-muted-secondary":      #aaa,
+    "body-secondary-color":      #888,
+    "body-secondary-color2":     #aaa,
     "rule":                      rgba(0, 0, 0, 0.44), // rgba(0, 0, 0, 0.3)
     "section-divider":           rgba(0, 0, 0, 0.1),
     "section-divider-secondary": rgba(0, 0, 0, 0.05),
     "blockquote-border":         #e5e5e5,
     "blockquote-bg":             #fff,
     "pre-bg":                    #fff,
-    "code-color":                rgba(212, 73, 80, 1),
+    "code-color":                #d44950, // rgba(212, 73, 80, 1),
     "code-snippet-border":       rgba(0, 0, 0, 0.05)
   ),
   $theme-colors-default
@@ -70,14 +71,14 @@ $font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, 
 // stylelint-enable value-keyword-case
 $font-family-base:           var(--font-sans-serif) !default;
 
-$link-color:                inherit !default;
-$link-hover-color:          inherit !default;
+// $link-color:                inherit !default;
+// $link-hover-color:          inherit !default;
 $link-hover-decoration:     none !default;
 
 $blockquote-border-color:   $text-color !default;
 $hr-border:                 rgba(0, 0, 0, 0.05) !default;
 
-$code-color:                var(--code-color) !default;
+// $code-color:                var(--code-color) !default;
 
 $bs--gutter-x:              0.75rem !default;
 

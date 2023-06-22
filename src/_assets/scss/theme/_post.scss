@@ -18,7 +18,7 @@
   font-weight: 400;
   line-height: 1.1;
   // letter-spacing: 0;
-  color: var(--text-muted);
+  color: var(--body-secondary-color);
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -108,7 +108,7 @@
   // font-style: normal;
   // font-weight: 400;
   line-height: 1.4;
-  color: var(--text-muted);
+  color: var(--body-secondary-color);
   text-align: center;
   letter-spacing: 0;
   outline: 0;
@@ -129,7 +129,7 @@
   padding-bottom: 15px;
   font-size: 15px;
   line-height: 1.2;
-  color: var(--text-muted);
+  color: var(--body-secondary-color);
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -142,7 +142,7 @@
   padding-bottom: 25px;
   font-size: 15px;
   line-height: 1.2;
-  color: var(--text-muted);
+  color: var(--body-secondary-color);
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -174,7 +174,7 @@
   padding-left: 0;
   margin-left: -5px;
   font-size: 15px;
-  color: var(--text-muted);
+  color: var(--body-secondary-color);
   list-style: none;
 
   @media (min-width: 768px) {
@@ -276,7 +276,7 @@
 .post-author-card-text {
   max-width: 450px;
   font-size: 16px;
-  color: var(--text-muted);
+  color: var(--body-secondary-color);
 
   @media (min-width: 768px) {
     font-size: 17px;
@@ -303,7 +303,7 @@
       margin-bottom: 7px;
     }
     font-size: 14px;
-    color: var(--text-muted);
+    color: var(--body-secondary-color);
     text-transform: uppercase;
     letter-spacing: 0.22em;
   }
@@ -343,7 +343,7 @@
   margin: 0;
   font-size: 12px;
   font-weight: 400;
-  color: var(--text-muted);
+  color: var(--body-secondary-color);
   text-transform: uppercase;
   letter-spacing: 0.22em;
   border-bottom: solid 1px var(--section-divider-secondary); // rgba(0, 0, 0, .15);
@@ -409,7 +409,7 @@
   margin-top: 10px;
   font-size: 15px;
   line-height: 1.6;
-  color: var(--text-muted-secondary); // rgba(0, 0, 0, .3);
+  color: var(--body-secondary-color2); // rgba(0, 0, 0, .3);
   vertical-align: top;
 
   @media (min-width: 768px) {
