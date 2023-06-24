@@ -70,20 +70,14 @@ Following are the list of popular mobile based digital payment systems only avai
 
 - **[QPay](http://www.qpay.com.np/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){:rel="nofollow noopener noreferrer"}, and [iOS](https://itunes.apple.com/us/app/qpay-nepal/id1127765416?mt=8){:rel="nofollow noopener noreferrer"})
 
-#### List of other popular digital wallet alternatives in Nepal
-
-- **[EnetPay](https://www.enetpayment.com/){:rel="nofollow noopener noreferrer"}** (available for [Web](https://www.enetpayment.com/){:rel="nofollow noopener noreferrer"}, [Android](https://play.google.com/store/apps/details?id=np.com.onlinepayment){:rel="nofollow noopener noreferrer"}, and [iOS](https://itunes.apple.com/US/app/id1374131281?mt=8){:rel="nofollow noopener noreferrer"})
-
-- **[Moru](https://moru.com.np/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://bit.ly/2SMSQB2){:rel="nofollow noopener noreferrer"}, and [iOS](https://apple.co/3lHSacu){:rel="nofollow noopener noreferrer"})
-
-- **[iCash](https://icash.com.np/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://play.google.com/store/apps/details?id=com.silkinv.icash&hl=en&gl=US){:rel="nofollow noopener noreferrer"}, and [iOS](https://apps.apple.com/us/app/icash-mobile-payment/id1543688814){:rel="nofollow noopener noreferrer"})
-
-- **[d-पैसा](https://www.dpaisa.com/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://play.google.com/store/apps/details?id=com.dpaisa){:rel="nofollow noopener noreferrer"}, and [iOS](https://apps.apple.com/us/app/dpaisa-digital-payment-nepal/id1555859739){:rel="nofollow noopener noreferrer"})
-
 Last but not least:
 
 - [CG Pay](https://cgpay.com.np/){:rel="nofollow noopener noreferrer"}
+- [d-पैसा](https://www.dpaisa.com/){:rel="nofollow noopener noreferrer"}
+- [EnetPay](https://www.enetpayment.com/){:rel="nofollow noopener noreferrer"}
+- [iCash](https://icash.com.np/){:rel="nofollow noopener noreferrer"}
 - [iPay](https://ipay.com.np/){:rel="nofollow noopener noreferrer"}
+- [Moru](https://moru.com.np/){:rel="nofollow noopener noreferrer"}
 - [MyPay](https://mypay.com.np/){:rel="nofollow noopener noreferrer"}
 - [SajiloPay](https://sajilopay.com.np/){:rel="nofollow noopener noreferrer"}
 - [Thaili](https://www.thaili.com.np/){:rel="nofollow noopener noreferrer"}

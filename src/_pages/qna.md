@@ -2,7 +2,6 @@
 title: "Questions & answers"
 tagline: "General knowledge virtual quiz"
 description: "Get to know about Milan Aryal with a list of questions and answers."
-layout: "minimal"
 permalink: "/qna/"
 sitemap: false
 ---
@@ -26,6 +25,14 @@ He/him/his.
 #### Where are you from?
 
 I am from Kathmandu, Nepal.
+
+#### What are you specialised about?
+
+I am specialised in Finance & Accounting.
+
+#### What are your other interests of field?
+
+I am passionate about capital market (esp. [stock trading](<https://en.wikipedia.org/wiki/Trade_(finance)>){:rel="nofollow"}) and also interested in front-end web development (esp. [Jamstack](https://en.wikipedia.org/wiki/Jamstack){:rel="nofollow"}).
 
 #### Why do you build this site?
 

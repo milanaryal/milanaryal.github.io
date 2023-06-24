@@ -44,6 +44,9 @@ Nepal stock market related list of useful websites that you might like to bookma
 - [Pension Management Office](https://pension.gov.np/)
 - [Nepal Bankers' Association](http://nepalbankers.com.np/)
 - [Development Bankers' Association](https://dban.com.np/)
+- [Financial Comptroller General Office (FCGO)](https://www.fcgo.gov.np/)
+- [Office of the Auditor General](https://www.oag.gov.np/en)
+- [Department of National ID and Civil Registration](https://donidcr.gov.np/)
 
 ### NEPSE online technical analysis chart [for free]
 

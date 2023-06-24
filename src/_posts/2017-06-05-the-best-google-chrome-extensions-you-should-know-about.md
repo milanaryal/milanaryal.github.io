@@ -84,10 +84,6 @@ uBlock Origin is an efficient [wide-spectrum blocker](https://github.com/gorhill
 
 uBO is a lightweight best content-filtering (including ad-blocking) for Chrome out there. Check out [FilterLists](http://filterlists.com/){:rel="nofollow"} for a comprehensive list of filter lists from all over the web (click the Add link of a filter list to import that list into uBO).
 
-#### [HTTPS Everywhere: Secure Connections](https://chrome.google.com/webstore/detail/http-everywhere/gcbommkclmclpchllfjekcdonpmejbdp?hl=en){:rel="nofollow"}
-
-HTTPS Everywhere automatically makes websites use the more secure HTTPS connection instead of HTTP, if they support it. It will protect you against many forms of surveillance and account hijacking, and some forms of censorship.
-
 #### [Decentraleyes: Block Content Delivery Networks](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj?hl=en){:rel="nofollow"}
 
 Decentraleyes emulates Content Delivery Networks locally by intercepting requests, finding the required resource, and injecting it into the environment. This all happens instantaneously, automatically, and no prior configuration is required.
