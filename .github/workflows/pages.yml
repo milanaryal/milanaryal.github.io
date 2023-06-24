@@ -72,11 +72,11 @@ jobs:
       #   run: apt-get update && apt-get install --no-install-recommends --yes minify
 
       # Setup Go using Homebrew
-      - name: Install Go using Homebrew
-        run: |
-          brew install go || true
-          brew unlink go && brew link --overwrite --dry-run go || true
-          brew link --overwrite go || true
+      # - name: Install Go using Homebrew
+      #  run: |
+      #    brew install go || true
+      #    brew unlink go && brew link --overwrite --dry-run go || true
+      #    brew link --overwrite go || true
 
       # https://github.com/tdewolff/homebrew-tap/
       - name: Install Minify using Homebrew
@@ -96,15 +96,15 @@ jobs:
         run: |
           minify --type=json --recursive --output . --match=\.json ./_site/ --verbose || true \
             && \
-            minify --type=json --output ./_site/ ./_site/manifest.webmanifest --verbose || true
+            minify --type=json --output . ./_site/manifest.webmanifest --verbose || true
 
       - name: Checking HTML files
         run: |
           bundle exec htmlproofer ./_site/ \
-            --enforce_https "false" \
-            --ignore_files "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" \
-            --ignore_status_codes "403,429" \
-            --only_4xx \
+            --no-enforce-https \
+            --ignore-files "/.+\/example-content.+/,/.+\/googleca1cec34378dc996.html/,/.+\/pinterest-eac13.html/,/.+\/random\/index.html/,/.+\/style-guide\/index.html/" \
+            --ignore-status-codes "403,429" \
+            --only-4xx \
             || true
 
       - name: Upload artifact

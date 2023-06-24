@@ -27,13 +27,13 @@ Tor site: <http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion
 
 I2P site: <http://zlib24th6ptyb4ibzn3tj2cndqafs6rhm4ed4gruxztaaco35lka.b32.i2p/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
-Android APK: [Download](https://singlelogin.me/soft/zlibrary-app-latest.apk){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+Android APK: [Download](https://singlelogin.re/soft/zlibrary-app-latest.apk){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
-How to use TOR?
-
-1. Tor is free to use. Simply [download and install the browser](http://torproject.org/download){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, which is a modified version of Firefox available for Windows, macOS, Linux, and Android.
-2. Open an URL <http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} in the TOR browser.
-3. Enjoy!
+> How to use TOR?
+>
+> 1. Tor is free to use. Simply [download and install the browser](http://torproject.org/download){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}, which is a modified version of Firefox available for Windows, macOS, Linux, and Android.
+> 2. Open an _TOR URL_ in the TOR browser.
+> 3. Enjoy!
 
 #### Library Genesis
 
