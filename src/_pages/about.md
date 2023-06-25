@@ -112,7 +112,7 @@ In case you were wondering, this site is:
 - Built with [npm](https://www.npmjs.com/) packages to compile site assets
 - Generated with [Jekyll](https://jekyllrb.com/), and hosted on [GitHub Pages](https://pages.github.com/)
 
-...for more information see [humans.txt](/humans.txt). You can find more about my macOS development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config). The design and code powering this site, is open-sourced on Github ((view source)[https://github.com/MilanAryal/milanaryal.github.io]).
+...for more information see [humans.txt](/humans.txt). You can find more about my macOS development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config). The design and code powering this site, is open-sourced on Github ([view source](https://github.com/MilanAryal/milanaryal.github.io)).
 
 If you enjoy the content found here, you might like to subscribe to my <span class="d-inline-block">{% include icons/rss.svg width="1em" height="1em" class="icon icon-rss p-1px" %}&nbsp;[feed](/feed.xml){: title="Atom Feed"}.</span> Also feel free to send me any feedback, comments, or suggestions about the site.
 
