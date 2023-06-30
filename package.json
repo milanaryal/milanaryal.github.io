@@ -62,7 +62,7 @@
     "bundlewatch": "^0.3.3",
     "chokidar-cli": "^3.0.0",
     "clean-webpack-plugin": "^4.0.0",
-    "cpy-cli": "^4.2.0",
+    "cpy-cli": "^5.0.0",
     "cssnano": "^6.0.1",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
