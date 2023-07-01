@@ -2,7 +2,7 @@
 // Dark theme
 //
 
-@media (prefers-color-scheme: dark) {
+@include color-mode(dark, true) {
   // _reboot.scss
   //
 
@@ -50,6 +50,18 @@
     &:hover,
     &:focus {
       color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .navbar,
+  .search-page-content {
+    .form-control {
+      color: #ccc;
+      background-color: #333;
+      border: 1px solid #333;
+    }
+    .btn-outline-secondary {
+      border-color: #333;
     }
   }
 

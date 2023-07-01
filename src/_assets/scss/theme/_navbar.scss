@@ -47,20 +47,10 @@
 .search-page-content {
   .form-control {
     background-color: #fafafa;
-
-    @media (prefers-color-scheme: dark) {
-      color: #ccc;
-      background-color: #333;
-      border: 1px solid #333;
-    }
   }
 
   .btn-outline-secondary {
     border-color: #ced4da;
-
-    @media (prefers-color-scheme: dark) {
-      border-color: #333;
-    }
   }
 }
 

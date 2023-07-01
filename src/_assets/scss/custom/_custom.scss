@@ -21,11 +21,14 @@ figure.map-wrapper {
   width: 100%;
   min-width: 575px;
   height: 350px;
+}
 
-  @media (prefers-color-scheme: dark) {
+@include color-mode(dark, true) {
+  #map-canvas {
     opacity: 0.75;
   }
 }
+
 // stylelint-enable selector-max-id
 
 // About and contact page social links
@@ -50,22 +53,27 @@ ul.social-links {
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
 
-    @media (prefers-color-scheme: dark) {
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.8);
+      text-decoration: none;
+    }
+
+    .icon {
+      font-size: 3.33em;
+    }
+  }
+}
+
+@include color-mode(dark, true) {
+  ul.social-links {
+    a {
       color: rgba(255, 255, 255, 0.7);
     }
 
     &:hover,
     &:focus {
-      color: rgba(0, 0, 0, 0.8);
-      text-decoration: none;
-
-      @media (prefers-color-scheme: dark) {
-        color: rgba(255, 255, 255, 0.8);
-      }
-    }
-
-    .icon {
-      font-size: 3.33em;
+      color: rgba(255, 255, 255, 0.8);
     }
   }
 }
@@ -118,16 +126,21 @@ p.pgp-key {
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
 
-    @media (prefers-color-scheme: dark) {
-      color: rgba(255, 255, 255, 0.7);
-    }
-
     &:hover,
     &:focus {
       color: rgba(0, 0, 0, 0.8);
       text-decoration: none;
+    }
+  }
+}
 
-      @media (prefers-color-scheme: dark) {
+@include color-mode(dark, true) {
+  p.pgp-key {
+    a {
+      color: rgba(255, 255, 255, 0.7);
+
+      &:hover,
+      &:focus {
         color: rgba(255, 255, 255, 0.8);
       }
     }

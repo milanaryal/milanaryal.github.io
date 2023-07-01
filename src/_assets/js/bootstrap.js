@@ -1,3 +1,4 @@
+import './color-modes'
 import 'bootstrap/js/dist/collapse'
 import Tooltip from 'bootstrap/js/dist/tooltip'
 

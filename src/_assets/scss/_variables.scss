@@ -2,10 +2,19 @@
 //
 // Custom variables for the theme.
 
-$enable-dark-mode:          false;
-$brand-color:               #111 !default;
+$brand-color:             #111 !default;
 $brand-primary:             darken($brand-color, 6.5%) !default;
-$text-color:                rgba(0, 0, 0, 0.8) !default;
+$text-color:              rgba(0, 0, 0, 0.8) !default;
+$font-family-sans-serif:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base:          var(--font-sans-serif) !default;
+$bs--gutter-x:              0.75rem !default;
+// $link-color:              inherit !default;
+// $link-hover-color:        inherit !default;
+$link-hover-decoration:     none !default;
+$blockquote-border-color:   $text-color !default;
+$hr-border:               rgba(0, 0, 0, 0.05) !default;
+// $code-color:              var(--code-color) !default;
 
 // Light theme
 
@@ -60,27 +69,6 @@ $theme-colors-dark: map-merge(
   ),
   $theme-colors-dark
 );
-
-// Bootstrap
-//
-// Override custom settings.
-
-// stylelint-disable value-keyword-case
-$font-family-sans-serif:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-// stylelint-enable value-keyword-case
-$font-family-base:           var(--font-sans-serif) !default;
-
-// $link-color:                inherit !default;
-// $link-hover-color:          inherit !default;
-$link-hover-decoration:     none !default;
-
-$blockquote-border-color:   $text-color !default;
-$hr-border:                 rgba(0, 0, 0, 0.05) !default;
-
-// $code-color:                var(--code-color) !default;
-
-$bs--gutter-x:              0.75rem !default;
 
 // Brand colors (http://brandcolors.net), (https://brand-colors.re.im)
 //
