@@ -29,7 +29,7 @@ Join me on the following networks and/or websites:
   {% endif %}
   {% if site.author.instagram %}
   <li>
-     <a rel="me" href="https://instagram.com/{{ site.author.instagram }}">
+     <a rel="me" href="https://www.instagram.com/{{ site.author.instagram }}/">
        {% include icons/instagram.svg width="1em" height="1em" class="icon icon-instagram" %}
        <br />
        <span class="label">Instagram</span>
@@ -56,7 +56,7 @@ Join me on the following networks and/or websites:
   {% endif %}
   {% if site.author.facebook %}
   <li>
-    <a rel="me" href="https://facebook.com/{{ site.author.facebook }}">
+    <a rel="me" href="https://www.facebook.com/{{ site.author.facebook }}">
       {% include icons/facebook.svg width="1em" height="1em" class="icon icon-facebook" %}
       <br />
       <span class="label">Facebook</span>
@@ -112,7 +112,7 @@ In case you were wondering, this site is:
 - Built with [npm](https://www.npmjs.com/) packages to compile site assets
 - Generated with [Jekyll](https://jekyllrb.com/), and hosted on [GitHub Pages](https://pages.github.com/)
 
-...for more information see [humans.txt](/humans.txt). You can find more about my macOS development environment setup in my [config repo on GitHub](https://github.com/MilanAryal/config). The design and code powering this site, is open-sourced on Github ([view source](https://github.com/MilanAryal/milanaryal.github.io)).
+...for more information see [humans.txt](/humans.txt). You can find more about my macOS development environment setup in my [config repo on GitHub](https://github.com/milanaryal/config). The design and code powering this site, is open-sourced on Github ([view source](https://github.com/milanaryal/milanaryal.github.io)).
 
 If you enjoy the content found here, you might like to subscribe to my <span class="d-inline-block">{% include icons/rss.svg width="1em" height="1em" class="icon icon-rss p-1px" %}&nbsp;[feed](/feed.xml){: title="Atom Feed"}.</span> Also feel free to send me any feedback, comments, or suggestions about the site.
 
@@ -120,4 +120,4 @@ If you enjoy the content found here, you might like to subscribe to my <span cla
 
 ### [Licensing](/fine-print/)
 
-Except as otherwise noted, the content of this site is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/){: target="\_blank" rel="noopener nofollow"}, and code samples are licensed under the [MIT license](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/main/LICENSE){: target="\_blank" rel="noopener"}.
+Except as otherwise noted, the content of this site is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/){: target="\_blank" rel="noopener nofollow"}, and code samples are licensed under the [MIT license](https://raw.githubusercontent.com/milanaryal/milanaryal.github.io/main/LICENSE){: target="\_blank" rel="noopener"}.

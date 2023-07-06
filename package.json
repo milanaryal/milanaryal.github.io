@@ -45,16 +45,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@fontsource/inter": "^5.0.3",
-    "@fontsource/lora": "^5.0.3",
+    "@fontsource/inter": "^5.0.4",
+    "@fontsource/lora": "^5.0.4",
     "@popperjs/core": "2.11.8",
     "bootstrap": "5.3.0",
     "headroom.js": "0.12.0",
     "jquery": "3.7.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
+    "@babel/core": "^7.22.6",
+    "@babel/preset-env": "^7.22.6",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
@@ -75,10 +75,10 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "rimraf": "^5.0.1",
     "sass": "^1.63.6",
-    "stylelint": "^15.9.0",
+    "stylelint": "^15.10.0",
     "stylelint-config-twbs-bootstrap": "^11.0.0",
     "stylelint-prettier": "^3.0.0",
     "terser-webpack-plugin": "^5.3.9",
@@ -88,12 +88,12 @@
   "main": "_site/index.html",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MilanAryal/milanaryal.github.io.git"
+    "url": "git+https://github.com/milanaryal/milanaryal.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/MilanAryal/milanaryal.github.io/issues"
+    "url": "https://github.com/milanaryal/milanaryal.github.io/issues"
   },
-  "homepage": "https://github.com/MilanAryal/milanaryal.github.io#readme",
+  "homepage": "https://github.com/milanaryal/milanaryal.github.io#readme",
   "author": "Milan Aryal",
   "license": "MIT"
 }

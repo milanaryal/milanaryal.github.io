@@ -11,7 +11,7 @@ robots: "noindex, follow"
 
 Posts in [Milan Aryal](https://milanaryal.com.np/)'s blog are written in Markdown which are generated in standard HTML using [Jekyll](https://jekyllrb.com/).
 
-This style guide is written in Markdown, the raw file is available [here](https://raw.githubusercontent.com/MilanAryal/milanaryal.github.io/main/src/_pages/style-guide.md).
+This style guide is written in Markdown, the raw file is available [here](https://raw.githubusercontent.com/milanaryal/milanaryal.github.io/main/src/_pages/style-guide.md).
 
 ---
 
@@ -125,8 +125,8 @@ For example, `<section>` should be wrapped as inline.
 
 | #   | First name | Last name |   Username    |
 | :-- | :--------: | :-------: | :-----------: |
-| 1   |   Milan    |   Aryal   |  @MilanAryal  |
-| 2   |  Kshitiz   |   Aryal   | @KshitizAryal |
+| 1   |   Milan    |   Aryal   |  @milanaryal  |
+| 2   |  Kshitiz   |   Aryal   | @kshitizaryal |
 | 3   |   Larry    | the Bird  |   @Twitter    |
 
 ---

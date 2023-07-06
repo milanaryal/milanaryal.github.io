@@ -16,29 +16,29 @@ words_per_minute: 180
 author:
   name: "Milan Aryal"
   email: null
-  uri: "https://twitter.com/MilanAryal"
+  uri: "https://twitter.com/milanaryal"
   avatar: "/assets/img/avatar.png"
   bio: "I'm just a regular person who believes life is simple, and I like a simple life."
   pronoun: "he/him"
   gender: "Male"
   nationality: "Nepal"
   facebook: null
-  github: "MilanAryal"
-  instagram: "MilanAryal"
+  github: "milanaryal"
+  instagram: "milanaryal"
   keybase: null
   linkedin: null
   telegram: null
-  twitter: "MilanAryal"
-  pinterest: "MilanAryal"
+  twitter: "milanaryal"
+  pinterest: "milanaryal"
 
 social:
   name: "Milan Aryal"
   facebook_admin: "100001982813077"
-  twitter: "MilanAryal"
+  twitter: "milanaryal"
   links:
-    - https://twitter.com/MilanAryal
+    - https://twitter.com/milanaryal
     - https://www.instagram.com/milanaryal/
-    - https://github.com/MilanAryal
+    - https://github.com/milanaryal
 
 disqus_shortname: null
 google_analytics_id: null

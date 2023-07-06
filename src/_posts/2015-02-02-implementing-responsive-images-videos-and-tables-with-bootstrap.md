@@ -107,7 +107,7 @@ When Bootstrap 3.2 came out, it came out with an additional helper class to make
 
 Notice how the `iframe` doesn't include `frameborder="0"`. This is because Bootstrap will actually normalize any ugly outlines for you with this helper class.
 
-{% include embed.html src="codepen" id="myByRw" user="MilanAryal" %}
+{% include embed.html src="codepen" id="myByRw" user="milanaryal" %}
 
 This method also works to have responsive `iframe` object for like SlideShare.
 

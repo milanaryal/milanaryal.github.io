@@ -12,17 +12,17 @@ Input:
 
 ```html
 <iframe
-  src="https://gist.github.com/MilanAryal/e9d558eae37b0aba9faeb4cbf061e970.pibb"
+  src="https://gist.github.com/milanaryal/e9d558eae37b0aba9faeb4cbf061e970.pibb"
   style="width: 100%; height: 300px; border: 0;"
 >
 </iframe>
 ```
 
-Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/MilanAryal/e9d558eae37b0aba9faeb4cbf061e970)) in order to get the _HTML-only_ version suitable for embedding in any other site.
+Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/milanaryal/e9d558eae37b0aba9faeb4cbf061e970)) in order to get the _HTML-only_ version suitable for embedding in any other site.
 
 Output:
 
-{% include embed.html src="gist" id="e9d558eae37b0aba9faeb4cbf061e970" user="MilanAryal" %}
+{% include embed.html src="gist" id="e9d558eae37b0aba9faeb4cbf061e970" user="milanaryal" %}
 
 ---
 

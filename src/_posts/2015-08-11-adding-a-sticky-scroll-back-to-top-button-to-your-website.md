@@ -137,12 +137,12 @@ Then add the following jQuery snippet on your script file. This script helps to 
 
 Here's a nice demo on CodePen:
 
-{% include embed.html src="codepen" id="gpEdYM" user="MilanAryal" %}
+{% include embed.html src="codepen" id="gpEdYM" user="milanaryal" %}
 
 Following are the code snippets link of this article:
 
-- [View demo](https://codepen.io/MilanAryal/full/gpEdYM)
-- [HTML](https://codepen.io/MilanAryal/pen/gpEdYM.html)
-- [CSS](https://codepen.io/MilanAryal/pen/gpEdYM.css)
-- [Less](https://codepen.io/MilanAryal/pen/gpEdYM.less)
-- [Script](https://codepen.io/MilanAryal/pen/gpEdYM.js)
+- [View demo](https://codepen.io/milanaryal/full/gpEdYM)
+- [HTML](https://codepen.io/milanaryal/pen/gpEdYM.html)
+- [CSS](https://codepen.io/milanaryal/pen/gpEdYM.css)
+- [Less](https://codepen.io/milanaryal/pen/gpEdYM.less)
+- [Script](https://codepen.io/milanaryal/pen/gpEdYM.js)

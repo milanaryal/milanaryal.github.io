@@ -57,7 +57,7 @@ The following is an example of how to mark up a HTML5 webpage using the schema.o
 <script src="https://gist.github.com/ee861d7a065cc05868d9.js?file=schema-org-structured-data-markup-using-microdata.html"></script>
 -->
 
-{% include embed.html src="gist" id="ee861d7a065cc05868d9" user="MilanAryal" %}
+{% include embed.html src="gist" id="ee861d7a065cc05868d9" user="milanaryal" %}
 
 ### Expected types, text, and URLs
 

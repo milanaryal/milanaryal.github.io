@@ -251,10 +251,10 @@ _You should style the elements according to your need._
 
 You might want to look onto the following examples on CodePen styled with SCSS (a CSS preprocessor) and build with Slim (a HTML preprocessor).
 
-{% include embed.html src="codepen" id="pJxqzM" user="MilanAryal" caption="Custom styling lists with CSS" %}
+{% include embed.html src="codepen" id="pJxqzM" user="milanaryal" caption="Custom styling lists with CSS" %}
 
-{% include embed.html src="codepen" id="aORxzB" user="MilanAryal" caption="Using CSS counters" %}
+{% include embed.html src="codepen" id="aORxzB" user="milanaryal" caption="Using CSS counters" %}
 
-{% include embed.html src="codepen" id="BNqGmr" user="MilanAryal" caption="Customize your ordered lists with CSS" %}
+{% include embed.html src="codepen" id="BNqGmr" user="milanaryal" caption="Customize your ordered lists with CSS" %}
 
-{% include embed.html src="codepen" id="GJYwdO" user="MilanAryal" caption="Custom styling ordered lists" %}
+{% include embed.html src="codepen" id="GJYwdO" user="milanaryal" caption="Custom styling ordered lists" %}

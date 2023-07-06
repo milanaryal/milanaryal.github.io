@@ -111,4 +111,4 @@ It will output our compressed images in output folder.
 
 ### Further resources
 
-[Imagemin template](https://github.com/MilanAryal/imagemin-template) on GitHub.
+[Imagemin template](https://github.com/milanaryal/imagemin-template) on GitHub.

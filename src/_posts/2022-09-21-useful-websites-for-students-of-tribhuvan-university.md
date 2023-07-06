@@ -35,7 +35,7 @@ A list of websites that are helpful for regular updates about exam routine, noti
 Followings are the list of social media accounts for the latest updates about exam routine, results, and other essential updates.
 
 - [facebook.com/officialtunotice](https://www.facebook.com/officialtunotice/)
-- [instagram.com/tunotice](https://instagram.com/tunotice)
+- [instagram.com/tunotice](https://www.instagram.com/tunotice/)
 - [facebook.com/tunoticenepal](https://www.facebook.com/tunoticenepal/)
 - [facebook.com/TTKirtipur](https://www.facebook.com/TTKirtipur/)
 - [facebook.com/RONUnepal](https://www.facebook.com/RONUnepal): Routine of Nepalese University
