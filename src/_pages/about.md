@@ -65,7 +65,7 @@ Join me on the following networks and/or websites:
   {% endif %}
   {% if site.author.linkedin %}
   <li>
-    <a rel="me" href="https://linkedin.com/in/{{ site.author.linkedin }}">
+    <a rel="me" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">
       {% include icons/linkedin.svg width="1em" height="1em" class="icon icon-linkedin" %}
       <br />
       <span class="label">LinkedIn</span>
@@ -74,7 +74,7 @@ Join me on the following networks and/or websites:
   {% endif %}
   {% if site.author.pinterest %}
   <li>
-    <a rel="me" href="https://pinterest.com/{{ site.author.pinterest }}">
+    <a rel="me" href="https://www.pinterest.com/{{ site.author.pinterest }}/">
       {% include icons/pinterest.svg width="1em" height="1em" class="icon icon-pinterest" %}
       <br />
       <span class="label">Pinterest</span>
