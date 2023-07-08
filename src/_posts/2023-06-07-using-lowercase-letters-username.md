@@ -5,7 +5,7 @@ date: 2023-06-07 08:00:00 +05:45
 
 I am changing my usernames on most social media sites to a classic way of using a combination of lowercase letters.
 
-Most popular social media platforms like Instagram, Pinterest, etc. do not allow cAsE sEnSitIvE usernames and force users to use lowercase-only usernames.
+Most popular social media platforms (like Instagram) do not allow cAsE sEnSitIvE usernames and force users to use lowercase-only usernames. Usernames with lowercase letters look cleaner and are easier to type.
 
 Old platforms like [Discord are also implementing a new system](https://discord.com/blog/usernames){:rel="nofollow"} that only allows unique combinations of lowercase letters, numbers, and two special characters: the underscore (\_) and the period (.). This is unlike the old format, which allowed both lowercase and uppercase letters (with a discriminator).
 
