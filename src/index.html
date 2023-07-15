@@ -46,6 +46,14 @@ permalink: "/"
           <p class="card-text mb-3">{% if site_author_pronoun %}<span class="fw-light">{{ site_author_pronoun }} &mdash; </span>{% endif %}{{ site_author_bio }}</p>
 
           <ul class="hero-social">
+            <li>
+              <a class="icon-instagram d-flex align-items-center justify-content-center" rel="me" href="https://mastodon.social/@milanaryal" aria-label="Mastodon">
+                {% include icons/mastodon.svg width="1em" height="1em" class="svg" %}
+                <span class="label">Mastodon</span>
+              </a>
+            </li><!--
+
+            -->
             {% if site.author.twitter %}<li>
               <a class="icon-twitter d-flex align-items-center justify-content-center" rel="me" href="https://twitter.com/{{ site.author.twitter }}" aria-label="Twitter">
                 {% include icons/twitter.svg width="1em" height="1em" class="svg" %}
