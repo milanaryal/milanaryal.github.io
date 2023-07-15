@@ -38,7 +38,7 @@
     "lint-mdl": "bundle exec mdl --ignore-front-matter --style .mdl_style.rb src/_posts || true",
     "lint-site": "JEKYLL_ENV=production bundle exec jekyll build --profile --trace && linkinator \"./_site\" --recurse --verbosity error",
     "brew": "brew install tdewolff/tap/minify",
-    "minify-icons": "minify --type=svg --match=\\.svg --recursive --output \"./src/_includes/\" \"./src/_includes/icons/\" --verbose",
+    "minify-icons": "minify --type=svg --match=\\.svg --recursive --output \"./src/_includes/icons\" \"./src/_includes/icons/\" --verbose",
     "format": "prettier --write \"**/*.{js,scss,json,yml,md}\"",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
     "uploadwatch": "bundlewatch --max-size 900kb --compression none ./src/uploads/*.{gif,jpg,png}",

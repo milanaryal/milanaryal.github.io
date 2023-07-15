@@ -18,6 +18,13 @@ Join me on the following networks and/or websites:
 
 <!-- Social links -->
 <ul class="social-links">
+  <li>
+    <a rel="me" href="https://mastodon.social/@milanaryal">
+      {% include icons/mastodon.svg width="1em" height="1em" class="icon icon-mastodon" %}
+      <br />
+      <span class="label">Mastodon</span>
+    </a>
+  </li>  
   {% if site.author.twitter %}
   <li>
     <a rel="me" href="https://twitter.com/{{ site.author.twitter }}">
