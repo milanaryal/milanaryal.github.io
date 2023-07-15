@@ -30,7 +30,7 @@ Now, upload the two files in your hosting site.
 Then, you will need to link the `prism.css` and `prism.js` files in your index page. Example:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     ...

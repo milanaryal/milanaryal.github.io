@@ -103,7 +103,7 @@ Then add the following jQuery snippet on your script file. This script helps to 
   // should have already contain wrapper on a page.
   // <div class="elevator-wrapper"></div>
   $(".elevator-wrapper").append(
-    '<div class="elevator"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>'
+    '<div class="elevator"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>',
   );
 
   // browser window scroll (in pixels) after which the "back to top" link is shown
@@ -127,7 +127,7 @@ Then add the following jQuery snippet on your script file. This script helps to 
       {
         scrollTop: 0,
       },
-      scroll_top_duration
+      scroll_top_duration,
     );
   });
 })(jQuery);

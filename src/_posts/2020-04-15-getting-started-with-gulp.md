@@ -269,7 +269,7 @@ function css() {
     .pipe(
       sass
         .sync({ precision: 6, outputStyle: "expanded" })
-        .on("error", sass.logError)
+        .on("error", sass.logError),
     )
     .pipe(prefix())
     .pipe(dest("assets/css"))

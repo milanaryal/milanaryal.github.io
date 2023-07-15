@@ -98,7 +98,7 @@ For example, `<section>` should be wrapped as inline.
 #### Code block
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
