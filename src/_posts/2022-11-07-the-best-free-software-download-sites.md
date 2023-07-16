@@ -51,6 +51,7 @@ A list of alternative websites to download free and opensource software applicat
 | [Keka](https://www.keka.io/en/){:rel="nofollow"}                                                         | Mac                                |
 | [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                                            | Windows                            |
 | [Microsoft Edge](https://www.microsoft.com/en-us/edge){:rel="nofollow"}                                  | Windows, Mac, Linux, Android, iOS  |
+| [Microsoft PC Manager](https://pcmanager.microsoft.com/){:rel="nofollow"}                                | Windows                            |
 | [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/){:rel="nofollow"}             | Windows                            |
 | [Nimblenote](https://nimblenote.app/){:rel="nofollow"}                                                   | Windows, Mac, Linux                |
 | [OBS Studio](https://obsproject.com/){:rel="nofollow"}                                                   | Windows, Mac, Linux                |
@@ -67,5 +68,6 @@ A list of alternative websites to download free and opensource software applicat
 
 #### Resources
 
+- [How to use Homebrew on macOS to install third-party tools & apps](/how-to-use-homebrew-on-macos-to-install-third-party-tools-and-apps/)
 - [Free and Open Source](https://alternativeto.net/list/15116/free-and-open-source/){:rel="nofollow"}, _AlternativeTo_
 - [The Complete Suite of Programs Needed After New Windows Installation [V2.0: Advanced]](https://alternativeto.net/list/10598/the-complete-suite-of-programs-needed-after-new-windows-install-v2-0-advanced-/){:rel="nofollow"}, _AlternativeTo_

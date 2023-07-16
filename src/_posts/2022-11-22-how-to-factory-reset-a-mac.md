@@ -3,7 +3,7 @@ title: "How to factory reset a Mac"
 date: 2022-11-12 00:00:00 +0545
 ---
 
-Looking to reset your computer to its factory settings? _MacOS Ventura_ makes it a little easier than before, but you have options no matter your Mac or OS version.
+Looking to reset your computer to its factory settings? _macOS Ventura_ makes it a little easier than before, but you have options no matter your Mac or OS version.
 
 1. From the Apple menu  in the corner of your screen, choose "System Settings".
 2. Click "General" in the sidebar.
