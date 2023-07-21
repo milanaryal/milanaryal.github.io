@@ -43,6 +43,15 @@ Join me on the following networks and/or websites:
     </a>
   </li>
   {% endif %}
+  {% if site.author.instagram %}
+  <li>
+     <a rel="me" href="https://www.threads.net/@{{ site.author.instagram }}">
+       {% include icons/threads.svg width="1em" height="1em" class="icon icon-threads" %}
+       <br />
+       <span class="label">Threads</span>
+    </a>
+  </li>
+  {% endif %}
   {% if site.author.github %}
   <li>
     <a rel="me" href="https://github.com/{{ site.author.github }}">
