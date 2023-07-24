@@ -98,6 +98,7 @@ ul.hero-social {
 
     &:hover {
       border-color: #fafafa;
+      background-color: #000;
 
       // stylelint-disable selector-max-type
       svg {
@@ -106,23 +107,23 @@ ul.hero-social {
       // stylelint-enable selector-max-type
     }
 
-    &.icon-twitter:hover {
-      // color: $twitter-color;
-      background-color: $twitter-color;
-      // border: solid 1px $twitter-color;
+    // &.icon-x:hover {
+      // color: $x-color;
+      // background-color: $x-color;
+      // border: solid 1px $x-color;
 
       // svg {
       // fill: #fff;
       // }
-    }
+    // }
 
-    &.icon-instagram:hover {
-      background-color: $instagram-color;
-    }
+    // &.icon-instagram:hover {
+      // background-color: $instagram-color;
+    // }
 
-    &.icon-github:hover {
-      background-color: $github-color;
-    }
+    // &.icon-github:hover {
+      // background-color: $github-color;
+    // }
 
     // stylelint-disable selector-max-type
     svg {

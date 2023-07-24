@@ -15,7 +15,7 @@ layout: null
 /* AUTHOR */
 
   Name: Milan Aryal
-  Twitter: @milanaryal
+  Mastodon: @milanaryal@mastodon.social
   Location: Kathmandu, Nepal
 
 /* SITE */

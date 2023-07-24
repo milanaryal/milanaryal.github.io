@@ -25,12 +25,12 @@ Join me on the following networks and/or websites:
       <span class="label">Mastodon</span>
     </a>
   </li>  
-  {% if site.author.twitter %}
+  {% if site.author.x %}
   <li>
-    <a rel="me" href="https://twitter.com/{{ site.author.twitter }}">
-      {% include icons/twitter.svg width="1em" height="1em" class="icon icon-twitter" %}
+    <a rel="me" href="https://x.com/{{ site.author.x }}">
+      {% include icons/x.svg width="1em" height="1em" class="icon icon-x" %}
       <br />
-      <span class="label">Twitter</span>
+      <span class="label">X</span>
     </a>
   </li>
   {% endif %}

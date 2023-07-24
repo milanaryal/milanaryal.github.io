@@ -30,6 +30,7 @@ author:
   telegram: null
   twitter: "milanaryal"
   pinterest: "milanaryal"
+  x: "milanaryal"
 
 social:
   name: "Milan Aryal"
@@ -37,7 +38,6 @@ social:
   twitter: "milanaryal"
   links:
     - https://mastodon.social/@milanaryal
-    - https://twitter.com/milanaryal
     - https://www.instagram.com/milanaryal/
     - https://github.com/milanaryal
 
