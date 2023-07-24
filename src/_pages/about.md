@@ -28,9 +28,9 @@ Join me on the following networks and/or websites:
   {% if site.author.x %}
   <li>
     <a rel="me" href="https://x.com/{{ site.author.x }}">
-      {% include icons/x.svg width="1em" height="1em" class="icon icon-x" %}
+      {% include icons/twitter-x.svg width="1em" height="1em" class="icon icon-x" %}
       <br />
-      <span class="label">X</span>
+      <span class="label">TwitterX</span>
     </a>
   </li>
   {% endif %}
