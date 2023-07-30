@@ -15,7 +15,7 @@ layout: null
 /* AUTHOR */
 
   Name: Milan Aryal
-  Mastodon: @milanaryal@mastodon.social
+  Mastodon: @milanaryal@mastodon.social <https://mastodon.social/@milanaryal>
   Location: Kathmandu, Nepal
 
 /* SITE */
@@ -23,5 +23,5 @@ layout: null
   Last updated: {{ site.time | date: '%Y/%m/%d' }}
   Language: English
   Standards: HTML5, CSS3
-  Components: Jekyll v{{ jekyll.version }}
-  IDE: Visual Studio Code
+  Components: Jekyll v{{ jekyll.version }} <https://jekyllrb.com/>
+  IDE: Visual Studio Code <https://code.visualstudio.com/>
