@@ -16,12 +16,16 @@
   visibility: hidden;
   background-image: none;
   opacity: 0;
-  transition: visibility 0s 0.3s, opacity 0.3s 0s;
+  transition:
+    visibility 0s 0.3s,
+    opacity 0.3s 0s;
 
   &.elevator-is-visible,
   &.elevator-fade-out,
   &:hover {
-    transition: visibility 0s 0s, opacity 0.3s 0s;
+    transition:
+      visibility 0s 0s,
+      opacity 0.3s 0s;
   }
 
   // the button becomes visible

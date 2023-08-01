@@ -22,7 +22,11 @@
   font-weight: 500;
   letter-spacing: -0.04em;
   // ** Font feature settings ** //
-  font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
+  font-feature-settings:
+    "kern" on,
+    "liga" on,
+    "clig" on,
+    "calt" on;
   font-variant-ligatures: common-ligatures;
 }
 
@@ -67,7 +71,9 @@
 // Scrolling behavior
 
 .headroom {
-  transition: background-color 500ms, box-shadow 500ms;
+  transition:
+    background-color 500ms,
+    box-shadow 500ms;
   // ** Force hardware acceleration ** //
   transform: translateZ(0);
   will-change: background-color, box-shadow;

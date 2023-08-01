@@ -47,7 +47,11 @@
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
   letter-spacing: -0.002em;
   // ** Font feature settings ** //
-  font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
+  font-feature-settings:
+    "kern" on,
+    "liga" on,
+    "clig" on,
+    "calt" on;
   font-variant-ligatures: common-ligatures;
   // ** Mask image with a URL **//
   @include theme-mask-image();

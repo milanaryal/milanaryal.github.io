@@ -11,9 +11,16 @@
       }
     },
     {
-      "files": "*.{css,scss}",
+      "files": "*.css",
       "options": {
         "parser": "css",
+        "singleQuote": false
+      }
+    },
+    {
+      "files": "*.scss",
+      "options": {
+        "parser": "scss",
         "singleQuote": false
       }
     },

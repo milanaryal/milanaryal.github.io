@@ -43,7 +43,11 @@
   border-radius: 0.25rem;
   transform: rotate(-1deg);
   // ** Font feature settings ** //
-  font-feature-settings: "kern" on, "liga" on, "clig" on, "calt" on;
+  font-feature-settings:
+    "kern" on,
+    "liga" on,
+    "clig" on,
+    "calt" on;
   font-variant-ligatures: common-ligatures;
   // ** Mask image with a URL **//
   @include theme-mask-image();

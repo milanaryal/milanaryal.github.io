@@ -6,310 +6,514 @@ $b: rgba(0, 0, 255, 1) !default;
 
 @keyframes glitch {
   0% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   1% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   2% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   3% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   4% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   5% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   6% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   7% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   8% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   9% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   10% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   11% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   12% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   13% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   14% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   15% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   16% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   17% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   18% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   19% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   20% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   21% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   22% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   23% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   24% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   25% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   26% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   27% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   28% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   29% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   30% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   31% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   32% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   33% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   34% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   35% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   36% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   37% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   38% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   39% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   40% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   41% {
-    text-shadow: 50px 0 0 $b, -50px 0 0 $g;
+    text-shadow:
+      50px 0 0 $b,
+      -50px 0 0 $g;
   }
   42% {
-    text-shadow: 0 0 0 $b, 0 0 0 $g;
+    text-shadow:
+      0 0 0 $b,
+      0 0 0 $g;
   }
   43% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   44% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   45% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   46% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   47% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   48% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   49% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   50% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   51% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   52% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   53% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   54% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   55% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   56% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   57% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   58% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   59% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   60% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   61% {
-    text-shadow: 30px 0 0 $r, -30px 0 0 $g;
+    text-shadow:
+      30px 0 0 $r,
+      -30px 0 0 $g;
   }
   62% {
-    text-shadow: 0 0 0 $r, 0 0 0 $g;
+    text-shadow:
+      0 0 0 $r,
+      0 0 0 $g;
   }
   63% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $b;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $b;
   }
   64% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $b;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $b;
   }
   65% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $b;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $b;
   }
   66% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $b;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $b;
   }
   67% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   68% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   69% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   70% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   71% {
-    text-shadow: 70px 0 0 $r, -70px 0 0 $b;
+    text-shadow:
+      70px 0 0 $r,
+      -70px 0 0 $b;
   }
   72% {
-    text-shadow: 0 0 0 $r, 0 0 0 $b;
+    text-shadow:
+      0 0 0 $r,
+      0 0 0 $b;
   }
   73% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   74% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   75% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   76% {
-    text-shadow: 1px 0 0 $r, -1px 0 0 $b;
+    text-shadow:
+      1px 0 0 $r,
+      -1px 0 0 $b;
   }
   77% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   78% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   79% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   80% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $b;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $b;
   }
   81% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   82% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   83% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   84% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   85% {
-    text-shadow: 0.5px 0 0 $r, -0.5px 0 0 $g;
+    text-shadow:
+      0.5px 0 0 $r,
+      -0.5px 0 0 $g;
   }
   86% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   87% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   88% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   89% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   90% {
-    text-shadow: -1px 0 0 $r, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $r,
+      1px 0 0 $g;
   }
   91% {
-    text-shadow: 60px 0 0 $g, -60px 0 0 $b;
+    text-shadow:
+      60px 0 0 $g,
+      -60px 0 0 $b;
   }
   92% {
-    text-shadow: 0 0 0 $g, 0 0 0 $b;
+    text-shadow:
+      0 0 0 $g,
+      0 0 0 $b;
   }
   92% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   93% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   94% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   95% {
-    text-shadow: 0.7px 0 0 $b, -0.7px 0 0 $g;
+    text-shadow:
+      0.7px 0 0 $b,
+      -0.7px 0 0 $g;
   }
   96% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   97% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   98% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   99% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
   100% {
-    text-shadow: -1px 0 0 $b, 1px 0 0 $g;
+    text-shadow:
+      -1px 0 0 $b,
+      1px 0 0 $g;
   }
 }
 
