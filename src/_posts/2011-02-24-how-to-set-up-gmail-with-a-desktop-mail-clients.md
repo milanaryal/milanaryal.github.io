@@ -38,7 +38,7 @@ Requires authentication: Yes
 #### Your login info
 
 Full Name or Display Name: [your name]<br />
-Email address: Your full email address (name@domain.com)<br />
+Email address: Your full email address (`name@domain.com`)<br />
 Password: Your account's password<br />
 Requires authentication: Yes
 

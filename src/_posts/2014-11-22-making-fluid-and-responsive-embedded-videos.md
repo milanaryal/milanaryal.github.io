@@ -102,7 +102,7 @@ Until recently, most solutions were plugins, which are OK to an extent but can h
 
 #### FluidVids.js
 
-A more current solution is to use just a script -- such as <a href="http://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/" rel="nofollow">FluidVids.js</a>, developed by Todd Motto. FluidVids.js is simple to use and load faster:
+A more current solution is to use just a script -- such as <a href="https://ultimatecourses.com/blog/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js" rel="nofollow">FluidVids.js</a>, developed by Todd Motto. FluidVids.js is simple to use and load faster:
 
 1. <a href="http://github.com/toddmotto/fluidvids/archive/master.zip" rel="nofollow">Download the script</a> (ZIP) from GitHub and upload it to your server with the same folder structure that the downloaded files come in. This will place the script itself in a folder named `dist`.
 2. Ensure you place the script before the closing `<body>` tag.

@@ -2,7 +2,7 @@
 title: "Minify Jekyll's final HTML output files"
 description: "Compress and minify HTML files after they have been generated locally with a static website generator like Jekyll."
 date: 2021-04-10 06:00:00 +0545
-last_modified_at: 2022-08-05 00:00:00 +0545
+last_modified_at: 2023-08-02 00:00:00 +0545
 ---
 
 Site assets minifying (or in another word compressing) helps to decrease site load and speed up browser loading time. Just like with CSS and JavaScript, HTML output can be compressed and minified by removing whitespace, new lines, comments and even removing certain optional closing tags, making for smaller file sizes.
@@ -44,7 +44,7 @@ brew install tdewolff/tap/minify
 - [Usage](https://github.com/tdewolff/minify/tree/master/cmd/minify#usage){:rel="nofollow"}
 
 ```bash
-minify --type=html --recursive --output "./" --match=\.html --html-keep-conditional-comments --html-keep-default-attrvals --html-keep-document-tags --html-keep-end-tags --html-keep-quotes "./_site/" --verbose
+minify --type=html --recursive --output "./_site/" --match="\.html$" --html-keep-conditional-comments --html-keep-default-attrvals --html-keep-document-tags --html-keep-end-tags --html-keep-quotes "./_site/" --verbose
 ```
 
 #### Minify XML files
@@ -52,7 +52,7 @@ minify --type=html --recursive --output "./" --match=\.html --html-keep-conditio
 You can also minify `*.XML` files with following command line:
 
 ```bash
-minify --type=xml --recursive --output "./" --match=\.xml --xml-keep-whitespace "./_site/" --verbose || true
+minify --type=xml --recursive --output "./_site/" --match="\.xml$" --xml-keep-whitespace "./_site/" --verbose || true
 ```
 
 #### Minify JSON files
@@ -60,7 +60,7 @@ minify --type=xml --recursive --output "./" --match=\.xml --xml-keep-whitespace 
 You can also minify `*.json` files with following command line:
 
 ```bash
-minify --type=json --recursive --output "./" --match=\.json "./_site/" --verbose || true
+minify --type=json --recursive --output "./_site/" --match="\.json$" "./_site/" --verbose || true
 ```
 
 ### Build, minify and deploy Jekyll site into GitHub Pages using GitHub Actions
@@ -140,7 +140,7 @@ jobs:
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
         run: |
-          minify --type=html --recursive --output "./" --match=\.html "./_site/" \
+          minify --type=html --recursive --output "./_site/" --match="\.html$" "./_site/" \
           --html-keep-conditional-comments \
           --html-keep-default-attrvals \
           --html-keep-document-tags \
@@ -150,7 +150,7 @@ jobs:
 
       - name: Minify JSON files
         run: |
-          minify --type=json --recursive --output "./" --match=\.json "./_site/" --verbose || true
+          minify --type=json --recursive --output "./_site/" --match="\.json$" "./_site/" --verbose || true
 
       - name: Upload artifact
         # This will automatically upload an artifact from the '/_site' directory
