@@ -139,7 +139,6 @@ Nepal stock market related list of useful websites that you might like to bookma
 - [News Of Nepal](https://www.newsofnepal.com/){:rel="nofollow"}
 - [Online Kendra](https://onlinekendra.com/){:rel="nofollow"}
 - [Online Khabar](https://www.onlinekhabar.com/){:rel="nofollow"}
-- [PahiloPost](https://pahilopost.com/){:rel="nofollow"}
 - [Pariwartan Khabar](https://www.pariwartankhabar.com/)
 - [Rato Pati](https://www.ratopati.com/){:rel="nofollow"}
 - [Reporters Nepal](https://www.reportersnepal.com/){:rel="nofollow"}

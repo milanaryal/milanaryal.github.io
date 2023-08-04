@@ -26,6 +26,11 @@
   {% endif %}
   <link rel="search" type="application/opensearchdescription+xml" href="{{ 'opensearch.xml' | relative_url }}" title="{{ site_title }}" />
   <link rel="alternate" type="application/atom+xml" href="{{ 'feed.xml' | relative_url }}" title="{{ site_title }}" />
-  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="{{ 'favicon.ico?v=' | append: build_version | relative_url }}" />
+  <link rel="alternate icon" type="image/png" sizes="32x32" href="{{ 'assets/img/favicon-32x32.png?v=' | append: build_version | relative_url }}" />
+  <link rel="alternate icon" type="image/png" sizes="16x16" href="{{ 'assets/img/favicon-16x16.png?v=' | append: build_version | relative_url }}" />
+  <!-- <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="{{ 'favicon.ico?v=' | append: build_version | relative_url }}" />-->
+  <link rel="icon" type="image/svg+xml" href="{{ 'assets/img/favicon.svg?v=' | append: build_version |  relative_url }}" />
+  <meta name="theme-color" content="{{ site.theme_color }}" />
+  <meta name="color-scheme" content="light dark" />
 
 </head>
