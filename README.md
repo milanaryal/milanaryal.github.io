@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://milanaryal.com.np/">
-    <img width="72px" height="72px" alt="Milan Aryal" src="src/assets/img/avatar.png" />
+    <img width="72px" height="72px" alt="Milan Aryal" src="src/assets/img/favicon.svg" />
   </a>
   <br />
   <b>Milan Aryal</b>
