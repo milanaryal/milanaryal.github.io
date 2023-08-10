@@ -77,7 +77,7 @@
     "postcss-cli": "^10.1.0",
     "prettier": "^3.0.1",
     "rimraf": "^5.0.1",
-    "sass": "^1.64.2",
+    "sass": "^1.65.1",
     "stylelint": "^15.10.2",
     "stylelint-config-twbs-bootstrap": "^11.0.1",
     "stylelint-prettier": "^4.0.2",
