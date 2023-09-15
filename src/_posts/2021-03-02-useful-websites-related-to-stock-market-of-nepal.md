@@ -47,6 +47,7 @@ Nepal stock market related list of useful websites that you might like to bookma
 - [Financial Comptroller General Office (FCGO)](https://www.fcgo.gov.np/)
 - [Office of the Auditor General](https://www.oag.gov.np/en)
 - [Department of National ID and Civil Registration](https://donidcr.gov.np/)
+- [Hotel Association Nepal (HAN)](http://hotelassociationnepal.org.np/)
 
 ### NEPSE online technical analysis chart [for free]
 
@@ -69,6 +70,7 @@ Nepal stock market related list of useful websites that you might like to bookma
 - [Artha Bazar](https://www.arthabazar.com/){:rel="nofollow"}
 - [Artha Dainik](http://www.arthadainik.com/){:rel="nofollow"}
 - [Artha Today](http://arthatoday.com/){:rel="nofollow"}
+- [Artha Sanjal](https://arthasanjal.com/){:rel="nofollow"}
 - [Artha Sansar](https://arthasansar.com/){:rel="nofollow"}
 - [Arthik Pati](https://arthikpati.com/){:rel="nofollow"}
 - [Artha Ko Artha](https://arthakoartha.com/){:rel="nofollow"}
