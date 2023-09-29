@@ -68,7 +68,7 @@ Following are the list of popular mobile based digital payment systems only avai
 
 - **[Namaste Pay](https://www.namastepay.com/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://play.google.com/store/apps/details?id=app.namasteypay.consumer){:rel="nofollow noopener noreferrer"}, and [iOS](https://apps.apple.com/np/app/namaste-pay/id1592488606){:rel="nofollow noopener noreferrer"})
 
-- **[QPay](http://www.qpay.com.np/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){:rel="nofollow noopener noreferrer"}, and [iOS](https://itunes.apple.com/us/app/qpay-nepal/id1127765416?mt=8){:rel="nofollow noopener noreferrer"})
+- **[QPay](http://www.qpay.com.np/){:rel="nofollow noopener noreferrer"}** (available for [Android](https://play.google.com/store/apps/details?id=net.qpaysolutions.QPay){:rel="nofollow noopener noreferrer"}, and [iOS](https://itunes.apple.com/us/app/qpay-merchant-nepal/id1127767306?mt=8){:rel="nofollow noopener noreferrer"})
 
 Last but not least:
 

@@ -129,7 +129,6 @@ Nepal stock market related list of useful websites that you might like to bookma
 - [Kathmandu Press](https://kathmandupress.com/){:rel="nofollow"}
 - [Khabar Hub](https://www.khabarhub.com/){:rel="nofollow"}
 - [Lokaantar](https://lokaantar.com/){:rel="nofollow"}
-- [Nagarik Khabar](https://nagarikkhabar.com/){:rel="nofollow"}
 - [Naya Page](https://www.nayapage.com/){:rel="nofollow"}
 - [Nepal Khabar](https://nepalkhabar.com/){:rel="nofollow"}
 - [Nepal Live](https://nepallive.com/){:rel="nofollow"}

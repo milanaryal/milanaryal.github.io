@@ -10,10 +10,10 @@ The macOS Dock is a handy tool for quickly accessing your favorite apps, folders
 
 ### Steps to factory reset the macOS Dock
 
-- First, open the Terminal app on your macOS. Go to Applications > Utilities > Terminal ( Or, Search for "Terminal" with Spotlight search)
-- In the Terminal, type this command:
+- First, open the Terminal app on your macOS. Go to Applications > Utilities > Terminal (Or, Search for "Terminal" with Spotlight search)
+- In the Terminal, type (or, copy & paste) this command:
 
-```
+```zsh
 defaults delete com.apple.dock; killall Dock
 ```
 

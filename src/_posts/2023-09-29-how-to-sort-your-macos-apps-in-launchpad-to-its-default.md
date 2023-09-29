@@ -10,8 +10,8 @@ You can use Launchpad to quickly open your apps on macOS. If you want to arrange
 
 ### Steps to factory sort the apps in macOS Launchpad
 
-- First, open the Terminal app on your macOS. Go to Applications > Utilities > Terminal ( Or, Search for "Terminal" with Spotlight search)
-- In the Terminal, type this command:
+- First, open the Terminal app on your macOS. Go to Applications > Utilities > Terminal (Or, Search for "Terminal" with Spotlight search)
+- In the Terminal, type (or, copy & paste) this command:
 
 ```zsh
 defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
@@ -25,7 +25,7 @@ Open Launchpad, you will see the default sorted Apple apps on the first page. Th
 
 The Launchpad database is located in:
 
-```txt
+```text
 ~/Library/Application Support/Dock
 ```
 
