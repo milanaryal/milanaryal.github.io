@@ -4,7 +4,7 @@ description: "Arrange and clean up your macOS apps in Launchpad to their factory
 date: 2023-09-29 00:00:00 +0545
 ---
 
-You can use Launchpad to quickly open your apps on macOS. If you want to arrange your apps in their default order, follow these steps.
+You can use Launchpad to quickly open your apps on macOS. But sometimes it can become messy and scatter. If you want to arrange your apps in their default order, follow these steps.
 
 > See also: [How to reset your macOS Dock to its default](/how-to-reset-your-macos-dock-to-its-default/)
 
