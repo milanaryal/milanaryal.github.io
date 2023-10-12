@@ -16,6 +16,7 @@ A list of alternative websites to download free and opensource software applicat
 | [Cnet Download](https://download.cnet.com/){:rel="nofollow"} | Windows, Mac                      |
 | [SourceForge](https://sourceforge.net/){:rel="nofollow"}     | Windows, Mac, Linux, Android      |
 | [Softonic.com](https://en.softonic.com/){:rel="nofollow"}    | Windows, Mac, Linux, Android, iOS |
+| [MacUpdate](https://www.macupdate.com/){:rel="nofollow"}     | Mac                               |
 | [APKMirror](https://www.apkmirror.com/){:rel="nofollow"}     | Android                           |
 | [APKPure](https://apkpure.com/){:rel="nofollow"}             | Android                           |
 | [Aptoide](https://en.aptoide.com/){:rel="nofollow"}          | Android                           |
@@ -48,13 +49,16 @@ A list of alternative websites to download free and opensource software applicat
 | [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                                         | Windows, Mac, Linux, Android, iOS  |
 | [GIMP](https://www.gimp.org/){:rel="nofollow"}                                                           | Windows, Mac, Linux                |
 | [IINA](https://iina.io/){:rel="nofollow"}                                                                | Mac                                |
+| [Inkscape](https://inkscape.org/){:rel="nofollow"}                                                       | Windows, Mac, Linux                |
 | [Keka](https://www.keka.io/en/){:rel="nofollow"}                                                         | Mac                                |
 | [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                                            | Windows                            |
+| [Microsoft Bing Wallpaper](https://bingwallpaper.microsoft.com/){:rel="nofollow"}                        | Windows, Mac                       |
 | [Microsoft Edge](https://www.microsoft.com/en-us/edge){:rel="nofollow"}                                  | Windows, Mac, Linux, Android, iOS  |
 | [Microsoft PC Manager](https://pcmanager.microsoft.com/){:rel="nofollow"}                                | Windows                            |
 | [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/){:rel="nofollow"}             | Windows                            |
 | [Nimblenote](https://nimblenote.app/){:rel="nofollow"}                                                   | Windows, Mac, Linux                |
 | [OBS Studio](https://obsproject.com/){:rel="nofollow"}                                                   | Windows, Mac, Linux                |
+| [OpenShot](https://www.openshot.org/){:rel="nofollow"} Video Editor                                      | Windows, Mac, Linux                |
 | [Rufus](https://rufus.ie/en/){:rel="nofollow"}                                                           | Windows                            |
 | [ShareX](https://getsharex.com/){:rel="nofollow"}                                                        | Windows                            |
 | [The Unarchiver](https://macpaw.com/the-unarchiver){:rel="nofollow"}                                     | Mac                                |

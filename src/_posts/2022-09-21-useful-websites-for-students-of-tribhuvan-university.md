@@ -50,3 +50,7 @@ Followings are the list of social media accounts for the latest updates about ex
 - [Shanker Dev Campus(SDC) - MBS](https://www.facebook.com/groups/SDC.MBS)
 - [Shanker Dev Campus (SDC) - MBS, BBS](https://www.facebook.com/groups/191822654167252)
 - [Students of Nepal](https://www.facebook.com/groups/sonnnepal): +2/NEB
+
+### Other - University of Nepal
+
+- [Nepal Open University (NOU)](https://nou.edu.np/)

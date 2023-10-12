@@ -79,6 +79,7 @@ Last but not least:
 - [iPay](https://ipay.com.np/){:rel="nofollow noopener noreferrer"}
 - [Moru](https://moru.com.np/){:rel="nofollow noopener noreferrer"}
 - [MyPay](https://mypay.com.np/){:rel="nofollow noopener noreferrer"}
+- [Nimbuzz Pay](https://nimbuzz.com/wallet/marketing){:rel="nofollow noopener noreferrer"}
 - [SajiloPay](https://sajilopay.com.np/){:rel="nofollow noopener noreferrer"}
 - [Thaili](https://www.thaili.com.np/){:rel="nofollow noopener noreferrer"}
 - [UPay (UnelmaPay)](https://unelmapay.com.np/){:rel="nofollow noopener noreferrer"}

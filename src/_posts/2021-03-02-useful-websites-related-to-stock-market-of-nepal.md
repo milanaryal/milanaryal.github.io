@@ -48,6 +48,33 @@ Nepal stock market related list of useful websites that you might like to bookma
 - [Office of the Auditor General](https://www.oag.gov.np/en)
 - [Department of National ID and Civil Registration](https://donidcr.gov.np/)
 - [Hotel Association Nepal (HAN)](http://hotelassociationnepal.org.np/)
+- [Nepal Insurance Authority](https://nia.gov.np/)
+- [Nepal Telecommunications Authority](https://nta.gov.np/)
+- [Electricity Regulatory Commission](https://erc.gov.np/)
+- [Federation of Nepal Gold and Silver Dealers Association](http://www.fenegosida.org/)
+- [Nepal Oil Corporation](http://www.nepaloil.com.np/)
+- [ICRA Nepal](https://www.icranepal.com/)
+- [CARE Ratings Nepal Limited](https://careratingsnepal.com/)
+- [Nepal Investors Forum](http://nepalinvestorsforum.org/)
+- [Accounting Standards Board](https://asbnepal.gov.np/)
+- [Auditor General Nepal](https://www.oag.gov.np/en)
+- [ICAN - The Institute of Chartered Accountants of Nepal](https://en.ican.org.np/en/)
+
+- [Ministry of Health and Population](https://mohp.gov.np/en/)
+- [National Public Health Laboratory](https://www.nphl.gov.np/)
+- [Department of Environment, Nepal](http://doenv.gov.np/)
+- [Air Quality Monitoring, Nepal](https://pollution.gov.np/)
+- [Department of Transport Management](https://www.dotm.gov.np/)
+- [Kathmandu Valley Traffic Police Office](https://traffic.nepalpolice.gov.np/)
+- [Election Commission, Nepal](https://election.gov.np/)
+- [Public Service Commission](https://psc.gov.np/)
+- [Employment Service Center, Job Portal](http://www.jobkhoj.gov.np/)
+- [Federal Parliament, Nepal](https://parliament.gov.np/)
+- [Financial Comptroller General Office (FCGO)](https://www.fcgo.gov.np/)
+- [Supreme Court of Nepal](https://supremecourt.gov.np/)
+- [Press Council Nepal](https://www.presscouncilnepal.org/np/)
+- [The National News Agency (RSS)](http://rssnepal.org.np/)
+- [Department of National ID and Civil Registration](https://donidcr.gov.np/)
 
 ### NEPSE online technical analysis chart [for free]
 
@@ -62,6 +89,7 @@ Nepal stock market related list of useful websites that you might like to bookma
 - [Smart Wealth Pro](https://www.smartwealthpro.com/){:rel="nofollow"}
 - [systemxlite](https://www.systemxlite.com/){:rel="nofollow"}
 - [Chukul](https://chukul.com/){:rel="nofollow"}
+- [NepseAlpha Sastoshare](https://www.nepsealpha.com/dashboard){:rel="nofollow"}
 
 ### Popular online business news portals of Nepal
 
