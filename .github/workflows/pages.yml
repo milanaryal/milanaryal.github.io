@@ -85,7 +85,7 @@ jobs:
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
         run: |
-          minify --type=html --recursive --output . --match=*.html ./_site/ \
+          minify --type=html --recursive --output _site/ --match=*.html _site/ \
             --html-keep-default-attrvals \
             --html-keep-document-tags \
             --html-keep-end-tags \
