@@ -85,7 +85,7 @@ jobs:
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
         run: |
-          minify -r -o _site/ --match=*.html _site/ \
+          minify --type=text/html --recursive --output ./_site/ --match="\.html$" ./_site/ \
             --html-keep-default-attrvals \
             --html-keep-document-tags \
             --html-keep-end-tags \
@@ -94,9 +94,9 @@ jobs:
 
       - name: Minify JSON files
         run: |
-          minify --type=json --recursive --output ./_site/ --match=*.json ./_site/ --verbose || true \
+          minify --type=application/json --recursive --output ./_site/ --match=*.json ./_site/ --verbose || true \
             && \
-            minify --type=json --output . ./_site/manifest.webmanifest --verbose || true
+            minify --type=application/json --output . ./_site/manifest.webmanifest --verbose || true
 
       - name: Checking HTML files
         run: |
