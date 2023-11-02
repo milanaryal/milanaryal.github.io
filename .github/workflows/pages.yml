@@ -84,9 +84,8 @@ jobs:
             --recursive \
             --output "./_site/" \
             "./_site/"
-          minify --type=application/json --match "*.json" --verbose --recursive --output "./_site/" "./_site/" || true \
-            && \
-            minify --type=application/manifest+json --verbose --output . "./_site/manifest.webmanifest" || true
+          minify --type=application/json --match "*.json" --verbose --recursive --output "./_site/" "./_site/" || true
+          minify --type=application/manifest+json --match "*.webmanifest" --verbose --recursive --output "./_site/" "./_site/" || true
 
       - name: Checking HTML files
         run: |
