@@ -91,7 +91,7 @@ jobs:
             --html-keep-end-tags \
             --html-keep-quotes \
             --verbose \
-            --recursive --output ./_site/ --match="\.html$" ./_site/
+            --recursive --match="\.html$" ./_site/
 
       - name: Minify JSON files
         run: |
