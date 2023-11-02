@@ -91,13 +91,13 @@ jobs:
             --html-keep-end-tags \
             --html-keep-quotes \
             --verbose \
-            --recursive --output ./_site/ --match "*.html" ./_site/
+            --recursive --output "./_site/" --match "*.html" "./_site/"
 
       - name: Minify JSON files
         run: |
-          minify --type=application/json --recursive --output ./_site/ --match "*.json" ./_site/ --verbose || true \
+          minify --type=application/json --recursive --output "./_site/" --match "*.json" "./_site/" --verbose || true \
             && \
-            minify --type=application/json --output . ./_site/manifest.webmanifest --verbose || true
+            minify --type=application/manifest+json --output . "./_site/manifest.webmanifest" --verbose || true
 
       - name: Checking HTML files
         run: |
