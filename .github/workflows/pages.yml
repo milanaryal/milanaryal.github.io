@@ -69,7 +69,7 @@ jobs:
 
       - name: Install Minify deb package on Ubuntu
       # if: ${{ matrix.os == 'ubuntu-latest' }}
-        run: apt-get update && apt-get install --no-install-recommends --yes minify
+        run: sudo apt-get update && sudo apt-get install --no-install-recommends --yes minify
 
       # Setup Go using Homebrew
       # - name: Install Go using Homebrew
