@@ -75,15 +75,18 @@ jobs:
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
           brew install tdewolff/tap/minify || true
           minify --type=text/html \
+            --match "*.html" \
             --html-keep-default-attrvals \
             --html-keep-document-tags \
             --html-keep-end-tags \
             --html-keep-quotes \
             --verbose \
-            --recursive --output "./_site/" --match="\.html$" "./_site/"
-          minify --type=application/json --recursive --output "./_site/" --match="\.json$" "./_site/" --verbose || true \
+            --recursive \
+            --output "./_site/" \
+            "./_site/"
+          minify --type=application/json --match "*.json" --verbose --recursive --output "./_site/" "./_site/" || true \
             && \
-            minify --type=application/manifest+json --output . "./_site/manifest.webmanifest" --verbose || true
+            minify --type=application/manifest+json --verbose --output . "./_site/manifest.webmanifest" || true
 
       - name: Checking HTML files
         run: |
