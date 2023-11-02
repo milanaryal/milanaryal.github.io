@@ -67,9 +67,9 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Install Minify deb package on Ubuntu
-      # if: ${{ matrix.os == 'ubuntu-latest' }}
-        run: sudo apt-get update && sudo apt-get install --no-install-recommends --yes minify
+      # - name: Install Minify deb package on Ubuntu
+      #   if: ${{ matrix.os == 'ubuntu-latest' }}
+      #   run: sudo apt-get update && sudo apt-get install --no-install-recommends --yes minify
 
       # Setup Go using Homebrew
       # - name: Install Go using Homebrew
@@ -79,8 +79,10 @@ jobs:
       #    brew link --overwrite go || true
 
       # https://github.com/tdewolff/homebrew-tap/
-      # - name: Install Minify using Homebrew
-      #   run: brew install tdewolff/tap/minify || true
+      - name: Install Minify using Homebrew
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          brew install tdewolff/tap/minify || true
 
       # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
       - name: Minify HTML files
