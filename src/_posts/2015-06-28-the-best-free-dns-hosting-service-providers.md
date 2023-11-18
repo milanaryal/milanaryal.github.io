@@ -9,13 +9,13 @@ For people whose registrars don't provide DNS (Domain Name System) hosting with 
 
 All of these providers are either free, or have a decent free plan.
 
-### [Hurricane Electric Internet Services](http://dns.he.net/){:rel="nofollow"}
-
-DNS hosting portal Hurricane Electric provide a 100% free DNS service. They have incredible connectivity all over the world making them an ideal host for your DNS infrastructure.
-
 ### [CloudFlare](http://www.cloudflare.com/dns){:rel="nofollow"}
 
 Probably one of the largest free DNS hosting providers, no premium charges unless you get into some of their advanced CDN features. But they are also technically a managed DNS host which means you don't have as much control. However, they do provide you with additional security features such as rate limiting, filtering, and blocking. Cloudflare's speeds are also faster than most premium DNS providers.
+
+### [Hurricane Electric Internet Services](http://dns.he.net/){:rel="nofollow"}
+
+DNS hosting portal Hurricane Electric provide a 100% free DNS service. They have incredible connectivity all over the world making them an ideal host for your DNS infrastructure.
 
 ### [Namecheap](http://www.namecheap.com/domains/freedns.aspx){:rel="nofollow"}
 
