@@ -27,7 +27,7 @@ To set up [Google Private DNS on an Android device](https://developers.google.co
 1. Open the Settings app on your Android device.
 2. Select Network & security > Advanced > Private DNS or Network & Internet > Private DNS.
 3. Select Private DNS provider hostname.
-4. Enter “dns.google” as the hostname of the DNS provider or the address for the DNS server you sourced earlier.
+4. Enter `dns.google` as the hostname of the DNS provider or the address for the DNS server you sourced earlier.
 5. Tap Save.
 
 ### Cloudflare DNS resolver [aka 1.1.1.1]
@@ -41,9 +41,14 @@ According to DNSPerf, 1.1.1.1 is the world's fastest recursive DNS resolver, bea
 | Primary DNS   | 1.1.1.1        | 2606:4700:4700::1111 |
 | Secondary DNS | 1.0.0.1        | 2606:4700:4700::1001 |
 
-1.1.1.1 also offers an optional Family Protection mode for blocking access to websites with adult content as well as enforcing safe search in search engines.
+Enable Private DNS with [1.1.1.1 on an Android device](https://developers.cloudflare.com/1.1.1.1/setup/android/#configure-1111-manually){:rel="nofollow"}:
 
-[Enable Private DNS with 1.1.1.1 on Android 9 Pie +](https://blog.cloudflare.com/enable-private-dns-with-1-1-1-1-on-android-9-pie/){:rel="nofollow"}.
+1. Go to Settings > Network & internet.
+2. Select Advanced > Private DNS.
+3. Select the Private DNS provider hostname option.
+4. Enter `one.one.one.one` and press Save.
+
+1.1.1.1 also offers an optional Family Protection mode for blocking access to websites with adult content as well as enforcing safe search in search engines.
 
 ### OpenDNS
 
@@ -54,7 +59,7 @@ According to DNSPerf, 1.1.1.1 is the world's fastest recursive DNS resolver, bea
 | Primary DNS   | 208.67.222.222 | 2620:119:35::35 |
 | Secondary DNS | 208.67.220.220 | 2620:119:53::53 |
 
-[OpenDNS](https://www.opendns.com/setupguide/) also offers an optional Family Protection mode for blocking access to websites with adult content as well as enforcing safe search in search engines.
+OpenDNS also offers an optional [Family Protection mode](https://www.opendns.com/setupguide/){:rel="nofollow"} for blocking access to websites with adult content as well as enforcing safe search in search engines.
 
 ### AdGuard DNS resolver
 

@@ -5,24 +5,34 @@ date: 2023-11-18 00:00:00 +0545
 
 Windows Package Manager (also known as winget) is a free and open-source package manager designed by Microsoft for Windows 10 and Windows 11.
 
-It consists of a command-line utility and a set of services for installing applications. The winget command-line tool enables users to discover, install, upgrade, remove, and configure applications on Windows 10 and Windows 11 computers Independent software vendors can use it as a distribution channel for their software packages. The tool is available on Windows 11 and modern versions of Windows 10 as a part of the App Installer. If you are interested in learning more about winget, you can visit the official [Microsoft Learn page](https://learn.microsoft.com/en-us/windows/package-manager/winget/){:rel="nofollow"}.
+It consists of a command-line utility and a set of services for installing applications. The winget command-line tool enables users to discover, install, upgrade, remove, and configure applications on Windows 10 and Windows 11 computers Independent software vendors can use it as a distribution channel for their software packages. The tool is available on Windows 11 and modern versions of Windows 10 as a part of the App Installer. If you are interested in learning more about winget, you can visit the official [Microsoft Learn page](https://learn.microsoft.com/en-us/windows/package-manager/winget/){:rel="nofollow"}.
 
-Updating the winget:
+open the elevated PowerShell window using the Search box or any other preferred ways. When PowerShell window is opened as administrator, type and execute the following command:
 
 ```sh
-winget update
+winget upgrade
 ```
 
-Upgrading all installed packages:
+This command is not necessary but quite helpful as it will show you the list of all the outdated programs and available updates for them. You will also be able to see the program name, ID, installed version, and available version. Now execute the command that will automatically update those programs with their latest versions. The command is:
 
 ```sh
 winget upgrade --all
 ```
 
+One by one, the Windows Package Manager will automatically download the new versions of programs and install them silently. This may take some time. So, let the process complete, and your programs will be updated with the new versions.
+
+Just for your information, run `winget` command to view more information about how to use the tool. The following are some of the other commands and options available for use with winget.
+
 Searching for an application:
 
 ```sh
 winget search "package name"
+```
+
+You can see more information about how to use one of winget's built-in commands by passing `-?`` to it. For example, to see the various options you can use with winget, run the following command:
+
+```sh
+winget search -?
 ```
 
 Installing the specified application:
@@ -48,6 +58,14 @@ Upgrading the given package:
 ```sh
 winget upgrade <package_id>
 ```
+
+Updating all available packages to the latest application:
+
+```sh
+winget upgrade --all
+```
+
+`winget upgrade --silent --all` --- Runs the installer in silent mode. This suppresses all UI. The default experience shows installer progress.
 
 Displaying installed packages:
 
