@@ -111,10 +111,10 @@ Join me on the following networks and/or websites:
 
 Writing articles is hard, but making up designs is fun. I made this site so I would be able to do both.
 
-Nothing brings me more pleasure than making something out of nothing. Even when the results are far from my ideal expectations, I find the whole ceremony of creativity completely enthralling.
+Nothing brings me more pleasure than making something out of nothing. Even when the results are far from my ideal expectations, I find the whole ceremony of creativity completely enthralling. Life is good!
 
 {: align="center"}
-Life is good😊
+🙈 🙉 🙊
 
 ### About the site
 

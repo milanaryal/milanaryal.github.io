@@ -53,6 +53,8 @@ Example:
 winget install Microsoft.WindowsTerminal Microsoft.PowerToys Microsoft.VisualStudioCode
 ```
 
+But how do you actually find packages to install? The best places to start are the [winget-pkgs GitHub repository](https://github.com/microsoft/winget-pkgs), where there's a pretty hefty catalog of things you can install, as well as the excellent third-party resource, [winstall.app](https://winstall.app/){:rel="nofollow"} or [winget.run](https://winget.run/){:rel="nofollow"}.
+
 Upgrading the given package:
 
 ```sh
@@ -77,6 +79,18 @@ Uninstalling the given package:
 
 ```sh
 winget uninstall <package_id>
+```
+
+If you're interested in seeing more details about the package you're downloading, too, there's a simple command that will bring up a complete dossier on what it is and where it's from:
+
+```sh
+winget show <package_id>
+```
+
+And if you're interested in poking around a little more with the Windows Package Manager, enter this in the terminal to bring up a list of all current commands.
+
+```sh
+winget --help
 ```
 
 Learn more about the winget tool supported [commands](https://learn.microsoft.com/en-us/windows/package-manager/winget/#commands){:rel="nofollow"}.
