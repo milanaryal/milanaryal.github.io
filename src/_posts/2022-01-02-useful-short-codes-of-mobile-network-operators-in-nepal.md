@@ -1,7 +1,8 @@
 ---
-title: "Useful short codes of mobile network operators [Namaste, Ncell, & Smart Cell] in Nepal"
+title: "Useful short codes of mobile network operators [Namaste & Ncell] in Nepal"
 description: "A list of the essential USSD and short codes of mobile service providers operating in Nepal."
 date: 2022-01-02 00:00:00 +0545
+last_modified_at: 2023-12-21 00:00:00 +0545
 ---
 
 Short codes are used to dial or send a message for subscribing offers, packages and additional functionalities/features of mobile network operators. There are several USSD codes, SMS codes and calling numbers.
@@ -57,26 +58,3 @@ In this post, I have tried to collect all of the essential numbers/codes for the
 | PRBT             | Activate PRBT service             | \*9208\#                                    | Dial   |
 | Roaming          | Activate Roaming service in Ncell | \*12127\#                                   | Dial   |
 | Internet Setting | Get Internet Setting in Ncell     | Type All and send to 9595                   | SMS    |
-
-### Smart Cell useful USSD and short codes
-
-| Service           | Purpose                            | Code                                | Method |
-| ----------------- | ---------------------------------- | ----------------------------------- | ------ |
-| Balance           | Check balance in smart             | \*123\#                             | Dial   |
-| Mobile Number     | Know your own Mobile number        | \*134\#                             | Dial   |
-| Balance Transfer  | Balance transfer in smart to smart | \*131\*Mobile Number\*Rs.\*123456\# | Dial   |
-| Recharge          | Recharge smart number              | \*122\*Pin\#                        | Dial   |
-| Recharge          | Recharge for other Smart numbers   | \*120\*PIN\*Mobile Number\#         | Dial   |
-| Data Packages     | Purchase DATA PACK                 | \*141\*3\#                          | Dial   |
-| Voice Packages    | Purchase VOICE PACK                | \*141\*1\#                          | Dial   |
-| SMS Packages      | Purchase SMS PACK                  | \*141\*2\#                          | Dial   |
-| IVR               | Activate IVR SERVICE               | \*141\#                             | Dial   |
-| CUSTOMER CARE     | Call CUSTOMER CARE                 | 4242                                | Dial   |
-| Date & Time       | Check Date & Time                  | \*124\#                             | Dial   |
-| Call Back         | Call Me Back Request               | \*151\*Mobile Number\#              | Dial   |
-| Credit Request    | Credit Me Request                  | \*152\*Mobile Number\*Amount\#      | Dial   |
-| Smart Cell Credit | Take Loan in Smart cell            | \*129\*40\#                         | Dial   |
-| Language          | Language Selection                 | \*126\#                             | Dial   |
-| MISSED CALL ALERT | Activate MISSED CALL ALERT         | \*172\#                             | Dial   |
-| MISSED CALL ALERT | Activate MISSED CALL ALERT         | Send 'SUB' to 4270                  | SMS    |
-| MISSED CALL ALERT | Deactivate MISSED CALL ALERT       | Send 'UNSUB' to 4270                | SMS    |

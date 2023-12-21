@@ -10,15 +10,16 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 #### The Pirate Bay proxy sites and mirrors
 
 - [thepiratebay.org](https://thepiratebay.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
-  [proxy-bay.mov](https://proxy-bay.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+  [pirate-proxy.ing](https://pirate-proxy.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [Mirror on Github](https://proxybay.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [proxybay.unblockit.ing](https://proxybay.unblockit.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [piratebayztemzmv.onion](http://piratebayztemzmv.onion/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   _[TOR URL](/why-you-should-know-about-tor/)_
 
 #### Top proxy sites and mirrors
 
-- [unblockit.mov](https://unblockit.mov/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+- [unblockit.ing](https://unblockit.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [unblockit.pages.dev](https://unblockit.pages.dev){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [Mirror on GitLab](https://unblock_it.gitlab.io/site/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} <br />
   [Reddit](https://reddit.com/r/unblockit){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
