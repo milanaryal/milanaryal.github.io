@@ -9,19 +9,19 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### The Pirate Bay proxy sites and mirrors
 
-- [thepiratebay.org](https://thepiratebay.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
-  [pirate-proxy.ing](https://pirate-proxy.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
-  [Mirror on Github](https://proxybay.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [proxybay.unblockit.ing](https://proxybay.unblockit.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [piratebayztemzmv.onion](http://piratebayztemzmv.onion/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+- [thepiratebay.org](https://thepiratebay.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Official Site_
+- [pirate-proxy.ing](https://pirate-proxy.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Mirror Site_
+- [proxybay.unblockit.ing](https://proxybay.unblockit.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
+- [proxybay.pages.dev](https://proxybay.pages.dev/) {:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
+- [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
+- <http://piratebayo3klnzokct3wt5yyxb2vpebbuyjl7m623iaxmqhsd52coid.onion>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   _[TOR URL](/why-you-should-know-about-tor/)_
 
 #### Top proxy sites and mirrors
 
 - [unblockit.ing](https://unblockit.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [unblockit.pages.dev](https://unblockit.pages.dev){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
-  [Mirror on GitLab](https://unblock_it.gitlab.io/site/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} <br />
+  [GitHub Pages](https://proxybay.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} <br />
   [Reddit](https://reddit.com/r/unblockit){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [Telegram](https://t.me/unblockit1){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
 - [unblocked.to](https://unblocked.to/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
