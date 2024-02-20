@@ -12,6 +12,6 @@ end
 
 group :test, :development do
   gem "html-proofer", "~> 5.0"
-  gem "mdl", "~> 0.12"
+  gem "mdl", "~> 0.13"
   gem "webrick", "~> 1.8" # https://github.com/jekyll/jekyll/issues/8523
 end

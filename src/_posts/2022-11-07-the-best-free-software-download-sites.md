@@ -69,6 +69,7 @@ A list of alternative websites to download free and opensource software applicat
 | [unar](https://theunarchiver.com/command-line){:rel="nofollow"}                                          | Homebrew                           |
 | [Visual Studio Code](https://code.visualstudio.com/){:rel="nofollow"}                                    | Windows, Mac, Linux, Web           |
 | [VLC media player](https://www.videolan.org/vlc/index.html){:rel="nofollow"}                             | Windows, Mac, Linux, Android, iOS  |
+| [Zed](https://zed.dev/){:rel="nofollow"}                                    | Mac           |
 
 #### Resources
 

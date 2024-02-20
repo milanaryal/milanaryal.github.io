@@ -2,48 +2,29 @@
 title: "Awesome open source text editors for developers"
 description: "A list of some best modern free and open source cross-platform code editors for developers."
 date: 2020-04-16T15:00:00+05:45
+last_modified_at: 2024-02-19 00:00:00 +0545
 ---
 
 Here's a list of some best modern free and open source cross-platform code editors for developers.
 
-### [Visual Studio Code](https://code.visualstudio.com/){:rel="nofollow"}
+### Visual Studio Code
 
 _Free and open source IDE based on the Electron/Atom Framework. Created by Microsoft._
 
-VS Code combines the streamlined UI of a modern editor with rich code assistance and navigation, and an integrated debugging experience --- without the need for a full IDE. It uses the Electron framework based on the Atom shell.
+[VS Code](https://code.visualstudio.com/){:rel="nofollow"} combines the streamlined UI of a modern editor with rich code assistance and navigation, and an integrated debugging experience --- without the need for a full IDE. It uses the Electron framework based on the Atom shell.
 
 VS Code combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools.
 
 [VS Code source code on GitHub](https://github.com/microsoft/vscode){:rel="nofollow"}.
 
-### [Atom](https://atom.io/){:rel="nofollow"}
+### Zed
 
-_Extensible, cross-platform text editor with a rich ecosystem of plugins and themes. Created by GitHub._
+_Zed is a high-performance, multiplayer code editor developed by the creators of Atom and Tree-sitter._
 
-Atom is an open-source, Electron based text editor with a massive ecosystem of plugins and themes that are easily accessible through a built-in package manager. Being built with Electron, it uses web technology (HTML, CSS, JavaScript and Node.js) and offers the same editing experience across Mac, Windows and Linux desktops. Different from most editors, it uses that same technology for themes so the UI is highly configurable through HTML, CSS and JavaScript.
+[Zed](https://zed.dev/){:rel="nofollow"} efficiently leverages CPU cores and GPU for instant startup, quick file loading, and responsive keystrokes. Zed maintains a full syntax tree for every buffer, providing precise code highlighting, auto-indent, and structural selection. It speaks the Language Server Protocol for autocompletion, code navigation, diagnostics, and refactorings. With features like Vim mode, integrated terminal, and collaboration channels, Zed empowers developers to code at the speed of thought. Explore it on the Zed GitHub repository. 🚀🔥
 
-Features:
-
-- Same familiar workflow across platforms.
-- Built-in package manager.
-- File system browser.
-- Advanced find-and-replace that works across multiple files and folders.
-- Smart autocompletion.
-
-[Atom source code on GitHub](https://github.com/atom/atom){:rel="nofollow"}.
-
-### [Brackets](http://brackets.io/){:rel="nofollow"}
-
-_A modern, open source text editor that understands web design. Created by Adobe._
-
-Brackets is an open-source editor for web design and development built on top of web technologies such as HTML, CSS and JavaScript. The project was created and is maintained by Adobe, and is released under an MIT License.
-
-With focused visual tools and preprocessor support, Brackets is a modern text editor that makes it easy to design in the browser. It's crafted from the ground up for web designers and front-end developers.
-
-Brackets is a lightweight, yet powerful, modern text editor. We blend visual tools into the editor so you get the right amount of help when you want it without getting in the way of your creative process. You'll enjoy writing code in Brackets.
-
-[Brackets source code on GitHub](https://github.com/adobe/brackets){:rel="nofollow"}.
+[Zed source code on GitHub](https://github.com/zed-industries/zed){:rel="nofollow"}.
 
 ---
 
-...for more curated list, visit a showcase of some amazingly awesome [open source text editors on GitHub](https://github.com/collections/text-editors){:rel="nofollow"}.
+For more curated list, visit a showcase of some amazingly awesome [open source text editors on GitHub](https://github.com/collections/text-editors){:rel="nofollow"}.
