@@ -5,7 +5,7 @@
 $brand-color:             #111 !default;
 $brand-primary:             darken($brand-color, 6.5%) !default;
 $text-color:              rgba(0, 0, 0, 0.8) !default;
-$font-family-sans-serif:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:    "Inter Variable", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-serif:         "Lora", Georgia, Cambria, "Times New Roman", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-base:          var(--font-sans-serif) !default;
 $bs--gutter-x:              0.75rem !default;
