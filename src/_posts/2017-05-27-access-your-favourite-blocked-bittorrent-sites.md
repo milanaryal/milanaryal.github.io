@@ -10,8 +10,8 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 #### The Pirate Bay proxy sites and mirrors
 
 - [thepiratebay.org](https://thepiratebay.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Official Site_
-- [pirate-proxy.ing](https://pirate-proxy.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Mirror Site_
-- [proxybay.unblockit.ing](https://proxybay.unblockit.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
+- [pirate-proxy.dad](https://pirate-proxy.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Mirror Site_
+- [proxybay.unblockit.dad](https://proxybay.unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
 - [proxybay.pages.dev](https://proxybay.pages.dev/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
 - [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
 - <http://piratebayo3klnzokct3wt5yyxb2vpebbuyjl7m623iaxmqhsd52coid.onion>{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
@@ -19,7 +19,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 #### Top proxy sites and mirrors
 
-- [unblockit.ing](https://unblockit.ing/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
+- [unblockit.dad](https://unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [unblockit.pages.dev](https://unblockit.pages.dev){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} <br />
   [GitHub Pages](https://proxybay.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [Reddit](https://reddit.com/r/unblockit){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
