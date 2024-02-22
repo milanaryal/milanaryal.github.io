@@ -26,7 +26,7 @@ A list of websites that are helpful for regular updates about exam routine, noti
 - [pkcampus.edu.np](https://pkcampus.edu.np/): Padma Kanya Campus
 - [www.ratnarajyalaxmicampus.edu.np](https://www.ratnarajyalaxmicampus.edu.np/): Ratna Rajya Laxmi Campus
 - [www.nlc.edu.np](https://www.nlc.edu.np/): Nepal Law Campus
-- [ioe.edu.np](https://ioe.edu.np/): Institute of Engineering (IOE)
+- [ioe.tu.edu.np](https://ioe.tu.edu.np/): Institute of Engineering (IOE)
 
 ... [more](http://tribhuvan-university.edu.np/campuses)
 

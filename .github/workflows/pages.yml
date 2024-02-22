@@ -39,7 +39,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           # Not needed with a .ruby-version file
-          ruby-version: "3.1"
+          ruby-version: "3.3"
           # Runs 'bundle install' and caches installed gems automatically
           bundler-cache: true
 
@@ -51,7 +51,7 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
 
       - name: Checking Jekyll configuration
         run: bundle exec jekyll doctor
@@ -98,7 +98,7 @@ jobs:
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         if: ${{ success() && github.repository == 'milanaryal/milanaryal.github.io' && github.ref == 'refs/heads/main' }}
         with:
           path: ./_site/
@@ -118,5 +118,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
         if: ${{ success() }}

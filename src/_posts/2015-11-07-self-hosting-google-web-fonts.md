@@ -27,9 +27,9 @@ You have to work a little hard to self-host Google web fonts because Google does
 
 So to fix this problem following web tools will help you to host Google web fonts on your own server:
 
-#### [Google web fonts helper](http://google-webfonts-helper.herokuapp.com/fonts){:rel="nofollow"}
+#### [Google web fonts helper](https://gwfh.mranftl.com/fonts){:rel="nofollow"}
 
-Google web fonts helper is a free tool created by [Mario Ranftl](http://ranf.tl/2014/12/23/self-hosting-google-web-fonts/){:rel="nofollow"} which uses the Google Fonts API that does all the hard work for us to self-host Google web fonts in few easy steps. It also allows you to select more than one font variant, which saves a lot of time.
+Google web fonts helper is a free tool created by [Mario Ranftl](https://mranftl.com/2014/12/23/self-hosting-google-web-fonts/){:rel="nofollow"} which uses the Google Fonts API that does all the hard work for us to self-host Google web fonts in few easy steps. It also allows you to select more than one font variant, which saves a lot of time.
 
 All you need is to choose your font, choose browser support, copy the CSS and download the font files.
 
