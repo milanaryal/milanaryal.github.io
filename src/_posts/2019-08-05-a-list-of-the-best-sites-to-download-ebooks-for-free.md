@@ -45,7 +45,7 @@ _Mirror site(s):_
 - [libgen.lc](https://libgen.lc/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [libgen.me](https://libgen.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [libgen.rs](http://libgen.rs/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [libgen.unblockit.dad](https://libgen.unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [libgen.unblockit.meme](https://libgen.unblockit.meme/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [bookfi.net](https://bookfi.net/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 #### PDF Drive
@@ -67,14 +67,14 @@ _Mirror site(s):_
 
 ### More sites
 
-- [annasarchive](https://annasarchive.unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [ebook3000](https://ebook3000.unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [ebook777](https://ebook777.unblockit.dad/)
-- [ebookee](https://ebookee.unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [freebookspot](https://freebookspot.unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [gutenberg](https://gutenberg.unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [magazinelib](https://magazinelib.unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [scihub](https://scihub.unblockit.dad/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [annasarchive](https://annasarchive.unblockit.meme/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [ebook3000](https://ebook3000.unblockit.meme/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [ebook777](https://ebook777.unblockit.meme/)
+- [ebookee](https://ebookee.unblockit.meme/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [freebookspot](https://freebookspot.unblockit.meme/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [gutenberg](https://gutenberg.unblockit.meme/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [magazinelib](https://magazinelib.unblockit.meme/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [scihub](https://scihub.unblockit.meme/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 _**Disclaimer & legal warning**: [This site](/) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._
 

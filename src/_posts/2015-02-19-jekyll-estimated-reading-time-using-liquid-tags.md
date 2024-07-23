@@ -151,5 +151,7 @@ Now, if you markup {% raw %}`{{ reading_time }}`{% endraw %} inside your HTML ta
 Also, more of it marking up {% raw %}`{{ total_words }}`{% endraw %} will output your content total words something like `170 words`. Hope, you will like it!
 
 [^ertmath]: Estimated reading time equals to total content words divided by average reading words per minute.
+
 [^content]: If you're implementing estimated reading time in paginator i.e. {% raw %}`{% for post in paginator.posts %}`{% endraw %} condition you should change `content` to `post.content`.
+
 [^whitespace_control]: If you are wondering hyphen in your liquid tags {% raw %}{{-, -}}, {%-, and -%}{% endraw %} helps to strip whitespace from the left or right side of a rendered tag.

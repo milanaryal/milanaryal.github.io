@@ -1,7 +1,7 @@
 ---
 title: "The best free software download sites"
 date: 2022-11-07 00:00:00 +0545
-last_modified_at: 2023-03-10 00:00:00 +0545
+last_modified_at: 2024-07-20 00:00:00 +0545
 ---
 
 A list of alternative websites to download free and opensource software applications for Windows, Mac, Linux, Android and iOS platform.
@@ -69,7 +69,8 @@ A list of alternative websites to download free and opensource software applicat
 | [unar](https://theunarchiver.com/command-line){:rel="nofollow"}                                          | Homebrew                           |
 | [Visual Studio Code](https://code.visualstudio.com/){:rel="nofollow"}                                    | Windows, Mac, Linux, Web           |
 | [VLC media player](https://www.videolan.org/vlc/index.html){:rel="nofollow"}                             | Windows, Mac, Linux, Android, iOS  |
-| [Zed](https://zed.dev/){:rel="nofollow"}                                                                 | Mac                                |
+| [Windows Auto Dark Mode](https://github.com/AutoDarkMode/Windows-Auto-Night-Mode)                        | Windows                            |
+| [Zed](https://zed.dev/){:rel="nofollow"}                                                                 | Mac, Linux                         |
 
 #### Resources
 
