@@ -49,6 +49,7 @@ A list of alternative websites to download free and opensource software applicat
 | [Google Chrome](https://www.google.com/chrome/){:rel="nofollow"}                                         | Windows, Mac, Linux, Android, iOS  |
 | [GIMP](https://www.gimp.org/){:rel="nofollow"}                                                           | Windows, Mac, Linux                |
 | [IINA](https://iina.io/){:rel="nofollow"}                                                                | Mac                                |
+| [ImageOptim](https://imageoptim.com/mac)                                                                 | Mac                                |
 | [Inkscape](https://inkscape.org/){:rel="nofollow"}                                                       | Windows, Mac, Linux                |
 | [Keka](https://www.keka.io/en/){:rel="nofollow"}                                                         | Mac                                |
 | [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                                            | Windows                            |
