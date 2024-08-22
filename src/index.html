@@ -41,22 +41,17 @@ permalink: "/"
       <div class="col-sm-8">
         <div class="card-body ps-sm-4 text-center text-sm-start">
 
-          <!-- <h1 class="card-title mt-2 mt-sm-0">{{ site_author }}</h1>
+          <h1 class="card-title mt-2 mt-sm-0">{{ site_author }}</h1>
 
           <p class="card-text mb-3">{% if site_author_pronoun %}<span class="fw-light">{{ site_author_pronoun }} &mdash; </span>{% endif %}{{ site_author_bio }}</p>
-          -->
-
-          <h1 class="card-title mt-2 mt-sm-0">que será, será</h1>
-
-          <p class="card-text mb-3"><span class="fw-light">[ke se-rah se-rah] ph. &mdash; </span>Whatever will be, will be. The future is not ours to see. Don't worry, if it's supposed to happen, it will.</p>
 
           <ul class="hero-social">
-            <li>
-              <a class="icon-instagram d-flex align-items-center justify-content-center" rel="me" href="https://mastodon.social/@milanaryal" aria-label="Mastodon">
+            {% if site.author.mastodon %}<li>
+              <a class="icon-mastodon d-flex align-items-center justify-content-center" rel="me" href="{{ site.author.mastodon }}" aria-label="Mastodon">
                 {% include icons/mastodon.svg width="1em" height="1em" class="svg" %}
                 <span class="label">Mastodon</span>
               </a>
-            </li><!--
+            </li>{% endif %}<!--
 
             --><!--
             {% if site.author.x %}<li>
