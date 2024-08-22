@@ -43,7 +43,7 @@ permalink: "/"
 
           <h1 class="card-title mt-2 mt-sm-0">{{ site_author }}</h1>
 
-          <p class="card-text mb-3">{% if site_author_pronoun %}<span class="fw-light">{{ site_author_pronoun }} &mdash; </span>{% endif %}{{ site_author_bio }}</p>
+          <p class="card-text mb-3">{% if site_author_pronoun %}<span class="fw-light">{{ site_author_pronoun }} &middot; <!-- &mdash; --></span>{% endif %}{{ site_author_bio }}</p>
 
           <ul class="hero-social">
             {% if site.author.mastodon %}<li>
