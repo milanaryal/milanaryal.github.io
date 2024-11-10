@@ -4,11 +4,13 @@ description: "Learn the basics of iPhone setup and key tips every new user shoul
 date: 2024-11-07 00:00:00 +0545
 ---
 
-Welcome to the world of iPhones! Whether you’ve just unboxed your new device or are setting it up for the first time, you’re in the right place. This guide will walk you through essential tips and tricks to help you make the most of your iPhone. From setup basics to must-know features, we’ve got everything you need. Let’s get you started on a seamless and enjoyable iPhone experience!
+Welcome to the world of iPhones! Whether you've just unboxed your new device or are setting it up for the first time, you're in the right place. This guide will walk you through essential tips and tricks to help you make the most of your iPhone. From setup basics to must-know features, we've got everything you need. Let's get you started on a seamless and enjoyable iPhone experience!
 
-### Turn on Battery Percentage
+### Turn On Battery Percentage
 
 To show the battery percentage on an iPhone, follow these steps:
+
+![ios-turn-on-battery-percentage](/uploads/20241107-ios-turn-on-battery-percentage.png)
 
 1. **Open Settings**: Go to your iPhone's _Settings_ app.
 2. **Go to Battery**: Scroll down and select _Battery_.
@@ -18,9 +20,11 @@ On iPhone models with Face ID (iPhone X and later), the percentage will show wit
 
 Alternatively, on models with Face ID, you can also view the battery percentage by swiping down from the top-right corner to open the Control Center.
 
-### Turn on Optimized Battery Charging
+### Turn On Optimized Battery Charging
 
 To turn on **Optimized Battery Charging** on your iPhone:
+
+![ios-turn-on-optimized-battery-charging](/uploads/20241107-ios-turn-on-optimized-battery-charging.png)
 
 1. **Open Settings**: Go to your _Settings_ app.
 2. **Select Battery**: Scroll down and tap _Battery_.
@@ -33,17 +37,19 @@ This feature helps to reduce battery aging by learning your charging routine and
 
 To adjust display brightness, switch to Light mode, and enable automatic adjustments on an iPhone, follow these steps:
 
-1. **Turn on Light Mode**:
+![ios-adjust-display-brightness-to-automatic](/uploads/20241107-ios-adjust-display-brightness-to-automatic.png)
+
+**1. Turn On Light Mode**:
 
 - Go to _Settings_ > _Display & Brightness_.
 - Under _Appearance_, select _Light_ to switch to Light mode.
 
-2. **Enable Automatic Brightness**:
+**2. Enable Automatic Brightness**:
 
 - Go to _Settings_ > _Accessibility_ > _Display & Text Size_.
 - Scroll down and turn on _Auto-Brightness_. This will allow your iPhone to adjust the brightness based on ambient lighting conditions.
 
-3. **Enable Light Until Sunset (Scheduled Appearance)**:
+**3. Enable Light Until Sunset (Scheduled Appearance)**:
 
 - Go to _Settings_ > _Display & Brightness_.
 - Under _Appearance_, turn on _Automatic_.
@@ -66,19 +72,23 @@ This setting will automatically adjust your display to warmer tones at night, re
 
 To enable **Automatic Icon Theme** (which switches between Light and Dark mode based on time of day) on your iPhone, follow these steps:
 
+![ios-enable-automatic-icon-theme](/uploads/20241107-ios-enable-automatic-icon-theme.png)
+
 1. **Open Settings**: Go to your _Settings_ app.
 2. **Select Display & Brightness**: Scroll down and tap _Display & Brightness_.
 3. **Enable Automatic**: Under the _Appearance_ section, select _Automatic_.
 4. **Set the Schedule**: Tap _Options_ and choose either:
 
-- Sunset to Sunrise: Automatically switches between Light and Dark mode based on the time of day.
-- Custom Schedule: Set specific times for Light and Dark mode.
+- **Sunset to Sunrise**: Automatically switches between Light and Dark mode based on the time of day.
+- **Custom Schedule**: Set specific times for Light and Dark mode.
 
 This will automatically change your iPhone's appearance according to the time, so you don't need to manually adjust the theme.
 
-### Turn off Help Apple Improve Search
+### Turn Off Help Apple Improve Search
 
 To turn off **Help Apple Improve Search** on your iPhone, follow these steps:
+
+![ios-turn-off-help-apple-improve-search](/uploads/20241107-ios-turn-off-help-apple-improve-search.png)
 
 1. **Open the Settings app** on your iPhone.
 2. **Scroll down and tap on "Search"**.
@@ -90,6 +100,8 @@ This will help enhance your privacy by preventing Apple from storing your search
 
 To turn off **Allow Apps to Request to Track** on your iPhone:
 
+![ios-turn-off-allow-apps-to-request-to-track](/uploads/20241107-ios-turn-off-allow-apps-to-request-to-track.png)
+
 1. **Open Settings**: Go to your _Settings_ app.
 2. **Go to Privacy & Security**: Scroll down and tap _Privacy & Security_.
 3. **Select Tracking**: Tap on _Tracking_.
@@ -100,6 +112,8 @@ This setting prevents apps from asking for permission to track your activity acr
 ### Turn Off In-App Ratings & Reviews
 
 To turn off **In-App Ratings & Reviews** on your iPhone:
+
+![ios-turn-off-in-app-ratings-and-reviews](/uploads/20241107-ios-turn-off-in-app-ratings-and-reviews.png)
 
 1. **Open Settings**: Go to your _Settings_ app.
 2. **Go to App Store**: Scroll down and tap _App Store_.
