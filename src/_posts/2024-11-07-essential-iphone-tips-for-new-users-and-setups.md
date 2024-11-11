@@ -68,21 +68,22 @@ To set up **Night Shift** on your iPhone to activate from sunset to sunrise:
 
 This setting will automatically adjust your display to warmer tones at night, reducing blue light to help reduce eye strain and improve sleep quality.
 
-### Enable Automatic Icon Theme
+### Enable Automatic Dark Icons at Night
 
-To enable **Automatic Icon Theme** (which switches between Light and Dark mode based on time of day) on your iPhone, follow these steps:
+To enable automatic dark icons at night on your iPhone running iOS 18, follow these steps:
 
-<img src="/uploads/20241107-ios-enable-automatic-icon-theme.png" alt="ios-enable-automatic-icon-theme" width="215" height="466" />
+<img src="/uploads/20241107-ios-enable-automatic-dark-icons.png" alt="ios-enable-automatic-icon-theme" width="215" height="466" />
 
-1. **Open Settings**: Go to your _Settings_ app.
-2. **Select Display & Brightness**: Scroll down and tap _Display & Brightness_.
-3. **Enable Automatic**: Under the _Appearance_ section, select _Automatic_.
-4. **Set the Schedule**: Tap _Options_ and choose either:
+1. **Long-press** on an empty area of your Home screen.
+2. Tap **Edit** in the top-left corner.
+3. Select **Customize** from the menu that appears.
+4. Choose **Automatic**. If you select **Automatic**, the dark icons will only appear at night.
 
-- **Sunset to Sunrise**: Automatically switches between Light and Dark mode based on the time of day.
-- **Custom Schedule**: Set specific times for Light and Dark mode.
+With this setting, your iPhone will automatically switch between light and dark icons based on your device's Dark Mode schedule. This typically activates in the evening and deactivates in the morning. This feature not only gives your Home screen a sleek look but also helps reduce eye strain in low-light conditions.
 
-This will automatically change your iPhone's appearance according to the time, so you don't need to manually adjust the theme.
+**Note**:
+- Some apps may not have specific dark mode icons. In such cases, iOS 18 will automatically generate a dark version of the icon using machine learning.  
+- The effectiveness of automatic dark icons depends on the app's icon design and whether the developer has provided a specific dark mode version.
 
 ### Turn Off Help Apple Improve Search
 
