@@ -82,7 +82,8 @@ To enable automatic dark icons at night on your iPhone running iOS 18, follow th
 With this setting, your iPhone will automatically switch between light and dark icons based on your device's Dark Mode schedule. This typically activates in the evening and deactivates in the morning. This feature not only gives your Home screen a sleek look but also helps reduce eye strain in low-light conditions.
 
 **Note**:
-- Some apps may not have specific dark mode icons. In such cases, iOS 18 will automatically generate a dark version of the icon using machine learning.  
+
+- Some apps may not have specific dark mode icons. In such cases, iOS 18 will automatically generate a dark version of the icon using machine learning.
 - The effectiveness of automatic dark icons depends on the app's icon design and whether the developer has provided a specific dark mode version.
 
 ### Turn Off Help Apple Improve Search
