@@ -2,6 +2,7 @@
 title: "Essential iPhone tips for new users and setups"
 description: "Learn the basics of iPhone setup and key tips every new user should know for a smoother, more personalized experience."
 date: 2024-11-07 00:00:00 +0545
+last_modified_at: 2023-12-25 00:00:00 +0545
 ---
 
 Welcome to the world of iPhones! Whether you've just unboxed your new device or are setting it up for the first time, you're in the right place. This guide will walk you through essential tips and tricks to help you make the most of your iPhone. From setup basics to must-know features, we've got everything you need. Let's get you started on a seamless and enjoyable iPhone experience!
@@ -122,5 +123,19 @@ To turn off **In-App Ratings & Reviews** on your iPhone:
 3. **Disable In-App Ratings & Reviews**: Scroll down and toggle off _In-App Ratings & Reviews_.
 
 This will stop apps from prompting you to rate or review them while you're using them.
+
+### Set Maximum Volume
+
+In iOS 18.2, Apple introduced a feature to set a maximum volume limit for your iPhone's built-in speakers, designed to protect your hearing and prevent unexpected loud audio. Here's how to enable it:
+
+<img src="/uploads/20241107-set-maximum-volume.png" alt="ios-set-maximum-volume.png" width="215" height="466" />
+
+1. Open the **Settings** app.
+2. Go to **Sounds & Haptics**.
+3. Scroll down and tap **Volume Limit** under the **Built-In Speaker** section.
+4. Toggle on **Limit Maximum Volume**.
+5. Use the slider to set your preferred maximum volume (options range from 20% to 90% in 10% increments).
+
+This setting affects media playback (e.g., music, videos, podcasts, and audiobooks) but does not apply to phone calls, FaceTime, emergency alerts, ringtones, alarms, or system sounds.
 
 _The images in this post feature iOS 18 and the iPhone 15 Pro Max._
