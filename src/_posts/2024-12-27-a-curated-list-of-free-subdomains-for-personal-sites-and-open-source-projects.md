@@ -20,7 +20,7 @@ Here are platforms offering free, open-source subdomain services for personal si
    **Repository**: [namdevel/jsid.dev](https://github.com/namdevel/jsid.dev)  
    **Current Status**: ✅
 
-1. **is-a-fullstack.dev & is-cool.dev & is-local.org & .is-not-a.dev & localplayer.dev**
+1. **is-a-fullstack.dev & is-cool.dev & is-local.org & .is-not-a.dev & localplayer.dev**  
    Free subdomains for personal sites, open-source projects, and more.  
    **Repository**: [open-domains/register](https://github.com/open-domains/register)  
    **Current Status**: ✅

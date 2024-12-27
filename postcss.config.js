@@ -36,7 +36,7 @@ module.exports = {
     process.env.NODE_ENV === 'production'
       ? [
           // NODE_ENV=production
-          purgecss(purgecssConfig),
+          // purgecss(purgecssConfig),
           autoprefixer({ cascade: false }),
           cssnano({
             preset: ['default', { discardComments: { removeAll: true } }],
@@ -44,7 +44,7 @@ module.exports = {
         ]
       : [
           // NODE_ENV=development
-          purgecss(purgecssConfig),
+          // purgecss(purgecssConfig),
           autoprefixer({ cascade: false }),
         ],
 }
