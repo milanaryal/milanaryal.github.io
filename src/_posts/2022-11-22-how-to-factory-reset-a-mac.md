@@ -27,3 +27,9 @@ After you reset your macOS you may want to custumise the system settings:
 3. System Settings > Trackpad > Toggle "Tap to click"
 4. [MacBook getting started tips [for new users and setups]](/macbook-getting-started-tips/)
 5. [The ultimate MacBook battery guide](/the-ultimate-macbook-battery-guide/)
+
+On macOS Sequoia v15:
+
+1. Go to System Settings > Control Center > Battery, then set Energy Mode to “Show in Menu Bar” to always display it on macOS.
+2. System Settings > Desktop & Dock > Turn it ON by toggling the switch option labeled “Minimize windows into application icon”
+3. Enable “Click Wallpaper to Show Desktop” in System Settings > Desktop & Dock > Stage Manager > Customize to reveal the desktop by clicking the wallpaper.

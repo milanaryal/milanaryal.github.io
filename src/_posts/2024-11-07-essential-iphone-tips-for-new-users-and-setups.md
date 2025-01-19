@@ -119,7 +119,7 @@ To turn off **In-App Ratings & Reviews** on your iPhone:
 <img src="/uploads/20241107-ios-turn-off-in-app-ratings-and-reviews.png" alt="ios-turn-off-in-app-ratings-and-reviews" width="215" height="466" />
 
 1. **Open Settings**: Go to your _Settings_ app.
-2. **Go to App Store**: Scroll down and tap _App Store_.
+2. **Go to App Store**: Scroll down and tap _Apps_ and then _App Store_.
 3. **Disable In-App Ratings & Reviews**: Scroll down and toggle off _In-App Ratings & Reviews_.
 
 This will stop apps from prompting you to rate or review them while you're using them.
