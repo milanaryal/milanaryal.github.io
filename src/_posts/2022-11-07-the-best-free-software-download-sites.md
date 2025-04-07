@@ -43,6 +43,7 @@ A list of alternative websites to download free and opensource software applicat
 | [Anydesk](https://anydesk.com/en){:rel="nofollow"}                                                       | Windows, Mac, Linux, Android, iOS  |
 | [AppCleaner](https://freemacsoft.net/appcleaner/){:rel="nofollow"}                                       | Mac                                |
 | [Audacity](https://www.audacityteam.org/){:rel="nofollow"}                                               | Windows, Mac, Linux                |
+| [Brave Browser](https://brave.com){:rel="nofollow"}                                                      | Windows, Mac, Linux, Android, iOS  |
 | [CCleaner](https://www.ccleaner.com/ccleaner/builds){:rel="nofollow"}                                    | Windows, Mac                       |
 | [CodeEdit](https://www.codeedit.app/){:rel="nofollow"}                                                   | Mac                                |
 | [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/browsers/){:rel="nofollow"}                      | Windows, Mac, Linux, Android, iOS  |
@@ -53,6 +54,7 @@ A list of alternative websites to download free and opensource software applicat
 | [Inkscape](https://inkscape.org/){:rel="nofollow"}                                                       | Windows, Mac, Linux                |
 | [Keka](https://www.keka.io/en/){:rel="nofollow"}                                                         | Mac                                |
 | [K-Lite Codec Pack](https://codecguide.com/){:rel="nofollow"}                                            | Windows                            |
+| [LocalSend](https://localsend.org){:rel="nofollow"}                                                      | Windows, Mac, Linux, Android, iOS  |
 | [Microsoft Bing Wallpaper](https://bingwallpaper.microsoft.com/){:rel="nofollow"}                        | Windows, Mac                       |
 | [Microsoft Edge](https://www.microsoft.com/en-us/edge){:rel="nofollow"}                                  | Windows, Mac, Linux, Android, iOS  |
 | [Microsoft PC Manager](https://pcmanager.microsoft.com/){:rel="nofollow"}                                | Windows                            |
