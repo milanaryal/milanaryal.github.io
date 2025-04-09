@@ -11,6 +11,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
 
 - [thepiratebay.org](https://thepiratebay.org/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Official Site_
 - [thepiratebay.unblock-it.com](https://thepiratebay.unblock-it.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Mirror Site_
+- [torrentbay.st](https://thepiratebay.torrentbay.st/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Mirror Site_
 - [piratebayproxy.net](https://piratebayproxy.net/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
 - [proxybay.pages.dev](https://proxybay.pages.dev/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
 - [piratebay-proxylist.com](https://piratebay-proxylist.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} - _Pirate Bay Proxy List_
@@ -24,6 +25,7 @@ Many countries have blocked access to BitTorrent websites due to copyright issue
   [GitHub Pages](https://proxybay.github.io/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [Reddit](https://reddit.com/r/unblockit){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"} -
   [Telegram](https://t.me/unblockit1){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [torrentbay.st](https://torrentbay.st/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [unblockninja.com](https://unblockninja.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 - [torrends.to/proxy/](https://torrends.to/proxy/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 

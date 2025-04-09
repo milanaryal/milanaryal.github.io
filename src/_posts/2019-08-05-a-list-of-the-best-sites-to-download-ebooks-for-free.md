@@ -13,13 +13,21 @@ Part of [Z-Library](https://en.wikipedia.org/wiki/Z-Library){:rel="nofollow"} pr
 
 _Mirror site(s):_
 
-- [zlibrary-global.se](https://zlibrary-global.se/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [singlelogin.re](https://{:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}singlelogin.re/)
-- [singlelogin.site](https://singlelogin.site/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [Official Telegram channel](http://t.me/zlibrary_official)
+- [z-library.sk](https://z-library.sk/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [z-lib.fm](https://z-lib.fm/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [go-to-library.sk](https://go-to-library.sk/#useful_link_tab){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
-<!-- zlibrary.unblockit.ink -->
-<!-- Readme: https://zlibrary-global.se/blog/38 -->
+<!--
+
+https://zlibrary.unblock-it.com/
+https://z-library.sk/blog/38
+https://mastodon.social/@Z_Lib_official
+https://twitter.com/Z_Lib_official
+https://t.me/zlibrary_official
+
+ -->
+
+<!--
 
 In case the singlelogin login page isn't available to you, please use TOR/I2P to log in to your account, copy the URL of your personal domain and use it in your regular browser. You can find out more and download [Tor](https://www.torproject.org/){:rel="nofollow"} or [I2P](https://github.com/PurpleI2P/i2pdbrowser/releases){:rel="nofollow"} browser.
 
@@ -35,18 +43,17 @@ How to use TOR?
 2. Open an _TOR URL_ in the TOR browser.
 3. Enjoy!
 
+-->
+
 #### Library Genesis
 
 Library Genesis (LibGen) is a digital library established on 11 March 2008.
 
 _Mirror site(s):_
 
-- [gen.lib.rus.ec](http://gen.lib.rus.ec/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [libgen.lc](https://libgen.lc/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [libgen.me](https://libgen.me/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [libgen.rs](http://libgen.rs/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [libgen.unblock-it.com](https://libgen.unblock-it.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [bookfi.net](https://bookfi.net/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [libgen.rs](https://libgen.rs/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [libgen.is](https://libgen.is/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [libgen.st](https://libgen.st/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
 
 #### PDF Drive
 
@@ -63,18 +70,8 @@ The world’s largest open-source open-data library.
 _Mirror site(s):_
 
 - [annas-archive.org](https://annas-archive.org/)
-- [annas-archive.gs](https://annas-archive.gs/)
-
-### More sites
-
-- [annasarchive](https://annasarchive.unblock-it.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [ebook3000](https://ebook3000.unblock-it.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [ebook777](https://ebook777.unblock-it.com/)
-- [ebookee](https://ebookee.unblock-it.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [freebookspot](https://freebookspot.unblock-it.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [gutenberg](https://gutenberg.unblock-it.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [magazinelib](https://magazinelib.unblock-it.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
-- [scihub](https://scihub.unblock-it.com/){:rel="noopener noreferrer nofollow" data-proofer-ignore="true"}
+- [annas-archive.li](https://annas-archive.li/)
+- [annas-archive.se](https://annas-archive.se/)
 
 _**Disclaimer & legal warning**: [This site](/) does not allow or condone illegal sharing for the unauthorized distribution of copyrighted material, including peer-to-peer (P2P) file sharing._
 
