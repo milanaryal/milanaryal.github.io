@@ -33,13 +33,13 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           # Not needed with a .ruby-version file
-          ruby-version: "3.3"
+          ruby-version: "3.4"
           # Runs 'bundle install' and caches installed gems automatically
           bundler-cache: true
 
@@ -98,7 +98,7 @@ jobs:
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         if: ${{ success() && github.repository == 'milanaryal/milanaryal.github.io' && github.ref == 'refs/heads/main' }}
         with:
           path: ./_site/

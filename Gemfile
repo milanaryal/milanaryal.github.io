@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 group :jekyll_plugins do
-  gem "jekyll", "~> 4.3"
+  gem "jekyll", "~> 4.4"
   gem "jekyll-feed", "~> 0.17"
   gem "jekyll-paginate", "~> 1.1"
   gem "jekyll-redirect-from", "~> 0.16"
@@ -11,7 +11,7 @@ group :jekyll_plugins do
 end
 
 group :test, :development do
-  gem "html-proofer", "~> 5.0"
-  gem "mdl", "~> 0.13"
+  gem "html-proofer", "~> 5.1"
+  gem "mdl", "~> 0.15"
   gem "webrick", "~> 1.9" # https://github.com/jekyll/jekyll/issues/8523
 end
