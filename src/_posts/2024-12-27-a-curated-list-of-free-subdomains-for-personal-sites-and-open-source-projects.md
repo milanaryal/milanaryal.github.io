@@ -12,47 +12,47 @@ Here are platforms offering free, open-source subdomain services for personal si
 
 1. **thedev.id**  
    A digital identity for developers.  
-   **Repository**: [thedev-id/thedev.id](https://github.com/thedev-id/thedev.id)  
+   **Repository**: [thedev-id/thedev.id](https://github.com/thedev-id/thedev.id){:rel="nofollow"}  
    **Current Status**: ✅
 
 1. **jsid.dev**  
    A digital identity service for developers.  
-   **Repository**: [namdevel/jsid.dev](https://github.com/namdevel/jsid.dev)  
+   **Repository**: [namdevel/jsid.dev](https://github.com/namdevel/jsid.dev){:rel="nofollow"}  
    **Current Status**: ✅
 
 1. **is-a-fullstack.dev & is-cool.dev & is-local.org & .is-not-a.dev & localplayer.dev**  
    Free subdomains for personal sites, open-source projects, and more.  
-   **Repository**: [open-domains/register](https://github.com/open-domains/register)  
+   **Repository**: [open-domains/register](https://github.com/open-domains/register){:rel="nofollow"}  
    **Current Status**: ✅
 
 1. **is-a-backend.dev & is-a-frontend.dev**  
    Free subdomains for personal sites, open-source projects, and more.  
-   **Repository**: [free-domains/register](https://github.com/free-domains/register)  
+   **Repository**: [free-domains/register](https://github.com/free-domains/register){:rel="nofollow"}  
    **Current Status**: ❌
 
 1. **is-a-good.dev**  
    Register your own is-a-good.dev domain.  
-   **Repository**: [is-a-good-dev/register](https://github.com/is-a-good-dev/register)  
+   **Repository**: [is-a-good-dev/register](https://github.com/is-a-good-dev/register){:rel="nofollow"}  
    **Current Status**: ✅
 
 1. **is-a.dev**  
    A service for developers to get a ".is-a.dev" domain for personal websites.  
-   **Repository**: [is-a-dev/register](https://github.com/is-a-dev/register)  
+   **Repository**: [is-a-dev/register](https://github.com/is-a-dev/register){:rel="nofollow"}  
    **Current Status**: ✅
 
 1. **is-amaz.ing**  
    A platform for hosting cool projects and personal sites for free.  
-   **Repository**: [is-amazing/register](https://github.com/is-amazing/register)  
+   **Repository**: [is-amazing/register](https://github.com/is-amazing/register){:rel="nofollow"}  
    **Current Status**: ✅
 
 1. **js.cool**  
    Provides free subdomains for Chinese open-source projects and supports Vercel.  
-   **Repository**: [willin/js.cool](https://github.com/willin/js.cool)  
+   **Repository**: [willin/js.cool](https://github.com/willin/js.cool){:rel="nofollow"}  
    **Current Status**: ✅
 
 1. **js.org**  
    Dedicated to the JavaScript community since 2015.  
-   **Repository**: [js-org/js.org](https://github.com/js-org/js.org)  
+   **Repository**: [js-org/js.org](https://github.com/js-org/js.org){:rel="nofollow"}  
    **Current Status**: ✅
 
 These services allow you to launch projects without worrying about domain costs!

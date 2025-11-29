@@ -29,7 +29,7 @@ If you often keep your MacBook plugged in, `batt` can dramatically extend batter
 
 ### 🛠️ How to Install & Set Up `batt` on macOS
 
-#### 1. Install Options
+**Install Options**
 
 **A. GUI Version (Easy Method)**
 
@@ -66,8 +66,7 @@ sudo batt limit 80
 
 #### Important: Disable macOS Optimized Charging
 
-Go to:
-**System Settings → Battery → Battery Health → Turn off “Optimized Battery Charging.”**
+Go to: **System Settings → Battery → Battery Health → Turn off “Optimized Battery Charging.”**
 
 This prevents macOS from overriding `batt`’s charge control.
 
