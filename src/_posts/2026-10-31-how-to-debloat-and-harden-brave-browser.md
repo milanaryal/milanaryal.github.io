@@ -46,7 +46,7 @@ A preset is a ready-made bundle of settings. You can pick one and then change an
 
 - You need **Brave already installed**.
 - You need **permission to make changes** on your computer (an administrator account, or your password on Mac and Linux).
-- **Only download this tool from the official page:** https://github.com/ChaoticSi1ence/SlimBrave-Neo. The creator says there are no official installers (no `.exe`, `.msi` or `.dmg` files). If you find a download elsewhere claiming to be SlimBrave Neo, don't trust it.
+- **Only download this tool from the official page:** <https://github.com/ChaoticSi1ence/SlimBrave-Neo>{:rel="nofollow"}. The creator says there are no official installers (no `.exe`, `.msi` or `.dmg` files). If you find a download elsewhere claiming to be SlimBrave Neo, don't trust it.
 
 #### A quick word about "the terminal"
 
@@ -125,12 +125,12 @@ You'll then finish with a few clicks: open **System Settings → General → Dev
    sudo python3 slimbrave-linux.py
    ```
 
+   > 💡 **Linux Tip:** If you use `brave-origin` (the official telemetry-free Brave build), SlimBrave-Neo detects it automatically and applies your policies seamlessly.
+
 3. Enter your password when asked.
 4. Use the **arrow keys** to move around, **Space** to toggle options, and `/` to search. A description of each setting appears at the bottom of the screen.
 5. Choose **Apply**.
 6. **Close Brave completely and open it again.**
-
-> 💡 **Linux Tip:** If you use `brave-origin` (the official telemetry-free Brave build), SlimBrave-Neo detects it automatically and applies your policies seamlessly.
 
 **Good to know:** Linux users can also try **Brave Origin**, an official version of Brave that already has these extras removed. SlimBrave Neo is better if you want to pick and choose.
 
@@ -171,4 +171,4 @@ Then restart Brave.
 
 With a few minutes and a handful of copy-and-paste steps, you can turn Brave into a quieter, cleaner and more private browser, set up exactly the way you want it.
 
-**Project page:** https://github.com/ChaoticSi1ence/SlimBrave-Neo
+**Project page:** <https://github.com/ChaoticSi1ence/SlimBrave-Neo>{:rel="nofollow"}
