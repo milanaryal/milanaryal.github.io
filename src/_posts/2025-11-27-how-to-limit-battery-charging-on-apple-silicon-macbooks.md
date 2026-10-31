@@ -14,12 +14,12 @@ This quick guide shows you **how to install, configure, and uninstall `batt`** i
 
 `batt` is a lightweight macOS utility that allows you to:
 
-* Set a **maximum battery charge limit** (e.g., 70–80%)
-* Reduce battery wear for long-term health
-* Prevent idle sleep during charging
-* Control MagSafe LED status
-* Disable charging before sleep
-* Run in the background with minimal resource usage
+- Set a **maximum battery charge limit** (e.g., 70–80%)
+- Reduce battery wear for long-term health
+- Prevent idle sleep during charging
+- Control MagSafe LED status
+- Disable charging before sleep
+- Run in the background with minimal resource usage
 
 If you often keep your MacBook plugged in, `batt` can dramatically extend battery longevity.
 
@@ -29,20 +29,20 @@ If you often keep your MacBook plugged in, `batt` can dramatically extend batter
 
 ### 🛠️ How to Install & Set Up `batt` on macOS
 
-**Install Options**
+Install Options
 
-**A. GUI Version (Easy Method)**
+A. GUI Version (Easy Method)
 
 Download the `.dmg` from the GitHub Releases page → open it → drag **`batt.app`** into your Applications folder.
 
-**B. CLI Version (Homebrew)**
+B. CLI Version (Homebrew)
 
 ```bash
 brew install batt
 sudo brew services start batt
 ```
 
-**C. CLI Version (Install Script)**
+C. CLI Version (Install Script)
 
 ```bash
 bash <(curl -fsSL https://github.com/charlie0129/batt/raw/master/hack/install.sh)

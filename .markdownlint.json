@@ -1,5 +1,6 @@
 {
   "default": true,
+  "MD001": false,
   "MD003": {
     "style": "atx"
   },
@@ -13,12 +14,10 @@
     "maximum": 2
   },
   "MD013": false,
-  "MD024": false,
   "MD026": false,
-  "MD029": {
-    "style": "ordered"
+  "MD033": {
+    "allowed_elements": ["a", "br", "hr", "kbd", "span"]
   },
-  "MD033": false,
   "MD035": {
     "style": "---"
   },

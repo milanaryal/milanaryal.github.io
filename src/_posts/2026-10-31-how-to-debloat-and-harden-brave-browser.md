@@ -29,14 +29,14 @@ It's free, open source (anyone can inspect the code), and doesn't install anythi
 
 A preset is a ready-made bundle of settings. You can pick one and then change anything you like before saving.
 
-| Preset | Best for |
-|---|---|
-| **Balanced Privacy** | Most people. More privacy, but everyday things still work. **A good place to start.** |
-| **Maximum Privacy** | People who want the strictest protection. Note: it also turns off printing, the built-in PDF viewer and developer tools. |
-| **Performance Focused** | Anyone who just wants a lighter, faster Brave. |
-| **Developer** | Web developers who need their tools to keep working. |
-| **Strict Parental Controls** | Parents, schools and workplaces who want a restricted browser. |
-| **Brave Origin** | People who want Brave to match its official "no extras" edition. |
+| Preset                       | Best for                                                                                                                 |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Balanced Privacy**         | Most people. More privacy, but everyday things still work. **A good place to start.**                                    |
+| **Maximum Privacy**          | People who want the strictest protection. Note: it also turns off printing, the built-in PDF viewer and developer tools. |
+| **Performance Focused**      | Anyone who just wants a lighter, faster Brave.                                                                           |
+| **Developer**                | Web developers who need their tools to keep working.                                                                     |
+| **Strict Parental Controls** | Parents, schools and workplaces who want a restricted browser.                                                           |
+| **Brave Origin**             | People who want Brave to match its official "no extras" edition.                                                         |
 
 **Tip:** Nothing changes on your computer until you press the final **Apply** button, so feel free to explore.
 
@@ -73,7 +73,7 @@ You'll need Windows 10 or 11.
    powershell -ExecutionPolicy Bypass -File .\SlimBrave.ps1
    ```
 
-   *Don't have "git"? Use this single line instead:*
+   _Don't have "git"? Use this single line instead:_
 
    ```bash
    iwr "https://raw.githubusercontent.com/ChaoticSi1ence/SlimBrave-Neo/main/SlimBrave.ps1" -OutFile "SlimBrave.ps1"; powershell -ExecutionPolicy Bypass -File .\SlimBrave.ps1

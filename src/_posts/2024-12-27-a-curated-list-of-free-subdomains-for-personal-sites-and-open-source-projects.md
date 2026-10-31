@@ -15,42 +15,42 @@ Here are platforms offering free, open-source subdomain services for personal si
    **Repository**: [thedev-id/thedev.id](https://github.com/thedev-id/thedev.id){:rel="nofollow"}  
    **Current Status**: ✅
 
-1. **jsid.dev**  
+2. **jsid.dev**  
    A digital identity service for developers.  
    **Repository**: [namdevel/jsid.dev](https://github.com/namdevel/jsid.dev){:rel="nofollow"}  
    **Current Status**: ✅
 
-1. **is-a-fullstack.dev & is-cool.dev & is-local.org & .is-not-a.dev & localplayer.dev**  
+3. **is-a-fullstack.dev & is-cool.dev & is-local.org & .is-not-a.dev & localplayer.dev**  
    Free subdomains for personal sites, open-source projects, and more.  
    **Repository**: [open-domains/register](https://github.com/open-domains/register){:rel="nofollow"}  
    **Current Status**: ✅
 
-1. **is-a-backend.dev & is-a-frontend.dev**  
+4. **is-a-backend.dev & is-a-frontend.dev**  
    Free subdomains for personal sites, open-source projects, and more.  
    **Repository**: [free-domains/register](https://github.com/free-domains/register){:rel="nofollow"}  
    **Current Status**: ❌
 
-1. **is-a-good.dev**  
+5. **is-a-good.dev**  
    Register your own is-a-good.dev domain.  
    **Repository**: [is-a-good-dev/register](https://github.com/is-a-good-dev/register){:rel="nofollow"}  
    **Current Status**: ✅
 
-1. **is-a.dev**  
+6. **is-a.dev**  
    A service for developers to get a ".is-a.dev" domain for personal websites.  
    **Repository**: [is-a-dev/register](https://github.com/is-a-dev/register){:rel="nofollow"}  
    **Current Status**: ✅
 
-1. **is-amaz.ing**  
+7. **is-amaz.ing**  
    A platform for hosting cool projects and personal sites for free.  
    **Repository**: [is-amazing/register](https://github.com/is-amazing/register){:rel="nofollow"}  
    **Current Status**: ✅
 
-1. **js.cool**  
+8. **js.cool**  
    Provides free subdomains for Chinese open-source projects and supports Vercel.  
    **Repository**: [willin/js.cool](https://github.com/willin/js.cool){:rel="nofollow"}  
    **Current Status**: ✅
 
-1. **js.org**  
+9. **js.org**  
    Dedicated to the JavaScript community since 2015.  
    **Repository**: [js-org/js.org](https://github.com/js-org/js.org){:rel="nofollow"}  
    **Current Status**: ✅
