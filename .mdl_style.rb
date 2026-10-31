@@ -1,6 +1,7 @@
 # A detailed description of the rules is available at
 # https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md
 all
+exclude_rule "MD001"
 exclude_rule "MD002"
 rule "MD003", :style => :atx
 rule "MD004", :style => :dash
