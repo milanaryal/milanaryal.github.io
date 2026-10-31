@@ -1,10 +1,8 @@
 ---
-title: "How to Debloat and Harden Brave Browser [Windows, macOS, Linux]"
+title: "How to debloat and harden Brave browser [Windows, macOS, Linux]"
 description: "Boost Brave Browser's speed and privacy by disabling unnecessary background features and telemetry across Windows, macOS, and Linux."
 date: 2026-10-31 00:00:00 +0545
 ---
-
-## How to Debloat and Harden Brave Browser [Windows, macOS, Linux]
 
 Brave is a popular browser known for protecting your privacy. But out of the box, it comes with extras many people never asked for: a crypto wallet, a rewards program, a VPN offer, an AI chatbot, a news feed, and more. It also quietly sends some usage information back to the company.
 

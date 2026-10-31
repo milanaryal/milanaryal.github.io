@@ -1,5 +1,5 @@
 ---
-title: "How to Limit Battery Charging on Apple Silicon MacBooks [with batt]"
+title: "How to limit battery charging on Apple silicon MacBooks [with batt]"
 description: "Extend your MacBook’s battery life with batt, an open-source tool for Apple Silicon that adds charge limits, idle-sleep control, and MagSafe LED features."
 date: 2025-11-27 00:00:00 +0545
 ---
@@ -10,7 +10,7 @@ This quick guide shows you **how to install, configure, and uninstall `batt`** i
 
 ---
 
-### ✅ What Is `batt` and Why You Should Use It
+### What is batt and why you should use it
 
 `batt` is a lightweight macOS utility that allows you to:
 
@@ -27,7 +27,7 @@ If you often keep your MacBook plugged in, `batt` can dramatically extend batter
 
 ---
 
-### 🛠️ How to Install & Set Up `batt` on macOS
+### How to install and set up batt on macOS
 
 Install Options
 
@@ -50,7 +50,7 @@ bash <(curl -fsSL https://github.com/charlie0129/batt/raw/master/hack/install.sh
 
 ---
 
-### 🔧 Initial Configuration
+### Initial configuration
 
 #### Check installation:
 
@@ -64,7 +64,7 @@ sudo batt status
 sudo batt limit 80
 ```
 
-#### Important: Disable macOS Optimized Charging
+#### Important: Disable macOS optimized charging
 
 Go to: **System Settings → Battery → Battery Health → Turn off “Optimized Battery Charging.”**
 
@@ -72,7 +72,7 @@ This prevents macOS from overriding `batt`’s charge control.
 
 ---
 
-### ⚙️ Advanced Optimization Settings
+### Advanced optimization settings
 
 Prevent idle sleep during charging:
 
@@ -102,9 +102,9 @@ sudo batt limit 100
 
 ---
 
-### ❌ How to Uninstall `batt` Completely
+### How to uninstall batt completely
 
-#### If Installed via Script:
+#### If installed via script:
 
 ```bash
 sudo batt uninstall
@@ -112,7 +112,7 @@ sudo rm /etc/batt.json
 sudo rm $(which batt)
 ```
 
-#### If Installed via Homebrew:
+#### If installed via Homebrew:
 
 ```bash
 sudo batt disable
@@ -121,12 +121,12 @@ brew uninstall batt
 sudo rm /opt/homebrew/etc/batt.json
 ```
 
-#### If Using the GUI App:
+#### If using the GUI app:
 
 Open `batt.app` → click **Uninstall Daemon…** → delete the app from Applications.
 
 ---
 
-### 🎯 Final Thoughts: Boost Your MacBook Battery Health Easily
+### Final thoughts: Boost your macBook battery health easily
 
 If you want more control over your MacBook’s charging behavior, `batt` is one of the most effective tools available for **Apple Silicon** devices. By capping charge levels and automating charging behavior, you can dramatically improve **battery lifespan**, **reduce heat**, and **optimize long-term performance**.
